@@ -172,6 +172,19 @@ def test_fetch_issues_returns_empty_on_failure(monkeypatch):
     assert follow.fetch_issues() == []
 
 
+# ---------- a fresh follow skips a same-day timeline pass ----------
+
+
+def test_a_follow_created_today_is_not_due_for_a_timeline_pass():
+    # Verified live: this is exactly the wasted call the first real Follow
+    # run made before _needs_timeline_pass existed.
+    assert follow._needs_timeline_pass("2026-07-25", date(2026, 7, 25)) is False
+
+
+def test_a_follow_from_an_earlier_day_is_due():
+    assert follow._needs_timeline_pass("2026-07-24", date(2026, 7, 25)) is True
+
+
 # ---------- the 14-day closing predicate ----------
 
 

@@ -416,6 +416,18 @@ def _unfollow_closed(records: dict[int, dict], issues: list[dict], now: datetime
             dbg(f"follow: #{n} -> issue closed by owner, marking unfollowed")
 
 
+def _needs_timeline_pass(last_development: str, today: date) -> bool:
+    """A follow is due for a timeline pass only once at least a day has
+    passed since its last recorded development. Without this, a follow
+    created THIS run has last_development == today and an empty timeline —
+    "no entry dated today yet" would otherwise look due — and a same-run
+    timeline call for it could only ever come back quiet, since the
+    backstory just covered "as of today". Verified live (2026-07-25,
+    follow-news issue #1): the very first Follow run made exactly this
+    wasted call before this guard was added."""
+    return last_development < today.isoformat()
+
+
 def _is_closing(last_development: str, today: date) -> bool:
     """decisions.md: auto-close after ~14 days with no significant
     development. A named, tunable predicate (mirrors rank.py's dials and
@@ -519,9 +531,9 @@ def run(data_dir: Path, followed_dir: Path, docs_dir: Path, today: date, only_is
     _unfollow_closed(records, issues, _now())
 
     active = [n for n, r in records.items() if r.get("status") == "active"]
-    due = [n for n in active if not any(e.get("date") == today.isoformat() for e in records[n].get("timeline") or [])]
+    due = [n for n in active if _needs_timeline_pass(records[n]["last_development"], today)]
     if len(due) < len(active):
-        dbg(f"follow: run -> {len(active) - len(due)} active follow(s) already have a {today} entry; skipping")
+        dbg(f"follow: run -> {len(active) - len(due)} active follow(s) already current as of {today}; skipping")
 
     for i in range(0, len(due), MAX_FOLLOWS_PER_BATCH):
         _timeline_pass(records, today, due[i : i + MAX_FOLLOWS_PER_BATCH])
