@@ -22,6 +22,11 @@ _HEAD = """<meta charset="utf-8">
 <meta name="robots" content="noindex, nofollow">
 <link rel="stylesheet" href="style.css">"""
 
+# Order matters: World before India. A story with a missing/unrecognised
+# section (only possible in data/ predating this phase) falls into the
+# untitled trailing group so old files keep rendering.
+SECTION_LABELS = {"world": "World", "india": "India"}
+
 
 def _story_html(story: dict) -> str:
     paragraphs = "".join(f"<p>{esc(p)}</p>" for p in story["body"].split("\n\n") if p.strip())
@@ -45,7 +50,7 @@ def _story_html(story: dict) -> str:
 
     return (
         f'<article class="story">'
-        f"<h2>{esc(story['headline'])}</h2>"
+        f"<h3>{esc(story['headline'])}</h3>"
         f"{paragraphs}"
         f"{sources_html}"
         f"{vocab_html}"
@@ -53,8 +58,25 @@ def _story_html(story: dict) -> str:
     )
 
 
+def _sections_html(stories: list[dict]) -> str:
+    grouped: dict[str, list[dict]] = {}
+    for s in stories:
+        grouped.setdefault(s.get("section") or "", []).append(s)
+
+    parts = []
+    for key in (*SECTION_LABELS, ""):
+        group = grouped.get(key)
+        if not group:
+            continue
+        label = SECTION_LABELS.get(key)
+        heading = f"<h2>{esc(label)}</h2>" if label else ""
+        stories_html = "".join(_story_html(s) for s in group)
+        parts.append(f'<section class="section">{heading}{stories_html}</section>')
+    return "".join(parts)
+
+
 def _page(day: dict) -> str:
-    stories_html = "".join(_story_html(s) for s in day["stories"]) or "<p>No stories today.</p>"
+    stories_html = _sections_html(day["stories"]) or "<p>No stories today.</p>"
     title = f"Follow — {day['date_label']}"
     return f"""<!doctype html>
 <html lang="en">
