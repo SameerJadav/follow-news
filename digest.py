@@ -136,7 +136,7 @@ def run_pipeline() -> None:
         return
 
     write_digest(today, stories, now)
-    render.render_all(DATA_DIR, DOCS_DIR)
+    render.render_all(DATA_DIR, DOCS_DIR, today)
     dbg(f"digest: {llm._CALLS} LLM call(s) this run")
 
 
@@ -158,7 +158,7 @@ def main() -> None:
     if args.command == "render":
         import render
 
-        render.render_all(DATA_DIR, DOCS_DIR)
+        render.render_all(DATA_DIR, DOCS_DIR, digest_date())
         return
 
     if args.if_missing and data_path(digest_date()).exists():

@@ -7,7 +7,13 @@ on:
       - 'data/**'
       - 'render.py'
       - 'digest.py'
+      # The hand-written frontend. Editing any of these should republish, since
+      # the pipeline never rewrites them and a push alone would not otherwise
+      # trigger a deploy.
       - 'docs/style.css'
+      - 'docs/app.js'
+      - 'docs/manifest.webmanifest'
+      - 'docs/icon.svg'
   workflow_dispatch:
 
 permissions:
