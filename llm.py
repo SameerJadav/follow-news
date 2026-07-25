@@ -7,6 +7,11 @@ article text is fetched (extract.py) only for the articles selection chose;
 writing then reads that text once. Two calls per day, independent of how
 many articles were ingested.
 
+Selection now emits a section/category/tier per cluster rather than just a
+grouping — rank.py turns those into a measured weight and decides which
+clusters survive. All semantic validation of the model's output belongs to
+rank.rank_clusters; this module only guarantees syntactically sane types.
+
 Phase 3 replaces write_stories with a claims pass plus claim-anchored
 writing. Sources being pipeline-derived here (never emitted by the model)
 is the seam that keeps that swap local to this file.
@@ -23,16 +28,16 @@ from google import genai
 from google.genai import types
 
 from feeds import Article, dbg
+from rank import CATEGORIES, RankedCluster, SECTIONS, SelectedCluster, TIERS
 
 MODEL = "gemini-3.6-flash"  # pinned here; change in exactly one place
 
-MAX_SELECT_ARTICLES = 250  # cap on how many headlines pass one sees
-MAX_STORIES = 8  # Phase 1 only — Phase 2 makes this float with the news
-MAX_ARTICLES_PER_STORY = 5  # bounds how much text pass two must read per story
 SUMMARY_CAP = 240
 
 RATE_LIMIT_SLEEP = 60  # seconds; Phase 6 replaces this with real wait-and-resume
 MAX_ATTEMPTS = 3
+
+_CALLS = 0  # total Gemini calls this process has made; greppable in dbg() output
 
 _SELECT_SCHEMA = {
     "type": "object",
@@ -42,9 +47,12 @@ _SELECT_SCHEMA = {
             "type": "array",
             "items": {
                 "type": "object",
-                "required": ["headline_hint", "article_ids"],
+                "required": ["headline_hint", "section", "category", "tier", "article_ids"],
                 "properties": {
                     "headline_hint": {"type": "string"},
+                    "section": {"type": "string", "enum": list(SECTIONS)},
+                    "category": {"type": "string", "enum": list(CATEGORIES)},
+                    "tier": {"type": "string", "enum": list(TIERS)},
                     "article_ids": {"type": "array", "items": {"type": "integer"}},
                 },
             },
@@ -52,14 +60,53 @@ _SELECT_SCHEMA = {
     },
 }
 
-_SELECT_SYSTEM = f"""You are an editor picking the day's genuinely biggest news \
-stories from a numbered list of headlines and summaries.
+_SELECT_SYSTEM = """You are an editor picking the day's genuinely biggest news \
+stories from a numbered list of headlines and summaries. An optional curated \
+checklist of today's and yesterday's significant world events may appear \
+first — read the rules for it below.
 
-Group article ids that cover the SAME underlying story into one cluster — \
-different outlets often cover the same event. Pick at most {MAX_STORIES} \
-stories: only the ones that are genuinely significant. Do not pad the list \
-to hit a target count, and do not invent a story that isn't clearly \
-supported by the input."""
+1. CLUSTERING. Group every article id that covers the SAME underlying event \
+into one cluster — different outlets often cover the same story. List EVERY \
+id that covers it, not just the best few: the number of distinct outlets in \
+a cluster is measured afterward and used to rank stories, so an incomplete \
+id list understates a story's real importance. An article id may appear in \
+AT MOST ONE cluster.
+
+2. SECTION. Every story goes in exactly one section, "world" or "india". Put \
+it in "india" if it has any significant India dimension: it happens in \
+India, involves India, Indians, or the diaspora, or affects India's trade, \
+tariffs, borders, economy, or foreign relations. Otherwise "world". THE \
+INDIA ANGLE ALWAYS WINS — a US tariff decision aimed at India is "india", \
+not "world". "world" is for stories that are genuinely elsewhere-only. \
+India means national news, big stories from any state — never local city \
+news.
+
+3. SCOPE — IN: politics, conflict, economy, disasters; science, health, \
+climate, technology.
+
+4. SCOPE — OUT: culture, entertainment, obituaries — a film release, an \
+awards ceremony, a celebrity death, a music or arts story. Never select \
+these however heavily they are covered, and never assign one of these \
+categories to a story you do want to keep — pick the category that actually \
+fits instead.
+
+5. SPORT. Only national moments: a World Cup final, an Olympic result that \
+matters to a whole country. Never a league fixture, a transfer, or a \
+routine match.
+
+6. TIER. "lead" = the single biggest story of the day in that section, at \
+most one lead per section. "major" = a genuinely important national or \
+international development. "notable" = real news a clear step below.
+
+7. NO PADDING. There is no target number of stories. A quiet day may yield \
+two or three; a heavy day ten. Never add a story to round out the list, to \
+balance the two sections, or to cover a region that has no big news today. \
+If a story is not genuinely significant, leave it out entirely.
+
+8. THE WIKIPEDIA CHECKLIST, IF PRESENT, IS A CHECK, NOT A SOURCE. Use it \
+only to check you have not overlooked something significant among the \
+articles below. Only select stories that are supported by articles in the \
+numbered list — never invent a cluster from the Wikipedia list alone."""
 
 _WRITE_SCHEMA = {
     "type": "object",
@@ -116,6 +163,7 @@ def _client() -> genai.Client:
 
 
 def _generate(prompt: str, schema: dict, system: str) -> Any:
+    global _CALLS
     client = _client()
     config = types.GenerateContentConfig(
         response_mime_type="application/json",
@@ -126,6 +174,8 @@ def _generate(prompt: str, schema: dict, system: str) -> Any:
     last_exc: Exception | None = None
     for attempt in range(1, MAX_ATTEMPTS + 1):
         try:
+            _CALLS += 1
+            dbg(f"llm: call #{_CALLS} model={MODEL}")
             resp = client.models.generate_content(model=MODEL, contents=prompt, config=config)
             return json.loads(resp.text)
         except Exception as exc:  # noqa: BLE001
@@ -140,49 +190,47 @@ def _generate(prompt: str, schema: dict, system: str) -> Any:
     raise last_exc  # exhausted retries on repeated 429s
 
 
-def select_stories(articles: list[Article]) -> list[list[int]]:
-    """Pass one: send cheap headlines+summaries, get back which article ids
-    cluster into which stories. No article text is fetched for this call."""
-    sent = articles[:MAX_SELECT_ARTICLES]
-    lines = [
-        f"[{i}] ({a.outlet}) {a.title} — {a.summary[:SUMMARY_CAP]}" for i, a in enumerate(sent)
-    ]
-    prompt = "\n".join(lines)
+def select_stories(pool: list[Article], wiki_block: str) -> list[SelectedCluster]:
+    """Pass one: send cheap headlines+summaries (plus an optional Wikipedia
+    checklist), get back which article ids cluster into which stories, each
+    tagged with a section/category/tier. No article text is fetched for this
+    call. `pool` is used exactly as passed in — no internal slicing, since
+    the caller (rank.build_select_pool) already shaped it; ids must resolve
+    against this same list.
+
+    Only type-level validation happens here (int ids, string enums). Whether
+    an id is in range, whether a cluster survives the scope filter, and how
+    it's weighted is rank.rank_clusters's job — Gemini guarantees
+    syntactically valid JSON, never semantically valid values."""
+    lines = [f"[{i}] ({a.outlet}) {a.title} — {a.summary[:SUMMARY_CAP]}" for i, a in enumerate(pool)]
+    prompt = (f"{wiki_block}\n\n" if wiki_block else "") + "NEWS ARTICLES\n" + "\n".join(lines)
 
     result = _generate(prompt, _SELECT_SCHEMA, _SELECT_SYSTEM)
 
-    clusters: list[list[int]] = []
-    rejected = 0
+    clusters: list[SelectedCluster] = []
     for story in result.get("stories", []):
-        ids = story.get("article_ids", [])
-        seen: set[int] = set()
-        valid: list[int] = []
-        for i in ids:
-            if not isinstance(i, int) or not (0 <= i < len(sent)):
-                rejected += 1
-                continue
-            if i in seen:
-                continue
-            seen.add(i)
-            valid.append(i)
-            if len(valid) >= MAX_ARTICLES_PER_STORY:
-                break
-        if valid:
-            clusters.append(valid)
-        if len(clusters) >= MAX_STORIES:
-            break
+        ids = [i for i in story.get("article_ids", []) if isinstance(i, int)]
+        clusters.append(
+            SelectedCluster(
+                headline_hint=str(story.get("headline_hint", "")).strip(),
+                section=str(story.get("section", "")).strip().lower(),
+                category=str(story.get("category", "")).strip().lower(),
+                tier=str(story.get("tier", "")).strip().lower(),
+                article_ids=ids,
+            )
+        )
 
-    dbg(f"llm: select_stories -> {len(clusters)} cluster(s), {rejected} id(s) rejected as out of range")
+    dbg(f"llm: select_stories -> {len(clusters)} raw cluster(s)")
     return clusters
 
 
-def write_stories(clusters: list[list[Article]], texts: dict[str, str]) -> list[dict]:
+def write_stories(clusters: list[RankedCluster], texts: dict[str, str]) -> list[dict]:
     """Pass two: write every story in a single call, from the full text
     fetched only for the articles selection chose."""
     blocks = []
-    for cid, articles in enumerate(clusters):
-        parts = [f"=== STORY {cid} ==="]
-        for a in articles:
+    for cid, cluster in enumerate(clusters):
+        parts = [f"=== STORY {cid} [{cluster.section}] ==="]
+        for a in cluster.articles:
             body = texts.get(a.url) or a.summary
             parts.append(f"SOURCE: {a.outlet} <{a.url}>\n{body}")
         blocks.append("\n\n".join(parts))
@@ -201,15 +249,24 @@ def write_stories(clusters: list[list[Article]], texts: dict[str, str]) -> list[
         if not story.get("headline") or len(body) < 200:
             dropped += 1
             continue
+        cluster = clusters[cid]
         by_cluster_id[cid] = {
+            "section": cluster.section,
             "headline": story["headline"],
             "body": body,
-            "sources": [{"outlet": a.outlet, "url": a.url} for a in clusters[cid]],
+            "sources": [{"outlet": a.outlet, "url": a.url} for a in cluster.articles],
             "vocab": [
                 {"term": v["term"], "say": v["say"], "meaning": v["meaning"]}
                 for v in story.get("vocab", [])
                 if "term" in v and "say" in v and "meaning" in v
             ],
+            "signals": {
+                "category": cluster.category,
+                "tier": cluster.tier,
+                "distinct_outlets": cluster.distinct_outlets,
+                "wiki_backed": cluster.wiki_backed,
+                "weight": cluster.weight,
+            },
         }
 
     # Preserve the original cluster order regardless of what order the model
