@@ -1,0 +1,98 @@
+/* Deliberately minimal placeholder — Phase 4 owns real design. */
+
+:root {
+  color-scheme: light dark;
+  --fg: #1a1a1a;
+  --bg: #ffffff;
+  --muted: #666666;
+  --rule: #dddddd;
+  --link: #0b5fa5;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fg: #e8e8e8;
+    --bg: #121212;
+    --muted: #999999;
+    --rule: #333333;
+    --link: #6cb2ff;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 1.25rem 1rem 3rem;
+  max-width: 34rem;
+  margin-inline: auto;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--fg);
+  background: var(--bg);
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0.25rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+a {
+  color: var(--link);
+}
+
+.date-label {
+  color: var(--muted);
+  margin-top: 0;
+}
+
+.story {
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--rule);
+  margin-bottom: 1.5rem;
+}
+
+.sources, .vocab {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.sources ul, .vocab ul {
+  padding-left: 1.1rem;
+  margin: 0.25rem 0;
+}
+
+.hard-close {
+  text-align: center;
+  color: var(--muted);
+  margin-top: 2rem;
+}
+
+.archive-link {
+  display: block;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.archive-list {
+  list-style: none;
+  padding: 0;
+}
+
+.archive-list li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--rule);
+}
