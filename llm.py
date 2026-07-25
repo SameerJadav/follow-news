@@ -28,7 +28,6 @@ from __future__ import annotations
 import dataclasses
 import json
 import os
-import time
 from pathlib import Path
 from typing import Any
 
@@ -36,6 +35,7 @@ from google import genai
 from google.genai import types
 
 import anchor
+import ratelimit
 from anchor import Claim
 from feeds import Article, dbg
 from rank import CATEGORIES, RankedCluster, SECTIONS, SelectedCluster, TIERS
@@ -46,8 +46,6 @@ SUMMARY_CAP = 240
 
 MAX_OUTPUT_TOKENS = 32768  # a 500-word lead plus up to 11 shorter stories and vocab
 
-RATE_LIMIT_SLEEP = 60  # seconds; Phase 6 replaces this with real wait-and-resume
-MAX_ATTEMPTS = 3
 MAX_JSON_RETRIES = 1  # a truncated/malformed response is retried once, not treated as fatal
 
 _CALLS = 0  # total Gemini calls this process has made; greppable in dbg() output
@@ -310,39 +308,30 @@ def _generate(prompt: str, schema: dict, system: str, label: str) -> Any:
         temperature=0.3,
         max_output_tokens=MAX_OUTPUT_TOKENS,
     )
-    last_exc: Exception | None = None
     json_retries = 0
-    for attempt in range(1, MAX_ATTEMPTS + 1):
+    while True:
+        _CALLS += 1
+        dbg(f"llm: call #{_CALLS} model={MODEL} label={label} prompt={len(prompt)}ch")
+        resp = ratelimit.call_with_resume(
+            lambda: client.models.generate_content(model=MODEL, contents=prompt, config=config),
+            label,
+        )
         try:
-            _CALLS += 1
-            dbg(f"llm: call #{_CALLS} model={MODEL} label={label} prompt={len(prompt)}ch")
-            resp = client.models.generate_content(model=MODEL, contents=prompt, config=config)
-            try:
-                finish = resp.candidates[0].finish_reason if resp.candidates else None
-            except Exception:  # noqa: BLE001
-                finish = None
-            dbg(f"llm: {label} finish_reason={finish}")
-            text = resp.text
-            try:
-                result = json.loads(text)
-            except json.JSONDecodeError:
-                if json_retries < MAX_JSON_RETRIES:
-                    json_retries += 1
-                    dbg(f"llm: {label} malformed/truncated JSON, retrying ({json_retries}/{MAX_JSON_RETRIES})")
-                    continue
-                raise
-            _dump(label, text)
-            return result
-        except Exception as exc:  # noqa: BLE001
-            last_exc = exc
-            text_exc = str(exc)
-            if "429" in text_exc or "RESOURCE_EXHAUSTED" in text_exc:
-                dbg(f"llm: rate limited (attempt {attempt}/{MAX_ATTEMPTS}), sleeping {RATE_LIMIT_SLEEP}s")
-                time.sleep(RATE_LIMIT_SLEEP)
+            finish = resp.candidates[0].finish_reason if resp.candidates else None
+        except Exception:  # noqa: BLE001
+            finish = None
+        dbg(f"llm: {label} finish_reason={finish}")
+        text = resp.text
+        try:
+            result = json.loads(text)
+        except json.JSONDecodeError:
+            if json_retries < MAX_JSON_RETRIES:
+                json_retries += 1
+                dbg(f"llm: {label} malformed/truncated JSON, retrying ({json_retries}/{MAX_JSON_RETRIES})")
                 continue
             raise
-    assert last_exc is not None  # loop above only exits via return/raise/continue
-    raise last_exc  # exhausted retries on repeated 429s
+        _dump(label, text)
+        return result
 
 
 def select_stories(pool: list[Article], wiki_block: str) -> list[SelectedCluster]:

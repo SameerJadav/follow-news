@@ -2,7 +2,18 @@ from datetime import datetime, timedelta, timezone
 
 import feedparser
 
-from feeds import Article, article_window_start, canonical_url, gather, load_feeds
+from feeds import (
+    Article,
+    FeedHealth,
+    GatherResult,
+    article_window_start,
+    canonical_url,
+    fetch_feed,
+    gather,
+    health_payload,
+    load_feeds,
+    quorum_ok,
+)
 
 
 def test_load_feeds_parses_multiword_names(tmp_path):
@@ -93,8 +104,77 @@ def test_gather_dedupes_articles_differing_only_by_tracking_params(monkeypatch, 
     ]
 
     def fake_fetch_feed(outlet, url):
-        return [a for a in same_story if a.outlet == outlet]
+        articles = [a for a in same_story if a.outlet == outlet]
+        health = FeedHealth(outlet, url, 200, len(articles), len(articles), "")
+        return articles, health
 
     monkeypatch.setattr("feeds.fetch_feed", fake_fetch_feed)
     result = gather(feeds_path, since=now - timedelta(hours=1))
-    assert len(result) == 1
+    assert len(result.articles) == 1
+
+
+def test_zero_items_at_http_200_is_unhealthy(monkeypatch):
+    """The trap this whole mechanism exists for: The Wire and The Print
+    return HTTP 200 with a well-formed but empty feed. A status code alone
+    would call this feed healthy; fetch_feed must not."""
+    empty_rss = b'<?xml version="1.0"?><rss version="2.0"><channel><title>Empty</title></channel></rss>'
+
+    class FakeResp:
+        status_code = 200
+        content = empty_rss
+
+    monkeypatch.setattr("feeds.requests.get", lambda *_a, **_k: FakeResp())
+    articles, health = fetch_feed("The Wire", "https://thewire.in/rss")
+    assert articles == []
+    assert health.http == 200
+    assert health.usable == 0
+    assert "zero items" in health.error
+
+
+def _dummy_articles(n: int) -> list[Article]:
+    return [Article(outlet="X", title=f"t{i}", url=f"https://x/{i}", summary="", published=None) for i in range(n)]
+
+
+def test_quorum_fails_below_min_live_feeds():
+    result = GatherResult(
+        articles=_dummy_articles(30),  # plenty of articles, but from too few feeds
+        health=[FeedHealth("A", "u", 200, 5, 5, "")],
+        configured=14,
+        live=1,
+        degraded=True,
+    )
+    assert not quorum_ok(result)
+
+
+def test_quorum_ok_at_half_the_feeds():
+    """Half the feeds dead is exactly the "degrade, don't fail" scenario:
+    still enough for a real digest, and still flagged as degraded so the
+    health report can act on it."""
+    result = GatherResult(
+        articles=_dummy_articles(30),
+        health=[FeedHealth(f"Feed{i}", "u", 200, 3, 3, "") for i in range(7)]
+        + [FeedHealth(f"Dead{i}", "u", 200, 0, 0, "zero items (HTTP 200)") for i in range(7)],
+        configured=14,
+        live=7,
+        degraded=True,
+    )
+    assert quorum_ok(result)
+    assert result.degraded
+
+
+def test_health_payload_is_plain_json_types():
+    result = GatherResult(
+        articles=[],
+        health=[FeedHealth("A", "https://a", 200, 3, 3, "")],
+        configured=1,
+        live=1,
+        degraded=False,
+    )
+    payload = health_payload(result)
+    assert payload == {
+        "configured": 1,
+        "live": 1,
+        "degraded": False,
+        "articles": 0,
+        "feeds": [{"outlet": "A", "http": 200, "raw_items": 3, "usable": 3, "error": ""}],
+    }

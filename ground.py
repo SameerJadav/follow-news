@@ -23,6 +23,9 @@ emit one delimited block per story (`=== FOLLOW <key> ===` / `STATUS: ...` /
 prose), and Python parses and validates that structure — the same
 "syntactically whatever, semantically validate in application code" posture
 llm.py takes with real JSON.
+
+429s are handled by ratelimit.call_with_resume, the same wait-and-resume
+mechanism llm.py uses — see ratelimit.py for why.
 """
 
 from __future__ import annotations
@@ -30,7 +33,6 @@ from __future__ import annotations
 import bisect
 import os
 import re
-import time
 from dataclasses import dataclass
 from typing import Any
 from urllib.parse import urlsplit
@@ -39,12 +41,11 @@ import requests
 from google import genai
 from google.genai import types
 
+import ratelimit
 from feeds import UA, dbg
 
 GROUND_MODEL = "gemini-2.5-flash"  # verified working with google_search; 2.5 Pro is limit:0 on this free tier
 MAX_OUTPUT_TOKENS = 8192
-RATE_LIMIT_SLEEP = 60  # seconds; Phase 6 replaces this with real wait-and-resume
-MAX_ATTEMPTS = 3
 HEAD_TIMEOUT = 10
 
 _CALLS = 0  # total grounded calls this process has made; greppable in dbg() output
@@ -76,10 +77,10 @@ def _client() -> genai.Client:
 
 
 def _generate(prompt: str, system: str, label: str) -> tuple[str, Any]:
-    """One grounded call. Returns (text, grounding_metadata|None). Retries on
-    429 with a flat sleep, same posture as llm._generate; anything else
-    propagates so the caller can decide whether to skip this story or fail
-    the whole Follow run."""
+    """One grounded call. Returns (text, grounding_metadata|None). Waits out a
+    429 via ratelimit.call_with_resume, same mechanism llm._generate uses;
+    anything else propagates so the caller can decide whether to skip this
+    story or fail the whole Follow run."""
     global _CALLS
     client = _client()
     config = types.GenerateContentConfig(
@@ -88,27 +89,17 @@ def _generate(prompt: str, system: str, label: str) -> tuple[str, Any]:
         temperature=0.3,
         max_output_tokens=MAX_OUTPUT_TOKENS,
     )
-    last_exc: Exception | None = None
-    for attempt in range(1, MAX_ATTEMPTS + 1):
-        try:
-            _CALLS += 1
-            dbg(f"ground: call #{_CALLS} model={GROUND_MODEL} label={label} prompt={len(prompt)}ch")
-            resp = client.models.generate_content(model=GROUND_MODEL, contents=prompt, config=config)
-            candidates = resp.candidates or []
-            finish = candidates[0].finish_reason if candidates else None
-            dbg(f"ground: {label} finish_reason={finish}")
-            metadata = candidates[0].grounding_metadata if candidates else None
-            return resp.text or "", metadata
-        except Exception as exc:  # noqa: BLE001
-            last_exc = exc
-            text_exc = str(exc)
-            if "429" in text_exc or "RESOURCE_EXHAUSTED" in text_exc:
-                dbg(f"ground: rate limited (attempt {attempt}/{MAX_ATTEMPTS}), sleeping {RATE_LIMIT_SLEEP}s")
-                time.sleep(RATE_LIMIT_SLEEP)
-                continue
-            raise
-    assert last_exc is not None  # loop above only exits via return/raise/continue
-    raise last_exc  # exhausted retries on repeated 429s
+    _CALLS += 1
+    dbg(f"ground: call #{_CALLS} model={GROUND_MODEL} label={label} prompt={len(prompt)}ch")
+    resp = ratelimit.call_with_resume(
+        lambda: client.models.generate_content(model=GROUND_MODEL, contents=prompt, config=config),
+        label,
+    )
+    candidates = resp.candidates or []
+    finish = candidates[0].finish_reason if candidates else None
+    dbg(f"ground: {label} finish_reason={finish}")
+    metadata = candidates[0].grounding_metadata if candidates else None
+    return resp.text or "", metadata
 
 
 def _char_offsets(text: str) -> list[int]:

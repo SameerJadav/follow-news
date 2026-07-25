@@ -47,7 +47,14 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      # if: always() -- Phase 6: a quorum failure or an empty pass now makes
+      # the digest step above exit 1 (deliberately, so the run shows red and
+      # the owner gets GitHub's failure email). Before that step exited, it
+      # already re-rendered docs/ with today's stale banner unhidden
+      # (digest._render_stale), so this step's job is only to commit whatever
+      # is on disk -- yesterday's honestly-labelled digest, not nothing.
       - name: Commit generated output
+        if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -62,11 +69,13 @@ jobs:
           done
 
       - uses: actions/upload-pages-artifact@v3
+        if: always()
         with:
           path: docs
 
   deploy:
     needs: build
+    if: always()
     runs-on: ubuntu-latest
     environment:
       name: github-pages
@@ -84,3 +93,25 @@ jobs:
       - id: retry
         if: steps.first.outcome == 'failure'
         uses: actions/deploy-pages@v4
+
+  # Never gates the digest or its deploy -- needs: build so it reads the
+  # commit build just pushed, but if: always() means a red build (a quorum
+  # failure, say) doesn't skip this too. A dying feed turns THIS job red and
+  # the owner gets GitHub's failure email; the digest itself is unaffected.
+  health:
+    needs: build
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+
+      - run: uv sync --frozen
+
+      # No GEMINI_API_KEY -- this reads committed data/ only.
+      - run: uv run digest.py health
