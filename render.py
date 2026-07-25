@@ -13,11 +13,20 @@ throughout, one column. Nothing decorative — the information is the design.
 Two structures carry the product's promises:
 
   * `_prose_html` splices per-claim source markers into the body using the
-    character offsets in `markers`. This is the component Phase 5 reuses for
-    grounded citations, so it takes plain arguments and no story dict.
+    character offsets in `markers`. This is the component Follow reuses for
+    grounded citations (see `_grounded_html`), so it takes plain arguments and
+    no story dict.
   * `_sources_html` prints the numbered source list under each headline. Those
     numbers are the same numbers as the superscripts in the prose, so a marker is
     decoded where the reader first meets it.
+
+Follow extends this module rather than replacing anything: `followed/*.json`
+(written only by follow.py) is loaded alongside `data/*.json` and rendered into
+`docs/follow-<issue>.html` plus a `docs/following.html` index. A followed
+story's backstory and timeline entries are `ground.GroundedBlock`s serialised
+to dicts — prose plus source markers with no claim id, since grounded prose
+has no claim list — so `_grounded_html` calls `_prose_html`/`_sources_html`
+with an empty `claims_by_id` rather than duplicating them.
 """
 
 from __future__ import annotations
@@ -27,6 +36,7 @@ import json
 from datetime import date, datetime, timedelta, timezone
 from html import escape as esc
 from pathlib import Path
+from urllib.parse import quote
 
 # Mirrors digest.IST. Kept local so render.py imports nothing from the pipeline
 # and `digest.py render` stays a leaf call with no chance of an import cycle.
@@ -293,7 +303,86 @@ def _vocab_html(story: dict) -> str:
     )
 
 
-def _story_html(story: dict, index: int, day_date: str) -> str:
+# Follow: the prefilled issue URL a Follow button opens. Mirrors
+# follow.issue_url exactly. render.py cannot import follow.py — follow.py
+# already imports render.py to publish followed-story pages, and a module
+# cycle would follow — so this shape is duplicated rather than shared.
+# Any change to one must be mirrored in the other.
+_FOLLOW_LABEL = "follow"
+_FOLLOW_REPO = "SameerJadav/follow-news"
+
+
+def _follow_url(day_date: str, section: str, position: int, headline: str) -> str:
+    title = f"Follow: {headline}"[:120]
+    body = (
+        "Follow this story.\n\n"
+        f"digest: {day_date}\n"
+        f"section: {section}\n"
+        f"story: {position}\n"
+        f"headline: {headline}"
+    )
+    params = (
+        f"labels={quote(_FOLLOW_LABEL, safe='')}"
+        f"&title={quote(title, safe='')}"
+        f"&body={quote(body, safe='')}"
+    )
+    return f"https://github.com/{_FOLLOW_REPO}/issues/new?{params}"
+
+
+def _actions_html(
+    day_date: str, section: str, position: int, headline: str, followed_index: dict[tuple[str, str, int], int]
+) -> str:
+    """Fills the <footer class="story-actions"> seam: a Follow button for a
+    story with no record yet, or a quiet link to the followed-story page for
+    one that already has one. No slug or id is computed in JavaScript —
+    everything the button needs is already on the <article> as data
+    attributes and passed straight through here."""
+    issue = followed_index.get((day_date, section, position))
+    if issue is not None:
+        return f'<a class="follow-btn is-on" href="follow-{issue}.html">Following →</a>'
+    url = _follow_url(day_date, section, position, headline)
+    return (
+        f'<a class="follow-btn" href="{esc(url, quote=True)}" target="_blank"'
+        ' rel="noopener noreferrer">Follow this story</a>'
+    )
+
+
+def _suggestions_html(raw: str) -> str:
+    """The Search Suggestions chips grounding's Terms of Service require be
+    displayed, unmodified, with the Grounded Results. `raw` is
+    `searchEntryPoint.rendered_content` as Google's API returned it, stored
+    verbatim in followed/*.json — never user input, never touched here. This
+    is the one place in the codebase that emits HTML that isn't escaped or
+    built from `esc()`; modifying it would violate the Terms this feature
+    depends on."""
+    if not raw:
+        return ""
+    return f'<div class="chips">{raw}</div>'
+
+
+def _grounded_html(block: dict) -> str:
+    """A grounded prose block (a followed story's backstory or one timeline
+    entry): body with tappable source markers, the source list, then its
+    Search Suggestions chips, with nothing interspersed between the two per
+    the Terms. Reuses _prose_html/_sources_html exactly as the digest does;
+    `claims_by_id` is passed empty because grounded prose has no claim list
+    — _marker_html and the bottom sheet already tolerate a missing claim."""
+    sources = block.get("sources") or []
+    src_index = {str(s.get("url") or ""): i + 1 for i, s in enumerate(sources)}
+    prose = _prose_html(str(block.get("body") or ""), block.get("markers") or [], src_index, {})
+    return (
+        f'<div class="prose">{prose}</div>'
+        f"{_sources_html(block, src_index)}"
+        f"{_suggestions_html(str(block.get('search_suggestions') or ''))}"
+    )
+
+
+def _story_html(
+    story: dict,
+    index: int,
+    day_date: str,
+    followed_index: dict[tuple[str, str, int], int] | None = None,
+) -> str:
     sources = story.get("sources") or []
     src_index = {str(s.get("url") or ""): i + 1 for i, s in enumerate(sources)}
     claims_by_id: dict[int, str] = {}
@@ -308,11 +397,8 @@ def _story_html(story: dict, index: int, day_date: str) -> str:
     tier = str(story.get("signals", {}).get("tier") or "secondary")
 
     prose = _prose_html(str(story.get("body") or ""), story.get("markers") or [], src_index, claims_by_id)
+    actions = _actions_html(day_date, section, index, headline, followed_index or {})
 
-    # Phase 5 inserts the Follow button inside <footer class="story-actions">.
-    # Everything it needs (date, headline, section) is already on the <article>
-    # as data attributes, so no slug function is computed here or in app.js —
-    # a slug duplicated across Python and JavaScript breaks silently.
     return (
         # Reading order: the headline is the entry point, the thin-sourcing
         # notice conditions how the story is read so it comes before the prose,
@@ -329,12 +415,17 @@ def _story_html(story: dict, index: int, day_date: str) -> str:
         f'<div class="prose">{prose}</div>'
         f"{_vocab_html(story)}"
         f"{_sources_html(story, src_index)}"
-        '<footer class="story-actions"></footer>'
+        f'<footer class="story-actions">{actions}</footer>'
         "</article>"
     )
 
 
-def _section_html(key: str, stories: list[dict], day: dict) -> str:
+def _section_html(
+    key: str,
+    stories: list[dict],
+    day: dict,
+    followed_index: dict[tuple[str, str, int], int] | None = None,
+) -> str:
     """One switchable view. The section id is the bare section key so the tab
     bar's href="#world" works as a plain anchor with no JavaScript.
 
@@ -346,7 +437,8 @@ def _section_html(key: str, stories: list[dict], day: dict) -> str:
 
     if stories:
         body = "".join(
-            _story_html(s, i, str(day.get("date") or "")) for i, s in enumerate(stories, start=1)
+            _story_html(s, i, str(day.get("date") or ""), followed_index)
+            for i, s in enumerate(stories, start=1)
         )
         close = f"That's all for {label} — {_stories(len(stories))}."
     else:
@@ -399,7 +491,146 @@ def _stale_html(day: dict, today: date) -> str:
     )
 
 
-def _page(day: dict, today: date, *, is_index: bool, head: str = _HEAD) -> str:
+def _following_row(records: list[dict], today: date) -> str:
+    """The masthead's entry point into Follow — only on index.html, and only
+    when at least one follow is active. Not a third tab: product.md is
+    explicit that there are two sections you switch between."""
+    active = [r for r in records if r.get("status") == "active"]
+    if not active:
+        return ""
+
+    new_count = sum(
+        1
+        for r in active
+        if any(e.get("date") == today.isoformat() for e in (r.get("timeline") or []))
+    )
+    new_html = f'<span class="new">{new_count} new today</span>' if new_count else ""
+    label = "story" if len(active) == 1 else "stories"
+    return (
+        '<a class="following-row" href="following.html">'
+        f"Following <b>{len(active)}</b> {label}{new_html}</a>"
+    )
+
+
+def _follow_status_html(record: dict) -> str:
+    updates = len(record.get("timeline") or [])
+    since = _short_date(str(record.get("origin", {}).get("date") or ""))
+    if record.get("status") == "closed":
+        entries = record.get("timeline") or []
+        closed_on = entries[-1].get("date") if entries and entries[-1].get("date") else since
+        return f'<p class="follow-status">Closed {esc(_short_date(str(closed_on)))} · {esc(_plural(updates, "update"))}</p>'
+    return f'<p class="follow-status">Following since {esc(since)} · {esc(_plural(updates, "update"))}</p>'
+
+
+def _follow_close_html(record: dict) -> str:
+    """The followed-story equivalent of the digest's hard close: a clear,
+    finite statement of where things stand, never an open-ended scroll."""
+    entries = record.get("timeline") or []
+    if record.get("status") == "closed":
+        closed_on = entries[-1].get("date") if entries and entries[-1].get("date") else record.get("origin", {}).get("date", "")
+        text = f"This story closed on {_short_date(str(closed_on))}. That's the end of it."
+    elif entries:
+        text = f"Still following — last update {_short_date(str(entries[-1].get('date') or ''))}."
+    else:
+        text = "Still following — no updates yet."
+    return f'<div class="close"><span>{esc(text)}</span></div>'
+
+
+def _follow_page(record: dict, head: str = _HEAD) -> str:
+    """A followed story: the full-picture backstory, then the timeline
+    oldest-first so it grows the picture downward, then a hard close. Same
+    <head>, masthead pattern and bottom sheet as a digest day page, so
+    typography, source markers and pronunciation behave identically —
+    Follow only adds content, never a second design."""
+    title = str(record.get("title") or "")
+    backstory = record.get("backstory") or {}
+    entries = record.get("timeline") or []
+
+    timeline_html = "".join(
+        f'<section class="entry{" is-final" if e.get("kind") == "final" else ""}">'
+        f'<h4 class="entry-date">{esc(str(e.get("date_label") or e.get("date") or ""))}</h4>'
+        f"{_grounded_html(e)}"
+        "</section>"
+        for e in entries
+    )
+
+    return f"""<!doctype html>
+<html lang="en">
+<head>
+<title>{esc(title)}</title>
+{head}
+</head>
+<body>
+<header class="mast"><h1 class="day follow-hd">{esc(title)}</h1><a class="back" href="index.html">Today</a></header>
+{_follow_status_html(record)}
+<h3 class="kicker">The full picture</h3>
+{_grounded_html(backstory)}
+{timeline_html}
+{_follow_close_html(record)}
+<a class="archive-link" href="following.html">All followed stories</a>
+{_SHEET_HTML}
+</body>
+</html>
+"""
+
+
+def _following_page(records: list[dict], head: str = _HEAD) -> str:
+    """Every followed story, active first then closed — a separate,
+    unpromoted surface reached from the masthead row, the same relationship
+    the archive has to the digest."""
+
+    def _row(r: dict) -> str:
+        entries = r.get("timeline") or []
+        since = _short_date(str(r.get("origin", {}).get("date") or ""))
+        detail = f"Since {since} · {_plural(len(entries), 'update')}"
+        latest = entries[-1].get("date") if entries else None
+        if latest:
+            detail += f" · latest {_short_date(str(latest))}"
+        return (
+            f'<li><a href="follow-{esc(str(r.get("issue") or ""), quote=True)}.html">'
+            f'<span class="d">{esc(str(r.get("title") or ""))}</span>'
+            f'<span class="c">{esc(detail)}</span>'
+            "</a></li>"
+        )
+
+    active = sorted((r for r in records if r.get("status") == "active"), key=lambda r: r.get("issue", 0), reverse=True)
+    closed = sorted((r for r in records if r.get("status") != "active"), key=lambda r: r.get("issue", 0), reverse=True)
+
+    parts = []
+    if active:
+        parts.append('<h2 class="month">Following</h2><ol class="days">')
+        parts += [_row(r) for r in active]
+        parts.append("</ol>")
+    if closed:
+        parts.append('<h2 class="month">Closed</h2><ol class="days">')
+        parts += [_row(r) for r in closed]
+        parts.append("</ol>")
+
+    listing = "".join(parts) or '<p class="empty">Nothing followed yet.</p>'
+
+    return f"""<!doctype html>
+<html lang="en">
+<head>
+<title>Following</title>
+{head}
+</head>
+<body>
+<header class="mast"><h1 class="day">Following</h1><a class="back" href="index.html">Today</a></header>
+{listing}
+</body>
+</html>
+"""
+
+
+def _page(
+    day: dict,
+    today: date,
+    *,
+    is_index: bool,
+    head: str = _HEAD,
+    followed_index: dict[tuple[str, str, int], int] | None = None,
+    followed_records: list[dict] | None = None,
+) -> str:
     grouped: dict[str, list[dict]] = {key: [] for key in SECTION_ORDER}
     for story in day.get("stories") or []:
         # Anything unrecognised (only possible in data/ predating Phase 2)
@@ -412,7 +643,10 @@ def _page(day: dict, today: date, *, is_index: bool, head: str = _HEAD) -> str:
 
     back = '<a class="back" href="index.html">Today</a>' if not is_index else ""
     stale = _stale_html(day, today) if is_index else ""
-    sections = "".join(_section_html(key, grouped[key], day) for key in SECTION_ORDER)
+    following_row = _following_row(followed_records or [], today) if is_index else ""
+    sections = "".join(
+        _section_html(key, grouped[key], day, followed_index) for key in SECTION_ORDER
+    )
 
     return f"""<!doctype html>
 <html lang="en">
@@ -423,6 +657,7 @@ def _page(day: dict, today: date, *, is_index: bool, head: str = _HEAD) -> str:
 <body>
 <header class="mast"><h1 class="day">{esc(date_label)}</h1>{back}</header>
 {stale}
+{following_row}
 {_tabs_html(counts)}
 {sections}
 <a class="archive-link" href="archive.html">Past days</a>
@@ -490,9 +725,47 @@ def _empty_page(head: str = _HEAD) -> str:
 """
 
 
-def render_all(data_dir: Path, docs_dir: Path, today: date | None = None) -> None:
+def _load_followed(followed_dir: Path | None) -> tuple[list[dict], dict[tuple[str, str, int], int]]:
+    """Every followed/*.json (oldest issue first) plus an index from
+    (origin date, origin section, origin position) -> issue number, built
+    from records of ANY status so a closed follow's button still links to
+    its page rather than reappearing as "Follow this story"."""
+    if followed_dir is None or not followed_dir.exists():
+        return [], {}
+
+    records: list[dict] = []
+    index: dict[tuple[str, str, int], int] = {}
+    for path in sorted(followed_dir.glob("*.json")):
+        try:
+            record = json.loads(path.read_text())
+        except (OSError, ValueError):
+            continue
+        records.append(record)
+
+        origin = record.get("origin") or {}
+        d = str(origin.get("date") or "")
+        section = str(origin.get("section") or "")
+        position = origin.get("position")
+        issue = record.get("issue")
+        if d and section and isinstance(position, int) and isinstance(issue, int):
+            index[(d, section, position)] = issue
+
+    records.sort(key=lambda r: r.get("issue", 0))
+    return records, index
+
+
+def render_all(
+    data_dir: Path,
+    docs_dir: Path,
+    today: date | None = None,
+    followed_dir: Path | None = None,
+) -> None:
     """Load every data/*.json, render one HTML page per day plus index.html
-    (newest day) and archive.html (full list, newest first).
+    (newest day) and archive.html (full list, newest first). When
+    `followed_dir` holds followed/*.json records (Follow's own source of
+    truth, written only by follow.py — never here), also renders
+    docs/follow-<issue>.html per record and docs/following.html when any
+    exist.
 
     `today` decides whether index.html carries the stale banner; digest.py
     passes digest_date(). The default exists only so this stays callable from a
@@ -504,15 +777,37 @@ def render_all(data_dir: Path, docs_dir: Path, today: date | None = None) -> Non
     days = [json.loads(path.read_text()) for path in sorted(data_dir.glob("*.json"))]
     days.sort(key=lambda d: d["date"], reverse=True)
 
+    records, followed_index = _load_followed(followed_dir)
+
     docs_dir.mkdir(parents=True, exist_ok=True)
     head = _head(docs_dir)
 
     for day in days:
-        (docs_dir / f"{day['date']}.html").write_text(_page(day, today, is_index=False, head=head))
+        (docs_dir / f"{day['date']}.html").write_text(
+            _page(day, today, is_index=False, head=head, followed_index=followed_index)
+        )
 
     if days:
-        (docs_dir / "index.html").write_text(_page(days[0], today, is_index=True, head=head))
+        (docs_dir / "index.html").write_text(
+            _page(
+                days[0],
+                today,
+                is_index=True,
+                head=head,
+                followed_index=followed_index,
+                followed_records=records,
+            )
+        )
     else:
         (docs_dir / "index.html").write_text(_empty_page(head))
 
     (docs_dir / "archive.html").write_text(_archive_page(days, head))
+
+    for record in records:
+        issue = record.get("issue")
+        if not isinstance(issue, int):
+            continue
+        (docs_dir / f"follow-{issue}.html").write_text(_follow_page(record, head))
+
+    if records:
+        (docs_dir / "following.html").write_text(_following_page(records, head))

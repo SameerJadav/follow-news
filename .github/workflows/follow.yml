@@ -1,0 +1,94 @@
+name: follow
+
+on:
+  issues:
+    types: [opened, reopened, closed]
+
+permissions:
+  contents: write
+  issues: write
+  pages: write
+  id-token: write
+
+# Same group as digest.yml and render.yml. A queued run's jobs do not start
+# — and therefore do not check out the repo — until the running one
+# finishes, so the daily digest and an issue-triggered follow can never
+# clobber each other's commit.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    # THE SECURITY GUARD. The repo is public, so anyone can open an issue.
+    # This is job-level so no step — and in particular no secret — is ever
+    # exposed to a workflow run triggered by a non-owner issue.
+    # follow.fetch_issues() re-checks the author in Python as a second,
+    # independent gate, so the guarantee holds even if this is ever invoked
+    # another way.
+    if: >-
+      github.event.issue.user.login == 'SameerJadav' &&
+      contains(github.event.issue.labels.*.name, 'follow')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+
+      - run: uv sync --frozen
+
+      # The issue number is a GitHub-assigned integer, safe to pass through
+      # env either way — but every step here uses env + "$ISSUE" rather than
+      # ${{ }} interpolation for consistency with the real rule: no
+      # free-text field of github.event.issue (title, body, labels) may
+      # ever be interpolated into a run: block. Those are attacker-
+      # controlled text from a public repo's issue tracker and would be a
+      # script injection risk. follow.py reads the issue body itself via
+      # the GitHub API instead.
+      - run: uv run digest.py follow --issue "$ISSUE"
+        env:
+          ISSUE: ${{ github.event.issue.number }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit generated output
+        env:
+          ISSUE: ${{ github.event.issue.number }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add followed docs
+          git diff --cached --quiet || git commit -m "follow: issue #$ISSUE"
+          # digest.yml or render.yml can commit between this job's checkout
+          # and this push; retry with a rebase rather than racing them.
+          for i in 1 2 3; do
+            git push && break
+            git pull --rebase origin main || true
+            sleep 5
+          done
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.first.outputs.page_url || steps.retry.outputs.page_url }}
+    steps:
+      # Pages deploys fail transiently; retry once after a short sleep
+      # rather than failing the whole run over it.
+      - id: first
+        uses: actions/deploy-pages@v4
+        continue-on-error: true
+
+      - if: steps.first.outcome == 'failure'
+        run: sleep 20
+
+      - id: retry
+        if: steps.first.outcome == 'failure'
+        uses: actions/deploy-pages@v4

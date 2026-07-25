@@ -1,13 +1,22 @@
 #!/usr/bin/env python3
 """CLI entrypoint and orchestration for the daily digest pipeline.
 
-    uv run digest.py                # full pipeline, overwrites today's file
-    uv run digest.py --if-missing   # no-op if today's data/*.json exists
-    uv run digest.py render         # re-render docs/ from data/ only, no API key
+    uv run digest.py                     # full pipeline, overwrites today's file
+    uv run digest.py --if-missing        # no-op if today's data/*.json exists
+    uv run digest.py render              # re-render docs/ from data/ + followed/, no API key
+    uv run digest.py follow              # process Follow issues, append timelines, re-render
+    uv run digest.py follow --issue 12   # restrict to one issue (used by follow.yml)
+    uv run digest.py follow --date ...   # override the digest date (testing)
 
 data/YYYY-MM-DD.json is the single source of truth. Every page in docs/ is
 derived from it and is overwritten wholesale on every render — never
 hand-edit generated HTML. Only this pipeline writes data/.
+
+followed/<issue>.json is a second source of truth, alongside data/, written
+only by follow.py. Follow is additive: `run_pipeline` never calls it, so a
+Follow failure can never fail the digest. The digest workflow instead calls
+`digest.py follow` as its own continue-on-error step, and the issue-triggered
+follow.yml workflow calls it with `--issue` for a single new request.
 """
 
 from __future__ import annotations
@@ -26,6 +35,7 @@ ROOT = Path(__file__).parent
 DATA_DIR = ROOT / "data"
 DOCS_DIR = ROOT / "docs"
 FEEDS_PATH = ROOT / "feeds.txt"
+FOLLOWED_DIR = ROOT / "followed"
 
 # The deployed origin. The local checkout is named "daily-digest-new" —
 # that name must never leak into a URL or a committed path.
@@ -136,7 +146,7 @@ def run_pipeline() -> None:
         return
 
     write_digest(today, stories, now)
-    render.render_all(DATA_DIR, DOCS_DIR, today)
+    render.render_all(DATA_DIR, DOCS_DIR, today, FOLLOWED_DIR)
     dbg(f"digest: {llm._CALLS} LLM call(s) this run")
 
 
@@ -145,20 +155,39 @@ def main() -> None:
     parser.add_argument(
         "command",
         nargs="?",
-        choices=["render"],
-        help="omit for the full pipeline; 'render' to re-render docs/ from data/ only",
+        choices=["render", "follow"],
+        help="omit for the full pipeline; 'render' to re-render docs/ from data/+followed/ only; "
+        "'follow' to process Follow issues, append timelines, and re-render",
     )
     parser.add_argument(
         "--if-missing",
         action="store_true",
         help="no-op if today's data/YYYY-MM-DD.json already exists",
     )
+    parser.add_argument(
+        "--issue",
+        type=int,
+        default=None,
+        help="follow: restrict to this issue number (used by follow.yml for a single new request)",
+    )
+    parser.add_argument(
+        "--date",
+        default=None,
+        help="follow: override the digest date as YYYY-MM-DD, instead of today in IST (testing)",
+    )
     args = parser.parse_args()
 
     if args.command == "render":
         import render
 
-        render.render_all(DATA_DIR, DOCS_DIR, digest_date())
+        render.render_all(DATA_DIR, DOCS_DIR, digest_date(), FOLLOWED_DIR)
+        return
+
+    if args.command == "follow":
+        import follow
+
+        today = date.fromisoformat(args.date) if args.date else digest_date()
+        follow.run(DATA_DIR, FOLLOWED_DIR, DOCS_DIR, today, only_issue=args.issue)
         return
 
     if args.if_missing and data_path(digest_date()).exists():
