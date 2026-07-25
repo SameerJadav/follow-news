@@ -1,0 +1,15 @@
+[project]
+name = "follow-news"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "feedparser>=6.0.12",
+    "google-genai>=2.14.0",
+    "requests>=2.32",
+]
+
+[dependency-groups]
+dev = ["pytest>=8.0"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]

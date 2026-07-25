@@ -1,0 +1,21 @@
+# World
+BBC World          https://feeds.bbci.co.uk/news/world/rss.xml
+Al Jazeera         https://www.aljazeera.com/xml/rss/all.xml
+Guardian World     https://www.theguardian.com/world/rss
+NPR World          https://feeds.npr.org/1004/rss.xml
+DW World           https://rss.dw.com/rdf/rss-en-world
+France 24          https://www.france24.com/en/rss
+Channel News Asia  https://www.channelnewsasia.com/api/v1/rss-outbound-feed?_format=xml
+
+# India
+The Hindu          https://www.thehindu.com/news/national/feeder/default.rss
+Indian Express     https://indianexpress.com/section/india/feed/
+NDTV               https://feeds.feedburner.com/ndtvnews-india-news
+Hindustan Times    https://www.hindustantimes.com/feeds/rss/india-news/rssfeed.xml
+Times of India     https://timesofindia.indiatimes.com/rssfeedstopstories.cms
+Livemint           https://www.livemint.com/rss/news
+Scroll.in          https://feeds.feedburner.com/ScrollinArticles.rss
+
+# Deliberately excluded — tested 2026-07-25, do not re-add:
+#   AP, Reuters, UN News, Deccan Herald national, Business Standard, PIB  -> 401/403/404
+#   The Wire, The Print                                                   -> HTTP 200, zero items
