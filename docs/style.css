@@ -1,20 +1,39 @@
-/* Deliberately minimal placeholder — Phase 4 owns real design. */
+/* Follow — the reading experience.
+ *
+ * Hand-written and served as-is; the pipeline never writes this file. See the
+ * docstring in render.py.
+ *
+ * Black and white, blue only for links, one system sans throughout, one column.
+ * Phone first: no horizontal scroll, tap targets at or near 44px, light and dark.
+ *
+ * Two rules of restraint this file holds to:
+ *   1. Dividers earn their place. There are exactly three — under the tab bar,
+ *      between stories, and the heavy one at the hard close. Everything else is
+ *      separated by space alone.
+ *   2. Spacing comes from one scale: 0.25 / 0.5 / 0.75 / 1 / 1.5 / 2rem. Nothing
+ *      in between, so vertical rhythm stays even down the page.
+ */
 
 :root {
   color-scheme: light dark;
   --fg: #1a1a1a;
   --bg: #ffffff;
   --muted: #666666;
-  --rule: #dddddd;
+  --faint: #8c8c8c;
+  --rule: #e4e4e4;
+  --notice: #f5f5f5;
   --link: #0b5fa5;
+  --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --fg: #e8e8e8;
     --bg: #121212;
-    --muted: #999999;
-    --rule: #333333;
+    --muted: #9a9a9a;
+    --faint: #7a7a7a;
+    --rule: #2b2b2b;
+    --notice: #1d1d1d;
     --link: #6cb2ff;
   }
 }
@@ -23,76 +42,502 @@
   box-sizing: border-box;
 }
 
+/* Load-bearing: without it .sheet's display:flex and .section's block display
+ * beat the hidden attribute, and the bottom sheet is permanently open. */
+[hidden] {
+  display: none !important;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
 body {
-  margin: 0;
-  padding: 1.25rem 1rem 3rem;
+  margin: 0 auto;
+  padding: 1rem 1rem 3rem;
   max-width: 34rem;
-  margin-inline: auto;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-family: var(--font);
   font-size: 1.05rem;
   line-height: 1.6;
   color: var(--fg);
   background: var(--bg);
-}
-
-h1 {
-  font-size: 1.5rem;
-  margin-bottom: 0.25rem;
-}
-
-h2 {
-  font-size: 1.25rem;
-  margin-top: 2rem;
-  margin-bottom: 0.5rem;
-}
-
-p {
-  margin: 0 0 1rem;
+  overflow-wrap: break-word;
 }
 
 a {
   color: var(--link);
 }
 
-.date-label {
-  color: var(--muted);
-  margin-top: 0;
+svg {
+  display: block;
 }
+
+:focus-visible {
+  outline: 2px solid var(--link);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+/* ---------- dateline ---------- */
+
+/* A newspaper dateline: centred, small, letterspaced. The page's only heading is
+ * the day itself — no app name, no story count, since the tabs below carry the
+ * counts. Centring it is what stops it reading as a label stranded on top of the
+ * tab bar. */
+.mast {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  margin-bottom: 0.75rem;
+}
+
+.day {
+  margin: 0;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.back {
+  position: absolute;
+  right: 0;
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+/* ---------- section tabs ---------- */
+
+/* Two tabs, each exactly half the width, in a ruled band — the newspaper section
+ * strip. The negative inline margin with matching padding bleeds the background
+ * and both rules to the full screen width, so prose scrolling underneath never
+ * shows through beside them. */
+.tabs {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  display: flex;
+  margin: 0 -1rem 0.5rem;
+  padding: 0 1rem;
+  background: var(--bg);
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+}
+
+.tab {
+  flex: 1 1 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  min-height: 46px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  transition: color 0.12s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.tab.is-on {
+  color: var(--fg);
+  font-weight: 700;
+  border-bottom-color: var(--fg);
+}
+
+.tab-n {
+  font-size: 0.8rem;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: var(--faint);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---------- story ---------- */
 
 .story {
-  padding-bottom: 1.5rem;
+  padding: 1.5rem 0;
   border-bottom: 1px solid var(--rule);
-  margin-bottom: 1.5rem;
 }
 
-.sources, .vocab {
+.story:last-of-type {
+  border-bottom: 0;
+  padding-bottom: 0.5rem;
+}
+
+/* Newspaper headlines are heavy and tightly set. 700 with a short line-height
+ * does that without needing a display face. */
+.story-hd {
+  margin: 0 0 0.625rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1.24;
+  letter-spacing: -0.016em;
+  text-wrap: balance;
+}
+
+.story[data-tier="lead"] .story-hd {
+  font-size: 1.5rem;
+}
+
+.prose p {
+  margin: 0 0 1rem;
+}
+
+.prose p:last-child {
+  margin-bottom: 0;
+}
+
+/* The padding/negative-margin pair grows the tap area to roughly 32x32 without
+ * shifting a single character of the prose. Do not swap it for a larger font
+ * size — that would push the numerals into the surrounding lines. */
+.src {
+  padding: 0.35rem 0.3rem;
+  margin: -0.35rem -0.1rem;
+  text-decoration: none;
+  font-variant-numeric: tabular-nums;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.src sup {
+  font-size: 0.7em;
+}
+
+/* ---------- sources ---------- */
+
+/* One wrapping row at the foot of the story. Each numeral is the same numeral as
+ * the superscript it belongs to, and marks where an item starts — so the items
+ * need space between them, not punctuation. */
+.sources {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.25rem 0.875rem;
+  margin-top: 1.25rem;
+  font-size: 0.85rem;
+  line-height: 1.45;
+}
+
+.sources-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--faint);
+}
+
+.source {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.3rem;
+  text-decoration: none;
+}
+
+.s-n {
+  color: var(--faint);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---------- notices: thin sourcing, stale digest ---------- */
+
+.thin,
+.stale {
+  padding: 0.625rem 0.75rem;
+  background: var(--notice);
+  border-radius: 6px;
+  font-size: 0.92rem;
+  line-height: 1.45;
+  color: var(--muted);
+}
+
+.thin {
+  margin: 0 0 1rem;
+}
+
+.thin-tag {
+  color: var(--fg);
+  font-weight: 600;
+}
+
+.stale {
+  margin: 0 0 0.75rem;
+}
+
+.stale p {
+  margin: 0;
+}
+
+.stale b {
+  color: var(--fg);
+  font-weight: 600;
+}
+
+/* ---------- words to know ---------- */
+
+/* A reading aid, not part of the story — set apart by a tint rather than another
+ * divider. */
+.vocab {
+  margin-top: 1.25rem;
+  padding: 0.75rem 0.875rem 0.875rem;
+  background: var(--notice);
+  border-radius: 6px;
+}
+
+/* Standing head, set like a newspaper's — the same treatment as .month and
+ * .sources-label, so every small label on the site reads as one system. */
+.kicker {
+  margin: 0 0 0.5rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--faint);
+}
+
+.vocab dl {
+  margin: 0;
+}
+
+.vocab dt {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.term {
+  font-weight: 600;
+}
+
+.say {
   font-size: 0.9rem;
   color: var(--muted);
+  font-variant-numeric: tabular-nums;
 }
 
-.sources ul, .vocab ul {
-  padding-left: 1.1rem;
-  margin: 0.25rem 0;
-}
-
-.hard-close {
-  text-align: center;
+.vocab dd {
+  margin: 0 0 0.75rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
   color: var(--muted);
+}
+
+.term-row:last-child dd {
+  margin-bottom: 0;
+}
+
+.say-btn {
+  width: 44px;
+  height: 44px;
+  margin: -12px -8px -12px -4px;
+  padding: 0;
+  display: inline-grid;
+  place-items: center;
+  background: none;
+  border: 0;
+  border-radius: 50%;
+  color: var(--link);
+  transition: opacity 0.12s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.say-btn svg {
+  width: 18px;
+  height: 18px;
+}
+
+.say-btn.is-speaking {
+  opacity: 0.4;
+}
+
+/* The phonetic respelling stays visible either way — it is useful without
+ * audio. Only the speaker goes when the device has no speech synthesis. */
+html.no-speech .say-btn {
+  display: none;
+}
+
+/* ---------- hard close, archive link ---------- */
+
+/* The 2px rule is the terminal mark: heavier than every other divider on the
+ * page, so the end of the day's reading is unmistakable. */
+.close {
   margin-top: 2rem;
+  padding-top: 0.75rem;
+  border-top: 2px solid var(--fg);
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.empty {
+  color: var(--muted);
 }
 
 .archive-link {
   display: block;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
+  min-height: 44px;
+  line-height: 44px;
   text-align: center;
+  font-size: 0.9rem;
 }
 
-.archive-list {
-  list-style: none;
+/* ---------- source bottom sheet ---------- */
+
+.sheet {
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+  display: flex;
+  align-items: flex-end;
+  background: rgba(0, 0, 0, 0.4);
+  animation: fade 0.16s ease-out;
+}
+
+.sheet-card {
+  width: 100%;
+  max-width: 34rem;
+  max-height: 85vh;
+  overflow-y: auto;
+  margin-inline: auto;
+  padding: 0.5rem 1rem calc(1rem + env(safe-area-inset-bottom, 0px));
+  background: var(--bg);
+  border-radius: 14px 14px 0 0;
+  animation: rise 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+/* Reads as "drag me" and, more usefully, marks the card's top edge without a
+ * divider running the full width. */
+.sheet-handle {
+  width: 34px;
+  height: 4px;
+  margin: 0 auto 0.75rem;
+  border-radius: 2px;
+  background: var(--rule);
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes rise {
+  from {
+    transform: translateY(16px);
+  }
+}
+
+.sheet-outlet {
+  margin: 0 0 0.5rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--faint);
+}
+
+.sheet-claim {
+  margin: 0 0 1rem;
   padding: 0;
+  border: 0;
+  font-size: 1.05rem;
+  line-height: 1.5;
+  color: var(--fg);
 }
 
-.archive-list li {
-  padding: 0.5rem 0;
+.sheet-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.sheet-open,
+.sheet-close {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  font-size: 0.95rem;
+  font-family: inherit;
+}
+
+.sheet-close {
+  padding: 0;
+  background: none;
+  border: 0;
+  color: var(--muted);
+}
+
+/* ---------- archive page ---------- */
+
+.month {
+  margin: 1.5rem 0 0;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--faint);
+}
+
+.days {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Dates read as content rather than as a wall of blue links; the row height and
+ * the dividers already say the whole row is tappable. */
+.days a {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 52px;
+  padding: 0.75rem 0;
   border-bottom: 1px solid var(--rule);
+  text-decoration: none;
+  color: var(--fg);
+}
+
+.days li:last-child a {
+  border-bottom: 0;
+}
+
+.days .c {
+  color: var(--faint);
+  font-size: 0.85rem;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---------- motion ---------- */
+
+@media (prefers-reduced-motion: reduce) {
+  .sheet,
+  .sheet-card {
+    animation: none;
+  }
+
+  * {
+    transition: none !important;
+  }
 }
