@@ -529,6 +529,100 @@ html.no-speech .say-btn {
   font-variant-numeric: tabular-nums;
 }
 
+/* ---------- Follow ---------- */
+
+/* A bordered pill, not filled — Follow adds a choice to make, not another
+ * fact to read, so it stays visually quieter than the prose above it. */
+.follow-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  min-height: 44px;
+  border: 1px solid var(--link);
+  border-radius: 0.5rem;
+  padding: 0 1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--link);
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Already following: quieter still — this is a status, not an invitation. */
+.follow-btn.is-on {
+  border-color: var(--rule);
+  color: var(--muted);
+}
+
+/* The masthead's entry point into Follow. Deliberately not a third tab —
+ * product.md says two sections, World and India. */
+.following-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+  min-height: 44px;
+  border-radius: 0.5rem;
+  padding: 0 0.75rem;
+  background: var(--notice);
+  font-size: 0.9rem;
+  color: var(--fg);
+  text-decoration: none;
+}
+
+.following-row .new {
+  color: var(--link);
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+
+.follow-hd {
+  text-transform: none;
+  letter-spacing: normal;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--fg);
+}
+
+.follow-status {
+  margin: 0 0 1rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+/* .kicker (the "THE FULL PICTURE" / "Words to know" standing head) is
+ * already defined above — reused here rather than duplicated. */
+
+/* One rule per entry, matching the file's "dividers earn their place" rule —
+ * the same divider weight the digest uses between stories. */
+.entry {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--rule);
+}
+
+.entry.is-final {
+  border-top-color: var(--fg);
+}
+
+.entry-date {
+  margin: 0 0 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--faint);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Search Suggestions: Google's own widget, rendered verbatim per the
+ * grounding Terms. It themes and scrolls itself; nothing here overrides its
+ * internal styling, only how much room it gets on the page. */
+.chips {
+  margin: 1rem 0 0;
+  max-width: 100%;
+}
+
 /* ---------- motion ---------- */
 
 @media (prefers-reduced-motion: reduce) {

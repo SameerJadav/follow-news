@@ -197,11 +197,20 @@ def test_sources_are_one_row_with_no_punctuation_separators():
     assert "·" not in row and ", " not in row
 
 
-def test_story_carries_the_phase_5_follow_seam():
+def test_story_footer_carries_a_follow_button_when_not_followed():
     html = render._story_html(_story(), 1, "2026-07-25")
-    assert '<footer class="story-actions"></footer>' in html
+    assert '<footer class="story-actions">' in html
+    assert 'class="follow-btn"' in html
+    assert "issues/new?" in html
     assert 'data-date="2026-07-25"' in html
     assert 'data-headline="A headline"' in html
+
+
+def test_story_footer_links_to_the_followed_page_when_already_followed():
+    followed_index = {("2026-07-25", "world", 1): 12}
+    html = render._story_html(_story(), 1, "2026-07-25", followed_index)
+    assert 'class="follow-btn is-on" href="follow-12.html"' in html
+    assert "issues/new?" not in html
 
 
 # ---------- sections and hard close ----------
