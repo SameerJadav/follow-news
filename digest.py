@@ -56,11 +56,16 @@ def previous_digest(before: date) -> dict | None:
 def write_digest(d: date, stories: list[dict], generated_at: datetime) -> None:
     """The data/ contract. Later phases extend this object; they must not
     reshape these keys. Per story: `section` ("world"/"india", never both),
-    `headline`, `body`, `sources`, `vocab`, and `signals` (category/tier/
-    distinct_outlets/wiki_backed/weight — the ranking evidence, kept in data/
-    so Phase 6 can calibrate from committed files rather than Actions logs).
-    Phase 3 adds claim anchors on top; `date`/`date_label`/`generated_at`
-    stay as they are."""
+    `headline`, `body` (clean prose, no inline markers), `markers` (character
+    offsets into `body` mapping a span of text to one claim/outlet/url —
+    Phase 4's tappable source markers), `claims` (only the claims actually
+    cited in `body`, each anchored to exactly one source), `thin_sourced`
+    (measured from the cited claims' outlet spread, never model-assessed),
+    `sources` (the outlets/urls actually cited), `vocab`, and `signals`
+    (ranking evidence plus anchoring diagnostics — word_count/word_target,
+    marker_count, unanchored_share, claim_outlets, unsourced_figures — kept
+    in data/ so Phase 6 can calibrate from committed files rather than
+    Actions logs). `date`/`date_label`/`generated_at` stay as they are."""
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     payload = {
         "date": f"{d:%Y-%m-%d}",
@@ -74,8 +79,9 @@ def write_digest(d: date, stories: list[dict], generated_at: datetime) -> None:
 
 def run_pipeline() -> None:
     """The full pipeline: gather -> shape pool -> select -> rank/score ->
-    fetch text for kept clusters only -> write -> save -> render. Exactly
-    two LLM calls, independent of how many articles were ingested or how
+    fetch text for kept clusters only -> extract anchored claims -> write
+    from claims only -> save -> render. Exactly three LLM calls (select,
+    claims, write), independent of how many articles were ingested or how
     many clusters survive ranking — the whole quota strategy."""
     # Imported lazily so `digest.py render` never needs GEMINI_API_KEY.
     import extract
@@ -119,13 +125,19 @@ def run_pipeline() -> None:
         for article in cluster.articles:
             texts[article.url] = extract.article_text(article.url)
 
-    stories = llm.write_stories(ranked, texts)
+    claims_by_cluster = llm.extract_claims(ranked, texts)
+    if not claims_by_cluster:
+        dbg("digest: claims pass produced no anchored claims; not writing a digest for today")
+        return
+
+    stories = llm.write_stories(ranked, claims_by_cluster)
     if not stories:
         dbg("digest: writing pass returned no valid stories; not writing a digest for today")
         return
 
     write_digest(today, stories, now)
     render.render_all(DATA_DIR, DOCS_DIR)
+    dbg(f"digest: {llm._CALLS} LLM call(s) this run")
 
 
 def main() -> None:
