@@ -356,3 +356,52 @@ def test_render_never_writes_hand_written_assets(tmp_path):
     the pipeline must never emit or overwrite them."""
     pages = _render(tmp_path, _day([_story()]), date(2026, 7, 25))
     assert set(pages) == {"index.html", "archive.html", "2026-07-25.html"}
+
+
+# ---------- noindex (Phase 6: product.md promises the site asks search
+# engines not to index it; GitHub Pages does not do this on its own) ----------
+
+_NOINDEX = 'name="robots" content="noindex, nofollow"'
+_FOLLOW_RECORD = {
+    "issue": 1,
+    "status": "active",
+    "title": "A Followed Story",
+    "section": "world",
+    "origin": {"date": "2026-07-25", "section": "world", "position": 1, "headline": "A Followed Story"},
+    "started_at": "2026-07-25T12:00:00Z",
+    "last_development": "2026-07-25",
+    "backstory": {
+        "body": "Backstory prose.",
+        "markers": [],
+        "sources": [],
+        "queries": [],
+        "search_suggestions": "",
+    },
+    "timeline": [],
+}
+
+
+def test_every_page_type_is_noindex(tmp_path):
+    """Every generated page type carries the noindex meta tag -- robots.txt
+    alone only covers well-behaved crawlers; this is the tag GitHub Pages
+    gives no other way to set (no header config, no X-Robots-Tag)."""
+    data_dir, docs_dir, followed_dir = tmp_path / "data", tmp_path / "docs", tmp_path / "followed"
+    data_dir.mkdir()
+    followed_dir.mkdir()
+    (data_dir / "2026-07-25.json").write_text(json.dumps(_day([_story()])))
+    (followed_dir / "1.json").write_text(json.dumps(_FOLLOW_RECORD))
+
+    render.render_all(data_dir, docs_dir, date(2026, 7, 25), followed_dir)
+
+    for name in ("index.html", "archive.html", "2026-07-25.html", "follow-1.html", "following.html"):
+        assert _NOINDEX in (docs_dir / name).read_text(), f"{name} missing noindex"
+
+
+def test_empty_page_is_noindex():
+    assert _NOINDEX in render._empty_page()
+
+
+def test_robots_txt_present_and_disallows_all():
+    robots = (Path(__file__).parent.parent / "docs" / "robots.txt").read_text()
+    assert "User-agent: *" in robots
+    assert "Disallow: /" in robots

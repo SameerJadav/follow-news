@@ -44,6 +44,17 @@ TRACKING_PARAMS = {
     "publisher",
 }
 
+# Feed health / quorum thresholds (Phase 6). research.md SS2.3/SS7.1: The Wire
+# and The Print return HTTP 200 with zero items, and 6 of 22 feeds tested were
+# already dead or blocked on day one -- a status code alone cannot catch
+# either failure mode, and a year of no maintenance will only rot more feeds.
+# "Degrade, don't fail" (decisions.md) means a bad morning still ships a
+# digest as long as there's real news to build one from; below these floors
+# there isn't enough left to call it a digest.
+MIN_LIVE_FEEDS = 3  # below this it's one or two outlets' opinion, not a digest
+MIN_ARTICLES = 20  # after window + dedupe
+DEGRADED_LIVE_SHARE = 0.5  # under half the configured feeds live still ships, loudly
+
 _TAG_RE = re.compile(r"<[^>]+>")
 _WS_RE = re.compile(r"\s+")
 _PUNCT_RE = re.compile(r"[^\w\s]")
@@ -65,6 +76,34 @@ class Article:
     url: str
     summary: str
     published: datetime | None  # tz-aware UTC; None when the feed omitted it
+
+
+@dataclass(frozen=True, slots=True)
+class FeedHealth:
+    """One feed's condition on one run. `error` is "" for a healthy feed;
+    otherwise a short, greppable reason -- including the HTTP-200-zero-items
+    trap, which a status code alone can't distinguish from a feed with
+    nothing to report today."""
+
+    outlet: str
+    url: str
+    http: int | None  # None when the request itself failed (DNS, timeout, ...)
+    raw_items: int  # entries feedparser saw, before the link/title filter
+    usable: int  # entries that became an Article
+    error: str
+
+
+@dataclass(frozen=True, slots=True)
+class GatherResult:
+    """gather()'s full return: the articles for the pipeline plus enough feed
+    health to decide (a) whether this run has quorum to build a digest from,
+    and (b) whether report.py's cross-day check should flag a feed as dying."""
+
+    articles: list[Article]
+    health: list[FeedHealth]
+    configured: int
+    live: int  # feeds with usable > 0
+    degraded: bool  # live < configured * DEGRADED_LIVE_SHARE
 
 
 def load_feeds(path: Path) -> list[tuple[str, str]]:
@@ -120,12 +159,18 @@ def _entry_published(entry) -> datetime | None:
     return None
 
 
-def fetch_feed(outlet: str, url: str) -> list[Article]:
+def fetch_feed(outlet: str, url: str) -> tuple[list[Article], FeedHealth]:
     """Fetch and parse one feed. Never raises — a single dead or malformed
-    feed must not stop the whole run. Returns [] on any failure, including
-    the HTTP-200-with-zero-items trap (The Wire, The Print)."""
+    feed must not stop the whole run. Returns ([], health) on any failure,
+    including the HTTP-200-with-zero-items trap (The Wire, The Print) —
+    `health.error` is what makes that trap visible instead of silently
+    looking like "no news today"."""
     try:
         resp = requests.get(url, headers={"User-Agent": UA}, timeout=25)
+        if resp.status_code != 200:
+            dbg(f"feed {outlet!r}: http={resp.status_code}")
+            return [], FeedHealth(outlet, url, resp.status_code, 0, 0, f"http {resp.status_code}")
+
         parsed = feedparser.parse(resp.content)
         raw_count = len(parsed.entries)
 
@@ -145,14 +190,19 @@ def fetch_feed(outlet: str, url: str) -> list[Article]:
                 )
             )
 
+        error = ""
+        if raw_count == 0:
+            error = "zero items (HTTP 200)"
+            dbg(f"feed {outlet!r}: ZERO ITEMS at HTTP 200 — the Wire/Print failure mode")
+
         dbg(
             f"feed {outlet!r}: http={resp.status_code} raw_items={raw_count} "
             f"usable={len(articles)}"
         )
-        return articles
+        return articles, FeedHealth(outlet, url, resp.status_code, raw_count, len(articles), error)
     except Exception as exc:  # noqa: BLE001 - a dead feed must not stop the run
         dbg(f"feed {outlet!r}: FAILED ({exc!r})")
-        return []
+        return [], FeedHealth(outlet, url, None, 0, 0, repr(exc)[:120])
 
 
 def article_window_start(now: datetime, prev_generated_at: datetime | None) -> datetime:
@@ -166,12 +216,19 @@ def article_window_start(now: datetime, prev_generated_at: datetime | None) -> d
     return min(max(prev_generated_at, cap), floor)
 
 
-def gather(feeds_path: Path, since: datetime) -> list[Article]:
-    """Fetch every feed, filter to the window, dedupe, and sort newest first."""
+def gather(feeds_path: Path, since: datetime) -> GatherResult:
+    """Fetch every feed, filter to the window, dedupe, sort newest first, and
+    report feed health alongside the articles. Degradation (some feeds dead)
+    is logged here but never returns early — "degrade, don't fail" means
+    whatever real news survives still becomes a digest; quorum_ok() is the
+    caller's decision about whether there's enough of it."""
     feeds = load_feeds(feeds_path)
     all_articles: list[Article] = []
+    health: list[FeedHealth] = []
     for name, url in feeds:
-        all_articles.extend(fetch_feed(name, url))
+        articles, feed_health = fetch_feed(name, url)
+        all_articles.extend(articles)
+        health.append(feed_health)
 
     undated = sum(1 for a in all_articles if a.published is None)
     if undated:
@@ -198,4 +255,46 @@ def gather(feeds_path: Path, since: datetime) -> list[Article]:
         per_outlet[a.outlet] = per_outlet.get(a.outlet, 0) + 1
     dbg(f"gather: {len(deduped)} article(s) after window+dedupe; by outlet: {per_outlet}")
 
-    return deduped
+    configured = len(feeds)
+    live = sum(1 for h in health if h.usable > 0)
+    degraded = configured > 0 and live < configured * DEGRADED_LIVE_SHARE
+    dbg(f"gather: {live}/{configured} feed(s) live, {len(deduped)} article(s)")
+    if degraded:
+        dead = [h.outlet for h in health if h.usable == 0]
+        dbg(f"gather: DEGRADED — only {live}/{configured} feeds live; dead: {dead}")
+
+    return GatherResult(articles=deduped, health=health, configured=configured, live=live, degraded=degraded)
+
+
+def quorum_ok(result: GatherResult) -> bool:
+    """"Degrade, don't fail" (decisions.md): a digest built from 6 of 14
+    sources still ships. This is the floor below which there genuinely isn't
+    enough left to call it a digest."""
+    ok = result.live >= MIN_LIVE_FEEDS and len(result.articles) >= MIN_ARTICLES
+    dbg(
+        f"gather: QUORUM {'OK' if ok else 'FAILED'} — live={result.live}/{MIN_LIVE_FEEDS} "
+        f"min, articles={len(result.articles)}/{MIN_ARTICLES} min"
+    )
+    return ok
+
+
+def health_payload(result: GatherResult) -> dict:
+    """The health key written into data/YYYY-MM-DD.json — plain JSON types
+    only, so report.py can read committed data/ files across many days
+    without importing this module's dataclasses."""
+    return {
+        "configured": result.configured,
+        "live": result.live,
+        "degraded": result.degraded,
+        "articles": len(result.articles),
+        "feeds": [
+            {
+                "outlet": h.outlet,
+                "http": h.http,
+                "raw_items": h.raw_items,
+                "usable": h.usable,
+                "error": h.error,
+            }
+            for h in result.health
+        ],
+    }
