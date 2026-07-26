@@ -14,12 +14,27 @@
  *      in between, so vertical rhythm stays even down the page.
  */
 
+/* The three text tones are set against the harder of the two grounds they can
+ * land on — `--notice`, not `--bg` — because the standing heads and the vocab
+ * definitions sit inside those tinted blocks. Every one clears WCAG AA (4.5:1)
+ * on both. `--faint` is the binding constraint: it carries 11px uppercase
+ * labels and the source numerals, which are exactly the text that has to stay
+ * legible outdoors at breakfast, and at that size AA has no large-text
+ * exemption to fall back on.
+ *
+ *              page    tinted block
+ *   --muted    7.1:1   6.5:1     secondary prose, notices, definitions
+ *   --faint    5.0:1   4.5:1     small caps labels, source numerals
+ *
+ * `--muted` moved with `--faint`: pulling faint up to AA on its own would have
+ * landed it within a few steps of muted and collapsed the two tones into one.
+ * Keep roughly this separation if either is ever retuned. */
 :root {
   color-scheme: light dark;
   --fg: #1a1a1a;
   --bg: #ffffff;
-  --muted: #666666;
-  --faint: #8c8c8c;
+  --muted: #585858;
+  --faint: #707070;
   --rule: #e4e4e4;
   --notice: #f5f5f5;
   --link: #0b5fa5;
@@ -30,8 +45,8 @@
   :root {
     --fg: #e8e8e8;
     --bg: #121212;
-    --muted: #9a9a9a;
-    --faint: #7a7a7a;
+    --muted: #a6a6a6;
+    --faint: #8e8e8e;
     --rule: #2b2b2b;
     --notice: #1d1d1d;
     --link: #6cb2ff;
@@ -87,12 +102,15 @@ svg {
   white-space: nowrap;
 }
 
-/* ---------- dateline ---------- */
+/* ---------- masthead: nameplate, dateline, folio ---------- */
 
-/* A newspaper dateline: centred, small, letterspaced. The page's only heading is
- * the day itself — no app name, no story count, since the tabs below carry the
- * counts. Centring it is what stops it reading as a label stranded on top of the
- * tab bar. */
+/* A newspaper front-page masthead, set in the same system sans as the rest of
+ * the site rather than a display face. Nameplate, then the day, then a folio
+ * line carrying the day's size — what this is, when it is, how much there is,
+ * in that order, before a single headline. */
+/* The list pages (Archive, Following) and a followed story keep the older,
+ * quieter head: a centred label saying what the page is, with the way back to
+ * today on the same row. Only the digest carries the full masthead. */
 .mast {
   position: relative;
   display: flex;
@@ -111,6 +129,63 @@ svg {
   color: var(--muted);
 }
 
+.plate {
+  position: relative;
+  padding: 1.25rem 0 0.5rem;
+  text-align: center;
+}
+
+.plate-name {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.3em;
+  /* Letterspacing pads the right of the last glyph; the indent puts the word
+   * back on the page's true centre. */
+  text-indent: 0.3em;
+  text-transform: uppercase;
+}
+
+.plate-date {
+  margin: 0.45rem 0 0;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-indent: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* The folio line: a double rule above, a single one below — the heaviest pair
+ * of rules on the page, which is what makes everything above them read as the
+ * masthead and everything below as the paper.
+ *
+ * The negative inline margin pulls the box out to the screen edges so both
+ * rules run the full width, the way they do on a printed page; the matching
+ * padding puts the text back on the column. Same pattern as .tabs and .chips. */
+.folio {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 0 -1rem;
+  padding: 0.4rem 1rem;
+  border-top: 3px double var(--fg);
+  border-bottom: 1px solid var(--fg);
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.folio b {
+  font-weight: 700;
+  color: var(--fg);
+}
+
 .back {
   position: absolute;
   right: 0;
@@ -121,39 +196,55 @@ svg {
   white-space: nowrap;
 }
 
+/* Stretched to the row's full height so the link's text centres on exactly the
+ * same optical line as the label beside it, whatever either one is set at. */
+.mast .back {
+  top: 0;
+  bottom: 0;
+}
+
+/* On a day page the masthead is centred, so the way back to today hangs in the
+ * top-right corner rather than sitting in the flow. */
+.plate .back {
+  top: 0;
+}
+
 /* ---------- section tabs ---------- */
 
-/* Two tabs, each exactly half the width, in a ruled band — the newspaper section
- * strip. The negative inline margin with matching padding bleeds the background
- * and both rules to the full screen width, so prose scrolling underneath never
- * shows through beside them. */
+/* Two tabs, each exactly half the screen, in a ruled band — the newspaper
+ * section strip, sitting directly under the folio's rule. The negative inline
+ * margin bleeds the background and the rule to the full screen width, so prose
+ * scrolling underneath never shows through beside them.
+ *
+ * No padding here, unlike the folio: the band's children are the tabs
+ * themselves, and padding would inset the active tab's underline instead of
+ * letting it run the full half. The labels are centred within each half, so
+ * they need no padding of their own. */
 .tabs {
   position: sticky;
   top: 0;
   z-index: 5;
   display: flex;
-  margin: 0 -1rem 0.5rem;
-  padding: 0 1rem;
+  margin: 0 -1rem;
   background: var(--bg);
-  border-top: 1px solid var(--rule);
-  border-bottom: 1px solid var(--rule);
+  border-bottom: 1px solid var(--fg);
 }
 
 .tab {
+  position: relative;
   flex: 1 1 0;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 0.4rem;
   min-height: 46px;
-  font-size: 0.9rem;
-  font-weight: 500;
-  letter-spacing: 0.1em;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-indent: 0.16em;
   text-transform: uppercase;
   color: var(--muted);
   text-decoration: none;
-  border-bottom: 2px solid transparent;
-  margin-bottom: -1px;
   transition: color 0.12s ease;
   -webkit-tap-highlight-color: transparent;
 }
@@ -161,14 +252,28 @@ svg {
 .tab.is-on {
   color: var(--fg);
   font-weight: 700;
-  border-bottom-color: var(--fg);
+}
+
+/* The active mark overlays the band's own rule exactly. Drawn as a positioned
+ * pseudo-element rather than a border, because a border plus the negative
+ * margin it would need bleeds past the sticky background onto the prose
+ * scrolling underneath. */
+.tab.is-on::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 3px;
+  background: var(--fg);
 }
 
 .tab-n {
-  font-size: 0.8rem;
-  font-weight: 400;
+  font-size: 0.72rem;
+  font-weight: 500;
   letter-spacing: 0;
-  color: var(--faint);
+  text-indent: 0;
+  color: var(--muted);
   font-variant-numeric: tabular-nums;
 }
 
@@ -226,11 +331,15 @@ svg {
 
 /* One wrapping row at the foot of the story. Each numeral is the same numeral as
  * the superscript it belongs to, and marks where an item starts — so the items
- * need space between them, not punctuation. */
+ * need space between them, not punctuation.
+ *
+ * Everything in the row is set at one size and centred on the line. Baseline
+ * alignment across mixed sizes is what made the label and the numerals look
+ * like they were sitting at different heights. */
 .sources {
   display: flex;
   flex-wrap: wrap;
-  align-items: baseline;
+  align-items: center;
   gap: 0.25rem 0.875rem;
   margin-top: 1.25rem;
   font-size: 0.85rem;
@@ -238,21 +347,22 @@ svg {
 }
 
 .sources-label {
-  font-size: 0.7rem;
+  font-size: inherit;
   font-weight: 600;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--faint);
 }
 
 .source {
   display: inline-flex;
-  align-items: baseline;
+  align-items: center;
   gap: 0.3rem;
   text-decoration: none;
 }
 
 .s-n {
+  font-size: inherit;
   color: var(--faint);
   font-variant-numeric: tabular-nums;
 }
@@ -555,35 +665,51 @@ html.no-speech .say-btn {
   color: var(--muted);
 }
 
-/* The masthead's entry point into Follow. Deliberately not a third tab —
- * product.md says two sections, World and India. */
+/* The masthead's entry point into Follow, sitting under the section strip.
+ * Deliberately not a third tab — product.md says two sections, World and
+ * India. A ruled row rather than a tinted pill, so it belongs to the masthead
+ * above it rather than looking like a notice. */
 .following-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 0.75rem;
-  margin-bottom: 0.75rem;
   min-height: 44px;
-  border-radius: 0.5rem;
-  padding: 0 0.75rem;
-  background: var(--notice);
-  font-size: 0.9rem;
+  border-bottom: 1px solid var(--rule);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
   color: var(--fg);
   text-decoration: none;
 }
 
-.following-row .new {
-  color: var(--link);
-  font-size: 0.8rem;
+/* Plain inline text, not a nested flex row: flex would turn "1" and "story"
+ * into two items and put a gap between them. */
+.following-count {
   white-space: nowrap;
 }
 
-.follow-hd {
-  text-transform: none;
-  letter-spacing: normal;
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: var(--fg);
+.following-row b {
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.following-row .new {
+  margin-left: 0.75rem;
+  color: var(--link);
+  letter-spacing: 0.06em;
+}
+
+/* The followed story's own title. The masthead above it says what the page is,
+ * so this is free to be the headline it actually is. */
+.follow-title {
+  margin: 0.25rem 0 0.5rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1.24;
+  letter-spacing: -0.016em;
+  text-wrap: balance;
 }
 
 .follow-status {
@@ -615,12 +741,39 @@ html.no-speech .say-btn {
   font-variant-numeric: tabular-nums;
 }
 
-/* Search Suggestions: Google's own widget, rendered verbatim per the
- * grounding Terms. It themes and scrolls itself; nothing here overrides its
- * internal styling, only how much room it gets on the page. */
+/* Search Suggestions: Google's own widget, rendered verbatim per the grounding
+ * Terms. Nothing here overrides its internal styling — no rule below targets
+ * anything inside `.chips`, and none ever may: the widget ships its own
+ * stylesheet claiming `.container`, `.chip`, `.carousel`, `.headline` and
+ * `.gradient` globally, so those five names are also permanently off limits to
+ * the rest of this file.
+ *
+ * What is ours is the room around it. The widget is a rounded, shadowed card
+ * roughly 48px tall — a foreign object in a page with no other cards — and
+ * inset in the text column it read as a mistake. Bleeding it to the full screen
+ * width and standing it off from the source list turns it into a deliberate
+ * band at the foot of the block, and gives the chip carousel the whole width to
+ * scroll in instead of a clipped 358px. */
+.suggest {
+  margin-top: 1.75rem;
+  padding-top: 0.875rem;
+  border-top: 1px solid var(--rule);
+}
+
+.suggest .kicker {
+  margin-bottom: 0.625rem;
+}
+
 .chips {
-  margin: 1rem 0 0;
-  max-width: 100%;
+  /* Cancels the body's inline padding with no padding of its own, so the card
+   * itself reaches both screen edges. The chip row then clips at the edge of
+   * the phone, which reads as "this scrolls" — inset in the column it clipped
+   * mid-card and read as broken. */
+  margin: 0 -1rem;
+  max-width: none;
+  /* The carousel inside scrolls itself; this only stops a stray overflow from
+   * ever reaching the page and giving the whole document a sideways scroll. */
+  overflow: hidden;
 }
 
 /* ---------- motion ---------- */
