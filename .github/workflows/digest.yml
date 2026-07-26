@@ -58,6 +58,13 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # git tracks files, not directories, so data/ is absent from a fresh
+          # checkout until the first digest is written -- and a run that fails
+          # before write_digest never creates it. `git add` on a missing
+          # pathspec is a fatal error, which would kill this step and take the
+          # honest stale page down with it. mkdir first so the fallback always
+          # gets committed, which is the whole point of `if: always()` here.
+          mkdir -p data docs followed
           git add data docs followed
           git diff --cached --quiet || git commit -m "digest: $(date -u +%F)"
           # The issue-triggered follow workflow can commit between this job's
