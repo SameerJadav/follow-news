@@ -125,6 +125,43 @@ def _stories(n: int) -> str:
     return _plural(n, "story", "stories")
 
 
+# 180 words per minute, not the 240 a reading-time widget usually assumes.
+# product.md's reader is non-native and reads this at breakfast; a number that
+# flatters the digest is the same kind of lie as one that undersells it.
+_WPM = 180
+
+
+def _read_minutes(day: dict) -> int:
+    """Whole minutes to read the day, measured from the prose actually on the
+    page. Returns 0 for a day with no stories, so the masthead can leave the
+    clause out rather than promise a minute of nothing."""
+    words = sum(len(str(s.get("body") or "").split()) for s in day.get("stories") or [])
+    if not words:
+        return 0
+    return max(1, round(words / _WPM))
+
+
+def _masthead_html(day: dict, back: str) -> str:
+    """The digest masthead: nameplate, dateline, then a folio line carrying the
+    day's size. Reading it top to bottom answers "what is this", "when is it"
+    and "how much is there" before a single headline is met — and the size is
+    measured from the stories, never estimated."""
+    minutes = _read_minutes(day)
+    count = len(day.get("stories") or [])
+    n, word = _stories(count).split(" ", 1)
+
+    right = f"{minutes} min read" if minutes else "&nbsp;"
+    return (
+        '<header class="plate">'
+        '<h1 class="plate-name">Follow</h1>'
+        f'<p class="plate-date">{esc(str(day.get("date_label") or day.get("date") or ""))}</p>'
+        f"{back}"
+        "</header>"
+        f'<div class="folio"><span><b>{esc(n)}</b> {esc(word)}</span>'
+        f"<span>{right}</span></div>"
+    )
+
+
 def _accepted_markers(body: str, markers: list[dict]) -> list[dict]:
     """Markers that can be spliced into `body` without corrupting it.
 
@@ -354,10 +391,22 @@ def _suggestions_html(raw: str) -> str:
     verbatim in followed/*.json — never user input, never touched here. This
     is the one place in the codebase that emits HTML that isn't escaped or
     built from `esc()`; modifying it would violate the Terms this feature
-    depends on."""
+    depends on.
+
+    The widget arrives as a self-contained card carrying its own stylesheet, so
+    it will always be a foreign object on this page. What it does not arrive
+    with is any statement of what it is — just a Google mark and a row of
+    pills. The standing head below is ours, sits outside the widget, and leaves
+    Google's markup byte-for-byte untouched; it gives the card a reason to be
+    there instead of leaving it stranded under the source list."""
     if not raw:
         return ""
-    return f'<div class="chips">{raw}</div>'
+    return (
+        '<section class="suggest" aria-label="Search suggestions from Google">'
+        '<h4 class="kicker">Search these on Google</h4>'
+        f'<div class="chips">{raw}</div>'
+        "</section>"
+    )
 
 
 def _grounded_html(block: dict) -> str:
@@ -506,9 +555,14 @@ def _following_row(records: list[dict], today: date) -> str:
     )
     new_html = f'<span class="new">{new_count} new today</span>' if new_count else ""
     label = "story" if len(active) == 1 else "stories"
+    # Exactly two children. Bare text beside the <b> would each become its own
+    # anonymous flex item, and space-between would then spread "Following", "1"
+    # and "story" across the whole row.
     return (
         '<a class="following-row" href="following.html">'
-        f"Following <b>{len(active)}</b> {label}{new_html}</a>"
+        "<span>Following</span>"
+        f'<span class="following-count"><b>{len(active)}</b> {label}{new_html}</span>'
+        "</a>"
     )
 
 
@@ -538,10 +592,14 @@ def _follow_close_html(record: dict) -> str:
 
 def _follow_page(record: dict, head: str = _HEAD) -> str:
     """A followed story: the full-picture backstory, then the timeline
-    oldest-first so it grows the picture downward, then a hard close. Same
-    <head>, masthead pattern and bottom sheet as a digest day page, so
-    typography, source markers and pronunciation behave identically —
-    Follow only adds content, never a second design."""
+    oldest-first so it grows the picture downward, then a hard close.
+
+    The masthead says what the page is ("Followed story") rather than repeating
+    the headline, and carries the way back to today on the same row — the same
+    shape as the archive and Following pages. The story's own title then opens
+    the page as its heading. Same <head> and bottom sheet as a digest day page,
+    so typography, source markers and pronunciation behave identically; Follow
+    only adds content, never a second design."""
     title = str(record.get("title") or "")
     backstory = record.get("backstory") or {}
     entries = record.get("timeline") or []
@@ -561,7 +619,8 @@ def _follow_page(record: dict, head: str = _HEAD) -> str:
 {head}
 </head>
 <body>
-<header class="mast"><h1 class="day follow-hd">{esc(title)}</h1><a class="back" href="index.html">Today</a></header>
+<header class="mast"><h1 class="day">Followed story</h1><a class="back" href="index.html">Today</a></header>
+<h2 class="follow-title">{esc(title)}</h2>
 {_follow_status_html(record)}
 <h3 class="kicker">The full picture</h3>
 {_grounded_html(backstory)}
@@ -648,6 +707,9 @@ def _page(
         _section_html(key, grouped[key], day, followed_index) for key in SECTION_ORDER
     )
 
+    # Masthead order is deliberate: what this is, when, how much, then the
+    # sections to switch between, then Follow. The stale notice sits directly
+    # under the folio because it corrects the folio's claim about the day.
     return f"""<!doctype html>
 <html lang="en">
 <head>
@@ -655,10 +717,10 @@ def _page(
 {head}
 </head>
 <body>
-<header class="mast"><h1 class="day">{esc(date_label)}</h1>{back}</header>
+{_masthead_html(day, back)}
 {stale}
-{following_row}
 {_tabs_html(counts)}
+{following_row}
 {sections}
 <a class="archive-link" href="archive.html">Past days</a>
 {_SHEET_HTML}
