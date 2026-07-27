@@ -1566,6 +1566,50 @@ def _concat(blocks: list[dict]) -> dict:
     }
 
 
+def write_groups(entries: list[dict]) -> list[list[dict]]:
+    """Phases coalesced into chunks each worth spending a call on.
+
+    assign_phases splits on 14-day quiet stretches, which is the right shape
+    for the narrative but the wrong unit of work. A real ledger has a long
+    tail of phases holding one entry each — issue #3's first run produced
+    eight phases, five of them a single entry — and a one-entry phase cannot
+    clear MIN_BODY_WORDS or MIN_MARKERS. Writing it would spend a call to
+    produce prose the gate then rejects, and the entry would vanish from the
+    page with it.
+
+    So adjacent phases accumulate in date order until a group is big enough
+    to write, and the tail is folded into the previous group rather than left
+    to fail alone."""
+    phases: dict[str, list[dict]] = {}
+    for e in entries:
+        phases.setdefault(str(e.get("phase") or "undated"), []).append(e)
+
+    def _key(name: str) -> str:
+        return min((str(e.get("date") or "9999") for e in phases[name]), default="9999")
+
+    groups: list[list[dict]] = []
+    current: list[dict] = []
+    for name in sorted(phases, key=_key):
+        block = phases[name]
+        # Close the group BEFORE overshooting, not after: appending first and
+        # checking afterwards lets one large phase land on top of a nearly-full
+        # group and produce a single enormous call, which is the exact thing
+        # phased writing exists to avoid.
+        if current and len(current) + len(block) > PHASED_WRITE_ENTRIES:
+            groups.append(current)
+            current = []
+        current.extend(block)
+        while len(current) > PHASED_WRITE_ENTRIES:
+            groups.append(current[:PHASED_WRITE_ENTRIES])
+            current = current[PHASED_WRITE_ENTRIES:]
+    if current:
+        if groups and len(current) < PHASED_WRITE_ENTRIES // 2:
+            groups[-1].extend(current)  # a short tail rides with the group before it
+        else:
+            groups.append(current)
+    return groups
+
+
 def _write_call(dsr: dict, budget: Budget, entries: list[dict], system: str, label: str) -> dict | None:
     prompt = (
         f"STORY: {dsr['subject']}\n\n"
@@ -1601,24 +1645,23 @@ def write_backstory(followed_dir: Path, issue: int, dsr: dict, corpus: dict, bud
         return block
 
     # Phased: each call stays small and no phase gets squeezed. Gated per
-    # phase, so one thin phase fails alone instead of taking the whole piece
+    # group, so one thin stretch fails alone instead of taking the whole piece
     # down with it.
-    phases: dict[str, list[dict]] = {}
-    for e in entries:
-        phases.setdefault(str(e.get("phase") or "undated"), []).append(e)
+    groups = write_groups(entries)
+    dbg(f"dossier: #{issue} writing {len(entries)} entries as {len(groups)} group(s)")
     blocks = []
-    for name in sorted(phases):
+    for i, group in enumerate(groups, start=1):
         block = _write_call(
-            dsr, budget, phases[name], _WRITE_SYSTEM, f"dossier-{issue}-write-{name}"
+            dsr, budget, group, _WRITE_SYSTEM, f"dossier-{issue}-write-{i}"
         )
         save(followed_dir, issue, dsr, corpus, "WRITE")
         if block is not None:
             blocks.append(block)
         else:
-            dbg(f"dossier: #{issue} phase {name} failed its gate; continuing with the rest")
+            dbg(f"dossier: #{issue} write group {i}/{len(groups)} failed its gate; continuing")
     if not blocks:
         return None
-    dbg(f"dossier: #{issue} wrote {len(blocks)} phase(s)")
+    dbg(f"dossier: #{issue} wrote {len(blocks)}/{len(groups)} group(s)")
     return _concat(blocks)
 
 

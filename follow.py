@@ -483,12 +483,19 @@ def _sweep(
             if dossier.needs_research(dsr):
                 state = dossier.research(followed_dir, n, dsr, corpus, budget)
                 if state in ("complete", "capped"):
-                    block = dossier.write_backstory(followed_dir, n, dsr, corpus, budget)
-                    if block is not None:
-                        record["backstory"] = {**block, "generated_at": _iso(_now())}
-                        dsr["written_through"] = dsr["rounds"]
-                        touched.append(n)
+                    _write_picture(followed_dir, n, record, dsr, corpus, budget)
+                    touched.append(n)
                 dossier.save(followed_dir, n, dsr, corpus, "DONE")
+            elif not (record.get("backstory") or {}).get("body"):
+                # Research finished but the prose did not — the write pass was
+                # interrupted, or every group failed its gate. Retry the WRITE,
+                # never fall through to the update pass: an update would append
+                # a timeline entry and leave "The full picture" empty forever,
+                # on a story whose ledger is already complete.
+                dbg(f"follow: #{n} -> research done but no prose; retrying the write pass")
+                _write_picture(followed_dir, n, record, dsr, corpus, budget)
+                dossier.save(followed_dir, n, dsr, corpus, "DONE")
+                touched.append(n)
             else:
                 _update_follow(followed_dir, n, record, dsr, corpus, today, budget)
                 touched.append(n)
@@ -502,6 +509,26 @@ def _sweep(
             dossier.save(followed_dir, n, dsr, corpus, dsr["checkpoint"]["stage"])
 
     return touched
+
+
+def _write_picture(
+    followed_dir: Path,
+    n: int,
+    record: dict,
+    dsr: dict,
+    corpus: dict,
+    budget: dossier.Budget,
+) -> None:
+    """Write (or rewrite) a followed story's full picture from its ledger.
+
+    Prose is regenerable and research is not, so this is safe to retry: it
+    costs one call per write group over a ledger that only ever grows."""
+    block = dossier.write_backstory(followed_dir, n, dsr, corpus, budget)
+    if block is None:
+        dbg(f"follow: #{n} -> write produced nothing publishable; the ledger is kept")
+        return
+    record["backstory"] = {**block, "generated_at": _iso(_now())}
+    dsr["written_through"] = dsr["rounds"]
 
 
 def _update_follow(

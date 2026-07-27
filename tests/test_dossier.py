@@ -608,3 +608,57 @@ def test_phases_split_on_a_long_quiet_stretch():
     phases = {e["phase"] for e in ledger}
     assert len(phases) > 1, "a seven-week gap must start a new phase"
     assert assign[0]["phase"] != assign[-1]["phase"]
+
+
+# ---------- grouping the write pass ----------
+
+
+def _phased(counts: list[int]) -> list[dict]:
+    out, n = [], 0
+    for i, c in enumerate(counts, start=1):
+        for _ in range(c):
+            n += 1
+            out.append({"id": n, "phase": f"phase-{i}", "date": f"2026-{i:02d}-01", "what": "x"})
+    return out
+
+
+def test_a_small_ledger_is_written_in_one_call():
+    assert len(dossier.write_groups(_phased([3, 4]))) == 1
+
+
+def test_single_entry_phases_never_become_their_own_call():
+    """assign_phases splits on 14-day quiet stretches, which produces a long
+    tail of one-entry phases on a real story — issue #3's first run made eight
+    phases, five of them a single entry. A one-entry group cannot clear
+    MIN_BODY_WORDS or MIN_MARKERS, so writing it spends a call to produce
+    prose the gate throws away, taking the entry off the page with it."""
+    groups = dossier.write_groups(_phased([1, 1, 1, 1, 1, 15, 2, 35]))
+    assert all(len(g) >= 2 for g in groups)
+    assert len(groups) < 8, "eight phases must not become eight calls"
+
+
+def test_one_large_phase_is_split_rather_than_sent_as_a_single_huge_call():
+    groups = dossier.write_groups(_phased([80]))
+    assert len(groups) > 1
+    assert all(len(g) <= dossier.PHASED_WRITE_ENTRIES * 1.5 for g in groups)
+
+
+def test_a_short_tail_rides_with_the_group_before_it():
+    """Better a group slightly over the cap than a stub that fails its gate."""
+    groups = dossier.write_groups(_phased([30, 3]))
+    assert len(groups) == 1
+    assert len(groups[0]) == 33
+
+
+def test_grouping_never_loses_or_duplicates_an_entry():
+    entries = _phased([1, 1, 1, 15, 2, 35, 4])
+    groups = dossier.write_groups(entries)
+    seen = [e["id"] for g in groups for e in g]
+    assert sorted(seen) == sorted(e["id"] for e in entries)
+    assert len(seen) == len(set(seen))
+
+
+def test_the_write_reserve_covers_the_groups_it_will_need():
+    for counts in ([5], [30, 3], [1, 1, 1, 15, 2, 35], [80]):
+        entries = _phased(counts)
+        assert dossier.write_reserve(entries) >= len(dossier.write_groups(entries))
