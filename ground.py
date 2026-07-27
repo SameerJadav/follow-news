@@ -61,6 +61,18 @@ from feeds import UA
 from tracer import dbg
 
 GROUND_MODEL = "gemini-2.5-flash"  # verified working with google_search; 2.5 Pro is limit:0 on this free tier
+
+# The free tier meters per model, not per project: the quota that bites is
+# `GenerateRequestsPerDayPerProjectPerModel-FreeTier`, ~20 requests a day EACH.
+# So a tool-less pass costs nothing from the grounded pool if it runs on a
+# different model, and dossier.py's ledger and write passes use no tools at
+# all. Pointing them at the digest's model roughly doubles what Follow can do
+# in a day instead of leaving a whole pool idle — the digest itself only ever
+# spends 3-4 of its 20.
+#
+# Safe if that assumption is ever wrong: sharing one pool would just mean the
+# same total spend, never more, and both budgets in dossier.py stay bounded.
+SCHEMA_MODEL = "gemini-3.6-flash"  # matches llm.MODEL; no tools, so no grounding requirement
 MAX_OUTPUT_TOKENS = 8192
 # url_context puts whole pages into the request, and gemini-2.5-flash spends
 # output tokens on thinking before it writes anything. Measured 2026-07-27: the
@@ -133,6 +145,9 @@ def _generate(
     if urls:
         tools.append(types.Tool(url_context=types.UrlContext()))
 
+    # Which model, and therefore which daily pool, this call spends from.
+    model = GROUND_MODEL if tools else SCHEMA_MODEL
+
     config = types.GenerateContentConfig(
         tools=tools or None,
         system_instruction=system,
@@ -142,10 +157,10 @@ def _generate(
     )
     _CALLS += 1
     mode = f"search={search} urls={len(urls or [])} schema={schema is not None}"
-    dbg(f"ground: call #{_CALLS} model={GROUND_MODEL} label={label} prompt={len(prompt)}ch {mode}")
+    dbg(f"ground: call #{_CALLS} model={model} label={label} prompt={len(prompt)}ch {mode}")
     started = time.monotonic()
     resp = ratelimit.call_with_resume(
-        lambda: client.models.generate_content(model=GROUND_MODEL, contents=prompt, config=config),
+        lambda: client.models.generate_content(model=model, contents=prompt, config=config),
         label,
     )
     latency_ms = int((time.monotonic() - started) * 1000)
@@ -172,7 +187,7 @@ def _generate(
         "ground",
         call=_CALLS,
         label=label,
-        model=GROUND_MODEL,
+        model=model,
         latency_ms=latency_ms,
         prompt_chars=len(prompt),
         response_chars=len(resp.text or ""),

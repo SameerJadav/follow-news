@@ -58,13 +58,32 @@ from tracer import dbg
 
 # ---------- dials (dossier.md §15) ----------
 
+# The free tier meters ~20 requests per day PER MODEL
+# (`GenerateRequestsPerDayPerProjectPerModel-FreeTier`), so there are two
+# pools, not one:
+#
+#   grounded pool  gemini-2.5-flash   Passes B, C, D, G          — Follow only
+#   schema pool    gemini-3.6-flash   Pass E, the write passes   — shared with
+#                                                                  the digest
+#
+# The digest spends 3-4 of the schema pool every morning, so Follow leaves it
+# room. Sized to spend a full day's grounded allowance rather than leaving any
+# of it unused: at ~3 grounded calls a round that is five or six rounds a day,
+# where the first live run managed three before it ran out.
+MAX_GROUNDED_CALLS_PER_DAY = 18  # of ~20, leaving slack for a retry
+MAX_SCHEMA_CALLS_PER_DAY = 14  # of ~20, leaving the digest its 3-4 plus slack
+
 QUESTIONS_PER_ROUND = 10  # how many frontier questions a round pops
-QUESTIONS_PER_CALL = 3  # Pass C batch size; narrow scope is what makes queries narrow
-MAX_ROUNDS = 6
+# Five per call, not three: at 18 grounded calls a day, a round that spends
+# four of them on searching alone gets through barely two rounds. Grouped by
+# checklist dimension (see batch_questions), so a batch is still one topic
+# asked five ways rather than five unrelated questions blurring one search.
+QUESTIONS_PER_CALL = 5
+MAX_ROUNDS = 8
+CRITIC_EVERY = 2  # run the completeness critic every Nth round, not every round
 SATURATION_ENTRIES = 3  # a round adding fewer than this is a lean round
 SATURATION_ROUNDS = 2  # ...this many lean rounds in a row ends research
-MAX_CALLS_PER_FOLLOW = 40  # hard ceiling on one follow's lifetime research
-MAX_RESEARCH_CALLS_PER_DAY = 40  # ceiling on recurring cost across all follows
+MAX_CALLS_PER_FOLLOW = 60  # lifetime ceiling; a big story spans days, bounded per day
 MAX_QUESTION_DEPTH = 3  # branch depth before a line of enquiry is cut
 MIN_QUESTION_SCORE = 0.45  # relevance floor for entering the frontier
 MAX_URLS_PER_CONTEXT_CALL = 20  # url_context API maximum
@@ -602,7 +621,7 @@ def is_readable(dsr: dict | None) -> bool:
 
 
 class Budget:
-    """One run's Gemini allowance, shared across every follow.
+    """One day's Gemini allowance, shared across every follow — two pools.
 
     §12 gives each active follow its own research instead of one call batched
     across all of them, so recurring cost now scales with the number of
@@ -610,28 +629,47 @@ class Budget:
     matches neither of load_all()'s glob patterns and so is structurally
     invisible to record loading.
 
+    Two counters because the free tier meters per model. A grounded search and
+    a schema-only ledger call come out of different daily allowances, and
+    counting them together would idle half the capacity — the first live run
+    stopped at three rounds with an entire second pool untouched.
+
     No locking: digest.yml, follow.yml and render.yml all share
     `concurrency: group: pages` with cancel-in-progress false, so GitHub
     already guarantees these never run at once."""
 
-    def __init__(self, path: Path, cap: int = MAX_RESEARCH_CALLS_PER_DAY) -> None:
+    def __init__(
+        self,
+        path: Path,
+        cap: int = MAX_GROUNDED_CALLS_PER_DAY,
+        schema_cap: int = MAX_SCHEMA_CALLS_PER_DAY,
+    ) -> None:
         self.path = path
         self.cap = cap
+        self.schema_cap = schema_cap
         try:
             state = json.loads(path.read_text())
         except (OSError, ValueError):
             state = {}
         self.spent = int(state.get("spent", 0))
+        self.schema_spent = int(state.get("schema_spent", 0))
         self.day_quota_hit = bool(state.get("daily_quota_exhausted", False))
+        self.schema_quota_hit = bool(state.get("schema_quota_exhausted", False))
         self.spends: list[dict] = list(state.get("spends") or [])
         self.deferred: list[dict] = list(state.get("deferred") or [])
 
     def remaining(self) -> int:
         return max(0, self.cap - self.spent)
 
-    def spend(self, issue: int, n: int = 1) -> None:
-        self.spent += n
-        self.spends.append({"issue": issue, "calls": n, "at": _now_iso()})
+    def schema_remaining(self) -> int:
+        return max(0, self.schema_cap - self.schema_spent)
+
+    def spend(self, issue: int, n: int = 1, *, pool: str = "grounded") -> None:
+        if pool == "schema":
+            self.schema_spent += n
+        else:
+            self.spent += n
+        self.spends.append({"issue": issue, "calls": n, "pool": pool, "at": _now_iso()})
         self.save()
 
     def defer(self, issue: int, reason: str) -> None:
@@ -640,9 +678,19 @@ class Budget:
         tracer.event("dossier", issue=issue, verdict="deferred", reason=reason)
         self.save()
 
-    def mark_daily_quota(self) -> None:
-        self.day_quota_hit = True
+    def mark_daily_quota(self, pool: str = "grounded") -> None:
+        """One pool being exhausted says nothing about the other — the limit is
+        per model. Marking both would idle capacity that is still there."""
+        if pool == "schema":
+            self.schema_quota_hit = True
+        else:
+            self.day_quota_hit = True
         self.save()
+
+    def exhausted(self, pool: str = "grounded") -> bool:
+        if pool == "schema":
+            return self.schema_quota_hit or self.schema_remaining() <= 0
+        return self.day_quota_hit or self.remaining() <= 0
 
     def save(self) -> None:
         try:
@@ -652,7 +700,10 @@ class Budget:
                     {
                         "cap": self.cap,
                         "spent": self.spent,
+                        "schema_cap": self.schema_cap,
+                        "schema_spent": self.schema_spent,
                         "daily_quota_exhausted": self.day_quota_hit,
+                        "schema_quota_exhausted": self.schema_quota_hit,
                         "spends": self.spends,
                         "deferred": self.deferred,
                     },
@@ -886,23 +937,25 @@ If the ledger genuinely looks complete, output nothing at all."""
 # ---------- call accounting ----------
 
 
-def _afford(dsr: dict, budget: Budget, reserve: int) -> bool:
-    """Whether one more RESEARCH call is affordable. `reserve` is held back for
-    the write pass so a dossier can never research itself into a state it
-    cannot publish."""
-    if budget.day_quota_hit:
-        return False
-    if budget.remaining() <= 0:
+def _afford(dsr: dict, budget: Budget, reserve: int, pool: str = "grounded") -> bool:
+    """Whether one more RESEARCH call is affordable from `pool`.
+
+    `reserve` is held back against the LIFETIME ceiling so a dossier can never
+    research itself into a state it cannot publish. The write pass draws on the
+    schema pool, so a grounded round is only ever blocked by grounded quota."""
+    if budget.exhausted(pool):
         return False
     return dsr["calls"] + reserve < MAX_CALLS_PER_FOLLOW
 
 
-def _spend(dsr: dict, budget: Budget) -> None:
+def _spend(dsr: dict, budget: Budget, pool: str = "grounded") -> None:
     dsr["calls"] += 1
-    budget.spend(int(dsr["issue"]))
+    dsr.setdefault("calls_by_pool", {"grounded": 0, "schema": 0})
+    dsr["calls_by_pool"][pool] = dsr["calls_by_pool"].get(pool, 0) + 1
+    budget.spend(int(dsr["issue"]), pool=pool)
 
 
-def _guarded(fn, dsr: dict, budget: Budget):
+def _guarded(fn, dsr: dict, budget: Budget, pool: str = "grounded"):
     """Run one Gemini call, converting a day-scoped 429 into a clean stop.
 
     ratelimit.call_with_resume already waits out a minute-scoped 429 and
@@ -916,9 +969,12 @@ def _guarded(fn, dsr: dict, budget: Budget):
         return fn()
     except Exception as exc:  # noqa: BLE001 - classified immediately below
         if ratelimit.is_daily_quota(exc):
-            dbg(f"dossier: #{dsr['issue']} daily quota exhausted; checkpointing and stopping")
-            budget.mark_daily_quota()
-            raise DailyQuotaExhausted from exc
+            dbg(
+                f"dossier: #{dsr['issue']} {pool} daily quota exhausted "
+                f"{ratelimit.quota_facts(exc)}; checkpointing"
+            )
+            budget.mark_daily_quota(pool)
+            raise DailyQuotaExhausted(pool) from exc
         raise
 
 
@@ -1195,8 +1251,9 @@ def pass_e(dsr: dict, corpus: dict, budget: Budget, material: list[str], fresh_u
         ),
         dsr,
         budget,
+        "schema",
     )
-    _spend(dsr, budget)
+    _spend(dsr, budget, "schema")
     if not isinstance(payload, dict):
         return 0
 
@@ -1320,8 +1377,10 @@ def research(followed_dir: Path, issue: int, dsr: dict, corpus: dict, budget: Bu
     while dsr["rounds"] < MAX_ROUNDS:
         reserve = write_reserve(dsr["ledger"])
         if not _afford(dsr, budget, reserve):
-            reason = "daily_quota" if budget.day_quota_hit else (
-                "day_budget" if budget.remaining() <= 0 else "call_ceiling"
+            reason = (
+                "daily_quota" if budget.day_quota_hit
+                else "day_budget" if budget.remaining() <= 0
+                else "call_ceiling"
             )
             if reason == "call_ceiling":
                 dsr["research_state"] = "capped"
@@ -1371,16 +1430,18 @@ def research(followed_dir: Path, issue: int, dsr: dict, corpus: dict, budget: Bu
             u for u, v in corpus.items() if v.get("via") == "extract"
         ][:MAX_FETCH_PER_ROUND]
 
-        if _afford(dsr, budget, reserve):
+        if _afford(dsr, budget, reserve, "schema"):
             pass_e(dsr, corpus, budget, material, list(dict.fromkeys(fresh_urls)))
             save(followed_dir, issue, dsr, corpus, "E")
+        else:
+            dbg(f"dossier: #{issue} skipped Pass E — schema pool exhausted")
 
         dsr["ledger"] = assign_phases(dsr["ledger"])
         admit(dsr["questions"], gap_questions(dsr["ledger"], dsr["span"]))
         admit(dsr["questions"], entity_asymmetry_questions(dsr["entities"]))
         admit(dsr["questions"], role_questions(dsr["ledger"], dsr["entities"]))
 
-        if _afford(dsr, budget, reserve):
+        if dsr["rounds"] % CRITIC_EVERY == 0 and _afford(dsr, budget, reserve):
             pass_g(dsr, budget)
             save(followed_dir, issue, dsr, corpus, "G")
 
@@ -1616,9 +1677,9 @@ def _write_call(dsr: dict, budget: Budget, entries: list[dict], system: str, lab
         f"LEDGER ENTRIES — cite each with its [eN] marker:\n{_entry_lines(entries)}"
     )
     payload = _guarded(
-        lambda: ground.structured(prompt, system, label, _WRITE_SCHEMA), dsr, budget
+        lambda: ground.structured(prompt, system, label, _WRITE_SCHEMA), dsr, budget, "schema"
     )
-    _spend(dsr, budget)
+    _spend(dsr, budget, "schema")
     if not isinstance(payload, dict):
         return None
     return _compose(entries, str(payload.get("body") or ""))
@@ -1635,6 +1696,12 @@ def write_backstory(followed_dir: Path, issue: int, dsr: dict, corpus: dict, bud
     entries = [e for e in dsr["ledger"] if e.get("phase") != "off-subject"]
     if not entries:
         dbg(f"dossier: #{issue} nothing in the ledger to write from")
+        return None
+    if budget.exhausted("schema"):
+        # The ledger is safe on disk and prose is regenerable, so a later run
+        # writes it. Publishing half a picture would be worse than waiting.
+        dbg(f"dossier: #{issue} schema pool exhausted; deferring the write")
+        budget.defer(issue, "schema_pool_for_write")
         return None
 
     if len(entries) <= PHASED_WRITE_ENTRIES:

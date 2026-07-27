@@ -114,8 +114,8 @@ job), `render.yml` (push-triggered re-render, no API key), `follow.yml`
   text is fetched only for what selection chose; claims and writing are each
   one batched call. This is the digest's budget alone; Follow's research runs
   in a separate process under its own budget (see the Follow invariant below),
-  and the two share one free-tier key, which is why
-  `MAX_RESEARCH_CALLS_PER_DAY` has to leave the digest room.
+  and the two share one free-tier key — which is why Follow's schema pool
+  leaves the digest room (see the per-model quota note below).
 - The write pass sees **claims only, never raw article text** — a fact that
   isn't an anchored claim has no way into the prose. Numbers are never
   averaged or blended across sources; two disagreeing figures become two
@@ -129,9 +129,20 @@ job), `render.yml` (push-triggered re-render, no API key), `follow.yml`
 - **Follow's quota is bounded by budgets, not by batching** (`dossier.md` §14,
   signed off 2026-07-27 — see `calibration.md`). The old rule was "one grounded
   call batched across all active follows"; that is gone. In its place, in
-  order: `MAX_CALLS_PER_FOLLOW`, `MAX_RESEARCH_CALLS_PER_DAY` spent
-  stalest-first with deferrals recorded, the saturation exit, checkpointed
-  resumption, and `MAX_NEW_FOLLOWS_PER_RUN = 1`.
+  order: `MAX_CALLS_PER_FOLLOW`, the two daily pools spent stalest-first with
+  deferrals recorded, the saturation exit, checkpointed resumption, and
+  `MAX_NEW_FOLLOWS_PER_RUN = 1`.
+- **The free tier meters per MODEL, so there are two daily pools, not one.**
+  The quota that bites is `GenerateRequestsPerDayPerProjectPerModel-FreeTier`
+  ≈ **20 requests/day each** (RPM is 5). `ground.GROUND_MODEL`
+  (`gemini-2.5-flash`) carries every call that uses a tool — the grounded
+  searches and `url_context` reads. `ground.SCHEMA_MODEL`
+  (`gemini-3.6-flash`, the same model `llm.py` uses) carries every tool-less
+  one — Pass E's ledger and the write passes. Splitting them roughly doubles
+  what Follow can do in a day instead of leaving a whole pool idle, and
+  `dossier.Budget` meters the two separately: exhausting one must never stop
+  work that would draw on the other. The digest spends 3–4 of the schema pool
+  each morning, which is why `MAX_SCHEMA_CALLS_PER_DAY` leaves it room.
 - **The dossier is append-only.** Entries are corrected and merged, never
   silently dropped — whatever a reader saw yesterday is still accounted for
   today. A duplicate event from a second outlet raises `outlet_count`; two
@@ -220,7 +231,9 @@ job), `render.yml` (push-triggered re-render, no API key), `follow.yml`
 | `MAX_NEW_FOLLOWS_PER_RUN` | `follow.py` | new follows started per run (1 — a burst of requests must not stack research bursts) |
 | `QUESTIONS_PER_ROUND`, `QUESTIONS_PER_CALL` | `dossier.py` | how many frontier questions a round pops, and how many share one grounded call |
 | `MAX_ROUNDS`, `SATURATION_ENTRIES`, `SATURATION_ROUNDS` | `dossier.py` | the loop-until-dry threshold |
-| `MAX_CALLS_PER_FOLLOW`, `MAX_RESEARCH_CALLS_PER_DAY` | `dossier.py` | one follow's lifetime ceiling, and the shared daily one |
+| `MAX_CALLS_PER_FOLLOW` | `dossier.py` | one follow's lifetime ceiling, across days |
+| `MAX_GROUNDED_CALLS_PER_DAY`, `MAX_SCHEMA_CALLS_PER_DAY` | `dossier.py` | the two daily pools — see the per-model quota note below |
+| `CRITIC_EVERY` | `dossier.py` | how often the completeness critic spends a grounded call |
 | `MAX_QUESTION_DEPTH`, `MIN_QUESTION_SCORE` | `dossier.py` | the drift guards on recursive research |
 | `GAP_DENSITY_RATIO` | `dossier.py` | how sparse a week must be to raise a gap question |
 | `MIN_ENTRY_COVERAGE` | `dossier.py` | share of the ledger the prose must actually cite |

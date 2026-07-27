@@ -355,7 +355,7 @@ def test_research_stops_before_it_can_starve_the_write_pass():
     assert dossier._afford(dsr, budget, reserve) is True
 
 
-def _budget(tmp_path=None, cap: int = dossier.MAX_RESEARCH_CALLS_PER_DAY) -> dossier.Budget:
+def _budget(tmp_path=None, cap: int = dossier.MAX_GROUNDED_CALLS_PER_DAY) -> dossier.Budget:
     import tempfile
     root = tmp_path or __import__("pathlib").Path(tempfile.mkdtemp())
     return dossier.Budget(root / "_budget" / "2026-07-27.json", cap=cap)
@@ -385,7 +385,7 @@ def test_a_deferral_is_recorded_never_silent(tmp_path):
 
 
 def test_a_daily_quota_hit_blocks_every_follow_not_just_the_one(tmp_path):
-    budget = dossier.Budget(tmp_path / "b.json", cap=40)
+    budget = dossier.Budget(tmp_path / "b.json", cap=18)
     budget.mark_daily_quota()
     assert dossier._afford(dossier.new_dossier(1, "s"), budget, 3) is False
     assert dossier.Budget(tmp_path / "b.json", cap=40).day_quota_hit is True
@@ -397,7 +397,7 @@ def test_a_perday_429_becomes_a_clean_stop_not_a_crash(tmp_path):
     instead of every remaining follow rediscovering it."""
     import pytest
 
-    budget = dossier.Budget(tmp_path / "b.json", cap=40)
+    budget = dossier.Budget(tmp_path / "b.json", cap=18)
     dsr = dossier.new_dossier(1, "s")
 
     class _Quota(Exception):
@@ -415,7 +415,7 @@ def test_a_perday_429_becomes_a_clean_stop_not_a_crash(tmp_path):
 def test_an_ordinary_failure_is_not_swallowed_as_a_quota_stop(tmp_path):
     import pytest
 
-    budget = dossier.Budget(tmp_path / "b.json", cap=40)
+    budget = dossier.Budget(tmp_path / "b.json", cap=18)
     dsr = dossier.new_dossier(1, "s")
 
     def boom():
@@ -662,3 +662,84 @@ def test_the_write_reserve_covers_the_groups_it_will_need():
     for counts in ([5], [30, 3], [1, 1, 1, 15, 2, 35], [80]):
         entries = _phased(counts)
         assert dossier.write_reserve(entries) >= len(dossier.write_groups(entries))
+
+
+# ---------- the two daily pools ----------
+
+
+def test_the_two_pools_are_metered_separately(tmp_path):
+    """The free tier meters per MODEL, so a grounded search and a schema-only
+    ledger call come out of different daily allowances. Counting them together
+    idles half the capacity — the first live run stopped at three rounds with
+    an entire second pool untouched."""
+    b = dossier.Budget(tmp_path / "b.json", cap=4, schema_cap=3)
+    for _ in range(4):
+        b.spend(1, pool="grounded")
+
+    assert b.exhausted("grounded") is True
+    assert b.exhausted("schema") is False, "grounded exhaustion must not block the ledger or the write"
+    assert b.schema_remaining() == 3
+
+
+def test_exhausting_one_pool_leaves_the_other_usable(tmp_path):
+    b = dossier.Budget(tmp_path / "b.json", cap=4, schema_cap=3)
+    b.mark_daily_quota("grounded")
+    assert b.exhausted("grounded") is True
+    assert b.exhausted("schema") is False
+
+    dsr = dossier.new_dossier(1, "s")
+    assert dossier._afford(dsr, b, 3, "grounded") is False
+    assert dossier._afford(dsr, b, 3, "schema") is True
+
+
+def test_both_pools_persist_across_runs(tmp_path):
+    b = dossier.Budget(tmp_path / "b.json", cap=10, schema_cap=8)
+    b.spend(1, pool="grounded")
+    b.spend(1, pool="schema")
+    b.spend(1, pool="schema")
+
+    again = dossier.Budget(tmp_path / "b.json", cap=10, schema_cap=8)
+    assert again.spent == 1
+    assert again.schema_spent == 2
+    assert again.remaining() == 9
+    assert again.schema_remaining() == 6
+
+
+def test_a_pool_quota_hit_names_the_pool_it_hit(tmp_path):
+    import pytest
+
+    b = dossier.Budget(tmp_path / "b.json", cap=10, schema_cap=8)
+    dsr = dossier.new_dossier(1, "s")
+
+    class _Quota(Exception):
+        code = 429
+        details = {"error": {"details": [{"violations": [
+            {"quotaId": "GenerateRequestsPerDayPerProjectPerModel-FreeTier", "quotaValue": "20"}]}]}}
+
+    def boom():
+        raise _Quota("429 RESOURCE_EXHAUSTED PerDay")
+
+    with pytest.raises(dossier.DailyQuotaExhausted):
+        dossier._guarded(boom, dsr, b, "schema")
+
+    assert b.schema_quota_hit is True
+    assert b.day_quota_hit is False, "the grounded pool is a different model and still has quota"
+
+
+def test_the_daily_pools_fit_inside_the_real_free_tier_ceiling():
+    """Measured 2026-07-27: ~20 requests per day per model. Dials that exceed
+    that guarantee a 429 mid-run instead of a clean stop."""
+    assert dossier.MAX_GROUNDED_CALLS_PER_DAY <= 20
+    assert dossier.MAX_SCHEMA_CALLS_PER_DAY <= 20
+    # The digest spends 3-4 of the schema pool every morning and must not be
+    # crowded out by Follow.
+    assert dossier.MAX_SCHEMA_CALLS_PER_DAY <= 16
+
+
+def test_a_round_fits_inside_one_days_grounded_pool():
+    """QUESTIONS_PER_ROUND questions at QUESTIONS_PER_CALL each, plus at most
+    one read and one critic, has to leave room for several rounds a day."""
+    import math
+    search_calls = math.ceil(dossier.QUESTIONS_PER_ROUND / dossier.QUESTIONS_PER_CALL)
+    per_round = search_calls + 1 + 1  # + url_context read + critic, worst case
+    assert dossier.MAX_GROUNDED_CALLS_PER_DAY // per_round >= 3, "fewer than 3 rounds a day is too slow"

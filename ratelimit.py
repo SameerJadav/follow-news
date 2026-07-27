@@ -85,9 +85,15 @@ def quota_facts(exc: Exception) -> str:
     429 is hit -- free-tier limits are unpublished and move without notice
     (research.md SS3.1)."""
     blob = _blob(exc)
-    ids = re.findall(r'"quotaId":\s*"([^"]+)"', blob)
-    values = re.findall(r'"quotaValue":\s*"([^"]+)"', blob)
-    metrics = re.findall(r'"quotaMetric":\s*"([^"]+)"', blob)
+    # Both quote styles, because the two places these strings come from differ:
+    # a raw HTTP body is JSON (double quotes), but google.genai puts the parsed
+    # payload on exc.details as a Python dict, and _blob() repr()s it into
+    # single quotes. Matching only JSON meant quota_facts() returned "" on every
+    # real 429 -- verified 2026-07-27, the one 429 this project has recorded
+    # logged `facts: ''` and taught us nothing about the actual limit.
+    ids = re.findall(r'["\']quotaId["\']:\s*["\']([^"\']+)["\']', blob)
+    values = re.findall(r'["\']quotaValue["\']:\s*["\']?(\d+)["\']?', blob)
+    metrics = re.findall(r'["\']quotaMetric["\']:\s*["\']([^"\']+)["\']', blob)
     facts = list(dict.fromkeys([*ids, *metrics]))
     if not facts and not values:
         return ""

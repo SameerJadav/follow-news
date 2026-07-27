@@ -341,12 +341,14 @@ def dials() -> dict[str, Any]:
         "follow": ("STALE_DAYS", "MAX_NEW_FOLLOWS_PER_RUN"),
         "dossier": ("QUESTIONS_PER_ROUND", "QUESTIONS_PER_CALL", "MAX_ROUNDS",
                     "SATURATION_ENTRIES", "SATURATION_ROUNDS", "MAX_CALLS_PER_FOLLOW",
-                    "MAX_RESEARCH_CALLS_PER_DAY", "MAX_QUESTION_DEPTH", "MIN_QUESTION_SCORE",
+                    "MAX_GROUNDED_CALLS_PER_DAY", "MAX_SCHEMA_CALLS_PER_DAY",
+                    "QUESTIONS_PER_CALL", "CRITIC_EVERY",
+                    "MAX_QUESTION_DEPTH", "MIN_QUESTION_SCORE",
                     "MAX_URLS_PER_CONTEXT_CALL", "MAX_FETCH_PER_ROUND", "PHASED_WRITE_ENTRIES",
                     "GAP_DENSITY_RATIO", "MIN_ENTRY_COVERAGE", "MERGE_SIMILARITY"),
         "ratelimit": ("WAIT_BUDGET_S",),
         "llm": ("MODEL", "MAX_OUTPUT_TOKENS", "MAX_JSON_RETRIES"),
-        "ground": ("GROUND_MODEL", "MAX_OUTPUT_TOKENS", "MAX_OUTPUT_TOKENS_LONG"),
+        "ground": ("GROUND_MODEL", "SCHEMA_MODEL", "MAX_OUTPUT_TOKENS", "MAX_OUTPUT_TOKENS_LONG"),
     }
     for mod_name, names in wanted.items():
         mod = sys.modules.get(mod_name)
