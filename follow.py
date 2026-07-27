@@ -26,7 +26,7 @@ resumes research, however much of its frontier is left.
 
 Quota is no longer protected by batching one grounded call across every active
 follow — dossier.md §14 replaces that with, in order: MAX_CALLS_PER_FOLLOW,
-MAX_RESEARCH_CALLS_PER_DAY spent stalest-first, the saturation exit,
+the per-model daily pools spent stalest-first, the saturation exit,
 checkpointed resumption, and MAX_NEW_FOLLOWS_PER_RUN dropped to 1. The owner
 signed that deviation off on 2026-07-27; see calibration.md.
 
@@ -439,8 +439,8 @@ def _sweep(
     Order matters and is a real choice: a page stuck saying "researching this
     story" is worse for a reader than a delayed one-line update, so unfinished
     research goes before daily updates. With MAX_CALLS_PER_FOLLOW equal to
-    MAX_RESEARCH_CALLS_PER_DAY, one new follow can legitimately consume the
-    whole day and defer everything else — logged, never silent.
+    the daily pools, one new follow can legitimately consume a whole day and
+    defer everything else — logged, never silent.
 
     Returns the issues whose prose changed, so run() knows what to re-render.
     """
@@ -463,15 +463,18 @@ def _sweep(
         dbg(f"follow: sweep -> nothing to research; {len(active)} active follow(s) all current")
         return []
 
-    dbg(f"follow: sweep -> {len(pending)} researching, {len(due)} due; budget {budget.remaining()}")
+    dbg(
+        f"follow: sweep -> {len(pending)} researching, {len(due)} due; "
+        f"budget grounded={budget.remaining()} schema={budget.schema_remaining()}"
+    )
     touched: list[int] = []
 
     for n in order:
-        if budget.day_quota_hit:
-            budget.defer(n, "daily_quota")
-            continue
-        if budget.remaining() <= 0:
-            budget.defer(n, "day_budget")
+        # Only a follow that can do NO useful work is deferred. One pool being
+        # empty still leaves the other: a dossier out of grounded calls can
+        # often still write the prose it already has evidence for.
+        if budget.exhausted("grounded") and budget.exhausted("schema"):
+            budget.defer(n, "both_pools_exhausted")
             continue
 
         dsr, corpus = dossier.load(followed_dir, n)

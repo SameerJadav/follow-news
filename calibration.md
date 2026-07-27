@@ -52,7 +52,8 @@ on top of the digest's three.
 The protection mechanism becomes, in order:
 
 1. `MAX_CALLS_PER_FOLLOW` — the one-time research burst is bounded
-2. `MAX_RESEARCH_CALLS_PER_DAY` — recurring cost across all follows, spent
+2. the two per-model daily pools (`MAX_GROUNDED_CALLS_PER_DAY`,
+   `MAX_SCHEMA_CALLS_PER_DAY`) — recurring cost across all follows, spent
    stalest-first, with every deferral recorded in
    `followed/_budget/<date>.json`
 3. the saturation exit (§7) — most stories stop well below the ceilings
@@ -62,14 +63,55 @@ The protection mechanism becomes, in order:
 Owner signed this off on 2026-07-27. `decisions.md` itself stays settled and
 unedited, per `CLAUDE.md`.
 
-**Consequence to watch on the first live run.** `MAX_CALLS_PER_FOLLOW` and
-`MAX_RESEARCH_CALLS_PER_DAY` are both 40, so one new follow can legitimately
-consume the whole day's pool and defer every other follow's update. `_sweep`
+**Consequence to watch.** One new follow can still consume a whole day's pool
+and defer every other follow's update. `_sweep`
 orders unfinished research ahead of daily updates deliberately — a page stuck
 saying "researching this story" is worse for a reader than a delayed one-line
 update — but that is a choice, not something the dial values settle. If a
 morning ever defers an update that mattered, the fix is to lower
 `MAX_CALLS_PER_FOLLOW` below the daily cap, not to reorder the sweep.
+
+## 2026-07-27 — first live dossier, and the real quota
+
+Issue #3 (exam-leak story). Run green, 15m46s, **19 grounded calls**, all on
+`gemini-2.5-flash`, then a PerDay 429 on the 20th. Banked 57 ledger entries,
+77 entities, 52 pages, 28 outlets, span 2024-06-22 → 2026-07-27. Subject
+renamed off the news peg to "India's Widespread Exam Paper Leak Scandal and
+Student Protests". Every §18 acceptance fact present and sourced — hunger
+strike, removal to hospital, pellet guns, tear gas and batons, Sahil Lochab's
+eye and his surgery, the resignation — with Amnesty, HRW, Article-14,
+Newslaundry and The Wire among the outlets, none of which the one-call
+backstory had reached.
+
+**The measured limit: ~20 requests/day PER MODEL, 5 RPM.** The shipped dials
+said 40, which was double the entire quota. Worse, everything ran on one model
+while a second 20-call pool sat idle.
+
+`changed:`
+
+- `ratelimit.quota_facts` fixed. Its regexes required JSON double quotes, but
+  `google.genai` puts the payload on `exc.details` as a Python dict and
+  `_blob()` repr()s it into single quotes — so it had matched nothing, ever,
+  and the one 429 this project has recorded logged `facts: ''`. It now reads
+  `GenerateRequestsPerDayPerProjectPerModel-FreeTier=20`. **The next 429 will
+  state the real ceiling rather than leaving us to infer it.**
+- Tool-less passes (Pass E, the writes) moved to `ground.SCHEMA_MODEL`
+  (`gemini-3.6-flash`), so Follow draws on both pools instead of one.
+- `Budget` meters the two pools separately; one being empty no longer stops
+  work that would draw on the other.
+- `QUESTIONS_PER_CALL` 3 → 5 and `CRITIC_EVERY` = 2, cutting a round from ~7
+  grounded calls to ~3.
+- `MAX_GROUNDED_CALLS_PER_DAY` = 18, `MAX_SCHEMA_CALLS_PER_DAY` = 14,
+  `MAX_ROUNDS` 6 → 8, `MAX_CALLS_PER_FOLLOW` 40 → 60.
+
+Net: **3 rounds/day → 6–9**, with the ledger and write passes no longer
+competing for the same allowance.
+
+`watch next:` whether the reset is really midnight Pacific. The 429 landed at
+10:57 PT and calls worked again by 13:44 PT the same day — under three hours,
+which does not match a midnight-Pacific RPD reset. Either the window is
+rolling or the limit differs per model. The `quota_facts` fix is what will
+settle it.
 
 ## Starting dial values (2026-07-27, uncalibrated)
 
@@ -77,10 +119,11 @@ morning ever defers an update that mattered, the fix is to lower
 tune against real runs, from `DIGEST_DEBUG` capture.
 
 ```
-QUESTIONS_PER_ROUND        = 10     QUESTIONS_PER_CALL      = 3
-MAX_ROUNDS                 = 6      SATURATION_ENTRIES      = 3
-SATURATION_ROUNDS          = 2      MAX_CALLS_PER_FOLLOW    = 40
-MAX_RESEARCH_CALLS_PER_DAY = 40     MAX_QUESTION_DEPTH      = 3
+QUESTIONS_PER_ROUND        = 10     QUESTIONS_PER_CALL      = 5
+MAX_ROUNDS                 = 8      SATURATION_ENTRIES      = 3
+SATURATION_ROUNDS          = 2      MAX_CALLS_PER_FOLLOW    = 60
+MAX_GROUNDED_CALLS_PER_DAY = 18     MAX_SCHEMA_CALLS_PER_DAY = 14
+CRITIC_EVERY               = 2      MAX_QUESTION_DEPTH      = 3
 MIN_QUESTION_SCORE         = 0.45   MAX_URLS_PER_CONTEXT_CALL = 20
 MAX_FETCH_PER_ROUND        = 25     PHASED_WRITE_ENTRIES    = 30
 GAP_DENSITY_RATIO          = 0.34   MIN_ENTRY_COVERAGE      = 0.6
