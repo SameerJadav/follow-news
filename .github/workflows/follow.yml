@@ -2,7 +2,21 @@ name: follow
 
 on:
   issues:
-    types: [opened, reopened, closed]
+    # `labeled` is here because the prefilled "Follow this story" URL carries
+    # ?labels=follow, and GitHub does NOT always honour it — reaching the
+    # new-issue page through a login redirect or the mobile web UI drops the
+    # query string, and the issue is created bare. Verified live on issue #3
+    # (2026-07-27): authored by the owner, correct title and body, no label,
+    # so the job guard below correctly skipped and the follow silently did
+    # nothing. Without `labeled`, applying the label afterwards fixes the
+    # issue but never re-fires the workflow, and the only recovery is to
+    # close and reopen. This makes that recovery automatic.
+    #
+    # It is safe: the guard below still requires the owner AND the label, and
+    # follow.fetch_issues() re-checks the author in Python. A relabel on an
+    # issue that already has a record is a no-op — _new_follows skips it, and
+    # the research sweep is budget-bounded either way.
+    types: [opened, reopened, closed, labeled]
 
 permissions:
   contents: write
