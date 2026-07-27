@@ -72,6 +72,34 @@ def retry_after(exc: Exception) -> float | None:
     return float(match.group(1)) if match else None
 
 
+def daily_limit(exc: Exception) -> int | None:
+    """The daily ceiling the server just enforced, if it named one.
+
+    Free-tier limits are unpublished, move without notice, and there are two
+    different meters on a grounded call — the model's own requests-per-day and
+    the Google Search grounding allowance, which are orders of magnitude apart.
+    Guessing which one bit is how you end up sized wrong in both directions, so
+    this reads the number back off the 429 that actually fired and lets the
+    caller remember it instead."""
+    blob = _blob(exc)
+    for match in re.finditer(
+        r'["\']quotaId["\']:\s*["\']([^"\']*)["\'].{0,200}?["\']quotaValue["\']:\s*["\']?(\d+)',
+        blob,
+        re.DOTALL,
+    ):
+        if _DAILY_RE.search(match.group(1)):
+            return int(match.group(2))
+    # quotaValue sometimes precedes quotaId in the violation object.
+    for match in re.finditer(
+        r'["\']quotaValue["\']:\s*["\']?(\d+)["\']?.{0,200}?["\']quotaId["\']:\s*["\']([^"\']*)["\']',
+        blob,
+        re.DOTALL,
+    ):
+        if _DAILY_RE.search(match.group(2)):
+            return int(match.group(1))
+    return None
+
+
 def is_daily_quota(exc: Exception) -> bool:
     """True when the violated quotaId names a per-day limit rather than a
     per-minute one -- distinguishes 'wait a minute and resume' from 'this run

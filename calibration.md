@@ -83,9 +83,14 @@ eye and his surgery, the resignation — with Amnesty, HRW, Article-14,
 Newslaundry and The Wire among the outlets, none of which the one-call
 backstory had reached.
 
-**The measured limit: ~20 requests/day PER MODEL, 5 RPM.** The shipped dials
-said 40, which was double the entire quota. Worse, everything ran on one model
-while a second 20-call pool sat idle.
+**What bit is still not certain, and that is now the system's problem, not
+ours.** A grounded call is metered twice — the model's own requests-per-day
+and the Google Search grounding allowance (reported as ~1.5K/day) — and they
+are orders of magnitude apart. The 429 came after ~23 requests on
+`gemini-2.5-flash` with `PerDay` in the quota id, which points at the model
+RPD rather than grounding, but `quota_facts` was broken at the time so the
+server's own number was never captured. The shipped dials said 40/day either
+way, and everything ran on one model while a second pool sat idle.
 
 `changed:`
 
@@ -101,13 +106,23 @@ while a second 20-call pool sat idle.
   work that would draw on the other.
 - `QUESTIONS_PER_CALL` 3 → 5 and `CRITIC_EVERY` = 2, cutting a round from ~7
   grounded calls to ~3.
-- `MAX_GROUNDED_CALLS_PER_DAY` = 18, `MAX_SCHEMA_CALLS_PER_DAY` = 14,
-  `MAX_ROUNDS` 6 → 8, `MAX_CALLS_PER_FOLLOW` 40 → 60.
+- The daily ceiling is now **learned rather than guessed**:
+  `ratelimit.daily_limit()` reads it off the 429, `Budget.learn()` persists it
+  to `followed/_budget/limits.json`, and it expires after
+  `LEARNED_LIMIT_TTL_DAYS` = 14 so a raised limit is not ignored forever.
+  Defaults are optimistic on purpose — one wasted call to discover the ceiling
+  beats wasting most of the allowance daily. `MAX_GROUNDED_CALLS_PER_DAY` =
+  120 (explore), `MAX_SCHEMA_CALLS_PER_DAY` = 14 (conservative: shared with
+  the digest), `MAX_ROUNDS` 6 → 8, `MAX_CALLS_PER_FOLLOW` 40 → 60.
 
-Net: **3 rounds/day → 6–9**, with the ledger and write passes no longer
-competing for the same allowance.
+Net: **3 rounds/day → 6+**, with the ledger and write passes no longer
+competing with searching for the same allowance. If grounding really does
+allow ~1.5K/day, the binding constraint becomes the schema pool at ~14, which
+is still four times what the first run managed.
 
-`watch next:` whether the reset is really midnight Pacific. The 429 landed at
+`watch next:` the first `quota_learned` event in `trace.jsonl`, and
+`followed/_budget/limits.json` — that is where the real ceiling finally gets
+written down. Also whether the reset is really midnight Pacific. The 429 landed at
 10:57 PT and calls worked again by 13:44 PT the same day — under three hours,
 which does not match a midnight-Pacific RPD reset. Either the window is
 rolling or the limit differs per model. The `quota_facts` fix is what will
@@ -122,7 +137,8 @@ tune against real runs, from `DIGEST_DEBUG` capture.
 QUESTIONS_PER_ROUND        = 10     QUESTIONS_PER_CALL      = 5
 MAX_ROUNDS                 = 8      SATURATION_ENTRIES      = 3
 SATURATION_ROUNDS          = 2      MAX_CALLS_PER_FOLLOW    = 60
-MAX_GROUNDED_CALLS_PER_DAY = 18     MAX_SCHEMA_CALLS_PER_DAY = 14
+MAX_GROUNDED_CALLS_PER_DAY = 120*   MAX_SCHEMA_CALLS_PER_DAY = 14
+     (* optimistic; the real ceiling is learned from the first 429)
 CRITIC_EVERY               = 2      MAX_QUESTION_DEPTH      = 3
 MIN_QUESTION_SCORE         = 0.45   MAX_URLS_PER_CONTEXT_CALL = 20
 MAX_FETCH_PER_ROUND        = 25     PHASED_WRITE_ENTRIES    = 30
