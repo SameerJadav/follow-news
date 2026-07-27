@@ -25,7 +25,7 @@ from pathlib import Path
 
 DOCS = Path(__file__).resolve().parent.parent / "docs"
 
-BG = (26, 26, 26)  # #1a1a1a, the theme's ink; matches icon.svg
+BG = (0, 0, 0)  # #000000, the theme's ink; matches icon.svg
 FG = (255, 255, 255)  # #ffffff — black and white, like the rest of the app
 
 # Fractions of the canvas. Android crops `maskable` icons to a circle of radius
