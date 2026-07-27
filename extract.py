@@ -23,7 +23,9 @@ import html as html_module
 import json
 import re
 import time
+from datetime import datetime, timezone
 from html.parser import HTMLParser
+from pathlib import Path
 
 import requests
 
@@ -158,9 +160,69 @@ def via_jina(url: str) -> str:
         time.sleep(JINA_PAUSE)
 
 
+# ---------- the URL-keyed cache (dossier.md §10) ----------
+#
+# OFF by default, so the digest's own morning run is untouched: it fetches
+# today's articles once and would never see a hit anyway. Follow is the case
+# this exists for — fourteen days of updates on one story, or a second follow
+# on a related one, otherwise re-fetch the same background articles every
+# single day, each one costing a real HTTP request and up to JINA_PAUSE
+# seconds of enforced sleep.
+_CACHE_PATH: Path | None = None
+_CACHE: dict[str, dict] = {}
+
+
+def enable_cache(path: Path) -> None:
+    """Point extraction at a URL-keyed cache on disk. Idempotent; a missing or
+    unreadable file starts an empty cache rather than failing, because a cold
+    cache is only ever a performance question, never a correctness one."""
+    global _CACHE_PATH, _CACHE
+    _CACHE_PATH = path
+    try:
+        _CACHE = json.loads(path.read_text())
+        dbg(f"extract: cache enabled at {path} ({len(_CACHE)} url(s))")
+    except (OSError, ValueError):
+        _CACHE = {}
+        dbg(f"extract: cache enabled at {path} (empty)")
+
+
+def _cache_get(url: str) -> str | None:
+    entry = _CACHE.get(url) if _CACHE_PATH is not None else None
+    if not isinstance(entry, dict):
+        return None
+    text = entry.get("text")
+    return text if isinstance(text, str) and text else None
+
+
+def _cache_put(url: str, text: str) -> None:
+    """Written through after every extraction, not once at the end: a research
+    run that dies mid-round must not throw away the pages it already paid for
+    — that is the same reasoning as the extraction index above, and it is what
+    makes a resumed run cheap."""
+    if _CACHE_PATH is None or not text:
+        return
+    _CACHE[url] = {
+        "fetched_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "chars": len(text),
+        "text": text,
+    }
+    try:
+        _CACHE_PATH.parent.mkdir(parents=True, exist_ok=True)
+        _CACHE_PATH.write_text(json.dumps(_CACHE, ensure_ascii=False, indent=2) + "\n")
+    except OSError as exc:
+        dbg(f"extract: could not write cache {_CACHE_PATH} ({exc!r})")
+
+
 def article_text(url: str) -> str:
     """The extraction cascade: JSON-LD and paragraphs from a single fetch,
-    longest wins; escalate to Jina only if that still falls short."""
+    longest wins; escalate to Jina only if that still falls short. A cache hit
+    (see enable_cache) short-circuits the whole thing."""
+    cached = _cache_get(url)
+    if cached is not None:
+        dbg(f"extract: {len(cached)}ch {url} (cached)")
+        tracer.count(articles_extract_cached=1)
+        return cached
+
     page_html, http, elapsed_ms, error = _fetch(url)
 
     jsonld = from_jsonld(page_html) if page_html else ""
@@ -178,6 +240,7 @@ def article_text(url: str) -> str:
 
     dbg(f"extract: {len(best)}ch {url}")
     final = best[:ARTICLE_CAP]
+    _cache_put(url, final)
     _capture(url, page_html, jsonld, paras, jina, jina_fired, winner, final, http, elapsed_ms, error)
     return final
 

@@ -28,7 +28,7 @@ uv run digest.py                      # full pipeline: gather -> select -> claim
 uv run digest.py --if-missing         # no-op if today's data/YYYY-MM-DD.json already exists (cron uses this)
 uv run digest.py --feeds PATH         # use an alternate feeds.txt (e.g. to test degradation)
 uv run digest.py render               # re-render docs/ from data/+followed/ only; needs no API key
-uv run digest.py follow               # process open Follow issues, append timelines, re-render
+uv run digest.py follow               # process open Follow issues, research, append, re-render
 uv run digest.py follow --issue 12    # restrict to one issue (used by follow.yml)
 uv run digest.py follow --date ...    # override the digest date (testing)
 uv run digest.py health               # cross-day feed-decay report over committed data/; exits 1 if unhealthy
@@ -43,6 +43,17 @@ GEMINI_API_KEY=... DIGEST_DUMP_DIR=/tmp/fixtures uv run digest.py   # dump raw L
 DIGEST_WAIT_BUDGET_S=5 uv run digest.py                              # shorten the 429 wait budget for local testing
 DIGEST_DEBUG=1 uv run digest.py                                      # capture full run evidence into debug/
 uv run digest.py --debug / --no-debug                                # same switch, per invocation
+
+GEMINI_API_KEY=... uv run tools/probe_url_context.py   # one-off: does url_context still work on this free tier?
+```
+
+A followed story's research is resumable and budgeted, so re-running
+`digest.py follow` after an interrupted run continues it rather than starting
+over. To watch one from the outside:
+
+```sh
+cat followed/<issue>/dossier.json | jq '{research_state, rounds, calls, span,
+  entries: (.ledger|length), open: (.questions.open|length)}'
 ```
 
 ## Architecture
@@ -65,8 +76,12 @@ Pipeline order, one module per concern:
   validation, thin-sourcing detection, vocab cleaning.
 - **`render.py`** — every HTML page, generated from Python template
   strings. Never hand-edit its output.
-- **`follow.py` + `ground.py`** — Follow: issue parsing, the owner guard,
-  grounded backstory/timeline generation via Gemini + Google Search.
+- **`follow.py` + `ground.py` + `dossier.py`** — Follow: issue parsing, the
+  owner guard, and the research that stands behind a followed story.
+  `follow.py` owns `followed/<issue>/record.json`, the GitHub surface and the
+  sweep; `dossier.py` owns `dossier.json`/`corpus.json`, the question frontier,
+  the gap detectors, saturation and checkpointing; `ground.py` is the only one
+  that talks to Gemini.
 - **`ratelimit.py`** — 429 classification and budgeted wait-and-resume,
   shared by `llm.py` and `ground.py` (Phase 6).
 - **`report.py`** — read-only reports over committed `data/*.json`: cross-day
@@ -86,26 +101,51 @@ job), `render.yml` (push-triggered re-render, no API key), `follow.yml`
 
 ## Invariants — do not break these
 
-- `data/YYYY-MM-DD.json` and `followed/<issue>.json` are the only sources of
+- `data/YYYY-MM-DD.json` and `followed/<issue>/` are the only sources of
   truth. Every page in `docs/` is *derived* and overwritten wholesale on
-  every render. Never hand-edit generated HTML.
+  every render. Never hand-edit generated HTML. Legacy flat
+  `followed/<issue>.json` records still load; the migration into a directory
+  is one-way and happens the next time a record is written.
 - `docs/style.css`, `docs/app.js`, `docs/robots.txt`, `docs/.nojekyll`,
   `docs/manifest.webmanifest`, and the icons are hand-written and are never
   written or touched by the pipeline.
-- **3–4 LLM calls per morning, total** — never one call per article, per
-  story, or per section. Select reads cheap headlines only; full text is
-  fetched only for what selection chose; claims and writing are each one
-  batched call.
+- **The DIGEST is 3–4 LLM calls per morning, total** — never one call per
+  article, per story, or per section. Select reads cheap headlines only; full
+  text is fetched only for what selection chose; claims and writing are each
+  one batched call. This is the digest's budget alone; Follow's research runs
+  in a separate process under its own budget (see the Follow invariant below),
+  and the two share one free-tier key, which is why
+  `MAX_RESEARCH_CALLS_PER_DAY` has to leave the digest room.
 - The write pass sees **claims only, never raw article text** — a fact that
   isn't an anchored claim has no way into the prose. Numbers are never
   averaged or blended across sources; two disagreeing figures become two
   claims, each attributed.
 - **Nothing follows itself.** No story is tracked, updated, or resurfaced
-  unless a Follow issue was deliberately opened by the owner.
+  unless a Follow issue was deliberately opened by the owner. Closing the
+  issue is the kill switch: a closed record never resumes research, however
+  much of its frontier is left.
 - The digest must keep publishing even if Follow fails entirely — Follow
   runs `continue-on-error: true` and is never on the digest's critical path.
-- Follow batches timeline updates across all active follows in one call;
-  never one call per followed story.
+- **Follow's quota is bounded by budgets, not by batching** (`dossier.md` §14,
+  signed off 2026-07-27 — see `calibration.md`). The old rule was "one grounded
+  call batched across all active follows"; that is gone. In its place, in
+  order: `MAX_CALLS_PER_FOLLOW`, `MAX_RESEARCH_CALLS_PER_DAY` spent
+  stalest-first with deferrals recorded, the saturation exit, checkpointed
+  resumption, and `MAX_NEW_FOLLOWS_PER_RUN = 1`.
+- **The dossier is append-only.** Entries are corrected and merged, never
+  silently dropped — whatever a reader saw yesterday is still accounted for
+  today. A duplicate event from a second outlet raises `outlet_count`; two
+  sources disagreeing on a figure stay two attributed entries and raise a
+  `contested` question, never one averaged number.
+- **The write pass never sees corpus text** — only ledger entries, exactly as
+  the digest's write pass sees only claims.
+- **A follow being researched says so.** Until `research_state` is `complete`
+  or `capped`, the page renders an honest "researching this story" state
+  rather than an empty or partial one — the same posture `render._stale_html`
+  takes toward a stale digest. A `capped` dossier reports itself as capped.
+- **No silent caps.** Every ceiling that bites — the call budget, the daily
+  budget, a discarded question, a page that could not be read — is recorded in
+  the dossier and logged.
 - **`debug/` is derived and disposable.** Nothing reads it back into the
   pipeline; deleting it costs only the record. Capture must stay a strict
   no-op when off — if `DIGEST_DEBUG` is unset, no directory is created and
@@ -177,6 +217,16 @@ job), `render.yml` (push-triggered re-render, no API key), `follow.yml`
 | `MIN_LIVE_FEEDS`, `MIN_ARTICLES`, `DEGRADED_LIVE_SHARE` | `feeds.py` | the quorum/degradation thresholds |
 | `DEAD_DAYS`, `HISTORY_DAYS` | `report.py` | how many silent days call a feed dead, and the lookback window |
 | `STALE_DAYS` | `follow.py` | days with no development before a Follow auto-closes |
+| `MAX_NEW_FOLLOWS_PER_RUN` | `follow.py` | new follows started per run (1 — a burst of requests must not stack research bursts) |
+| `QUESTIONS_PER_ROUND`, `QUESTIONS_PER_CALL` | `dossier.py` | how many frontier questions a round pops, and how many share one grounded call |
+| `MAX_ROUNDS`, `SATURATION_ENTRIES`, `SATURATION_ROUNDS` | `dossier.py` | the loop-until-dry threshold |
+| `MAX_CALLS_PER_FOLLOW`, `MAX_RESEARCH_CALLS_PER_DAY` | `dossier.py` | one follow's lifetime ceiling, and the shared daily one |
+| `MAX_QUESTION_DEPTH`, `MIN_QUESTION_SCORE` | `dossier.py` | the drift guards on recursive research |
+| `GAP_DENSITY_RATIO` | `dossier.py` | how sparse a week must be to raise a gap question |
+| `MIN_ENTRY_COVERAGE` | `dossier.py` | share of the ledger the prose must actually cite |
+| `MERGE_SIMILARITY` | `dossier.py` | Jaccard floor for calling two entries the same event |
+| `PHASED_WRITE_ENTRIES` | `dossier.py` | ledger size above which prose is written per phase |
+| `MAX_URLS_PER_CONTEXT_CALL`, `MAX_FETCH_PER_ROUND` | `dossier.py` | `url_context` batch size (API max 20) and per-round fetches |
 
 Turn one of these, backed by an observation logged in `calibration.md`,
 before rewording an `llm.py` prompt — a prompt change moves editorial
@@ -193,6 +243,30 @@ to the owner before it ships, per `decisions.md`.
   `docs/` directly is pointless, it gets overwritten.
 - `html.escape(value, quote=True)` every interpolated value used inside an
   HTML attribute.
+- **`follow.load_all` and `render._load_followed` are deliberate duplicates**
+  and must be changed together — `follow.py` imports `render.py`, so
+  `render.py` cannot import back. Same rule `issue_url`/`_follow_url` already
+  live under. Both glob `*/record.json` (NOT `*.json`, which is non-recursive
+  and would silently miss every new-style record — indistinguishable from "this
+  follow has no record yet", which reseeds its research on every run), then
+  fall back to legacy flat files. Both sort by `int`, because `"10" < "2"` as
+  strings would hand a twice-followed story back to the older, closed follow.
+- **`research_state` and `chips` live in `dossier.json`, never in
+  `record.json`.** `render._load_followed` attaches them as derived fields.
+  A record with no `dossier.json` beside it is a legacy one-shot follow and
+  defaults to `complete` — so a new follow's `record.json` and `dossier.json`
+  must be created in the *same step*, or the page publishes empty prose as
+  finished.
+- **`dossier.py` must never call `tracer.start()`.** It runs inside
+  `follow.run()`'s already-open `"follow"` run; starting its own would split
+  the evidence and could overwrite the digest's `run.json`.
+- `corpus.json` is committed as the evidence and is deliberately NOT copied
+  into `debug/` as well — `debug/dossier/<issue>/index.json` summarises it.
+- **`cache/extract.json` is committed because CI checks out fresh.** An
+  uncommitted cache would be empty on every Actions run and the "across days"
+  half of it would never fire. It is derived and disposable like `debug/` —
+  deleting it costs only re-fetching. It grows by roughly 5KB per distinct
+  article URL; if it ever becomes a problem, delete it and it refills.
 - `tracer.event()` takes its stage name **positional-only** (`stage: str, /`)
   so a caller can pass a field literally named `stage`. `count()` merges
   funnel counters across calls; `extra()` attaches a named block to
@@ -212,10 +286,33 @@ to the owner before it ships, per `decisions.md`.
   boilerplate). If TOI yields under ~1,000 chars, extraction is broken.
 - NDTV 403s a normal User-Agent; `extract.py` escalates to the free, keyless
   `r.jina.ai` reader proxy (20 RPM) only when the normal fetch falls short.
-- **Gemini grounding cannot use `response_schema`.** Sending
-  `response_mime_type="application/json"` alongside the `google_search` tool
-  is a `400 INVALID_ARGUMENT`. `ground.py`'s batched timeline call instead
-  asks for a delimited text format and parses it in Python.
+- **ANY tool use forbids `response_schema`, not just grounding.** Sending
+  `response_mime_type="application/json"` alongside `google_search` is a
+  `400 INVALID_ARGUMENT: Tool use with a response mime type:
+  'application/json' is unsupported` — and re-verified 2026-07-27, `url_context`
+  gives the identical error. So a pass either uses a tool OR gets validated
+  JSON, never both. That is why `dossier.py` reads pages (Pass D, url_context,
+  no schema) and structures them (Pass E, no tools, schema) in *separate*
+  calls, and why `ground.research_blocks` still parses a delimited text format
+  for the grounded ones. With every tool off, `response_schema` works normally
+  (`ground.structured`).
+- **`url_context` reads a page; it does not return it.** It lets the model use
+  a page as context — there is no verbatim text to store. `extract.py` remains
+  the only way real article text enters `corpus.json`; `url_context` covers
+  what `extract.py` cannot fetch, and those corpus entries are recorded
+  `via: "url_context"` with `text: null` so the record never claims to hold
+  text it does not have. Measured 2026-07-27: the fetched page arrives as
+  *input* tokens, ~3.3k per page, so a 20-URL batch is ~66k input tokens.
+- **Combining `url_context` with `google_search` makes the model stop
+  searching.** Measured 2026-07-27: the same call came back with
+  `web_search_queries: []` — it read the URLs and skipped the search entirely.
+  Searching (Pass C) and reading (Pass D) are therefore separate calls by
+  design, not by accident.
+- **`gemini-2.5-flash` spends output tokens on thinking before it writes.** The
+  same url_context call returned an EMPTY response at `max_output_tokens=800`
+  and 2,610 characters at 8192. An empty response with
+  `finish_reason=MAX_TOKENS` is token starvation, not a model with nothing to
+  say — `ground._generate` logs that case by name.
 - Grounding's `grounding_supports` segment offsets are **byte** offsets, not
   character offsets — `ground._char_offsets`/`_byte_to_char` convert; a
   non-ASCII outlet name or currency symbol is exactly where a naive
@@ -275,3 +372,10 @@ stage that emptied the pipeline.
 Greppable `dbg()` prefixes worth knowing: `llm: call #`, `ratelimit:`,
 `gather:`, `QUORUM`, `DEGRADED`, `ZERO ITEMS`, `rank:`, `wiki: NOT COVERED`,
 `follow:`, `ground:`, `anchor: DROPPED`/`THIN-SOURCED`.
+
+For a followed story specifically: `dossier: #<issue> Pass` (each pass's
+yield), `dossier: #<issue> round` (entries gained, calls spent, frontier
+size), `dossier: #<issue> CAPPED`, `dossier: write REJECTED` (with the metric
+that failed — `entry_coverage` means the ledger is good and the prose is not,
+which is a different problem from thin research), `dossier: ... deferred`,
+`ground: ... EMPTY RESPONSE`, and `dossier: dimension checklist gaps`.

@@ -56,6 +56,8 @@ One directory per day, `debug/YYYY-MM-DD/`:
 | `anchor/dropped-*.json` | full model output and context for a story that was thrown away |
 | `render.json` | pages written and their byte sizes |
 | `follow/` | grounded prompts, responses, resolved redirect URLs |
+| `dossier/<issue>/index.json` | a followed story's research: rounds, calls, ledger size, entity sides, gap firings, what it could not read |
+| `dossier/<issue>/discarded-questions.json` | every question the drift guards cut, and which guard cut it |
 
 A `follow` run against the same day writes `run-follow.json` and
 `funnel-follow.json` so it can't overwrite the digest's own record; both

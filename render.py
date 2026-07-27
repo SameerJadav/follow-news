@@ -368,20 +368,89 @@ def _follow_url(day_date: str, section: str, position: int, headline: str) -> st
 
 
 def _actions_html(
-    day_date: str, section: str, position: int, headline: str, followed_index: dict[tuple[str, str, int], int]
+    day_date: str,
+    section: str,
+    position: int,
+    headline: str,
+    followed_index: dict[tuple[str, str, int], tuple[int, str]],
 ) -> str:
     """Fills the <footer class="story-actions"> seam: a Follow button for a
-    story with no record yet, or a quiet link to the followed-story page for
-    one that already has one. No slug or id is computed in JavaScript —
-    everything the button needs is already on the <article> as data
-    attributes and passed straight through here."""
-    issue = followed_index.get((day_date, section, position))
-    if issue is not None:
-        return f'<a class="follow-btn is-on" href="follow-{issue}.html">Following →</a>'
+    story with no record yet, a quiet link to the followed-story page for one
+    being actively followed, and BOTH for a story whose follow has closed.
+
+    That third case matters: a closed follow is a story the reader chose to
+    stop following, or one that ran its course — and either way, wanting it
+    again later is a real thing to want. Showing only "Following →" for a
+    closed record made the story permanently un-followable, since the button
+    is the only way a follow is ever created.
+
+    No slug or id is computed in JavaScript — everything the button needs is
+    already on the <article> as data attributes and passed straight through
+    here."""
+    entry = followed_index.get((day_date, section, position))
+    if entry is not None and entry[1] == "active":
+        return f'<a class="follow-btn is-on" href="follow-{entry[0]}.html">Following →</a>'
+
     url = _follow_url(day_date, section, position, headline)
-    return (
+    button = (
         f'<a class="follow-btn" href="{esc(url, quote=True)}" target="_blank"'
         ' rel="noopener noreferrer">Follow this story</a>'
+    )
+    if entry is None:
+        return button
+    return (
+        f'{button}<a class="follow-prev" href="follow-{entry[0]}.html">Previously followed →</a>'
+    )
+
+
+def _suggestions_list_html(raws: list[str]) -> str:
+    """The deduplicated set of Search Suggestions blobs for a whole followed
+    story. Each blob is still emitted byte-for-byte unmodified — that is what
+    the grounding Terms require, and it is why _suggestions_html below is the
+    one function in this codebase that does not escape its input."""
+    seen: list[str] = []
+    for raw in raws:
+        text = str(raw or "")
+        if text and text not in seen:
+            seen.append(text)
+    if not seen:
+        return ""
+    cards = "".join(f'<div class="chip-card">{raw}</div>' for raw in seen)
+    return (
+        '<section class="suggest" aria-label="Search suggestions from Google">'
+        '<h4 class="kicker">Search these on Google</h4>'
+        f'<div class="chips">{cards}</div>'
+        "</section>"
+    )
+
+
+def _researching_html(record: dict) -> str:
+    """The honest in-progress state for a followed story whose dossier has not
+    finished. Same posture render._stale_html takes toward a stale digest: say
+    plainly what is true rather than showing an empty or half-built page."""
+    since = _short_date(str(record.get("origin", {}).get("date") or ""))
+    detail = (
+        "Research hasn't started yet."
+        if record.get("research_state") == "pending"
+        else "Reading the story's full history now. This page fills in when it's done."
+    )
+    return (
+        '<div class="researching" role="status">'
+        f"<p>Still researching this story, followed since {esc(since)}.</p>"
+        f"<p>{esc(detail)}</p>"
+        "</div>"
+    )
+
+
+def _capped_html(record: dict) -> str:
+    """A capped dossier still has real prose — it just stopped short of the
+    whole story. dossier.md §13: a truncated dossier must never present as a
+    complete one."""
+    if record.get("research_state") != "capped":
+        return ""
+    return (
+        '<p class="capped" role="note"><span class="capped-tag">Research paused</span> '
+        "This story hit its research budget, so some threads may still be missing.</p>"
     )
 
 
@@ -412,26 +481,26 @@ def _suggestions_html(raw: str) -> str:
 
 def _grounded_html(block: dict) -> str:
     """A grounded prose block (a followed story's backstory or one timeline
-    entry): body with tappable source markers, the source list, then its
-    Search Suggestions chips, with nothing interspersed between the two per
-    the Terms. Reuses _prose_html/_sources_html exactly as the digest does;
-    `claims_by_id` is passed empty because grounded prose has no claim list
-    — _marker_html and the bottom sheet already tolerate a missing claim."""
+    entry): body with tappable source markers, then the source list. Reuses
+    _prose_html/_sources_html exactly as the digest does; `claims_by_id` is
+    passed empty because grounded prose has no claim list — _marker_html and
+    the bottom sheet already tolerate a missing claim.
+
+    Chips are NOT emitted here. A dossier accumulates a searchEntryPoint blob
+    per grounded call — dozens of them — and repeating the same widget after
+    every block would bury the page. _follow_page renders the deduplicated set
+    once instead."""
     sources = block.get("sources") or []
     src_index = {str(s.get("url") or ""): i + 1 for i, s in enumerate(sources)}
     prose = _prose_html(str(block.get("body") or ""), block.get("markers") or [], src_index, {})
-    return (
-        f'<div class="prose">{prose}</div>'
-        f"{_sources_html(block, src_index)}"
-        f"{_suggestions_html(str(block.get('search_suggestions') or ''))}"
-    )
+    return f'<div class="prose">{prose}</div>{_sources_html(block, src_index)}'
 
 
 def _story_html(
     story: dict,
     index: int,
     day_date: str,
-    followed_index: dict[tuple[str, str, int], int] | None = None,
+    followed_index: dict[tuple[str, str, int], tuple[int, str]] | None = None,
 ) -> str:
     sources = story.get("sources") or []
     src_index = {str(s.get("url") or ""): i + 1 for i, s in enumerate(sources)}
@@ -474,7 +543,7 @@ def _section_html(
     key: str,
     stories: list[dict],
     day: dict,
-    followed_index: dict[tuple[str, str, int], int] | None = None,
+    followed_index: dict[tuple[str, str, int], tuple[int, str]] | None = None,
 ) -> str:
     """One switchable view. The section id is the bare section key so the tab
     bar's href="#world" works as a plain anchor with no JavaScript.
@@ -604,6 +673,7 @@ def _follow_page(record: dict, head: str = _HEAD) -> str:
     title = str(record.get("title") or "")
     backstory = record.get("backstory") or {}
     entries = record.get("timeline") or []
+    state = str(record.get("research_state") or "complete")
 
     timeline_html = "".join(
         f'<section class="entry{" is-final" if e.get("kind") == "final" else ""}">'
@@ -612,6 +682,11 @@ def _follow_page(record: dict, head: str = _HEAD) -> str:
         "</section>"
         for e in entries
     )
+
+    if state in ("pending", "researching") or not backstory.get("body"):
+        picture_html = _researching_html(record)
+    else:
+        picture_html = f"{_capped_html(record)}{_grounded_html(backstory)}"
 
     return f"""<!doctype html>
 <html lang="en">
@@ -624,8 +699,9 @@ def _follow_page(record: dict, head: str = _HEAD) -> str:
 <h2 class="follow-title">{esc(title)}</h2>
 {_follow_status_html(record)}
 <h3 class="kicker">The full picture</h3>
-{_grounded_html(backstory)}
+{picture_html}
 {timeline_html}
+{_suggestions_list_html(list(record.get("chips") or []) + [str(backstory.get("search_suggestions") or "")] + [str(e.get("search_suggestions") or "") for e in entries])}
 {_follow_close_html(record)}
 <a class="archive-link" href="following.html">All followed stories</a>
 {_SHEET_HTML}
@@ -642,10 +718,22 @@ def _following_page(records: list[dict], head: str = _HEAD) -> str:
     def _row(r: dict) -> str:
         entries = r.get("timeline") or []
         since = _short_date(str(r.get("origin", {}).get("date") or ""))
+        state = str(r.get("research_state") or "complete")
+        if state in ("pending", "researching"):
+            # "0 updates" would read as a story where nothing has happened,
+            # rather than one whose research hasn't landed yet.
+            return (
+                f'<li><a href="follow-{esc(str(r.get("issue") or ""), quote=True)}.html">'
+                f'<span class="d">{esc(str(r.get("title") or ""))}</span>'
+                f'<span class="c">{esc(f"Since {since} · still researching")}</span>'
+                "</a></li>"
+            )
         detail = f"Since {since} · {_plural(len(entries), 'update')}"
         latest = entries[-1].get("date") if entries else None
         if latest:
             detail += f" · latest {_short_date(str(latest))}"
+        if state == "capped":
+            detail += " · research paused"
         return (
             f'<li><a href="follow-{esc(str(r.get("issue") or ""), quote=True)}.html">'
             f'<span class="d">{esc(str(r.get("title") or ""))}</span>'
@@ -688,7 +776,7 @@ def _page(
     *,
     is_index: bool,
     head: str = _HEAD,
-    followed_index: dict[tuple[str, str, int], int] | None = None,
+    followed_index: dict[tuple[str, str, int], tuple[int, str]] | None = None,
     followed_records: list[dict] | None = None,
 ) -> str:
     grouped: dict[str, list[dict]] = {key: [] for key in SECTION_ORDER}
@@ -788,30 +876,76 @@ def _empty_page(head: str = _HEAD) -> str:
 """
 
 
-def _load_followed(followed_dir: Path | None) -> tuple[list[dict], dict[tuple[str, str, int], int]]:
-    """Every followed/*.json (oldest issue first) plus an index from
-    (origin date, origin section, origin position) -> issue number, built
-    from records of ANY status so a closed follow's button still links to
-    its page rather than reappearing as "Follow this story"."""
+def _load_followed(
+    followed_dir: Path | None,
+) -> tuple[list[dict], dict[tuple[str, str, int], tuple[int, str]]]:
+    """Every followed record (oldest issue first) plus an index from
+    (origin date, origin section, origin position) -> (issue, status), built
+    from records of ANY status so a closed follow's page stays reachable from
+    the story it came from.
+
+    Reads followed/<issue>/record.json, falling back to legacy flat
+    followed/<issue>.json — mirroring follow.load_all(), which render.py
+    cannot call: follow.py already imports render.py to publish followed-story
+    pages, and a module cycle would follow. Any change to one must be
+    mirrored in the other, the same rule _follow_url/issue_url already live
+    under.
+
+    `research_state` and `chips` are attached here as DERIVED fields, read
+    from the sibling dossier.json — they are never persisted into
+    record.json, whose shape is unchanged. A record with no dossier.json is a
+    legacy one-shot follow whose prose is already finished, so it defaults to
+    "complete"; defaulting to "researching" would hide working prose behind a
+    placeholder."""
     if followed_dir is None or not followed_dir.exists():
         return [], {}
 
     records: list[dict] = []
-    index: dict[tuple[str, str, int], int] = {}
-    for path in sorted(followed_dir.glob("*.json")):
-        try:
-            record = json.loads(path.read_text())
-        except (OSError, ValueError):
-            continue
+    index: dict[tuple[str, str, int], tuple[int, str]] = {}
+    seen: set[int] = set()
+
+    def _add(record: dict, issue_dir: Path | None) -> None:
+        issue = record.get("issue")
+        if not isinstance(issue, int) or issue in seen:
+            return
+        seen.add(issue)
+
+        state, chips = "complete", []
+        if issue_dir is not None:
+            try:
+                meta = json.loads((issue_dir / "dossier.json").read_text())
+                state = str(meta.get("research_state") or "complete")
+                chips = list(meta.get("chips") or [])
+            except (OSError, ValueError):
+                pass  # a corrupt dossier degrades to "complete", never a broken render
+        record["research_state"] = state
+        record["chips"] = chips
         records.append(record)
 
         origin = record.get("origin") or {}
         d = str(origin.get("date") or "")
         section = str(origin.get("section") or "")
         position = origin.get("position")
-        issue = record.get("issue")
-        if d and section and isinstance(position, int) and isinstance(issue, int):
-            index[(d, section, position)] = issue
+        if d and section and isinstance(position, int):
+            key = (d, section, position)
+            # Highest issue number wins: a story followed a second time must
+            # point at the NEW follow. Sorting paths as strings would put "10"
+            # before "2" and silently hand the story back to the older, closed
+            # follow.
+            if key not in index or issue > index[key][0]:
+                index[key] = (issue, str(record.get("status") or "active"))
+
+    for path in sorted(followed_dir.glob("*/record.json"), key=lambda p: p.parent.name):
+        try:
+            _add(json.loads(path.read_text()), path.parent)
+        except (OSError, ValueError):
+            continue
+
+    for path in sorted(followed_dir.glob("*.json")):
+        try:
+            _add(json.loads(path.read_text()), None)
+        except (OSError, ValueError):
+            continue
 
     records.sort(key=lambda r: r.get("issue", 0))
     return records, index

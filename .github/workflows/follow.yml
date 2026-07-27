@@ -37,6 +37,11 @@ jobs:
       github.event.issue.user.login == 'SameerJadav' &&
       contains(github.event.issue.labels.*.name, 'follow')
     runs-on: ubuntu-latest
+    # A deep research burst is ~40 grounded calls at 5 RPM, so 20-40 minutes is
+    # normal. This bounds the abnormal case: all three workflows share
+    # `concurrency: group: pages` with cancel-in-progress false, so a hung run
+    # holds every queued digest behind it until it times out.
+    timeout-minutes: 90
     steps:
       - uses: actions/checkout@v4
 
@@ -68,8 +73,8 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           # mkdir first: debug/ is absent when DIGEST_DEBUG is "0", and
           # `git add` on a missing pathspec is a fatal error.
-          mkdir -p followed docs debug
-          git add followed docs debug
+          mkdir -p followed docs debug cache
+          git add followed docs debug cache
           git diff --cached --quiet || git commit -m "follow: issue #$ISSUE"
           # digest.yml or render.yml can commit between this job's checkout
           # and this push; retry with a rebase rather than racing them.

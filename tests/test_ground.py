@@ -127,9 +127,9 @@ def test_split_blocks_rebases_offsets_and_drops_boundary_straddle(monkeypatch):
     )
 
     monkeypatch.setattr(ground, "_resolve", lambda uri, cache: uri)
-    monkeypatch.setattr(ground, "_generate", lambda prompt, system, label: (text, metadata))
+    monkeypatch.setattr(ground, "_generate", lambda prompt, system, label, **kw: (text, metadata))
 
-    result = ground.research_batch("prompt", "system", "label", ["1", "2"])
+    result = ground.research_blocks("prompt", "system", "label", ["1", "2"], require_status=True)
 
     status_a, block_a = result["1"]
     status_b, block_b = result["2"]
@@ -155,28 +155,91 @@ def test_split_blocks_rebases_offsets_and_drops_boundary_straddle(monkeypatch):
 def test_unknown_status_becomes_quiet(monkeypatch):
     text = "=== FOLLOW 1 ===\nSTATUS: banana\nSome prose that should never surface.\n"
     metadata = _metadata(chunks=[], supports=[])
-    monkeypatch.setattr(ground, "_generate", lambda prompt, system, label: (text, metadata))
+    monkeypatch.setattr(ground, "_generate", lambda prompt, system, label, **kw: (text, metadata))
 
-    result = ground.research_batch("prompt", "system", "label", ["1"])
+    result = ground.research_blocks("prompt", "system", "label", ["1"], require_status=True)
     assert result["1"] == ("quiet", None)
 
 
 def test_missing_key_maps_to_quiet(monkeypatch):
     text = "=== FOLLOW 1 ===\nSTATUS: development\nSomething happened.\n"
     metadata = _metadata(chunks=[_chunk("https://a.example/1", "a.example")], supports=[])
-    monkeypatch.setattr(ground, "_generate", lambda prompt, system, label: (text, metadata))
+    monkeypatch.setattr(ground, "_generate", lambda prompt, system, label, **kw: (text, metadata))
 
-    result = ground.research_batch("prompt", "system", "label", ["1", "2"])
+    result = ground.research_blocks("prompt", "system", "label", ["1", "2"], require_status=True)
     assert result["2"] == ("quiet", None)
 
 
 def test_quiet_status_never_produces_a_block(monkeypatch):
     text = "=== FOLLOW 1 ===\nSTATUS: quiet\n"
     metadata = _metadata(chunks=[], supports=[])
-    monkeypatch.setattr(ground, "_generate", lambda prompt, system, label: (text, metadata))
+    monkeypatch.setattr(ground, "_generate", lambda prompt, system, label, **kw: (text, metadata))
 
-    result = ground.research_batch("prompt", "system", "label", ["1"])
+    result = ground.research_blocks("prompt", "system", "label", ["1"], require_status=True)
     assert result["1"] == ("quiet", None)
+
+
+def test_blocks_without_status_are_kept_when_status_is_not_required(monkeypatch):
+    """dossier.py's Pass C batches several questions into one grounded call and
+    only ever wants findings back — there is no quiet/development/final axis to
+    report, so a bare header followed by prose is the whole contract."""
+    text = "=== BLOCK q1 ===\nThe hunger strike began on 14 June.\n\n=== BLOCK q2 ===\nPolice used pellet guns.\n"
+    metadata = _metadata(chunks=[], supports=[])
+    monkeypatch.setattr(ground, "_generate", lambda prompt, system, label, **kw: (text, metadata))
+
+    result = ground.research_blocks("prompt", "system", "label", ["q1", "q2"])
+
+    assert result["q1"][0] == "ok"
+    assert "hunger strike" in result["q1"][1].body
+    assert "pellet guns" in result["q2"][1].body
+    assert "BLOCK" not in result["q1"][1].body
+
+
+def test_legacy_follow_header_spelling_still_parses(monkeypatch):
+    text = "=== FOLLOW q1 ===\nStill parses.\n"
+    metadata = _metadata(chunks=[], supports=[])
+    monkeypatch.setattr(ground, "_generate", lambda prompt, system, label, **kw: (text, metadata))
+
+    result = ground.research_blocks("prompt", "system", "label", ["q1"])
+    assert result["q1"][1] is not None
+
+
+def test_search_and_schema_together_is_rejected_before_the_api_sees_it():
+    """Verified live 2026-07-25: response_mime_type=json alongside google_search
+    is a 400. Catching it here makes it a caller bug with a stack trace rather
+    than a wasted call and an opaque server error."""
+    import pytest
+
+    with pytest.raises(ValueError, match="cannot be combined"):
+        ground._generate("p", "s", "l", search=True, schema={"type": "object"})
+
+
+def test_structured_returns_none_on_malformed_json(monkeypatch):
+    monkeypatch.setattr(ground, "_generate", lambda prompt, system, label, **kw: ("not json{", None))
+    assert ground.structured("p", "s", "l", {"type": "object"}) is None
+
+
+def test_structured_parses_a_valid_payload(monkeypatch):
+    monkeypatch.setattr(ground, "_generate", lambda prompt, system, label, **kw: ('{"entries":[1,2]}', None))
+    assert ground.structured("p", "s", "l", {"type": "object"}) == {"entries": [1, 2]}
+
+
+def test_url_statuses_reports_every_outcome():
+    """dossier.md §13: a page the model could not read is a cap, and a cap is
+    never silent. PAYWALL and ERROR must survive into the record."""
+    cand = SimpleNamespace(
+        url_context_metadata=SimpleNamespace(
+            url_metadata=[
+                SimpleNamespace(retrieved_url="https://a.example/1", url_retrieval_status="URL_RETRIEVAL_STATUS_SUCCESS"),
+                SimpleNamespace(retrieved_url="https://b.example/2", url_retrieval_status="URL_RETRIEVAL_STATUS_PAYWALL"),
+            ]
+        )
+    )
+    assert ground._url_statuses(cand) == {
+        "https://a.example/1": "URL_RETRIEVAL_STATUS_SUCCESS",
+        "https://b.example/2": "URL_RETRIEVAL_STATUS_PAYWALL",
+    }
+    assert ground._url_statuses(None) == {}
 
 
 # ---------- redirect resolution ----------

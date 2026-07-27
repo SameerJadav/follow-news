@@ -235,3 +235,15 @@ def test_slug_is_filesystem_safe():
     assert tracer.slug("BBC World") == "bbc-world"
     assert tracer.slug("https://example.com/a/b?c=d") == "https-example-com-a-b-c-d"
     assert tracer.slug("!!!") == "unnamed"
+
+
+def test_dials_records_the_dossier_module():
+    """A dial missing from dials() vanishes from every debug record, which is
+    exactly the evidence calibration.md says to tune from."""
+    import dossier  # noqa: F401 - dials() introspects sys.modules
+
+    dials = tracer.dials()
+    assert dials["dossier.MAX_CALLS_PER_FOLLOW"] == dossier.MAX_CALLS_PER_FOLLOW
+    assert dials["dossier.MIN_QUESTION_SCORE"] == dossier.MIN_QUESTION_SCORE
+    assert dials["dossier.GAP_DENSITY_RATIO"] == dossier.GAP_DENSITY_RATIO
+    assert "follow.MAX_FOLLOWS_PER_BATCH" not in dials, "the batched timeline pass is gone"

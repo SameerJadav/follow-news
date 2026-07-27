@@ -1,9 +1,19 @@
 """The Follow domain: turning a prefilled GitHub issue into a followed-story
 page that grows a day at a time.
 
-`followed/<issue>.json` is a source of truth alongside `data/`; every page in
+`followed/<issue>/` is a source of truth alongside `data/`; every page in
 docs/ that concerns a followed story is derived from it and is rebuilt
-wholesale by render.py. Only this module writes followed/.
+wholesale by render.py. Only this module writes `record.json`, and only
+dossier.py writes `dossier.json`/`corpus.json` beside it.
+
+    followed/<issue>/
+      record.json     this module's contract, unchanged in shape
+      dossier.json    the evidence: ledger, entities, frontier, chips
+      corpus.json     extracted article text, keyed by URL
+
+Legacy flat `followed/<issue>.json` records still load, so follows made before
+the dossier existed keep rendering; the migration is one-way and happens the
+next time a record is written.
 
 product.md is emphatic that **nothing follows itself** — a record here exists
 only because the repo owner opened an issue labelled "follow", and every
@@ -11,13 +21,18 @@ GitHub-facing function in this module re-checks that before doing anything.
 The workflow-level `github.event.issue.user.login == 'SameerJadav'` guard in
 follow.yml is the first gate; fetch_issues()'s filter below is the second,
 so the guard holds even if this is ever invoked outside that workflow.
+Closing the issue is the owner's kill switch: an unfollowed record never
+resumes research, however much of its frontier is left.
 
-Follows are uncapped (decisions.md), so quota is protected by batching the
-daily timeline pass across every active follow in ONE grounded call, never
-one call per story — mirroring llm.py's two/three-calls-a-day discipline.
-The backstory is generated exactly once per follow and is never regenerated;
-regenerating it would both burn quota and break the "grows the fuller
-picture you already have" promise in product.md.
+Quota is no longer protected by batching one grounded call across every active
+follow — dossier.md §14 replaces that with, in order: MAX_CALLS_PER_FOLLOW,
+MAX_RESEARCH_CALLS_PER_DAY spent stalest-first, the saturation exit,
+checkpointed resumption, and MAX_NEW_FOLLOWS_PER_RUN dropped to 1. The owner
+signed that deviation off on 2026-07-27; see calibration.md.
+
+Research happens once per follow and is never repeated. PROSE, by contrast, is
+regenerable — rewriting it costs one call over an append-only ledger, which is
+why the old "the backstory is never regenerated" rule is superseded (§11).
 """
 
 from __future__ import annotations
@@ -25,17 +40,17 @@ from __future__ import annotations
 import json
 import os
 import re
-from dataclasses import asdict
 from datetime import date, datetime, timezone
 from pathlib import Path
 from urllib.parse import quote
 
 import requests
 
+import dossier
+import extract
 import ground
 import tracer
 from tracer import dbg
-from ground import GroundedBlock
 from rank import SECTIONS
 
 OWNER = "SameerJadav"
@@ -44,9 +59,10 @@ FOLLOW_LABEL = "follow"
 BASE_URL = "https://sameerjadav.github.io/follow-news/"
 
 STALE_DAYS = 14  # decisions.md: auto-close after ~14 days with no development
-MAX_FOLLOWS_PER_BATCH = 6  # follows are uncapped; grounded calls per run are not
-MAX_NEW_FOLLOWS_PER_RUN = 3  # a burst of new follows cannot drain a morning's quota
-TIMELINE_RECAP_ENTRIES = 6  # how much prior timeline the batch prompt carries per story
+# dossier.md §14: was 3. A new follow now costs a burst of research calls
+# rather than one, so a burst of REQUESTS must not stack bursts of research in
+# one morning. The rest wait for the next run; they stay open and unrecorded.
+MAX_NEW_FOLLOWS_PER_RUN = 1
 
 _API = "https://api.github.com"
 _REQUEST_TIMEOUT = 15
@@ -54,70 +70,6 @@ _REQUEST_TIMEOUT = 15
 _FIELD_RE = re.compile(r"^\s*(digest|section|story|headline)\s*:\s*(.+?)\s*$", re.IGNORECASE | re.MULTILINE)
 _DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 _WS_RE = re.compile(r"\s+")
-
-_PROSE_RULES = """\
-Write in plain adult English for a non-native reader: short sentences, \
-active voice, concrete nouns, no jargon, no idioms. Clear, but not \
-simplified — a good explainer site, not a children's news service.
-
-PLAIN TEXT ONLY. Never use markdown — no headings, no "#", no "*" or "-" \
-bullets, no bold, no links. Your output is inserted directly into a web \
-page as prose; any markup would appear as literal characters.
-
-Write one continuous piece of prose per story, paragraphs separated by a \
-single blank line. Never use a heading, a label, or a section such as \
-"Why this matters" or "What to watch".
-
-Never present a contested claim as settled. Where sources disagree, or a \
-fact is somebody's assertion, keep the attribution — "the ministry says", \
-"the BBC reported" — and say plainly where reporting disagrees or facts \
-are still uncertain.
-
-Never blend or average a figure from two sources into one number. If \
-sources disagree on a number, state both and attribute each."""
-
-_BACKSTORY_SYSTEM = f"""You are writing the full-picture explainer for a \
-story someone has chosen to follow closely. Research it using Google \
-Search, from wherever it ACTUALLY BEGAN — even if that is months or years \
-before the given date. The reader must never be dropped into the middle of \
-something with missing backstory.
-
-{_PROSE_RULES}
-
-Write chronologically: how it started, what drove it, what has happened \
-since, and where it stands as of the given date. Assume the reader has \
-read nothing about this before — not even the news story that made them \
-want to follow it.
-
-Length: 500-700 words. Close by stating plainly where things stand as of \
-the given date."""
-
-_TIMELINE_SYSTEM = f"""You maintain daily timelines for several followed \
-news stories at once, using Google Search. For EACH story block in the \
-input, in the exact same order, emit a block starting with the identical \
-"=== FOLLOW <key> ===" header line as its input block, then a line reading \
-exactly one of:
-
-STATUS: development
-STATUS: quiet
-STATUS: final
-
-Use STATUS: quiet when nothing significant happened in the covered period \
-for that story — then write nothing more for that block. A quiet period is \
-a correct, expected answer; never invent an update to fill it.
-
-Use STATUS: development when something new happened. Write 80-150 words \
-covering ONLY what is new since the period given for that story — never \
-restate the backstory or an earlier update. List EVERY significant \
-development in the period, not only the single biggest one: leaving one \
-out is as serious an error as getting one wrong.
-
-Use STATUS: final ONLY for a block whose input is marked "MODE: final". \
-Write an 80-150 word close: how the story ended and where things stand \
-now. Introduce no new claims beyond wrapping up what is already known.
-
-{_PROSE_RULES}"""
-
 
 # ---------- the followed/ contract ----------
 
@@ -134,32 +86,61 @@ def _date_label(d: date) -> str:
     return d.strftime("%A, %-d %B %Y")
 
 
-def _block_to_dict(block: GroundedBlock, generated_at: datetime) -> dict:
-    d = asdict(block)
-    d["generated_at"] = _iso(generated_at)
-    return d
-
-
 def load_all(followed_dir: Path) -> dict[int, dict]:
-    """Every followed/*.json, keyed by issue number. Returns {} if the
-    directory doesn't exist yet — Follow has never run."""
+    """Every followed record, keyed by issue number. Returns {} if the
+    directory doesn't exist yet — Follow has never run.
+
+    Reads followed/<issue>/record.json first, then legacy flat
+    followed/<issue>.json for any issue without a directory. A directory
+    always wins: it is the migrated copy, and a flat file left beside it is
+    a stale remnant of a half-finished write, never newer.
+
+    Note the glob is `*/record.json`, not `*.json` — a plain `*.json` glob is
+    NON-RECURSIVE and would silently miss every new-style record, which would
+    look exactly like "this follow has no record yet" and reseed its research
+    from scratch on every single run."""
     if not followed_dir.exists():
         return {}
+
     records: dict[int, dict] = {}
-    for path in sorted(followed_dir.glob("*.json")):
+    for path in sorted(followed_dir.glob("*/record.json"), key=lambda p: p.parent.name):
         try:
             record = json.loads(path.read_text())
             records[int(record["issue"])] = record
         except (OSError, ValueError, KeyError) as exc:
             dbg(f"follow: could not load {path} ({exc!r}); skipping")
+
+    for path in sorted(followed_dir.glob("*.json")):
+        try:
+            record = json.loads(path.read_text())
+            n = int(record["issue"])
+        except (OSError, ValueError, KeyError) as exc:
+            dbg(f"follow: could not load {path} ({exc!r}); skipping")
+            continue
+        if n in records:
+            dbg(f"follow: #{n} has both a directory and a legacy file; the directory wins")
+            continue
+        records[n] = record
     return records
 
 
 def _write_record(followed_dir: Path, record: dict) -> None:
-    followed_dir.mkdir(parents=True, exist_ok=True)
-    path = followed_dir / f"{record['issue']}.json"
-    path.write_text(json.dumps(record, indent=2, ensure_ascii=False) + "\n")
-    dbg(f"follow: wrote {path}")
+    """Write followed/<issue>/record.json, migrating a legacy flat file into
+    the directory on the way. One-way and lazy: nothing rewrites a record
+    that is never touched again."""
+    issue = record["issue"]
+    d = followed_dir / str(issue)
+    d.mkdir(parents=True, exist_ok=True)
+    (d / "record.json").write_text(json.dumps(record, indent=2, ensure_ascii=False) + "\n")
+    dbg(f"follow: wrote {d / 'record.json'}")
+
+    legacy = followed_dir / f"{issue}.json"
+    if legacy.exists():
+        try:
+            legacy.unlink()
+            dbg(f"follow: migrated legacy {legacy} into {d}/")
+        except OSError as exc:
+            dbg(f"follow: could not remove legacy {legacy} ({exc!r})")
 
 
 # ---------- the prefilled issue URL (mirrored by render.py) ----------
@@ -346,7 +327,16 @@ def close_issue(issue: int, text: str | None = None) -> None:
 # ---------- orchestration ----------
 
 
-def _new_follows(records: dict[int, dict], issues: list[dict], data_dir: Path) -> None:
+def _new_follows(
+    records: dict[int, dict], issues: list[dict], data_dir: Path, followed_dir: Path
+) -> None:
+    """Register new follows and seed their dossiers. Pass A only — the
+    research loop itself runs later in the sweep, under the shared budget.
+
+    The record and its dossier are created in the SAME step, deliberately:
+    render.py reads a record with no dossier.json beside it as a legacy
+    one-shot follow and shows its (empty) prose as finished. A window where
+    record.json exists and dossier.json does not would publish an empty page."""
     open_new = [i for i in issues if i.get("state") == "open" and int(i["number"]) not in records]
     if len(open_new) > MAX_NEW_FOLLOWS_PER_RUN:
         deferred = [i["number"] for i in open_new[MAX_NEW_FOLLOWS_PER_RUN:]]
@@ -365,42 +355,41 @@ def _new_follows(records: dict[int, dict], issues: list[dict], data_dir: Path) -
             close_issue(n, f"Could not find that story in the {request['digest']} digest — closing. Try following again from the digest page.")
             continue
 
-        prompt = (
-            f"STORY: {resolved['headline']}\n"
-            f"AS FIRST REPORTED: {resolved['date']} ({resolved['section']} section)\n\n"
-            "Research and write the full-picture explainer for this story."
-        )
-        try:
-            backstory = ground.research(prompt, _BACKSTORY_SYSTEM, f"backstory-{n}")
-        except Exception as exc:  # noqa: BLE001
-            dbg(f"follow: #{n} -> backstory generation failed ({exc!r}); leaving open for a later run")
-            continue
-
-        if backstory is None:
-            dbg(f"follow: #{n} -> backstory came back empty/ungrounded; leaving open for a later run")
-            continue
-
         now = _now()
+        origin = {
+            "date": resolved["date"],
+            "section": resolved["section"],
+            "position": resolved["position"],
+            "headline": resolved["headline"],
+        }
         record = {
             "issue": n,
             "status": "active",
             "title": resolved["headline"],
             "section": resolved["section"],
-            "origin": {
-                "date": resolved["date"],
-                "section": resolved["section"],
-                "position": resolved["position"],
-                "headline": resolved["headline"],
-            },
+            "origin": origin,
             "started_at": _iso(now),
             "closed_at": None,
             "close_reason": None,
             "last_development": resolved["date"],
-            "backstory": _block_to_dict(backstory, now),
+            "backstory": {},
             "timeline": [],
         }
+
+        try:
+            dsr, corpus = dossier.seed(followed_dir, data_dir, n, origin, resolved["headline"])
+        except Exception as exc:  # noqa: BLE001 - Pass A is free; a failure must not lose the follow
+            dbg(f"follow: #{n} -> Pass A failed ({exc!r}); leaving open for a later run")
+            continue
+
         records[n] = record
-        comment(n, f"Following: {BASE_URL}follow-{n}.html")
+        _write_record(followed_dir, record)
+        dossier.save(followed_dir, n, dsr, corpus, "A")
+
+        # Acknowledge NOW, not after the research burst. A deep follow can take
+        # tens of minutes; the old single call took twelve seconds, and silence
+        # for half an hour reads as a broken button.
+        comment(n, f"Following — researching this story now. It will appear at {BASE_URL}follow-{n}.html")
         dbg(f"follow: #{n} -> new follow started for {resolved['headline']!r}")
 
 
@@ -433,92 +422,166 @@ def _is_closing(last_development: str, today: date) -> bool:
     """decisions.md: auto-close after ~14 days with no significant
     development. A named, tunable predicate (mirrors rank.py's dials and
     anchor.py's thresholds) rather than inline arithmetic, so Phase 6 can
-    calibrate STALE_DAYS without touching _timeline_pass, and so it can be
+    calibrate STALE_DAYS without touching the update pass, and so it can be
     tested without a network call."""
     last_dev = datetime.strptime(last_development, "%Y-%m-%d").date()
     return (today - last_dev).days >= STALE_DAYS
 
 
-def _recap_lines(record: dict) -> str:
-    entries = record.get("timeline") or []
-    recent = entries[-TIMELINE_RECAP_ENTRIES:]
-    if not recent:
-        return "(none yet)"
-    lines = []
-    for e in recent:
-        first_sentence = (e.get("body") or "").split(". ", 1)[0].strip()
-        lines.append(f"- {e.get('date', '?')}: {first_sentence}")
-    return "\n".join(lines)
+def _sweep(
+    records: dict[int, dict],
+    followed_dir: Path,
+    today: date,
+    budget: dossier.Budget,
+) -> list[int]:
+    """Spend the day's research budget across active follows, stalest first.
+
+    Order matters and is a real choice: a page stuck saying "researching this
+    story" is worse for a reader than a delayed one-line update, so unfinished
+    research goes before daily updates. With MAX_CALLS_PER_FOLLOW equal to
+    MAX_RESEARCH_CALLS_PER_DAY, one new follow can legitimately consume the
+    whole day and defer everything else — logged, never silent.
+
+    Returns the issues whose prose changed, so run() knows what to re-render.
+    """
+    active = [n for n, r in records.items() if r.get("status") == "active"]
+
+    pending, due = [], []
+    for n in active:
+        dsr, _ = dossier.load(followed_dir, n)
+        if dsr is None:
+            continue  # legacy follow, no dossier: nothing to research
+        if dossier.needs_research(dsr):
+            pending.append((str(dsr.get("checkpoint", {}).get("updated_at") or ""), n))
+        elif _needs_timeline_pass(records[n]["last_development"], today):
+            due.append((records[n]["last_development"], n))
+
+    pending.sort()
+    due.sort()
+    order = [n for _, n in pending] + [n for _, n in due]
+    if not order:
+        dbg(f"follow: sweep -> nothing to research; {len(active)} active follow(s) all current")
+        return []
+
+    dbg(f"follow: sweep -> {len(pending)} researching, {len(due)} due; budget {budget.remaining()}")
+    touched: list[int] = []
+
+    for n in order:
+        if budget.day_quota_hit:
+            budget.defer(n, "daily_quota")
+            continue
+        if budget.remaining() <= 0:
+            budget.defer(n, "day_budget")
+            continue
+
+        dsr, corpus = dossier.load(followed_dir, n)
+        if dsr is None:
+            continue
+        record = records[n]
+
+        try:
+            if dossier.needs_research(dsr):
+                state = dossier.research(followed_dir, n, dsr, corpus, budget)
+                if state in ("complete", "capped"):
+                    block = dossier.write_backstory(followed_dir, n, dsr, corpus, budget)
+                    if block is not None:
+                        record["backstory"] = {**block, "generated_at": _iso(_now())}
+                        dsr["written_through"] = dsr["rounds"]
+                        touched.append(n)
+                dossier.save(followed_dir, n, dsr, corpus, "DONE")
+            else:
+                _update_follow(followed_dir, n, record, dsr, corpus, today, budget)
+                touched.append(n)
+        except dossier.DailyQuotaExhausted:
+            # Account-wide, so every remaining follow would fail identically.
+            dbg("follow: sweep -> daily quota exhausted; stopping the sweep")
+            dossier.save(followed_dir, n, dsr, corpus, dsr["checkpoint"]["stage"])
+            break
+        except Exception as exc:  # noqa: BLE001 - one bad follow must not stop the rest
+            dbg(f"follow: #{n} -> research/write failed ({exc!r}); checkpointed, will resume")
+            dossier.save(followed_dir, n, dsr, corpus, dsr["checkpoint"]["stage"])
+
+    return touched
 
 
-def _timeline_pass(records: dict[int, dict], today: date, batch: list[int]) -> None:
-    if not batch:
+def _update_follow(
+    followed_dir: Path,
+    n: int,
+    record: dict,
+    dsr: dict,
+    corpus: dict,
+    today: date,
+    budget: dossier.Budget,
+) -> None:
+    """One day's update for an already-researched follow: a short research
+    round, then prose covering only what it added.
+
+    "Quiet" is mechanical now — zero new ledger entries — rather than a model
+    judgement about whether today felt quiet."""
+    before = len(dsr["ledger"])
+    dsr["research_state"] = "researching"
+    dsr["rounds"] = max(0, dsr["rounds"])
+    dossier.admit(
+        dsr["questions"],
+        [
+            dossier._question(
+                f"What has happened in this story since {record['last_development']}?",
+                origin="gap",
+                score=0.95,
+            )
+        ],
+    )
+    # One round only: a daily update is a delta, not a re-research.
+    saved_max, dossier.MAX_ROUNDS = dossier.MAX_ROUNDS, dsr["rounds"] + 1
+    try:
+        dossier.research(followed_dir, n, dsr, corpus, budget)
+    finally:
+        dossier.MAX_ROUNDS = saved_max
+
+    if len(dsr["ledger"]) == before:
+        dbg(f"follow: #{n} -> quiet, no new ledger entries")
+        dsr["research_state"] = "complete"
+        dossier.save(followed_dir, n, dsr, corpus, "DONE")
         return
 
-    blocks = []
-    closing: dict[int, bool] = {}
-    for n in batch:
-        record = records[n]
-        is_closing = _is_closing(record["last_development"], today)
-        closing[n] = is_closing
-        blocks.append(
-            f"=== FOLLOW {n} ===\n"
-            f"MODE: {'final' if is_closing else 'update'}\n"
-            f"TITLE: {record['title']}\n"
-            f"STORY BEGAN: {record['origin']['date']}\n"
-            f"COVERED THROUGH: {record['last_development']}\n"
-            f"ALREADY COVERED:\n{_recap_lines(record)}\n"
-            f"Report only what is new after {record['last_development']}."
-        )
-    prompt = "\n\n".join(blocks)
-
-    try:
-        results = ground.research_batch(prompt, _TIMELINE_SYSTEM, "timeline", [str(n) for n in batch])
-    except Exception as exc:  # noqa: BLE001
-        dbg(f"follow: timeline batch failed ({exc!r}); leaving these follows unchanged")
+    block = dossier.write_update(followed_dir, n, dsr, corpus, budget)
+    dsr["research_state"] = "complete"
+    if block is None:
+        dossier.save(followed_dir, n, dsr, corpus, "DONE")
         return
 
     now = _now()
-    for n in batch:
-        status, block = results.get(str(n), ("quiet", None))
-        record = records[n]
+    is_closing = _is_closing(record["last_development"], today)
+    entry = {**block, "generated_at": _iso(now)}
+    entry["date"] = today.isoformat()
+    entry["date_label"] = _date_label(today)
+    entry["kind"] = "final" if is_closing else "development"
+    record["timeline"] = (record.get("timeline") or []) + [entry]
+    record["last_development"] = today.isoformat()
+    dsr["written_through"] = dsr["rounds"]
+    dossier.save(followed_dir, n, dsr, corpus, "DONE")
 
-        if status == "development" and block is not None:
-            entry = _block_to_dict(block, now)
-            entry["date"] = today.isoformat()
-            entry["date_label"] = _date_label(today)
-            entry["kind"] = "development"
-            record["timeline"].append(entry)
-            record["last_development"] = today.isoformat()
-            dbg(f"follow: #{n} -> timeline entry added ({today})")
-
-        elif status == "final" and block is not None:
-            if not closing[n]:
-                dbg(f"follow: #{n} -> model returned STATUS: final but story wasn't due to close; treating as quiet")
-                continue
-            entry = _block_to_dict(block, now)
-            entry["date"] = today.isoformat()
-            entry["date_label"] = _date_label(today)
-            entry["kind"] = "final"
-            record["timeline"].append(entry)
-            record["status"] = "closed"
-            record["close_reason"] = "no_development"
-            record["closed_at"] = _iso(now)
-            close_issue(n, f"No new developments for {STALE_DAYS} days — closing. Final update: {BASE_URL}follow-{n}.html")
-            dbg(f"follow: #{n} -> closed, no development for {STALE_DAYS}+ days")
-
-        # status == "quiet" (or a status/block mismatch): nothing to do. A
-        # quiet day appends no entry — silence, not a "nothing happened" line.
+    if is_closing:
+        record["status"] = "closed"
+        record["close_reason"] = "no_development"
+        record["closed_at"] = _iso(now)
+        close_issue(n, f"No new developments for {STALE_DAYS} days — closing. Final update: {BASE_URL}follow-{n}.html")
+        dbg(f"follow: #{n} -> closed, no development for {STALE_DAYS}+ days")
 
 
 def run(data_dir: Path, followed_dir: Path, docs_dir: Path, today: date, only_issue: int | None = None) -> None:
     """The full Follow pass: load -> fetch -> start new follows -> retire
-    unfollowed ones -> batch-append today's timeline -> write -> render.
+    unfollowed ones -> research and write under the day's budget -> render.
     Every stage is independently guarded; one stage failing never prevents
     the others, and this function itself is expected to be wrapped in
     continue-on-error by the caller (digest.py's run_pipeline / the digest
     workflow) so Follow can never take the daily digest down."""
     import render  # local import: mirrors digest.py's lazy render import
+
+    # The extraction cache is shared across follows and across days: fourteen
+    # days of updates on one story would otherwise re-fetch the same background
+    # articles every morning, each costing a request and a Jina pause.
+    extract.enable_cache(followed_dir.parent / "cache" / "extract.json")
 
     records = load_all(followed_dir)
     issues = fetch_issues()
@@ -528,16 +591,12 @@ def run(data_dir: Path, followed_dir: Path, docs_dir: Path, today: date, only_is
 
     dbg(f"follow: run -> {len(records)} existing record(s), {len(issues)} owner issue(s) in scope")
 
-    _new_follows(records, issues, data_dir)
+    _new_follows(records, issues, data_dir, followed_dir)
     _unfollow_closed(records, issues, _now())
 
+    budget = dossier.load_budget(followed_dir, today)
     active = [n for n, r in records.items() if r.get("status") == "active"]
-    due = [n for n in active if _needs_timeline_pass(records[n]["last_development"], today)]
-    if len(due) < len(active):
-        dbg(f"follow: run -> {len(active) - len(due)} active follow(s) already current as of {today}; skipping")
-
-    for i in range(0, len(due), MAX_FOLLOWS_PER_BATCH):
-        _timeline_pass(records, today, due[i : i + MAX_FOLLOWS_PER_BATCH])
+    due = _sweep(records, followed_dir, today, budget)
 
     for record in records.values():
         _write_record(followed_dir, record)
@@ -549,7 +608,7 @@ def run(data_dir: Path, followed_dir: Path, docs_dir: Path, today: date, only_is
         follow_records=len(records),
         follow_issues_in_scope=len(issues),
         follow_active=len(active),
-        follow_due=len(due),
+        follow_touched=len(due),
         follow_grounded_calls=ground._CALLS,
     )
     tracer.artifact_json(
@@ -565,7 +624,7 @@ def run(data_dir: Path, followed_dir: Path, docs_dir: Path, today: date, only_is
                     "headline": r.get("headline"),
                     "last_development": r.get("last_development"),
                     "timeline_entries": len(r.get("timeline") or []),
-                    "due_this_run": r.get("issue") in due,
+                    "touched_this_run": r.get("issue") in due,
                 }
                 for r in records.values()
             ],
