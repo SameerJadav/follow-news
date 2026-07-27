@@ -58,20 +58,37 @@ from tracer import dbg
 
 # ---------- dials (dossier.md §15) ----------
 
-# The free tier meters ~20 requests per day PER MODEL
-# (`GenerateRequestsPerDayPerProjectPerModel-FreeTier`), so there are two
-# pools, not one:
+# The free tier meters PER MODEL, so there are two pools, not one:
 #
 #   grounded pool  gemini-2.5-flash   Passes B, C, D, G          — Follow only
 #   schema pool    gemini-3.6-flash   Pass E, the write passes   — shared with
 #                                                                  the digest
 #
-# The digest spends 3-4 of the schema pool every morning, so Follow leaves it
-# room. Sized to spend a full day's grounded allowance rather than leaving any
-# of it unused: at ~3 grounded calls a round that is five or six rounds a day,
-# where the first live run managed three before it ran out.
-MAX_GROUNDED_CALLS_PER_DAY = 18  # of ~20, leaving slack for a retry
-MAX_SCHEMA_CALLS_PER_DAY = 14  # of ~20, leaving the digest its 3-4 plus slack
+# These are CEILINGS OF LAST RESORT, not the real limits. Two different meters
+# apply to a grounded call — the model's own requests-per-day, and the Google
+# Search grounding allowance — and they are orders of magnitude apart, both
+# unpublished, both moved without notice before (research.md §3.1). Sizing
+# these by guesswork gets it wrong in one direction or the other: too low
+# wastes most of the allowance, too high 429s mid-round.
+#
+# So the real limit is LEARNED. `Budget` reads the number back off the first
+# PerDay 429 (ratelimit.daily_limit) and remembers it in
+# followed/_budget/limits.json, and every later day caps itself to what the
+# server actually enforced. These defaults are deliberately optimistic: with
+# checkpointing, discovering the ceiling costs one wasted call once, while
+# under-guessing it costs unused capacity every single day.
+MAX_GROUNDED_CALLS_PER_DAY = 120
+# The schema pool is shared with the digest's own 3-4 morning calls, so it
+# stays conservative until measured — starving the digest is the one failure
+# this whole feature must never cause.
+MAX_SCHEMA_CALLS_PER_DAY = 14
+QUOTA_SAFETY_MARGIN = 2  # calls held back from a learned ceiling
+# A learned ceiling goes stale. research.md §3.1 records the free tier being
+# cut 50-80% in December 2025, and limits move upward too. After this many
+# days the cap reverts to the optimistic default and re-discovers — one
+# wasted call to find out, against weeks of unused allowance if a raised
+# limit went unnoticed.
+LEARNED_LIMIT_TTL_DAYS = 14
 
 QUESTIONS_PER_ROUND = 10  # how many frontier questions a round pops
 # Five per call, not three: at 18 grounded calls a day, a round that spends
@@ -645,8 +662,11 @@ class Budget:
         schema_cap: int = MAX_SCHEMA_CALLS_PER_DAY,
     ) -> None:
         self.path = path
-        self.cap = cap
-        self.schema_cap = schema_cap
+        self.limits_path = path.parent / "limits.json"
+        self.learned = self._load_learned()
+        # A ceiling the server has actually enforced always beats a guess.
+        self.cap = self._cap_for("grounded", cap)
+        self.schema_cap = self._cap_for("schema", schema_cap)
         try:
             state = json.loads(path.read_text())
         except (OSError, ValueError):
@@ -657,6 +677,43 @@ class Budget:
         self.schema_quota_hit = bool(state.get("schema_quota_exhausted", False))
         self.spends: list[dict] = list(state.get("spends") or [])
         self.deferred: list[dict] = list(state.get("deferred") or [])
+
+    def _load_learned(self) -> dict:
+        try:
+            return json.loads(self.limits_path.read_text())
+        except (OSError, ValueError):
+            return {}
+
+    def _cap_for(self, pool: str, default: int) -> int:
+        """A learned ceiling wins over the optimistic default, minus a margin
+        so the last call of the day is ours rather than a wasted 429 — until
+        it goes stale, at which point we re-discover rather than trust a
+        number the provider may have moved."""
+        entry = self.learned.get(pool) or {}
+        rpd = entry.get("rpd")
+        if not isinstance(rpd, int) or rpd <= 0:
+            return default
+        if _stale(str(entry.get("learned_at") or "")):
+            dbg(f"dossier: {pool} ceiling of {rpd} is over {LEARNED_LIMIT_TTL_DAYS} days old; re-probing")
+            return default
+        return max(1, min(default, rpd - QUOTA_SAFETY_MARGIN))
+
+    def learn(self, pool: str, rpd: int, model: str = "") -> None:
+        """Remember a ceiling the server just enforced, so tomorrow stops one
+        call short of it instead of rediscovering it the hard way."""
+        if rpd <= 0:
+            return
+        known = (self.learned.get(pool) or {}).get("rpd")
+        if known == rpd:
+            return
+        self.learned[pool] = {"rpd": rpd, "model": model, "learned_at": _now_iso()}
+        dbg(f"dossier: learned {pool} daily ceiling = {rpd} request(s); recorded for future runs")
+        tracer.event("dossier", verdict="quota_learned", pool=pool, rpd=rpd, model=model)
+        try:
+            self.limits_path.parent.mkdir(parents=True, exist_ok=True)
+            self.limits_path.write_text(json.dumps(self.learned, indent=2) + "\n")
+        except OSError as exc:
+            dbg(f"dossier: could not write {self.limits_path} ({exc!r})")
 
     def remaining(self) -> int:
         return max(0, self.cap - self.spent)
@@ -713,6 +770,14 @@ class Budget:
             )
         except OSError as exc:
             dbg(f"dossier: could not write budget {self.path} ({exc!r})")
+
+
+def _stale(learned_at: str) -> bool:
+    try:
+        when = datetime.strptime(learned_at, "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc)
+    except ValueError:
+        return True
+    return (datetime.now(timezone.utc) - when).days >= LEARNED_LIMIT_TTL_DAYS
 
 
 def load_budget(followed_dir: Path, today: date) -> Budget:
@@ -969,10 +1034,18 @@ def _guarded(fn, dsr: dict, budget: Budget, pool: str = "grounded"):
         return fn()
     except Exception as exc:  # noqa: BLE001 - classified immediately below
         if ratelimit.is_daily_quota(exc):
+            spent = budget.spent if pool == "grounded" else budget.schema_spent
             dbg(
-                f"dossier: #{dsr['issue']} {pool} daily quota exhausted "
+                f"dossier: #{dsr['issue']} {pool} daily quota exhausted after {spent} call(s) "
                 f"{ratelimit.quota_facts(exc)}; checkpointing"
             )
+            limit = ratelimit.daily_limit(exc)
+            if limit is not None:
+                budget.learn(pool, limit, ground.GROUND_MODEL if pool == "grounded" else ground.SCHEMA_MODEL)
+            else:
+                # The server did not name a number, so the only evidence of the
+                # ceiling is what we managed to spend before it said no.
+                budget.learn(pool, max(1, spent), "")
             budget.mark_daily_quota(pool)
             raise DailyQuotaExhausted(pool) from exc
         raise

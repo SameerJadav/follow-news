@@ -133,8 +133,7 @@ job), `render.yml` (push-triggered re-render, no API key), `follow.yml`
   deferrals recorded, the saturation exit, checkpointed resumption, and
   `MAX_NEW_FOLLOWS_PER_RUN = 1`.
 - **The free tier meters per MODEL, so there are two daily pools, not one.**
-  The quota that bites is `GenerateRequestsPerDayPerProjectPerModel-FreeTier`
-  ≈ **20 requests/day each** (RPM is 5). `ground.GROUND_MODEL`
+  `ground.GROUND_MODEL`
   (`gemini-2.5-flash`) carries every call that uses a tool — the grounded
   searches and `url_context` reads. `ground.SCHEMA_MODEL`
   (`gemini-3.6-flash`, the same model `llm.py` uses) carries every tool-less
@@ -143,6 +142,19 @@ job), `render.yml` (push-triggered re-render, no API key), `follow.yml`
   `dossier.Budget` meters the two separately: exhausting one must never stop
   work that would draw on the other. The digest spends 3–4 of the schema pool
   each morning, which is why `MAX_SCHEMA_CALLS_PER_DAY` leaves it room.
+- **The daily ceiling is LEARNED, not hardcoded.** Two different meters apply
+  to a grounded call — the model's own `GenerateRequestsPerDay...` and the
+  Google Search grounding allowance — and they are orders of magnitude apart,
+  both unpublished, both moved before (`research.md` §3.1). So
+  `ratelimit.daily_limit()` reads the number off the 429 that actually fires
+  and `dossier.Budget.learn()` records it in `followed/_budget/limits.json`;
+  later runs cap themselves to what the server really enforced, minus
+  `QUOTA_SAFETY_MARGIN`. The defaults are deliberately optimistic because the
+  costs are asymmetric: discovering the ceiling costs one wasted call once
+  (checkpointing makes a 429 a pause, not a failure), while under-guessing it
+  wastes allowance every single day. A learned value expires after
+  `LEARNED_LIMIT_TTL_DAYS` so a raised limit is not ignored forever — and
+  deleting `limits.json` forces an immediate re-probe.
 - **The dossier is append-only.** Entries are corrected and merged, never
   silently dropped — whatever a reader saw yesterday is still accounted for
   today. A duplicate event from a second outlet raises `outlet_count`; two

@@ -726,14 +726,77 @@ def test_a_pool_quota_hit_names_the_pool_it_hit(tmp_path):
     assert b.day_quota_hit is False, "the grounded pool is a different model and still has quota"
 
 
-def test_the_daily_pools_fit_inside_the_real_free_tier_ceiling():
-    """Measured 2026-07-27: ~20 requests per day per model. Dials that exceed
-    that guarantee a 429 mid-run instead of a clean stop."""
-    assert dossier.MAX_GROUNDED_CALLS_PER_DAY <= 20
-    assert dossier.MAX_SCHEMA_CALLS_PER_DAY <= 20
-    # The digest spends 3-4 of the schema pool every morning and must not be
-    # crowded out by Follow.
+def test_the_schema_pool_always_leaves_the_digest_room():
+    """The schema pool is shared with llm.py's 3-4 morning calls. Follow
+    starving the digest is the one failure this feature must never cause, so
+    this cap stays conservative whatever the grounded pool is set to."""
     assert dossier.MAX_SCHEMA_CALLS_PER_DAY <= 16
+
+
+def test_a_learned_ceiling_overrides_the_optimistic_default(tmp_path):
+    """The two meters on a grounded call — the model's requests-per-day and
+    the Google Search grounding allowance — are orders of magnitude apart and
+    both unpublished. Rather than guess, the ceiling is read off the 429 that
+    actually fires and remembered."""
+    b = dossier.Budget(tmp_path / "2026-07-28.json")
+    assert b.cap == dossier.MAX_GROUNDED_CALLS_PER_DAY
+
+    b.learn("grounded", 20, "gemini-2.5-flash")
+
+    tomorrow = dossier.Budget(tmp_path / "2026-07-29.json")
+    assert tomorrow.cap == 20 - dossier.QUOTA_SAFETY_MARGIN
+    assert tomorrow.schema_cap == dossier.MAX_SCHEMA_CALLS_PER_DAY, "pools are learned separately"
+
+
+def test_a_learned_ceiling_never_raises_a_cap_above_its_default(tmp_path):
+    """A generous grounding allowance must not quietly lift the schema pool
+    past the room the digest needs."""
+    b = dossier.Budget(tmp_path / "2026-07-28.json")
+    b.learn("schema", 1500, "gemini-3.6-flash")
+    assert dossier.Budget(tmp_path / "2026-07-29.json").schema_cap == dossier.MAX_SCHEMA_CALLS_PER_DAY
+
+
+def test_the_ceiling_is_learned_even_when_the_server_names_no_number(tmp_path):
+    """Some 429s carry no quotaValue. What we managed to spend before being
+    refused is still evidence, and better than the optimistic default."""
+    import pytest
+
+    b = dossier.Budget(tmp_path / "2026-07-28.json")
+    for _ in range(9):
+        b.spend(1, pool="grounded")
+    dsr = dossier.new_dossier(1, "s")
+
+    class _Bare(Exception):
+        code = 429
+
+    def boom():
+        raise _Bare("429 RESOURCE_EXHAUSTED: quota exceeded PerDay")
+
+    with pytest.raises(dossier.DailyQuotaExhausted):
+        dossier._guarded(boom, dsr, b, "grounded")
+
+    assert dossier.Budget(tmp_path / "2026-07-29.json").cap == max(1, 9 - dossier.QUOTA_SAFETY_MARGIN)
+
+
+def test_daily_limit_reads_the_number_off_a_real_429():
+    import ratelimit
+
+    class E(Exception):
+        code = 429
+        details = {"error": {"details": [{"violations": [{
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerDayPerProjectPerModel-FreeTier",
+            "quotaValue": "20"}]}]}}
+
+    assert ratelimit.daily_limit(E("429")) == 20
+
+    class PerMinute(Exception):
+        code = 429
+        details = {"error": {"details": [{"violations": [{
+            "quotaId": "GenerateRequestsPerMinutePerProjectPerModel-FreeTier",
+            "quotaValue": "5"}]}]}}
+
+    assert ratelimit.daily_limit(PerMinute("429")) is None, "a per-minute limit is not a daily ceiling"
 
 
 def test_a_round_fits_inside_one_days_grounded_pool():
@@ -743,3 +806,31 @@ def test_a_round_fits_inside_one_days_grounded_pool():
     search_calls = math.ceil(dossier.QUESTIONS_PER_ROUND / dossier.QUESTIONS_PER_CALL)
     per_round = search_calls + 1 + 1  # + url_context read + critic, worst case
     assert dossier.MAX_GROUNDED_CALLS_PER_DAY // per_round >= 3, "fewer than 3 rounds a day is too slow"
+
+
+def test_a_stale_learned_ceiling_is_re_probed(tmp_path):
+    """Free-tier limits move — research.md §3.1 records a 50-80% cut in one
+    month, and they go up too. A ceiling learned once and trusted forever
+    would silently cap us at a number the provider has since raised."""
+    import json as _json
+
+    (tmp_path / "limits.json").write_text(_json.dumps({
+        "grounded": {"rpd": 20, "model": "m", "learned_at": "2020-01-01T00:00:00Z"}
+    }))
+    assert dossier.Budget(tmp_path / "d.json").cap == dossier.MAX_GROUNDED_CALLS_PER_DAY
+
+
+def test_a_fresh_learned_ceiling_is_respected(tmp_path):
+    import json as _json
+
+    (tmp_path / "limits.json").write_text(_json.dumps({
+        "grounded": {"rpd": 20, "model": "m", "learned_at": dossier._now_iso()}
+    }))
+    assert dossier.Budget(tmp_path / "d.json").cap == 20 - dossier.QUOTA_SAFETY_MARGIN
+
+
+def test_an_unparseable_learned_at_is_treated_as_stale(tmp_path):
+    import json as _json
+
+    (tmp_path / "limits.json").write_text(_json.dumps({"grounded": {"rpd": 5, "learned_at": "junk"}}))
+    assert dossier.Budget(tmp_path / "d.json").cap == dossier.MAX_GROUNDED_CALLS_PER_DAY
