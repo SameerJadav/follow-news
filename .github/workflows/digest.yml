@@ -20,6 +20,16 @@ concurrency:
   group: pages
   cancel-in-progress: false
 
+# THE DEBUG SWITCH. "1" captures the full evidence of every run into
+# debug/<date>/ (raw feeds, scraped pages, prompts, model responses, every
+# rejection and why) and commits it, for the Phase 6 Part B calibration
+# window. Set it to "0" to switch all of that off: no directory is created
+# and no file is written, with no other change anywhere in the pipeline.
+# debug/ is disposable -- it is never a source of truth, and deleting it
+# only costs the record, never the digest.
+env:
+  DIGEST_DEBUG: "1"
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -64,8 +74,11 @@ jobs:
           # pathspec is a fatal error, which would kill this step and take the
           # honest stale page down with it. mkdir first so the fallback always
           # gets committed, which is the whole point of `if: always()` here.
-          mkdir -p data docs followed
-          git add data docs followed
+          # debug/ joins them for the same reason: it is absent when
+          # DIGEST_DEBUG is "0", and a failed morning's evidence is exactly
+          # what must survive, so it is committed under if: always() too.
+          mkdir -p data docs followed debug
+          git add data docs followed debug
           git diff --cached --quiet || git commit -m "digest: $(date -u +%F)"
           # The issue-triggered follow workflow can commit between this job's
           # checkout and this push; retry with a rebase rather than racing it.

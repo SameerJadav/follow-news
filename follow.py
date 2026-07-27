@@ -33,7 +33,8 @@ from urllib.parse import quote
 import requests
 
 import ground
-from feeds import dbg
+import tracer
+from tracer import dbg
 from ground import GroundedBlock
 from rank import SECTIONS
 
@@ -543,3 +544,30 @@ def run(data_dir: Path, followed_dir: Path, docs_dir: Path, today: date, only_is
 
     render.render_all(data_dir, docs_dir, today, followed_dir)
     dbg(f"follow: run -> done, {ground._CALLS} grounded call(s) this run")
+
+    tracer.count(
+        follow_records=len(records),
+        follow_issues_in_scope=len(issues),
+        follow_active=len(active),
+        follow_due=len(due),
+        follow_grounded_calls=ground._CALLS,
+    )
+    tracer.artifact_json(
+        "follow/records.json",
+        {
+            "today": f"{today:%Y-%m-%d}",
+            "only_issue": only_issue,
+            "grounded_calls": ground._CALLS,
+            "records": [
+                {
+                    "issue": r.get("issue"),
+                    "status": r.get("status"),
+                    "headline": r.get("headline"),
+                    "last_development": r.get("last_development"),
+                    "timeline_entries": len(r.get("timeline") or []),
+                    "due_this_run": r.get("issue") in due,
+                }
+                for r in records.values()
+            ],
+        },
+    )

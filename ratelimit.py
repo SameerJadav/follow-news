@@ -27,7 +27,8 @@ import time
 from collections.abc import Callable
 from typing import TypeVar
 
-from feeds import dbg
+import tracer
+from tracer import dbg
 
 T = TypeVar("T")
 
@@ -124,6 +125,8 @@ def call_with_resume(
                     "not waiting out a day inside one run -- the next staggered "
                     "cron will retry"
                 )
+                tracer.event("ratelimit", label=label, verdict="daily_quota_exhausted",
+                             attempt=attempt + 1, facts=quota_facts(exc))
                 raise
 
             attempt += 1
@@ -140,10 +143,21 @@ def call_with_resume(
                     f"(elapsed {elapsed:.0f}s + {wait:.0f}s > {WAIT_BUDGET_S:.0f}s budget) "
                     f"{quota_facts(exc)}"
                 )
+                tracer.event("ratelimit", label=label, verdict="budget_exhausted",
+                             attempt=attempt, elapsed_s=round(elapsed, 1),
+                             would_wait_s=round(wait, 1), budget_s=WAIT_BUDGET_S,
+                             facts=quota_facts(exc))
                 raise
 
             dbg(
                 f"ratelimit: {label} 429, waiting {wait:.0f}s "
                 f"(elapsed {elapsed:.0f}s/{WAIT_BUDGET_S:.0f}s) {quota_facts(exc)}"
             )
+            # The real free-tier numbers are unpublished and move without
+            # notice (research.md §3.1). A week of actual 429s, with the
+            # server's own retryDelay, is the only way to know where we sit.
+            tracer.event("ratelimit", label=label, verdict="waiting",
+                         attempt=attempt, elapsed_s=round(elapsed, 1),
+                         wait_s=round(wait, 1), server_retry_delay=retry_after(exc),
+                         budget_s=WAIT_BUDGET_S, facts=quota_facts(exc))
             sleep_fn(wait)

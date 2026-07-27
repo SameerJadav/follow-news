@@ -16,7 +16,9 @@ from __future__ import annotations
 import re
 from dataclasses import dataclass
 
-from feeds import Article, dbg
+import tracer
+from feeds import Article
+from tracer import dbg
 from wikipedia import WikiEvent
 
 SECTIONS = ("world", "india")
@@ -105,8 +107,28 @@ def build_select_pool(articles: list[Article]) -> list[Article]:
         per_outlet[a.outlet] = n + 1
         pool.append(a)
 
+    over_global = max(0, len(pool) - MAX_SELECT_ARTICLES)
     pool = pool[:MAX_SELECT_ARTICLES]
     dbg(f"rank: select pool {len(articles)} -> {len(pool)}; capped outlets: {capped}")
+
+    tracer.count(pool_in=len(articles), pool_out=len(pool),
+                 pool_cut_outlet_cap=sum(capped.values()), pool_cut_global_cap=over_global)
+    # The exact pool, with the [i] index the select prompt uses — so a bad
+    # selection can be read against precisely what the model was shown.
+    tracer.artifact_json(
+        "pool.json",
+        {
+            "max_articles_per_outlet": MAX_ARTICLES_PER_OUTLET,
+            "max_select_articles": MAX_SELECT_ARTICLES,
+            "dropped_by_outlet_cap": capped,
+            "dropped_by_global_cap": over_global,
+            "articles": [
+                {"i": i, "outlet": a.outlet, "title": a.title, "url": a.url,
+                 "published": a.published, "summary": a.summary}
+                for i, a in enumerate(pool)
+            ],
+        },
+    )
     return pool
 
 
@@ -168,44 +190,70 @@ def rank_clusters(
     claimed: set[int] = set()
     scored: list[RankedCluster] = []
     rejected_ids = 0
+    row_of: dict[int, dict] = {}  # id(RankedCluster) -> its debug row
 
-    prelim: list[tuple[SelectedCluster, list[int]]] = []
-    for cluster in selected:
+    # One row per cluster the model proposed, carrying its verdict all the
+    # way to the end. Everything the digest didn't publish is decided here,
+    # and today none of it survives the run — this is the record that lets
+    # WEIGHT_FLOOR and the tier weights be tuned against evidence.
+    rows: list[dict] = [
+        {
+            "headline_hint": c.headline_hint,
+            "section": c.section,
+            "category": c.category,
+            "tier_requested": c.tier,
+            "article_ids": list(c.article_ids),
+            "verdict": "pending",
+        }
+        for c in selected
+    ]
+
+    prelim: list[tuple[SelectedCluster, list[int], int]] = []
+    for pos, cluster in enumerate(selected):
+        row = rows[pos]
         if cluster.section not in SECTIONS:
             dbg(f"rank: dropped invalid section {cluster.section!r} {cluster.headline_hint!r}")
+            row["verdict"] = "dropped:bad_section"
             continue
         category = cluster.category
         if category not in CATEGORIES:
             dbg(f"rank: dropped invalid category {category!r} {cluster.headline_hint!r}")
+            row["verdict"] = "dropped:bad_category"
             continue
         tier = cluster.tier if cluster.tier in TIERS else "notable"
         if cluster.tier not in TIERS:
             dbg(f"rank: invalid tier {cluster.tier!r} for {cluster.headline_hint!r}, using 'notable'")
+            row["tier_coerced"] = True
 
         if category in OUT_OF_SCOPE:
             dbg(f"rank: dropped out-of-scope [{category}] {cluster.headline_hint!r}")
+            row["verdict"] = "dropped:out_of_scope"
             continue
 
         valid_ids: list[int] = []
         for i in cluster.article_ids:
             if not isinstance(i, int) or not (0 <= i < len(pool)):
                 rejected_ids += 1
+                row.setdefault("bad_ids", []).append(i)
                 continue
             if i in claimed:
+                row.setdefault("ids_claimed_by_earlier_cluster", []).append(i)
                 continue
             claimed.add(i)
             valid_ids.append(i)
 
         if not valid_ids:
+            row["verdict"] = "dropped:no_valid_articles"
             continue
 
-        prelim.append((SelectedCluster(cluster.headline_hint, cluster.section, category, tier, valid_ids), valid_ids))
+        row["valid_ids"] = valid_ids
+        prelim.append((SelectedCluster(cluster.headline_hint, cluster.section, category, tier, valid_ids), valid_ids, pos))
 
     # Demote surplus leads: within each section, only the cluster with the
     # most distinct outlets keeps tier "lead" — guards against tier
     # inflation floating everything over the floor.
     by_section: dict[str, list[int]] = {}
-    for idx, (c, ids) in enumerate(prelim):
+    for idx, (c, ids, _pos) in enumerate(prelim):
         if c.tier == "lead":
             by_section.setdefault(c.section, []).append(idx)
 
@@ -215,11 +263,13 @@ def rank_clusters(
         for i in idxs:
             lead_keep[i] = i == best_idx
 
-    for idx, (cluster, ids) in enumerate(prelim):
+    for idx, (cluster, ids, pos) in enumerate(prelim):
+        row = rows[pos]
         tier = cluster.tier
         if tier == "lead" and not lead_keep.get(idx, True):
             dbg(f"rank: demoted surplus lead to major [{cluster.section}] {cluster.headline_hint!r}")
             tier = "major"
+            row["demoted_surplus_lead"] = True
 
         distinct_outlets = len({pool[i].outlet for i in ids})
         cluster_text = cluster.headline_hint + " " + " ".join(pool[i].title for i in ids)
@@ -233,29 +283,53 @@ def rank_clusters(
             f"wiki={'yes' if wiki_backed else 'no'} weight={weight} {cluster.headline_hint!r}"
         )
 
-        scored.append(
-            RankedCluster(
-                headline_hint=cluster.headline_hint,
-                section=cluster.section,
-                category=cluster.category,
-                tier=tier,
-                articles=articles,
-                distinct_outlets=distinct_outlets,
-                wiki_backed=wiki_backed,
-                weight=weight,
-            )
+        # The weight arithmetic spelled out, so a bad cutoff is readable
+        # without re-deriving it from the dials by hand.
+        row.update(
+            {
+                "tier_final": tier,
+                "distinct_outlets": distinct_outlets,
+                "wiki_backed": wiki_backed,
+                "wiki_event": wiki_event.text if wiki_event else "",
+                "weight": weight,
+                "weight_terms": {
+                    "distinct_outlets": distinct_outlets,
+                    "tier_weight": TIER_WEIGHT[tier],
+                    "wiki_bonus": WIKI_BONUS if wiki_backed else 0,
+                },
+                "weight_floor": WEIGHT_FLOOR,
+                "articles": [{"outlet": a.outlet, "title": a.title, "url": a.url} for a in articles],
+                "articles_dropped_by_diversity_cap": max(0, len(ids) - len(articles)),
+                "verdict": "scored",
+            }
         )
+
+        ranked = RankedCluster(
+            headline_hint=cluster.headline_hint,
+            section=cluster.section,
+            category=cluster.category,
+            tier=tier,
+            articles=articles,
+            distinct_outlets=distinct_outlets,
+            wiki_backed=wiki_backed,
+            weight=weight,
+        )
+        row_of[id(ranked)] = row
+        scored.append(ranked)
 
     scored.sort(key=lambda c: (c.weight, c.distinct_outlets), reverse=True)
 
+    floor_relaxed = False
     kept = [c for c in scored if c.weight >= WEIGHT_FLOOR]
     if not kept and scored:
         kept = scored[:MIN_STORIES_IF_ANY]
+        floor_relaxed = True
         dbg(
             f"rank: FLOOR RELAXED — nothing cleared weight>={WEIGHT_FLOOR}; "
             f"keeping top {len(kept)} by weight. Tune WEIGHT_FLOOR."
         )
 
+    over_cap = kept[HARD_CAP:]
     kept = kept[:HARD_CAP]
 
     world = sorted((c for c in kept if c.section == "world"), key=lambda c: c.weight, reverse=True)
@@ -266,6 +340,48 @@ def rank_clusters(
     dbg(
         f"rank: {len(scored)} scored, {rejected_ids} id(s) rejected, "
         f"{len(final)} kept {per_section}; weights={[c.weight for c in final]}"
+    )
+
+    # Resolve each scored cluster's final fate. row_of is keyed by id() of
+    # the RankedCluster, which stays correct even when two clusters share a
+    # headline hint and a weight.
+    kept_ids = {id(c) for c in final}
+    cap_ids = {id(c) for c in over_cap}
+    for cl in scored:
+        row = row_of.get(id(cl))
+        if row is None:
+            continue
+        if id(cl) in kept_ids:
+            row["verdict"] = "kept"
+        elif id(cl) in cap_ids:
+            row["verdict"] = f"cut:hard_cap(>{HARD_CAP})"
+        else:
+            row["verdict"] = f"cut:below_floor({cl.weight}<{WEIGHT_FLOOR})"
+
+    tracer.count(
+        clusters_proposed=len(selected),
+        clusters_scored=len(scored),
+        clusters_kept=len(final),
+        clusters_world=len(world),
+        clusters_india=len(india),
+        rejected_article_ids=rejected_ids,
+    )
+    tracer.artifact_json(
+        "rank.json",
+        {
+            "dials": {
+                "WEIGHT_FLOOR": WEIGHT_FLOOR,
+                "TIER_WEIGHT": TIER_WEIGHT,
+                "WIKI_BONUS": WIKI_BONUS,
+                "HARD_CAP": HARD_CAP,
+                "MIN_STORIES_IF_ANY": MIN_STORIES_IF_ANY,
+                "MAX_ARTICLES_PER_STORY": MAX_ARTICLES_PER_STORY,
+            },
+            "floor_relaxed": floor_relaxed,
+            "kept_weights": [c.weight for c in final],
+            "per_section": per_section,
+            "clusters": rows,
+        },
     )
     return final
 
@@ -294,3 +410,17 @@ def wiki_coverage_report(events: list[WikiEvent], ranked: list[RankedCluster]) -
     for event in unmatched:
         topic = f"{event.topic} — " if event.topic else ""
         dbg(f"wiki: NOT COVERED [{event.category}] {topic}{event.text}")
+
+    # "missed:" in calibration.md's morning entry is answered from exactly
+    # this list — keep it as data, not just a log line to grep for.
+    tracer.count(wiki_matched=matched, wiki_not_covered=len(unmatched))
+    tracer.artifact_json(
+        "wikipedia/coverage.json",
+        {
+            "events": len(events),
+            "matched": matched,
+            "not_covered": [
+                {"category": e.category, "topic": e.topic, "text": e.text} for e in unmatched
+            ],
+        },
+    )

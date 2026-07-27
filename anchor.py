@@ -15,11 +15,13 @@ prompt (the same rationale as rank.py's dials).
 
 from __future__ import annotations
 
+import dataclasses
 import re
 from collections import defaultdict
 from dataclasses import dataclass
 
-from feeds import dbg
+import tracer
+from tracer import dbg
 from rank import RankedCluster
 
 CLAIM_KINDS = ("event", "background", "figure", "quote")
@@ -277,6 +279,59 @@ def cited_sources(markers: list[Marker]) -> list[dict]:
     return out
 
 
+# Verdict rows for every story this gate judged, rewritten after each one.
+_ROWS: list[dict] = []
+
+
+def _verdict(row: dict) -> None:
+    _ROWS.append(row)
+    tracer.artifact_json(
+        "anchor/index.json",
+        {
+            "thresholds": {
+                "MIN_BODY_WORDS": MIN_BODY_WORDS,
+                "MIN_MARKERS": MIN_MARKERS,
+                "MAX_UNANCHORED_SHARE": MAX_UNANCHORED_SHARE,
+                "THIN_MIN_CLAIM_OUTLETS": THIN_MIN_CLAIM_OUTLETS,
+                "THIN_MAX_OUTLET_SHARE": THIN_MAX_OUTLET_SHARE,
+                "WORD_TARGET": WORD_TARGET,
+            },
+            "stories": _ROWS,
+        },
+    )
+
+
+def _drop(cluster: RankedCluster, cluster_id: int, hint: str, reason: str, raw: dict,
+          claims: list[Claim], body: str, markers: list[Marker], metrics: dict) -> None:
+    """Everything known at the moment a story was thrown away.
+
+    A drop here is the most expensive failure in the pipeline — three LLM
+    calls already spent, and the reader gets a thinner digest — and it was
+    previously reconstructible only from a one-line dbg(). The raw model
+    output is what makes it fixable: usually the prose is fine and the
+    marker syntax is not."""
+    _verdict({"cluster_id": cluster_id, "section": cluster.section, "headline_hint": hint,
+              "verdict": f"dropped:{reason}", **metrics})
+    tracer.artifact_json(
+        f"anchor/dropped-{cluster_id}.json",
+        {
+            "cluster_id": cluster_id,
+            "section": cluster.section,
+            "headline_hint": hint,
+            "reason": reason,
+            "metrics": metrics,
+            "raw_model_output": raw,
+            "parsed_body": body,
+            "markers": [dataclasses.asdict(m) for m in markers],
+            "claims_available": [dataclasses.asdict(c) for c in claims],
+            # Computed here even though the story is being dropped — for a
+            # survivor this lands in signals, and a dropped story is exactly
+            # where an unsourced figure is most likely to be the cause.
+            "unsourced_figures": unsourced_figures(body, claims) if body else [],
+        },
+    )
+
+
 def build_story(cluster: RankedCluster, cluster_id: int, raw: dict, claims: list[Claim]) -> dict | None:
     """The single semantic gate on the write pass's output for one story.
     Returns None (and dbg()s why) if the story fails to qualify as
@@ -286,6 +341,7 @@ def build_story(cluster: RankedCluster, cluster_id: int, raw: dict, claims: list
     hint = cluster.headline_hint or headline or "(untitled)"
     if not headline:
         dbg(f"anchor: DROPPED [{cluster.section}] {hint!r} — empty headline")
+        _drop(cluster, cluster_id, hint, "empty_headline", raw, claims, "", [], {})
         return None
 
     # Defensive: `claims` should already be exactly this cluster's own
@@ -294,30 +350,51 @@ def build_story(cluster: RankedCluster, cluster_id: int, raw: dict, claims: list
     foreign = [c for c in claims if c.cluster_id != cluster_id]
     if foreign:
         dbg(f"anchor: {len(foreign)} claim(s) passed to build_story belong to another cluster; ignoring")
+        tracer.event("anchor", cluster_id=cluster_id, foreign_claims=len(foreign),
+                     msg="claims from another cluster leaked into build_story")
         claims = [c for c in claims if c.cluster_id == cluster_id]
 
     body, markers, dropped_markers = parse_body(str(raw.get("body", "")), claims)
 
     words = len(body.split())
+    share = unanchored_share(body, markers)
+    thin, claim_outlets = is_thin_sourced(markers)
+    metrics = {
+        "word_count": words,
+        "min_body_words": MIN_BODY_WORDS,
+        "marker_count": len(markers),
+        "min_markers": MIN_MARKERS,
+        "dropped_markers": dropped_markers,
+        "unanchored_share": round(share, 4),
+        "max_unanchored_share": MAX_UNANCHORED_SHARE,
+        "claim_outlets": claim_outlets,
+        "claims_available": len(claims),
+        "raw_body_chars": len(str(raw.get("body", ""))),
+    }
+
     if words < MIN_BODY_WORDS:
         dbg(f"anchor: DROPPED [{cluster.section}] {hint!r} — body too short ({words} words)")
+        _drop(cluster, cluster_id, hint, "body_too_short", raw, claims, body, markers, metrics)
         return None
 
     if len(markers) < MIN_MARKERS:
         dbg(f"anchor: DROPPED [{cluster.section}] {hint!r} — only {len(markers)} marker(s)")
+        _drop(cluster, cluster_id, hint, "too_few_markers", raw, claims, body, markers, metrics)
         return None
 
-    share = unanchored_share(body, markers)
     if share > MAX_UNANCHORED_SHARE:
         dbg(
             f"anchor: DROPPED [{cluster.section}] {hint!r} — "
             f"{share:.0%} unanchored, {len(markers)} marker(s)"
         )
+        _drop(cluster, cluster_id, hint, "unanchored", raw, claims, body, markers, metrics)
         return None
 
-    thin, claim_outlets = is_thin_sourced(markers)
     if thin:
         dbg(f"anchor: THIN-SOURCED [{cluster.section}] {hint!r} — {claim_outlets} outlet(s) cited")
+
+    _verdict({"cluster_id": cluster_id, "section": cluster.section, "headline_hint": hint,
+              "verdict": "kept", "thin_sourced": thin, **metrics})
 
     cited_ids = {m.claim_id for m in markers}
     cited_claims = [c for c in claims if c.id in cited_ids]

@@ -17,8 +17,13 @@ ships — a dial gets tuned directly, a prompt does not.
 2. `gh run list --workflow digest.yml --limit 3` — confirm the scheduled run fired and is green.
 3. `gh run view <id> --log | grep -E "QUORUM|DEGRADED|ZERO ITEMS|ratelimit|FATAL|NOT COVERED"`
 4. `uv run digest.py review` — the evidence.
-5. Read the actual page on the phone.
-6. Append an entry below in this shape:
+5. `uv run digest.py debug` — the fuller evidence, including everything the
+   run *rejected*: clusters the ranker cut, pages the scraper couldn't read,
+   stories the anchoring gate dropped. `git pull` already brought
+   `debug/<date>/` down with the digest. On a red morning, `stopped_at` in
+   `debug/<date>/run.json` names the stage that emptied the pipeline.
+6. Read the actual page on the phone.
+7. Append an entry below in this shape:
 
 ```
 ## YYYY-MM-DD

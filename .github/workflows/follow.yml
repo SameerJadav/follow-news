@@ -18,6 +18,13 @@ concurrency:
   group: pages
   cancel-in-progress: false
 
+# Matches digest.yml's switch — see the comment there. An issue-triggered
+# Follow run captures its grounded prompts, responses and resolved redirect
+# URLs into debug/<date>/follow/ alongside whatever the morning's digest
+# left. Set to "0" here and in digest.yml to switch capture off entirely.
+env:
+  DIGEST_DEBUG: "1"
+
 jobs:
   build:
     # THE SECURITY GUARD. The repo is public, so anyone can open an issue.
@@ -59,7 +66,10 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add followed docs
+          # mkdir first: debug/ is absent when DIGEST_DEBUG is "0", and
+          # `git add` on a missing pathspec is a fatal error.
+          mkdir -p followed docs debug
+          git add followed docs debug
           git diff --cached --quiet || git commit -m "follow: issue #$ISSUE"
           # digest.yml or render.yml can commit between this job's checkout
           # and this push; retry with a rebase rather than racing them.
