@@ -1,0 +1,815 @@
+{
+  "dials": {
+    "WEIGHT_FLOOR": 5,
+    "TIER_WEIGHT": {
+      "lead": 4,
+      "major": 2,
+      "notable": 0
+    },
+    "WIKI_BONUS": 2,
+    "HARD_CAP": 12,
+    "MIN_STORIES_IF_ANY": 3,
+    "MAX_ARTICLES_PER_STORY": 5
+  },
+  "floor_relaxed": false,
+  "kept_weights": [
+    14,
+    10,
+    7,
+    19,
+    8
+  ],
+  "per_section": {
+    "world": 3,
+    "india": 2
+  },
+  "clusters": [
+    {
+      "headline_hint": "US and Iran pause military strikes for diplomacy amid Middle East conflict and Saudi drone attacks",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "lead",
+      "article_ids": [
+        1,
+        4,
+        9,
+        12,
+        14,
+        42,
+        49,
+        83,
+        98,
+        100,
+        102,
+        144,
+        155,
+        170,
+        196,
+        210,
+        257,
+        280,
+        292,
+        345,
+        349
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        1,
+        4,
+        9,
+        12,
+        14,
+        42,
+        49,
+        83,
+        98,
+        100,
+        102,
+        144,
+        155,
+        170,
+        196,
+        210,
+        257,
+        280,
+        292,
+        345,
+        349
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 8,
+      "wiki_backed": true,
+      "wiki_event": "Saudi Arabia's defense ministry reports intercepting drones fired by Iraqi militias backed by Iran from inside Iraq, which targeted oil facilities in eastern Saudi Arabia and the Riyadh area.",
+      "weight": 14,
+      "weight_terms": {
+        "distinct_outlets": 8,
+        "tier_weight": 4,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Channel News Asia",
+          "title": "Oil prices slump as US and Iran pause strikes",
+          "url": "https://www.channelnewsasia.com/world/oil-prices-us-stocks-market-wall-street-6281696"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Trump backs Pete Hegseth amid renewed tensions with Iran – live",
+          "url": "https://www.theguardian.com/us-news/live/2026/jul/27/us-senate-spy-jay-clayton-donald-trump-iran-war-saudi-oman-hormuz-pentagon-seattle-latest-news-updates"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Trump says Iran war talks taking place during lull in strikes",
+          "url": "https://www.bbc.co.uk/news/articles/c62xn4vzmnpo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Hopes of return to diplomacy as US-Iran hold fire for third day",
+          "url": "https://www.aljazeera.com/news/2026/7/27/hopes-of-return-to-diplomacy-as-us-iran-hold-fire-for-third-day?traffic_source=rss"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Trump warns of ‘very strong military action’ against Iran if diplomacy fails",
+          "url": "https://www.livemint.com/news/us-news/trump-warns-of-very-strong-military-action-against-iran-if-diplomacy-fails-11785173871092.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 16
+    },
+    {
+      "headline_hint": "Nationwide Gen Z youth protests over exam paper leaks trigger political fallout, Bihar police action, and parliamentary bill",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "lead",
+      "article_ids": [
+        7,
+        8,
+        15,
+        21,
+        23,
+        24,
+        27,
+        32,
+        33,
+        34,
+        41,
+        65,
+        75,
+        77,
+        81,
+        84,
+        85,
+        90,
+        91,
+        94,
+        95,
+        114,
+        126,
+        137,
+        138,
+        143,
+        147,
+        148,
+        149,
+        150,
+        152,
+        156,
+        163,
+        165,
+        185,
+        188,
+        189,
+        200,
+        207,
+        208,
+        211,
+        214,
+        217,
+        220,
+        223,
+        226,
+        233,
+        235,
+        238,
+        243,
+        247,
+        252,
+        255,
+        260,
+        261,
+        265,
+        267,
+        272,
+        283,
+        286,
+        287,
+        289,
+        291,
+        298,
+        302,
+        305,
+        306,
+        309,
+        310,
+        311,
+        313,
+        315,
+        318,
+        324,
+        334,
+        341,
+        343,
+        344,
+        348,
+        350,
+        353,
+        356,
+        358,
+        361,
+        362
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        7,
+        8,
+        15,
+        21,
+        23,
+        24,
+        27,
+        32,
+        33,
+        34,
+        41,
+        65,
+        75,
+        77,
+        81,
+        84,
+        85,
+        90,
+        91,
+        94,
+        95,
+        114,
+        126,
+        137,
+        138,
+        143,
+        147,
+        148,
+        149,
+        150,
+        152,
+        156,
+        163,
+        165,
+        185,
+        188,
+        189,
+        200,
+        207,
+        208,
+        211,
+        214,
+        217,
+        220,
+        223,
+        226,
+        233,
+        235,
+        238,
+        243,
+        247,
+        252,
+        255,
+        260,
+        261,
+        265,
+        267,
+        272,
+        283,
+        286,
+        287,
+        289,
+        291,
+        298,
+        302,
+        305,
+        306,
+        309,
+        310,
+        311,
+        313,
+        315,
+        318,
+        324,
+        334,
+        341,
+        343,
+        344,
+        348,
+        350,
+        353,
+        356,
+        358,
+        361,
+        362
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 13,
+      "wiki_backed": true,
+      "wiki_event": "Chad states its intention to withdraw from the International Criminal Court, citing limited effectiveness and disproportionate attention to African cases.",
+      "weight": 19,
+      "weight_terms": {
+        "distinct_outlets": 13,
+        "tier_weight": 4,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "PM Modi, Amit Shah laud CRPF for wiping out Naxalism",
+          "url": "https://timesofindia.indiatimes.com/india/pm-modi-amit-shah-laud-crpf-for-wiping-out-naxalism/articleshow/132670579.cms"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "Modi faces challenge from activists over surveillance at India youth protest",
+          "url": "https://www.channelnewsasia.com/world/modi-india-youth-protest-surveillance-6281626"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "Rajya Sabha adjourned again; Opposition MPs seek apology from Amit Shah",
+          "url": "https://www.thehindu.com/news/national/monsoon-session-no-business-in-upper-house-for-sixth-day/article71273561.ece"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "In Rajasthan Local Body Polls, Congress To Reserve 50% Tickets For Youths",
+          "url": "https://www.ndtv.com/india-news/in-rajasthan-local-body-polls-congress-to-reserve-50-tickets-for-youths-11829977#publisher=newsstand"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Delhi Police says 2,873 people with criminal antecedents attended Jantar Mantar protests",
+          "url": "https://www.livemint.com/news/india/delhi-police-says-2-873-people-with-criminal-antecedents-attended-jantar-mantar-protests-11785174508376.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 80
+    },
+    {
+      "headline_hint": "Devastating wildfires in France and Spain force mass evacuations as heatwave looms",
+      "section": "world",
+      "category": "disaster",
+      "tier_requested": "major",
+      "article_ids": [
+        29,
+        51,
+        93,
+        108,
+        117,
+        139,
+        153,
+        166,
+        169,
+        173,
+        193,
+        205,
+        212,
+        245,
+        249,
+        251,
+        253,
+        254,
+        288,
+        293,
+        299,
+        317,
+        319,
+        320,
+        322
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        29,
+        51,
+        93,
+        108,
+        117,
+        139,
+        153,
+        166,
+        169,
+        173,
+        193,
+        205,
+        212,
+        245,
+        249,
+        251,
+        253,
+        254,
+        288,
+        293,
+        299,
+        317,
+        319,
+        320,
+        322
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 6,
+      "wiki_backed": true,
+      "wiki_event": "Wildfires continue in the Gironde region near Bordeaux, as French President Emmanuel Macron describes the situation as \"France's worst fire-related crisis since World War II.\" ()",
+      "weight": 10,
+      "weight_terms": {
+        "distinct_outlets": 6,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "BBC World",
+          "title": "Wildfire now nine miles from French city of Bordeaux, mayor warns",
+          "url": "https://www.bbc.co.uk/news/articles/ckg34128nvpo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "'Unprecedented but unsurprising': Climate change & lack of prevention behind wildfires, extreme heat",
+          "url": "https://www.france24.com/en/unprecedented-but-unsurprising-climate-change-lack-of-prevention-behind-wildfires-extreme-heat"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "Farmers help battle French forest inferno before new heatwave",
+          "url": "https://www.channelnewsasia.com/world/france-wildfire-heatwave-farmers-help-6281286"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "France and Spain race to contain huge wildfires before fresh heatwave begins",
+          "url": "https://www.theguardian.com/world/2026/jul/27/france-and-spain-race-to-contain-huge-wildfires-before-fresh-heatwave-begins"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "What are fire clouds or pyrocumulonimbus? How they formed over France's wildfires — Explained",
+          "url": "https://www.livemint.com/news/world/what-are-fire-clouds-or-pyrocumulonimbus-how-they-formed-over-frances-wildfires-explained-11785158739964.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 20
+    },
+    {
+      "headline_hint": "India summons Ukrainian envoy following Black Sea attacks on merchant ships with Indian seafarers",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        157,
+        248,
+        326,
+        328,
+        366
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        157,
+        248,
+        326,
+        328,
+        366
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": true,
+      "wiki_event": "Ukrainian President Volodymyr Zelenskyy becomes first foreign leader to visit the United Kingdom since the new Prime Minister Andy Burnham took office. The two met aboard the HMS Queen Elizabeth, with Burnham reaffirming the UK's support fo",
+      "weight": 8,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "BBC World",
+          "title": "Ukraine dismisses Iranian threats as Caspian Sea strike directly links wars",
+          "url": "https://www.bbc.co.uk/news/articles/cwyj7yl0xndo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "MEA summons Ukraine ambassador, condemns attacks on commercial ships in Black Sea",
+          "url": "https://scroll.in/latest/1094574/mea-summons-ukraine-ambassador-condemns-attacks-on-commercial-vessels-in-black-sea?utm_source=rss&utm_medium=public"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "India summons Ukrainian ambassador after attacks on merchant vessels with Indian crew",
+          "url": "https://www.hindustantimes.com/india-news/india-summons-ukrainian-ambassador-after-attacks-on-merchant-vessels-with-indian-crew-mea-ukraine-war-black-sea-zelensky-101785143676437.html"
+        },
+        {
+          "outlet": "Indian Express",
+          "title": "MEA summons Ukrainian Ambassador over death of Indian seafarer in July 18 ship attack",
+          "url": "https://indianexpress.com/article/india/india-summons-ukraine-ambassador-latest-attack-ship-with-four-indians-onboard-10805588/"
+        },
+        {
+          "outlet": "Indian Express",
+          "title": "Another ship with 4 Indians targeted at Ukraine port, MEA issues advisory",
+          "url": "https://indianexpress.com/article/india/russia-ukraine-war-odesa-port-attack-indian-seafarers-mea-advisory-10804889/"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "New UK Prime Minister Andy Burnham hosts Ukrainian President Volodymyr Zelenskyy",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        38,
+        39,
+        86,
+        103,
+        118,
+        174
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        38,
+        39,
+        86,
+        103,
+        118,
+        174
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 3,
+      "wiki_backed": true,
+      "wiki_event": "Ukrainian President Volodymyr Zelenskyy becomes first foreign leader to visit the United Kingdom since the new Prime Minister Andy Burnham took office. The two met aboard the HMS Queen Elizabeth, with Burnham reaffirming the UK's support fo",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "Andy Burnham appoints Bridget Phillipson as Labour party chair",
+          "url": "https://www.theguardian.com/politics/2026/jul/27/andy-burnham-appoints-bridget-phillipson-labour-party-chair"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Has Burnham kept his promise to do better on Israel’s war on Gaza?",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/7/27/has-burnham-kept-his-promise-to-do-better-on-israels-war-on-gaza?traffic_source=rss"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Zelensky visit sends clear message of support for Ukraine, Burnham says",
+          "url": "https://www.bbc.co.uk/news/articles/cy8me5vyjg2o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Burnham’s Ukraine gambit is a symbolic start for PM who wants to look inward",
+          "url": "https://www.theguardian.com/politics/2026/jul/27/andy-burnham-ukraine-symbolic-start-pm-home"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Burnham welcomes Zelenskyy as first international guest",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/7/27/burnham-welcomes-zelenskyy-as-first-international-guest?traffic_source=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 1
+    },
+    {
+      "headline_hint": "Indian opposition and transport groups campaign against E20 fuel policy amid legal actions",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        275,
+        282,
+        321,
+        323,
+        340
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        275,
+        282,
+        321,
+        323,
+        340
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "'MPs sleeping': Transport bodies to march to Parliament on Aug 4 against E20 fuel",
+          "url": "https://timesofindia.indiatimes.com/india/mps-sleeping-need-wake-up-call-delhi-transport-bodies-to-march-to-parliament-on-august-4-against-e20-fuel/articleshow/132660601.cms"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "HC allows Nitin Gadkari to sue Meta, Google for ‘defamatory’ content linking him to E20 fuel row",
+          "url": "https://scroll.in/latest/1094571/hc-allows-nitin-gadkari-to-sue-meta-google-for-defamatory-content-linking-him-to-e20-fuel-row?utm_source=rss&utm_medium=public"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Kejriwal announces ‘National Town Hall’ on E20; to give 2 lakh petitions to PM Modi",
+          "url": "https://www.hindustantimes.com/india-news/kejriwal-announces-national-town-hall-on-e20-to-give-2-lakh-petitions-to-pm-modi-101785145054989.html"
+        },
+        {
+          "outlet": "Indian Express",
+          "title": "Nitin Gadkari can sue Meta, X over AI deepfakes on E20 rules: Bombay High Court",
+          "url": "https://indianexpress.com/article/india/nitin-gadkari-takes-meta-x-to-court-over-ai-deepfake-videos-criticising-e20-policy-10805444/"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "As Gadkari memes explode and Kejriwal starts campaign against E20, minister readies a big legal move",
+          "url": "https://www.hindustantimes.com/india-news/amid-flood-of-gadkari-memes-kejriwal-starts-campaign-against-e20-minister-readies-big-legal-move-too-101785142861267.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Chad states plans to withdraw from the International Criminal Court citing limited effectiveness",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        140,
+        168
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        140,
+        168
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": true,
+      "wiki_event": "Chad states its intention to withdraw from the International Criminal Court, citing limited effectiveness and disproportionate attention to African cases.",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "Chad to join raft of withdrawals from International Criminal Court",
+          "url": "https://www.aljazeera.com/news/2026/7/27/chad-to-join-raft-of-withdrawals-from-international-criminal-court?traffic_source=rss"
+        },
+        {
+          "outlet": "DW World",
+          "title": "Chad's government says it's withdrawing from the ICC",
+          "url": "https://www.dw.com/en/chad-s-government-says-it-s-withdrawing-from-the-icc/a-78132322?maca=en-rss-en-world-4025-rdf"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Deep depression in Bay of Bengal brings heavy monsoon rains and weather alerts across India",
+      "section": "india",
+      "category": "disaster",
+      "tier_requested": "notable",
+      "article_ids": [
+        142,
+        222,
+        262,
+        332,
+        347,
+        368
+      ],
+      "verdict": "cut:below_floor(2<5)",
+      "valid_ids": [
+        142,
+        222,
+        262,
+        332,
+        347,
+        368
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 2,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Livemint",
+          "title": "Deep depression intensifies over Bay of Bengal; orange alert for Delhi, Punjab, Maharashtra on July 28: IMD",
+          "url": "https://www.livemint.com/news/india/imd-issues-heavy-rain-alert-july-28-delhi-punjab-dehradun-mumbai-11785169960895.html"
+        },
+        {
+          "outlet": "Indian Express",
+          "title": "Deep depression over Odisha-West Bengal coasts, IMD warns of ‘extreme’ rain today",
+          "url": "https://indianexpress.com/article/india/deep-depression-over-odisha-west-bengal-coasts-imd-warns-of-extreme-rain-today-10805553/"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Kharif sowing gap narrows, but acreage remains below year-ago level",
+          "url": "https://www.livemint.com/news/india/kharif-sowing-india-kharif-acreage-monsoon-rainfall-11785129860692.html"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Delhi weather today: Rain lashes parts of capital city; IMD issues ‘yellow’ alert for thunderstorms",
+          "url": "https://www.livemint.com/news/india/delhi-weather-today-rain-lashes-parts-of-capital-city-imd-issues-yellow-alert-for-thunderstorms-11785155602200.html"
+        },
+        {
+          "outlet": "Indian Express",
+          "title": "Monsoon revives: IMD warns of extremely heavy rainfall across eastern, central India",
+          "url": "https://indianexpress.com/article/india/imd-monsoon-revival-bay-of-bengal-depression-landfall-heavy-rain-alert-10805178/"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 1
+    },
+    {
+      "headline_hint": "Number of Indian taxpayers reporting over 100 crore income quadruples over five years",
+      "section": "india",
+      "category": "economy",
+      "tier_requested": "notable",
+      "article_ids": [
+        179,
+        294
+      ],
+      "verdict": "cut:below_floor(2<5)",
+      "valid_ids": [
+        179,
+        294
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 2,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "Rs 100 cr club gets bigger: Number of nine-figure income filers quadruples in five years",
+          "url": "https://timesofindia.indiatimes.com/business/india-business/rs-100-crore-club-gets-bigger-number-of-nine-figure-income-filers-quadruples-in-five-years/articleshow/132665376.cms"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "576 Indians reported  ₹100 crore+ income in AY 2025-26, up from 142 in 2021-22: Govt",
+          "url": "https://www.hindustantimes.com/india-news/576-indians-reported-100-crore-income-in-ay-2025-26-up-from-142-in-2021-22-govt-101785149140241.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Madras High Court quashes Tamil Nadu order granting government jobs to kin of Karur stampede victims",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        187,
+        237,
+        264,
+        271
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        187,
+        237,
+        264,
+        271
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Scroll.in",
+          "title": "Madras HC strikes down order giving government jobs to kin of Karur stampede victims",
+          "url": "https://scroll.in/latest/1094580/madras-hc-strikes-down-order-giving-government-jobs-to-kin-of-karur-stampede-victims?utm_source=rss&utm_medium=public"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Setback for Vijay-led TVK govt! Madras HC sets aside order on govt jobs to kin of Karur stampede victims",
+          "url": "https://www.livemint.com/news/india/setback-for-vijay-led-tvk-govt-madras-hc-sets-aside-order-on-govt-jobs-to-kin-of-karur-stampede-victims-11785158266466.html"
+        },
+        {
+          "outlet": "Indian Express",
+          "title": "Setback for Vijay, court cancels jobs for Karur stampede victims’ families",
+          "url": "https://indianexpress.com/article/india/madras-high-court-tamil-nadu-government-jobs-karur-stampede-families-10805956/"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Madras High Court cancels govt jobs for Karur stampede victims' families",
+          "url": "https://www.hindustantimes.com/india-news/madras-high-court-cancels-govt-jobs-for-karur-stampede-victims-families-tamil-nadu-news-cm-vijay-101785153846997.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    }
+  ]
+}

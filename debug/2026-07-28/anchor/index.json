@@ -1,0 +1,101 @@
+{
+  "thresholds": {
+    "MIN_BODY_WORDS": 80,
+    "MIN_MARKERS": 2,
+    "MAX_UNANCHORED_SHARE": 0.2,
+    "THIN_MIN_CLAIM_OUTLETS": 2,
+    "THIN_MAX_OUTLET_SHARE": 0.8,
+    "WORD_TARGET": {
+      "lead": 500,
+      "major": 200,
+      "notable": 200
+    }
+  },
+  "stories": [
+    {
+      "cluster_id": 0,
+      "section": "world",
+      "headline_hint": "US and Iran pause military strikes for diplomacy amid Middle East conflict and Saudi drone attacks",
+      "verdict": "kept",
+      "thin_sourced": false,
+      "word_count": 372,
+      "min_body_words": 80,
+      "marker_count": 17,
+      "min_markers": 2,
+      "dropped_markers": 0,
+      "unanchored_share": 0.008,
+      "max_unanchored_share": 0.2,
+      "claim_outlets": 5,
+      "claims_available": 15,
+      "raw_body_chars": 2539
+    },
+    {
+      "cluster_id": 1,
+      "section": "world",
+      "headline_hint": "Devastating wildfires in France and Spain force mass evacuations as heatwave looms",
+      "verdict": "kept",
+      "thin_sourced": false,
+      "word_count": 190,
+      "min_body_words": 80,
+      "marker_count": 10,
+      "min_markers": 2,
+      "dropped_markers": 0,
+      "unanchored_share": 0.01,
+      "max_unanchored_share": 0.2,
+      "claim_outlets": 3,
+      "claims_available": 8,
+      "raw_body_chars": 1291
+    },
+    {
+      "cluster_id": 2,
+      "section": "world",
+      "headline_hint": "New UK Prime Minister Andy Burnham hosts Ukrainian President Volodymyr Zelenskyy",
+      "verdict": "kept",
+      "thin_sourced": false,
+      "word_count": 149,
+      "min_body_words": 80,
+      "marker_count": 8,
+      "min_markers": 2,
+      "dropped_markers": 0,
+      "unanchored_share": 0.009,
+      "max_unanchored_share": 0.2,
+      "claim_outlets": 2,
+      "claims_available": 7,
+      "raw_body_chars": 1050
+    },
+    {
+      "cluster_id": 3,
+      "section": "india",
+      "headline_hint": "Nationwide Gen Z youth protests over exam paper leaks trigger political fallout, Bihar police action, and parliamentary bill",
+      "verdict": "kept",
+      "thin_sourced": false,
+      "word_count": 286,
+      "min_body_words": 80,
+      "marker_count": 12,
+      "min_markers": 2,
+      "dropped_markers": 0,
+      "unanchored_share": 0.007,
+      "max_unanchored_share": 0.2,
+      "claim_outlets": 4,
+      "claims_available": 8,
+      "raw_body_chars": 2048
+    },
+    {
+      "cluster_id": 4,
+      "section": "india",
+      "headline_hint": "India summons Ukrainian envoy following Black Sea attacks on merchant ships with Indian seafarers",
+      "verdict": "kept",
+      "thin_sourced": false,
+      "word_count": 208,
+      "min_body_words": 80,
+      "marker_count": 11,
+      "min_markers": 2,
+      "dropped_markers": 0,
+      "unanchored_share": 0.008,
+      "max_unanchored_share": 0.2,
+      "claim_outlets": 4,
+      "claims_available": 8,
+      "raw_body_chars": 1446
+    }
+  ]
+}
