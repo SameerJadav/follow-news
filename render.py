@@ -38,6 +38,8 @@ from html import escape as esc
 from pathlib import Path
 from urllib.parse import quote
 
+import tracer
+
 # Mirrors digest.IST. Kept local so render.py imports nothing from the pipeline
 # and `digest.py render` stays a leaf call with no chance of an import cycle.
 IST = timezone(timedelta(hours=5, minutes=30))
@@ -872,3 +874,22 @@ def render_all(
 
     if records:
         (docs_dir / "following.html").write_text(_following_page(records, head))
+
+    # The one stage with no diagnostics of its own. A page that renders at a
+    # fraction of its usual size is the cheapest possible signal that a
+    # template or a data file went wrong, and it costs a stat() to see.
+    if tracer.enabled():
+        pages = sorted(p for p in docs_dir.glob("*.html"))
+        tracer.count(pages_rendered=len(pages), days_rendered=len(days),
+                     follow_records_rendered=len(records))
+        tracer.artifact_json(
+            "render.json",
+            {
+                "today": f"{today:%Y-%m-%d}",
+                "newest_data_day": days[0]["date"] if days else None,
+                "stale_banner_expected": bool(days) and days[0]["date"] != f"{today:%Y-%m-%d}",
+                "days": len(days),
+                "followed_records": len(records),
+                "pages": [{"name": p.name, "bytes": p.stat().st_size} for p in pages],
+            },
+        )

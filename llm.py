@@ -28,6 +28,7 @@ from __future__ import annotations
 import dataclasses
 import json
 import os
+import time
 from pathlib import Path
 from typing import Any
 
@@ -36,8 +37,10 @@ from google.genai import types
 
 import anchor
 import ratelimit
+import tracer
 from anchor import Claim
-from feeds import Article, dbg
+from feeds import Article
+from tracer import dbg
 from rank import CATEGORIES, RankedCluster, SECTIONS, SelectedCluster, TIERS
 
 MODEL = "gemini-3.6-flash"  # pinned here; change in exactly one place
@@ -298,6 +301,20 @@ def _dump(label: str, text: str) -> None:
     (p / f"{label}.json").write_text(text)
 
 
+def _usage(resp: Any) -> dict:
+    """Token counts, when the SDK reports them. Free-tier limits move without
+    notice (research.md §3.1), so a week of real usage numbers is the only
+    way to know how close a morning actually runs to them."""
+    out: dict = {}
+    meta = getattr(resp, "usage_metadata", None)
+    for name in ("prompt_token_count", "candidates_token_count", "total_token_count",
+                 "cached_content_token_count", "thoughts_token_count"):
+        value = getattr(meta, name, None)
+        if value is not None:
+            out[name] = value
+    return out
+
+
 def _generate(prompt: str, schema: dict, system: str, label: str) -> Any:
     global _CALLS
     client = _client()
@@ -312,24 +329,57 @@ def _generate(prompt: str, schema: dict, system: str, label: str) -> Any:
     while True:
         _CALLS += 1
         dbg(f"llm: call #{_CALLS} model={MODEL} label={label} prompt={len(prompt)}ch")
+        started = time.monotonic()
         resp = ratelimit.call_with_resume(
             lambda: client.models.generate_content(model=MODEL, contents=prompt, config=config),
             label,
         )
+        latency_ms = int((time.monotonic() - started) * 1000)
         try:
             finish = resp.candidates[0].finish_reason if resp.candidates else None
         except Exception:  # noqa: BLE001
             finish = None
         dbg(f"llm: {label} finish_reason={finish}")
         text = resp.text
+
+        # The full prompt, not a summary of it. Bad model output is almost
+        # always readable as a consequence of what the prompt actually said,
+        # and a week later the prompt is unreconstructable from data/ alone.
+        stem = f"llm/{_CALLS}-{label}"
+        tracer.artifact(f"{stem}.system.txt", system)
+        tracer.artifact(f"{stem}.prompt.txt", prompt)
+        tracer.artifact(f"{stem}.response.json", text or "")
+
+        malformed = False
         try:
             result = json.loads(text)
         except json.JSONDecodeError:
+            malformed = True
+            result = None
+
+        meta = {
+            "call": _CALLS,
+            "label": label,
+            "model": MODEL,
+            "latency_ms": latency_ms,
+            "prompt_chars": len(prompt),
+            "system_chars": len(system),
+            "response_chars": len(text or ""),
+            "finish_reason": str(finish),
+            "malformed_json": malformed,
+            "json_retries": json_retries,
+            "max_output_tokens": MAX_OUTPUT_TOKENS,
+            "usage": _usage(resp),
+        }
+        tracer.artifact_json(f"{stem}.meta.json", meta)
+        tracer.event("llm", **meta)
+
+        if malformed:
             if json_retries < MAX_JSON_RETRIES:
                 json_retries += 1
                 dbg(f"llm: {label} malformed/truncated JSON, retrying ({json_retries}/{MAX_JSON_RETRIES})")
                 continue
-            raise
+            json.loads(text)  # re-raise the original JSONDecodeError
         _dump(label, text)
         return result
 
@@ -457,6 +507,44 @@ def extract_claims(clusters: list[RankedCluster], texts: dict[str, str]) -> dict
         f"{total_claims} claim(s) total, {rejected_clusters} cluster(s) rejected, "
         f"{rejected_claims} claim(s) rejected"
     )
+
+    tracer.count(
+        claims_clusters_in=len(clusters),
+        claims_clusters_out=len(claims_by_cluster),
+        claims_total=total_claims,
+        claims_rejected=rejected_claims,
+        claims_clusters_rejected=rejected_clusters,
+    )
+    tracer.artifact_json(
+        "claims.json",
+        {
+            "min_claim_chars": anchor.MIN_CLAIM_CHARS,
+            "max_claims_per_story": anchor.MAX_CLAIMS_PER_STORY,
+            "rejected_claims": rejected_claims,
+            "rejected_clusters": rejected_clusters,
+            # Which article each cluster's claims actually drew on, and
+            # whether that article had full text or only an RSS summary —
+            # the join between the scraper's output and the prose.
+            "clusters": [
+                {
+                    "cluster_id": cid,
+                    "headline_hint": clusters[cid].headline_hint,
+                    "section": clusters[cid].section,
+                    "claim_count": len(cs),
+                    "distinct_outlets": len({c.outlet for c in cs}),
+                    "source_kinds": {k: sum(1 for c in cs if c.source_kind == k)
+                                     for k in {c.source_kind for c in cs}},
+                    "claims": [dataclasses.asdict(c) for c in cs],
+                }
+                for cid, cs in sorted(claims_by_cluster.items())
+            ],
+            "clusters_with_no_claims": [
+                {"cluster_id": cid, "headline_hint": c.headline_hint, "section": c.section}
+                for cid, c in enumerate(clusters)
+                if cid not in claims_by_cluster
+            ],
+        },
+    )
     return claims_by_cluster
 
 
@@ -498,6 +586,12 @@ def write_stories(clusters: list[RankedCluster], claims_by_cluster: dict[int, li
         cid = raw.get("cluster_id")
         if not isinstance(cid, int) or cid not in claims_by_cluster or cid in by_cluster_id:
             dropped += 1
+            # A story the model wrote and we threw away without anchor.py
+            # ever seeing it. Only a counter survived this before.
+            tracer.artifact_json(
+                f"anchor/rejected-cluster-id-{dropped}.json",
+                {"reason": "bad or duplicate cluster_id", "cluster_id": cid, "raw": raw},
+            )
             continue
         story = anchor.build_story(clusters[cid], cid, raw, claims_by_cluster[cid])
         if story is None:
@@ -513,4 +607,11 @@ def write_stories(clusters: list[RankedCluster], claims_by_cluster: dict[int, li
 
     stories = [by_cluster_id[cid] for cid in sorted(by_cluster_id)]
     dbg(f"llm: write_stories -> {len(stories)} story/stories written, {dropped} dropped, {thin_count} thin-sourced")
+    tracer.count(
+        write_clusters_prompted=len(order),
+        stories_written=len(stories),
+        stories_dropped=dropped,
+        stories_thin_sourced=thin_count,
+        clusters_with_claims_but_no_story=len(missing),
+    )
     return stories

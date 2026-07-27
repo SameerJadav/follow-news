@@ -19,7 +19,8 @@ from datetime import date, timedelta
 
 import requests
 
-from feeds import dbg
+import tracer
+from tracer import dbg
 
 WIKI_URL = "https://en.wikipedia.org/w/index.php?title=Portal:Current_events/{page}&action=raw"
 WIKI_UA = "follow-news/1.0 (+https://github.com/SameerJadav/follow-news)"
@@ -104,12 +105,20 @@ def fetch_day(d: date) -> list[WikiEvent]:
         resp = requests.get(url, headers={"User-Agent": WIKI_UA}, timeout=20)
         if resp.status_code != 200:
             dbg(f"wiki: {page_title(d)} http={resp.status_code}")
+            tracer.event("wikipedia", page=page_title(d), http=resp.status_code, verdict="http_error")
             return []
         events = parse_wikitext(resp.text)
         dbg(f"wiki: {page_title(d)} http={resp.status_code} events={len(events)}")
+        # The raw wikitext alongside what we parsed out of it: if Wikipedia
+        # changes its bullet markup, the parse silently returns fewer events
+        # and only the raw source shows why.
+        tracer.artifact(f"wikipedia/{page_title(d)}.wikitext", resp.text)
+        tracer.event("wikipedia", page=page_title(d), http=resp.status_code,
+                     bytes=len(resp.text), events=len(events), verdict="ok")
         return events
     except Exception as exc:  # noqa: BLE001 - a Wikipedia outage must not cost a morning
         dbg(f"wiki: {page_title(d)} FAILED ({exc!r})")
+        tracer.event("wikipedia", page=page_title(d), error=repr(exc)[:200], verdict="exception")
         return []
 
 
@@ -120,7 +129,19 @@ def current_events(digest_day: date) -> list[WikiEvent]:
     barely written yet — yesterday's page is the one that's actually full.
     """
     events = fetch_day(digest_day) + fetch_day(digest_day - timedelta(days=1))
-    return events[:MAX_EVENTS]
+    capped = events[:MAX_EVENTS]
+    tracer.count(wiki_events_parsed=len(events), wiki_events_used=len(capped))
+    tracer.artifact_json(
+        "wikipedia/events.json",
+        {
+            "max_events": MAX_EVENTS,
+            "parsed": len(events),
+            "used": len(capped),
+            "events": [{"category": e.category, "topic": e.topic, "text": e.text} for e in capped],
+            "prompt_block": prompt_block(capped),
+        },
+    )
+    return capped
 
 
 def prompt_block(events: list[WikiEvent]) -> str:

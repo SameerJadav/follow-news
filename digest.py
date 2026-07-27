@@ -42,7 +42,9 @@ from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
 import feeds
-from feeds import article_window_start, dbg
+import tracer
+from feeds import article_window_start
+from tracer import dbg
 
 IST = timezone(timedelta(hours=5, minutes=30))
 
@@ -151,46 +153,62 @@ def run_pipeline(feeds_path: Path = FEEDS_PATH) -> bool:
     )
     since = article_window_start(now, prev_generated_at)
     dbg(f"digest: window since={since.isoformat()} (prev_generated_at={prev_generated_at})")
+    tracer.extra("window", {"since": since.isoformat(), "now": now.isoformat(),
+                            "prev_generated_at": str(prev_generated_at)})
 
-    result = feeds.gather(feeds_path, since)
-    health = feeds.health_payload(result)
-    if not feeds.quorum_ok(result):
-        dbg("digest: QUORUM FAILED — not writing a digest for today")
+    def stopped(where: str, why: str) -> bool:
+        """Record which stage emptied the pipeline, then return False so the
+        caller renders the stale page. `stopped_at` in run.json is the first
+        thing to read on a red morning."""
+        dbg(f"digest: {why}")
+        tracer.extra("stopped_at", where)
+        tracer.event("digest", verdict="stopped", stage=where, reason=why)
         return False
+
+    with tracer.stage("gather"):
+        result = feeds.gather(feeds_path, since)
+        health = feeds.health_payload(result)
+    if not feeds.quorum_ok(result):
+        return stopped("quorum", "QUORUM FAILED — not writing a digest for today")
     articles = result.articles
 
-    pool = rank.build_select_pool(articles)
-    events = wikipedia.current_events(today)
+    with tracer.stage("pool"):
+        pool = rank.build_select_pool(articles)
+    with tracer.stage("wikipedia"):
+        events = wikipedia.current_events(today)
 
-    selected = llm.select_stories(pool, wikipedia.prompt_block(events))
+    with tracer.stage("select"):
+        selected = llm.select_stories(pool, wikipedia.prompt_block(events))
     if not selected:
-        dbg("digest: selection returned no clusters; not writing a digest for today")
-        return False
+        return stopped("select", "selection returned no clusters; not writing a digest for today")
 
-    ranked = rank.rank_clusters(selected, pool, events)
+    with tracer.stage("rank"):
+        ranked = rank.rank_clusters(selected, pool, events)
     if not ranked:
-        dbg("digest: ranking kept no clusters; not writing a digest for today")
-        return False
+        return stopped("rank", "ranking kept no clusters; not writing a digest for today")
     rank.wiki_coverage_report(events, ranked)
 
-    texts: dict[str, str] = {}
-    for cluster in ranked:
-        for article in cluster.articles:
-            texts[article.url] = extract.article_text(article.url)
+    with tracer.stage("extract"):
+        texts: dict[str, str] = {}
+        for cluster in ranked:
+            for article in cluster.articles:
+                texts[article.url] = extract.article_text(article.url)
 
-    claims_by_cluster = llm.extract_claims(ranked, texts)
+    with tracer.stage("claims"):
+        claims_by_cluster = llm.extract_claims(ranked, texts)
     if not claims_by_cluster:
-        dbg("digest: claims pass produced no anchored claims; not writing a digest for today")
-        return False
+        return stopped("claims", "claims pass produced no anchored claims; not writing a digest for today")
 
-    stories = llm.write_stories(ranked, claims_by_cluster)
+    with tracer.stage("write"):
+        stories = llm.write_stories(ranked, claims_by_cluster)
     if not stories:
-        dbg("digest: writing pass returned no valid stories; not writing a digest for today")
-        return False
+        return stopped("write", "writing pass returned no valid stories; not writing a digest for today")
 
     write_digest(today, stories, now, health)
-    render.render_all(DATA_DIR, DOCS_DIR, today, FOLLOWED_DIR)
+    with tracer.stage("render"):
+        render.render_all(DATA_DIR, DOCS_DIR, today, FOLLOWED_DIR)
     dbg(f"digest: {llm._CALLS} LLM call(s) this run")
+    tracer.count(llm_calls=llm._CALLS, stories_published=len(stories))
     return True
 
 
@@ -226,16 +244,30 @@ def _cmd_review(day_iso: str | None) -> None:
     print(report.morning_review(DATA_DIR, day_iso))
 
 
+def _cmd_debug(days: int | None) -> None:
+    """Bundle every captured run into one document. This is the artifact you
+    hand to someone (or something) that has never seen the repo and needs to
+    say where the pipeline is going wrong — it reads debug/ and data/ only,
+    no network and no API key."""
+    import report
+
+    path, text = report.debug_bundle(tracer.DEBUG_DIR, DATA_DIR, days)
+    print(text)
+    if path:
+        print(f"\n[written to {path}]")
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="Daily digest pipeline")
     parser.add_argument(
         "command",
         nargs="?",
-        choices=["render", "follow", "health", "review"],
+        choices=["render", "follow", "health", "review", "debug"],
         help="omit for the full pipeline; 'render' to re-render docs/ from data/+followed/ only; "
         "'follow' to process Follow issues, append timelines, and re-render; "
         "'health' to report cross-day feed decay (exits 1 if unhealthy); "
-        "'review' to print one day's calibration evidence",
+        "'review' to print one day's calibration evidence; "
+        "'debug' to bundle captured runs into debug/ANALYSIS.md",
     )
     parser.add_argument(
         "--if-missing",
@@ -258,7 +290,29 @@ def main() -> None:
         default=None,
         help="follow/review: override the date as YYYY-MM-DD, instead of today in IST (testing)",
     )
+    parser.add_argument(
+        "--days",
+        type=int,
+        default=None,
+        help="debug: how many days of captured runs to bundle (default report.HISTORY_DAYS)",
+    )
+    parser.add_argument(
+        "--debug",
+        dest="debug",
+        action="store_const",
+        const=1,
+        default=None,
+        help="force debug capture on for this run, overriding DIGEST_DEBUG",
+    )
+    parser.add_argument(
+        "--no-debug",
+        dest="debug",
+        action="store_const",
+        const=0,
+        help="force debug capture off for this run, overriding DIGEST_DEBUG",
+    )
     args = parser.parse_args()
+    tracer.configure(args.debug)
 
     if args.command == "render":
         import render
@@ -270,7 +324,13 @@ def main() -> None:
         import follow
 
         today = date.fromisoformat(args.date) if args.date else digest_date()
-        follow.run(DATA_DIR, FOLLOWED_DIR, DOCS_DIR, today, only_issue=args.issue)
+        tracer.start("follow", today)
+        ok = False
+        try:
+            follow.run(DATA_DIR, FOLLOWED_DIR, DOCS_DIR, today, only_issue=args.issue)
+            ok = True
+        finally:
+            tracer.finish(ok)
         return
 
     if args.command == "health":
@@ -281,12 +341,25 @@ def main() -> None:
         _cmd_review(args.date)
         return
 
+    if args.command == "debug":
+        _cmd_debug(args.days)
+        return
+
     if args.if_missing and data_path(digest_date()).exists():
         dbg(f"digest: {data_path(digest_date())} already exists, nothing to do")
         return
 
     feeds_path = Path(args.feeds) if args.feeds else FEEDS_PATH
-    if not run_pipeline(feeds_path):
+    tracer.start("digest", digest_date())
+    ok = False
+    try:
+        ok = run_pipeline(feeds_path)
+    finally:
+        # finish() before the stale render so run.json exists even if that
+        # fallback then throws. A morning that failed is the one whose
+        # evidence matters most.
+        tracer.finish(ok)
+    if not ok:
         _render_stale(digest_date())
         sys.exit(1)
 
@@ -296,5 +369,7 @@ if __name__ == "__main__":
         main()
     except Exception as exc:  # noqa: BLE001
         dbg(f"digest: FATAL {exc!r}")
+        tracer.event("digest", verdict="FATAL", error=repr(exc))
+        tracer.finish(False)
         _render_stale(digest_date())
         sys.exit(1)

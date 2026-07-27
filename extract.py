@@ -27,7 +27,9 @@ from html.parser import HTMLParser
 
 import requests
 
-from feeds import UA, dbg
+import tracer
+from feeds import UA
+from tracer import dbg
 
 MIN_CHARS = 600  # below this, escalate to Jina
 JINA_PAUSE = 3.0  # seconds; r.jina.ai keyless is rate-limited to 20 RPM
@@ -42,18 +44,27 @@ _SKIP_TAGS = {"script", "style", "nav", "header", "footer", "aside", "form", "fi
 _JINA_MARKDOWN_MARKER = re.compile(r"^Markdown Content:\s*\n", re.M)
 
 
+def _fetch(url: str) -> tuple[str | None, int | None, int, str]:
+    """The fetch, with the diagnostics attached: (html, http, elapsed_ms,
+    error). fetch_html() is the plain-string view of this for callers that
+    only want the page."""
+    started = time.monotonic()
+    try:
+        resp = requests.get(url, headers={"User-Agent": UA}, timeout=30)
+        elapsed = int((time.monotonic() - started) * 1000)
+        if resp.status_code != 200:
+            dbg(f"extract: fetch_html {url}: http={resp.status_code}")
+            return None, resp.status_code, elapsed, f"http {resp.status_code}"
+        return resp.text, resp.status_code, elapsed, ""
+    except Exception as exc:  # noqa: BLE001
+        dbg(f"extract: fetch_html {url}: FAILED ({exc!r})")
+        return None, None, int((time.monotonic() - started) * 1000), repr(exc)[:200]
+
+
 def fetch_html(url: str) -> str | None:
     """Fetch a page's raw HTML. Returns None on any failure so callers can
     fall back to Jina rather than raising."""
-    try:
-        resp = requests.get(url, headers={"User-Agent": UA}, timeout=30)
-        if resp.status_code != 200:
-            dbg(f"extract: fetch_html {url}: http={resp.status_code}")
-            return None
-        return resp.text
-    except Exception as exc:  # noqa: BLE001
-        dbg(f"extract: fetch_html {url}: FAILED ({exc!r})")
-        return None
+    return _fetch(url)[0]
 
 
 def _longest_article_body(node) -> str:
@@ -150,11 +161,94 @@ def via_jina(url: str) -> str:
 def article_text(url: str) -> str:
     """The extraction cascade: JSON-LD and paragraphs from a single fetch,
     longest wins; escalate to Jina only if that still falls short."""
-    page_html = fetch_html(url)
-    best = ""
-    if page_html:
-        best = max(from_jsonld(page_html), from_paragraphs(page_html), key=len)
-    if len(best) < MIN_CHARS:
-        best = max(best, via_jina(url), key=len)
+    page_html, http, elapsed_ms, error = _fetch(url)
+
+    jsonld = from_jsonld(page_html) if page_html else ""
+    paras = from_paragraphs(page_html) if page_html else ""
+    best = max(jsonld, paras, key=len)
+    winner = "" if not best else ("jsonld" if len(jsonld) >= len(paras) else "paragraphs")
+
+    jina = ""
+    jina_fired = len(best) < MIN_CHARS
+    if jina_fired:
+        jina = via_jina(url)
+        if len(jina) > len(best):
+            best = jina
+            winner = "jina"
+
     dbg(f"extract: {len(best)}ch {url}")
-    return best[:ARTICLE_CAP]
+    final = best[:ARTICLE_CAP]
+    _capture(url, page_html, jsonld, paras, jina, jina_fired, winner, final, http, elapsed_ms, error)
+    return final
+
+
+# Sequence number and accumulated rows for the extraction index. The index
+# is rewritten after every article rather than once at the end, so a run
+# that dies mid-loop still leaves a readable record of how far it got.
+_SEQ = 0
+_ROWS: list[dict] = []
+
+
+def _capture(
+    url: str,
+    page_html: str | None,
+    jsonld: str,
+    paras: str,
+    jina: str,
+    jina_fired: bool,
+    winner: str,
+    final: str,
+    http: int | None,
+    elapsed_ms: int,
+    error: str,
+) -> None:
+    """Persist what the scraper actually saw for one article.
+
+    This is the stage with the least visibility in the whole pipeline: a
+    page that extracts to 200 characters of author-bio boilerplate produces
+    a thin story three stages later, with nothing left to explain why. So
+    all three of the raw HTML, the Jina body, and the exact text handed to
+    the claims pass are kept, alongside how each strategy scored."""
+    global _SEQ
+    if not tracer.enabled():
+        return
+    _SEQ += 1
+    stem = f"extract/{_SEQ:03d}-{tracer.slug(url, 70)}"
+
+    if page_html:
+        tracer.artifact(f"{stem}.html", page_html)
+    if jina:
+        tracer.artifact(f"{stem}.jina.txt", jina)
+    tracer.artifact(f"{stem}.txt", final)
+
+    _ROWS.append(
+        {
+            "seq": _SEQ,
+            "url": url,
+            "http": http,
+            "elapsed_ms": elapsed_ms,
+            "error": error,
+            "html_chars": len(page_html or ""),
+            "jsonld_chars": len(jsonld),
+            "paragraph_chars": len(paras),
+            "jina_fired": jina_fired,
+            "jina_chars": len(jina),
+            "winner": winner,
+            "final_chars": len(final),
+            "truncated_at_cap": len(final) >= ARTICLE_CAP,
+            # source_kind in the claims prompt turns on this same threshold:
+            # under it, the model gets the RSS summary instead of the body.
+            "below_min_chars": len(final) < MIN_CHARS,
+            "files": {"html": bool(page_html), "jina": bool(jina), "text": True},
+        }
+    )
+    tracer.artifact_json(
+        "extract/index.json",
+        {"min_chars": MIN_CHARS, "article_cap": ARTICLE_CAP, "articles": _ROWS},
+    )
+    tracer.count(
+        articles_extracted=len(_ROWS),
+        articles_extract_weak=sum(1 for r in _ROWS if r["below_min_chars"]),
+        articles_extract_jina=sum(1 for r in _ROWS if r["jina_fired"]),
+        articles_extract_failed=sum(1 for r in _ROWS if not r["final_chars"]),
+    )

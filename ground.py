@@ -33,6 +33,7 @@ from __future__ import annotations
 import bisect
 import os
 import re
+import time
 from dataclasses import dataclass
 from typing import Any
 from urllib.parse import urlsplit
@@ -42,7 +43,9 @@ from google import genai
 from google.genai import types
 
 import ratelimit
-from feeds import UA, dbg
+import tracer
+from feeds import UA
+from tracer import dbg
 
 GROUND_MODEL = "gemini-2.5-flash"  # verified working with google_search; 2.5 Pro is limit:0 on this free tier
 MAX_OUTPUT_TOKENS = 8192
@@ -91,14 +94,38 @@ def _generate(prompt: str, system: str, label: str) -> tuple[str, Any]:
     )
     _CALLS += 1
     dbg(f"ground: call #{_CALLS} model={GROUND_MODEL} label={label} prompt={len(prompt)}ch")
+    started = time.monotonic()
     resp = ratelimit.call_with_resume(
         lambda: client.models.generate_content(model=GROUND_MODEL, contents=prompt, config=config),
         label,
     )
+    latency_ms = int((time.monotonic() - started) * 1000)
     candidates = resp.candidates or []
     finish = candidates[0].finish_reason if candidates else None
     dbg(f"ground: {label} finish_reason={finish}")
     metadata = candidates[0].grounding_metadata if candidates else None
+
+    # Grounding can't use response_schema, so the output is delimited prose
+    # parsed in Python — which means a parse failure looks identical to a
+    # quiet day unless the raw text is kept.
+    stem = f"follow/ground-{_CALLS}-{tracer.slug(label)}"
+    tracer.artifact(f"{stem}.system.txt", system)
+    tracer.artifact(f"{stem}.prompt.txt", prompt)
+    tracer.artifact(f"{stem}.response.txt", resp.text or "")
+    tracer.event(
+        "ground",
+        call=_CALLS,
+        label=label,
+        model=GROUND_MODEL,
+        latency_ms=latency_ms,
+        prompt_chars=len(prompt),
+        response_chars=len(resp.text or ""),
+        finish_reason=str(finish),
+        grounded=metadata is not None,
+        chunks=len(getattr(metadata, "grounding_chunks", None) or []),
+        supports=len(getattr(metadata, "grounding_supports", None) or []),
+        queries=list(getattr(metadata, "web_search_queries", None) or []),
+    )
     return resp.text or "", metadata
 
 
@@ -134,13 +161,19 @@ def _resolve(uri: str, cache: dict[str, str]) -> str:
     if uri in cache:
         return cache[uri]
     resolved = uri
+    error = ""
     try:
         resp = requests.head(uri, allow_redirects=True, timeout=HEAD_TIMEOUT, headers={"User-Agent": UA})
         if resp.url:
             resolved = resp.url
     except requests.RequestException as exc:
+        error = repr(exc)[:200]
         dbg(f"ground: could not resolve {uri[:80]}... ({exc!r}); keeping redirect URL")
     cache[uri] = resolved
+    # An unresolved redirect is a link that dies in ~30 days. Worth knowing
+    # about before the archive quietly fills with them.
+    tracer.event("ground", op="resolve", redirect=uri, resolved=resolved,
+                 ok=resolved != uri, error=error)
     return resolved
 
 

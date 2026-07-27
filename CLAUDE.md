@@ -34,11 +34,15 @@ uv run digest.py follow --date ...    # override the digest date (testing)
 uv run digest.py health               # cross-day feed-decay report over committed data/; exits 1 if unhealthy
 uv run digest.py review               # calibration evidence for the newest digest
 uv run digest.py review --date ...    # calibration evidence for one past day
+uv run digest.py debug                # bundle captured runs into debug/ANALYSIS.md
+uv run digest.py debug --days 3       # ...just the last three days
 
 uv run pytest -q                      # the whole test suite, no network, no key
 
 GEMINI_API_KEY=... DIGEST_DUMP_DIR=/tmp/fixtures uv run digest.py   # dump raw LLM responses for new fixtures
 DIGEST_WAIT_BUDGET_S=5 uv run digest.py                              # shorten the 429 wait budget for local testing
+DIGEST_DEBUG=1 uv run digest.py                                      # capture full run evidence into debug/
+uv run digest.py --debug / --no-debug                                # same switch, per invocation
 ```
 
 ## Architecture
@@ -66,7 +70,12 @@ Pipeline order, one module per concern:
 - **`ratelimit.py`** — 429 classification and budgeted wait-and-resume,
   shared by `llm.py` and `ground.py` (Phase 6).
 - **`report.py`** — read-only reports over committed `data/*.json`: cross-day
-  feed decay, and the calibration evidence for `review` (Phase 6).
+  feed decay, the calibration evidence for `review` (Phase 6), and the
+  cross-day `debug_bundle` that writes `debug/ANALYSIS.md`.
+- **`tracer.py`** — debug capture, and the home of `dbg()`. Owns the
+  `DIGEST_DEBUG` switch, the `debug/<date>/` run directory, secret scrubbing
+  and the size caps. Stdlib only, imports no project module (`feeds` imports
+  `dbg` from it, so anything it imported would be a cycle).
 - **`digest.py`** — the CLI entrypoint and orchestration; owns the `data/`
   contract (`write_digest`) and the stale-page fallback (`_render_stale`).
 
@@ -97,6 +106,10 @@ job), `render.yml` (push-triggered re-render, no API key), `follow.yml`
   runs `continue-on-error: true` and is never on the digest's critical path.
 - Follow batches timeline updates across all active follows in one call;
   never one call per followed story.
+- **`debug/` is derived and disposable.** Nothing reads it back into the
+  pipeline; deleting it costs only the record. Capture must stay a strict
+  no-op when off — if `DIGEST_DEBUG` is unset, no directory is created and
+  no file is written (`tests/test_tracer.py` asserts this).
 
 ## Security
 
@@ -180,6 +193,14 @@ to the owner before it ships, per `decisions.md`.
   `docs/` directly is pointless, it gets overwritten.
 - `html.escape(value, quote=True)` every interpolated value used inside an
   HTML attribute.
+- `tracer.event()` takes its stage name **positional-only** (`stage: str, /`)
+  so a caller can pass a field literally named `stage`. `count()` merges
+  funnel counters across calls; `extra()` attaches a named block to
+  `run.json`.
+- A `follow` run writes `run-follow.json` / `funnel-follow.json`, not
+  `run.json` — `digest.yml` runs `digest.py follow` as a second process
+  against the same day, and it must not overwrite the digest's own record.
+  `trace.jsonl` is shared (append mode, every line tagged with its run).
 - **Feeds that must never be re-added** (tested 2026-07-25, `research.md`
   §2.3): AP, Reuters, UN News, Deccan Herald national, Business Standard,
   PIB → 401/403/404. The Wire, The Print → HTTP 200 with zero items — this
@@ -220,9 +241,9 @@ to the owner before it ships, per `decisions.md`.
 
 ## Debugging a scheduled run
 
-Everything interesting is only visible after the fact — `dbg()` in every
-module writes to stderr, never into the site, specifically so a 02:00 IST
-run can be diagnosed afterwards.
+Everything interesting is only visible after the fact — `dbg()` (now in
+`tracer.py`, imported by every module) writes to stderr, never into the
+site, specifically so a 02:00 IST run can be diagnosed afterwards.
 
 ```sh
 gh run list --limit 10                 # recent runs and their status
@@ -230,6 +251,26 @@ gh run view <id> --log                 # full log, every dbg() line
 gh run view <id> --log-failed          # just the failing step
 gh run watch                           # follow an in-flight run
 ```
+
+### Debug capture (`DIGEST_DEBUG`)
+
+The Actions log expires and holds only what `dbg()` formatted. For the
+seven-morning calibration window, `digest.yml` sets `DIGEST_DEBUG: "1"` at
+workflow level and commits `debug/` alongside `data/`, so every run leaves a
+complete record in the repo: raw feed XML, every scraped page and the text
+extracted from it, the full prompt and raw response of all three LLM calls,
+and every rejection with the metric and threshold that caused it.
+
+**To switch it off when the project is stable, set `DIGEST_DEBUG: "0"` in
+`digest.yml`.** That is the whole change — capture is off by default in
+code, so no pipeline module needs touching. `debug/` can then be deleted (it
+stays in git history).
+
+Start from `uv run digest.py debug`, which writes `debug/ANALYSIS.md`: a
+self-contained document explaining each stage, tabulating the daily funnels
+side by side, and listing every drop. `debug/README.md` documents the
+directory layout. On a red morning, `run.json`'s `stopped_at` names the
+stage that emptied the pipeline.
 
 Greppable `dbg()` prefixes worth knowing: `llm: call #`, `ratelimit:`,
 `gather:`, `QUORUM`, `DEGRADED`, `ZERO ITEMS`, `rank:`, `wiki: NOT COVERED`,

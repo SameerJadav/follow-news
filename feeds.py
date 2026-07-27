@@ -8,7 +8,7 @@ in extract.py, only for the articles the LLM selection pass actually chooses.
 from __future__ import annotations
 
 import re
-import sys
+import time
 import unicodedata
 from dataclasses import dataclass
 from datetime import datetime, timedelta, timezone
@@ -17,6 +17,9 @@ from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 
 import feedparser
 import requests
+
+import tracer
+from tracer import dbg
 
 UA = (
     "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
@@ -58,12 +61,6 @@ DEGRADED_LIVE_SHARE = 0.5  # under half the configured feeds live still ships, l
 _TAG_RE = re.compile(r"<[^>]+>")
 _WS_RE = re.compile(r"\s+")
 _PUNCT_RE = re.compile(r"[^\w\s]")
-
-
-def dbg(msg: str) -> None:
-    """Diagnostics to stderr only — never into the site. A scheduled run at
-    02:00 IST can only be debugged afterwards from the Actions log."""
-    print(f"[{datetime.now(timezone.utc):%H:%M:%S}] {msg}", file=sys.stderr, flush=True)
 
 
 @dataclass(frozen=True, slots=True)
@@ -165,11 +162,18 @@ def fetch_feed(outlet: str, url: str) -> tuple[list[Article], FeedHealth]:
     including the HTTP-200-with-zero-items trap (The Wire, The Print) —
     `health.error` is what makes that trap visible instead of silently
     looking like "no news today"."""
+    started = time.monotonic()
     try:
         resp = requests.get(url, headers={"User-Agent": UA}, timeout=25)
+        elapsed_ms = int((time.monotonic() - started) * 1000)
         if resp.status_code != 200:
             dbg(f"feed {outlet!r}: http={resp.status_code}")
+            tracer.event("feeds", outlet=outlet, url=url, http=resp.status_code, elapsed_ms=elapsed_ms, verdict="http_error")
             return [], FeedHealth(outlet, url, resp.status_code, 0, 0, f"http {resp.status_code}")
+
+        # The raw bytes, exactly as parsed. A feed that changes shape a year
+        # from now is diagnosable only against what it actually served.
+        tracer.artifact(f"feeds/{tracer.slug(outlet)}.xml", resp.content)
 
         parsed = feedparser.parse(resp.content)
         raw_count = len(parsed.entries)
@@ -199,9 +203,31 @@ def fetch_feed(outlet: str, url: str) -> tuple[list[Article], FeedHealth]:
             f"feed {outlet!r}: http={resp.status_code} raw_items={raw_count} "
             f"usable={len(articles)}"
         )
+        tracer.event(
+            "feeds",
+            outlet=outlet,
+            url=url,
+            http=resp.status_code,
+            elapsed_ms=elapsed_ms,
+            bytes=len(resp.content),
+            raw_items=raw_count,
+            usable=len(articles),
+            unusable=raw_count - len(articles),
+            error=error,
+            verdict="zero_items" if raw_count == 0 else "ok",
+        )
         return articles, FeedHealth(outlet, url, resp.status_code, raw_count, len(articles), error)
     except Exception as exc:  # noqa: BLE001 - a dead feed must not stop the run
         dbg(f"feed {outlet!r}: FAILED ({exc!r})")
+        tracer.event(
+            "feeds",
+            outlet=outlet,
+            url=url,
+            http=None,
+            elapsed_ms=int((time.monotonic() - started) * 1000),
+            error=repr(exc)[:200],
+            verdict="exception",
+        )
         return [], FeedHealth(outlet, url, None, 0, 0, repr(exc)[:120])
 
 
@@ -234,18 +260,35 @@ def gather(feeds_path: Path, since: datetime) -> GatherResult:
     if undated:
         dbg(f"gather: {undated} article(s) had no publish date; keeping them")
 
-    in_window = [a for a in all_articles if a.published is None or a.published >= since]
+    # Every article that doesn't make it, and why. These are the two silent
+    # filters in the pipeline — an article dropped here never reaches
+    # selection, so a feed that looks live can still contribute nothing.
+    drops: list[dict] = []
 
-    seen_urls: set[str] = set()
-    seen_titles: set[str] = set()
+    in_window = []
+    for a in all_articles:
+        if a.published is not None and a.published < since:
+            drops.append({"reason": "out_of_window", "outlet": a.outlet, "title": a.title,
+                          "url": a.url, "published": a.published, "since": since})
+            continue
+        in_window.append(a)
+
+    seen_urls: dict[str, str] = {}
+    seen_titles: dict[str, str] = {}
     deduped: list[Article] = []
     for a in in_window:
         curl = canonical_url(a.url)
         ntitle = _normalized_title(a.title)
-        if curl in seen_urls or ntitle in seen_titles:
+        if curl in seen_urls:
+            drops.append({"reason": "dup_url", "outlet": a.outlet, "title": a.title,
+                          "url": a.url, "collided_with": seen_urls[curl]})
             continue
-        seen_urls.add(curl)
-        seen_titles.add(ntitle)
+        if ntitle in seen_titles:
+            drops.append({"reason": "dup_title", "outlet": a.outlet, "title": a.title,
+                          "url": a.url, "collided_with": seen_titles[ntitle]})
+            continue
+        seen_urls[curl] = a.url
+        seen_titles[ntitle] = a.url
         deduped.append(a)
 
     deduped.sort(key=lambda a: (a.published is None, a.published and -a.published.timestamp()))
@@ -262,6 +305,33 @@ def gather(feeds_path: Path, since: datetime) -> GatherResult:
     if degraded:
         dead = [h.outlet for h in health if h.usable == 0]
         dbg(f"gather: DEGRADED — only {live}/{configured} feeds live; dead: {dead}")
+
+    tracer.count(
+        feeds_configured=configured,
+        feeds_live=live,
+        articles_fetched=len(all_articles),
+        articles_undated=undated,
+        articles_in_window=len(in_window),
+        articles_after_dedupe=len(deduped),
+        articles_dropped_window=sum(1 for d in drops if d["reason"] == "out_of_window"),
+        articles_dropped_dup=sum(1 for d in drops if d["reason"].startswith("dup")),
+    )
+    tracer.artifact_json(
+        "feeds/index.json",
+        {
+            "since": since,
+            "configured": configured,
+            "live": live,
+            "degraded": degraded,
+            "by_outlet_after_dedupe": per_outlet,
+            "feeds": [
+                {"outlet": h.outlet, "url": h.url, "http": h.http, "raw_items": h.raw_items,
+                 "usable": h.usable, "error": h.error}
+                for h in health
+            ],
+            "dropped_articles": drops,
+        },
+    )
 
     return GatherResult(articles=deduped, health=health, configured=configured, live=live, degraded=degraded)
 

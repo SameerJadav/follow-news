@@ -59,10 +59,40 @@ def test_follow_workflow_guards_on_repo_owner():
 
 
 def test_no_leaked_key_shape_in_committed_output():
-    for sub in ("data", "docs", "followed"):
+    # debug/ is included because it is committed like the rest, and unlike
+    # the rest it carries raw model prompts and responses -- the one place a
+    # key could plausibly turn up. tracer.scrub() is what keeps it clean;
+    # this is the check that the scrubbing actually held.
+    for sub in ("data", "docs", "followed", "debug"):
         d = ROOT / sub
         if not d.exists():
             continue
         for path in d.rglob("*"):
-            if path.is_file() and path.suffix in {".json", ".html", ".js", ".css", ".txt"}:
+            if path.is_file() and path.suffix in {".json", ".html", ".js", ".css", ".txt",
+                                                  ".jsonl", ".xml", ".md", ".wikitext"}:
                 assert not _KEY_RE.search(path.read_text(errors="ignore")), f"key-shaped string found in {path}"
+
+
+def test_debug_capture_is_off_by_default():
+    """The switch defaults to off in code, so only digest.yml's explicit
+    DIGEST_DEBUG turns it on. Flipping that one line back to "0" must be
+    enough to stop all capture."""
+    import os
+
+    import tracer
+
+    saved = os.environ.pop("DIGEST_DEBUG", None)
+    try:
+        assert tracer._level_from_env() == 0
+    finally:
+        if saved is not None:
+            os.environ["DIGEST_DEBUG"] = saved
+
+
+def test_digest_workflow_commits_debug_dir():
+    """Capture that never leaves the runner is worthless — the whole point
+    is that it lands in the repo where it can be read afterwards."""
+    digest_yml = (ROOT / ".github" / "workflows" / "digest.yml").read_text()
+    assert "DIGEST_DEBUG:" in digest_yml
+    assert "git add data docs followed debug" in digest_yml
+    assert "mkdir -p data docs followed debug" in digest_yml
