@@ -1,0 +1,55 @@
+{
+  "kind": "follow",
+  "day": "2026-07-27",
+  "ok": true,
+  "started_at": "2026-07-27T12:48:43Z",
+  "finished_at": "2026-07-27T12:49:07Z",
+  "elapsed_ms": 24552,
+  "argv": [
+    "digest.py",
+    "follow",
+    "--issue",
+    "2"
+  ],
+  "python": "3.12.3",
+  "git_sha": "6b53b203dfb9942bb5bcdef789d6974f5cd1a28a",
+  "debug_level": 1,
+  "bytes_written": 6201,
+  "byte_cap_reached": false,
+  "env": {
+    "DIGEST_DEBUG": "1",
+    "CI": "true",
+    "GITHUB_ACTIONS": "true",
+    "GITHUB_RUN_ID": "30267455587",
+    "GITHUB_RUN_ATTEMPT": "1",
+    "GITHUB_WORKFLOW": "follow",
+    "GITHUB_EVENT_NAME": "issues",
+    "GITHUB_SHA": "6b53b203dfb9942bb5bcdef789d6974f5cd1a28a",
+    "GITHUB_REF": "refs/heads/main",
+    "RUNNER_OS": "Linux"
+  },
+  "dials": {
+    "rank.WEIGHT_FLOOR": 5,
+    "rank.TIER_WEIGHT": {
+      "lead": 4,
+      "major": 2,
+      "notable": 0
+    },
+    "rank.WIKI_BONUS": 2,
+    "rank.HARD_CAP": 12,
+    "rank.MIN_STORIES_IF_ANY": 3,
+    "rank.MAX_ARTICLES_PER_STORY": 5,
+    "feeds.WINDOW_FLOOR_H": 12,
+    "feeds.WINDOW_CAP_H": 48,
+    "feeds.MIN_LIVE_FEEDS": 3,
+    "feeds.MIN_ARTICLES": 20,
+    "feeds.DEGRADED_LIVE_SHARE": 0.5,
+    "feeds.SUMMARY_CAP": 400,
+    "follow.STALE_DAYS": 14,
+    "follow.MAX_NEW_FOLLOWS_PER_RUN": 3,
+    "follow.MAX_FOLLOWS_PER_BATCH": 6,
+    "ratelimit.WAIT_BUDGET_S": 2700.0,
+    "ground.GROUND_MODEL": "gemini-2.5-flash"
+  },
+  "stages": []
+}
