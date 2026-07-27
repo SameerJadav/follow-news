@@ -52,6 +52,11 @@ jobs:
       # workflow or block the digest from publishing.
       - name: Follow
         continue-on-error: true
+        # Follow now researches rather than making one call, and it runs BEFORE
+        # the commit and deploy steps below -- so an unbounded burst would delay
+        # the digest's actual publish even though it cannot fail it. Whatever
+        # research completes is checkpointed and resumes on the next run.
+        timeout-minutes: 45
         run: uv run digest.py follow
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
@@ -77,8 +82,8 @@ jobs:
           # debug/ joins them for the same reason: it is absent when
           # DIGEST_DEBUG is "0", and a failed morning's evidence is exactly
           # what must survive, so it is committed under if: always() too.
-          mkdir -p data docs followed debug
-          git add data docs followed debug
+          mkdir -p data docs followed debug cache
+          git add data docs followed debug cache
           git diff --cached --quiet || git commit -m "digest: $(date -u +%F)"
           # The issue-triggered follow workflow can commit between this job's
           # checkout and this push; retry with a rebase rather than racing it.

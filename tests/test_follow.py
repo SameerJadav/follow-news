@@ -1,10 +1,12 @@
 """Tests for the fragile edges in follow.py: parsing an attacker-controlled
 issue body into a story reference, resolving that reference against data/,
 the security boundary that filters GitHub issues to the repo owner, the
-14-day closing predicate, and the guarantee that a backstory is never
-regenerated once a follow exists. No network call and no Gemini call is
-ever made here — requests.get/patch/post and ground.research are always
-monkeypatched out.
+14-day closing predicate, the followed/<issue>/ storage layout and its legacy
+fallback, and the guarantee that RESEARCH is never re-run once a follow
+exists (prose, by contrast, is regenerable — dossier.md §11).
+
+No network call and no Gemini call is ever made here — requests.get/patch/post
+and dossier's research entry points are always monkeypatched out.
 """
 
 from __future__ import annotations
@@ -200,33 +202,169 @@ def test_fourteen_quiet_days_closes():
     assert follow._is_closing(last_development, today) is True
 
 
-# ---------- backstory is generated exactly once ----------
+# ---------- research happens once; prose is regenerable ----------
 
 
-def test_backstory_is_never_regenerated_for_an_existing_follow(monkeypatch, tmp_path):
-    existing_backstory = {"body": "Already researched.", "markers": [], "sources": [], "queries": [], "search_suggestions": ""}
-    records = {
-        7: {
-            "issue": 7,
-            "status": "active",
-            "title": "Some story",
-            "section": "world",
-            "origin": {"date": "2026-07-20", "section": "world", "position": 1, "headline": "Some story"},
-            "started_at": "2026-07-20T00:00:00Z",
-            "closed_at": None,
-            "close_reason": None,
-            "last_development": "2026-07-20",
-            "backstory": existing_backstory,
-            "timeline": [],
-        }
+def _record(issue: int = 7, **over) -> dict:
+    record = {
+        "issue": issue,
+        "status": "active",
+        "title": "Some story",
+        "section": "world",
+        "origin": {"date": "2026-07-20", "section": "world", "position": 1, "headline": "Some story"},
+        "started_at": "2026-07-20T00:00:00Z",
+        "closed_at": None,
+        "close_reason": None,
+        "last_development": "2026-07-20",
+        "backstory": {"body": "Already researched.", "markers": [], "sources": [],
+                      "queries": [], "search_suggestions": ""},
+        "timeline": [],
     }
-    issues = [{"number": 7, "user": {"login": follow.OWNER}, "state": "open", "body": "digest: 2026-07-20\nheadline: Some story"}]
+    record.update(over)
+    return record
+
+
+def test_research_is_not_reseeded_for_an_issue_that_already_has_a_record(monkeypatch, tmp_path):
+    """Supersedes the old "backstory is never regenerated" guarantee.
+
+    dossier.md §11 makes PROSE regenerable — it costs one call over an
+    append-only ledger. What must never happen twice is the RESEARCH: Pass A
+    reseeding an existing follow would throw away its ledger and re-spend a
+    whole burst of calls."""
+    records = {7: _record()}
+    issues = [{"number": 7, "user": {"login": follow.OWNER}, "state": "open",
+               "body": "digest: 2026-07-20\nheadline: Some story"}]
 
     def explode(*a, **kw):
-        raise AssertionError("ground.research must not be called for an issue that already has a record")
+        raise AssertionError("dossier.seed must not run for an issue that already has a record")
 
-    monkeypatch.setattr(follow.ground, "research", explode)
+    monkeypatch.setattr(follow.dossier, "seed", explode)
 
-    follow._new_follows(records, issues, tmp_path)
+    follow._new_follows(records, issues, tmp_path, tmp_path)
 
-    assert records[7]["backstory"] == existing_backstory
+    assert records[7]["backstory"]["body"] == "Already researched."
+
+
+def test_a_closed_follow_is_never_researched_again(monkeypatch, tmp_path):
+    """Closing the issue is the owner's kill switch. It has to stop the
+    research loop too, not just the old cheap timeline call — an unfollowed
+    story with half a frontier left must not keep spending quota."""
+    import dossier
+
+    records = {7: _record(status="closed", close_reason="unfollowed")}
+    dsr = dossier.new_dossier(7, "Some story")
+    dsr["research_state"] = "researching"
+    dossier.save(tmp_path, 7, dsr, {}, "C")
+
+    def explode(*a, **kw):
+        raise AssertionError("a closed follow must never resume research")
+
+    monkeypatch.setattr(follow.dossier, "research", explode)
+
+    budget = dossier.Budget(tmp_path / "_budget" / "2026-07-27.json")
+    assert follow._sweep(records, tmp_path, date(2026, 7, 27), budget) == []
+
+
+# ---------- storage: the directory layout and its legacy fallback ----------
+
+
+def test_load_all_reads_a_new_style_directory_record(tmp_path):
+    d = tmp_path / "7"
+    d.mkdir()
+    (d / "record.json").write_text(json.dumps(_record(7)))
+
+    records = follow.load_all(tmp_path)
+    assert set(records) == {7}
+    assert records[7]["title"] == "Some story"
+
+
+def test_load_all_still_reads_a_legacy_flat_record(tmp_path):
+    """Follows made before dossiers existed must keep rendering."""
+    (tmp_path / "7.json").write_text(json.dumps(_record(7)))
+    assert set(follow.load_all(tmp_path)) == {7}
+
+
+def test_the_directory_wins_when_both_exist(tmp_path):
+    (tmp_path / "7.json").write_text(json.dumps(_record(7, title="stale")))
+    d = tmp_path / "7"
+    d.mkdir()
+    (d / "record.json").write_text(json.dumps(_record(7, title="current")))
+
+    assert follow.load_all(tmp_path)[7]["title"] == "current"
+
+
+def test_a_double_digit_issue_is_not_lost_to_string_sorting(tmp_path):
+    """`glob("*.json")` is non-recursive and would miss every new-style record
+    entirely, which reads as "this follow has no record" and reseeds its
+    research from scratch on every run."""
+    for n in (2, 10):
+        d = tmp_path / str(n)
+        d.mkdir()
+        (d / "record.json").write_text(json.dumps(_record(n)))
+
+    assert set(follow.load_all(tmp_path)) == {2, 10}
+
+
+def test_writing_a_record_migrates_the_legacy_file_into_its_directory(tmp_path):
+    (tmp_path / "7.json").write_text(json.dumps(_record(7)))
+
+    follow._write_record(tmp_path, _record(7, title="updated"))
+
+    assert (tmp_path / "7" / "record.json").exists()
+    assert not (tmp_path / "7.json").exists(), "the legacy file must not linger and shadow the directory"
+    assert follow.load_all(tmp_path)[7]["title"] == "updated"
+
+
+def test_a_brand_new_record_goes_straight_into_the_directory_layout(tmp_path):
+    follow._write_record(tmp_path, _record(11))
+    assert (tmp_path / "11" / "record.json").exists()
+    assert not (tmp_path / "11.json").exists()
+
+
+def test_a_new_follow_gets_its_dossier_in_the_same_step_as_its_record(tmp_path, monkeypatch):
+    """render.py reads a record with no dossier.json beside it as a legacy
+    one-shot follow whose prose is finished. A window where record.json exists
+    and dossier.json does not would publish an empty page as a complete one."""
+    import dossier
+
+    data_dir = tmp_path / "data"
+    data_dir.mkdir()
+    (data_dir / "2026-07-27.json").write_text(json.dumps({
+        "stories": [{"section": "india", "headline": "A story", "claims": [], "sources": []}]
+    }))
+    followed_dir = tmp_path / "followed"
+
+    monkeypatch.setattr(follow, "comment", lambda *a, **kw: None)
+    monkeypatch.setattr(dossier.extract, "article_text", lambda url: "")
+
+    records = {}
+    issues = [{"number": 3, "user": {"login": follow.OWNER}, "state": "open",
+               "body": "digest: 2026-07-27\nsection: india\nstory: 1\nheadline: A story"}]
+    follow._new_follows(records, issues, data_dir, followed_dir)
+
+    assert (followed_dir / "3" / "record.json").exists()
+    assert (followed_dir / "3" / "dossier.json").exists()
+    assert json.loads((followed_dir / "3" / "dossier.json").read_text())["research_state"] == "pending"
+
+
+def test_only_one_new_follow_is_started_per_run(tmp_path, monkeypatch):
+    """dossier.md §14: a new follow now costs a burst of research calls, so a
+    burst of requests must not stack bursts of research in one morning."""
+    assert follow.MAX_NEW_FOLLOWS_PER_RUN == 1
+
+    data_dir = tmp_path / "data"
+    data_dir.mkdir()
+    (data_dir / "2026-07-27.json").write_text(json.dumps({
+        "stories": [{"section": "india", "headline": "A story", "claims": [], "sources": []}]
+    }))
+    monkeypatch.setattr(follow, "comment", lambda *a, **kw: None)
+    monkeypatch.setattr(follow, "close_issue", lambda *a, **kw: None)
+    monkeypatch.setattr(follow.dossier.extract, "article_text", lambda url: "")
+
+    body = "digest: 2026-07-27\nsection: india\nstory: 1\nheadline: A story"
+    issues = [{"number": n, "user": {"login": follow.OWNER}, "state": "open", "body": body}
+              for n in (3, 4, 5)]
+    records = {}
+    follow._new_follows(records, issues, data_dir, tmp_path / "followed")
+
+    assert len(records) == 1

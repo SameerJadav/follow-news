@@ -1,3 +1,4 @@
+import extract
 from extract import PARA_MIN, from_jsonld, from_paragraphs
 
 # A fixture shaped like the real Times of India failure measured in
@@ -77,3 +78,52 @@ def test_via_jina_strips_markdown_header(monkeypatch):
     monkeypatch.setattr("extract.time.sleep", lambda *_: None)
     result = via_jina("https://example.com/a")
     assert result == "Actual article text here."
+
+
+# ---------- the URL-keyed cache (dossier.md §10) ----------
+
+
+def test_a_cache_hit_costs_no_fetch(tmp_path, monkeypatch):
+    """Fourteen days of updates on one followed story would otherwise re-fetch
+    the same background articles every morning, each costing a request and up
+    to JINA_PAUSE seconds of enforced sleep."""
+    calls = []
+
+    def fake_fetch(url):
+        calls.append(url)
+        return "<html><p>" + ("x" * 900) + "</p></html>", 200, 5, ""
+
+    monkeypatch.setattr(extract, "_fetch", fake_fetch)
+    extract.enable_cache(tmp_path / "extract.json")
+
+    first = extract.article_text("https://e.example/1")
+    second = extract.article_text("https://e.example/1")
+
+    assert first == second
+    assert len(calls) == 1
+
+
+def test_the_cache_survives_a_restart(tmp_path, monkeypatch):
+    def fake_fetch(url):
+        return "<html><p>" + ("y" * 900) + "</p></html>", 200, 5, ""
+
+    monkeypatch.setattr(extract, "_fetch", fake_fetch)
+    extract.enable_cache(tmp_path / "extract.json")
+    first = extract.article_text("https://e.example/2")
+
+    def explode(url):
+        raise AssertionError("a cached URL must not be fetched again in a later run")
+
+    monkeypatch.setattr(extract, "_fetch", explode)
+    extract.enable_cache(tmp_path / "extract.json")  # a fresh process would do this
+    assert extract.article_text("https://e.example/2") == first
+
+
+def test_caching_is_off_unless_enabled(monkeypatch, tmp_path):
+    """The digest fetches today's articles once and would never see a hit, so
+    it stays uncached and unaffected."""
+    monkeypatch.setattr(extract, "_CACHE_PATH", None)
+    monkeypatch.setattr(extract, "_CACHE", {})
+    assert extract._cache_get("https://e.example/3") is None
+    extract._cache_put("https://e.example/3", "text")
+    assert extract._CACHE == {}

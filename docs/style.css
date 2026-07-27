@@ -378,10 +378,12 @@ svg {
   font-variant-numeric: tabular-nums;
 }
 
-/* ---------- notices: thin sourcing, stale digest ---------- */
+/* ---------- notices: thin sourcing, stale digest, research state ---------- */
 
 .thin,
-.stale {
+.stale,
+.researching,
+.capped {
   padding: 0.625rem 0.75rem;
   background: var(--notice);
   border-radius: 6px;
@@ -394,9 +396,29 @@ svg {
   margin: 0 0 1rem;
 }
 
-.thin-tag {
+.thin-tag,
+.capped-tag {
   color: var(--fg);
   font-weight: 600;
+}
+
+/* A followed story whose dossier hasn't finished. Same posture as .stale
+ * toward a stale digest: an honest sentence about what is true right now,
+ * never a blank page pretending to be a finished one. */
+.researching {
+  margin: 0 0 1rem;
+}
+
+.researching p {
+  margin: 0;
+}
+
+.researching p + p {
+  margin-top: 0.4rem;
+}
+
+.capped {
+  margin: 0 0 1rem;
 }
 
 .stale {
@@ -682,6 +704,18 @@ html.no-speech .say-btn {
   color: var(--muted);
 }
 
+/* A story that was followed once and closed. The button above is live again,
+ * so this is only a way back to what was written last time — a footnote to the
+ * invitation, never competing with it. */
+.follow-prev {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+  text-align: center;
+  text-decoration: none;
+}
+
 /* The masthead's entry point into Follow, sitting under the section strip.
  * Deliberately not a third tab — product.md says two sections, World and
  * India. A ruled row rather than a tinted pill, so it belongs to the masthead
@@ -791,6 +825,14 @@ html.no-speech .say-btn {
   /* The carousel inside scrolls itself; this only stops a stray overflow from
    * ever reaching the page and giving the whole document a sideways scroll. */
   overflow: hidden;
+}
+
+/* A dossier makes many grounded calls and so carries many distinct chip
+ * widgets. They stack, each one still byte-for-byte as Google served it —
+ * the Terms require the markup unmodified, and spacing them is the most we
+ * can do to keep a run of them from reading as one broken block. */
+.chip-card + .chip-card {
+  margin-top: 0.5rem;
 }
 
 /* ---------- motion ---------- */

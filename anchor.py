@@ -8,6 +8,13 @@ enters the text. This module turns the model's inline `[cN]` markers into
 exact character spans, measures how much of a story is actually anchored,
 and measures thin sourcing rather than letting a model judge it.
 
+The same machinery serves a followed story's prose. dossier.py's write pass
+cites ledger entries as `[eN]` instead of claims as `[cN]`, so the token
+prefix is a parameter and `parse_anchored()` is the shared core;
+`parse_body()` is the digest's view of it and keeps its own signature. That
+is what puts MAX_UNANCHORED_SHARE, MIN_MARKERS and MIN_BODY_WORDS in front
+of followed-story prose for the first time (dossier.md §11).
+
 No network I/O, no LLM call — fully unit-testable without an API key, and
 Phase 6 calibrates by turning these named constants rather than rewording a
 prompt (the same rationale as rank.py's dials).
@@ -18,6 +25,7 @@ from __future__ import annotations
 import dataclasses
 import re
 from collections import defaultdict
+from collections.abc import Container
 from dataclasses import dataclass
 
 import tracer
@@ -54,11 +62,25 @@ WORD_TARGET = {"lead": 500, "major": 200, "notable": 200}
 # corroborates a single statement with two sources and writes "[c45, c50]"
 # rather than two separate markers. Match that form too so it becomes two
 # Markers sharing one span, rather than a leftover "[c...]" token in body.
-_MARKER_RE = re.compile(r"\[c(\d+(?:\s*,\s*c?\d+)*)\]")
-# Pull a marker flush against the word it follows before parsing, so
-# stripping the token never leaves a stray " ." behind and every computed
-# offset stays exact.
-_MARKER_WS_RE = re.compile(r"[ \t]+(\[c\d+(?:\s*,\s*c?\d+)*\])")
+#
+# The prefix is a parameter because dossier.py's write pass cites ledger
+# entries as [eN] through this same machinery. Built once per prefix and
+# cached — there are only ever two of them.
+_MARKER_CACHE: dict[str, tuple[re.Pattern[str], re.Pattern[str]]] = {}
+
+
+def _marker_res(prefix: str) -> tuple[re.Pattern[str], re.Pattern[str]]:
+    """(token, leading-whitespace) regex pair for a marker prefix. The
+    second one pulls a marker flush against the word it follows before
+    parsing, so stripping the token never leaves a stray " ." behind and
+    every computed offset stays exact."""
+    pair = _MARKER_CACHE.get(prefix)
+    if pair is None:
+        p = re.escape(prefix)
+        body = rf"\d+(?:\s*,\s*{p}?\d+)*"
+        pair = (re.compile(rf"\[{p}({body})\]"), re.compile(rf"[ \t]+(\[{p}{body}\])"))
+        _MARKER_CACHE[prefix] = pair
+    return pair
 # Leading characters to skip when starting a new span: whitespace plus the
 # full stop and connective punctuation left over from the PRECEDING
 # sentence (a marker sits before its own full stop, so the previous
@@ -109,21 +131,24 @@ def source_kind(full_text: str) -> str:
     return "fulltext" if len(full_text) >= MIN_FULLTEXT_CHARS else "summary"
 
 
-def _strip_markers(raw: str, allowed: dict[int, Claim]) -> tuple[str, list[tuple[int, list[int]]], int]:
+def _strip_markers(
+    raw: str, allowed: Container[int], prefix: str = "c"
+) -> tuple[str, list[tuple[int, list[int]]], int]:
     """Remove every [cN] / [cN, cM] token from raw prose in a single pass.
-    Returns the clean text, the (offset_in_clean, claim_ids) hits in
+    Returns the clean text, the (offset_in_clean, cite_ids) hits in
     document order — one entry per token occurrence, holding every id in
     that token that is a real claim of THIS story — and how many individual
     ids were dropped (unknown id, or citing another story's claim). A token
     whose ids are ALL invalid contributes no hit at all."""
-    raw = _MARKER_WS_RE.sub(r"\1", raw)
+    token_re, ws_re = _marker_res(prefix)
+    raw = ws_re.sub(r"\1", raw)
 
     parts: list[str] = []
     hits: list[tuple[int, list[int]]] = []
     out_len = 0
     dropped = 0
     pos = 0
-    for m in _MARKER_RE.finditer(raw):
+    for m in token_re.finditer(raw):
         chunk = raw[pos : m.start()]
         parts.append(chunk)
         out_len += len(chunk)
@@ -138,14 +163,20 @@ def _strip_markers(raw: str, allowed: dict[int, Claim]) -> tuple[str, list[tuple
     return clean, hits, dropped
 
 
-def _spans(clean: str, hits: list[tuple[int, list[int]]], claims_by_id: dict[int, Claim]) -> list[Marker]:
+def _spans(
+    clean: str, hits: list[tuple[int, list[int]]], cites: dict[int, list[tuple[str, str]]]
+) -> list[Marker]:
     """A span is the run of prose since the previous marker (or the start of
     its paragraph, or MAX_SPAN_CHARS back — whichever is latest) up to the
     marker's own position — never crossing a paragraph break, capped in
     length, and trimmed of leading/trailing connective punctuation and
-    whitespace. A token citing more than one claim id produces one Marker
-    per id, all sharing that same span — several outlets corroborating one
-    statement, not several statements."""
+    whitespace. A token citing more than one id produces one Marker per id,
+    all sharing that same span — several outlets corroborating one
+    statement, not several statements.
+
+    `cites` maps an id to every (outlet, url) behind it. A digest claim has
+    exactly one; a dossier ledger entry corroborated by three outlets has
+    three, and fans out the same way."""
     markers: list[Marker] = []
     prev_end = 0
     for offset, ids in hits:
@@ -159,19 +190,23 @@ def _spans(clean: str, hits: list[tuple[int, list[int]]], claims_by_id: dict[int
         prev_end = offset  # the next span begins where this marker sat
         if end > start:  # drop degenerate/empty spans
             for cid in ids:
-                c = claims_by_id[cid]
-                markers.append(Marker(start, end, cid, c.outlet, c.url))
+                for outlet, url in cites[cid]:
+                    markers.append(Marker(start, end, cid, outlet, url))
     return markers
 
 
-def parse_body(raw_body: str, claims: list[Claim]) -> tuple[str, list[Marker], int]:
-    """Turn the model's raw body (inline [cN] markers) into clean prose plus
-    exact character spans. Only markers citing a claim of THIS story are
-    honoured; a marker pointing at another story's claim id is dropped like
-    an unknown one, never silently accepted."""
-    allowed = {c.id: c for c in claims}
-    clean, hits, dropped = _strip_markers(raw_body, allowed)
-    markers = _spans(clean, hits, allowed)
+def parse_anchored(
+    raw_body: str, cites: dict[int, list[tuple[str, str]]], prefix: str = "c"
+) -> tuple[str, list[Marker], int]:
+    """Turn raw prose with inline [<prefix>N] markers into clean prose plus
+    exact character spans. Only ids present in `cites` are honoured; a
+    marker pointing at anything else is dropped like an unknown one, never
+    silently accepted.
+
+    The shared core behind parse_body() (the digest's [cN] claims) and
+    dossier.py's write pass ([eN] ledger entries)."""
+    clean, hits, dropped = _strip_markers(raw_body, cites, prefix)
+    markers = _spans(clean, hits, cites)
 
     # Stripping markers can leave leading/trailing whitespace (e.g. a marker
     # was the very first or last token). Trim it and shift every span so
@@ -185,6 +220,26 @@ def parse_body(raw_body: str, claims: list[Claim]) -> tuple[str, list[Marker], i
         if end > start:
             shifted.append(Marker(start, end, m.claim_id, m.outlet, m.url))
     return body, shifted, dropped
+
+
+def parse_body(raw_body: str, claims: list[Claim]) -> tuple[str, list[Marker], int]:
+    """Turn the model's raw body (inline [cN] markers) into clean prose plus
+    exact character spans. Only markers citing a claim of THIS story are
+    honoured; a marker pointing at another story's claim id is dropped like
+    an unknown one, never silently accepted.
+
+    The digest's view of parse_anchored(): one claim anchors to exactly one
+    source URL (research.md §6), so every id carries a single (outlet, url)."""
+    return parse_anchored(raw_body, {c.id: [(c.outlet, c.url)] for c in claims}, "c")
+
+
+def distinct_spans(markers: list[Marker]) -> int:
+    """How many distinct stretches of prose are anchored, as opposed to how
+    many Markers exist. A statement corroborated by several outlets produces
+    several Markers over ONE span, and render._accepted_markers renders only
+    the first of them — so counting raw markers against MIN_MARKERS would
+    inflate the anchoring floor exactly where corroboration is strongest."""
+    return len({(m.start, m.end) for m in markers})
 
 
 def unanchored_share(body: str, markers: list[Marker]) -> float:

@@ -207,10 +207,37 @@ def test_story_footer_carries_a_follow_button_when_not_followed():
 
 
 def test_story_footer_links_to_the_followed_page_when_already_followed():
-    followed_index = {("2026-07-25", "world", 1): 12}
+    followed_index = {("2026-07-25", "world", 1): (12, "active")}
     html = render._story_html(_story(), 1, "2026-07-25", followed_index)
     assert 'class="follow-btn is-on" href="follow-12.html"' in html
     assert "issues/new?" not in html
+
+
+def test_a_closed_follow_offers_the_story_again_and_keeps_the_old_page():
+    """A closed follow must not make its story permanently un-followable. The
+    Follow button is the only way a follow is ever created, so hiding it behind
+    "Following →" for a story the reader already stopped following means they
+    can never pick it back up."""
+    followed_index = {("2026-07-25", "world", 1): (12, "closed")}
+    html = render._story_html(_story(), 1, "2026-07-25", followed_index)
+    assert "issues/new?" in html
+    assert 'class="follow-prev" href="follow-12.html"' in html
+    assert "is-on" not in html
+
+
+def test_the_newest_follow_wins_when_a_story_is_followed_twice(tmp_path):
+    """Two records share an origin. Path-string sorting would put "10" before
+    "2" and hand the story to the older, closed follow."""
+    for issue, status in ((2, "closed"), (10, "active")):
+        d = tmp_path / str(issue)
+        d.mkdir()
+        (d / "record.json").write_text(json.dumps({
+            "issue": issue, "status": status, "title": "t",
+            "origin": {"date": "2026-07-27", "section": "india", "position": 1, "headline": "t"},
+            "backstory": {}, "timeline": [],
+        }))
+    _records, index = render._load_followed(tmp_path)
+    assert index[("2026-07-27", "india", 1)] == (10, "active")
 
 
 # ---------- sections and hard close ----------
@@ -399,6 +426,95 @@ def test_every_page_type_is_noindex(tmp_path):
 
 def test_empty_page_is_noindex():
     assert _NOINDEX in render._empty_page()
+
+
+# ---------- the research state of a followed story ----------
+
+
+def _followed(tmp_path, issue: int, record: dict, dossier: dict | None = None):
+    d = tmp_path / str(issue)
+    d.mkdir(parents=True, exist_ok=True)
+    (d / "record.json").write_text(json.dumps(record))
+    if dossier is not None:
+        (d / "dossier.json").write_text(json.dumps(dossier))
+    return tmp_path
+
+
+def test_a_researching_follow_says_so_instead_of_showing_empty_prose(tmp_path):
+    """dossier.md §13: until research_state is complete, the page renders an
+    honest "researching" state — the same posture _stale_html takes toward a
+    stale digest, rather than an empty or partial page."""
+    record = {**_FOLLOW_RECORD, "backstory": {}}
+    _followed(tmp_path, 1, record, {"research_state": "researching", "chips": []})
+    records, _ = render._load_followed(tmp_path)
+
+    html = render._follow_page(records[0])
+    assert 'class="researching"' in html
+    assert "Still researching this story" in html
+
+
+def test_a_complete_follow_shows_no_research_banner(tmp_path):
+    _followed(tmp_path, 1, _FOLLOW_RECORD, {"research_state": "complete", "chips": []})
+    records, _ = render._load_followed(tmp_path)
+
+    html = render._follow_page(records[0])
+    assert 'class="researching"' not in html
+    assert 'class="capped"' not in html
+    assert "Backstory prose." in html
+
+
+def test_a_capped_follow_still_shows_its_prose_but_admits_the_ceiling(tmp_path):
+    _followed(tmp_path, 1, _FOLLOW_RECORD, {"research_state": "capped", "chips": []})
+    records, _ = render._load_followed(tmp_path)
+
+    html = render._follow_page(records[0])
+    assert "Backstory prose." in html
+    assert 'class="capped"' in html
+    assert "Research paused" in html
+
+
+def test_a_legacy_record_with_no_dossier_renders_as_complete(tmp_path):
+    """A follow made before dossiers existed has finished prose and no
+    dossier.json. Defaulting it to "researching" would hide working prose."""
+    (tmp_path / "1.json").write_text(json.dumps(_FOLLOW_RECORD))
+    records, _ = render._load_followed(tmp_path)
+
+    assert records[0]["research_state"] == "complete"
+    assert "Backstory prose." in render._follow_page(records[0])
+
+
+def test_chips_are_deduplicated_and_rendered_once_for_the_whole_page(tmp_path):
+    """A dossier accumulates one searchEntryPoint blob per grounded call, and
+    the same blob often repeats. The Terms require each shown verbatim; they
+    do not require showing the same one forty times."""
+    blob_a, blob_b = "<div>chips A</div>", "<div>chips B</div>"
+    _followed(
+        tmp_path, 1, _FOLLOW_RECORD,
+        {"research_state": "complete", "chips": [blob_a, blob_b, blob_a]},
+    )
+    records, _ = render._load_followed(tmp_path)
+
+    html = render._follow_page(records[0])
+    assert html.count('class="chip-card"') == 2
+    assert blob_a in html and blob_b in html  # verbatim, unescaped, per the Terms
+
+
+def test_grounded_html_no_longer_emits_its_own_chips():
+    """Regression guard: chips moved to the page level, so a block must not
+    also carry them — that is how the same widget ends up repeated after every
+    timeline entry."""
+    block = {"body": "Prose.", "markers": [], "sources": [], "search_suggestions": "<div>chips</div>"}
+    assert "chips" not in render._grounded_html(block)
+
+
+def test_following_page_shows_researching_rather_than_zero_updates(tmp_path):
+    _followed(tmp_path, 1, {**_FOLLOW_RECORD, "backstory": {}},
+              {"research_state": "researching", "chips": []})
+    records, _ = render._load_followed(tmp_path)
+
+    html = render._following_page(records)
+    assert "still researching" in html
+    assert "0 updates" not in html
 
 
 def test_robots_txt_present_and_disallows_all():

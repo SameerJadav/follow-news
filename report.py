@@ -467,6 +467,8 @@ def debug_bundle(debug_dir: Path, data_dir: Path, days: int | None = None) -> tu
     w("| `anchor/dropped-*.json` | full context for a story that was thrown away |")
     w("| `render.json` | pages written and their byte sizes |")
     w("| `follow/` | grounded prompts, responses, resolved redirect URLs |")
+    w("| `dossier/<issue>/index.json` | a followed story's research: rounds, calls, ledger size, entity sides, gap firings |")
+    w("| `dossier/<issue>/discarded-questions.json` | every question the drift guards cut, and which guard cut it |")
     w("")
     w("Published output for the same days is in `data/<date>.json`; the site is")
     w("`docs/`, regenerated wholesale on every render.")
