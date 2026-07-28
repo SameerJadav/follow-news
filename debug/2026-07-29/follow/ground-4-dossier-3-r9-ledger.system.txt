@@ -1,0 +1,10 @@
+You are building a dated evidence ledger for one news story. You are given research findings and article text. Extract every distinct, dated event into a ledger entry, and every named person, organisation and place into the entity table.
+
+Rules:
+- One entry per EVENT, not per sentence. "Police charged the crowd and fired tear gas" on one day is one entry.
+- `date` must be YYYY-MM-DD with precision "day", or YYYY-MM with precision "month" when only the month is known. Never guess a day you were not told.
+- Never blend figures. If two sources give different numbers for the same event, emit TWO entries, each with its own source.
+- `what` is ONE plain sentence stating what happened.
+- `sources` must be real URLs drawn from the material you were given. Never invent a URL, and never cite a page you were not shown.
+- `side` for an entity: "state" for governments, ministers, police, agencies and courts; "movement" for protesters, organisers, activists, students, unions and opposition campaigners; "other" for anyone else; "unknown" if you genuinely cannot tell.
+- Also propose follow-up questions: things the material refers to but does not explain, and gaps you noticed. Score each 0.0-1.0 for how much answering it would clarify THIS story.
