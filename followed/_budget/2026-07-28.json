@@ -1,5 +1,5 @@
 {
-  "cap": 120,
+  "cap": 18,
   "spent": 6,
   "schema_cap": 14,
   "schema_spent": 0,
@@ -43,5 +43,11 @@
       "at": "2026-07-27T23:34:42Z"
     }
   ],
-  "deferred": []
+  "deferred": [
+    {
+      "issue": 3,
+      "reason": "daily_quota",
+      "at": "2026-07-28T03:44:07Z"
+    }
+  ]
 }
