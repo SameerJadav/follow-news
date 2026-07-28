@@ -45,6 +45,7 @@ DIGEST_DEBUG=1 uv run digest.py                                      # capture f
 uv run digest.py --debug / --no-debug                                # same switch, per invocation
 
 GEMINI_API_KEY=... uv run tools/probe_url_context.py   # one-off: does url_context still work on this free tier?
+GEMINI_API_KEY=... uv run tools/probe_ground_model.py  # one-off: can SCHEMA_MODEL ground? (2026-07-28: no)
 ```
 
 A followed story's research is resumable and budgeted, so re-running
@@ -142,19 +143,39 @@ job), `render.yml` (push-triggered re-render, no API key), `follow.yml`
   `dossier.Budget` meters the two separately: exhausting one must never stop
   work that would draw on the other. The digest spends 3–4 of the schema pool
   each morning, which is why `MAX_SCHEMA_CALLS_PER_DAY` leaves it room.
-- **The daily ceiling is LEARNED, not hardcoded.** Two different meters apply
-  to a grounded call — the model's own `GenerateRequestsPerDay...` and the
-  Google Search grounding allowance — and they are orders of magnitude apart,
-  both unpublished, both moved before (`research.md` §3.1). So
-  `ratelimit.daily_limit()` reads the number off the 429 that actually fires
-  and `dossier.Budget.learn()` records it in `followed/_budget/limits.json`;
-  later runs cap themselves to what the server really enforced, minus
-  `QUOTA_SAFETY_MARGIN`. The defaults are deliberately optimistic because the
-  costs are asymmetric: discovering the ceiling costs one wasted call once
-  (checkpointing makes a 429 a pause, not a failure), while under-guessing it
-  wastes allowance every single day. A learned value expires after
-  `LEARNED_LIMIT_TTL_DAYS` so a raised limit is not ignored forever — and
-  deleting `limits.json` forces an immediate re-probe.
+- **The split is forced: `gemini-3.6-flash` cannot use `google_search`.**
+  Probed 2026-07-28 (`tools/probe_ground_model.py`): an immediate 429 with no
+  quota detail, twice, while a `url_context` call on the same model in the same
+  run succeeded and `gemini-2.5-flash` grounded fine minutes later. So it is
+  not a dead pool and not an outage — search grounding is unavailable on
+  Gemini 3 on this tier, the same way 2.5 Pro is `limit: 0`. `research.md`
+  §3.1's "5,000 prompts/month on Gemini 3 models" does not hold here. **Pass C
+  (search) is therefore pinned to the 2.5 family and its capacity does not grow
+  by adding models.** Pass D (`url_context`) is *not* pinned — verified working
+  on 3.6, returning the same `grounding_chunks`/`grounding_supports` shape
+  `ground.py` already parses — so it is the one grounded pass that could move
+  off the grounded pool.
+- **The daily ceiling is 20 requests per model per day, MEASURED.** AI Studio's
+  rate-limit page (`aistudio.google.com/rate-limit`) reports RPM 5 / **RPD 20**
+  / TPM ~250K for both `gemini-2.5-flash` and `gemini-3.6-flash` on this key
+  (read 2026-07-28). RPD is the only meter that binds: observed peak input
+  tokens were ~60K against ~250K, and the Google Search grounding allowance of
+  1,500/day cannot be reached in seventy-five days at 20 model requests each.
+  The 2026-07-27 run confirms it exactly — 19 requests to `gemini-2.5-flash`,
+  then a 429 on the 20th. **Read the dashboard before tuning these; do not
+  infer the ceiling from 429s.** The earlier design sized
+  `MAX_GROUNDED_CALLS_PER_DAY` at 120 against the grounding allowance, a meter
+  that physically cannot fire first.
+- **Learning is the backstop for a moved limit, not the way we find it.**
+  `ratelimit.daily_limit()` reads a ceiling off a 429 that carries one and
+  `dossier.Budget.learn()` records it in `followed/_budget/limits.json`; a
+  learned value can only *lower* the cap, since `_cap_for` takes
+  `min(default, learned - QUOTA_SAFETY_MARGIN)`. It expires after
+  `LEARNED_LIMIT_TTL_DAYS` so a raised limit is not ignored forever, and
+  deleting `limits.json` forces a re-probe. Note what it did *not* do on
+  2026-07-27: that 429 carried no `quotaId` and no `quotaValue`, so
+  `quota_facts()` returned `""`, nothing was learned, and `limits.json` was
+  never written. A dashboard reading is worth more than this mechanism.
 - **The dossier is append-only.** Entries are corrected and merged, never
   silently dropped — whatever a reader saw yesterday is still accounted for
   today. A duplicate event from a second outlet raises `outlet_count`; two
@@ -201,6 +222,19 @@ job), `render.yml` (push-triggered re-render, no API key), `follow.yml`
   fixed attempt count. A *daily*-scoped quota (quotaId containing "PerDay")
   re-raises immediately instead of sleeping for hours — the three staggered
   `--if-missing` crons are what "resume" means for a day-scale limit.
+- **A third 429 shape: opaque.** `ratelimit.is_opaque_quota` catches a 429 that
+  names no quota (`quotaId`/`quotaValue`/`quotaMetric` all absent) *and* offers
+  no `retryDelay`. Measured 2026-07-28, that is what `gemini-3.6-flash` +
+  `google_search` returns, because search grounding is unavailable on Gemini 3
+  on this tier — the server means "you cannot do this", not "not right now". It
+  carries no "per day" text either, so before the fix it was read as a
+  per-minute limit and spent the full 45-minute budget (which is also all of
+  `dossier.MAX_RESEARCH_SECONDS`) retrying a call that could never succeed. It
+  now gets `OPAQUE_WAIT_BUDGET_S` (90s → two short hops, ~62s in practice) so a
+  genuine blip still recovers, then gives up. Deliberately *not* grouped with
+  daily quotas: one unexplained 429 on the digest's own write pass must not turn
+  a blip into a stale morning. Greppable: `ratelimit: ... OPAQUE 429` and the
+  `opaque_quota_exhausted` verdict in `trace.jsonl`.
   Measured live 2026-07-25: `gemini-3.6-flash` free tier is
   `GenerateRequestsPerMinutePerProjectPerModel-FreeTier = 5 RPM`; real usage
   is 2-3 pipeline calls plus 0-2 grounded Follow calls per morning, so this
@@ -241,10 +275,10 @@ job), `render.yml` (push-triggered re-render, no API key), `follow.yml`
 | `DEAD_DAYS`, `HISTORY_DAYS` | `report.py` | how many silent days call a feed dead, and the lookback window |
 | `STALE_DAYS` | `follow.py` | days with no development before a Follow auto-closes |
 | `MAX_NEW_FOLLOWS_PER_RUN` | `follow.py` | new follows started per run (1 — a burst of requests must not stack research bursts) |
-| `QUESTIONS_PER_ROUND`, `QUESTIONS_PER_CALL` | `dossier.py` | how many frontier questions a round pops, and how many share one grounded call |
+| `QUESTIONS_PER_ROUND`, `QUESTIONS_PER_CALL` | `dossier.py` | how many frontier questions a round pops, and the *cap* on how many share one grounded call — `batch_questions` groups by dimension first, so the worst-case round cost is one call per question, not `ROUND/CALL` |
 | `MAX_ROUNDS`, `SATURATION_ENTRIES`, `SATURATION_ROUNDS` | `dossier.py` | the loop-until-dry threshold |
 | `MAX_CALLS_PER_FOLLOW` | `dossier.py` | one follow's lifetime ceiling, across days |
-| `MAX_GROUNDED_CALLS_PER_DAY`, `MAX_SCHEMA_CALLS_PER_DAY` | `dossier.py` | the two daily pools — see the per-model quota note below |
+| `MAX_GROUNDED_CALLS_PER_DAY`, `MAX_SCHEMA_CALLS_PER_DAY` | `dossier.py` | the two daily pools, both derived from the measured RPD 20: 18 (20 − margin) and 14 (20 − digest's 4 − margin) — see the per-model quota note below |
 | `CRITIC_EVERY` | `dossier.py` | how often the completeness critic spends a grounded call |
 | `MAX_QUESTION_DEPTH`, `MIN_QUESTION_SCORE` | `dossier.py` | the drift guards on recursive research |
 | `GAP_DENSITY_RATIO` | `dossier.py` | how sparse a week must be to raise a gap question |

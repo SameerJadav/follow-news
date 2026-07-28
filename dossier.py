@@ -64,38 +64,84 @@ from tracer import dbg
 #   schema pool    gemini-3.6-flash   Pass E, the write passes   — shared with
 #                                                                  the digest
 #
-# These are CEILINGS OF LAST RESORT, not the real limits. Two different meters
-# apply to a grounded call — the model's own requests-per-day, and the Google
-# Search grounding allowance — and they are orders of magnitude apart, both
-# unpublished, both moved without notice before (research.md §3.1). Sizing
-# these by guesswork gets it wrong in one direction or the other: too low
-# wastes most of the allowance, too high 429s mid-round.
+# The split is forced, not chosen. Probed 2026-07-28
+# (tools/probe_ground_model.py): gemini-3.6-flash CANNOT use google_search —
+# an immediate 429 with no quota detail, twice, while a url_context call on the
+# same model in the same run succeeded and gemini-2.5-flash grounded fine
+# minutes later. So it is neither a dead pool nor a project-wide outage:
+# search grounding is unavailable on Gemini 3 on this tier, the same way 2.5
+# Pro is `limit: 0`. research.md §3.1's "5,000 prompts/month on Gemini 3
+# models" does not hold here.
 #
-# So the real limit is LEARNED. `Budget` reads the number back off the first
-# PerDay 429 (ratelimit.daily_limit) and remembers it in
-# followed/_budget/limits.json, and every later day caps itself to what the
-# server actually enforced. These defaults are deliberately optimistic: with
-# checkpointing, discovering the ceiling costs one wasted call once, while
-# under-guessing it costs unused capacity every single day.
-MAX_GROUNDED_CALLS_PER_DAY = 120
-# The schema pool is shared with the digest's own 3-4 morning calls, so it
-# stays conservative until measured — starving the digest is the one failure
-# this whole feature must never cause.
+# Consequence for anyone re-planning this: Pass C (search) is PINNED to the
+# 2.5 family and its capacity does not grow by adding models. Pass D
+# (url_context) is not pinned — it was verified working on 3.6 — so it is the
+# one grounded pass that could be moved off this pool to free a call a round.
+#
+# Both ceilings are now MEASURED, not guessed. AI Studio's rate-limit page
+# (aistudio.google.com/rate-limit) reports, for this key, on 2026-07-28:
+#
+#   gemini-2.5-flash   RPM 5   RPD 20   TPM ~250K
+#   gemini-3.6-flash   RPM 5   RPD 20   TPM ~250K
+#
+# RPD 20 per model is the ONLY binding meter. The other two have enormous
+# headroom and can be ignored: observed peak input tokens were ~60K against
+# ~250K, and the Google Search grounding allowance is 1,500/day — which 20
+# model requests a day cannot reach in seventy-five days. Sizing anything
+# against the grounding allowance (as the previous 120 did) is sizing against
+# a meter that physically cannot fire first.
+#
+# The 2026-07-27 run confirms the number exactly: 19 requests to
+# gemini-2.5-flash, then a 429 on the 20th.
+#
+# The margin is subtracted here rather than left to `_cap_for`, which applies
+# it only to a *learned* ceiling — so the default has to arrive pre-margined or
+# the first run of the day spends right up to the wall.
+MAX_GROUNDED_CALLS_PER_DAY = 18  # 20 measured - QUOTA_SAFETY_MARGIN (2)
+# The schema pool is shared with the digest's own 3-4 morning calls, and the
+# digest must never be starved by Follow. 20 measured - 4 for the digest at its
+# worst - 2 margin = 14. This value was already right; only its reasoning was
+# ("conservative until measured" — it is now measured, and 14 is what the
+# arithmetic gives).
 MAX_SCHEMA_CALLS_PER_DAY = 14
-QUOTA_SAFETY_MARGIN = 2  # calls held back from a learned ceiling
-# A learned ceiling goes stale. research.md §3.1 records the free tier being
-# cut 50-80% in December 2025, and limits move upward too. After this many
-# days the cap reverts to the optimistic default and re-discovers — one
-# wasted call to find out, against weeks of unused allowance if a raised
-# limit went unnoticed.
+# Held back from BOTH ceilings above (already subtracted into their literals)
+# and from any learned one, so the last call of the day is ours rather than a
+# wasted 429.
+QUOTA_SAFETY_MARGIN = 2
+# Learning is now the backstop for a MOVED limit, not how the limit is found —
+# read the AI Studio dashboard for that. `_cap_for` takes
+# min(default, learned - margin), so a learned value can only lower the cap.
+# research.md §3.1 records the free tier being cut 50-80% in December 2025, and
+# limits move upward too, so a learned ceiling expires after this many days and
+# the measured default applies again.
 LEARNED_LIMIT_TTL_DAYS = 14
 
-QUESTIONS_PER_ROUND = 10  # how many frontier questions a round pops
-# Five per call, not three: at 18 grounded calls a day, a round that spends
-# four of them on searching alone gets through barely two rounds. Grouped by
-# checklist dimension (see batch_questions), so a batch is still one topic
-# asked five ways rather than five unrelated questions blurring one search.
-QUESTIONS_PER_CALL = 5
+# A round's grounded cost is driven by the number of BATCHES, not by
+# QUESTIONS_PER_ROUND / QUESTIONS_PER_CALL. batch_questions() groups by
+# checklist dimension FIRST and only then splits each group at
+# QUESTIONS_PER_CALL, so QUESTIONS_PER_CALL caps how big a batch may get — it
+# does not reduce how many there are. Questions from distinct dimensions never
+# share a call, which means the worst case is one call per question:
+#
+#   Pass C  1..QUESTIONS_PER_ROUND calls   (one per dimension group)
+#   Pass D  0 or 1                         (one url_context batch per round)
+#   Pass G  1 every CRITIC_EVERY rounds
+#
+# The 2026-07-27 run is the evidence: round 1 spent EIGHT search calls, round 2
+# five — against the two that the old "10 / 5" reading predicted. Two rounds
+# consumed 16 grounded calls and the whole day's pool.
+#
+# So these are sized against the real ceiling of 18: six questions a round is
+# at worst 6 + 1 + 1 = 8 grounded calls, which fits twice a day with room over,
+# and three per call keeps a batch one topic asked three ways rather than three
+# unrelated questions blurring one search.
+QUESTIONS_PER_ROUND = 6  # how many frontier questions a round pops
+QUESTIONS_PER_CALL = 3
+# 8 rounds x ~8 grounded calls is ~64, which is what MAX_CALLS_PER_FOLLOW below
+# is set to cover. At 18 a day that is a follow spanning three to four days —
+# slow, but it is what RPD 20 physically allows, and checkpointing is what makes
+# a multi-day follow a pause rather than a failure. Cutting the span needs more
+# pools (more keys, or moving Pass D to the schema model), not a bigger number.
 MAX_ROUNDS = 8
 CRITIC_EVERY = 2  # run the completeness critic every Nth round, not every round
 SATURATION_ENTRIES = 3  # a round adding fewer than this is a lean round

@@ -800,12 +800,37 @@ def test_daily_limit_reads_the_number_off_a_real_429():
 
 
 def test_a_round_fits_inside_one_days_grounded_pool():
-    """QUESTIONS_PER_ROUND questions at QUESTIONS_PER_CALL each, plus at most
-    one read and one critic, has to leave room for several rounds a day."""
+    """A round has to fit twice inside one day's grounded pool.
+
+    The cost is BATCHES, not ceil(QUESTIONS_PER_ROUND / QUESTIONS_PER_CALL) —
+    batch_questions groups by dimension before splitting, so questions from
+    distinct dimensions never share a call and the worst case is one call per
+    question. The 2026-07-27 run spent eight search calls in a single round
+    against the two that the naive division predicts, which is how a day's pool
+    vanished in two rounds. Asserting the naive number here is what let that
+    ship, so this models the real worst case instead."""
+    worst_case_search = dossier.QUESTIONS_PER_ROUND  # every question its own dimension
+    per_round = worst_case_search + 1 + 1  # + one url_context read + the critic
+    rounds = dossier.MAX_GROUNDED_CALLS_PER_DAY // per_round
+    assert rounds >= 2, (
+        f"a round costs up to {per_round} grounded calls against a pool of "
+        f"{dossier.MAX_GROUNDED_CALLS_PER_DAY}, leaving {rounds} round(s) a day"
+    )
+
+
+def test_the_worst_case_round_cost_is_one_call_per_question():
+    """Guards the assumption the dial sizing above rests on: QUESTIONS_PER_CALL
+    caps a batch's size, it does not cap the number of batches."""
+    spread = [
+        {"q": f"q{i}", "dimension": f"dim{i}"} for i in range(dossier.QUESTIONS_PER_ROUND)
+    ]
+    assert len(dossier.batch_questions(spread)) == dossier.QUESTIONS_PER_ROUND
+
+    clustered = [{"q": f"q{i}", "dimension": "same"} for i in range(dossier.QUESTIONS_PER_ROUND)]
     import math
-    search_calls = math.ceil(dossier.QUESTIONS_PER_ROUND / dossier.QUESTIONS_PER_CALL)
-    per_round = search_calls + 1 + 1  # + url_context read + critic, worst case
-    assert dossier.MAX_GROUNDED_CALLS_PER_DAY // per_round >= 3, "fewer than 3 rounds a day is too slow"
+    assert len(dossier.batch_questions(clustered)) == math.ceil(
+        dossier.QUESTIONS_PER_ROUND / dossier.QUESTIONS_PER_CALL
+    )
 
 
 def test_a_stale_learned_ceiling_is_re_probed(tmp_path):

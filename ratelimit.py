@@ -16,6 +16,18 @@ A day-scoped quota (a quotaId containing "PerDay") is a different situation:
 waiting inside one job for hours is worse than letting one of the three
 staggered --if-missing crons (research.md SS4.1) pick the run back up a couple
 of hours later. So a daily quota re-raises immediately rather than sleeping.
+
+There is a THIRD shape, found 2026-07-28: a 429 that names no quota at all.
+`gemini-3.6-flash` + `google_search` returns "You exceeded your current quota"
+with no quotaId, no quotaValue and no retryDelay -- because search grounding is
+simply unavailable on Gemini 3 on this tier, the same way 2.5 Pro is `limit: 0`.
+That is the server saying "you cannot do this", not "not right now", and no
+amount of waiting lifts it. Classified as a per-minute limit (which is what it
+looked like, having no "per day" text either) it consumed the entire
+WAIT_BUDGET_S of 45 minutes -- which is also all of dossier.MAX_RESEARCH_SECONDS
+-- retrying a call that could never succeed. So an opaque 429 gets a much
+smaller budget: one or two short hops in case it really was a blip, then it
+gives up. See OPAQUE_WAIT_BUDGET_S.
 """
 
 from __future__ import annotations
@@ -37,12 +49,21 @@ T = TypeVar("T")
 # stuck run still finishes before the next staggered cron would have fired
 # anyway. Overridable for local testing (DIGEST_WAIT_BUDGET_S=5 uv run ...).
 WAIT_BUDGET_S = float(os.environ.get("DIGEST_WAIT_BUDGET_S", 2700))
+# The budget for an opaque 429 (see the module docstring): enough for one or two
+# short backoff hops in case the detail-less response really was a blip, and
+# nowhere near enough to burn a research window on a capability that does not
+# exist. Derived from WAIT_BUDGET_S rather than set independently so
+# DIGEST_WAIT_BUDGET_S=5 still shortens everything for local testing.
+OPAQUE_WAIT_BUDGET_S = min(WAIT_BUDGET_S, 90.0)
 MAX_SLEEP_S = 300  # never sleep longer than this in one hop, even on a big backoff
 BASE_SLEEP_S = 20  # exponential-backoff base when the server gives no retryDelay
 DEFAULT_SLEEP_S = 60  # last-resort sleep if backoff math ever yields something silly
 
 _RETRY_DELAY_RE = re.compile(r"retryDelay[\"']?\s*[:=]\s*[\"']?(\d+(?:\.\d+)?)s")
 _DAILY_RE = re.compile(r"PerDay|per day", re.IGNORECASE)
+# Any of the three keys a 429 uses to name the quota it violated. Their absence
+# is what makes a 429 opaque.
+_NAMES_QUOTA_RE = re.compile(r"[\"'](?:quotaId|quotaValue|quotaMetric)[\"']")
 
 
 def _blob(exc: Exception) -> str:
@@ -107,6 +128,26 @@ def is_daily_quota(exc: Exception) -> bool:
     return bool(_DAILY_RE.search(_blob(exc)))
 
 
+def is_opaque_quota(exc: Exception) -> bool:
+    """True when a 429 names no quota and offers no retryDelay.
+
+    Measured 2026-07-28: `gemini-3.6-flash` + `google_search` returns exactly
+    this — the generic "You exceeded your current quota" message with a Help
+    link and nothing else. A real per-minute limit is not shy about it: verified
+    live, it carries `GenerateRequestsPerMinutePerProjectPerModel-FreeTier`, a
+    quotaValue, and usually a retryDelay. So the absence of all three is the
+    signal that this is a capability wall rather than a wait.
+
+    Deliberately not treated the same as a daily quota: this still gets a couple
+    of short hops (OPAQUE_WAIT_BUDGET_S), because failing the digest's own
+    select/claims/write pass on a single unexplained 429 would turn a blip into
+    a stale morning."""
+    blob = _blob(exc)
+    if _RETRY_DELAY_RE.search(blob):
+        return False
+    return not _NAMES_QUOTA_RE.search(blob)
+
+
 def quota_facts(exc: Exception) -> str:
     """Every quotaId/quotaValue pair mentioned in the error, so the *actual*
     free-tier number in force today lands in the Actions log the first time a
@@ -165,27 +206,35 @@ def call_with_resume(
 
             attempt += 1
             elapsed = clock() - start
+            # An opaque 429 is probably a capability that does not exist on this
+            # model, so it gets minutes to prove otherwise rather than the full
+            # 45 — see is_opaque_quota().
+            opaque = is_opaque_quota(exc)
+            budget = OPAQUE_WAIT_BUDGET_S if opaque else WAIT_BUDGET_S
             wait = retry_after(exc)
             if wait is None:
                 wait = BASE_SLEEP_S * (2 ** (attempt - 1))
             wait = min(wait, MAX_SLEEP_S) or DEFAULT_SLEEP_S
             wait += random.uniform(0, 3)  # jitter so staggered crons don't retry in lockstep
 
-            if elapsed + wait > WAIT_BUDGET_S:
+            if elapsed + wait > budget:
+                kind = "OPAQUE 429 (no quota named, no retryDelay -- capability " \
+                       "likely unavailable on this model)" if opaque else "429"
                 dbg(
-                    f"ratelimit: {label} 429, wait budget exhausted "
-                    f"(elapsed {elapsed:.0f}s + {wait:.0f}s > {WAIT_BUDGET_S:.0f}s budget) "
+                    f"ratelimit: {label} {kind}, wait budget exhausted "
+                    f"(elapsed {elapsed:.0f}s + {wait:.0f}s > {budget:.0f}s budget) "
                     f"{quota_facts(exc)}"
                 )
-                tracer.event("ratelimit", label=label, verdict="budget_exhausted",
+                tracer.event("ratelimit", label=label,
+                             verdict="opaque_quota_exhausted" if opaque else "budget_exhausted",
                              attempt=attempt, elapsed_s=round(elapsed, 1),
-                             would_wait_s=round(wait, 1), budget_s=WAIT_BUDGET_S,
-                             facts=quota_facts(exc))
+                             would_wait_s=round(wait, 1), budget_s=budget,
+                             opaque=opaque, facts=quota_facts(exc))
                 raise
 
             dbg(
-                f"ratelimit: {label} 429, waiting {wait:.0f}s "
-                f"(elapsed {elapsed:.0f}s/{WAIT_BUDGET_S:.0f}s) {quota_facts(exc)}"
+                f"ratelimit: {label} {'OPAQUE ' if opaque else ''}429, waiting {wait:.0f}s "
+                f"(elapsed {elapsed:.0f}s/{budget:.0f}s) {quota_facts(exc)}"
             )
             # The real free-tier numbers are unpublished and move without
             # notice (research.md §3.1). A week of actual 429s, with the
@@ -193,5 +242,5 @@ def call_with_resume(
             tracer.event("ratelimit", label=label, verdict="waiting",
                          attempt=attempt, elapsed_s=round(elapsed, 1),
                          wait_s=round(wait, 1), server_retry_delay=retry_after(exc),
-                         budget_s=WAIT_BUDGET_S, facts=quota_facts(exc))
+                         budget_s=budget, opaque=opaque, facts=quota_facts(exc))
             sleep_fn(wait)
