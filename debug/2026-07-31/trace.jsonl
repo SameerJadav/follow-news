@@ -179,3 +179,15 @@
 {"run": "follow", "t": 462, "kind": "dbg", "msg": "follow: wrote /home/runner/work/follow-news/follow-news/followed/3/record.json"}
 {"run": "follow", "t": 477, "kind": "dbg", "msg": "follow: run -> done, 0 grounded call(s) this run"}
 {"run": "follow", "t": 477, "kind": "event", "stage": "tracer", "msg": "capture finished", "ok": true, "ms": 477, "bytes": 14908}
+{"run": "follow", "t": 0, "kind": "follow", "stage": "tracer", "msg": "capture started", "level": 1, "day": "2026-07-31"}
+{"run": "follow", "t": 9, "kind": "dbg", "msg": "extract: cache enabled at /home/runner/work/follow-news/follow-news/cache/extract.json (121 url(s))"}
+{"run": "follow", "t": 294, "kind": "dbg", "msg": "follow: run -> 3 existing record(s), 3 owner issue(s) in scope"}
+{"run": "follow", "t": 301, "kind": "dbg", "msg": "follow: sweep -> 0 researching, 1 due; budget grounded=18 schema=14"}
+{"run": "follow", "t": 323, "kind": "dbg", "msg": "dossier: #3 CAPPED at 54 call(s); 631 question(s) left in the frontier"}
+{"run": "follow", "t": 323, "kind": "event", "stage": "dossier", "issue": 3, "verdict": "capped", "calls": 54, "frontier_left": 631}
+{"run": "follow", "t": 338, "kind": "dbg", "msg": "follow: #3 -> quiet, no new ledger entries"}
+{"run": "follow", "t": 353, "kind": "dbg", "msg": "follow: wrote /home/runner/work/follow-news/follow-news/followed/1/record.json"}
+{"run": "follow", "t": 354, "kind": "dbg", "msg": "follow: wrote /home/runner/work/follow-news/follow-news/followed/2/record.json"}
+{"run": "follow", "t": 356, "kind": "dbg", "msg": "follow: wrote /home/runner/work/follow-news/follow-news/followed/3/record.json"}
+{"run": "follow", "t": 370, "kind": "dbg", "msg": "follow: run -> done, 0 grounded call(s) this run"}
+{"run": "follow", "t": 371, "kind": "event", "stage": "tracer", "msg": "capture finished", "ok": true, "ms": 371, "bytes": 14908}
