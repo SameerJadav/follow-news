@@ -1,0 +1,918 @@
+{
+  "dials": {
+    "WEIGHT_FLOOR": 5,
+    "TIER_WEIGHT": {
+      "lead": 4,
+      "major": 2,
+      "notable": 0
+    },
+    "WIKI_BONUS": 2,
+    "HARD_CAP": 12,
+    "MIN_STORIES_IF_ANY": 3,
+    "MAX_ARTICLES_PER_STORY": 5
+  },
+  "floor_relaxed": false,
+  "kept_weights": [
+    12,
+    11,
+    11,
+    9,
+    9,
+    10,
+    9,
+    8,
+    7
+  ],
+  "per_section": {
+    "world": 5,
+    "india": 4
+  },
+  "clusters": [
+    {
+      "headline_hint": "US launches heavy strikes on Iran as regional conflict escalates",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "lead",
+      "article_ids": [
+        4,
+        11,
+        14,
+        133,
+        182,
+        204,
+        207,
+        210,
+        239,
+        295,
+        315,
+        326
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        4,
+        11,
+        14,
+        133,
+        182,
+        204,
+        207,
+        210,
+        239,
+        295,
+        315,
+        326
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 6,
+      "wiki_backed": true,
+      "wiki_event": "Jordan's air defenses shoot down five missiles from Iran.",
+      "weight": 12,
+      "weight_terms": {
+        "distinct_outlets": 6,
+        "tier_weight": 4,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "Middle East crisis live: Iraq says it had ‘no prior knowledge’ of US-Saudi attacks",
+          "url": "https://www.theguardian.com/world/live/2026/jul/30/us-iran-war-live-updates-missile-strikes-attacks-iraq-egypt-middle-east-crisis-latest-news"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Will Saudi Arabia be dragged further into the war in Iran?",
+          "url": "https://www.aljazeera.com/video/inside-story/2026/7/30/will-saudi-arabia-be-dragged-further-into-the-war-in-iran?traffic_source=rss"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "US-Iran conflict spreads as new fronts open",
+          "url": "https://timesofindia.indiatimes.com/world/us/us-iran-conflict-spreads-as-new-fronts-open/articleshow/132744167.cms"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "US launches 'heavy' strikes on Iran after attempted attack on American troops",
+          "url": "https://www.bbc.co.uk/news/articles/c74gwdzywmeo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Why Saudi Arabia finally joined the US war on Iran: What's changed after months of restraint",
+          "url": "https://www.livemint.com/news/world/why-saudi-arabia-finally-joined-the-us-war-on-iran-whats-changed-after-months-of-restraint-11785403950920.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 7
+    },
+    {
+      "headline_hint": "Russian missile barrage hits Ukraine; suspected Russian missile explodes in Poland",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "major",
+      "article_ids": [
+        28,
+        50,
+        137,
+        149,
+        174,
+        202,
+        212,
+        244,
+        281,
+        307,
+        314
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        28,
+        50,
+        137,
+        149,
+        174,
+        202,
+        212,
+        244,
+        281,
+        307,
+        314
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 5,
+      "wiki_backed": true,
+      "wiki_event": "A Kh-101 cruise missile enters Polish airspace around Lublin, prompting NATO to scramble fighter jets. At around 00:40 a.m. local time it explodes leaving a crater in Tarnawa-Kolonia, 80 km from the border with Ukraine.",
+      "weight": 9,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "Security camera shows ‘Russian missile’ exploding in Poland",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/7/30/security-camera-shows-russian-missile-exploding-in-poland?traffic_source=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Russian missiles interception rate in Ukraine dropped from 90% back in March to 70%, expert says",
+          "url": "https://www.france24.com/en/russian-missiles-interception-rate-in-ukraine-dropped-from-90-back-in-march-to-70-expert-says"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Russian missile destroys US firm’s Kyiv drone factory",
+          "url": "https://www.theguardian.com/world/2026/jul/30/us-firm-drone-factory-terminal-autonomy-ukraine-russia"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Missile that left crater deep inside Poland was probably Russian - Polish PM",
+          "url": "https://www.bbc.co.uk/news/articles/cwymkgenv2ro?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "Russian strikes across Ukraine kill 10 and a missile falls in Poland",
+          "url": "https://www.npr.org/2026/07/30/g-s1-136276/russia-ukraine-war"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 6
+    },
+    {
+      "headline_hint": "UEFA threatens full World Cup boycott over FIFA private investment plans",
+      "section": "world",
+      "category": "sport",
+      "tier_requested": "major",
+      "article_ids": [
+        10,
+        58,
+        120,
+        139,
+        144,
+        152,
+        165,
+        168,
+        197,
+        203
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        10,
+        58,
+        120,
+        139,
+        144,
+        152,
+        165,
+        168,
+        197,
+        203
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 7,
+      "wiki_backed": true,
+      "wiki_event": "UEFA announces that it will boycott the 2030 FIFA World Cup, scheduled to be held by hosts and current champions Spain along with Portugal and Morocco, if FIFA president Gianni Infantino proceeds with plans to sell off stakes in the World C",
+      "weight": 11,
+      "weight_terms": {
+        "distinct_outlets": 7,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Channel News Asia",
+          "title": "FIFA stake-sale push tests football's 'American century,' Bennett says",
+          "url": "https://www.channelnewsasia.com/sport/fifa-stake-sale-push-tests-footballs-american-century-bennett-says-6289556"
+        },
+        {
+          "outlet": "France 24",
+          "title": "UEFA says will boycott World Cup if FIFA pushes private investor proposal",
+          "url": "https://www.france24.com/en/uefa-says-will-boycott-world-cup-if-fifa-pushes-private-investor-proposal"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "European soccer leaders to boycott  the World Cup in an unprecedented step",
+          "url": "https://www.npr.org/2026/07/30/nx-s1-5913664/world-cup-fifa-uefa-gianni-infantino"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "UEFA threatens FIFA World Cup boycott over Infantino's private investors plan",
+          "url": "https://timesofindia.indiatimes.com/sports/football/top-stories/uefa-threatens-fifa-world-cup-boycott-over-gianni-infantinos-private-investors-plan/articleshow/132745748.cms"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "No European team in football World Cup? President Gianni Infantino softens stance as UEFA mulls boycotting FIFA events",
+          "url": "https://www.livemint.com/news/trends/no-european-team-in-football-world-cup-president-gianni-infantino-softens-stance-as-uefa-mulls-boycotting-fifa-events-11785431498442.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 5
+    },
+    {
+      "headline_hint": "Wildfires rage across Southern Europe and UK amid record heatwave",
+      "section": "world",
+      "category": "disaster",
+      "tier_requested": "major",
+      "article_ids": [
+        46,
+        52,
+        53,
+        55,
+        121,
+        131,
+        161,
+        183,
+        238,
+        263,
+        266,
+        287,
+        302,
+        305,
+        306
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        46,
+        52,
+        53,
+        55,
+        121,
+        131,
+        161,
+        183,
+        238,
+        263,
+        266,
+        287,
+        302,
+        305,
+        306
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 7,
+      "wiki_backed": true,
+      "wiki_event": "Thousands of undocumented immigrants cross into the Spanish autonomous city of Ceuta from neighboring Morocco. The city's mayor-president, Juan Jesús Vivas, requests the Spanish government to declare a national emergency, but is refused by ",
+      "weight": 11,
+      "weight_terms": {
+        "distinct_outlets": 7,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "France 24",
+          "title": "France, Spain eye respite from wildfires as other blazes break out in Europe",
+          "url": "https://www.france24.com/en/europe/20260730-france-spain-eye-respite-from-wildfires-as-other-blazes-break-out-in-europe"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "France, Spain Eye Wildfire Reprieve As Other Blazes Start Up In Europe",
+          "url": "https://www.ndtv.com/india-news/france-spain-eye-wildfire-reprieve-as-other-blazes-start-up-in-europe-11845667#publisher=newsstand"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "Firefighters in eastern England make 'progress' battling 'dynamic' wildfire",
+          "url": "https://www.channelnewsasia.com/world/uk-wildfire-england-suffolk-heat-6289396"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Hundreds evacuated after ‘apocalyptic’ wildfire near Suffolk nuclear power station",
+          "url": "https://www.theguardian.com/uk-news/2026/jul/30/major-incident-fire-suffolk-coast-dunwich-heath-leiston"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Europe’s heating climate sparks ‘major intensification’ of fires: Report",
+          "url": "https://www.aljazeera.com/news/2026/7/30/europes-heating-climate-sparks-major-intensification-of-fires-report?traffic_source=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 10
+    },
+    {
+      "headline_hint": "Spain deploys military as thousands of migrants cross into Ceuta enclave from Morocco",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        1,
+        21,
+        69,
+        77,
+        100,
+        113,
+        125,
+        200
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        1,
+        21,
+        69,
+        77,
+        100,
+        113,
+        125,
+        200
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 5,
+      "wiki_backed": true,
+      "wiki_event": "Thousands of undocumented immigrants cross into the Spanish autonomous city of Ceuta from neighboring Morocco. The city's mayor-president, Juan Jesús Vivas, requests the Spanish government to declare a national emergency, but is refused by ",
+      "weight": 9,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "BBC World",
+          "title": "Hundreds of migrants swim from Morocco to Spanish enclave of Ceuta",
+          "url": "https://www.bbc.co.uk/news/articles/cg4drwzkrkxo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "Hundreds of migrants flood into Spain's Ceuta exclave from Morocco",
+          "url": "https://www.channelnewsasia.com/world/morocco-spain-ceuta-migrant-crossing-sea-6289516"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Spain to deploy military to restore order in Ceuta after thousands of people breach Morocco’s border",
+          "url": "https://www.france24.com/en/spain-to-deploy-military-to-restore-order-in-ceuta-after-thousands-of-people-breach-morocco-s-border"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Spain’s Ceuta declares emergency over surge in migrant arrivals",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/7/30/spains-ceuta-declares-emergency-over-surge-in-migrant-arrivals?traffic_source=rss"
+        },
+        {
+          "outlet": "DW World",
+          "title": "Spain will send troops to Ceuta to help with border security",
+          "url": "https://www.dw.com/en/spain-will-send-troops-to-ceuta-to-help-with-border-security/a-78177638?maca=en-rss-en-world-4025-rdf"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 3
+    },
+    {
+      "headline_hint": "Death toll rises following powerful earthquake in Kyushu, Japan",
+      "section": "world",
+      "category": "disaster",
+      "tier_requested": "notable",
+      "article_ids": [
+        338,
+        346,
+        366
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        338,
+        346,
+        366
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "Death toll in Japan earthquake rises to 30 as aftershock and heat hamper rescue efforts",
+          "url": "https://www.theguardian.com/world/2026/jul/30/japan-earthquake-death-toll-rises"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "Hope dwindles for rescue in southwestern Japan quake as death toll climbs to 25",
+          "url": "https://www.npr.org/2026/07/30/nx-s1-5913050/japan-earthquake-updates"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Watch: Japanese mall explodes after magnitude 6.8 earthquake",
+          "url": "https://www.bbc.co.uk/news/videos/c9d8ggpdgqlo?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Drought and record low Danube River levels force Hungary to shut nuclear plant",
+      "section": "world",
+      "category": "climate",
+      "tier_requested": "notable",
+      "article_ids": [
+        132
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        132
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 1,
+      "wiki_backed": true,
+      "wiki_event": "The Paks nuclear power plant in Hungary shuts down for the first time in 44 years amid a drought across the country and extremely low water levels on the Danube River.",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 1,
+        "tier_weight": 0,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "BBC World",
+          "title": "Danube's record low levels force shutdown of Hungary's only nuclear plant",
+          "url": "https://www.bbc.co.uk/news/articles/cn0nqv05g0do?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Ebola death toll in Democratic Republic of Congo passes 1,500",
+      "section": "world",
+      "category": "health",
+      "tier_requested": "notable",
+      "article_ids": [
+        86
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        86
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 1,
+      "wiki_backed": true,
+      "wiki_event": "The death toll from the Ebola epidemic in the Democratic Republic of the Congo rises to over 1,500 people killed.",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 1,
+        "tier_weight": 0,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "Congo’s Ebola death toll passes 1,500 as it struggles to halt spread",
+          "url": "https://www.aljazeera.com/news/2026/7/30/congos-ebola-death-toll-passes-1500-as-it-struggles-to-halt-spread?traffic_source=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Parliament passes Anti-Paper Leak Bill amid Opposition walkout; PM hails law",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "lead",
+      "article_ids": [
+        23,
+        48,
+        109,
+        128,
+        143,
+        150,
+        151,
+        153,
+        163,
+        230,
+        327,
+        353
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        23,
+        48,
+        109,
+        128,
+        143,
+        150,
+        151,
+        153,
+        163,
+        230,
+        327,
+        353
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 6,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 10,
+      "weight_terms": {
+        "distinct_outlets": 6,
+        "tier_weight": 4,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "The Hindu",
+          "title": "Parliament passes paper leak Bill as Opposition walks out of Rajya Sabha",
+          "url": "https://www.thehindu.com/news/national/rajya-sabha-too-passes-bill-on-paper-leaks-opposition-walks-out-of-voting/article71287509.ece"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "PM Modi drops late-night selfie video after anti-paper leak Bill gets Parliament’s nod, says 'exam mafias won't be spare",
+          "url": "https://www.livemint.com/news/india/pm-modi-drops-late-night-selfie-video-after-anti-paper-leak-bill-gets-parliament-s-nod-says-exam-mafias-wont-be-spare-11785440748411.html"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "PM Modi Drops Another Instagram Video, Praises Anti-Paper Leak Bill",
+          "url": "https://www.ndtv.com/india-news/makes-exam-system-more-robust-pm-modi-praises-anti-paper-leak-bill-in-new-instagram-video-11845245#publisher=newsstand"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "'Children's future won't be compromised': PM Modi hails anti-paper leak Bill in new video",
+          "url": "https://timesofindia.indiatimes.com/india/childrens-future-wont-be-compromised-pm-modi-hails-anti-paper-leak-bill-in-new-late-night-video/articleshow/132746763.cms"
+        },
+        {
+          "outlet": "Indian Express",
+          "title": "‘Education reform necessary’: PM Modi says won’t spare any paper mafia",
+          "url": "https://indianexpress.com/article/india/parliament-clears-tougher-anti-paper-leak-bill-neet-pm-narendra-modi-paper-mafia-10811101/"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 7
+    },
+    {
+      "headline_hint": "PM Modi reviews West Asia crisis, seafarers' safety, and supply chains in high-level meeting",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        34,
+        70,
+        195,
+        209,
+        228,
+        271,
+        290
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        34,
+        70,
+        195,
+        209,
+        228,
+        271,
+        290
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": true,
+      "wiki_event": "Jordan's air defenses shoot down five missiles from Iran.",
+      "weight": 8,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "Middle East conflict: PM Modi reviews safety of seafarers, supply chain constraints",
+          "url": "https://timesofindia.indiatimes.com/india/middle-east-conflict-pm-modi-reviews-safety-of-seafarers-supply-chain-constraints/articleshow/132750090.cms"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "16 Indians Killed Since Conflict Began In Middle East This Year: Centre",
+          "url": "https://www.ndtv.com/india-news/16-indian-nationals-have-lost-their-lives-since-conflict-began-in-middle-east-this-year-govt-11845640#publisher=newsstand"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "At CCS meet, Modi orders ‘whole of govt’ plan to protect oil supplies, Indians in West Asia",
+          "url": "https://www.hindustantimes.com/india-news/at-ccs-meet-modi-orders-whole-of-govt-plan-to-protect-oil-supplies-indians-in-west-asia-101785426042460.html"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "US-Iran War: PM Modi chairs high-level security review meeting - What was discussed?",
+          "url": "https://www.livemint.com/news/india/usiran-war-pm-modi-chairs-high-level-security-review-meeting-what-was-discussed-west-asia-strait-of-hormuz-11785421390482.html"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "PM Modi Orders Dedicated Mechanism For Seafarers During Key Meet On Middle East",
+          "url": "https://www.ndtv.com/india-news/pm-modi-orders-dedicated-mechanism-for-seafarers-during-key-meet-on-middle-east-11844366#publisher=newsstand"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 2
+    },
+    {
+      "headline_hint": "Supreme Court hears plea on pellet gun usage as political row over youth protests grows",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        17,
+        33,
+        43,
+        44,
+        140,
+        160,
+        173,
+        175,
+        178,
+        218,
+        219,
+        223,
+        258,
+        261,
+        269,
+        279,
+        289,
+        291,
+        309,
+        313,
+        316,
+        339,
+        354
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        17,
+        33,
+        43,
+        44,
+        140,
+        160,
+        173,
+        175,
+        178,
+        218,
+        219,
+        223,
+        258,
+        261,
+        269,
+        279,
+        289,
+        291,
+        309,
+        313,
+        316,
+        339,
+        354
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 7,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 9,
+      "weight_terms": {
+        "distinct_outlets": 7,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "The Hindu",
+          "title": "Despite Centre’s assurance, people still being called to explain their presence at protest site, says member of Congress’ legal aid",
+          "url": "https://www.thehindu.com/news/national/despite-centres-assurance-people-still-being-called-to-explain-their-presence-at-protest-site-says-member-of-congress-legal-aid/article71287355.ece"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Supreme Court: No blanket ban on use of pellet guns for crowd control",
+          "url": "https://timesofindia.indiatimes.com/india/supreme-court-no-blanket-ban-on-use-of-pellet-guns-for-crowd-control/articleshow/132749977.cms"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "25-Year-Old Woman Charged For Remarks Against PM Modi At Paper Leak Protest",
+          "url": "https://www.ndtv.com/india-news/ruchika-singh-cjp-protest-paper-leak-protest-jantar-mantar-25-year-old-woman-charged-for-remarks-against-pm-modi-at-paper-leak-protest-11844819#publisher=newsstand"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "We want withdrawal of FIRs, not just closure: CJP's Saurav Das on Delhi govt decision",
+          "url": "https://www.hindustantimes.com/india-news/we-want-withdrawal-of-firs-not-just-closure-cjps-saurav-das-on-delhi-govt-decision-101785430583508.html"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "‘Amit Shah should definitely resign’: CJP founder Abhijeet Dipke backs Rahul Gandhi's demand over police action",
+          "url": "https://www.livemint.com/news/india/amit-shah-should-definitely-resign-cjp-founder-abhieet-dipke-backs-rahul-gandhis-demand-over-police-action-pradhan-11785422958404.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 18
+    },
+    {
+      "headline_hint": "Jaishankar tells Ukraine counterpart Black Sea attacks on commercial ships and Indian seafarers are unacceptable",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        16,
+        49,
+        147,
+        154,
+        157
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        16,
+        49,
+        147,
+        154,
+        157
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 5,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "Ukraine dials India, seeks peace role amid ship attack concerns",
+          "url": "https://timesofindia.indiatimes.com/india/ukraine-dials-india-seeks-peace-role-amid-ship-attack-concerns/articleshow/132750207.cms"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "Attacks on commercial vessels, Indian seafarers ‘absolutely unacceptable’, Jaishankar tells Ukraine’s Sybiha",
+          "url": "https://www.thehindu.com/news/national/attacks-on-commercial-vessels-indian-seafarers-absolutely-unacceptable-jaishankar-tells-ukraines-sybiha/article71287508.ece"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Jaishankar tells Ukraine FM Black Sea attacks on Indian seafarers 'absolutely unacceptable'",
+          "url": "https://www.livemint.com/news/india/jaishankar-tells-ukraine-fm-black-sea-attacks-on-indian-seafarers-absolutely-unacceptable-11785430536081.html"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Jaishankar condemns Black Sea attacks in call with Ukrainian counterpart",
+          "url": "https://www.hindustantimes.com/india-news/jaishankar-condemns-black-sea-attacks-in-call-with-ukrainian-counterpart-101785431262154.html"
+        },
+        {
+          "outlet": "Indian Express",
+          "title": "Jaishankar speaks to Ukraine FM, condemns Black Sea attacks on Indian seafarers",
+          "url": "https://indianexpress.com/article/india/jaishankar-ukraine-fm-andrii-sybiha-black-sea-indian-seafarers-mv-amir1-10811058/"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Government defends E20 ethanol-blended petrol policy amid engine wear and mileage concerns",
+      "section": "india",
+      "category": "economy",
+      "tier_requested": "notable",
+      "article_ids": [
+        166,
+        198,
+        199,
+        256,
+        278
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        166,
+        198,
+        199,
+        256,
+        278
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Livemint",
+          "title": "E20 petrol can reduce fuel economy by 2-6%: Nitin Gadkari",
+          "url": "https://www.livemint.com/news/india/e20-petrol-blended-with-20-pc-ethanol-can-reduce-fuel-economy-by-2-to-6-percent-union-minister-nitin-gadkari-parliament-11785423539651.html"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "E20 petrol debate: Govt debunks 7 claims - impact on mileage, engines &amp; more",
+          "url": "https://timesofindia.indiatimes.com/business/india-business/e20-petrol-debate-govt-debunks-7-claims-on-ethanol-blended-fuel-impact-on-mileage-engines-more/articleshow/132744262.cms"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "E20 Row Reaches Delhi Civic Body, AAP Members Climb Benches, Raise Slogans",
+          "url": "https://www.ndtv.com/india-news/e20-row-reaches-delhi-civic-body-aap-members-climb-benches-raise-slogans-11844762#publisher=newsstand"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Better ride quality, lower fuel average: Nitin Gadkari to Parliament on how E20 petrol affects vehicles",
+          "url": "https://www.hindustantimes.com/india-news/nitin-gadkari-e20-blended-petrol-mileage-average-parliament-response-arvind-kejriwal-townhall-e20-janta-party-101785417770368.html"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Govt says E20 petrol does not damage engines, credits ethanol blending for fuel price stability",
+          "url": "https://www.livemint.com/news/india/govt-says-e20-petrol-does-not-damage-engines-credits-ethanol-blending-for-fuel-price-stability-11785410861469.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Assam floods affect over two lakh people as death toll climbs",
+      "section": "india",
+      "category": "disaster",
+      "tier_requested": "notable",
+      "article_ids": [
+        134,
+        159,
+        193,
+        227,
+        335
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        134,
+        159,
+        193,
+        227,
+        335
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "NDTV",
+          "title": "How Much of Assam Is Under Water Amid Floods? Satellite Maps Reveal",
+          "url": "https://www.ndtv.com/india-news/how-much-of-assam-is-under-water-amid-floods-satellite-maps-reveal-11845368#publisher=newsstand"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Assam floods: Death toll climbs to 80, 2 lakh remain affected in 4 districts",
+          "url": "https://www.hindustantimes.com/india-news/assam-floods-death-toll-climbs-to-80-2-lakh-remain-affected-in-4-districts-101785430364085.html"
+        },
+        {
+          "outlet": "Indian Express",
+          "title": "‘Not even our grandfathers saw this’: Upper Assam reels as floods wash away entire villages",
+          "url": "https://indianexpress.com/article/india/assam-floods-villages-himanta-sarma-relief-camps-death-toll-10810937/"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "Floodwater Receding, But Struggles Far From Over For This Assam Village",
+          "url": "https://www.ndtv.com/india-news/floodwater-receding-but-struggles-far-from-over-for-this-assam-village-11844802#publisher=newsstand"
+        },
+        {
+          "outlet": "Indian Express",
+          "title": "Assam floods toll rises to 78, heavy rain forecast keeps state on edge",
+          "url": "https://indianexpress.com/article/india/assam-floods-more-rain-78-dead-waterlogging-10809949/"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    }
+  ]
+}
