@@ -1,0 +1,1065 @@
+{
+  "since": "2026-07-30 21:40:34+00:00",
+  "configured": 14,
+  "live": 13,
+  "degraded": false,
+  "by_outlet_after_dedupe": {
+    "Guardian World": 32,
+    "Times of India": 43,
+    "Channel News Asia": 20,
+    "Al Jazeera": 25,
+    "The Hindu": 60,
+    "NPR World": 7,
+    "BBC World": 14,
+    "France 24": 23,
+    "NDTV": 20,
+    "Livemint": 35,
+    "Scroll.in": 33,
+    "Hindustan Times": 100,
+    "DW World": 8
+  },
+  "feeds": [
+    {
+      "outlet": "BBC World",
+      "url": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "http": 200,
+      "raw_items": 39,
+      "usable": 39,
+      "error": ""
+    },
+    {
+      "outlet": "Al Jazeera",
+      "url": "https://www.aljazeera.com/xml/rss/all.xml",
+      "http": 200,
+      "raw_items": 25,
+      "usable": 25,
+      "error": ""
+    },
+    {
+      "outlet": "Guardian World",
+      "url": "https://www.theguardian.com/world/rss",
+      "http": 200,
+      "raw_items": 45,
+      "usable": 45,
+      "error": ""
+    },
+    {
+      "outlet": "NPR World",
+      "url": "https://feeds.npr.org/1004/rss.xml",
+      "http": 200,
+      "raw_items": 10,
+      "usable": 10,
+      "error": ""
+    },
+    {
+      "outlet": "DW World",
+      "url": "https://rss.dw.com/rdf/rss-en-world",
+      "http": 200,
+      "raw_items": 12,
+      "usable": 12,
+      "error": ""
+    },
+    {
+      "outlet": "France 24",
+      "url": "https://www.france24.com/en/rss",
+      "http": 200,
+      "raw_items": 23,
+      "usable": 23,
+      "error": ""
+    },
+    {
+      "outlet": "Channel News Asia",
+      "url": "https://www.channelnewsasia.com/api/v1/rss-outbound-feed?_format=xml",
+      "http": 200,
+      "raw_items": 20,
+      "usable": 20,
+      "error": ""
+    },
+    {
+      "outlet": "The Hindu",
+      "url": "https://www.thehindu.com/news/national/feeder/default.rss",
+      "http": 200,
+      "raw_items": 60,
+      "usable": 60,
+      "error": ""
+    },
+    {
+      "outlet": "Indian Express",
+      "url": "https://indianexpress.com/section/india/feed/",
+      "http": 403,
+      "raw_items": 0,
+      "usable": 0,
+      "error": "http 403"
+    },
+    {
+      "outlet": "NDTV",
+      "url": "https://feeds.feedburner.com/ndtvnews-india-news",
+      "http": 200,
+      "raw_items": 20,
+      "usable": 20,
+      "error": ""
+    },
+    {
+      "outlet": "Hindustan Times",
+      "url": "https://www.hindustantimes.com/feeds/rss/india-news/rssfeed.xml",
+      "http": 200,
+      "raw_items": 100,
+      "usable": 100,
+      "error": ""
+    },
+    {
+      "outlet": "Times of India",
+      "url": "https://timesofindia.indiatimes.com/rssfeedstopstories.cms",
+      "http": 200,
+      "raw_items": 47,
+      "usable": 47,
+      "error": ""
+    },
+    {
+      "outlet": "Livemint",
+      "url": "https://www.livemint.com/rss/news",
+      "http": 200,
+      "raw_items": 35,
+      "usable": 35,
+      "error": ""
+    },
+    {
+      "outlet": "Scroll.in",
+      "url": "https://feeds.feedburner.com/ScrollinArticles.rss",
+      "http": 200,
+      "raw_items": 100,
+      "usable": 100,
+      "error": ""
+    }
+  ],
+  "dropped_articles": [
+    {
+      "reason": "out_of_window",
+      "outlet": "BBC World",
+      "title": "At least five members of same family killed in Russian missile attack, Zelensky says",
+      "url": "https://www.bbc.co.uk/news/articles/cy8mk59l5jzo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-07-30 15:20:19+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "BBC World",
+      "title": "Why limited war with the US may suit Iran better than peace",
+      "url": "https://www.bbc.co.uk/news/articles/c78gnyq3wvdo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-07-30 17:26:01+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "BBC World",
+      "title": "Uefa to boycott World Cups if Fifa plans approved",
+      "url": "https://www.bbc.co.uk/sport/football/articles/c5y67zrrdddo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-07-30 16:47:40+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "BBC World",
+      "title": "Danube's record low levels force shutdown of Hungary's only nuclear plant",
+      "url": "https://www.bbc.co.uk/news/articles/cn0nqv05g0do?at_medium=RSS&at_campaign=rss",
+      "published": "2026-07-30 17:55:24+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "BBC World",
+      "title": "Missile that left crater deep inside Poland was probably Russian - Polish PM",
+      "url": "https://www.bbc.co.uk/news/articles/cwymkgenv2ro?at_medium=RSS&at_campaign=rss",
+      "published": "2026-07-30 15:35:50+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "BBC World",
+      "title": "Father of teen school shooter sentenced to 15 years in prison",
+      "url": "https://www.bbc.co.uk/news/articles/c78g4y18rxgo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-07-30 17:33:41+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "BBC World",
+      "title": "Cyanide in tomato pesticide killed 15 elephants, Kenyan officials suspect",
+      "url": "https://www.bbc.co.uk/news/articles/cp9e0v5xmdyo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-07-30 12:14:00+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "BBC World",
+      "title": "Nicaraguan leader proposes extending presidential term by another year",
+      "url": "https://www.bbc.co.uk/news/articles/c0m78k3k31jo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-07-30 10:34:07+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "BBC World",
+      "title": "Thousands evacuated in Crete as wildfires threaten tourist resorts",
+      "url": "https://www.bbc.co.uk/news/articles/c9w01781981o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-07-30 16:04:53+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "BBC World",
+      "title": "Trump considering AI controls after OpenAI hacking incidents",
+      "url": "https://www.bbc.co.uk/news/articles/c20dppq3y90o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-07-30 07:23:11+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "BBC World",
+      "title": "Veteran Ugandan opposition leader collapses in court and in ICU, his wife says",
+      "url": "https://www.bbc.co.uk/news/articles/c0m78xl1k2po?at_medium=RSS&at_campaign=rss",
+      "published": "2026-07-30 09:34:00+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "BBC World",
+      "title": "Australia takes Telegram to court over alleged failure to remove 'pro-terror' material",
+      "url": "https://www.bbc.co.uk/news/articles/crmrv4pnexmo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-07-30 03:03:12+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "BBC World",
+      "title": "Singapore fines French teen $465 for viral straw-licking stunt",
+      "url": "https://www.bbc.co.uk/news/articles/crrvqjw8epko?at_medium=RSS&at_campaign=rss",
+      "published": "2026-07-30 02:54:54+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "BBC World",
+      "title": "Worth $5m? Visitors react to renovated Washington horse statues",
+      "url": "https://www.bbc.co.uk/news/videos/cly8xzmwpvmo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-07-29 22:23:08+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "BBC World",
+      "title": "Four women accuse Jared Leto of criminal sexual conduct",
+      "url": "https://www.bbc.co.uk/news/articles/cd7lg2nz2x2o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-07-29 21:36:06+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "BBC World",
+      "title": "Salman Rushdie attacker convicted of terror offences",
+      "url": "https://www.bbc.co.uk/news/articles/c86ng1g5wy4o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-07-29 22:15:33+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "BBC World",
+      "title": "Oscar-winning songwriter Glen Hansard killed in crash",
+      "url": "https://www.bbc.co.uk/news/articles/c3ekn9d37qvo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-07-29 15:33:14+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "BBC World",
+      "title": "Saudi Arabia's dilemma as it tries to stay out of US-Iran war",
+      "url": "https://www.bbc.co.uk/news/articles/clyx83l8jv8o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-07-29 18:41:31+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "BBC World",
+      "title": "'It's our home, it's our forest': BBC speaks to locals fighting France wildfire",
+      "url": "https://www.bbc.co.uk/news/articles/c62q5we799ro?at_medium=RSS&at_campaign=rss",
+      "published": "2026-07-29 16:49:41+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "BBC World",
+      "title": "Zendaya on working with Tom Holland in Spider-Man: ‘When you’re best friends it’s easy’",
+      "url": "https://www.bbc.co.uk/news/articles/c0km3d2j6mko?at_medium=RSS&at_campaign=rss",
+      "published": "2026-07-29 20:21:46+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "BBC World",
+      "title": "The Chinese robot army transforming the UK's retail industry",
+      "url": "https://www.bbc.co.uk/news/articles/c0jl8v23qwgo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-07-29 22:08:29+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "BBC World",
+      "title": "India's CJP protests: Why tech alone won't stop exam paper leaks",
+      "url": "https://www.bbc.co.uk/news/articles/c1m1gz1nx45o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-07-29 22:50:14+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "BBC World",
+      "title": "Dashcam captures tornado toppling power lines onto car",
+      "url": "https://www.bbc.co.uk/news/videos/cj631p14gpjo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-07-30 13:44:23+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "BBC World",
+      "title": "Man impaled by a hiking pole treks 10 miles down mountain",
+      "url": "https://www.bbc.co.uk/news/videos/cvg0nlkmzewo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-07-30 15:47:09+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "BBC World",
+      "title": "Watch: Giant iceberg turns over near  Greenland's coast",
+      "url": "https://www.bbc.co.uk/news/videos/cdx7lg950gdo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-07-30 10:54:36+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Guardian World",
+      "title": "Fifteen elephant deaths in Kenya may be due to cyanide poisoning",
+      "url": "https://www.theguardian.com/environment/2026/jul/30/elephant-deaths-kenya-park-cyanide-poisoning-wildlife",
+      "published": "2026-07-30 12:46:50+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Guardian World",
+      "title": "Canadians spent $3.3bn less on travel to US in 2025 after Trump’s return to office",
+      "url": "https://www.theguardian.com/world/2026/jul/28/canadians-us-travel-drop-trump",
+      "published": "2026-07-28 16:46:05+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Guardian World",
+      "title": "Past fires suggest effects of Europe and North America wildfires may linger for years",
+      "url": "https://www.theguardian.com/world/2026/jul/28/wildfires-europe-north-america-effects",
+      "published": "2026-07-28 13:00:04+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Guardian World",
+      "title": "Javier Milei accuses US Democrats of financing ‘anti-Argentina campaign’ at World Cup",
+      "url": "https://www.theguardian.com/world/2026/jul/28/javier-milei-accuses-us-democrats-of-financing-anti-argentina-campaign-at-world-cup",
+      "published": "2026-07-28 10:21:46+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Guardian World",
+      "title": "Pinochet-era soldier jailed for killing folk singer Víctor Jara 53 years ago",
+      "url": "https://www.theguardian.com/world/2026/jul/27/pinochet-era-soldier-jailed-for-killing-folk-singer-victor-jara-chile",
+      "published": "2026-07-27 16:27:44+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Guardian World",
+      "title": "Death toll in Japan earthquake rises to 30 as aftershock and heat hamper rescue efforts",
+      "url": "https://www.theguardian.com/world/2026/jul/30/japan-earthquake-death-toll-rises",
+      "published": "2026-07-30 06:49:55+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Guardian World",
+      "title": "Rescue teams face ‘race against time’ in search for trapped survivors as death toll in Japan rises to at least 13 – as it happened",
+      "url": "https://www.theguardian.com/world/live/2026/jul/29/sanae-takaichi-rescue-trapped-shopping-centre-mall-japan-earthquake-latest-news-updates",
+      "published": "2026-07-29 14:27:33+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Guardian World",
+      "title": "‘The shaking was terrifying’: stories of survival and loss emerge after Japan earthquake",
+      "url": "https://www.theguardian.com/world/2026/jul/29/japan-earthquake-stories-people-survival-loss-hikawa-uki",
+      "published": "2026-07-29 09:08:57+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Guardian World",
+      "title": "‘Race against time’: Japan earthquake death toll rises as rescue teams search for missing",
+      "url": "https://www.theguardian.com/world/2026/jul/29/japan-earthquake-death-aftershocks",
+      "published": "2026-07-29 02:40:23+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Guardian World",
+      "title": "Pakistan accused of fatally shooting 30 unarmed protesters in Kashmir",
+      "url": "https://www.theguardian.com/world/2026/jul/28/pakistan-accused-firing-unarmed-protesters-kashmir-killings",
+      "published": "2026-07-28 16:41:14+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Guardian World",
+      "title": "India’s Cockroach movement threatens to restart protests after mass student arrests",
+      "url": "https://www.theguardian.com/world/2026/jul/28/india-cockroach-janta-party-cjp-demands-protesters-release",
+      "published": "2026-07-28 07:23:37+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Guardian World",
+      "title": "Weather tracker: Why Europe’s wildfires are proving so fierce and difficult to stop",
+      "url": "https://www.theguardian.com/environment/2026/jul/27/weather-tracker-europe-wildfires-difficult-stop-france-spain",
+      "published": "2026-07-27 07:21:09+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Guardian World",
+      "title": "Monday briefing: ​How the Cockroach ​protests ​have expose​d the ​cracks in ​India’s government",
+      "url": "https://www.theguardian.com/world/2026/jul/27/monday-briefing-how-the-cockroach-protests-have-exposed-the-cracks-in-indias-government",
+      "published": "2026-07-27 05:47:17+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "NPR World",
+      "title": "European soccer leaders to boycott  the World Cup in an unprecedented step",
+      "url": "https://www.npr.org/2026/07/30/nx-s1-5913664/world-cup-fifa-uefa-gianni-infantino",
+      "published": "2026-07-30 17:38:38+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "NPR World",
+      "title": "Sen. Paul threatens to hold Fauci in contempt. And, a new rule undercuts U.S. asylum",
+      "url": "https://www.npr.org/2026/07/30/g-s1-136285/up-first-newsletter-anthony-fauci-covid-asylum-rule-medicare-drug-plan",
+      "published": "2026-07-30 11:45:46+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "NPR World",
+      "title": "Russian strikes across Ukraine kill 10 and a missile falls in Poland",
+      "url": "https://www.npr.org/2026/07/30/g-s1-136276/russia-ukraine-war",
+      "published": "2026-07-30 09:53:10+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "DW World",
+      "title": "Are Iran and Ukraine wars getting tangled in Caspian Sea?",
+      "url": "https://www.dw.com/en/are-iran-and-ukraine-wars-getting-tangled-in-caspian-sea/a-78178784?maca=en-rss-en-world-4025-rdf",
+      "published": "2026-07-30 19:28:00+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "DW World",
+      "title": "Spain will send troops to Ceuta to help with border security",
+      "url": "https://www.dw.com/en/spain-will-send-troops-to-ceuta-to-help-with-border-security/a-78177638?maca=en-rss-en-world-4025-rdf",
+      "published": "2026-07-30 18:13:00+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "DW World",
+      "title": "As tourism surges in Mexico, so does the risk of human trafficking, with women and children most at risk",
+      "url": "https://www.dw.com/en/as-tourism-surges-in-mexico-so-does-the-risk-of-human-trafficking-with-women-and-children-most-at-risk/a-78178890?maca=en-rss-en-world-4025-rdf",
+      "published": "2026-07-30 15:00:00+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "DW World",
+      "title": "How crypto miners are stealing power in Southeast Asia",
+      "url": "https://www.dw.com/en/how-crypto-miners-are-stealing-power-in-southeast-asia/a-78175364?maca=en-rss-en-world-4025-rdf",
+      "published": "2026-07-30 14:08:00+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Times of India",
+      "title": "NYC banned Motoclick, now Mamdani targets Uber Eats, DoorDash over 'hidden' tip buttons",
+      "url": "https://timesofindia.indiatimes.com/technology/tech-news/new-york-mayor-zohran-mamdani-filed-motion-to-ban-delivery-app-motoclick-now-he-is-going-uber-eats-and-doordash-accuses-apps-of-hiding-tip-buttons-and-set-default-/articleshow/132737140.cms",
+      "published": "2026-07-30 11:01:25+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Times of India",
+      "title": "New Zealand invests $202M to restore three islands with Māori help",
+      "url": "https://timesofindia.indiatimes.com/science/new-zealand-is-investing-202-million-in-a-mega-operation-aimed-at-restoring-three-islands-destroyed-by-invasive-species-with-the-help-of-maori-natives/articleshow/132732990.cms",
+      "published": "2026-07-30 11:41:10+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Times of India",
+      "title": "Florida sixth-grader makes soil balls to save water, eyes $25,000 prize",
+      "url": "https://timesofindia.indiatimes.com/education/news/florida-sixth-grader-naboshree-santra-developed-biodegradable-soilshade-balls-designed-to-reduce-evaporation-and-retain-moisture-the-11-year-old-is-now-competing-for-a-25000-science-prize/articleshow/132712215.cms",
+      "published": "2026-07-29 12:52:28+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Times of India",
+      "title": "How family sacrifice fueled Usain Bolt's rise to sprinting greatness worldwide",
+      "url": "https://timesofindia.indiatimes.com/sports/international-sports/inspiring-story-of-the-day-when-i-was-younger-they-were-my-driving-force-how-usain-bolt-turned-family-sacrifice-into-sprinting-greatness/articleshow/132697085.cms",
+      "published": "2026-07-29 00:43:50+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "‘What We Leave We Carry’: A ‘collective memoir’ of Britain sees migration as a reflective process",
+      "url": "https://scroll.in/article/1094546/what-we-leave-we-carry-a-collective-memoir-of-britain-sees-migration-as-a-reflective-process?utm_source=rss&utm_medium=public",
+      "published": "2026-07-30 16:30:00+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Calcutta High Court grants interim protection to TMC MP Abhishek Banerjee in three FIRs",
+      "url": "https://scroll.in/latest/1094666/calcutta-high-court-grants-interim-protection-to-tmc-mp-abhishek-banerjee-in-three-firs?utm_source=rss&utm_medium=public",
+      "published": "2026-07-30 14:37:48+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Rush Hour: Delhi to drop protest FIRs, bill criminalising insults to Vande Mataram passed & more",
+      "url": "https://scroll.in/latest/1094664/rush-hour-delhi-to-drop-protest-firs-bill-criminalising-insults-to-vande-mataram-passed-more?utm_source=rss&utm_medium=public",
+      "published": "2026-07-30 14:03:46+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Three reasons why India’s household savings are falling despite a huge working-age population",
+      "url": "https://scroll.in/article/1094284/three-reasons-why-indias-household-savings-are-falling-despite-a-huge-working-age-population?utm_source=rss&utm_medium=public",
+      "published": "2026-07-30 14:00:00+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Lok Sabha passes bill criminalising insults to ‘Vande Mataram’ day after Rajya Sabha approval",
+      "url": "https://scroll.in/latest/1094662/lok-sabha-passes-bill-criminalising-insults-to-vande-mataram-day-after-rajya-sabha-approval?utm_source=rss&utm_medium=public",
+      "published": "2026-07-30 13:14:41+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Delhi to drop FIRs against youth protesters, cases against those with criminal records to continue",
+      "url": "https://scroll.in/latest/1094665/delhi-to-drop-firs-against-youth-protesters-cases-against-those-with-criminal-records-to-continue?utm_source=rss&utm_medium=public",
+      "published": "2026-07-30 12:57:25+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "SIR: Congress alleges 84 lakh voters risk removal in Karnataka ‘without thorough verification’",
+      "url": "https://scroll.in/latest/1094661/sir-congress-alleges-84-lakh-voters-risk-removal-in-karnataka-without-thorough-verification?utm_source=rss&utm_medium=public",
+      "published": "2026-07-30 12:02:00+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Fiction: Bubbly is dead, but from somewhere above Chandigarh, she continues to look down at her city",
+      "url": "https://scroll.in/article/1093930/fiction-bubbly-is-dead-but-from-somewhere-above-chandigarh-she-continues-to-look-down-at-her-city?utm_source=rss&utm_medium=public",
+      "published": "2026-07-30 12:00:00+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Madhya Pradesh court acquits 11 in 2022 Khargone violence case, cites investigative lapses",
+      "url": "https://scroll.in/latest/1094660/madhya-pradesh-court-acquits-11-in-2022-khargone-violence-case-cites-investigative-lapses?utm_source=rss&utm_medium=public",
+      "published": "2026-07-30 11:37:12+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Delhi court cancels non-bailable warrants against student leader Aishe Ghosh in 2021 case",
+      "url": "https://scroll.in/latest/1094658/delhi-court-cancels-non-bailable-warrants-against-student-leader-aishe-ghosh-in-2021-case?utm_source=rss&utm_medium=public",
+      "published": "2026-07-30 10:37:33+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Youth protests: SC directs Centre to preserve log of ammunition used by RAF at Jantar Mantar",
+      "url": "https://scroll.in/latest/1094655/youth-protests-sc-directs-centre-to-preserve-log-of-ammunition-used-by-raf-at-jantar-mantar?utm_source=rss&utm_medium=public",
+      "published": "2026-07-30 09:39:10+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "For children: Kritika is pulled into a world of hidden truths, ancient magic, and... dragons",
+      "url": "https://scroll.in/article/1094078/for-children-kritika-is-pulled-into-a-world-of-hidden-truths-ancient-magic-and-dragons?utm_source=rss&utm_medium=public",
+      "published": "2026-07-30 08:00:00+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Valley of Words Book Awards announces its 2026 shortlists across eight categories in Hindi, English",
+      "url": "https://scroll.in/article/1094653/valley-of-words-book-awards-announces-its-2026-shortlists-across-eight-categories-in-hindi-english?utm_source=rss&utm_medium=public",
+      "published": "2026-07-30 07:55:37+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "47 died while cleaning sewers in 2025, says Centre",
+      "url": "https://scroll.in/latest/1094652/47-died-while-cleaning-sewers-septic-tanks-in-2025-says-centre?utm_source=rss&utm_medium=public",
+      "published": "2026-07-30 10:14:33+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "India's new saffron hockey jersey draws flak from ex-captain, fans: 'Legacy, identity always blue’",
+      "url": "https://scroll.in/latest/1094650/legacy-identity-always-been-blue-ex-hockey-captain-fans-criticise-indias-new-saffron-jersey?utm_source=rss&utm_medium=public",
+      "published": "2026-07-30 10:17:44+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Madhya Pradesh increases moong procurement limit to 60% amid farmers protest",
+      "url": "https://scroll.in/latest/1094651/madhya-pradesh-increases-moong-procurement-limit-to-60-amid-farmers-protest?utm_source=rss&utm_medium=public",
+      "published": "2026-07-30 06:12:00+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "‘Ramayana: Part 1’ makers release 4-minute trailer with key characters and highlights",
+      "url": "https://scroll.in/reel/1094394/ramayana-part-1-makers-release-4-minute-trailer-with-key-characters-and-highlights?utm_source=rss&utm_medium=public",
+      "published": "2026-07-30 05:59:13+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "‘Bhai Tera Star Hai’ review: Pointless comedy strains patience levels",
+      "url": "https://scroll.in/reel/1094646/bhai-tera-star-hai-review-pointless-comedy-strains-patience-levels?utm_source=rss&utm_medium=public",
+      "published": "2026-07-30 05:52:55+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "‘Spider-Man: Brand New Day’ review: A soulful spectacle that balances thrills with feeling",
+      "url": "https://scroll.in/reel/1094461/spider-man-brand-new-day-review-a-soulful-spectacle-that-balances-thrills-with-feeling?utm_source=rss&utm_medium=public",
+      "published": "2026-07-30 05:49:05+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Cyber fraud cases nearly tripled between 2020 and 2024, says Centre",
+      "url": "https://scroll.in/latest/1094649/cyber-fraud-cases-nearly-tripled-between-2020-and-2024-says-centre?utm_source=rss&utm_medium=public",
+      "published": "2026-07-30 05:13:00+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Why an Aadhaar fix for India’s education crisis won’t work",
+      "url": "https://scroll.in/article/1094624/why-an-aadhaar-fix-for-indias-education-crisis-wont-work?utm_source=rss&utm_medium=public",
+      "published": "2026-07-30 04:20:10+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "SC quashes 2021 government memo for granting retrospective green nod to projects",
+      "url": "https://scroll.in/latest/1094648/sc-quashes-2021-government-memo-granting-retrospective-green-nod-to-projects?utm_source=rss&utm_medium=public",
+      "published": "2026-07-30 04:26:14+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Cockroach protests show Modi’s deep disconnect with India’s impatient youth",
+      "url": "https://scroll.in/article/1094598/cockroach-protests-show-modis-deep-disconnect-with-indias-impatient-youth?utm_source=rss&utm_medium=public",
+      "published": "2026-07-30 03:30:00+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "A new book critically examines the growth of India’s online pharmacies and their practices",
+      "url": "https://scroll.in/article/1094595/a-new-book-critically-examines-the-growth-of-indias-online-pharmacies-and-their-practices?utm_source=rss&utm_medium=public",
+      "published": "2026-07-30 03:00:00+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "No defects found in Boeing 787 fuel control switch of grounded Air India plane: Centre",
+      "url": "https://scroll.in/latest/1094647/no-abnormality-found-in-boeing-787-fuel-control-switch-of-grounded-air-india-flight-centre?utm_source=rss&utm_medium=public",
+      "published": "2026-07-30 04:29:01+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "How Latin America’s rightwing politicians use humour to normalise their extremist ideologies",
+      "url": "https://scroll.in/article/1094641/how-latin-americas-rightwing-politicians-use-humour-to-normalise-their-extremist-ideologies?utm_source=rss&utm_medium=public",
+      "published": "2026-07-29 16:30:00+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Bill criminalising insults to ‘Vande Mataram’ passed in Rajya Sabha",
+      "url": "https://scroll.in/latest/1094642/bill-criminalising-insults-to-vande-mataram-passed-in-rajya-sabha?utm_source=rss&utm_medium=public",
+      "published": "2026-07-29 15:17:12+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Reservoir for Chennai could dry up ecologically-rich coastal wetland",
+      "url": "https://scroll.in/article/1094441/reservoir-for-chennai-could-dry-up-ecologically-rich-coastal-wetland?utm_source=rss&utm_medium=public",
+      "published": "2026-07-29 14:00:01+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Rush Hour: Rahul Gandhi calls for Amit Shah to be sacked, LS clears anti-paper leak bill & more",
+      "url": "https://scroll.in/latest/1094630/rush-hour-rahul-gandhi-calls-for-amit-shah-to-be-sacked-ls-clears-anti-paper-leak-bill-more?utm_source=rss&utm_medium=public",
+      "published": "2026-07-29 13:57:14+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Two days after Bihar promise to withdraw cases, families wait anxiously for protestors’ release",
+      "url": "https://scroll.in/article/1094638/two-days-after-bihar-promise-to-withdraw-cases-families-wait-anxiously-for-protestors-release?utm_source=rss&utm_medium=public",
+      "published": "2026-07-29 13:37:58+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Amit Shah must be sacked for ordering ‘brutality against students’ during protest: Rahul Gandhi",
+      "url": "https://scroll.in/latest/1094639/amit-shah-must-be-sacked-for-ordering-brutality-against-students-during-protest-rahul-gandhi?utm_source=rss&utm_medium=public",
+      "published": "2026-07-29 14:00:15+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Kerala: FIR filed against RSS member for saying he ‘would have shot’ Jantar Mantar protesters",
+      "url": "https://scroll.in/latest/1094637/kerala-fir-filed-against-rss-member-for-saying-he-would-have-shot-jantar-mantar-protesters?utm_source=rss&utm_medium=public",
+      "published": "2026-07-29 14:11:13+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Booker Prize 2026: A reader’s guide to the 13 novels (including two by past winners) on the longlist",
+      "url": "https://scroll.in/article/1094622/booker-prize-2026-a-readers-guide-to-the-13-novels-including-two-by-past-winners-on-the-longlist?utm_source=rss&utm_medium=public",
+      "published": "2026-07-29 13:02:51+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Bill to amend anti-paper leak law passed in Lok Sabha after nationwide protests",
+      "url": "https://scroll.in/latest/1094635/bill-to-amend-anti-paper-leak-law-passed-in-lok-sabha-after-nationwide-protests?utm_source=rss&utm_medium=public",
+      "published": "2026-07-29 12:19:43+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Fiction: Demon queen Ayasi’s wrath will consume the mountain kingdom struggling to appease her",
+      "url": "https://scroll.in/article/1094231/fiction-demon-queen-ayasis-wrath-will-consume-the-mountain-kingdom-struggling-to-appease-her?utm_source=rss&utm_medium=public",
+      "published": "2026-07-29 12:00:00+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "SC accepts CBI’s decision to clear ex-PM Manmohan Singh in alleged coal scam case",
+      "url": "https://scroll.in/latest/1094634/sc-accepts-cbis-decision-to-clear-ex-pm-manmohan-singh-in-alleged-coal-scam-case?utm_source=rss&utm_medium=public",
+      "published": "2026-07-29 11:49:21+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Slow trial violates right to liberty: SC grants bail to two UAPA suspects after 12 years in custody",
+      "url": "https://scroll.in/latest/1094631/slow-trial-violates-right-to-liberty-sc-grants-bail-to-two-uapa-suspects-after-12-years-in-custody?utm_source=rss&utm_medium=public",
+      "published": "2026-07-29 11:15:44+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Rahul Gandhi alleges Amit Shah ‘authorised shooting of students’ during youth protests",
+      "url": "https://scroll.in/latest/1094628/rahul-gandhi-alleges-amit-shah-authorised-shooting-of-students-during-youth-protests?utm_source=rss&utm_medium=public",
+      "published": "2026-07-29 10:08:00+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Video: What brought thousands of students to Jantar Mantar?",
+      "url": "https://scroll.in/video/1094597/video-what-brought-thousands-of-students-to-jantar-mantar?utm_source=rss&utm_medium=public",
+      "published": "2026-07-29 10:00:00+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Criticising Babri Masjid demolition is not ‘anti national’, says Bombay HC",
+      "url": "https://scroll.in/latest/1094625/opposing-babri-masjid-demolition-is-not-anti-national-says-bombay-hc?utm_source=rss&utm_medium=public",
+      "published": "2026-07-29 10:10:54+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "In this book, mental health professionals write about the lasting impact of unhappy childhoods",
+      "url": "https://scroll.in/article/1094156/in-this-book-mental-health-professionals-write-about-the-lasting-impact-of-unhappy-childhoods?utm_source=rss&utm_medium=public",
+      "published": "2026-07-29 08:00:00+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Assam flood toll rises to 75",
+      "url": "https://scroll.in/latest/1094619/assam-flood-toll-rises-to-75?utm_source=rss&utm_medium=public",
+      "published": "2026-07-29 08:06:15+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Stone-filled truck near Jantar Mantar had been in police custody for four days, says report",
+      "url": "https://scroll.in/latest/1094621/stone-filled-truck-near-jantar-mantar-had-been-in-police-custody-for-four-days-says-report?utm_source=rss&utm_medium=public",
+      "published": "2026-07-29 10:07:27+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Delhi Police files FIR against X for allegedly defamatory posts about PM Modi",
+      "url": "https://scroll.in/latest/1094620/delhi-police-files-fir-against-x-for-allegedly-defamatory-posts-about-pm-modi?utm_source=rss&utm_medium=public",
+      "published": "2026-07-29 07:26:00+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "What erotic nutcuters reveal about the sensual history of paan in India",
+      "url": "https://scroll.in/magazine/1094567/what-erotic-nutcuters-reveal-about-the-sensual-history-of-paan-in-india?utm_source=rss&utm_medium=public",
+      "published": "2026-07-29 06:00:01+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Food corporation sold rice to ethanol plants at lower price than it paid for the grain: Centre",
+      "url": "https://scroll.in/latest/1094618/food-corporation-sold-rice-to-ethanol-plants-at-lower-price-than-it-paid-for-the-grain-centre?utm_source=rss&utm_medium=public",
+      "published": "2026-07-29 05:42:34+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "13 Indian sailors ‘trapped’ on ship amid Black Sea attacks, says seafarers’ union",
+      "url": "https://scroll.in/latest/1094617/13-indian-sailors-trapped-on-ship-amid-black-sea-attacks-says-seafarers-union?utm_source=rss&utm_medium=public",
+      "published": "2026-07-29 04:12:19+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "How Ladakh’s proposed elected governance body can safeguard the region",
+      "url": "https://scroll.in/article/1094553/how-ladakhs-proposed-elected-governance-body-can-safeguard-the-region?utm_source=rss&utm_medium=public",
+      "published": "2026-07-29 03:30:01+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "A new book charts troubleshooter DK Shivakumar’s rise to the position of chief minister of Karnataka",
+      "url": "https://scroll.in/article/1094226/a-new-book-charts-troubleshooter-dk-shivakumars-rise-to-the-position-of-chief-minister-of-karnataka?utm_source=rss&utm_medium=public",
+      "published": "2026-07-29 03:00:00+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "NEET paper leak case: CBI files chargesheet against 13",
+      "url": "https://scroll.in/latest/1094615/neet-paper-leak-case-cbi-files-chargesheet-against-13?utm_source=rss&utm_medium=public",
+      "published": "2026-07-29 02:37:00+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "After Assam and Bihar, Bengal and Maharashtra to stop coercive action against protesters",
+      "url": "https://scroll.in/latest/1094616/after-assam-and-bihar-bengal-and-maharashtra-to-stop-coercive-action-against-protesters?utm_source=rss&utm_medium=public",
+      "published": "2026-07-29 02:37:52+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "The Emergency’s ghost: Why India has been placed on the watchlist of a global civil society network",
+      "url": "https://scroll.in/article/1094613/the-emergencys-ghost-why-india-has-been-placed-on-the-watchlist-of-a-global-civil-society-network?utm_source=rss&utm_medium=public",
+      "published": "2026-07-29 02:30:00+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "‘Wounds from CAA are fresh’: Why young Muslims remained ambivalent about the ‘cockroach’ protests",
+      "url": "https://scroll.in/article/1094605/wounds-from-caa-are-fresh-why-young-muslims-remained-ambivalent-about-the-cockroach-protests?utm_source=rss&utm_medium=public",
+      "published": "2026-07-29 01:00:02+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "‘I see you in my sleep / Awake, you are an absence I endure’: A poem for vanishing sparrows",
+      "url": "https://scroll.in/article/1094362/i-see-you-in-my-sleep-awake-you-are-an-absence-i-endure-a-poem-for-vanishing-sparrows?utm_source=rss&utm_medium=public",
+      "published": "2026-07-28 15:30:00+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Keigo Higashino dies at 68: A reading guide to 13 essential novels by Japan’s master mystery writer",
+      "url": "https://scroll.in/article/1094570/keigo-higashino-dies-at-68-a-reading-guide-to-13-essential-novels-by-japans-master-mystery-writer?utm_source=rss&utm_medium=public",
+      "published": "2026-07-28 15:30:51+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Youth protests: SC order allowing FIRs to continue is ‘wholly unacceptable’, says CJP",
+      "url": "https://scroll.in/latest/1094612/youth-protests-sc-order-allowing-firs-to-continue-is-wholly-unacceptable-says-cjp?utm_source=rss&utm_medium=public",
+      "published": "2026-07-28 15:09:45+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Arundhati Roy: ‘Does Modi know what was being said about him?’",
+      "url": "https://scroll.in/video/1094602/arundhati-roy-does-modi-know-what-was-being-said-about-him?utm_source=rss&utm_medium=public",
+      "published": "2026-07-29 06:05:09+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "‘Change heart, not camera angle’: Priyanka Gandhi criticises PM Modi on youth protest crackdown",
+      "url": "https://scroll.in/latest/1094610/change-heart-not-camera-angle-priyanka-gandhi-criticises-pm-modi-on-youth-protest-crackdown?utm_source=rss&utm_medium=public",
+      "published": "2026-07-28 14:43:35+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Interview: What Lakshadweep can teach the rest of India about eliminating TB",
+      "url": "https://scroll.in/article/1094438/interview-what-lakshadweep-can-teach-the-rest-of-india-about-eliminating-tb?utm_source=rss&utm_medium=public",
+      "published": "2026-07-28 14:00:00+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Muslim man who volunteered at Jantar Mantar protest moves SC alleging harassment by police",
+      "url": "https://scroll.in/latest/1094607/muslim-man-who-volunteered-at-jantar-mantar-protest-moves-sc-alleging-harassment-by-police?utm_source=rss&utm_medium=public",
+      "published": "2026-07-28 13:41:06+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Rush Hour: SC orders release of detained minors,  Meta summoned after Modi’s post removed & more",
+      "url": "https://scroll.in/latest/1094606/rush-hour-sc-orders-release-of-detained-minors-meta-summoned-after-modis-post-removed-more?utm_source=rss&utm_medium=public",
+      "published": "2026-07-28 13:03:47+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "IT ministry summons Meta after PM Modi’s video briefly removed from Facebook: Reports",
+      "url": "https://scroll.in/latest/1094608/it-ministry-summons-meta-after-pm-modis-video-briefly-removed-from-facebook-reports?utm_source=rss&utm_medium=public",
+      "published": "2026-07-28 12:41:11+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Fiction: Twelve-year-old Zeenat turns her vacation into an exploration of her innermost thoughts",
+      "url": "https://scroll.in/article/1094244/fiction-twelve-year-old-zeenat-turns-her-vacation-into-an-exploration-of-her-innermost-thoughts?utm_source=rss&utm_medium=public",
+      "published": "2026-07-28 12:00:00+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Ex-bureaucrats urge UP government to halt demolition of Mohammad Ali Jauhar University",
+      "url": "https://scroll.in/latest/1094603/ex-bureaucrats-urge-up-government-to-halt-demolition-of-mohammad-ali-jauhar-university?utm_source=rss&utm_medium=public",
+      "published": "2026-07-28 13:15:35+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Maharashtra Public Service Commission denies paper leak allegation as Opposition demands CBI probe",
+      "url": "https://scroll.in/latest/1094600/maharashtra-public-service-commission-denies-paper-leak-allegation-as-opposition-demands-cbi-probe?utm_source=rss&utm_medium=public",
+      "published": "2026-07-28 10:31:45+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "‘Batwara 1947’ trailer: A Hindu woman refuses to leave her house after a Muslim family moves in",
+      "url": "https://scroll.in/reel/1094490/batwara-1947-trailer-a-hindu-woman-refuses-to-leave-her-house-after-a-muslim-family-moves-in?utm_source=rss&utm_medium=public",
+      "published": "2026-07-28 10:22:51+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Youth protests: SC orders release of detained minors, students with no criminal record",
+      "url": "https://scroll.in/latest/1094594/supreme-court-orders-release-of-students-held-during-youth-protests?utm_source=rss&utm_medium=public",
+      "published": "2026-07-28 09:03:19+00:00",
+      "since": "2026-07-30 21:40:34+00:00"
+    }
+  ]
+}
