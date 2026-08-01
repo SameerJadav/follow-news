@@ -1,12 +1,17 @@
 {
   "max_events": 60,
-  "parsed": 15,
-  "used": 15,
+  "parsed": 21,
+  "used": 21,
   "events": [
     {
       "category": "Armed conflicts and attacks",
       "topic": "Middle Eastern crisis",
       "text": "Three Palestinians are reportedly killed in Gaza City, bringing the total casualties to 7 in the past 24 hours."
+    },
+    {
+      "category": "Armed conflicts and attacks",
+      "topic": "Middle Eastern crisis",
+      "text": "A Board of Peace official reports that Hamas will disarm its weapons in the coming days."
     },
     {
       "category": "Armed conflicts and attacks",
@@ -17,6 +22,11 @@
       "category": "Armed conflicts and attacks",
       "topic": "Middle Eastern crisis",
       "text": "The Bermuda-flagged LNG tanker Gaslog Shanghai, which was carrying LNG oil from Qatar, is reported to have been among the two vessels hit yesterday in the Strait of Hormuz."
+    },
+    {
+      "category": "Armed conflicts and attacks",
+      "topic": "Middle Eastern crisis",
+      "text": "A tanker near Oman is hit by an unknown projectile."
     },
     {
       "category": "Armed conflicts and attacks",
@@ -50,6 +60,11 @@
     },
     {
       "category": "Armed conflicts and attacks",
+      "topic": "Sudanese civil war",
+      "text": "Sudan and Egypt reaches an agreement on a 16-month plan to rehabilitate the Jebel Aulia Dam south of Khartoum, Sudan, including the construction of a temporary bridge, after the dam was damaged in November 2023 during shelling by the Rapid "
+    },
+    {
+      "category": "Armed conflicts and attacks",
       "topic": "2026 attack on the Norte de Santander Police Command",
       "text": "A truck bomb explodes beside a police station in Cúcuta, Norte de Santander, Colombia, injuring eight police officers and three civilians."
     },
@@ -60,13 +75,23 @@
     },
     {
       "category": "Disasters and accidents",
-      "topic": "2026 Broad Peak disaster",
+      "topic": "2026 Broad Peak avalanche",
       "text": "All ten climbers, including Nirmal Purja, are confirmed deceased after an avalanche at Broad Peak in Pakistan on July 30."
     },
     {
       "category": "Disasters and accidents",
-      "topic": "",
+      "topic": "2026 Moscow bombing",
       "text": "At least three people are killed and 15 others are injured in an explosion at a coffeehouse in Moscow, Russia."
+    },
+    {
+      "category": "Disasters and accidents",
+      "topic": "",
+      "text": "A small aircraft crashed near the Nazca Lines, Peru, after departing Pisco. All 13 people on board, including Italian, Spanish and German tourists, died in the accident."
+    },
+    {
+      "category": "Health and environment",
+      "topic": "2026 heat waves",
+      "text": "Amidst a heat wave reported by the {{ill|Sudan Meteorological Authority|de|Sudan Meteorological Authority}} in Sudan's Red Sea State, protesters block parts of the main highway connecting Port Sudan and Khartoum in Suakin and Jubayt over se"
     },
     {
       "category": "International relations",
@@ -74,10 +99,15 @@
       "text": "Moroccan security forces clash with hundreds of migrants as they attempt to storm the Spanish enclave of Melilla. Several Moroccan security personnel are reportedly injured while more than 50 migrants are detained."
     },
     {
+      "category": "Law and crime",
+      "topic": "Cyberwarfare during the 2026 Iran war",
+      "text": "The U.S. FBI opens an investigation after the U.S. state of Michigan reports a cyberattack on its water systems, including whether Iran was behind the cyberattack, a day after Minnesota reported a similar breach."
+    },
+    {
       "category": "Sports",
       "topic": "2030 FIFA World Cup controversies",
       "text": "UEFA gives FIFA president Gianni Infantino an ultimatum to resign or face an emergency no-confidence vote following Infantino's plan to sell stakes in FIFA Forward Enterprise, which he has rescinded amidst backlash."
     }
   ],
-  "prompt_block": "WIKIPEDIA CURRENT EVENTS (curated checklist — see rules above)\n- [Armed conflicts and attacks] Middle Eastern crisis — Three Palestinians are reportedly killed in Gaza City, bringing the total casualties to 7 in the past 24 hours.\n- [Armed conflicts and attacks] Middle Eastern crisis — The Israeli military says it has killed several Hezbollah fighters in an Israeli-held area of southern Lebanon, despite a ceasefire framework between Israel and Lebanon.\n- [Armed conflicts and attacks] Middle Eastern crisis — The Bermuda-flagged LNG tanker Gaslog Shanghai, which was carrying LNG oil from Qatar, is reported to have been among the two vessels hit yesterday in the Strait of Hormuz.\n- [Armed conflicts and attacks] Middle Eastern crisis — The Kuwaiti defense ministry reports that its military has detected and intercepted Iranian drones entering the country's airspace.\n- [Armed conflicts and attacks] Middle Eastern crisis — United States embassies in the Middle East warn Americans to depart the region amidst fears of a potential escalation in the war.\n- [Armed conflicts and attacks] Middle Eastern crisis — The Houthis in Yemen deny reports of imposing tolls on vessels passing through the Bab-el-Mandeb strait.\n- [Armed conflicts and attacks] Russo-Ukrainian war — The Washington Post reports that Israeli Prime Minister Benjamin Netanyahu blocked a request by former U.S. Senator Lindsey Graham to transfer an Iron Dome system from the U.S. to Ukraine.\n- [Armed conflicts and attacks] Russo-Ukrainian war — Kyiv mayor Vitali Klitschko says an overnight Russian missile attack has killed at least nine people and injured 24 others, while damaging buildings and causing fires across several districts of the Ukrainian capital.\n- [Armed conflicts and attacks] Russo-Ukrainian war — Ukrainian forces sink a Rosatom-owned container ship in the Black Sea, forcing its 17-member crew to abandon it. Rosatom says it had been transporting civilian goods, including frozen food and construction materials.\n- [Armed conflicts and attacks] 2026 attack on the Norte de Santander Police Command — A truck bomb explodes beside a police station in Cúcuta, Norte de Santander, Colombia, injuring eight police officers and three civilians.\n- [Arts and culture] Iraq in the 2026 Iran war — The Arba'in Shia Islam pilgrimage in Iraq is held amidst the Iran war, with Iranian pilgrims attending the event.\n- [Disasters and accidents] 2026 Broad Peak disaster — All ten climbers, including Nirmal Purja, are confirmed deceased after an avalanche at Broad Peak in Pakistan on July 30.\n- [Disasters and accidents] At least three people are killed and 15 others are injured in an explosion at a coffeehouse in Moscow, Russia.\n- [International relations] Morocco–Spain relations — Moroccan security forces clash with hundreds of migrants as they attempt to storm the Spanish enclave of Melilla. Several Moroccan security personnel are reportedly injured while more than 50 migrants are detained.\n- [Sports] 2030 FIFA World Cup controversies — UEFA gives FIFA president Gianni Infantino an ultimatum to resign or face an emergency no-confidence vote following Infantino's plan to sell stakes in FIFA Forward Enterprise, which he has rescinded amidst backlash."
+  "prompt_block": "WIKIPEDIA CURRENT EVENTS (curated checklist — see rules above)\n- [Armed conflicts and attacks] Middle Eastern crisis — Three Palestinians are reportedly killed in Gaza City, bringing the total casualties to 7 in the past 24 hours.\n- [Armed conflicts and attacks] Middle Eastern crisis — A Board of Peace official reports that Hamas will disarm its weapons in the coming days.\n- [Armed conflicts and attacks] Middle Eastern crisis — The Israeli military says it has killed several Hezbollah fighters in an Israeli-held area of southern Lebanon, despite a ceasefire framework between Israel and Lebanon.\n- [Armed conflicts and attacks] Middle Eastern crisis — The Bermuda-flagged LNG tanker Gaslog Shanghai, which was carrying LNG oil from Qatar, is reported to have been among the two vessels hit yesterday in the Strait of Hormuz.\n- [Armed conflicts and attacks] Middle Eastern crisis — A tanker near Oman is hit by an unknown projectile.\n- [Armed conflicts and attacks] Middle Eastern crisis — The Kuwaiti defense ministry reports that its military has detected and intercepted Iranian drones entering the country's airspace.\n- [Armed conflicts and attacks] Middle Eastern crisis — United States embassies in the Middle East warn Americans to depart the region amidst fears of a potential escalation in the war.\n- [Armed conflicts and attacks] Middle Eastern crisis — The Houthis in Yemen deny reports of imposing tolls on vessels passing through the Bab-el-Mandeb strait.\n- [Armed conflicts and attacks] Russo-Ukrainian war — The Washington Post reports that Israeli Prime Minister Benjamin Netanyahu blocked a request by former U.S. Senator Lindsey Graham to transfer an Iron Dome system from the U.S. to Ukraine.\n- [Armed conflicts and attacks] Russo-Ukrainian war — Kyiv mayor Vitali Klitschko says an overnight Russian missile attack has killed at least nine people and injured 24 others, while damaging buildings and causing fires across several districts of the Ukrainian capital.\n- [Armed conflicts and attacks] Russo-Ukrainian war — Ukrainian forces sink a Rosatom-owned container ship in the Black Sea, forcing its 17-member crew to abandon it. Rosatom says it had been transporting civilian goods, including frozen food and construction materials.\n- [Armed conflicts and attacks] Sudanese civil war — Sudan and Egypt reaches an agreement on a 16-month plan to rehabilitate the Jebel Aulia Dam south of Khartoum, Sudan, including the construction of a temporary bridge, after the dam was damaged in November 2023 during shelling by the Rapid \n- [Armed conflicts and attacks] 2026 attack on the Norte de Santander Police Command — A truck bomb explodes beside a police station in Cúcuta, Norte de Santander, Colombia, injuring eight police officers and three civilians.\n- [Arts and culture] Iraq in the 2026 Iran war — The Arba'in Shia Islam pilgrimage in Iraq is held amidst the Iran war, with Iranian pilgrims attending the event.\n- [Disasters and accidents] 2026 Broad Peak avalanche — All ten climbers, including Nirmal Purja, are confirmed deceased after an avalanche at Broad Peak in Pakistan on July 30.\n- [Disasters and accidents] 2026 Moscow bombing — At least three people are killed and 15 others are injured in an explosion at a coffeehouse in Moscow, Russia.\n- [Disasters and accidents] A small aircraft crashed near the Nazca Lines, Peru, after departing Pisco. All 13 people on board, including Italian, Spanish and German tourists, died in the accident.\n- [Health and environment] 2026 heat waves — Amidst a heat wave reported by the {{ill|Sudan Meteorological Authority|de|Sudan Meteorological Authority}} in Sudan's Red Sea State, protesters block parts of the main highway connecting Port Sudan and Khartoum in Suakin and Jubayt over se\n- [International relations] Morocco–Spain relations — Moroccan security forces clash with hundreds of migrants as they attempt to storm the Spanish enclave of Melilla. Several Moroccan security personnel are reportedly injured while more than 50 migrants are detained.\n- [Law and crime] Cyberwarfare during the 2026 Iran war — The U.S. FBI opens an investigation after the U.S. state of Michigan reports a cyberattack on its water systems, including whether Iran was behind the cyberattack, a day after Minnesota reported a similar breach.\n- [Sports] 2030 FIFA World Cup controversies — UEFA gives FIFA president Gianni Infantino an ultimatum to resign or face an emergency no-confidence vote following Infantino's plan to sell stakes in FIFA Forward Enterprise, which he has rescinded amidst backlash."
 }

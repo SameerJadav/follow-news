@@ -1,18 +1,19 @@
 {
   "since": "2026-07-31 23:29:19+00:00",
   "configured": 14,
-  "live": 12,
+  "live": 13,
   "degraded": false,
   "by_outlet_after_dedupe": {
-    "BBC World": 18,
-    "Al Jazeera": 25,
-    "Livemint": 35,
-    "Guardian World": 24,
+    "Guardian World": 25,
+    "Times of India": 40,
+    "BBC World": 22,
     "The Hindu": 60,
-    "NPR World": 4,
-    "Times of India": 39,
     "Channel News Asia": 20,
-    "DW World": 3,
+    "Al Jazeera": 25,
+    "NPR World": 5,
+    "DW World": 4,
+    "Livemint": 35,
+    "France 24": 24,
     "NDTV": 20,
     "Scroll.in": 22,
     "Hindustan Times": 69
@@ -54,17 +55,17 @@
       "outlet": "DW World",
       "url": "https://rss.dw.com/rdf/rss-en-world",
       "http": 200,
-      "raw_items": 10,
-      "usable": 10,
+      "raw_items": 11,
+      "usable": 11,
       "error": ""
     },
     {
       "outlet": "France 24",
       "url": "https://www.france24.com/en/rss",
-      "http": 403,
-      "raw_items": 0,
-      "usable": 0,
-      "error": "http 403"
+      "http": 200,
+      "raw_items": 24,
+      "usable": 24,
+      "error": ""
     },
     {
       "outlet": "Channel News Asia",
@@ -110,8 +111,8 @@
       "outlet": "Times of India",
       "url": "https://timesofindia.indiatimes.com/rssfeedstopstories.cms",
       "http": 200,
-      "raw_items": 45,
-      "usable": 45,
+      "raw_items": 46,
+      "usable": 46,
       "error": ""
     },
     {
@@ -135,22 +136,6 @@
     {
       "reason": "out_of_window",
       "outlet": "BBC World",
-      "title": "UK rapper Yung Filly found not guilty of raping woman after Australian show",
-      "url": "https://www.bbc.co.uk/news/articles/crrv7vk0knro?at_medium=RSS&at_campaign=rss",
-      "published": "2026-07-31 05:21:18+00:00",
-      "since": "2026-07-31 23:29:19+00:00"
-    },
-    {
-      "reason": "out_of_window",
-      "outlet": "BBC World",
-      "title": "Danube's record low levels force shutdown of Hungary's only nuclear plant",
-      "url": "https://www.bbc.co.uk/news/articles/cn0nqv05g0do?at_medium=RSS&at_campaign=rss",
-      "published": "2026-07-30 17:55:24+00:00",
-      "since": "2026-07-31 23:29:19+00:00"
-    },
-    {
-      "reason": "out_of_window",
-      "outlet": "BBC World",
       "title": "Bowen: Plan for Hamas to disarm faces big obstacles, yet it offers rare hope for Gaza",
       "url": "https://www.bbc.co.uk/news/articles/c2dkje4p4klo?at_medium=RSS&at_campaign=rss",
       "published": "2026-07-31 15:18:31+00:00",
@@ -170,22 +155,6 @@
       "title": "Why limited war with the US may suit Iran better than peace",
       "url": "https://www.bbc.co.uk/news/articles/c78gnyq3wvdo?at_medium=RSS&at_campaign=rss",
       "published": "2026-07-30 17:26:01+00:00",
-      "since": "2026-07-31 23:29:19+00:00"
-    },
-    {
-      "reason": "out_of_window",
-      "outlet": "BBC World",
-      "title": "India wants to join the strawberry superpowers",
-      "url": "https://www.bbc.co.uk/news/articles/c8x274xxxpwo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-07-30 22:04:09+00:00",
-      "since": "2026-07-31 23:29:19+00:00"
-    },
-    {
-      "reason": "out_of_window",
-      "outlet": "BBC World",
-      "title": "What's in the Gaza peace deal roadmap?",
-      "url": "https://www.bbc.co.uk/news/articles/c20e94k2ex5o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-07-31 16:00:56+00:00",
       "since": "2026-07-31 23:29:19+00:00"
     },
     {
@@ -303,14 +272,6 @@
     {
       "reason": "out_of_window",
       "outlet": "Guardian World",
-      "title": "NSW should compensate elderly woman whose public housing was inundated with sewage, ombudsman finds",
-      "url": "https://www.theguardian.com/australia-news/2026/aug/01/nsw-should-compensate-elderly-woman-whose-public-housing-was-inundated-with-sewage-ombudsman-finds-ntwnfb",
-      "published": "2026-07-31 15:00:18+00:00",
-      "since": "2026-07-31 23:29:19+00:00"
-    },
-    {
-      "reason": "out_of_window",
-      "outlet": "Guardian World",
       "title": "Middle East crisis: Trump says ‘Israel is very happy’ with Gaza peace plan but doesn’t say if withdrawal or Hamas disarmament comes first – as it happened",
       "url": "https://www.theguardian.com/world/live/2026/jul/31/us-iran-war-live-updates-trump-claims-gaza-hamas-deal-middle-east-crisis-latest-news",
       "published": "2026-07-31 20:57:36+00:00",
@@ -410,14 +371,6 @@
       "title": "Thousands in France allowed to return home as Europe tackles wildfires and heatwave",
       "url": "https://www.npr.org/2026/07/31/nx-s1-5913353/france-wildfires-bordeaux-europe-heatwave",
       "published": "2026-07-31 08:45:07+00:00",
-      "since": "2026-07-31 23:29:19+00:00"
-    },
-    {
-      "reason": "out_of_window",
-      "outlet": "NPR World",
-      "title": "At least 18 die after breach of border between Morocco and Spanish territory of Ceuta",
-      "url": "https://www.npr.org/2026/07/31/g-s1-136507/morocco-spain-migration",
-      "published": "2026-07-31 06:02:00+00:00",
       "since": "2026-07-31 23:29:19+00:00"
     },
     {
@@ -743,9 +696,9 @@
     {
       "reason": "out_of_window",
       "outlet": "Times of India",
-      "title": "Singapore student vanishes after Cambodia flight ticket is found",
-      "url": "https://timesofindia.indiatimes.com/world/rest-of-world/singapore-student-siti-aishah-siregar-left-home-saying-she-was-going-to-college-hours-later-her-family-found-her-passport-missing-and-a-cambodia-flight-ticket-in-her-email/articleshow/132771944.cms",
-      "published": "2026-07-31 17:03:35+00:00",
+      "title": "Rats drove out seabirds, reshaping an entire reef food chain",
+      "url": "https://timesofindia.indiatimes.com/science/tiny-reef-fish-flourished-beside-islands-filled-with-seabirds-where-rats-removed-the-birds-the-entire-underwater-food-chain-took-another-route/articleshow/132756134.cms",
+      "published": "2026-07-31 04:52:37+00:00",
       "since": "2026-07-31 23:29:19+00:00"
     },
     {

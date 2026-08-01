@@ -13,187 +13,145 @@
   },
   "floor_relaxed": false,
   "kept_weights": [
+    14,
     11,
     11,
-    10,
-    9,
+    8,
+    7,
     5,
-    9,
-    6,
-    5
+    10,
+    6
   ],
   "per_section": {
-    "world": 5,
-    "india": 3
+    "world": 6,
+    "india": 2
   },
   "clusters": [
     {
-      "headline_hint": "US embassies advise citizens to consider leaving Middle East amid escalating Iran tensions",
+      "headline_hint": "Mass migration influx into Spanish enclave of Ceuta triggers European crisis and border controls",
       "section": "world",
-      "category": "conflict",
+      "category": "politics",
       "tier_requested": "lead",
       "article_ids": [
+        25,
+        28,
+        32,
+        48,
+        52,
+        73,
         80,
-        112,
-        126,
-        181,
-        184,
-        192,
-        193,
-        277
+        110,
+        165,
+        171,
+        173,
+        196,
+        222,
+        227,
+        235,
+        240,
+        250,
+        253,
+        265,
+        273,
+        275
       ],
       "verdict": "kept",
       "valid_ids": [
+        25,
+        28,
+        32,
+        48,
+        52,
+        73,
         80,
-        112,
-        126,
-        181,
-        184,
-        192,
-        193,
-        277
+        110,
+        165,
+        171,
+        173,
+        196,
+        222,
+        227,
+        235,
+        240,
+        250,
+        253,
+        265,
+        273,
+        275
       ],
       "tier_final": "lead",
-      "distinct_outlets": 5,
+      "distinct_outlets": 8,
       "wiki_backed": true,
-      "wiki_event": "United States embassies in the Middle East warn Americans to depart the region amidst fears of a potential escalation in the war.",
-      "weight": 11,
+      "wiki_event": "Moroccan security forces clash with hundreds of migrants as they attempt to storm the Spanish enclave of Melilla. Several Moroccan security personnel are reportedly injured while more than 50 migrants are detained.",
+      "weight": 14,
       "weight_terms": {
-        "distinct_outlets": 5,
+        "distinct_outlets": 8,
         "tier_weight": 4,
         "wiki_bonus": 2
       },
       "weight_floor": 5,
       "articles": [
         {
-          "outlet": "Times of India",
-          "title": "'Prepare to depart': US embassies issue alert across Middle East amid Iran tensions",
-          "url": "https://timesofindia.indiatimes.com/world/us/prepare-to-depart-us-embassies-issue-alert-across-middle-east-amid-iran-tensions/articleshow/132794132.cms"
-        },
-        {
           "outlet": "Channel News Asia",
-          "title": "US embassies urge citizens to 'consider departing' Middle East",
-          "url": "https://www.channelnewsasia.com/world/us-embassies-urge-citizens-consider-departing-middle-east-6292981"
-        },
-        {
-          "outlet": "Livemint",
-          "title": "Top US General warns Pentagon he lacks enough naval forces to keep defending Israel from Iranian attacks: Report",
-          "url": "https://www.livemint.com/news/us-news/top-us-general-warns-pentagon-it-lacks-enough-naval-forces-to-keep-defending-israel-from-iranian-attacks-report-11785594943756.html"
+          "title": "Majority of EU countries call for talks over migrant influx into Ceuta enclave",
+          "url": "https://www.channelnewsasia.com/world/majority-eu-countries-call-talks-over-migrant-influx-ceuta-enclave-6293206"
         },
         {
           "outlet": "Al Jazeera",
-          "title": "Iran warns against ‘flames of war’ amid US strike threats on energy sites",
-          "url": "https://www.aljazeera.com/news/2026/8/1/iran-warns-against-fire-of-war-amid-us-strike-threats-on-energy-sites?traffic_source=rss"
+          "title": "Why did Ceuta migrant mayhem chill already frosty Israel-Spain relations?",
+          "url": "https://www.aljazeera.com/news/2026/8/1/why-did-ceuta-migrant-mayhem-chill-already-frosty-israel-spain-relations?traffic_source=rss"
         },
-        {
-          "outlet": "Scroll.in",
-          "title": "‘Strongly urged’ Iran to avoid attacks on seafarers, cargo ships: S Jaishankar",
-          "url": "https://scroll.in/latest/1094702/strongly-urged-iran-to-avoid-attacks-on-seafarers-cargo-ships-s-jaishankar?utm_source=rss&utm_medium=public"
-        }
-      ],
-      "articles_dropped_by_diversity_cap": 3
-    },
-    {
-      "headline_hint": "Tens of thousands enter Spanish enclave of Ceuta in border crisis with Morocco",
-      "section": "world",
-      "category": "politics",
-      "tier_requested": "major",
-      "article_ids": [
-        16,
-        40,
-        47,
-        79,
-        134,
-        180,
-        196,
-        199,
-        207,
-        220,
-        222,
-        235
-      ],
-      "verdict": "kept",
-      "valid_ids": [
-        16,
-        40,
-        47,
-        79,
-        134,
-        180,
-        196,
-        199,
-        207,
-        220,
-        222,
-        235
-      ],
-      "tier_final": "major",
-      "distinct_outlets": 7,
-      "wiki_backed": true,
-      "wiki_event": "Moroccan security forces clash with hundreds of migrants as they attempt to storm the Spanish enclave of Melilla. Several Moroccan security personnel are reportedly injured while more than 50 migrants are detained.",
-      "weight": 11,
-      "weight_terms": {
-        "distinct_outlets": 7,
-        "tier_weight": 2,
-        "wiki_bonus": 2
-      },
-      "weight_floor": 5,
-      "articles": [
         {
           "outlet": "BBC World",
           "title": "EU calls emergency meeting to discuss Ceuta migrant crossings",
           "url": "https://www.bbc.co.uk/news/articles/cz7d17r455go?at_medium=RSS&at_campaign=rss"
         },
         {
+          "outlet": "France 24",
+          "title": "Spain installs floating barrier in Ceuta after migration influx",
+          "url": "https://www.france24.com/en/europe/20260801-spain-installs-floating-barrier-in-ceuta-after-migration-influx"
+        },
+        {
           "outlet": "Guardian World",
           "title": "EU to hold urgent meeting of interior ministers on Tuesday over Ceuta crisis",
           "url": "https://www.theguardian.com/world/2026/aug/01/spain-pedro-sanchez-calls-for-eu-meeting-ceuta-border-crossing"
-        },
-        {
-          "outlet": "NPR World",
-          "title": "Spain's Pedro Sánchez was a hero of migrants. After Ceuta, he faces his biggest challenge",
-          "url": "https://www.npr.org/2026/08/01/nx-s1-5916330/spain-sanchez-ceuta-migrants"
-        },
-        {
-          "outlet": "Livemint",
-          "title": "Ceuta crisis: Spain PM blasts ‘selfish’ reaction by some EU countries; calls for ministers to meet",
-          "url": "https://www.livemint.com/news/world/ceuta-crisis-spain-pm-blasts-selfish-reaction-by-some-eu-countries-calls-for-ministers-to-meet-11785603669440.html"
-        },
-        {
-          "outlet": "Al Jazeera",
-          "title": "Spain says migrants leaving Ceuta after mass influx in which 67 died",
-          "url": "https://www.aljazeera.com/news/2026/8/1/spain-says-migrants-leaving-ceuta-after-mass-influx-in-which-67-died?traffic_source=rss"
         }
       ],
-      "articles_dropped_by_diversity_cap": 7
+      "articles_dropped_by_diversity_cap": 16
     },
     {
-      "headline_hint": "Russian missile barrage hits Kyiv killing nine as Ukrainian forces sink Russian container ship",
+      "headline_hint": "Russian missile strikes kill nine in Kyiv as Ukraine sinks Russian ship in Black Sea",
       "section": "world",
       "category": "conflict",
       "tier_requested": "major",
       "article_ids": [
-        8,
-        74,
-        138,
-        167,
-        255
+        40,
+        106,
+        135,
+        169,
+        200,
+        241,
+        259,
+        290
       ],
       "verdict": "kept",
       "valid_ids": [
-        8,
-        74,
-        138,
-        167,
-        255
+        40,
+        106,
+        135,
+        169,
+        200,
+        241,
+        259,
+        290
       ],
       "tier_final": "major",
-      "distinct_outlets": 5,
+      "distinct_outlets": 7,
       "wiki_backed": true,
       "wiki_event": "Kyiv mayor Vitali Klitschko says an overnight Russian missile attack has killed at least nine people and injured 24 others, while damaging buildings and causing fires across several districts of the Ukrainian capital.",
-      "weight": 9,
+      "weight": 11,
       "weight_terms": {
-        "distinct_outlets": 5,
+        "distinct_outlets": 7,
         "tier_weight": 2,
         "wiki_bonus": 2
       },
@@ -210,6 +168,11 @@
           "url": "https://www.aljazeera.com/video/newsfeed/2026/8/1/at-least-9-people-killed-in-russian-missile-attacks-on-kyiv?traffic_source=rss"
         },
         {
+          "outlet": "France 24",
+          "title": "Russian forces strike targets in Ukraine's Odesa, Mykolaiv ports",
+          "url": "https://www.france24.com/en/europe/20260801-russian-forces-strike-targets-ukraine-odesa-mykolaiv-ports"
+        },
+        {
           "outlet": "Times of India",
           "title": "Video shows inferno after Russian missile barrage leaves 9 dead in Ukraine",
           "url": "https://timesofindia.indiatimes.com/world/europe/video-shows-inferno-after-russian-missile-barrage-leaves-9-dead-in-ukraine/articleshow/132791647.cms"
@@ -218,55 +181,60 @@
           "outlet": "BBC World",
           "title": "Nine killed in strikes on Kyiv, as Ukraine sinks Russian container ship",
           "url": "https://www.bbc.co.uk/news/articles/ce973yvk7pko?at_medium=RSS&at_campaign=rss"
-        },
-        {
-          "outlet": "Livemint",
-          "title": "Russia Hits Kyiv With ‘Horrific’ Missile Barrage, Killing Nine",
-          "url": "https://www.livemint.com/news/world/russia-hits-kyiv-with-horrific-missile-barrage-killing-nine-11785570569026.html"
         }
       ],
-      "articles_dropped_by_diversity_cap": 0
+      "articles_dropped_by_diversity_cap": 3
     },
     {
-      "headline_hint": "Mountaineer Nirmal Purja among 10 killed in Broad Peak avalanche in Pakistan",
+      "headline_hint": "Famed mountaineer Nirmal Purja among climbers killed in Pakistan avalanche",
       "section": "world",
       "category": "disaster",
       "tier_requested": "major",
       "article_ids": [
-        15,
-        106,
-        115,
-        165,
-        188,
-        209,
-        258
+        16,
+        47,
+        102,
+        137,
+        147,
+        199,
+        237
       ],
       "verdict": "kept",
       "valid_ids": [
-        15,
-        106,
-        115,
-        165,
-        188,
-        209,
-        258
+        16,
+        47,
+        102,
+        137,
+        147,
+        199,
+        237
       ],
       "tier_final": "major",
-      "distinct_outlets": 6,
+      "distinct_outlets": 7,
       "wiki_backed": true,
       "wiki_event": "All ten climbers, including Nirmal Purja, are confirmed deceased after an avalanche at Broad Peak in Pakistan on July 30.",
-      "weight": 10,
+      "weight": 11,
       "weight_terms": {
-        "distinct_outlets": 6,
+        "distinct_outlets": 7,
         "tier_weight": 2,
         "wiki_bonus": 2
       },
       "weight_floor": 5,
       "articles": [
         {
+          "outlet": "NPR World",
+          "title": "Avalanche in Pakistan kills famed mountaineer Nirmal Purja and his fellow climbers",
+          "url": "https://www.npr.org/2026/08/01/nx-s1-5916368/nirmal-purja-climbers-dead-avalanche"
+        },
+        {
           "outlet": "Al Jazeera",
           "title": "Record-breaking climber Nirmal Purja among those killed in avalanche",
           "url": "https://www.aljazeera.com/video/newsfeed/2026/8/1/record-record-breaking-climber-nirmal-purja-among-those-killed-in-avalanche?traffic_source=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "'A giant of the industry, Purja leaves behind a legacy that inspired a generation to climb higher'",
+          "url": "https://www.france24.com/en/video/20260801-a-giant-of-the-industry-purja-leaves-behind-a-legacy-that-inspired-a-generation-to-climb-higher"
         },
         {
           "outlet": "NDTV",
@@ -277,92 +245,209 @@
           "outlet": "BBC World",
           "title": "Mountaineer Nirmal Purja killed in Pakistan avalanche, his company says",
           "url": "https://www.bbc.co.uk/news/articles/clyljq79kdko?at_medium=RSS&at_campaign=rss"
-        },
-        {
-          "outlet": "Guardian World",
-          "title": "Top mountaineer Nirmal Purja confirmed dead after 11 hit by avalanche in Pakistan",
-          "url": "https://www.theguardian.com/world/2026/aug/01/top-mountaineer-nirmal-purja-confirmed-dead-after-11-hit-by-avalanche-in-pakistan"
-        },
-        {
-          "outlet": "Channel News Asia",
-          "title": "Famed climber Nirmal Purja, nine others, die in avalanche in Pakistan",
-          "url": "https://www.channelnewsasia.com/asia/nepali-climber-nirmal-purja-die-pakistan-avalanche-6292801"
         }
       ],
       "articles_dropped_by_diversity_cap": 2
     },
     {
-      "headline_hint": "Tourist plane crash near Peru's Nazca Lines leaves 13 dead",
+      "headline_hint": "UEFA and football bodies declare no confidence in FIFA chief Gianni Infantino over World Cup plan",
       "section": "world",
-      "category": "disaster",
-      "tier_requested": "notable",
+      "category": "sport",
+      "tier_requested": "major",
       "article_ids": [
-        1,
-        2,
-        4
+        29,
+        115,
+        186,
+        194,
+        260,
+        313
       ],
-      "verdict": "cut:below_floor(3<5)",
+      "verdict": "kept",
       "valid_ids": [
-        1,
-        2,
-        4
+        29,
+        115,
+        186,
+        194,
+        260,
+        313
       ],
-      "tier_final": "notable",
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": true,
+      "wiki_event": "UEFA gives FIFA president Gianni Infantino an ultimatum to resign or face an emergency no-confidence vote following Infantino's plan to sell stakes in FIFA Forward Enterprise, which he has rescinded amidst backlash.",
+      "weight": 8,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Channel News Asia",
+          "title": "UEFA, CONCACAF target Infantino after FIFA shelve World Cup private investment plan",
+          "url": "https://www.channelnewsasia.com/world/uefa-concacaf-target-infantino-after-fifa-shelve-world-cup-private-investment-plan-6293201"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Call for 'full review' as pressure grows on Infantino",
+          "url": "https://www.bbc.co.uk/sport/football/articles/c04kr2nv3v3o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "European football body declares no confidence in FIFA's Infantino after World Cup sell-off plan",
+          "url": "https://www.france24.com/en/sport/20260801-european-football-body-declares-no-confidence-in-fifa-infantino-failed-private-equity-bid"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Infantino’s FIFA crisis: What is reaction to World Cup investment U-turn?",
+          "url": "https://www.aljazeera.com/sports/2026/8/1/infantinos-fifa-crisis-what-is-reaction-to-world-cup-investment-u-turn?traffic_source=rss"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Infantino on the brink? Who might replace him if he goes?",
+          "url": "https://www.bbc.co.uk/sport/football/articles/c998m4ve0rpo?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 1
+    },
+    {
+      "headline_hint": "US embassies urge citizens to leave Middle East amid fears of escalating conflict with Iran",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "major",
+      "article_ids": [
+        9,
+        111,
+        144,
+        158,
+        210,
+        218,
+        219
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        9,
+        111,
+        144,
+        158,
+        210,
+        218,
+        219
+      ],
+      "tier_final": "major",
       "distinct_outlets": 3,
-      "wiki_backed": false,
-      "wiki_event": "",
-      "weight": 3,
+      "wiki_backed": true,
+      "wiki_event": "United States embassies in the Middle East warn Americans to depart the region amidst fears of a potential escalation in the war.",
+      "weight": 7,
       "weight_terms": {
         "distinct_outlets": 3,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Channel News Asia",
+          "title": "Iran threatens to strike other nations' energy fields if US launches fresh attacks",
+          "url": "https://www.channelnewsasia.com/world/iran-threatens-strike-other-nations-energy-fields-if-us-launches-fresh-attacks-6293236"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "'Prepare to depart': US embassies issue alert across Middle East amid Iran tensions",
+          "url": "https://timesofindia.indiatimes.com/world/us/prepare-to-depart-us-embassies-issue-alert-across-middle-east-amid-iran-tensions/articleshow/132794132.cms"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Top US General warns Pentagon he lacks enough naval forces to keep defending Israel from Iranian attacks: Report",
+          "url": "https://www.livemint.com/news/us-news/top-us-general-warns-pentagon-it-lacks-enough-naval-forces-to-keep-defending-israel-from-iranian-attacks-report-11785594943756.html"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "US embassies urge citizens to 'consider departing' Middle East",
+          "url": "https://www.channelnewsasia.com/world/us-embassies-urge-citizens-consider-departing-middle-east-6292981"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Trump considering attacks on Iran's energy infrastructure, report says",
+          "url": "https://www.livemint.com/news/us-news/trump-considering-attacks-on-irans-energy-infrastructure-report-says-11785587578235.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 2
+    },
+    {
+      "headline_hint": "Bomb explosion outside Moscow restaurant kills three and injures over 15",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "notable",
+      "article_ids": [
+        17,
+        31,
+        33,
+        84
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        17,
+        31,
+        33,
+        84
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 4,
         "tier_weight": 0,
         "wiki_bonus": 0
       },
       "weight_floor": 5,
       "articles": [
         {
-          "outlet": "Al Jazeera",
-          "title": "Police say 13 killed as small plane viewing Nazca Lines in Peru crashes",
-          "url": "https://www.aljazeera.com/news/2026/8/1/police-say-13-killed-as-small-plane-viewing-nazca-lines-in-peru-crashes?traffic_source=rss"
+          "outlet": "DW World",
+          "title": "Homemade bomb goes off outside upscale Moscow restaurant state officials say",
+          "url": "https://www.dw.com/en/homemade-bomb-goes-off-outside-upscale-moscow-restaurant-state-officials-say/a-78205022?maca=en-rss-en-world-4025-rdf"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "Bombing at Moscow restaurant kills 3: officials",
+          "url": "https://www.channelnewsasia.com/world/bombing-moscow-restaurant-kills-3-officials-6293196"
         },
         {
           "outlet": "BBC World",
-          "title": "Tourist plane crashes in Peru, killing 13",
-          "url": "https://www.bbc.co.uk/news/articles/c70g132erlko?at_medium=RSS&at_campaign=rss"
+          "title": "Three killed after bomb detonated at Moscow restaurant, state media say",
+          "url": "https://www.bbc.co.uk/news/articles/c86n4ljxp63o?at_medium=RSS&at_campaign=rss"
         },
         {
-          "outlet": "Guardian World",
-          "title": "At least 13 dead as tourist plane crashes during flight over Peru’s Nazca Lines",
-          "url": "https://www.theguardian.com/world/2026/aug/01/at-least-13-dead-as-tourist-plane-crashes-during-flight-over-perus-nazca-lines"
+          "outlet": "Al Jazeera",
+          "title": "At least three killed in explosion near cafe in Russia’s Moscow",
+          "url": "https://www.aljazeera.com/news/2026/8/1/russia-says-explosion-near-cafe-in-moscow-kills-three?traffic_source=rss"
         }
       ],
       "articles_dropped_by_diversity_cap": 0
     },
     {
-      "headline_hint": "FIFA President Gianni Infantino faces emergency scrutiny after World Cup stake sale U-turn",
+      "headline_hint": "Tourist plane viewing Nazca Lines crashes in Peru, killing 13",
       "section": "world",
-      "category": "sport",
+      "category": "disaster",
       "tier_requested": "notable",
       "article_ids": [
-        85,
-        159,
-        229,
-        231,
-        233,
-        281
+        13,
+        15,
+        35
       ],
       "verdict": "kept",
       "valid_ids": [
-        85,
-        159,
-        229,
-        231,
-        233,
-        281
+        13,
+        15,
+        35
       ],
       "tier_final": "notable",
       "distinct_outlets": 3,
       "wiki_backed": true,
-      "wiki_event": "UEFA gives FIFA president Gianni Infantino an ultimatum to resign or face an emergency no-confidence vote following Infantino's plan to sell stakes in FIFA Forward Enterprise, which he has rescinded amidst backlash.",
+      "wiki_event": "A small aircraft crashed near the Nazca Lines, Peru, after departing Pisco. All 13 people on board, including Italian, Spanish and German tourists, died in the accident.",
       "weight": 5,
       "weight_terms": {
         "distinct_outlets": 3,
@@ -373,78 +458,141 @@
       "articles": [
         {
           "outlet": "BBC World",
-          "title": "Call for 'full review' as pressure grows on Infantino",
-          "url": "https://www.bbc.co.uk/sport/football/articles/c04kr2nv3v3o?at_medium=RSS&at_campaign=rss"
+          "title": "Tourist plane crashes in Peru, killing 13",
+          "url": "https://www.bbc.co.uk/news/articles/c70g132erlko?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Tourist plane crashes during flight over Peru’s Nazca Lines, killing 13",
+          "url": "https://www.theguardian.com/world/2026/aug/01/at-least-13-dead-as-tourist-plane-crashes-during-flight-over-perus-nazca-lines"
         },
         {
           "outlet": "Al Jazeera",
-          "title": "Infantino’s FIFA crisis: What is reaction to World Cup investment U-turn?",
-          "url": "https://www.aljazeera.com/sports/2026/8/1/infantinos-fifa-crisis-what-is-reaction-to-world-cup-investment-u-turn?traffic_source=rss"
-        },
-        {
-          "outlet": "Channel News Asia",
-          "title": "UEFA welcomes FIFA's decision to scrap stake sale",
-          "url": "https://www.channelnewsasia.com/sport/uefa-welcomes-fifas-decision-scrap-stake-sale-6292726"
-        },
-        {
-          "outlet": "BBC World",
-          "title": "Infantino on the brink? Who might replace him if he goes?",
-          "url": "https://www.bbc.co.uk/sport/football/articles/c998m4ve0rpo?at_medium=RSS&at_campaign=rss"
-        },
-        {
-          "outlet": "Channel News Asia",
-          "title": "Infantino's FIFA future in jeopardy after private equity gamble backfires",
-          "url": "https://www.channelnewsasia.com/sport/infantinos-fifa-future-in-jeopardy-after-private-equity-gamble-backfires-6292706"
+          "title": "Police say 13 killed as small plane viewing Nazca Lines in Peru crashes",
+          "url": "https://www.aljazeera.com/news/2026/8/1/police-say-13-killed-as-small-plane-viewing-nazca-lines-in-peru-crashes?traffic_source=rss"
         }
       ],
-      "articles_dropped_by_diversity_cap": 1
+      "articles_dropped_by_diversity_cap": 0
     },
     {
-      "headline_hint": "PM Modi forgives youth protesters who abused him while Opposition demands apology for police crackdown",
+      "headline_hint": "FBI investigates cyberattacks on water systems across multiple US states",
+      "section": "world",
+      "category": "technology",
+      "tier_requested": "notable",
+      "article_ids": [
+        12,
+        24,
+        190
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        12,
+        24,
+        190
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": true,
+      "wiki_event": "The U.S. FBI opens an investigation after the U.S. state of Michigan reports a cyberattack on its water systems, including whether Iran was behind the cyberattack, a day after Minnesota reported a similar breach.",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "Michigan joins Minnesota in reporting cyberattacks, with FBI investigating",
+          "url": "https://www.aljazeera.com/news/2026/8/1/michigan-joins-minnesota-in-reporting-cyber-attacks-with-fbi-investigating?traffic_source=rss"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Michigan Reports Hacks on Water Systems Amid FBI Probe",
+          "url": "https://www.livemint.com/news/michigan-reports-hacks-on-water-systems-amid-fbi-probe-11785621089551.html"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "US water systems targeted in cyberattacks across seven states, FBI warns; Iranian hackers suspected",
+          "url": "https://www.livemint.com/news/us-news/us-water-systems-targeted-in-cyberattacks-across-seven-states-fbi-warns-iranian-hackers-suspected-11785592264620.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Political row intensifies over youth protests, police action, and opposition skit in Parliament",
       "section": "india",
       "category": "politics",
       "tier_requested": "lead",
       "article_ids": [
-        114,
-        118,
-        125,
-        144,
-        201,
-        225,
-        238,
-        273,
-        275,
-        276
+        123,
+        127,
+        139,
+        146,
+        150,
+        155,
+        157,
+        178,
+        187,
+        192,
+        197,
+        206,
+        229,
+        249,
+        255,
+        278,
+        284,
+        297,
+        305,
+        307,
+        308
       ],
       "verdict": "kept",
       "valid_ids": [
-        114,
-        118,
-        125,
-        144,
-        201,
-        225,
-        238,
-        273,
-        275,
-        276
+        123,
+        127,
+        139,
+        146,
+        150,
+        155,
+        157,
+        178,
+        187,
+        192,
+        197,
+        206,
+        229,
+        249,
+        255,
+        278,
+        284,
+        297,
+        305,
+        307,
+        308
       ],
       "tier_final": "lead",
-      "distinct_outlets": 5,
+      "distinct_outlets": 6,
       "wiki_backed": false,
       "wiki_event": "",
-      "weight": 9,
+      "weight": 10,
       "weight_terms": {
-        "distinct_outlets": 5,
+        "distinct_outlets": 6,
         "tier_weight": 4,
         "wiki_bonus": 0
       },
       "weight_floor": 5,
       "articles": [
         {
+          "outlet": "Times of India",
+          "title": "'Girls' clothes torn, heads broken': CJP demands PM's apology over police action",
+          "url": "https://timesofindia.indiatimes.com/india/girls-clothes-torn-heads-broken-cjp-founder-demands-pm-modi-apology-over-police-action-on-july-20th/articleshow/132793056.cms"
+        },
+        {
           "outlet": "Livemint",
-          "title": "Abhijeet Dipke hopes PM Modi apologises in tonight's video — ‘…to all girls whom police beat with brutality’",
-          "url": "https://www.livemint.com/news/india/abhijeet-dipke-hopes-pm-modi-apologises-in-tonights-video-to-all-girls-whom-police-beat-with-brutality-11785596511917.html"
+          "title": "Rahul Gandhi, Pappu Yadav, Awadhesh Prasad booked over Ram temple donation theft skit in Parliament",
+          "url": "https://www.livemint.com/news/india/rahul-gandhi-pappu-yadav-awadhesh-prasad-booked-over-ram-temple-donation-theft-skit-in-parliament-11785599690799.html"
         },
         {
           "outlet": "Hindustan Times",
@@ -457,43 +605,38 @@
           "url": "https://www.aljazeera.com/video/newsfeed/2026/8/1/india-cracks-down-on-protesters-accused-of-abusing-modi?traffic_source=rss"
         },
         {
-          "outlet": "Channel News Asia",
-          "title": "India's Modi forgives student protesters who abused him, says punishing them 'will not change situation'",
-          "url": "https://www.channelnewsasia.com/asia/indias-modi-forgives-student-protesters-who-abused-him-says-punishing-them-will-not-change-situation-6292581"
-        },
-        {
-          "outlet": "Scroll.in",
-          "title": "‘We will kill, rape you’: Online mobs are targeting women protesters for ‘abusing’ Modi",
-          "url": "https://scroll.in/article/1094696/we-will-kill-rape-you-online-mobs-are-targeting-women-protesters-for-abusing-modi?utm_source=rss&utm_medium=public"
+          "outlet": "NDTV",
+          "title": "\"Mockery Of Sanatan Culture\": BJP Seeks Case Against Rahul Gandhi, Pappu Yadav",
+          "url": "https://www.ndtv.com/india-news/mockery-of-sanatan-culture-bjp-seeks-fir-against-rahul-gandhi-pappu-yadav-11853250#publisher=newsstand"
         }
       ],
-      "articles_dropped_by_diversity_cap": 5
+      "articles_dropped_by_diversity_cap": 16
     },
     {
-      "headline_hint": "Torrential rain and landslides trigger severe flooding across Kerala, killing at least six",
+      "headline_hint": "Torrential rain triggers deadly landslides and flooding across Kerala",
       "section": "india",
       "category": "disaster",
       "tier_requested": "major",
       "article_ids": [
-        22,
-        23,
-        54,
-        57,
-        104,
-        127,
-        205,
-        259
+        55,
+        56,
+        87,
+        90,
+        134,
+        159,
+        233,
+        292
       ],
       "verdict": "kept",
       "valid_ids": [
-        22,
-        23,
-        54,
-        57,
-        104,
-        127,
-        205,
-        259
+        55,
+        56,
+        87,
+        90,
+        134,
+        159,
+        233,
+        292
       ],
       "tier_final": "major",
       "distinct_outlets": 4,
@@ -536,73 +679,28 @@
       "articles_dropped_by_diversity_cap": 3
     },
     {
-      "headline_hint": "Security forces launch massive operation after terror attack kills two migrant workers in Kashmir's Kulgam",
+      "headline_hint": "Indian boxers and para-athletes record historic medal hauls at Commonwealth Games",
       "section": "india",
-      "category": "conflict",
+      "category": "sport",
       "tier_requested": "major",
       "article_ids": [
-        24,
         75,
-        77,
-        272
-      ],
-      "verdict": "kept",
-      "valid_ids": [
-        24,
-        75,
-        77,
-        272
-      ],
-      "tier_final": "major",
-      "distinct_outlets": 3,
-      "wiki_backed": false,
-      "wiki_event": "",
-      "weight": 5,
-      "weight_terms": {
-        "distinct_outlets": 3,
-        "tier_weight": 2,
-        "wiki_bonus": 0
-      },
-      "weight_floor": 5,
-      "articles": [
-        {
-          "outlet": "The Hindu",
-          "title": "The hopes of two families are dashed as terror attack leaves their sole breadwinners dead",
-          "url": "https://www.thehindu.com/news/national/chhattisgarh/kulgam-terrorist-attack-chhattisgarh-government-declares-20-lakh-aid-for-kin-of-two-workers-killed/article71294437.ece"
-        },
-        {
-          "outlet": "NDTV",
-          "title": "J&K Launches Massive Op To Hunt Terrorists Who Killed 2 Migrant Workers",
-          "url": "https://www.ndtv.com/india-news/j-k-launches-massive-op-to-hunt-terrorists-who-killed-2-migrant-workers-11853988#publisher=newsstand"
-        },
-        {
-          "outlet": "Scroll.in",
-          "title": "J&K: Second migrant worker succumbs to injuries sustained in Kulgam militant attack",
-          "url": "https://scroll.in/latest/1094703/j-k-second-migrant-worker-succumbs-to-injuries-sustained-in-kulgam-militant-attack?utm_source=rss&utm_medium=public"
-        },
-        {
-          "outlet": "The Hindu",
-          "title": "Worker injured in Kulgam attack dies; L-G pushes for SoPs to protect migrant labourers",
-          "url": "https://www.thehindu.com/news/national/jammu-and-kashmir/migrant-workers-killed-in-jammu-kashmir-kulgam-terror-attack-updates/article71293425.ece"
-        }
-      ],
-      "articles_dropped_by_diversity_cap": 0
-    },
-    {
-      "headline_hint": "PM Modi inaugurates Bhogapuram International Airport in Andhra Pradesh",
-      "section": "india",
-      "category": "economy",
-      "tier_requested": "major",
-      "article_ids": [
-        212,
-        221,
-        248
+        119,
+        148,
+        180,
+        181,
+        207,
+        220
       ],
       "verdict": "cut:below_floor(4<5)",
       "valid_ids": [
-        212,
-        221,
-        248
+        75,
+        119,
+        148,
+        180,
+        181,
+        207,
+        220
       ],
       "tier_final": "major",
       "distinct_outlets": 2,
@@ -617,34 +715,44 @@
       "weight_floor": 5,
       "articles": [
         {
+          "outlet": "Times of India",
+          "title": "India win seven gold medals to cap record-breaking boxing campaign in CWG",
+          "url": "https://timesofindia.indiatimes.com/sports/commonwealth-games/news/india-win-seven-gold-medals-three-silver-to-cap-record-breaking-boxing-campaign-in-glasgow-commonwealth-games/articleshow/132795314.cms"
+        },
+        {
           "outlet": "Hindustan Times",
-          "title": "PM Modi inaugurates Andhra Pradesh’s Bhogapuram international airport",
-          "url": "https://www.hindustantimes.com/india-news/pm-modi-inaugurates-andhra-pradesh-s-bhogapuram-international-airport-101785582557331.html"
+          "title": "Tripura’s Ashmita Dey wins India’s first Commonwealth judo gold",
+          "url": "https://www.hindustantimes.com/india-news/tripuras-ashmita-dey-wins-india-s-first-commonwealth-judo-gold-101785594261714.html"
         },
         {
-          "outlet": "Livemint",
-          "title": "After Kangana, Pawan Kalyan praises PM Modi amid criticism, equates him to Lord Rama: ‘Think what we can do as Hanuman’",
-          "url": "https://www.livemint.com/news/india/pawan-kalyan-to-pm-modi-amid-criticism-equates-him-to-lord-rama-think-what-we-can-do-as-hanuman-11785576186755.html"
+          "outlet": "Times of India",
+          "title": "Gold rush: Arundhati Choudhary wins India's fifth boxing gold at CWG 2026",
+          "url": "https://timesofindia.indiatimes.com/sports/commonwealth-games/news/gold-rush-continues-as-arundhati-choudhary-wins-indias-fifth-boxing-gold-at-commonwealth-games/articleshow/132793382.cms"
         },
         {
-          "outlet": "Livemint",
-          "title": "PM Modi inaugurates  ₹5,000 crore Bhogapuram Airport in Andhra Pradesh; lays foundation stone for other projects",
-          "url": "https://www.livemint.com/news/india/pm-modi-inaugurates-rs-5-000-crore-bhogapuram-airport-in-andhra-pradesh-lays-foundation-stone-for-other-projects-11785571192581.html"
+          "outlet": "Times of India",
+          "title": "3 Gold, 2 Silver, 2 Bronze: Indian para athletes script history in Glasgow",
+          "url": "https://timesofindia.indiatimes.com/sports/commonwealth-games/news/3-gold-2-silver-2-bronze-indian-para-athletes-script-history-with-record-seven-medal-in-glasgow/articleshow/132792150.cms"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "'Kept motivating me': Jadumani Singh credits Sarita Devi for his CWG silver medal journey",
+          "url": "https://timesofindia.indiatimes.com/sports/commonwealth-games/news/she-kept-motivating-me-jadumani-singh-credits-sarita-devi-for-his-cwg-silver-medal-journey/articleshow/132791333.cms"
         }
       ],
-      "articles_dropped_by_diversity_cap": 0
+      "articles_dropped_by_diversity_cap": 2
     },
     {
-      "headline_hint": "India and China resume border trade through Lipulekh and Shipki La passes after six years",
+      "headline_hint": "India and China resume Himalayan border trade through Lipulekh and Shipki La passes after six years",
       "section": "india",
-      "category": "economy",
+      "category": "politics",
       "tier_requested": "notable",
       "article_ids": [
-        10
+        42
       ],
       "verdict": "cut:below_floor(1<5)",
       "valid_ids": [
-        10
+        42
       ],
       "tier_final": "notable",
       "distinct_outlets": 1,
@@ -667,22 +775,26 @@
       "articles_dropped_by_diversity_cap": 0
     },
     {
-      "headline_hint": "Police case filed against Rahul Gandhi and Opposition leaders over Ram temple skit in Parliament",
+      "headline_hint": "Opposition targets Centre over E20 ethanol blending policy as government defends fuel savings",
       "section": "india",
-      "category": "politics",
+      "category": "economy",
       "tier_requested": "notable",
       "article_ids": [
-        97,
-        123,
-        157,
-        162
+        133,
+        177,
+        216,
+        236,
+        268,
+        282
       ],
       "verdict": "cut:below_floor(4<5)",
       "valid_ids": [
-        97,
-        123,
-        157,
-        162
+        133,
+        177,
+        216,
+        236,
+        268,
+        282
       ],
       "tier_final": "notable",
       "distinct_outlets": 4,
@@ -697,24 +809,121 @@
       "weight_floor": 5,
       "articles": [
         {
-          "outlet": "Livemint",
-          "title": "Rahul Gandhi, Pappu Yadav, Awadhesh Prasad booked over Ram temple donation theft skit in Parliament",
-          "url": "https://www.livemint.com/news/india/rahul-gandhi-pappu-yadav-awadhesh-prasad-booked-over-ram-temple-donation-theft-skit-in-parliament-11785599690799.html"
-        },
-        {
           "outlet": "Hindustan Times",
-          "title": "Pappu Yadav faces police complaint over Parliament skit on Ram Mandir donations theft",
-          "url": "https://www.hindustantimes.com/india-news/lok-sabha-mp-pappu-yadav-faces-complaint-over-parliament-protest-on-ram-mandir-donations-101785571847232.html"
+          "title": "'On Aug 4, at 12 pm': Kejriwal plans march to PM's residence with '100 who don't fear jail' over E20 concerns",
+          "url": "https://www.hindustantimes.com/india-news/arvind-kejriwal-aap-pm-narendra-modi-residence-march-e20-fuel-ethanol-petrol-controversy-blending-mileage-nitin-gadkari-101785596569359.html"
         },
         {
           "outlet": "NDTV",
-          "title": "\"Mockery Of Sanatan Culture\": BJP Seeks Case Against Rahul Gandhi, Pappu Yadav",
-          "url": "https://www.ndtv.com/india-news/mockery-of-sanatan-culture-bjp-seeks-fir-against-rahul-gandhi-pappu-yadav-11853250#publisher=newsstand"
+          "title": "Punjab Farmers Defend E20 Programme, Say It Aids Crop Diversification",
+          "url": "https://www.ndtv.com/india-news/punjab-farmers-defend-e20-programme-say-it-aids-crop-diversification-11853388#publisher=newsstand"
         },
         {
           "outlet": "Scroll.in",
-          "title": "Rahul Gandhi, 2 MPs booked for ‘insulting Sanatan Dharma’ during Ram temple donation theft protest",
-          "url": "https://scroll.in/latest/1094710/rahul-gandhi-2-mps-booked-for-insulting-sanatan-dharma-during-ram-temple-donation-theft-protest?utm_source=rss&utm_medium=public"
+          "title": "Commentator Tehseen Poonawalla claims he is under house arrest ahead of protest against E20 fuel",
+          "url": "https://scroll.in/latest/1094707/commentator-tehseen-poonawalla-claims-he-is-under-house-arrest-ahead-of-protest-against-e20-fuel?utm_source=rss&utm_medium=public"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Petrol in Delhi would have cost around  ₹125/litre without ethanol blending during crude spike, says Centre",
+          "url": "https://www.livemint.com/news/india/petrol-in-delhi-would-have-cost-around-125-litre-without-ethanol-blending-during-crude-spike-says-centre-11785575138125.html"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "E20 petrol saved consumers nearly  ₹30 per litre during crude price spike: Govt",
+          "url": "https://www.hindustantimes.com/india-news/e20-petrol-saved-consumers-nearly-rs-30-per-litre-during-crude-price-spike-government-101785585946933.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 1
+    },
+    {
+      "headline_hint": "Supreme Court Justice Ujjal Bhuyan criticises Collegium for opacity in judicial appointments",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        10,
+        189
+      ],
+      "verdict": "cut:below_floor(2<5)",
+      "valid_ids": [
+        10,
+        189
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 2,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "Judge Bhuyan questions SC collegium’s opacity",
+          "url": "https://timesofindia.indiatimes.com/india/judge-bhuyan-questions-sc-collegiums-opacity/articleshow/132798513.cms"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "Citizens Have Right To Know: Supreme Court Judge On Judicial Appointments",
+          "url": "https://www.ndtv.com/india-news/ujjal-bhuyan-collegium-judge-appointments-citizens-have-right-to-know-supreme-court-judge-on-judicial-appointments-11853217#publisher=newsstand"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "PM Modi inaugurates Rs 5,600 crore Bhogapuram International Airport in Andhra Pradesh",
+      "section": "india",
+      "category": "economy",
+      "tier_requested": "notable",
+      "article_ids": [
+        53,
+        243,
+        252,
+        283
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        53,
+        243,
+        252,
+        283
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "The Hindu",
+          "title": "Dhimsa ‘jamboree’ highlights tribal heritage of A.P. at Bhogapuram airport inaugural",
+          "url": "https://www.thehindu.com/news/national/andhra-pradesh/dhimsa-jamboree-highlights-tribal-heritage-of-ap-at-bhogapuram-airport-inaugural/article71294600.ece"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "PM Modi inaugurates Andhra Pradesh’s Bhogapuram international airport",
+          "url": "https://www.hindustantimes.com/india-news/pm-modi-inaugurates-andhra-pradesh-s-bhogapuram-international-airport-101785582557331.html"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "After Kangana, Pawan Kalyan praises PM Modi amid criticism, equates him to Lord Rama: ‘Think what we can do as Hanuman’",
+          "url": "https://www.livemint.com/news/india/pawan-kalyan-to-pm-modi-amid-criticism-equates-him-to-lord-rama-think-what-we-can-do-as-hanuman-11785576186755.html"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "PM Modi inaugurates  ₹5,000 crore Bhogapuram Airport in Andhra Pradesh; lays foundation stone for other projects",
+          "url": "https://www.livemint.com/news/india/pm-modi-inaugurates-rs-5-000-crore-bhogapuram-airport-in-andhra-pradesh-lays-foundation-stone-for-other-projects-11785571192581.html"
         }
       ],
       "articles_dropped_by_diversity_cap": 0

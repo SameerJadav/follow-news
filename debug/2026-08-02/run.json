@@ -1,28 +1,28 @@
 {
   "kind": "digest",
   "day": "2026-08-02",
-  "ok": false,
-  "started_at": "2026-08-01T21:22:40Z",
-  "finished_at": "2026-08-01T21:24:24Z",
-  "elapsed_ms": 104349,
+  "ok": true,
+  "started_at": "2026-08-01T23:28:20Z",
+  "finished_at": "2026-08-01T23:30:57Z",
+  "elapsed_ms": 157780,
   "argv": [
     "digest.py",
     "--if-missing"
   ],
   "python": "3.12.3",
-  "git_sha": "1cc9ee24ba0bcc40a52019a077c60082018099fa",
+  "git_sha": "e4ff910e382406ca9dd6664a57d169a42456be5d",
   "debug_level": 1,
-  "bytes_written": 12879619,
+  "bytes_written": 12118612,
   "byte_cap_reached": false,
   "env": {
     "DIGEST_DEBUG": "1",
     "CI": "true",
     "GITHUB_ACTIONS": "true",
-    "GITHUB_RUN_ID": "30718992779",
+    "GITHUB_RUN_ID": "30723385905",
     "GITHUB_RUN_ATTEMPT": "1",
     "GITHUB_WORKFLOW": "digest",
     "GITHUB_EVENT_NAME": "schedule",
-    "GITHUB_SHA": "1cc9ee24ba0bcc40a52019a077c60082018099fa",
+    "GITHUB_SHA": "e4ff910e382406ca9dd6664a57d169a42456be5d",
     "GITHUB_REF": "refs/heads/main",
     "RUNNER_OS": "Linux"
   },
@@ -68,48 +68,53 @@
   "stages": [
     {
       "stage": "gather",
-      "ms": 2687,
+      "ms": 4078,
       "error": ""
     },
     {
       "stage": "pool",
-      "ms": 3,
-      "error": ""
-    },
-    {
-      "stage": "wikipedia",
-      "ms": 214,
-      "error": ""
-    },
-    {
-      "stage": "select",
-      "ms": 24733,
-      "error": ""
-    },
-    {
-      "stage": "rank",
       "ms": 4,
       "error": ""
     },
     {
+      "stage": "wikipedia",
+      "ms": 277,
+      "error": ""
+    },
+    {
+      "stage": "select",
+      "ms": 24927,
+      "error": ""
+    },
+    {
+      "stage": "rank",
+      "ms": 6,
+      "error": ""
+    },
+    {
       "stage": "extract",
-      "ms": 28081,
+      "ms": 57027,
       "error": ""
     },
     {
       "stage": "claims",
-      "ms": 41106,
+      "ms": 22140,
       "error": ""
     },
     {
       "stage": "write",
-      "ms": 5615,
-      "error": "ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"
+      "ms": 47415,
+      "error": ""
+    },
+    {
+      "stage": "render",
+      "ms": 59,
+      "error": ""
     }
   ],
   "window": {
     "since": "2026-07-31T23:29:19+00:00",
-    "now": "2026-08-01T21:22:42.281500+00:00",
+    "now": "2026-08-01T23:28:21.967160+00:00",
     "prev_generated_at": "2026-07-31 23:29:19+00:00"
   }
 }

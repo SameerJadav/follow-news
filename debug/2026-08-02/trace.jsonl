@@ -127,3 +127,158 @@
 {"run": "digest", "t": 98769, "kind": "dbg", "msg": "llm: call #3 model=gemini-3.6-flash label=write prompt=13256ch"}
 {"run": "digest", "t": 104349, "kind": "event", "stage": "stage", "name": "write", "ms": 5615, "ok": false, "error": "ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"}
 {"run": "digest", "t": 104349, "kind": "event", "stage": "tracer", "msg": "capture finished", "ok": false, "ms": 104349, "bytes": 12879619}
+{"run": "digest", "t": 0, "kind": "digest", "stage": "tracer", "msg": "capture started", "level": 1, "day": "2026-08-02"}
+{"run": "digest", "t": 1835, "kind": "dbg", "msg": "digest: window since=2026-07-31T23:29:19+00:00 (prev_generated_at=2026-07-31 23:29:19+00:00)"}
+{"run": "digest", "t": 2033, "kind": "dbg", "msg": "feed 'BBC World': http=200 raw_items=27 usable=27"}
+{"run": "digest", "t": 2033, "kind": "event", "stage": "feeds", "outlet": "BBC World", "url": "https://feeds.bbci.co.uk/news/world/rss.xml", "http": 200, "elapsed_ms": 187, "bytes": 20948, "raw_items": 27, "usable": 27, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 2298, "kind": "dbg", "msg": "feed 'Al Jazeera': http=200 raw_items=25 usable=25"}
+{"run": "digest", "t": 2298, "kind": "event", "stage": "feeds", "outlet": "Al Jazeera", "url": "https://www.aljazeera.com/xml/rss/all.xml", "http": 200, "elapsed_ms": 253, "bytes": 17361, "raw_items": 25, "usable": 25, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 2523, "kind": "dbg", "msg": "feed 'Guardian World': http=200 raw_items=45 usable=45"}
+{"run": "digest", "t": 2523, "kind": "event", "stage": "feeds", "outlet": "Guardian World", "url": "https://www.theguardian.com/world/rss", "http": 200, "elapsed_ms": 172, "bytes": 149334, "raw_items": 45, "usable": 45, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 2734, "kind": "dbg", "msg": "feed 'NPR World': http=200 raw_items=10 usable=10"}
+{"run": "digest", "t": 2734, "kind": "event", "stage": "feeds", "outlet": "NPR World", "url": "https://feeds.npr.org/1004/rss.xml", "http": 200, "elapsed_ms": 203, "bytes": 13465, "raw_items": 10, "usable": 10, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 3247, "kind": "dbg", "msg": "feed 'DW World': http=200 raw_items=11 usable=11"}
+{"run": "digest", "t": 3247, "kind": "event", "stage": "feeds", "outlet": "DW World", "url": "https://rss.dw.com/rdf/rss-en-world", "http": 200, "elapsed_ms": 506, "bytes": 11055, "raw_items": 11, "usable": 11, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 3526, "kind": "dbg", "msg": "feed 'France 24': http=200 raw_items=24 usable=24"}
+{"run": "digest", "t": 3526, "kind": "event", "stage": "feeds", "outlet": "France 24", "url": "https://www.france24.com/en/rss", "http": 200, "elapsed_ms": 268, "bytes": 29364, "raw_items": 24, "usable": 24, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 3828, "kind": "dbg", "msg": "feed 'Channel News Asia': http=200 raw_items=20 usable=20"}
+{"run": "digest", "t": 3828, "kind": "event", "stage": "feeds", "outlet": "Channel News Asia", "url": "https://www.channelnewsasia.com/api/v1/rss-outbound-feed?_format=xml", "http": 200, "elapsed_ms": 291, "bytes": 18041, "raw_items": 20, "usable": 20, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 4066, "kind": "dbg", "msg": "feed 'The Hindu': http=200 raw_items=60 usable=60"}
+{"run": "digest", "t": 4066, "kind": "event", "stage": "feeds", "outlet": "The Hindu", "url": "https://www.thehindu.com/news/national/feeder/default.rss", "http": 200, "elapsed_ms": 219, "bytes": 46950, "raw_items": 60, "usable": 60, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 4253, "kind": "dbg", "msg": "feed 'Indian Express': http=403"}
+{"run": "digest", "t": 4253, "kind": "event", "stage": "feeds", "outlet": "Indian Express", "url": "https://indianexpress.com/section/india/feed/", "http": 403, "elapsed_ms": 185, "verdict": "http_error"}
+{"run": "digest", "t": 4505, "kind": "dbg", "msg": "feed 'NDTV': http=200 raw_items=20 usable=20"}
+{"run": "digest", "t": 4505, "kind": "event", "stage": "feeds", "outlet": "NDTV", "url": "https://feeds.feedburner.com/ndtvnews-india-news", "http": 200, "elapsed_ms": 241, "bytes": 28814, "raw_items": 20, "usable": 20, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 4790, "kind": "dbg", "msg": "feed 'Hindustan Times': http=200 raw_items=100 usable=100"}
+{"run": "digest", "t": 4790, "kind": "event", "stage": "feeds", "outlet": "Hindustan Times", "url": "https://www.hindustantimes.com/feeds/rss/india-news/rssfeed.xml", "http": 200, "elapsed_ms": 253, "bytes": 95563, "raw_items": 100, "usable": 100, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 5146, "kind": "dbg", "msg": "feed 'Times of India': http=200 raw_items=46 usable=46"}
+{"run": "digest", "t": 5146, "kind": "event", "stage": "feeds", "outlet": "Times of India", "url": "https://timesofindia.indiatimes.com/rssfeedstopstories.cms", "http": 200, "elapsed_ms": 339, "bytes": 52499, "raw_items": 46, "usable": 46, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 5518, "kind": "dbg", "msg": "feed 'Livemint': http=200 raw_items=35 usable=35"}
+{"run": "digest", "t": 5519, "kind": "event", "stage": "feeds", "outlet": "Livemint", "url": "https://www.livemint.com/rss/news", "http": 200, "elapsed_ms": 357, "bytes": 36379, "raw_items": 35, "usable": 35, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 5905, "kind": "dbg", "msg": "feed 'Scroll.in': http=200 raw_items=100 usable=100"}
+{"run": "digest", "t": 5905, "kind": "event", "stage": "feeds", "outlet": "Scroll.in", "url": "https://feeds.feedburner.com/ScrollinArticles.rss", "http": 200, "elapsed_ms": 265, "bytes": 306302, "raw_items": 100, "usable": 100, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 5911, "kind": "dbg", "msg": "gather: 371 article(s) after window+dedupe; by outlet: {'Guardian World': 25, 'Times of India': 40, 'BBC World': 22, 'The Hindu': 60, 'Channel News Asia': 20, 'Al Jazeera': 25, 'NPR World': 5, 'DW World': 4, 'Livemint': 35, 'France 24': 24, 'NDTV': 20, 'Scroll.in': 22, 'Hindustan Times': 69}"}
+{"run": "digest", "t": 5912, "kind": "dbg", "msg": "gather: 13/14 feed(s) live, 371 article(s)"}
+{"run": "digest", "t": 5914, "kind": "event", "stage": "stage", "name": "gather", "ms": 4078, "ok": true, "error": ""}
+{"run": "digest", "t": 5914, "kind": "dbg", "msg": "gather: QUORUM OK — live=13/3 min, articles=371/20 min"}
+{"run": "digest", "t": 5914, "kind": "dbg", "msg": "rank: select pool 371 -> 322; capped outlets: {'The Hindu': 20, 'Hindustan Times': 29}"}
+{"run": "digest", "t": 5918, "kind": "event", "stage": "stage", "name": "pool", "ms": 4, "ok": true, "error": ""}
+{"run": "digest", "t": 6089, "kind": "dbg", "msg": "wiki: 2026_August_2 http=200 events=0"}
+{"run": "digest", "t": 6089, "kind": "event", "stage": "wikipedia", "page": "2026_August_2", "http": 200, "bytes": 190, "events": 0, "verdict": "ok"}
+{"run": "digest", "t": 6195, "kind": "dbg", "msg": "wiki: 2026_August_1 http=200 events=21"}
+{"run": "digest", "t": 6195, "kind": "event", "stage": "wikipedia", "page": "2026_August_1", "http": 200, "bytes": 9235, "events": 21, "verdict": "ok"}
+{"run": "digest", "t": 6196, "kind": "event", "stage": "stage", "name": "wikipedia", "ms": 277, "ok": true, "error": ""}
+{"run": "digest", "t": 6298, "kind": "dbg", "msg": "llm: call #1 model=gemini-3.6-flash label=select prompt=85982ch"}
+{"run": "digest", "t": 31121, "kind": "dbg", "msg": "llm: select finish_reason=FinishReason.STOP"}
+{"run": "digest", "t": 31122, "kind": "event", "stage": "llm", "call": 1, "label": "select", "model": "gemini-3.6-flash", "latency_ms": 24823, "prompt_chars": 85982, "system_chars": 2517, "response_chars": 3913, "finish_reason": "FinishReason.STOP", "malformed_json": false, "json_retries": 0, "max_output_tokens": 32768, "usage": {"prompt_token_count": 20461, "candidates_token_count": 1449, "total_token_count": 27013, "thoughts_token_count": 5103}}
+{"run": "digest", "t": 31123, "kind": "dbg", "msg": "llm: select_stories -> 15 raw cluster(s)"}
+{"run": "digest", "t": 31123, "kind": "event", "stage": "stage", "name": "select", "ms": 24927, "ok": true, "error": ""}
+{"run": "digest", "t": 31124, "kind": "dbg", "msg": "rank: [world] outlets=8 tier=lead wiki=yes weight=14 'Mass migration influx into Spanish enclave of Ceuta triggers European crisis and border controls'"}
+{"run": "digest", "t": 31124, "kind": "dbg", "msg": "rank: [world] outlets=7 tier=major wiki=yes weight=11 'Russian missile strikes kill nine in Kyiv as Ukraine sinks Russian ship in Black Sea'"}
+{"run": "digest", "t": 31124, "kind": "dbg", "msg": "rank: [world] outlets=7 tier=major wiki=yes weight=11 'Famed mountaineer Nirmal Purja among climbers killed in Pakistan avalanche'"}
+{"run": "digest", "t": 31125, "kind": "dbg", "msg": "rank: [world] outlets=4 tier=major wiki=yes weight=8 'UEFA and football bodies declare no confidence in FIFA chief Gianni Infantino over World Cup plan'"}
+{"run": "digest", "t": 31125, "kind": "dbg", "msg": "rank: [world] outlets=3 tier=major wiki=yes weight=7 'US embassies urge citizens to leave Middle East amid fears of escalating conflict with Iran'"}
+{"run": "digest", "t": 31125, "kind": "dbg", "msg": "rank: [world] outlets=4 tier=notable wiki=no weight=4 'Bomb explosion outside Moscow restaurant kills three and injures over 15'"}
+{"run": "digest", "t": 31126, "kind": "dbg", "msg": "rank: [world] outlets=3 tier=notable wiki=yes weight=5 'Tourist plane viewing Nazca Lines crashes in Peru, killing 13'"}
+{"run": "digest", "t": 31126, "kind": "dbg", "msg": "rank: [world] outlets=2 tier=notable wiki=yes weight=4 'FBI investigates cyberattacks on water systems across multiple US states'"}
+{"run": "digest", "t": 31127, "kind": "dbg", "msg": "rank: [india] outlets=6 tier=lead wiki=no weight=10 'Political row intensifies over youth protests, police action, and opposition skit in Parliament'"}
+{"run": "digest", "t": 31127, "kind": "dbg", "msg": "rank: [india] outlets=4 tier=major wiki=no weight=6 'Torrential rain triggers deadly landslides and flooding across Kerala'"}
+{"run": "digest", "t": 31127, "kind": "dbg", "msg": "rank: [india] outlets=2 tier=major wiki=no weight=4 'Indian boxers and para-athletes record historic medal hauls at Commonwealth Games'"}
+{"run": "digest", "t": 31128, "kind": "dbg", "msg": "rank: [india] outlets=1 tier=notable wiki=no weight=1 'India and China resume Himalayan border trade through Lipulekh and Shipki La passes after six years'"}
+{"run": "digest", "t": 31128, "kind": "dbg", "msg": "rank: [india] outlets=4 tier=notable wiki=no weight=4 'Opposition targets Centre over E20 ethanol blending policy as government defends fuel savings'"}
+{"run": "digest", "t": 31128, "kind": "dbg", "msg": "rank: [india] outlets=2 tier=notable wiki=no weight=2 'Supreme Court Justice Ujjal Bhuyan criticises Collegium for opacity in judicial appointments'"}
+{"run": "digest", "t": 31129, "kind": "dbg", "msg": "rank: [india] outlets=3 tier=notable wiki=no weight=3 'PM Modi inaugurates Rs 5,600 crore Bhogapuram International Airport in Andhra Pradesh'"}
+{"run": "digest", "t": 31129, "kind": "dbg", "msg": "rank: 15 scored, 0 id(s) rejected, 8 kept {'world': 6, 'india': 2}; weights=[14, 11, 11, 8, 7, 5, 10, 6]"}
+{"run": "digest", "t": 31130, "kind": "event", "stage": "stage", "name": "rank", "ms": 6, "ok": true, "error": ""}
+{"run": "digest", "t": 31133, "kind": "dbg", "msg": "wiki: 21 curated event(s); 9 matched a selected story, 12 not covered"}
+{"run": "digest", "t": 31133, "kind": "dbg", "msg": "wiki: NOT COVERED [Armed conflicts and attacks] Middle Eastern crisis — Three Palestinians are reportedly killed in Gaza City, bringing the total casualties to 7 in the past 24 hours."}
+{"run": "digest", "t": 31133, "kind": "dbg", "msg": "wiki: NOT COVERED [Armed conflicts and attacks] Middle Eastern crisis — A Board of Peace official reports that Hamas will disarm its weapons in the coming days."}
+{"run": "digest", "t": 31133, "kind": "dbg", "msg": "wiki: NOT COVERED [Armed conflicts and attacks] Middle Eastern crisis — The Bermuda-flagged LNG tanker Gaslog Shanghai, which was carrying LNG oil from Qatar, is reported to have been among the two vessels hit yesterday in the Strait of Hormuz."}
+{"run": "digest", "t": 31134, "kind": "dbg", "msg": "wiki: NOT COVERED [Armed conflicts and attacks] Middle Eastern crisis — A tanker near Oman is hit by an unknown projectile."}
+{"run": "digest", "t": 31134, "kind": "dbg", "msg": "wiki: NOT COVERED [Armed conflicts and attacks] Middle Eastern crisis — The Houthis in Yemen deny reports of imposing tolls on vessels passing through the Bab-el-Mandeb strait."}
+{"run": "digest", "t": 31134, "kind": "dbg", "msg": "wiki: NOT COVERED [Armed conflicts and attacks] Russo-Ukrainian war — The Washington Post reports that Israeli Prime Minister Benjamin Netanyahu blocked a request by former U.S. Senator Lindsey Graham to transfer an Iron Dome system from the U.S. to Ukraine."}
+{"run": "digest", "t": 31134, "kind": "dbg", "msg": "wiki: NOT COVERED [Armed conflicts and attacks] Russo-Ukrainian war — Ukrainian forces sink a Rosatom-owned container ship in the Black Sea, forcing its 17-member crew to abandon it. Rosatom says it had been transporting civilian goods, including frozen food and construction materials."}
+{"run": "digest", "t": 31134, "kind": "dbg", "msg": "wiki: NOT COVERED [Armed conflicts and attacks] Sudanese civil war — Sudan and Egypt reaches an agreement on a 16-month plan to rehabilitate the Jebel Aulia Dam south of Khartoum, Sudan, including the construction of a temporary bridge, after the dam was damaged in November 2023 during shelling by the Rapid "}
+{"run": "digest", "t": 31134, "kind": "dbg", "msg": "wiki: NOT COVERED [Armed conflicts and attacks] 2026 attack on the Norte de Santander Police Command — A truck bomb explodes beside a police station in Cúcuta, Norte de Santander, Colombia, injuring eight police officers and three civilians."}
+{"run": "digest", "t": 31134, "kind": "dbg", "msg": "wiki: NOT COVERED [Disasters and accidents] 2026 Moscow bombing — At least three people are killed and 15 others are injured in an explosion at a coffeehouse in Moscow, Russia."}
+{"run": "digest", "t": 31134, "kind": "dbg", "msg": "wiki: NOT COVERED [Health and environment] 2026 heat waves — Amidst a heat wave reported by the {{ill|Sudan Meteorological Authority|de|Sudan Meteorological Authority}} in Sudan's Red Sea State, protesters block parts of the main highway connecting Port Sudan and Khartoum in Suakin and Jubayt over se"}
+{"run": "digest", "t": 31134, "kind": "dbg", "msg": "wiki: NOT COVERED [Law and crime] Cyberwarfare during the 2026 Iran war — The U.S. FBI opens an investigation after the U.S. state of Michigan reports a cyberattack on its water systems, including whether Iran was behind the cyberattack, a day after Minnesota reported a similar breach."}
+{"run": "digest", "t": 31327, "kind": "dbg", "msg": "extract: 2850ch https://www.channelnewsasia.com/world/majority-eu-countries-call-talks-over-migrant-influx-ceuta-enclave-6293206"}
+{"run": "digest", "t": 31532, "kind": "dbg", "msg": "extract: 7654ch https://www.aljazeera.com/news/2026/8/1/why-did-ceuta-migrant-mayhem-chill-already-frosty-israel-spain-relations?traffic_source=rss"}
+{"run": "digest", "t": 31728, "kind": "dbg", "msg": "extract: 4331ch https://www.bbc.co.uk/news/articles/cz7d17r455go?at_medium=RSS&at_campaign=rss"}
+{"run": "digest", "t": 31995, "kind": "dbg", "msg": "extract: fetch_html https://www.france24.com/en/europe/20260801-spain-installs-floating-barrier-in-ceuta-after-migration-influx: http=403"}
+{"run": "digest", "t": 35405, "kind": "dbg", "msg": "extract: 4388ch https://www.france24.com/en/europe/20260801-spain-installs-floating-barrier-in-ceuta-after-migration-influx"}
+{"run": "digest", "t": 35540, "kind": "dbg", "msg": "extract: 8509ch https://www.theguardian.com/world/2026/aug/01/spain-pedro-sanchez-calls-for-eu-meeting-ceuta-border-crossing"}
+{"run": "digest", "t": 35803, "kind": "dbg", "msg": "extract: 4568ch https://www.npr.org/2026/08/01/nx-s1-5916393/overnight-russia-kyiv-ukraine-strikes"}
+{"run": "digest", "t": 39376, "kind": "dbg", "msg": "extract: 11069ch https://www.aljazeera.com/video/newsfeed/2026/8/1/at-least-9-people-killed-in-russian-missile-attacks-on-kyiv?traffic_source=rss"}
+{"run": "digest", "t": 39481, "kind": "dbg", "msg": "extract: fetch_html https://www.france24.com/en/europe/20260801-russian-forces-strike-targets-ukraine-odesa-mykolaiv-ports: http=403"}
+{"run": "digest", "t": 44370, "kind": "dbg", "msg": "extract: 13587ch https://www.france24.com/en/europe/20260801-russian-forces-strike-targets-ukraine-odesa-mykolaiv-ports"}
+{"run": "digest", "t": 44590, "kind": "dbg", "msg": "extract: 2808ch https://timesofindia.indiatimes.com/world/europe/video-shows-inferno-after-russian-missile-barrage-leaves-9-dead-in-ukraine/articleshow/132791647.cms"}
+{"run": "digest", "t": 44705, "kind": "dbg", "msg": "extract: 3998ch https://www.bbc.co.uk/news/articles/ce973yvk7pko?at_medium=RSS&at_campaign=rss"}
+{"run": "digest", "t": 45139, "kind": "dbg", "msg": "extract: 2977ch https://www.npr.org/2026/08/01/nx-s1-5916368/nirmal-purja-climbers-dead-avalanche"}
+{"run": "digest", "t": 54825, "kind": "dbg", "msg": "extract: 11109ch https://www.aljazeera.com/video/newsfeed/2026/8/1/record-record-breaking-climber-nirmal-purja-among-those-killed-in-avalanche?traffic_source=rss"}
+{"run": "digest", "t": 55101, "kind": "dbg", "msg": "extract: fetch_html https://www.france24.com/en/video/20260801-a-giant-of-the-industry-purja-leaves-behind-a-legacy-that-inspired-a-generation-to-climb-higher: http=403"}
+{"run": "digest", "t": 58635, "kind": "dbg", "msg": "extract: 13621ch https://www.france24.com/en/video/20260801-a-giant-of-the-industry-purja-leaves-behind-a-legacy-that-inspired-a-generation-to-climb-higher"}
+{"run": "digest", "t": 58764, "kind": "dbg", "msg": "extract: fetch_html https://www.ndtv.com/india-news/elite-mountaineer-nirmal-nims-purja-killed-in-avalanche-on-pok-peak-11852569#publisher=newsstand: http=403"}
+{"run": "digest", "t": 63201, "kind": "dbg", "msg": "extract: 32939ch https://www.ndtv.com/india-news/elite-mountaineer-nirmal-nims-purja-killed-in-avalanche-on-pok-peak-11852569#publisher=newsstand"}
+{"run": "digest", "t": 63314, "kind": "dbg", "msg": "extract: 4494ch https://www.bbc.co.uk/news/articles/clyljq79kdko?at_medium=RSS&at_campaign=rss"}
+{"run": "digest", "t": 63891, "kind": "dbg", "msg": "extract: 5124ch https://www.channelnewsasia.com/world/uefa-concacaf-target-infantino-after-fifa-shelve-world-cup-private-investment-plan-6293201"}
+{"run": "digest", "t": 64018, "kind": "dbg", "msg": "extract: 9766ch https://www.bbc.co.uk/sport/football/articles/c04kr2nv3v3o?at_medium=RSS&at_campaign=rss"}
+{"run": "digest", "t": 64124, "kind": "dbg", "msg": "extract: fetch_html https://www.france24.com/en/sport/20260801-european-football-body-declares-no-confidence-in-fifa-infantino-failed-private-equity-bid: http=403"}
+{"run": "digest", "t": 69807, "kind": "dbg", "msg": "extract: 8995ch https://www.france24.com/en/sport/20260801-european-football-body-declares-no-confidence-in-fifa-infantino-failed-private-equity-bid"}
+{"run": "digest", "t": 70082, "kind": "dbg", "msg": "extract: 3487ch https://www.aljazeera.com/sports/2026/8/1/infantinos-fifa-crisis-what-is-reaction-to-world-cup-investment-u-turn?traffic_source=rss"}
+{"run": "digest", "t": 70199, "kind": "dbg", "msg": "extract: 6801ch https://www.bbc.co.uk/sport/football/articles/c998m4ve0rpo?at_medium=RSS&at_campaign=rss"}
+{"run": "digest", "t": 70397, "kind": "dbg", "msg": "extract: 3916ch https://www.channelnewsasia.com/world/iran-threatens-strike-other-nations-energy-fields-if-us-launches-fresh-attacks-6293236"}
+{"run": "digest", "t": 70691, "kind": "dbg", "msg": "extract: 5655ch https://timesofindia.indiatimes.com/world/us/prepare-to-depart-us-embassies-issue-alert-across-middle-east-amid-iran-tensions/articleshow/132794132.cms"}
+{"run": "digest", "t": 71072, "kind": "dbg", "msg": "extract: 3444ch https://www.livemint.com/news/us-news/top-us-general-warns-pentagon-it-lacks-enough-naval-forces-to-keep-defending-israel-from-iranian-attacks-report-11785594943756.html"}
+{"run": "digest", "t": 71260, "kind": "dbg", "msg": "extract: 4877ch https://www.channelnewsasia.com/world/us-embassies-urge-citizens-consider-departing-middle-east-6292981"}
+{"run": "digest", "t": 71430, "kind": "dbg", "msg": "extract: 4140ch https://www.livemint.com/news/us-news/trump-considering-attacks-on-irans-energy-infrastructure-report-says-11785587578235.html"}
+{"run": "digest", "t": 71543, "kind": "dbg", "msg": "extract: 1629ch https://www.bbc.co.uk/news/articles/c70g132erlko?at_medium=RSS&at_campaign=rss"}
+{"run": "digest", "t": 71853, "kind": "dbg", "msg": "extract: 2690ch https://www.theguardian.com/world/2026/aug/01/at-least-13-dead-as-tourist-plane-crashes-during-flight-over-perus-nazca-lines"}
+{"run": "digest", "t": 71967, "kind": "dbg", "msg": "extract: 2031ch https://www.aljazeera.com/news/2026/8/1/police-say-13-killed-as-small-plane-viewing-nazca-lines-in-peru-crashes?traffic_source=rss"}
+{"run": "digest", "t": 72170, "kind": "dbg", "msg": "extract: 2732ch https://timesofindia.indiatimes.com/india/girls-clothes-torn-heads-broken-cjp-founder-demands-pm-modi-apology-over-police-action-on-july-20th/articleshow/132793056.cms"}
+{"run": "digest", "t": 72443, "kind": "dbg", "msg": "extract: 7599ch https://www.livemint.com/news/india/rahul-gandhi-pappu-yadav-awadhesh-prasad-booked-over-ram-temple-donation-theft-skit-in-parliament-11785599690799.html"}
+{"run": "digest", "t": 72679, "kind": "dbg", "msg": "extract: 4590ch https://www.hindustantimes.com/india-news/abhijeet-dipke-asks-for-pm-modis-apology-over-police-brutality-on-12-year-old-kids-on-july-20-cjp-101785597484320.html"}
+{"run": "digest", "t": 82391, "kind": "dbg", "msg": "extract: 10448ch https://www.aljazeera.com/video/newsfeed/2026/8/1/india-cracks-down-on-protesters-accused-of-abusing-modi?traffic_source=rss"}
+{"run": "digest", "t": 82613, "kind": "dbg", "msg": "extract: fetch_html https://www.ndtv.com/india-news/mockery-of-sanatan-culture-bjp-seeks-fir-against-rahul-gandhi-pappu-yadav-11853250#publisher=newsstand: http=403"}
+{"run": "digest", "t": 86843, "kind": "dbg", "msg": "extract: 4851ch https://www.ndtv.com/india-news/mockery-of-sanatan-culture-bjp-seeks-fir-against-rahul-gandhi-pappu-yadav-11853250#publisher=newsstand"}
+{"run": "digest", "t": 87093, "kind": "dbg", "msg": "extract: 4323ch https://www.thehindu.com/news/national/kerala/incessant-downpour-disrupts-life-in-keralas-kozhikode/article71295292.ece"}
+{"run": "digest", "t": 87327, "kind": "dbg", "msg": "extract: 5425ch https://timesofindia.indiatimes.com/city/thiruvananthapuram/imd-red-alert-in-8-kerala-districts-as-heavy-rains-trigger-landslides-floods-6-killed/articleshow/132792885.cms"}
+{"run": "digest", "t": 87476, "kind": "dbg", "msg": "extract: 5227ch https://www.hindustantimes.com/india-news/kerala-heavy-rain-six-dead-rescue-operations-continue-landslides-idukki-kottayam-101785596280351.html"}
+{"run": "digest", "t": 87897, "kind": "dbg", "msg": "extract: 3407ch https://scroll.in/latest/1094708/assam-flood-toll-rises-to-82?utm_source=rss&utm_medium=public"}
+{"run": "digest", "t": 88160, "kind": "dbg", "msg": "extract: 3440ch https://www.thehindu.com/news/national/kerala/heavy-rain-batters-keralas-kannur-two-missing-26-shifted-to-relief-camp/article71295028.ece"}
+{"run": "digest", "t": 88162, "kind": "event", "stage": "stage", "name": "extract", "ms": 57027, "ok": true, "error": ""}
+{"run": "digest", "t": 88197, "kind": "dbg", "msg": "llm: call #2 model=gemini-3.6-flash label=claims prompt=166761ch"}
+{"run": "digest", "t": 110298, "kind": "dbg", "msg": "llm: claims finish_reason=FinishReason.STOP"}
+{"run": "digest", "t": 110299, "kind": "event", "stage": "llm", "call": 2, "label": "claims", "model": "gemini-3.6-flash", "latency_ms": 22100, "prompt_chars": 166761, "system_chars": 2135, "response_chars": 14760, "finish_reason": "FinishReason.STOP", "malformed_json": false, "json_retries": 0, "max_output_tokens": 32768, "usage": {"prompt_token_count": 41843, "candidates_token_count": 3714, "total_token_count": 47272, "thoughts_token_count": 1715}}
+{"run": "digest", "t": 110300, "kind": "dbg", "msg": "llm: claims: [world] 11 claim(s) from 5 outlet(s) 'Mass migration influx into Spanish enclave of Ceuta triggers European crisis and border controls'"}
+{"run": "digest", "t": 110300, "kind": "dbg", "msg": "llm: claims: [world] 9 claim(s) from 3 outlet(s) 'Russian missile strikes kill nine in Kyiv as Ukraine sinks Russian ship in Black Sea'"}
+{"run": "digest", "t": 110300, "kind": "dbg", "msg": "llm: claims: [world] 7 claim(s) from 2 outlet(s) 'Famed mountaineer Nirmal Purja among climbers killed in Pakistan avalanche'"}
+{"run": "digest", "t": 110301, "kind": "dbg", "msg": "llm: claims: [world] 7 claim(s) from 4 outlet(s) 'UEFA and football bodies declare no confidence in FIFA chief Gianni Infantino over World Cup plan'"}
+{"run": "digest", "t": 110301, "kind": "dbg", "msg": "llm: claims: [world] 8 claim(s) from 3 outlet(s) 'US embassies urge citizens to leave Middle East amid fears of escalating conflict with Iran'"}
+{"run": "digest", "t": 110301, "kind": "dbg", "msg": "llm: claims: [world] 6 claim(s) from 2 outlet(s) 'Tourist plane viewing Nazca Lines crashes in Peru, killing 13'"}
+{"run": "digest", "t": 110301, "kind": "dbg", "msg": "llm: claims: [india] 5 claim(s) from 4 outlet(s) 'Political row intensifies over youth protests, police action, and opposition skit in Parliament'"}
+{"run": "digest", "t": 110301, "kind": "dbg", "msg": "llm: claims: [india] 7 claim(s) from 3 outlet(s) 'Torrential rain triggers deadly landslides and flooding across Kerala'"}
+{"run": "digest", "t": 110301, "kind": "dbg", "msg": "llm: extract_claims -> 8/8 cluster(s), 60 claim(s) total, 0 cluster(s) rejected, 0 claim(s) rejected"}
+{"run": "digest", "t": 110302, "kind": "event", "stage": "stage", "name": "claims", "ms": 22140, "ok": true, "error": ""}
+{"run": "digest", "t": 110337, "kind": "dbg", "msg": "llm: call #3 model=gemini-3.6-flash label=write prompt=11582ch"}
+{"run": "digest", "t": 157710, "kind": "dbg", "msg": "llm: write finish_reason=FinishReason.STOP"}
+{"run": "digest", "t": 157711, "kind": "event", "stage": "llm", "call": 3, "label": "write", "model": "gemini-3.6-flash", "latency_ms": 47372, "prompt_chars": 11582, "system_chars": 2535, "response_chars": 15272, "finish_reason": "FinishReason.STOP", "malformed_json": false, "json_retries": 0, "max_output_tokens": 32768, "usage": {"prompt_token_count": 3420, "candidates_token_count": 3646, "total_token_count": 13173, "thoughts_token_count": 6107}}
+{"run": "digest", "t": 157717, "kind": "dbg", "msg": "llm: write_stories -> 8 story/stories written, 0 dropped, 0 thin-sourced"}
+{"run": "digest", "t": 157718, "kind": "event", "stage": "stage", "name": "write", "ms": 47415, "ok": true, "error": ""}
+{"run": "digest", "t": 157719, "kind": "dbg", "msg": "digest: wrote /home/runner/work/follow-news/follow-news/data/2026-08-02.json with 8 story/stories"}
+{"run": "digest", "t": 157779, "kind": "event", "stage": "stage", "name": "render", "ms": 59, "ok": true, "error": ""}
+{"run": "digest", "t": 157779, "kind": "dbg", "msg": "digest: 3 LLM call(s) this run"}
+{"run": "digest", "t": 157780, "kind": "event", "stage": "tracer", "msg": "capture finished", "ok": true, "ms": 157780, "bytes": 12118612}
+{"run": "follow", "t": 0, "kind": "follow", "stage": "tracer", "msg": "capture started", "level": 1, "day": "2026-08-02"}
+{"run": "follow", "t": 3, "kind": "dbg", "msg": "extract: cache enabled at /home/runner/work/follow-news/follow-news/cache/extract.json (121 url(s))"}
+{"run": "follow", "t": 350, "kind": "dbg", "msg": "follow: run -> 3 existing record(s), 3 owner issue(s) in scope"}
+{"run": "follow", "t": 357, "kind": "dbg", "msg": "follow: sweep -> 0 researching, 1 due; budget grounded=18 schema=14"}
+{"run": "follow", "t": 379, "kind": "dbg", "msg": "dossier: #3 CAPPED at 54 call(s); 631 question(s) left in the frontier"}
+{"run": "follow", "t": 379, "kind": "event", "stage": "dossier", "issue": 3, "verdict": "capped", "calls": 54, "frontier_left": 631}
+{"run": "follow", "t": 394, "kind": "dbg", "msg": "follow: #3 -> capped"}
+{"run": "follow", "t": 408, "kind": "dbg", "msg": "follow: wrote /home/runner/work/follow-news/follow-news/followed/1/record.json"}
+{"run": "follow", "t": 409, "kind": "dbg", "msg": "follow: wrote /home/runner/work/follow-news/follow-news/followed/2/record.json"}
+{"run": "follow", "t": 411, "kind": "dbg", "msg": "follow: wrote /home/runner/work/follow-news/follow-news/followed/3/record.json"}
+{"run": "follow", "t": 428, "kind": "dbg", "msg": "follow: run -> done, 0 grounded call(s) this run"}
+{"run": "follow", "t": 429, "kind": "event", "stage": "tracer", "msg": "capture finished", "ok": true, "ms": 429, "bytes": 15042}
