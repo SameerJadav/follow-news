@@ -80,6 +80,34 @@ def test_via_jina_strips_markdown_header(monkeypatch):
     assert result == "Actual article text here."
 
 
+def test_via_jina_never_sends_a_browser_user_agent(monkeypatch):
+    """Measured 2026-07-31: r.jina.ai 403s `feeds.UA` (a Chrome string) and
+    200s anything else, on the same URL in the same minute. Sending UA here
+    cost the digest every escalation it made for two days — 13 of 45 articles
+    with no usable body — and looked exactly like the outlets blocking us,
+    because the proxy is only ever reached for outlets that already did."""
+    import extract
+
+    sent = {}
+
+    class FakeResp:
+        status_code = 200
+        text = "Markdown Content:\nBody."
+
+    def fake_get(url, headers=None, **kw):
+        sent.update(headers or {})
+        return FakeResp()
+
+    monkeypatch.setattr("extract.requests.get", fake_get)
+    monkeypatch.setattr("extract.time.sleep", lambda *_: None)
+    extract.via_jina("https://www.ndtv.com/india-news/x")
+
+    ua = sent.get("User-Agent", "")
+    assert ua == extract.JINA_UA
+    assert ua != extract.UA
+    assert "Mozilla" not in ua and "Chrome" not in ua
+
+
 # ---------- the URL-keyed cache (dossier.md §10) ----------
 
 

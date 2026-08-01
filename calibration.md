@@ -238,6 +238,102 @@ succeeds unchanged, 90s is too tight. Also whether Google ever starts attaching
 violation details to the Gemini 3 grounding refusal, which would make it a clean
 `limit: 0` and let `is_opaque_quota` retire.
 
+## 2026-08-01 — Follow froze, and the proxy started 403ing us
+
+Five committed days of production data (`ANALYSIS-2026-07-31.md`, read against
+`data/`, `debug/`, `followed/` at `2b2e02f`). The digest itself is healthy —
+`health` exits 0, 14/14 feeds, exactly 3 LLM calls a morning, zero stories
+dropped at the anchor gate. Everything below was invisible to the project's own
+instruments; each is fixed here with a regression test that fails without it.
+
+**Follow #3 was frozen, and said "complete".** `followed/3/dossier.json`:
+`research_state: complete`, `rounds: 10`, `calls: 54`, **631 open questions**,
+frozen across three CI commits while `docs/follow-3.html` rendered "The full
+picture". It was out of lifetime budget — `54 + write_reserve(154) = 61 >= 60`,
+so `research()` took the `call_ceiling` branch, wrote `capped` to disk, and
+returned it. `_update_follow` discarded the return value and wrote `complete`
+over it in the same call stack. All three of 2026-07-31's runs are identical in
+`trace.jsonl`: `dossier: #3 CAPPED at 54 call(s)` immediately followed by
+`follow: #3 -> quiet`, with the grounded pool sitting untouched at 18/18. The
+tracer was right; the state that reached the page was not.
+
+**Why 54 calls bought so little: the gap detector had no upper bound.** #3's
+span is 2015-05-01 → 2026-07-28 — 587 weekly buckets, entries in 40. With a
+median of 0 the density floor falls back to 0.34, so *every empty week clears
+it*: `gap_questions()` returned **547 questions**, and 616 of the 631 in the
+frontier were "what happened in this empty week of 2017". They score 0.75,
+second only to the daily delta, so `pop_round` fed them to Pass C ahead of
+almost everything. Rounds 6-10 spent 22 calls for 97 entries with the frontier
+pinned above 600; at ~9 drained per round, emptying it needed ~70 more rounds
+against a ceiling 6 calls away. And because `saturated()` requires the detector
+to be *clean*, the loop-until-dry exit was dead code for any long-span story —
+research could only ever end on a ceiling.
+
+**`STALE_DAYS` was inverted.** The `_is_closing` check sat after the quiet
+path's early return, so it was reachable only when research had *found*
+something. A story that went silent returned early every day and never closed;
+a story that came back after a fortnight closed on the news that proved it
+hadn't, labelled `kind: "final"`. Combined with the above, #3 could neither
+update nor close.
+
+**`r.jina.ai` now 403s a browser User-Agent.** 2026-07-31: 13 escalations, 13
+returning 0 characters; 9 articles ended with no body at all (4 NDTV, 5 France
+24), 4 more under the 600-char floor — 13 of 45 articles, 29% of the day.
+2026-07-30 the same shape; 07-27/28/29 fine, so it started around 07-30.
+Isolated by probing one NDTV URL three ways, then re-verified live today:
+
+| UA sent to `r.jina.ai` | result |
+| --- | --- |
+| `feeds.UA` (Chrome 126) | **403** |
+| none / curl's own / `python-requests/2.32.3` / `JINA_UA` | **200**, 22.8 KB |
+
+The digest degraded honestly — those articles were labelled `(SUMMARY ONLY)`
+and counted in `source_kinds`, and no claim was invented — but claims then rest
+on a 400-char RSS blurb. Summary-sourced claims went 0, 0, 3, **7** across
+07-28→07-31, and 07-31's India lead published on 2 outlets because the four
+NDTV articles on exactly that story all extracted 0 chars.
+
+### Dials turned
+
+```
+GAP_CONTEXT_WEEKS   (new) = 8    a sparse week is only a hole if the story is
+                                 active within 8 weeks on BOTH sides, so nothing
+                                 is raised for a hole wider than 15 weeks
+MAX_GAP_QUESTIONS   (new) = 12   per detector run, most recent first, and the
+                                 held-back count is logged
+GAP_DENSITY_RATIO    0.34 -> 0.34   unchanged; the ratio was never the problem
+```
+
+Measured against the committed dossier #3: **547 gap questions → 44 bracketed →
+12 admitted per run**, with `gap detector held back 32 of 44 question(s)` in the
+log. dossier.md §7's motivating case (a seven-week silence mid-story) still
+raises all eight of its weeks, and the existing tests for it pass unchanged.
+`gap_questions()` also now takes the frontier's `asked` keys, which is what
+makes `saturated()` mean "every hole we can see has been asked about" rather
+than "every hole has been filled" — a week that stayed empty after we searched
+it is answered, not outstanding.
+
+### Code fixed, not dialled
+
+- `_update_follow` honours `research()`'s verdict; a `capped` dossier stays
+  capped and short-circuits the next day's update instead of admitting a delta
+  question it can never pop.
+- `_close_if_stale()` runs on the quiet paths and never after a development.
+  Staleness is measured from `max(last_development, started_at)` so a story
+  followed off an archive page is not born stale. No timeline entry is appended
+  on a quiet close — the last real update is relabelled `final`.
+- `extract.JINA_UA` for the proxy; `UA` still for publisher pages.
+
+`watch next:` (1) `followed/3/dossier.json` should flip to `capped` on the next
+run and the page should show "Research paused" — it self-heals in one run, no
+migration needed; #3 then closes by `STALE_DAYS` from its last real development.
+(2) `jina_fired` vs `jina yielded>0 chars` in `debug/<date>/extract/index.json`
+— expect them equal again, and `source_kinds.summary` back to 0. (3) Whether
+`saturated()` ever actually fires now on a long-span follow, or whether
+`MAX_ROUNDS`/the lifetime ceiling still gets there first (F5 in the analysis:
+`MAX_ROUNDS` exhaustion still reports `complete` with no `dbg()` line, which is
+the next silent cap to close).
+
 ## Starting dial values (2026-07-27, uncalibrated)
 
 `dossier.md` §15 deliberately left these unset; they are the first thing to

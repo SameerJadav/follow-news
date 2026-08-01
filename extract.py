@@ -35,6 +35,14 @@ from tracer import dbg
 
 MIN_CHARS = 600  # below this, escalate to Jina
 JINA_PAUSE = 3.0  # seconds; r.jina.ai keyless is rate-limited to 20 RPM
+# r.jina.ai REJECTS browser-like User-Agents. Measured 2026-07-31 on the same
+# NDTV URL: `feeds.UA` (a Chrome 126 string) -> 403; curl's own UA, no UA at
+# all, `python-requests/2.32.3` and the string below -> 200. The regression
+# started around 2026-07-30 and cost the digest every escalation it made (13
+# fired, 13 empty, 29% of that day's articles with no usable body) while
+# looking exactly like an outlet blocking us. `UA` is still what publisher
+# pages are fetched with — this string is for the proxy alone.
+JINA_UA = "follow-news/1.0 (+https://sameerjadav.github.io/follow-news/)"
 PARA_MIN = 60  # a <p> shorter than this is furniture (nav/share links), not prose
 ARTICLE_CAP = 5000  # chars kept per article for the write pass
 
@@ -143,9 +151,11 @@ def from_paragraphs(page_html: str) -> str:
 
 def via_jina(url: str) -> str:
     """Last-resort escalation through the free, keyless r.jina.ai reader
-    proxy. Used only when the normal fetch failed or returned too little."""
+    proxy. Used only when the normal fetch failed or returned too little.
+
+    Sends JINA_UA, never UA — see the note there; a browser UA is a 403."""
     try:
-        resp = requests.get(f"https://r.jina.ai/{url}", headers={"User-Agent": UA}, timeout=60)
+        resp = requests.get(f"https://r.jina.ai/{url}", headers={"User-Agent": JINA_UA}, timeout=60)
         if resp.status_code != 200:
             dbg(f"extract: via_jina {url}: http={resp.status_code}")
             return ""

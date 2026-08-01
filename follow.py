@@ -428,6 +428,37 @@ def _is_closing(last_development: str, today: date) -> bool:
     return (today - last_dev).days >= STALE_DAYS
 
 
+def _close_if_stale(n: int, record: dict, today: date) -> bool:
+    """Retire a follow that has gone STALE_DAYS without a development.
+
+    This belongs on the QUIET path, not the update path. It used to be checked
+    only after an update had produced prose, which inverted the rule it exists
+    to enforce: a story that went silent for a fortnight returned early every
+    day and never closed, while a story that came back to life after a fortnight
+    closed on the very news that proved it hadn't. Measured on follow #3, which
+    by 2026-07-31 could neither update nor close.
+
+    No timeline entry is appended — a quiet day has no prose to publish. The
+    last update already on the page becomes the final one, and is labelled so."""
+    # A follow cannot be stale before it existed. `last_development` starts as
+    # the ORIGIN DIGEST's date, so a story followed from the archive would
+    # otherwise be born stale and close on its first quiet day.
+    started = str(record.get("started_at") or "")[:10]
+    since = max(record["last_development"], started) if _DATE_RE.match(started) else record["last_development"]
+    if not _is_closing(since, today):
+        return False
+    now = _now()
+    record["status"] = "closed"
+    record["close_reason"] = "no_development"
+    record["closed_at"] = _iso(now)
+    timeline = record.get("timeline") or []
+    if timeline:
+        timeline[-1]["kind"] = "final"
+    close_issue(n, f"No new developments for {STALE_DAYS} days — closing. Final update: {BASE_URL}follow-{n}.html")
+    dbg(f"follow: #{n} -> closed, no development for {STALE_DAYS}+ days")
+    return True
+
+
 def _sweep(
     records: dict[int, dict],
     followed_dir: Path,
@@ -547,8 +578,23 @@ def _update_follow(
     round, then prose covering only what it added.
 
     "Quiet" is mechanical now — zero new ledger entries — rather than a model
-    judgement about whether today felt quiet."""
+    judgement about whether today felt quiet. A day on which no research could
+    run is NOT quiet: see the `capped` handling below."""
     before = len(dsr["ledger"])
+
+    # A follow out of lifetime budget cannot research, so there is nothing to
+    # ask and nothing to write. Ask anyway and every day looks quiet, the page
+    # keeps claiming to be complete, and the frontier grows a delta question a
+    # day that can never be popped — which is exactly what follow #3 did three
+    # times a day from 2026-07-30 on.
+    if dsr.get("research_state") == "capped":
+        # No save: the dossier on disk already says exactly this, and rewriting
+        # it would touch `checkpoint.updated_at` and commit a no-op diff three
+        # times a day for the rest of the follow's life.
+        dbg(f"follow: #{n} -> capped at {dsr['calls']} call(s); no further research possible")
+        _close_if_stale(n, record, today)
+        return
+
     dsr["research_state"] = "researching"
     dsr["rounds"] = max(0, dsr["rounds"])
     dossier.admit(
@@ -564,39 +610,42 @@ def _update_follow(
     # One round only: a daily update is a delta, not a re-research.
     saved_max, dossier.MAX_ROUNDS = dossier.MAX_ROUNDS, dsr["rounds"] + 1
     try:
-        dossier.research(followed_dir, n, dsr, corpus, budget)
+        state = dossier.research(followed_dir, n, dsr, corpus, budget)
     finally:
         dossier.MAX_ROUNDS = saved_max
 
+    # research()'s verdict is the truth about this dossier and overwriting it
+    # is a silent cap. `capped` in particular is written to disk by research()
+    # itself, so discarding it here (as this function did until 2026-08-01) put
+    # "complete" on a page whose research had hit its lifetime ceiling with 631
+    # questions still open.
+    settled = "capped" if state == "capped" else "complete"
+
     if len(dsr["ledger"]) == before:
-        dbg(f"follow: #{n} -> quiet, no new ledger entries")
-        dsr["research_state"] = "complete"
+        dbg(f"follow: #{n} -> {'capped' if state == 'capped' else 'quiet, no new ledger entries'}")
+        dsr["research_state"] = settled
         dossier.save(followed_dir, n, dsr, corpus, "DONE")
+        _close_if_stale(n, record, today)
         return
 
     block = dossier.write_update(followed_dir, n, dsr, corpus, budget)
-    dsr["research_state"] = "complete"
+    dsr["research_state"] = settled
     if block is None:
         dossier.save(followed_dir, n, dsr, corpus, "DONE")
         return
 
-    now = _now()
-    is_closing = _is_closing(record["last_development"], today)
-    entry = {**block, "generated_at": _iso(now)}
+    # There IS a development today, so the story is not stale — whatever
+    # `last_development` said a moment ago. Closing here is what made a
+    # fortnight of silence followed by real news close the follow and label
+    # that news "final".
+    entry = {**block, "generated_at": _iso(_now())}
     entry["date"] = today.isoformat()
     entry["date_label"] = _date_label(today)
-    entry["kind"] = "final" if is_closing else "development"
+    entry["kind"] = "development"
     record["timeline"] = (record.get("timeline") or []) + [entry]
     record["last_development"] = today.isoformat()
     dsr["written_through"] = dsr["rounds"]
     dossier.save(followed_dir, n, dsr, corpus, "DONE")
-
-    if is_closing:
-        record["status"] = "closed"
-        record["close_reason"] = "no_development"
-        record["closed_at"] = _iso(now)
-        close_issue(n, f"No new developments for {STALE_DAYS} days — closing. Final update: {BASE_URL}follow-{n}.html")
-        dbg(f"follow: #{n} -> closed, no development for {STALE_DAYS}+ days")
 
 
 def run(data_dir: Path, followed_dir: Path, docs_dir: Path, today: date, only_issue: int | None = None) -> None:
