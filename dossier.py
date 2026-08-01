@@ -46,6 +46,7 @@ from __future__ import annotations
 import json
 import math
 import re
+from collections.abc import Iterable
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
@@ -153,6 +154,20 @@ MAX_URLS_PER_CONTEXT_CALL = 20  # url_context API maximum
 MAX_FETCH_PER_ROUND = 25  # extract.py fetches per round (wall clock, not quota)
 PHASED_WRITE_ENTRIES = 30  # ledger size above which prose is written per phase
 GAP_DENSITY_RATIO = 0.34  # how sparse a week must be to raise a gap question
+# A hole only counts as a hole if the story is actually running on BOTH sides of
+# it. Without this the detector reads an 11-year span as thousands of "gaps":
+# follow #3 spanned 2015-05-01 to 2026-07-28 — 587 weekly buckets, 40 of them
+# with any entry — and raised 547 gap questions, 616 of the 631 left in its
+# frontier. Every round then spent its calls on empty weeks in 2015-2019 while
+# `saturated()` (which requires the detector to be clean) could never fire, so
+# research could only ever end on a ceiling. Bracketing caps the widest hole the
+# detector will look at: with a hole W weeks wide, a week inside it needs an
+# active week within GAP_CONTEXT_WEEKS before AND after, so nothing at all is
+# raised once W > 2*GAP_CONTEXT_WEEKS - 1. Eight weeks keeps dossier.md §7's
+# motivating case — a seven-week silence mid-story — and drops #3 from 547 to
+# 44 (measured 2026-08-01 against the committed dossier).
+GAP_CONTEXT_WEEKS = 8
+MAX_GAP_QUESTIONS = 12  # per detector run, most recent first; a backstop, logged when it bites
 MIN_ENTRY_COVERAGE = 0.6  # share of ledger entries the prose must actually cite
 MERGE_SIMILARITY = 0.5  # Jaccard floor for calling two entries the same event
 MAX_RESEARCH_SECONDS = 45 * 60  # wall-clock guard on one follow's research loop
@@ -371,12 +386,25 @@ def recompute_span(ledger: list[dict]) -> dict:
 # ---------- the detectors (dossier.md §7) ----------
 
 
-def gap_questions(ledger: list[dict], span: dict) -> list[dict]:
+def gap_questions(ledger: list[dict], span: dict, asked: Iterable[str] | None = None) -> list[dict]:
     """Weeks that are sparse relative to the story's OWN median density become
     questions. The failing run's implied ledger was May 3, May 12, June 6,
     nothing for seven weeks, then July 24-27 — and a seven-week hole in a
     rapidly escalating national story is not a quiet period. Detecting it takes
-    arithmetic, not judgement, which is the entire point."""
+    arithmetic, not judgement, which is the entire point.
+
+    A hole must be interior: a sparse week only becomes a question if the story
+    is active within GAP_CONTEXT_WEEKS on both sides of it (see the note there).
+    The decade of silence before a story's first precedent is not a hole in the
+    record, it is the story not having started yet, and treating it as one is
+    what made saturation unreachable on the first long-span follow.
+
+    `asked` is the frontier's spent-question keys. Passing it does two things:
+    it stops MAX_GAP_QUESTIONS being spent every round on the same already-asked
+    weeks, hiding the ones behind them; and it is what lets `saturated()` mean
+    "every hole we can see has been asked about" rather than "every hole has
+    been filled" — a week that stayed empty after we searched it is answered,
+    not outstanding."""
     start_s, end_s = span.get("start"), span.get("end")
     if not start_s or not end_s:
         return []
@@ -404,21 +432,36 @@ def gap_questions(ledger: list[dict], span: dict) -> list[dict]:
     if median <= 0:
         median = max(1, sum(counts) // max(1, len(counts)))
     floor = median * GAP_DENSITY_RATIO
+    active = {i for i, count in buckets.items() if count > floor}
 
+    def _bracketed(i: int) -> bool:
+        before = range(max(0, i - GAP_CONTEXT_WEEKS), i)
+        after = range(i + 1, min(weeks, i + GAP_CONTEXT_WEEKS + 1))
+        return any(j in active for j in before) and any(j in active for j in after)
+
+    spent = set(asked or ())
     out: list[dict] = []
     for i in sorted(buckets):
-        if buckets[i] > floor:
+        if i in active or not _bracketed(i):
             continue
         w_start = start + timedelta(days=7 * i)
         w_end = min(w_start + timedelta(days=6), end)
-        out.append(
-            _question(
-                f"What happened in this story between {w_start.isoformat()} and "
-                f"{w_end.isoformat()}? The record is nearly empty for that period.",
-                origin="gap",
-                score=0.75,
-            )
+        question = _question(
+            f"What happened in this story between {w_start.isoformat()} and "
+            f"{w_end.isoformat()}? The record is nearly empty for that period.",
+            origin="gap",
+            score=0.75,
         )
+        if normalise(question["text"]) in spent:
+            continue
+        out.append(question)
+
+    if len(out) > MAX_GAP_QUESTIONS:
+        # Most recent first: on a live story the near past is what a reader is
+        # about to be told about. The rest are not lost — the detector runs
+        # again every round, and `asked` moves the window along.
+        dbg(f"dossier: gap detector held back {len(out) - MAX_GAP_QUESTIONS} of {len(out)} question(s)")
+        out = out[-MAX_GAP_QUESTIONS:]
     return out
 
 
@@ -592,7 +635,7 @@ def saturated(dsr: dict) -> bool:
     clear — a lean round with a seven-week hole still open is not saturation."""
     if dsr.get("lean_rounds", 0) < SATURATION_ROUNDS:
         return False
-    if gap_questions(dsr["ledger"], dsr["span"]):
+    if gap_questions(dsr["ledger"], dsr["span"], dsr["questions"]["asked"]):
         return False
     if entity_asymmetry_questions(dsr["entities"]):
         return False
@@ -1556,7 +1599,7 @@ def research(followed_dir: Path, issue: int, dsr: dict, corpus: dict, budget: Bu
             dbg(f"dossier: #{issue} skipped Pass E — schema pool exhausted")
 
         dsr["ledger"] = assign_phases(dsr["ledger"])
-        admit(dsr["questions"], gap_questions(dsr["ledger"], dsr["span"]))
+        admit(dsr["questions"], gap_questions(dsr["ledger"], dsr["span"], dsr["questions"]["asked"]))
         admit(dsr["questions"], entity_asymmetry_questions(dsr["entities"]))
         admit(dsr["questions"], role_questions(dsr["ledger"], dsr["entities"]))
 

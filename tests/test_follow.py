@@ -265,6 +265,128 @@ def test_a_closed_follow_is_never_researched_again(monkeypatch, tmp_path):
     assert follow._sweep(records, tmp_path, date(2026, 7, 27), budget) == []
 
 
+# ---------- the daily update: capped, quiet, and closing ----------
+#
+# All three regressions here were live on 2026-07-31 and cost follow #3 three
+# no-op runs a day while its page claimed to be a finished, current story.
+
+
+def _updatable(tmp_path, monkeypatch, issue: int = 7):
+    """An already-researched follow, ready for a daily update pass. Every path
+    out of Gemini and GitHub is stubbed; only follow.py's own logic runs."""
+    import dossier
+
+    dsr = dossier.new_dossier(issue, "Some story")
+    dsr["research_state"] = "complete"
+    dsr["rounds"] = 4
+    dossier.save(tmp_path, issue, dsr, {}, "DONE")
+    closed: list[int] = []
+    monkeypatch.setattr(follow, "close_issue", lambda n, *a, **kw: closed.append(n))
+    return dsr, closed
+
+
+def test_a_capped_dossier_is_never_relabelled_complete(tmp_path, monkeypatch):
+    """CLAUDE.md: "A capped dossier reports itself as capped", and "no silent
+    caps". research() writes `capped` to disk and _update_follow used to
+    discard the return value and overwrite it two lines later — which is how
+    follow #3 rendered "The full picture" with 631 questions still open."""
+    import dossier
+
+    dsr, _closed = _updatable(tmp_path, monkeypatch)
+    record = _record(7, last_development="2026-07-30")
+    monkeypatch.setattr(follow.dossier, "research", lambda *a, **kw: "capped")
+
+    budget = dossier.Budget(tmp_path / "_budget" / "2026-07-31.json")
+    follow._update_follow(tmp_path, 7, record, dsr, {}, date(2026, 7, 31), budget)
+
+    assert dsr["research_state"] == "capped"
+    assert record["status"] == "active"  # capped, but only one day quiet
+
+
+def test_a_capped_dossier_does_not_research_again(tmp_path, monkeypatch):
+    """Out of lifetime budget means there is nothing to ask. Asking anyway
+    admitted a delta question a day that could never be popped."""
+    import dossier
+
+    dsr, _closed = _updatable(tmp_path, monkeypatch)
+    dsr["research_state"] = "capped"
+
+    def explode(*a, **kw):
+        raise AssertionError("a capped dossier must not start another round")
+
+    monkeypatch.setattr(follow.dossier, "research", explode)
+
+    budget = dossier.Budget(tmp_path / "_budget" / "2026-07-31.json")
+    follow._update_follow(tmp_path, 7, _record(7), dsr, {}, date(2026, 7, 31), budget)
+    assert dsr["research_state"] == "capped"
+
+
+def test_a_quiet_fortnight_closes_the_follow(tmp_path, monkeypatch):
+    """The stale check used to sit AFTER the quiet-path return, so a story that
+    went genuinely silent returned early every day and never closed."""
+    import dossier
+
+    dsr, closed = _updatable(tmp_path, monkeypatch)
+    record = _record(7, last_development="2026-07-20", started_at="2026-07-20T00:00:00Z",
+                     timeline=[{"date": "2026-07-20", "kind": "development", "body": "x"}])
+    monkeypatch.setattr(follow.dossier, "research", lambda *a, **kw: "complete")
+
+    budget = dossier.Budget(tmp_path / "_budget" / "2026-08-03.json")
+    follow._update_follow(tmp_path, 7, record, dsr, {}, date(2026, 8, 3), budget)
+
+    assert record["status"] == "closed"
+    assert record["close_reason"] == "no_development"
+    assert closed == [7]
+    # No prose was written today, so no entry is appended; the last real
+    # update becomes the final one.
+    assert len(record["timeline"]) == 1
+    assert record["timeline"][-1]["kind"] == "final"
+
+
+def test_news_after_a_long_silence_does_not_close_the_follow(tmp_path, monkeypatch):
+    """The inverted half of the same bug: a fortnight of silence followed by a
+    real development used to close the follow and label that development
+    "final". A development is proof the story is alive."""
+    import dossier
+
+    dsr, closed = _updatable(tmp_path, monkeypatch)
+    record = _record(7, last_development="2026-07-20", started_at="2026-07-20T00:00:00Z")
+
+    def research(followed_dir, n, d, corpus, budget):
+        d["ledger"].append({"id": 1, "date": "2026-08-03", "text": "Something happened"})
+        return "complete"
+
+    monkeypatch.setattr(follow.dossier, "research", research)
+    monkeypatch.setattr(
+        follow.dossier, "write_update",
+        lambda *a, **kw: {"body": "An update.", "markers": [], "sources": []},
+    )
+
+    budget = dossier.Budget(tmp_path / "_budget" / "2026-08-03.json")
+    follow._update_follow(tmp_path, 7, record, dsr, {}, date(2026, 8, 3), budget)
+
+    assert record["status"] == "active"
+    assert closed == []
+    assert record["timeline"][-1]["kind"] == "development"
+    assert record["last_development"] == "2026-08-03"
+
+
+def test_a_follow_started_from_an_archived_digest_is_not_born_stale(tmp_path, monkeypatch):
+    """last_development starts as the ORIGIN DIGEST's date. Following a story
+    off an archive page a month old must not close it on day one."""
+    import dossier
+
+    dsr, closed = _updatable(tmp_path, monkeypatch)
+    record = _record(7, last_development="2026-06-01", started_at="2026-07-31T00:00:00Z")
+    monkeypatch.setattr(follow.dossier, "research", lambda *a, **kw: "complete")
+
+    budget = dossier.Budget(tmp_path / "_budget" / "2026-08-01.json")
+    follow._update_follow(tmp_path, 7, record, dsr, {}, date(2026, 8, 1), budget)
+
+    assert record["status"] == "active"
+    assert closed == []
+
+
 # ---------- storage: the directory layout and its legacy fallback ----------
 
 

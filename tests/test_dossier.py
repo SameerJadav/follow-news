@@ -17,7 +17,7 @@ The fixtures deliberately reproduce the 2026-07-27 exam-leak failure
 from __future__ import annotations
 
 import json
-from datetime import date
+from datetime import date, timedelta
 
 import dossier
 
@@ -79,6 +79,56 @@ def test_gap_detector_is_quiet_on_an_evenly_covered_story():
 
 def test_gap_detector_handles_an_empty_or_undated_ledger():
     assert dossier.gap_questions([], {"start": None, "end": None}) == []
+
+
+def test_gap_detector_ignores_the_years_before_a_story_started():
+    """Measured on follow #3 (2026-07-31): span 2015-05-01 to 2026-07-28 is 587
+    weekly buckets with entries in 40 of them, and the detector raised 547 gap
+    questions — 616 of the 631 left in its frontier were "what happened in this
+    empty week of 2017". Rounds burned their calls there, `saturated()` could
+    never fire, and research could only ever end on a ceiling.
+
+    A decade of silence before the story's first precedent is not a hole in the
+    record. Only a hole with the story running on both sides of it is."""
+    ledger = (
+        [_entry(i, f"2015-05-{d:02d}", f"precedent {d}") for i, d in enumerate((1, 4, 8), start=1)]
+        + [_entry(10 + i, f"2026-07-{d:02d}", f"event {d}") for i, d in enumerate((1, 3, 6, 9), start=1)]
+    )
+    span = dossier.recompute_span(ledger)
+    questions = dossier.gap_questions(ledger, span)
+
+    assert questions == [], "an eleven-year run-up is not a gap in the record"
+
+
+def test_gap_detector_is_capped_and_takes_the_most_recent_holes():
+    """A backstop under the bracketing: whatever the shape of the ledger, one
+    detector run can never flood the frontier."""
+    # Every fourth week has an entry, for two years: interior holes throughout.
+    ledger = [
+        _entry(i, (date(2024, 1, 1) + timedelta(days=28 * i)).isoformat(), f"event {i}")
+        for i in range(26)
+    ]
+    span = dossier.recompute_span(ledger)
+    questions = dossier.gap_questions(ledger, span)
+
+    assert len(questions) == dossier.MAX_GAP_QUESTIONS
+    dates = [q["text"].split()[6] for q in questions]
+    assert dates == sorted(dates)
+    assert dates[-1] > "2025-06-01", "the cap must keep the most recent holes, not the oldest"
+
+
+def test_an_asked_gap_question_is_not_raised_again():
+    """A week that stayed empty after we searched it is answered, not
+    outstanding. Without this the same weeks fill the cap every round, hiding
+    the ones behind them — and `saturated()` can never come true, because it
+    would require every hole to be FILLED rather than asked about."""
+    ledger = _exam_leak_ledger()
+    span = dossier.recompute_span(ledger)
+    first = dossier.gap_questions(ledger, span)
+    assert first
+
+    asked = [dossier.normalise(q["text"]) for q in first]
+    assert dossier.gap_questions(ledger, span, asked) == []
 
 
 def test_span_is_recomputed_from_the_ledger():

@@ -282,6 +282,7 @@ job), `render.yml` (push-triggered re-render, no API key), `follow.yml`
 | `CRITIC_EVERY` | `dossier.py` | how often the completeness critic spends a grounded call |
 | `MAX_QUESTION_DEPTH`, `MIN_QUESTION_SCORE` | `dossier.py` | the drift guards on recursive research |
 | `GAP_DENSITY_RATIO` | `dossier.py` | how sparse a week must be to raise a gap question |
+| `GAP_CONTEXT_WEEKS`, `MAX_GAP_QUESTIONS` | `dossier.py` | how close the story must still be running on both sides of a hole for it to count, and the per-run ceiling on gap questions |
 | `MIN_ENTRY_COVERAGE` | `dossier.py` | share of the ledger the prose must actually cite |
 | `MERGE_SIMILARITY` | `dossier.py` | Jaccard floor for calling two entries the same event |
 | `PHASED_WRITE_ENTRIES` | `dossier.py` | ledger size above which prose is written per phase |
@@ -345,6 +346,28 @@ to the owner before it ships, per `decisions.md`.
   boilerplate). If TOI yields under ~1,000 chars, extraction is broken.
 - NDTV 403s a normal User-Agent; `extract.py` escalates to the free, keyless
   `r.jina.ai` reader proxy (20 RPM) only when the normal fetch falls short.
+- **The proxy wants the opposite User-Agent to the publishers.** `r.jina.ai`
+  403s a browser UA — measured 2026-07-31, same URL same minute: `feeds.UA`
+  (Chrome 126) → 403, no UA / curl's own / `python-requests` / `extract.JINA_UA`
+  → 200. `via_jina()` sends `JINA_UA`; direct publisher fetches still send `UA`.
+  Sending `UA` to the proxy cost 13 of 45 articles on 2026-07-31 and looked
+  exactly like the outlets blocking us, because the proxy is only ever reached
+  for outlets that already did. Symptom to grep for:
+  `extract: via_jina ...: http=403` on every escalation in a run.
+- **`_update_follow` must honour `dossier.research()`'s return value.** It is
+  the dossier's own verdict and it is already on disk; discarding it and writing
+  `complete` over a `capped` is how follow #3 spent 2026-07-30/31 rendering "the
+  full picture" with 631 questions still open. Same rule as the sweep's
+  `state in ("complete", "capped")`.
+- **`STALE_DAYS` closes on the QUIET path, not the update path.** The check
+  belongs where nothing happened (`_close_if_stale`, called from the two quiet
+  returns), never after a development — a development is proof the story is
+  alive. It was the other way round until 2026-08-01, which meant a silent
+  story never closed and a story that came back to life after a fortnight
+  closed on the very news that proved it hadn't. Staleness is measured from
+  `max(last_development, started_at)`: `last_development` starts as the origin
+  digest's date, so a story followed off an archive page would otherwise be
+  born stale.
 - **ANY tool use forbids `response_schema`, not just grounding.** Sending
   `response_mime_type="application/json"` alongside `google_search` is a
   `400 INVALID_ARGUMENT: Tool use with a response mime type:
