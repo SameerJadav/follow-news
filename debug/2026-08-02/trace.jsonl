@@ -1,0 +1,129 @@
+{"run": "digest", "t": 0, "kind": "digest", "stage": "tracer", "msg": "capture started", "level": 1, "day": "2026-08-02"}
+{"run": "digest", "t": 1897, "kind": "dbg", "msg": "digest: window since=2026-07-31T23:29:19+00:00 (prev_generated_at=2026-07-31 23:29:19+00:00)"}
+{"run": "digest", "t": 2054, "kind": "dbg", "msg": "feed 'BBC World': http=200 raw_items=27 usable=27"}
+{"run": "digest", "t": 2054, "kind": "event", "stage": "feeds", "outlet": "BBC World", "url": "https://feeds.bbci.co.uk/news/world/rss.xml", "http": 200, "elapsed_ms": 145, "bytes": 20967, "raw_items": 27, "usable": 27, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 2189, "kind": "dbg", "msg": "feed 'Al Jazeera': http=200 raw_items=25 usable=25"}
+{"run": "digest", "t": 2189, "kind": "event", "stage": "feeds", "outlet": "Al Jazeera", "url": "https://www.aljazeera.com/xml/rss/all.xml", "http": 200, "elapsed_ms": 124, "bytes": 17278, "raw_items": 25, "usable": 25, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 2359, "kind": "dbg", "msg": "feed 'Guardian World': http=200 raw_items=45 usable=45"}
+{"run": "digest", "t": 2359, "kind": "event", "stage": "feeds", "outlet": "Guardian World", "url": "https://www.theguardian.com/world/rss", "http": 200, "elapsed_ms": 117, "bytes": 149267, "raw_items": 45, "usable": 45, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 2553, "kind": "dbg", "msg": "feed 'NPR World': http=200 raw_items=10 usable=10"}
+{"run": "digest", "t": 2553, "kind": "event", "stage": "feeds", "outlet": "NPR World", "url": "https://feeds.npr.org/1004/rss.xml", "http": 200, "elapsed_ms": 186, "bytes": 13418, "raw_items": 10, "usable": 10, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 2707, "kind": "dbg", "msg": "feed 'DW World': http=200 raw_items=10 usable=10"}
+{"run": "digest", "t": 2707, "kind": "event", "stage": "feeds", "outlet": "DW World", "url": "https://rss.dw.com/rdf/rss-en-world", "http": 200, "elapsed_ms": 148, "bytes": 10124, "raw_items": 10, "usable": 10, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 2901, "kind": "dbg", "msg": "feed 'France 24': http=403"}
+{"run": "digest", "t": 2901, "kind": "event", "stage": "feeds", "outlet": "France 24", "url": "https://www.france24.com/en/rss", "http": 403, "elapsed_ms": 193, "verdict": "http_error"}
+{"run": "digest", "t": 3125, "kind": "dbg", "msg": "feed 'Channel News Asia': http=200 raw_items=20 usable=20"}
+{"run": "digest", "t": 3125, "kind": "event", "stage": "feeds", "outlet": "Channel News Asia", "url": "https://www.channelnewsasia.com/api/v1/rss-outbound-feed?_format=xml", "http": 200, "elapsed_ms": 213, "bytes": 17715, "raw_items": 20, "usable": 20, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 3271, "kind": "dbg", "msg": "feed 'The Hindu': http=200 raw_items=60 usable=60"}
+{"run": "digest", "t": 3271, "kind": "event", "stage": "feeds", "outlet": "The Hindu", "url": "https://www.thehindu.com/news/national/feeder/default.rss", "http": 200, "elapsed_ms": 126, "bytes": 46378, "raw_items": 60, "usable": 60, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 3386, "kind": "dbg", "msg": "feed 'Indian Express': http=403"}
+{"run": "digest", "t": 3386, "kind": "event", "stage": "feeds", "outlet": "Indian Express", "url": "https://indianexpress.com/section/india/feed/", "http": 403, "elapsed_ms": 113, "verdict": "http_error"}
+{"run": "digest", "t": 3603, "kind": "dbg", "msg": "feed 'NDTV': http=200 raw_items=20 usable=20"}
+{"run": "digest", "t": 3603, "kind": "event", "stage": "feeds", "outlet": "NDTV", "url": "https://feeds.feedburner.com/ndtvnews-india-news", "http": 200, "elapsed_ms": 207, "bytes": 28814, "raw_items": 20, "usable": 20, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 3709, "kind": "dbg", "msg": "feed 'Hindustan Times': http=200 raw_items=100 usable=100"}
+{"run": "digest", "t": 3709, "kind": "event", "stage": "feeds", "outlet": "Hindustan Times", "url": "https://www.hindustantimes.com/feeds/rss/india-news/rssfeed.xml", "http": 200, "elapsed_ms": 75, "bytes": 95563, "raw_items": 100, "usable": 100, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 3958, "kind": "dbg", "msg": "feed 'Times of India': http=200 raw_items=45 usable=45"}
+{"run": "digest", "t": 3958, "kind": "event", "stage": "feeds", "outlet": "Times of India", "url": "https://timesofindia.indiatimes.com/rssfeedstopstories.cms", "http": 200, "elapsed_ms": 232, "bytes": 51585, "raw_items": 45, "usable": 45, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 4120, "kind": "dbg", "msg": "feed 'Livemint': http=200 raw_items=35 usable=35"}
+{"run": "digest", "t": 4120, "kind": "event", "stage": "feeds", "outlet": "Livemint", "url": "https://www.livemint.com/rss/news", "http": 200, "elapsed_ms": 149, "bytes": 36715, "raw_items": 35, "usable": 35, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 4577, "kind": "dbg", "msg": "feed 'Scroll.in': http=200 raw_items=100 usable=100"}
+{"run": "digest", "t": 4577, "kind": "event", "stage": "feeds", "outlet": "Scroll.in", "url": "https://feeds.feedburner.com/ScrollinArticles.rss", "http": 200, "elapsed_ms": 334, "bytes": 306302, "raw_items": 100, "usable": 100, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 4583, "kind": "dbg", "msg": "gather: 339 article(s) after window+dedupe; by outlet: {'BBC World': 18, 'Al Jazeera': 25, 'Livemint': 35, 'Guardian World': 24, 'The Hindu': 60, 'NPR World': 4, 'Times of India': 39, 'Channel News Asia': 20, 'DW World': 3, 'NDTV': 20, 'Scroll.in': 22, 'Hindustan Times': 69}"}
+{"run": "digest", "t": 4583, "kind": "dbg", "msg": "gather: 12/14 feed(s) live, 339 article(s)"}
+{"run": "digest", "t": 4585, "kind": "event", "stage": "stage", "name": "gather", "ms": 2687, "ok": true, "error": ""}
+{"run": "digest", "t": 4585, "kind": "dbg", "msg": "gather: QUORUM OK — live=12/3 min, articles=339/20 min"}
+{"run": "digest", "t": 4585, "kind": "dbg", "msg": "rank: select pool 339 -> 290; capped outlets: {'The Hindu': 20, 'Hindustan Times': 29}"}
+{"run": "digest", "t": 4589, "kind": "event", "stage": "stage", "name": "pool", "ms": 3, "ok": true, "error": ""}
+{"run": "digest", "t": 4675, "kind": "dbg", "msg": "wiki: 2026_August_2 http=200 events=0"}
+{"run": "digest", "t": 4675, "kind": "event", "stage": "wikipedia", "page": "2026_August_2", "http": 200, "bytes": 190, "events": 0, "verdict": "ok"}
+{"run": "digest", "t": 4802, "kind": "dbg", "msg": "wiki: 2026_August_1 http=200 events=15"}
+{"run": "digest", "t": 4802, "kind": "event", "stage": "wikipedia", "page": "2026_August_1", "http": 200, "bytes": 6818, "events": 15, "verdict": "ok"}
+{"run": "digest", "t": 4804, "kind": "event", "stage": "stage", "name": "wikipedia", "ms": 214, "ok": true, "error": ""}
+{"run": "digest", "t": 4905, "kind": "dbg", "msg": "llm: call #1 model=gemini-3.6-flash label=select prompt=74409ch"}
+{"run": "digest", "t": 29535, "kind": "dbg", "msg": "llm: select finish_reason=FinishReason.STOP"}
+{"run": "digest", "t": 29536, "kind": "event", "stage": "llm", "call": 1, "label": "select", "model": "gemini-3.6-flash", "latency_ms": 24629, "prompt_chars": 74409, "system_chars": 2517, "response_chars": 3083, "finish_reason": "FinishReason.STOP", "malformed_json": false, "json_retries": 0, "max_output_tokens": 32768, "usage": {"prompt_token_count": 17786, "candidates_token_count": 1086, "total_token_count": 23219, "thoughts_token_count": 4347}}
+{"run": "digest", "t": 29537, "kind": "dbg", "msg": "llm: select_stories -> 12 raw cluster(s)"}
+{"run": "digest", "t": 29537, "kind": "event", "stage": "stage", "name": "select", "ms": 24733, "ok": true, "error": ""}
+{"run": "digest", "t": 29538, "kind": "dbg", "msg": "rank: [world] outlets=5 tier=lead wiki=yes weight=11 'US embassies advise citizens to consider leaving Middle East amid escalating Iran tensions'"}
+{"run": "digest", "t": 29538, "kind": "dbg", "msg": "rank: [world] outlets=7 tier=major wiki=yes weight=11 'Tens of thousands enter Spanish enclave of Ceuta in border crisis with Morocco'"}
+{"run": "digest", "t": 29538, "kind": "dbg", "msg": "rank: [world] outlets=5 tier=major wiki=yes weight=9 'Russian missile barrage hits Kyiv killing nine as Ukrainian forces sink Russian container ship'"}
+{"run": "digest", "t": 29539, "kind": "dbg", "msg": "rank: [world] outlets=6 tier=major wiki=yes weight=10 'Mountaineer Nirmal Purja among 10 killed in Broad Peak avalanche in Pakistan'"}
+{"run": "digest", "t": 29539, "kind": "dbg", "msg": "rank: [world] outlets=3 tier=notable wiki=no weight=3 \"Tourist plane crash near Peru's Nazca Lines leaves 13 dead\""}
+{"run": "digest", "t": 29539, "kind": "dbg", "msg": "rank: [world] outlets=3 tier=notable wiki=yes weight=5 'FIFA President Gianni Infantino faces emergency scrutiny after World Cup stake sale U-turn'"}
+{"run": "digest", "t": 29540, "kind": "dbg", "msg": "rank: [india] outlets=5 tier=lead wiki=no weight=9 'PM Modi forgives youth protesters who abused him while Opposition demands apology for police crackdown'"}
+{"run": "digest", "t": 29540, "kind": "dbg", "msg": "rank: [india] outlets=4 tier=major wiki=no weight=6 'Torrential rain and landslides trigger severe flooding across Kerala, killing at least six'"}
+{"run": "digest", "t": 29540, "kind": "dbg", "msg": "rank: [india] outlets=3 tier=major wiki=no weight=5 \"Security forces launch massive operation after terror attack kills two migrant workers in Kashmir's Kulgam\""}
+{"run": "digest", "t": 29540, "kind": "dbg", "msg": "rank: [india] outlets=2 tier=major wiki=no weight=4 'PM Modi inaugurates Bhogapuram International Airport in Andhra Pradesh'"}
+{"run": "digest", "t": 29541, "kind": "dbg", "msg": "rank: [india] outlets=1 tier=notable wiki=no weight=1 'India and China resume border trade through Lipulekh and Shipki La passes after six years'"}
+{"run": "digest", "t": 29541, "kind": "dbg", "msg": "rank: [india] outlets=4 tier=notable wiki=no weight=4 'Police case filed against Rahul Gandhi and Opposition leaders over Ram temple skit in Parliament'"}
+{"run": "digest", "t": 29541, "kind": "dbg", "msg": "rank: 12 scored, 0 id(s) rejected, 8 kept {'world': 5, 'india': 3}; weights=[11, 11, 10, 9, 5, 9, 6, 5]"}
+{"run": "digest", "t": 29542, "kind": "event", "stage": "stage", "name": "rank", "ms": 4, "ok": true, "error": ""}
+{"run": "digest", "t": 29544, "kind": "dbg", "msg": "wiki: 15 curated event(s); 8 matched a selected story, 7 not covered"}
+{"run": "digest", "t": 29544, "kind": "dbg", "msg": "wiki: NOT COVERED [Armed conflicts and attacks] Middle Eastern crisis — Three Palestinians are reportedly killed in Gaza City, bringing the total casualties to 7 in the past 24 hours."}
+{"run": "digest", "t": 29544, "kind": "dbg", "msg": "wiki: NOT COVERED [Armed conflicts and attacks] Middle Eastern crisis — The Bermuda-flagged LNG tanker Gaslog Shanghai, which was carrying LNG oil from Qatar, is reported to have been among the two vessels hit yesterday in the Strait of Hormuz."}
+{"run": "digest", "t": 29544, "kind": "dbg", "msg": "wiki: NOT COVERED [Armed conflicts and attacks] Middle Eastern crisis — The Houthis in Yemen deny reports of imposing tolls on vessels passing through the Bab-el-Mandeb strait."}
+{"run": "digest", "t": 29544, "kind": "dbg", "msg": "wiki: NOT COVERED [Armed conflicts and attacks] Russo-Ukrainian war — The Washington Post reports that Israeli Prime Minister Benjamin Netanyahu blocked a request by former U.S. Senator Lindsey Graham to transfer an Iron Dome system from the U.S. to Ukraine."}
+{"run": "digest", "t": 29544, "kind": "dbg", "msg": "wiki: NOT COVERED [Armed conflicts and attacks] Russo-Ukrainian war — Ukrainian forces sink a Rosatom-owned container ship in the Black Sea, forcing its 17-member crew to abandon it. Rosatom says it had been transporting civilian goods, including frozen food and construction materials."}
+{"run": "digest", "t": 29544, "kind": "dbg", "msg": "wiki: NOT COVERED [Armed conflicts and attacks] 2026 attack on the Norte de Santander Police Command — A truck bomb explodes beside a police station in Cúcuta, Norte de Santander, Colombia, injuring eight police officers and three civilians."}
+{"run": "digest", "t": 29544, "kind": "dbg", "msg": "wiki: NOT COVERED [Disasters and accidents] At least three people are killed and 15 others are injured in an explosion at a coffeehouse in Moscow, Russia."}
+{"run": "digest", "t": 29814, "kind": "dbg", "msg": "extract: 4331ch https://www.bbc.co.uk/news/articles/cz7d17r455go?at_medium=RSS&at_campaign=rss"}
+{"run": "digest", "t": 29971, "kind": "dbg", "msg": "extract: 8509ch https://www.theguardian.com/world/2026/aug/01/spain-pedro-sanchez-calls-for-eu-meeting-ceuta-border-crossing"}
+{"run": "digest", "t": 30172, "kind": "dbg", "msg": "extract: 12304ch https://www.npr.org/2026/08/01/nx-s1-5916330/spain-sanchez-ceuta-migrants"}
+{"run": "digest", "t": 30450, "kind": "dbg", "msg": "extract: 6899ch https://www.livemint.com/news/world/ceuta-crisis-spain-pm-blasts-selfish-reaction-by-some-eu-countries-calls-for-ministers-to-meet-11785603669440.html"}
+{"run": "digest", "t": 30543, "kind": "dbg", "msg": "extract: 4671ch https://www.aljazeera.com/news/2026/8/1/spain-says-migrants-leaving-ceuta-after-mass-influx-in-which-67-died?traffic_source=rss"}
+{"run": "digest", "t": 30701, "kind": "dbg", "msg": "extract: 5655ch https://timesofindia.indiatimes.com/world/us/prepare-to-depart-us-embassies-issue-alert-across-middle-east-amid-iran-tensions/articleshow/132794132.cms"}
+{"run": "digest", "t": 30806, "kind": "dbg", "msg": "extract: 4877ch https://www.channelnewsasia.com/world/us-embassies-urge-citizens-consider-departing-middle-east-6292981"}
+{"run": "digest", "t": 30870, "kind": "dbg", "msg": "extract: 3444ch https://www.livemint.com/news/us-news/top-us-general-warns-pentagon-it-lacks-enough-naval-forces-to-keep-defending-israel-from-iranian-attacks-report-11785594943756.html"}
+{"run": "digest", "t": 30922, "kind": "dbg", "msg": "extract: 7264ch https://www.aljazeera.com/news/2026/8/1/iran-warns-against-fire-of-war-amid-us-strike-threats-on-energy-sites?traffic_source=rss"}
+{"run": "digest", "t": 31335, "kind": "dbg", "msg": "extract: 2982ch https://scroll.in/latest/1094702/strongly-urged-iran-to-avoid-attacks-on-seafarers-cargo-ships-s-jaishankar?utm_source=rss&utm_medium=public"}
+{"run": "digest", "t": 31534, "kind": "dbg", "msg": "extract: via_jina https://www.aljazeera.com/video/newsfeed/2026/8/1/record-record-breaking-climber-nirmal-purja-among-those-killed-in-avalanche?traffic_source=rss: http=403"}
+{"run": "digest", "t": 34535, "kind": "dbg", "msg": "extract: 374ch https://www.aljazeera.com/video/newsfeed/2026/8/1/record-record-breaking-climber-nirmal-purja-among-those-killed-in-avalanche?traffic_source=rss"}
+{"run": "digest", "t": 34579, "kind": "dbg", "msg": "extract: fetch_html https://www.ndtv.com/india-news/elite-mountaineer-nirmal-nims-purja-killed-in-avalanche-on-pok-peak-11852569#publisher=newsstand: http=403"}
+{"run": "digest", "t": 40341, "kind": "dbg", "msg": "extract: 33544ch https://www.ndtv.com/india-news/elite-mountaineer-nirmal-nims-purja-killed-in-avalanche-on-pok-peak-11852569#publisher=newsstand"}
+{"run": "digest", "t": 40403, "kind": "dbg", "msg": "extract: 4494ch https://www.bbc.co.uk/news/articles/clyljq79kdko?at_medium=RSS&at_campaign=rss"}
+{"run": "digest", "t": 40551, "kind": "dbg", "msg": "extract: 3963ch https://www.theguardian.com/world/2026/aug/01/top-mountaineer-nirmal-purja-confirmed-dead-after-11-hit-by-avalanche-in-pakistan"}
+{"run": "digest", "t": 40665, "kind": "dbg", "msg": "extract: 4972ch https://www.channelnewsasia.com/asia/nepali-climber-nirmal-purja-die-pakistan-avalanche-6292801"}
+{"run": "digest", "t": 40959, "kind": "dbg", "msg": "extract: 4568ch https://www.npr.org/2026/08/01/nx-s1-5916393/overnight-russia-kyiv-ukraine-strikes"}
+{"run": "digest", "t": 41158, "kind": "dbg", "msg": "extract: via_jina https://www.aljazeera.com/video/newsfeed/2026/8/1/at-least-9-people-killed-in-russian-missile-attacks-on-kyiv?traffic_source=rss: http=403"}
+{"run": "digest", "t": 44160, "kind": "dbg", "msg": "extract: 186ch https://www.aljazeera.com/video/newsfeed/2026/8/1/at-least-9-people-killed-in-russian-missile-attacks-on-kyiv?traffic_source=rss"}
+{"run": "digest", "t": 44223, "kind": "dbg", "msg": "extract: 2808ch https://timesofindia.indiatimes.com/world/europe/video-shows-inferno-after-russian-missile-barrage-leaves-9-dead-in-ukraine/articleshow/132791647.cms"}
+{"run": "digest", "t": 44289, "kind": "dbg", "msg": "extract: 3998ch https://www.bbc.co.uk/news/articles/ce973yvk7pko?at_medium=RSS&at_campaign=rss"}
+{"run": "digest", "t": 44353, "kind": "dbg", "msg": "extract: 3002ch https://www.livemint.com/news/world/russia-hits-kyiv-with-horrific-missile-barrage-killing-nine-11785570569026.html"}
+{"run": "digest", "t": 44420, "kind": "dbg", "msg": "extract: 9766ch https://www.bbc.co.uk/sport/football/articles/c04kr2nv3v3o?at_medium=RSS&at_campaign=rss"}
+{"run": "digest", "t": 44474, "kind": "dbg", "msg": "extract: 3487ch https://www.aljazeera.com/sports/2026/8/1/infantinos-fifa-crisis-what-is-reaction-to-world-cup-investment-u-turn?traffic_source=rss"}
+{"run": "digest", "t": 44979, "kind": "dbg", "msg": "extract: 1172ch https://www.channelnewsasia.com/sport/uefa-welcomes-fifas-decision-scrap-stake-sale-6292726"}
+{"run": "digest", "t": 45045, "kind": "dbg", "msg": "extract: 6801ch https://www.bbc.co.uk/sport/football/articles/c998m4ve0rpo?at_medium=RSS&at_campaign=rss"}
+{"run": "digest", "t": 45441, "kind": "dbg", "msg": "extract: 6021ch https://www.channelnewsasia.com/sport/infantinos-fifa-future-in-jeopardy-after-private-equity-gamble-backfires-6292706"}
+{"run": "digest", "t": 45524, "kind": "dbg", "msg": "extract: 5486ch https://www.livemint.com/news/india/abhijeet-dipke-hopes-pm-modi-apologises-in-tonights-video-to-all-girls-whom-police-beat-with-brutality-11785596511917.html"}
+{"run": "digest", "t": 45669, "kind": "dbg", "msg": "extract: 4590ch https://www.hindustantimes.com/india-news/abhijeet-dipke-asks-for-pm-modis-apology-over-police-brutality-on-12-year-old-kids-on-july-20-cjp-101785597484320.html"}
+{"run": "digest", "t": 45873, "kind": "dbg", "msg": "extract: via_jina https://www.aljazeera.com/video/newsfeed/2026/8/1/india-cracks-down-on-protesters-accused-of-abusing-modi?traffic_source=rss: http=403"}
+{"run": "digest", "t": 48875, "kind": "dbg", "msg": "extract: 261ch https://www.aljazeera.com/video/newsfeed/2026/8/1/india-cracks-down-on-protesters-accused-of-abusing-modi?traffic_source=rss"}
+{"run": "digest", "t": 49321, "kind": "dbg", "msg": "extract: 3279ch https://www.channelnewsasia.com/asia/indias-modi-forgives-student-protesters-who-abused-him-says-punishing-them-will-not-change-situation-6292581"}
+{"run": "digest", "t": 49717, "kind": "dbg", "msg": "extract: 10724ch https://scroll.in/article/1094696/we-will-kill-rape-you-online-mobs-are-targeting-women-protesters-for-abusing-modi?utm_source=rss&utm_medium=public"}
+{"run": "digest", "t": 49817, "kind": "dbg", "msg": "extract: 4323ch https://www.thehindu.com/news/national/kerala/incessant-downpour-disrupts-life-in-keralas-kozhikode/article71295292.ece"}
+{"run": "digest", "t": 49883, "kind": "dbg", "msg": "extract: 5425ch https://timesofindia.indiatimes.com/city/thiruvananthapuram/imd-red-alert-in-8-kerala-districts-as-heavy-rains-trigger-landslides-floods-6-killed/articleshow/132792885.cms"}
+{"run": "digest", "t": 49947, "kind": "dbg", "msg": "extract: 5227ch https://www.hindustantimes.com/india-news/kerala-heavy-rain-six-dead-rescue-operations-continue-landslides-idukki-kottayam-101785596280351.html"}
+{"run": "digest", "t": 50362, "kind": "dbg", "msg": "extract: 3509ch https://scroll.in/latest/1094708/assam-flood-toll-rises-to-82?utm_source=rss&utm_medium=public"}
+{"run": "digest", "t": 50548, "kind": "dbg", "msg": "extract: 3440ch https://www.thehindu.com/news/national/kerala/heavy-rain-batters-keralas-kannur-two-missing-26-shifted-to-relief-camp/article71295028.ece"}
+{"run": "digest", "t": 50777, "kind": "dbg", "msg": "extract: 3118ch https://www.thehindu.com/news/national/chhattisgarh/kulgam-terrorist-attack-chhattisgarh-government-declares-20-lakh-aid-for-kin-of-two-workers-killed/article71294437.ece"}
+{"run": "digest", "t": 50819, "kind": "dbg", "msg": "extract: fetch_html https://www.ndtv.com/india-news/j-k-launches-massive-op-to-hunt-terrorists-who-killed-2-migrant-workers-11853988#publisher=newsstand: http=403"}
+{"run": "digest", "t": 56956, "kind": "dbg", "msg": "extract: 31844ch https://www.ndtv.com/india-news/j-k-launches-massive-op-to-hunt-terrorists-who-killed-2-migrant-workers-11853988#publisher=newsstand"}
+{"run": "digest", "t": 57381, "kind": "dbg", "msg": "extract: 2037ch https://scroll.in/latest/1094703/j-k-second-migrant-worker-succumbs-to-injuries-sustained-in-kulgam-militant-attack?utm_source=rss&utm_medium=public"}
+{"run": "digest", "t": 57624, "kind": "dbg", "msg": "extract: 4938ch https://www.thehindu.com/news/national/jammu-and-kashmir/migrant-workers-killed-in-jammu-kashmir-kulgam-terror-attack-updates/article71293425.ece"}
+{"run": "digest", "t": 57627, "kind": "event", "stage": "stage", "name": "extract", "ms": 28081, "ok": true, "error": ""}
+{"run": "digest", "t": 57662, "kind": "dbg", "msg": "llm: call #2 model=gemini-3.6-flash label=claims prompt=159453ch"}
+{"run": "digest", "t": 98729, "kind": "dbg", "msg": "llm: claims finish_reason=FinishReason.STOP"}
+{"run": "digest", "t": 98731, "kind": "event", "stage": "llm", "call": 2, "label": "claims", "model": "gemini-3.6-flash", "latency_ms": 41066, "prompt_chars": 159453, "system_chars": 2135, "response_chars": 13466, "finish_reason": "FinishReason.STOP", "malformed_json": false, "json_retries": 0, "max_output_tokens": 32768, "usage": {"prompt_token_count": 37139, "candidates_token_count": 3347, "total_token_count": 45925, "thoughts_token_count": 5439}}
+{"run": "digest", "t": 98732, "kind": "dbg", "msg": "llm: claims: [world] 13 claim(s) from 5 outlet(s) 'Tens of thousands enter Spanish enclave of Ceuta in border crisis with Morocco'"}
+{"run": "digest", "t": 98732, "kind": "dbg", "msg": "llm: claims: [world] 11 claim(s) from 5 outlet(s) 'US embassies advise citizens to consider leaving Middle East amid escalating Iran tensions'"}
+{"run": "digest", "t": 98732, "kind": "dbg", "msg": "llm: claims: [world] 9 claim(s) from 4 outlet(s) 'Mountaineer Nirmal Purja among 10 killed in Broad Peak avalanche in Pakistan'"}
+{"run": "digest", "t": 98732, "kind": "dbg", "msg": "llm: claims: [world] 9 claim(s) from 4 outlet(s) 'Russian missile barrage hits Kyiv killing nine as Ukrainian forces sink Russian container ship'"}
+{"run": "digest", "t": 98732, "kind": "dbg", "msg": "llm: claims: [world] 9 claim(s) from 3 outlet(s) 'FIFA President Gianni Infantino faces emergency scrutiny after World Cup stake sale U-turn'"}
+{"run": "digest", "t": 98732, "kind": "dbg", "msg": "llm: claims: [india] 7 claim(s) from 4 outlet(s) 'PM Modi forgives youth protesters who abused him while Opposition demands apology for police crackdown'"}
+{"run": "digest", "t": 98732, "kind": "dbg", "msg": "llm: claims: [india] 8 claim(s) from 3 outlet(s) 'Torrential rain and landslides trigger severe flooding across Kerala, killing at least six'"}
+{"run": "digest", "t": 98732, "kind": "dbg", "msg": "llm: claims: [india] 6 claim(s) from 2 outlet(s) \"Security forces launch massive operation after terror attack kills two migrant workers in Kashmir's Kulgam\""}
+{"run": "digest", "t": 98732, "kind": "dbg", "msg": "llm: extract_claims -> 8/8 cluster(s), 72 claim(s) total, 0 cluster(s) rejected, 0 claim(s) rejected"}
+{"run": "digest", "t": 98733, "kind": "event", "stage": "stage", "name": "claims", "ms": 41106, "ok": true, "error": ""}
+{"run": "digest", "t": 98769, "kind": "dbg", "msg": "llm: call #3 model=gemini-3.6-flash label=write prompt=13256ch"}
+{"run": "digest", "t": 104349, "kind": "event", "stage": "stage", "name": "write", "ms": 5615, "ok": false, "error": "ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"}
+{"run": "digest", "t": 104349, "kind": "event", "stage": "tracer", "msg": "capture finished", "ok": false, "ms": 104349, "bytes": 12879619}
