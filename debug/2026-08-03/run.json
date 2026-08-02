@@ -1,0 +1,120 @@
+{
+  "kind": "digest",
+  "day": "2026-08-03",
+  "ok": true,
+  "started_at": "2026-08-02T21:22:47Z",
+  "finished_at": "2026-08-02T21:25:41Z",
+  "elapsed_ms": 173163,
+  "argv": [
+    "digest.py",
+    "--if-missing"
+  ],
+  "python": "3.12.3",
+  "git_sha": "1673a5f3f9a4ac8c737205f3207eb831e80465a8",
+  "debug_level": 1,
+  "bytes_written": 13096984,
+  "byte_cap_reached": false,
+  "env": {
+    "DIGEST_DEBUG": "1",
+    "CI": "true",
+    "GITHUB_ACTIONS": "true",
+    "GITHUB_RUN_ID": "30767738966",
+    "GITHUB_RUN_ATTEMPT": "1",
+    "GITHUB_WORKFLOW": "digest",
+    "GITHUB_EVENT_NAME": "schedule",
+    "GITHUB_SHA": "1673a5f3f9a4ac8c737205f3207eb831e80465a8",
+    "GITHUB_REF": "refs/heads/main",
+    "RUNNER_OS": "Linux"
+  },
+  "dials": {
+    "rank.WEIGHT_FLOOR": 5,
+    "rank.TIER_WEIGHT": {
+      "lead": 4,
+      "major": 2,
+      "notable": 0
+    },
+    "rank.WIKI_BONUS": 2,
+    "rank.HARD_CAP": 12,
+    "rank.MIN_STORIES_IF_ANY": 3,
+    "rank.MAX_ARTICLES_PER_STORY": 5,
+    "anchor.WORD_TARGET": {
+      "lead": 500,
+      "major": 200,
+      "notable": 200
+    },
+    "anchor.THIN_MIN_CLAIM_OUTLETS": 2,
+    "anchor.THIN_MAX_OUTLET_SHARE": 0.8,
+    "anchor.MAX_UNANCHORED_SHARE": 0.2,
+    "anchor.MIN_MARKERS": 2,
+    "anchor.MIN_BODY_WORDS": 80,
+    "anchor.MIN_FULLTEXT_CHARS": 600,
+    "anchor.MAX_CLAIMS_PER_STORY": 24,
+    "anchor.MIN_CLAIM_CHARS": 20,
+    "feeds.WINDOW_FLOOR_H": 12,
+    "feeds.WINDOW_CAP_H": 48,
+    "feeds.MIN_LIVE_FEEDS": 3,
+    "feeds.MIN_ARTICLES": 20,
+    "feeds.DEGRADED_LIVE_SHARE": 0.5,
+    "feeds.SUMMARY_CAP": 400,
+    "extract.MIN_CHARS": 600,
+    "extract.ARTICLE_CAP": 5000,
+    "extract.PARA_MIN": 60,
+    "extract.JINA_PAUSE": 3.0,
+    "ratelimit.WAIT_BUDGET_S": 2700.0,
+    "llm.MODEL": "gemini-3.6-flash",
+    "llm.MAX_OUTPUT_TOKENS": 32768,
+    "llm.MAX_JSON_RETRIES": 1
+  },
+  "stages": [
+    {
+      "stage": "gather",
+      "ms": 3579,
+      "error": ""
+    },
+    {
+      "stage": "pool",
+      "ms": 3,
+      "error": ""
+    },
+    {
+      "stage": "wikipedia",
+      "ms": 359,
+      "error": ""
+    },
+    {
+      "stage": "select",
+      "ms": 19408,
+      "error": ""
+    },
+    {
+      "stage": "rank",
+      "ms": 3,
+      "error": ""
+    },
+    {
+      "stage": "extract",
+      "ms": 42832,
+      "error": ""
+    },
+    {
+      "stage": "claims",
+      "ms": 51463,
+      "error": ""
+    },
+    {
+      "stage": "write",
+      "ms": 53281,
+      "error": ""
+    },
+    {
+      "stage": "render",
+      "ms": 72,
+      "error": ""
+    }
+  ],
+  "window": {
+    "since": "2026-08-01T23:28:21+00:00",
+    "now": "2026-08-02T21:22:50.104742+00:00",
+    "prev_generated_at": "2026-08-01 23:28:21+00:00"
+  }
+}
