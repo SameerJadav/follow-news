@@ -1,28 +1,28 @@
 {
   "kind": "digest",
   "day": "2026-08-04",
-  "ok": false,
-  "started_at": "2026-08-03T21:37:16Z",
-  "finished_at": "2026-08-03T21:39:31Z",
-  "elapsed_ms": 134818,
+  "ok": true,
+  "started_at": "2026-08-03T23:35:15Z",
+  "finished_at": "2026-08-03T23:38:03Z",
+  "elapsed_ms": 167915,
   "argv": [
     "digest.py",
     "--if-missing"
   ],
   "python": "3.12.3",
-  "git_sha": "1d9bd2ecc957672360b4fe1e93a74bc95efcd678",
+  "git_sha": "3b099c1d4d3b446bb36c412b26816d2fe52f4d4b",
   "debug_level": 1,
-  "bytes_written": 11019379,
+  "bytes_written": 13034131,
   "byte_cap_reached": false,
   "env": {
     "DIGEST_DEBUG": "1",
     "CI": "true",
     "GITHUB_ACTIONS": "true",
-    "GITHUB_RUN_ID": "30855379414",
+    "GITHUB_RUN_ID": "30862753509",
     "GITHUB_RUN_ATTEMPT": "1",
     "GITHUB_WORKFLOW": "digest",
     "GITHUB_EVENT_NAME": "schedule",
-    "GITHUB_SHA": "1d9bd2ecc957672360b4fe1e93a74bc95efcd678",
+    "GITHUB_SHA": "3b099c1d4d3b446bb36c412b26816d2fe52f4d4b",
     "GITHUB_REF": "refs/heads/main",
     "RUNNER_OS": "Linux"
   },
@@ -68,48 +68,53 @@
   "stages": [
     {
       "stage": "gather",
-      "ms": 8298,
+      "ms": 3167,
       "error": ""
     },
     {
       "stage": "pool",
-      "ms": 2,
+      "ms": 4,
       "error": ""
     },
     {
       "stage": "wikipedia",
-      "ms": 294,
+      "ms": 396,
       "error": ""
     },
     {
       "stage": "select",
-      "ms": 22015,
+      "ms": 33939,
       "error": ""
     },
     {
       "stage": "rank",
-      "ms": 2,
+      "ms": 3,
       "error": ""
     },
     {
       "stage": "extract",
-      "ms": 49516,
+      "ms": 62210,
       "error": ""
     },
     {
       "stage": "claims",
-      "ms": 48888,
+      "ms": 23768,
       "error": ""
     },
     {
       "stage": "write",
-      "ms": 4289,
-      "error": "ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"
+      "ms": 42517,
+      "error": ""
+    },
+    {
+      "stage": "render",
+      "ms": 66,
+      "error": ""
     }
   ],
   "window": {
     "since": "2026-08-02T21:22:50+00:00",
-    "now": "2026-08-03T21:37:17.867087+00:00",
+    "now": "2026-08-03T23:35:17.088517+00:00",
     "prev_generated_at": "2026-08-02 21:22:50+00:00"
   }
 }

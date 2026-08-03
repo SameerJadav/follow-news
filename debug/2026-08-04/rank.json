@@ -13,73 +13,72 @@
   },
   "floor_relaxed": false,
   "kept_weights": [
-    10,
+    9,
     9,
     8,
-    8,
+    7,
+    6,
+    5,
     5,
     10,
-    5,
     5
   ],
   "per_section": {
-    "world": 5,
-    "india": 3
+    "world": 7,
+    "india": 2
   },
   "clusters": [
     {
-      "headline_hint": "Jan Suraaj's Prashant Kishor wins Bankipur bypoll in Bihar as BJP loses key bastion",
+      "headline_hint": "Prashant Kishor's Jan Suraaj wins Bihar bypoll in Bankipur as results announced for assembly seats",
       "section": "india",
       "category": "politics",
       "tier_requested": "lead",
       "article_ids": [
-        49,
-        64,
-        117,
-        126,
-        133,
-        134,
-        136,
-        171,
-        179,
-        181,
-        197,
-        211,
-        215,
-        224,
-        229,
-        231,
-        236,
-        247,
-        256,
-        258,
-        267,
-        288
+        86,
+        101,
+        146,
+        157,
+        158,
+        159,
+        187,
+        194,
+        196,
+        210,
+        223,
+        227,
+        235,
+        239,
+        240,
+        245,
+        255,
+        262,
+        263,
+        272,
+        292
       ],
       "verdict": "kept",
       "valid_ids": [
-        49,
-        64,
-        117,
-        126,
-        133,
-        134,
-        136,
-        171,
-        179,
-        181,
-        197,
-        211,
-        215,
-        224,
-        229,
-        231,
-        236,
-        247,
-        256,
-        258,
-        267,
-        288
+        86,
+        101,
+        146,
+        157,
+        158,
+        159,
+        187,
+        194,
+        196,
+        210,
+        223,
+        227,
+        235,
+        239,
+        240,
+        245,
+        255,
+        262,
+        263,
+        272,
+        292
       ],
       "tier_final": "lead",
       "distinct_outlets": 6,
@@ -109,35 +108,414 @@
           "url": "https://www.livemint.com/news/trends/viral-maharani-clip-floods-internet-as-prashant-kishor-bags-bankipur-when-you-think-youve-figured-out-bihar-it-11785769974474.html"
         },
         {
-          "outlet": "Times of India",
-          "title": "'Gen Z protest' may have aided Bankipur win: Prashant Kishor after BJP bastion falls",
-          "url": "https://timesofindia.indiatimes.com/india/gen-z-protest-may-have-aided-bankipur-win-prashant-kishor-after-bjp-bastion-falls/articleshow/132837928.cms"
-        },
-        {
           "outlet": "Hindustan Times",
           "title": "BJP chief Nitin Nabin reacts as Prashant Kishor wrests his family seat: ‘Unexpected’",
           "url": "https://www.hindustantimes.com/india-news/bjp-president-nitin-nabins-first-reaction-after-prashant-kishor-wrests-family-bastion-bankipur-bypolls-bihar-101785776052559.html"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Bankipur bypoll: BJP chief vows introspection after Kishor ends party's 30-yr hold",
+          "url": "https://timesofindia.indiatimes.com/india/bjp-chief-nitin-nabin-vows-introspection-after-bankipur-defeat-as-prashant-kishor-ends-partys-30-year-hold/articleshow/132837225.cms"
         }
       ],
-      "articles_dropped_by_diversity_cap": 17
+      "articles_dropped_by_diversity_cap": 16
     },
     {
-      "headline_hint": "Court acquits former WFI chief Brij Bhushan Sharan Singh in wrestlers' sexual harassment case",
-      "section": "india",
+      "headline_hint": "Trump insists US-Iran talks are underway while Tehran denies direct negotiations",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "lead",
+      "article_ids": [
+        11,
+        31,
+        74,
+        75,
+        78,
+        114,
+        118,
+        145,
+        162,
+        170,
+        208,
+        237,
+        275
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        11,
+        31,
+        74,
+        75,
+        78,
+        114,
+        118,
+        145,
+        162,
+        170,
+        208,
+        237,
+        275
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 5,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 9,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 4,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "France 24",
+          "title": "Trump says US-Iran talks continue, warns Tehran faces 'last chance'",
+          "url": "https://www.france24.com/en/middle-east/20260803-trump-says-us-iran-talks-continue-warns-tehran-faces-last-chance"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Trump claims strait of Hormuz could open ‘by tomorrow’ as Iran denies any talks taking place – as it happened",
+          "url": "https://www.theguardian.com/world/live/2026/aug/03/us-iran-trump-strait-of-hormuz-talks-israel-gaza-lebanon-latest-news-updates"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Trump says talks with Iran are ‘last chance’ to forge a deal",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/3/trump-says-talks-with-iran-are-last-chance-to-forge-a-deal?traffic_source=rss"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Iran says it is in talks with Oman but not the US after Trump says negotiations to resume",
+          "url": "https://www.bbc.co.uk/news/articles/c23579jzv08o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Trump says US-Iran talks ‘going on right now’, calls it Tehran’s ‘last chance’ to reach deal",
+          "url": "https://www.livemint.com/news/us-news/trump-says-us-iran-talks-going-on-right-now-calls-it-tehran-s-last-chance-to-reach-deal-11785781585074.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 8
+    },
+    {
+      "headline_hint": "EU urges action and border strengthening following mass migrant crossings in Ceuta",
+      "section": "world",
       "category": "politics",
       "tier_requested": "major",
       "article_ids": [
-        161,
-        208,
-        285,
+        40,
+        48,
+        60,
+        142,
+        173,
+        175,
+        177,
+        190,
+        192,
+        219,
+        221,
+        252,
+        267,
+        277,
+        305
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        40,
+        48,
+        60,
+        142,
+        173,
+        175,
+        177,
+        190,
+        192,
+        219,
+        221,
+        252,
+        267,
+        277,
+        305
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 7,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 9,
+      "weight_terms": {
+        "distinct_outlets": 7,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "BBC World",
+          "title": "EU calls for stronger borders after Ceuta migrant crossings",
+          "url": "https://www.bbc.co.uk/news/articles/cyvl84zmgyro?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Migrants await asylum in Ceuta amid hunger and thirst",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/3/aje-onl-nf_migrants-await-asylum-in-ceuta-amid-hunger-thirst-030826?traffic_source=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Stronger EU borders needed after Ceuta crisis, von der Leyen says",
+          "url": "https://www.theguardian.com/world/2026/aug/03/stronger-eu-borders-physical-barriers-ceuta-von-der-leyen"
+        },
+        {
+          "outlet": "DW World",
+          "title": "Ceuta: EU calls borders a 'shared European responsibility'",
+          "url": "https://www.dw.com/en/ceuta-eu-calls-borders-a-shared-european-responsibility/a-78220701?maca=en-rss-en-world-4025-rdf"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Ceuta migrant influx reignites immigration divisions in Europe",
+          "url": "https://www.france24.com/en/europe/20260803-ceuta-migrant-influx-reignites-immigration-divisions-in-europe"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 10
+    },
+    {
+      "headline_hint": "Ukrainian drone strike on Russian resort beach kills seven, including three children",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "major",
+      "article_ids": [
+        29,
+        136,
+        137,
+        147
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        29,
+        136,
+        137,
+        147
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": true,
+      "wiki_event": "At least seven people are killed, including three children, and 40 others are injured in a Ukrainian drone strike on a crowded beach in Gelendzhik, Krasnodar Krai, Russia.",
+      "weight": 8,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "Ukrainian drone attacks on Black Sea resort and Crimea kill 11, Russia claims",
+          "url": "https://www.theguardian.com/world/2026/aug/03/russia-blames-ukraine-deadly-moscow-restaurant-bombing"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Drone slams into Russian beach, killing at least 7 people",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/3/drone-slams-into-russian-beach-killing-at-least-7-people?traffic_source=rss"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Russia says seven killed and 40 injured by Ukrainian drone hitting busy beach",
+          "url": "https://www.bbc.co.uk/news/articles/cr7kmnyrdn7o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "'Had no time to flee': Drone strikes Russian beach; kills 7, injures 40",
+          "url": "https://timesofindia.indiatimes.com/world/rest-of-world/had-no-time-to-flee-drone-strikes-russian-black-sea-beach-kills-7-including-3-children-injures-40/articleshow/132837920.cms"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Europe heatwave and low river levels strain energy supply and force nuclear plant cutbacks",
+      "section": "world",
+      "category": "climate",
+      "tier_requested": "major",
+      "article_ids": [
+        72,
+        138,
+        166,
+        174,
+        203,
+        244,
+        310
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        72,
+        138,
+        166,
+        174,
+        203,
+        244,
+        310
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 5,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "France 24",
+          "title": "Europe's record-breaking heat sparks wildfires, drought in France, Greece and the UK",
+          "url": "https://www.france24.com/en/europe/20260803-europe-s-record-breaking-heat-sparks-wildfires-drought-in-france-greece-and-the-uk"
+        },
+        {
+          "outlet": "DW World",
+          "title": "Dry Danube River threatens nuclear power in Romania, Hungary",
+          "url": "https://www.dw.com/en/dry-danube-river-threatens-nuclear-power-in-romania-hungary/a-78223402?maca=en-rss-en-world-4025-rdf"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Rhine falls to record low levels as drought strains Europe's rivers",
+          "url": "https://www.bbc.co.uk/news/articles/c78gn8zvrx4o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Romanian navy blasts riverbed to protect nuclear plant",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/3/romanian-navy-blasts-riverbed-to-protect-nuclear-plant?traffic_source=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "South-eastern Europe faces heatwave energy crunch as Romania detonates Danube rock to increase water flow – as it happened",
+          "url": "https://www.theguardian.com/world/live/2026/aug/03/europe-heatwave-wildfires-migration-ceuta-spain-latest-news-updates"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 2
+    },
+    {
+      "headline_hint": "US and Japan execute rare joint currency intervention to support Japanese yen",
+      "section": "world",
+      "category": "economy",
+      "tier_requested": "major",
+      "article_ids": [
+        304,
+        307,
+        316,
+        322
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        304,
+        307,
+        316,
+        322
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 5,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "NPR World",
+          "title": "U.S. steps in to help shore up Japanese yen",
+          "url": "https://www.npr.org/2026/08/03/nx-s1-5917867/u-s-steps-in-to-help-shore-up-japanese-yen"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Yen hits three-month high after Trump helps prop up currency",
+          "url": "https://www.theguardian.com/business/2026/aug/03/yen-trump-currency-us-japan"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "US and Japan take action to prop up yen in rare joint move",
+          "url": "https://www.bbc.co.uk/news/articles/cglj1pr0wjwo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "U.S. dollar weakens sharply against the Japanese yen after market interventions",
+          "url": "https://www.npr.org/2026/08/03/g-s1-136866/us-dollar-japanese-yen-market-interventions"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Ousted Myanmar leader Aung San Suu Kyi pictured in first external contact in two years",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        204,
+        214,
+        276,
         301
       ],
       "verdict": "kept",
       "valid_ids": [
-        161,
-        208,
-        285,
+        204,
+        214,
+        276,
         301
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 6,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "France 24",
+          "title": "Myanmar: Ousted leader Suu Kyi makes rare appearance with Red Cross representative",
+          "url": "https://www.france24.com/en/video/20260803-myanmar-ousted-leader-suu-kyi-makes-rare-appearance-with-red-cross-representative"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Aung San Suu Kyi appears healthy in first confirmed outside contact for 2.5 years",
+          "url": "https://www.bbc.co.uk/news/articles/c1e1d5j6660o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Red Cross visits Aung San Suu Kyi after Myanmar military pushed to prove she is alive",
+          "url": "https://www.theguardian.com/world/2026/aug/03/myanmar-detained-former-leader-aung-san-suu-kyi-red-cross"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "Rare photos of ex-Myanmar leader Aung San Suu Kyi give her family hope",
+          "url": "https://www.npr.org/2026/08/03/nx-s1-5917915/aung-san-suu-kyi-myanmar-rare-photos-kim-aris"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Delhi court acquits former wrestling chief Brij Bhushan Sharan Singh in sexual harassment case",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        178,
+        220,
+        290,
+        302
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        178,
+        220,
+        290,
+        302
       ],
       "tier_final": "major",
       "distinct_outlets": 3,
@@ -175,528 +553,22 @@
       "articles_dropped_by_diversity_cap": 0
     },
     {
-      "headline_hint": "Heavy monsoon rains cause severe flooding and casualties across Kerala and Assam",
-      "section": "india",
-      "category": "disaster",
-      "tier_requested": "major",
-      "article_ids": [
-        37,
-        48,
-        84,
-        101,
-        275
-      ],
-      "verdict": "kept",
-      "valid_ids": [
-        37,
-        48,
-        84,
-        101,
-        275
-      ],
-      "tier_final": "major",
-      "distinct_outlets": 3,
-      "wiki_backed": false,
-      "wiki_event": "",
-      "weight": 5,
-      "weight_terms": {
-        "distinct_outlets": 3,
-        "tier_weight": 2,
-        "wiki_bonus": 0
-      },
-      "weight_floor": 5,
-      "articles": [
-        {
-          "outlet": "The Hindu",
-          "title": "1.28 lakh people in seven Assam districts reel under floods; toll rises to 87 with two more deaths",
-          "url": "https://www.thehindu.com/news/national/assam/128-lakh-people-in-seven-assam-districts-reel-under-floods-toll-rises-to-87-with-two-more-deaths/article71302816.ece"
-        },
-        {
-          "outlet": "NDTV",
-          "title": "Relief Won't Be Enough, Worst-Hit Assam Villages To Be Rebuilt: Himanta Sarma",
-          "url": "https://www.ndtv.com/india-news/assam-floods-relief-wont-be-enough-worst-hit-assam-villages-to-be-rebuilt-himanta-biswa-sarma-11859605#publisher=newsstand"
-        },
-        {
-          "outlet": "Scroll.in",
-          "title": "Kerala: 15 killed in rain-related incidents, seven missing",
-          "url": "https://scroll.in/latest/1094752/kerala-15-killed-in-rain-related-incidents-seven-missing?utm_source=rss&utm_medium=public"
-        },
-        {
-          "outlet": "The Hindu",
-          "title": "Rain eases, but swollen rivers keep flood-prone areas in Ernakulam district on alert",
-          "url": "https://www.thehindu.com/news/national/kerala/riverbanks-low-lying-areas-of-ernakulam-district-remain-on-alert-despite-relief-from-heavy-rain/article71302070.ece"
-        },
-        {
-          "outlet": "The Hindu",
-          "title": "Kerala rains: heavy rain continues to batter district",
-          "url": "https://www.thehindu.com/news/national/kerala/kerala-rains-heavy-rain-continues-to-batter-district/article71302163.ece"
-        }
-      ],
-      "articles_dropped_by_diversity_cap": 0
-    },
-    {
-      "headline_hint": "Supreme Court allows states to withdraw FIRs against peaceful student protesters",
-      "section": "india",
-      "category": "politics",
-      "tier_requested": "notable",
-      "article_ids": [
-        249,
-        269,
-        283,
-        286
-      ],
-      "verdict": "cut:below_floor(3<5)",
-      "valid_ids": [
-        249,
-        269,
-        283,
-        286
-      ],
-      "tier_final": "notable",
-      "distinct_outlets": 3,
-      "wiki_backed": false,
-      "wiki_event": "",
-      "weight": 3,
-      "weight_terms": {
-        "distinct_outlets": 3,
-        "tier_weight": 0,
-        "wiki_bonus": 0
-      },
-      "weight_floor": 5,
-      "articles": [
-        {
-          "outlet": "Livemint",
-          "title": "SC narrows 'criminal antecedents' clause from protest order; CJP says 'confusion' removed, seeks assurance from govt",
-          "url": "https://www.livemint.com/news/india/sc-narrows-criminal-antecedents-clause-from-protest-order-cjp-says-confusion-removed-seeks-assurance-from-govt-11785757341812.html"
-        },
-        {
-          "outlet": "Hindustan Times",
-          "title": "'Withdraw FIRs now': CJP to BJP after top court clarifies order on protest-linked cases",
-          "url": "https://www.hindustantimes.com/india-news/cjp-spokesperson-saurav-das-bjp-nda-state-governments-centre-student-protest-cases-withdraw-firs-now-101785752779852.html"
-        },
-        {
-          "outlet": "Scroll.in",
-          "title": "Youth protests: Supreme Court clarifies states can withdraw FIRs against demonstrators",
-          "url": "https://scroll.in/latest/1094747/youth-protests-supreme-court-clarifies-states-can-withdraw-firs-against-demonstrators?utm_source=rss&utm_medium=public"
-        },
-        {
-          "outlet": "Hindustan Times",
-          "title": "SC narrows caveat, says states can withdraw FIRs on protesters; CJP reacts",
-          "url": "https://www.hindustantimes.com/india-news/supreme-court-says-states-free-to-withdraw-student-firs-over-cjp-protest-sc-explains-caveat-of-criminal-past-101785749816645.html"
-        }
-      ],
-      "articles_dropped_by_diversity_cap": 0
-    },
-    {
-      "headline_hint": "Parliamentary panel demands Meta CEO Mark Zuckerberg apologize over removal of PM Modi's video",
-      "section": "india",
-      "category": "technology",
-      "tier_requested": "notable",
-      "article_ids": [
-        152,
-        182,
-        213,
-        232
-      ],
-      "verdict": "cut:below_floor(3<5)",
-      "valid_ids": [
-        152,
-        182,
-        213,
-        232
-      ],
-      "tier_final": "notable",
-      "distinct_outlets": 3,
-      "wiki_backed": false,
-      "wiki_event": "",
-      "weight": 3,
-      "weight_terms": {
-        "distinct_outlets": 3,
-        "tier_weight": 0,
-        "wiki_bonus": 0
-      },
-      "weight_floor": 5,
-      "articles": [
-        {
-          "outlet": "Livemint",
-          "title": "Mark Zuckerberg must apologise over PM Modi video removal or lose safe harbour protection: Nishikant Dubey",
-          "url": "https://www.livemint.com/news/india/mark-zuckerberg-must-apologise-over-pm-modi-video-removal-or-lose-safe-harbour-protection-nishikant-dubey-11785772338199.html"
-        },
-        {
-          "outlet": "Hindustan Times",
-          "title": "‘Zuckerberg intends to destabilise India’: Parliament panel chief demands apology from Meta boss over PM post row",
-          "url": "https://www.hindustantimes.com/india-news/zuckerbergs-intention-to-destabilise-country-parliament-panel-chief-seeks-apology-from-meta-ceo-after-pm-post-row-101785766598509.html"
-        },
-        {
-          "outlet": "Times of India",
-          "title": "'Zuckerberg should apologise': Parl panel on Meta removing PM Modi video",
-          "url": "https://timesofindia.indiatimes.com/india/meta-apologises-before-parl-panel-over-removal-of-pm-modis-video-members-seek-accountability/articleshow/132831981.cms"
-        },
-        {
-          "outlet": "Livemint",
-          "title": "Parliamentary panel takes tough stance on removal of Modi’s video from Facebook, seek accountability from Meta officials",
-          "url": "https://www.livemint.com/news/india/parliamentary-panel-takes-tough-stance-on-removal-of-modi-s-video-from-facebook-seek-accountability-from-meta-officials-11785764173648.html"
-        }
-      ],
-      "articles_dropped_by_diversity_cap": 0
-    },
-    {
-      "headline_hint": "Trump calls negotiations with Iran 'last chance' as Tehran denies active direct talks",
-      "section": "world",
-      "category": "conflict",
-      "tier_requested": "lead",
-      "article_ids": [
-        16,
-        35,
-        36,
-        39,
-        77,
-        81,
-        115,
-        140,
-        150,
-        158,
-        190,
-        194,
-        199,
-        226,
-        253,
-        270
-      ],
-      "verdict": "kept",
-      "valid_ids": [
-        16,
-        35,
-        36,
-        39,
-        77,
-        81,
-        115,
-        140,
-        150,
-        158,
-        190,
-        194,
-        199,
-        226,
-        253,
-        270
-      ],
-      "tier_final": "lead",
-      "distinct_outlets": 6,
-      "wiki_backed": false,
-      "wiki_event": "",
-      "weight": 10,
-      "weight_terms": {
-        "distinct_outlets": 6,
-        "tier_weight": 4,
-        "wiki_bonus": 0
-      },
-      "weight_floor": 5,
-      "articles": [
-        {
-          "outlet": "Guardian World",
-          "title": "Middle East crisis live: Trump claims strait of Hormuz could open ‘by tomorrow’ as Iran denies any talks taking place",
-          "url": "https://www.theguardian.com/world/live/2026/aug/03/us-iran-trump-strait-of-hormuz-talks-israel-gaza-lebanon-latest-news-updates"
-        },
-        {
-          "outlet": "Al Jazeera",
-          "title": "Trump says talks with Iran are ‘last chance’ to forge a deal",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/3/trump-says-talks-with-iran-are-last-chance-to-forge-a-deal?traffic_source=rss"
-        },
-        {
-          "outlet": "BBC World",
-          "title": "Iran says it is in talks with Oman but not the US after Trump says negotiations to resume",
-          "url": "https://www.bbc.co.uk/news/articles/c23579jzv08o?at_medium=RSS&at_campaign=rss"
-        },
-        {
-          "outlet": "Livemint",
-          "title": "Trump says US-Iran talks ‘going on right now’, calls it Tehran’s ‘last chance’ to reach deal",
-          "url": "https://www.livemint.com/news/us-news/trump-says-us-iran-talks-going-on-right-now-calls-it-tehran-s-last-chance-to-reach-deal-11785781585074.html"
-        },
-        {
-          "outlet": "France 24",
-          "title": "Iran 'calls Trump's bluff' as it denies negotiating with the US",
-          "url": "https://www.france24.com/en/iran-calls-trump-s-bluff-as-it-denies-negotiating-with-the-us"
-        }
-      ],
-      "articles_dropped_by_diversity_cap": 11
-    },
-    {
-      "headline_hint": "Ceuta migrant crisis triggers EU calls for strengthened border security and European unity",
-      "section": "world",
-      "category": "politics",
-      "tier_requested": "major",
-      "article_ids": [
-        5,
-        20,
-        112,
-        116,
-        153,
-        157,
-        159,
-        165,
-        174,
-        177,
-        207,
-        209,
-        243,
-        262,
-        272,
-        304
-      ],
-      "verdict": "kept",
-      "valid_ids": [
-        5,
-        20,
-        112,
-        116,
-        153,
-        157,
-        159,
-        165,
-        174,
-        177,
-        207,
-        209,
-        243,
-        262,
-        272,
-        304
-      ],
-      "tier_final": "major",
-      "distinct_outlets": 7,
-      "wiki_backed": false,
-      "wiki_event": "",
-      "weight": 9,
-      "weight_terms": {
-        "distinct_outlets": 7,
-        "tier_weight": 2,
-        "wiki_bonus": 0
-      },
-      "weight_floor": 5,
-      "articles": [
-        {
-          "outlet": "Al Jazeera",
-          "title": "Migrants await asylum in Ceuta amid hunger and thirst",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/3/aje-onl-nf_migrants-await-asylum-in-ceuta-amid-hunger-thirst-030826?traffic_source=rss"
-        },
-        {
-          "outlet": "Guardian World",
-          "title": "Stronger EU borders needed after Ceuta crisis, von der Leyen says",
-          "url": "https://www.theguardian.com/world/2026/aug/03/stronger-eu-borders-physical-barriers-ceuta-von-der-leyen"
-        },
-        {
-          "outlet": "Channel News Asia",
-          "title": "EU can give Morocco more border support, von der Leyen tells Spain after Ceuta spat",
-          "url": "https://www.channelnewsasia.com/world/morocco-ceuta-spain-eu-border-support-6296011"
-        },
-        {
-          "outlet": "DW World",
-          "title": "Ceuta: EU calls borders a 'shared European responsibility'",
-          "url": "https://www.dw.com/en/ceuta-eu-calls-borders-a-shared-european-responsibility/a-78220701?maca=en-rss-en-world-4025-rdf"
-        },
-        {
-          "outlet": "France 24",
-          "title": "Ceuta migrant influx reignites immigration divisions in Europe",
-          "url": "https://www.france24.com/en/europe/20260803-ceuta-migrant-influx-reignites-immigration-divisions-in-europe"
-        }
-      ],
-      "articles_dropped_by_diversity_cap": 11
-    },
-    {
-      "headline_hint": "Ukrainian drone strike on Black Sea beach in Russia kills seven people including children",
-      "section": "world",
-      "category": "conflict",
-      "tier_requested": "major",
-      "article_ids": [
-        85,
-        103,
-        104,
-        118
-      ],
-      "verdict": "kept",
-      "valid_ids": [
-        85,
-        103,
-        104,
-        118
-      ],
-      "tier_final": "major",
-      "distinct_outlets": 4,
-      "wiki_backed": true,
-      "wiki_event": "At least seven people are killed, including three children, and 40 others are injured in a Ukrainian drone strike on a crowded beach in Gelendzhik, Krasnodar Krai, Russia.",
-      "weight": 8,
-      "weight_terms": {
-        "distinct_outlets": 4,
-        "tier_weight": 2,
-        "wiki_bonus": 2
-      },
-      "weight_floor": 5,
-      "articles": [
-        {
-          "outlet": "Channel News Asia",
-          "title": "Russia says Ukrainian drone attack on holiday-makers killed seven, including 3 children",
-          "url": "https://www.channelnewsasia.com/world/russia-ukraine-black-sea-resort-killed-seven-6296066"
-        },
-        {
-          "outlet": "Al Jazeera",
-          "title": "Drone slams into Russian beach, killing at least 7 people",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/3/drone-slams-into-russian-beach-killing-at-least-7-people?traffic_source=rss"
-        },
-        {
-          "outlet": "BBC World",
-          "title": "Russia says seven killed and 40 injured by Ukrainian drone hitting busy beach",
-          "url": "https://www.bbc.co.uk/news/articles/cr7kmnyrdn7o?at_medium=RSS&at_campaign=rss"
-        },
-        {
-          "outlet": "Times of India",
-          "title": "'Had no time to flee': Drone strikes Russian beach; kills 7, injures 40",
-          "url": "https://timesofindia.indiatimes.com/world/rest-of-world/had-no-time-to-flee-drone-strikes-russian-black-sea-beach-kills-7-including-3-children-injures-40/articleshow/132837920.cms"
-        }
-      ],
-      "articles_dropped_by_diversity_cap": 0
-    },
-    {
-      "headline_hint": "Severe European heatwave and low river levels strain nuclear power and ignite wildfires",
-      "section": "world",
-      "category": "climate",
-      "tier_requested": "major",
-      "article_ids": [
-        15,
-        32,
-        107,
-        146,
-        155,
-        172,
-        188,
-        196,
-        235,
-        309
-      ],
-      "verdict": "kept",
-      "valid_ids": [
-        15,
-        32,
-        107,
-        146,
-        155,
-        172,
-        188,
-        196,
-        235,
-        309
-      ],
-      "tier_final": "major",
-      "distinct_outlets": 6,
-      "wiki_backed": false,
-      "wiki_event": "",
-      "weight": 8,
-      "weight_terms": {
-        "distinct_outlets": 6,
-        "tier_weight": 2,
-        "wiki_bonus": 0
-      },
-      "weight_floor": 5,
-      "articles": [
-        {
-          "outlet": "Channel News Asia",
-          "title": "Wildfire flares up again in Greece as water bombers deployed",
-          "url": "https://www.channelnewsasia.com/world/wildfire-flares-up-again-in-greece-water-bombers-deployed-6296221"
-        },
-        {
-          "outlet": "France 24",
-          "title": "Europe's record-breaking heat sparks wildfires, drought in France, Greece and the UK",
-          "url": "https://www.france24.com/en/europe/20260803-europe-s-record-breaking-heat-sparks-wildfires-drought-in-france-greece-and-the-uk"
-        },
-        {
-          "outlet": "DW World",
-          "title": "Dry Danube River threatens nuclear power in Romania, Hungary",
-          "url": "https://www.dw.com/en/dry-danube-river-threatens-nuclear-power-in-romania-hungary/a-78223402?maca=en-rss-en-world-4025-rdf"
-        },
-        {
-          "outlet": "BBC World",
-          "title": "Rhine falls to record low levels as drought strains Europe's rivers",
-          "url": "https://www.bbc.co.uk/news/articles/c78gn8zvrx4o?at_medium=RSS&at_campaign=rss"
-        },
-        {
-          "outlet": "Al Jazeera",
-          "title": "Romanian navy blasts riverbed to protect nuclear plant",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/3/romanian-navy-blasts-riverbed-to-protect-nuclear-plant?traffic_source=rss"
-        }
-      ],
-      "articles_dropped_by_diversity_cap": 5
-    },
-    {
-      "headline_hint": "US and Japan intervene in foreign exchange markets to boost the Japanese yen",
-      "section": "world",
-      "category": "economy",
-      "tier_requested": "notable",
-      "article_ids": [
-        303,
-        306,
-        316,
-        322
-      ],
-      "verdict": "cut:below_floor(3<5)",
-      "valid_ids": [
-        303,
-        306,
-        316,
-        322
-      ],
-      "tier_final": "notable",
-      "distinct_outlets": 3,
-      "wiki_backed": false,
-      "wiki_event": "",
-      "weight": 3,
-      "weight_terms": {
-        "distinct_outlets": 3,
-        "tier_weight": 0,
-        "wiki_bonus": 0
-      },
-      "weight_floor": 5,
-      "articles": [
-        {
-          "outlet": "NPR World",
-          "title": "U.S. steps in to help shore up Japanese yen",
-          "url": "https://www.npr.org/2026/08/03/nx-s1-5917867/u-s-steps-in-to-help-shore-up-japanese-yen"
-        },
-        {
-          "outlet": "Guardian World",
-          "title": "Yen hits three-month high after Trump helps prop up currency",
-          "url": "https://www.theguardian.com/business/2026/aug/03/yen-trump-currency-us-japan"
-        },
-        {
-          "outlet": "BBC World",
-          "title": "US and Japan take action to prop up yen in rare joint move",
-          "url": "https://www.bbc.co.uk/news/articles/cglj1pr0wjwo?at_medium=RSS&at_campaign=rss"
-        },
-        {
-          "outlet": "NPR World",
-          "title": "U.S. dollar weakens sharply against the Japanese yen after market interventions",
-          "url": "https://www.npr.org/2026/08/03/g-s1-136866/us-dollar-japanese-yen-market-interventions"
-        }
-      ],
-      "articles_dropped_by_diversity_cap": 0
-    },
-    {
-      "headline_hint": "Detained former Myanmar leader Aung San Suu Kyi meets ICRC official in first public contact in years",
+      "headline_hint": "AG nominee Todd Blanche scraps $1.8B fund to clear path for Senate confirmation",
       "section": "world",
       "category": "politics",
       "tier_requested": "notable",
       "article_ids": [
-        189,
-        202,
-        271,
-        300
+        1,
+        144,
+        215,
+        259
       ],
       "verdict": "cut:below_floor(4<5)",
       "valid_ids": [
-        189,
-        202,
-        271,
-        300
+        1,
+        144,
+        215,
+        259
       ],
       "tier_final": "notable",
       "distinct_outlets": 4,
@@ -711,43 +583,43 @@
       "weight_floor": 5,
       "articles": [
         {
-          "outlet": "France 24",
-          "title": "Myanmar: Ousted leader Suu Kyi makes rare appearance with Red Cross representative",
-          "url": "https://www.france24.com/en/video/20260803-myanmar-ousted-leader-suu-kyi-makes-rare-appearance-with-red-cross-representative"
-        },
-        {
-          "outlet": "BBC World",
-          "title": "Aung San Suu Kyi appears healthy in first confirmed outside contact for 2.5 years",
-          "url": "https://www.bbc.co.uk/news/articles/c1e1d5j6660o?at_medium=RSS&at_campaign=rss"
-        },
-        {
           "outlet": "Guardian World",
-          "title": "Red Cross visits Aung San Suu Kyi after Myanmar military pushed to prove she is alive",
-          "url": "https://www.theguardian.com/world/2026/aug/03/myanmar-detained-former-leader-aung-san-suu-kyi-red-cross"
+          "title": "‘Completely hollow’: critics denounce Blanche deal to halt Trump slush fund",
+          "url": "https://www.theguardian.com/us-news/2026/aug/03/todd-blanche-donald-trump-deal"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Republicans say they will back Blanche after US Justice Department order",
+          "url": "https://www.aljazeera.com/news/2026/8/3/republicans-say-they-will-back-blanche-after-us-justice-department-order?traffic_source=rss"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Why did Todd Blanche scrap Trump's $1.8 billion ‘anti-weaponization fund’ before attorney general confirmation vote?",
+          "url": "https://www.livemint.com/news/us-news/why-did-todd-blanche-scrap-trumps-1-8-billion-anti-weaponization-fund-before-attorney-general-confirmation-vote-11785764160050.html"
         },
         {
           "outlet": "NPR World",
-          "title": "Rare photos of ex-Myanmar leader Aung San Suu Kyi give her family hope",
-          "url": "https://www.npr.org/2026/08/03/nx-s1-5917915/aung-san-suu-kyi-myanmar-rare-photos-kim-aris"
+          "title": "Todd Blanche rescinds 'anti-weaponization fund'. And, Trump calls off striking Iran",
+          "url": "https://www.npr.org/2026/08/03/g-s1-136892/up-first-newsletter-iran-war-todd-blanche-capital-one-bank-accounts-trump-conspiracy"
         }
       ],
       "articles_dropped_by_diversity_cap": 0
     },
     {
-      "headline_hint": "Russian anti-war opposition figure Boris Nadezhdin flees to Paris amid pre-election pressure",
+      "headline_hint": "Anti-war Russian politician Boris Nadezhdin flees to France amid crackdown",
       "section": "world",
       "category": "politics",
       "tier_requested": "notable",
       "article_ids": [
-        163,
-        166,
-        191
+        180,
+        183,
+        206
       ],
       "verdict": "kept",
       "valid_ids": [
-        163,
-        166,
-        191
+        180,
+        183,
+        206
       ],
       "tier_final": "notable",
       "distinct_outlets": 3,
@@ -775,6 +647,119 @@
           "outlet": "France 24",
           "title": "Anti-war politician and Kremlin critic Boris Nadezhdin flees Russia for France",
           "url": "https://www.france24.com/en/europe/20260803-anti-war-politician-and-kremlin-critic-boris-nadezhdin-flees-russia-for-france"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Supreme Court clarifies states can withdraw cases against student protesters",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        15,
+        256,
+        288,
+        291
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        15,
+        256,
+        288,
+        291
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "Withdraw cases, allow youngsters to continue studies: SC to states",
+          "url": "https://timesofindia.indiatimes.com/india/withdraw-cases-allow-youngsters-to-continue-studies-sc-to-states/articleshow/132843056.cms"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "SC narrows 'criminal antecedents' clause from protest order; CJP says 'confusion' removed, seeks assurance from govt",
+          "url": "https://www.livemint.com/news/india/sc-narrows-criminal-antecedents-clause-from-protest-order-cjp-says-confusion-removed-seeks-assurance-from-govt-11785757341812.html"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "Youth protests: Supreme Court clarifies states can withdraw FIRs against demonstrators",
+          "url": "https://scroll.in/latest/1094747/youth-protests-supreme-court-clarifies-states-can-withdraw-firs-against-demonstrators?utm_source=rss&utm_medium=public"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "SC narrows caveat, says states can withdraw FIRs on protesters; CJP reacts",
+          "url": "https://www.hindustantimes.com/india-news/supreme-court-says-states-free-to-withdraw-student-firs-over-cjp-protest-sc-explains-caveat-of-criminal-past-101785749816645.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Parliamentary panel demands apology from Meta chief over temporary removal of PM Modi's video",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        27,
+        172,
+        197,
+        225,
+        241
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        27,
+        172,
+        197,
+        225,
+        241
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "Meta CEO Zuckerberg must apologise: Parliamentary Panel",
+          "url": "https://timesofindia.indiatimes.com/india/meta-ceo-zuckerberg-must-apologise-parliamentary-panel/articleshow/132841740.cms"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Mark Zuckerberg must apologise over PM Modi video removal or lose safe harbour protection: Nishikant Dubey",
+          "url": "https://www.livemint.com/news/india/mark-zuckerberg-must-apologise-over-pm-modi-video-removal-or-lose-safe-harbour-protection-nishikant-dubey-11785772338199.html"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "‘Zuckerberg intends to destabilise India’: Parliament panel chief demands apology from Meta boss over PM post row",
+          "url": "https://www.hindustantimes.com/india-news/zuckerbergs-intention-to-destabilise-country-parliament-panel-chief-seeks-apology-from-meta-ceo-after-pm-post-row-101785766598509.html"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Parliamentary panel takes tough stance on removal of Modi’s video from Facebook, seek accountability from Meta officials",
+          "url": "https://www.livemint.com/news/india/parliamentary-panel-takes-tough-stance-on-removal-of-modi-s-video-from-facebook-seek-accountability-from-meta-officials-11785764173648.html"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "'Zuckerberg should apologise': Parl panel on Meta removing PM Modi video",
+          "url": "https://timesofindia.indiatimes.com/india/meta-apologises-before-parl-panel-over-removal-of-pm-modis-video-members-seek-accountability/articleshow/132831981.cms"
         }
       ],
       "articles_dropped_by_diversity_cap": 0
