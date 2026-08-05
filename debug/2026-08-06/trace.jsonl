@@ -1,0 +1,130 @@
+{"run": "digest", "t": 0, "kind": "digest", "stage": "tracer", "msg": "capture started", "level": 1, "day": "2026-08-06"}
+{"run": "digest", "t": 1719, "kind": "dbg", "msg": "digest: window since=2026-08-04T21:46:08+00:00 (prev_generated_at=2026-08-04 21:46:08+00:00)"}
+{"run": "digest", "t": 1808, "kind": "dbg", "msg": "feed 'BBC World': http=200 raw_items=22 usable=22"}
+{"run": "digest", "t": 1808, "kind": "event", "stage": "feeds", "outlet": "BBC World", "url": "https://feeds.bbci.co.uk/news/world/rss.xml", "http": 200, "elapsed_ms": 80, "bytes": 17420, "raw_items": 22, "usable": 22, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 1951, "kind": "dbg", "msg": "feed 'Al Jazeera': http=200 raw_items=25 usable=25"}
+{"run": "digest", "t": 1951, "kind": "event", "stage": "feeds", "outlet": "Al Jazeera", "url": "https://www.aljazeera.com/xml/rss/all.xml", "http": 200, "elapsed_ms": 133, "bytes": 16962, "raw_items": 25, "usable": 25, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 2203, "kind": "dbg", "msg": "feed 'Guardian World': http=200 raw_items=45 usable=45"}
+{"run": "digest", "t": 2203, "kind": "event", "stage": "feeds", "outlet": "Guardian World", "url": "https://www.theguardian.com/world/rss", "http": 200, "elapsed_ms": 204, "bytes": 150791, "raw_items": 45, "usable": 45, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 2600, "kind": "dbg", "msg": "feed 'NPR World': http=200 raw_items=10 usable=10"}
+{"run": "digest", "t": 2600, "kind": "event", "stage": "feeds", "outlet": "NPR World", "url": "https://feeds.npr.org/1004/rss.xml", "http": 200, "elapsed_ms": 389, "bytes": 13965, "raw_items": 10, "usable": 10, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 3654, "kind": "dbg", "msg": "feed 'DW World': http=200 raw_items=13 usable=13"}
+{"run": "digest", "t": 3654, "kind": "event", "stage": "feeds", "outlet": "DW World", "url": "https://rss.dw.com/rdf/rss-en-world", "http": 200, "elapsed_ms": 1047, "bytes": 12383, "raw_items": 13, "usable": 13, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 3770, "kind": "dbg", "msg": "feed 'France 24': http=200 raw_items=24 usable=24"}
+{"run": "digest", "t": 3770, "kind": "event", "stage": "feeds", "outlet": "France 24", "url": "https://www.france24.com/en/rss", "http": 200, "elapsed_ms": 105, "bytes": 28326, "raw_items": 24, "usable": 24, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 3934, "kind": "dbg", "msg": "feed 'Channel News Asia': http=200 raw_items=20 usable=20"}
+{"run": "digest", "t": 3934, "kind": "event", "stage": "feeds", "outlet": "Channel News Asia", "url": "https://www.channelnewsasia.com/api/v1/rss-outbound-feed?_format=xml", "http": 200, "elapsed_ms": 155, "bytes": 16668, "raw_items": 20, "usable": 20, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 4328, "kind": "dbg", "msg": "feed 'The Hindu': http=200 raw_items=60 usable=60"}
+{"run": "digest", "t": 4328, "kind": "event", "stage": "feeds", "outlet": "The Hindu", "url": "https://www.thehindu.com/news/national/feeder/default.rss", "http": 200, "elapsed_ms": 375, "bytes": 46353, "raw_items": 60, "usable": 60, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 4524, "kind": "dbg", "msg": "feed 'Indian Express': http=403"}
+{"run": "digest", "t": 4524, "kind": "event", "stage": "feeds", "outlet": "Indian Express", "url": "https://indianexpress.com/section/india/feed/", "http": 403, "elapsed_ms": 194, "verdict": "http_error"}
+{"run": "digest", "t": 4730, "kind": "dbg", "msg": "feed 'NDTV': http=200 raw_items=20 usable=20"}
+{"run": "digest", "t": 4730, "kind": "event", "stage": "feeds", "outlet": "NDTV", "url": "https://feeds.feedburner.com/ndtvnews-india-news", "http": 200, "elapsed_ms": 196, "bytes": 27945, "raw_items": 20, "usable": 20, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 4859, "kind": "dbg", "msg": "feed 'Hindustan Times': http=200 raw_items=100 usable=100"}
+{"run": "digest", "t": 4859, "kind": "event", "stage": "feeds", "outlet": "Hindustan Times", "url": "https://www.hindustantimes.com/feeds/rss/india-news/rssfeed.xml", "http": 200, "elapsed_ms": 100, "bytes": 96697, "raw_items": 100, "usable": 100, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 4975, "kind": "dbg", "msg": "feed 'Times of India': http=200 raw_items=47 usable=47"}
+{"run": "digest", "t": 4975, "kind": "event", "stage": "feeds", "outlet": "Times of India", "url": "https://timesofindia.indiatimes.com/rssfeedstopstories.cms", "http": 200, "elapsed_ms": 99, "bytes": 48335, "raw_items": 47, "usable": 47, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 5120, "kind": "dbg", "msg": "feed 'Livemint': http=200 raw_items=35 usable=35"}
+{"run": "digest", "t": 5120, "kind": "event", "stage": "feeds", "outlet": "Livemint", "url": "https://www.livemint.com/rss/news", "http": 200, "elapsed_ms": 133, "bytes": 37382, "raw_items": 35, "usable": 35, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 5440, "kind": "dbg", "msg": "feed 'Scroll.in': http=200 raw_items=100 usable=100"}
+{"run": "digest", "t": 5440, "kind": "event", "stage": "feeds", "outlet": "Scroll.in", "url": "https://feeds.feedburner.com/ScrollinArticles.rss", "http": 200, "elapsed_ms": 210, "bytes": 307920, "raw_items": 100, "usable": 100, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 5446, "kind": "dbg", "msg": "gather: 423 article(s) after window+dedupe; by outlet: {'Guardian World': 38, 'BBC World': 19, 'Al Jazeera': 24, 'Channel News Asia': 20, 'Times of India': 43, 'Livemint': 35, 'NPR World': 8, 'France 24': 23, 'The Hindu': 60, 'DW World': 5, 'NDTV': 20, 'Hindustan Times': 100, 'Scroll.in': 28}"}
+{"run": "digest", "t": 5446, "kind": "dbg", "msg": "gather: 13/14 feed(s) live, 423 article(s)"}
+{"run": "digest", "t": 5448, "kind": "event", "stage": "stage", "name": "gather", "ms": 3729, "ok": true, "error": ""}
+{"run": "digest", "t": 5448, "kind": "dbg", "msg": "gather: QUORUM OK — live=13/3 min, articles=423/20 min"}
+{"run": "digest", "t": 5448, "kind": "dbg", "msg": "rank: select pool 423 -> 340; capped outlets: {'The Hindu': 20, 'Times of India': 3, 'Hindustan Times': 60}"}
+{"run": "digest", "t": 5453, "kind": "event", "stage": "stage", "name": "pool", "ms": 4, "ok": true, "error": ""}
+{"run": "digest", "t": 5618, "kind": "dbg", "msg": "wiki: 2026_August_6 http=200 events=0"}
+{"run": "digest", "t": 5618, "kind": "event", "stage": "wikipedia", "page": "2026_August_6", "http": 200, "bytes": 190, "events": 0, "verdict": "ok"}
+{"run": "digest", "t": 5778, "kind": "dbg", "msg": "wiki: 2026_August_5 http=200 events=8"}
+{"run": "digest", "t": 5778, "kind": "event", "stage": "wikipedia", "page": "2026_August_5", "http": 200, "bytes": 4013, "events": 8, "verdict": "ok"}
+{"run": "digest", "t": 5780, "kind": "event", "stage": "stage", "name": "wikipedia", "ms": 326, "ok": true, "error": ""}
+{"run": "digest", "t": 5880, "kind": "dbg", "msg": "llm: call #1 model=gemini-3.6-flash label=select prompt=85902ch"}
+{"run": "digest", "t": 32967, "kind": "dbg", "msg": "llm: select finish_reason=FinishReason.STOP"}
+{"run": "digest", "t": 32968, "kind": "event", "stage": "llm", "call": 1, "label": "select", "model": "gemini-3.6-flash", "latency_ms": 27086, "prompt_chars": 85902, "system_chars": 2517, "response_chars": 1880, "finish_reason": "FinishReason.STOP", "malformed_json": false, "json_retries": 0, "max_output_tokens": 32768, "usage": {"prompt_token_count": 20145, "candidates_token_count": 610, "total_token_count": 25705, "thoughts_token_count": 4950}}
+{"run": "digest", "t": 32970, "kind": "dbg", "msg": "llm: select_stories -> 9 raw cluster(s)"}
+{"run": "digest", "t": 32970, "kind": "event", "stage": "stage", "name": "select", "ms": 27189, "ok": true, "error": ""}
+{"run": "digest", "t": 32970, "kind": "dbg", "msg": "rank: [world] outlets=5 tier=lead wiki=yes weight=11 'Iran and Oman reach draft agreement on shipping routes through Strait of Hormuz'"}
+{"run": "digest", "t": 32970, "kind": "dbg", "msg": "rank: [india] outlets=5 tier=lead wiki=no weight=9 \"Meta apologizes to Indian government over restriction of PM Modi's post and platform errors\""}
+{"run": "digest", "t": 32970, "kind": "dbg", "msg": "rank: [world] outlets=6 tier=major wiki=no weight=8 'Russian barrage on Kyiv kills at least 17 as Ukraine faces critical air defense shortage'"}
+{"run": "digest", "t": 32971, "kind": "dbg", "msg": "rank: [world] outlets=6 tier=major wiki=no weight=8 'Progressive Abdul El-Sayed wins Michigan Democratic Senate primary'"}
+{"run": "digest", "t": 32971, "kind": "dbg", "msg": "rank: [world] outlets=4 tier=major wiki=yes weight=8 'Explosive drone found near cargo plane at German airport prompts terrorism probe'"}
+{"run": "digest", "t": 32971, "kind": "dbg", "msg": "rank: [world] outlets=6 tier=major wiki=no weight=8 'Deposed Bangladesh Prime Minister Sheikh Hasina vows to return from exile in December'"}
+{"run": "digest", "t": 32971, "kind": "dbg", "msg": "rank: [india] outlets=4 tier=major wiki=no weight=6 'Rajya Sabha passes bill to increase Supreme Court judge strength amid parliamentary deadlock'"}
+{"run": "digest", "t": 32971, "kind": "dbg", "msg": "rank: [india] outlets=6 tier=notable wiki=no weight=6 'Supreme Court urges caution in handling youth protests as political debate intensifies'"}
+{"run": "digest", "t": 32972, "kind": "dbg", "msg": "rank: [world] outlets=4 tier=notable wiki=yes weight=6 'Israeli strikes in southern Lebanon kill at least one following alleged ceasefire violations'"}
+{"run": "digest", "t": 32972, "kind": "dbg", "msg": "rank: 9 scored, 0 id(s) rejected, 9 kept {'world': 6, 'india': 3}; weights=[11, 8, 8, 8, 8, 6, 9, 6, 6]"}
+{"run": "digest", "t": 32973, "kind": "event", "stage": "stage", "name": "rank", "ms": 2, "ok": true, "error": ""}
+{"run": "digest", "t": 32974, "kind": "dbg", "msg": "wiki: 8 curated event(s); 4 matched a selected story, 4 not covered"}
+{"run": "digest", "t": 32974, "kind": "dbg", "msg": "wiki: NOT COVERED [International relations] International sanctions against Iran — The United States Treasury Department lifts sanctions against Fly Baghdad, which were previously imposed in 2024 under the Joe Biden administration over its links to Iran’s Islamic Revolutionary Guard Corps Quds Force."}
+{"run": "digest", "t": 32974, "kind": "dbg", "msg": "wiki: NOT COVERED [Law and crime] Far-right politics in Germany — The Hanseatic Higher Regional Court in Hamburg, Germany, convicts seven members and one supporter of a right-wing extremist group and sentences them to prison for attempted murder, arson, aggravated assault, and being members of a terrorist"}
+{"run": "digest", "t": 32974, "kind": "dbg", "msg": "wiki: NOT COVERED [Law and crime] War on drugs, Illegal drug trade in Latin America, Crime in Spain — The Spanish Civil Guard and the Ecuadorian National Police announce they have arrested 44 people and confiscated 21 tons of cocaine as part of a multiyear investigation on a drug trafficking ring financed by investors in Dubai."}
+{"run": "digest", "t": 32974, "kind": "dbg", "msg": "wiki: NOT COVERED [Politics and elections] Pastoral trips made by Pope Leo XIV — The Holy See Press Office announces Pope Leo XIV will make a apostolic journey to Argentina, Uruguay, and Peru, in November, marking his first trip to Latin America in his papacy."}
+{"run": "digest", "t": 33145, "kind": "dbg", "msg": "extract: 3641ch https://www.channelnewsasia.com/world/us-stocks-markets-hormuz-oil-6302141"}
+{"run": "digest", "t": 33337, "kind": "dbg", "msg": "extract: 2779ch https://www.bbc.co.uk/news/articles/ckg9d3eyeggo?at_medium=RSS&at_campaign=rss"}
+{"run": "digest", "t": 33618, "kind": "dbg", "msg": "extract: 3765ch https://www.livemint.com/news/world/total-world-latest-news-on-august-6-2026-live-updates-11785964174512.html"}
+{"run": "digest", "t": 33876, "kind": "dbg", "msg": "extract: 3221ch https://www.aljazeera.com/news/2026/8/5/iran-says-hormuz-talks-with-oman-in-final-stages-as-route-approved?traffic_source=rss"}
+{"run": "digest", "t": 34012, "kind": "dbg", "msg": "extract: 15018ch https://www.theguardian.com/world/live/2026/aug/05/us-iran-israel-oman-strait-of-hormuz-latest-news-updates"}
+{"run": "digest", "t": 34150, "kind": "dbg", "msg": "extract: 1085ch https://www.channelnewsasia.com/world/russia-kyiv-17-killed-interceptors-6302046"}
+{"run": "digest", "t": 34227, "kind": "dbg", "msg": "extract: fetch_html https://www.france24.com/en/escalatory-spiral-of-attrition-drone-technology-allowing-ukraine-to-resist-russia-asymmetrically: http=403"}
+{"run": "digest", "t": 37824, "kind": "dbg", "msg": "extract: 14555ch https://www.france24.com/en/escalatory-spiral-of-attrition-drone-technology-allowing-ukraine-to-resist-russia-asymmetrically"}
+{"run": "digest", "t": 42280, "kind": "dbg", "msg": "extract: 34537ch https://www.npr.org/2026/08/05/nx-s1-5921395/kyiv-residents-face-attacks-with-fewer-defenses-overhead"}
+{"run": "digest", "t": 53302, "kind": "dbg", "msg": "extract: 23701ch https://www.bbc.co.uk/news/videos/clyxdgx7m8no?at_medium=RSS&at_campaign=rss"}
+{"run": "digest", "t": 56773, "kind": "dbg", "msg": "extract: 11699ch https://www.aljazeera.com/video/inside-story/2026/8/5/is-the-conflict-between-russia-and-ukraine-deepening?traffic_source=rss"}
+{"run": "digest", "t": 60341, "kind": "dbg", "msg": "extract: 10757ch https://www.aljazeera.com/video/newsfeed/2026/8/5/el-sayed-wins-michigan-democratic-senate-primary-2?traffic_source=rss"}
+{"run": "digest", "t": 60561, "kind": "dbg", "msg": "extract: 5376ch https://www.theguardian.com/us-news/2026/aug/05/top-democrats-embrace-abdul-el-sayed"}
+{"run": "digest", "t": 60660, "kind": "dbg", "msg": "extract: 3880ch https://timesofindia.indiatimes.com/world/us/indian-american-congressman-shri-thanedar-loses-democratic-primary-in-michigan/articleshow/132944487.cms"}
+{"run": "digest", "t": 60810, "kind": "dbg", "msg": "extract: fetch_html https://www.france24.com/en/video/20260805-us-progressive-candidate-el-sayed-wins-key-michigan-primary: http=403"}
+{"run": "digest", "t": 64078, "kind": "dbg", "msg": "extract: 13080ch https://www.france24.com/en/video/20260805-us-progressive-candidate-el-sayed-wins-key-michigan-primary"}
+{"run": "digest", "t": 64172, "kind": "dbg", "msg": "extract: 7457ch https://www.bbc.co.uk/news/articles/cp309ng0xq1o?at_medium=RSS&at_campaign=rss"}
+{"run": "digest", "t": 64235, "kind": "dbg", "msg": "extract: 4123ch https://timesofindia.indiatimes.com/world/south-asia/may-be-jailed-but-ill-return-to-bangladesh-this-december-says-hasina/articleshow/132971880.cms"}
+{"run": "digest", "t": 64392, "kind": "dbg", "msg": "extract: 3174ch https://www.npr.org/2026/08/05/g-s1-137523/ousted-bangladeshi-leader-vows-to-return-from-exile-despite-facing-a-death-sentence"}
+{"run": "digest", "t": 67816, "kind": "dbg", "msg": "extract: 10121ch https://www.aljazeera.com/video/newsfeed/2026/8/5/05-08-sv-hasina-returns-bangladesh-bn?traffic_source=rss"}
+{"run": "digest", "t": 67907, "kind": "dbg", "msg": "extract: 4416ch https://www.bbc.co.uk/news/articles/cvg9j8820v6o?at_medium=RSS&at_campaign=rss"}
+{"run": "digest", "t": 68040, "kind": "dbg", "msg": "extract: fetch_html https://www.ndtv.com/india-news/sheikh-hasina-vows-december-return-to-bangladesh-11871739#publisher=newsstand: http=403"}
+{"run": "digest", "t": 71841, "kind": "dbg", "msg": "extract: 7213ch https://www.ndtv.com/india-news/sheikh-hasina-vows-december-return-to-bangladesh-11871739#publisher=newsstand"}
+{"run": "digest", "t": 72113, "kind": "dbg", "msg": "extract: 6084ch https://www.theguardian.com/world/2026/aug/05/drone-german-airport-dhl-cargo-plane-collides-object-leipzig"}
+{"run": "digest", "t": 72201, "kind": "dbg", "msg": "extract: 2635ch https://www.bbc.co.uk/news/articles/cyvlg4q48l3o?at_medium=RSS&at_campaign=rss"}
+{"run": "digest", "t": 73424, "kind": "dbg", "msg": "extract: 3172ch https://www.channelnewsasia.com/world/germany-drone-terrorism-probe-airport-6301911"}
+{"run": "digest", "t": 73478, "kind": "dbg", "msg": "extract: fetch_html https://www.france24.com/en/europe/20260805-alarm-at-german-airport-after-drone-found-near-ukrainian-plane-mid-air-incident: http=403"}
+{"run": "digest", "t": 77364, "kind": "dbg", "msg": "extract: 5793ch https://www.france24.com/en/europe/20260805-alarm-at-german-airport-after-drone-found-near-ukrainian-plane-mid-air-incident"}
+{"run": "digest", "t": 77920, "kind": "dbg", "msg": "extract: 4807ch https://www.theguardian.com/world/2026/aug/05/the-leipzig-drone-bomb-marks-a-dangerous-escalation-for-europe"}
+{"run": "digest", "t": 78018, "kind": "dbg", "msg": "extract: 4121ch https://www.bbc.co.uk/news/articles/c998711dyjvo?at_medium=RSS&at_campaign=rss"}
+{"run": "digest", "t": 78625, "kind": "dbg", "msg": "extract: 3038ch https://www.aljazeera.com/news/2026/8/5/at-least-one-lebanese-person-two-israeli-soldiers-killed-in-south-lebanon?traffic_source=rss"}
+{"run": "digest", "t": 79170, "kind": "dbg", "msg": "extract: 3496ch https://www.theguardian.com/world/2026/aug/05/israel-strikes-southern-lebanon-deadliest-ceasefire"}
+{"run": "digest", "t": 79219, "kind": "dbg", "msg": "extract: fetch_html https://www.france24.com/en/middle-east/20260805-israel-resumes-military-strikes-on-southern-lebanon-as-rome-hosts-peace-talks: http=403"}
+{"run": "digest", "t": 83708, "kind": "dbg", "msg": "extract: 4434ch https://www.france24.com/en/middle-east/20260805-israel-resumes-military-strikes-on-southern-lebanon-as-rome-hosts-peace-talks"}
+{"run": "digest", "t": 83862, "kind": "dbg", "msg": "extract: 3190ch https://timesofindia.indiatimes.com/india/meta-apologises-for-error-in-restricting-pms-video/articleshow/132972236.cms"}
+{"run": "digest", "t": 84084, "kind": "dbg", "msg": "extract: 5668ch https://www.thehindu.com/news/national/meta-ceo-mark-zuckerberg-apologises-for-csam-deepfake-content-errors-in-operating-platform/article71309386.ece"}
+{"run": "digest", "t": 84348, "kind": "dbg", "msg": "extract: 6974ch https://www.livemint.com/news/india/meta-apologises-for-removing-pm-modis-facebook-post-admits-paid-content-boosting-11785934782913.html"}
+{"run": "digest", "t": 84476, "kind": "dbg", "msg": "extract: 3288ch https://www.hindustantimes.com/india-news/mark-zuckerberg-sends-india-apology-letter-for-promoting-pm-modi-deepfakes-taking-down-his-reel-briefly-sources-101785928753782.html"}
+{"run": "digest", "t": 84866, "kind": "dbg", "msg": "extract: 3646ch https://scroll.in/latest/1094814/apologise-within-3-days-parliament-panel-to-zuckerberg-after-facebook-briefly-removes-modi-video?utm_source=rss&utm_medium=public"}
+{"run": "digest", "t": 84950, "kind": "dbg", "msg": "extract: 4837ch https://www.bbc.co.uk/news/articles/cn7nkyr1j7ro?at_medium=RSS&at_campaign=rss"}
+{"run": "digest", "t": 85219, "kind": "dbg", "msg": "extract: 3721ch https://www.thehindu.com/news/national/opposition-mps-take-out-protest-march-in-parliament-complex-seek-amit-shahs-statement-on-police-excesses/article71308299.ece"}
+{"run": "digest", "t": 85585, "kind": "dbg", "msg": "extract: 5163ch https://scroll.in/latest/1094819/youth-protests-students-being-harassed-goons-being-sent-to-their-homes-alleges-rahul-gandhi?utm_source=rss&utm_medium=public"}
+{"run": "digest", "t": 86449, "kind": "dbg", "msg": "extract: 5922ch https://www.dw.com/en/india-s-gen-z-protest-enters-a-new-online-battle/a-78253169?maca=en-rss-en-world-4025-rdf"}
+{"run": "digest", "t": 86521, "kind": "dbg", "msg": "extract: 11583ch https://www.hindustantimes.com/ht-explainers/abhijeet-dipke-cjp-cockroach-janta-party-pressure-group-student-protests-e20-employment-political-history-theory-101785939564706.html"}
+{"run": "digest", "t": 86595, "kind": "dbg", "msg": "extract: 1288ch https://timesofindia.indiatimes.com/india/rajya-sabha-passes-by-voice-vote-bill-to-raise-supreme-court-judge-strength/articleshow/132973008.cms"}
+{"run": "digest", "t": 86826, "kind": "dbg", "msg": "extract: 4021ch https://www.thehindu.com/news/national/parliament-clears-bill-to-increase-number-of-judges-in-supreme-court/article71310523.ece"}
+{"run": "digest", "t": 86887, "kind": "dbg", "msg": "extract: fetch_html https://www.ndtv.com/india-news/parliament-monsoon-session-2026-live-updates-lok-sabha-rajya-sabha-proceedings-key-bills-and-opposition-protest-11867302#publisher=newsstand: http=403"}
+{"run": "digest", "t": 93101, "kind": "dbg", "msg": "extract: 8783ch https://www.ndtv.com/india-news/parliament-monsoon-session-2026-live-updates-lok-sabha-rajya-sabha-proceedings-key-bills-and-opposition-protest-11867302#publisher=newsstand"}
+{"run": "digest", "t": 93169, "kind": "dbg", "msg": "extract: 2441ch https://www.hindustantimes.com/india-news/govtopposition-stand-off-continues-as-rahul-sticks-to-demand-for-shah-s-statement-101785928252005.html"}
+{"run": "digest", "t": 93316, "kind": "dbg", "msg": "extract: 3361ch https://timesofindia.indiatimes.com/india/rijiju-reaches-out-to-rahul-on-delimitation-bill/articleshow/132972861.cms"}
+{"run": "digest", "t": 93318, "kind": "event", "stage": "stage", "name": "extract", "ms": 60343, "ok": true, "error": ""}
+{"run": "digest", "t": 93355, "kind": "dbg", "msg": "llm: call #2 model=gemini-3.6-flash label=claims prompt=188237ch"}
+{"run": "digest", "t": 150790, "kind": "dbg", "msg": "llm: claims finish_reason=FinishReason.STOP"}
+{"run": "digest", "t": 150791, "kind": "event", "stage": "llm", "call": 2, "label": "claims", "model": "gemini-3.6-flash", "latency_ms": 57434, "prompt_chars": 188237, "system_chars": 2135, "response_chars": 17519, "finish_reason": "FinishReason.STOP", "malformed_json": false, "json_retries": 0, "max_output_tokens": 32768, "usage": {"prompt_token_count": 47411, "candidates_token_count": 4327, "total_token_count": 56118, "thoughts_token_count": 4380}}
+{"run": "digest", "t": 150792, "kind": "dbg", "msg": "llm: claims: [world] 13 claim(s) from 5 outlet(s) 'Iran and Oman reach draft agreement on shipping routes through Strait of Hormuz'"}
+{"run": "digest", "t": 150792, "kind": "dbg", "msg": "llm: claims: [world] 6 claim(s) from 4 outlet(s) 'Russian barrage on Kyiv kills at least 17 as Ukraine faces critical air defense shortage'"}
+{"run": "digest", "t": 150793, "kind": "dbg", "msg": "llm: claims: [world] 8 claim(s) from 4 outlet(s) 'Progressive Abdul El-Sayed wins Michigan Democratic Senate primary'"}
+{"run": "digest", "t": 150793, "kind": "dbg", "msg": "llm: claims: [world] 7 claim(s) from 4 outlet(s) 'Deposed Bangladesh Prime Minister Sheikh Hasina vows to return from exile in December'"}
+{"run": "digest", "t": 150793, "kind": "dbg", "msg": "llm: claims: [world] 8 claim(s) from 3 outlet(s) 'Explosive drone found near cargo plane at German airport prompts terrorism probe'"}
+{"run": "digest", "t": 150793, "kind": "dbg", "msg": "llm: claims: [world] 7 claim(s) from 3 outlet(s) 'Israeli strikes in southern Lebanon kill at least one following alleged ceasefire violations'"}
+{"run": "digest", "t": 150793, "kind": "dbg", "msg": "llm: claims: [india] 6 claim(s) from 4 outlet(s) \"Meta apologizes to Indian government over restriction of PM Modi's post and platform errors\""}
+{"run": "digest", "t": 150793, "kind": "dbg", "msg": "llm: claims: [india] 7 claim(s) from 5 outlet(s) 'Supreme Court urges caution in handling youth protests as political debate intensifies'"}
+{"run": "digest", "t": 150793, "kind": "dbg", "msg": "llm: claims: [india] 8 claim(s) from 3 outlet(s) 'Rajya Sabha passes bill to increase Supreme Court judge strength amid parliamentary deadlock'"}
+{"run": "digest", "t": 150793, "kind": "dbg", "msg": "llm: extract_claims -> 9/9 cluster(s), 70 claim(s) total, 0 cluster(s) rejected, 0 claim(s) rejected"}
+{"run": "digest", "t": 150794, "kind": "event", "stage": "stage", "name": "claims", "ms": 57475, "ok": true, "error": ""}
+{"run": "digest", "t": 150830, "kind": "dbg", "msg": "llm: call #3 model=gemini-3.6-flash label=write prompt=13739ch"}
+{"run": "digest", "t": 151454, "kind": "event", "stage": "stage", "name": "write", "ms": 660, "ok": false, "error": "ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"}
+{"run": "digest", "t": 151454, "kind": "event", "stage": "tracer", "msg": "capture finished", "ok": false, "ms": 151454, "bytes": 14112422}

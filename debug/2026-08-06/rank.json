@@ -1,0 +1,633 @@
+{
+  "dials": {
+    "WEIGHT_FLOOR": 5,
+    "TIER_WEIGHT": {
+      "lead": 4,
+      "major": 2,
+      "notable": 0
+    },
+    "WIKI_BONUS": 2,
+    "HARD_CAP": 12,
+    "MIN_STORIES_IF_ANY": 3,
+    "MAX_ARTICLES_PER_STORY": 5
+  },
+  "floor_relaxed": false,
+  "kept_weights": [
+    11,
+    8,
+    8,
+    8,
+    8,
+    6,
+    9,
+    6,
+    6
+  ],
+  "per_section": {
+    "world": 6,
+    "india": 3
+  },
+  "clusters": [
+    {
+      "headline_hint": "Iran and Oman reach draft agreement on shipping routes through Strait of Hormuz",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "lead",
+      "article_ids": [
+        4,
+        7,
+        14,
+        15,
+        20,
+        23,
+        59,
+        60,
+        337
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        4,
+        7,
+        14,
+        15,
+        20,
+        23,
+        59,
+        60,
+        337
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 5,
+      "wiki_backed": true,
+      "wiki_event": "Iran and Oman reach an agreement understanding on geographic coordinates for shipping routes through the Strait of Hormuz.",
+      "weight": 11,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 4,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Channel News Asia",
+          "title": "Dow edges to record as markets parse prospects for Hormuz deal",
+          "url": "https://www.channelnewsasia.com/world/us-stocks-markets-hormuz-oil-6302141"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Iran says it has agreed Strait of Hormuz shipping route with Oman",
+          "url": "https://www.bbc.co.uk/news/articles/ckg9d3eyeggo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "World News Today Live Updates on August 6, 2026 : Proposed Iran-Oman deal could hand Tehran control over incoming ships, report says",
+          "url": "https://www.livemint.com/news/world/total-world-latest-news-on-august-6-2026-live-updates-11785964174512.html"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Iran says Hormuz talks with Oman in ‘final’ stages as route approved",
+          "url": "https://www.aljazeera.com/news/2026/8/5/iran-says-hormuz-talks-with-oman-in-final-stages-as-route-approved?traffic_source=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Iran and Oman agree on coordinates of route through strait of Hormuz, says Iranian foreign ministry – as it happened",
+          "url": "https://www.theguardian.com/world/live/2026/aug/05/us-iran-israel-oman-strait-of-hormuz-latest-news-updates"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 4
+    },
+    {
+      "headline_hint": "Meta apologizes to Indian government over restriction of PM Modi's post and platform errors",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "lead",
+      "article_ids": [
+        21,
+        132,
+        237,
+        262,
+        264,
+        267,
+        277,
+        310
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        21,
+        132,
+        237,
+        262,
+        264,
+        267,
+        277,
+        310
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 5,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 9,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 4,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "Meta apologises for ‘error in restricting PM’s video’",
+          "url": "https://timesofindia.indiatimes.com/india/meta-apologises-for-error-in-restricting-pms-video/articleshow/132972236.cms"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "Mark Zuckerberg sends apologies for ‘errors in operating the platform’, government sources say",
+          "url": "https://www.thehindu.com/news/national/meta-ceo-mark-zuckerberg-apologises-for-csam-deepfake-content-errors-in-operating-platform/article71309386.ece"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Meta apologises for removing PM Modi's Facebook post, admits paid content boosting: Govt",
+          "url": "https://www.livemint.com/news/india/meta-apologises-for-removing-pm-modis-facebook-post-admits-paid-content-boosting-11785934782913.html"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Meta apologises over ‘error restricting’ PM Modi's post",
+          "url": "https://www.hindustantimes.com/india-news/mark-zuckerberg-sends-india-apology-letter-for-promoting-pm-modi-deepfakes-taking-down-his-reel-briefly-sources-101785928753782.html"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "Apologise within 3 days, Parliament panel to Zuckerberg after Facebook briefly removes Modi video",
+          "url": "https://scroll.in/latest/1094814/apologise-within-3-days-parliament-panel-to-zuckerberg-after-facebook-briefly-removes-modi-video?utm_source=rss&utm_medium=public"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 3
+    },
+    {
+      "headline_hint": "Russian barrage on Kyiv kills at least 17 as Ukraine faces critical air defense shortage",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "major",
+      "article_ids": [
+        26,
+        28,
+        31,
+        77,
+        102,
+        106,
+        161,
+        163,
+        276,
+        281,
+        291
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        26,
+        28,
+        31,
+        77,
+        102,
+        106,
+        161,
+        163,
+        276,
+        281,
+        291
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 6,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 8,
+      "weight_terms": {
+        "distinct_outlets": 6,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Channel News Asia",
+          "title": "Russian barrage on Kyiv kills 17 as Ukraine calls for more interceptors",
+          "url": "https://www.channelnewsasia.com/world/russia-kyiv-17-killed-interceptors-6302046"
+        },
+        {
+          "outlet": "France 24",
+          "title": "'Escalatory spiral of attrition: Drone technology allowing Ukraine to resist Russia asymmetrically'",
+          "url": "https://www.france24.com/en/escalatory-spiral-of-attrition-drone-technology-allowing-ukraine-to-resist-russia-asymmetrically"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "Kyiv residents face attacks with fewer defenses overhead",
+          "url": "https://www.npr.org/2026/08/05/nx-s1-5921395/kyiv-residents-face-attacks-with-fewer-defenses-overhead"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Watch: 'Scariest night' as Ukraine fails to intercept Russian attack",
+          "url": "https://www.bbc.co.uk/news/videos/clyxdgx7m8no?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Is the conflict between Russia and Ukraine deepening?",
+          "url": "https://www.aljazeera.com/video/inside-story/2026/8/5/is-the-conflict-between-russia-and-ukraine-deepening?traffic_source=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 6
+    },
+    {
+      "headline_hint": "Progressive Abdul El-Sayed wins Michigan Democratic Senate primary",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        9,
+        17,
+        18,
+        172,
+        178,
+        181,
+        184,
+        201,
+        217,
+        234,
+        290
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        9,
+        17,
+        18,
+        172,
+        178,
+        181,
+        184,
+        201,
+        217,
+        234,
+        290
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 6,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 8,
+      "weight_terms": {
+        "distinct_outlets": 6,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "El-Sayed wins Michigan Democratic Senate primary",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/5/el-sayed-wins-michigan-democratic-senate-primary-2?traffic_source=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Top Democrats set aside qualms and embrace progressive Abdul El-Sayed",
+          "url": "https://www.theguardian.com/us-news/2026/aug/05/top-democrats-embrace-abdul-el-sayed"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Indian-American Congressman Shri Thanedar loses Democratic primary in Michigan",
+          "url": "https://timesofindia.indiatimes.com/world/us/indian-american-congressman-shri-thanedar-loses-democratic-primary-in-michigan/articleshow/132944487.cms"
+        },
+        {
+          "outlet": "France 24",
+          "title": "US: Progressive Democrat El-Sayed wins key Michigan primary",
+          "url": "https://www.france24.com/en/video/20260805-us-progressive-candidate-el-sayed-wins-key-michigan-primary"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "El-Sayed's victory sends tremors through Democratic Party",
+          "url": "https://www.bbc.co.uk/news/articles/cp309ng0xq1o?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 6
+    },
+    {
+      "headline_hint": "Explosive drone found near cargo plane at German airport prompts terrorism probe",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "major",
+      "article_ids": [
+        19,
+        44,
+        104,
+        128,
+        191,
+        269
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        19,
+        44,
+        104,
+        128,
+        191,
+        269
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": true,
+      "wiki_event": "A drone loaded with explosives is found and defused at Leipzig/Halle Airport in Germany, while a cargo Boeing 757 had a collision with another supposed UAV at the same airport.",
+      "weight": 8,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "Drone carrying explosives at German airport marks ‘new level of danger’, says interior minister",
+          "url": "https://www.theguardian.com/world/2026/aug/05/drone-german-airport-dhl-cargo-plane-collides-object-leipzig"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Drone carrying explosives found at German airport, police say",
+          "url": "https://www.bbc.co.uk/news/articles/cyvlg4q48l3o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "Germany opens terrorism probe after explosive drone found at air cargo hub",
+          "url": "https://www.channelnewsasia.com/world/germany-drone-terrorism-probe-airport-6301911"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Drone with explosive device found near Ukrainian cargo plane at German airport",
+          "url": "https://www.france24.com/en/europe/20260805-alarm-at-german-airport-after-drone-found-near-ukrainian-plane-mid-air-incident"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "The Leipzig drone bomb marks a dangerous escalation for Europe",
+          "url": "https://www.theguardian.com/world/2026/aug/05/the-leipzig-drone-bomb-marks-a-dangerous-escalation-for-europe"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 1
+    },
+    {
+      "headline_hint": "Deposed Bangladesh Prime Minister Sheikh Hasina vows to return from exile in December",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        24,
+        25,
+        43,
+        76,
+        79,
+        122
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        24,
+        25,
+        43,
+        76,
+        79,
+        122
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 6,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 8,
+      "weight_terms": {
+        "distinct_outlets": 6,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "'May be jailed, but I’ll return to Bangladesh this December,' says Sheikh Hasina",
+          "url": "https://timesofindia.indiatimes.com/world/south-asia/may-be-jailed-but-ill-return-to-bangladesh-this-december-says-hasina/articleshow/132971880.cms"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "Ousted Bangladeshi leader vows to return from exile despite facing a death sentence",
+          "url": "https://www.npr.org/2026/08/05/g-s1-137523/ousted-bangladeshi-leader-vows-to-return-from-exile-despite-facing-a-death-sentence"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Sheikh Hasina says she will return to Bangladesh in December",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/5/05-08-sv-hasina-returns-bangladesh-bn?traffic_source=rss"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Ex-leader Hasina gambles on return to Bangladesh despite death penalty",
+          "url": "https://www.bbc.co.uk/news/articles/cvg9j8820v6o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "'May Get Jailed Or Killed': Sheikh Hasina Vows December Return To Bangladesh",
+          "url": "https://www.ndtv.com/india-news/sheikh-hasina-vows-december-return-to-bangladesh-11871739#publisher=newsstand"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 1
+    },
+    {
+      "headline_hint": "Rajya Sabha passes bill to increase Supreme Court judge strength amid parliamentary deadlock",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        8,
+        12,
+        29,
+        82,
+        84,
+        173,
+        174,
+        271
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        8,
+        12,
+        29,
+        82,
+        84,
+        173,
+        174,
+        271
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 6,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "Rajya Sabha passes by voice vote bill to raise Supreme Court judge strength",
+          "url": "https://timesofindia.indiatimes.com/india/rajya-sabha-passes-by-voice-vote-bill-to-raise-supreme-court-judge-strength/articleshow/132973008.cms"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "Rajya Sabha clears Bill to increase number of Supreme Court judges",
+          "url": "https://www.thehindu.com/news/national/parliament-clears-bill-to-increase-number-of-judges-in-supreme-court/article71310523.ece"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "Parliament Monsoon Session 2026 Highlights: Lok Sabha Adjourned For Day",
+          "url": "https://www.ndtv.com/india-news/parliament-monsoon-session-2026-live-updates-lok-sabha-rajya-sabha-proceedings-key-bills-and-opposition-protest-11867302#publisher=newsstand"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Govt-opposition stand-off continues as Rahul sticks to demand for Shah’s statement",
+          "url": "https://www.hindustantimes.com/india-news/govtopposition-stand-off-continues-as-rahul-sticks-to-demand-for-shah-s-statement-101785928252005.html"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Centre renews bid for delimitation bill as Rijiju reaches out to Rahul Gandhi",
+          "url": "https://timesofindia.indiatimes.com/india/rijiju-reaches-out-to-rahul-on-delimitation-bill/articleshow/132972861.cms"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 3
+    },
+    {
+      "headline_hint": "Supreme Court urges caution in handling youth protests as political debate intensifies",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        87,
+        136,
+        159,
+        207,
+        213,
+        239,
+        246,
+        260,
+        284,
+        285,
+        292,
+        297,
+        307,
+        320,
+        336
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        87,
+        136,
+        159,
+        207,
+        213,
+        239,
+        246,
+        260,
+        284,
+        285,
+        292,
+        297,
+        307,
+        320,
+        336
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 6,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 6,
+      "weight_terms": {
+        "distinct_outlets": 6,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "BBC World",
+          "title": "Youth protests have weakened Modi, Indian activist who went on hunger strike tells BBC",
+          "url": "https://www.bbc.co.uk/news/articles/cn7nkyr1j7ro?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "Amit Shah responsible for action against students, lacks courage to answer in Parliament: Rahul Gandhi",
+          "url": "https://www.thehindu.com/news/national/opposition-mps-take-out-protest-march-in-parliament-complex-seek-amit-shahs-statement-on-police-excesses/article71308299.ece"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "Youth protests: Goons being sent to students’ homes, alleges Rahul Gandhi",
+          "url": "https://scroll.in/latest/1094819/youth-protests-students-being-harassed-goons-being-sent-to-their-homes-alleges-rahul-gandhi?utm_source=rss&utm_medium=public"
+        },
+        {
+          "outlet": "DW World",
+          "title": "India's Gen Z protest enters a new online battle",
+          "url": "https://www.dw.com/en/india-s-gen-z-protest-enters-a-new-online-battle/a-78253169?maca=en-rss-en-world-4025-rdf"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Between placards and Parliament: What a ‘pressure group’ is, and where Abhijeet Dipke’s CJP fits",
+          "url": "https://www.hindustantimes.com/ht-explainers/abhijeet-dipke-cjp-cockroach-janta-party-pressure-group-student-protests-e20-employment-political-history-theory-101785939564706.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 10
+    },
+    {
+      "headline_hint": "Israeli strikes in southern Lebanon kill at least one following alleged ceasefire violations",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "notable",
+      "article_ids": [
+        42,
+        140,
+        167,
+        202
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        42,
+        140,
+        167,
+        202
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 4,
+      "wiki_backed": true,
+      "wiki_event": "Talks between Israel and Lebanon are on pause following alleged leaks and will resume tomorrow.",
+      "weight": 6,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 0,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "BBC World",
+          "title": "Israel strikes south Lebanon after first evacuation warning in weeks",
+          "url": "https://www.bbc.co.uk/news/articles/c998711dyjvo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "At least one Lebanese person, two Israeli soldiers killed in south Lebanon",
+          "url": "https://www.aljazeera.com/news/2026/8/5/at-least-one-lebanese-person-two-israeli-soldiers-killed-in-south-lebanon?traffic_source=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Israel strikes southern Lebanon killing one and injuring 11",
+          "url": "https://www.theguardian.com/world/2026/aug/05/israel-strikes-southern-lebanon-deadliest-ceasefire"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Israel resumes military strikes on southern Lebanon as Rome hosts peace talks",
+          "url": "https://www.france24.com/en/middle-east/20260805-israel-resumes-military-strikes-on-southern-lebanon-as-rome-hosts-peace-talks"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    }
+  ]
+}
