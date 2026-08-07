@@ -16,518 +16,43 @@
     10,
     7,
     6,
-    6,
-    12,
-    8,
-    7,
-    6,
-    6
+    14,
+    5
   ],
   "per_section": {
-    "world": 4,
-    "india": 5
+    "world": 3,
+    "india": 2
   },
   "clusters": [
     {
-      "headline_hint": "Heavy rains and red alert trigger severe waterlogging and flood warnings across Delhi-NCR and eastern India",
-      "section": "india",
-      "category": "disaster",
-      "tier_requested": "lead",
-      "article_ids": [
-        111,
-        113,
-        161,
-        178,
-        186,
-        206,
-        223,
-        233,
-        245,
-        246
-      ],
-      "verdict": "kept",
-      "valid_ids": [
-        111,
-        113,
-        161,
-        178,
-        186,
-        206,
-        223,
-        233,
-        245,
-        246
-      ],
-      "tier_final": "lead",
-      "distinct_outlets": 4,
-      "wiki_backed": false,
-      "wiki_event": "",
-      "weight": 8,
-      "weight_terms": {
-        "distinct_outlets": 4,
-        "tier_weight": 4,
-        "wiki_bonus": 0
-      },
-      "weight_floor": 5,
-      "articles": [
-        {
-          "outlet": "Livemint",
-          "title": "Will schools be closed tomorrow, August 8? Check IMD's heavy rainfall warnings for your state",
-          "url": "https://www.livemint.com/news/india/will-schools-be-closed-tomorrow-august-8-check-imds-heavy-rainfall-warnings-for-your-state-11786118365631.html"
-        },
-        {
-          "outlet": "Al Jazeera",
-          "title": "New Delhi on red alert as heavy rains pound the city",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/7/new-delhi-on-red-alert-as-heavy-rains-pound-the-city?traffic_source=rss"
-        },
-        {
-          "outlet": "Times of India",
-          "title": "Watch: Delhi-NCR drowns in rain chaos; 7 videos show waterlogging, gridlock",
-          "url": "https://timesofindia.indiatimes.com/india/watch-delhi-ncr-drowns-in-rain-chaos-7-videos-show-waterlogging-gridlock/articleshow/133036419.cms"
-        },
-        {
-          "outlet": "Hindustan Times",
-          "title": "Delhi sees wettest August start in 13 years: Non-stop rainfall leaves roads flooded, traffic crawling",
-          "url": "https://www.hindustantimes.com/india-news/rain-noida-delhi-gurugram-waterlogging-traffic-jam-next-2-hours-more-rain-thunderstorm-imd-delhi-ncr-ghaziabad-101786106423837.html"
-        },
-        {
-          "outlet": "Livemint",
-          "title": "Delhi-NCR rain: Internet reacts as flooding, traffic chaos bring region to a standstill | Watch video",
-          "url": "https://www.livemint.com/news/india/delhi-rain-floods-streets-disrupts-traffic-locals-use-makeshift-raft-to-ferry-schoolchildren-11786114451323.html"
-        }
-      ],
-      "articles_dropped_by_diversity_cap": 5
-    },
-    {
-      "headline_hint": "Saudi Arabia, Turkey, and Pakistan sign Mecca Joint Defence Agreement as India monitors pact and rejects counter-deal rumors",
-      "section": "india",
-      "category": "politics",
-      "tier_requested": "major",
-      "article_ids": [
-        91,
-        103,
-        124,
-        150,
-        172,
-        179,
-        192,
-        201,
-        221,
-        239,
-        257,
-        264,
-        266,
-        274,
-        277
-      ],
-      "verdict": "kept",
-      "valid_ids": [
-        91,
-        103,
-        124,
-        150,
-        172,
-        179,
-        192,
-        201,
-        221,
-        239,
-        257,
-        264,
-        266,
-        274,
-        277
-      ],
-      "tier_final": "major",
-      "distinct_outlets": 8,
-      "wiki_backed": true,
-      "wiki_event": "The Mecca Joint Defence Agreement is signed in Mecca by Pakistan, Saudi Arabia, and Turkey, declaring that an attack on one will constitute an attack on all three.",
-      "weight": 12,
-      "weight_terms": {
-        "distinct_outlets": 8,
-        "tier_weight": 2,
-        "wiki_bonus": 2
-      },
-      "weight_floor": 5,
-      "articles": [
-        {
-          "outlet": "NDTV",
-          "title": "India-Israel Pact To Counter Pak-Saudi-Turkey Deal? A Fact-Check By Centre",
-          "url": "https://www.ndtv.com/india-news/india-israel-pact-to-counter-pak-saudi-turkey-deal-a-fact-check-by-centre-11881440#publisher=newsstand"
-        },
-        {
-          "outlet": "BBC World",
-          "title": "Saudi Arabia, Turkey and Pakistan sign defence pact",
-          "url": "https://www.bbc.co.uk/news/articles/c30418m4mj4o?at_medium=RSS&at_campaign=rss"
-        },
-        {
-          "outlet": "Al Jazeera",
-          "title": "War on Iran: Saudi Arabia, Turkiye and Pakistan sign defence pact",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/7/war-on-iran-saudi-arabia-turkiye-and-pakistan-sign-defence-pact?traffic_source=rss"
-        },
-        {
-          "outlet": "Scroll.in",
-          "title": "Pakistan, Saudi Arabia, Türkiye sign defence pact amid conflict in West Asia",
-          "url": "https://scroll.in/latest/1094880/pakistan-saudi-arabia-turkiye-sign-defence-pact-amid-conflict-in-west-asia?utm_source=rss&utm_medium=public"
-        },
-        {
-          "outlet": "France 24",
-          "title": "Turkey, Saudi, Pakistan: Attack on one nation deemed an attack on all",
-          "url": "https://www.france24.com/en/turkey-saudi-pakistan-attack-on-one-nation-deemed-an-attack-on-all"
-        }
-      ],
-      "articles_dropped_by_diversity_cap": 10
-    },
-    {
-      "headline_hint": "CBI files chargesheet against NTA subject experts in NEET-UG paper leak conspiracy",
-      "section": "india",
-      "category": "politics",
-      "tier_requested": "major",
-      "article_ids": [
-        22,
-        45,
-        123,
-        142,
-        159,
-        170,
-        227,
-        255
-      ],
-      "verdict": "kept",
-      "valid_ids": [
-        22,
-        45,
-        123,
-        142,
-        159,
-        170,
-        227,
-        255
-      ],
-      "tier_final": "major",
-      "distinct_outlets": 4,
-      "wiki_backed": false,
-      "wiki_event": "",
-      "weight": 6,
-      "weight_terms": {
-        "distinct_outlets": 4,
-        "tier_weight": 2,
-        "wiki_bonus": 0
-      },
-      "weight_floor": 5,
-      "articles": [
-        {
-          "outlet": "The Hindu",
-          "title": "Rajya Sabha MP moves Supreme Court against use of facial recognition technology at NEET protests",
-          "url": "https://www.thehindu.com/news/national/rajya-sabha-mp-moves-supreme-court-against-use-of-facial-recognition-technology-at-neet-protests/article71276424.ece"
-        },
-        {
-          "outlet": "Times of India",
-          "title": "NEET row: CBI claims NTA experts breached 'secrecy pact', face life term, Rs 1cr fine",
-          "url": "https://timesofindia.indiatimes.com/city/delhi/neet-paper-leak-cbi-claims-nta-experts-breached-secrecy-pact-face-life-term-rs-1-cr-fine/articleshow/133038344.cms"
-        },
-        {
-          "outlet": "Livemint",
-          "title": "NEET paper leak masterminds used ‘FIFA World Cup 2026’ WhatsApp group: Secret chats play major role in CBI crackdown",
-          "url": "https://www.livemint.com/news/india/neet-paper-leak-masterminds-used-fifa-world-cup-2026-whatsapp-group-secret-chats-play-major-role-in-cbi-crackdown-11786118532170.html"
-        },
-        {
-          "outlet": "Hindustan Times",
-          "title": "'Rude wake-up call': Tharoor on Pradhan's resignation over NEET paper leak stir, Prashant Kishor's victory",
-          "url": "https://www.hindustantimes.com/india-news/shashi-tharoor-genz-youth-jantar-mantar-rahul-gandhi-congress-cjp-101786112067956.html"
-        },
-        {
-          "outlet": "The Hindu",
-          "title": "Public examinations amendment Bill does not address fundamental issues: AISEC",
-          "url": "https://www.thehindu.com/news/national/kerala/public-examinations-amendment-bill-does-not-address-fundamental-issues-aisec/article71276790.ece"
-        }
-      ],
-      "articles_dropped_by_diversity_cap": 3
-    },
-    {
-      "headline_hint": "US Senate passes Russia sanctions bill threatening 100% tariffs on Indian and Chinese energy imports",
-      "section": "india",
-      "category": "economy",
-      "tier_requested": "major",
-      "article_ids": [
-        36,
-        104,
-        145
-      ],
-      "verdict": "kept",
-      "valid_ids": [
-        36,
-        104,
-        145
-      ],
-      "tier_final": "major",
-      "distinct_outlets": 3,
-      "wiki_backed": true,
-      "wiki_event": "Indian shipping minister Sarbananda Sonowal reports that more than 4,000 seafarers from India have been repatriated and 62 Indian vessels have successfully transited through the Strait of Hormuz during the war.",
-      "weight": 7,
-      "weight_terms": {
-        "distinct_outlets": 3,
-        "tier_weight": 2,
-        "wiki_bonus": 2
-      },
-      "weight_floor": 5,
-      "articles": [
-        {
-          "outlet": "Guardian World",
-          "title": "US Senate passes Russia sanctions bill championed by Lindsey Graham",
-          "url": "https://www.theguardian.com/us-news/2026/aug/07/russia-sanctions-senate-passed-petroleum"
-        },
-        {
-          "outlet": "Times of India",
-          "title": "US Senate passes sanctions bill; India could face tariff over Russia, Iran oil",
-          "url": "https://timesofindia.indiatimes.com/business/international-business/us-senate-passes-sanctions-bill-on-russia-iran-india-could-face-tariff-pressure-over-oil/articleshow/133039520.cms"
-        },
-        {
-          "outlet": "Hindustan Times",
-          "title": "‘America shooting itself in the foot’: US Senators Wyden, Paul oppose 100% tariffs on India, China",
-          "url": "https://www.hindustantimes.com/india-news/america-shooting-itself-in-the-foot-us-senators-wyden-paul-oppose-100-tariffs-on-india-china-russian-sanctions-bil-101786117674496.html"
-        }
-      ],
-      "articles_dropped_by_diversity_cap": 0
-    },
-    {
-      "headline_hint": "India assigns official names to 27 sites in Arunachal Pradesh along LAC in response to China",
-      "section": "india",
-      "category": "politics",
-      "tier_requested": "notable",
-      "article_ids": [
-        116,
-        189
-      ],
-      "verdict": "cut:below_floor(2<5)",
-      "valid_ids": [
-        116,
-        189
-      ],
-      "tier_final": "notable",
-      "distinct_outlets": 2,
-      "wiki_backed": false,
-      "wiki_event": "",
-      "weight": 2,
-      "weight_terms": {
-        "distinct_outlets": 2,
-        "tier_weight": 0,
-        "wiki_bonus": 0
-      },
-      "weight_floor": 5,
-      "articles": [
-        {
-          "outlet": "Times of India",
-          "title": "India counters China's 'map war', assigns official names to 27 Arunachal sites",
-          "url": "https://timesofindia.indiatimes.com/india/india-counters-chinas-map-war-assigns-official-names-to-27-arunachal-sites/articleshow/133038744.cms"
-        },
-        {
-          "outlet": "Hindustan Times",
-          "title": "India issues names for 27 Arunachal locations in response to China’s renaming moves",
-          "url": "https://www.hindustantimes.com/india-news/india-issues-names-for-27-arunachal-places-in-response-to-china-s-renaming-moves-101786112950808.html"
-        }
-      ],
-      "articles_dropped_by_diversity_cap": 0
-    },
-    {
-      "headline_hint": "Student protests intensify in Jharkhand over civil service examination irregularities",
-      "section": "india",
-      "category": "politics",
-      "tier_requested": "notable",
-      "article_ids": [
-        92,
-        110,
-        115,
-        127,
-        229,
-        240,
-        282,
-        300,
-        313
-      ],
-      "verdict": "kept",
-      "valid_ids": [
-        92,
-        110,
-        115,
-        127,
-        229,
-        240,
-        282,
-        300,
-        313
-      ],
-      "tier_final": "notable",
-      "distinct_outlets": 6,
-      "wiki_backed": false,
-      "wiki_event": "",
-      "weight": 6,
-      "weight_terms": {
-        "distinct_outlets": 6,
-        "tier_weight": 0,
-        "wiki_bonus": 0
-      },
-      "weight_floor": 5,
-      "articles": [
-        {
-          "outlet": "NDTV",
-          "title": "Jharkhand Ministers And Protesting Students Meet, Agitation To Continue",
-          "url": "https://www.ndtv.com/india-news/jharkhand-student-protests-jpsc-jharkhand-ministers-and-protesting-students-meet-agitation-to-continue-11881346#publisher=newsstand"
-        },
-        {
-          "outlet": "Livemint",
-          "title": "Jharkhand students protest: JPSC-JSSC Reforms Manch announces march to state assembly on Monday if demands not met",
-          "url": "https://www.livemint.com/news/india/jharkhand-students-protest-jpsc-jssc-reforms-manch-announces-march-to-state-assembly-on-monday-if-demands-not-met-11786121937171.html"
-        },
-        {
-          "outlet": "Times of India",
-          "title": "Jharkhand govt holds talks with protesting students, promises to consider demands",
-          "url": "https://timesofindia.indiatimes.com/india/jharkhand-government-holds-talks-with-protesting-students-promises-to-consider-demands/articleshow/133038390.cms"
-        },
-        {
-          "outlet": "Scroll.in",
-          "title": "Jharkhand protests: Ink thrown at student leader Neha Bora allegedly for supporting Umar Khalid",
-          "url": "https://scroll.in/latest/1094871/jharkhand-protests-ink-thrown-at-student-leader-neha-bora-allegedly-for-supporting-umar-khalid?utm_source=rss&utm_medium=public"
-        },
-        {
-          "outlet": "Hindustan Times",
-          "title": "AISA's Neha Bora alleges 'RSS-BJP goons' attacked her, Jharkhand protesters: 'I wear this ink with pride'",
-          "url": "https://www.hindustantimes.com/india-news/i-wear-this-ink-with-pride-aisa-neha-bora-attacked-jharkhand-protest-accused-detained-ranchi-bjp-rss-goons-jpsc-jssc-101786096577530.html"
-        }
-      ],
-      "articles_dropped_by_diversity_cap": 4
-    },
-    {
-      "headline_hint": "India rejects US criticism over proposed FCRA amendments as an internal legislative matter",
-      "section": "india",
-      "category": "politics",
-      "tier_requested": "notable",
-      "article_ids": [
-        216,
-        228,
-        236,
-        269,
-        270
-      ],
-      "verdict": "cut:below_floor(4<5)",
-      "valid_ids": [
-        216,
-        228,
-        236,
-        269,
-        270
-      ],
-      "tier_final": "notable",
-      "distinct_outlets": 4,
-      "wiki_backed": false,
-      "wiki_event": "",
-      "weight": 4,
-      "weight_terms": {
-        "distinct_outlets": 4,
-        "tier_weight": 0,
-        "wiki_bonus": 0
-      },
-      "weight_floor": 5,
-      "articles": [
-        {
-          "outlet": "Scroll.in",
-          "title": "FCRA amendments India’s internal matter: Centre after US lawmaker calls bill ‘attack’ on Christians",
-          "url": "https://scroll.in/latest/1094879/fcra-amendments-indias-internal-matter-centre-after-us-lawmaker-calls-bill-attack-on-christians?utm_source=rss&utm_medium=public"
-        },
-        {
-          "outlet": "Hindustan Times",
-          "title": "India pushes back against US criticism of proposed FCRA changes",
-          "url": "https://www.hindustantimes.com/india-news/india-pushes-back-against-us-criticism-of-proposed-fcra-changes-101786108192684.html"
-        },
-        {
-          "outlet": "Livemint",
-          "title": "‘Even the US’ regulates foreign funding: India hits back at Republican lawmaker's remarks – 'Our Parliament decides'",
-          "url": "https://www.livemint.com/news/india/even-the-us-regulates-foreign-funding-india-hits-back-at-republic-lawmakers-remarks-our-parliament-decides-11786105811588.html"
-        },
-        {
-          "outlet": "Times of India",
-          "title": "'US itself regulates foreign funds': MEA hits back at American lawmaker's FCRA Bill remark",
-          "url": "https://timesofindia.indiatimes.com/india/internal-matter-for-us-mea-dismisses-us-lawmakers-criticism-of-fcra-bill/articleshow/133031964.cms"
-        },
-        {
-          "outlet": "Hindustan Times",
-          "title": "MEA's riposte to US lawmaker's foreign funding remarks: 'Our internal affairs'",
-          "url": "https://www.hindustantimes.com/india-news/fcra-bill-2026-india-foreign-funding-us-lawmaker-riley-moorey-101786100416801.html"
-        }
-      ],
-      "articles_dropped_by_diversity_cap": 0
-    },
-    {
-      "headline_hint": "Former Tehelka editor Tarun Tejpal sentenced to 10 years in prison in rape case",
-      "section": "india",
-      "category": "politics",
-      "tier_requested": "notable",
-      "article_ids": [
-        356,
-        362,
-        369
-      ],
-      "verdict": "cut:below_floor(2<5)",
-      "valid_ids": [
-        356,
-        362,
-        369
-      ],
-      "tier_final": "notable",
-      "distinct_outlets": 2,
-      "wiki_backed": false,
-      "wiki_event": "",
-      "weight": 2,
-      "weight_terms": {
-        "distinct_outlets": 2,
-        "tier_weight": 0,
-        "wiki_bonus": 0
-      },
-      "weight_floor": 5,
-      "articles": [
-        {
-          "outlet": "Scroll.in",
-          "title": "Rush Hour: Tarun Tejpal gets 10-year jail for rape, Rs 557 crore spent on Modi foreign trips & more",
-          "url": "https://scroll.in/latest/1094839/rush-hour-tarun-tejpal-gets-10-year-jail-for-rape-rs-557-crore-spent-on-modi-foreign-trips-more?utm_source=rss&utm_medium=public"
-        },
-        {
-          "outlet": "Guardian World",
-          "title": "High-profile Indian journalist jailed for 10 years for raping colleague",
-          "url": "https://www.theguardian.com/world/2026/aug/06/indian-journalist-tarun-tejpal-convicted-raping-colleague"
-        },
-        {
-          "outlet": "Scroll.in",
-          "title": "Journalist Tarun Tejpal sentenced to 10 years in jail in 2013 rape case",
-          "url": "https://scroll.in/latest/1094826/tarun-tejpal-convicted-in-2013-rape-case-hc-sets-aside-sessions-court-verdict?utm_source=rss&utm_medium=public"
-        }
-      ],
-      "articles_dropped_by_diversity_cap": 0
-    },
-    {
-      "headline_hint": "Spain threatens border checks on Italy in escalating EU row over Ceuta migrant influx",
+      "headline_hint": "Spain imposes border controls on Italy amid diplomatic row over Ceuta migrant influx",
       "section": "world",
       "category": "politics",
       "tier_requested": "lead",
       "article_ids": [
-        5,
-        18,
-        56,
-        90,
-        126,
-        139,
-        140,
-        341
+        14,
+        35,
+        66,
+        84,
+        117,
+        145,
+        162,
+        164,
+        165,
+        343
       ],
       "verdict": "kept",
       "valid_ids": [
-        5,
-        18,
-        56,
-        90,
-        126,
-        139,
-        140,
-        341
+        14,
+        35,
+        66,
+        84,
+        117,
+        145,
+        162,
+        164,
+        165,
+        343
       ],
       "tier_final": "lead",
       "distinct_outlets": 6,
@@ -542,14 +67,19 @@
       "weight_floor": 5,
       "articles": [
         {
+          "outlet": "BBC World",
+          "title": "Spain imposes border controls against Italy as row over Ceuta migrant influx intensifies",
+          "url": "https://www.bbc.co.uk/news/articles/c5yv5l6yr5ko?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Spain to introduce temporary border checks on visitors from Italy",
+          "url": "https://www.theguardian.com/world/2026/aug/07/spain-to-introduce-temporary-border-checks-on-visitors-from-italy"
+        },
+        {
           "outlet": "Channel News Asia",
           "title": "Spain imposes border checks on Italy as migrant showdown grows",
           "url": "https://www.channelnewsasia.com/world/spain-italy-border-checks-ceuta-migrant-6306986"
-        },
-        {
-          "outlet": "BBC World",
-          "title": "Spain to impose border controls against Italy as row over Ceuta migrant influx intensifies",
-          "url": "https://www.bbc.co.uk/news/articles/c5yv5l6yr5ko?at_medium=RSS&at_campaign=rss"
         },
         {
           "outlet": "France 24",
@@ -557,37 +87,32 @@
           "url": "https://www.france24.com/en/europe/20260807-spain-imposes-border-checks-on-italy-amid-ceuta-migration-row"
         },
         {
-          "outlet": "Guardian World",
-          "title": "Russia-linked accounts spread far-right narrative online during Ceuta migration crisis, analysis finds",
-          "url": "https://www.theguardian.com/media/2026/aug/07/far-right-narrative-russia-online-accounts-ceuta-migration-crisis-analysis"
-        },
-        {
-          "outlet": "DW World",
-          "title": "Ceuta: Spain warns Italy it will reciprocate entry checks",
-          "url": "https://www.dw.com/en/ceuta-spain-warns-italy-it-will-reciprocate-entry-checks/a-78282840?maca=en-rss-en-world-4025-rdf"
+          "outlet": "Al Jazeera",
+          "title": "Mediterranean smuggling network ‘dismantled’ in Spain-led raid, 78 arrested",
+          "url": "https://www.aljazeera.com/news/2026/8/7/mediterranean-smuggling-network-dismantled-in-spain-led-raid-78-arrested?traffic_source=rss"
         }
       ],
-      "articles_dropped_by_diversity_cap": 3
+      "articles_dropped_by_diversity_cap": 5
     },
     {
-      "headline_hint": "Ebola cases surpass 4,000 in Democratic Republic of Congo as WHO and Africa CDC step up response",
+      "headline_hint": "Ebola outbreak in Democratic Republic of Congo passes 4,000 cases",
       "section": "world",
       "category": "health",
       "tier_requested": "major",
       "article_ids": [
-        12,
-        53,
-        98,
-        332,
-        343
+        72,
+        82,
+        125,
+        334,
+        345
       ],
       "verdict": "kept",
       "valid_ids": [
-        12,
-        53,
-        98,
-        332,
-        343
+        72,
+        82,
+        125,
+        334,
+        345
       ],
       "tier_final": "major",
       "distinct_outlets": 4,
@@ -630,24 +155,28 @@
       "articles_dropped_by_diversity_cap": 0
     },
     {
-      "headline_hint": "US appeals court halts construction of President Trump's $400 million White House ballroom",
+      "headline_hint": "Teenage gunman kills seven people in shooting rampage at home and school in Thailand",
       "section": "world",
-      "category": "politics",
+      "category": "conflict",
       "tier_requested": "major",
       "article_ids": [
         26,
-        133,
-        143,
-        152,
-        183
+        52,
+        140,
+        211,
+        215,
+        282,
+        317
       ],
       "verdict": "kept",
       "valid_ids": [
         26,
-        133,
-        143,
-        152,
-        183
+        52,
+        140,
+        211,
+        215,
+        282,
+        317
       ],
       "tier_final": "major",
       "distinct_outlets": 5,
@@ -662,9 +191,122 @@
       "weight_floor": 5,
       "articles": [
         {
+          "outlet": "Times of India",
+          "title": "Thailand school shooting: Teen kills grandparents at home, 5 at campus",
+          "url": "https://timesofindia.indiatimes.com/world/rest-of-world/thai-teen-kills-7-in-rampage-at-home-school/articleshow/133042267.cms"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Thai PM vows to introduce stricter gun laws after eight killed in shooting",
+          "url": "https://www.bbc.co.uk/news/articles/cdewx6rew04o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Thailand school shooting: eight killed including suspected attacker, police say",
+          "url": "https://www.theguardian.com/world/2026/aug/07/thailand-school-shooting-debsirin-nonthaburi-bangkok"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Thailand: Gunman killed grandparents before school attack",
+          "url": "https://www.france24.com/en/thailand-gunman-killed-grandparents-before-school-attack"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "Student gunman kills at least 7 near Bangkok, officials say",
+          "url": "https://www.npr.org/2026/08/07/nx-s1-5924583/student-shoots-multiple-people-at-a-high-school-in-thailand-authorities-say"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 2
+    },
+    {
+      "headline_hint": "US economy unexpectedly sheds 23,000 jobs in July as labor market cools",
+      "section": "world",
+      "category": "economy",
+      "tier_requested": "notable",
+      "article_ids": [
+        46,
+        146,
+        157,
+        207
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        46,
+        146,
+        157,
+        207
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Channel News Asia",
+          "title": "Dollar drops, stocks climb as weak US jobs data eases rate fears",
+          "url": "https://www.channelnewsasia.com/world/us-stocks-wall-street-market-jobs-data-6307011"
+        },
+        {
           "outlet": "Al Jazeera",
-          "title": "US appeals court upholds injunction pausing Trump’s White House ballroom",
-          "url": "https://www.aljazeera.com/news/2026/8/7/us-appeals-court-upholds-injunction-pausing-trumps-white-house-ballroom?traffic_source=rss"
+          "title": "US labour market sheds jobs in July as labour force participation slumps",
+          "url": "https://www.aljazeera.com/economy/2026/8/7/us-labour-market-sheds-jobs-in-july-as-labour-force-participation-slumps?traffic_source=rss"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "US employers unexpectedly shed jobs, unemployment rate falls",
+          "url": "https://www.livemint.com/news/us-news/us-employers-unexpectedly-shed-jobs-unemployment-rate-falls-11786111754648.html"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "US unexpectedly loses jobs in blow to Trump ahead of midterms",
+          "url": "https://www.channelnewsasia.com/world/us-jobs-lost-midterm-election-fed-6306721"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "US appeals court halts construction on Trump White House ballroom project",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        55,
+        79,
+        160,
+        168,
+        175
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        55,
+        79,
+        160,
+        168,
+        175
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "US appeals court halts White House ballroom construction",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/7/us-appeals-court-halts-white-house-ballroom-construction?traffic_source=rss"
         },
         {
           "outlet": "Times of India",
@@ -682,129 +324,328 @@
           "url": "https://www.livemint.com/news/us-news/trumps-400-million-white-house-ballroom-project-put-on-hold-not-ceded-unfettered-to-fit-president-s-desires-11786115440262.html"
         },
         {
-          "outlet": "Channel News Asia",
-          "title": "US appeals court blocks Trump’s US$400 million White House ballroom project",
-          "url": "https://www.channelnewsasia.com/world/donald-trump-ballroom-white-house-6306526"
+          "outlet": "Al Jazeera",
+          "title": "US appeals court upholds injunction pausing Trump’s White House ballroom",
+          "url": "https://www.aljazeera.com/news/2026/8/7/us-appeals-court-upholds-injunction-pausing-trumps-white-house-ballroom?traffic_source=rss"
         }
       ],
       "articles_dropped_by_diversity_cap": 0
     },
     {
-      "headline_hint": "US court orders Meta to pay $567 million in landmark child safety lawsuit",
-      "section": "world",
-      "category": "technology",
-      "tier_requested": "major",
+      "headline_hint": "Pakistan, Saudi Arabia, and Turkey sign Mecca Joint Defence Agreement; India closely monitoring developments",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "lead",
       "article_ids": [
-        58,
-        149,
-        184,
-        294
+        118,
+        130,
+        151,
+        158,
+        174,
+        193,
+        199,
+        208,
+        218,
+        235,
+        262,
+        266,
+        272,
+        280
       ],
       "verdict": "kept",
       "valid_ids": [
-        58,
-        149,
-        184,
-        294
+        118,
+        130,
+        151,
+        158,
+        174,
+        193,
+        199,
+        208,
+        218,
+        235,
+        262,
+        266,
+        272,
+        280
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 8,
+      "wiki_backed": true,
+      "wiki_event": "The Mecca Joint Defence Agreement is signed in Mecca by Pakistan, Saudi Arabia, and Turkey, declaring that an attack on one will constitute an attack on all three.",
+      "weight": 14,
+      "weight_terms": {
+        "distinct_outlets": 8,
+        "tier_weight": 4,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "NDTV",
+          "title": "India-Israel Pact To Counter Pak-Saudi-Turkey Deal? A Fact-Check By Centre",
+          "url": "https://www.ndtv.com/india-news/india-israel-pact-to-counter-pak-saudi-turkey-deal-a-fact-check-by-centre-11881440#publisher=newsstand"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Saudi Arabia, Turkey and Pakistan sign defence pact",
+          "url": "https://www.bbc.co.uk/news/articles/c30418m4mj4o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "War on Iran: Saudi Arabia, Turkiye and Pakistan sign defence pact",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/7/war-on-iran-saudi-arabia-turkiye-and-pakistan-sign-defence-pact?traffic_source=rss"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "Pakistan, Saudi Arabia, Türkiye sign defence pact amid conflict in West Asia",
+          "url": "https://scroll.in/latest/1094880/pakistan-saudi-arabia-turkiye-sign-defence-pact-amid-conflict-in-west-asia?utm_source=rss&utm_medium=public"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Turkey, Saudi, Pakistan: Attack on one nation deemed an attack on all",
+          "url": "https://www.france24.com/en/turkey-saudi-pakistan-attack-on-one-nation-deemed-an-attack-on-all"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 9
+    },
+    {
+      "headline_hint": "India assigns official names to 27 Arunachal Pradesh sites to counter China's renaming moves",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        12,
+        143,
+        205
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        12,
+        143,
+        205
       ],
       "tier_final": "major",
-      "distinct_outlets": 4,
+      "distinct_outlets": 2,
       "wiki_backed": false,
       "wiki_event": "",
-      "weight": 6,
+      "weight": 4,
       "weight_terms": {
-        "distinct_outlets": 4,
+        "distinct_outlets": 2,
         "tier_weight": 2,
         "wiki_bonus": 0
       },
       "weight_floor": 5,
       "articles": [
         {
-          "outlet": "Channel News Asia",
-          "title": "Explainer-How could New Mexico's $567 million ruling change Meta?",
-          "url": "https://www.channelnewsasia.com/business/explainer-how-could-new-mexicos-567-million-ruling-change-meta-6306901"
+          "outlet": "Times of India",
+          "title": "27 Arunachal border locations get standard names to snub China's renaming attempts",
+          "url": "https://timesofindia.indiatimes.com/india/govt-maps-27-arunachal-border-locations-with-standard-names/articleshow/133043102.cms"
         },
         {
-          "outlet": "France 24",
-          "title": "Meta fined in child safety case",
-          "url": "https://www.france24.com/en/meta-fined-in-child-safety-case"
+          "outlet": "Hindustan Times",
+          "title": "India issues names for 27 Arunachal locations in response to China’s renaming moves",
+          "url": "https://www.hindustantimes.com/india-news/india-issues-names-for-27-arunachal-places-in-response-to-china-s-renaming-moves-101786112950808.html"
         },
         {
           "outlet": "Times of India",
-          "title": "US judge compares Meta to 'public nuisance,' orders $567m payout over child harm",
-          "url": "https://timesofindia.indiatimes.com/world/us/us-judge-compares-meta-to-public-nuisance-orders-567m-payout-over-child-harm/articleshow/133036763.cms"
-        },
-        {
-          "outlet": "BBC World",
-          "title": "Meta fined $567m in largest child safety ruling against social media giant",
-          "url": "https://www.bbc.co.uk/news/articles/cd7lz3wr2rlo?at_medium=RSS&at_campaign=rss"
+          "title": "India counters China's 'map war', assigns official names to 27 Arunachal sites",
+          "url": "https://timesofindia.indiatimes.com/india/india-counters-chinas-map-war-assigns-official-names-to-27-arunachal-sites/articleshow/133038744.cms"
         }
       ],
       "articles_dropped_by_diversity_cap": 0
     },
     {
-      "headline_hint": "US economy unexpectedly sheds 23,000 jobs in July amid labor force decline",
-      "section": "world",
-      "category": "economy",
-      "tier_requested": "notable",
+      "headline_hint": "CBI files chargesheet against NTA experts in NEET-UG paper leak investigation",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "major",
       "article_ids": [
-        119,
-        130,
-        191
+        20,
+        150,
+        167,
+        182,
+        265
       ],
-      "verdict": "cut:below_floor(3<5)",
+      "verdict": "cut:below_floor(4<5)",
       "valid_ids": [
-        119,
-        130,
-        191
+        20,
+        150,
+        167,
+        182,
+        265
       ],
-      "tier_final": "notable",
-      "distinct_outlets": 3,
+      "tier_final": "major",
+      "distinct_outlets": 2,
       "wiki_backed": false,
       "wiki_event": "",
-      "weight": 3,
+      "weight": 4,
       "weight_terms": {
-        "distinct_outlets": 3,
+        "distinct_outlets": 2,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "How WhatsApp clue, Mygate trail help CBI crack NEET paper leak",
+          "url": "https://timesofindia.indiatimes.com/india/whatsapp-clue-mygate-trail-help-cbi-crack-neet-paper-leak/articleshow/133042276.cms"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "NEET paper leak masterminds used ‘FIFA World Cup 2026’ WhatsApp group: Secret chats play major role in CBI crackdown",
+          "url": "https://www.livemint.com/news/india/neet-paper-leak-masterminds-used-fifa-world-cup-2026-whatsapp-group-secret-chats-play-major-role-in-cbi-crackdown-11786118532170.html"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "NEET row: CBI claims NTA experts breached 'secrecy pact', face life term, Rs 1cr fine",
+          "url": "https://timesofindia.indiatimes.com/city/delhi/neet-paper-leak-cbi-claims-nta-experts-breached-secrecy-pact-face-life-term-rs-1-cr-fine/articleshow/133038344.cms"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "'We demand that NTA be dissolved': CJP on CBI charge sheet in NEET 2026 case",
+          "url": "https://timesofindia.indiatimes.com/city/delhi/we-demand-that-nta-be-dissolved-cjp-spokesperson-ashutosh-ranka-on-cbi-chargesheet-in-neet-2026-case/articleshow/133037639.cms"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "NEET-UG leak 2026: CBI chargesheet claims paper setting done at NTA's Okhla building; what key evidence did agency find?",
+          "url": "https://www.livemint.com/news/india/neetug-leak-2026-cbi-chargesheet-claims-paper-setting-done-at-ntas-okhla-building-what-key-evidence-did-agency-find-11786096704480.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Heavy monsoon rains cause severe waterlogging and travel disruption across Delhi-NCR",
+      "section": "india",
+      "category": "disaster",
+      "tier_requested": "notable",
+      "article_ids": [
+        17,
+        138,
+        139,
+        184,
+        198,
+        203,
+        238,
+        248
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        17,
+        138,
+        139,
+        184,
+        198,
+        203,
+        238,
+        248
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 5,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 5,
+      "weight_terms": {
+        "distinct_outlets": 5,
         "tier_weight": 0,
         "wiki_bonus": 0
       },
       "weight_floor": 5,
       "articles": [
         {
-          "outlet": "Channel News Asia",
-          "title": "US unexpectedly loses jobs in blow to Trump ahead of midterms",
-          "url": "https://www.channelnewsasia.com/world/us-jobs-lost-midterm-election-fed-6306721"
-        },
-        {
-          "outlet": "Al Jazeera",
-          "title": "US labour market sheds jobs in July as labour force participation slumps",
-          "url": "https://www.aljazeera.com/economy/2026/8/7/us-labour-market-sheds-jobs-in-july-as-labour-force-participation-slumps?traffic_source=rss"
+          "outlet": "The Hindu",
+          "title": "More rains predicted in Delhi, IMD issues yellow alert",
+          "url": "https://www.thehindu.com/news/cities/Delhi/delhi-weather-monsoon-rains-july-29-2026/article71280039.ece"
         },
         {
           "outlet": "Livemint",
-          "title": "US employers unexpectedly shed jobs, unemployment rate falls",
-          "url": "https://www.livemint.com/news/us-news/us-employers-unexpectedly-shed-jobs-unemployment-rate-falls-11786111754648.html"
+          "title": "Will schools be closed tomorrow, August 8? Check IMD's heavy rainfall warnings for your state",
+          "url": "https://www.livemint.com/news/india/will-schools-be-closed-tomorrow-august-8-check-imds-heavy-rainfall-warnings-for-your-state-11786118365631.html"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "New Delhi on red alert as heavy rains pound the city",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/7/new-delhi-on-red-alert-as-heavy-rains-pound-the-city?traffic_source=rss"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Watch: Delhi-NCR drowns in rain chaos; 7 videos show waterlogging, gridlock",
+          "url": "https://timesofindia.indiatimes.com/india/watch-delhi-ncr-drowns-in-rain-chaos-7-videos-show-waterlogging-gridlock/articleshow/133036419.cms"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Delhi sees wettest August start in 13 years: Non-stop rainfall leaves roads flooded, traffic crawling",
+          "url": "https://www.hindustantimes.com/india-news/rain-noida-delhi-gurugram-waterlogging-traffic-jam-next-2-hours-more-rain-thunderstorm-imd-delhi-ncr-ghaziabad-101786106423837.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 3
+    },
+    {
+      "headline_hint": "Former Tehelka editor Tarun Tejpal sentenced to 10 years in prison in 2013 rape case",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        358,
+        363,
+        370
+      ],
+      "verdict": "cut:below_floor(2<5)",
+      "valid_ids": [
+        358,
+        363,
+        370
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 2,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Scroll.in",
+          "title": "Rush Hour: Tarun Tejpal gets 10-year jail for rape, Rs 557 crore spent on Modi foreign trips & more",
+          "url": "https://scroll.in/latest/1094839/rush-hour-tarun-tejpal-gets-10-year-jail-for-rape-rs-557-crore-spent-on-modi-foreign-trips-more?utm_source=rss&utm_medium=public"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "High-profile Indian journalist jailed for 10 years for raping colleague",
+          "url": "https://www.theguardian.com/world/2026/aug/06/indian-journalist-tarun-tejpal-convicted-raping-colleague"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "Journalist Tarun Tejpal sentenced to 10 years in jail in 2013 rape case",
+          "url": "https://scroll.in/latest/1094826/tarun-tejpal-convicted-in-2013-rape-case-hc-sets-aside-sessions-court-verdict?utm_source=rss&utm_medium=public"
         }
       ],
       "articles_dropped_by_diversity_cap": 0
     },
     {
-      "headline_hint": "Mass shooting by 14-year-old student leaves several dead in Thailand",
-      "section": "world",
-      "category": "disaster",
+      "headline_hint": "India pushes back against US criticism over proposed FCRA amendments",
+      "section": "india",
+      "category": "politics",
       "tier_requested": "notable",
       "article_ids": [
-        151,
-        198,
-        276,
-        312
+        31,
+        230,
+        243,
+        251,
+        276
       ],
       "verdict": "cut:below_floor(4<5)",
       "valid_ids": [
-        151,
-        198,
-        276,
-        312
+        31,
+        230,
+        243,
+        251,
+        276
       ],
       "tier_final": "notable",
       "distinct_outlets": 4,
@@ -819,24 +660,29 @@
       "weight_floor": 5,
       "articles": [
         {
-          "outlet": "BBC World",
-          "title": "Seven killed after Thai student opens fire at home and school",
-          "url": "https://www.bbc.co.uk/news/articles/c980j3j578do?at_medium=RSS&at_campaign=rss"
+          "outlet": "Times of India",
+          "title": "India rejects US criticism of FCRA Bill; MEA calls it 'internal matter'",
+          "url": "https://timesofindia.indiatimes.com/india/fcra-bill-internal-matter-india-rejects-us-criticism/articleshow/133042254.cms"
         },
         {
-          "outlet": "Guardian World",
-          "title": "Thailand school shooting: eight killed including suspected attacker, police say",
-          "url": "https://www.theguardian.com/world/2026/aug/07/thailand-school-shooting-debsirin-nonthaburi-bangkok"
+          "outlet": "Scroll.in",
+          "title": "FCRA amendments India’s internal matter: Centre after US lawmaker calls bill ‘attack’ on Christians",
+          "url": "https://scroll.in/latest/1094879/fcra-amendments-indias-internal-matter-centre-after-us-lawmaker-calls-bill-attack-on-christians?utm_source=rss&utm_medium=public"
         },
         {
-          "outlet": "France 24",
-          "title": "Thailand: Gunman killed grandparents before school attack",
-          "url": "https://www.france24.com/en/thailand-gunman-killed-grandparents-before-school-attack"
+          "outlet": "Hindustan Times",
+          "title": "India pushes back against US criticism of proposed FCRA changes",
+          "url": "https://www.hindustantimes.com/india-news/india-pushes-back-against-us-criticism-of-proposed-fcra-changes-101786108192684.html"
         },
         {
-          "outlet": "NPR World",
-          "title": "Student gunman kills at least 7 near Bangkok, officials say",
-          "url": "https://www.npr.org/2026/08/07/nx-s1-5924583/student-shoots-multiple-people-at-a-high-school-in-thailand-authorities-say"
+          "outlet": "Livemint",
+          "title": "‘Even the US’ regulates foreign funding: India hits back at Republican lawmaker's remarks – 'Our Parliament decides'",
+          "url": "https://www.livemint.com/news/india/even-the-us-regulates-foreign-funding-india-hits-back-at-republic-lawmakers-remarks-our-parliament-decides-11786105811588.html"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "MEA's riposte to US lawmaker's foreign funding remarks: 'Our internal affairs'",
+          "url": "https://www.hindustantimes.com/india-news/fcra-bill-2026-india-foreign-funding-us-lawmaker-riley-moorey-101786100416801.html"
         }
       ],
       "articles_dropped_by_diversity_cap": 0
