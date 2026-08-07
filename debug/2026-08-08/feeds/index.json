@@ -1,0 +1,616 @@
+{
+  "since": "2026-08-05 23:28:47+00:00",
+  "configured": 14,
+  "live": 13,
+  "degraded": false,
+  "by_outlet_after_dedupe": {
+    "The Hindu": 60,
+    "Channel News Asia": 20,
+    "France 24": 24,
+    "Guardian World": 38,
+    "Al Jazeera": 25,
+    "BBC World": 30,
+    "NPR World": 10,
+    "DW World": 13,
+    "NDTV": 19,
+    "Times of India": 46,
+    "Livemint": 35,
+    "Hindustan Times": 100,
+    "Scroll.in": 51
+  },
+  "feeds": [
+    {
+      "outlet": "BBC World",
+      "url": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "http": 200,
+      "raw_items": 33,
+      "usable": 33,
+      "error": ""
+    },
+    {
+      "outlet": "Al Jazeera",
+      "url": "https://www.aljazeera.com/xml/rss/all.xml",
+      "http": 200,
+      "raw_items": 25,
+      "usable": 25,
+      "error": ""
+    },
+    {
+      "outlet": "Guardian World",
+      "url": "https://www.theguardian.com/world/rss",
+      "http": 200,
+      "raw_items": 45,
+      "usable": 45,
+      "error": ""
+    },
+    {
+      "outlet": "NPR World",
+      "url": "https://feeds.npr.org/1004/rss.xml",
+      "http": 200,
+      "raw_items": 10,
+      "usable": 10,
+      "error": ""
+    },
+    {
+      "outlet": "DW World",
+      "url": "https://rss.dw.com/rdf/rss-en-world",
+      "http": 200,
+      "raw_items": 13,
+      "usable": 13,
+      "error": ""
+    },
+    {
+      "outlet": "France 24",
+      "url": "https://www.france24.com/en/rss",
+      "http": 200,
+      "raw_items": 24,
+      "usable": 24,
+      "error": ""
+    },
+    {
+      "outlet": "Channel News Asia",
+      "url": "https://www.channelnewsasia.com/api/v1/rss-outbound-feed?_format=xml",
+      "http": 200,
+      "raw_items": 20,
+      "usable": 20,
+      "error": ""
+    },
+    {
+      "outlet": "The Hindu",
+      "url": "https://www.thehindu.com/news/national/feeder/default.rss",
+      "http": 200,
+      "raw_items": 60,
+      "usable": 60,
+      "error": ""
+    },
+    {
+      "outlet": "Indian Express",
+      "url": "https://indianexpress.com/section/india/feed/",
+      "http": 403,
+      "raw_items": 0,
+      "usable": 0,
+      "error": "http 403"
+    },
+    {
+      "outlet": "NDTV",
+      "url": "https://feeds.feedburner.com/ndtvnews-india-news",
+      "http": 200,
+      "raw_items": 20,
+      "usable": 20,
+      "error": ""
+    },
+    {
+      "outlet": "Hindustan Times",
+      "url": "https://www.hindustantimes.com/feeds/rss/india-news/rssfeed.xml",
+      "http": 200,
+      "raw_items": 100,
+      "usable": 100,
+      "error": ""
+    },
+    {
+      "outlet": "Times of India",
+      "url": "https://timesofindia.indiatimes.com/rssfeedstopstories.cms",
+      "http": 200,
+      "raw_items": 46,
+      "usable": 46,
+      "error": ""
+    },
+    {
+      "outlet": "Livemint",
+      "url": "https://www.livemint.com/rss/news",
+      "http": 200,
+      "raw_items": 35,
+      "usable": 35,
+      "error": ""
+    },
+    {
+      "outlet": "Scroll.in",
+      "url": "https://feeds.feedburner.com/ScrollinArticles.rss",
+      "http": 200,
+      "raw_items": 100,
+      "usable": 100,
+      "error": ""
+    }
+  ],
+  "dropped_articles": [
+    {
+      "reason": "out_of_window",
+      "outlet": "BBC World",
+      "title": "Banned from football at home, Afghan women's team reunite 8,000 miles away",
+      "url": "https://www.bbc.co.uk/news/articles/c8dnrpmgv4yo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-08-05 23:28:06+00:00",
+      "since": "2026-08-05 23:28:47+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "BBC World",
+      "title": "El-Sayed's victory sends tremors through Democratic Party",
+      "url": "https://www.bbc.co.uk/news/articles/cp309ng0xq1o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-08-05 16:04:16+00:00",
+      "since": "2026-08-05 23:28:47+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "BBC World",
+      "title": "'My grandmother subjected my baby to female genital mutilation behind my back'",
+      "url": "https://www.bbc.co.uk/news/articles/c3r0vp7n0pro?at_medium=RSS&at_campaign=rss",
+      "published": "2026-08-04 23:13:01+00:00",
+      "since": "2026-08-05 23:28:47+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Guardian World",
+      "title": "Toronto zoo announces birth of pygmy hippo calf, third for mother Kindia",
+      "url": "https://www.theguardian.com/world/2026/aug/05/toronto-zoo-pygmy-hippo-calf",
+      "published": "2026-08-05 22:16:20+00:00",
+      "since": "2026-08-05 23:28:47+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Guardian World",
+      "title": "Mexican influencer shot dead while streaming live on social media",
+      "url": "https://www.theguardian.com/world/2026/aug/05/mexico-cesar-gastelum-shot-dead-streaming-live-social-media",
+      "published": "2026-08-05 17:31:27+00:00",
+      "since": "2026-08-05 23:28:47+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Guardian World",
+      "title": "New Zealand capital delights in rare snowfall as southern city residents ski down world’s steepest street",
+      "url": "https://www.theguardian.com/world/2026/aug/05/new-zealand-capital-rare-snow-wellington-dunedin-ski-down-worlds-steepest-street",
+      "published": "2026-08-05 03:27:37+00:00",
+      "since": "2026-08-05 23:28:47+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Guardian World",
+      "title": "‘Our new champion’: Philippines swept up in tennis fever after Alex Eala’s historic win",
+      "url": "https://www.theguardian.com/world/2026/aug/05/alex-eala-philippines-tennis-fever",
+      "published": "2026-08-05 02:10:17+00:00",
+      "since": "2026-08-05 23:28:47+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Guardian World",
+      "title": "Exiled PM vows to return to Bangladesh despite execution threat",
+      "url": "https://www.theguardian.com/world/2026/aug/05/exiled-pm-vows-to-return-sheikh-hasina-bangladesh-despite-execution-threat",
+      "published": "2026-08-05 17:45:17+00:00",
+      "since": "2026-08-05 23:28:47+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Guardian World",
+      "title": "Pakistani authorities ban international media from reporting in most of country",
+      "url": "https://www.theguardian.com/world/2026/aug/05/pakistani-authorities-ban-international-media-from-reporting-in-most-of-country",
+      "published": "2026-08-05 16:59:20+00:00",
+      "since": "2026-08-05 23:28:47+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Guardian World",
+      "title": "Pakistan precinct suspends all 78 officers and staff over alleged rape at police station",
+      "url": "https://www.theguardian.com/world/2026/aug/05/pakistan-precinct-suspends-all-officers-and-staff",
+      "published": "2026-08-05 15:23:06+00:00",
+      "since": "2026-08-05 23:28:47+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Misinformation about health and wellness can be convincing – here is how to spot it",
+      "url": "https://scroll.in/article/1094741/misinformation-about-health-and-wellness-can-be-convincing-here-is-how-to-spot-it?utm_source=rss&utm_medium=public",
+      "published": "2026-08-05 16:30:00+00:00",
+      "since": "2026-08-05 23:28:47+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "‘Recognised’ media outlets can report on courts, but not share audio, video clips of hearings: SC",
+      "url": "https://scroll.in/latest/1094821/recognised-media-outlets-can-report-on-courts-but-not-share-audio-video-clips-of-hearings-sc?utm_source=rss&utm_medium=public",
+      "published": "2026-08-05 14:50:28+00:00",
+      "since": "2026-08-05 23:28:47+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "How the Iran-Pakistan ‘Axis of sympathy’ could reshape power in South Asia",
+      "url": "https://scroll.in/article/1094725/how-the-iran-pakistan-axis-of-sympathy-could-reshape-power-in-south-asia?utm_source=rss&utm_medium=public",
+      "published": "2026-08-05 14:00:00+00:00",
+      "since": "2026-08-05 23:28:47+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Rush Hour: Rahul Gandhi says goons sent to protesters’ homes, Zuckerberg asked to apologise and more",
+      "url": "https://scroll.in/latest/1094812/rush-hour-rahul-gandhi-says-goons-sent-to-protesters-homes-zuckerberg-asked-to-apologise-and-more?utm_source=rss&utm_medium=public",
+      "published": "2026-08-05 15:25:48+00:00",
+      "since": "2026-08-05 23:28:47+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Youth protests: Goons being sent to students’ homes, alleges Rahul Gandhi",
+      "url": "https://scroll.in/latest/1094819/youth-protests-students-being-harassed-goons-being-sent-to-their-homes-alleges-rahul-gandhi?utm_source=rss&utm_medium=public",
+      "published": "2026-08-05 16:44:35+00:00",
+      "since": "2026-08-05 23:28:47+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "If Vande Mataram is sung in madrasas, ‘heavens will not fall’, says Calcutta HC",
+      "url": "https://scroll.in/latest/1094818/if-vande-mataram-is-sung-in-madrasas-heavens-will-not-fall-says-calcutta-hc?utm_source=rss&utm_medium=public",
+      "published": "2026-08-05 12:18:16+00:00",
+      "since": "2026-08-05 23:28:47+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "‘Another drop of hope in flow’: Poems that grapple with the reality of an imperfect world",
+      "url": "https://scroll.in/article/1094498/another-drop-of-hope-in-flow-poems-that-grapple-with-the-reality-of-an-imperfect-world?utm_source=rss&utm_medium=public",
+      "published": "2026-08-05 12:00:01+00:00",
+      "since": "2026-08-05 23:28:47+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Cockroach Janta Party to operate as pressure group for now, says Abhijeet Dipke",
+      "url": "https://scroll.in/latest/1094817/cockroach-janta-party-to-operate-as-pressure-group-for-now-says-abhijeet-dipke?utm_source=rss&utm_medium=public",
+      "published": "2026-08-05 10:26:56+00:00",
+      "since": "2026-08-05 23:28:47+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Youth protests: SC says authorities should understand demonstrators’ concerns",
+      "url": "https://scroll.in/latest/1094816/youth-protests-sc-says-authorities-should-understand-demonstrators-concerns?utm_source=rss&utm_medium=public",
+      "published": "2026-08-05 10:13:00+00:00",
+      "since": "2026-08-05 23:28:47+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Podcast: What today’s engineers can learn from a technocrat of colonial India",
+      "url": "https://scroll.in/article/1094636/podcast-what-todays-engineers-can-learn-from-a-technocrat-of-colonial-india?utm_source=rss&utm_medium=public",
+      "published": "2026-08-05 10:00:00+00:00",
+      "since": "2026-08-05 23:28:47+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Apologise within 3 days, Parliament panel to Zuckerberg after Facebook briefly removes Modi video",
+      "url": "https://scroll.in/latest/1094814/apologise-within-3-days-parliament-panel-to-zuckerberg-after-facebook-briefly-removes-modi-video?utm_source=rss&utm_medium=public",
+      "published": "2026-08-05 10:50:20+00:00",
+      "since": "2026-08-05 23:28:47+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Sharad Pawar’s NCP removes all spokespersons",
+      "url": "https://scroll.in/latest/1094807/sharad-pawars-ncp-removes-all-spokespersons?utm_source=rss&utm_medium=public",
+      "published": "2026-08-05 09:03:54+00:00",
+      "since": "2026-08-05 23:28:47+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Kerala: Toll in rain-related incidents rises to 25, four missing",
+      "url": "https://scroll.in/latest/1094804/kerala-toll-in-rain-related-incidents-rises-to-25-four-missing?utm_source=rss&utm_medium=public",
+      "published": "2026-08-05 10:10:01+00:00",
+      "since": "2026-08-05 23:28:47+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Maharashtra bans analogue paneer for a year",
+      "url": "https://scroll.in/latest/1094806/maharashtra-bans-analogue-paneer-for-a-year?utm_source=rss&utm_medium=public",
+      "published": "2026-08-05 08:23:46+00:00",
+      "since": "2026-08-05 23:28:47+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "This book helps early-career artists navigate negotiations and contracts and spot red flags",
+      "url": "https://scroll.in/article/1094324/this-book-helps-early-career-artists-navigate-negotiations-and-contracts-and-spot-red-flags?utm_source=rss&utm_medium=public",
+      "published": "2026-08-05 08:00:00+00:00",
+      "since": "2026-08-05 23:28:47+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "VD Savarkar criticised cow worship, saw them only as animals, grandnephew tells court",
+      "url": "https://scroll.in/latest/1094800/vd-savarkar-criticised-cow-worship-saw-them-only-as-useful-animals-grandnephew-tells-court?utm_source=rss&utm_medium=public",
+      "published": "2026-08-05 08:38:19+00:00",
+      "since": "2026-08-05 23:28:47+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "‘Clear attack against Christians’: US legislator warns FCRA amendment could hurt ties with India",
+      "url": "https://scroll.in/latest/1094796/clear-attack-against-christians-us-legislator-warns-fcra-amendment-could-hurt-ties-with-india?utm_source=rss&utm_medium=public",
+      "published": "2026-08-05 07:18:11+00:00",
+      "since": "2026-08-05 23:28:47+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "E20 policy: Take down ‘defamatory’ AI videos about Nitin Gadkari, HC tells social media platforms",
+      "url": "https://scroll.in/latest/1094797/e20-policy-take-down-defamatory-ai-videos-about-nitin-gadkari-hc-tells-social-media-platforms?utm_source=rss&utm_medium=public",
+      "published": "2026-08-05 07:15:00+00:00",
+      "since": "2026-08-05 23:28:47+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "RBI keeps repo rate unchanged at 5.25%",
+      "url": "https://scroll.in/latest/1094793/rbi-keeps-repo-rate-unchanged-at-5-25?utm_source=rss&utm_medium=public",
+      "published": "2026-08-05 06:08:24+00:00",
+      "since": "2026-08-05 23:28:47+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Centre tells SC it is considering two-stage format for NEET, similar to JEE",
+      "url": "https://scroll.in/latest/1094792/centre-tells-sc-it-is-considering-two-stage-format-for-neet-similar-to-jee?utm_source=rss&utm_medium=public",
+      "published": "2026-08-05 05:48:52+00:00",
+      "since": "2026-08-05 23:28:47+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Karnataka HC scraps detention of school bus driver accused of being undocumented Bangladeshi migrant",
+      "url": "https://scroll.in/latest/1094791/karnataka-hc-scraps-detention-of-school-bus-driver-accused-of-being-undocumented-bangladeshi-migrant?utm_source=rss&utm_medium=public",
+      "published": "2026-08-05 04:44:26+00:00",
+      "since": "2026-08-05 23:28:47+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "SIR: Delhi, Maharashtra deadline extended by nine days until August 17",
+      "url": "https://scroll.in/latest/1094790/sir-deadline-extended-in-maharashtra-delhi-door-to-door-verification-to-continue-till-august-17?utm_source=rss&utm_medium=public",
+      "published": "2026-08-05 04:49:35+00:00",
+      "since": "2026-08-05 23:28:47+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Modi is one of India’s most powerful prime ministers – so why is he so bothered by Gen Z profanity?",
+      "url": "https://scroll.in/article/1094786/modi-is-one-of-indias-most-powerful-prime-ministers-so-why-is-he-so-bothered-by-gen-z-profanity?utm_source=rss&utm_medium=public",
+      "published": "2026-08-05 09:01:03+00:00",
+      "since": "2026-08-05 23:28:47+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "From the Hazrat Mahal biography: Courtesan, one of Wajid Ali Shah’s many wives, military strategist",
+      "url": "https://scroll.in/article/1094626/from-the-hazrat-mahal-biography-courtesan-one-of-wajid-ali-shahs-many-wives-military-strategist?utm_source=rss&utm_medium=public",
+      "published": "2026-08-05 03:00:00+00:00",
+      "since": "2026-08-05 23:28:47+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Indian-flagged ship sinks in Red Sea after attack, all 14 on board rescued",
+      "url": "https://scroll.in/latest/1094789/indian-flagged-ship-attacked-in-red-sea-all-14-on-board-rescued?utm_source=rss&utm_medium=public",
+      "published": "2026-08-05 03:42:34+00:00",
+      "since": "2026-08-05 23:28:47+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "How Abhijeet Dipke created a broad-based idea of politics that put the BJP on the backfoot",
+      "url": "https://scroll.in/article/1094759/how-abhijeet-dipke-created-a-broad-based-idea-of-politics-that-put-the-bjp-on-the-backfoot?utm_source=rss&utm_medium=public",
+      "published": "2026-08-05 06:51:12+00:00",
+      "since": "2026-08-05 23:28:47+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Two years after the July Uprising, Bangladesh’s only political consensus may be distrust of India",
+      "url": "https://scroll.in/article/1094787/two-years-after-the-july-uprising-bangladeshs-only-political-consensus-may-be-distrust-of-india?utm_source=rss&utm_medium=public",
+      "published": "2026-08-05 01:00:00+00:00",
+      "since": "2026-08-05 23:28:47+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "When you hit ‘delete’, what really happens to your data?",
+      "url": "https://scroll.in/article/1094743/when-you-hit-delete-what-really-happens-to-your-data?utm_source=rss&utm_medium=public",
+      "published": "2026-08-04 16:30:00+00:00",
+      "since": "2026-08-05 23:28:47+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Bareilly Islamic religious event drops meat from menu, changes dates because of Kanwar Yatra",
+      "url": "https://scroll.in/latest/1094785/bareillys-islamic-religious-event-drops-meat-from-menu-changes-dates-because-of-kanwar-yatra?utm_source=rss&utm_medium=public",
+      "published": "2026-08-05 04:22:37+00:00",
+      "since": "2026-08-05 23:28:47+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Rush Hour: HC orders Udhyanidhi Stalin’s release, 14 hurt in Air India flight turbulence & more",
+      "url": "https://scroll.in/latest/1094776/rush-hour-hc-orders-udhyanidhi-stalins-release-14-hurt-in-air-india-flight-turbulence-more?utm_source=rss&utm_medium=public",
+      "published": "2026-08-04 14:15:00+00:00",
+      "since": "2026-08-05 23:28:47+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Romance fiction: Kavya’s handsome intern, Neil, finds out a lie about her that can endanger her job",
+      "url": "https://scroll.in/article/1094351/romance-fiction-kavyas-handsome-intern-neil-finds-out-a-lie-about-her-that-can-endanger-her-job?utm_source=rss&utm_medium=public",
+      "published": "2026-08-04 12:00:00+00:00",
+      "since": "2026-08-05 23:28:47+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "India brought back 274 fugitives from 36 countries since 2019, says Centre",
+      "url": "https://scroll.in/latest/1094784/india-brought-back-274-fugitives-from-36-countries-since-2019-says-centre?utm_source=rss&utm_medium=public",
+      "published": "2026-08-04 11:43:34+00:00",
+      "since": "2026-08-05 23:28:47+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Air India Phuket-Delhi flight drops 300 feet after turbulence, 14 injured",
+      "url": "https://scroll.in/latest/1094783/air-india-phuket-delhi-flight-drops-300-feet-after-turbulence-14-injured?utm_source=rss&utm_medium=public",
+      "published": "2026-08-04 14:18:57+00:00",
+      "since": "2026-08-05 23:28:47+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Asaram does not need to be hospitalised, AIIMS tells SC in his plea against rape conviction",
+      "url": "https://scroll.in/latest/1094778/asaram-does-not-need-to-be-hospitalised-aiims-tells-sc-in-his-plea-against-rape-conviction?utm_source=rss&utm_medium=public",
+      "published": "2026-08-04 14:16:01+00:00",
+      "since": "2026-08-05 23:28:47+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "NEET OMR tampering allegations cannot be accepted solely on candidate’s suspicion: Chhattisgarh HC",
+      "url": "https://scroll.in/latest/1094780/neet-omr-tampering-allegations-cannot-be-accepted-solely-on-candidates-suspicion-chhattisgarh-hc?utm_source=rss&utm_medium=public",
+      "published": "2026-08-04 10:18:00+00:00",
+      "since": "2026-08-05 23:28:47+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Udhayanidhi Stalin released hours after arrest in case over alleged remarks about actor Trisha",
+      "url": "https://scroll.in/latest/1094775/release-udhayanidhi-stalin-madras-hc-tells-police-in-case-over-alleged-remarks-about-actor-trisha?utm_source=rss&utm_medium=public",
+      "published": "2026-08-04 15:16:30+00:00",
+      "since": "2026-08-05 23:28:47+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Food regulator bars manufacturers from selling rum, whiskey variants with artificial flavour",
+      "url": "https://scroll.in/latest/1094773/food-regulator-bars-manufacturers-from-selling-rum-whiskey-variants-with-artificial-flavour?utm_source=rss&utm_medium=public",
+      "published": "2026-08-04 08:29:18+00:00",
+      "since": "2026-08-05 23:28:47+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "‘Not resigning’: Punjab Congress chief Warring amid infighting in state unit",
+      "url": "https://scroll.in/latest/1094770/not-resigning-punjab-congress-chief-warring-amid-infighting-in-state-unit?utm_source=rss&utm_medium=public",
+      "published": "2026-08-04 08:14:00+00:00",
+      "since": "2026-08-05 23:28:47+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Long considered sacred, the golden langur, found in western Assam, is now an endangered animal",
+      "url": "https://scroll.in/article/1094601/long-considered-sacred-the-golden-langur-found-in-western-assam-is-now-an-endangered-animal?utm_source=rss&utm_medium=public",
+      "published": "2026-08-04 08:00:00+00:00",
+      "since": "2026-08-05 23:28:47+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "DMK leader Udhayanidhi Stalin arrested for allegedly derogatory remarks about actor Trisha",
+      "url": "https://scroll.in/latest/1094767/dmk-leader-udhayanidhi-stalin-detained-for-allegedly-derogatory-remarks-about-actor-trisha?utm_source=rss&utm_medium=public",
+      "published": "2026-08-04 07:12:49+00:00",
+      "since": "2026-08-05 23:28:47+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Tamil Nadu asks SC to direct Karnataka to release its share of Cauvery water",
+      "url": "https://scroll.in/latest/1094765/tamil-nadu-moves-sc-seeking-direction-to-karnataka-to-release-due-share-of-cauvery-water?utm_source=rss&utm_medium=public",
+      "published": "2026-08-04 06:49:06+00:00",
+      "since": "2026-08-05 23:28:47+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Change in transgender law cannot cancel rights already given, Supreme Court tells Centre",
+      "url": "https://scroll.in/latest/1094764/change-in-transgender-law-cannot-cancel-rights-already-given-supreme-court-tells-centre?utm_source=rss&utm_medium=public",
+      "published": "2026-08-04 06:53:27+00:00",
+      "since": "2026-08-05 23:28:47+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "22 children have died of Chandipura virus infection in Gujarat: Health minister",
+      "url": "https://scroll.in/latest/1094763/22-children-have-died-of-chandipura-virus-infection-in-gujarat-health-minister?utm_source=rss&utm_medium=public",
+      "published": "2026-08-04 04:10:20+00:00",
+      "since": "2026-08-05 23:28:47+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "‘Adarsh Baal Vidyalaya’ creators: ‘Given the lives we lead, we need a sense of humour’",
+      "url": "https://scroll.in/reel/1094738/adarsh-baal-vidyalaya-creators-given-the-lives-we-lead-we-need-a-sense-of-humour?utm_source=rss&utm_medium=public",
+      "published": "2026-08-04 04:00:00+00:00",
+      "since": "2026-08-05 23:28:47+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Undone by a meme: Mockery may have dealt a shock to the Modi-led regime – history shows why",
+      "url": "https://scroll.in/article/1094719/undone-by-a-meme-mockery-may-have-dealt-a-shock-to-the-modi-led-regime-history-shows-why?utm_source=rss&utm_medium=public",
+      "published": "2026-08-04 07:50:58+00:00",
+      "since": "2026-08-05 23:28:47+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Did Gen Z protests drive Prashant Kishor’s stunning bye-poll win in Bihar?",
+      "url": "https://scroll.in/article/1094760/did-gen-z-protests-drive-prashant-kishors-stunning-bye-poll-win-in-bihar?utm_source=rss&utm_medium=public",
+      "published": "2026-08-04 16:17:26+00:00",
+      "since": "2026-08-05 23:28:47+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "From the biography: How, inspired by Gandhi, Vallabhbhai Patel tried to win over the ‘untouchables’",
+      "url": "https://scroll.in/article/1094366/from-the-biography-how-inspired-by-gandhi-vallabhbhai-patel-tried-to-win-over-the-untouchables?utm_source=rss&utm_medium=public",
+      "published": "2026-08-04 03:00:02+00:00",
+      "since": "2026-08-05 23:28:47+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Justice MS Liberhan, who headed commission to probe Babri Masjid demolition, dies",
+      "url": "https://scroll.in/latest/1094762/justice-ms-liberhan-who-headed-commission-to-probe-babri-masjid-demolition-dies?utm_source=rss&utm_medium=public",
+      "published": "2026-08-04 03:00:22+00:00",
+      "since": "2026-08-05 23:28:47+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "‘What future do children have if teachers can’t take classes?’: An SIR crisis has hit Mumbai schools",
+      "url": "https://scroll.in/article/1094756/what-future-do-children-have-if-teachers-cant-take-classes-an-sir-crisis-has-hit-mumbai-schools?utm_source=rss&utm_medium=public",
+      "published": "2026-08-04 01:00:01+00:00",
+      "since": "2026-08-05 23:28:47+00:00"
+    },
+    {
+      "reason": "dup_title",
+      "outlet": "NDTV",
+      "title": "India-Israel Pact To Counter Pak-Saudi-Turkey Deal? A Fact-Check By Centre",
+      "url": "https://www.ndtv.com/india-news/india-israel-pact-to-counter-pak-saudi-turkey-deal-a-fact-check-by-centre-11881434#publisher=newsstand",
+      "collided_with": "https://www.ndtv.com/india-news/india-israel-pact-to-counter-pak-saudi-turkey-deal-a-fact-check-by-centre-11881440#publisher=newsstand"
+    }
+  ]
+}
