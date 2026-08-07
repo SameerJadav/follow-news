@@ -1,0 +1,996 @@
+{
+  "dials": {
+    "WEIGHT_FLOOR": 5,
+    "TIER_WEIGHT": {
+      "lead": 4,
+      "major": 2,
+      "notable": 0
+    },
+    "WIKI_BONUS": 2,
+    "HARD_CAP": 12,
+    "MIN_STORIES_IF_ANY": 3,
+    "MAX_ARTICLES_PER_STORY": 5
+  },
+  "floor_relaxed": false,
+  "kept_weights": [
+    12,
+    8,
+    8,
+    7,
+    7,
+    7,
+    5,
+    5,
+    10,
+    9,
+    6,
+    6
+  ],
+  "per_section": {
+    "world": 8,
+    "india": 4
+  },
+  "clusters": [
+    {
+      "headline_hint": "Iran and US approach temporary deal on Strait of Hormuz amid escalating conflict",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "lead",
+      "article_ids": [
+        1,
+        13,
+        20,
+        33,
+        56,
+        88,
+        135,
+        188,
+        208,
+        261,
+        344
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        1,
+        13,
+        20,
+        33,
+        56,
+        88,
+        135,
+        188,
+        208,
+        261,
+        344
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 8,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 12,
+      "weight_terms": {
+        "distinct_outlets": 8,
+        "tier_weight": 4,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Channel News Asia",
+          "title": "Oil rises on concerns over Strait of Hormuz reopening plans",
+          "url": "https://www.channelnewsasia.com/business/oil-rises-concerns-over-strait-hormuz-reopening-plans-6305041"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "US-Iran war news LIVE: Oil prices continue to rise as Iran attacks 'hostile targets' in Strait of Hormuz",
+          "url": "https://www.livemint.com/news/us-news/us-iran-war-news-latest-live-updates-donald-trump-strait-of-hormuz-middle-east-conflict-crude-oil-brent-ceasefire-talks-11786059906604.html"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Trump says war can’t ‘go much longer’, Hormuz deal close",
+          "url": "https://www.aljazeera.com/news/liveblog/2026/8/7/trump-says-war-cant-go-much-longer-hormuz-deal-close?traffic_source=rss"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "'It will end pretty soon': Trump hints at sooner resolution to US-Iran war",
+          "url": "https://timesofindia.indiatimes.com/world/us/it-will-end-pretty-soon-trump-hints-at-peace-in-us-iran-war-tehran-mocks-theatre-diplomacy/articleshow/133017779.cms"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "Iran aims to ban U.S. and Israeli ships from Strait of Hormuz and charge others a toll",
+          "url": "https://www.npr.org/2026/08/06/nx-s1-5923623/iran-strait-hormuz-us-israel-ban"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 6
+    },
+    {
+      "headline_hint": "Trump signs executive orders to restrict US birthright citizenship and birth tourism",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        23,
+        31,
+        34,
+        37,
+        60,
+        82
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        23,
+        31,
+        34,
+        37,
+        60,
+        82
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 5,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Livemint",
+          "title": "Donald Trump signs fresh executive orders to limit birthright citizenship in US after Supreme Court pushback",
+          "url": "https://www.livemint.com/news/us-news/donald-trump-signs-fresh-executive-orders-to-limit-birthright-citizenship-in-us-after-supreme-court-pushback-11786060068583.html"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Trump signs executive orders banning so-called ‘birth tourism’",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/6/trump-signs-executive-orders-banning-so-called-birth?traffic_source=rss"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "Trump signs orders to limit US birthright citizenship, despite Supreme Court ruling",
+          "url": "https://www.channelnewsasia.com/world/donald-trump-signs-order-limit-us-birthright-citizenship-6304671"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "ACLU blasts Trump’s new orders on birthright citizenship, saying they are doomed to fail in court– live",
+          "url": "https://www.theguardian.com/us-news/live/2026/aug/06/senators-anthony-fauci-contempt-of-congress-michiganu-democrats-republicans-trump-politics-latest-news-updates"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Trump targets 'birth tourism' in new bid to curb birthright citizenship",
+          "url": "https://www.france24.com/en/americas/20260806-trump-signs-order-new-bid-curb-birthright-citizenship"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 1
+    },
+    {
+      "headline_hint": "New Mexico court orders Meta to pay $567 million over child safety and mental health harm",
+      "section": "world",
+      "category": "technology",
+      "tier_requested": "major",
+      "article_ids": [
+        0,
+        8,
+        24
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        0,
+        8,
+        24
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 5,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "BBC World",
+          "title": "Meta fined $567m in largest child safety ruling against social media giant",
+          "url": "https://www.bbc.co.uk/news/articles/cd7lz3wr2rlo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "New Mexico court orders Meta to pay $567m over harms to children’s mental health",
+          "url": "https://www.theguardian.com/technology/2026/aug/06/new-mexico-court-meta"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "Meta ordered to pay $567 million in New Mexico for teen mental health fund",
+          "url": "https://www.channelnewsasia.com/business/meta-ordered-pay-567-million-in-new-mexico-teen-mental-health-fund-6304976"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Over 100 dead and thousands remaining in Spanish enclave after Ceuta migrant influx",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        69,
+        149,
+        176,
+        249,
+        315
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        69,
+        149,
+        176,
+        249,
+        315
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": true,
+      "wiki_event": "Ceuta mayor-president Juan Jesús Vivas confirms that at least 100 people died during last week's migrant surge into the Spanish autonomous city of Ceuta, while around 3,500 to 5,000 undocumented migrants remain in the city.",
+      "weight": 8,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Channel News Asia",
+          "title": "Commentary: After Ceuta, Europe is once again mired in migration chaos of its own making",
+          "url": "https://www.channelnewsasia.com/commentary/ceuta-morocco-spain-european-union-immigration-6303221"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Ceuta’s leader says 100 died in border rush as up to 5,000 still in enclave",
+          "url": "https://www.aljazeera.com/news/2026/8/6/ceutas-leader-says-100-died-in-border-rush-as-up-to-5000-still-in-enclave?traffic_source=rss"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Thousands of migrants still in Ceuta after border crisis, local leader says",
+          "url": "https://www.bbc.co.uk/news/articles/c0ejdj22zq9o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Ceuta residents ‘sad, helpless, anxious’ as up to 5,000 migrants remain in the city, president says – Europe live",
+          "url": "https://www.theguardian.com/world/live/2026/aug/06/ukraine-volodymyr-zelenskyy-russia-nato-germany-leipzig-wildfires-heatwaves-europe-live-news"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "‘Morocco feels emboldened’: Trump’s influence in spotlight after Ceuta disaster",
+          "url": "https://www.theguardian.com/world/2026/aug/06/trump-influence-morocco-spotlight-ceuta-border-disaster"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Nigerian military frees more than 300 hostages in major rescue operation",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "major",
+      "article_ids": [
+        101,
+        279,
+        340
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        101,
+        279,
+        340
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 5,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "France 24",
+          "title": "308 abductees freed from separate attacks in Northern Nigeria",
+          "url": "https://www.france24.com/en/tv-shows/eye-on-africa/20260806-308-abductees-freed-from-separate-attacks-in-northern-nigeria"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Nigerian security forces free more than 300 hostages in ‘largest single-day recovery’",
+          "url": "https://www.theguardian.com/world/2026/aug/06/nigerian-security-forces-free-hostages-abducted-by-militants"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Nigerian security forces rescue more than 300 abductees",
+          "url": "https://www.bbc.co.uk/news/articles/cn4ndd8nr8lo?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Ebola outbreak in Democratic Republic of Congo accelerates as health authorities plan vaccinations",
+      "section": "world",
+      "category": "health",
+      "tier_requested": "major",
+      "article_ids": [
+        83,
+        90,
+        200,
+        253
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        83,
+        90,
+        200,
+        253
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": true,
+      "wiki_event": "Congolese health authorities monitor passengers from a boat near Kinshasa, Democratic Republic of the Congo, after a traveler died from Ebola complications.",
+      "weight": 8,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "DW World",
+          "title": "Ebola: Africa CDC plans to use vaccine for different strain as outbreak spreads",
+          "url": "https://www.dw.com/en/ebola-africa-cdc-plans-to-use-vaccine-for-different-strain-as-outbreak-spreads/a-78271789?maca=en-rss-en-world-4025-rdf"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "WHO chief: Ebola outbreak in DRC spreading at ‘unprecedented rate’",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/6/08-06-sv-ebola-update-funding-drc?traffic_source=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Ebola virus behind massive outbreak in DRC could be mutating, officials say",
+          "url": "https://www.theguardian.com/world/2026/aug/06/ebola-virus-drc-mutating"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "DR Congo river boat under quarantine for Ebola after five deaths",
+          "url": "https://www.bbc.co.uk/news/articles/ce971plr2nvo?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Ukrainian drone strikes set fire to two oil refineries deep inside Russian territory",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "major",
+      "article_ids": [
+        172,
+        214,
+        250,
+        336,
+        343
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        172,
+        214,
+        250,
+        336,
+        343
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 3,
+      "wiki_backed": true,
+      "wiki_event": "Ukrainian forces launch drone attacks on two oil refineries in Russia, the Yaroslavl refinery and a Bashneft-Novoil refinery in Bashkortostan, causing large fires at the facilities.",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "BBC World",
+          "title": "How Ukraine is taking the war 'deeper' into Russia",
+          "url": "https://www.bbc.co.uk/news/videos/ce8l6x3r9gjo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Ukraine strikes Russian refineries deep into the country",
+          "url": "https://www.france24.com/en/ukraine-strikes-russian-refineries-deep-into-the-country"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Nato to ‘urgently’ get air defences for Ukraine, as Zelenskyy warns of surge in Russian missile production",
+          "url": "https://www.theguardian.com/world/2026/aug/06/ukraine-nato-air-defences-missiles-russia-zelenskyy-patriot"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Ukraine hits two oil refineries deep in Russian territory",
+          "url": "https://www.bbc.co.uk/news/articles/cwymv212xrxo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "In Odesa, no-one is safe from Russia's new Black Sea strikes",
+          "url": "https://www.bbc.co.uk/news/articles/cy8ev4y172yo?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Houthi missile attacks kill dozens of Yemeni government troops in Marib and Hadramawt",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "major",
+      "article_ids": [
+        54,
+        78,
+        105
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        54,
+        78,
+        105
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 3,
+      "wiki_backed": true,
+      "wiki_event": "The Houthis announce a military offensive against Saudi-backed government forces in Marib Governorate and Hadhramaut Governorate, with over 30 government soldiers being killed in two missile attacks.",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "BBC World",
+          "title": "Houthi attacks reportedly kill at least 30 Yemeni government forces",
+          "url": "https://www.bbc.co.uk/news/articles/ckgdmdr0lmgo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "Houthi missile attacks kill 58 Saudi-backed Yemeni govt forces: source",
+          "url": "https://www.channelnewsasia.com/world/houthi-rebels-yemen-kill-government-troops-6304816"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Houthi rebels kill dozens of Saudi-backed Yemeni government forces",
+          "url": "https://www.france24.com/en/middle-east/20260806-houthi-rebels-kill-dozens-of-saudi-backed-yemeni-government-forces"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "UEFA maintains World Cup boycott as FIFA leadership crisis around Gianni Infantino deepens",
+      "section": "world",
+      "category": "sport",
+      "tier_requested": "major",
+      "article_ids": [
+        186,
+        195,
+        203,
+        230,
+        321
+      ],
+      "verdict": "cut:hard_cap(>12)",
+      "valid_ids": [
+        186,
+        195,
+        203,
+        230,
+        321
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 5,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "France 24",
+          "title": "FIFA closes ranks round Infantino amid mounting leadership crisis",
+          "url": "https://www.france24.com/en/europe/20260806-fifa-closes-ranks-round-infantino-amid-mounting-leadership-crisis"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Uefa says boycott may still go ahead as FA withdraws Infantino support",
+          "url": "https://www.bbc.co.uk/sport/football/articles/c2k74yevgzwo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "Gianni Infantino gets internal support at crisis meeting to remain as FIFA president",
+          "url": "https://www.npr.org/2026/08/06/nx-s1-5923233/infantino-crisis-meeting-fifa"
+        },
+        {
+          "outlet": "France 24",
+          "title": "#UEFA maintains #WorldCup boycott despite #FIFA apology",
+          "url": "https://www.france24.com/en/video/20260806-uefa-maintains-worldcup-boycott-despite-fifa-apology-1"
+        },
+        {
+          "outlet": "France 24",
+          "title": "🔴 FIFA crisis: UEFA maintains its boycott of World Cups",
+          "url": "https://www.france24.com/en/sport/20260806-uefa-maintains-its-world-cups-boycott-following-fifa-crisis"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Israeli settler charged over killing of West Bank Palestinian activist",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "notable",
+      "article_ids": [
+        111,
+        152,
+        239,
+        297
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        111,
+        152,
+        239,
+        297
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "Israeli settler charged over Palestinian activist’s killing",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/6/israeli-settler-charged-over-palestinian-activists-killing?traffic_source=rss"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Israel charges settler over killing of Palestinian involved in Oscar-winning West Bank film",
+          "url": "https://www.bbc.co.uk/news/articles/cn4n1e8159yo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Israel charges West Bank settler over death of renowned Palestinian activist",
+          "url": "https://www.theguardian.com/world/2026/aug/06/israel-charges-west-bank-settler-killing-palestinian-activist-awdah-hathaleen"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Israel charges settler for killing Palestinian activist Awdah Hathaleen in occupied West Bank",
+          "url": "https://www.france24.com/en/middle-east/20260806-israel-charges-settler-killing-palestinian-activist-awdah-hathaleen-occupied-west-bank"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Minibus explosion near Syrian capital Damascus kills two and injures 13",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "notable",
+      "article_ids": [
+        72,
+        113
+      ],
+      "verdict": "cut:below_floor(2<5)",
+      "valid_ids": [
+        72,
+        113
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 2,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "France 24",
+          "title": "Bus explosion near Damascus kills at least two, injures 13",
+          "url": "https://www.france24.com/en/middle-east/20260806-damascus-bus-explosion-kills-two"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Deadly explosion on minibus near Damascus",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/6/deadly-explosion-on-minibus-near-damascus?traffic_source=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Rahul Gandhi backs youth protests while RSS chief Bhagwat says student grievances are genuine",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "lead",
+      "article_ids": [
+        7,
+        166,
+        175,
+        199,
+        210,
+        212,
+        227,
+        247,
+        257,
+        275,
+        276,
+        280,
+        305,
+        322
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        7,
+        166,
+        175,
+        199,
+        210,
+        212,
+        227,
+        247,
+        257,
+        275,
+        276,
+        280,
+        305,
+        322
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 5,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 9,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 4,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "Rahul reaches out to Gen Z through Instagram, backs student protest in Jharkhand",
+          "url": "https://timesofindia.indiatimes.com/india/rahul-reaches-out-to-gen-z-backs-student-stir-in-jharkhand/articleshow/133018204.cms"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "'Every Government Must Hear Students': Rahul Gandhi Backs Ranchi Protesters",
+          "url": "https://www.ndtv.com/india-news/every-government-must-hear-students-rahul-gandhi-backs-ranchi-protesters-11876586#publisher=newsstand"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "'Students, Gen-Z -- I'm here to listen': Rahul Gandhi launches 'Ask Me Anything' on Instagram",
+          "url": "https://www.hindustantimes.com/india-news/students-gen-z-im-here-to-listen-rahul-gandhi-launches-ask-me-anything-on-instagram-101786037185166.html"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "Protesting does not make youth ‘anti-national’, RSS chief Mohan Bhagwat says at student event",
+          "url": "https://scroll.in/latest/1094848/protesting-does-not-make-youth-anti-national-says-rss-chief-mohan-bhagwat?utm_source=rss&utm_medium=public"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Rahul Gandhi backs Jharkhand protest over job exam row: 'Every Govt must listen to students'",
+          "url": "https://www.livemint.com/news/india/rahul-gandhi-backs-jharkhand-protest-over-job-exam-row-jmm-cjp-ranchi-recruitment-congress-11786029897113.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 9
+    },
+    {
+      "headline_hint": "Bombay High Court convicts Tarun Tejpal of rape and sentences him to 10 years in prison",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        144,
+        159,
+        178,
+        228,
+        237,
+        270,
+        295,
+        314,
+        317,
+        318
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        144,
+        159,
+        178,
+        228,
+        237,
+        270,
+        295,
+        314,
+        317,
+        318
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 8,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 10,
+      "weight_terms": {
+        "distinct_outlets": 8,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "Bombay high court overturns Tejpal acquittal, awards 10-year jail term",
+          "url": "https://timesofindia.indiatimes.com/city/goa/hc-overturns-tejpal-acquittal-awards-10-year-jail-term/articleshow/133014879.cms"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "HC convicts Tarun Tejpal in 2013 sexual assault case, sentences him to 10 years",
+          "url": "https://www.thehindu.com/news/national/goa/bombay-high-court-convicts-former-tehelka-editor-tarun-tejpal-in-alleged-sexual-assault-case/article71312280.ece"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "In Tarun Tejpal Conviction, Echoes Of Survivor's Letter To Tehelka 13 Years Ago",
+          "url": "https://www.ndtv.com/india-news/tarun-tejpal-guilty-of-rape-survivors-resignation-letter-to-tehelka-13-years-ago-fought-todays-battles-11875805#publisher=newsstand"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "'I am one of them': Tarun Tejpal reacts to rape conviction, likens himself to Umar Khalid and Sharjeel Imam",
+          "url": "https://www.livemint.com/news/india/tarun-tejpal-reacts-to-rape-conviction-says-he-is-one-of-umar-khalid-and-sharjeel-imam-11786025691522.html"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "Rush Hour: Tarun Tejpal gets 10-year jail for rape, Rs 557 crore spent on Modi foreign trips & more",
+          "url": "https://scroll.in/latest/1094839/rush-hour-tarun-tejpal-gets-10-year-jail-for-rape-rs-557-crore-spent-on-modi-foreign-trips-more?utm_source=rss&utm_medium=public"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 5
+    },
+    {
+      "headline_hint": "PM Modi and Israeli PM Netanyahu discuss bilateral partnership and West Asia conflict over phone",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        62,
+        211,
+        244,
+        256
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        62,
+        211,
+        244,
+        256
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 6,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "Netanyahu calls PM Modi, discusses bilateral ties, West Asia situation",
+          "url": "https://timesofindia.indiatimes.com/india/netanyahu-calls-pm-modi-discusses-bilateral-ties-w-asia-situation/articleshow/133015945.cms"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "Netanyahu Dials PM Modi, Discusses Middle East Situation, India-Israel Ties",
+          "url": "https://www.ndtv.com/india-news/benjamin-netanyahu-dials-pm-narendra-modi-discusses-middle-east-situation-and-india-israel-ties-11876051#publisher=newsstand"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "PM Modi receives call from Israeli counterpart Netanyahu, discusses West Asia crisis",
+          "url": "https://www.livemint.com/news/world/pm-modi-receives-call-from-israeli-counterpart-netanyahu-discusses-west-asia-crisis-news-today-11786025994554.html"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "PM Modi, Netanyahu reaffirm India-Israel commitment on bilateral cooperation",
+          "url": "https://www.hindustantimes.com/india-news/pm-modi-netanyahu-reaffirm-india-israel-commitment-on-bilateral-cooperation-101786024567364.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Parliament proceedings disrupted as Opposition demands Home Minister Amit Shah's presence over FCRA and protest debate",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        16,
+        21,
+        43,
+        70,
+        74,
+        154,
+        299
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        16,
+        21,
+        43,
+        70,
+        74,
+        154,
+        299
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 6,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "BJP to Congress: Let House function, Amit Shah will come",
+          "url": "https://timesofindia.indiatimes.com/india/bjp-to-congress-let-house-function-amit-shah-will-come/articleshow/133018140.cms"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "FCRA Bill is ‘religion-neutral’, Shah assures Christian bodies",
+          "url": "https://www.thehindu.com/news/national/fcra-bill-is-religion-neutral-shah-assures-christian-bodies/article71314671.ece"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "Centre Addresses Foreign Funding Bill Concerns, Wants To Pass It Next Week: Sources",
+          "url": "https://www.ndtv.com/india-news/amit-shah-fcra-bill-fcra-centre-addresses-foreign-funding-bill-concerns-wants-to-pass-it-next-week-sources-11876694#publisher=newsstand"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "Consider Opposition’s request for Amit Shah to be present in House, Rajya Sabha chairman to Centre",
+          "url": "https://scroll.in/latest/1094843/consider-oppositions-request-for-amit-shah-to-be-present-in-house-rajya-sabha-chairman-to-centre?utm_source=rss&utm_medium=public"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Kharge-Rijiju face-off in Rajya Sabha; opposition stalls House over Amit Shah",
+          "url": "https://timesofindia.indiatimes.com/india/rijiju-raises-point-of-order-kharge-hits-back-at-minister/articleshow/133018049.cms"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 2
+    },
+    {
+      "headline_hint": "India successfully test-fires nuclear-capable Agni-4 ballistic missile off Odisha coast",
+      "section": "india",
+      "category": "science",
+      "tier_requested": "notable",
+      "article_ids": [
+        140,
+        251
+      ],
+      "verdict": "cut:below_floor(2<5)",
+      "valid_ids": [
+        140,
+        251
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 2,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Livemint",
+          "title": "India successfully test-fires nuclear-capable Agni-4 ballistic missile off Odisha coast",
+          "url": "https://www.livemint.com/news/india/india-successfully-test-fires-nuclear-capable-agni-4-ballistic-missile-off-odisha-coast-11786042979696.html"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "India Successfully Test-Fires Agni-4 Ballistic Missile From Odisha",
+          "url": "https://www.ndtv.com/india-news/india-successfully-test-fires-agni-4-ballistic-missile-from-odisha-11875490#publisher=newsstand"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Government tells Parliament over ₹557 crore spent on PM Modi's foreign visits since 2021",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        91,
+        271,
+        287,
+        296,
+        298
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        91,
+        271,
+        287,
+        296,
+        298
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "The Hindu",
+          "title": "Government spent ₹557.51 crore in PM Modi’s 77 foreign visits: MEA in Rajya Sabha",
+          "url": "https://www.thehindu.com/news/national/government-spent-55751-crore-in-pm-modis-77-foreign-visits-mea-in-rajya-sabha/article71314805.ece"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "₹557.51 crore spent on PM Modi’s trips to 77 countries since 2021: Govt",
+          "url": "https://www.hindustantimes.com/india-news/rs-557-51-crore-spent-on-pm-modi-s-trips-to-77-countries-since-2021-govt-101786022481015.html"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "₹550 crore spent on PM Modi's foreign trips since 2021;  ₹74.5 crore in 2026 so far: Govt in Parliament",
+          "url": "https://www.livemint.com/news/india/rs-550-crore-spent-on-pm-modis-foreign-trips-since-2021-rs-74-5-crore-in-2026-so-far-govt-in-parliament-sanjay-singh-11786017514484.html"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "Rs 557 crore spent on PM Modi’s foreign trips since 2021",
+          "url": "https://scroll.in/latest/1094840/rs-557-crore-spent-on-pm-modis-foreign-trips-since-2021?utm_source=rss&utm_medium=public"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "PM Modi’s foreign trips cost nearly  ₹75 crore so far this year: MEA",
+          "url": "https://www.hindustantimes.com/india-news/pm-narendra-modi-foreign-trips-cost-nearly-75-crore-so-far-this-year-mea-rajya-sabha-101786016025466.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    }
+  ]
+}
