@@ -2,27 +2,27 @@
   "kind": "digest",
   "day": "2026-08-07",
   "ok": false,
-  "started_at": "2026-08-07T00:56:17Z",
-  "finished_at": "2026-08-07T00:57:51Z",
-  "elapsed_ms": 93327,
+  "started_at": "2026-08-07T01:36:25Z",
+  "finished_at": "2026-08-07T01:36:31Z",
+  "elapsed_ms": 6108,
   "argv": [
     "digest.py",
     "--if-missing"
   ],
   "python": "3.12.3",
-  "git_sha": "eb007774adb12593f847e6d69afe8875ef9f90f7",
+  "git_sha": "944440f4908f5c13c525d8d629342fe696f81026",
   "debug_level": 1,
-  "bytes_written": 17502829,
+  "bytes_written": 1084993,
   "byte_cap_reached": false,
   "env": {
     "DIGEST_DEBUG": "1",
     "CI": "true",
     "GITHUB_ACTIONS": "true",
-    "GITHUB_RUN_ID": "31136340024",
+    "GITHUB_RUN_ID": "31138547850",
     "GITHUB_RUN_ATTEMPT": "1",
     "GITHUB_WORKFLOW": "digest",
     "GITHUB_EVENT_NAME": "schedule",
-    "GITHUB_SHA": "eb007774adb12593f847e6d69afe8875ef9f90f7",
+    "GITHUB_SHA": "944440f4908f5c13c525d8d629342fe696f81026",
     "GITHUB_REF": "refs/heads/main",
     "RUNNER_OS": "Linux"
   },
@@ -68,7 +68,7 @@
   "stages": [
     {
       "stage": "gather",
-      "ms": 3496,
+      "ms": 2753,
       "error": ""
     },
     {
@@ -78,33 +78,18 @@
     },
     {
       "stage": "wikipedia",
-      "ms": 432,
+      "ms": 228,
       "error": ""
     },
     {
       "stage": "select",
-      "ms": 24477,
-      "error": ""
-    },
-    {
-      "stage": "rank",
-      "ms": 5,
-      "error": ""
-    },
-    {
-      "stage": "extract",
-      "ms": 62337,
-      "error": ""
-    },
-    {
-      "stage": "claims",
-      "ms": 712,
+      "ms": 1262,
       "error": "ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"
     }
   ],
   "window": {
     "since": "2026-08-05T23:28:47+00:00",
-    "now": "2026-08-07T00:56:19.592446+00:00",
+    "now": "2026-08-07T01:36:27.748805+00:00",
     "prev_generated_at": "2026-08-05 23:28:47+00:00"
   }
 }
