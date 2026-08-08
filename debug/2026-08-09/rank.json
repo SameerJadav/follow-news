@@ -1,0 +1,732 @@
+{
+  "dials": {
+    "WEIGHT_FLOOR": 5,
+    "TIER_WEIGHT": {
+      "lead": 4,
+      "major": 2,
+      "notable": 0
+    },
+    "WIKI_BONUS": 2,
+    "HARD_CAP": 12,
+    "MIN_STORIES_IF_ANY": 3,
+    "MAX_ARTICLES_PER_STORY": 5
+  },
+  "floor_relaxed": false,
+  "kept_weights": [
+    12,
+    7,
+    6,
+    6,
+    5,
+    9,
+    6
+  ],
+  "per_section": {
+    "world": 5,
+    "india": 2
+  },
+  "clusters": [
+    {
+      "headline_hint": "US Senate passes bill imposing 100% tariffs on India over Russian oil as VP Vance calls PM Modi",
+      "section": "india",
+      "category": "economy",
+      "tier_requested": "lead",
+      "article_ids": [
+        4,
+        95,
+        113,
+        114,
+        117,
+        134,
+        301
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        4,
+        95,
+        113,
+        114,
+        117,
+        134,
+        301
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 5,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 9,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 4,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "Vance calls PM after US Senate passes 100% tariff bill, discusses boosting ties",
+          "url": "https://timesofindia.indiatimes.com/india/us-vice-president-jd-vance-calls-pm-modi-to-discuss-boosting-ties/articleshow/133060606.cms"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "US Veep JD Vance Dials PM Modi, He Congratulates Usha Vance On Birth Of Son",
+          "url": "https://www.ndtv.com/india-news/us-veep-jd-vance-dials-pm-modi-he-congratulates-usha-vance-on-birth-of-son-11884657#publisher=newsstand"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "PM Modi receives call from JD Vance, discusses India-US ties and congratulates US VP on birth of son",
+          "url": "https://www.livemint.com/news/india/pm-modi-speaks-with-jd-vance-on-india-us-ties-congratulates-us-vp-on-birth-of-son-11786210421094.html"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "US Vice President JD Vance dials PM Modi, discusses deepening India-US strategic ties",
+          "url": "https://www.hindustantimes.com/india-news/us-vice-president-jd-vance-dials-pm-modi-discusses-deepening-india-us-strategic-ties-101786210375417.html"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "US Senate passes bill to slap 100% tariffs on India, four others for buying Russian oil",
+          "url": "https://scroll.in/latest/1094882/us-senate-passes-bill-for-100-tariffs-on-india-four-other-nations-for-buying-russian-oil?utm_source=rss&utm_medium=public"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 2
+    },
+    {
+      "headline_hint": "Escalation in Strait of Hormuz as UAE vessel attacked and Iran sets conditions to reopen waterway",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "lead",
+      "article_ids": [
+        25,
+        45,
+        81,
+        126,
+        139,
+        173,
+        189,
+        196,
+        205,
+        230
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        25,
+        45,
+        81,
+        126,
+        139,
+        173,
+        189,
+        196,
+        205,
+        230
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 6,
+      "wiki_backed": true,
+      "wiki_event": "The Abu Dhabi National Oil Company says that one of their vessels were attacked by a missile while transiting through the Strait of Hormuz during the early hours. No injuries were reported.",
+      "weight": 12,
+      "weight_terms": {
+        "distinct_outlets": 6,
+        "tier_weight": 4,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "NPR World",
+          "title": "Tanker sailors still face danger in the Strait of Hormuz",
+          "url": "https://www.npr.org/2026/08/08/nx-s1-5923592/tanker-sailors-still-face-danger-in-the-strait-of-hormuz"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Iran issues tough demands to reopen strait of Hormuz as deal still out of reach",
+          "url": "https://www.theguardian.com/world/2026/aug/08/iran-issues-tough-demands-to-reopen-strait-of-hormuz-as-deal-remains-out-of-reach"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Hormuz talks positive, Oman says, as Iran warns deal would not open strait",
+          "url": "https://www.bbc.co.uk/news/articles/c934j5y2lq9o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "‘We don’t trust Iran’: JD Vance says US working on safe shipping route through Strait of Hormuz",
+          "url": "https://www.livemint.com/news/us-news/us-working-to-establish-safe-shipping-route-through-hormuz-strait-vance-says-we-dont-trust-iran-11786208108406.html"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "UAE says Iran targeted ADNOC tanker in Strait of Hormuz, no casualties",
+          "url": "https://www.aljazeera.com/news/2026/8/8/uae-says-iran-targeted-adnoc-tanker-in-hormuz-no-casualties-2?traffic_source=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 5
+    },
+    {
+      "headline_hint": "Saudi Arabia, Pakistan, and Turkey sign mutual defence pact amid regional conflict",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "major",
+      "article_ids": [
+        19,
+        67,
+        110,
+        135,
+        211,
+        229,
+        259,
+        288
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        19,
+        67,
+        110,
+        135,
+        211,
+        229,
+        259,
+        288
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 6,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "Will Pakistan-Saudi-Turkiye defence pact change US strategy?",
+          "url": "https://www.aljazeera.com/news/2026/8/8/will-pakistan-saudi-turkiye-defence-pact-change-us-strategy?traffic_source=rss"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "'Shouldn't be exclusive club': Pak minister seeks Nato-like Islamic military alliance",
+          "url": "https://timesofindia.indiatimes.com/world/pakistan/shouldnt-be-exclusive-club-pak-minister-seeks-nato-like-islamic-military-alliance/articleshow/133057146.cms"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Saudi, Turkey, Pakistan pact comes amid US-Iran war fallout",
+          "url": "https://www.france24.com/en/saudi-turkey-pakistan-pact-comes-amid-us-iran-war-fallout"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Mecca Joint Defence Agreement: Will Saudi and Turkey fight if Pakistan is attacked?",
+          "url": "https://www.livemint.com/news/india/mecca-joint-defence-agreement-if-india-launches-another-operation-sindoor-will-saudi-and-turkey-fight-for-pakistan-11786184558634.html"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "What are the challenges facing the Mecca agreement?",
+          "url": "https://www.aljazeera.com/video/inside-story/2026/8/8/challenges-facing-mecca-agreement?traffic_source=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 3
+    },
+    {
+      "headline_hint": "Political row over Women's Reservation Bill and delimitation links as Tamil Nadu MPs meet and SAD backs rollout",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        15,
+        18,
+        50,
+        132,
+        177,
+        219,
+        221,
+        228,
+        245,
+        246,
+        261
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        15,
+        18,
+        50,
+        132,
+        177,
+        219,
+        221,
+        228,
+        245,
+        246,
+        261
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 6,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "Rijiju, Rahul trade barbs over women's quota bill rollout",
+          "url": "https://timesofindia.indiatimes.com/india/rijiju-rahul-trade-barbs-over-womens-quota-bill-rollout/articleshow/133059251.cms"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "Akali Dal chief Sukhbir Badal meets PM Modi, raising speculation on SAD-BJP alliance",
+          "url": "https://www.thehindu.com/news/national/punjab/akali-dal-chief-sukhbir-badal-meets-pm-modi-sad-bjp-alliance-on-cards/article71317144.ece"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "21 TN MPs oppose proposed delimitation at CM Vijay's meet; DMK, AIADMK stay away",
+          "url": "https://www.livemint.com/news/india/21-tn-mps-oppose-proposed-delimitation-at-cm-vijays-meet-dmk-aiadmk-stay-away-11786207867786.html"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "After Vijay-led all-party meet, Tamil Nadu leaders vow united front against delimitation",
+          "url": "https://www.hindustantimes.com/india-news/after-cm-vijay-led-all-party-meet-tamil-nadu-leaders-vow-united-front-against-delimitation-bill-101786200898823.html"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "6 years after NDA exit, Punjab's SAD backs delimitation push",
+          "url": "https://timesofindia.indiatimes.com/india/6-years-after-nda-exit-sad-backs-delimitation-push/articleshow/133059180.cms"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 6
+    },
+    {
+      "headline_hint": "Colombia's new president takes office promising war on narco-terrorism with $1 billion in US aid",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        2,
+        105,
+        298,
+        304,
+        310
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        2,
+        105,
+        298,
+        304,
+        310
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 5,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "Car bomb attack rattles Colombia after inauguration of hardline president",
+          "url": "https://www.aljazeera.com/news/2026/8/8/car-bomb-attack-rattles-colombia-after-inauguration-of-hardline-president?traffic_source=rss"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "US offers $1bn to Colombia on new right-wing president's first day of office",
+          "url": "https://www.bbc.co.uk/news/articles/cy9wy3y0e5wo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "US pledges $1 billion security aid to Colombia as Trump-endorsed president takes office",
+          "url": "https://www.france24.com/en/us-pledges-1-billion-security-aid-to-colombia-as-trump-endorsed-president-takes-office"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "US promises $1bn in security aid to Colombia as new rightwing president pledges drugs crackdown",
+          "url": "https://www.theguardian.com/world/2026/aug/08/us-promises-1bn-in-security-aid-to-colombia-as-new-rightwing-president-pledges-drugs-crackdown"
+        },
+        {
+          "outlet": "DW World",
+          "title": "Colombia: Trump ally De la Espriella takes office",
+          "url": "https://www.dw.com/en/colombia-trump-ally-de-la-espriella-takes-office/a-78286636?maca=en-rss-en-world-4025-rdf"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Russian drone and missile strikes hit Kyiv region, threatening winter power crisis in Ukraine",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "major",
+      "article_ids": [
+        77,
+        100,
+        103,
+        168,
+        223,
+        296
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        77,
+        100,
+        103,
+        168,
+        223,
+        296
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 5,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "France 24",
+          "title": "Ukraine braces for winter power crisis after Russian strikes, Zelensky says",
+          "url": "https://www.france24.com/en/europe/20260808-ukraine-braces-for-winter-power-crisis-after-russian-strikes-zelensky-says"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "Ukraine warns of tough winter as Russia strikes kill 4 in Kyiv region",
+          "url": "https://www.channelnewsasia.com/world/russia-ukraine-warns-tough-winter-6307831"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Child among three killed in Russian missile attacks near Kyiv",
+          "url": "https://www.bbc.co.uk/news/articles/cz7dy8gq99eo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Russian strikes kill four as Kyiv hits oil refinery",
+          "url": "https://www.france24.com/en/russian-strikes-kill-four-as-kyiv-hits-oil-refinery"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Russian attacks kill several in Ukraine",
+          "url": "https://www.france24.com/en/russian-attacks-kill-several-in-ukraine"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 1
+    },
+    {
+      "headline_hint": "US Senate confirms Donald Trump's former lawyer Todd Blanche as Attorney General",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        41,
+        128,
+        155,
+        227,
+        281
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        41,
+        128,
+        155,
+        227,
+        281
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 6,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "Trump’s Former Lawyer Is Now Attorney General",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/8/aje-onl-nf_todd-blanche-ag-080826?traffic_source=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Blanche confirmation allows Trump to continue ‘pervasive, breathtaking corruption’, says Schumer – as it happened",
+          "url": "https://www.theguardian.com/us-news/live/2026/aug/08/todd-blanche-attorney-general-senate-vote-republicans-save-voting-bill-latest-news-updates"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Trump's ex-lawyer Todd Blanche narrowly confirmed as US attorney general",
+          "url": "https://www.bbc.co.uk/news/articles/cewr898jy8go?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Senate confirms Todd Blanche, Trump's former lawyer, as Attorney General",
+          "url": "https://www.france24.com/en/senate-confirms-todd-blanche-trump-s-former-lawyer-as-attorney-general"
+        },
+        {
+          "outlet": "France 24",
+          "title": "US Senate narrowly confirms Trump loyalist Todd Blanche as attorney general",
+          "url": "https://www.france24.com/en/americas/20260808-us-senate-confirms-trump-s-ex-lawyer-as-attorney-general"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Spain introduces border checks on travellers from Italy in row over Ceuta migrant influx",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        16,
+        127,
+        186,
+        278,
+        308
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        16,
+        127,
+        186,
+        278,
+        308
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Channel News Asia",
+          "title": "Spain starts border checks on Italy after migrant row",
+          "url": "https://www.channelnewsasia.com/world/spain-starts-border-checks-italy-after-migrant-row-6307921"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Spain imposes border checks on Italian travellers amid migrant dispute",
+          "url": "https://www.france24.com/en/europe/20260808-spain-imposes-border-checks-on-italian-travellers-amid-migrant-dispute"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Spain imposes border controls against Italy as row over Ceuta migrant influx intensifies",
+          "url": "https://www.bbc.co.uk/news/articles/c5yv5l6yr5ko?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "DW World",
+          "title": "Ceuta: Spain sets up border controls on travelers from Italy",
+          "url": "https://www.dw.com/en/ceuta-spain-sets-up-border-controls-on-travelers-from-italy/a-78282840?maca=en-rss-en-world-4025-rdf"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Spain to impose border checks on Italy",
+          "url": "https://www.france24.com/en/video/20260808-spain-to-impose-border-checks-on-italy"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Jharkhand government holds talks with students protesting civil service exam paper leaks",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        109,
+        119,
+        197,
+        243,
+        284,
+        290,
+        306
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        109,
+        119,
+        197,
+        243,
+        284,
+        290,
+        306
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "NDTV",
+          "title": "Jharkhand Government To Hold Fresh Talks With Students Over Exam 'Irregularities'",
+          "url": "https://www.ndtv.com/india-news/jharkhand-government-to-hold-fresh-talks-with-students-over-exam-irregularities-11884599#publisher=newsstand"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Jharkhand govt to hold fresh talks with students on Sunday protesting job exam 'irregularities'",
+          "url": "https://www.hindustantimes.com/india-news/jharkhand-govt-to-hold-fresh-talks-with-students-on-sunday-protesting-job-exam-irregularities-101786209892300.html"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "‘Organs unable to cope’: Jharkhand student leader’s health worsens after 15-day fast",
+          "url": "https://timesofindia.indiatimes.com/city/ranchi/my-bodys-organs-unable-to-cope-jharkhand-student-leaders-health-worsens-after-15-day-hunger-strike/articleshow/133053954.cms"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "Jharkhand holds talks with student protesters, says it will consider demands",
+          "url": "https://scroll.in/latest/1094883/jharkhand-holds-talks-with-student-protesters-says-it-will-consider-demands?utm_source=rss&utm_medium=public"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "'In complete solidarity': CJP joins Jharkhand students' protest in Ranchi, vows to 'provide all forms of support'",
+          "url": "https://www.hindustantimes.com/india-news/cjp-reaches-jharkhand-protest-site-stands-in-complete-solidarity-jharkhand-protests-cjp-ashutosh-ranka-ranchi-protest-101786188437194.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 2
+    },
+    {
+      "headline_hint": "Indian government clarifies person-to-person UPI payments will remain free",
+      "section": "india",
+      "category": "economy",
+      "tier_requested": "notable",
+      "article_ids": [
+        13,
+        198,
+        212
+      ],
+      "verdict": "cut:below_floor(2<5)",
+      "valid_ids": [
+        13,
+        198,
+        212
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 2,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "Proposed MDR for UPI transactions will be nominal, says government",
+          "url": "https://timesofindia.indiatimes.com/india/proposed-mdr-for-upi-transactions-will-be-nominal-says-govt/articleshow/133059265.cms"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "UPI transactions to remain free, nominal charges may apply on limited merchant transactions, govt clarifies",
+          "url": "https://www.hindustantimes.com/india-news/consumers-making-payments-via-upi-will-not-face-any-transaction-charges-government-clarifies-101786196270399.html"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Person-to-person transactions to remain free: Govt clarifies no charges for UPI users",
+          "url": "https://timesofindia.indiatimes.com/business/india-business/no-charges-for-upi-users-government-clarifies-person-to-person-transactions-to-remain-free-top-points/articleshow/133054004.cms"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Typhoon Dolphin lashes Japan's Okinawa and heads toward China",
+      "section": "world",
+      "category": "disaster",
+      "tier_requested": "notable",
+      "article_ids": [
+        171,
+        297
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        171,
+        297
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": true,
+      "wiki_event": "Typhoon Dolphin makes landfall in the Ryukyu Islands of Japan, which encompass the entirety of Okinawa Prefecture and parts of Kagoshima Prefecture. Additionally, China shuts down ports and ferry routes in preparation for the typhoon.",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "BBC World",
+          "title": "Typhoon Dolphin batters Japan's Okinawa before bearing down on China",
+          "url": "https://www.bbc.co.uk/news/articles/cvglp2zlvrlo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "DW World",
+          "title": "Typhoon Dolphin hits Japan as China braces for coming storm",
+          "url": "https://www.dw.com/en/typhoon-dolphin-hits-japan-as-china-braces-for-coming-storm/a-78286728?maca=en-rss-en-world-4025-rdf"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Indian Air Force officer arrested after being honey-trapped by Pakistani intelligence",
+      "section": "india",
+      "category": "conflict",
+      "tier_requested": "notable",
+      "article_ids": [
+        75,
+        194
+      ],
+      "verdict": "cut:below_floor(2<5)",
+      "valid_ids": [
+        75,
+        194
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 2,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "IAF wing commander ‘honey-trapped’ by Pak operatives; charged for alleged info leak",
+          "url": "https://timesofindia.indiatimes.com/defence/iaf-wing-commander-honey-trapped-by-pak-operatives-arrested-charged-for-allegedly-leaking-defence-info/articleshow/133058871.cms"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "IAF officer ‘honey-trapped’ by Pakistani agent; arrested for sharing secret defence information",
+          "url": "https://www.livemint.com/news/india/iaf-officer-honey-trapped-by-pakistani-agent-arrested-for-sharing-secret-defence-information-11786193379479.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    }
+  ]
+}
