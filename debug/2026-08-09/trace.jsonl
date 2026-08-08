@@ -1,0 +1,44 @@
+{"run": "digest", "t": 0, "kind": "digest", "stage": "tracer", "msg": "capture started", "level": 1, "day": "2026-08-09"}
+{"run": "digest", "t": 1083, "kind": "dbg", "msg": "digest: window since=2026-08-07T23:05:16+00:00 (prev_generated_at=2026-08-07 23:05:16+00:00)"}
+{"run": "digest", "t": 1189, "kind": "dbg", "msg": "feed 'BBC World': http=200 raw_items=30 usable=30"}
+{"run": "digest", "t": 1189, "kind": "event", "stage": "feeds", "outlet": "BBC World", "url": "https://feeds.bbci.co.uk/news/world/rss.xml", "http": 200, "elapsed_ms": 99, "bytes": 23406, "raw_items": 30, "usable": 30, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 1302, "kind": "dbg", "msg": "feed 'Al Jazeera': http=200 raw_items=25 usable=25"}
+{"run": "digest", "t": 1302, "kind": "event", "stage": "feeds", "outlet": "Al Jazeera", "url": "https://www.aljazeera.com/xml/rss/all.xml", "http": 200, "elapsed_ms": 108, "bytes": 17143, "raw_items": 25, "usable": 25, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 1471, "kind": "dbg", "msg": "feed 'Guardian World': http=200 raw_items=45 usable=45"}
+{"run": "digest", "t": 1471, "kind": "event", "stage": "feeds", "outlet": "Guardian World", "url": "https://www.theguardian.com/world/rss", "http": 200, "elapsed_ms": 143, "bytes": 145590, "raw_items": 45, "usable": 45, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 1742, "kind": "dbg", "msg": "feed 'NPR World': http=200 raw_items=10 usable=10"}
+{"run": "digest", "t": 1742, "kind": "event", "stage": "feeds", "outlet": "NPR World", "url": "https://feeds.npr.org/1004/rss.xml", "http": 200, "elapsed_ms": 266, "bytes": 13993, "raw_items": 10, "usable": 10, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 2782, "kind": "dbg", "msg": "feed 'DW World': http=200 raw_items=11 usable=11"}
+{"run": "digest", "t": 2782, "kind": "event", "stage": "feeds", "outlet": "DW World", "url": "https://rss.dw.com/rdf/rss-en-world", "http": 200, "elapsed_ms": 1037, "bytes": 10894, "raw_items": 11, "usable": 11, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 3056, "kind": "dbg", "msg": "feed 'France 24': http=200 raw_items=24 usable=24"}
+{"run": "digest", "t": 3056, "kind": "event", "stage": "feeds", "outlet": "France 24", "url": "https://www.france24.com/en/rss", "http": 200, "elapsed_ms": 267, "bytes": 27639, "raw_items": 24, "usable": 24, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 3233, "kind": "dbg", "msg": "feed 'Channel News Asia': http=200 raw_items=20 usable=20"}
+{"run": "digest", "t": 3233, "kind": "event", "stage": "feeds", "outlet": "Channel News Asia", "url": "https://www.channelnewsasia.com/api/v1/rss-outbound-feed?_format=xml", "http": 200, "elapsed_ms": 172, "bytes": 17730, "raw_items": 20, "usable": 20, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 3355, "kind": "dbg", "msg": "feed 'The Hindu': http=200 raw_items=60 usable=60"}
+{"run": "digest", "t": 3355, "kind": "event", "stage": "feeds", "outlet": "The Hindu", "url": "https://www.thehindu.com/news/national/feeder/default.rss", "http": 200, "elapsed_ms": 113, "bytes": 47733, "raw_items": 60, "usable": 60, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 3429, "kind": "dbg", "msg": "feed 'Indian Express': http=403"}
+{"run": "digest", "t": 3429, "kind": "event", "stage": "feeds", "outlet": "Indian Express", "url": "https://indianexpress.com/section/india/feed/", "http": 403, "elapsed_ms": 73, "verdict": "http_error"}
+{"run": "digest", "t": 3622, "kind": "dbg", "msg": "feed 'NDTV': http=200 raw_items=20 usable=20"}
+{"run": "digest", "t": 3622, "kind": "event", "stage": "feeds", "outlet": "NDTV", "url": "https://feeds.feedburner.com/ndtvnews-india-news", "http": 200, "elapsed_ms": 187, "bytes": 29279, "raw_items": 20, "usable": 20, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 3737, "kind": "dbg", "msg": "feed 'Hindustan Times': http=200 raw_items=100 usable=100"}
+{"run": "digest", "t": 3737, "kind": "event", "stage": "feeds", "outlet": "Hindustan Times", "url": "https://www.hindustantimes.com/feeds/rss/india-news/rssfeed.xml", "http": 200, "elapsed_ms": 100, "bytes": 97719, "raw_items": 100, "usable": 100, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 3847, "kind": "dbg", "msg": "feed 'Times of India': http=200 raw_items=46 usable=46"}
+{"run": "digest", "t": 3847, "kind": "event", "stage": "feeds", "outlet": "Times of India", "url": "https://timesofindia.indiatimes.com/rssfeedstopstories.cms", "http": 200, "elapsed_ms": 100, "bytes": 50591, "raw_items": 46, "usable": 46, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 4199, "kind": "dbg", "msg": "feed 'Livemint': http=200 raw_items=35 usable=35"}
+{"run": "digest", "t": 4199, "kind": "event", "stage": "feeds", "outlet": "Livemint", "url": "https://www.livemint.com/rss/news", "http": 200, "elapsed_ms": 346, "bytes": 37493, "raw_items": 35, "usable": 35, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 4511, "kind": "dbg", "msg": "feed 'Scroll.in': http=200 raw_items=100 usable=100"}
+{"run": "digest", "t": 4511, "kind": "event", "stage": "feeds", "outlet": "Scroll.in", "url": "https://feeds.feedburner.com/ScrollinArticles.rss", "http": 200, "elapsed_ms": 253, "bytes": 304486, "raw_items": 100, "usable": 100, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 4515, "kind": "dbg", "msg": "gather: 386 article(s) after window+dedupe; by outlet: {'Livemint': 35, 'DW World': 5, 'Al Jazeera': 25, 'Times of India': 45, 'The Hindu': 60, 'BBC World': 17, 'Channel News Asia': 20, 'Guardian World': 22, 'France 24': 24, 'NDTV': 20, 'NPR World': 3, 'Hindustan Times': 88, 'Scroll.in': 22}"}
+{"run": "digest", "t": 4515, "kind": "dbg", "msg": "gather: 13/14 feed(s) live, 386 article(s)"}
+{"run": "digest", "t": 4516, "kind": "event", "stage": "stage", "name": "gather", "ms": 3432, "ok": true, "error": ""}
+{"run": "digest", "t": 4516, "kind": "dbg", "msg": "gather: QUORUM OK — live=13/3 min, articles=386/20 min"}
+{"run": "digest", "t": 4516, "kind": "dbg", "msg": "rank: select pool 386 -> 313; capped outlets: {'The Hindu': 20, 'Times of India': 5, 'Hindustan Times': 48}"}
+{"run": "digest", "t": 4519, "kind": "event", "stage": "stage", "name": "pool", "ms": 2, "ok": true, "error": ""}
+{"run": "digest", "t": 4777, "kind": "dbg", "msg": "wiki: 2026_August_9 http=200 events=0"}
+{"run": "digest", "t": 4777, "kind": "event", "stage": "wikipedia", "page": "2026_August_9", "http": 200, "bytes": 190, "events": 0, "verdict": "ok"}
+{"run": "digest", "t": 4921, "kind": "dbg", "msg": "wiki: 2026_August_8 http=200 events=4"}
+{"run": "digest", "t": 4921, "kind": "event", "stage": "wikipedia", "page": "2026_August_8", "http": 200, "bytes": 1929, "events": 4, "verdict": "ok"}
+{"run": "digest", "t": 4922, "kind": "event", "stage": "stage", "name": "wikipedia", "ms": 403, "ok": true, "error": ""}
+{"run": "digest", "t": 4990, "kind": "dbg", "msg": "llm: call #1 model=gemini-3.6-flash label=select prompt=80552ch"}
+{"run": "digest", "t": 6233, "kind": "event", "stage": "stage", "name": "select", "ms": 1310, "ok": false, "error": "ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"}
+{"run": "digest", "t": 6233, "kind": "event", "stage": "tracer", "msg": "capture finished", "ok": false, "ms": 6233, "bytes": 1066406}
