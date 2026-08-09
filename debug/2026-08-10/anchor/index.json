@@ -1,0 +1,101 @@
+{
+  "thresholds": {
+    "MIN_BODY_WORDS": 80,
+    "MIN_MARKERS": 2,
+    "MAX_UNANCHORED_SHARE": 0.2,
+    "THIN_MIN_CLAIM_OUTLETS": 2,
+    "THIN_MAX_OUTLET_SHARE": 0.8,
+    "WORD_TARGET": {
+      "lead": 500,
+      "major": 200,
+      "notable": 200
+    }
+  },
+  "stories": [
+    {
+      "cluster_id": 0,
+      "section": "world",
+      "headline_hint": "Netanyahu explicitly rejects US-led 15-point Gaza peace plan and demands complete disarmament of Hamas",
+      "verdict": "kept",
+      "thin_sourced": false,
+      "word_count": 372,
+      "min_body_words": 80,
+      "marker_count": 17,
+      "min_markers": 2,
+      "dropped_markers": 0,
+      "unanchored_share": 0.009,
+      "max_unanchored_share": 0.2,
+      "claim_outlets": 5,
+      "claims_available": 16,
+      "raw_body_chars": 2435
+    },
+    {
+      "cluster_id": 1,
+      "section": "world",
+      "headline_hint": "Iran sets strict conditions on reopening Strait of Hormuz as US signals shift away from new strikes",
+      "verdict": "kept",
+      "thin_sourced": false,
+      "word_count": 266,
+      "min_body_words": 80,
+      "marker_count": 13,
+      "min_markers": 2,
+      "dropped_markers": 0,
+      "unanchored_share": 0.008,
+      "max_unanchored_share": 0.2,
+      "claim_outlets": 3,
+      "claims_available": 13,
+      "raw_body_chars": 1890
+    },
+    {
+      "cluster_id": 2,
+      "section": "world",
+      "headline_hint": "Syria and Russia reach deal to convert Moscow's Syrian military bases into joint training centers",
+      "verdict": "kept",
+      "thin_sourced": false,
+      "word_count": 180,
+      "min_body_words": 80,
+      "marker_count": 9,
+      "min_markers": 2,
+      "dropped_markers": 0,
+      "unanchored_share": 0.009,
+      "max_unanchored_share": 0.2,
+      "claim_outlets": 3,
+      "claims_available": 9,
+      "raw_body_chars": 1231
+    },
+    {
+      "cluster_id": 3,
+      "section": "india",
+      "headline_hint": "Jharkhand student protests intensify over exam recruitment irregularities despite government concession",
+      "verdict": "kept",
+      "thin_sourced": false,
+      "word_count": 270,
+      "min_body_words": 80,
+      "marker_count": 12,
+      "min_markers": 2,
+      "dropped_markers": 0,
+      "unanchored_share": 0.007,
+      "max_unanchored_share": 0.2,
+      "claim_outlets": 3,
+      "claims_available": 11,
+      "raw_body_chars": 1989
+    },
+    {
+      "cluster_id": 4,
+      "section": "india",
+      "headline_hint": "TMC alleges attempt on Mamata Banerjee's life after car attacked with stones in West Bengal",
+      "verdict": "kept",
+      "thin_sourced": false,
+      "word_count": 198,
+      "min_body_words": 80,
+      "marker_count": 10,
+      "min_markers": 2,
+      "dropped_markers": 0,
+      "unanchored_share": 0.008,
+      "max_unanchored_share": 0.2,
+      "claim_outlets": 3,
+      "claims_available": 10,
+      "raw_body_chars": 1376
+    }
+  ]
+}
