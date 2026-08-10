@@ -1,0 +1,923 @@
+{
+  "dials": {
+    "WEIGHT_FLOOR": 5,
+    "TIER_WEIGHT": {
+      "lead": 4,
+      "major": 2,
+      "notable": 0
+    },
+    "WIKI_BONUS": 2,
+    "HARD_CAP": 12,
+    "MIN_STORIES_IF_ANY": 3,
+    "MAX_ARTICLES_PER_STORY": 5
+  },
+  "floor_relaxed": false,
+  "kept_weights": [
+    10,
+    8,
+    8,
+    7,
+    7,
+    7,
+    6,
+    5,
+    13,
+    5
+  ],
+  "per_section": {
+    "world": 8,
+    "india": 2
+  },
+  "clusters": [
+    {
+      "headline_hint": "7.4-magnitude earthquake strikes Colombia, killing over 100 people and collapsing buildings",
+      "section": "world",
+      "category": "disaster",
+      "tier_requested": "lead",
+      "article_ids": [
+        3,
+        51,
+        54,
+        78,
+        119,
+        129,
+        137,
+        138,
+        143,
+        179,
+        181,
+        200,
+        242,
+        253,
+        256
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        3,
+        51,
+        54,
+        78,
+        119,
+        129,
+        137,
+        138,
+        143,
+        179,
+        181,
+        200,
+        242,
+        253,
+        256
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 6,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 10,
+      "weight_terms": {
+        "distinct_outlets": 6,
+        "tier_weight": 4,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "More than 100 dead and buildings collapsed after 7.4-magnitude earthquake shakes Colombia – latest news",
+          "url": "https://www.theguardian.com/world/live/2026/aug/10/74-magnitude-earthquake-shakes-colombia-causing-serious-damage-latest-news"
+        },
+        {
+          "outlet": "DW World",
+          "title": "Colombia earthquake: Death toll rises to over 100",
+          "url": "https://www.dw.com/en/colombia-earthquake-death-toll-rises-to-over-100/a-78307841?maca=en-rss-en-world-4025-rdf"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "111 dead after Colombia quakes leave trail of destruction",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/10/111-dead-after-colombia-quakes-leave-trail-of-destruction?traffic_source=rss"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Colombia earthquake: 74 dead as buildings collapse, families dig through rubble for loved ones | In Pics, Videos",
+          "url": "https://www.livemint.com/news/world/colombia-earthquake-74-dead-as-buildings-collapse-families-dig-through-rubble-for-loved-ones-in-pics-videos-11786377274846.html"
+        },
+        {
+          "outlet": "France 24",
+          "title": "🔴 Live: At least 47 killed after powerful quake rattles Colombia",
+          "url": "https://www.france24.com/en/americas/20260810-powerful-quake-rocks-colombia-causing-major-damage"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 10
+    },
+    {
+      "headline_hint": "Widespread student protests over exam leaks in Jharkhand lead to clashes, political uproar, and Assembly adjournment",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "lead",
+      "article_ids": [
+        11,
+        19,
+        31,
+        77,
+        122,
+        130,
+        131,
+        144,
+        149,
+        153,
+        172,
+        175,
+        182,
+        203,
+        236,
+        243,
+        261,
+        262,
+        263,
+        268,
+        270,
+        288,
+        293,
+        299,
+        317,
+        322
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        11,
+        19,
+        31,
+        77,
+        122,
+        130,
+        131,
+        144,
+        149,
+        153,
+        172,
+        175,
+        182,
+        203,
+        236,
+        243,
+        261,
+        262,
+        263,
+        268,
+        270,
+        288,
+        293,
+        299,
+        317,
+        322
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 9,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 13,
+      "weight_terms": {
+        "distinct_outlets": 9,
+        "tier_weight": 4,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "The Hindu",
+          "title": "BJP asks Congress to withdraw support to hemant Soren govt; Rahul Gandhi slams police action",
+          "url": "https://www.thehindu.com/news/national/jharkhand/withdraw-support-to-hemant-soren-government-if-students-demands-not-met-bjp-tells-rahul/article71328511.ece"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "Activist Devendra Mahto Hospitalised After Joining Jharkhand Protest March",
+          "url": "https://www.ndtv.com/india-news/activist-devendra-mahto-hospitalised-after-joining-jharkhand-protest-march-11892181#publisher=newsstand"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Police use teargas on young Indians as government jobs protest escalates",
+          "url": "https://www.theguardian.com/world/2026/aug/10/indian-police-use-force-to-disperse-youth-protesters-calling-for-exam-overhaul"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "'Don't fall into political trap': J'khand CM Soren writes open letter to students",
+          "url": "https://timesofindia.indiatimes.com/india/dont-fall-into-political-trap-jharkhand-cm-soren-writes-open-letter-to-protesting-students/articleshow/133121434.cms"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "‘No firing at Jantar Mantar’: Nadda slams Rahul Gandhi; claims Congress leader ‘changing goalpost’",
+          "url": "https://www.hindustantimes.com/india-news/no-firing-at-jantar-mantar-nadda-slams-rahul-gandhi-claims-congress-leader-changing-goalpost-101786374689378.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 21
+    },
+    {
+      "headline_hint": "Trump signs executive order seeking to alter childhood vaccine schedule and split MMR shots",
+      "section": "world",
+      "category": "health",
+      "tier_requested": "major",
+      "article_ids": [
+        4,
+        5,
+        16,
+        22
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        4,
+        5,
+        16,
+        22
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 5,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "Trump signs order attempting to override CDC vaccine schedule and break up MMR shots",
+          "url": "https://www.theguardian.com/us-news/2026/aug/10/trump-vaccines-executive-order-measles"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Trump signs order to limit childhood vaccines and split MMR shots",
+          "url": "https://www.bbc.co.uk/news/articles/ce3q5vl581wo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Trump signs executive order to space out childhood vaccines — What the new plan means",
+          "url": "https://www.livemint.com/news/us-news/trump-signs-executive-order-to-space-out-childhood-vaccines-what-the-new-plan-means-11786390878614.html"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Trump signs executive order to split measles, mumps and rubella vaccine into separate jabs in sweeping change – live",
+          "url": "https://www.theguardian.com/us-news/live/2026/aug/10/ohio-republicans-max-miller-domestic-abuse-allegations-us-politics-live-latest-news"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Ukrainian drone strike on Tatarstan oil refinery deep inside Russia kills at least 13",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "major",
+      "article_ids": [
+        147,
+        216,
+        218,
+        258,
+        301
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        147,
+        216,
+        218,
+        258,
+        301
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": true,
+      "wiki_event": "Russian state media claims that at least 13 people were killed, including a child, and 39 others were injured in a Ukrainian drone attack on an oil refinery in Nizhnekamsk, Tartarstan, Russia.",
+      "weight": 8,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "Ukraine drone strike on oil refinery deep inside Russia kills at least 13",
+          "url": "https://www.theguardian.com/world/2026/aug/10/ukraine-drone-strike-on-oil-refinery-russia"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "At least 13 killed in Ukrainian drone strike deep into Russia",
+          "url": "https://www.bbc.co.uk/news/articles/cvgjvgv926po?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Ukraine drone strike on Russian oil-refining city kills 12 people",
+          "url": "https://www.france24.com/en/video/20260810-ukraine-drone-strike-on-russian-oil-refining-city-kills-12-people"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "Ukrainian drone attack on the Russian city of Nizhnekamsk kills 12, authorities say",
+          "url": "https://www.npr.org/2026/08/10/nx-s1-5927024/ukrainian-drone-attack-russia"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Ukraine confirms strikes on oil refinery in Russia’s Tatarstan – as it happened",
+          "url": "https://www.theguardian.com/world/live/2026/aug/10/ukraine-drones-russia-oil-facilities-europe-heat-drought-latest-updates-news"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Netanyahu rejects US-backed Gaza peace plan, insisting on complete Hamas disarmament",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "major",
+      "article_ids": [
+        62,
+        116,
+        148,
+        204,
+        210,
+        304,
+        324
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        62,
+        116,
+        148,
+        204,
+        210,
+        304,
+        324
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 6,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 8,
+      "weight_terms": {
+        "distinct_outlets": 6,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "Netanyahu’s veto and the limits of American power",
+          "url": "https://www.aljazeera.com/opinions/2026/8/10/netanyahus-veto-and-the-limits-of-american-power?traffic_source=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Benjamin Netanyahu’s rejection of US deal for Gaza is risky move",
+          "url": "https://www.theguardian.com/world/2026/aug/10/benjamin-netanyahu-rejection-us-deal-gaza-risky-gamble"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Netanyahu says no Gaza withdrawal until Hamas disarms",
+          "url": "https://www.france24.com/en/video/20260810-netanyahu-says-no-gaza-withdrawal-until-hamas-disarms"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Netanyahu's rejection of Trump's 15-point Gaza plan unlikely to be final word",
+          "url": "https://www.bbc.co.uk/news/articles/ce3q5282ep3o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "Israel rejects Trump’s peace plan for Gaza, says PM Netanyahu",
+          "url": "https://scroll.in/latest/1094912/israel-rejects-trumps-peace-plan-for-gaza-says-pm-netanyahu?utm_source=rss&utm_medium=public"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 2
+    },
+    {
+      "headline_hint": "Russian court bars anti-war Yabloko party from upcoming parliamentary elections",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        23,
+        74,
+        97
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        23,
+        74,
+        97
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 3,
+      "wiki_backed": true,
+      "wiki_event": "Upon petition from Rodina, the liberal Yabloko party is barred from participating in the 2026 Russian legislative election on charges of unregistered funding, copyright infringement and extremism by the Supreme Court of Russia.",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "Russia bars only party opposing war in Ukraine from parliamentary vote",
+          "url": "https://www.aljazeera.com/news/2026/8/10/russia-bars-only-party-opposing-war-in-ukraine-from-parliamentary-vote?traffic_source=rss"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Russian court bars only anti-war party from standing in parliamentary elections",
+          "url": "https://www.bbc.co.uk/news/articles/cy9w1l5jr7lo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Russia bars only anti-war party 'Yabloko' from September parliamentary elections",
+          "url": "https://www.france24.com/en/europe/20260810-russia-bars-only-anti-war-party-from-elections"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "WHO reveals DR Congo Ebola outbreak began months earlier than officially declared",
+      "section": "world",
+      "category": "health",
+      "tier_requested": "major",
+      "article_ids": [
+        12,
+        95,
+        145,
+        201,
+        240
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        12,
+        95,
+        145,
+        201,
+        240
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 3,
+      "wiki_backed": true,
+      "wiki_event": "The World Health Organization reports that the Ebola outbreak in the Democratic Republic of the Congo started in February before its declaration, with some cases attributed to malaria and typhoid.",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "France 24",
+          "title": "Ebola started 3 months earlier than official declaration",
+          "url": "https://www.france24.com/en/ebola-started-3-months-earlier-than-official-declaration"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "We are chasing Ebola virus - it is ahead of us, WHO warns",
+          "url": "https://www.bbc.co.uk/news/articles/c5ydx7m8gzeo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "DRC’s Ebola outbreak began months before it was officially declared, says WHO",
+          "url": "https://www.aljazeera.com/news/2026/8/10/drcs-ebola-outbreak-began-months-before-officially-declared-says-who?traffic_source=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "WHO urges Ervebo vaccine trial in DR Congo Ebola outbreak",
+          "url": "https://www.france24.com/en/video/20260810-who-urges-ervebo-vaccine-trial-in-dr-congo-ebola-outbreak"
+        },
+        {
+          "outlet": "France 24",
+          "title": "DR Congo: Could a vaccine soon be available to the public?",
+          "url": "https://www.france24.com/en/video/20260810-dr-congo-could-a-vaccine-soon-be-available-to-the-public"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Typhoon Dolphin forces over 1 million evacuations in eastern China",
+      "section": "world",
+      "category": "disaster",
+      "tier_requested": "major",
+      "article_ids": [
+        178,
+        247,
+        271,
+        302,
+        314,
+        323
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        178,
+        247,
+        271,
+        302,
+        314,
+        323
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 6,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "France 24",
+          "title": "Dolphin: Tropical storm causes some flooding in eastern China",
+          "url": "https://www.france24.com/en/video/20260810-dolphin-tropical-storm-causes-some-flooding-in-eastern-china"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Typhoon Dolphin in China: Over 1 million evacuated, flights cancelled, flood alerts issued | What we know so far",
+          "url": "https://www.livemint.com/news/world/typhoon-dolphin-in-china-over-1-million-evacuated-flights-cancelled-flood-alerts-issued-what-we-know-so-far-11786364118655.html"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "Typhoon Dolphin forces over 1 million people to evacuate on China's eastern coast",
+          "url": "https://www.npr.org/2026/08/10/nx-s1-5926450/typhoon-dolphin-forces-over-a-million-people-to-evacuate-on-chinas-eastern-coast"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Typhoon Dolphin: more than a million people evacuated in China as record rainfall dumped on Shanghai",
+          "url": "https://www.theguardian.com/world/2026/aug/10/typhoon-dolphin-china-shanghai-flooding-evacuations"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Typhoon Dolphin, \"the biggest storm China has seen this year\"",
+          "url": "https://www.france24.com/en/video/20260810-typhoon-dolphin-the-biggest-storm-china-has-seen-this-year"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 1
+    },
+    {
+      "headline_hint": "Heatwaves and severe drought trigger water restrictions across western Europe",
+      "section": "world",
+      "category": "climate",
+      "tier_requested": "major",
+      "article_ids": [
+        55,
+        87,
+        141,
+        220,
+        221,
+        287,
+        296,
+        318
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        55,
+        87,
+        141,
+        220,
+        221,
+        287,
+        296,
+        318
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 5,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "July was hottest month ever recorded in US as heatwaves scorched country",
+          "url": "https://www.theguardian.com/us-news/2026/aug/10/july-hottest-month-ever-recorded-heatwaves"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Nearly 70 percent of France under water restrictions amid record heat",
+          "url": "https://www.france24.com/en/france/20260810-nearly-70-percent-of-france-under-water-restrictions-amid-record-heat"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "UK and France prepare for another heatwave as western Europe sets new temperature record",
+          "url": "https://www.channelnewsasia.com/world/uk-france-heatwave-western-europe-temperature-record-6310131"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "World's oceans hit record-high July temperatures",
+          "url": "https://www.bbc.co.uk/news/articles/cpvw8vmmgrwo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "DW World",
+          "title": "Western Europe records hottest June and July on record",
+          "url": "https://www.dw.com/en/western-europe-records-hottest-june-and-july-on-record/a-78298751?maca=en-rss-en-world-4025-rdf"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 3
+    },
+    {
+      "headline_hint": "Indian Parliament passes Tribunals Reforms Bill to establish National Tribunals Commission",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        9,
+        173,
+        286,
+        289
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        9,
+        173,
+        286,
+        289
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 5,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "The Hindu",
+          "title": "Lok Sabha passes Tribunals Reforms Bill amid din",
+          "url": "https://www.thehindu.com/news/national/lok-sabha-passes-bill-to-set-up-panel-to-appoint-chiefs-members-of-tribunals-without-debate/article71328064.ece"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Lok Sabha passes Tribunals Reforms Bill",
+          "url": "https://www.livemint.com/news/india/lok-sabha-passes-tribunals-reforms-bill-11786367716577.html"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "Lok Sabha passes bill to create panel for overseeing national tribunals",
+          "url": "https://scroll.in/latest/1094911/lok-sabha-passes-bill-to-create-panel-for-overseeing-national-tribunals?utm_source=rss&utm_medium=public"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Lok Sabha passes Tribunals Reforms Bill 2026 amid protests: All about the Bill",
+          "url": "https://www.livemint.com/news/india/lok-sabha-passes-tribunals-reforms-bill-2026-amid-protests-all-about-the-bill-11786357265235.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Trump demands compensation from Iran for American military deaths as nuclear talks stall",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        6,
+        7,
+        89
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        6,
+        7,
+        89
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Channel News Asia",
+          "title": "Trump demands Iran pay compensation for deaths as Hormuz deal hopes fade",
+          "url": "https://www.channelnewsasia.com/world/trump-us-iran-hormuz-deal-compensation-6310521"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Trump demands Iran pay compensation for decades of US soldier deaths",
+          "url": "https://www.theguardian.com/world/2026/aug/10/trump-demands-iran-pay-compensation-for-decades-of-us-soldier-deaths"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Trump rejects Iran’s war compensation demand, seeks counter-payment from Tehran for deaths and injuries",
+          "url": "https://www.livemint.com/news/us-news/trump-rejects-iran-s-war-compensation-demand-seeks-counter-payment-from-tehran-for-deaths-and-injuries-11786383174698.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Flash floods wash away Bailey bridge in Chamoli, Uttarakhand",
+      "section": "india",
+      "category": "disaster",
+      "tier_requested": "notable",
+      "article_ids": [
+        111,
+        159,
+        163
+      ],
+      "verdict": "cut:below_floor(2<5)",
+      "valid_ids": [
+        111,
+        159,
+        163
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 2,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "On cam: Swollen river sweeps away bridge after flash flood in Uttarakhand's Chamoli",
+          "url": "https://timesofindia.indiatimes.com/india/on-camera-swollen-river-sweeps-away-bridge-after-flash-flood-in-uttarakhands-chamoli/articleshow/133124498.cms"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Uttarakhand: BRO personnel missing, Bailey bridge washed away in flash flood",
+          "url": "https://www.hindustantimes.com/india-news/uttarakhand-bro-personnel-missing-bailey-bridge-washed-away-in-flash-flood-101786377571738.html"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Metal bridge ripped apart by swollen river after flash flood in Uttarakhand's Chamoli | Watch",
+          "url": "https://www.hindustantimes.com/india-news/metal-bridge-ripped-apart-by-swollen-river-in-uttarakhands-chamoli-watch-video-flash-flood-rain-101786375752831.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Political clash in West Bengal over custodial death of TMC worker and attack on Mamata Banerjee's convoy",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        27,
+        174,
+        282,
+        316
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        27,
+        174,
+        282,
+        316
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "The Hindu",
+          "title": "Suvendu admits police negligence in custodial death of TMC worker",
+          "url": "https://www.thehindu.com/news/national/west-bengal/wb-cm-admits-police-negligence-in-custodial-death-announces-compensation-for-family/article71329387.ece"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Suvendu meets wife of deceased TMC worker; promises job, ex-gratia of  ₹10 lakh",
+          "url": "https://www.hindustantimes.com/india-news/suvendu-meets-wife-of-deceased-tmc-worker-promises-job-ex-gratia-of-rs-10-lakh-101786376612505.html"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "Mamata Banerjee’s vehicle attacked with mud, shoes in North 24 Parganas",
+          "url": "https://scroll.in/latest/1094905/mamata-banerjees-vehicle-attacked-with-mud-shoes-in-north-24-parganas?utm_source=rss&utm_medium=public"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "‘Suvendu executed it’: Abhishek Banerjee's ‘state-sponsored’ claim after Mamata's car attacked",
+          "url": "https://www.hindustantimes.com/india-news/abhishek-banerjees-state-sponsored-claim-after-mamatas-car-attacked-suvendu-executed-it-101786354332050.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Eleven injured in firing along border between Assam and Arunachal Pradesh",
+      "section": "india",
+      "category": "conflict",
+      "tier_requested": "notable",
+      "article_ids": [
+        155,
+        257,
+        264
+      ],
+      "verdict": "cut:below_floor(2<5)",
+      "valid_ids": [
+        155,
+        257,
+        264
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 2,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "NDTV",
+          "title": "11 Injured In Assam-Arunachal Border Clash Over Encroachment Dispute",
+          "url": "https://www.ndtv.com/india-news/11-injured-in-assam-arunachal-border-clash-over-encroachment-dispute-11891486#publisher=newsstand"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "11 injured in firing along Assam-Arunachal border, Himanta calls it local issue",
+          "url": "https://www.hindustantimes.com/india-news/8-injured-in-firing-along-assam-arunachal-border-himanta-calls-it-local-issue-101786367369640.html"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "8 injured in Assam-Arunachal border firing; situation 'almost resolved', says CM Sarma",
+          "url": "https://www.hindustantimes.com/india-news/injured-toll-in-assam-arunachal-border-firing-situation-almost-resolved-says-cm-sarma-101786363782237.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Indian Parliament clears Bankers' Books Evidence Bill and Taxation Bill",
+      "section": "india",
+      "category": "economy",
+      "tier_requested": "notable",
+      "article_ids": [
+        193,
+        212,
+        214,
+        249
+      ],
+      "verdict": "cut:below_floor(2<5)",
+      "valid_ids": [
+        193,
+        212,
+        214,
+        249
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 2,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Livemint",
+          "title": "Rajya Sabha passes bill to recognize digital bank records as evidence",
+          "url": "https://www.livemint.com/news/india/rajya-sabha-passes-bill-to-recognize-digital-bank-records-as-evidence-banking-financial-transactions-11786370366589.html"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "Rajya Sabha Clears Taxation Bill, Government Rules Out UPI Charges",
+          "url": "https://www.ndtv.com/india-news/rajya-sabha-clears-taxation-and-other-laws-amendment-bill-2026-government-rules-out-upi-charges-11891090#publisher=newsstand"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Bankers' Books Evidence Bill 2026 passed: What the law changes, key takeaways from FM Sitharaman's reply",
+          "url": "https://www.livemint.com/news/india/bankers-books-evidence-bill-2026-passed-what-the-law-changes-key-takeaways-from-fm-sitharamans-reply-11786372302467.html"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Parliament clears taxation bill: FM Sitharaman says UPI will remain free; no framework on MDR yet",
+          "url": "https://www.livemint.com/news/india/parliament-clears-taxation-bill-fm-sitharaman-says-upi-will-remain-free-no-mdr-framework-yet-11786367727604.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    }
+  ]
+}
