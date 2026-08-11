@@ -1,0 +1,769 @@
+{
+  "min_claim_chars": 20,
+  "max_claims_per_story": 24,
+  "rejected_claims": 0,
+  "rejected_clusters": 0,
+  "clusters": [
+    {
+      "cluster_id": 0,
+      "headline_hint": "Death toll rises as powerful 7.4-magnitude earthquake strikes Colombia",
+      "section": "world",
+      "claim_count": 18,
+      "distinct_outlets": 4,
+      "source_kinds": {
+        "fulltext": 18
+      },
+      "claims": [
+        {
+          "id": 1,
+          "cluster_id": 0,
+          "text": "Rescuers in western Colombia searched under rubble following what has been called the country's strongest earthquake this century.",
+          "kind": "event",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/11/search-for-survivors-underway-in-colombias-earthquake-aftermath?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 2,
+          "cluster_id": 0,
+          "text": "A 7.4-magnitude earthquake struck western Colombia at 07:34 local time (12:34 GMT) on Monday.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c20dqd9qwq4o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 3,
+          "cluster_id": 0,
+          "text": "Official figures confirm more than 180 people died in the earthquake, while aggregated figures from local officials indicate the death toll may exceed 240.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c20dqd9qwq4o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 4,
+          "cluster_id": 0,
+          "text": "Colombian President Abelardo de la Espriella reported that almost 2,600 people were injured, nearly 200 remain missing, over 1,100 homes were destroyed, and over 8,000 homes were damaged.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c20dqd9qwq4o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 5,
+          "cluster_id": 0,
+          "text": "In Cali, Mayor Alejandro Eder reported 95 deaths, 239 people trapped, 949 injured, and 45 buildings partially or fully collapsed.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c20dqd9qwq4o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 6,
+          "cluster_id": 0,
+          "text": "In the Calima neighbourhood of Cali, four children died and 30 were referred to care centres after a section of the Gimnasio Calima school collapsed.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c20dqd9qwq4o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 7,
+          "cluster_id": 0,
+          "text": "Cali Mayor Alejandro Eder ordered a curfew starting at 20:00 local time on Tuesday until 06:00 on Wednesday to prevent looting.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c20dqd9qwq4o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 8,
+          "cluster_id": 0,
+          "text": "Colombia's geological service reported that more than 70 aftershocks occurred following Monday's earthquake, including two 3.6-magnitude quakes early on Tuesday.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c20dqd9qwq4o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 9,
+          "cluster_id": 0,
+          "text": "In Pereira, 79 people were confirmed dead by the city's fire department, and local authorities implemented a car-free day to facilitate search efforts.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c20dqd9qwq4o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 10,
+          "cluster_id": 0,
+          "text": "Manizales Mayor Jorge Eduardo Rojas stated that five people were killed and 60 buildings partially or totally collapsed in the city.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c20dqd9qwq4o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 11,
+          "cluster_id": 0,
+          "text": "Spanish Foreign Minister José Manuel Albares reported that 164 Spanish citizens were missing in Colombia following the earthquake.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c20dqd9qwq4o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 12,
+          "cluster_id": 0,
+          "text": "Local authorities in western Colombia reported that more than 3,000 people remain missing and nearly 5,000 homes were damaged.",
+          "kind": "figure",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/world/colombia-earthquake-224-dead-3-000-missing-1-600-buildings-damaged-us-and-eu-send-aid-latest-updates-11786462712514.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 13,
+          "cluster_id": 0,
+          "text": "Airports in Quibdo, Pereira, Manizales, Armenia, Cartago, and Buenaventura were closed due to earthquake damage.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/world/colombia-earthquake-224-dead-3-000-missing-1-600-buildings-damaged-us-and-eu-send-aid-latest-updates-11786462712514.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 14,
+          "cluster_id": 0,
+          "text": "Colombian President Abelardo de la Espriella declared a state of disaster and announced temporary rental subsidies for affected families.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/world/colombia-earthquake-224-dead-3-000-missing-1-600-buildings-damaged-us-and-eu-send-aid-latest-updates-11786462712514.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 15,
+          "cluster_id": 0,
+          "text": "The European Union activated its Copernicus satellite service to assist Colombian authorities in damage assessment and rescue operations.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/world/colombia-earthquake-224-dead-3-000-missing-1-600-buildings-damaged-us-and-eu-send-aid-latest-updates-11786462712514.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 16,
+          "cluster_id": 0,
+          "text": "The Colombian Association of Capital Cities reported that at least 132 people were killed and more than 570 were injured as of Monday afternoon.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/aug/10/colombia-earthquake-cali-pereira-choco",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 17,
+          "cluster_id": 0,
+          "text": "On June 24, twin earthquakes struck the northern coast of Venezuela, killing more than 6,000 people.",
+          "kind": "background",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/aug/10/colombia-earthquake-cali-pereira-choco",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 18,
+          "cluster_id": 0,
+          "text": "Colombian President Abelardo de la Espriella took office on the Friday preceding the earthquake.",
+          "kind": "background",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/aug/10/colombia-earthquake-cali-pereira-choco",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 1,
+      "headline_hint": "Syrian court sentences ousted president Bashar al-Assad to death in absentia",
+      "section": "world",
+      "claim_count": 12,
+      "distinct_outlets": 5,
+      "source_kinds": {
+        "fulltext": 12
+      },
+      "claims": [
+        {
+          "id": 19,
+          "cluster_id": 1,
+          "text": "Syrians gathered outside the Justice Palace in Damascus after a court sentenced ousted President Bashar al-Assad to death in absentia and former security official Atef Najib to death.",
+          "kind": "event",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/11/justice-at-last-syrians-react-to-assad-death-sentence?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 20,
+          "cluster_id": 1,
+          "text": "Bashar al-Assad fled Damascus for Moscow with his family after his regime was overthrown in December 2024.",
+          "kind": "background",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/ce34dkpnyg7o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 21,
+          "cluster_id": 1,
+          "text": "Atef Najib, former head of political security in Daraa province, was sentenced to death in person while standing in a cage wearing a prison uniform.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/ce34dkpnyg7o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 22,
+          "cluster_id": 1,
+          "text": "The detention and alleged torture of a group of teenagers accused of writing anti-government graffiti in Daraa in March 2011 ignited nationwide protests that escalated into civil war.",
+          "kind": "background",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/ce34dkpnyg7o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 23,
+          "cluster_id": 1,
+          "text": "The Damascus court sentenced six former military and security officials to death in absentia, including Bashar al-Assad's brother Maher al-Assad and former defense minister Fahd al-Freij.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/ce34dkpnyg7o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 24,
+          "cluster_id": 1,
+          "text": "Ahmed al-Sharaa became president of Syria following an 11-day campaign that ended the Assad family's rule in December 2024.",
+          "kind": "background",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/ce34dkpnyg7o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 25,
+          "cluster_id": 1,
+          "text": "Atef Najib was detained by Syrian security forces in early 2025.",
+          "kind": "background",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/world/who-is-atef-najib-the-ex-syrian-security-official-sentenced-to-death-with-bashar-alassad-11786452721530.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 26,
+          "cluster_id": 1,
+          "text": "Judge Fakhareddine al-Aryan announced the death sentence against Atef Najib during a court session broadcast live on state television.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/world/who-is-atef-najib-the-ex-syrian-security-official-sentenced-to-death-with-bashar-alassad-11786452721530.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 27,
+          "cluster_id": 1,
+          "text": "A Syrian court sentenced Bashar al-Assad and his brother Maher al-Assad to death in absentia for crimes committed during Syria's 14-year civil war, which claimed approximately 500,000 lives.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/aug/11/syria-bashar-al-assad-death-sentence-war-crimes",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 28,
+          "cluster_id": 1,
+          "text": "About 1,500 mostly Alawite civilians were killed in retaliatory violence in March 2025, and over 1,700 people were killed in Suweida province in July 2025.",
+          "kind": "background",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/aug/11/syria-bashar-al-assad-death-sentence-war-crimes",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 29,
+          "cluster_id": 1,
+          "text": "Bashar al-Assad became the designated heir to the presidency after his older brother, Basil, died in a car accident in 1994.",
+          "kind": "background",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/aug/11/syria-bashar-al-assad-death-sentence-war-crimes",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 30,
+          "cluster_id": 1,
+          "text": "Atef Najib was sanctioned by the U.S. Department of the Treasury in April 2011.",
+          "kind": "background",
+          "outlet": "NPR World",
+          "url": "https://www.npr.org/2026/08/11/g-s1-138166/syria-assad-sentenced-to-death",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 2,
+      "headline_hint": "Russia frees former US Marine Robert Gilman after talks between Trump and Putin",
+      "section": "world",
+      "claim_count": 11,
+      "distinct_outlets": 4,
+      "source_kinds": {
+        "fulltext": 11
+      },
+      "claims": [
+        {
+          "id": 31,
+          "cluster_id": 2,
+          "text": "Russia released former U.S. Marine Robert Gilman from prison after more than four years following talks between U.S. President Donald Trump and Russian President Vladimir Putin.",
+          "kind": "event",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/former-us-marine-gilman-released-russia-trump-6312891",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 32,
+          "cluster_id": 2,
+          "text": "U.S. President Donald Trump confirmed that Russia released Robert Gilman on a humanitarian basis without demanding a prisoner exchange.",
+          "kind": "event",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/former-us-marine-gilman-released-russia-trump-6312891",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 33,
+          "cluster_id": 2,
+          "text": "U.S. Secretary of State Marco Rubio stated the administration is seeking the return of Stephen Hubbard, who was sentenced in Russia in October 2024 to nearly seven years in prison.",
+          "kind": "background",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/former-us-marine-gilman-released-russia-trump-6312891",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 34,
+          "cluster_id": 2,
+          "text": "Robert Gilman, 32, was scheduled to land at Andrews Air Force Base in Washington, D.C., on Tuesday night.",
+          "kind": "figure",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/us/trump-promises-a-great-cheeseburger-to-marine-veteran-freed-from-russian-prison/articleshow/133161218.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 35,
+          "cluster_id": 2,
+          "text": "Global Reach chief strategy officer Eric Lebson stated that Gilman was transferred in June from a prison hospital to a psychiatric ward in a dissociative stupor due to prison abuse.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/us/trump-promises-a-great-cheeseburger-to-marine-veteran-freed-from-russian-prison/articleshow/133161218.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 36,
+          "cluster_id": 2,
+          "text": "U.S. Senator Ed Markey stated that Gilman suffered from severe pneumonia and entered a near-death, catatonic state prior to his release.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/us/trump-promises-a-great-cheeseburger-to-marine-veteran-freed-from-russian-prison/articleshow/133161218.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 37,
+          "cluster_id": 2,
+          "text": "Robert Gilman served in the U.S. Marine Corps from August 2019 until August 2020.",
+          "kind": "background",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/8/11/russia-frees-ex-us-marine-robert-gilman-from-detention?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 38,
+          "cluster_id": 2,
+          "text": "U.S. officials stated that Gilman would be flown to a rehabilitation centre in San Antonio, Texas, for medical treatment following his return.",
+          "kind": "event",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/8/11/russia-frees-ex-us-marine-robert-gilman-from-detention?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 39,
+          "cluster_id": 2,
+          "text": "Robert Gilman's father, Vladimir Gilman, stated in an October 2024 op-ed that the police officer involved in the 2022 incident dropped charges and sustained no injuries.",
+          "kind": "background",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/8/11/russia-frees-ex-us-marine-robert-gilman-from-detention?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 40,
+          "cluster_id": 2,
+          "text": "Gilman was arrested in January 2022 on a train to Moscow for allegedly kicking a police officer while drunk, receiving an initial sentence of three and a half years that was extended to 10 years following alleged assaults on prison staff.",
+          "kind": "background",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cvgj4m8e1ryo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 41,
+          "cluster_id": 2,
+          "text": "Advocate Eric Lebson stated that five other Americans remain in Russian detention: Aleksandr Antonov, David Barnes, Olga Jezler, Andre Khachatoorian, and Chuck Zimmerman.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cvgj4m8e1ryo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 3,
+      "headline_hint": "Andras Baka elected Hungarian president as parliament dismantles Orban legacy",
+      "section": "world",
+      "claim_count": 10,
+      "distinct_outlets": 4,
+      "source_kinds": {
+        "fulltext": 10
+      },
+      "claims": [
+        {
+          "id": 42,
+          "cluster_id": 3,
+          "text": "Hungary's parliament elected former Supreme Court chief András Baka as head of state by a vote of 140 to 6.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/clyed7rem5no?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 43,
+          "cluster_id": 3,
+          "text": "All 51 attending lawmakers from Viktor Orbán's Fidesz party walked out of the parliamentary chamber in protest before the vote.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/clyed7rem5no?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 44,
+          "cluster_id": 3,
+          "text": "The government led by Prime Minister Péter Magyar abolished the Sovereignty Protection Office and established the National Asset Recovery and Protection Office.",
+          "kind": "background",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/clyed7rem5no?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 45,
+          "cluster_id": 3,
+          "text": "Constitutional amendments introduced by the Tisza party limited the prime minister to two terms in office and members of parliament to three terms.",
+          "kind": "background",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/clyed7rem5no?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 46,
+          "cluster_id": 3,
+          "text": "Public service radio and TV in Hungary have been off the air since July 9 while news programming undergoes restructuring.",
+          "kind": "background",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/clyed7rem5no?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 47,
+          "cluster_id": 3,
+          "text": "András Baka served as a judge at the European Court of Human Rights for nearly 20 years before becoming president of Hungary's Supreme Court in 2009.",
+          "kind": "background",
+          "outlet": "DW World",
+          "url": "https://www.dw.com/en/hungary-s-parliament-elects-orban-critic-as-new-president/a-78325589?maca=en-rss-en-world-4025-rdf",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 48,
+          "cluster_id": 3,
+          "text": "In December 2011, Viktor Orbán's government removed András Baka as Supreme Court president three years before his term expired.",
+          "kind": "background",
+          "outlet": "DW World",
+          "url": "https://www.dw.com/en/hungary-s-parliament-elects-orban-critic-as-new-president/a-78325589?maca=en-rss-en-world-4025-rdf",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 49,
+          "cluster_id": 3,
+          "text": "Prime Minister Péter Magyar initially offered the presidency to chess star Judit Polgár, who declined the role.",
+          "kind": "background",
+          "outlet": "DW World",
+          "url": "https://www.dw.com/en/hungary-s-parliament-elects-orban-critic-as-new-president/a-78325589?maca=en-rss-en-world-4025-rdf",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 50,
+          "cluster_id": 3,
+          "text": "András Baka is scheduled to assume the presidency of Hungary on August 19.",
+          "kind": "event",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/8/11/hungary-elects-supreme-court-judge-ousted-by-orban-as-new-president?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 51,
+          "cluster_id": 3,
+          "text": "Following his 2011 removal from the Supreme Court, András Baka won an unfair dismissal case against Hungary at the European Court of Human Rights.",
+          "kind": "background",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/live/2026/aug/11/russia-strikes-ukraine-wildberries-hungary-heat-latest-news-updates",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 4,
+      "headline_hint": "US military helicopter fires missiles at cargo ship breaking Iran blockade",
+      "section": "world",
+      "claim_count": 9,
+      "distinct_outlets": 3,
+      "source_kinds": {
+        "fulltext": 9
+      },
+      "claims": [
+        {
+          "id": 52,
+          "cluster_id": 4,
+          "text": "A U.S. Navy MH-60 helicopter fired two Hellfire missiles into the engine room of the Panama-flagged M/V Vela Nova in the Gulf of Oman to disable its steering gear.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cvg8lyyyjedo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 53,
+          "cluster_id": 4,
+          "text": "U.S. Central Command stated that as of August 11, it had redirected 55 commercial vessels attempting to run the Iranian blockade, disabled three non-compliant vessels, and boarded two.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cvg8lyyyjedo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 54,
+          "cluster_id": 4,
+          "text": "Yemen's government reported that Houthi strikes on a cargo ship carrying Saudi military equipment in the Red Sea killed six people and injured 10.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cvg8lyyyjedo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 55,
+          "cluster_id": 4,
+          "text": "A June memorandum of understanding between the U.S. and Iran contained a preliminary plan for a $300 billion reconstruction fund.",
+          "kind": "background",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/8/11/us-military-fires-on-cargo-vessel-it-said-sought-to-break-iran-blockade?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 56,
+          "cluster_id": 4,
+          "text": "Mohsen Rezaei, secretary of Iran's Supreme National Security Council, stated that the Strait of Hormuz \"will not be opened until the United States changes its behaviour and accepts Iran’s conditions.\"",
+          "kind": "quote",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/8/11/us-military-fires-on-cargo-vessel-it-said-sought-to-break-iran-blockade?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 57,
+          "cluster_id": 4,
+          "text": "Pakistan's Interior Minister Mohsin Naqvi arrived in Tehran on Tuesday for mediation talks with Iranian officials.",
+          "kind": "event",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/8/11/us-military-fires-on-cargo-vessel-it-said-sought-to-break-iran-blockade?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 58,
+          "cluster_id": 4,
+          "text": "The M/V Vela Nova is the third ship forcibly halted by U.S. forces since Washington reinstated its ports blockade on July 14.",
+          "kind": "background",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/world/us-helicopter-fires-missiles-at-panama-flagged-ship-attempting-to-evade-blockade-11786479091151.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 59,
+          "cluster_id": 4,
+          "text": "During an earlier blockade between April 13 and June 18, U.S. forces disabled nine vessels and redirected more than 140 ships attempting to reach Iranian ports.",
+          "kind": "figure",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/world/us-helicopter-fires-missiles-at-panama-flagged-ship-attempting-to-evade-blockade-11786479091151.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 60,
+          "cluster_id": 4,
+          "text": "The U.S. Navy has deployed more than 15 warships in the Arabian Sea, including two aircraft carriers and an amphibious assault ship.",
+          "kind": "figure",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/world/us-helicopter-fires-missiles-at-panama-flagged-ship-attempting-to-evade-blockade-11786479091151.html",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 5,
+      "headline_hint": "Pilot of turbulence-hit Air India flight tests positive for marijuana after 300-foot drop",
+      "section": "india",
+      "claim_count": 10,
+      "distinct_outlets": 4,
+      "source_kinds": {
+        "summary": 1,
+        "fulltext": 9
+      },
+      "claims": [
+        {
+          "id": 61,
+          "cluster_id": 5,
+          "text": "During the altitude loss on the Air India flight, a stall warning flashed and the first officer executed a stall-recovery response.",
+          "kind": "event",
+          "outlet": "NDTV",
+          "url": "https://www.ndtv.com/india-news/air-india-turbulence-air-india-flight-pilot-marijuana-inside-the-cockpit-what-went-wrong-on-air-indias-phuket-delhi-flight-11896512#publisher=newsstand",
+          "source_kind": "summary"
+        },
+        {
+          "id": 62,
+          "cluster_id": 5,
+          "text": "Air India flight AI2379 from Phuket to Delhi dropped around 300 feet during cruise on August 4, injuring 20 passengers and four crew members.",
+          "kind": "figure",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/air-india-pilot-air-india-pilot-drug-test-11786461810098.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 63,
+          "cluster_id": 5,
+          "text": "The confirmatory drug test for the pilot-in-command of the August 4 Air India flight returned positive for a banned substance.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/air-india-pilot-air-india-pilot-drug-test-11786461810098.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 64,
+          "cluster_id": 5,
+          "text": "Air India's outgoing CEO Campbell Wilson met with Civil Aviation Ministry and DGCA officials on Tuesday evening following the test results.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/air-india-pilot-air-india-pilot-drug-test-11786461810098.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 65,
+          "cluster_id": 5,
+          "text": "Former Ethiopian Airlines chief executive Tewolde Gebremariam was appointed as Air India's new CEO and managing director.",
+          "kind": "background",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/air-india-pilot-air-india-pilot-drug-test-11786461810098.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 66,
+          "cluster_id": 5,
+          "text": "An official confirmed that the pilot-in-command tested positive for marijuana in the confirmatory drug test.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/how-is-aaib-probing-air-india-phuket-delhi-flight-turbulence-case-what-centre-said-101786460894131.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 67,
+          "cluster_id": 5,
+          "text": "The preliminary defect report noted that the autopilot disconnected and triggered a stall warning and flight control ECAM message prior to the loss of altitude.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/how-is-aaib-probing-air-india-phuket-delhi-flight-turbulence-case-what-centre-said-101786460894131.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 68,
+          "cluster_id": 5,
+          "text": "France's Bureau of Enquiry and Analysis for Civil Aviation Safety (BEA) and Airbus technical representatives are assisting India's Aircraft Accident Investigation Bureau.",
+          "kind": "background",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/how-is-aaib-probing-air-india-phuket-delhi-flight-turbulence-case-what-centre-said-101786460894131.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 69,
+          "cluster_id": 5,
+          "text": "Seventeen people were hospitalised following the sudden 300-foot drop on Air India flight AI2379.",
+          "kind": "figure",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/phuket-delhi-ai-flight-captains-confirmatory-test-also-positive-sources/articleshow/133155635.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 70,
+          "cluster_id": 5,
+          "text": "DGCA regulations dictate that a pilot testing positive for psychoactive substances for the first time must undergo de-addiction, while a second positive result leads to a three-year licence suspension and a third leads to permanent cancellation.",
+          "kind": "background",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/phuket-delhi-ai-flight-captains-confirmatory-test-also-positive-sources/articleshow/133155635.cms",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 6,
+      "headline_hint": "India examining security implications of new Pakistan-Saudi-Turkey defence pact",
+      "section": "india",
+      "claim_count": 5,
+      "distinct_outlets": 2,
+      "source_kinds": {
+        "fulltext": 5
+      },
+      "claims": [
+        {
+          "id": 71,
+          "cluster_id": 6,
+          "text": "External Affairs Ministry spokesperson Randhir Jaiswal stated that India is examining the national security and regional stability implications of the defence agreement signed by Pakistan, Saudi Arabia, and Turkey.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/pakistan-saudi-arabia-turkey-defence-pact-india-examining-implications-on-national-security-says-mea-11786461318734.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 72,
+          "cluster_id": 6,
+          "text": "Saudi Crown Prince Mohammed bin Salman, Turkish President Recep Tayyip Erdogan, and Pakistani Prime Minister Shehbaz Sharif signed the Makkah Joint Defence Agreement in Mecca on August 7.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/pakistan-saudi-arabia-turkey-defence-pact-india-examining-implications-on-national-security-says-mea-11786461318734.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 73,
+          "cluster_id": 6,
+          "text": "A central provision of the Makkah Joint Defence Agreement states that an armed attack against any one of the three signatories will be regarded as an attack against all three.",
+          "kind": "background",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/pakistan-saudi-arabia-turkey-defence-pact-india-examining-implications-on-national-security-says-mea-11786461318734.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 74,
+          "cluster_id": 6,
+          "text": "The trilateral pact builds on a mutual defence agreement concluded by Pakistan and Saudi Arabia in September.",
+          "kind": "background",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/pakistan-saudi-arabia-turkey-defence-pact-india-examining-implications-on-national-security-says-mea-11786461318734.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 75,
+          "cluster_id": 6,
+          "text": "External Affairs Ministry spokesperson Randhir Jaiswal called on the international community to hold Pakistan accountable after protests in Pakistan-occupied Kashmir caused over 90 deaths.",
+          "kind": "figure",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/assessing-ramifications-of-new-defence-pact-between-pak-t-rkiye-and-saudi-mea-101786460286510.html",
+          "source_kind": "fulltext"
+        }
+      ]
+    }
+  ],
+  "clusters_with_no_claims": []
+}
