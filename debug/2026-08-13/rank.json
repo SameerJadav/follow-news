@@ -14,64 +14,59 @@
   "floor_relaxed": false,
   "kept_weights": [
     13,
-    7,
-    6,
-    6,
-    5,
-    5,
     9,
+    6,
+    10,
     5
   ],
   "per_section": {
-    "world": 6,
+    "world": 3,
     "india": 2
   },
   "clusters": [
     {
-      "headline_hint": "Total solar eclipse plunges parts of Europe into darkness as millions gather to watch",
+      "headline_hint": "Total solar eclipse plunges parts of Europe into darkness",
       "section": "world",
       "category": "science",
       "tier_requested": "lead",
       "article_ids": [
-        0,
-        7,
-        16,
-        18,
-        25,
-        27,
-        28,
-        36,
-        49,
-        179,
-        227,
-        236,
-        264,
-        267,
-        271,
-        289,
-        292,
-        305
+        44,
+        50,
+        57,
+        65,
+        66,
+        73,
+        76,
+        77,
+        84,
+        97,
+        238,
+        247,
+        275,
+        278,
+        282,
+        298,
+        301
       ],
       "verdict": "kept",
       "valid_ids": [
-        0,
-        7,
-        16,
-        18,
-        25,
-        27,
-        28,
-        36,
-        49,
-        179,
-        227,
-        236,
-        264,
-        267,
-        271,
-        289,
-        292,
-        305
+        44,
+        50,
+        57,
+        65,
+        66,
+        73,
+        76,
+        77,
+        84,
+        97,
+        238,
+        247,
+        275,
+        278,
+        282,
+        298,
+        301
       ],
       "tier_final": "lead",
       "distinct_outlets": 7,
@@ -86,19 +81,19 @@
       "weight_floor": 5,
       "articles": [
         {
+          "outlet": "France 24",
+          "title": "Partial eclipse seen from North and West Africa",
+          "url": "https://www.france24.com/en/partial-eclipse-seen-from-north-and-west-africa"
+        },
+        {
           "outlet": "Guardian World",
-          "title": "Europe solar eclipse live: millions watch rare spectacle across Spain, UK and Iceland",
+          "title": "Europe solar eclipse: millions watch rare spectacle across Spain, UK and Iceland – as it happened",
           "url": "https://www.theguardian.com/world/live/2026/aug/12/europe-solar-eclipse-spain-uk-iceland-latest-news-updates"
         },
         {
           "outlet": "Times of India",
           "title": "'Magical eeriness': Spain, Iceland witness spectacular total solar eclipse; watch",
           "url": "https://timesofindia.indiatimes.com/world/europe/magical-eeriness-spain-iceland-witness-spectacular-total-solar-eclipse-watch/articleshow/133192900.cms"
-        },
-        {
-          "outlet": "France 24",
-          "title": "In pictures: Partial to total eclipse sweeps across much of Europe",
-          "url": "https://www.france24.com/en/europe/20260812-in-pictures-partial-to-total-eclipse-seen-across-much-of-europe"
         },
         {
           "outlet": "Al Jazeera",
@@ -111,31 +106,95 @@
           "url": "https://www.channelnewsasia.com/world/solar-eclipse-spain-europe-arctic-6315731"
         }
       ],
-      "articles_dropped_by_diversity_cap": 13
+      "articles_dropped_by_diversity_cap": 12
     },
     {
-      "headline_hint": "Colombia earthquake rescue operations continue amid rising death toll and destruction",
+      "headline_hint": "Tata Group Chairman N. Chandrasekaran to step down following board differences",
+      "section": "india",
+      "category": "economy",
+      "tier_requested": "lead",
+      "article_ids": [
+        3,
+        39,
+        179,
+        195,
+        223,
+        266,
+        313
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        3,
+        39,
+        179,
+        195,
+        223,
+        266,
+        313
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 6,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 10,
+      "weight_terms": {
+        "distinct_outlets": 6,
+        "tier_weight": 4,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "The Hindu",
+          "title": "The marathoner technocrat who gave new direction to Tata Group",
+          "url": "https://www.thehindu.com/business/Industry/the-marathoner-technocrat-who-gave-new-direction-to-tata-group/article71337151.ece"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Who next? Tata Steel MD’s name does the rounds after Chandrasekaran steps down",
+          "url": "https://timesofindia.indiatimes.com/business/india-business/who-next-tata-steel-md-narendrans-name-does-the-rounds-for-the-top-job-after-chandrasekaran/articleshow/133192948.cms"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "Tata Sons Had Several Chairmen. Why N Chandrasekaran, Cyrus Mistry Stood Out",
+          "url": "https://www.ndtv.com/india-news/tata-sons-had-several-chairmen-why-n-chandrasekaran-cyrus-mistry-stood-out-11901526#publisher=newsstand"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "What is N Chandrasekaran's net worth? Report shows he got  ₹671.4 crore in 5 years",
+          "url": "https://www.hindustantimes.com/india-news/what-is-n-chandrasekaran-net-worth-earnings-671-crore-from-tata-sons-in-five-years-explained-101786543914360.html"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Quote of the day by N Chandrasekaran on Ratan Tata: ‘Anybody who met Mr Tata came away with…’",
+          "url": "https://www.livemint.com/news/quote-of-the-day-by-n-chandrasekaran-on-ratan-tata-anybody-who-met-mr-tata-came-away-with-11786534073882.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 2
+    },
+    {
+      "headline_hint": "Massive rescue operations underway after 7.4 magnitude earthquake in Colombia",
       "section": "world",
       "category": "disaster",
       "tier_requested": "major",
       "article_ids": [
         5,
-        181,
-        195,
-        245,
-        253,
-        321,
-        338
+        38,
+        213,
+        256,
+        264,
+        325,
+        339
       ],
       "verdict": "kept",
       "valid_ids": [
         5,
-        181,
-        195,
-        245,
-        253,
-        321,
-        338
+        38,
+        213,
+        256,
+        264,
+        325,
+        339
       ],
       "tier_final": "major",
       "distinct_outlets": 4,
@@ -156,8 +215,8 @@
         },
         {
           "outlet": "Al Jazeera",
-          "title": "Colombia declares three days of mourning after deadly earthquake",
-          "url": "https://www.aljazeera.com/news/2026/8/12/colombia-declares-three-days-of-mourning-after-deadly-earthquake?traffic_source=rss"
+          "title": "Thousands missing after Colombia quake as rescue continues",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/12/thousands-missing-after-colombia-quake-as-rescue-continues?traffic_source=rss"
         },
         {
           "outlet": "France 24",
@@ -178,255 +237,39 @@
       "articles_dropped_by_diversity_cap": 2
     },
     {
-      "headline_hint": "Strait of Hormuz blockade and US actions intensify as Middle East conflict escalates",
-      "section": "world",
-      "category": "conflict",
-      "tier_requested": "major",
-      "article_ids": [
-        32,
-        52,
-        53,
-        98,
-        131,
-        190,
-        202,
-        243,
-        339
-      ],
-      "verdict": "kept",
-      "valid_ids": [
-        32,
-        52,
-        53,
-        98,
-        131,
-        190,
-        202,
-        243,
-        339
-      ],
-      "tier_final": "major",
-      "distinct_outlets": 5,
-      "wiki_backed": false,
-      "wiki_event": "",
-      "weight": 7,
-      "weight_terms": {
-        "distinct_outlets": 5,
-        "tier_weight": 2,
-        "wiki_bonus": 0
-      },
-      "weight_floor": 5,
-      "articles": [
-        {
-          "outlet": "Livemint",
-          "title": "Tehran signals shift to ‘offensive’ military doctrine, rules out extension of June interim deal",
-          "url": "https://www.livemint.com/news/world/tehran-signals-shift-to-offensive-military-doctrine-rules-out-extension-of-june-interim-deal-11786562710400.html"
-        },
-        {
-          "outlet": "Times of India",
-          "title": "'We will keep it': Trump says US has total control over Hormuz, Iran has 'no money'",
-          "url": "https://timesofindia.indiatimes.com/world/us/we-will-keep-it-trump-says-us-has-total-control-over-hormuz-iran-has-no-money/articleshow/133190778.cms"
-        },
-        {
-          "outlet": "DW World",
-          "title": "No oil, no salary: Iraqi state employees are feeling the crunch of the Hormuz blockade",
-          "url": "https://www.dw.com/en/no-oil-no-salary-iraqi-state-employees-are-feeling-the-crunch-of-the-hormuz-blockade/a-78341409?maca=en-rss-en-world-4025-rdf"
-        },
-        {
-          "outlet": "Al Jazeera",
-          "title": "As Strait of Hormuz transit drops, Trump again says US has ‘control’",
-          "url": "https://www.aljazeera.com/news/2026/8/12/as-strait-of-hormuz-transit-drops-trump-again-says-us-has-control?traffic_source=rss"
-        },
-        {
-          "outlet": "BBC World",
-          "title": "US says helicopter fired missiles to disable ship breaking Iran blockade",
-          "url": "https://www.bbc.co.uk/news/articles/cvg8lyyyjedo?at_medium=RSS&at_campaign=rss"
-        }
-      ],
-      "articles_dropped_by_diversity_cap": 4
-    },
-    {
-      "headline_hint": "Trump secretly swapped aircraft in Turkey following Iranian intelligence threat",
+      "headline_hint": "White House Press Secretary Karoline Leavitt to step down at end of month",
       "section": "world",
       "category": "politics",
       "tier_requested": "major",
       "article_ids": [
-        1,
-        147,
-        280,
-        294,
-        337
-      ],
-      "verdict": "kept",
-      "valid_ids": [
-        1,
-        147,
-        280,
-        294,
-        337
-      ],
-      "tier_final": "major",
-      "distinct_outlets": 4,
-      "wiki_backed": false,
-      "wiki_event": "",
-      "weight": 6,
-      "weight_terms": {
-        "distinct_outlets": 4,
-        "tier_weight": 2,
-        "wiki_bonus": 0
-      },
-      "weight_floor": 5,
-      "articles": [
-        {
-          "outlet": "BBC World",
-          "title": "Members of Trump's cabinet remained on decoy plane, after president's quiet exit",
-          "url": "https://www.bbc.co.uk/news/articles/c4g306eln8wo?at_medium=RSS&at_campaign=rss"
-        },
-        {
-          "outlet": "Livemint",
-          "title": "Iran had detailed intel on Trump’s Ankara stay, including his floor: Report",
-          "url": "https://www.livemint.com/news/us-news/iran-had-detailed-intel-on-trump-s-ankara-stay-including-his-floor-report-11786551220502.html"
-        },
-        {
-          "outlet": "NPR World",
-          "title": "Takeaways from Tuesday primaries. And, Iran threat prompted Trump's secret plane swap",
-          "url": "https://www.npr.org/2026/08/12/g-s1-138337/up-first-newsletter-primaries-wisconsin-minnesota-south-carolina-trump-air-force-one-iraq-iran-militias"
-        },
-        {
-          "outlet": "Times of India",
-          "title": "Iran knew Trump's hotel floor, targeted his aircraft during Nato summit: Report",
-          "url": "https://timesofindia.indiatimes.com/world/us/iran-knew-trumps-hotel-floor-targeted-his-aircraft-during-nato-summit-report/articleshow/133179793.cms"
-        },
-        {
-          "outlet": "BBC World",
-          "title": "Watch: What is it like to travel on Air Force One with Trump?",
-          "url": "https://www.bbc.co.uk/news/videos/cy4k1jldxnwo?at_medium=RSS&at_campaign=rss"
-        }
-      ],
-      "articles_dropped_by_diversity_cap": 0
-    },
-    {
-      "headline_hint": "Ukrainian drone strikes hit Russian grain export terminals at Black Sea port of Novorossiysk",
-      "section": "world",
-      "category": "conflict",
-      "tier_requested": "major",
-      "article_ids": [
-        61,
-        109,
-        301
-      ],
-      "verdict": "kept",
-      "valid_ids": [
-        61,
-        109,
-        301
-      ],
-      "tier_final": "major",
-      "distinct_outlets": 3,
-      "wiki_backed": false,
-      "wiki_event": "",
-      "weight": 5,
-      "weight_terms": {
-        "distinct_outlets": 3,
-        "tier_weight": 2,
-        "wiki_bonus": 0
-      },
-      "weight_floor": 5,
-      "articles": [
-        {
-          "outlet": "Channel News Asia",
-          "title": "EU wheat jumps after Ukraine attacks grain terminals in major Russian export port",
-          "url": "https://www.channelnewsasia.com/world/eu-wheat-jumps-after-ukraine-attacks-grain-terminals-in-major-russian-export-port-6315666"
-        },
-        {
-          "outlet": "BBC World",
-          "title": "Major Russian grain export terminals hit in Ukraine Black Sea port attack",
-          "url": "https://www.bbc.co.uk/news/articles/c5y49xp2wrno?at_medium=RSS&at_campaign=rss"
-        },
-        {
-          "outlet": "Livemint",
-          "title": "Ukraine Strikes Grain Terminals at Russia’s Key Black Sea Port",
-          "url": "https://www.livemint.com/news/world/ukraine-strikes-grain-terminals-at-russia-s-key-black-sea-port-11786528014102.html"
-        }
-      ],
-      "articles_dropped_by_diversity_cap": 0
-    },
-    {
-      "headline_hint": "Meta faces massive lawsuit alleging intentional design of addictive features for children",
-      "section": "world",
-      "category": "technology",
-      "tier_requested": "major",
-      "article_ids": [
-        238,
-        291,
-        293
-      ],
-      "verdict": "cut:below_floor(3<5)",
-      "valid_ids": [
-        238,
-        291,
-        293
-      ],
-      "tier_final": "major",
-      "distinct_outlets": 1,
-      "wiki_backed": false,
-      "wiki_event": "",
-      "weight": 3,
-      "weight_terms": {
-        "distinct_outlets": 1,
-        "tier_weight": 2,
-        "wiki_bonus": 0
-      },
-      "weight_floor": 5,
-      "articles": [
-        {
-          "outlet": "France 24",
-          "title": "Meta faces $1.4 trillion lawsuit",
-          "url": "https://www.france24.com/en/meta-faces-1-4-trillion-lawsuit"
-        },
-        {
-          "outlet": "France 24",
-          "title": "Meta group is accused of intentionally designing addictive platforms",
-          "url": "https://www.france24.com/en/meta-group-is-accused-of-intentionally-designing-addictive-platforms"
-        },
-        {
-          "outlet": "France 24",
-          "title": "Meta faces new high-stakes trial",
-          "url": "https://www.france24.com/en/meta-faces-new-high-stakes-trial"
-        }
-      ],
-      "articles_dropped_by_diversity_cap": 0
-    },
-    {
-      "headline_hint": "Karoline Leavitt to step down as White House press secretary",
-      "section": "world",
-      "category": "politics",
-      "tier_requested": "notable",
-      "article_ids": [
-        3,
-        6,
-        23,
+        0,
+        10,
         26,
         29,
-        30
+        34,
+        42,
+        71,
+        78
       ],
       "verdict": "kept",
       "valid_ids": [
-        3,
-        6,
-        23,
+        0,
+        10,
         26,
         29,
-        30
+        34,
+        42,
+        71,
+        78
       ],
-      "tier_final": "notable",
-      "distinct_outlets": 5,
+      "tier_final": "major",
+      "distinct_outlets": 7,
       "wiki_backed": false,
       "wiki_event": "",
-      "weight": 5,
+      "weight": 9,
       "weight_terms": {
-        "distinct_outlets": 5,
-        "tier_weight": 0,
+        "distinct_outlets": 7,
+        "tier_weight": 2,
         "wiki_bonus": 0
       },
       "weight_floor": 5,
@@ -442,45 +285,45 @@
           "url": "https://www.theguardian.com/us-news/live/2026/aug/12/donald-trump-air-force-one-switch-politics-primaries-midterm-elections-results-latest-updates"
         },
         {
-          "outlet": "Al Jazeera",
-          "title": "Trump reveals Karoline Leavitt to step down as White House press secretary",
-          "url": "https://www.aljazeera.com/news/2026/8/12/trump-reveals-karoline-leavitt-to-step-down-as-white-house-press-secretary?traffic_source=rss"
+          "outlet": "France 24",
+          "title": "White House press secretary and Trump adviser Karoline Leavitt to leave role",
+          "url": "https://www.france24.com/en/americas/20260812-white-house-press-secretary-and-trump-adviser-karoline-leavitt-to-leave-role"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "Trump's spokesperson Karoline Leavitt to step down",
+          "url": "https://www.channelnewsasia.com/world/leavitt-trump-white-house-press-step-down-6315956"
         },
         {
           "outlet": "Livemint",
-          "title": "Trump announces Karoline Leavitt will leave White House Press Secretary role",
-          "url": "https://www.livemint.com/news/us-news/trump-announces-karoline-leavitt-will-leave-white-house-press-secretary-role-11786564393975.html"
-        },
-        {
-          "outlet": "Times of India",
-          "title": "Trump announces Karoline Leavitt’s exit as White House press secretary",
-          "url": "https://timesofindia.indiatimes.com/world/us/trump-announces-karoline-leavitts-exit-as-white-house-press-secretary/articleshow/133192657.cms"
+          "title": "Trump’s top women officials — Noem, Bondi, Gabbard, Chavez-DeRemer, Leavitt — depart. Controversies and reasons",
+          "url": "https://www.livemint.com/news/us-news/trumps-top-women-officials-noem-bondi-gabbard-chavez-deremer-leavitt-depart-controversies-and-reasons-11786567418094.html"
         }
       ],
-      "articles_dropped_by_diversity_cap": 1
+      "articles_dropped_by_diversity_cap": 3
     },
     {
-      "headline_hint": "Over 40 dead as ferry capsizes on Lake Kariba in Zimbabwe",
+      "headline_hint": "At least 44 killed as overcrowded ferry capsizes on Lake Kariba in Zimbabwe",
       "section": "world",
       "category": "disaster",
-      "tier_requested": "notable",
+      "tier_requested": "major",
       "article_ids": [
-        234,
-        260
+        245,
+        271
       ],
-      "verdict": "cut:below_floor(2<5)",
+      "verdict": "cut:below_floor(4<5)",
       "valid_ids": [
-        234,
-        260
+        245,
+        271
       ],
-      "tier_final": "notable",
+      "tier_final": "major",
       "distinct_outlets": 2,
       "wiki_backed": false,
       "wiki_event": "",
-      "weight": 2,
+      "weight": 4,
       "weight_terms": {
         "distinct_outlets": 2,
-        "tier_weight": 0,
+        "tier_weight": 2,
         "wiki_bonus": 0
       },
       "weight_floor": 5,
@@ -499,84 +342,61 @@
       "articles_dropped_by_diversity_cap": 0
     },
     {
-      "headline_hint": "Tata Sons Chairman N Chandrasekaran to step down in February",
-      "section": "india",
-      "category": "economy",
-      "tier_requested": "lead",
+      "headline_hint": "Ukrainian drone strikes hit major Russian grain terminals in Black Sea port",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "major",
       "article_ids": [
-        141,
-        164,
-        194,
-        210,
-        255,
+        152,
         309
       ],
-      "verdict": "kept",
+      "verdict": "cut:below_floor(4<5)",
       "valid_ids": [
-        141,
-        164,
-        194,
-        210,
-        255,
+        152,
         309
       ],
-      "tier_final": "lead",
-      "distinct_outlets": 5,
+      "tier_final": "major",
+      "distinct_outlets": 2,
       "wiki_backed": false,
       "wiki_event": "",
-      "weight": 9,
+      "weight": 4,
       "weight_terms": {
-        "distinct_outlets": 5,
-        "tier_weight": 4,
+        "distinct_outlets": 2,
+        "tier_weight": 2,
         "wiki_bonus": 0
       },
       "weight_floor": 5,
       "articles": [
         {
-          "outlet": "NDTV",
-          "title": "Tata Sons Had Several Chairmen. Why N Chandrasekaran, Cyrus Mistry Stood Out",
-          "url": "https://www.ndtv.com/india-news/tata-sons-had-several-chairmen-why-n-chandrasekaran-cyrus-mistry-stood-out-11901526#publisher=newsstand"
-        },
-        {
-          "outlet": "Times of India",
-          "title": "Power struggle at Tata group deepens as N Chandrasekaran steps down",
-          "url": "https://timesofindia.indiatimes.com/business/india-business/n-chandrasekaran-steps-down-how-power-struggle-at-tata-group-is-deepening-with-exit-of-ratan-tatas-key-allies/articleshow/133187749.cms"
-        },
-        {
-          "outlet": "Hindustan Times",
-          "title": "What is N Chandrasekaran's net worth? Report shows he got  ₹671.4 crore in 5 years",
-          "url": "https://www.hindustantimes.com/india-news/what-is-n-chandrasekaran-net-worth-earnings-671-crore-from-tata-sons-in-five-years-explained-101786543914360.html"
+          "outlet": "BBC World",
+          "title": "Major Russian grain export terminals hit in Ukraine Black Sea port attack",
+          "url": "https://www.bbc.co.uk/news/articles/c5y49xp2wrno?at_medium=RSS&at_campaign=rss"
         },
         {
           "outlet": "Livemint",
-          "title": "Quote of the day by N Chandrasekaran on Ratan Tata: ‘Anybody who met Mr Tata came away with…’",
-          "url": "https://www.livemint.com/news/quote-of-the-day-by-n-chandrasekaran-on-ratan-tata-anybody-who-met-mr-tata-came-away-with-11786534073882.html"
-        },
-        {
-          "outlet": "BBC World",
-          "title": "Tata Group Chairman N Chandrasekaran to step down in February",
-          "url": "https://www.bbc.co.uk/news/articles/c1512909pgpo?at_medium=RSS&at_campaign=rss"
+          "title": "Ukraine Strikes Grain Terminals at Russia’s Key Black Sea Port",
+          "url": "https://www.livemint.com/news/world/ukraine-strikes-grain-terminals-at-russia-s-key-black-sea-port-11786528014102.html"
         }
       ],
-      "articles_dropped_by_diversity_cap": 1
+      "articles_dropped_by_diversity_cap": 0
     },
     {
-      "headline_hint": "Lok Sabha refers controversial FCRA Amendment Bill to Joint Parliamentary Committee",
+      "headline_hint": "Controversial Foreign Contribution Regulation Amendment Bill referred to Joint Parliamentary Committee",
       "section": "india",
       "category": "politics",
       "tier_requested": "major",
       "article_ids": [
-        12,
-        14,
-        231,
-        286
+        62,
+        63,
+        242,
+        295
       ],
       "verdict": "cut:below_floor(4<5)",
       "valid_ids": [
-        12,
-        14,
-        231,
-        286
+        62,
+        63,
+        242,
+        295
       ],
       "tier_final": "major",
       "distinct_outlets": 2,
@@ -614,20 +434,20 @@
       "articles_dropped_by_diversity_cap": 0
     },
     {
-      "headline_hint": "China says border with India generally stable amid reported standoffs in Arunachal Pradesh",
+      "headline_hint": "China responds to reports of military standoff along Arunachal Pradesh border",
       "section": "india",
       "category": "politics",
       "tier_requested": "major",
       "article_ids": [
-        128,
-        198,
-        315
+        168,
+        215,
+        319
       ],
       "verdict": "kept",
       "valid_ids": [
-        128,
-        198,
-        315
+        168,
+        215,
+        319
       ],
       "tier_final": "major",
       "distinct_outlets": 3,
@@ -660,57 +480,78 @@
       "articles_dropped_by_diversity_cap": 0
     },
     {
-      "headline_hint": "Parliamentary panel finds former High Court judge Yashwant Varma guilty over cash row",
-      "section": "india",
+      "headline_hint": "Details emerge of secret Trump plane swap in Turkey over Iranian intelligence threat",
+      "section": "world",
       "category": "politics",
-      "tier_requested": "major",
+      "tier_requested": "notable",
       "article_ids": [
-        244,
-        282
+        53,
+        184,
+        190,
+        291,
+        338
       ],
       "verdict": "cut:below_floor(4<5)",
       "valid_ids": [
-        244,
-        282
+        53,
+        184,
+        190,
+        291,
+        338
       ],
-      "tier_final": "major",
-      "distinct_outlets": 2,
+      "tier_final": "notable",
+      "distinct_outlets": 4,
       "wiki_backed": false,
       "wiki_event": "",
       "weight": 4,
       "weight_terms": {
-        "distinct_outlets": 2,
-        "tier_weight": 2,
+        "distinct_outlets": 4,
+        "tier_weight": 0,
         "wiki_bonus": 0
       },
       "weight_floor": 5,
       "articles": [
         {
-          "outlet": "Scroll.in",
-          "title": "Lok Sabha probe panel finds Justice Yashwant Varma guilty in unaccounted cash row",
-          "url": "https://scroll.in/latest/1094977/unaccounted-cash-row-charges-against-justice-yashwant-varma-proven-says-probe-panel?utm_source=rss&utm_medium=public"
+          "outlet": "BBC World",
+          "title": "Members of Trump's cabinet remained on decoy plane, after president's quiet exit",
+          "url": "https://www.bbc.co.uk/news/articles/c4g306eln8wo?at_medium=RSS&at_campaign=rss"
         },
         {
           "outlet": "Livemint",
-          "title": "‘Evasive, incomplete, misleading’: What Parliament panel said on Justice Yashwant Varma cash-at-home case",
-          "url": "https://www.livemint.com/news/india/evasive-incomplete-misleading-what-parliament-panel-said-on-justice-yashwant-varma-cash-at-home-case-11786532311434.html"
+          "title": "Iran had detailed intel on Trump’s Ankara stay, including his floor: Report",
+          "url": "https://www.livemint.com/news/us-news/iran-had-detailed-intel-on-trump-s-ankara-stay-including-his-floor-report-11786551220502.html"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "How to hide a president in plain sight: Trump’s catering caper had a Clinton precedent",
+          "url": "https://timesofindia.indiatimes.com/world/us/how-to-hide-a-president-in-plain-sight-trumps-catering-caper-had-a-clinton-precedent/articleshow/133187071.cms"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "Takeaways from Tuesday primaries. And, Iran threat prompted Trump's secret plane swap",
+          "url": "https://www.npr.org/2026/08/12/g-s1-138337/up-first-newsletter-primaries-wisconsin-minnesota-south-carolina-trump-air-force-one-iraq-iran-militias"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Watch: What is it like to travel on Air Force One with Trump?",
+          "url": "https://www.bbc.co.uk/news/videos/cy4k1jldxnwo?at_medium=RSS&at_campaign=rss"
         }
       ],
       "articles_dropped_by_diversity_cap": 0
     },
     {
-      "headline_hint": "Seven dead in Mumbai landslide following heavy rainfall",
-      "section": "india",
-      "category": "disaster",
+      "headline_hint": "US and Iraq confirm final September 30 deadline for coalition military exit",
+      "section": "world",
+      "category": "conflict",
       "tier_requested": "notable",
       "article_ids": [
-        10,
-        311
+        105,
+        150
       ],
       "verdict": "cut:below_floor(2<5)",
       "valid_ids": [
-        10,
-        311
+        105,
+        150
       ],
       "tier_final": "notable",
       "distinct_outlets": 2,
@@ -724,6 +565,52 @@
       },
       "weight_floor": 5,
       "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "Iraq says September 30 withdrawal deadline for US-led coalition ‘final’",
+          "url": "https://www.aljazeera.com/news/2026/8/12/iraq-says-sept-30-deadline-to-end-us-led-military-coalition-final?traffic_source=rss"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "After 23 years, US to pull out last troops from Iraq by September 30",
+          "url": "https://timesofindia.indiatimes.com/world/us/after-23-years-us-to-pull-out-last-troops-from-iraq-by-september-30/articleshow/133189919.cms"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "At least seven dead after rain-triggered landslide hits Mumbai",
+      "section": "india",
+      "category": "disaster",
+      "tier_requested": "notable",
+      "article_ids": [
+        54,
+        60,
+        315
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        54,
+        60,
+        315
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "Deadly India landslide kills at least seven in Mumbai",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/12/deadly-india-landslide-kills-at-least-seven-in-mumbai?traffic_source=rss"
+        },
         {
           "outlet": "The Hindu",
           "title": "Seven dead, many injured in Mumbai landslip",
