@@ -1,0 +1,848 @@
+{
+  "dials": {
+    "WEIGHT_FLOOR": 5,
+    "TIER_WEIGHT": {
+      "lead": 4,
+      "major": 2,
+      "notable": 0
+    },
+    "WIKI_BONUS": 2,
+    "HARD_CAP": 12,
+    "MIN_STORIES_IF_ANY": 3,
+    "MAX_ARTICLES_PER_STORY": 5
+  },
+  "floor_relaxed": false,
+  "kept_weights": [
+    12,
+    9,
+    8,
+    8,
+    6,
+    6,
+    6,
+    5,
+    5,
+    9,
+    7,
+    5
+  ],
+  "per_section": {
+    "world": 9,
+    "india": 3
+  },
+  "clusters": [
+    {
+      "headline_hint": "Growing strain on US naval forces in Middle East amidst Strait of Hormuz standoff with Iran",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "lead",
+      "article_ids": [
+        14,
+        16,
+        40,
+        51,
+        116,
+        133,
+        139,
+        192,
+        223,
+        246,
+        253
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        14,
+        16,
+        40,
+        51,
+        116,
+        133,
+        139,
+        192,
+        223,
+        246,
+        253
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 8,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 12,
+      "weight_terms": {
+        "distinct_outlets": 8,
+        "tier_weight": 4,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "Pete Hegseth dismisses reports of deteriorating conditions on USS Abraham Lincoln",
+          "url": "https://www.theguardian.com/us-news/2026/aug/13/uss-abraham-conditions-hegseth"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Conditions on US aircraft carrier at sea for more than 250 days raise alarms",
+          "url": "https://www.bbc.co.uk/news/articles/cyvl2d5j52lo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "US sends new carrier to West Asia amid reports of sailors jumping overboard USS Lincoln",
+          "url": "https://timesofindia.indiatimes.com/world/middle-east/us-rushes-new-carrier-to-middle-east-amid-reports-of-mental-health-crisis-on-uss-lincoln/articleshow/133223354.cms"
+        },
+        {
+          "outlet": "DW World",
+          "title": "US disputes reports of trying conditions on carrier in Gulf",
+          "url": "https://www.dw.com/en/us-disputes-reports-of-trying-conditions-on-carrier-in-gulf/a-78359084?maca=en-rss-en-world-4025-rdf"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Hegseth says US can maintain Iran blockade ‘indefinitely’ as Strait of Hormuz standoff deepens",
+          "url": "https://www.livemint.com/news/us-news/hegseth-says-us-can-maintain-iran-blockade-indefinitely-as-strait-of-hormuz-standoff-deepens-11786640504091.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 6
+    },
+    {
+      "headline_hint": "Fatalities and injuries as water and debris surge into Uttarakhand hydroelectric tunnel",
+      "section": "india",
+      "category": "disaster",
+      "tier_requested": "lead",
+      "article_ids": [
+        15,
+        47,
+        56,
+        107,
+        118,
+        181
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        15,
+        47,
+        56,
+        107,
+        118,
+        181
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 5,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 9,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 4,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "The Hindu",
+          "title": "Six workers dead, 14 injured as water, debris enter tunnel in Uttarakhand’s Chamoli",
+          "url": "https://www.thehindu.com/news/national/uttarakhand/uttarakhand-chamoli-workers-feared-inside-under-construction-thdc-tunnel/article71342539.ece"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Six dead, 2 missing after water, debris enter under-construction tunnel in U'khand",
+          "url": "https://timesofindia.indiatimes.com/city/dehradun/six-workers-dead-2-missing-after-water-debris-enter-under-construction-tunnel-in-uttarakhand/articleshow/133223387.cms"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "6 Killed, 2 Trapped As Water, Debris Enter Tunnel In Uttarakhand's Chamoli",
+          "url": "https://www.ndtv.com/india-news/several-workers-trapped-as-water-debris-enter-tunnel-in-uttarakhands-chamoli-11906228#publisher=newsstand"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Uttarakhand tunnel collapse: 6 dead, 14 injured after water and debris trap workers in Chamoli — updates",
+          "url": "https://www.livemint.com/news/india/uttarakhand-tunnel-collapse-6-workers-trapped-16-rescued-after-water-debris-chamoli-news-rescue-operation-11786638418522.html"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Landslide, then influx of debris, water: What happened at Uttarakhand tunnel mishap",
+          "url": "https://www.hindustantimes.com/india-news/landslide-then-influx-of-debris-water-what-happened-at-uttarakhand-tunnel-mishap-101786638285066.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 1
+    },
+    {
+      "headline_hint": "Former Punjab Deputy CM Sukhbir Singh Badal attacked with kirpan in Nanded",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        93,
+        141,
+        234,
+        235,
+        255,
+        265,
+        269,
+        286,
+        304
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        93,
+        141,
+        234,
+        235,
+        255,
+        265,
+        269,
+        286,
+        304
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 5,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "NDTV",
+          "title": "A Murder, A Jailbreak And Attacks On Sukhbir Badal: How A Thread Binds The 3",
+          "url": "https://www.ndtv.com/india-news/a-murder-a-jailbreak-and-attacks-on-sukhbir-badal-how-a-thread-binds-the-3-11907093#publisher=newsstand"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "Rush Hour: Sukhbir Badal attacked, UP court okays withdrawal of riot case against BJP leaders & more",
+          "url": "https://scroll.in/latest/1095009/rush-hour-sukhbir-badal-attacked-up-court-okays-withdrawal-of-riot-case-against-bjp-leaders-more?utm_source=rss&utm_medium=public"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Prayers, walk to gurdwara langar hall, then strike: Blow-by-blow account of ‘kirpan’ attack on SAD's Sukhbir Singh Badal",
+          "url": "https://www.hindustantimes.com/india-news/prayers-walk-gurdwara-langar-hall-then-strike-blow-by-blow-of-kirpan-attack-sad-sukhbir-singh-badal-nanded-101786617119754.html"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "He Did Not Flinch: Akali Dal Leader On Sukhbir Badal Attack",
+          "url": "https://www.ndtv.com/india-news/sukhbir-singh-badal-siromani-akali-dal-he-did-not-flinch-akali-dal-leader-on-sukhbir-badal-attack-11906710#publisher=newsstand"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "SAD chief Sukhbir Singh Badal injured in attack in Maharashtra’s Nanded",
+          "url": "https://scroll.in/latest/1095005/sad-chief-sukhbir-singh-badal-injured-in-attack-in-maharashtras-nanded?utm_source=rss&utm_medium=public"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 4
+    },
+    {
+      "headline_hint": "Bar Council revokes ban on NALSAR law graduates following row over Chief Justice convocation campaign",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        91,
+        114,
+        158,
+        162,
+        163,
+        165,
+        174
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        91,
+        114,
+        158,
+        162,
+        163,
+        165,
+        174
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 5,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "NDTV",
+          "title": "Bar Council's Big Step On Students Opposing Chief Justice, Then A Withdrawal",
+          "url": "https://www.ndtv.com/india-news/nalsar-chief-justice-surya-kant-bar-council-bans-2026-batch-of-top-law-college-over-chief-justice-invite-row-11906196#publisher=newsstand"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "A ban on an entire batch and a U-turn later, Bar Council seeks Nalsar report on anti-CJI campaign",
+          "url": "https://www.livemint.com/news/nalsar-bar-council-of-india-u-turn-anti-cji-campaign-lawyers-legal-11786630878474.html"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Hours after ban, BCI reverses decision on NALSAR 2026 batch over CJI invite row",
+          "url": "https://timesofindia.indiatimes.com/india/majority-of-students-innocent-bci-reverses-ban-on-nalsars-2026-batch-over-cji-invite-row/articleshow/133217740.cms"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "‘What if all legal cockroaches came together?’: CJP founder Abhijeet Dipke recalls first post amid CJI-NALSAR row",
+          "url": "https://www.hindustantimes.com/india-news/legal-cockroaches-came-together-cjp-founder-abhijeet-dipke-on-bci-nalsar-cji-surya-kant-saurav-das-101786635490613.html"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "Bar Council halts NALSAR student enrolment over campaign against CJI, withdraws order hours later",
+          "url": "https://scroll.in/latest/1095012/bar-council-withdraws-order-enrolment-of-nalsar-students-over-campaign-against-cji?utm_source=rss&utm_medium=public"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 2
+    },
+    {
+      "headline_hint": "Poland thwarts alleged Russian plot to assassinate Ukrainian-American in Warsaw",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "major",
+      "article_ids": [
+        30,
+        95,
+        109,
+        197
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        30,
+        95,
+        109,
+        197
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": true,
+      "wiki_event": "Poland announces that it has thwarted a Russian plot to kill a Ukrainian-American in Warsaw, the first time a Western leader has accused Russia of attempting to kill a U.S. citizen.",
+      "weight": 8,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "Russian plot to kill Ukrainian American thwarted in Warsaw, says Polish PM",
+          "url": "https://www.theguardian.com/world/2026/aug/13/russian-plot-kill-ukrainian-american-thwarted-poland-says-polish-pm"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Poland arrests man who allegedly tried to kill Ukrainian American",
+          "url": "https://www.aljazeera.com/news/2026/8/13/poland-arrests-man-who-allegedly-tried-to-kill-ukrainian-american?traffic_source=rss"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "Poland detains Russian over 'execution' plot in Warsaw: Tusk",
+          "url": "https://www.channelnewsasia.com/world/poland-detains-russian-over-execution-plot-in-warsaw-tusk-6318156"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Russian detained over plot to 'execute' Ukrainian-American in Warsaw, Tusk says",
+          "url": "https://www.france24.com/en/europe/20260813-poland-detains-russian-for-execution-plot-in-warsaw-tusk-says"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "WHO warns DRC Ebola outbreak could become deadliest ever as cases spread to sixth province",
+      "section": "world",
+      "category": "health",
+      "tier_requested": "major",
+      "article_ids": [
+        112,
+        153,
+        179,
+        222,
+        329
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        112,
+        153,
+        179,
+        222,
+        329
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 6,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "DR Congo Ebola outbreak spreads to a sixth province",
+          "url": "https://www.aljazeera.com/news/2026/8/13/dr-congo-ebola-outbreak-spreads-to-a-sixth-province?traffic_source=rss"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Ebola outbreak in Congo: 4,500+ infected, 2,100 dead; WHO warns of potentially deadliest epidemic ever",
+          "url": "https://www.livemint.com/news/world/ebola-outbreak-in-congo-4-500-infected-2-100-dead-who-warns-of-potentially-deadliest-epidemic-ever-11786629651230.html"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "DRC’s fast-growing Ebola outbreak spreads to sixth province",
+          "url": "https://www.theguardian.com/world/2026/aug/13/ebola-drc-democratic-republic-congo-sixth-province"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Ebola outbreak on track to be deadliest ever, WHO chief says",
+          "url": "https://www.bbc.co.uk/news/articles/cgk4pex4mn8o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Ebola outbreak caused by new ‘animal transmission’: What that means",
+          "url": "https://www.aljazeera.com/news/2026/8/13/ebola-outbreak-caused-by-new-animal-transmission-what-that-means?traffic_source=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Israeli military moves as settlers besiege Palestinian homes in West Bank, drawing US rebuke",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "major",
+      "article_ids": [
+        12,
+        29,
+        55,
+        176,
+        182,
+        193,
+        204,
+        292,
+        314
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        12,
+        29,
+        55,
+        176,
+        182,
+        193,
+        204,
+        292,
+        314
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 6,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 8,
+      "weight_terms": {
+        "distinct_outlets": 6,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "BBC World",
+          "title": "Palestinians told to leave homes in village where Israeli settlers besieged houses",
+          "url": "https://www.bbc.co.uk/news/articles/cj4kppdk2qwo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Israeli forces order families to evacuate homes in Qusra",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/13/israeli-forces-order-families-to-evacuate-homes-in-qusra?traffic_source=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Israeli troops force families from homes amid settler terror campaign in West Bank",
+          "url": "https://www.theguardian.com/world/2026/aug/13/israeli-troops-force-families-from-homes-amid-settler-terror-campaign-in-west-bank"
+        },
+        {
+          "outlet": "DW World",
+          "title": "Israeli military moves as settlers besiege 3 West Bank homes",
+          "url": "https://www.dw.com/en/israeli-military-moves-as-settlers-besiege-3-west-bank-homes/a-78355266?maca=en-rss-en-world-4025-rdf"
+        },
+        {
+          "outlet": "France 24",
+          "title": "West Bank: \"In recent weeks, we've seen a striking escalation in violent acts\"",
+          "url": "https://www.france24.com/en/video/20260813-west-bank-in-recent-weeks-we-ve-seen-a-striking-escalation-in-violent-acts"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 4
+    },
+    {
+      "headline_hint": "Rescuers race against time as critical 72-hour window closes after Colombia earthquake",
+      "section": "world",
+      "category": "disaster",
+      "tier_requested": "major",
+      "article_ids": [
+        36,
+        65,
+        129,
+        310
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        36,
+        65,
+        129,
+        310
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 6,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "Colombia earthquake: Hospitals adapt to save lives amid widespread damage",
+          "url": "https://www.aljazeera.com/news/2026/8/13/colombia-earthquake-hospitals-adapt-to-save-lives-amid-widespread-damage?traffic_source=rss"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "Colombia earthquake response enters grim phase as hope for more survivors fades",
+          "url": "https://www.channelnewsasia.com/world/colombia-earthquake-rescue-missing-people-6318201"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Colombia rescuers cling to hope as quake survival window closes",
+          "url": "https://www.france24.com/en/video/20260813-colombia-rescuers-cling-to-hope-as-quake-survival-window-closes"
+        },
+        {
+          "outlet": "DW World",
+          "title": "Colombia earthquake: Rescue operation enters 'final phase'",
+          "url": "https://www.dw.com/en/colombia-earthquake-rescue-operation-enters-final-phase/a-78345817?maca=en-rss-en-world-4025-rdf"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Ukraine proposes Black Sea shipping truce with Russia as strikes hit grain export terminals",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "major",
+      "article_ids": [
+        115,
+        119,
+        126,
+        212,
+        324
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        115,
+        119,
+        126,
+        212,
+        324
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 5,
+      "wiki_backed": true,
+      "wiki_event": "Poland announces that it has thwarted a Russian plot to kill a Ukrainian-American in Warsaw, the first time a Western leader has accused Russia of attempting to kill a U.S. citizen.",
+      "weight": 9,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "Ukraine ‘offering Russia deal to halt attacks on civilian ships in Black Sea’",
+          "url": "https://www.theguardian.com/world/2026/aug/13/ukraine-proposes-deal-with-russia-to-halt-attacks-on-civilian-ships-in-black-sea"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "Ukraine offers Russia truce in Black Sea as food supply fears mount, source says",
+          "url": "https://www.channelnewsasia.com/world/ukraine-offers-russia-truce-in-black-sea-food-supply-fears-mount-source-says-6318116"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Russia-Ukraine war: Grain hub attacks raise fears over global food prices",
+          "url": "https://www.france24.com/en/video/20260813-russia-ukraine-war-grain-hub-attacks-raise-fears-over-global-food-prices"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Ukraine attacks key Russian grain terminal on Black Sea port",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/13/13-08-sv-ukraine-russia-grain-attack-ur?traffic_source=rss"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Major Russian grain export terminals hit in Ukraine Black Sea port attack",
+          "url": "https://www.bbc.co.uk/news/articles/c5y49xp2wrno?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Japan protests Vladimir Putin's first visit to disputed Kuril Islands",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        136,
+        185,
+        201,
+        208,
+        245,
+        295
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        136,
+        185,
+        201,
+        208,
+        245,
+        295
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 5,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 5,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "NPR World",
+          "title": "Vladimir Putin's first visit to disputed Pacific islands draws Tokyo protest",
+          "url": "https://www.npr.org/2026/08/13/g-s1-138631/vladimir-putins-first-visit-to-disputed-pacific-islands-draws-tokyo-protest"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Japan protests Putin's first visit to disputed islands",
+          "url": "https://www.france24.com/en/video/20260813-japan-protests-putin-s-first-visit-to-disputed-islands"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Japan condemns Putin’s visit to Kuril Islands: What is the dispute about?",
+          "url": "https://www.livemint.com/news/world/japan-condemns-vladimir-putin-s-visit-to-kuril-islands-what-is-the-dispute-about-11786631265160.html"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "‘Absolutely unacceptable’: Japan condemns visit by Vladimir Putin to disputed Kuril Islands",
+          "url": "https://www.theguardian.com/world/2026/aug/13/japan-condemns-vladimir-putin-visit-kuril-islands"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Japan PM says Putin's visit to disputed islands 'absolutely unacceptable'",
+          "url": "https://www.bbc.co.uk/news/articles/cqx7ple0nxxo?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 1
+    },
+    {
+      "headline_hint": "Zambians vote in presidential election as Hakainde Hichilema seeks second term",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        151,
+        202,
+        214,
+        322
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        151,
+        202,
+        214,
+        322
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 4,
+      "wiki_backed": true,
+      "wiki_event": "Zambians vote to elect a president and 280 seats of the National Assembly. Incumbent president Hakainde Hichilema is running for re-election to a second term in office.",
+      "weight": 6,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 0,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "Zambian president Hichilema votes as he seeks second term",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/13/zambian-president-hichilema-votes-as-he-seeks-second-term?traffic_source=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Zambia voters weigh Hichilema's economic record",
+          "url": "https://www.france24.com/en/video/20260813-zambia-voters-weigh-hichilema-s-economic-record"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Zambians voting as president bids for second term",
+          "url": "https://www.bbc.co.uk/news/articles/c5yr8r04edvo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Zambia elections haunted by ghost of incumbent president’s arch-rival",
+          "url": "https://www.theguardian.com/world/2026/aug/13/zambia-elections-hakainde-hichilema-haunted-ghost-incumbent-president-arch-rival-edgar-lungu"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "UK and Europe experience record summer heatwave temperatures",
+      "section": "world",
+      "category": "climate",
+      "tier_requested": "notable",
+      "article_ids": [
+        50,
+        54,
+        66,
+        154
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        50,
+        54,
+        66,
+        154
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "UK sees temperatures of 38.1C, the hottest day of 2026; Greece battles wildfires after gale force winds – as it happened",
+          "url": "https://www.theguardian.com/environment/live/2026/aug/13/europe-heatwave-france-spain-italy-uk-degrees-temperature-record-summer-drought-latest-news-updates"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "UK records hottest day of year as temperature crosses 38°C in west London",
+          "url": "https://timesofindia.indiatimes.com/world/uk/uk-records-hottest-day-of-year-as-temperature-crosses-38c-in-west-london/articleshow/133221969.cms"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Europe swelters in latest wave of extreme heat",
+          "url": "https://www.aljazeera.com/news/2026/8/13/europe-swelters-in-latest-wave-of-extreme-heat?traffic_source=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "UK records hottest day of year as fifth summer heatwave reaches peak",
+          "url": "https://www.theguardian.com/environment/2026/aug/13/uk-records-hottest-day-of-the-year-fifth-summer-heatwave-peak"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Commuter train derails near Lewes in southern England, injuring passengers",
+      "section": "world",
+      "category": "disaster",
+      "tier_requested": "notable",
+      "article_ids": [
+        23,
+        63,
+        134
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        23,
+        63,
+        134
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": true,
+      "wiki_event": "A commuter train operated by GTR Southern derails near Lewes, East Sussex, United Kingdom, with at least three carriages overturning.",
+      "weight": 5,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "Passenger train derails, injuring several in southern England",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/13/passenger-train-derails-injuring-several-in-southern-england?traffic_source=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Two seriously injured after passenger train derails near Lewes in East Sussex",
+          "url": "https://www.theguardian.com/uk-news/2026/aug/13/train-derailment-east-sussex-closes-several-routes-lewes"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Passenger train derails, flips on side near UK's Lewes; rail routes disrupted",
+          "url": "https://timesofindia.indiatimes.com/world/uk/passenger-train-derails-flips-on-side-near-uks-lewes-rail-routes-disrupted/articleshow/133218887.cms"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Stricter US visa policies and bond rules impact Indian students and travelers",
+      "section": "india",
+      "category": "economy",
+      "tier_requested": "notable",
+      "article_ids": [
+        9,
+        22
+      ],
+      "verdict": "cut:below_floor(1<5)",
+      "valid_ids": [
+        9,
+        22
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 1,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 1,
+      "weight_terms": {
+        "distinct_outlets": 1,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Livemint",
+          "title": "Trump’s $20,000 US visa bond rule may expand beyond 50 countries; travel industry warns it could hurt tourism, economy",
+          "url": "https://www.livemint.com/news/us-news/trumps-20-000-us-visa-bond-rule-may-expand-beyond-50-countries-travel-industry-warns-it-could-hurt-tourism-economy-11786651487275.html"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "US colleges face 1.1 lakh drop in foreign students in 2026 amid stricter visa rules; what Indian students need to know",
+          "url": "https://www.livemint.com/news/us-news/us-colleges-face-1-1-lakh-drop-in-foreign-students-in-2026-amid-stricter-visa-rules-what-indian-students-need-to-know-11786649101711.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    }
+  ]
+}
