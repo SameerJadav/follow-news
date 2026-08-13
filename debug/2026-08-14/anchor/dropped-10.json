@@ -1,0 +1,89 @@
+{
+  "cluster_id": 10,
+  "section": "india",
+  "headline_hint": "Water and debris flood hydroelectric tunnel in Chamoli, killing several workers",
+  "reason": "body_too_short",
+  "metrics": {
+    "word_count": 68,
+    "min_body_words": 80,
+    "marker_count": 3,
+    "min_markers": 2,
+    "dropped_markers": 0,
+    "unanchored_share": 0.008,
+    "max_unanchored_share": 0.2,
+    "claim_outlets": 3,
+    "claims_available": 3,
+    "raw_body_chars": 446
+  },
+  "raw_model_output": {
+    "cluster_id": 10,
+    "headline": "Flooded Tunnel in Chamoli Kills Six Hydroelectric Project Workers",
+    "body": "At least six workers died and 14 were injured when water and debris flooded an under-construction hydroelectric tunnel in Pipalkoti, Chamoli [c74]. The flooded tunnel in Chamoli is a 2km-long Tail Race Tunnel constructed by Hindustan Construction Company for THDC [c75].\n\nThe industrial accident occurred shortly after severe water surges in the region. A Bailey Bridge at Tamak Nala in Chamoli was swept away by surging water on August 10 [c76].",
+    "vocab": [
+      {
+        "term": "hydroelectric",
+        "say": "hye-droh-ih-LEK-trik",
+        "meaning": "generating electricity using the force of moving water"
+      },
+      {
+        "term": "debris",
+        "say": "duh-BREE",
+        "meaning": "scattered pieces of waste, rock, or destroyed material"
+      }
+    ]
+  },
+  "parsed_body": "At least six workers died and 14 were injured when water and debris flooded an under-construction hydroelectric tunnel in Pipalkoti, Chamoli. The flooded tunnel in Chamoli is a 2km-long Tail Race Tunnel constructed by Hindustan Construction Company for THDC.\n\nThe industrial accident occurred shortly after severe water surges in the region. A Bailey Bridge at Tamak Nala in Chamoli was swept away by surging water on August 10.",
+  "markers": [
+    {
+      "start": 0,
+      "end": 140,
+      "claim_id": 74,
+      "outlet": "The Hindu",
+      "url": "https://www.thehindu.com/news/national/uttarakhand/uttarakhand-chamoli-workers-feared-inside-under-construction-thdc-tunnel/article71342539.ece"
+    },
+    {
+      "start": 142,
+      "end": 257,
+      "claim_id": 75,
+      "outlet": "Times of India",
+      "url": "https://timesofindia.indiatimes.com/city/dehradun/six-workers-dead-2-missing-after-water-debris-enter-under-construction-tunnel-in-uttarakhand/articleshow/133223387.cms"
+    },
+    {
+      "start": 260,
+      "end": 427,
+      "claim_id": 76,
+      "outlet": "Livemint",
+      "url": "https://www.livemint.com/news/india/uttarakhand-tunnel-collapse-6-workers-trapped-16-rescued-after-water-debris-chamoli-news-rescue-operation-11786638418522.html"
+    }
+  ],
+  "claims_available": [
+    {
+      "id": 74,
+      "cluster_id": 10,
+      "text": "At least six workers died and 14 were injured when water and debris flooded an under-construction hydroelectric tunnel in Pipalkoti, Chamoli.",
+      "kind": "event",
+      "outlet": "The Hindu",
+      "url": "https://www.thehindu.com/news/national/uttarakhand/uttarakhand-chamoli-workers-feared-inside-under-construction-thdc-tunnel/article71342539.ece",
+      "source_kind": "fulltext"
+    },
+    {
+      "id": 75,
+      "cluster_id": 10,
+      "text": "The flooded tunnel in Chamoli is a 2km-long Tail Race Tunnel constructed by Hindustan Construction Company for THDC.",
+      "kind": "background",
+      "outlet": "Times of India",
+      "url": "https://timesofindia.indiatimes.com/city/dehradun/six-workers-dead-2-missing-after-water-debris-enter-under-construction-tunnel-in-uttarakhand/articleshow/133223387.cms",
+      "source_kind": "fulltext"
+    },
+    {
+      "id": 76,
+      "cluster_id": 10,
+      "text": "A Bailey Bridge at Tamak Nala in Chamoli was swept away by surging water on August 10.",
+      "kind": "background",
+      "outlet": "Livemint",
+      "url": "https://www.livemint.com/news/india/uttarakhand-tunnel-collapse-6-workers-trapped-16-rescued-after-water-debris-chamoli-news-rescue-operation-11786638418522.html",
+      "source_kind": "fulltext"
+    }
+  ],
+  "unsourced_figures": []
+}
