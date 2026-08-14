@@ -1,28 +1,28 @@
 {
   "kind": "digest",
   "day": "2026-08-15",
-  "ok": false,
-  "started_at": "2026-08-14T20:54:03Z",
-  "finished_at": "2026-08-14T20:59:37Z",
-  "elapsed_ms": 333999,
+  "ok": true,
+  "started_at": "2026-08-14T22:49:12Z",
+  "finished_at": "2026-08-14T22:51:19Z",
+  "elapsed_ms": 127060,
   "argv": [
     "digest.py",
     "--if-missing"
   ],
   "python": "3.12.3",
-  "git_sha": "a3969a3057e20f5fc5c4ed38ff48371e9a1b004c",
+  "git_sha": "1233d08a7402d853e0a4382bfd1f11829e9c1c5a",
   "debug_level": 1,
-  "bytes_written": 8916353,
+  "bytes_written": 11561344,
   "byte_cap_reached": false,
   "env": {
     "DIGEST_DEBUG": "1",
     "CI": "true",
     "GITHUB_ACTIONS": "true",
-    "GITHUB_RUN_ID": "31839998891",
+    "GITHUB_RUN_ID": "31848057423",
     "GITHUB_RUN_ATTEMPT": "1",
     "GITHUB_WORKFLOW": "digest",
     "GITHUB_EVENT_NAME": "schedule",
-    "GITHUB_SHA": "a3969a3057e20f5fc5c4ed38ff48371e9a1b004c",
+    "GITHUB_SHA": "1233d08a7402d853e0a4382bfd1f11829e9c1c5a",
     "GITHUB_REF": "refs/heads/main",
     "RUNNER_OS": "Linux"
   },
@@ -68,7 +68,7 @@
   "stages": [
     {
       "stage": "gather",
-      "ms": 2342,
+      "ms": 2080,
       "error": ""
     },
     {
@@ -78,33 +78,43 @@
     },
     {
       "stage": "wikipedia",
-      "ms": 146,
+      "ms": 238,
       "error": ""
     },
     {
       "stage": "select",
-      "ms": 23932,
+      "ms": 24947,
       "error": ""
     },
     {
       "stage": "rank",
-      "ms": 2,
+      "ms": 3,
       "error": ""
     },
     {
       "stage": "extract",
-      "ms": 37953,
+      "ms": 44559,
       "error": ""
     },
     {
       "stage": "claims",
-      "ms": 267783,
-      "error": "RemoteProtocolError('Server disconnected without sending a response.')"
+      "ms": 21948,
+      "error": ""
+    },
+    {
+      "stage": "write",
+      "ms": 31352,
+      "error": ""
+    },
+    {
+      "stage": "render",
+      "ms": 82,
+      "error": ""
     }
   ],
   "window": {
     "since": "2026-08-13T23:11:34+00:00",
-    "now": "2026-08-14T20:54:05.047369+00:00",
+    "now": "2026-08-14T22:49:14.067081+00:00",
     "prev_generated_at": "2026-08-13 23:11:34+00:00"
   }
 }

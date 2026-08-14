@@ -4,19 +4,19 @@
   "live": 13,
   "degraded": false,
   "by_outlet_after_dedupe": {
+    "Guardian World": 29,
+    "Times of India": 48,
     "The Hindu": 60,
-    "Channel News Asia": 18,
-    "Times of India": 47,
-    "BBC World": 18,
-    "France 24": 23,
-    "Guardian World": 27,
-    "DW World": 5,
+    "DW World": 7,
+    "NPR World": 7,
+    "Channel News Asia": 20,
+    "Livemint": 35,
     "Al Jazeera": 25,
     "NDTV": 20,
+    "BBC World": 18,
+    "France 24": 23,
     "Hindustan Times": 100,
-    "Livemint": 35,
-    "Scroll.in": 28,
-    "NPR World": 6
+    "Scroll.in": 28
   },
   "feeds": [
     {
@@ -55,8 +55,8 @@
       "outlet": "DW World",
       "url": "https://rss.dw.com/rdf/rss-en-world",
       "http": 200,
-      "raw_items": 12,
-      "usable": 12,
+      "raw_items": 13,
+      "usable": 13,
       "error": ""
     },
     {
@@ -272,14 +272,6 @@
     {
       "reason": "out_of_window",
       "outlet": "Guardian World",
-      "title": "Canadian airline cancels flight after child refuses to wear seatbelt",
-      "url": "https://www.theguardian.com/business/2026/aug/11/canadian-airline-cancels-flight-after-child-refuses-to-wear-seatbelt",
-      "published": "2026-08-11 14:03:28+00:00",
-      "since": "2026-08-13 23:11:34+00:00"
-    },
-    {
-      "reason": "out_of_window",
-      "outlet": "Guardian World",
       "title": "‘Absolutely unacceptable’: Japan condemns visit by Vladimir Putin to disputed Kuril Islands",
       "url": "https://www.theguardian.com/world/2026/aug/13/japan-condemns-vladimir-putin-visit-kuril-islands",
       "published": "2026-08-13 12:56:57+00:00",
@@ -315,14 +307,6 @@
       "title": "Israeli militants besiege two Palestinian families in their West Bank homes",
       "url": "https://www.theguardian.com/world/2026/aug/12/israeli-militants-besiege-two-palestinian-families-in-their-west-bank-homes",
       "published": "2026-08-13 06:45:27+00:00",
-      "since": "2026-08-13 23:11:34+00:00"
-    },
-    {
-      "reason": "out_of_window",
-      "outlet": "Guardian World",
-      "title": "Israel deliberately starting wildfires in southern Lebanon, firefighters say",
-      "url": "https://www.theguardian.com/world/2026/aug/12/israel-deliberately-starting-wildfires-in-southern-lebanon-firefighters-say",
-      "published": "2026-08-12 16:17:55+00:00",
       "since": "2026-08-13 23:11:34+00:00"
     },
     {
@@ -391,14 +375,6 @@
     },
     {
       "reason": "out_of_window",
-      "outlet": "NPR World",
-      "title": "By sky and sea, Ukraine's drone strikes challenge Russia's grip on Crimea",
-      "url": "https://www.npr.org/2026/08/13/nx-s1-5904418/ukraine-crimea-russia-drone-strikes",
-      "published": "2026-08-13 15:18:27+00:00",
-      "since": "2026-08-13 23:11:34+00:00"
-    },
-    {
-      "reason": "out_of_window",
       "outlet": "DW World",
       "title": "Romania shuts nuclear plant, Hungary dams dry Danube River",
       "url": "https://www.dw.com/en/romania-shuts-nuclear-plant-hungary-dams-dry-danube-river/a-78359581?maca=en-rss-en-world-4025-rdf",
@@ -443,22 +419,6 @@
       "title": "Eritrea, a rising power along a global shipping artery",
       "url": "https://www.dw.com/en/eritrea-a-rising-power-along-a-global-shipping-artery/a-78335316?maca=en-rss-en-world-4025-rdf",
       "published": "2026-08-13 11:44:00+00:00",
-      "since": "2026-08-13 23:11:34+00:00"
-    },
-    {
-      "reason": "out_of_window",
-      "outlet": "DW World",
-      "title": "What would a North Korean troop surge mean for Ukraine war?",
-      "url": "https://www.dw.com/en/what-would-a-north-korean-troop-surge-mean-for-ukraine-war/a-78350896?maca=en-rss-en-world-4025-rdf",
-      "published": "2026-08-13 10:54:00+00:00",
-      "since": "2026-08-13 23:11:34+00:00"
-    },
-    {
-      "reason": "out_of_window",
-      "outlet": "Times of India",
-      "title": "NJ took seaside property in 1962 via eminent domain, family awarded $350,000",
-      "url": "https://timesofindia.indiatimes.com/world/us/in-1962-new-jersey-took-a-familys-seaside-property-through-eminent-domain-for-a-new-park-they-challenged-the-price-and-were-awarded-350000/articleshow/133220258.cms",
-      "published": "2026-08-13 17:44:57+00:00",
       "since": "2026-08-13 23:11:34+00:00"
     },
     {
@@ -1042,20 +1002,6 @@
       "outlet": "France 24",
       "title": "France's constitutional authority strikes down social media ban for under-15s",
       "url": "https://www.france24.com/en/france/20260814-france-s-constitutional-authority-strikes-down-social-media-ban-for-under-15s",
-      "collided_with": "https://www.france24.com/en/france/20260814-france-s-constitutional-authority-strikes-down-social-media-ban-for-under-15s"
-    },
-    {
-      "reason": "dup_title",
-      "outlet": "Channel News Asia",
-      "title": "Qatar challenges AFC over open letter attacking FIFA president Infantino",
-      "url": "https://www.channelnewsasia.com/sport/qatar-challenges-afc-over-open-letter-attacking-fifa-president-infantino-6320231",
-      "collided_with": "https://www.aljazeera.com/sports/2026/8/14/qatar-challenges-afc-over-open-letter-attacking-fifa-president-infantino?traffic_source=rss"
-    },
-    {
-      "reason": "dup_title",
-      "outlet": "Channel News Asia",
-      "title": "France's constitutional authority strikes down social media ban for under-15s",
-      "url": "https://www.channelnewsasia.com/world/frances-constitutional-authority-strikes-down-social-media-ban-under-15s-6320181",
       "collided_with": "https://www.france24.com/en/france/20260814-france-s-constitutional-authority-strikes-down-social-media-ban-for-under-15s"
     }
   ]
