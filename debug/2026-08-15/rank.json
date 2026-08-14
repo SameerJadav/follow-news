@@ -1,0 +1,873 @@
+{
+  "dials": {
+    "WEIGHT_FLOOR": 5,
+    "TIER_WEIGHT": {
+      "lead": 4,
+      "major": 2,
+      "notable": 0
+    },
+    "WIKI_BONUS": 2,
+    "HARD_CAP": 12,
+    "MIN_STORIES_IF_ANY": 3,
+    "MAX_ARTICLES_PER_STORY": 5
+  },
+  "floor_relaxed": false,
+  "kept_weights": [
+    9,
+    8,
+    7,
+    6,
+    9,
+    6
+  ],
+  "per_section": {
+    "world": 4,
+    "india": 2
+  },
+  "clusters": [
+    {
+      "headline_hint": "US replaces USS Abraham Lincoln in Middle East amid concerns over record deployment",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "lead",
+      "article_ids": [
+        1,
+        8,
+        11,
+        279,
+        284,
+        300,
+        314
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        1,
+        8,
+        11,
+        279,
+        284,
+        300,
+        314
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 5,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 9,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 4,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Channel News Asia",
+          "title": "Trump says will 'soon' declare Hormuz strait US territory",
+          "url": "https://www.channelnewsasia.com/world/hormuz-trump-us-territory-soon-declare-iran-6320596"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Trump says record Navy deployment in Iran operations 'not nearly long enough'",
+          "url": "https://www.france24.com/en/middle-east/20260814-trump-says-record-navy-deployment-in-iran-operations-not-nearly-long-enough"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Trump dismisses concerns about USS Abraham Lincoln, saying its record-breaking 250 days at sea ‘not nearly enough’ – live",
+          "url": "https://www.theguardian.com/us-news/live/2026/aug/14/donald-trump-speech-crime-safety-new-york-republicans-midterms-us-politics-latest-news-updates"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "Feds probe 'mention markets.' And, lawmakers call for investigation into USS Lincoln",
+          "url": "https://www.npr.org/2026/08/14/g-s1-138735/up-first-newsletter-mention-markets-kalshi-pentagon-uss-lincoln-ukraine-russia-crimea-kennedy-center"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "US to replace USS Abraham Lincoln amid Iran war? Reports flag poor living conditions on aircraft carrier, govt denies",
+          "url": "https://www.livemint.com/news/us-news/us-to-replace-uss-abraham-lincoln-amid-iran-war-why-reports-flag-poor-living-conditions-on-aircraft-carrier-govt-denies-11786696195970.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 2
+    },
+    {
+      "headline_hint": "Luigi Mangione pleads guilty to federal charges in UnitedHealthcare CEO killing",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        93,
+        143,
+        171,
+        178,
+        323
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        93,
+        143,
+        171,
+        178,
+        323
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": true,
+      "wiki_event": "Luigi Mangione pleads guilty in the U.S. District Court for the Southern District of New York for the killing of former UnitedHealthcare CEO Brian Thompson.",
+      "weight": 8,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "Luigi Mangione pleads guilty in UnitedHealthcare CEO’s killing",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/14/luigi-mangione-pleads-guilty-in-unitedhealthcare-ceos-killing?traffic_source=rss"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "'I shot him': Luigi Mangione pleads guilty to killing United Healthcare CEO",
+          "url": "https://timesofindia.indiatimes.com/world/us/i-shot-him-luigi-mangione-pleads-guilty-to-killing-united-healthcare-ceo-sentencing-on-dec-18/articleshow/133247371.cms"
+        },
+        {
+          "outlet": "DW World",
+          "title": "Luigi Mangione pleads guilty to federal stalking charges in Brian Thompson death",
+          "url": "https://www.dw.com/en/luigi-mangione-pleads-guilty-to-federal-stalking-charges-in-brian-thompson-death/a-78375740?maca=en-rss-en-world-4025-rdf"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Watch: What happens if Luigi Mangione pleads guilty today?",
+          "url": "https://www.bbc.co.uk/news/videos/c36dyep3k1ko?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Mangione pleads guilty to federal charges in UnitedHealthcare CEO killing",
+          "url": "https://www.aljazeera.com/news/2026/8/14/mangione-pleads-guilty-to-federal-charges-in-unitedhealthcare-ceo-killing?traffic_source=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Raging wildfires force thousands to evacuate across Europe during severe heatwave",
+      "section": "world",
+      "category": "disaster",
+      "tier_requested": "major",
+      "article_ids": [
+        6,
+        7,
+        135,
+        162,
+        187,
+        190,
+        275,
+        287,
+        289
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        6,
+        7,
+        135,
+        162,
+        187,
+        190,
+        275,
+        287,
+        289
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 5,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Channel News Asia",
+          "title": "Hundreds evacuated from Croatian and Greek resorts as wildfires stretch across Europe",
+          "url": "https://www.channelnewsasia.com/world/wildfire-europe-heatwave-croatia-resort-6320581"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Dozens injured and thousands evacuated in Croatia wildfire",
+          "url": "https://www.bbc.co.uk/news/articles/c9342wn2x27o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Hundreds arrested on suspicion of arson in France as wildfires rage across Europe",
+          "url": "https://www.theguardian.com/world/2026/aug/14/arrested-suspicion-starting-wildfires-europe-france"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Europe: Raging wildfires scorch large swaths of the continent",
+          "url": "https://www.france24.com/en/video/20260814-europe-raging-wildfires-scorch-large-swaths-of-the-continent"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "From Europe to Asia, floods to heatwaves, world experiences weather shocks",
+          "url": "https://www.npr.org/2026/08/14/g-s1-138727/europe-asia-floods-heatwaves-world-weather"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 4
+    },
+    {
+      "headline_hint": "French court strikes down President Macron's proposed social media ban for under-15s",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        124,
+        146,
+        169,
+        188,
+        238
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        124,
+        146,
+        169,
+        188,
+        238
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "French court blocks Macron’s social media ban for under-15s",
+          "url": "https://www.theguardian.com/world/2026/aug/14/french-court-blocks-macron-social-media-ban-under-15s"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "France's top court blocks social media ban for under-15s",
+          "url": "https://www.bbc.co.uk/news/articles/cx2vj433xqlo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Top French court upholds assisted dying law, rejects teen social media ban",
+          "url": "https://www.aljazeera.com/news/2026/8/14/top-french-court-upholds-assisted-dying-law-rejects-teen-social-media-ban?traffic_source=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "France blocks under 15 social media ban",
+          "url": "https://www.france24.com/en/france-blocks-under-15-social-media-ban"
+        },
+        {
+          "outlet": "France 24",
+          "title": "🔴 France's constitutional authority strikes down social media ban for under-15s",
+          "url": "https://www.france24.com/en/france/20260814-france-s-constitutional-authority-strikes-down-social-media-ban-for-under-15s"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Zambia suspends election vote counting nationwide following election day violence",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        151,
+        179,
+        269
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        151,
+        179,
+        269
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "BBC World",
+          "title": "Zambia vote counting resumes after pause over alleged attacks on polling staff",
+          "url": "https://www.bbc.co.uk/news/articles/c5yr8r04edvo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Zambia suspends vote counting in election citing violence",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/14/zambia-suspends-vote-counting-in-election-citing-violence?traffic_source=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Zambia suspends vote count nationwide amid reports of violence, ballot theft",
+          "url": "https://www.france24.com/en/africa/20260814-zambia-suspends-election-vote-counting-over-reports-of-violence"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "American missionary Kevin Rideout released in Niger after nine months in captivity",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "notable",
+      "article_ids": [
+        200,
+        250,
+        263,
+        291
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        200,
+        250,
+        263,
+        291
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 4,
+      "wiki_backed": true,
+      "wiki_event": "American missionary Kevin Rideout is released from captivity after being kidnapped by an unidentified organisation front in Niger nine months prior.",
+      "weight": 6,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 0,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "American missionary kidnapped in Niger freed after nine months",
+          "url": "https://www.theguardian.com/world/2026/aug/14/american-missionary-kevin-rideout-niger-released-kidnapping"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "US missionary kidnapped in Niger released after nine months in captivity",
+          "url": "https://www.aljazeera.com/news/2026/8/14/us-missionary-kidnapped-in-niger-released-after-nine-months-in-captivity?traffic_source=rss"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "U.S. missionary who was kidnapped in Niger is released",
+          "url": "https://www.npr.org/2026/08/14/nx-s1-5931225/kidnapped-us-missionary-released"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "US missionary released following kidnap in Niger, Christian group says",
+          "url": "https://www.bbc.co.uk/news/articles/ckg40jvvkp7o?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Record rainfall in Japan causes deadly flooding and strands thousands at Narita Airport",
+      "section": "world",
+      "category": "disaster",
+      "tier_requested": "notable",
+      "article_ids": [
+        239,
+        272,
+        288
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        239,
+        272,
+        288
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "‘Unprecedented’ rain kills five in Japan as thousands stranded at airport",
+          "url": "https://www.theguardian.com/world/2026/aug/14/japan-deadly-rain-evacuation-thousands-stranded-tokyo-airport-weather"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Japan: Record rains kill eight, strand thousands at Narita airport",
+          "url": "https://www.france24.com/en/video/20260814-japan-record-rains-kill-eight-strand-thousands-at-narita-airport"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "'Unprecedented' rain in Japan kills eight people",
+          "url": "https://www.bbc.co.uk/news/articles/cq561gpen8lo?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Trump administration asks US Supreme Court to permit White House ballroom construction",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        43,
+        46,
+        49,
+        182
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        43,
+        46,
+        49,
+        182
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "BBC World",
+          "title": "Trump asks Supreme Court to allow ballroom work to continue",
+          "url": "https://www.bbc.co.uk/news/articles/c3v0yz2r4wlo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Trump asks US Supreme Court to allow $400m ballroom project to proceed",
+          "url": "https://www.aljazeera.com/news/2026/8/14/trump-asks-us-supreme-court-to-allow-400m-ballroom-project-to-proceed?traffic_source=rss"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "Trump asks US Supreme Court to approve White House ballroom project",
+          "url": "https://www.channelnewsasia.com/world/white-house-ballroom-project-trump-court-6320486"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Trump asks Supreme Court to allow White House ballroom construction to continue",
+          "url": "https://www.livemint.com/news/us-news/trump-asks-supreme-court-to-allow-white-house-ballroom-construction-to-continue-11786720919310.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "President Murmu addresses nation on eve of 80th Independence Day, highlighting exam reforms and national security",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "lead",
+      "article_ids": [
+        14,
+        53,
+        76,
+        110,
+        204,
+        208,
+        220,
+        242,
+        257,
+        261,
+        267
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        14,
+        53,
+        76,
+        110,
+        204,
+        208,
+        220,
+        242,
+        257,
+        261,
+        267
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 5,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 9,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 4,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "Public exams to become more transparent, secure and trustworthy: President Murmu",
+          "url": "https://timesofindia.indiatimes.com/india/public-exams-to-become-more-transparent-secure-and-trustworthy-president-murmu/articleshow/133251351.cms"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "Defence production rises nearly four-fold to ₹1.78 lakh crore, says Rajnath Singh",
+          "url": "https://www.thehindu.com/news/national/defence-production-rises-nearly-four-fold-to-178-lakh-crore-says-rajnath-singh/article71346269.ece"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "India Ushers In 80th Independence Day, PM Modi To Address Nation From Red Fort",
+          "url": "https://www.ndtv.com/india-news/india-ushers-in-80th-independence-day-pm-modi-to-address-nation-from-red-fort-11911926#publisher=newsstand"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Public exams gateways to opportunities, govt taking steps to curb unfair means: Murmu on I-Day eve",
+          "url": "https://www.hindustantimes.com/india-news/public-exams-gateways-to-opportunities-govt-taking-comprehensive-steps-murmu-on-i-day-eve-101786729130907.html"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "'Exams must be more secure': President Murmu on paper leak reforms | Key takeaways from her I-Day eve address",
+          "url": "https://www.livemint.com/news/india/exams-must-be-more-secure-president-murmu-on-paper-leak-reforms-key-takeaways-from-her-i-day-eve-address-11786718444810.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 6
+    },
+    {
+      "headline_hint": "India and Pakistan trade sharp remarks over suspension of Indus Waters Treaty",
+      "section": "india",
+      "category": "conflict",
+      "tier_requested": "major",
+      "article_ids": [
+        59,
+        80,
+        228,
+        243
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        59,
+        80,
+        228,
+        243
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 6,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "'Our blood has been sucked': J&amp;K CM Omar hits back at Pak PM Shehbaz over IWT",
+          "url": "https://timesofindia.indiatimes.com/india/in-response-to-pak-pm-sharif-jk-cm-omar-says-iwt-sucked-our-blood-calls-for-its-cancellation/articleshow/133250554.cms"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "\"Sucked Our Blood\": Omar Abdullah Slams Pak PM On Indus Waters",
+          "url": "https://www.ndtv.com/india-news/sucked-our-blood-omar-abdullah-slams-pakistan-pm-shahbaz-sharif-on-indus-waters-treaty-11911790#publisher=newsstand"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "India's position on Indus Waters Treaty unchanged, says MEA after Pak PM's 'water is our red line' remark",
+          "url": "https://www.livemint.com/news/india/indias-position-on-indus-waters-treaty-unchanged-says-mea-after-pak-pms-water-is-our-red-line-remark-11786714895336.html"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Pakistan PM’s ‘red line’ warning to India over water treaty",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/14/14-08-clip-pakistan-warns-india-over-indus-pk?traffic_source=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Lok Sabha Secretariat asks Rahul Gandhi for response on privilege notice over Amit Shah remarks",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        108,
+        118,
+        126
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        108,
+        118,
+        126
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "NDTV",
+          "title": "Lok Sabha Seeks Rahul Gandhi's Reply On Privilege Notice Over Amit Shah Remark",
+          "url": "https://www.ndtv.com/india-news/lok-sabha-seeks-rahul-gandhis-reply-on-privilege-notice-over-amit-shah-remark-11911748#publisher=newsstand"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Lok Sabha Secretariat seeks Rahul Gandhi’s response to privilege notices over Amit Shah remarks by August 28",
+          "url": "https://www.hindustantimes.com/india-news/lok-sabha-secretariat-seeks-rahul-gandhi-s-response-to-privilege-notices-over-amit-shah-remarks-by-august-28-101786726710309.html"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "LS panel sends notice to Rahul over 'unparliamentary' remarks against Shah",
+          "url": "https://timesofindia.indiatimes.com/india/lok-sabha-panel-seeks-rahul-gandhis-response-on-privilege-notices-over-remarks-against-amit-shah/articleshow/133248206.cms"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "CJI and Supreme Court question Bar Council over action against protesting NALSAR students",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        44,
+        195,
+        294,
+        315,
+        320
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        44,
+        195,
+        294,
+        315,
+        320
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "CJI, Nalsar students have one query for BCI: ‘Who are you?’",
+          "url": "https://timesofindia.indiatimes.com/india/cji-nalsar-students-have-one-query-for-bci-who-are-you/articleshow/133250785.cms"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "‘Absolutely uncalled for’: CJI slams Bar Council’s bid to take action against NALSAR students",
+          "url": "https://scroll.in/latest/1095045/absolutely-uncalled-for-cji-slams-bar-councils-bid-to-take-action-against-nalsar-students?utm_source=rss&utm_medium=public"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "The protest was about the Chief Justice of India. The fallout is about the Bar CounciI of India",
+          "url": "https://www.livemint.com/news/india/supreme-court-c-pulls-up-bci-over-action-against-nalsar-students-questions-regulator-s-powers-11786696490750.html"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "Bar Council drops inquiry against NALSAR students who opposed invite to CJI for convocation",
+          "url": "https://scroll.in/latest/1095017/bar-council-drops-inquiry-against-students-who-opposed-invite-to-cji-for-convocation?utm_source=rss&utm_medium=public"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "What the Bar Council’s bid to curb NALSAR students says about university autonomy",
+          "url": "https://scroll.in/article/1095014/what-the-bar-councils-bid-to-curb-nalsar-students-says-about-university-autonomy?utm_source=rss&utm_medium=public"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Centre removes 20-year-old 12-minute per hour advertisement limit on TV channels",
+      "section": "india",
+      "category": "economy",
+      "tier_requested": "notable",
+      "article_ids": [
+        99,
+        144,
+        184
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        99,
+        144,
+        184
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "NDTV",
+          "title": "Centre Drops 12-Minute-Per-Hour Advertisement Cap On TV Channels",
+          "url": "https://www.ndtv.com/india-news/centre-drops-12-minute-per-hour-advertisement-cap-on-tv-channels-11911808#publisher=newsstand"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Ad breaks to get longer: Centre scraps 20-year-old 12-minute cap on TV — What does it mean for viewers?",
+          "url": "https://www.livemint.com/news/india/ad-breaks-to-get-longer-centre-scraps-20-year-old-12-minute-cap-on-tv-what-does-it-mean-for-viewers-11786722555520.html"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "TV channels can now run more than 12 minutes of ads under new rules",
+          "url": "https://www.hindustantimes.com/india-news/tv-channels-can-now-run-more-than-12-minutes-of-ads-under-new-rules-government-centre-television-advertisement-101786720930083.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Supreme Court quashes criminal defamation complaint against Rahul Gandhi over Savarkar remarks",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        258,
+        301
+      ],
+      "verdict": "cut:below_floor(2<5)",
+      "valid_ids": [
+        258,
+        301
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 2,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Scroll.in",
+          "title": "SC quashes defamation complaint against Rahul Gandhi for remarks about VD Savarkar",
+          "url": "https://scroll.in/latest/1095026/sc-quashes-defamation-complaint-against-rahul-gandhi-for-remarks-about-vd-savarkar?utm_source=rss&utm_medium=public"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Supreme Court quashes criminal defamation case against Rahul Gandhi over Savarkar remarks",
+          "url": "https://www.livemint.com/news/india/supreme-court-quashes-criminal-defamation-case-against-rahul-gandhi-over-savarkar-remarks-11786697672384.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "India and Russia hold talks to deepen strategic cooperation on Northern Sea Route",
+      "section": "india",
+      "category": "economy",
+      "tier_requested": "notable",
+      "article_ids": [
+        102,
+        152
+      ],
+      "verdict": "cut:below_floor(2<5)",
+      "valid_ids": [
+        102,
+        152
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 2,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "NDTV",
+          "title": "After Putin's Remarks, India Confirms Talks On Northern Sea Route With Russia",
+          "url": "https://www.ndtv.com/india-news/after-putins-remarks-india-confirms-talks-on-northern-sea-route-with-russia-11911780#publisher=newsstand"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "India, Russia discuss deeper cooperation on Northern Sea Route amid Moscow's Arctic trade push: MEA",
+          "url": "https://www.livemint.com/news/india/india-russia-discuss-deeper-cooperation-on-northern-sea-route-amid-moscows-arctic-trade-push-mea-11786724067708.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Maharashtra FDA suspends licences of quick-commerce hubs over food safety breaches",
+      "section": "india",
+      "category": "health",
+      "tier_requested": "notable",
+      "article_ids": [
+        115,
+        119
+      ],
+      "verdict": "cut:below_floor(2<5)",
+      "valid_ids": [
+        115,
+        119
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 2,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "Cockroaches, expired food: FDA suspends licences of Blinkit, Zepto, Instamart hubs",
+          "url": "https://timesofindia.indiatimes.com/india/cockroaches-expired-food-maharashtra-fda-suspends-14-licences-linked-to-blinkit-zepto-instamart/articleshow/133248610.cms"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Maharashtra FDA suspends licences of multiple facilities linked to Blinkit, Zepto, Instamart over food safety violations",
+          "url": "https://www.hindustantimes.com/india-news/maharashtra-fda-suspends-licences-of-multiple-facilities-linked-to-blinkit-zepto-instamart-over-food-safety-violations-101786723937965.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    }
+  ]
+}
