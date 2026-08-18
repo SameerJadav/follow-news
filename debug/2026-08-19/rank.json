@@ -1,0 +1,567 @@
+{
+  "dials": {
+    "WEIGHT_FLOOR": 5,
+    "TIER_WEIGHT": {
+      "lead": 4,
+      "major": 2,
+      "notable": 0
+    },
+    "WIKI_BONUS": 2,
+    "HARD_CAP": 12,
+    "MIN_STORIES_IF_ANY": 3,
+    "MAX_ARTICLES_PER_STORY": 5
+  },
+  "floor_relaxed": false,
+  "kept_weights": [
+    9,
+    8,
+    5,
+    5,
+    8,
+    8,
+    7,
+    6
+  ],
+  "per_section": {
+    "world": 4,
+    "india": 4
+  },
+  "clusters": [
+    {
+      "headline_hint": "UAE intercepts Iranian missiles as US-Iran conflict escalates in Strait of Hormuz",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "lead",
+      "article_ids": [
+        36,
+        38,
+        119,
+        171,
+        248
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        36,
+        38,
+        119,
+        171,
+        248
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 2,
+      "wiki_backed": true,
+      "wiki_event": "The United Kingdom Maritime Trade Operations reports that a cargo vessel has come under attack in the Strait of Hormuz, leaving one dead.",
+      "weight": 8,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 4,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Livemint",
+          "title": "‘Some dreams are too far from reality’: Iran mocks Trump’s Hormuz claims with map",
+          "url": "https://www.livemint.com/news/us-news/some-dreams-are-too-far-from-reality-iran-mocks-trump-s-hormuz-claims-with-map-11787081191439.html"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "'Ready to deal with any threats': UAE vows response after Iran fires two missiles",
+          "url": "https://timesofindia.indiatimes.com/world/middle-east/ready-to-deal-with-any-threats-uae-vows-response-after-iran-fires-two-missiles/articleshow/133328252.cms"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "UAE Says Iran Fired Two Missiles at Country as War Drags On",
+          "url": "https://www.livemint.com/news/world/uae-says-iran-fired-two-missiles-at-country-as-war-drags-on-11787081323283.html"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "UAE lifts alert after Iran fires two ballistic missiles toward territory; neither hit land",
+          "url": "https://www.livemint.com/news/world/uae-on-alert-air-defence-systems-detect-missile-threat-authorities-urge-residents-to-seek-safe-locations-11787067619441.html"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Trump shares AI image calling Strait of Hormuz ‘NEW US Territory’ as Iran vows to keep waterway closed",
+          "url": "https://www.livemint.com/news/us-news/trump-shares-image-calling-strait-of-hormuz-new-us-territory-as-iran-vows-to-keep-waterway-closed-11787056817011.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "US imposes sanctions on top International Criminal Court officials",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        4,
+        11,
+        18,
+        52,
+        74
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        4,
+        11,
+        18,
+        52,
+        74
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 5,
+      "wiki_backed": true,
+      "wiki_event": "Pakistan's Supreme Court orders imprisoned former prime minister Imran Khan transferred from the central jail in Rawalpindi, Punjab, to Shifa International Hospital in Islamabad for medical examinations following a petition by his lawyers c",
+      "weight": 9,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "France 24",
+          "title": "ICC says US sanctions on top court members 'undermine rule of law'",
+          "url": "https://www.france24.com/en/americas/20260818-icc-says-us-sanctions-on-top-court-members-undermine-rule-of-law"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "US announces new sanctions on top ICC figures",
+          "url": "https://www.bbc.co.uk/news/articles/cnvnl0elz47o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "US sanctions International Criminal Court president and trial lawyer",
+          "url": "https://www.aljazeera.com/news/2026/8/18/us-sanctions-international-criminal-court-president-and-trial-lawyer?traffic_source=rss"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "US sanctions ICC president Tomoko Akane over Israel and Afghanistan investigations",
+          "url": "https://www.livemint.com/news/us-news/us-sanctions-icc-president-tomoko-akane-over-israel-and-afghanistan-investigations-11787079838450.html"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "US sanctions International Criminal Court chief Tomoko Akane of Japan",
+          "url": "https://www.channelnewsasia.com/world/icc-us-sanctions-rubio-akane-6326636"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Disney and ABC file lawsuit against US regulator over license renewal dispute",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        0,
+        1,
+        147
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        0,
+        1,
+        147
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 5,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "ABC is ‘right to stand up to pressure tactics’ from Trump administration, say media advocacy organizations – US politics live",
+          "url": "https://www.theguardian.com/us-news/live/2026/aug/18/donald-trump-florida-alaska-wyoming-primaries-midterms-white-house-ballroom-iran-cnn-latest-news-updates"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Disney and ABC sue Trump's media regulator to stop early licence renewal",
+          "url": "https://www.bbc.co.uk/news/articles/cx2rzr49vr2o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Disney sues US regulator, claiming political retaliation over ABC stations",
+          "url": "https://www.aljazeera.com/economy/2026/8/18/disney-sues-us-regulator-claiming-political-retaliation-over-abc-stations?traffic_source=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Earthquake strikes Granada in Spain, causing damage and evacuations",
+      "section": "world",
+      "category": "disaster",
+      "tier_requested": "notable",
+      "article_ids": [
+        117,
+        129,
+        167
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        117,
+        129,
+        167
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": true,
+      "wiki_event": "A second {{M|w|4.7}} earthquake strikes the province of Granada, in Spain. Damage and injures are reported in Granada and the surrounding area, while the Alhambra is evacuated.",
+      "weight": 5,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "BBC World",
+          "title": "Earthquake rocks Spain's historic Granada, injuring three",
+          "url": "https://www.bbc.co.uk/news/articles/cdx755dyy1yo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "Three lightly injured as new quake hits Spain's Granada",
+          "url": "https://www.channelnewsasia.com/world/spain-granada-earthquake-three-injured-6326461"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Belgian firefighters push to encircle ‘largest wildfire in a century’ – as it happened",
+          "url": "https://www.theguardian.com/world/live/2026/aug/18/ukraine-drone-attack-moscow-crimea-russia-nato-wildfires-europe-live-latest-updates"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Hakainde Hichilema re-elected as president of Zambia",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        126,
+        302
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        126,
+        302
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": true,
+      "wiki_event": "Zambian president Hakainde Hichilema is declared the winner by the electoral commission, re-electing him to a second term.",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "BBC World",
+          "title": "Zambia's Hichilema re-elected president as main rival in hiding over alleged threats",
+          "url": "https://www.bbc.co.uk/news/articles/c5y6j4jl03xo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "DW World",
+          "title": "Zambia election marred by irregularities, 'militia' arrests",
+          "url": "https://www.dw.com/en/zambia-election-marred-by-irregularities-militia-arrests/a-78400154?maca=en-rss-en-world-4025-rdf"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Former Delhi minister Satyendar Jain arrested in Jal Board corruption case",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "lead",
+      "article_ids": [
+        130,
+        136,
+        145,
+        172,
+        174,
+        176
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        130,
+        136,
+        145,
+        172,
+        174,
+        176
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 8,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 4,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "NDTV",
+          "title": "Satyendar Jain Arrest: Case Will Be Proven Fake, Says Arvind Kejriwal",
+          "url": "https://www.ndtv.com/india-news/satyendar-jain-arrest-case-will-be-proven-fake-says-arvind-kejriwal-11927524#publisher=newsstand"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Kejriwal attacks BJP after Satyendar Jain's arrest, calls it 'dictatorship'",
+          "url": "https://timesofindia.indiatimes.com/india/kejriwal-attacks-bjp-after-satyendar-jains-arrest-calls-it-dictatorship/articleshow/133327377.cms"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Arvind Kejriwal says Satyendar Jain arrested at BJP's 'behest': 'Lies will be exposed again'",
+          "url": "https://www.hindustantimes.com/india-news/arvind-kejriwal-says-satyendar-jain-arrested-at-bjps-behest-lies-will-be-exposed-again-djb-corruption-aap-chief-101787069539278.html"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Ex-Delhi minister and AAP leader Satyendar Jain arrested on corruption charges",
+          "url": "https://www.livemint.com/news/india/exdelhi-minister-and-aap-leader-satyendar-jain-arrested-on-corruption-charges-11787067437472.html"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Ex-AAP minister Satyendar Jain arrested in Delhi Jal Board corruption case",
+          "url": "https://timesofindia.indiatimes.com/india/aap-leader-satyendar-jain-arrested-in-delhi-jal-board-corruption-case/articleshow/133326426.cms"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 1
+    },
+    {
+      "headline_hint": "NTA removes 600 experts and introduces multi-tier checks to prevent paper leaks",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        78,
+        115,
+        135,
+        173
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        78,
+        115,
+        135,
+        173
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 6,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "The Hindu",
+          "title": "NTA removes 600 experts from its team in revamp bid",
+          "url": "https://www.thehindu.com/news/national/nta-removes-600-experts-from-its-team-in-revamp-bid/article71361830.ece"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "Exam Body Accelerates Reforms, 600 Experts Removed, Multi-Tier Checks Ordered",
+          "url": "https://www.ndtv.com/education/exam-body-accelerates-reforms-600-experts-removed-multi-tier-checks-ordered-11927826#publisher=newsstand"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Education Ministry tightens noose on question paper leak, introduces four-tier checking system",
+          "url": "https://www.livemint.com/news/india/education-ministry-tightens-noose-on-question-paper-leak-introduces-four-tier-checking-system-11787070569336.html"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "NTA removes 600 experts, brings four-tier checks for question papers",
+          "url": "https://timesofindia.indiatimes.com/india/nta-removes-600-experts-brings-four-tier-checks-for-question-papers/articleshow/133326572.cms"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Supreme Court considers quashing FIRs against student protesters and setting up panel",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        56,
+        75,
+        204,
+        234,
+        276,
+        301,
+        322
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        56,
+        75,
+        204,
+        234,
+        276,
+        301,
+        322
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": true,
+      "wiki_event": "Pakistan's Supreme Court orders imprisoned former prime minister Imran Khan transferred from the central jail in Rawalpindi, Punjab, to Shifa International Hospital in Islamabad for medical examinations following a petition by his lawyers c",
+      "weight": 8,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "The Hindu",
+          "title": "Student protests: Delhi Police affidavit in Supreme Court is rich with numbers, but quiet on fixing accountability",
+          "url": "https://www.thehindu.com/news/national/neet-protests-delhi-police-affidavit-in-supreme-court-is-rich-with-numbers-but-quiet-on-fixing-accountability/article71361703.ece"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "‘If govt doesn’t demonstrate…': CJP issues big 'two-day' warning over FIRs on protesting students",
+          "url": "https://www.hindustantimes.com/india-news/if-govt-doesn-t-demonstrate-cjp-saurav-das-issues-big-two-day-warning-over-firs-on-protesting-students-101787063751302.html"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "Youth protests: No one was seriously injured, no lathis were used, claims Kiren Rijiju",
+          "url": "https://scroll.in/latest/1095106/youth-protests-no-person-was-seriously-injured-no-lathis-were-used-claims-kiren-rijiju?utm_source=rss&utm_medium=public"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Exercised 'maximum restraint' during CJP protest, Delhi Police tells SC; denies using nail-fitted lathis",
+          "url": "https://www.livemint.com/news/india/exercised-maximum-restraint-during-cjp-protest-delhi-police-tells-sc-denies-using-nail-fitted-lathis-11787038675498.html"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "Ready to drop FIRs against student protesters, says Supreme Court",
+          "url": "https://www.thehindu.com/news/national/sc-ready-to-quash-firs-filed-against-students-for-neet-protests/article71360889.ece"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 2
+    },
+    {
+      "headline_hint": "Goa government approaches Supreme Court seeking enhanced sentence for Tarun Tejpal",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        24,
+        48,
+        131,
+        139,
+        150
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        24,
+        48,
+        131,
+        139,
+        150
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 5,
+      "wiki_backed": true,
+      "wiki_event": "Pakistan's Supreme Court orders imprisoned former prime minister Imran Khan transferred from the central jail in Rawalpindi, Punjab, to Shifa International Hospital in Islamabad for medical examinations following a petition by his lawyers c",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 0,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "Goa moves SC, seeks life imprisonment for Tejpal for sex assault",
+          "url": "https://timesofindia.indiatimes.com/india/goa-moves-sc-seeks-life-imprisonment-for-tejpal-for-sex-assault/articleshow/133331982.cms"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "Goa moves Supreme Court to enhance sentence of Tarun Tejpal in 2013 rape case",
+          "url": "https://www.thehindu.com/news/national/goa-moves-supreme-court-to-enhance-sentence-of-tarun-tejpal-in-2013-rape-case/article71362029.ece"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "'Tarun Tejpal Punishment Inadequate': Goa's 'Life Term' Plea In Supreme Court",
+          "url": "https://www.ndtv.com/india-news/tarun-tejpal-punishment-inadequate-goas-life-term-plea-in-supreme-court-11927643#publisher=newsstand"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Goa moves Supreme Court seeking life term for Tarun Tejpal in 2013 rape case",
+          "url": "https://www.livemint.com/news/india/goa-moves-supreme-court-seeking-life-term-for-tarun-tejpal-in-rape-case-11787070029337.html"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Goa govt moves Supreme Court, seeks life imprisonment for Tarun Tejpal in 2013 rape case",
+          "url": "https://www.hindustantimes.com/india-news/goa-govt-moves-supreme-court-seeking-tougher-sentence-for-tarun-tejpal-in-2013-rape-case-tehelka-101787064785833.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Audit reveals PM CARES Fund holding over Rs 8,400 crore corpus mostly in fixed deposits",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        14,
+        232,
+        240
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        14,
+        232,
+        240
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "The Hindu",
+          "title": "Why is PM CARES Fund keeping large sums idle, asks RTI activist",
+          "url": "https://www.thehindu.com/news/national/pm-cares-fund-audit-2024-25-domestic-foreign-donations/article71360330.ece"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "₹8,452 crore in PM CARES corpus, reveal public documents, most funds in fixed deposits",
+          "url": "https://www.livemint.com/news/india/rs-8-452-crore-in-pm-cares-corpus-reveal-public-documents-most-funds-in-fixed-deposits-charity-modi-bjp-csr-11787048140685.html"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "PM Cares Fund had Rs 8,452 crore corpus by end of FY25, shows audit report",
+          "url": "https://scroll.in/latest/1095124/pm-cares-fund-had-rs-8452-crore-corpus-by-end-of-fy25-shows-audit-report?utm_source=rss&utm_medium=public"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    }
+  ]
+}
