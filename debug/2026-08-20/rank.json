@@ -1,0 +1,861 @@
+{
+  "dials": {
+    "WEIGHT_FLOOR": 5,
+    "TIER_WEIGHT": {
+      "lead": 4,
+      "major": 2,
+      "notable": 0
+    },
+    "WIKI_BONUS": 2,
+    "HARD_CAP": 12,
+    "MIN_STORIES_IF_ANY": 3,
+    "MAX_ARTICLES_PER_STORY": 5
+  },
+  "floor_relaxed": false,
+  "kept_weights": [
+    9,
+    9,
+    8,
+    7,
+    8,
+    8,
+    6,
+    5
+  ],
+  "per_section": {
+    "world": 4,
+    "india": 4
+  },
+  "clusters": [
+    {
+      "headline_hint": "US and Canada pause 50% tariff threat after reaching temporary trade agreement",
+      "section": "world",
+      "category": "economy",
+      "tier_requested": "lead",
+      "article_ids": [
+        16,
+        137,
+        139,
+        274,
+        313
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        16,
+        137,
+        139,
+        274,
+        313
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 5,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 9,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 4,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "BBC World",
+          "title": "Canada and US say they are finalising a trade deal, but details remain murky",
+          "url": "https://www.bbc.co.uk/news/articles/c3ekl74jnk5o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "US and Canada reach ‘very fair’ trade agreement, Trump says",
+          "url": "https://www.aljazeera.com/economy/2026/8/19/us-and-canada-reach-very-fair-trade-agreement-trump-says?traffic_source=rss"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "From Taco Tuesday to Fitting Friday: Trump puts Canada tariffs on ice for 72 hours",
+          "url": "https://timesofindia.indiatimes.com/world/us/from-taco-tuesday-to-fitting-friday-trump-puts-canada-tariffs-on-ice-for-72-hours/articleshow/133353857.cms"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "U.S. delays 50% tariff on Canadian imports. And, takeaways from Florida's primaries",
+          "url": "https://www.npr.org/2026/08/19/g-s1-139173/up-first-newsletter-florida-primary-canada-tariffs-trump-meta-trial"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Trump pauses Canada tariffs threat, and hints at revival of Keystone XL pipeline",
+          "url": "https://www.theguardian.com/us-news/2026/aug/19/trump-delay-canada-tariffs-keystone-xl-oil-pipeline"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Ex-Ukrainian defence minister calls for elections as Zelenskyy sacks senior aide amid corruption probe",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        4,
+        13,
+        39,
+        128,
+        163,
+        168,
+        179,
+        204
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        4,
+        13,
+        39,
+        128,
+        163,
+        168,
+        179,
+        204
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 5,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "BBC World",
+          "title": "Sacked Ukrainian defence minister calls for presidential election",
+          "url": "https://www.bbc.co.uk/news/articles/cdew8n9erlwo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "Kyiv's ex-defence chief makes risky bet by venturing into electoral grounds",
+          "url": "https://www.channelnewsasia.com/world/ukraine-federov-ex-defence-minister-6329511"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Protests in Kyiv back ex-defence minister Fedorov’s call for elections",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/19/19-08-reported-audreymacalpine-kyiv-ua?traffic_source=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Volodymyr Zelenskyy sacks senior aide amid Ukraine corruption crisis",
+          "url": "https://www.theguardian.com/world/2026/aug/19/volodymyr-zelenskyy-sacks-senior-aide-amid-ukraine-corruption-crisis"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Trouble brewing for Zelenskyy? Ex-defence minister calls for wartime polls",
+          "url": "https://timesofindia.indiatimes.com/world/europe/trouble-brewing-for-zelenskyy-ex-defence-minister-calls-for-wartime-polls/articleshow/133353219.cms"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 3
+    },
+    {
+      "headline_hint": "Israeli military opens criminal probe after admitting troops fired on car carrying 5-year-old Hind Rajab in Gaza",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "major",
+      "article_ids": [
+        124,
+        166,
+        173,
+        181,
+        225
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        124,
+        166,
+        173,
+        181,
+        225
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 5,
+      "wiki_backed": true,
+      "wiki_event": "The Israel Defense Forces (IDF) launches a investigation into troop conduct for their roles in the 2024 killing of five-year-old Palestinian girl Hind Rajab, her family, and 15 other paramedics.",
+      "weight": 9,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "Israel admits its soldiers fired at car in which Hind Rajab was killed",
+          "url": "https://www.theguardian.com/world/2026/aug/19/israel-admits-it-soldiers-fired-at-car-in-which-hind-rajab-was-killed"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Hind Rajab killing: IDF fired on 5-year-old’s car in Gaza, Israel admits for first time, orders probe",
+          "url": "https://www.livemint.com/news/world/hind-rajab-killing-israel-admits-for-first-time-idf-fired-on-5-year-old-s-car-in-gaza-orders-probe-netanyayu-palestine-11787153597368.html"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Israel admits firing on car carrying Hind Rajab, symbol of Gaza’s suffering",
+          "url": "https://www.aljazeera.com/news/2026/8/19/israel-admits-firing-on-car-carrying-hind-rajab-symbol-of-gazas-suffering?traffic_source=rss"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Israel confirms soldiers fired at car in which Hind Rajab was killed and opens criminal investigation",
+          "url": "https://www.bbc.co.uk/news/articles/crl7yjlpx2po?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "Israel says it will probe 2024 killing of five-year-old Hind Rajab in Gaza",
+          "url": "https://scroll.in/latest/1095146/israel-says-it-will-probe-2024-killing-of-five-year-old-hind-rajab-in-gaza?utm_source=rss&utm_medium=public"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Kenya helicopter crash kills seven including five Americans and Ecuador intelligence chief",
+      "section": "world",
+      "category": "disaster",
+      "tier_requested": "major",
+      "article_ids": [
+        3,
+        9,
+        15,
+        18
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        3,
+        9,
+        15,
+        18
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": true,
+      "wiki_event": "Seven people, including four American nationals, are killed in a helicopter crash in Samburu County, Kenya.",
+      "weight": 8,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "BBC World",
+          "title": "Ecuador intelligence chief and five Americans killed in Kenya helicopter crash",
+          "url": "https://www.bbc.co.uk/news/articles/clylkv4z59vo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Five Americans among seven killed in safari helicopter crash in Kenya",
+          "url": "https://www.theguardian.com/world/2026/aug/19/kenya-helicopter-safari-crash"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Kenya safari helicopter crash: Seven killed including five Americans and Ecuador intelligence chief",
+          "url": "https://www.livemint.com/news/us-news/kenya-safari-helicopter-crash-seven-killed-five-americans-and-ecuador-intelligence-chief-11787169152661.html"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Seven people, mostly foreign tourists, killed in helicopter crash in Kenya",
+          "url": "https://www.aljazeera.com/news/2026/8/19/seven-mostly-tourists-killed-in-helicopter-crash-in-northern-kenya?traffic_source=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "North Korea rejects Trump summit proposal, calling US an enemy state",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        80,
+        107,
+        108,
+        115,
+        307
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        80,
+        107,
+        108,
+        115,
+        307
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Channel News Asia",
+          "title": "Trump says will meet North Korea's Kim later this year",
+          "url": "https://www.channelnewsasia.com/world/trump-kim-jong-un-meeting-north-korea-us-6329366"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Kim Jong-un’s sister casts doubt on Trump’s claims of secret US-North Korea talks",
+          "url": "https://www.theguardian.com/world/2026/aug/19/kim-jong-un-sister-doubt-trump-claims-secret-us-north-korea-talks"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "South Korea shortens war games with US, citing Washington request",
+          "url": "https://www.bbc.co.uk/news/articles/cnvn0j31qj8o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "North Korea leader’s sister denies talks with ‘hostile’ US",
+          "url": "https://www.aljazeera.com/news/2026/8/19/north-korea-leaders-sister-denies-talks-with-hostile-us?traffic_source=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "In cutting joint drills, Trump has given South Korea’s president what he wants. So why is Seoul so uneasy?",
+          "url": "https://www.theguardian.com/world/2026/aug/19/trump-south-korea-alliance-military-seoul-security"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Ukrainian suspect arrested in Croatia over 2022 Nord Stream pipeline bombings",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "notable",
+      "article_ids": [
+        148,
+        211,
+        224
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        148,
+        211,
+        224
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "BBC World",
+          "title": "Ukrainian man arrested in Croatia over Nord Stream pipeline blasts",
+          "url": "https://www.bbc.co.uk/news/articles/c78gp7l5348o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Second Ukrainian national arrested over 2022 Nord Stream pipeline blast",
+          "url": "https://www.aljazeera.com/news/2026/8/19/second-ukrainian-national-arrested-over-2022-nord-stream-pipeline-blast?traffic_source=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Ukrainian diver arrested in Croatia over Nord Stream pipeline bombings",
+          "url": "https://www.theguardian.com/business/2026/aug/19/ukrainian-diver-arrested-in-croatia-over-nord-stream-pipeline-bombings"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Liberia agrees to accept 1,200 third-country deportees from the United States",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        65,
+        282,
+        303
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        65,
+        282,
+        303
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "DW World",
+          "title": "Liberia says it's taking in 1,200 third-country US deportees",
+          "url": "https://www.dw.com/en/liberia-says-it-s-taking-in-1-200-third-country-us-deportees/a-78436127?maca=en-rss-en-world-4025-rdf"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Liberia agrees to accept 1,200 foreign deportees from the US",
+          "url": "https://www.bbc.co.uk/news/articles/cpq8g22715vo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "Liberia agrees to take 1,200 third-country deportees from the U.S.",
+          "url": "https://www.npr.org/2026/08/19/nx-s1-5937389/liberia-to-take-deportees-from-us"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Moderna and Merck report mRNA cancer vaccine candidate reduces melanoma recurrence in late-stage trial",
+      "section": "world",
+      "category": "health",
+      "tier_requested": "notable",
+      "article_ids": [
+        1
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        1
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 1,
+      "wiki_backed": true,
+      "wiki_event": "Merck and Moderna reports that their cancer vaccine candidate showed positive results in their late-stage trial in preventing a recurrence of melanoma, including in high-risk patients.",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 1,
+        "tier_weight": 0,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "Moderna, Merck unveil mRNA-based cancer vaccine that cuts spread",
+          "url": "https://www.aljazeera.com/news/2026/8/19/moderna-merck-unveil-mrna-based-cancer-vaccine-that-cuts-spread?traffic_source=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Head-on collision between bus and truck in Paraná, Brazil kills at least 23",
+      "section": "world",
+      "category": "disaster",
+      "tier_requested": "notable",
+      "article_ids": [
+        99,
+        256
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        99,
+        256
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": true,
+      "wiki_event": "Twenty-three people are killed and five others are injured in a head-on collision between a bus and a truck on the BR-373 near Ipiranga, Paraná, Brazil.",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "Brazil bus crash kills at least 23 and injures five in Parana state",
+          "url": "https://www.aljazeera.com/news/2026/8/19/brazil-bus-crash-kills-at-least-23-and-injures-five-in-parana-state?traffic_source=rss"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Head-on collision between bus and lorry in Brazil kills more than 20",
+          "url": "https://www.bbc.co.uk/news/articles/cpvwgk1n2k8o?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Pakistan summons US diplomat after US envoy Sergio Gor calls Jammu & Kashmir an important part of India",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "lead",
+      "article_ids": [
+        118,
+        147,
+        151,
+        258,
+        275
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        118,
+        147,
+        151,
+        258,
+        275
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 8,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 4,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Livemint",
+          "title": "Sergio Gor’s J&amp;K remarks trigger Pakistan protest: Islamabad summons US diplomat, cites UNSC resolutions",
+          "url": "https://www.livemint.com/news/world/sergio-gor-s-j-k-remarks-trigger-pakistan-protest-islamabad-summons-us-diplomat-unsc-resolutions-jammu-kashmir-news-11787157148622.html"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Pakistan whines, summons top diplomat over US envoy Gor's J&amp;K remark in Srinagar",
+          "url": "https://timesofindia.indiatimes.com/world/pakistan/red-faced-pakistan-summons-top-diplomat-over-us-envoy-gors-jk-remark-in-srinagar/articleshow/133353607.cms"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Pakistan summons US charge d'affaires over Sergio Gor's remarks during J&K visit",
+          "url": "https://www.hindustantimes.com/india-news/pakistan-summons-us-charge-d-affaires-over-sergio-gors-remarks-during-jammu-kashmir-visit-101787156790514.html"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "J&K important part of India, US will re-evaluate travel warning for region, says American envoy",
+          "url": "https://scroll.in/latest/1095144/j-k-important-part-of-india-us-will-re-evaluate-travel-warning-for-region-says-american-envoy?utm_source=rss&utm_medium=public"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "US envoy Sergio Gor hints at ‘downgrading’ travel advisory for J&amp;K after meeting CM Omar Abdullah",
+          "url": "https://www.livemint.com/news/india/us-envoy-sergio-gor-hints-at-downgrading-travel-advisory-for-j-k-after-meeting-cm-omar-abdullah-news-11787137337993.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Nine dead including Bangladeshi nationals after major fire breaks out at Kolkata hotel",
+      "section": "india",
+      "category": "disaster",
+      "tier_requested": "major",
+      "article_ids": [
+        95,
+        212,
+        227,
+        276,
+        291
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        95,
+        212,
+        227,
+        276,
+        291
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": true,
+      "wiki_event": "At least nine people, including eight Bangladeshi nationals, are killed and six others are injured in a hotel fire in Kolkata, West Bengal, India.",
+      "weight": 8,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "NDTV",
+          "title": "Bangladeshi Journalist, Wife, 4-Year-Old Son Killed In Kolkata Hotel Fire",
+          "url": "https://www.ndtv.com/india-news/bangladeshi-journalist-wife-4-year-old-son-killed-in-kolkata-hotel-fire-11932953#publisher=newsstand"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Night of smoke, darkness, desperate escape: Survivors recount Kolkata hotel fire ordeal",
+          "url": "https://www.hindustantimes.com/india-news/night-of-smoke-darkness-desperate-escape-survivors-recount-kolkata-hotel-fire-ordeal-101787150234017.html"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "‘It was like a horror movie’: Kolkata hotel fire survivors recount night of terror",
+          "url": "https://timesofindia.indiatimes.com/city/kolkata/it-was-like-a-horror-movie-kolkata-hotel-fire-survivors-recount-night-of-terror/articleshow/133346344.cms"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "Nine killed in fire at Kolkata hotel",
+          "url": "https://scroll.in/latest/1095134/nine-killed-in-fire-at-kolkata-hotel?utm_source=rss&utm_medium=public"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "5 Bangladeshis among 9 dead in Kolkata hotel fire on Mirza Ghalib St: Officials",
+          "url": "https://www.hindustantimes.com/india-news/5-bangladeshis-among-9-die-in-kolkata-hotel-fire-on-mirza-ghalib-st-officials-101787148540781.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "India and Palestine sign agreements to construct 200-bed hospital and training center in West Bank",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        19,
+        50
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        19,
+        50
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 2,
+      "wiki_backed": true,
+      "wiki_event": "At least nine people, including eight Bangladeshi nationals, are killed and six others are injured in a hotel fire in Kolkata, West Bengal, India.",
+      "weight": 6,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "The Hindu",
+          "title": "India to build hospital in West Bank; seeks to deploy field hospital in Gaza",
+          "url": "https://www.thehindu.com/news/national/india-to-build-hospital-in-west-bank-seeks-to-deploy-field-hospital-in-gaza/article71366004.ece"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "India, Palestine sign 2 MoUs in development cooperation; 200-bed hospital, training centre to be set up",
+          "url": "https://www.hindustantimes.com/india-news/india-palestine-sign-2-mous-in-development-cooperation-200-bed-hospital-training-centre-to-be-set-up-101787164931363.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "AAP leader Satyendar Jain sent to 14-day judicial custody in Delhi Jal Board corruption case",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        240,
+        245,
+        312
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        240,
+        245,
+        312
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 5,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "Delhi Jal Board case: Satyendar Jain, four others sent to 14-day judicial custody",
+          "url": "https://timesofindia.indiatimes.com/india/delhi-jal-board-case-satyendar-jain-four-others-sent-to-14-day-judicial-custody/articleshow/133350034.cms"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Delhi court sends AAP's Satyendar Jain to 14-day judicial custody in Jal Board corruption case",
+          "url": "https://www.hindustantimes.com/india-news/delhi-court-sends-aaps-satyendar-jain-to-14-day-judicial-custody-in-jal-board-corruption-case-101787145019754.html"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "AAP leader Satyendar Jain among six arrested for alleged irregularities in Delhi Jal Board tender",
+          "url": "https://scroll.in/latest/1095131/former-aap-minister-satyendar-jain-among-six-arrested-in-alleged-delhi-jal-board-corruption-case?utm_source=rss&utm_medium=public"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "CBI registers case against Gensol Engineering and BluSmart founders over alleged ₹672-crore loss to IREDA",
+      "section": "india",
+      "category": "economy",
+      "tier_requested": "notable",
+      "article_ids": [
+        92
+      ],
+      "verdict": "cut:below_floor(1<5)",
+      "valid_ids": [
+        92
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 1,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 1,
+      "weight_terms": {
+        "distinct_outlets": 1,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "The Hindu",
+          "title": "IREDA loan: CBI registers case against Gensol Engineering, BluSmart founders over ₹672-crore alleged loss",
+          "url": "https://www.thehindu.com/news/national/ireda-loan-cbi-registers-case-against-gensol-engineering-blusmart-founders-over-672-crore-alleged-loss/article71366523.ece"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Bengal court issues arrest warrant against TMC MP Mahua Moitra in hate speech case",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        186,
+        271
+      ],
+      "verdict": "cut:below_floor(2<5)",
+      "valid_ids": [
+        186,
+        271
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 2,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Scroll.in",
+          "title": "Arrest warrant against Mahua Moitra for not appearing before court in case about provocative remarks",
+          "url": "https://scroll.in/latest/1095148/arrest-warrant-against-mahua-moitra-for-not-appearing-before-court-in-case-about-provocative-remarks?utm_source=rss&utm_medium=public"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "TMC MP Mahua Moitra in trouble? Bengal court issues arrest warrant in hate speech case",
+          "url": "https://www.livemint.com/news/india/tmc-mp-mahua-moitra-in-trouble-bengal-court-issues-arrest-warrant-in-hate-speech-case-11787138236160.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Three killed and three injured in gas tank explosion at Delhi CNG station",
+      "section": "india",
+      "category": "disaster",
+      "tier_requested": "notable",
+      "article_ids": [
+        220,
+        237,
+        267,
+        269
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        220,
+        237,
+        267,
+        269
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Hindustan Times",
+          "title": "‘No one to take him’: Family says Delhi CNG pump worker ‘lay bleeding' for 30 mins after blast",
+          "url": "https://www.hindustantimes.com/india-news/delhi-cng-station-explosion-family-says-pump-worker-lay-bleeding-for-30-minutes-after-blast-no-one-to-take-him-101787146625446.html"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Delhi Tragedy: Death toll climbs to three after gas tank explodes at CNG station in Tikri Kalan",
+          "url": "https://www.livemint.com/news/india/delhi-tragedy-dead-injured-after-gas-tank-explodes-at-cng-station-in-tikri-kalan-11787139478827.html"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "3 killed, 3 injured after truck gas tank explodes at Delhi CNG station",
+          "url": "https://timesofindia.indiatimes.com/india/truck-gas-tank-explodes-at-delhi-cng-station-while-refuelling-six-injured-in-blast/articleshow/133346886.cms"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "What caused the freak gas tank explosion that killed 3 at Delhi CNG station?",
+          "url": "https://www.hindustantimes.com/india-news/what-caused-the-freak-gas-tank-explosion-that-killed-3-at-delhi-cng-station-101787144570044.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Over 30 Bihar students hospitalised after detergent served instead of salt in school mid-day meal",
+      "section": "india",
+      "category": "health",
+      "tier_requested": "notable",
+      "article_ids": [
+        122,
+        299
+      ],
+      "verdict": "cut:below_floor(2<5)",
+      "valid_ids": [
+        122,
+        299
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 2,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Hindustan Times",
+          "title": "35 Bihar students hospitalised after detergent allegedly mistaken for salt in mid-day meal",
+          "url": "https://www.hindustantimes.com/india-news/35-bihar-students-hospitalised-after-detergent-allegedly-mistaken-for-salt-in-mid-day-meal-nalanda-government-school-101787153625956.html"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "Bihar: 34 students fall ill after being fed detergent instead of salt in midday meal",
+          "url": "https://scroll.in/latest/1095138/bihar-34-students-fall-ill-after-being-fed-detergent-instead-of-salt-in-midday-meal?utm_source=rss&utm_medium=public"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    }
+  ]
+}
