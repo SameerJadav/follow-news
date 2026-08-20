@@ -1,28 +1,28 @@
 {
   "kind": "digest",
   "day": "2026-08-21",
-  "ok": false,
-  "started_at": "2026-08-20T20:54:18Z",
-  "finished_at": "2026-08-20T20:56:37Z",
-  "elapsed_ms": 139435,
+  "ok": true,
+  "started_at": "2026-08-20T22:54:52Z",
+  "finished_at": "2026-08-20T22:58:24Z",
+  "elapsed_ms": 212005,
   "argv": [
     "digest.py",
     "--if-missing"
   ],
   "python": "3.12.3",
-  "git_sha": "798fed231185013dfb826db384c8a81a802f49cc",
+  "git_sha": "8c2a5a9b6807362870ce69b9b8a26a2281e755d1",
   "debug_level": 1,
-  "bytes_written": 10328472,
+  "bytes_written": 14545296,
   "byte_cap_reached": false,
   "env": {
     "DIGEST_DEBUG": "1",
     "CI": "true",
     "GITHUB_ACTIONS": "true",
-    "GITHUB_RUN_ID": "32416557286",
+    "GITHUB_RUN_ID": "32426356112",
     "GITHUB_RUN_ATTEMPT": "1",
     "GITHUB_WORKFLOW": "digest",
     "GITHUB_EVENT_NAME": "schedule",
-    "GITHUB_SHA": "798fed231185013dfb826db384c8a81a802f49cc",
+    "GITHUB_SHA": "8c2a5a9b6807362870ce69b9b8a26a2281e755d1",
     "GITHUB_REF": "refs/heads/main",
     "RUNNER_OS": "Linux"
   },
@@ -68,22 +68,22 @@
   "stages": [
     {
       "stage": "gather",
-      "ms": 2830,
+      "ms": 3491,
       "error": ""
     },
     {
       "stage": "pool",
-      "ms": 5,
+      "ms": 2,
       "error": ""
     },
     {
       "stage": "wikipedia",
-      "ms": 523,
+      "ms": 354,
       "error": ""
     },
     {
       "stage": "select",
-      "ms": 35659,
+      "ms": 29744,
       "error": ""
     },
     {
@@ -93,18 +93,28 @@
     },
     {
       "stage": "extract",
-      "ms": 34355,
+      "ms": 33603,
       "error": ""
     },
     {
       "stage": "claims",
-      "ms": 64161,
-      "error": "ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"
+      "ms": 55829,
+      "error": ""
+    },
+    {
+      "stage": "write",
+      "ms": 87880,
+      "error": ""
+    },
+    {
+      "stage": "render",
+      "ms": 61,
+      "error": ""
     }
   ],
   "window": {
     "since": "2026-08-19T20:52:11+00:00",
-    "now": "2026-08-20T20:54:20.396722+00:00",
+    "now": "2026-08-20T22:54:53.138658+00:00",
     "prev_generated_at": "2026-08-19 20:52:11+00:00"
   }
 }
