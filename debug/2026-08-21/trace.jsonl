@@ -1,0 +1,106 @@
+{"run": "digest", "t": 0, "kind": "digest", "stage": "tracer", "msg": "capture started", "level": 1, "day": "2026-08-21"}
+{"run": "digest", "t": 1895, "kind": "dbg", "msg": "digest: window since=2026-08-19T20:52:11+00:00 (prev_generated_at=2026-08-19 20:52:11+00:00)"}
+{"run": "digest", "t": 2105, "kind": "dbg", "msg": "feed 'BBC World': http=200 raw_items=29 usable=29"}
+{"run": "digest", "t": 2105, "kind": "event", "stage": "feeds", "outlet": "BBC World", "url": "https://feeds.bbci.co.uk/news/world/rss.xml", "http": 200, "elapsed_ms": 198, "bytes": 22658, "raw_items": 29, "usable": 29, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 2280, "kind": "dbg", "msg": "feed 'Al Jazeera': http=200 raw_items=25 usable=25"}
+{"run": "digest", "t": 2280, "kind": "event", "stage": "feeds", "outlet": "Al Jazeera", "url": "https://www.aljazeera.com/xml/rss/all.xml", "http": 200, "elapsed_ms": 164, "bytes": 17352, "raw_items": 25, "usable": 25, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 2422, "kind": "dbg", "msg": "feed 'Guardian World': http=200 raw_items=45 usable=45"}
+{"run": "digest", "t": 2422, "kind": "event", "stage": "feeds", "outlet": "Guardian World", "url": "https://www.theguardian.com/world/rss", "http": 200, "elapsed_ms": 88, "bytes": 151511, "raw_items": 45, "usable": 45, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 2520, "kind": "dbg", "msg": "feed 'NPR World': http=200 raw_items=10 usable=10"}
+{"run": "digest", "t": 2520, "kind": "event", "stage": "feeds", "outlet": "NPR World", "url": "https://feeds.npr.org/1004/rss.xml", "http": 200, "elapsed_ms": 91, "bytes": 13436, "raw_items": 10, "usable": 10, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 3183, "kind": "dbg", "msg": "feed 'DW World': http=200 raw_items=12 usable=12"}
+{"run": "digest", "t": 3183, "kind": "event", "stage": "feeds", "outlet": "DW World", "url": "https://rss.dw.com/rdf/rss-en-world", "http": 200, "elapsed_ms": 656, "bytes": 11405, "raw_items": 12, "usable": 12, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 3337, "kind": "dbg", "msg": "feed 'France 24': http=200 raw_items=24 usable=24"}
+{"run": "digest", "t": 3337, "kind": "event", "stage": "feeds", "outlet": "France 24", "url": "https://www.france24.com/en/rss", "http": 200, "elapsed_ms": 142, "bytes": 29002, "raw_items": 24, "usable": 24, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 3489, "kind": "dbg", "msg": "feed 'Channel News Asia': http=200 raw_items=20 usable=20"}
+{"run": "digest", "t": 3489, "kind": "event", "stage": "feeds", "outlet": "Channel News Asia", "url": "https://www.channelnewsasia.com/api/v1/rss-outbound-feed?_format=xml", "http": 200, "elapsed_ms": 141, "bytes": 16284, "raw_items": 20, "usable": 20, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 3629, "kind": "dbg", "msg": "feed 'The Hindu': http=200 raw_items=60 usable=60"}
+{"run": "digest", "t": 3629, "kind": "event", "stage": "feeds", "outlet": "The Hindu", "url": "https://www.thehindu.com/news/national/feeder/default.rss", "http": 200, "elapsed_ms": 122, "bytes": 43948, "raw_items": 60, "usable": 60, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 3751, "kind": "dbg", "msg": "feed 'Indian Express': http=403"}
+{"run": "digest", "t": 3751, "kind": "event", "stage": "feeds", "outlet": "Indian Express", "url": "https://indianexpress.com/section/india/feed/", "http": 403, "elapsed_ms": 120, "verdict": "http_error"}
+{"run": "digest", "t": 3941, "kind": "dbg", "msg": "feed 'NDTV': http=200 raw_items=20 usable=20"}
+{"run": "digest", "t": 3941, "kind": "event", "stage": "feeds", "outlet": "NDTV", "url": "https://feeds.feedburner.com/ndtvnews-india-news", "http": 200, "elapsed_ms": 177, "bytes": 26998, "raw_items": 20, "usable": 20, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 4090, "kind": "dbg", "msg": "feed 'Hindustan Times': http=200 raw_items=100 usable=100"}
+{"run": "digest", "t": 4090, "kind": "event", "stage": "feeds", "outlet": "Hindustan Times", "url": "https://www.hindustantimes.com/feeds/rss/india-news/rssfeed.xml", "http": 200, "elapsed_ms": 118, "bytes": 95959, "raw_items": 100, "usable": 100, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 4213, "kind": "dbg", "msg": "feed 'Times of India': http=200 raw_items=45 usable=45"}
+{"run": "digest", "t": 4213, "kind": "event", "stage": "feeds", "outlet": "Times of India", "url": "https://timesofindia.indiatimes.com/rssfeedstopstories.cms", "http": 200, "elapsed_ms": 106, "bytes": 46550, "raw_items": 45, "usable": 45, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 4309, "kind": "dbg", "msg": "feed 'Livemint': http=200 raw_items=35 usable=35"}
+{"run": "digest", "t": 4309, "kind": "event", "stage": "feeds", "outlet": "Livemint", "url": "https://www.livemint.com/rss/news", "http": 200, "elapsed_ms": 83, "bytes": 36590, "raw_items": 35, "usable": 35, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 4678, "kind": "dbg", "msg": "feed 'Scroll.in': http=200 raw_items=100 usable=100"}
+{"run": "digest", "t": 4678, "kind": "event", "stage": "feeds", "outlet": "Scroll.in", "url": "https://feeds.feedburner.com/ScrollinArticles.rss", "http": 200, "elapsed_ms": 231, "bytes": 313765, "raw_items": 100, "usable": 100, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 4723, "kind": "dbg", "msg": "gather: 418 article(s) after window+dedupe; by outlet: {'Livemint': 35, 'Guardian World': 28, 'BBC World': 21, 'The Hindu': 60, 'Channel News Asia': 20, 'Al Jazeera': 25, 'Times of India': 44, 'Hindustan Times': 98, 'France 24': 24, 'NPR World': 7, 'NDTV': 20, 'DW World': 9, 'Scroll.in': 27}"}
+{"run": "digest", "t": 4724, "kind": "dbg", "msg": "gather: 13/14 feed(s) live, 418 article(s)"}
+{"run": "digest", "t": 4726, "kind": "event", "stage": "stage", "name": "gather", "ms": 2830, "ok": true, "error": ""}
+{"run": "digest", "t": 4726, "kind": "dbg", "msg": "gather: QUORUM OK — live=13/3 min, articles=418/20 min"}
+{"run": "digest", "t": 4726, "kind": "dbg", "msg": "rank: select pool 418 -> 336; capped outlets: {'The Hindu': 20, 'Hindustan Times': 58, 'Times of India': 4}"}
+{"run": "digest", "t": 4731, "kind": "event", "stage": "stage", "name": "pool", "ms": 5, "ok": true, "error": ""}
+{"run": "digest", "t": 4981, "kind": "dbg", "msg": "wiki: 2026_August_21 http=200 events=0"}
+{"run": "digest", "t": 4981, "kind": "event", "stage": "wikipedia", "page": "2026_August_21", "http": 200, "bytes": 192, "events": 0, "verdict": "ok"}
+{"run": "digest", "t": 5254, "kind": "dbg", "msg": "wiki: 2026_August_20 http=200 events=4"}
+{"run": "digest", "t": 5254, "kind": "event", "stage": "wikipedia", "page": "2026_August_20", "http": 200, "bytes": 2066, "events": 4, "verdict": "ok"}
+{"run": "digest", "t": 5255, "kind": "event", "stage": "stage", "name": "wikipedia", "ms": 523, "ok": true, "error": ""}
+{"run": "digest", "t": 5357, "kind": "dbg", "msg": "llm: call #1 model=gemini-3.6-flash label=select prompt=83164ch"}
+{"run": "digest", "t": 40913, "kind": "dbg", "msg": "llm: select finish_reason=FinishReason.STOP"}
+{"run": "digest", "t": 40914, "kind": "event", "stage": "llm", "call": 1, "label": "select", "model": "gemini-3.6-flash", "latency_ms": 35556, "prompt_chars": 83164, "system_chars": 2517, "response_chars": 2303, "finish_reason": "FinishReason.STOP", "malformed_json": false, "json_retries": 0, "max_output_tokens": 32768, "usage": {"prompt_token_count": 20015, "candidates_token_count": 636, "total_token_count": 22837, "thoughts_token_count": 2186}}
+{"run": "digest", "t": 40915, "kind": "dbg", "msg": "llm: select_stories -> 12 raw cluster(s)"}
+{"run": "digest", "t": 40915, "kind": "event", "stage": "stage", "name": "select", "ms": 35659, "ok": true, "error": ""}
+{"run": "digest", "t": 40916, "kind": "dbg", "msg": "rank: [world] outlets=7 tier=lead wiki=yes weight=13 'US announces crushing sanctions and economic measures against Iran as new aircraft carrier arrives in Middle East'"}
+{"run": "digest", "t": 40916, "kind": "dbg", "msg": "rank: [world] outlets=4 tier=major wiki=yes weight=8 'Bangladesh elects Mirza Fakhrul Islam Alamgir as president in first contested election in 35 years'"}
+{"run": "digest", "t": 40916, "kind": "dbg", "msg": "rank: [world] outlets=3 tier=major wiki=yes weight=7 'Evergrande founder Hui Ka Yan sentenced to life imprisonment for fraud in China'"}
+{"run": "digest", "t": 40916, "kind": "dbg", "msg": "rank: [world] outlets=3 tier=major wiki=no weight=5 'Russian missile strikes kill 16 in Kyiv as Ukraine urges air defence assistance'"}
+{"run": "digest", "t": 40916, "kind": "dbg", "msg": "rank: [world] outlets=2 tier=major wiki=no weight=4 'Central African Republic gold mine collapse leaves over 100 dead'"}
+{"run": "digest", "t": 40916, "kind": "dbg", "msg": "rank: [world] outlets=3 tier=major wiki=no weight=5 \"Western powers condemn Israel's proposed West Bank settlement expansion project\""}
+{"run": "digest", "t": 40916, "kind": "dbg", "msg": "rank: [world] outlets=4 tier=notable wiki=no weight=4 'Israeli military launches criminal probe into 2024 killing of Hind Rajab in Gaza'"}
+{"run": "digest", "t": 40916, "kind": "dbg", "msg": "rank: [india] outlets=3 tier=lead wiki=no weight=7 'Supreme Court rules on 1978 industry precedent while protecting pending labour cases'"}
+{"run": "digest", "t": 40917, "kind": "dbg", "msg": "rank: [india] outlets=5 tier=major wiki=no weight=7 'Jharkhand High Court stays state government order cancelling JPSC recruitment exams'"}
+{"run": "digest", "t": 40917, "kind": "dbg", "msg": "rank: [india] outlets=3 tier=major wiki=no weight=5 'Supreme Court forms panel to probe police action against student protesters in Delhi'"}
+{"run": "digest", "t": 40917, "kind": "dbg", "msg": "rank: [india] outlets=3 tier=major wiki=no weight=5 'India permits duty-free import of 1 million tonnes of raw sugar to curb domestic inflation'"}
+{"run": "digest", "t": 40917, "kind": "dbg", "msg": "rank: [india] outlets=2 tier=notable wiki=no weight=2 'Centre approves J&K High Court bench for Ladakh to enhance legal access'"}
+{"run": "digest", "t": 40917, "kind": "dbg", "msg": "rank: 12 scored, 0 id(s) rejected, 9 kept {'world': 5, 'india': 4}; weights=[13, 8, 7, 5, 5, 7, 7, 5, 5]"}
+{"run": "digest", "t": 40918, "kind": "event", "stage": "stage", "name": "rank", "ms": 2, "ok": true, "error": ""}
+{"run": "digest", "t": 40918, "kind": "dbg", "msg": "wiki: 4 curated event(s); 3 matched a selected story, 1 not covered"}
+{"run": "digest", "t": 40918, "kind": "dbg", "msg": "wiki: NOT COVERED [Disasters and accidents] Four railway workers on the Tōbu Nikkō Line are killed after being struck by a Limited express train in Kanuma, Tochigi Prefecture, Japan."}
+{"run": "digest", "t": 44889, "kind": "dbg", "msg": "extract: 34189ch https://www.npr.org/2026/08/20/nx-s1-5937954/sources-methods"}
+{"run": "digest", "t": 45456, "kind": "dbg", "msg": "extract: 4835ch https://www.bbc.co.uk/news/articles/c87n90eg0p2o?at_medium=RSS&at_campaign=rss"}
+{"run": "digest", "t": 45668, "kind": "dbg", "msg": "extract: 3556ch https://www.aljazeera.com/news/2026/8/20/us-treasury-secretary-says-new-economic-measures-will-collapse-iran?traffic_source=rss"}
+{"run": "digest", "t": 45787, "kind": "dbg", "msg": "extract: 2869ch https://www.channelnewsasia.com/world/iran-us-china-bessent-sanctions-6331921"}
+{"run": "digest", "t": 45931, "kind": "dbg", "msg": "extract: 6257ch https://www.livemint.com/news/world/iran-condemns-trumps-new-sanctions-calls-them-economic-terrorism-crimes-against-humanity-11787242827423.html"}
+{"run": "digest", "t": 46080, "kind": "dbg", "msg": "extract: 2299ch https://www.aljazeera.com/news/2026/8/20/bangladesh-elects-ruling-party-veteran-alamgir-as-president?traffic_source=rss"}
+{"run": "digest", "t": 46247, "kind": "dbg", "msg": "extract: 3913ch https://www.hindustantimes.com/india-news/mirza-fakhrul-islam-alamgir-to-be-next-bangladesh-president-good-or-bad-news-for-india-sheikh-hasina-101787244553715.html"}
+{"run": "digest", "t": 46340, "kind": "dbg", "msg": "extract: 3469ch https://www.livemint.com/news/world/bnps-mirza-fakhrul-islam-alamgir-elected-bangladesh-president-in-first-contested-poll-in-35-years-11787234039847.html"}
+{"run": "digest", "t": 47992, "kind": "dbg", "msg": "extract: 2781ch https://www.dw.com/en/bangladesh-lawmakers-elect-bnp-s-alamgir-as-president/a-78438534?maca=en-rss-en-world-4025-rdf"}
+{"run": "digest", "t": 48065, "kind": "dbg", "msg": "extract: 5597ch https://www.livemint.com/news/world/meet-mirza-islam-alamgir-and-colonel-oli-ahmed-nominees-for-bangladesh-presidential-election-11787215358694.html"}
+{"run": "digest", "t": 48195, "kind": "dbg", "msg": "extract: 2574ch https://www.theguardian.com/business/2026/aug/20/evergrande-founder-jailed-life-fraud-hui-ka-yan"}
+{"run": "digest", "t": 48404, "kind": "dbg", "msg": "extract: 2188ch https://www.npr.org/2026/08/20/nx-s1-5939335/chinese-sentence-founder-evergrande"}
+{"run": "digest", "t": 48478, "kind": "dbg", "msg": "extract: 3036ch https://www.bbc.co.uk/news/articles/cd0x9mjjmgjo?at_medium=RSS&at_campaign=rss"}
+{"run": "digest", "t": 52516, "kind": "dbg", "msg": "extract: 63880ch https://www.channelnewsasia.com/world/russia-ukraine-strikes-kill-16-zelenskyy-6332006"}
+{"run": "digest", "t": 52586, "kind": "dbg", "msg": "extract: 4347ch https://www.bbc.co.uk/news/articles/c98vzmden5yo?at_medium=RSS&at_campaign=rss"}
+{"run": "digest", "t": 52815, "kind": "dbg", "msg": "extract: fetch_html https://www.france24.com/en/video/20260820-kyiv-under-fire-russian-strikes-kill-at-least-16: http=403"}
+{"run": "digest", "t": 56081, "kind": "dbg", "msg": "extract: 13469ch https://www.france24.com/en/video/20260820-kyiv-under-fire-russian-strikes-kill-at-least-16"}
+{"run": "digest", "t": 56138, "kind": "dbg", "msg": "extract: fetch_html https://www.france24.com/en/video/20260820-russian-strikes-kill-at-least-12-in-kyiv-surrounding-region: http=403"}
+{"run": "digest", "t": 61197, "kind": "dbg", "msg": "extract: 14263ch https://www.france24.com/en/video/20260820-russian-strikes-kill-at-least-12-in-kyiv-surrounding-region"}
+{"run": "digest", "t": 61353, "kind": "dbg", "msg": "extract: 4447ch https://www.channelnewsasia.com/world/israel-west-blank-european-leaders-6331936"}
+{"run": "digest", "t": 61430, "kind": "dbg", "msg": "extract: 3347ch https://www.bbc.co.uk/news/articles/c998evlgz8ko?at_medium=RSS&at_campaign=rss"}
+{"run": "digest", "t": 61500, "kind": "dbg", "msg": "extract: fetch_html https://www.france24.com/en/middle-east/20260820-france-germany-uk-italy-slam-israel-illegal-e1-west-bank-settler-project: http=403"}
+{"run": "digest", "t": 64838, "kind": "dbg", "msg": "extract: 3887ch https://www.france24.com/en/middle-east/20260820-france-germany-uk-italy-slam-israel-illegal-e1-west-bank-settler-project"}
+{"run": "digest", "t": 64895, "kind": "dbg", "msg": "extract: fetch_html https://www.ndtv.com/india-news/government-deceived-us-jharkhand-students-as-court-stays-exam-cancellation-11938096#publisher=newsstand: http=403"}
+{"run": "digest", "t": 68652, "kind": "dbg", "msg": "extract: 31046ch https://www.ndtv.com/india-news/government-deceived-us-jharkhand-students-as-court-stays-exam-cancellation-11938096#publisher=newsstand"}
+{"run": "digest", "t": 68742, "kind": "dbg", "msg": "extract: 5732ch https://www.livemint.com/news/india/jharkhand-student-leaders-accuse-hemant-soren-govt-of-deceit-after-hc-stays-jpsc-appointment-cancellations-11787246992027.html"}
+{"run": "digest", "t": 68935, "kind": "dbg", "msg": "extract: 4620ch https://www.thehindu.com/news/national/jharkhand/jharkhand-hc-notification-updates-on-11th-to-13th-jpsc-exams/article71368803.ece"}
+{"run": "digest", "t": 69085, "kind": "dbg", "msg": "extract: 3850ch https://timesofindia.indiatimes.com/india/deceived-new-fight-begins-jharkhand-students-after-hc-stays-exam-cancellation-order/articleshow/133382412.cms"}
+{"run": "digest", "t": 69457, "kind": "dbg", "msg": "extract: 1810ch https://scroll.in/latest/1095166/hc-stays-jharkhand-order-cancelling-state-services-exams?utm_source=rss&utm_medium=public"}
+{"run": "digest", "t": 69751, "kind": "dbg", "msg": "extract: 7776ch https://www.thehindu.com/news/national/supreme-court-upholds-definition-of-industry-as-per-industrial-relations-code-2020/article71367986.ece"}
+{"run": "digest", "t": 69832, "kind": "dbg", "msg": "extract: 3863ch https://timesofindia.indiatimes.com/india/sc-upholds-broad-definition-of-industry-only-for-pending-cases/articleshow/133387373.cms"}
+{"run": "digest", "t": 69929, "kind": "dbg", "msg": "extract: 5078ch https://www.livemint.com/news/india/supreme-court-upholds-its-landmark-1978-bangalore-water-supply-judgment-about-definition-of-industry-11787218041196.html"}
+{"run": "digest", "t": 70003, "kind": "dbg", "msg": "extract: 8111ch https://www.livemint.com/news/supreme-court-industry-definition-labour-law-bangalore-water-supply-11787201482994.html"}
+{"run": "digest", "t": 70347, "kind": "dbg", "msg": "extract: 4238ch https://scroll.in/latest/1095167/youth-protests-sc-forms-panel-to-probe-police-excesses-violence-against-security-forces?utm_source=rss&utm_medium=public"}
+{"run": "digest", "t": 70451, "kind": "dbg", "msg": "extract: 5576ch https://www.livemint.com/news/india/abhijeet-dipke-cjp-protests-supreme-court-5-member-panel-to-probe-police-excesses-know-members-and-what-s-their-brief-11787226827873.html"}
+{"run": "digest", "t": 70613, "kind": "dbg", "msg": "extract: 9075ch https://www.hindustantimes.com/india-news/supreme-court-forms-panel-to-examine-use-of-force-by-police-in-delhi-cjp-jantar-mantar-july-20-protest-101787224952961.html"}
+{"run": "digest", "t": 70663, "kind": "dbg", "msg": "extract: fetch_html https://www.ndtv.com/india-news/centre-allows-10-lakh-tonnes-of-duty-free-sugar-imports-till-october-31-11937827#publisher=newsstand: http=403"}
+{"run": "digest", "t": 74975, "kind": "dbg", "msg": "extract: 4170ch https://www.ndtv.com/india-news/centre-allows-10-lakh-tonnes-of-duty-free-sugar-imports-till-october-31-11937827#publisher=newsstand"}
+{"run": "digest", "t": 75052, "kind": "dbg", "msg": "extract: 2341ch https://www.livemint.com/news/india/india-allows-tax-free-sugar-import-in-rare-move-to-cool-prices-11787244550339.html"}
+{"run": "digest", "t": 75272, "kind": "dbg", "msg": "extract: 3404ch https://timesofindia.indiatimes.com/business/india-business/government-allows-duty-free-imports-of-1-million-tons-of-raw-sugar-signals-price-relief/articleshow/133381719.cms"}
+{"run": "digest", "t": 75274, "kind": "event", "stage": "stage", "name": "extract", "ms": 34355, "ok": true, "error": ""}
+{"run": "digest", "t": 75309, "kind": "dbg", "msg": "llm: call #2 model=gemini-3.6-flash label=claims prompt=147274ch"}
+{"run": "digest", "t": 139435, "kind": "event", "stage": "stage", "name": "claims", "ms": 64161, "ok": false, "error": "ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"}
+{"run": "digest", "t": 139435, "kind": "event", "stage": "tracer", "msg": "capture finished", "ok": false, "ms": 139435, "bytes": 10328472}

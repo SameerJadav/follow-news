@@ -1,0 +1,645 @@
+{
+  "dials": {
+    "WEIGHT_FLOOR": 5,
+    "TIER_WEIGHT": {
+      "lead": 4,
+      "major": 2,
+      "notable": 0
+    },
+    "WIKI_BONUS": 2,
+    "HARD_CAP": 12,
+    "MIN_STORIES_IF_ANY": 3,
+    "MAX_ARTICLES_PER_STORY": 5
+  },
+  "floor_relaxed": false,
+  "kept_weights": [
+    13,
+    8,
+    7,
+    5,
+    5,
+    7,
+    7,
+    5,
+    5
+  ],
+  "per_section": {
+    "world": 5,
+    "india": 4
+  },
+  "clusters": [
+    {
+      "headline_hint": "US announces crushing sanctions and economic measures against Iran as new aircraft carrier arrives in Middle East",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "lead",
+      "article_ids": [
+        24,
+        29,
+        50,
+        71,
+        126,
+        151,
+        158,
+        180,
+        240,
+        325
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        24,
+        29,
+        50,
+        71,
+        126,
+        151,
+        158,
+        180,
+        240,
+        325
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 7,
+      "wiki_backed": true,
+      "wiki_event": "The {{USS|George Washington|CVN-73|6}} arrives in the Middle East to relieve the {{USS|Abraham Lincoln|CVN-72|6}} amidst a nine-month deployment and reports of mental health challenges and supplies shortages on the aircraft carrier during t",
+      "weight": 13,
+      "weight_terms": {
+        "distinct_outlets": 7,
+        "tier_weight": 4,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "NPR World",
+          "title": "Sources & Methods",
+          "url": "https://www.npr.org/2026/08/20/nx-s1-5937954/sources-methods"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "US says sanctions will 'squash' Iran's economy and 'collapse' its regime",
+          "url": "https://www.bbc.co.uk/news/articles/c87n90eg0p2o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "US Treasury secretary says new economic measures will ‘collapse’ Iran",
+          "url": "https://www.aljazeera.com/news/2026/8/20/us-treasury-secretary-says-new-economic-measures-will-collapse-iran?traffic_source=rss"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "Increased US sanctions on Iran make large-scale war less likely: Bessent",
+          "url": "https://www.channelnewsasia.com/world/iran-us-china-bessent-sanctions-6331921"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Iran condemns Trump's new sanctions, calls them ‘economic terrorism,’ ‘crimes against humanity’",
+          "url": "https://www.livemint.com/news/world/iran-condemns-trumps-new-sanctions-calls-them-economic-terrorism-crimes-against-humanity-11787242827423.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 5
+    },
+    {
+      "headline_hint": "Bangladesh elects Mirza Fakhrul Islam Alamgir as president in first contested election in 35 years",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        131,
+        135,
+        220,
+        258,
+        289
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        131,
+        135,
+        220,
+        258,
+        289
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": true,
+      "wiki_event": "The Jatiya Sangsad elects Mirza Fakhrul Islam Alamgir as the President of Bangladesh in the first contested presidential election in 35 years.",
+      "weight": 8,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "Bangladesh elects ruling party veteran Alamgir as president",
+          "url": "https://www.aljazeera.com/news/2026/8/20/bangladesh-elects-ruling-party-veteran-alamgir-as-president?traffic_source=rss"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Mirza Fakhrul Islam Alamgir to be next Bangladesh President: Good or bad news for India, Sheikh Hasina?",
+          "url": "https://www.hindustantimes.com/india-news/mirza-fakhrul-islam-alamgir-to-be-next-bangladesh-president-good-or-bad-news-for-india-sheikh-hasina-101787244553715.html"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "BNP's Mirza Fakhrul Islam Alamgir elected Bangladesh President in first contested poll in 35 years",
+          "url": "https://www.livemint.com/news/world/bnps-mirza-fakhrul-islam-alamgir-elected-bangladesh-president-in-first-contested-poll-in-35-years-11787234039847.html"
+        },
+        {
+          "outlet": "DW World",
+          "title": "Bangladesh lawmakers elect BNP's Alamgir as president",
+          "url": "https://www.dw.com/en/bangladesh-lawmakers-elect-bnp-s-alamgir-as-president/a-78438534?maca=en-rss-en-world-4025-rdf"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Meet Mirza Islam Alamgir and Colonel Oli Ahmed, nominees for Bangladesh presidential election",
+          "url": "https://www.livemint.com/news/world/meet-mirza-islam-alamgir-and-colonel-oli-ahmed-nominees-for-bangladesh-presidential-election-11787215358694.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Evergrande founder Hui Ka Yan sentenced to life imprisonment for fraud in China",
+      "section": "world",
+      "category": "economy",
+      "tier_requested": "major",
+      "article_ids": [
+        263,
+        313,
+        320
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        263,
+        313,
+        320
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 3,
+      "wiki_backed": true,
+      "wiki_event": "A Chinese court sentences Evergrande founder Hui Ka Yan to life imprisonment for financial fraud, bribery, and embezzlement, and fines Evergrande and its real estate arm a combined ¥15.8 billion (US$2.35 billion).",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "Founder of China’s Evergrande jailed for life after pleading guilty to fraud",
+          "url": "https://www.theguardian.com/business/2026/aug/20/evergrande-founder-jailed-life-fraud-hui-ka-yan"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "Chinese court sentences founder of property developer Evergrande to life in prison",
+          "url": "https://www.npr.org/2026/08/20/nx-s1-5939335/chinese-sentence-founder-evergrande"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Founder of collapsed Chinese property giant Evergrande sentenced to life in prison",
+          "url": "https://www.bbc.co.uk/news/articles/cd0x9mjjmgjo?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Russian missile strikes kill 16 in Kyiv as Ukraine urges air defence assistance",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "major",
+      "article_ids": [
+        11,
+        143,
+        222,
+        300
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        11,
+        143,
+        222,
+        300
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 5,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Channel News Asia",
+          "title": "Russian strikes kill 16 in Kyiv, surrounding region",
+          "url": "https://www.channelnewsasia.com/world/russia-ukraine-strikes-kill-16-zelenskyy-6332006"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Russia 'purposefully' hit critical infrastructure in latest strikes, Kyiv mayor says",
+          "url": "https://www.bbc.co.uk/news/articles/c98vzmden5yo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Kyiv under fire: Russian strikes kill at least 16",
+          "url": "https://www.france24.com/en/video/20260820-kyiv-under-fire-russian-strikes-kill-at-least-16"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Russian strikes kill at least 12 in Kyiv, surrounding region",
+          "url": "https://www.france24.com/en/video/20260820-russian-strikes-kill-at-least-12-in-kyiv-surrounding-region"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Central African Republic gold mine collapse leaves over 100 dead",
+      "section": "world",
+      "category": "disaster",
+      "tier_requested": "major",
+      "article_ids": [
+        215,
+        333
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        215,
+        333
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "France 24",
+          "title": "Gold mine collapse in Central African Republic leaves at least 100 dead",
+          "url": "https://www.france24.com/en/video/20260820-gold-mine-collapse-in-central-african-republic-leaves-at-least-100-dead"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "More than 100 dead after goldmine collapses in Central African Republic",
+          "url": "https://www.theguardian.com/world/2026/aug/20/gold-mine-collapse-deadly-landslide-central-african-republic"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Western powers condemn Israel's proposed West Bank settlement expansion project",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        51,
+        65,
+        70
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        51,
+        65,
+        70
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 5,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Channel News Asia",
+          "title": "Key European leaders demand Israel halt West Bank settlement project",
+          "url": "https://www.channelnewsasia.com/world/israel-west-blank-european-leaders-6331936"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "UK, France, Germany, Italy and Canada condemn Israel's West Bank settlement project",
+          "url": "https://www.bbc.co.uk/news/articles/c998evlgz8ko?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "France, Germany, UK and Italy slam Israel's 'E1' West Bank settler project",
+          "url": "https://www.france24.com/en/middle-east/20260820-france-germany-uk-italy-slam-israel-illegal-e1-west-bank-settler-project"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Israeli military launches criminal probe into 2024 killing of Hind Rajab in Gaza",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "notable",
+      "article_ids": [
+        46,
+        227,
+        321,
+        326
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        46,
+        227,
+        321,
+        326
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "Israel admits its soldiers fired at car in which Hind Rajab was killed",
+          "url": "https://www.theguardian.com/world/2026/aug/19/israel-admits-it-soldiers-fired-at-car-in-which-hind-rajab-was-killed"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "Israel admits its soldiers fired at car in which five-year-old Hind Rajab was killed in Gaza",
+          "url": "https://scroll.in/latest/1095146/israel-says-it-will-probe-2024-killing-of-five-year-old-hind-rajab-in-gaza?utm_source=rss&utm_medium=public"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "Israeli military launches criminal probes into killings of 5-year-old and paramedics",
+          "url": "https://www.npr.org/2026/08/20/nx-s1-5939310/israeli-military-criminal-probes"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Israel confirms soldiers fired at car in which Hind Rajab was killed and opens criminal investigation",
+          "url": "https://www.bbc.co.uk/news/articles/crl7yjlpx2po?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Supreme Court rules on 1978 industry precedent while protecting pending labour cases",
+      "section": "india",
+      "category": "economy",
+      "tier_requested": "lead",
+      "article_ids": [
+        6,
+        21,
+        290,
+        309
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        6,
+        21,
+        290,
+        309
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 4,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "The Hindu",
+          "title": "Supreme Court scraps worker-friendly 1978 ‘industry’ precedent for new labour code",
+          "url": "https://www.thehindu.com/news/national/supreme-court-upholds-definition-of-industry-as-per-industrial-relations-code-2020/article71367986.ece"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "SC upholds broad definition of industry, only for pending cases",
+          "url": "https://timesofindia.indiatimes.com/india/sc-upholds-broad-definition-of-industry-only-for-pending-cases/articleshow/133387373.cms"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Supreme Court upholds its landmark 1978 Bangalore Water Supply judgment about definition of ‘industry’",
+          "url": "https://www.livemint.com/news/india/supreme-court-upholds-its-landmark-1978-bangalore-water-supply-judgment-about-definition-of-industry-11787218041196.html"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "SC keeps labour protection intact in pending cases, leaves ‘industry’ definition under new code open",
+          "url": "https://www.livemint.com/news/supreme-court-industry-definition-labour-law-bangalore-water-supply-11787201482994.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Jharkhand High Court stays state government order cancelling JPSC recruitment exams",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        76,
+        130,
+        144,
+        189,
+        228,
+        254
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        76,
+        130,
+        144,
+        189,
+        228,
+        254
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 5,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "NDTV",
+          "title": "'Government Deceived Us': Jharkhand Students As Court Stays Exam Cancellation",
+          "url": "https://www.ndtv.com/india-news/government-deceived-us-jharkhand-students-as-court-stays-exam-cancellation-11938096#publisher=newsstand"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Jharkhand student leaders accuse Hemant Soren govt of 'deceit' after HC stays JPSC appointment cancellations",
+          "url": "https://www.livemint.com/news/india/jharkhand-student-leaders-accuse-hemant-soren-govt-of-deceit-after-hc-stays-jpsc-appointment-cancellations-11787246992027.html"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "Jharkhand HC stays the cancellation of appointments made through 11th to 13th JPSC exams",
+          "url": "https://www.thehindu.com/news/national/jharkhand/jharkhand-hc-notification-updates-on-11th-to-13th-jpsc-exams/article71368803.ece"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "'Deceived, new fight begins': J'khand students after HC stays exam cancellation order",
+          "url": "https://timesofindia.indiatimes.com/india/deceived-new-fight-begins-jharkhand-students-after-hc-stays-exam-cancellation-order/articleshow/133382412.cms"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "HC stays Jharkhand order cancelling state services exams",
+          "url": "https://scroll.in/latest/1095166/hc-stays-jharkhand-order-cancelling-state-services-exams?utm_source=rss&utm_medium=public"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 1
+    },
+    {
+      "headline_hint": "Supreme Court forms panel to probe police action against student protesters in Delhi",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        210,
+        260,
+        274
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        210,
+        260,
+        274
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 5,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Scroll.in",
+          "title": "Youth protests: SC forms panel to probe police excesses, violence against security forces",
+          "url": "https://scroll.in/latest/1095167/youth-protests-sc-forms-panel-to-probe-police-excesses-violence-against-security-forces?utm_source=rss&utm_medium=public"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "CJP protests: SC sets up 5-member panel to probe police ‘excesses’ - Who is on it, what will it examine?",
+          "url": "https://www.livemint.com/news/india/abhijeet-dipke-cjp-protests-supreme-court-5-member-panel-to-probe-police-excesses-know-members-and-what-s-their-brief-11787226827873.html"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Supreme Court forms panel to examine use of force by police in Delhi's July 20 protest",
+          "url": "https://www.hindustantimes.com/india-news/supreme-court-forms-panel-to-examine-use-of-force-by-police-in-delhi-cjp-jantar-mantar-july-20-protest-101787224952961.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "India permits duty-free import of 1 million tonnes of raw sugar to curb domestic inflation",
+      "section": "india",
+      "category": "economy",
+      "tier_requested": "major",
+      "article_ids": [
+        137,
+        149,
+        200
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        137,
+        149,
+        200
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 5,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "NDTV",
+          "title": "Centre Allows 10 Lakh Tonnes Of Duty-Free Sugar Imports Till October 31",
+          "url": "https://www.ndtv.com/india-news/centre-allows-10-lakh-tonnes-of-duty-free-sugar-imports-till-october-31-11937827#publisher=newsstand"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "India allows tax-free sugar import in rare move to cool prices",
+          "url": "https://www.livemint.com/news/india/india-allows-tax-free-sugar-import-in-rare-move-to-cool-prices-11787244550339.html"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Govt allows duty-free imports of 1 million tons of raw sugar, signals price relief",
+          "url": "https://timesofindia.indiatimes.com/business/india-business/government-allows-duty-free-imports-of-1-million-tons-of-raw-sugar-signals-price-relief/articleshow/133381719.cms"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Centre approves J&K High Court bench for Ladakh to enhance legal access",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        146,
+        221
+      ],
+      "verdict": "cut:below_floor(2<5)",
+      "valid_ids": [
+        146,
+        221
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 2,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "The Hindu",
+          "title": "High Court Bench for Ladakh approved; Centre reaffirms commitment to constitutional safeguards",
+          "url": "https://www.thehindu.com/news/national/ladakh/high-court-bench-for-ladakh-approved-centre-reaffirms-commitment-to-constitutional-safeguards/article71370636.ece"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Ladakh to get J&amp;K High Court bench: Amit Shah says move will improve access to justice in remote areas",
+          "url": "https://www.livemint.com/news/india/ladakh-gets-high-court-bench-amit-shah-says-move-will-improve-access-to-justice-in-remote-areas-11787234302583.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    }
+  ]
+}
