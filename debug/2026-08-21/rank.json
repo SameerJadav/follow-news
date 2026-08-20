@@ -13,68 +13,112 @@
   },
   "floor_relaxed": false,
   "kept_weights": [
-    13,
     8,
     7,
-    5,
-    5,
     7,
     7,
-    5,
-    5
+    6,
+    6,
+    6,
+    7,
+    7,
+    6,
+    6
   ],
   "per_section": {
-    "world": 5,
+    "world": 7,
     "india": 4
   },
   "clusters": [
     {
-      "headline_hint": "US announces crushing sanctions and economic measures against Iran as new aircraft carrier arrives in Middle East",
+      "headline_hint": "Russia launches heavy missile and drone strikes on Kyiv, killing at least 16",
       "section": "world",
       "category": "conflict",
       "tier_requested": "lead",
       "article_ids": [
-        24,
-        29,
+        10,
         50,
-        71,
-        126,
-        151,
-        158,
-        180,
-        240,
-        325
+        166,
+        236
       ],
       "verdict": "kept",
       "valid_ids": [
-        24,
-        29,
+        10,
         50,
-        71,
-        126,
-        151,
-        158,
-        180,
-        240,
-        325
+        166,
+        236
       ],
       "tier_final": "lead",
-      "distinct_outlets": 7,
-      "wiki_backed": true,
-      "wiki_event": "The {{USS|George Washington|CVN-73|6}} arrives in the Middle East to relieve the {{USS|Abraham Lincoln|CVN-72|6}} amidst a nine-month deployment and reports of mental health challenges and supplies shortages on the aircraft carrier during t",
-      "weight": 13,
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 8,
       "weight_terms": {
-        "distinct_outlets": 7,
+        "distinct_outlets": 4,
         "tier_weight": 4,
-        "wiki_bonus": 2
+        "wiki_bonus": 0
       },
       "weight_floor": 5,
       "articles": [
         {
-          "outlet": "NPR World",
-          "title": "Sources & Methods",
-          "url": "https://www.npr.org/2026/08/20/nx-s1-5937954/sources-methods"
+          "outlet": "Guardian World",
+          "title": "More than 16 killed as Kyiv comes under intense Russian bombardment",
+          "url": "https://www.theguardian.com/world/2026/aug/20/ukraine-kyiv-deaths-russian-missile-attack"
         },
+        {
+          "outlet": "Channel News Asia",
+          "title": "Russian strikes kill 16 in Kyiv, surrounding region",
+          "url": "https://www.channelnewsasia.com/world/russia-ukraine-strikes-kill-16-zelenskyy-6332006"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Russia 'purposefully' hit critical infrastructure in latest strikes, Kyiv mayor says",
+          "url": "https://www.bbc.co.uk/news/articles/c98vzmden5yo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Kyiv under fire: Russian strikes kill at least 16",
+          "url": "https://www.france24.com/en/video/20260820-kyiv-under-fire-russian-strikes-kill-at-least-16"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "US announces major economic campaign against Iran, threatening trade partners",
+      "section": "world",
+      "category": "economy",
+      "tier_requested": "major",
+      "article_ids": [
+        67,
+        86,
+        175,
+        179,
+        196,
+        252,
+        328
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        67,
+        86,
+        175,
+        179,
+        196,
+        252,
+        328
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 5,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
         {
           "outlet": "BBC World",
           "title": "US says sanctions will 'squash' Iran's economy and 'collapse' its regime",
@@ -86,93 +130,38 @@
           "url": "https://www.aljazeera.com/news/2026/8/20/us-treasury-secretary-says-new-economic-measures-will-collapse-iran?traffic_source=rss"
         },
         {
-          "outlet": "Channel News Asia",
-          "title": "Increased US sanctions on Iran make large-scale war less likely: Bessent",
-          "url": "https://www.channelnewsasia.com/world/iran-us-china-bessent-sanctions-6331921"
-        },
-        {
           "outlet": "Livemint",
           "title": "Iran condemns Trump's new sanctions, calls them ‘economic terrorism,’ ‘crimes against humanity’",
           "url": "https://www.livemint.com/news/world/iran-condemns-trumps-new-sanctions-calls-them-economic-terrorism-crimes-against-humanity-11787242827423.html"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Iran rejects Trump's Hormuz claim, says strait will reopen only on Tehran's terms",
+          "url": "https://timesofindia.indiatimes.com/world/middle-east/iran-rejects-trumps-hormuz-total-control-claim-says-strait-will-reopen-only-on-tehrans-terms/articleshow/133383098.cms"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Trump threatens Iran’s trade partners, as military strikes make way for economic pressure",
+          "url": "https://www.theguardian.com/world/2026/aug/20/trump-threatens-crush-iran-economy-war-hormuz"
         }
       ],
-      "articles_dropped_by_diversity_cap": 5
+      "articles_dropped_by_diversity_cap": 2
     },
     {
-      "headline_hint": "Bangladesh elects Mirza Fakhrul Islam Alamgir as president in first contested election in 35 years",
-      "section": "world",
-      "category": "politics",
-      "tier_requested": "major",
-      "article_ids": [
-        131,
-        135,
-        220,
-        258,
-        289
-      ],
-      "verdict": "kept",
-      "valid_ids": [
-        131,
-        135,
-        220,
-        258,
-        289
-      ],
-      "tier_final": "major",
-      "distinct_outlets": 4,
-      "wiki_backed": true,
-      "wiki_event": "The Jatiya Sangsad elects Mirza Fakhrul Islam Alamgir as the President of Bangladesh in the first contested presidential election in 35 years.",
-      "weight": 8,
-      "weight_terms": {
-        "distinct_outlets": 4,
-        "tier_weight": 2,
-        "wiki_bonus": 2
-      },
-      "weight_floor": 5,
-      "articles": [
-        {
-          "outlet": "Al Jazeera",
-          "title": "Bangladesh elects ruling party veteran Alamgir as president",
-          "url": "https://www.aljazeera.com/news/2026/8/20/bangladesh-elects-ruling-party-veteran-alamgir-as-president?traffic_source=rss"
-        },
-        {
-          "outlet": "Hindustan Times",
-          "title": "Mirza Fakhrul Islam Alamgir to be next Bangladesh President: Good or bad news for India, Sheikh Hasina?",
-          "url": "https://www.hindustantimes.com/india-news/mirza-fakhrul-islam-alamgir-to-be-next-bangladesh-president-good-or-bad-news-for-india-sheikh-hasina-101787244553715.html"
-        },
-        {
-          "outlet": "Livemint",
-          "title": "BNP's Mirza Fakhrul Islam Alamgir elected Bangladesh President in first contested poll in 35 years",
-          "url": "https://www.livemint.com/news/world/bnps-mirza-fakhrul-islam-alamgir-elected-bangladesh-president-in-first-contested-poll-in-35-years-11787234039847.html"
-        },
-        {
-          "outlet": "DW World",
-          "title": "Bangladesh lawmakers elect BNP's Alamgir as president",
-          "url": "https://www.dw.com/en/bangladesh-lawmakers-elect-bnp-s-alamgir-as-president/a-78438534?maca=en-rss-en-world-4025-rdf"
-        },
-        {
-          "outlet": "Livemint",
-          "title": "Meet Mirza Islam Alamgir and Colonel Oli Ahmed, nominees for Bangladesh presidential election",
-          "url": "https://www.livemint.com/news/world/meet-mirza-islam-alamgir-and-colonel-oli-ahmed-nominees-for-bangladesh-presidential-election-11787215358694.html"
-        }
-      ],
-      "articles_dropped_by_diversity_cap": 0
-    },
-    {
-      "headline_hint": "Evergrande founder Hui Ka Yan sentenced to life imprisonment for fraud in China",
+      "headline_hint": "Chinese court sentences Evergrande founder Hui Ka Yan to life in prison for fraud",
       "section": "world",
       "category": "economy",
       "tier_requested": "major",
       "article_ids": [
-        263,
-        313,
-        320
+        273,
+        317,
+        323
       ],
       "verdict": "kept",
       "valid_ids": [
-        263,
-        313,
-        320
+        273,
+        317,
+        323
       ],
       "tier_final": "major",
       "distinct_outlets": 3,
@@ -205,169 +194,190 @@
       "articles_dropped_by_diversity_cap": 0
     },
     {
-      "headline_hint": "Russian missile strikes kill 16 in Kyiv as Ukraine urges air defence assistance",
-      "section": "world",
-      "category": "conflict",
-      "tier_requested": "major",
-      "article_ids": [
-        11,
-        143,
-        222,
-        300
-      ],
-      "verdict": "kept",
-      "valid_ids": [
-        11,
-        143,
-        222,
-        300
-      ],
-      "tier_final": "major",
-      "distinct_outlets": 3,
-      "wiki_backed": false,
-      "wiki_event": "",
-      "weight": 5,
-      "weight_terms": {
-        "distinct_outlets": 3,
-        "tier_weight": 2,
-        "wiki_bonus": 0
-      },
-      "weight_floor": 5,
-      "articles": [
-        {
-          "outlet": "Channel News Asia",
-          "title": "Russian strikes kill 16 in Kyiv, surrounding region",
-          "url": "https://www.channelnewsasia.com/world/russia-ukraine-strikes-kill-16-zelenskyy-6332006"
-        },
-        {
-          "outlet": "BBC World",
-          "title": "Russia 'purposefully' hit critical infrastructure in latest strikes, Kyiv mayor says",
-          "url": "https://www.bbc.co.uk/news/articles/c98vzmden5yo?at_medium=RSS&at_campaign=rss"
-        },
-        {
-          "outlet": "France 24",
-          "title": "Kyiv under fire: Russian strikes kill at least 16",
-          "url": "https://www.france24.com/en/video/20260820-kyiv-under-fire-russian-strikes-kill-at-least-16"
-        },
-        {
-          "outlet": "France 24",
-          "title": "Russian strikes kill at least 12 in Kyiv, surrounding region",
-          "url": "https://www.france24.com/en/video/20260820-russian-strikes-kill-at-least-12-in-kyiv-surrounding-region"
-        }
-      ],
-      "articles_dropped_by_diversity_cap": 0
-    },
-    {
-      "headline_hint": "Central African Republic gold mine collapse leaves over 100 dead",
-      "section": "world",
-      "category": "disaster",
-      "tier_requested": "major",
-      "article_ids": [
-        215,
-        333
-      ],
-      "verdict": "cut:below_floor(4<5)",
-      "valid_ids": [
-        215,
-        333
-      ],
-      "tier_final": "major",
-      "distinct_outlets": 2,
-      "wiki_backed": false,
-      "wiki_event": "",
-      "weight": 4,
-      "weight_terms": {
-        "distinct_outlets": 2,
-        "tier_weight": 2,
-        "wiki_bonus": 0
-      },
-      "weight_floor": 5,
-      "articles": [
-        {
-          "outlet": "France 24",
-          "title": "Gold mine collapse in Central African Republic leaves at least 100 dead",
-          "url": "https://www.france24.com/en/video/20260820-gold-mine-collapse-in-central-african-republic-leaves-at-least-100-dead"
-        },
-        {
-          "outlet": "Guardian World",
-          "title": "More than 100 dead after goldmine collapses in Central African Republic",
-          "url": "https://www.theguardian.com/world/2026/aug/20/gold-mine-collapse-deadly-landslide-central-african-republic"
-        }
-      ],
-      "articles_dropped_by_diversity_cap": 0
-    },
-    {
-      "headline_hint": "Western powers condemn Israel's proposed West Bank settlement expansion project",
+      "headline_hint": "Mirza Fakhrul Islam Alamgir elected President of Bangladesh in first contested election in 35 years",
       "section": "world",
       "category": "politics",
       "tier_requested": "major",
       "article_ids": [
-        51,
-        65,
-        70
+        158,
+        234,
+        268,
+        296
       ],
       "verdict": "kept",
       "valid_ids": [
-        51,
-        65,
-        70
+        158,
+        234,
+        268,
+        296
       ],
       "tier_final": "major",
       "distinct_outlets": 3,
-      "wiki_backed": false,
-      "wiki_event": "",
-      "weight": 5,
+      "wiki_backed": true,
+      "wiki_event": "The Jatiya Sangsad elects Mirza Fakhrul Islam Alamgir as the President of Bangladesh in the first contested presidential election in 35 years.",
+      "weight": 7,
       "weight_terms": {
         "distinct_outlets": 3,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Hindustan Times",
+          "title": "Mirza Fakhrul Islam Alamgir to be next Bangladesh President: Good or bad news for India, Sheikh Hasina?",
+          "url": "https://www.hindustantimes.com/india-news/mirza-fakhrul-islam-alamgir-to-be-next-bangladesh-president-good-or-bad-news-for-india-sheikh-hasina-101787244553715.html"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "BNP's Mirza Fakhrul Islam Alamgir elected Bangladesh President in first contested poll in 35 years",
+          "url": "https://www.livemint.com/news/world/bnps-mirza-fakhrul-islam-alamgir-elected-bangladesh-president-in-first-contested-poll-in-35-years-11787234039847.html"
+        },
+        {
+          "outlet": "DW World",
+          "title": "Bangladesh lawmakers elect BNP's Alamgir as president",
+          "url": "https://www.dw.com/en/bangladesh-lawmakers-elect-bnp-s-alamgir-as-president/a-78438534?maca=en-rss-en-world-4025-rdf"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Meet Mirza Islam Alamgir and Colonel Oli Ahmed, nominees for Bangladesh presidential election",
+          "url": "https://www.livemint.com/news/world/meet-mirza-islam-alamgir-and-colonel-oli-ahmed-nominees-for-bangladesh-presidential-election-11787215358694.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Jailed former Pakistan PM Imran Khan transferred to hospital for medical treatment",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        1,
+        21,
+        26,
+        30
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        1,
+        21,
+        26,
+        30
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 6,
+      "weight_terms": {
+        "distinct_outlets": 4,
         "tier_weight": 2,
         "wiki_bonus": 0
       },
       "weight_floor": 5,
       "articles": [
         {
-          "outlet": "Channel News Asia",
-          "title": "Key European leaders demand Israel halt West Bank settlement project",
-          "url": "https://www.channelnewsasia.com/world/israel-west-blank-european-leaders-6331936"
-        },
-        {
           "outlet": "BBC World",
-          "title": "UK, France, Germany, Italy and Canada condemn Israel's West Bank settlement project",
-          "url": "https://www.bbc.co.uk/news/articles/c998evlgz8ko?at_medium=RSS&at_campaign=rss"
+          "title": "Jailed Pakistan ex-PM Imran Khan taken to hospital for treatment",
+          "url": "https://www.bbc.co.uk/news/articles/ckgdr9vr50po?at_medium=RSS&at_campaign=rss"
         },
         {
-          "outlet": "France 24",
-          "title": "France, Germany, UK and Italy slam Israel's 'E1' West Bank settler project",
-          "url": "https://www.france24.com/en/middle-east/20260820-france-germany-uk-italy-slam-israel-illegal-e1-west-bank-settler-project"
+          "outlet": "Guardian World",
+          "title": "Jailed former Pakistani prime minister Imran Khan taken to hospital",
+          "url": "https://www.theguardian.com/world/2026/aug/20/imran-khan-hospital-pakistan"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Pakistan’s ex-PM Imran Khan reportedly moved to hospital from jail",
+          "url": "https://www.aljazeera.com/news/2026/8/20/pakistans-ex-pm-imran-khan-transferred-from-jail-to-hospital?traffic_source=rss"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "Former Pakistani PM Imran Khan to private hospital for medical treatment",
+          "url": "https://www.channelnewsasia.com/world/pakistan-khan-hospital-prison-care-6332131"
         }
       ],
       "articles_dropped_by_diversity_cap": 0
     },
     {
-      "headline_hint": "Israeli military launches criminal probe into 2024 killing of Hind Rajab in Gaza",
+      "headline_hint": "North Korea fires short-range ballistic missiles after US scales back joint military drills",
       "section": "world",
       "category": "conflict",
-      "tier_requested": "notable",
+      "tier_requested": "major",
       "article_ids": [
-        46,
-        227,
-        321,
-        326
+        213,
+        293,
+        301,
+        311
       ],
-      "verdict": "cut:below_floor(4<5)",
+      "verdict": "kept",
       "valid_ids": [
-        46,
-        227,
-        321,
-        326
+        213,
+        293,
+        301,
+        311
       ],
-      "tier_final": "notable",
+      "tier_final": "major",
       "distinct_outlets": 4,
       "wiki_backed": false,
       "wiki_event": "",
-      "weight": 4,
+      "weight": 6,
       "weight_terms": {
         "distinct_outlets": 4,
-        "tier_weight": 0,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "France 24",
+          "title": "North Korea launches missiles, Seoul says, after Trump floats Kim meet",
+          "url": "https://www.france24.com/en/video/20260820-north-korea-launches-missiles-seoul-says-after-trump-floats-kim-meet"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "North Korea fires 10 missiles day after Trump curtails South Korea joint drills",
+          "url": "https://www.theguardian.com/world/2026/aug/20/north-korea-fires-10-missiles-day-after-trump-curtails-south-korea-joint-drills"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "North Korea fires a suspected missile toward the sea, Japan says",
+          "url": "https://www.npr.org/2026/08/20/g-s1-139381/north-korea-suspected-missile"
+        },
+        {
+          "outlet": "DW World",
+          "title": "North Korea fires possible ballistic missiles toward sea",
+          "url": "https://www.dw.com/en/north-korea-fires-possible-ballistic-missiles-toward-sea/a-78440280?maca=en-rss-en-world-4025-rdf"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Israeli military admits troops fired at car carrying Hind Rajab and launches criminal probes",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "major",
+      "article_ids": [
+        82,
+        241,
+        324,
+        329
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        82,
+        241,
+        324,
+        329
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 6,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
         "wiki_bonus": 0
       },
       "weight_floor": 5,
@@ -396,22 +406,146 @@
       "articles_dropped_by_diversity_cap": 0
     },
     {
-      "headline_hint": "Supreme Court rules on 1978 industry precedent while protecting pending labour cases",
+      "headline_hint": "Over 100 dead after gold mine collapse in Central African Republic",
+      "section": "world",
+      "category": "disaster",
+      "tier_requested": "major",
+      "article_ids": [
+        229,
+        336
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        229,
+        336
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "France 24",
+          "title": "Gold mine collapse in Central African Republic leaves at least 100 dead",
+          "url": "https://www.france24.com/en/video/20260820-gold-mine-collapse-in-central-african-republic-leaves-at-least-100-dead"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "More than 100 dead after goldmine collapses in Central African Republic",
+          "url": "https://www.theguardian.com/world/2026/aug/20/gold-mine-collapse-deadly-landslide-central-african-republic"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "European nations and Canada condemn Israel's proposed E1 West Bank settlement expansion",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        97,
+        102
+      ],
+      "verdict": "cut:below_floor(2<5)",
+      "valid_ids": [
+        97,
+        102
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 2,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "BBC World",
+          "title": "UK, France, Germany, Italy and Canada condemn Israel's West Bank settlement project",
+          "url": "https://www.bbc.co.uk/news/articles/c998evlgz8ko?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "France, Germany, UK and Italy slam Israel's 'E1' West Bank settler project",
+          "url": "https://www.france24.com/en/middle-east/20260820-france-germany-uk-italy-slam-israel-illegal-e1-west-bank-settler-project"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Australia condemns Israel's decision not to file charges over killing of aid worker Zomi Frankcom",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        3,
+        302,
+        316
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        3,
+        302,
+        316
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "Australia news live: Israel ambassador insists IDF strike that killed Zomi Frankcom a ‘reasonable mistake’; body of hiker Lily Hooper recovered from bush",
+          "url": "https://www.theguardian.com/australia-news/live/2026/aug/21/australia-news-live-anthony-albanese-melon-podcast-sydney-swans-melbourne-hotel-police-investigation-alan-jones-antisemitism-inquiry-icac-nsw-liberals-ntwnfb"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Australia 'outraged' over Israel decision to close probe into aid worker killings",
+          "url": "https://www.france24.com/en/video/20260820-australia-outraged-over-israel-decision-to-close-probe-into-aid-worker-killings"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Australia 'outraged' after Israel decides not to open criminal investigation into killing of aid worker in Gaza",
+          "url": "https://www.bbc.co.uk/news/articles/cp87g29r718o?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Supreme Court upholds 1978 landmark judgment defining 'industry' for pending labor disputes",
       "section": "india",
-      "category": "economy",
+      "category": "politics",
       "tier_requested": "lead",
       "article_ids": [
-        6,
-        21,
-        290,
-        309
+        8,
+        56,
+        297,
+        313
       ],
       "verdict": "kept",
       "valid_ids": [
-        6,
-        21,
-        290,
-        309
+        8,
+        56,
+        297,
+        313
       ],
       "tier_final": "lead",
       "distinct_outlets": 3,
@@ -449,141 +583,47 @@
       "articles_dropped_by_diversity_cap": 0
     },
     {
-      "headline_hint": "Jharkhand High Court stays state government order cancelling JPSC recruitment exams",
-      "section": "india",
-      "category": "politics",
-      "tier_requested": "major",
-      "article_ids": [
-        76,
-        130,
-        144,
-        189,
-        228,
-        254
-      ],
-      "verdict": "kept",
-      "valid_ids": [
-        76,
-        130,
-        144,
-        189,
-        228,
-        254
-      ],
-      "tier_final": "major",
-      "distinct_outlets": 5,
-      "wiki_backed": false,
-      "wiki_event": "",
-      "weight": 7,
-      "weight_terms": {
-        "distinct_outlets": 5,
-        "tier_weight": 2,
-        "wiki_bonus": 0
-      },
-      "weight_floor": 5,
-      "articles": [
-        {
-          "outlet": "NDTV",
-          "title": "'Government Deceived Us': Jharkhand Students As Court Stays Exam Cancellation",
-          "url": "https://www.ndtv.com/india-news/government-deceived-us-jharkhand-students-as-court-stays-exam-cancellation-11938096#publisher=newsstand"
-        },
-        {
-          "outlet": "Livemint",
-          "title": "Jharkhand student leaders accuse Hemant Soren govt of 'deceit' after HC stays JPSC appointment cancellations",
-          "url": "https://www.livemint.com/news/india/jharkhand-student-leaders-accuse-hemant-soren-govt-of-deceit-after-hc-stays-jpsc-appointment-cancellations-11787246992027.html"
-        },
-        {
-          "outlet": "The Hindu",
-          "title": "Jharkhand HC stays the cancellation of appointments made through 11th to 13th JPSC exams",
-          "url": "https://www.thehindu.com/news/national/jharkhand/jharkhand-hc-notification-updates-on-11th-to-13th-jpsc-exams/article71368803.ece"
-        },
-        {
-          "outlet": "Times of India",
-          "title": "'Deceived, new fight begins': J'khand students after HC stays exam cancellation order",
-          "url": "https://timesofindia.indiatimes.com/india/deceived-new-fight-begins-jharkhand-students-after-hc-stays-exam-cancellation-order/articleshow/133382412.cms"
-        },
-        {
-          "outlet": "Scroll.in",
-          "title": "HC stays Jharkhand order cancelling state services exams",
-          "url": "https://scroll.in/latest/1095166/hc-stays-jharkhand-order-cancelling-state-services-exams?utm_source=rss&utm_medium=public"
-        }
-      ],
-      "articles_dropped_by_diversity_cap": 1
-    },
-    {
-      "headline_hint": "Supreme Court forms panel to probe police action against student protesters in Delhi",
-      "section": "india",
-      "category": "politics",
-      "tier_requested": "major",
-      "article_ids": [
-        210,
-        260,
-        274
-      ],
-      "verdict": "kept",
-      "valid_ids": [
-        210,
-        260,
-        274
-      ],
-      "tier_final": "major",
-      "distinct_outlets": 3,
-      "wiki_backed": false,
-      "wiki_event": "",
-      "weight": 5,
-      "weight_terms": {
-        "distinct_outlets": 3,
-        "tier_weight": 2,
-        "wiki_bonus": 0
-      },
-      "weight_floor": 5,
-      "articles": [
-        {
-          "outlet": "Scroll.in",
-          "title": "Youth protests: SC forms panel to probe police excesses, violence against security forces",
-          "url": "https://scroll.in/latest/1095167/youth-protests-sc-forms-panel-to-probe-police-excesses-violence-against-security-forces?utm_source=rss&utm_medium=public"
-        },
-        {
-          "outlet": "Livemint",
-          "title": "CJP protests: SC sets up 5-member panel to probe police ‘excesses’ - Who is on it, what will it examine?",
-          "url": "https://www.livemint.com/news/india/abhijeet-dipke-cjp-protests-supreme-court-5-member-panel-to-probe-police-excesses-know-members-and-what-s-their-brief-11787226827873.html"
-        },
-        {
-          "outlet": "Hindustan Times",
-          "title": "Supreme Court forms panel to examine use of force by police in Delhi's July 20 protest",
-          "url": "https://www.hindustantimes.com/india-news/supreme-court-forms-panel-to-examine-use-of-force-by-police-in-delhi-cjp-jantar-mantar-july-20-protest-101787224952961.html"
-        }
-      ],
-      "articles_dropped_by_diversity_cap": 0
-    },
-    {
-      "headline_hint": "India permits duty-free import of 1 million tonnes of raw sugar to curb domestic inflation",
+      "headline_hint": "India permits duty-free import of 1 million tonnes of raw sugar to tame domestic prices",
       "section": "india",
       "category": "economy",
       "tier_requested": "major",
       "article_ids": [
-        137,
-        149,
-        200
+        35,
+        64,
+        160,
+        173,
+        215
       ],
       "verdict": "kept",
       "valid_ids": [
-        137,
-        149,
-        200
+        35,
+        64,
+        160,
+        173,
+        215
       ],
       "tier_final": "major",
-      "distinct_outlets": 3,
+      "distinct_outlets": 4,
       "wiki_backed": false,
       "wiki_event": "",
-      "weight": 5,
+      "weight": 6,
       "weight_terms": {
-        "distinct_outlets": 3,
+        "distinct_outlets": 4,
         "tier_weight": 2,
         "wiki_bonus": 0
       },
       "weight_floor": 5,
       "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "For 1st time in a decade, India to import 10 lakh tonnes of sugar",
+          "url": "https://timesofindia.indiatimes.com/business/india-business/for-1st-time-in-a-decade-india-to-import-10-lakh-tonnes-of-sugar/articleshow/133387518.cms"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "Government allows duty-free import of 10 lakh tonnes of raw sugar until October 31",
+          "url": "https://www.thehindu.com/news/national/government-allows-duty-free-import-of-10-lakh-tonnes-of-raw-sugar-until-october-31/article71370748.ece"
+        },
         {
           "outlet": "NDTV",
           "title": "Centre Allows 10 Lakh Tonnes Of Duty-Free Sugar Imports Till October 31",
@@ -603,18 +643,181 @@
       "articles_dropped_by_diversity_cap": 0
     },
     {
-      "headline_hint": "Centre approves J&K High Court bench for Ladakh to enhance legal access",
+      "headline_hint": "Supreme Court forms five-member panel to investigate police action during student protests",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        60,
+        225,
+        270,
+        282
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        60,
+        225,
+        270,
+        282
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 6,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "Ex-SC judge Subhash Reddy to lead probe into action on CJP Parliament march",
+          "url": "https://timesofindia.indiatimes.com/india/ex-sc-judge-subhash-reddy-to-lead-probe-into-action-on-cjp-parliament-march/articleshow/133387348.cms"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "Youth protests: SC forms panel to probe police excesses, violence against security forces",
+          "url": "https://scroll.in/latest/1095167/youth-protests-sc-forms-panel-to-probe-police-excesses-violence-against-security-forces?utm_source=rss&utm_medium=public"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "CJP protests: SC sets up 5-member panel to probe police ‘excesses’ - Who is on it, what will it examine?",
+          "url": "https://www.livemint.com/news/india/abhijeet-dipke-cjp-protests-supreme-court-5-member-panel-to-probe-police-excesses-know-members-and-what-s-their-brief-11787226827873.html"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Supreme Court forms panel to examine use of force by police in Delhi's July 20 protest",
+          "url": "https://www.hindustantimes.com/india-news/supreme-court-forms-panel-to-examine-use-of-force-by-police-in-delhi-cjp-jantar-mantar-july-20-protest-101787224952961.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Jharkhand High Court stays government order cancelling 11th-13th JPSC exam appointments",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        108,
+        149,
+        155,
+        167,
+        205,
+        242,
+        264
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        108,
+        149,
+        155,
+        167,
+        205,
+        242,
+        264
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 5,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "NDTV",
+          "title": "'Government Deceived Us': Jharkhand Students As Court Stays Exam Cancellation",
+          "url": "https://www.ndtv.com/india-news/government-deceived-us-jharkhand-students-as-court-stays-exam-cancellation-11938096#publisher=newsstand"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "Plea in Supreme Court seeks CBI probe into allegations of Jharkhand JPSC exam irregularities",
+          "url": "https://www.thehindu.com/news/national/plea-in-supreme-court-seeks-cbi-probe-into-allegations-of-jharkhand-jpsc-exam-irregularities/article71370445.ece"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Jharkhand student leaders accuse Hemant Soren govt of 'deceit' after HC stays JPSC appointment cancellations",
+          "url": "https://www.livemint.com/news/india/jharkhand-student-leaders-accuse-hemant-soren-govt-of-deceit-after-hc-stays-jpsc-appointment-cancellations-11787246992027.html"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "'Deceived, new fight begins': J'khand students after HC stays exam cancellation order",
+          "url": "https://timesofindia.indiatimes.com/india/deceived-new-fight-begins-jharkhand-students-after-hc-stays-exam-cancellation-order/articleshow/133382412.cms"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "HC stays Jharkhand order cancelling state services exams",
+          "url": "https://scroll.in/latest/1095166/hc-stays-jharkhand-order-cancelling-state-services-exams?utm_source=rss&utm_medium=public"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 2
+    },
+    {
+      "headline_hint": "Clashes break out between ABVP and Left student groups at Jadavpur University",
       "section": "india",
       "category": "politics",
       "tier_requested": "notable",
       "article_ids": [
-        146,
-        221
+        5,
+        53,
+        310
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        5,
+        53,
+        310
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "The Hindu",
+          "title": "Jadavpur University on the boil as supporters of ABVP and SFI clash",
+          "url": "https://www.thehindu.com/news/national/west-bengal/jadavpur-university-violence-abvp-and-sfi-supporters-clash/article71368039.ece"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Bengal: ABVP, Left student wings clash at Jadavpur University; gate logo damaged",
+          "url": "https://www.hindustantimes.com/india-news/jadavpur-university-logo-damaged-in-kolkata-campus-after-abvp-left-student-wings-clash-101787257362053.html"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "Jadavpur University: ABVP, Left groups clash during student union meeting, trade blame",
+          "url": "https://scroll.in/latest/1095156/jadavpur-university-abvp-left-groups-clash-during-student-union-meeting-trade-blame?utm_source=rss&utm_medium=public"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Centre approves establishment of J&K High Court bench in Ladakh",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        170,
+        235
       ],
       "verdict": "cut:below_floor(2<5)",
       "valid_ids": [
-        146,
-        221
+        170,
+        235
       ],
       "tier_final": "notable",
       "distinct_outlets": 2,
@@ -637,6 +840,52 @@
           "outlet": "Livemint",
           "title": "Ladakh to get J&amp;K High Court bench: Amit Shah says move will improve access to justice in remote areas",
           "url": "https://www.livemint.com/news/india/ladakh-gets-high-court-bench-amit-shah-says-move-will-improve-access-to-justice-in-remote-areas-11787234302583.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "US ambassador Sergio Gor's remarks on J&K spark political reactions",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        46,
+        81,
+        274
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        46,
+        81,
+        274
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "The Hindu",
+          "title": "U.S. envoy Sergio Gor’s J&K remarks evoke mixed reactions",
+          "url": "https://www.thehindu.com/news/national/jammu-and-kashmir/us-envoy-sergio-gors-jk-remarks-evoke-mixed-reactions/article71370329.ece"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "US ambassador Sergio Gor in Ladakh, may meet Dalai Lama",
+          "url": "https://timesofindia.indiatimes.com/india/us-ambassador-sergio-gor-in-ladakh-goes-river-rafting-along-zanskar-indus-stretch/articleshow/133387083.cms"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "‘Between Pakistan and US': CM Omar Abdullah on Pak summoning US diplomat over Sergio Gor's J&K remark",
+          "url": "https://www.hindustantimes.com/india-news/between-pakistan-and-us-cm-omar-abdullah-on-pak-summoning-us-diplomat-over-sergio-gors-srinagar-jk-remark-101787224823753.html"
         }
       ],
       "articles_dropped_by_diversity_cap": 0
