@@ -1,0 +1,127 @@
+{"run": "digest", "t": 0, "kind": "digest", "stage": "tracer", "msg": "capture started", "level": 1, "day": "2026-08-23"}
+{"run": "digest", "t": 2023, "kind": "dbg", "msg": "digest: window since=2026-08-21T20:47:01+00:00 (prev_generated_at=2026-08-21 20:47:01+00:00)"}
+{"run": "digest", "t": 2082, "kind": "dbg", "msg": "feed 'BBC World': http=200 raw_items=31 usable=31"}
+{"run": "digest", "t": 2082, "kind": "event", "stage": "feeds", "outlet": "BBC World", "url": "https://feeds.bbci.co.uk/news/world/rss.xml", "http": 200, "elapsed_ms": 46, "bytes": 23916, "raw_items": 31, "usable": 31, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 2154, "kind": "dbg", "msg": "feed 'Al Jazeera': http=200 raw_items=25 usable=25"}
+{"run": "digest", "t": 2154, "kind": "event", "stage": "feeds", "outlet": "Al Jazeera", "url": "https://www.aljazeera.com/xml/rss/all.xml", "http": 200, "elapsed_ms": 61, "bytes": 17222, "raw_items": 25, "usable": 25, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 2260, "kind": "dbg", "msg": "feed 'Guardian World': http=200 raw_items=45 usable=45"}
+{"run": "digest", "t": 2260, "kind": "event", "stage": "feeds", "outlet": "Guardian World", "url": "https://www.theguardian.com/world/rss", "http": 200, "elapsed_ms": 52, "bytes": 146383, "raw_items": 45, "usable": 45, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 2312, "kind": "dbg", "msg": "feed 'NPR World': http=200 raw_items=10 usable=10"}
+{"run": "digest", "t": 2312, "kind": "event", "stage": "feeds", "outlet": "NPR World", "url": "https://feeds.npr.org/1004/rss.xml", "http": 200, "elapsed_ms": 43, "bytes": 13781, "raw_items": 10, "usable": 10, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 2547, "kind": "dbg", "msg": "feed 'DW World': http=200 raw_items=11 usable=11"}
+{"run": "digest", "t": 2547, "kind": "event", "stage": "feeds", "outlet": "DW World", "url": "https://rss.dw.com/rdf/rss-en-world", "http": 200, "elapsed_ms": 229, "bytes": 10926, "raw_items": 11, "usable": 11, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 2701, "kind": "dbg", "msg": "feed 'France 24': http=200 raw_items=23 usable=23"}
+{"run": "digest", "t": 2701, "kind": "event", "stage": "feeds", "outlet": "France 24", "url": "https://www.france24.com/en/rss", "http": 200, "elapsed_ms": 142, "bytes": 27060, "raw_items": 23, "usable": 23, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 2790, "kind": "dbg", "msg": "feed 'Channel News Asia': http=200 raw_items=20 usable=20"}
+{"run": "digest", "t": 2790, "kind": "event", "stage": "feeds", "outlet": "Channel News Asia", "url": "https://www.channelnewsasia.com/api/v1/rss-outbound-feed?_format=xml", "http": 200, "elapsed_ms": 78, "bytes": 13651, "raw_items": 20, "usable": 20, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 2874, "kind": "dbg", "msg": "feed 'The Hindu': http=200 raw_items=60 usable=60"}
+{"run": "digest", "t": 2874, "kind": "event", "stage": "feeds", "outlet": "The Hindu", "url": "https://www.thehindu.com/news/national/feeder/default.rss", "http": 200, "elapsed_ms": 65, "bytes": 45071, "raw_items": 60, "usable": 60, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 2920, "kind": "dbg", "msg": "feed 'Indian Express': http=403"}
+{"run": "digest", "t": 2920, "kind": "event", "stage": "feeds", "outlet": "Indian Express", "url": "https://indianexpress.com/section/india/feed/", "http": 403, "elapsed_ms": 45, "verdict": "http_error"}
+{"run": "digest", "t": 3366, "kind": "dbg", "msg": "feed 'NDTV': http=200 raw_items=20 usable=20"}
+{"run": "digest", "t": 3366, "kind": "event", "stage": "feeds", "outlet": "NDTV", "url": "https://feeds.feedburner.com/ndtvnews-india-news", "http": 200, "elapsed_ms": 436, "bytes": 27628, "raw_items": 20, "usable": 20, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 3442, "kind": "dbg", "msg": "feed 'Hindustan Times': http=200 raw_items=100 usable=100"}
+{"run": "digest", "t": 3442, "kind": "event", "stage": "feeds", "outlet": "Hindustan Times", "url": "https://www.hindustantimes.com/feeds/rss/india-news/rssfeed.xml", "http": 200, "elapsed_ms": 44, "bytes": 96512, "raw_items": 100, "usable": 100, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 3520, "kind": "dbg", "msg": "feed 'Times of India': http=200 raw_items=46 usable=46"}
+{"run": "digest", "t": 3520, "kind": "event", "stage": "feeds", "outlet": "Times of India", "url": "https://timesofindia.indiatimes.com/rssfeedstopstories.cms", "http": 200, "elapsed_ms": 52, "bytes": 46741, "raw_items": 46, "usable": 46, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 3730, "kind": "dbg", "msg": "feed 'Livemint': http=200 raw_items=35 usable=35"}
+{"run": "digest", "t": 3730, "kind": "event", "stage": "feeds", "outlet": "Livemint", "url": "https://www.livemint.com/rss/news", "http": 200, "elapsed_ms": 196, "bytes": 38579, "raw_items": 35, "usable": 35, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 4358, "kind": "dbg", "msg": "feed 'Scroll.in': http=200 raw_items=100 usable=100"}
+{"run": "digest", "t": 4358, "kind": "event", "stage": "feeds", "outlet": "Scroll.in", "url": "https://feeds.feedburner.com/ScrollinArticles.rss", "http": 200, "elapsed_ms": 504, "bytes": 306356, "raw_items": 100, "usable": 100, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 4365, "kind": "dbg", "msg": "gather: 376 article(s) after window+dedupe; by outlet: {'The Hindu': 60, 'Channel News Asia': 20, 'Times of India': 41, 'BBC World': 18, 'Al Jazeera': 25, 'France 24': 23, 'NDTV': 20, 'Hindustan Times': 90, 'Guardian World': 19, 'Scroll.in': 19, 'Livemint': 35, 'DW World': 4, 'NPR World': 2}"}
+{"run": "digest", "t": 4365, "kind": "dbg", "msg": "gather: 13/14 feed(s) live, 376 article(s)"}
+{"run": "digest", "t": 4368, "kind": "event", "stage": "stage", "name": "gather", "ms": 2344, "ok": true, "error": ""}
+{"run": "digest", "t": 4368, "kind": "dbg", "msg": "gather: QUORUM OK — live=13/3 min, articles=376/20 min"}
+{"run": "digest", "t": 4368, "kind": "dbg", "msg": "rank: select pool 376 -> 305; capped outlets: {'The Hindu': 20, 'Hindustan Times': 50, 'Times of India': 1}"}
+{"run": "digest", "t": 4372, "kind": "event", "stage": "stage", "name": "pool", "ms": 4, "ok": true, "error": ""}
+{"run": "digest", "t": 4490, "kind": "dbg", "msg": "wiki: 2026_August_23 http=200 events=0"}
+{"run": "digest", "t": 4491, "kind": "event", "stage": "wikipedia", "page": "2026_August_23", "http": 200, "bytes": 192, "events": 0, "verdict": "ok"}
+{"run": "digest", "t": 4612, "kind": "dbg", "msg": "wiki: 2026_August_22 http=200 events=5"}
+{"run": "digest", "t": 4612, "kind": "event", "stage": "wikipedia", "page": "2026_August_22", "http": 200, "bytes": 2365, "events": 5, "verdict": "ok"}
+{"run": "digest", "t": 4614, "kind": "event", "stage": "stage", "name": "wikipedia", "ms": 241, "ok": true, "error": ""}
+{"run": "digest", "t": 4720, "kind": "dbg", "msg": "llm: call #1 model=gemini-3.6-flash label=select prompt=74152ch"}
+{"run": "digest", "t": 34989, "kind": "dbg", "msg": "llm: select finish_reason=FinishReason.STOP"}
+{"run": "digest", "t": 34990, "kind": "event", "stage": "llm", "call": 1, "label": "select", "model": "gemini-3.6-flash", "latency_ms": 30269, "prompt_chars": 74152, "system_chars": 2517, "response_chars": 3029, "finish_reason": "FinishReason.STOP", "malformed_json": false, "json_retries": 0, "max_output_tokens": 32768, "usage": {"prompt_token_count": 18082, "candidates_token_count": 1012, "total_token_count": 22986, "thoughts_token_count": 3892}}
+{"run": "digest", "t": 34991, "kind": "dbg", "msg": "llm: select_stories -> 12 raw cluster(s)"}
+{"run": "digest", "t": 34991, "kind": "event", "stage": "stage", "name": "select", "ms": 30377, "ok": true, "error": ""}
+{"run": "digest", "t": 34992, "kind": "dbg", "msg": "rank: [world] outlets=7 tier=lead wiki=no weight=11 'US-Canada trade tensions escalate as Canada vows retaliatory tariffs after US imposes 50% levies'"}
+{"run": "digest", "t": 34992, "kind": "dbg", "msg": "rank: [world] outlets=5 tier=major wiki=no weight=7 'Russia and Ukraine exchange deadly strikes as Putin warns of escalation and France pledges missiles'"}
+{"run": "digest", "t": 34992, "kind": "dbg", "msg": "rank: [world] outlets=3 tier=major wiki=no weight=5 'US federal judge strikes down Trump administration visa ban covering 75 countries'"}
+{"run": "digest", "t": 34992, "kind": "dbg", "msg": "rank: [world] outlets=2 tier=major wiki=yes weight=6 'Israel conducts strikes in Syria, drawing US criticism over lack of prior notice'"}
+{"run": "digest", "t": 34992, "kind": "dbg", "msg": "rank: [world] outlets=3 tier=notable wiki=no weight=3 'Over 100 former French and British diplomats urge sanctions against Israel over West Bank actions'"}
+{"run": "digest", "t": 34992, "kind": "dbg", "msg": "rank: [world] outlets=3 tier=notable wiki=no weight=3 'One killed and three injured in school sword attack in Sweden'"}
+{"run": "digest", "t": 34993, "kind": "dbg", "msg": "rank: [india] outlets=5 tier=lead wiki=no weight=9 \"PM Modi meets BJP's new national team as party passes resolution on Vande Mataram\""}
+{"run": "digest", "t": 34993, "kind": "dbg", "msg": "rank: [india] outlets=5 tier=major wiki=no weight=7 'Cargo ship carrying 24 crew members sinks off Odisha coast, triggering major rescue operation'"}
+{"run": "digest", "t": 34993, "kind": "dbg", "msg": "rank: [india] outlets=2 tier=major wiki=no weight=4 'External Affairs Minister S. Jaishankar to visit Russia to co-chair inter-governmental commission'"}
+{"run": "digest", "t": 34993, "kind": "dbg", "msg": "rank: [india] outlets=3 tier=notable wiki=no weight=3 'Bar Council of India co-chairman demands resignation of chairman Manan Kumar Mishra over alleged irregularities'"}
+{"run": "digest", "t": 34993, "kind": "dbg", "msg": "rank: [india] outlets=2 tier=notable wiki=no weight=2 'Health Ministry bans fixed-dose combination cold medicines for children under four'"}
+{"run": "digest", "t": 34993, "kind": "dbg", "msg": "rank: [india] outlets=3 tier=notable wiki=no weight=3 'DMK announces structural overhaul with age limits and term caps for party positions'"}
+{"run": "digest", "t": 34993, "kind": "dbg", "msg": "rank: 12 scored, 0 id(s) rejected, 6 kept {'world': 4, 'india': 2}; weights=[11, 7, 6, 5, 9, 7]"}
+{"run": "digest", "t": 34995, "kind": "event", "stage": "stage", "name": "rank", "ms": 3, "ok": true, "error": ""}
+{"run": "digest", "t": 34995, "kind": "dbg", "msg": "wiki: 5 curated event(s); 1 matched a selected story, 4 not covered"}
+{"run": "digest", "t": 34995, "kind": "dbg", "msg": "wiki: NOT COVERED [Armed conflicts and attacks] Middle Eastern crisis — The Israel Defense Forces claims that Sharif al-Hasanat, an alleged Hamas company commander affiliated with the Deir al-Balah Battalion of the Al-Qassam Brigades, was killed in an airstrike in Gaza, violating the ongoing ceasefire."}
+{"run": "digest", "t": 34995, "kind": "dbg", "msg": "wiki: NOT COVERED [Disasters and accidents] Five people are killed in a head-on road collision along the Lagos–Badagry Expressway near Lagos, Nigeria."}
+{"run": "digest", "t": 34995, "kind": "dbg", "msg": "wiki: NOT COVERED [Disasters and accidents] Seven people are killed and others are injured in a three-vehicle collision on the A66 road in Middlesbrough, North Yorkshire, England."}
+{"run": "digest", "t": 34995, "kind": "dbg", "msg": "wiki: NOT COVERED [Law and crime] The Pacific Islands Forum Fisheries Agency reports that authorities in Kiribati, Palau, and Papua New Guinea have detained four Chinese and Indonesian fishing vessels for alleged illegal fishing or licence violations during a regional enfor"}
+{"run": "digest", "t": 35111, "kind": "dbg", "msg": "extract: 4587ch https://www.bbc.co.uk/news/articles/cx272np7vgyo?at_medium=RSS&at_campaign=rss"}
+{"run": "digest", "t": 38506, "kind": "dbg", "msg": "extract: 10812ch https://www.aljazeera.com/video/newsfeed/2026/8/22/22-08-clip-carney-tariffs-canada-ca?traffic_source=rss"}
+{"run": "digest", "t": 38782, "kind": "dbg", "msg": "extract: 5414ch https://www.livemint.com/news/us-news/trumps-50-canada-tariffs-kick-in-whisky-alcohol-dairy-motorcycles-and-more-affected-check-list-11787416459825.html"}
+{"run": "digest", "t": 39095, "kind": "dbg", "msg": "extract: 2666ch https://timesofindia.indiatimes.com/world/rest-of-world/cannot-accept-what-us-has-offered-canada-pm-carney-defiant-as-trade-talks-collapse/articleshow/133426914.cms"}
+{"run": "digest", "t": 39178, "kind": "dbg", "msg": "extract: 6606ch https://www.theguardian.com/world/2026/aug/22/canada-tariffs-trump-trade-deal-talks-fail"}
+{"run": "digest", "t": 42521, "kind": "dbg", "msg": "extract: 11051ch https://www.aljazeera.com/video/newsfeed/2026/8/22/08-22-26-putin-ukraine-talks-clip?traffic_source=rss"}
+{"run": "digest", "t": 42588, "kind": "dbg", "msg": "extract: 6354ch https://timesofindia.indiatimes.com/world/europe/you-opened-pandoras-box-putin-warns-ukraine-of-response-after-kyiv-strikes-russian-economic-targets/articleshow/133427980.cms"}
+{"run": "digest", "t": 42646, "kind": "dbg", "msg": "extract: fetch_html https://www.france24.com/en/france-to-deliver-interceptor-missiles-to-ukraine-after-fresh-wave-of-russian-strikes: http=403"}
+{"run": "digest", "t": 45911, "kind": "dbg", "msg": "extract: 14735ch https://www.france24.com/en/france-to-deliver-interceptor-missiles-to-ukraine-after-fresh-wave-of-russian-strikes"}
+{"run": "digest", "t": 45965, "kind": "dbg", "msg": "extract: 4449ch https://www.bbc.co.uk/news/articles/c39egw7nmk2o?at_medium=RSS&at_campaign=rss"}
+{"run": "digest", "t": 46054, "kind": "dbg", "msg": "extract: 2955ch https://www.theguardian.com/world/2026/aug/22/ukraine-shopping-centre-attack-deaths-russia-terror-by-design-kaja-kallas-kryvyi-rih"}
+{"run": "digest", "t": 46173, "kind": "dbg", "msg": "extract: 3536ch https://www.channelnewsasia.com/world/israel-conducts-fresh-strike-in-syria-after-us-criticism-6335281"}
+{"run": "digest", "t": 46265, "kind": "dbg", "msg": "extract: 3174ch https://www.aljazeera.com/news/2026/8/22/envoy-says-israel-did-not-give-the-us-notice-before-strikes-on-syrian-base?traffic_source=rss"}
+{"run": "digest", "t": 46316, "kind": "dbg", "msg": "extract: 3824ch https://www.aljazeera.com/news/2026/8/22/israeli-drone-strike-on-civilian-vehicle-causes-injuries-in-syria?traffic_source=rss"}
+{"run": "digest", "t": 47159, "kind": "dbg", "msg": "extract: 1791ch https://www.channelnewsasia.com/world/us-judge-strikes-down-trumps-75-country-visa-ban-6335151"}
+{"run": "digest", "t": 47258, "kind": "dbg", "msg": "extract: 6506ch https://www.livemint.com/news/us-news/trumps-75-country-immigration-visa-ban-struck-down-by-new-york-judge-contrary-to-law-11787411942248.html"}
+{"run": "digest", "t": 47304, "kind": "dbg", "msg": "extract: fetch_html https://www.france24.com/en/americas/20260822-contrary-to-law-us-judge-strikes-down-trump-s-75-country-visa-ban: http=403"}
+{"run": "digest", "t": 50696, "kind": "dbg", "msg": "extract: 15238ch https://www.france24.com/en/americas/20260822-contrary-to-law-us-judge-strikes-down-trump-s-75-country-visa-ban"}
+{"run": "digest", "t": 50864, "kind": "dbg", "msg": "extract: 4626ch https://www.thehindu.com/news/national/nitin-nabin-holds-first-meeting-with-bjps-new-national-team/article71376669.ece"}
+{"run": "digest", "t": 50919, "kind": "dbg", "msg": "extract: fetch_html https://www.ndtv.com/india-news/pm-modi-nitin-nabin-new-ideas-perspectives-pm-narendra-modi-meets-team-bjp-3-0-11945791#publisher=newsstand: http=403"}
+{"run": "digest", "t": 54356, "kind": "dbg", "msg": "extract: 30277ch https://www.ndtv.com/india-news/pm-modi-nitin-nabin-new-ideas-perspectives-pm-narendra-modi-meets-team-bjp-3-0-11945791#publisher=newsstand"}
+{"run": "digest", "t": 54431, "kind": "dbg", "msg": "extract: 2913ch https://www.livemint.com/news/india/pm-modi-meets-bjp-s-new-national-team-after-party-slams-cwc-over-vande-mataram-resolution-11787412877355.html"}
+{"run": "digest", "t": 54504, "kind": "dbg", "msg": "extract: 2456ch https://timesofindia.indiatimes.com/india/pm-modi-meets-bjps-new-65-member-national-team-at-party-headquarter/articleshow/133426089.cms"}
+{"run": "digest", "t": 54583, "kind": "dbg", "msg": "extract: 5462ch https://www.hindustantimes.com/india-news/pm-modi-meets-bjp-s-newly-formed-team-at-party-headquarters-in-delhi-101787407393412.html"}
+{"run": "digest", "t": 54732, "kind": "dbg", "msg": "extract: 1335ch https://www.thehindu.com/news/national/panama-flagged-cargo-ship-sinks-in-bay-of-bengal-rescue-operations/article71378882.ece"}
+{"run": "digest", "t": 54771, "kind": "dbg", "msg": "extract: fetch_html https://www.ndtv.com/india-news/panama-flagged-cargo-ship-sinks-240-nautical-miles-off-odisha-coast-11945752#publisher=newsstand: http=403"}
+{"run": "digest", "t": 59061, "kind": "dbg", "msg": "extract: 29737ch https://www.ndtv.com/india-news/panama-flagged-cargo-ship-sinks-240-nautical-miles-off-odisha-coast-11945752#publisher=newsstand"}
+{"run": "digest", "t": 59202, "kind": "dbg", "msg": "extract: 1044ch https://www.livemint.com/news/india/panamaflagged-cargo-ship-with-mostly-chinese-crew-sinks-off-odishas-paradip-coast-11787417377791.html"}
+{"run": "digest", "t": 59267, "kind": "dbg", "msg": "extract: 688ch https://timesofindia.indiatimes.com/india/panama-flagged-cargo-ship-sinks-in-bay-of-bengal-240-nautical-miles-off-odisha/articleshow/133427842.cms"}
+{"run": "digest", "t": 59355, "kind": "dbg", "msg": "extract: 3431ch https://www.hindustantimes.com/india-news/chinabound-vessel-with-24-crew-members-sinks-near-odisha-s-paradip-port-mv-oceanwinner-101787414569088.html"}
+{"run": "digest", "t": 59357, "kind": "event", "stage": "stage", "name": "extract", "ms": 24361, "ok": true, "error": ""}
+{"run": "digest", "t": 59394, "kind": "dbg", "msg": "llm: call #2 model=gemini-3.6-flash label=claims prompt=103297ch"}
+{"run": "digest", "t": 108370, "kind": "dbg", "msg": "llm: claims finish_reason=FinishReason.STOP"}
+{"run": "digest", "t": 108372, "kind": "event", "stage": "llm", "call": 2, "label": "claims", "model": "gemini-3.6-flash", "latency_ms": 48976, "prompt_chars": 103297, "system_chars": 2135, "response_chars": 16901, "finish_reason": "FinishReason.STOP", "malformed_json": false, "json_retries": 0, "max_output_tokens": 32768, "usage": {"prompt_token_count": 27871, "candidates_token_count": 4299, "total_token_count": 36076, "thoughts_token_count": 3906}}
+{"run": "digest", "t": 108373, "kind": "dbg", "msg": "llm: claims: [world] 20 claim(s) from 4 outlet(s) 'US-Canada trade tensions escalate as Canada vows retaliatory tariffs after US imposes 50% levies'"}
+{"run": "digest", "t": 108373, "kind": "dbg", "msg": "llm: claims: [world] 16 claim(s) from 4 outlet(s) 'Russia and Ukraine exchange deadly strikes as Putin warns of escalation and France pledges missiles'"}
+{"run": "digest", "t": 108373, "kind": "dbg", "msg": "llm: claims: [world] 12 claim(s) from 2 outlet(s) 'Israel conducts strikes in Syria, drawing US criticism over lack of prior notice'"}
+{"run": "digest", "t": 108373, "kind": "dbg", "msg": "llm: claims: [world] 8 claim(s) from 3 outlet(s) 'US federal judge strikes down Trump administration visa ban covering 75 countries'"}
+{"run": "digest", "t": 108373, "kind": "dbg", "msg": "llm: claims: [india] 12 claim(s) from 4 outlet(s) \"PM Modi meets BJP's new national team as party passes resolution on Vande Mataram\""}
+{"run": "digest", "t": 108373, "kind": "dbg", "msg": "llm: claims: [india] 7 claim(s) from 3 outlet(s) 'Cargo ship carrying 24 crew members sinks off Odisha coast, triggering major rescue operation'"}
+{"run": "digest", "t": 108373, "kind": "dbg", "msg": "llm: extract_claims -> 6/6 cluster(s), 75 claim(s) total, 0 cluster(s) rejected, 0 claim(s) rejected"}
+{"run": "digest", "t": 108375, "kind": "event", "stage": "stage", "name": "claims", "ms": 49017, "ok": true, "error": ""}
+{"run": "digest", "t": 108410, "kind": "dbg", "msg": "llm: call #3 model=gemini-3.6-flash label=write prompt=12556ch"}
+{"run": "digest", "t": 134768, "kind": "dbg", "msg": "llm: write finish_reason=FinishReason.STOP"}
+{"run": "digest", "t": 134769, "kind": "event", "stage": "llm", "call": 3, "label": "write", "model": "gemini-3.6-flash", "latency_ms": 26357, "prompt_chars": 12556, "system_chars": 2535, "response_chars": 13052, "finish_reason": "FinishReason.STOP", "malformed_json": false, "json_retries": 0, "max_output_tokens": 32768, "usage": {"prompt_token_count": 3726, "candidates_token_count": 3122, "total_token_count": 9041, "thoughts_token_count": 2193}}
+{"run": "digest", "t": 134771, "kind": "dbg", "msg": "anchor: clean_vocab dropped 1 item(s)"}
+{"run": "digest", "t": 134773, "kind": "dbg", "msg": "llm: write_stories -> 6 story/stories written, 0 dropped, 0 thin-sourced"}
+{"run": "digest", "t": 134773, "kind": "event", "stage": "stage", "name": "write", "ms": 26398, "ok": true, "error": ""}
+{"run": "digest", "t": 134775, "kind": "dbg", "msg": "digest: wrote /home/runner/work/follow-news/follow-news/data/2026-08-23.json with 6 story/stories"}
+{"run": "digest", "t": 134886, "kind": "event", "stage": "stage", "name": "render", "ms": 110, "ok": true, "error": ""}
+{"run": "digest", "t": 134886, "kind": "dbg", "msg": "digest: 3 LLM call(s) this run"}
+{"run": "digest", "t": 134886, "kind": "event", "stage": "tracer", "msg": "capture finished", "ok": true, "ms": 134886, "bytes": 8382127}
+{"run": "follow", "t": 0, "kind": "follow", "stage": "tracer", "msg": "capture started", "level": 1, "day": "2026-08-23"}
+{"run": "follow", "t": 3, "kind": "dbg", "msg": "extract: cache enabled at /home/runner/work/follow-news/follow-news/cache/extract.json (121 url(s))"}
+{"run": "follow", "t": 306, "kind": "dbg", "msg": "follow: run -> 3 existing record(s), 3 owner issue(s) in scope"}
+{"run": "follow", "t": 308, "kind": "dbg", "msg": "dossier: grounded ceiling of 20 is over 14 days old; re-probing"}
+{"run": "follow", "t": 308, "kind": "dbg", "msg": "follow: sweep -> nothing to research; 0 active follow(s) all current"}
+{"run": "follow", "t": 309, "kind": "dbg", "msg": "follow: wrote /home/runner/work/follow-news/follow-news/followed/1/record.json"}
+{"run": "follow", "t": 309, "kind": "dbg", "msg": "follow: wrote /home/runner/work/follow-news/follow-news/followed/2/record.json"}
+{"run": "follow", "t": 312, "kind": "dbg", "msg": "follow: wrote /home/runner/work/follow-news/follow-news/followed/3/record.json"}
+{"run": "follow", "t": 362, "kind": "dbg", "msg": "follow: run -> done, 0 grounded call(s) this run"}
+{"run": "follow", "t": 362, "kind": "event", "stage": "tracer", "msg": "capture finished", "ok": true, "ms": 362, "bytes": 2985}
