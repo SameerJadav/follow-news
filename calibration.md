@@ -513,6 +513,75 @@ drop there is not a regression — it is the gate doing its job — but a *secon
 one in a week would mean the write pass has found a new route to a number the
 claims never carried.
 
+## 2026-08-23 (later still) — the reader said the prose is hard to read
+
+Owner feedback, as the reader the app is for: "when reading, the language is
+really hard to understand — I want easier language, that I can just read it
+once and get it."
+
+`product.md` §Reader already asks for "plain, easy language, not newspaper
+English" and `decisions.md` §Editorial for "plain adult English". The output
+was not meeting them. Rule 8 of `llm._WRITE_SYSTEM` asked for exactly that in
+one abstract sentence — "short sentences, active voice, concrete nouns, no
+jargon, no idioms" — and the model read it as a register hint and wrote wire
+copy anyway. Measured over the last 7 published days, 62 stories, 625
+sentences:
+
+```
+"stated" / "noted" / "asserted"       56    vs   "said" / "told"   11
+nominalisations (-tion/-ment/-ance)  386          6.2 per story
+"amid" / "following" / "prior to"     44          0.7 per story
+"however" / "moreover" / "meanwhile"  36          0.6 per story
+capitalised names per sentence                    4.1
+sentences carrying a figure                        43%
+mean words per sentence  18.8    p90  27    max  37
+first sentence           21.4 words mean, 23 median
+```
+
+Two of those are the whole complaint. **Sources speak in "stated" five times
+for every "said"** — and the claims pass hands the write pass claims already
+phrased that way, so the register is inherited, not chosen. And **the first
+sentence names a category, not an event**: "Trade relations between the United
+States and Canada have worsened after bilateral negotiations broke down late
+on Friday" (`data/2026-08-23.json`, lead). A reader who reads only that
+sentence — which rule 7 says is the point of it — has learned that something
+happened in trade. The 4.1 names per sentence come from repeating a full title
+on every mention: "US Trade Representative Jamieson Greer" three times in one
+story.
+
+### changed
+
+| what | old -> new | why |
+| --- | --- | --- |
+| `llm._WRITE_SYSTEM` rule 7 | "the first sentence carries the gist" -> WHO did WHAT, under 20 words, concrete subject, with two worked counter-examples | 21.4-word abstract openers, above |
+| `llm._WRITE_SYSTEM` rule 8 | one abstract sentence -> seven named bans with the replacement word beside each | the abstract version measurably lost to the model's wire-copy prior |
+| `llm._WRITE_SYSTEM` rule 9 | — -> one new fact per sentence; a figure sentence carries nothing else new | 43% of sentences carry a number, and they stack |
+| `llm._WRITE_SYSTEM` rule 10 (was 9) | LENGTH unchanged, one clause added | "reach the length with more of the story, never by restating" — the 500-word lead was padding by repetition |
+
+This is a register change, so `decisions.md` §Editorial requires showing it to
+the owner before it ships; it was.
+
+### Not changed
+
+- **`anchor.WORD_TARGET`** stays 500/200/200. The lead pads, but the fix tried
+  first is the rule-10 clause, not a shorter target — shortening it would lose
+  story, and the analysis for it does not exist yet. Re-measure once the new
+  prompt has a week of output.
+- **The claims prompt** still says "stated", and that is correct: claims are
+  internal and should stay close to the source's own wording. Rule 8 makes the
+  write pass translate, which is the pass that faces the reader.
+- **No anchoring rule moved.** Every gate in `anchor.py` is untouched, so the
+  register change cannot buy readability with sourcing.
+
+### What to check in a week
+
+Re-run the counts above over `data/` for the 7 days after this ships. The two
+that decide whether it worked: `said` should now outnumber `stated`, and mean
+first-sentence length should fall under 20 words. If mean words per sentence
+drops but the "stated" ratio does not, the ban list is being read as advice
+rather than as a rule, and the next move is to put the bans in the user prompt
+per story rather than the system prompt.
+
 ## Starting dial values (2026-07-27, uncalibrated)
 
 `dossier.md` §15 deliberately left these unset; they are the first thing to

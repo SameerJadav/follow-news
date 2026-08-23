@@ -275,18 +275,49 @@ earlier digest understands it completely. Use the background claims for \
 that.
 
 7. THE OPENING. The headline is informative, not teasing — it says what \
-happened. The first sentence carries the gist, so somebody who reads only \
-that has not missed the story.
+happened. The first sentence names WHO did WHAT, in under 20 words, with a \
+person, country or group as its subject. Never open on an abstract subject \
+or a category of event. Not "Trade relations between the two countries \
+have worsened after negotiations broke down" — write "The United States put \
+new 50% taxes on Canadian goods on Saturday." Not "A series of military \
+actions has drawn criticism" — write "Israel bombed an air base in Syria, \
+and the United States said it should not have."
 
-8. PLAIN ADULT ENGLISH for a non-native reader: short sentences, active \
-voice, concrete nouns, no jargon, no idioms. Clear, but not simplified — a \
-good explainer site, not a children's news service. Never talk down to the \
-reader.
+8. PLAIN ADULT ENGLISH, NOT NEWSPAPER ENGLISH. Clear but never talking \
+down: a good explainer site, not a children's news service. Concretely:
+  - People **say** things. Never "stated", "noted", "asserted", \
+"indicated", "reiterated", "conveyed", "expressed".
+  - Use the short word: **after** not "following" or "in the wake of"; \
+**before** not "prior to"; **during** or **as** not "amid"; **about** not \
+"approximately"; **sharply** or **a lot** not "significantly" or \
+"substantially"; **use** not "utilise"; **start** not "commence"; **help** \
+not "facilitate".
+  - Prefer a verb to an abstract noun. Not "the collapse of the talks led \
+to the imposition of tariffs" — write "the talks collapsed, so the US put \
+on tariffs".
+  - Never start a sentence with "However", "Moreover", "Furthermore", \
+"Additionally", "Subsequently" or "Meanwhile". Start a new sentence, or use \
+"But" or "Then".
+  - Never write a pointing-back sentence like "This amount represents", \
+"This decision follows" or "This move comes as". Say the thing directly.
+  - Give a person their full title once, then use the short name: "Canadian \
+Prime Minister Mark Carney" first, "Carney" after that. Never repeat the \
+full title.
+  - Keep sentences under 20 words, and never above 30. Split a long \
+sentence into two.
 
-9. LENGTH. Each story's block states its target word count. Get close to \
-it. A LEAD story is substantially longer than the others.
+9. ONE NEW FACT PER SENTENCE. If a sentence carries two facts, split it. \
+Do not stack numbers: a sentence with a figure in it should carry that \
+figure and nothing else new. Where a claim itself explains what a figure \
+means, keep that explanation next to the number, so the reader gets a sense \
+of size and not just a digit. Where no claim explains it, leave the figure \
+plain — never invent a comparison.
 
-10. WORDS TO KNOW. List 2-6 of the harder words you actually used in the \
+10. LENGTH. Each story's block states its target word count. Get close to \
+it. A LEAD story is substantially longer than the others. Reach the length \
+with more of the story, never by restating what you already said.
+
+11. WORDS TO KNOW. List 2-6 of the harder words you actually used in the \
 body. `term` is the word exactly as it appears in your text, `meaning` is \
 a simple one-line definition, and `say` is a PHONETIC RESPELLING with the \
 stressed syllable in capital letters (e.g. "sovereignty" -> "SOV-rin-tee") \
