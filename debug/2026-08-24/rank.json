@@ -1,0 +1,594 @@
+{
+  "dials": {
+    "WEIGHT_FLOOR": 5,
+    "TIER_WEIGHT": {
+      "lead": 4,
+      "major": 2,
+      "notable": 0
+    },
+    "WIKI_BONUS": 2,
+    "HARD_CAP": 12,
+    "MIN_STORIES_IF_ANY": 3,
+    "MAX_ARTICLES_PER_STORY": 5
+  },
+  "floor_relaxed": false,
+  "kept_weights": [
+    8,
+    7,
+    5,
+    9
+  ],
+  "per_section": {
+    "world": 3,
+    "india": 1
+  },
+  "clusters": [
+    {
+      "headline_hint": "US-Canada trade talks collapse into tariff war as Trump lashes out at Ottawa",
+      "section": "world",
+      "category": "economy",
+      "tier_requested": "lead",
+      "article_ids": [
+        18,
+        31,
+        83,
+        119,
+        125
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        18,
+        31,
+        83,
+        119,
+        125
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 8,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 4,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "‘No more!!!’: Trump lashes out after US-Canada talks devolve into trade war",
+          "url": "https://www.theguardian.com/us-news/2026/aug/23/donald-trump-lashes-out-after-us-canada-talks-devolve-into-trade-war"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Trump says Canada wants 'benefits' of being US state after trade talks collapse",
+          "url": "https://www.bbc.co.uk/news/articles/cx272np7vgyo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "MAGA skids on maple syrup: US-Canada ties on a slippery slope",
+          "url": "https://timesofindia.indiatimes.com/world/us/maga-skids-on-maple-syrup-us-canada-ties-on-a-slippery-slope/articleshow/133442324.cms"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Canada, US and tit-for-tat tariffs: How will they impact their economies?",
+          "url": "https://www.aljazeera.com/news/2026/8/23/canada-us-and-tit-for-tat-tariffs-how-will-it-impact-their-economies?traffic_source=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "The lesson from Canada’s collapsed trade talks with the US: negotiation may be futile",
+          "url": "https://www.theguardian.com/us-news/2026/aug/23/canada-us-collapsed-trade-talks-negotiation-breakdown-analysis"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Volodymyr Zelenskyy rejects wartime elections in Ukraine, warning they would split the nation",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        166,
+        167,
+        212,
+        213,
+        217,
+        228,
+        243,
+        266,
+        294
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        166,
+        167,
+        212,
+        213,
+        217,
+        228,
+        243,
+        266,
+        294
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 5,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "France 24",
+          "title": "Zelensky rejects wartime elections, saying vote would 'split' Ukraine",
+          "url": "https://www.france24.com/en/zelensky-rejects-wartime-elections-saying-vote-would-split-ukraine"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "'Could destroy Ukraine': Zelenskyy's big warning as calls grow for fresh elections",
+          "url": "https://timesofindia.indiatimes.com/world/europe/could-destroy-ukraine-zelenskyys-big-warning-as-calls-grow-for-fresh-elections-amid-ongoing-war/articleshow/133440362.cms"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Zelensky should be asked what he knew about government corruption, sacked minister tells BBC",
+          "url": "https://www.bbc.co.uk/news/articles/cwy4ypzvd7po?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Holding election in wartime would risk destroying Ukraine, says Zelenskyy",
+          "url": "https://www.theguardian.com/world/2026/aug/23/ukraine-election-wartime-risk-russia-zelenskyy"
+        },
+        {
+          "outlet": "DW World",
+          "title": "Ukraine: Zelenskyy rejects wartime elections",
+          "url": "https://www.dw.com/en/ukraine-zelenskyy-rejects-wartime-elections/a-78475087?maca=en-rss-en-world-4025-rdf"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 4
+    },
+    {
+      "headline_hint": "Iran discovers massive new natural gas field in Fars Province containing over 200 billion cubic metres",
+      "section": "world",
+      "category": "economy",
+      "tier_requested": "major",
+      "article_ids": [
+        0,
+        151,
+        192
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        0,
+        151,
+        192
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 5,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "France 24",
+          "title": "Iran discovers major new gas reserves amid war-hit energy sector",
+          "url": "https://www.france24.com/en/middle-east/20260823-iran-discovers-major-new-gas-reserves-amid-war-hit-energy-sector"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Iran discovers over 7.5 trillion cubic feet of gas reserves amid war, energy crisis",
+          "url": "https://timesofindia.indiatimes.com/world/middle-east/iran-discovers-over-7-5-trillion-cubic-feet-of-gas-reserves-as-us-blockade-squeezes-energy-sector/articleshow/133441497.cms"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Iran discovers huge 7.5 trillion cubic feet gas reserve in Fars Province amid US sanctions pressure",
+          "url": "https://www.livemint.com/news/world/iran-discovers-huge-7-5-trillion-cubic-feet-gas-reserve-in-fars-province-amid-us-sanctions-pressure-11787493078354.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Fast-moving wildfire in Reno, Nevada forces thousands of evacuations and state of emergency",
+      "section": "world",
+      "category": "disaster",
+      "tier_requested": "notable",
+      "article_ids": [
+        51,
+        64,
+        128
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        51,
+        64,
+        128
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "Fast-moving wildfire in Reno, Nevada, forces thousands to evacuate homes",
+          "url": "https://www.theguardian.com/us-news/2026/aug/23/wildfire-reno-nevada-hawk-fire"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Thousands displaced as wildfire threatens homes in US state of Nevada",
+          "url": "https://www.aljazeera.com/news/2026/8/23/thousands-displaced-as-wildfire-threatens-homes-in-us-state-of-nevada?traffic_source=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Emergency declared in Nevada as wildfire forces evacuation of 14,000 people",
+          "url": "https://www.france24.com/en/emergency-declared-in-nevada-as-wildfire-forces-evacutation-of-14-000-people"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "At least 30 people killed in landfill collapse in Conakry, Guinea after heavy rains",
+      "section": "world",
+      "category": "disaster",
+      "tier_requested": "notable",
+      "article_ids": [
+        52,
+        80
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        52,
+        80
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": true,
+      "wiki_event": "At least 30 people are killed when a landfill collapses in Conakry, Guinea.",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "BBC World",
+          "title": "Guinea rubbish landfill collapse kills 30",
+          "url": "https://www.bbc.co.uk/news/articles/c4g3g36z7p6o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Landfill collapse in Guinea kills at least 30 people",
+          "url": "https://www.aljazeera.com/news/2026/8/23/landfill-collapse-in-guinea-kills-at-least-22-people-official-says?traffic_source=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "DR Congo government and M23 rebel alliance agree on roadmap for peace talks in Switzerland",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "notable",
+      "article_ids": [
+        218,
+        234
+      ],
+      "verdict": "cut:below_floor(2<5)",
+      "valid_ids": [
+        218,
+        234
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 2,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "BBC World",
+          "title": "DR Congo and M23 rebels agree roadmap for peace talks",
+          "url": "https://www.bbc.co.uk/news/articles/cre4e1q3wewo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "DR Congo, AFC/M23 group agree on roadmap for peace negotiations after Swiss talks",
+          "url": "https://www.france24.com/en/africa/20260823-dr-congo-afc-m23-group-agree-on-roadmap-for-peace-negotiations-after-swiss-talks"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Iran-linked hackers blamed for cyberattack that shut down British power plant for four days",
+      "section": "world",
+      "category": "technology",
+      "tier_requested": "notable",
+      "article_ids": [
+        44,
+        168,
+        203
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        44,
+        168,
+        203
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "Iran hackers shut UK power facility for 4 days",
+          "url": "https://timesofindia.indiatimes.com/world/uk/iran-hackers-shut-uk-power-facility-for-4-days/articleshow/133445525.cms"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Iran-linked hackers blamed for cyber-attack that shut down UK power plant",
+          "url": "https://www.theguardian.com/world/2026/aug/23/iran-linked-hackers-blamed-cyber-attack-british-power-plant"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Iran-linked hackers shut down UK power plant for four days: Report",
+          "url": "https://www.livemint.com/news/us-news/iranlinked-hackers-shut-down-uk-power-plant-for-four-days-report-11787488621848.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Panama-flagged cargo ship sinks off Odisha coast, triggering major search operation for missing crew",
+      "section": "india",
+      "category": "disaster",
+      "tier_requested": "lead",
+      "article_ids": [
+        30,
+        143,
+        187,
+        239,
+        253
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        30,
+        143,
+        187,
+        239,
+        253
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 5,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 9,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 4,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "The Hindu",
+          "title": "Search continues for 22 from vessel that sunk off Odisha",
+          "url": "https://www.thehindu.com/news/national/ship-sinks-off-odisha-two-rescued-as-navy-coast-guard-continue-search-for-22-crew-members/article71381540.ece"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Panama-flagged ship sinks off Odisha, 2 rescued; search on for 22: Shipping minister",
+          "url": "https://timesofindia.indiatimes.com/india/panama-flagged-ship-sinks-off-odisha-2-rescued-search-on-for-22-shipping-minister/articleshow/133442072.cms"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "2 Rescued, Search On For Other Crew Members Of Panama-Flagged Ship: Minister",
+          "url": "https://www.ndtv.com/india-news/2-rescued-search-on-for-other-crew-members-of-panama-flagged-ship-minister-11948421#publisher=newsstand"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Panama-flagged cargo incident: 2 liferafts, oil slick detected, 2 rescued; search op on after it sank off Odisha coast",
+          "url": "https://www.livemint.com/news/india/panamaflagged-cargo-incident-2-liferafts-oil-slick-detected-2-rescued-search-operation-sank-off-odisha-coast-update-11787485691061.html"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "2 rescued, 22 missing after China-bound iron ore vessel sinks off Odisha coast",
+          "url": "https://www.hindustantimes.com/india-news/2-rescued-22-missing-after-china-bound-iron-ore-vessel-sinks-off-odisha-coast-101787484142328.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "NSA Ajit Doval to visit Beijing for key boundary talks ahead of Chinese President Xi Jinping's trip",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        130,
+        149
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        130,
+        149
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Livemint",
+          "title": "Ajit Doval to meet China's Foreign minister Wang Yi on 25 Aug after last year's SCO summit—Why is NSA visiting Beijing?",
+          "url": "https://www.livemint.com/news/world/ajit-doval-to-meet-chinas-foreign-minister-wang-yi-on-tuesday-last-years-sco-summit-why-nsa-visiting-beijing-india-11787495558272.html"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Ajit Doval to visit China for boundary talks ahead of Xi’s India trip",
+          "url": "https://www.hindustantimes.com/india-news/ajit-doval-to-visit-china-for-boundary-talks-ahead-of-xi-s-india-trip-101787498665623.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "ISRO chief approves first module of Bharatiya Antariksha Station with goal to establish space station by 2035",
+      "section": "india",
+      "category": "science",
+      "tier_requested": "major",
+      "article_ids": [
+        88,
+        172
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        88,
+        172
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Livemint",
+          "title": "India aims to establish space station by 2035, first Bharatiya Antariksha Station module approved: ISRO chief",
+          "url": "https://www.livemint.com/news/india/india-aims-to-establish-space-station-by-2035-first-bharatiya-antariksha-station-module-approved-isro-chief-11787504675771.html"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "‘India will establish its own space station by 2035’: Isro chief V Narayanan",
+          "url": "https://www.hindustantimes.com/india-news/india-will-establish-its-own-space-station-by-2035-isro-chief-v-narayanan-101787495251095.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "India test-fires first 100% indigenised AK-203 'Sher' assault rifle in Amethi",
+      "section": "india",
+      "category": "technology",
+      "tier_requested": "notable",
+      "article_ids": [
+        150,
+        178
+      ],
+      "verdict": "cut:below_floor(2<5)",
+      "valid_ids": [
+        150,
+        178
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 2,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "NDTV",
+          "title": "India Cuts The Cord On Imports, Test-Fires Fully Indigenous AK-203 \"Sher\"",
+          "url": "https://www.ndtv.com/india-news/india-cuts-the-cord-on-imports-test-fires-fully-indigenous-ak-203-sher-11948629#publisher=newsstand"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "India's first 100% indigenised AK-203 ‘Sher’ rifle made, test-fired at factory in UP's Amethi",
+          "url": "https://www.hindustantimes.com/india-news/india-first-100-percent-indigenised-ak-203-sher-rifle-made-test-fired-at-factory-in-up-amethi-army-trials-in-september-101787490014810.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Enforcement Directorate raids IAS officer Gyanendra Kumar Gangwar over KPSC recruitment scam",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        84,
+        216,
+        236
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        84,
+        216,
+        236
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "The Hindu",
+          "title": "KPSC ‘scam’ case: ED raids IAS officer Gangwar's premises in Karnataka",
+          "url": "https://www.thehindu.com/news/national/kpsc-scam-case-ed-raids-ias-officer-gangwars-premises-in-karnataka-up/article71381000.ece"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "KPSC 'scam' case ED raids IAS officer Gangwar's premises in Karnataka, UP",
+          "url": "https://www.hindustantimes.com/india-news/kpsc-scam-case-ed-raids-ias-officer-gangwars-premises-in-karnataka-up-101787489699509.html"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "KPSC exam scam: ED raids 'missing' IAS officer's premises in Bengaluru, Bareilly",
+          "url": "https://timesofindia.indiatimes.com/city/bengaluru/kpsc-exam-scam-ed-raids-ias-officer-gyanendra-gangwars-premises-in-bengaluru-bareilly/articleshow/133439305.cms"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    }
+  ]
+}
