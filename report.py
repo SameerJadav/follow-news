@@ -45,11 +45,22 @@ def load_days(data_dir: Path, limit: int = HISTORY_DAYS) -> list[dict]:
     return days
 
 
-def feed_health(data_dir: Path) -> tuple[str, list[str], bool]:
+def feed_health(data_dir: Path, configured: set[str] | None = None) -> tuple[str, list[str], bool]:
     """(markdown_table, warnings, ok). `ok` is False only for a decay pattern
     worth waking someone up for — a feed dead DEAD_DAYS+ running, or today's
     run itself degraded. A single quiet day for an otherwise-live feed is not
-    decay and does not clear `ok`."""
+    decay and does not clear `ok`.
+
+    `configured` is the outlet names currently in feeds.txt. An outlet in the
+    window but no longer configured has been *retired*, not lost, so it is
+    dropped from the check entirely — otherwise retiring a dead feed keeps
+    the job red for HISTORY_DAYS more days while the outlet ages out of the
+    window, training the owner to ignore the one alarm that matters
+    (calibration.md 2026-08-23). Passing None keeps every outlet seen, which
+    is what the unit tests construct against. Note this only ever *removes*
+    rows: a configured outlet missing from a day's health still counts as
+    dead that day, which is what catches a feed that stops being fetched at
+    all rather than failing loudly."""
     days = load_days(data_dir, HISTORY_DAYS)
     if not days:
         return "(no digest carries feed health data yet)", [], True
@@ -59,7 +70,12 @@ def feed_health(data_dir: Path) -> tuple[str, list[str], bool]:
         live_today = {f["outlet"] for f in day.get("health", {}).get("feeds", []) if f.get("usable", 0) > 0}
         seen_today = {f["outlet"] for f in day.get("health", {}).get("feeds", [])}
         for outlet in seen_today | outlets.keys():
+            if configured is not None and outlet not in configured:
+                continue
             outlets.setdefault(outlet, []).append(outlet in live_today)
+
+    if not outlets:
+        return "(no configured feed appears in the last {}d of data)".format(HISTORY_DAYS), [], True
 
     warnings: list[str] = []
     ok = True
