@@ -218,9 +218,13 @@ def _cmd_health() -> None:
     was itself degraded, so this can be its own non-gating Actions job: a
     dying feed turns it red and the owner gets an email, without touching
     the digest or its deploy."""
+    import feeds
     import report
 
-    table, warnings, ok = report.feed_health(DATA_DIR)
+    # The roster is read from feeds.txt, not from the data files, so a feed
+    # retired today stops being alarmed on today rather than in HISTORY_DAYS.
+    configured = {name for name, _ in feeds.load_feeds(FEEDS_PATH)}
+    table, warnings, ok = report.feed_health(DATA_DIR, configured)
     print(table)
     for w in warnings:
         print(f"::warning title=Feed health::{w}")

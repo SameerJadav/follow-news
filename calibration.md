@@ -334,6 +334,88 @@ migration needed; #3 then closes by `STALE_DAYS` from its last real development.
 `MAX_ROUNDS` exhaustion still reports `complete` with no `dbg()` line, which is
 the next silent cap to close).
 
+## 2026-08-23 — the health job had been red for 23 days, and was right
+
+The owner's actual symptom: a failure email from nearly every scheduled run,
+three times a day, for three weeks. The digest was never the thing failing.
+`build` and `deploy` were green in every run sampled; the red was always the
+third job, `health` — the feed-decay alarm doing precisely what it was built
+to do, into a room that had stopped listening.
+
+**Indian Express has 403'd from CI since 2026-08-01.** Read off `data/*.json`,
+which carries `health.feeds` per day and so is the whole record:
+
+| window | http | usable |
+| --- | --- | --- |
+| 2026-07-27 → 07-31 | 200 | 200 items/run |
+| 2026-08-01 → 08-23 | **403** | **0**, 23 consecutive days, never once a 200 |
+
+`DEAD_DAYS` is 3, so `feed_health` cleared `ok` on every run from 08-04 on.
+
+**It is not the client, and there is nothing to fix in the code.** Probed
+2026-08-23 from a home IP in India, `https://indianexpress.com/section/india/feed/`:
+
+| how | result |
+| --- | --- |
+| `requests.get(url, headers={"User-Agent": feeds.UA})` — the exact `feeds.py` path | **200**, 212 KB |
+| bare `curl`, no UA | **200** |
+| `curl -A` a current Chrome UA | **200** |
+| the same request from a GitHub Actions runner | **403**, every run for 23 days |
+
+The response is CloudFront-fronted (`x-amz-cf-pop: BOM78`, Mumbai). The
+identical request succeeding from a residential IP and failing from CI puts
+the block at the CDN/WAF layer against Actions' datacenter range — the same
+week `r.jina.ai` started 403ing us for a neighbouring reason (2026-08-01
+above, which fixed the proxy and never noticed the feed). Unlike the proxy,
+there is no second UA to try: the UA is already innocent.
+
+**So the feed is retired, not debugged.** `feeds.txt` drops it to the excluded
+block with the measurement and the date, alongside the 2026-07-25 exclusions.
+India keeps six live feeds (The Hindu, NDTV, Hindustan Times, Times of India,
+Livemint, Scroll.in) and the digest has been publishing at 13/14 throughout,
+far above `MIN_LIVE_FEEDS` — no morning was ever thinner for this.
+
+### The bug retiring it exposed
+
+Removing the line from `feeds.txt` would **not** have cleared the alarm.
+`feed_health` iterates `seen_today | outlets.keys()`, so an outlet is carried
+forward once seen anywhere in the window — deliberately, because that is what
+catches a feed that stops being fetched at all instead of failing with a
+status code. But it also means a retired feed keeps accruing dead days until
+it ages out of `HISTORY_DAYS`: the job would have stayed red for **seven more
+days** after the fix, which is exactly the failure mode that produced this
+entry in the first place.
+
+`feed_health` now takes the configured roster and drops outlets that are no
+longer in it. Retirement is same-day; a *configured* outlet missing from a
+day's health is still dead, so the silent-decay catch is untouched. The
+roster is read from `feeds.txt` in `_cmd_health`, not from the data files —
+reading it from the data would reintroduce the bug. Three tests in
+`tests/test_report.py` hold all three halves of that line, including the
+carry-forward one, which is the property most likely to be optimised away by
+someone who reads only the retirement case.
+
+### Not fixed, recorded
+
+- **`data/2026-08-07.json` is the only missing day in the record.** All three
+  fires lost it to a Gemini 503 on `select`
+  (`debug/2026-08-07/run.json`: `stages[-1].error`, "high demand ... try again
+  later"). Two more `build` failures in the last ten runs (08-13, 08-18) died
+  the same way and self-healed — a later staggered fire re-ran and
+  `--if-missing` no-opped the rest. The stagger is doing its job; 08-07 is
+  what it looks like when all three draws come up bad. No dial moved: one lost
+  day in 28 is the free tier working as designed, and a retry loop around
+  `select` would spend the schema pool to buy it back.
+- **France 24 at 6/7**, one silent day, below `DEAD_DAYS` and correctly not an
+  alarm. Noted only so the next reader of the table knows it was seen.
+
+`watch next:` whether the health job goes green and *stays* green — a red
+health job is now meaningful again, and the first one that fires is a real
+feed dying, not this. If a second publisher starts 403ing only from CI, the
+pattern is no longer a coincidence and the gather path may need the
+`r.jina.ai` escalation `extract.py` already has, which would be the first
+network dependency in `feeds.py` and should not be added for one outlet.
+
 ## Starting dial values (2026-07-27, uncalibrated)
 
 `dossier.md` §15 deliberately left these unset; they are the first thing to

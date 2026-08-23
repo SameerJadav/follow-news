@@ -59,6 +59,55 @@ def test_degraded_day_is_reported(tmp_path):
     assert any("live" in w for w in warnings)
 
 
+def test_retired_feed_is_dropped_from_the_check(tmp_path):
+    """Retiring a dead feed from feeds.txt must clear the alarm the same day.
+
+    The carry-forward in feed_health keeps an outlet in the table once seen,
+    so without the `configured` filter a feed removed from feeds.txt would
+    stay DEAD for HISTORY_DAYS more days while it ages out of the window --
+    which is what kept the health job red for 23 days after Indian Express
+    started 403ing from CI (calibration.md 2026-08-23)."""
+    dates = ["2026-08-21", "2026-08-22", "2026-08-23"]
+    for d in dates:
+        (tmp_path / f"{d}.json").write_text(json.dumps(_day(d, {"Indian Express": 0, "BBC": 5})))
+
+    # Still configured: the alarm fires, which is the behaviour being kept.
+    _, warnings, ok = report.feed_health(tmp_path, {"Indian Express", "BBC"})
+    assert ok is False
+    assert any("Indian Express" in w and "DEAD" in w for w in warnings)
+
+    # Retired: gone from the warnings and from the table, immediately.
+    table, warnings, ok = report.feed_health(tmp_path, {"BBC"})
+    assert ok is True
+    assert warnings == []
+    assert "Indian Express" not in table
+    assert "BBC" in table
+
+
+def test_configured_feed_missing_from_a_day_still_counts_as_dead(tmp_path):
+    """The `configured` filter must only ever remove retired outlets. A feed
+    still in feeds.txt that stops appearing in health at all -- rather than
+    failing loudly with a status code -- is exactly the silent decay this
+    report exists to catch, so it stays dead."""
+    (tmp_path / "2026-08-21.json").write_text(json.dumps(_day("2026-08-21", {"NDTV": 5, "BBC": 5})))
+    for d in ["2026-08-22", "2026-08-23", "2026-08-24"]:
+        (tmp_path / f"{d}.json").write_text(json.dumps(_day(d, {"BBC": 5})))  # NDTV absent entirely
+
+    _, warnings, ok = report.feed_health(tmp_path, {"NDTV", "BBC"})
+    assert ok is False
+    assert any("NDTV" in w and "DEAD" in w for w in warnings)
+
+
+def test_no_configured_feed_in_window_is_quiet(tmp_path):
+    """Renaming every outlet at once shouldn't crash or alarm -- there is
+    simply nothing to say until the new roster has history."""
+    (tmp_path / "2026-08-23.json").write_text(json.dumps(_day("2026-08-23", {"Old Name": 0})))
+    table, warnings, ok = report.feed_health(tmp_path, {"New Name"})
+    assert ok is True
+    assert warnings == []
+    assert "no configured feed" in table
+
+
 def test_days_without_health_are_ignored(tmp_path):
     """Pre-Phase-6 data/ files carry no "health" key at all -- the decay
     check must stay quiet rather than crash on them."""

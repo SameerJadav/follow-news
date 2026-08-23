@@ -9,7 +9,6 @@ Channel News Asia  https://www.channelnewsasia.com/api/v1/rss-outbound-feed?_for
 
 # India
 The Hindu          https://www.thehindu.com/news/national/feeder/default.rss
-Indian Express     https://indianexpress.com/section/india/feed/
 NDTV               https://feeds.feedburner.com/ndtvnews-india-news
 Hindustan Times    https://www.hindustantimes.com/feeds/rss/india-news/rssfeed.xml
 Times of India     https://timesofindia.indiatimes.com/rssfeedstopstories.cms
@@ -19,3 +18,13 @@ Scroll.in          https://feeds.feedburner.com/ScrollinArticles.rss
 # Deliberately excluded — tested 2026-07-25, do not re-add:
 #   AP, Reuters, UN News, Deccan Herald national, Business Standard, PIB  -> 401/403/404
 #   The Wire, The Print                                                   -> HTTP 200, zero items
+
+# Retired 2026-08-23 — do not re-add without a CI measurement:
+#   Indian Express  https://indianexpress.com/section/india/feed/  -> 403 from CI only
+# Live 07-27→07-31 at 200 items/run, then HTTP 403 on every run from 08-01
+# onward — 23 consecutive days in data/*.json, never once a 200. Not the
+# client: the exact feeds.py call path (requests + feeds.UA) returns 200 and
+# 212 KB from a home IP, as do bare curl and a Chrome UA. The site is behind
+# CloudFront, so this is the CDN/WAF refusing GitHub Actions' datacenter
+# range — the same week r.jina.ai started 403ing us (calibration.md
+# 2026-08-01). Nothing here can fix it; India still has six live feeds.
