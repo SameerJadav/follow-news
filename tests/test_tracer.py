@@ -132,9 +132,14 @@ def test_stage_records_timing_and_reraises(capture):
             raise ValueError("boom")
     tracer.finish(False)
 
-    stages = json.loads((capture / "run.json").read_text())["stages"]
-    assert stages[0]["stage"] == "select"
-    assert "boom" in stages[0]["error"]
+    run = json.loads((capture / "run.json").read_text())
+    assert run["stages"][0]["stage"] == "select"
+    assert "boom" in run["stages"][0]["error"]
+    # A raised stage names itself in stopped_at. On 2026-08-07 — a 503 at
+    # select, the only day the digest never published — this field was absent,
+    # because only digest.stopped() wrote it and an exception skips that path.
+    assert run["stopped_at"] == "select"
+    assert "boom" in run["stopped_error"]
 
 
 def test_follow_run_does_not_clobber_digest_run(capture):
@@ -247,3 +252,28 @@ def test_dials_records_the_dossier_module():
     assert dials["dossier.MIN_QUESTION_SCORE"] == dossier.MIN_QUESTION_SCORE
     assert dials["dossier.GAP_DENSITY_RATIO"] == dossier.GAP_DENSITY_RATIO
     assert "follow.MAX_FOLLOWS_PER_BATCH" not in dials, "the batched timeline pass is gone"
+
+
+def test_a_follow_run_namespaces_every_artifact_it_writes(capture):
+    """M3: finish() has always suffixed run.json/funnel.json, but artifact()
+    did not — so a follow run that extracted background articles overwrote the
+    digest's own extract/index.json (2026-07-30: 49 extractions in the funnel,
+    4 rows left in the index)."""
+    tracer.start("digest", DAY)
+    tracer.artifact_json("extract/index.json", {"articles": [1, 2, 3]})
+    tracer.finish(True)
+    tracer._RUN = None
+
+    tracer.start("follow", DAY)
+    written = tracer.artifact_json("extract/index.json", {"articles": [9]})
+    tracer.finish(True)
+
+    assert written == "extract/index-follow.json"
+    assert json.loads((capture / "extract" / "index.json").read_text()) == {"articles": [1, 2, 3]}
+    assert json.loads((capture / "extract" / "index-follow.json").read_text()) == {"articles": [9]}
+
+
+def test_namespacing_keeps_multi_suffix_names_readable():
+    assert tracer._namespaced("llm/2-claims-india.prompt.txt", "digest") == "llm/2-claims-india.prompt.txt"
+    assert tracer._namespaced("llm/2-claims-india.prompt.txt", "follow") == "llm/2-claims-india-follow.prompt.txt"
+    assert tracer._namespaced("claims.json", "follow") == "claims-follow.json"

@@ -309,7 +309,18 @@ def comment(issue: int, text: str) -> None:
         dbg(f"follow: could not comment on #{issue} ({exc!r})")
 
 
-def close_issue(issue: int, text: str | None = None) -> None:
+def close_issue(issue: int, text: str | None = None) -> bool:
+    """Close the tracker issue, returning whether GitHub accepted it.
+
+    The return value matters: a failed close used to be swallowed exactly like
+    a failed comment, and the record was marked closed regardless, so the
+    divergence was permanent and never retried. Measured on #3 — closed in
+    `followed/3/record.json` since 2026-08-12, still open on the tracker eleven
+    days later, because digest.yml's `permissions:` block granted no
+    `issues: write` and the PATCH 403'd (ANALYSIS-2026-08-23.md §M1). The
+    comment stays best-effort: the published page is the product, the comment is
+    a courtesy. The close is the kill switch's direction of travel, so the
+    caller now keeps the follow active and tries again tomorrow."""
     if text:
         comment(issue, text)
     try:
@@ -321,7 +332,10 @@ def close_issue(issue: int, text: str | None = None) -> None:
         )
         resp.raise_for_status()
     except requests.RequestException as exc:
-        dbg(f"follow: could not close #{issue} ({exc!r})")
+        dbg(f"follow: could not close #{issue} ({exc!r}); leaving the record active to retry")
+        tracer.event("follow", issue=issue, verdict="close_failed", error=repr(exc))
+        return False
+    return True
 
 
 # ---------- orchestration ----------
@@ -447,6 +461,15 @@ def _close_if_stale(n: int, record: dict, today: date) -> bool:
     since = max(record["last_development"], started) if _DATE_RE.match(started) else record["last_development"]
     if not _is_closing(since, today):
         return False
+    # The tracker is closed FIRST, and the record only follows if GitHub took
+    # it. Marking the record closed on a failed PATCH is a one-way divergence:
+    # the site says finished, the owner's tracker says open, and nothing ever
+    # retries. Staying active costs one more quiet sweep a day, which does no
+    # research and makes no LLM call.
+    if not close_issue(
+        n, f"No new developments for {STALE_DAYS} days — closing. Final update: {BASE_URL}follow-{n}.html"
+    ):
+        return False
     now = _now()
     record["status"] = "closed"
     record["close_reason"] = "no_development"
@@ -454,7 +477,6 @@ def _close_if_stale(n: int, record: dict, today: date) -> bool:
     timeline = record.get("timeline") or []
     if timeline:
         timeline[-1]["kind"] = "final"
-    close_issue(n, f"No new developments for {STALE_DAYS} days — closing. Final update: {BASE_URL}follow-{n}.html")
     dbg(f"follow: #{n} -> closed, no development for {STALE_DAYS}+ days")
     return True
 

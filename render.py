@@ -33,6 +33,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import re
 from datetime import date, datetime, timedelta, timezone
 from html import escape as esc
 from pathlib import Path
@@ -43,6 +44,12 @@ import tracer
 # Mirrors digest.IST. Kept local so render.py imports nothing from the pipeline
 # and `digest.py render` stays a leaf call with no chance of an import cycle.
 IST = timezone(timedelta(hours=5, minutes=30))
+
+# The self-contained stylesheet Google ships inside every searchEntryPoint
+# blob. Matched, not parsed: it is lifted out whole and re-emitted whole, so
+# nothing inside the widget's markup is ever rewritten (see
+# _suggestions_list_html).
+_CHIP_STYLE_RE = re.compile(r"<style>.*?</style>", re.DOTALL)
 
 SECTION_ORDER = ("world", "india")
 SECTION_LABELS = {"world": "World", "india": "India"}
@@ -405,9 +412,21 @@ def _actions_html(
 
 def _suggestions_list_html(raws: list[str]) -> str:
     """The deduplicated set of Search Suggestions blobs for a whole followed
-    story. Each blob is still emitted byte-for-byte unmodified — that is what
-    the grounding Terms require, and it is why _suggestions_html below is the
-    one function in this codebase that does not escape its input."""
+    story. Every chip, link and label is still emitted byte-for-byte
+    unmodified — that is what the grounding Terms require, and it is why
+    _suggestions_html below is the one function in this codebase that does not
+    escape its input.
+
+    What IS deduplicated is the stylesheet. Each blob Google returns carries
+    its own copy of the same ~1.9 KB `<style>` — measured 2026-08-23, all 28
+    blobs in followed/3/dossier.json carried byte-identical CSS, and
+    concatenating them made follow-3.html 249 KB, 2.5x the largest digest page,
+    on a phone-only app (ANALYSIS-2026-08-23.md §M5). An identical stylesheet is
+    lifted out and emitted once, ahead of the cards; a blob whose CSS differs
+    from the one already emitted keeps its own, so a future change on Google's
+    side degrades to today's behaviour rather than to a mis-styled widget. The
+    rendered result is the same page it always was, minus 27 copies of one
+    stylesheet."""
     seen: list[str] = []
     for raw in raws:
         text = str(raw or "")
@@ -415,11 +434,19 @@ def _suggestions_list_html(raws: list[str]) -> str:
             seen.append(text)
     if not seen:
         return ""
-    cards = "".join(f'<div class="chip-card">{raw}</div>' for raw in seen)
+
+    shared = ""
+    cards: list[str] = []
+    for raw in seen:
+        match = _CHIP_STYLE_RE.search(raw)
+        if match and not shared:
+            shared = match.group(0)
+        body = raw.replace(shared, "", 1) if shared and match and match.group(0) == shared else raw
+        cards.append(f'<div class="chip-card">{body}</div>')
     return (
         '<section class="suggest" aria-label="Search suggestions from Google">'
         '<h4 class="kicker">Search these on Google</h4>'
-        f'<div class="chips">{cards}</div>'
+        f'{shared}<div class="chips">{"".join(cards)}</div>'
         "</section>"
     )
 
@@ -445,13 +472,25 @@ def _researching_html(record: dict) -> str:
 def _capped_html(record: dict) -> str:
     """A capped dossier still has real prose — it just stopped short of the
     whole story. dossier.md §13: a truncated dossier must never present as a
-    complete one."""
-    if record.get("research_state") != "capped":
-        return ""
-    return (
-        '<p class="capped" role="note"><span class="capped-tag">Research paused</span> '
-        "This story hit its research budget, so some threads may still be missing.</p>"
-    )
+    complete one.
+
+    Two ways to stop short, and the reader is owed the same honesty about both:
+    `research_state == "capped"` is the lifetime CALL ceiling, and
+    `rounds_exhausted` is the ROUND ceiling — research that reported "complete"
+    (so tomorrow's delta pass still runs) while leaving questions it never got
+    to. The second used to render identically to a dossier that genuinely ran
+    dry (ANALYSIS-2026-08-23.md §M2)."""
+    if record.get("research_state") == "capped":
+        return (
+            '<p class="capped" role="note"><span class="capped-tag">Research paused</span> '
+            "This story hit its research budget, so some threads may still be missing.</p>"
+        )
+    if record.get("rounds_exhausted"):
+        return (
+            '<p class="capped" role="note"><span class="capped-tag">Research paused</span> '
+            "This story reached its research limit, so some threads may still be missing.</p>"
+        )
+    return ""
 
 
 def _suggestions_html(raw: str) -> str:
@@ -732,7 +771,7 @@ def _following_page(records: list[dict], head: str = _HEAD) -> str:
         latest = entries[-1].get("date") if entries else None
         if latest:
             detail += f" · latest {_short_date(str(latest))}"
-        if state == "capped":
+        if state == "capped" or r.get("rounds_exhausted"):
             detail += " · research paused"
         return (
             f'<li><a href="follow-{esc(str(r.get("issue") or ""), quote=True)}.html">'
@@ -910,16 +949,18 @@ def _load_followed(
             return
         seen.add(issue)
 
-        state, chips = "complete", []
+        state, chips, exhausted = "complete", [], False
         if issue_dir is not None:
             try:
                 meta = json.loads((issue_dir / "dossier.json").read_text())
                 state = str(meta.get("research_state") or "complete")
                 chips = list(meta.get("chips") or [])
+                exhausted = bool(meta.get("rounds_exhausted"))
             except (OSError, ValueError):
                 pass  # a corrupt dossier degrades to "complete", never a broken render
         record["research_state"] = state
         record["chips"] = chips
+        record["rounds_exhausted"] = exhausted
         records.append(record)
 
         origin = record.get("origin") or {}

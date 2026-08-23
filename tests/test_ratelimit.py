@@ -195,3 +195,78 @@ def test_is_rate_limited_recognises_string_fallback():
     must not depend solely on the ClientError shape."""
     assert ratelimit.is_rate_limited(Exception("429 Client Error: Too Many Requests"))
     assert not ratelimit.is_rate_limited(Exception("500 Internal Server Error"))
+
+
+class FakeServerError(Exception):
+    """The 503 shape this project actually recorded, on 2026-08-07, the one
+    day the digest never published: `debug/2026-08-07/run.json` has
+    ServerError("503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This
+    model is currently experiencing high demand...', 'status':
+    'UNAVAILABLE'}}") against the `select` stage."""
+
+    def __init__(self, code: int = 503, status: str = "UNAVAILABLE"):
+        super().__init__(
+            f"{code} {status}. {{'error': {{'code': {code}, 'message': 'This model is "
+            f"currently experiencing high demand.', 'status': '{status}'}}}}"
+        )
+        self.code = code
+
+
+def test_transient_503_is_retried_and_recovers():
+    """The whole point of H2: a 503 is the server asking to be retried, and
+    the run must not die on the first one."""
+    attempts = {"n": 0}
+
+    def fn():
+        attempts["n"] += 1
+        if attempts["n"] == 1:
+            raise FakeServerError()
+        return "recovered"
+
+    sleep_fn, clock = _fake_clock()
+    assert ratelimit.call_with_resume(fn, "select", sleep_fn=sleep_fn, clock=clock) == "recovered"
+    assert attempts["n"] == 2
+    assert clock() > 0, "it backed off before retrying"
+
+
+def test_transient_failure_gives_up_after_its_own_attempt_budget():
+    """Bounded, and bounded separately from the 429 wait budget: a model that
+    is genuinely down must not hold the morning for 45 minutes."""
+    attempts = {"n": 0}
+
+    def fn():
+        attempts["n"] += 1
+        raise FakeServerError()
+
+    sleep_fn, clock = _fake_clock()
+    with pytest.raises(FakeServerError):
+        ratelimit.call_with_resume(fn, "claims", sleep_fn=sleep_fn, clock=clock)
+    assert attempts["n"] == ratelimit.TRANSIENT_ATTEMPTS
+    # Nowhere near the 429 budget: two short hops, not a wait-out.
+    assert clock() < ratelimit.WAIT_BUDGET_S
+
+
+def test_dropped_connection_is_transient():
+    """The other shape in the record (2026-08-15's claims stage): httpx's
+    RemoteProtocolError, which carries no status code at all."""
+
+    class RemoteProtocolError(Exception):
+        pass
+
+    assert ratelimit.is_transient(
+        RemoteProtocolError("Server disconnected without sending a response.")
+    )
+
+
+def test_a_429_is_never_treated_as_transient():
+    """The two paths must never both claim one exception: a 429 belongs to the
+    wait budget, which knows about retryDelay and daily quotas."""
+    assert not ratelimit.is_transient(FakeRateLimitError({"retryDelay": "30s"}))
+    assert not ratelimit.is_transient(Exception("429 RESOURCE_EXHAUSTED"))
+
+
+def test_a_real_error_is_still_not_retried():
+    """A bad request or a schema failure has nothing to gain from a retry, and
+    ValueError must not start matching just because 5xx now does."""
+    assert not ratelimit.is_transient(ValueError("invalid response schema"))
+    assert not ratelimit.is_transient(Exception("400 INVALID_ARGUMENT"))

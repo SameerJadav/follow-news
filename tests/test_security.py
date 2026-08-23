@@ -96,3 +96,18 @@ def test_digest_workflow_commits_debug_dir():
     assert "DIGEST_DEBUG:" in digest_yml
     assert "git add data docs followed debug" in digest_yml
     assert "mkdir -p data docs followed debug" in digest_yml
+
+
+def test_workflow_permissions_stay_least_privilege():
+    """Every workflow declares its scopes explicitly, so anything unlisted is
+    `none`. `issues: write` is on digest.yml deliberately (the daily sweep is
+    where a stale follow's auto-close fires, and it 403'd for eleven days
+    without it — ANALYSIS-2026-08-23.md §M1); a blanket `write-all`, or a new
+    scope nobody argued for, is what this catches."""
+    allowed = {"contents: write", "issues: write", "pages: write", "id-token: write"}
+    for path in WORKFLOWS:
+        text = path.read_text()
+        block = re.search(r"^permissions:\n((?:  \S.*\n)+)", text, re.MULTILINE)
+        assert block, f"{path.name} has no top-level permissions block"
+        scopes = {line.strip() for line in block.group(1).splitlines() if line.strip()}
+        assert scopes <= allowed, f"{path.name} grants {scopes - allowed}"

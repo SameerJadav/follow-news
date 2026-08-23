@@ -59,9 +59,17 @@ One directory per day, `debug/YYYY-MM-DD/`:
 | `dossier/<issue>/index.json` | a followed story's research: rounds, calls, ledger size, entity sides, gap firings, what it could not read |
 | `dossier/<issue>/discarded-questions.json` | every question the drift guards cut, and which guard cut it |
 
-A `follow` run against the same day writes `run-follow.json` and
-`funnel-follow.json` so it can't overwrite the digest's own record; both
-append to the shared `trace.jsonl`.
+A `follow` run against the same day folds `-follow` into **every** file name
+it writes — `run-follow.json`, `funnel-follow.json`, `extract/index-follow.json`,
+`dossier/<issue>/index-follow.json` — so it can never overwrite the digest's own
+record. It did overwrite `extract/index.json` until 2026-08-23
+(`ANALYSIS-2026-08-23.md` §M3). Both runs append to the shared `trace.jsonl`,
+each line tagged with its run kind; one chronological timeline is right.
+
+Retention: the commit step prunes `debug/<date>/` older than `report.RETAIN_DAYS`
+before committing. At 17 MB a day, unbounded capture was 89% of the objects in a
+checkout the three daily crons each pay for (§H5); the retained window is what a
+morning is actually diagnosed from, and git history keeps the rest.
 
 ## Two things to know
 

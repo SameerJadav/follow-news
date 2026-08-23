@@ -521,3 +521,48 @@ def test_robots_txt_present_and_disallows_all():
     robots = (Path(__file__).parent.parent / "docs" / "robots.txt").read_text()
     assert "User-agent: *" in robots
     assert "Disallow: /" in robots
+
+
+def test_one_chip_stylesheet_for_the_whole_page(tmp_path):
+    """M5: every searchEntryPoint blob Google returns carries its own copy of
+    the same ~1.9 KB stylesheet, and follow-3.html concatenated 28 of them into
+    249 KB — 2.5x the largest digest page, on a phone-only app. The chips
+    themselves are still emitted byte-for-byte; only the duplicate CSS goes."""
+    style = "<style>\n.container { display: flex; }\n</style>"
+    blobs = [f"{style}\n<div class=\"container\">chips {i}</div>" for i in range(4)]
+    _followed(tmp_path, 1, _FOLLOW_RECORD, {"research_state": "complete", "chips": blobs})
+    records, _ = render._load_followed(tmp_path)
+
+    html = render._follow_page(records[0])
+    assert html.count("<style>") == 1
+    assert html.count('class="chip-card"') == 4
+    for i in range(4):
+        assert f'<div class="container">chips {i}</div>' in html
+
+
+def test_a_blob_with_different_css_keeps_its_own(tmp_path):
+    """Degrade to today's behaviour, never to a mis-styled widget: only CSS
+    identical to the one already emitted is lifted out."""
+    a = "<style>.a{color:red}</style><div>chips A</div>"
+    b = "<style>.b{color:blue}</style><div>chips B</div>"
+    _followed(tmp_path, 1, _FOLLOW_RECORD, {"research_state": "complete", "chips": [a, b]})
+    records, _ = render._load_followed(tmp_path)
+
+    html = render._follow_page(records[0])
+    assert "<style>.a{color:red}</style>" in html
+    assert "<style>.b{color:blue}</style>" in html
+
+
+def test_a_dossier_stopped_by_the_round_ceiling_says_so(tmp_path):
+    """M2: research() reports "complete" for the round ceiling so tomorrow's
+    delta pass can still run — which is right, and used to mean the page read
+    exactly like a dossier that had genuinely run dry."""
+    _followed(tmp_path, 1, _FOLLOW_RECORD,
+              {"research_state": "complete", "rounds_exhausted": True, "chips": []})
+    records, _ = render._load_followed(tmp_path)
+
+    html = render._follow_page(records[0])
+    assert "Backstory prose." in html
+    assert "Research paused" in html
+    assert "reached its research limit" in html
+    assert "research paused" in render._following_page(records)

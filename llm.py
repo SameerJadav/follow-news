@@ -5,9 +5,19 @@ in the past (research.md §3.1), so the pipeline must never scale call count
 with article count. Selection reads only cheap headlines/summaries; full
 article text is fetched (extract.py) only for the articles selection chose;
 a claims pass then extracts atomic claims anchored to one source each; a
-final writing pass composes prose ONLY from those anchored claims. Three
-calls a day, independent of how many articles were ingested or how many
-clusters survive ranking.
+final writing pass composes prose ONLY from those anchored claims. Four
+calls a day — select, one claims call PER SECTION, write — independent of how
+many articles were ingested or how many clusters survive ranking.
+
+Why claims is per section and not one batched call: measured over 212 clusters
+to 2026-08-23, the batched claims pass decays monotonically with a story's
+position in the prompt — 12.96 claims at position 0 down to 5.43 at position 9,
+3.2x, and it survives controlling for outlet count (p = 1.3e-07 on 124 paired
+clusters). Since every day's prompt runs World then India, India was always at
+the tail: 6.92 claims a cluster against World's 9.33, and the record's only two
+anchor-gate drops were both Indian stories at positions 9 and 10 that returned
+3 claims from 20 KB of good text. One call per section resets position for
+India and costs one call a morning (ANALYSIS-2026-08-23.md SS H3).
 
 All semantic validation of the model's output belongs to rank.rank_clusters
 (pass one) and anchor.py (passes two and three) — this module only
@@ -28,6 +38,7 @@ from __future__ import annotations
 import dataclasses
 import json
 import os
+import re
 import time
 from pathlib import Path
 from typing import Any
@@ -282,6 +293,24 @@ stressed syllable in capital letters (e.g. "sovereignty" -> "SOV-rin-tee") \
 — never IPA."""
 
 
+# The select pass writes headline_hint from RSS titles and summaries — never
+# from claims — so a figure it puts in a hint has no claim behind it. Handing
+# that hint to the write pass is a measured route for an unanchored number to
+# reach the page: 9 of 212 clusters arrived at the write pass with a Subject
+# line carrying a figure absent from every one of that cluster's claims, and
+# one of them published a death toll in its headline
+# (ANALYSIS-2026-08-23.md SS H1, data/2026-07-30.json). The line's job is to
+# say WHICH story this is; the claims carry every number, so the figures are
+# masked rather than the line dropped.
+_HINT_FIGURE_RE = re.compile(r"\d[\d,.]*")
+
+
+def subject_line(hint: str) -> str:
+    """The write prompt's `Subject:` value: the select pass's headline hint
+    with every figure masked out."""
+    return _HINT_FIGURE_RE.sub("\u2026", str(hint)).strip()
+
+
 def _client() -> genai.Client:
     key = os.environ.get("GEMINI_API_KEY")
     if not key:
@@ -418,18 +447,53 @@ def select_stories(pool: list[Article], wiki_block: str) -> list[SelectedCluster
     return clusters
 
 
-def extract_claims(clusters: list[RankedCluster], texts: dict[str, str]) -> dict[int, list[Claim]]:
-    """Pass two: extract atomic claims from the full text fetched only for
-    the articles selection chose, each claim anchored to exactly one
-    article. This is the whole trust mechanism — a fact that is not an
-    anchored claim has no way into the written story, because write_stories
-    never sees article text, only these claims.
+def _cluster_claims(
+    story: dict, cluster: RankedCluster, cid: int, texts: dict[str, str], next_id: int
+) -> tuple[list[Claim], int, int]:
+    """One cluster's validated claims, the next free claim id, and how many
+    claims were rejected. Claim ids stay globally unique across the day's
+    several claims calls, which is what lets a marker cite [cN] unambiguously."""
+    claims: list[Claim] = []
+    rejected = 0
+    for raw_claim in story.get("claims", []):
+        aid = raw_claim.get("article_id")
+        text = str(raw_claim.get("text", "")).strip()
+        kind = raw_claim.get("kind")
+        if kind not in anchor.CLAIM_KINDS:
+            kind = "event"
+        if not isinstance(aid, int) or not (0 <= aid < len(cluster.articles)):
+            rejected += 1
+            continue
+        if len(text) < anchor.MIN_CLAIM_CHARS:
+            rejected += 1
+            continue
+        article = cluster.articles[aid]
+        full = texts.get(article.url) or ""
+        claims.append(
+            Claim(
+                id=next_id,
+                cluster_id=cid,
+                text=text,
+                kind=kind,
+                outlet=article.outlet,
+                url=article.url,
+                source_kind=anchor.source_kind(full),
+            )
+        )
+        next_id += 1
+        if len(claims) == anchor.MAX_CLAIMS_PER_STORY:
+            break
+    return claims, next_id, rejected
 
-    Returns {cluster_id: [Claim, ...]}, omitting any cluster that ended with
-    zero valid claims — the write pass must never be asked to write a story
-    with nothing to write from."""
+
+def _claims_prompt(clusters: list[RankedCluster], cids: list[int], texts: dict[str, str]) -> str:
+    """One claims call's prompt: the story blocks for `cids` only, still
+    numbered by their GLOBAL cluster index so the returned cluster_id needs no
+    remapping and a section's response naming another section's story is
+    rejected rather than silently misfiled."""
     blocks = []
-    for cid, cluster in enumerate(clusters):
+    for cid in cids:
+        cluster = clusters[cid]
         parts = [f"=== STORY {cid} [{cluster.section}] — {cluster.headline_hint} ==="]
         for aid, a in enumerate(cluster.articles):
             full = texts.get(a.url) or ""
@@ -438,12 +502,28 @@ def extract_claims(clusters: list[RankedCluster], texts: dict[str, str]) -> dict
             label = "FULL TEXT" if kind == "fulltext" else "SUMMARY ONLY"
             parts.append(f"[a{aid}] {a.outlet} <{a.url}> ({label})\n{body}")
         blocks.append("\n\n".join(parts))
-    prompt = "\n\n".join(blocks)
+    return "\n\n".join(blocks)
 
-    result = _generate(prompt, _CLAIMS_SCHEMA, _CLAIMS_SYSTEM, "claims")
 
-    if os.environ.get("DIGEST_DUMP_DIR"):
-        _dump("clusters", json.dumps(anchor.clusters_fixture(clusters), ensure_ascii=False, indent=2))
+def extract_claims(clusters: list[RankedCluster], texts: dict[str, str]) -> dict[int, list[Claim]]:
+    """Pass two: extract atomic claims from the full text fetched only for
+    the articles selection chose, each claim anchored to exactly one
+    article. This is the whole trust mechanism — a fact that is not an
+    anchored claim has no way into the written story, because write_stories
+    never sees article text, only these claims.
+
+    ONE CALL PER SECTION, not one per story and not one for the day: the
+    batched pass decays with prompt position and India was always last (see
+    the module docstring). Sections are called in the order they first appear
+    in `clusters`, which is rank order, so World still runs first — what
+    changes is that India starts from position 0 in its own call.
+
+    Returns {cluster_id: [Claim, ...]}, omitting any cluster that ended with
+    zero valid claims — the write pass must never be asked to write a story
+    with nothing to write from."""
+    by_section: dict[str, list[int]] = {}
+    for cid, cluster in enumerate(clusters):
+        by_section.setdefault(cluster.section, []).append(cid)
 
     claims_by_cluster: dict[int, list[Claim]] = {}
     next_id = 1
@@ -451,53 +531,31 @@ def extract_claims(clusters: list[RankedCluster], texts: dict[str, str]) -> dict
     rejected_claims = 0
     rejected_clusters = 0
 
-    for story in result.get("stories", []):
-        cid = story.get("cluster_id")
-        if not isinstance(cid, int) or not (0 <= cid < len(clusters)) or cid in seen_cluster_ids:
-            rejected_clusters += 1
-            continue
-        seen_cluster_ids.add(cid)
-        cluster = clusters[cid]
+    for section, cids in by_section.items():
+        prompt = _claims_prompt(clusters, cids, texts)
+        result = _generate(prompt, _CLAIMS_SCHEMA, _CLAIMS_SYSTEM, f"claims-{section}")
+        allowed = set(cids)
 
-        claims: list[Claim] = []
-        for raw_claim in story.get("claims", []):
-            aid = raw_claim.get("article_id")
-            text = str(raw_claim.get("text", "")).strip()
-            kind = raw_claim.get("kind")
-            if kind not in anchor.CLAIM_KINDS:
-                kind = "event"
-            if not isinstance(aid, int) or not (0 <= aid < len(cluster.articles)):
-                rejected_claims += 1
+        for story in result.get("stories", []):
+            cid = story.get("cluster_id")
+            if not isinstance(cid, int) or cid not in allowed or cid in seen_cluster_ids:
+                rejected_clusters += 1
                 continue
-            if len(text) < anchor.MIN_CLAIM_CHARS:
-                rejected_claims += 1
+            seen_cluster_ids.add(cid)
+            cluster = clusters[cid]
+            claims, next_id, rejected = _cluster_claims(story, cluster, cid, texts, next_id)
+            rejected_claims += rejected
+
+            if not claims:
+                dbg(f"llm: claims: [{cluster.section}] {cluster.headline_hint!r} -> 0 valid claims, dropping")
                 continue
-            article = cluster.articles[aid]
-            full = texts.get(article.url) or ""
-            claims.append(
-                Claim(
-                    id=next_id,
-                    cluster_id=cid,
-                    text=text,
-                    kind=kind,
-                    outlet=article.outlet,
-                    url=article.url,
-                    source_kind=anchor.source_kind(full),
-                )
-            )
-            next_id += 1
-            if len(claims) == anchor.MAX_CLAIMS_PER_STORY:
-                break
 
-        if not claims:
-            dbg(f"llm: claims: [{cluster.section}] {cluster.headline_hint!r} -> 0 valid claims, dropping")
-            continue
-
-        outlets = len({c.outlet for c in claims})
-        dbg(f"llm: claims: [{cluster.section}] {len(claims)} claim(s) from {outlets} outlet(s) {cluster.headline_hint!r}")
-        claims_by_cluster[cid] = claims
+            outlets = len({c.outlet for c in claims})
+            dbg(f"llm: claims: [{cluster.section}] {len(claims)} claim(s) from {outlets} outlet(s) {cluster.headline_hint!r}")
+            claims_by_cluster[cid] = claims
 
     if os.environ.get("DIGEST_DUMP_DIR"):
+        _dump("clusters", json.dumps(anchor.clusters_fixture(clusters), ensure_ascii=False, indent=2))
         assigned = {cid: [dataclasses.asdict(c) for c in cs] for cid, cs in claims_by_cluster.items()}
         _dump("claims_assigned", json.dumps(assigned, ensure_ascii=False, indent=2))
 
@@ -514,12 +572,17 @@ def extract_claims(clusters: list[RankedCluster], texts: dict[str, str]) -> dict
         claims_total=total_claims,
         claims_rejected=rejected_claims,
         claims_clusters_rejected=rejected_clusters,
+        claims_calls=len(by_section),
     )
     tracer.artifact_json(
         "claims.json",
         {
             "min_claim_chars": anchor.MIN_CLAIM_CHARS,
             "max_claims_per_story": anchor.MAX_CLAIMS_PER_STORY,
+            # One call per section, and which stories each one carried — the
+            # join that makes the position-decay measurement behind the split
+            # (ANALYSIS-2026-08-23.md SS H3) repeatable from the record.
+            "calls": [{"label": f"claims-{sec}", "cluster_ids": cids} for sec, cids in by_section.items()],
             "rejected_claims": rejected_claims,
             "rejected_clusters": rejected_clusters,
             # Which article each cluster's claims actually drew on, and
@@ -530,6 +593,7 @@ def extract_claims(clusters: list[RankedCluster], texts: dict[str, str]) -> dict
                     "cluster_id": cid,
                     "headline_hint": clusters[cid].headline_hint,
                     "section": clusters[cid].section,
+                    "batch_position": by_section[clusters[cid].section].index(cid),
                     "claim_count": len(cs),
                     "distinct_outlets": len({c.outlet for c in cs}),
                     "source_kinds": {k: sum(1 for c in cs if c.source_kind == k)
@@ -565,7 +629,7 @@ def write_stories(clusters: list[RankedCluster], claims_by_cluster: dict[int, li
         label = tier_label.get(cluster.tier, cluster.tier.upper())
         parts = [
             f"=== STORY {cid} [{cluster.section}] — {label} — write about {target} words ===",
-            f"Subject: {cluster.headline_hint}",
+            f"Subject: {subject_line(cluster.headline_hint)}",
         ]
         for c in claims:
             kind_label = "full text" if c.source_kind == "fulltext" else "summary only"

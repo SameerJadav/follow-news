@@ -281,7 +281,12 @@ def _updatable(tmp_path, monkeypatch, issue: int = 7):
     dsr["rounds"] = 4
     dossier.save(tmp_path, issue, dsr, {}, "DONE")
     closed: list[int] = []
-    monkeypatch.setattr(follow, "close_issue", lambda n, *a, **kw: closed.append(n))
+
+    def _close(n, *a, **kw):
+        closed.append(n)
+        return True  # GitHub accepted it; the failure case has its own test
+
+    monkeypatch.setattr(follow, "close_issue", _close)
     return dsr, closed
 
 
@@ -490,3 +495,25 @@ def test_only_one_new_follow_is_started_per_run(tmp_path, monkeypatch):
     follow._new_follows(records, issues, data_dir, tmp_path / "followed")
 
     assert len(records) == 1
+
+
+def test_a_failed_close_leaves_the_follow_active(tmp_path, monkeypatch):
+    """M1: close_issue() used to swallow a 403 exactly like a failed comment
+    while the record was marked closed anyway — a permanent one-way divergence
+    (the site said finished, the tracker stayed open, nothing retried). The
+    record now only closes if GitHub took it, so the next sweep tries again."""
+    import dossier
+
+    dsr, _closed = _updatable(tmp_path, monkeypatch)
+    monkeypatch.setattr(follow, "close_issue", lambda n, *a, **kw: False)
+    record = _record(7, last_development="2026-07-20", started_at="2026-07-20T00:00:00Z",
+                     timeline=[{"date": "2026-07-20", "kind": "development", "body": "x"}])
+    monkeypatch.setattr(follow.dossier, "research", lambda *a, **kw: "complete")
+
+    budget = dossier.Budget(tmp_path / "_budget" / "2026-08-03.json")
+    follow._update_follow(tmp_path, 7, record, dsr, {}, date(2026, 8, 3), budget)
+
+    assert record["status"] == "active"
+    assert record.get("close_reason") is None
+    # ...and the last update is NOT relabelled final on a story still open.
+    assert record["timeline"][-1]["kind"] == "development"

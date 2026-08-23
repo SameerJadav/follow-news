@@ -223,3 +223,46 @@ def test_unanchored_share_ignores_whitespace():
     body = "Fact\n\nmore filler text that is not anchored at all here"
     share = unanchored_share(body, markers)
     assert 0.0 < share < 1.0
+
+
+def test_invented_figure_drops_the_story():
+    """H1: the failure this whole module exists to prevent — a number no claim
+    carries, sitting inside a marker span so it reads as sourced. Modelled on
+    data/2026-08-16.json, where "expanded from 80 hectares to over 2,700
+    hectares" was anchored to a claim that said 16 square kilometres."""
+    cluster = _cluster()
+    claims = [
+        _claim(1, text="The wildfire in Belgium's High Fens park had scorched at least 16 square kilometres by Saturday afternoon."),
+        _claim(2, outlet="Guardian World", text="Belgian authorities evacuated several villages near the High Fens park."),
+    ]
+    body = (
+        "Local authorities reported the fire expanded from 80 hectares on Friday to over 2,700 "
+        "hectares by late Saturday, scorching at least 16 square kilometres [c1]. "
+        "Several villages near the park were evacuated [c2]. " * 4
+    )
+    assert build_story(cluster, 0, {"headline": "H", "body": body, "vocab": []}, claims) is None
+
+
+def test_spelled_out_and_outlet_and_fiscal_year_are_not_invented():
+    """The three mechanical false positives measured over 27 days. If any of
+    them fired, the gate above would be throwing away real stories: a claim
+    that spells a number out, an outlet whose NAME carries a digit, and a
+    claim's FY26 written out as a financial year."""
+    cluster = _cluster()
+    claims = [
+        _claim(1, outlet="France 24", text="Nineteen-year-old student Sahil Lochab was hit by pellet guns during the demonstrations."),
+        _claim(2, outlet="Guardian World", text="Chandrasekaran received a total remuneration of Rs 158.66 crore from Tata Sons for FY26."),
+    ]
+    body = (
+        "France 24 reported that 19-year-old student Sahil Lochab was hit by pellet guns [c1]. "
+        "For the 2026 financial year he received 158.66 crore [c2]. " * 6
+    )
+    clean, _markers, _dropped = parse_body(body, claims)
+    assert unsourced_figures(clean, claims) == []
+    assert build_story(cluster, 0, {"headline": "H", "body": body, "vocab": []}, claims) is not None
+
+
+def test_unsourced_figures_normalises_compound_number_words():
+    claims = [_claim(1, text="Forty-two people were rescued and two million litres of water were used.")]
+    assert unsourced_figures("Rescuers saved 42 people using 2 million litres.", claims) == []
+    assert unsourced_figures("Rescuers saved 43 people.", claims) == ["43"]
