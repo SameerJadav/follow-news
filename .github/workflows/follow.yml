@@ -79,6 +79,13 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      # Same bound as digest.yml's -- see the comment there. An issue-triggered
+      # follow commits debug/ too, so it prunes to the same window rather than
+      # re-growing what the digest just trimmed.
+      - name: Prune old debug captures
+        continue-on-error: true
+        run: uv run digest.py prune-debug
+
       - name: Commit generated output
         env:
           ISSUE: ${{ github.event.issue.number }}

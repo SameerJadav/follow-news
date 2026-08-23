@@ -163,3 +163,81 @@ def test_morning_review_mentions_every_story(tmp_path):
     assert "Smaller Story Occurs" in out
     assert "Smaller Story Occurs" in out  # thin-sourced story still surfaced
     assert "world" in out and "india" in out
+
+
+def _capture(debug_dir, day: str, *, ok: bool = True, follow_only: bool = False) -> None:
+    """A minimal captured run directory, the shape tracer.finish() writes."""
+    d = debug_dir / day
+    d.mkdir(parents=True)
+    name = "run-follow.json" if follow_only else "run.json"
+    (d / name).write_text(json.dumps({"kind": "follow" if follow_only else "digest",
+                                      "day": day, "ok": ok, "elapsed_ms": 1000}))
+    (d / "funnel.json").write_text(json.dumps({"stories_published": 3}))
+    (d / "trace.jsonl").write_text('{"kind":"dbg","msg":"x"}\n')
+    (d / "payload.txt").write_text("x" * 2048)
+
+
+def test_prune_debug_keeps_the_newest_and_says_what_it_removed(tmp_path):
+    """H5: nothing bounded debug/ across days, and it became 89% of the objects
+    in a checkout the three daily crons each pay for."""
+    debug = tmp_path / "debug"
+    for day in ("2026-08-01", "2026-08-02", "2026-08-03", "2026-08-04"):
+        _capture(debug, day)
+    (debug / "README.md").write_text("not a capture")
+    (debug / "ANALYSIS.md").write_text("generated")
+
+    removed, freed = report.prune_debug(debug, keep_days=2)
+
+    assert removed == ["2026-08-01", "2026-08-02"]
+    assert freed > 0
+    assert sorted(p.name for p in debug.iterdir()) == [
+        "2026-08-03", "2026-08-04", "ANALYSIS.md", "README.md"
+    ]
+
+
+def test_prune_debug_never_empties_the_directory(tmp_path):
+    debug = tmp_path / "debug"
+    _capture(debug, "2026-08-01")
+    _capture(debug, "2026-08-02")
+    removed, _freed = report.prune_debug(debug, keep_days=0)
+    assert removed == ["2026-08-01"]
+    assert (debug / "2026-08-02").is_dir()
+
+
+def test_prune_debug_on_a_missing_directory_is_a_noop(tmp_path):
+    assert report.prune_debug(tmp_path / "nope") == ([], 0)
+
+
+def test_bundle_says_how_many_days_it_left_out(tmp_path):
+    """M4: the bundle applied a 7-day window and reported the truncated count
+    as if it were the total, hiding every failed day at the default. CLAUDE.md
+    §No silent caps."""
+    debug = tmp_path / "debug"
+    data = tmp_path / "data"
+    data.mkdir()
+    for day in ("2026-08-01", "2026-08-02", "2026-08-03"):
+        _capture(debug, day)
+
+    _path, text = report.debug_bundle(debug, data, days=2)
+    assert "Showing 2 of 3 captured run(s)" in text
+    assert "1 older captured day(s) are NOT in this bundle" in text
+    assert "--days 3" in text
+
+    _path, text = report.debug_bundle(debug, data, days=10)
+    assert "Showing 3 of 3 captured run(s)" in text
+    assert "NOT in this bundle" not in text
+
+
+def test_bundle_distinguishes_a_follow_only_day_from_a_dead_process(tmp_path):
+    """F14: 2026-07-27 read "the process died before it could finish writing"
+    for a month. It had published six stories; only a follow run was captured."""
+    debug = tmp_path / "debug"
+    data = tmp_path / "data"
+    data.mkdir()
+    _capture(debug, "2026-07-27", follow_only=True)
+    (data / "2026-07-27.json").write_text(json.dumps({"stories": [{"headline": "h"}] * 6}))
+
+    _path, text = report.debug_bundle(debug, data)
+    assert "No digest run was captured this day" in text
+    assert "the process died" not in text
+    assert "follow only" in text

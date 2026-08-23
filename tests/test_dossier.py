@@ -909,3 +909,79 @@ def test_an_unparseable_learned_at_is_treated_as_stale(tmp_path):
 
     (tmp_path / "limits.json").write_text(_json.dumps({"grounded": {"rpd": 5, "learned_at": "junk"}}))
     assert dossier.Budget(tmp_path / "d.json").cap == dossier.MAX_GROUNDED_CALLS_PER_DAY
+
+
+def test_a_reconfirmed_ceiling_refreshes_its_own_staleness(tmp_path):
+    """L1: learn() returned early when the number had not moved, so a ceiling
+    that was still correct could never clear its TTL. Every run printed "over
+    14 days old; re-probing" and nothing re-probed."""
+    import json as _json
+
+    budget = dossier.Budget(tmp_path / "_budget" / "d.json", cap=18)
+    budget.learn("grounded", 20, model="gemini-2.5-flash")
+    first = _json.loads((tmp_path / "_budget" / "limits.json").read_text())
+
+    # Backdate past the TTL, exactly the state followed/_budget/limits.json was in.
+    stale = dict(first)
+    stale["grounded"]["learned_at"] = "2026-07-27T23:34:43Z"
+    (tmp_path / "_budget" / "limits.json").write_text(_json.dumps(stale))
+
+    reloaded = dossier.Budget(tmp_path / "_budget" / "d.json", cap=18)
+    reloaded.learn("grounded", 20)  # the server re-confirms the same number
+    after = _json.loads((tmp_path / "_budget" / "limits.json").read_text())
+    assert after["grounded"]["rpd"] == 20
+    assert after["grounded"]["learned_at"] != "2026-07-27T23:34:43Z"
+
+
+def test_the_round_ceiling_is_recorded_not_silent(tmp_path, monkeypatch):
+    """M2: exhausting MAX_ROUNDS wrote the same "complete" saturation writes,
+    with no dbg() and no event, so a dossier that ran out of rounds rendered
+    "The full picture" like one that had genuinely run dry."""
+    dsr = dossier.new_dossier(9, "Some story")
+    # More than two rounds' worth (QUESTIONS_PER_ROUND is popped per round), so
+    # the ceiling bites with questions this run never reached.
+    dsr["questions"]["open"] = [
+        dossier._question(f"Open question {i}?", origin="gap", score=0.9) for i in range(20)
+    ]
+    corpus: dict = {}
+    budget = dossier.Budget(tmp_path / "_budget" / "d.json", cap=99, schema_cap=99)
+
+    # Every pass is stubbed: this test is about the loop's terminal verdict.
+    monkeypatch.setattr(dossier, "MAX_ROUNDS", 2)
+    monkeypatch.setattr(dossier, "pass_c", lambda *a, **kw: [])
+    monkeypatch.setattr(dossier, "pass_d", lambda *a, **kw: [])
+    monkeypatch.setattr(dossier, "pass_e", lambda *a, **kw: None)
+    monkeypatch.setattr(dossier, "pass_g", lambda *a, **kw: 0)
+    monkeypatch.setattr(dossier, "saturated", lambda dsr: False)
+    monkeypatch.setattr(dossier, "gap_questions", lambda *a, **kw: [])
+    monkeypatch.setattr(dossier, "entity_asymmetry_questions", lambda *a: [])
+    monkeypatch.setattr(dossier, "role_questions", lambda *a: [])
+
+    state = dossier.research(tmp_path, 9, dsr, corpus, budget)
+
+    # Still "complete" — tomorrow's one-round delta pass must be able to run,
+    # and `capped` would freeze the follow forever — but no longer silent.
+    assert state == "complete"
+    assert dsr["rounds"] == 2
+    assert dsr["rounds_exhausted"] is True
+
+
+def test_an_empty_frontier_at_the_ceiling_is_not_a_cap(tmp_path, monkeypatch):
+    """_update_follow lowers MAX_ROUNDS to rounds+1 for a one-round delta and
+    lands on the same branch every single day. That is not a cap."""
+    dsr = dossier.new_dossier(9, "Some story")
+    dsr["questions"]["open"] = [dossier._question("The one delta question?", origin="gap", score=0.9)]
+    budget = dossier.Budget(tmp_path / "_budget" / "d.json", cap=99, schema_cap=99)
+
+    monkeypatch.setattr(dossier, "MAX_ROUNDS", 1)
+    monkeypatch.setattr(dossier, "pass_c", lambda *a, **kw: [])
+    monkeypatch.setattr(dossier, "pass_d", lambda *a, **kw: [])
+    monkeypatch.setattr(dossier, "pass_e", lambda *a, **kw: None)
+    monkeypatch.setattr(dossier, "pass_g", lambda *a, **kw: 0)
+    monkeypatch.setattr(dossier, "saturated", lambda dsr: False)
+    monkeypatch.setattr(dossier, "gap_questions", lambda *a, **kw: [])
+    monkeypatch.setattr(dossier, "entity_asymmetry_questions", lambda *a: [])
+    monkeypatch.setattr(dossier, "role_questions", lambda *a: [])
+
+    assert dossier.research(tmp_path, 9, dsr, {}, budget) == "complete"
+    assert dsr["rounds_exhausted"] is False

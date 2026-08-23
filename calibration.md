@@ -416,6 +416,103 @@ pattern is no longer a coincidence and the gather path may need the
 `r.jina.ai` escalation `extract.py` already has, which would be the first
 network dependency in `feeds.py` and should not be added for one outlet.
 
+## 2026-08-23 (later) — the full-record analysis, and what it changed
+
+`ANALYSIS-2026-08-23.md` reads the whole live record: 27 published days, 216
+stories, 1,823 claims, 41 captured digest runs. The trust machinery held —
+zero structural violations across all 216 stories, and `docs/` re-renders
+byte-for-byte from `data/` + `followed/`. What the 5-day window could not show
+was three real defects and one operational cliff. This entry logs what moved.
+
+### Corrections to the entry above
+
+Two numbers in "Not fixed, recorded" were wrong, and they were the evidence
+behind deciding not to retry:
+
+- **The 503 killed 15 of 41 captured runs, not 2.** Counted from
+  `debug/*/trace.jsonl` across all 28 captured days: 7 aborted at `claims`, 4
+  at `select`, 3 at `write`, 1 on a `RemoteProtocolError` at `claims`.
+- **2026-08-18's digest run was clean** — one run, every stage `ok: true`, 181 s
+  end to end (`debug/2026-08-18/trace.jsonl`). 08-13 did die on a 503; 08-18 did
+  not.
+- And the cost accounting ran the other way round from what that entry assumed.
+  A run that dies at `claims` or `write` has already paid for `select` (and
+  `claims`), and the later cron that rescues the day pays again: **13 successful
+  LLM calls beyond the 3-per-morning invariant over 27 days**, every one a redo.
+  Three days spent 5 calls, which also broke the schema pool's arithmetic — it
+  was sized against a worst case of 4.
+
+### changed
+
+| dial | old -> new | why |
+| --- | --- | --- |
+| `ratelimit.TRANSIENT_ATTEMPTS` / `TRANSIENT_BASE_SLEEP_S` | — -> 3 / 5s | a 5xx or dropped connection now gets two short retries, on its own budget, separate from the 429 wait. 15 runs and one whole lost day, above |
+| `llm.extract_claims` call structure | 1 call -> 1 per section | position decay, below. 4 LLM calls a morning now, not 3 |
+| `dossier.MAX_SCHEMA_CALLS_PER_DAY` | 14 -> 12 | 20 measured − 6 for the digest at its worst (4 nominal + 2 for an aborted fire's paid stages) − 2 margin. The old 14 assumed a worst case of 4 that three days had already exceeded |
+| `anchor.GATE_UNSOURCED_FIGURES` | — -> True | `unsourced_figures` was a diagnostic "too noisy to gate on". Over 216 stories it fired 9 times, 6 of them from three *mechanical* causes (a claim spelling the number out, an outlet name carrying a digit — France 24 — and a claim's `FY26` written out as a financial year). With all three closed it fires 3 times and every one is real: 3/3 precision, so it now drops the story |
+| `report.RETAIN_DAYS` | — -> 7 | `debug/` was 472 MB over 28 days, 89% of the objects in a 510 MB depth-1 clone, which all three daily crons each pay for. Nothing bounded the directory; `MAX_RUN_BYTES` bounds only one run and has never once bitten |
+
+### The claims pass decays with prompt position
+
+The measurement, per-cluster counts from all 27 `debug/*/claims.json`, 212
+clusters:
+
+```
+position 0: 12.96 claims (n=26)   position 5:  6.95 (n=22)
+position 1: 10.27                 position 7:  6.59 (n=17)
+position 2:  8.54                 position 9:  5.43 (n=7)
+position 4:  7.62                 position 11: 4.00 (n=1)
+```
+
+Monotone, 3.2x first-to-last, and **85 of 212 clusters (40%) land below the 8
+the prompt itself asks for.** It is not the outlet-count confound: paired within
+one day, same section, identical distinct-outlet count, n = 124 pairs, the
+earlier cluster won 70 to 21 (mean −1.14 claims, one-sided sign test
+p = 1.3e-07). The write pass is innocent — words-per-claim is flat at 20.6–26.4
+across every position.
+
+**India paid for it structurally.** Every day's prompt ran World then India, 27
+of 27 days, so India was always at the tail: 6.92 claims a cluster against
+World's 9.33, on identical outlet counts. Both of the record's only two
+anchor-gate drops were Indian stories at positions 9 and 10 on 2026-08-14, each
+returning **3 claims from ~20 KB of cleanly extracted text**, `finish_reason:
+STOP`, 4,813 of 32,768 output tokens used — no truncation, just less attention
+at the tail.
+
+One call per section resets position for India at the cost of one call a
+morning. Nothing in the prompt is reworded, so this is a dial-shaped change and
+not an editorial one; `claims.json` now records each call and each cluster's
+`batch_position` so the same measurement can be re-run from the record.
+
+### Not changed, deliberately
+
+- **Word targets.** `lead` runs at 56% of `WORD_TARGET`, `major` 87%, `notable`
+  73% — and body length tracks *claims available*, not the target (a `lead` with
+  15+ claims reaches 366 words; the same instruction with 5–9 claims produces
+  218). The dial is not being ignored, it is unreachable from the claim supply.
+  Re-measure after the claims split before touching it.
+- **`TIER_WEIGHT["notable"]`.** 21 kept against 112 cut over 27 days, and
+  `floor_relaxed` has never fired. But `WIKI_BONUS = 2` — which the 5-day
+  analysis said "cannot promote anything on its own" — was **decisive 15 times**,
+  publishing 13 notable and 2 major stories that would otherwise have been cut.
+  The cross-check does overrule volume bias; what it cannot rescue is a
+  1-or-2-outlet story (2 + 0 + 2 = 4 < 5). Leaving the floor alone.
+- **The Sudan gap.** 276 curated Wikipedia events scored over 27 days, 186
+  uncovered (67%). 21 of them are the Sudanese civil war, against **0** published
+  Sudan stories — and it is not a feed gap and not the floor: Sudan appeared in
+  19 pool articles across 14 days, three distinct outlets carried it on both
+  08-05 and 08-08 (enough for exactly the floor), and on 08-08 the curated event
+  was line 5 of the select prompt with a matching NPR article in the same pool.
+  Select still never proposed it. Acting on that is a **select-prompt** change —
+  editorial judgement — so per `decisions.md` it goes to the owner first and is
+  not in this commit.
+
+`watch next:` whether India's claim counts converge on World's now that both
+start at position 0, and whether any story is dropped by the new figure gate. A
+drop there is not a regression — it is the gate doing its job — but a *second*
+one in a week would mean the write pass has found a new route to a number the
+claims never carried.
+
 ## Starting dial values (2026-07-27, uncalibrated)
 
 `dossier.md` §15 deliberately left these unset; they are the first thing to

@@ -28,6 +28,20 @@ WAIT_BUDGET_S of 45 minutes -- which is also all of dossier.MAX_RESEARCH_SECONDS
 -- retrying a call that could never succeed. So an opaque 429 gets a much
 smaller budget: one or two short hops in case it really was a blip, then it
 gives up. See OPAQUE_WAIT_BUDGET_S.
+
+A FOURTH shape, measured 2026-08-23 over 41 captured runs: a 503 UNAVAILABLE —
+"This model is currently experiencing high demand. Spikes in demand are usually
+temporary. Please try again later." That is the server explicitly asking to be
+retried, and until now it got nothing: is_rate_limited() matches only 429, so
+anything else re-raised on the first attempt and took the whole morning with it.
+15 of 41 runs (37%) died that way; 2026-08-07 lost all three staggered fires and
+is the only missing day in the record. The cost accounting runs the opposite way
+to the one that declined a retry: a run that aborts at `claims` or `write` has
+already paid for select (and claims), and the later cron that rescues the day
+pays for it again — 13 successful calls beyond the 3-per-morning invariant over
+27 days, every one of them a redo. So a transient failure now gets a small
+bounded backoff of its own, deliberately separate from the 429 wait budget:
+TRANSIENT_ATTEMPTS short hops, not 45 minutes.
 """
 
 from __future__ import annotations
@@ -55,6 +69,13 @@ WAIT_BUDGET_S = float(os.environ.get("DIGEST_WAIT_BUDGET_S", 2700))
 # exist. Derived from WAIT_BUDGET_S rather than set independently so
 # DIGEST_WAIT_BUDGET_S=5 still shortens everything for local testing.
 OPAQUE_WAIT_BUDGET_S = min(WAIT_BUDGET_S, 90.0)
+# A transient 5xx or a dropped connection is not a quota, so it does not draw
+# on the wait budget above: it gets its own two retries at ~5s and ~10s, which
+# is enough for a demand spike to pass and short enough that three staggered
+# crons still behave like three attempts rather than one long hang. Derived from
+# WAIT_BUDGET_S so DIGEST_WAIT_BUDGET_S=5 still shortens it for local testing.
+TRANSIENT_ATTEMPTS = 3  # total tries per call, so two retries
+TRANSIENT_BASE_SLEEP_S = min(5.0, WAIT_BUDGET_S)
 MAX_SLEEP_S = 300  # never sleep longer than this in one hop, even on a big backoff
 BASE_SLEEP_S = 20  # exponential-backoff base when the server gives no retryDelay
 DEFAULT_SLEEP_S = 60  # last-resort sleep if backoff math ever yields something silly
@@ -64,6 +85,16 @@ _DAILY_RE = re.compile(r"PerDay|per day", re.IGNORECASE)
 # Any of the three keys a 429 uses to name the quota it violated. Their absence
 # is what makes a 429 opaque.
 _NAMES_QUOTA_RE = re.compile(r"[\"'](?:quotaId|quotaValue|quotaMetric)[\"']")
+# The server-side and connection-level failures worth one more attempt. Matched
+# on the status name and the exception class rather than on a bare "503" in the
+# blob, so an article id or a token count that happens to read 503 can never
+# turn a real failure into a retry loop. Every name here was observed in this
+# project's own record (debug/*/run.json, debug/*/trace.jsonl).
+_TRANSIENT_RE = re.compile(
+    r"UNAVAILABLE|DEADLINE_EXCEEDED|\bINTERNAL\b|ServerError|RemoteProtocolError|"
+    r"ConnectionError|ConnectionReset|ProtocolError|ReadTimeout|WriteTimeout|ConnectTimeout",
+    re.IGNORECASE,
+)
 
 
 def _blob(exc: Exception) -> str:
@@ -84,6 +115,23 @@ def is_rate_limited(exc: Exception) -> bool:
         return True
     blob = _blob(exc)
     return "429" in blob or "RESOURCE_EXHAUSTED" in blob
+
+
+def is_transient(exc: Exception) -> bool:
+    """A failure the server itself calls temporary — a 5xx, or a connection
+    that dropped mid-call — as opposed to a 429 (handled by the wait budget)
+    or a real error (bad request, auth, malformed schema) that must propagate
+    on the first attempt.
+
+    Deliberately narrow: 429 is excluded here so the two paths can never both
+    claim the same exception, and classification is by status name or exception
+    class, never by a loose digit match."""
+    if is_rate_limited(exc):
+        return False
+    code = getattr(exc, "code", None)
+    if isinstance(code, int) and 500 <= code <= 599:
+        return True
+    return bool(_TRANSIENT_RE.search(_blob(exc)))
 
 
 def retry_after(exc: Exception) -> float | None:
@@ -179,18 +227,44 @@ def call_with_resume(
 ) -> T:
     """Call `fn()`; on a rate-limit 429, wait out the server's own retryDelay
     (or a backoff guess) and try again, until either it succeeds, a real
-    (non-rate-limit) exception is raised, a daily quota is hit, or the total
-    time spent waiting exceeds WAIT_BUDGET_S. This replaces a fixed attempt
+    (non-rate-limit, non-transient) exception is raised, a daily quota is hit,
+    or the total time spent waiting exceeds WAIT_BUDGET_S. A transient 5xx or
+    dropped connection takes the separate, much shorter TRANSIENT_ATTEMPTS
+    path instead — see is_transient(). This replaces a fixed attempt
     count with a time budget, which is what "wait for the limit to lift and
     resume" actually means for a free tier whose real numbers are unpublished
     and can change without notice.
     """
     start = clock()
     attempt = 0
+    transient_tries = 0
     while True:
         try:
             return fn()
         except Exception as exc:  # noqa: BLE001 - reclassified immediately below
+            if is_transient(exc):
+                transient_tries += 1
+                if transient_tries >= TRANSIENT_ATTEMPTS:
+                    dbg(
+                        f"ratelimit: {label} TRANSIENT FAILURE after {transient_tries} "
+                        f"attempt(s), giving up: {exc!r}"
+                    )
+                    tracer.event("ratelimit", label=label, verdict="transient_exhausted",
+                                 attempt=transient_tries, attempts_allowed=TRANSIENT_ATTEMPTS,
+                                 error=repr(exc))
+                    raise
+                wait = TRANSIENT_BASE_SLEEP_S * (2 ** (transient_tries - 1))
+                wait += random.uniform(0, 3)  # jitter, as for a 429
+                dbg(
+                    f"ratelimit: {label} transient failure "
+                    f"({transient_tries}/{TRANSIENT_ATTEMPTS}), retrying in {wait:.0f}s: {exc!r}"
+                )
+                tracer.event("ratelimit", label=label, verdict="transient_retry",
+                             attempt=transient_tries, attempts_allowed=TRANSIENT_ATTEMPTS,
+                             wait_s=round(wait, 1), error=repr(exc))
+                sleep_fn(wait)
+                continue
+
             if not is_rate_limited(exc):
                 raise
 

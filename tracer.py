@@ -237,7 +237,14 @@ def extra(key: str, value: Any) -> None:
 @contextmanager
 def stage(name: str):
     """Time a pipeline stage and record whether it raised. The exception is
-    re-raised untouched — this observes, it never handles."""
+    re-raised untouched — this observes, it never handles.
+
+    A stage that RAISED also names itself in `stopped_at`, the field run.json
+    is documented to answer "which stage emptied the pipeline?" with. Before
+    2026-08-23 only digest.stopped() wrote it, so an exception — the 503 that
+    lost 2026-08-07, the one day it was ever needed — bypassed it entirely and
+    left the field absent. setdefault, so the innermost stage that failed is
+    the one recorded and an outer frame cannot overwrite it."""
     if _RUN is None:
         yield
         return
@@ -252,15 +259,38 @@ def stage(name: str):
         ms = int((time.monotonic() - started) * 1000)
         if _RUN is not None:
             _RUN.stages.append({"stage": name, "ms": ms, "error": scrub(error)})
+            if error:
+                _RUN.extras.setdefault("stopped_at", name)
+                _RUN.extras.setdefault("stopped_error", scrub(error))
             event("stage", name=name, ms=ms, ok=not error, error=scrub(error))
 
 
+def _namespaced(relpath: str, kind: str) -> str:
+    """`relpath` with the run kind folded into the FILE NAME for any run that
+    is not the digest — extract/index.json becomes extract/index-follow.json.
+
+    digest.yml runs `digest.py follow` as a second process against the same
+    debug/<day>/, and finish() has always suffixed run.json/funnel.json for
+    exactly that reason. artifact() did not, so a follow run that extracted
+    background articles silently overwrote the digest's own extract/index.json:
+    measured on 2026-07-30, 49 extractions in the funnel against 4 rows left in
+    the index (ANALYSIS-2026-08-23.md §M3)."""
+    if kind == "digest":
+        return relpath
+    head, _, tail = relpath.rpartition("/")
+    name, dot, ext = tail.partition(".")
+    tail = f"{name}-{kind}{dot}{ext}"
+    return f"{head}/{tail}" if head else tail
+
+
 def artifact(relpath: str, content: str | bytes) -> str | None:
-    """Write one file under debug/<day>/. Returns the relative path so the
-    caller can reference it from an index, or None if nothing was written."""
+    """Write one file under debug/<day>/. Returns the relative path actually
+    written (a non-digest run's is namespaced — see _namespaced) so the caller
+    can reference it from an index, or None if nothing was written."""
     run = _RUN
     if run is None:
         return None
+    relpath = _namespaced(relpath, run.kind)
     try:
         raw = content.encode("utf-8", "replace") if isinstance(content, str) else bytes(content)
         # Scrub as text when we can; binary feed bytes are left alone beyond

@@ -9,8 +9,11 @@
     uv run digest.py follow --issue 12   # restrict to one issue (used by follow.yml)
     uv run digest.py follow --date ...   # override the digest date (testing)
     uv run digest.py health              # feed-decay report over committed data/; exit 1 if unhealthy
+    uv run digest.py health --feeds PATH # ...against an alternate roster (e.g. origin/main's)
     uv run digest.py review              # calibration evidence for the newest digest
     uv run digest.py review --date ...   # calibration evidence for one past day
+    uv run digest.py debug [--days N]    # bundle captured runs into debug/ANALYSIS.md
+    uv run digest.py prune-debug         # drop captured runs older than report.RETAIN_DAYS
 
 data/YYYY-MM-DD.json is the single source of truth. Every page in docs/ is
 derived from it and is overwritten wholesale on every render — never
@@ -212,7 +215,7 @@ def run_pipeline(feeds_path: Path = FEEDS_PATH) -> bool:
     return True
 
 
-def _cmd_health() -> None:
+def _cmd_health(feeds_path: Path = FEEDS_PATH) -> None:
     """Cross-day feed-decay report over committed data/ — no network, no
     key. Exits 1 when a feed has gone dark DEAD_DAYS+ running or today's run
     was itself degraded, so this can be its own non-gating Actions job: a
@@ -223,7 +226,11 @@ def _cmd_health() -> None:
 
     # The roster is read from feeds.txt, not from the data files, so a feed
     # retired today stops being alarmed on today rather than in HISTORY_DAYS.
-    configured = {name for name, _ in feeds.load_feeds(FEEDS_PATH)}
+    # --feeds is honoured here: this command silently ignored it until
+    # 2026-08-23, which is exactly how a clean local bill of health hid a
+    # health job that had been red on origin/main's roster for 19 days
+    # (ANALYSIS-2026-08-23.md §L2).
+    configured = {name for name, _ in feeds.load_feeds(feeds_path)}
     table, warnings, ok = report.feed_health(DATA_DIR, configured)
     print(table)
     for w in warnings:
@@ -261,17 +268,38 @@ def _cmd_debug(days: int | None) -> None:
         print(f"\n[written to {path}]")
 
 
+def _cmd_prune_debug(days: int | None) -> None:
+    """Bound debug/ to the newest `days` captured runs. Called by the commit
+    step in digest.yml: capture is committed, derived and disposable, and
+    unbounded it was 89% of a checkout the three daily crons each pay for
+    (report.RETAIN_DAYS carries the measurement). Prints what it removed —
+    a checkout that lost days of evidence must never do it quietly."""
+    import report
+
+    keep = days or report.RETAIN_DAYS
+    removed, freed = report.prune_debug(tracer.DEBUG_DIR, keep)
+    if not removed:
+        print(f"prune-debug: nothing older than the newest {keep} captured day(s)")
+        return
+    print(
+        f"prune-debug: removed {len(removed)} captured day(s) older than the newest "
+        f"{keep}, freeing {freed / 1e6:.1f} MB: {', '.join(removed)}"
+    )
+    print("prune-debug: still in git history; debug/ is derived and disposable")
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="Daily digest pipeline")
     parser.add_argument(
         "command",
         nargs="?",
-        choices=["render", "follow", "health", "review", "debug"],
+        choices=["render", "follow", "health", "review", "debug", "prune-debug"],
         help="omit for the full pipeline; 'render' to re-render docs/ from data/+followed/ only; "
         "'follow' to process Follow issues, append timelines, and re-render; "
         "'health' to report cross-day feed decay (exits 1 if unhealthy); "
         "'review' to print one day's calibration evidence; "
-        "'debug' to bundle captured runs into debug/ANALYSIS.md",
+        "'debug' to bundle captured runs into debug/ANALYSIS.md; "
+        "'prune-debug' to delete captured runs older than report.RETAIN_DAYS",
     )
     parser.add_argument(
         "--if-missing",
@@ -298,7 +326,8 @@ def main() -> None:
         "--days",
         type=int,
         default=None,
-        help="debug: how many days of captured runs to bundle (default report.HISTORY_DAYS)",
+        help="debug: how many days of captured runs to bundle (default report.HISTORY_DAYS); "
+        "prune-debug: how many to keep (default report.RETAIN_DAYS)",
     )
     parser.add_argument(
         "--debug",
@@ -338,7 +367,7 @@ def main() -> None:
         return
 
     if args.command == "health":
-        _cmd_health()
+        _cmd_health(Path(args.feeds) if args.feeds else FEEDS_PATH)
         return
 
     if args.command == "review":
@@ -347,6 +376,10 @@ def main() -> None:
 
     if args.command == "debug":
         _cmd_debug(args.days)
+        return
+
+    if args.command == "prune-debug":
+        _cmd_prune_debug(args.days)
         return
 
     if args.if_missing and data_path(digest_date()).exists():

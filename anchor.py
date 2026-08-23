@@ -55,6 +55,16 @@ MAX_UNANCHORED_SHARE = 0.2
 MIN_MARKERS = 2
 MIN_BODY_WORDS = 80
 
+# A figure in the body that no cited claim carries is an invented number, and
+# an invented number inside a marker span is the one failure this whole module
+# exists to prevent: it reads as sourced. unsourced_figures() was a diagnostic
+# only until 2026-08-23, when 27 days of record showed both what it catches and
+# why it used to be too noisy to gate on (ANALYSIS-2026-08-23.md §H1). With its
+# three mechanical false-positive routes closed it ran at 3/3 precision over 216
+# published stories, so it now drops the story. Set False to demote it back to a
+# diagnostic; `signals.unsourced_figures` records the same list either way.
+GATE_UNSOURCED_FIGURES = True
+
 # decisions.md §Editorial: variable by weight — lead ~500 words, secondary ~200.
 WORD_TARGET = {"lead": 500, "major": 200, "notable": 200}
 
@@ -95,6 +105,29 @@ _SPAN_TRIM_CHARS = " \t\n.,;:—–-"
 MAX_SPAN_CHARS = 300
 _FIGURE_RE = re.compile(r"\d[\d,]*(?:\.\d+)?")
 _WS_RE = re.compile(r"\s+")
+
+# Number words, so a body figure written in digits can be matched against a
+# claim that spelled the same number out. This, the outlet mask and the
+# fiscal-year expansion below are the ONLY three sources of false positives
+# unsourced_figures produced over 27 days and 216 published stories (6 of its 9
+# firings), which is what makes gating on it possible at all.
+_NUMBER_WORDS = {
+    "zero": 0, "one": 1, "two": 2, "three": 3, "four": 4, "five": 5, "six": 6,
+    "seven": 7, "eight": 8, "nine": 9, "ten": 10, "eleven": 11, "twelve": 12,
+    "thirteen": 13, "fourteen": 14, "fifteen": 15, "sixteen": 16,
+    "seventeen": 17, "eighteen": 18, "nineteen": 19, "twenty": 20,
+    "thirty": 30, "forty": 40, "fourty": 40, "fifty": 50, "sixty": 60,
+    "seventy": 70, "eighty": 80, "ninety": 90,
+    "hundred": 100, "thousand": 1000, "lakh": 100000, "million": 1000000,
+    "crore": 10000000, "billion": 1000000000, "trillion": 1000000000000,
+    "dozen": 12,
+}
+_WORD_RE = re.compile(r"[a-z]+")
+# Fiscal-year shorthand: a claim's "FY26" is the same figure as a body's "2026
+# financial year", which is a faithful expansion, not an invented number.
+# Measured 2026-08-23: the third and last mechanical false positive over 27
+# days (data/2026-08-13.json, the Tata Sons story).
+_FY_RE = re.compile(r"\bFY\s?(\d{2}|\d{4})\b", re.IGNORECASE)
 
 
 @dataclass(frozen=True, slots=True)
@@ -307,15 +340,66 @@ def clean_vocab(items: list[dict], body: str) -> list[dict]:
     return out
 
 
+def _word_figures(text: str) -> set[str]:
+    """Every number a piece of text spells out, as digit strings — both the
+    parts and the product, since a claim's "two million" has to cover a body
+    that writes either "2" or "2000000". Deliberately not a full number
+    parser: it needs to recognise a figure, not compute one."""
+    out: set[str] = set()
+    tokens = _WORD_RE.findall(text.lower())
+    run: list[int] = []
+
+    def flush() -> None:
+        if not run:
+            return
+        # "forty-two" and "two million" both arrive as a run; emit the parts
+        # and, for a scale word, the product.
+        total = run[0]
+        for value in run[1:]:
+            total = total * value if value >= 100 else total + value
+        out.add(str(total))
+        run.clear()
+
+    for token in tokens:
+        parts = token.split("-")
+        values = [_NUMBER_WORDS[p] for p in parts if p in _NUMBER_WORDS]
+        if len(values) == len(parts) and values:
+            run.extend(values)
+            out.update(str(v) for v in values)
+        else:
+            flush()
+    flush()
+    return out
+
+
+def _mask_outlets(body: str, claims: list[Claim]) -> str:
+    """The body with every cited outlet's name removed. Outlet names carry
+    digits — France 24, Channel 4, News18 — and a name printed in the prose
+    is not a figure anybody sourced. Measured 2026-08-23: this was one of the
+    three false-positive routes over 27 days ("24" matched from France 24)."""
+    for name in {c.outlet for c in claims}:
+        if name:
+            body = body.replace(name, " ")
+    return body
+
+
 def unsourced_figures(body: str, claims: list[Claim]) -> list[str]:
-    """Diagnostic for the never-blend-numbers rule: figures present in the
-    body that appear in no cited claim's text. Logged and recorded in
-    signals but never used to drop a story — spelled-out numbers and
-    rephrasings make this too noisy to gate on."""
-    body_figures = {f.replace(",", "") for f in _FIGURE_RE.findall(body)}
+    """Figures present in the body that appear in no cited claim — the
+    never-blend-numbers rule, measured rather than trusted.
+
+    All three mechanical sources of noise are removed first: outlet names are
+    masked out of the body, and a claim's spelled-out numbers and fiscal-year
+    shorthand are normalised into digits before differencing. Over the 216
+    stories published to 2026-08-23 the old version fired 9 times, 6 of them
+    false (spelled-out numbers, an outlet name, an FY expansion); with these
+    corrections it fires 3 times and every one is real — which is what
+    promoted it from a diagnostic to build_story's gate."""
+    body_figures = {f.replace(",", "") for f in _FIGURE_RE.findall(_mask_outlets(body, claims))}
     claim_figures: set[str] = set()
     for c in claims:
         claim_figures |= {f.replace(",", "") for f in _FIGURE_RE.findall(c.text)}
+        claim_figures |= _word_figures(c.text)
+        claim_figures |= {y if len(y) == 4 else f"20{y}" for y in _FY_RE.findall(c.text)}
     return sorted(body_figures - claim_figures)
 
 
@@ -349,6 +433,7 @@ def _verdict(row: dict) -> None:
                 "MAX_UNANCHORED_SHARE": MAX_UNANCHORED_SHARE,
                 "THIN_MIN_CLAIM_OUTLETS": THIN_MIN_CLAIM_OUTLETS,
                 "THIN_MAX_OUTLET_SHARE": THIN_MAX_OUTLET_SHARE,
+                "GATE_UNSOURCED_FIGURES": GATE_UNSOURCED_FIGURES,
                 "WORD_TARGET": WORD_TARGET,
             },
             "stories": _ROWS,
@@ -414,6 +499,8 @@ def build_story(cluster: RankedCluster, cluster_id: int, raw: dict, claims: list
     words = len(body.split())
     share = unanchored_share(body, markers)
     thin, claim_outlets = is_thin_sourced(markers)
+    cited_ids = {m.claim_id for m in markers}
+    figures = unsourced_figures(body, [c for c in claims if c.id in cited_ids]) if body else []
     metrics = {
         "word_count": words,
         "min_body_words": MIN_BODY_WORDS,
@@ -425,6 +512,8 @@ def build_story(cluster: RankedCluster, cluster_id: int, raw: dict, claims: list
         "claim_outlets": claim_outlets,
         "claims_available": len(claims),
         "raw_body_chars": len(str(raw.get("body", ""))),
+        "unsourced_figures": figures,
+        "gate_unsourced_figures": GATE_UNSOURCED_FIGURES,
     }
 
     if words < MIN_BODY_WORDS:
@@ -445,13 +534,23 @@ def build_story(cluster: RankedCluster, cluster_id: int, raw: dict, claims: list
         _drop(cluster, cluster_id, hint, "unanchored", raw, claims, body, markers, metrics)
         return None
 
+    if figures and GATE_UNSOURCED_FIGURES:
+        dbg(
+            f"anchor: DROPPED [{cluster.section}] {hint!r} — "
+            f"figure(s) in no cited claim: {figures}"
+        )
+        _drop(cluster, cluster_id, hint, "unsourced_figures", raw, claims, body, markers, metrics)
+        return None
+
+    if figures:
+        dbg(f"anchor: UNSOURCED FIGURE(S) [{cluster.section}] {hint!r} — {figures} (gate off)")
+
     if thin:
         dbg(f"anchor: THIN-SOURCED [{cluster.section}] {hint!r} — {claim_outlets} outlet(s) cited")
 
     _verdict({"cluster_id": cluster_id, "section": cluster.section, "headline_hint": hint,
               "verdict": "kept", "thin_sourced": thin, **metrics})
 
-    cited_ids = {m.claim_id for m in markers}
     cited_claims = [c for c in claims if c.id in cited_ids]
     # Preserve first-citation order rather than extraction order.
     order = {cid: i for i, cid in enumerate(dict.fromkeys(m.claim_id for m in markers))}
@@ -492,7 +591,7 @@ def build_story(cluster: RankedCluster, cluster_id: int, raw: dict, claims: list
             "unanchored_share": share,
             "word_count": words,
             "word_target": WORD_TARGET.get(cluster.tier, 200),
-            "unsourced_figures": unsourced_figures(body, cited_claims),
+            "unsourced_figures": figures,
         },
     }
 

@@ -11,8 +11,17 @@ on:
     - cron: '30 0 * * *'   # 06:00 IST
   workflow_dispatch:
 
+# `issues: write` is here because Follow runs on THIS workflow's token, not
+# follow.yml's: the daily sweep is where a stale follow's auto-close actually
+# fires. With an explicit permissions block every unlisted scope is `none`, and
+# on a public repo the anonymous-equivalent GET in fetch_issues() still works —
+# so the sweep read its issues, wrote "closed" into followed/<n>/record.json,
+# and 403'd on the POST and the PATCH. Follow #3 was closed on the site and open
+# on the tracker for eleven days (ANALYSIS-2026-08-23.md §M1). Read-only would
+# not be enough: closing the issue IS the kill switch this scope exists for.
 permissions:
   contents: write
+  issues: write
   pages: write
   id-token: write
 
@@ -61,6 +70,18 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # Capture is committed, derived and disposable, and unbounded it grew
+      # 17 MB a day into 89% of the objects in a checkout all three daily crons
+      # each pay for (report.RETAIN_DAYS carries the measurement). Pruning
+      # before `git add` stages the deletions in the same commit as the day's
+      # evidence. if: always() for the same reason the commit step below is: a
+      # failed morning's evidence is what matters most. continue-on-error
+      # because housekeeping must never be what takes a morning down.
+      - name: Prune old debug captures
+        if: always()
+        continue-on-error: true
+        run: uv run digest.py prune-debug
 
       # if: always() -- Phase 6: a quorum failure or an empty pass now makes
       # the digest step above exit 1 (deliberately, so the run shows red and

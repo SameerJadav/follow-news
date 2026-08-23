@@ -19,12 +19,27 @@ per day and each story's `signals` — so neither needs the Actions log.
 from __future__ import annotations
 
 import json
+import re
+import shutil
 from pathlib import Path
 
 import rank
 
+_DAY_RE = re.compile(r"\d{4}-\d{2}-\d{2}")
+
 DEAD_DAYS = 3  # consecutive silent days before a feed is called dead
 HISTORY_DAYS = 7
+
+# How many days of debug/<date>/ survive a commit. Measured 2026-08-23: capture
+# wrote 16.9 MB a day and debug/ had become 472 MB of a 510 MB depth-1 clone —
+# 89% of the objects at HEAD — which every one of the three daily crons pays for
+# on checkout, projecting to ~6.2 GB over the stated one-year unattended run
+# (ANALYSIS-2026-08-23.md §H5). tracer.MAX_RUN_BYTES bounds a single run (its 64
+# MB has never bitten; the largest run ever captured wrote 17.7 MB) and nothing
+# bounded the directory. This does. It matches HISTORY_DAYS deliberately: the
+# bundle's own default window is what a morning is actually diagnosed from, and
+# git history keeps everything older for anyone who wants to go digging.
+RETAIN_DAYS = 7
 
 
 def load_days(data_dir: Path, limit: int = HISTORY_DAYS) -> list[dict]:
@@ -184,9 +199,39 @@ _FUNNEL_ORDER = (
     "feeds_configured", "feeds_live", "articles_fetched", "articles_in_window",
     "articles_after_dedupe", "pool_out", "wiki_events_used", "clusters_proposed",
     "clusters_scored", "clusters_kept", "articles_extracted", "articles_extract_weak",
-    "articles_extract_failed", "claims_total", "claims_clusters_out",
+    "articles_extract_failed", "claims_calls", "claims_total", "claims_clusters_out",
     "stories_written", "stories_dropped", "stories_published", "llm_calls",
 )
+
+
+def prune_debug(debug_dir: Path, keep_days: int = RETAIN_DAYS) -> tuple[list[str], int]:
+    """Delete captured run directories older than the newest `keep_days` of
+    them. Returns (removed day names, bytes freed) — the caller prints it, so
+    a checkout that lost 21 days of evidence says so out loud rather than
+    quietly shrinking (CLAUDE.md §No silent caps).
+
+    Only `debug/<YYYY-MM-DD>/` directories are considered: README.md,
+    ANALYSIS.md and anything else a human put here are never touched. Keeps at
+    least one day whatever is asked, so a mistuned dial can't empty the
+    directory."""
+    if not debug_dir.exists():
+        return [], 0
+    days = sorted(
+        (p for p in debug_dir.iterdir() if p.is_dir() and _DAY_RE.fullmatch(p.name)),
+        reverse=True,
+    )
+    doomed = days[max(1, keep_days):]
+    removed: list[str] = []
+    freed = 0
+    for path in doomed:
+        size = sum(f.stat().st_size for f in path.rglob("*") if f.is_file())
+        try:
+            shutil.rmtree(path)
+        except OSError:
+            continue
+        removed.append(path.name)
+        freed += size
+    return sorted(removed), freed
 
 
 def _read_json(path: Path):
@@ -196,16 +241,18 @@ def _read_json(path: Path):
         return None
 
 
-def _load_runs(debug_dir: Path, limit: int) -> list[dict]:
-    """Every captured run directory, newest first, with its run.json and
-    funnel.json attached. A day whose run.json is missing (the process was
-    killed before finish()) still appears — that absence is itself the
-    finding."""
+def _load_runs(debug_dir: Path, limit: int) -> tuple[list[dict], int]:
+    """The newest `limit` captured run directories, newest first, with their
+    run.json and funnel.json attached — plus how many exist in total, so the
+    caller can say what it left out. A day whose run.json is missing still
+    appears; whether that means "died before finish()" or "only a follow ran
+    that day" is decided by looking for run-follow.json, which is the
+    difference F14 got wrong about 2026-07-27 for a month."""
+    dirs = [p for p in sorted(debug_dir.glob("*/"), reverse=True) if p.is_dir()]
     runs = []
-    for path in sorted(debug_dir.glob("*/"), reverse=True):
-        if not path.is_dir():
-            continue
+    for path in dirs[:limit]:
         run = _read_json(path / "run.json")
+        follow = _read_json(path / "run-follow.json")
         runs.append(
             {
                 "day": path.name,
@@ -213,11 +260,11 @@ def _load_runs(debug_dir: Path, limit: int) -> list[dict]:
                 "run": run,
                 "funnel": _read_json(path / "funnel.json") or {},
                 "incomplete": run is None,
+                "follow_only": run is None and follow is not None,
+                "follow": follow,
             }
         )
-        if len(runs) >= limit:
-            break
-    return runs
+    return runs, len(dirs)
 
 
 def _table(headers: list[str], rows: list[list[str]]) -> str:
@@ -243,7 +290,7 @@ def debug_bundle(debug_dir: Path, data_dir: Path, days: int | None = None) -> tu
     artifacts backing each claim. Returns (written_path, text).
     """
     limit = days or HISTORY_DAYS
-    runs = _load_runs(debug_dir, limit)
+    runs, captured = _load_runs(debug_dir, limit)
     if not runs:
         return None, (
             f"No captured runs under {debug_dir}/.\n"
@@ -256,9 +303,18 @@ def debug_bundle(debug_dir: Path, data_dir: Path, days: int | None = None) -> tu
 
     w("# Debug bundle")
     w("")
-    w(f"{len(runs)} captured run(s), newest first: "
+    w(f"Showing {len(runs)} of {captured} captured run(s), newest first: "
       f"{', '.join(r['day'] for r in runs)}.")
     w("")
+    if captured > len(runs):
+        # CLAUDE.md §No silent caps. At the default window this used to hide
+        # every failed day and every aborted run while reporting the truncated
+        # count as if it were the total (ANALYSIS-2026-08-23.md §M4).
+        oldest = sorted(p.name for p in debug_dir.glob("*/") if p.is_dir())
+        w(f"> **{captured - len(runs)} older captured day(s) are NOT in this bundle** "
+          f"(window = {limit} day(s), earliest captured = {oldest[0]}). "
+          f"Run `uv run digest.py debug --days {captured}` for all of them.")
+        w("")
     w("This file is generated by `uv run digest.py debug`. It summarises the")
     w("contents of `debug/<date>/`; every number below is backed by a file in")
     w("that directory, named at the end of each section.")
@@ -282,14 +338,15 @@ def debug_bundle(debug_dir: Path, data_dir: Path, days: int | None = None) -> tu
     w("6. **extract** (`extract.py`) — fetch full text for surviving clusters")
     w("   only: JSON-LD and paragraph extraction from one fetch, longest wins,")
     w("   escalating to the r.jina.ai reader proxy if both fall short.")
-    w("7. **claims** (`llm.py`, LLM call 2) — atomic claims, each anchored to")
-    w("   exactly one article URL.")
-    w("8. **write** (`llm.py`, LLM call 3) — prose from claims ONLY; the write")
+    w("7. **claims** (`llm.py`, one LLM call PER SECTION) — atomic claims, each")
+    w("   anchored to exactly one article URL. Per section since 2026-08-23: one")
+    w("   batched call decayed with prompt position and India was always last.")
+    w("8. **write** (`llm.py`, the last LLM call) — prose from claims ONLY; the write")
     w("   pass never sees article text. `anchor.py` then validates each story")
     w("   and drops any that isn't genuinely claim-anchored.")
     w("9. **render** (`render.py`) — regenerate `docs/` wholesale.")
     w("")
-    w("Three LLM calls per morning, total. Any stage returning nothing ends the")
+    w("Four LLM calls per morning, total. Any stage returning nothing ends the")
     w("run: `docs/` is re-rendered with an honest \"not ready yet\" banner and")
     w("the process exits 1.")
     w("")
@@ -298,14 +355,18 @@ def debug_bundle(debug_dir: Path, data_dir: Path, days: int | None = None) -> tu
     w("## Funnel")
     w("")
     w("Counts at each stage, one column per day. A stage that lost everything")
-    w("is where to look first; `stopped_at` names it outright when a run died.")
+    w("is where to look first; `stopped_at` names it outright when a run died —")
+    w("including a stage that RAISED, which before 2026-08-23 left the field blank")
+    w("(the per-day section below still quotes the exception either way).")
     w("")
     keys = [k for k in _FUNNEL_ORDER if any(k in r["funnel"] for r in runs)]
     keys += sorted({k for r in runs for k in r["funnel"]} - set(keys))
     headers = ["metric"] + [r["day"] for r in runs]
     rows = [[k] + [str(r["funnel"].get(k, "-")) for r in runs] for k in keys]
     status = ["status"] + [
-        ("INCOMPLETE" if r["incomplete"] else ("ok" if (r["run"] or {}).get("ok") else "FAILED"))
+        ("follow only" if r["follow_only"] else
+         "INCOMPLETE" if r["incomplete"] else
+         ("ok" if (r["run"] or {}).get("ok") else "FAILED"))
         for r in runs
     ]
     stopped = ["stopped_at"] + [str((r["run"] or {}).get("stopped_at", "-")) for r in runs]
@@ -329,7 +390,12 @@ def debug_bundle(debug_dir: Path, data_dir: Path, days: int | None = None) -> tu
         w(f"## {day}")
         w("")
         run = r["run"] or {}
-        if r["incomplete"]:
+        if r["follow_only"]:
+            w("**No digest run was captured this day** — only a `follow` run "
+              "(`run-follow.json`). Whatever the digest published that day is in "
+              "`data/`; capture simply was not on for it. This is not a failure.")
+            w("")
+        elif r["incomplete"]:
             w("**No `run.json`** — the process died before it could finish writing.")
             w("`trace.jsonl` is the only record; read its last lines.")
             w("")
@@ -486,8 +552,16 @@ def debug_bundle(debug_dir: Path, data_dir: Path, days: int | None = None) -> tu
     w("| `dossier/<issue>/index.json` | a followed story's research: rounds, calls, ledger size, entity sides, gap firings |")
     w("| `dossier/<issue>/discarded-questions.json` | every question the drift guards cut, and which guard cut it |")
     w("")
+    w("A `follow` run against the same day folds `-follow` into every file name")
+    w("it writes (`run-follow.json`, `extract/index-follow.json`, ...), so the two")
+    w("runs can never overwrite each other. Both append to `trace.jsonl`.")
+    w("")
     w("Published output for the same days is in `data/<date>.json`; the site is")
     w("`docs/`, regenerated wholesale on every render.")
+    w("")
+    w(f"Only the newest {RETAIN_DAYS} captured day(s) are kept in the working tree "
+      "(`digest.py prune-debug`, run by the commit step); anything older is in git "
+      "history only.")
     w("")
 
     text = "\n".join(out)

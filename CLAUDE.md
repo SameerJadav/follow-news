@@ -26,7 +26,10 @@ carries only what reading the code cannot tell you.
   values" table is a snapshot from 2026-07-27 and has since gone stale — the
   constant in the code is the value; this file is the story of why it moved.
 - **`meta-plan.md`** is the build plan, now history. **`ANALYSIS-2026-07-31.md`**
-  audits the live record as of that date.
+  audits the live record at 5 days; **`ANALYSIS-2026-08-23.md`** audits it at 27
+  days, 216 stories, and re-tests every finding the first one left open. Where a
+  comment below cites a §, that is the section of the 08-23 analysis holding the
+  measurement.
 
 ## The map
 
@@ -34,7 +37,7 @@ Digest, in call order — `digest.py run_pipeline` orchestrates and owns the
 `data/` contract: `feeds.py` (fetch, window, dedupe, per-feed health, quorum) →
 `rank.py` (pool shaping, scoring, cutoff, scope; no I/O, fully unit-testable) +
 `wikipedia.py` (Current Events cross-check against volume bias) → `llm.py`
-(select, claims, write) → `extract.py` (article text; JSON-LD or paragraphs,
+(select, claims per section, write) → `extract.py` (article text; JSON-LD or paragraphs,
 longest wins, escalating to `r.jina.ai`) → `anchor.py` (the semantic gate:
 markers, anchoring floors, thin sourcing) → `render.py` (every page, from Python
 template strings).
@@ -54,14 +57,25 @@ Cross-cutting: `ratelimit.py` (429 classification, budgeted wait-and-resume),
   change `render.py` and re-render, never the HTML. The hand-written assets in
   `docs/` (`style.css`, `app.js`, `manifest.webmanifest`, the icons,
   `robots.txt`, `.nojekyll`) are untouched by the pipeline.
-- **The digest is 3–4 Gemini calls per morning, total** — never one per article,
-  story, or section. Select reads cheap headlines; full text is fetched only for
-  what selection chose; claims and writing are each one batched call.
+- **The digest is 4 Gemini calls per morning, total** — never one per article or
+  story. Select reads cheap headlines; full text is fetched only for what
+  selection chose; **claims is one batched call per section** and writing is one
+  batched call for the day. Claims was one call for everything until 2026-08-23,
+  when 212 clusters showed it decaying monotonically with prompt position (12.96
+  claims at position 0, 5.43 at position 9) and India, always last, paying for it
+  — §H3. Per section is a call-structure change, not a prompt change: it resets
+  position rather than rewording anything.
 - **The write pass sees claims only, never article text**, so a fact that is not
-  an anchored claim has no way into the prose. Two sources disagreeing on a
-  figure stay two attributed claims, never one averaged number. Follow's write
-  pass has the same discipline over ledger entries, and its dossier is
-  append-only: entries are corrected and merged, never dropped.
+  an anchored claim has no way into the prose. It sees the story's headline hint
+  too, so `llm.subject_line` masks every figure out of it — the hint is written
+  by the select pass from RSS titles, with no claim behind it, and was a measured
+  route for an unanchored number to reach the page (§H1). A figure in the body
+  that no cited claim carries now **drops the story** (`anchor.unsourced_figures`
+  + `GATE_UNSOURCED_FIGURES`), measured at 3/3 precision over 216 stories.
+  Two sources disagreeing on a figure stay two attributed claims, never one
+  averaged number. Follow's write pass has the same discipline over ledger
+  entries, and its dossier is append-only: entries are corrected and merged,
+  never dropped.
 - **Nothing follows itself.** Only an issue the owner deliberately opened starts
   a follow; closing it is the kill switch, whatever is left of its frontier.
 - **Follow is never on the digest's critical path** (`continue-on-error: true`),
@@ -75,6 +89,11 @@ Cross-cutting: `ratelimit.py` (429 classification, budgeted wait-and-resume),
 - **A Gemini call either uses a tool or gets a validated JSON schema, never
   both** — which is why searching, reading pages, and structuring what they
   returned are separate passes rather than one.
+- **A transient failure is retried; a quota is waited out.** `ratelimit.py`
+  classifies these separately: a 429 gets the wait budget, a 5xx or a dropped
+  connection gets `TRANSIENT_ATTEMPTS` short hops. Neither existed for the second
+  case until 2026-08-23, and 15 of 41 captured runs had died on the first 503 —
+  one of them losing a whole day (§H2).
 - **Degrade, don't fail.** Above `feeds.quorum_ok`'s floor a run with half its
   feeds dead still ships, logged as degraded. Below it, the run re-renders
   today's page with the honest "isn't ready yet" banner and exits 1, so the site
@@ -82,8 +101,11 @@ Cross-cutting: `ratelimit.py` (429 classification, budgeted wait-and-resume),
 - **No silent caps.** Every ceiling that bites — a call budget, a discarded
   question, a page that could not be read — is logged and recorded.
 - `debug/` and `cache/extract.json` are committed but derived and disposable;
-  deleting either costs only the record. Capture is a strict no-op when
-  `DIGEST_DEBUG` is off, and `tests/test_tracer.py` holds that line.
+  deleting either costs only the record. Capture is bounded across days as well
+  as within a run: the commit step runs `digest.py prune-debug`, keeping
+  `report.RETAIN_DAYS`. Unbounded it was 17 MB/day and 89% of the objects in a
+  checkout all three daily crons each pay for (§H5). Capture is a strict no-op
+  when `DIGEST_DEBUG` is off, and `tests/test_tracer.py` holds that line.
 
 ## Security — the repo is public
 
@@ -91,6 +113,11 @@ Cross-cutting: `ratelimit.py` (429 classification, budgeted wait-and-resume),
   `docs/`, `followed/`, or a log line.
 - `follow.yml` is job-gated on owner-plus-label, and `follow.fetch_issues()`
   re-checks the author in Python so the guarantee survives another caller.
+- Both workflows declare their scopes explicitly, so anything unlisted is `none`.
+  `digest.yml` needs `issues: write` because the daily sweep — not `follow.yml` —
+  is where a stale follow's auto-close fires; without it the `GET` still worked
+  and the `PATCH` 403'd, leaving the site saying finished and the tracker saying
+  open for eleven days (§M1). `tests/test_security.py` pins the scope set.
 - Pass `github.event.issue.number` through `env:` — it is a GitHub-assigned
   integer. The issue *title* and *body* are attacker-controlled text on a public
   tracker: keep them out of every `run:` block and let `follow.py` read the body
@@ -104,9 +131,10 @@ Cross-cutting: `ratelimit.py` (429 classification, budgeted wait-and-resume),
 Turn a dial before rewording a prompt. The dials are module-level constants,
 each with an inline comment: `rank.py` (how many stories, which section, what
 order), `anchor.py` (length targets and the anchoring floors), `feeds.py` (time
-window, quorum, degradation), `report.py` (feed decay), `follow.py` (staleness,
-new follows per run), `dossier.py` (rounds, saturation, the two daily pools, the
-drift guards). Back the change with an observation logged in `calibration.md`.
+window, quorum, degradation), `report.py` (feed decay, `RETAIN_DAYS`), `follow.py`
+(staleness, new follows per run), `dossier.py` (rounds, saturation, the two daily
+pools, the drift guards), `ratelimit.py` (the wait budget, the transient
+attempts). Back the change with an observation logged in `calibration.md`.
 
 A prompt change moves editorial judgement — story count, section split, scope,
 register — so `decisions.md` requires showing it to the owner before it ships.
@@ -130,6 +158,11 @@ belongs in a URL or a committed path.
 `gh run list` finds the run. Every line is prefixed with its stage —
 `QUORUM`, `DEGRADED`, `ZERO ITEMS`, `ratelimit:`, `anchor: DROPPED`,
 `dossier: #<issue>` — so grep the prefix rather than reading the log.
+
+`run.json`'s `stopped_at` names the stage that ended the run whether it emptied
+the pipeline (`digest.stopped`) or **raised** (`tracer.stage`, with
+`stopped_error` beside it). Only the first was recorded before 2026-08-23, which
+is why the one lost morning in the record has no `stopped_at`.
 
 Actions logs expire; `debug/<date>/` does not. `debug/README.md` documents the
 layout, `run.json`'s `stopped_at` names the stage that emptied the pipeline, and

@@ -99,12 +99,20 @@ from tracer import dbg
 # it only to a *learned* ceiling — so the default has to arrive pre-margined or
 # the first run of the day spends right up to the wall.
 MAX_GROUNDED_CALLS_PER_DAY = 18  # 20 measured - QUOTA_SAFETY_MARGIN (2)
-# The schema pool is shared with the digest's own 3-4 morning calls, and the
-# digest must never be starved by Follow. 20 measured - 4 for the digest at its
-# worst - 2 margin = 14. This value was already right; only its reasoning was
-# ("conservative until measured" — it is now measured, and 14 is what the
-# arithmetic gives).
-MAX_SCHEMA_CALLS_PER_DAY = 14
+# The schema pool is shared with the digest's own morning calls, and the digest
+# must never be starved by Follow. Re-derived 2026-08-23 (ANALYSIS-2026-08-23.md
+# §H2), because the old "20 - 4 for the digest at its worst - 2 margin = 14" was
+# sized against a worst case that had already been exceeded: three days spent 5
+# calls, not 4, every extra one a re-do of work an aborted run had paid for.
+# Two things changed at once:
+#   - the claims pass is now one call PER SECTION, so a nominal morning is 4
+#     (select + world + india + write), not 3;
+#   - ratelimit.py now retries a transient 5xx in-run, which is what those
+#     re-dos were, so a mid-run abort costs at most one extra attempt rather
+#     than a whole second run's select-and-claims.
+# 20 measured - 6 for the digest at its worst (4 nominal + 2 for one aborted
+# fire's already-paid stages) - 2 margin = 12.
+MAX_SCHEMA_CALLS_PER_DAY = 12
 # Held back from BOTH ceilings above (already subtracted into their literals)
 # and from any learned one, so the last call of the day is ours rather than a
 # wasted 429.
@@ -668,6 +676,10 @@ def new_dossier(issue: int, subject: str) -> dict:
         "subject": subject,
         "span": {"start": None, "end": None},
         "research_state": "pending",
+        # True only when the round ceiling stopped research with questions
+        # still open — a dossier that is complete for the reader but did not
+        # run dry. render.py says so on the page; see research()'s else branch.
+        "rounds_exhausted": False,
         "rounds": 0,
         "calls": 0,
         "lean_rounds": 0,
@@ -789,15 +801,23 @@ class Budget:
 
     def learn(self, pool: str, rpd: int, model: str = "") -> None:
         """Remember a ceiling the server just enforced, so tomorrow stops one
-        call short of it instead of rediscovering it the hard way."""
+        call short of it instead of rediscovering it the hard way.
+
+        A ceiling the server RE-CONFIRMS refreshes `learned_at`, even when the
+        number has not moved. Returning early on `known == rpd` (as this did
+        until 2026-08-23) meant a still-correct ceiling could never clear its
+        own staleness: every run after the TTL printed "over 14 days old;
+        re-probing", nothing re-probed, and the only thing that could ever
+        silence the line was the limit CHANGING (ANALYSIS-2026-08-23.md §L1)."""
         if rpd <= 0:
             return
         known = (self.learned.get(pool) or {}).get("rpd")
-        if known == rpd:
-            return
         self.learned[pool] = {"rpd": rpd, "model": model, "learned_at": _now_iso()}
-        dbg(f"dossier: learned {pool} daily ceiling = {rpd} request(s); recorded for future runs")
-        tracer.event("dossier", verdict="quota_learned", pool=pool, rpd=rpd, model=model)
+        if known == rpd:
+            dbg(f"dossier: {pool} daily ceiling re-confirmed at {rpd}; staleness clock reset")
+        else:
+            dbg(f"dossier: learned {pool} daily ceiling = {rpd} request(s); recorded for future runs")
+            tracer.event("dossier", verdict="quota_learned", pool=pool, rpd=rpd, model=model)
         try:
             self.limits_path.parent.mkdir(parents=True, exist_ok=True)
             self.limits_path.write_text(json.dumps(self.learned, indent=2) + "\n")
@@ -1567,6 +1587,7 @@ def research(followed_dir: Path, issue: int, dsr: dict, corpus: dict, budget: Bu
         if not questions:
             dbg(f"dossier: #{issue} frontier empty")
             dsr["research_state"] = "complete"
+            dsr["rounds_exhausted"] = False
             break
 
         dsr["rounds"] += 1
@@ -1617,9 +1638,35 @@ def research(followed_dir: Path, issue: int, dsr: dict, corpus: dict, budget: Bu
         if saturated(dsr):
             dbg(f"dossier: #{issue} saturated after {dsr['rounds']} round(s)")
             dsr["research_state"] = "complete"
+            dsr["rounds_exhausted"] = False
             break
     else:
+        # The ROUND ceiling, not saturation: this branch wrote the identical
+        # "complete" the two branches above write, with no dbg() and no event,
+        # so a dossier that simply ran out of rounds rendered "The full picture"
+        # exactly like one that had genuinely run dry (ANALYSIS-2026-08-23.md
+        # §M2). It stays "complete" — the state that lets tomorrow's delta pass
+        # run at all, and `capped` would freeze the follow forever — but it says
+        # so, and `rounds_exhausted` is what render.py shows the reader.
+        #
+        # Note _update_follow deliberately lowers MAX_ROUNDS to rounds+1 for a
+        # one-round delta, and lands here every single day. That is not a cap:
+        # what distinguishes them is an open frontier this run could not reach.
+        left = len(dsr["questions"]["open"])
         dsr["research_state"] = "complete"
+        dsr["rounds_exhausted"] = bool(left)
+        if left:
+            dbg(
+                f"dossier: #{issue} ROUND CEILING at {dsr['rounds']} round(s) "
+                f"(MAX_ROUNDS={MAX_ROUNDS}) with {left} question(s) still open; "
+                "reporting complete-but-capped, not saturated"
+            )
+            tracer.event(
+                "dossier", issue=issue, verdict="rounds_exhausted",
+                rounds=dsr["rounds"], max_rounds=MAX_ROUNDS, frontier_left=left,
+            )
+        else:
+            dbg(f"dossier: #{issue} frontier empty at the round ceiling; complete")
 
     save(followed_dir, issue, dsr, corpus, "DONE")
     _capture(dsr)
@@ -1639,6 +1686,7 @@ def _capture(dsr: dict) -> None:
             "issue": dsr["issue"],
             "subject": dsr["subject"],
             "research_state": dsr["research_state"],
+            "rounds_exhausted": bool(dsr.get("rounds_exhausted")),
             "rounds": dsr["rounds"],
             "calls": dsr["calls"],
             "span": dsr["span"],
