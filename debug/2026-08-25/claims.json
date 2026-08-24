@@ -1,0 +1,707 @@
+{
+  "min_claim_chars": 20,
+  "max_claims_per_story": 24,
+  "calls": [
+    {
+      "label": "claims-world",
+      "cluster_ids": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "label": "claims-india",
+      "cluster_ids": [
+        3
+      ]
+    }
+  ],
+  "rejected_claims": 0,
+  "rejected_clusters": 0,
+  "clusters": [
+    {
+      "cluster_id": 0,
+      "headline_hint": "US Treasury unveils Operation Economic Outcast sanctions campaign to isolate Iran",
+      "section": "world",
+      "batch_position": 0,
+      "claim_count": 20,
+      "distinct_outlets": 5,
+      "source_kinds": {
+        "fulltext": 20
+      },
+      "claims": [
+        {
+          "id": 1,
+          "cluster_id": 0,
+          "text": "US Treasury Secretary Scott Bessent announced on August 24, 2026, that the United States Treasury has launched Operation Economic Outcast against Iran and its enablers at the direction of Donald Trump.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/us-news/live/2026/aug/24/hakeem-jeffries-jared-kushner-democrats-midterm-elections-donald-trump-iran-war-sanctions-latest-news-updates",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 2,
+          "cluster_id": 0,
+          "text": "Scott Bessent stated that the objective of Operation Economic Outcast is to sever every economic lifeline that sustains the Iranian regime until Tehran stands alone.",
+          "kind": "quote",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/us-news/live/2026/aug/24/hakeem-jeffries-jared-kushner-democrats-midterm-elections-donald-trump-iran-war-sanctions-latest-news-updates",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 3,
+          "cluster_id": 0,
+          "text": "A Reuters/Ipsos poll showed public support for the war with Iran among Americans surveyed dropped to 31%, down from 34% earlier in August 2026.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/us-news/live/2026/aug/24/hakeem-jeffries-jared-kushner-democrats-midterm-elections-donald-trump-iran-war-sanctions-latest-news-updates",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 4,
+          "cluster_id": 0,
+          "text": "The Reuters/Ipsos poll indicated that 69% of Republican respondents support the war with Iran, down from 77% in March.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/us-news/live/2026/aug/24/hakeem-jeffries-jared-kushner-democrats-midterm-elections-donald-trump-iran-war-sanctions-latest-news-updates",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 5,
+          "cluster_id": 0,
+          "text": "Donald Trump's approval rating hovered at a low of 33% according to recent polling.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/us-news/live/2026/aug/24/hakeem-jeffries-jared-kushner-democrats-midterm-elections-donald-trump-iran-war-sanctions-latest-news-updates",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 6,
+          "cluster_id": 0,
+          "text": "Donald Trump threatened to increase tariffs on Canadian cars, trucks, auto parts, and steel to 50% starting January 1, 2027.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/us-news/live/2026/aug/24/hakeem-jeffries-jared-kushner-democrats-midterm-elections-donald-trump-iran-war-sanctions-latest-news-updates",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 7,
+          "cluster_id": 0,
+          "text": "Canadian Prime Minister Mark Carney stated that Donald Trump's new tariff threat was largely expected and questioned what message it sends to US workers in states like Michigan and Ohio who rely on Canadian demand.",
+          "kind": "quote",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/us-news/live/2026/aug/24/hakeem-jeffries-jared-kushner-democrats-midterm-elections-donald-trump-iran-war-sanctions-latest-news-updates",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 8,
+          "cluster_id": 0,
+          "text": "US Treasury Secretary Scott Bessent identified digital assets, technology, gold, aviation, and shipping as five critical sectors supporting Iran's economy that will face heightened scrutiny.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/us-news/bessent-on-iran-sanctions-10-key-points-from-trump-administration-s-economic-asphyxiation-plan-11787599721960.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 9,
+          "cluster_id": 0,
+          "text": "Scott Bessent stated that President Donald Trump is personally contacting world leaders to ask them to stop economic interactions with Tehran.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/us-news/bessent-on-iran-sanctions-10-key-points-from-trump-administration-s-economic-asphyxiation-plan-11787599721960.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 10,
+          "cluster_id": 0,
+          "text": "Scott Bessent cited the United Arab Emirates' decision to suspend trade, commercial exchanges, and financial transactions with Iran as evidence of success from US diplomatic efforts.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/us-news/bessent-on-iran-sanctions-10-key-points-from-trump-administration-s-economic-asphyxiation-plan-11787599721960.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 11,
+          "cluster_id": 0,
+          "text": "Scott Bessent warned that any entity facilitating money laundering on behalf of Iran will be removed from the US dollar-based financial system.",
+          "kind": "quote",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/us-news/bessent-on-iran-sanctions-10-key-points-from-trump-administration-s-economic-asphyxiation-plan-11787599721960.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 12,
+          "cluster_id": 0,
+          "text": "The US dollar index rose 0.17 percent to 98.99 on August 24, 2026, following the announcement of expanded sanctions on Iran.",
+          "kind": "figure",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/business/dollar-higher-after-iran-sanctions-loonie-drops-after-us-announces-tariff-increases-6336766",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 13,
+          "cluster_id": 0,
+          "text": "CNBC reported that US Treasury Secretary Scott Bessent could use the Treasury General Account at the Federal Reserve, which holds near $1 trillion, to fund bond buybacks.",
+          "kind": "event",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/business/dollar-higher-after-iran-sanctions-loonie-drops-after-us-announces-tariff-increases-6336766",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 14,
+          "cluster_id": 0,
+          "text": "The Canadian dollar weakened 0.61 percent to C$1.385 per US dollar on August 24, 2026.",
+          "kind": "figure",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/business/dollar-higher-after-iran-sanctions-loonie-drops-after-us-announces-tariff-increases-6336766",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 15,
+          "cluster_id": 0,
+          "text": "Iran warned it would halt all regional oil exports if the conflict with the United States continues.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c0qxew81y83o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 16,
+          "cluster_id": 0,
+          "text": "The Iranian regime warned maritime traffic not to navigate through the Strait of Hormuz without its permission.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c0qxew81y83o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 17,
+          "cluster_id": 0,
+          "text": "Capital Economics chief climate and commodities economist David Oxley noted that approximately 90% of Iran's oil exports go to China.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c0qxew81y83o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 18,
+          "cluster_id": 0,
+          "text": "On August 24, 2026, the price of Brent crude oil reached $92 per barrel.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c0qxew81y83o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 19,
+          "cluster_id": 0,
+          "text": "Gasoline prices in the United States surpassed $4 per gallon.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c0qxew81y83o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 20,
+          "cluster_id": 0,
+          "text": "US Treasury Secretary Scott Bessent announced an unprecedented global economic war targeting all of Iran's revenue streams, including oil.",
+          "kind": "event",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/24/trump-administration-announces-global-economic-war-on-iran-2?traffic_source=rss",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 1,
+      "headline_hint": "US-Canada trade talks collapse as Trump administration announces 50% auto and steel tariffs",
+      "section": "world",
+      "batch_position": 1,
+      "claim_count": 13,
+      "distinct_outlets": 5,
+      "source_kinds": {
+        "fulltext": 13
+      },
+      "claims": [
+        {
+          "id": 21,
+          "cluster_id": 1,
+          "text": "Trade negotiations between the United States and Canada collapsed after the two nations failed to reach an agreement.",
+          "kind": "event",
+          "outlet": "NPR World",
+          "url": "https://www.npr.org/2026/08/24/nx-s1-5942972/the-view-from-canada-after-u-s-trade-negotiations-collapse",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 22,
+          "cluster_id": 1,
+          "text": "Donald Trump announced a new 50% tariff on Canadian automobiles, trucks, auto parts, and steel set to take effect on January 1, 2027.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/us-news/2026/aug/24/canada-tariff-increase-trump-auto",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 23,
+          "cluster_id": 1,
+          "text": "Canadian Prime Minister Mark Carney said Canada will return to the negotiating table only when the US approaches talks with a true partnership attitude.",
+          "kind": "quote",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/us-news/2026/aug/24/canada-tariff-increase-trump-auto",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 24,
+          "cluster_id": 1,
+          "text": "According to the Office of the US Trade Representative, annual trade between the United States and Canada reached roughly $909 billion.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/us-news/2026/aug/24/canada-tariff-increase-trump-auto",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 25,
+          "cluster_id": 1,
+          "text": "Ontario Premier Doug Ford stated that US President Donald Trump had declared economic war against Canada.",
+          "kind": "quote",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/economy/2026/8/24/trump-slams-canada-with-new-50-percent-auto-tariffs-for-2027?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 26,
+          "cluster_id": 1,
+          "text": "Ontario Premier Doug Ford warned that Canada could cut off electricity and critical mineral supplies to the United States as leverage in the trade dispute.",
+          "kind": "event",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/economy/2026/8/24/trump-slams-canada-with-new-50-percent-auto-tariffs-for-2027?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 27,
+          "cluster_id": 1,
+          "text": "Flavio Volpe, president of Canada's Automotive Parts Manufacturers' Association, warned that US tariffs on Canadian auto parts would halt auto assembly across the United States.",
+          "kind": "quote",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/economy/2026/8/24/trump-slams-canada-with-new-50-percent-auto-tariffs-for-2027?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 28,
+          "cluster_id": 1,
+          "text": "An Angus Reid Institute poll found that three in four Canadians supported Prime Minister Mark Carney's decision to walk away from trade negotiations with the US.",
+          "kind": "figure",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/economy/2026/8/24/trump-slams-canada-with-new-50-percent-auto-tariffs-for-2027?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 29,
+          "cluster_id": 1,
+          "text": "Following the trade announcement on August 24, shares of Ford fell 3.2%, Stellantis fell 4.7%, and General Motors fell 1.1%.",
+          "kind": "figure",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/economy/2026/8/24/trump-slams-canada-with-new-50-percent-auto-tariffs-for-2027?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 30,
+          "cluster_id": 1,
+          "text": "US Trade Representative Jamieson Greer stated that the United States was compelled to take countermeasures following Canadian retaliation against US exports.",
+          "kind": "event",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/americas/20260824-canada-trump-threatens-double-auto-tariffs-after-trade-talks-collapse",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 31,
+          "cluster_id": 1,
+          "text": "Prime Minister Mark Carney stated that Canada rejected proposed US terms because the US added last-minute demands that limited tariff relief and restricted Canada's trade independence.",
+          "kind": "event",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/americas/20260824-canada-trump-threatens-double-auto-tariffs-after-trade-talks-collapse",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 32,
+          "cluster_id": 1,
+          "text": "Canadian Prime Minister Mark Carney suspended trade negotiations with the US and recalled Canada's negotiating team back to Ottawa.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/business/international-business/worst-nation-to-deal-with-trump-lashes-out-at-canada-as-trade-talks-fall-apart-slaps-50-tariff/articleshow/133470490.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 33,
+          "cluster_id": 1,
+          "text": "Donald Trump claimed on Truth Social that Canadian agricultural tariffs contributed to a $60 billion trade deficit between the United States and Canada.",
+          "kind": "figure",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/business/international-business/worst-nation-to-deal-with-trump-lashes-out-at-canada-as-trade-talks-fall-apart-slaps-50-tariff/articleshow/133470490.cms",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 2,
+      "headline_hint": "UK promises continued support to Ukraine and confirms transfer of Storm Shadow missile blueprints",
+      "section": "world",
+      "batch_position": 2,
+      "claim_count": 13,
+      "distinct_outlets": 5,
+      "source_kinds": {
+        "fulltext": 13
+      },
+      "claims": [
+        {
+          "id": 34,
+          "cluster_id": 2,
+          "text": "The United Kingdom and Ukraine established a deal to use AI models trained on Ukrainian battlefield data from the Avengers AI lab to protect British infrastructure and military sites.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/politics/2026/aug/24/uk-to-use-ukraine-battlefield-data-to-train-ai-to-protect-sensitive-sites",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 35,
+          "cluster_id": 2,
+          "text": "The UK Ministry of Defence approved pilot AI projects with British technology companies Sintela, Mind Foundry, and Skyral.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/politics/2026/aug/24/uk-to-use-ukraine-battlefield-data-to-train-ai-to-protect-sensitive-sites",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 36,
+          "cluster_id": 2,
+          "text": "UK Prime Minister Andy Burnham stated that combining British AI expertise with Ukrainian battlefield data will accelerate capabilities to protect national security.",
+          "kind": "quote",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/politics/2026/aug/24/uk-to-use-ukraine-battlefield-data-to-train-ai-to-protect-sensitive-sites",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 37,
+          "cluster_id": 2,
+          "text": "Former military intelligence officer Dr. Frank Ledwidge stated that recent European commitments to Ukraine are politically symbolic and fail to address Kyiv's primary need for air defence interceptors.",
+          "kind": "quote",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/video/20260824-uk-france-re-announce-anti-missile-technology-for-ukraine-none-will-be-online-for-years",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 38,
+          "cluster_id": 2,
+          "text": "UK Prime Minister Andy Burnham visited Kyiv on August 24, 2026, marking his first official trip abroad as prime minister.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/clyqypkrzq5o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 39,
+          "cluster_id": 2,
+          "text": "The UK government authorized defense company MBDA to declassify information on British components of the Scalp cruise missile to enable domestic production in Ukraine.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/clyqypkrzq5o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 40,
+          "cluster_id": 2,
+          "text": "Kremlin spokesman Dmitry Peskov condemned the UK's transfer of missile component technology, stating it undermines peace efforts and that Russian forces are actively locating target production sites.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/clyqypkrzq5o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 41,
+          "cluster_id": 2,
+          "text": "The European Union released €6.1 billion (£5.2 billion) in military aid to Ukraine as part of a total €90 billion loan facility.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/clyqypkrzq5o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 42,
+          "cluster_id": 2,
+          "text": "UK Prime Minister Andy Burnham and Ukrainian President Volodymyr Zelenskyy signed a defence AI partnership, making Britain the first international partner to access Ukraine's Avengers AI Labs.",
+          "kind": "event",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/uk-ukraine-sign-ai-defence-partnership-linked-battlefield-technology-6338351",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 43,
+          "cluster_id": 2,
+          "text": "Ukraine's Avengers AI Labs database contains 5 million annotated battlefield images largely collected from the DELTA combat management system.",
+          "kind": "figure",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/uk-ukraine-sign-ai-defence-partnership-linked-battlefield-technology-6338351",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 44,
+          "cluster_id": 2,
+          "text": "AI systems trained on Avengers Labs data analyze over 100,000 drone video feeds monthly and identify approximately 70 percent of targets in real time.",
+          "kind": "figure",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/uk-ukraine-sign-ai-defence-partnership-linked-battlefield-technology-6338351",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 45,
+          "cluster_id": 2,
+          "text": "The Storm Shadow/Scalp cruise missile measures 5.10 metres in length and weighs approximately 1,300 kg.",
+          "kind": "background",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/defence/international/storm-shadow-why-uk-sharing-classified-missile-tech-with-ukraine-has-putin-fuming/articleshow/133468939.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 46,
+          "cluster_id": 2,
+          "text": "The UK government has committed more than £25 billion ($34 billion) in military and civilian assistance to Ukraine since 2022.",
+          "kind": "figure",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/defence/international/storm-shadow-why-uk-sharing-classified-missile-tech-with-ukraine-has-putin-fuming/articleshow/133468939.cms",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 3,
+      "headline_hint": "Trump administration proposes hiking H-1B visa fees to over $100,000",
+      "section": "india",
+      "batch_position": 0,
+      "claim_count": 24,
+      "distinct_outlets": 3,
+      "source_kinds": {
+        "fulltext": 24
+      },
+      "claims": [
+        {
+          "id": 47,
+          "cluster_id": 3,
+          "text": "The Trump administration proposed a new $103,265 fee for cap-subject H-1B petitions.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/us/us-proposes-103265-h-1b-fee-hiring-set-to-become-more-costly/articleshow/133473256.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 48,
+          "cluster_id": 3,
+          "text": "A previous $100,000 H-1B payment introduced under a September 2025 presidential proclamation is set to expire in September 2026 unless extended.",
+          "kind": "background",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/us/us-proposes-103265-h-1b-fee-hiring-set-to-become-more-costly/articleshow/133473256.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 49,
+          "cluster_id": 3,
+          "text": "The US Department of Homeland Security proposed the new $103,265 fee as an additional charge on top of existing H-1B filing and statutory fees.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/us/us-proposes-103265-h-1b-fee-hiring-set-to-become-more-costly/articleshow/133473256.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 50,
+          "cluster_id": 3,
+          "text": "Higher education institutions, affiliated non-profits, and research organizations are eligible to hire cap-exempt H-1B workers without paying cap-subject fees.",
+          "kind": "background",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/us/us-proposes-103265-h-1b-fee-hiring-set-to-become-more-costly/articleshow/133473256.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 51,
+          "cluster_id": 3,
+          "text": "The annual statutory cap for new H-1B visas is 85,000, which includes 65,000 regular visas and 20,000 visas reserved under the Master's cap.",
+          "kind": "figure",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/us/us-proposes-103265-h-1b-fee-hiring-set-to-become-more-costly/articleshow/133473256.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 52,
+          "cluster_id": 3,
+          "text": "Mitch Wexler, senior counsel at Fragomen, stated that the proposed $103,265 fee is tied to whether an H-1B petition is cap-subject rather than whether the worker is physically inside or outside the US.",
+          "kind": "quote",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/us/us-proposes-103265-h-1b-fee-hiring-set-to-become-more-costly/articleshow/133473256.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 53,
+          "cluster_id": 3,
+          "text": "New York-based immigration attorney Cyrus D Mehta called the proposed $103,265 fee preposterous and stated that the Trump administration has killed the goose that laid the golden eggs.",
+          "kind": "quote",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/us/us-proposes-103265-h-1b-fee-hiring-set-to-become-more-costly/articleshow/133473256.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 54,
+          "cluster_id": 3,
+          "text": "Indian nationals received 283,000 H-1B visas, including extensions, in the fiscal year ended 2025, representing 70% of the total allotted.",
+          "kind": "figure",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/us/us-proposes-103265-h-1b-fee-hiring-set-to-become-more-costly/articleshow/133473256.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 55,
+          "cluster_id": 3,
+          "text": "Indian nationals received nearly 58,000 new H-1B visas for initial employment in the fiscal year ended 2025.",
+          "kind": "figure",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/us/us-proposes-103265-h-1b-fee-hiring-set-to-become-more-costly/articleshow/133473256.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 56,
+          "cluster_id": 3,
+          "text": "The US Department of Homeland Security estimates the proposed $103,265 fee would generate approximately $8.78 billion annually based on 85,000 cap-subject petitions.",
+          "kind": "figure",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/us/us-proposes-103265-h-1b-fee-hiring-set-to-become-more-costly/articleshow/133473256.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 57,
+          "cluster_id": 3,
+          "text": "The US Department of Homeland Security estimates 14,541 small entities would be affected by the proposed fee, with 76% facing cost increases exceeding 1% of annual revenue.",
+          "kind": "figure",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/us/us-proposes-103265-h-1b-fee-hiring-set-to-become-more-costly/articleshow/133473256.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 58,
+          "cluster_id": 3,
+          "text": "The US Department of Homeland Security published the proposed $103,265 H-1B visa fee rule in the Federal Register on Monday, opening a 30-day public comment period.",
+          "kind": "event",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/economy/2026/8/24/trump-administration-seeks-to-formalise-h-1b-fee-of-more-than-100000?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 59,
+          "cluster_id": 3,
+          "text": "US Citizenship and Immigration Services received only 85 payments of the $100,000 fee from 70 employers as of February 15.",
+          "kind": "figure",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/economy/2026/8/24/trump-administration-seeks-to-formalise-h-1b-fee-of-more-than-100000?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 60,
+          "cluster_id": 3,
+          "text": "H-1B visa application government fees typically ranged from $2,000 to $5,000 prior to recent fee increases.",
+          "kind": "figure",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/economy/2026/8/24/trump-administration-seeks-to-formalise-h-1b-fee-of-more-than-100000?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 61,
+          "cluster_id": 3,
+          "text": "Employers registered for about 344,000 H-1B visas last year, representing a decline of over 25 percent from 2024 and down from 794,000 in 2023.",
+          "kind": "figure",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/economy/2026/8/24/trump-administration-seeks-to-formalise-h-1b-fee-of-more-than-100000?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 62,
+          "cluster_id": 3,
+          "text": "In August, the US Department of Homeland Security introduced additional fees of up to $4,500 for applications to extend H-1B stays or transfer overseas employees to the US.",
+          "kind": "event",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/economy/2026/8/24/trump-administration-seeks-to-formalise-h-1b-fee-of-more-than-100000?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 63,
+          "cluster_id": 3,
+          "text": "The H-1B program allows US employers to hire foreign workers in specialty occupations for an initial period of up to three years, extendable up to six years.",
+          "kind": "background",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/us-news/h1b-visa-fee-may-be-hiked-soon-as-per-us-plans-check-proposed-charges-11787582505003.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 64,
+          "cluster_id": 3,
+          "text": "The US Department of Homeland Security could finalize the proposed H-1B fee regulation by the end of 2026.",
+          "kind": "background",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/us-news/h1b-visa-fee-may-be-hiked-soon-as-per-us-plans-check-proposed-charges-11787582505003.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 65,
+          "cluster_id": 3,
+          "text": "On June 8, 2026, the US District Court for the District of Massachusetts vacated agency guidance implementing the $100,000 H-1B fee requirement in State of California v. Mullin.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/us/h-1b-visa-shock-trump-admin-proposes-hiking-fee-to-over-100000/articleshow/133469005.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 66,
+          "cluster_id": 3,
+          "text": "On July 24, 2026, the US Court of Appeals for the First Circuit rejected the Trump administration's request to stay the District Court ruling against the $100,000 fee.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/us/h-1b-visa-shock-trump-admin-proposes-hiking-fee-to-over-100000/articleshow/133469005.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 67,
+          "cluster_id": 3,
+          "text": "US Citizenship and Immigration Services has already received enough petitions to reach the 65,000 regular cap and 20,000 master's cap for fiscal year 2027.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/us/h-1b-visa-shock-trump-admin-proposes-hiking-fee-to-over-100000/articleshow/133469005.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 68,
+          "cluster_id": 3,
+          "text": "According to Boundless Immigration CEO Xiao Wang, top H-1B sponsors in fiscal year 2025 shifted to companies including Amazon, Meta, Microsoft, and Google.",
+          "kind": "background",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/us/h-1b-visa-shock-trump-admin-proposes-hiking-fee-to-over-100000/articleshow/133469005.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 69,
+          "cluster_id": 3,
+          "text": "Boundless Immigration client data showed senior Level III candidates achieved a 68% selection rate in the March 2026 H-1B cap season compared to 40% for entry-level Level I candidates.",
+          "kind": "figure",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/us/h-1b-visa-shock-trump-admin-proposes-hiking-fee-to-over-100000/articleshow/133469005.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 70,
+          "cluster_id": 3,
+          "text": "The proposed End H-1B Visa Abuse Act of 2026 proposes a three-year pause on new H-1B visas, a reduction of the annual cap to 25,000, and a minimum annual salary threshold of $200,000.",
+          "kind": "background",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/us/h-1b-visa-shock-trump-admin-proposes-hiking-fee-to-over-100000/articleshow/133469005.cms",
+          "source_kind": "fulltext"
+        }
+      ]
+    }
+  ],
+  "clusters_with_no_claims": []
+}
