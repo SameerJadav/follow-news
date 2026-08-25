@@ -1,0 +1,736 @@
+{
+  "dials": {
+    "WEIGHT_FLOOR": 5,
+    "TIER_WEIGHT": {
+      "lead": 4,
+      "major": 2,
+      "notable": 0
+    },
+    "WIKI_BONUS": 2,
+    "HARD_CAP": 12,
+    "MIN_STORIES_IF_ANY": 3,
+    "MAX_ARTICLES_PER_STORY": 5
+  },
+  "floor_relaxed": false,
+  "kept_weights": [
+    13,
+    13,
+    9,
+    8,
+    7,
+    6
+  ],
+  "per_section": {
+    "world": 3,
+    "india": 3
+  },
+  "clusters": [
+    {
+      "headline_hint": "Canada imposes up to 50% retaliatory tariffs on US goods as trade war escalates",
+      "section": "world",
+      "category": "economy",
+      "tier_requested": "lead",
+      "article_ids": [
+        20,
+        23,
+        116,
+        143,
+        167,
+        176,
+        177,
+        184,
+        189,
+        323
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        20,
+        23,
+        116,
+        143,
+        167,
+        176,
+        177,
+        184,
+        189,
+        323
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 7,
+      "wiki_backed": true,
+      "wiki_event": "Canada announces retaliatory tariffs on about US$20 billion worth of U.S. annual imports in response to the 50% tariffs by U.S. president Donald Trump and his administration.",
+      "weight": 13,
+      "weight_terms": {
+        "distinct_outlets": 7,
+        "tier_weight": 4,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "Canada announces up to 50% retaliatory tariffs on hundreds of US goods including steel, fish, cheese and paper – live",
+          "url": "https://www.theguardian.com/us-news/live/2026/aug/25/donald-trump-tariffs-canada-midterms-primary-south-carolina-iran-ukraine-voting-rights-latest-news-updates"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Canada announces 'dollar-for-dollar' retaliatory tariffs on US as high as 50%",
+          "url": "https://www.bbc.co.uk/news/articles/c3v4xg5klx7o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Canada hits US with counter-tariffs on more than 700 products",
+          "url": "https://www.aljazeera.com/economy/2026/8/25/canada-hits-us-with-counter-tariffs-targeting-hundreds-of-products?traffic_source=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Canada strikes back at Trump with retaliatory tariffs as US trade war escalates",
+          "url": "https://www.france24.com/en/americas/20260825-canada-strikes-back-trump-with-retaliatory-tariffs-us-trade-war-escalates"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Canada hits back at Trump, unveils dollar-for-dollar counter-tariffs",
+          "url": "https://timesofindia.indiatimes.com/business/international-business/canada-imposes-tariffs-ranging-from-15-to-50-on-us-goods-as-trade-war-escalates/articleshow/133517211.cms"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 5
+    },
+    {
+      "headline_hint": "Iran and Oman discuss temporary Strait of Hormuz shipping lane amid expanding US sanctions",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "major",
+      "article_ids": [
+        17,
+        25,
+        74,
+        114,
+        135,
+        146,
+        175,
+        195,
+        205,
+        223,
+        229,
+        238,
+        252,
+        259,
+        264,
+        275,
+        286,
+        297
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        17,
+        25,
+        74,
+        114,
+        135,
+        146,
+        175,
+        195,
+        205,
+        223,
+        229,
+        238,
+        252,
+        259,
+        264,
+        275,
+        286,
+        297
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 9,
+      "wiki_backed": true,
+      "wiki_event": "Iranian foreign minister Abbas Araghchi and Omani foreign minister Badr bin Hamad Al Busaidi say that Iran and Oman have discussed a proposal to establish a temporary joint shipping route for ships in the Strait of Hormuz.",
+      "weight": 13,
+      "weight_terms": {
+        "distinct_outlets": 9,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Livemint",
+          "title": "Iran, Oman Push Talks for ‘Interim’ Reopening of Hormuz Strait",
+          "url": "https://www.livemint.com/news/iran-oman-push-talks-for-interim-reopening-of-hormuz-strait-11787688032203.html"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Iran, Oman discuss temporary shipping lane through Strait of Hormuz",
+          "url": "https://www.aljazeera.com/news/2026/8/25/iran-oman-discuss-temporary-shipping-lane-through-strait-of-hormuz?traffic_source=rss"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "Iran, Oman say discussed temporary Hormuz corridor, mine-clearing",
+          "url": "https://www.channelnewsasia.com/world/iran-oman-say-discussed-temporary-hormuz-corridor-mine-clearing-6340691"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "China denounces US threat of sanctions over trade with Iran",
+          "url": "https://www.theguardian.com/world/2026/aug/25/china-us-sanctions-iran-oil"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "'Will defend interests': China puts US on notice after new sanctions on Iran",
+          "url": "https://timesofindia.indiatimes.com/world/china/china-warns-us-of-retaliation-if-trumps-economic-d-day-sanctions-hit-their-iran-oil-trade/articleshow/133518296.cms"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 13
+    },
+    {
+      "headline_hint": "CIA Director John Ratcliffe makes unannounced visit to Moscow for high-level meetings",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        24,
+        26,
+        84,
+        127,
+        159,
+        162,
+        183,
+        228,
+        265
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        24,
+        26,
+        84,
+        127,
+        159,
+        162,
+        183,
+        228,
+        265
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 7,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 9,
+      "weight_terms": {
+        "distinct_outlets": 7,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "BBC World",
+          "title": "CIA chief travels to Moscow for unannounced talks, US media reports",
+          "url": "https://www.bbc.co.uk/news/articles/c87vg9x5d7do?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "US spy chief visits Russia for meetings, media reports",
+          "url": "https://www.channelnewsasia.com/world/us-spy-chief-russia-visit-ratcliffe-6340786"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Kremlin denies US talks amid reports CIA Director Ratcliffe in Russia",
+          "url": "https://www.aljazeera.com/news/2026/8/25/kremlin-denies-planned-talks-with-us-envoys-amid-reports-cia-head-in-russia?traffic_source=rss"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "CIA Director John Ratcliffe reportedly visits Moscow for undisclosed meetings amid stalled Ukraine talks",
+          "url": "https://www.livemint.com/news/us-news/cia-director-john-ratcliffe-reportedly-visits-moscow-for-undisclosed-meetings-amid-stalled-ukraine-talks-11787674740656.html"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "CIA director John Ratcliffe reportedly on Moscow visit",
+          "url": "https://www.theguardian.com/us-news/2026/aug/25/cia-director-john-ratcliffe-moscow-russia"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 4
+    },
+    {
+      "headline_hint": "US removes Syria from state sponsors of terrorism list as Syrian Democratic Forces dissolve",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        39,
+        49,
+        52,
+        76,
+        234,
+        329
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        39,
+        49,
+        52,
+        76,
+        234,
+        329
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "Kurdish-led forces in Syria dissolve after merging with army",
+          "url": "https://www.aljazeera.com/news/2026/8/25/kurdish-led-forces-in-syria-dissolve-after-merging-with-the-army?traffic_source=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Syrian Kurdish leader announces SDF dissolution after its integration into army",
+          "url": "https://www.france24.com/en/middle-east/20260825-syrian-kurdish-leader-dissolves-force-that-spearheaded-jihadist-fight"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "US removes Syria from list of state sponsors of terrorism",
+          "url": "https://www.bbc.co.uk/news/articles/c33knmyl0y5o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Syria’s economy poised for improvement after US sanctions removal",
+          "url": "https://www.aljazeera.com/news/2026/8/25/syrias-economy-poised-for-improvement-after-us-sanctions-removal?traffic_source=rss"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Syria ‘shakes off’ past with removal from US ‘terror’ list, says al-Sharaa",
+          "url": "https://www.aljazeera.com/news/2026/8/25/syriashakes-offpast-with-removal-from-us-terror-list-says-al-sharaa?traffic_source=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 1
+    },
+    {
+      "headline_hint": "Severe tornado devastates village in southern France, injuring dozens",
+      "section": "world",
+      "category": "disaster",
+      "tier_requested": "notable",
+      "article_ids": [
+        178,
+        208,
+        302,
+        330
+      ],
+      "verdict": "cut:below_floor(2<5)",
+      "valid_ids": [
+        178,
+        208,
+        302,
+        330
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 2,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "France 24",
+          "title": "France: Tornado ravages small village",
+          "url": "https://www.france24.com/en/video/20260825-france-tornado-ravages-small-village"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Tornado tears through French village, leaving dozens hurt and homes ravaged",
+          "url": "https://www.bbc.co.uk/news/articles/c0m3npvpgdno?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "French village takes stock of tornado aftermath",
+          "url": "https://www.france24.com/en/french-village-takes-stock-of-tornado-aftermath"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Moment tornado tears through southern France",
+          "url": "https://www.bbc.co.uk/news/videos/ckg8wkd0j7do?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Ajit Doval and Wang Yi hold talks in Beijing to seek political settlement on India-China border",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "lead",
+      "article_ids": [
+        80,
+        99,
+        188
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        80,
+        99,
+        188
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 4,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "NDTV",
+          "title": "India, China Agree To Seek Political Settlement Of Border Issue: Centre",
+          "url": "https://www.ndtv.com/india-news/india-china-agree-to-seek-political-settlement-of-border-issue-centre-11958610#publisher=newsstand"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "India, China discuss peace along LAC, border delimitation: ‘Met in keeping with guidance from Modi, Xi Jinping’",
+          "url": "https://www.hindustantimes.com/india-news/india-china-discuss-peace-along-line-of-actual-control-progress-in-border-delimitation-in-ajit-doval-wang-yi-talks-101787675826095.html"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "India-China ties near normalcy? NSA Ajit Doval, Wang Yi hold key border talks ahead of BRICS summit",
+          "url": "https://www.livemint.com/news/india/indiachina-ties-near-normalcy-nsa-ajit-doval-wang-yi-hold-key-border-talks-ahead-of-brics-summit-11787668605130.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Protesting students clash with police in Bihar over recruitment exam transparency and paper leaks",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        11,
+        32,
+        34,
+        113,
+        157,
+        283
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        11,
+        32,
+        34,
+        113,
+        157,
+        283
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 6,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "What challenge do ‘cockroach’ protests pose for India’s PM Modi?",
+          "url": "https://www.aljazeera.com/video/inside-story/2026/8/25/what-challenge-do-cockroach-protests-pose-for-indias-pm-modi?traffic_source=rss"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "Several injured as police stop Bihar students’ protest march",
+          "url": "https://www.thehindu.com/news/national/bihar/students-in-bihar-break-through-barricades-in-bid-to-gherao-cm-residence-police-use-water-cannons/article71387958.ece"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "India police clash with protestors over jobs and exam transparency",
+          "url": "https://www.channelnewsasia.com/world/india-protests-jobs-exams-police-6340631"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Barricades broken, water cannons used: Bihar protests turn violent as protesters clash with cops",
+          "url": "https://www.hindustantimes.com/india-news/barricades-broken-water-cannons-used-bihar-protests-turn-violent-as-protesters-clash-with-cops-bpsc-exam-patna-101787653574066.html"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "India police clash with protesters a month after Gen Z demonstrations",
+          "url": "https://www.aljazeera.com/news/2026/8/25/india-police-clash-with-protesters-a-month-after-gen-z-demonstrations?traffic_source=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 1
+    },
+    {
+      "headline_hint": "US sanctions four Indian companies under Operation Economic Outcast over Iranian oil imports",
+      "section": "india",
+      "category": "economy",
+      "tier_requested": "major",
+      "article_ids": [
+        201,
+        209,
+        287,
+        290
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        201,
+        209,
+        287,
+        290
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": true,
+      "wiki_event": "Iranian foreign minister Abbas Araghchi and Omani foreign minister Badr bin Hamad Al Busaidi say that Iran and Oman have discussed a proposal to establish a temporary joint shipping route for ships in the Strait of Hormuz.",
+      "weight": 8,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Scroll.in",
+          "title": "US sanctions four India-based firms for importing petrochemicals from Iran",
+          "url": "https://scroll.in/latest/1095267/us-sanctions-four-india-based-firms-for-importing-petrochemicals-from-iran?utm_source=rss&utm_medium=public"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "US widens Iran sanctions, putting India in the crosshairs",
+          "url": "https://timesofindia.indiatimes.com/business/india-business/us-widens-iran-sanctions-putting-india-in-the-crosshairs/articleshow/133514275.cms"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Four Indian firms among those sanctioned by US for Iran oil trade amid ‘Operation Economic Outcast’",
+          "url": "https://www.hindustantimes.com/india-news/four-indian-firms-face-us-sanctions-for-iran-oil-trade-amid-operation-economic-outcast-101787651571394.html"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "US sanctions 4 Indian firms under Operation Economic Outcast: Who are they and why are they targeted?",
+          "url": "https://www.livemint.com/news/india/us-sanctions-4-indian-firms-under-operation-economic-outcast-who-are-they-why-are-they-targeted-11787651392071.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Former CDS Anil Chauhan says loitering munition hit Kirana Hills in Pakistan inadvertently",
+      "section": "india",
+      "category": "conflict",
+      "tier_requested": "notable",
+      "article_ids": [
+        8,
+        179,
+        186
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        8,
+        179,
+        186
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "The Hindu",
+          "title": "Loitering munition may have hit Kirana Hills during Operation Sindoor: former CDS Anil Chauhan",
+          "url": "https://www.thehindu.com/news/national/loitering-munition-may-have-hit-kirana-hills-during-operation-sindoor-former-cds-anil-chauhan/article71390353.ece"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "India didn't target Pakistan's Kirana Hills; loitering munition hit it inadvertently: Ex-CDS Anil Chauhan",
+          "url": "https://www.hindustantimes.com/india-news/india-didnt-target-pakistan-kirana-hills-loitering-munition-hit-it-ex-cds-anil-chauhan-operation-sindoor-sargodha-101787671704146.html"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Did India hit Kirana Hills during Op Sindoor? Ex-CDS Anil Chauhan clears air",
+          "url": "https://timesofindia.indiatimes.com/india/did-india-hit-kirana-hills-during-op-sindoor-ex-cds-anil-chauhan-clears-air/articleshow/133516523.cms"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "ICMR advises calm as H1N1 strain drives seasonal flu surge across India",
+      "section": "india",
+      "category": "health",
+      "tier_requested": "notable",
+      "article_ids": [
+        204,
+        240,
+        243
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        204,
+        240,
+        243
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Livemint",
+          "title": "No need for masks as H1N1 drives seasonal flu surge, says ICMR chief",
+          "url": "https://www.livemint.com/news/no-need-for-masks-as-h1n1-drives-seasonal-flu-surge-says-icmr-chief-11787660800618.html"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "98% of influenza cases in India are H1N1, but no cause for alarm: ICMR chief",
+          "url": "https://www.hindustantimes.com/india-news/98-of-influenza-cases-in-india-are-h1n1-but-no-cause-for-alarm-icmr-chief-101787662439480.html"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "Over 2,300 swine flu cases detected in Delhi this year, CM calls emergency meeting",
+          "url": "https://scroll.in/latest/1095266/over-2300-swine-flu-cases-detected-in-delhi-this-year-cm-calls-emergency-meeting?utm_source=rss&utm_medium=public"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Political opposition and activists challenge Special Intensive Revision (SIR) of voter rolls",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        38,
+        92,
+        96,
+        170,
+        181,
+        324
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        38,
+        92,
+        96,
+        170,
+        181,
+        324
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "The Hindu",
+          "title": "SIR in Karnataka: Chief Minister seeks more time for SIR claims, verification",
+          "url": "https://www.thehindu.com/news/national/karnataka/sir-in-karnataka-cm-dk-shivakumar-writes-to-cec-seeking-extension-of-deadline-for-filing-claims-and-objections/article71388648.ece"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Prakash Raj announces Sept 1 march over deletions in Karnataka SIR, slams EC: ‘Why put voters in so much trouble?’",
+          "url": "https://www.hindustantimes.com/india-news/prakash-raj-announces-sept-1-march-over-voter-deletions-in-karnataka-sir-slams-ec-why-put-voters-in-so-much-trouble-101787664603291.html"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "Punjab SIR: Another ex-diplomat asked to prove citizenship",
+          "url": "https://scroll.in/latest/1095269/punjab-sir-another-ex-diplomat-asked-to-prove-citizenship?utm_source=rss&utm_medium=public"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "West Bengal SIR: Supreme Court demands data on appeals as municipal polls close in",
+          "url": "https://www.thehindu.com/news/national/west-bengal/west-bengal-sir-supreme-court-demands-data-on-appeals-as-municipal-polls-close-in/article71390014.ece"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "Karnataka Chief Minister holds meeting with party legislators",
+          "url": "https://www.thehindu.com/news/national/karnataka/chief-minister-holds-meeting-with-party-legislators/article71390084.ece"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 1
+    },
+    {
+      "headline_hint": "Heavy rainfall causes waterlogging and road cave-in across Delhi-Gurugram",
+      "section": "india",
+      "category": "disaster",
+      "tier_requested": "notable",
+      "article_ids": [
+        46,
+        150,
+        210,
+        215
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        46,
+        150,
+        210,
+        215
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "NDTV",
+          "title": "Weather Highlights: Heavy Rain In Delhi, Waterlogging, Traffic Jams In Many Areas",
+          "url": "https://www.ndtv.com/india-news/weather-today-live-updates-delhi-ncrrain-live-monsoon-update-heavy-rain-in-delhi-waterlogging-traffic-jams-in-many-areas-11954468#publisher=newsstand"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Gurugram administration takes big action for school buses amid heavy rain, waterlogging issues",
+          "url": "https://www.hindustantimes.com/india-news/gurugram-administration-takes-big-action-for-school-buses-amid-heavy-rain-waterlogging-issues-101787668424722.html"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Gurgaon rain chaos: Massive sinkhole swallows service road on Delhi-Jaipur highway",
+          "url": "https://timesofindia.indiatimes.com/city/gurgaon/gurgaon-chaos-continues-massive-sinkhole-swallows-service-road-on-delhi-jaipur-highway/articleshow/133514114.cms"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Gurugram sewer line breach causes road cave-in at IFFCO Chowk; traffic diverted",
+          "url": "https://www.hindustantimes.com/india-news/3-road-cave-ins-in-gurugram-after-heavy-rain-vehicles-caught-in-collapses-101787667662828.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    }
+  ]
+}
