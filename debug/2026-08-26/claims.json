@@ -1,0 +1,718 @@
+{
+  "min_claim_chars": 20,
+  "max_claims_per_story": 24,
+  "calls": [
+    {
+      "label": "claims-world",
+      "cluster_ids": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "label": "claims-india",
+      "cluster_ids": [
+        3,
+        4,
+        5
+      ]
+    }
+  ],
+  "rejected_claims": 0,
+  "rejected_clusters": 0,
+  "clusters": [
+    {
+      "cluster_id": 0,
+      "headline_hint": "Iran and Oman discuss temporary Strait of Hormuz shipping lane amid expanding US sanctions",
+      "section": "world",
+      "batch_position": 0,
+      "claim_count": 12,
+      "distinct_outlets": 4,
+      "source_kinds": {
+        "fulltext": 12
+      },
+      "claims": [
+        {
+          "id": 1,
+          "cluster_id": 0,
+          "text": "Iranian Foreign Minister Abbas Araghchi and Omani Foreign Minister Badr Albusaidi held talks in Tehran regarding an interim framework for shipping through the Strait of Hormuz.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/iran-oman-push-talks-for-interim-reopening-of-hormuz-strait-11787688032203.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 2,
+          "cluster_id": 0,
+          "text": "A joint statement carried by the Oman News Agency stated that Iran and Oman seek to establish a temporary joint maritime corridor and a mine clearance project in the Strait of Hormuz.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/iran-oman-push-talks-for-interim-reopening-of-hormuz-strait-11787688032203.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 3,
+          "cluster_id": 0,
+          "text": "US President Donald Trump stated on social media that the US Navy cleared mines from the Strait of Hormuz.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/iran-oman-push-talks-for-interim-reopening-of-hormuz-strait-11787688032203.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 4,
+          "cluster_id": 0,
+          "text": "US President Donald Trump stated: \"Iran has been notified that any ship or boat placing new mines will be immediately and systematically destroyed.\"",
+          "kind": "quote",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/iran-oman-push-talks-for-interim-reopening-of-hormuz-strait-11787688032203.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 5,
+          "cluster_id": 0,
+          "text": "A 60-day interim peace deal signed by Iran and the US in June ended in mid-August.",
+          "kind": "background",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/iran-oman-push-talks-for-interim-reopening-of-hormuz-strait-11787688032203.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 6,
+          "cluster_id": 0,
+          "text": "Pakistani Army Chief Asim Munir visited Tehran a day prior to Omani Foreign Minister Badr Albusaidi's visit.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/iran-oman-push-talks-for-interim-reopening-of-hormuz-strait-11787688032203.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 7,
+          "cluster_id": 0,
+          "text": "War broke out on February 28 after the US and Israel attacked Iran, prompting Tehran to blockade the Strait of Hormuz and Washington to impose a naval counter-blockade on Iranian ports.",
+          "kind": "background",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/8/25/iran-oman-discuss-temporary-shipping-lane-through-strait-of-hormuz?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 8,
+          "cluster_id": 0,
+          "text": "US Treasury Secretary Scott Bessent announced an initial set of US sanctions targeting 60 individuals, entities, and vessels for alleged involvement in trade with Iran.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/aug/25/china-us-sanctions-iran-oil",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 9,
+          "cluster_id": 0,
+          "text": "China's foreign ministry spokesperson Lin Jian stated: \"China will take all necessary measures to firmly safeguard its own rights and interests.\"",
+          "kind": "quote",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/aug/25/china-us-sanctions-iran-oil",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 10,
+          "cluster_id": 0,
+          "text": "The United Kingdom Maritime Trade Operations Centre reported that an oil tanker was struck by an unidentified projectile at the mouth of the Strait of Hormuz on August 25.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/aug/25/china-us-sanctions-iran-oil",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 11,
+          "cluster_id": 0,
+          "text": "Iran's Economy Minister Ali Madanizadeh stated on state television: \"Our defence is no longer so defensive; the enemies should wait for an attack.\"",
+          "kind": "quote",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/aug/25/china-us-sanctions-iran-oil",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 12,
+          "cluster_id": 0,
+          "text": "Chinese buyers account for about 90% of Iran's oil exports, according to reporting by the Financial Times.",
+          "kind": "figure",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/china/china-warns-us-of-retaliation-if-trumps-economic-d-day-sanctions-hit-their-iran-oil-trade/articleshow/133518296.cms",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 1,
+      "headline_hint": "Canada imposes up to 50% retaliatory tariffs on US goods as trade war escalates",
+      "section": "world",
+      "batch_position": 1,
+      "claim_count": 10,
+      "distinct_outlets": 5,
+      "source_kinds": {
+        "fulltext": 10
+      },
+      "claims": [
+        {
+          "id": 13,
+          "cluster_id": 1,
+          "text": "Canada announced retaliatory tariffs of up to 50% on $20 billion worth of US goods starting September 8.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/us-news/live/2026/aug/25/donald-trump-tariffs-canada-midterms-primary-south-carolina-iran-ukraine-voting-rights-latest-news-updates",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 14,
+          "cluster_id": 1,
+          "text": "The new Canadian tariffs will impose duties across 700 products, including a 50% duty on American steel and aluminum.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/us-news/live/2026/aug/25/donald-trump-tariffs-canada-midterms-primary-south-carolina-iran-ukraine-voting-rights-latest-news-updates",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 15,
+          "cluster_id": 1,
+          "text": "Canada's counter-tariffs will apply to nearly C$28 billion ($20 billion) worth of US products across nearly 900 items.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c3v4xg5klx7o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 16,
+          "cluster_id": 1,
+          "text": "Canadian Finance Minister François-Philippe Champagne announced an additional C$7.5 billion support package for businesses and workers impacted by US tariffs.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c3v4xg5klx7o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 17,
+          "cluster_id": 1,
+          "text": "US President Donald Trump suggested on Truth Social that he may change the name of Lake Ontario to \"Lake America\".",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c3v4xg5klx7o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 18,
+          "cluster_id": 1,
+          "text": "Canadian Prime Minister Mark Carney accused US President Donald Trump of wanting to \"destroy\" Canadian industries.",
+          "kind": "quote",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c3v4xg5klx7o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 19,
+          "cluster_id": 1,
+          "text": "Canada maintains a trade surplus with the US of C$9.9 billion ($7.1 billion), according to Statistics Canada.",
+          "kind": "figure",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/economy/2026/8/25/canada-hits-us-with-counter-tariffs-targeting-hundreds-of-products?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 20,
+          "cluster_id": 1,
+          "text": "Canadian Industry Minister Mélanie Joly outlined a C$7.5 billion support package including C$3 million in grants and C$2 million in interest-free loans for small businesses.",
+          "kind": "figure",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/americas/20260825-canada-strikes-back-trump-with-retaliatory-tariffs-us-trade-war-escalates",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 21,
+          "cluster_id": 1,
+          "text": "Canadian officials stated US steel imports to Canada have fallen 30% since Canada introduced a 25% tariff.",
+          "kind": "figure",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/americas/20260825-canada-strikes-back-trump-with-retaliatory-tariffs-us-trade-war-escalates",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 22,
+          "cluster_id": 1,
+          "text": "US President Donald Trump stated his administration would raise tariffs on Canadian vehicles, automotive parts, and steel to 50% starting January 1, 2027.",
+          "kind": "figure",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/business/international-business/canada-imposes-tariffs-ranging-from-15-to-50-on-us-goods-as-trade-war-escalates/articleshow/133517211.cms",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 2,
+      "headline_hint": "CIA Director John Ratcliffe makes unannounced visit to Moscow for high-level meetings",
+      "section": "world",
+      "batch_position": 2,
+      "claim_count": 9,
+      "distinct_outlets": 5,
+      "source_kinds": {
+        "fulltext": 9
+      },
+      "claims": [
+        {
+          "id": 23,
+          "cluster_id": 2,
+          "text": "CIA Director John Ratcliffe made an unannounced visit to Moscow on August 25 for talks with Russian officials, according to CBS News.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c87vg9x5d7do?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 24,
+          "cluster_id": 2,
+          "text": "FlightRadar24 tracking data showed a US military C-17 aircraft departed Riga at 05:50 GMT, landed in Moscow at 07:04 GMT, and returned to Riga shortly before 17:00 GMT on August 25.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c87vg9x5d7do?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 25,
+          "cluster_id": 2,
+          "text": "A senior Ukrainian official told CBS News that the US notified Kyiv of a senior delegation visiting Moscow and requested Ukraine to suspend strikes until the delegation left.",
+          "kind": "background",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c87vg9x5d7do?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 26,
+          "cluster_id": 2,
+          "text": "The CIA was involved in a 2024 prisoner swap with Russia that secured the release of Wall Street Journal reporter Evan Gershkovich, Paul Whelan, and Alsu Kurmasheva.",
+          "kind": "background",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c87vg9x5d7do?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 27,
+          "cluster_id": 2,
+          "text": "CIA Director John Ratcliffe's trip marks the first known visit by a US spy chief to Moscow since former CIA Director William Burns visited in November 2021.",
+          "kind": "background",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/us-spy-chief-russia-visit-ratcliffe-6340786",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 28,
+          "cluster_id": 2,
+          "text": "A Ukrainian intelligence assessment reported by Reuters in April stated Russia aided Iran with satellite imagery to target US facilities in the Middle East.",
+          "kind": "background",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/us-spy-chief-russia-visit-ratcliffe-6340786",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 29,
+          "cluster_id": 2,
+          "text": "Kremlin spokesman Dmitry Peskov stated on August 25 that no talks between Moscow and US envoys were planned for the week.",
+          "kind": "event",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/8/25/kremlin-denies-planned-talks-with-us-envoys-amid-reports-cia-head-in-russia?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 30,
+          "cluster_id": 2,
+          "text": "A US Air Force Boeing C-17A Globemaster III military transport aircraft flew from Riga, Latvia, to Moscow's Vnukovo International Airport after originating from Joint Base Andrews in Maryland.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/us-news/cia-director-john-ratcliffe-reportedly-visits-moscow-for-undisclosed-meetings-amid-stalled-ukraine-talks-11787674740656.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 31,
+          "cluster_id": 2,
+          "text": "The Financial Times reported that the Trump administration requested Kyiv to pause long-range strikes on major Russian cities during CIA Director John Ratcliffe's visit to Moscow.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/us-news/2026/aug/25/cia-director-john-ratcliffe-moscow-russia",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 3,
+      "headline_hint": "US sanctions four Indian companies under Operation Economic Outcast over Iranian oil imports",
+      "section": "india",
+      "batch_position": 0,
+      "claim_count": 16,
+      "distinct_outlets": 4,
+      "source_kinds": {
+        "fulltext": 16
+      },
+      "claims": [
+        {
+          "id": 32,
+          "cluster_id": 3,
+          "text": "The United States Department of State announced 'Operation Economic Outcast', targeting Iran's military activities, procurement networks, and petroleum and petrochemical traders with fresh sanctions.",
+          "kind": "event",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/latest/1095267/us-sanctions-four-india-based-firms-for-importing-petrochemicals-from-iran?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 33,
+          "cluster_id": 3,
+          "text": "The United States sanctioned four India-based companies—Portease Partners LLP, Sadashiva Overseas Limited, PP Softtech Private Limited, and Prakrutees Infra Impex Private Limited—for importing petroleum and petrochemical products from Iran.",
+          "kind": "event",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/latest/1095267/us-sanctions-four-india-based-firms-for-importing-petrochemicals-from-iran?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 34,
+          "cluster_id": 3,
+          "text": "Indian citizens Indrismiya Ashrafmiya Sheikh and Harish Ramachandra Rangi, partners of Portease Partners LLP, and Prashant Garg, director of PP Softtech Private Limited, were individually sanctioned by the United States.",
+          "kind": "event",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/latest/1095267/us-sanctions-four-india-based-firms-for-importing-petrochemicals-from-iran?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 35,
+          "cluster_id": 3,
+          "text": "The US Department of State alleged that Sadashiva Overseas imported about $69 million worth of Iranian-origin petroleum products.",
+          "kind": "figure",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/latest/1095267/us-sanctions-four-india-based-firms-for-importing-petrochemicals-from-iran?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 36,
+          "cluster_id": 3,
+          "text": "The US Department of State alleged that PP Softtech and Prakrutees Infra each imported about $25 million worth of Iranian petroleum products.",
+          "kind": "figure",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/latest/1095267/us-sanctions-four-india-based-firms-for-importing-petrochemicals-from-iran?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 37,
+          "cluster_id": 3,
+          "text": "US Treasury Secretary Scott Bessent stated that the objective of the sanctions was 'to sever every economic lifeline' sustaining Iran.",
+          "kind": "quote",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/latest/1095267/us-sanctions-four-india-based-firms-for-importing-petrochemicals-from-iran?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 38,
+          "cluster_id": 3,
+          "text": "Iranian Economy Minister Ali Madanizadeh told state television that Tehran was 'fully prepared' for the newly imposed sanctions.",
+          "kind": "event",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/latest/1095267/us-sanctions-four-india-based-firms-for-importing-petrochemicals-from-iran?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 39,
+          "cluster_id": 3,
+          "text": "US President Donald Trump stated on August 2 that US and Israeli military forces would halt attacks on Iran following agreement on the perimeters of a deal.",
+          "kind": "background",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/latest/1095267/us-sanctions-four-india-based-firms-for-importing-petrochemicals-from-iran?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 40,
+          "cluster_id": 3,
+          "text": "Approximately 20% of global petroleum supply passes through the Strait of Hormuz, which remains effectively blocked for most international commercial vessels.",
+          "kind": "background",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/latest/1095267/us-sanctions-four-india-based-firms-for-importing-petrochemicals-from-iran?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 41,
+          "cluster_id": 3,
+          "text": "Sadashiva Overseas Limited imported approximately $69 million worth of Iranian-origin petroleum products between February 2024 and June 2025.",
+          "kind": "figure",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/business/india-business/us-widens-iran-sanctions-putting-india-in-the-crosshairs/articleshow/133514275.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 42,
+          "cluster_id": 3,
+          "text": "PP Softtech Private Limited imported approximately $25 million worth of Iranian petroleum products between January 2024 and June 2025.",
+          "kind": "figure",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/business/india-business/us-widens-iran-sanctions-putting-india-in-the-crosshairs/articleshow/133514275.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 43,
+          "cluster_id": 3,
+          "text": "Prakrutees Infra Impex India Private Limited imported Iranian petroleum products worth approximately $25 million between May 2023 and February 2026.",
+          "kind": "figure",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/business/india-business/us-widens-iran-sanctions-putting-india-in-the-crosshairs/articleshow/133514275.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 44,
+          "cluster_id": 3,
+          "text": "Iranian Parliament Speaker Mohammad Bagher Ghalibaf stated that Washington was not in an economic position to further restrict Iran's relations with other countries.",
+          "kind": "quote",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/business/india-business/us-widens-iran-sanctions-putting-india-in-the-crosshairs/articleshow/133514275.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 45,
+          "cluster_id": 3,
+          "text": "US State Department spokesperson Thomas Pigott stated that the United States took sweeping action against multiple entities, individuals, and vessels enabling the Iranian regime's destabilising activities.",
+          "kind": "quote",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/four-indian-firms-face-us-sanctions-for-iran-oil-trade-amid-operation-economic-outcast-101787651571394.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 46,
+          "cluster_id": 3,
+          "text": "Iranian President Masoud Pezeshkian acknowledged shortages facing Iran and suggested that Iran should end the war while it maintains a position of strength.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/four-indian-firms-face-us-sanctions-for-iran-oil-trade-amid-operation-economic-outcast-101787651571394.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 47,
+          "cluster_id": 3,
+          "text": "The US sanctions under Operation Economic Outcast were issued under Executive Orders 13846 and 13949.",
+          "kind": "background",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/us-sanctions-4-indian-firms-under-operation-economic-outcast-who-are-they-why-are-they-targeted-11787651392071.html",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 4,
+      "headline_hint": "Ajit Doval and Wang Yi hold talks in Beijing to seek political settlement on India-China border",
+      "section": "india",
+      "batch_position": 1,
+      "claim_count": 7,
+      "distinct_outlets": 3,
+      "source_kinds": {
+        "fulltext": 7
+      },
+      "claims": [
+        {
+          "id": 48,
+          "cluster_id": 4,
+          "text": "Indian National Security Advisor Ajit Doval met Chinese Foreign Minister Wang Yi in Beijing for the 25th round of Special Representatives talks on the India-China boundary question.",
+          "kind": "event",
+          "outlet": "NDTV",
+          "url": "https://www.ndtv.com/india-news/india-china-agree-to-seek-political-settlement-of-border-issue-centre-11958610#publisher=newsstand",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 49,
+          "cluster_id": 4,
+          "text": "India and China agreed to continue seeking a 'political settlement' of the boundary question in the context of their overall and long-term interests.",
+          "kind": "event",
+          "outlet": "NDTV",
+          "url": "https://www.ndtv.com/india-news/india-china-agree-to-seek-political-settlement-of-border-issue-centre-11958610#publisher=newsstand",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 50,
+          "cluster_id": 4,
+          "text": "Ajit Doval noted that the Kailash Manasarovar Yatra via Nathu La and traditional border trade via all three passes have successfully resumed.",
+          "kind": "event",
+          "outlet": "NDTV",
+          "url": "https://www.ndtv.com/india-news/india-china-agree-to-seek-political-settlement-of-border-issue-centre-11958610#publisher=newsstand",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 51,
+          "cluster_id": 4,
+          "text": "Chinese Foreign Minister Wang Yi stated that the China-India relationship has gone beyond the bilateral scope and taken on global and strategic significance.",
+          "kind": "quote",
+          "outlet": "NDTV",
+          "url": "https://www.ndtv.com/india-news/india-china-agree-to-seek-political-settlement-of-border-issue-centre-11958610#publisher=newsstand",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 52,
+          "cluster_id": 4,
+          "text": "Chinese Foreign Minister Wang Yi called for gradually building a positive narrative on boundary affairs between India and China.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/india-china-discuss-peace-along-line-of-actual-control-progress-in-border-delimitation-in-ajit-doval-wang-yi-talks-101787675826095.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 53,
+          "cluster_id": 4,
+          "text": "Ajit Doval held a bilateral meeting with Chinese Vice President Han Zheng in Beijing on August 25 prior to the Special Representatives border talks.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/indiachina-ties-near-normalcy-nsa-ajit-doval-wang-yi-hold-key-border-talks-ahead-of-brics-summit-11787668605130.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 54,
+          "cluster_id": 4,
+          "text": "Chinese Ambassador to India Xu Feihong stated that Vice President Han Zheng highlighted meetings between Chinese President Xi Jinping and Indian PM Narendra Modi in Kazan and Tianjin over the past two years.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/indiachina-ties-near-normalcy-nsa-ajit-doval-wang-yi-hold-key-border-talks-ahead-of-brics-summit-11787668605130.html",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 5,
+      "headline_hint": "Protesting students clash with police in Bihar over recruitment exam transparency and paper leaks",
+      "section": "india",
+      "batch_position": 2,
+      "claim_count": 14,
+      "distinct_outlets": 4,
+      "source_kinds": {
+        "summary": 1,
+        "fulltext": 13
+      },
+      "claims": [
+        {
+          "id": 55,
+          "cluster_id": 5,
+          "text": "A youth-led movement in India plans to hold further demonstrations next month.",
+          "kind": "event",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/video/inside-story/2026/8/25/what-challenge-do-cockroach-protests-pose-for-indias-pm-modi?traffic_source=rss",
+          "source_kind": "summary"
+        },
+        {
+          "id": 56,
+          "cluster_id": 5,
+          "text": "Student protesters clashed with police in Patna on August 25, 2026, while marching toward Lok Sevak Awas, the Chief Minister's official residence.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/bihar/students-in-bihar-break-through-barricades-in-bid-to-gherao-cm-residence-police-use-water-cannons/article71387958.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 57,
+          "cluster_id": 5,
+          "text": "Police used batons and water cannons after student protesters broke through barricades at Dak Bungalow Chowk in Patna.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/bihar/students-in-bihar-break-through-barricades-in-bid-to-gherao-cm-residence-police-use-water-cannons/article71387958.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 58,
+          "cluster_id": 5,
+          "text": "A Deputy Superintendent of Police was severely injured after being hit by stones thrown during the Patna protest.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/bihar/students-in-bihar-break-through-barricades-in-bid-to-gherao-cm-residence-police-use-water-cannons/article71387958.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 59,
+          "cluster_id": 5,
+          "text": "The Bihar government issued a notification on August 18 for 32,388 teaching posts to be filled through the Teacher Recruitment Examination.",
+          "kind": "figure",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/bihar/students-in-bihar-break-through-barricades-in-bid-to-gherao-cm-residence-police-use-water-cannons/article71387958.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 60,
+          "cluster_id": 5,
+          "text": "Protesting students demanded that the Teacher Recruitment Examination be conducted in a single phase without negative marks rather than in two rounds.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/bihar/students-in-bihar-break-through-barricades-in-bid-to-gherao-cm-residence-police-use-water-cannons/article71387958.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 61,
+          "cluster_id": 5,
+          "text": "Bihar Public Service Commission Examination Controller Rajesh Kumar Singh expressed regret after quoting a Hindi proverb that students interpreted as calling them 'dogs'.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/bihar/students-in-bihar-break-through-barricades-in-bid-to-gherao-cm-residence-police-use-water-cannons/article71387958.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 62,
+          "cluster_id": 5,
+          "text": "Bihar Chief Minister Samrat Choudhary launched the 'Vidyarthi Sahyog' portal and announced monthly student support camps on the fourth Tuesday of every month.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/bihar/students-in-bihar-break-through-barricades-in-bid-to-gherao-cm-residence-police-use-water-cannons/article71387958.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 63,
+          "cluster_id": 5,
+          "text": "Members of a BJP-linked student body staged a protest near the Karnataka chief minister's residence over alleged government job recruitment irregularities.",
+          "kind": "event",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/india-protests-jobs-exams-police-6340631",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 64,
+          "cluster_id": 5,
+          "text": "Union Education Minister Dharmendra Pradhan stepped down in July following Delhi protests by the Cockroach Janta Party against examination irregularities.",
+          "kind": "background",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/barricades-broken-water-cannons-used-bihar-protests-turn-violent-as-protesters-clash-with-cops-bpsc-exam-patna-101787653574066.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 65,
+          "cluster_id": 5,
+          "text": "Job aspirants in Jharkhand announced a 60-day suspension of their sit-in after the state government conceded to almost all of their key demands.",
+          "kind": "background",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/barricades-broken-water-cannons-used-bihar-protests-turn-violent-as-protesters-clash-with-cops-bpsc-exam-patna-101787653574066.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 66,
+          "cluster_id": 5,
+          "text": "The Rajasthan government restricted outsider entry and banned unauthorised photography and videography in schools after Cockroach Janta Party spokesperson Ashutosh Ranka joined school condition protests in Alwar.",
+          "kind": "background",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/barricades-broken-water-cannons-used-bihar-protests-turn-violent-as-protesters-clash-with-cops-bpsc-exam-patna-101787653574066.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 67,
+          "cluster_id": 5,
+          "text": "Police in Bihar detained at least 25 protesters in Patna during the demonstrations before later releasing them.",
+          "kind": "figure",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/8/25/india-police-clash-with-protesters-a-month-after-gen-z-demonstrations?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 68,
+          "cluster_id": 5,
+          "text": "A delegation of student representatives met Bihar top bureaucrat Pratyaya Amrit, who assured them of a favourable response within a couple of days.",
+          "kind": "event",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/8/25/india-police-clash-with-protesters-a-month-after-gen-z-demonstrations?traffic_source=rss",
+          "source_kind": "fulltext"
+        }
+      ]
+    }
+  ],
+  "clusters_with_no_claims": []
+}
