@@ -1,0 +1,88 @@
+{
+  "max_events": 60,
+  "parsed": 16,
+  "used": 16,
+  "events": [
+    {
+      "category": "Armed conflicts and attacks",
+      "topic": "Middle Eastern crisis",
+      "text": "The Islamic Revolutionary Guard Corps say Iran and Oman have agreed to share revenues from the Strait of Hormuz and define their respective maritime areas, while negotiations continue over reopening the waterway amid the war."
+    },
+    {
+      "category": "Armed conflicts and attacks",
+      "topic": "Middle Eastern crisis",
+      "text": "The Israel Defense Forces says that they have killed several Hamas members in airstrikes in the Gaza Strip city of Jabalia, including on a structure allegedly used as a storage facility for weapons."
+    },
+    {
+      "category": "Armed conflicts and attacks",
+      "topic": "Russo-Ukrainian war",
+      "text": "An overnight Ukrainian drone attack \"completely destroys\" a Wildberries depot in Tambov Oblast, Russia."
+    },
+    {
+      "category": "Armed conflicts and attacks",
+      "topic": "Russo-Ukrainian war",
+      "text": "A man and a 14-year-old child are killed in Lipetsk Oblast, and a woman is killed in Belgorod Oblast, in Ukrainian drone strikes. The Russian defence ministry says its forces have shot down 426 Ukrainian drones overnight."
+    },
+    {
+      "category": "Armed conflicts and attacks",
+      "topic": "Russo-Ukrainian war",
+      "text": "Nine people are killed after a Ukrainian strike on a bus in Russian-occupied Luhansk."
+    },
+    {
+      "category": "Arts and culture",
+      "topic": "2026 anti-immigrant movement and Xenophobia in South Africa",
+      "text": "A spokesperson for Malian singer Salif Keita confirms that he has cancelled all upcoming concerts in South Africa over its response to anti-migrant protests in the country."
+    },
+    {
+      "category": "Business and economy",
+      "topic": "Aftermath of the Syrian civil war",
+      "text": "During the 63rd Damascus International Fair, Syrian President says that Syria has entered a new phase of reconstruction and development following the recent U.S. decision to lift sanctions against the country and removal as a designated sta"
+    },
+    {
+      "category": "Disasters and accidents",
+      "topic": "2026 Nepal floods",
+      "text": "Flash floods and mudslides along the Trishuli River impact Nepal and Tibet. At least 160 people are killed, hundreds are injured and 463 others, including over 200 tourists, are reported missing in Nepal, while Chinese Communist Party offic"
+    },
+    {
+      "category": "Disasters and accidents",
+      "topic": "2026 Nepal floods",
+      "text": "Nepali officials say bridges, roads, power stations, and entire villages have been swept away by the flash flooding with some areas still completely cut-off from search and rescue efforts."
+    },
+    {
+      "category": "Disasters and accidents",
+      "topic": "",
+      "text": "At least 15 infants are killed and another is injured after a fire at a state-run hospital in Islamabad, Pakistan."
+    },
+    {
+      "category": "Health and environment",
+      "topic": "",
+      "text": "Nineteen cases of Japanese encephalitis are confirmed in Madhesh Province, Nepal, causing six deaths."
+    },
+    {
+      "category": "Health and environment",
+      "topic": "",
+      "text": "The U.S. Food and Drug Administration approves the daraxonrasib drug as a treatment for metastatic pancreatic cancer, making it the first RAS inhibitor drug to be approved for the disease. This came after a previous study showed that it nea"
+    },
+    {
+      "category": "International relations",
+      "topic": "South Korea–United States relations, Japan–United States relations",
+      "text": "The U.S. Pacific Command announces that the United States will conduct trilateral military exercises with South Korea's armed forces and Japan's self-defense forces despite U.S. president Donald Trump scaling back on the recent Ulchi-Freedo"
+    },
+    {
+      "category": "Law and crime",
+      "topic": "Aftermath of the September 11 attacks",
+      "text": "The military trial date for al-Qaeda militant Khalid Sheikh Mohammed, who was the mastermind of the September 11 attacks, is set for June 2028 alongside three co-conspirators."
+    },
+    {
+      "category": "Politics and elections",
+      "topic": "",
+      "text": "Deogratius Ndejembi is appointed as Vice President of Tanzania, replacing Emmanuel Nchimbi."
+    },
+    {
+      "category": "Sports",
+      "topic": "",
+      "text": "In American football, the National Football League announces the elimination of the Pro Bowl."
+    }
+  ],
+  "prompt_block": "WIKIPEDIA CURRENT EVENTS (curated checklist — see rules above)\n- [Armed conflicts and attacks] Middle Eastern crisis — The Islamic Revolutionary Guard Corps say Iran and Oman have agreed to share revenues from the Strait of Hormuz and define their respective maritime areas, while negotiations continue over reopening the waterway amid the war.\n- [Armed conflicts and attacks] Middle Eastern crisis — The Israel Defense Forces says that they have killed several Hamas members in airstrikes in the Gaza Strip city of Jabalia, including on a structure allegedly used as a storage facility for weapons.\n- [Armed conflicts and attacks] Russo-Ukrainian war — An overnight Ukrainian drone attack \"completely destroys\" a Wildberries depot in Tambov Oblast, Russia.\n- [Armed conflicts and attacks] Russo-Ukrainian war — A man and a 14-year-old child are killed in Lipetsk Oblast, and a woman is killed in Belgorod Oblast, in Ukrainian drone strikes. The Russian defence ministry says its forces have shot down 426 Ukrainian drones overnight.\n- [Armed conflicts and attacks] Russo-Ukrainian war — Nine people are killed after a Ukrainian strike on a bus in Russian-occupied Luhansk.\n- [Arts and culture] 2026 anti-immigrant movement and Xenophobia in South Africa — A spokesperson for Malian singer Salif Keita confirms that he has cancelled all upcoming concerts in South Africa over its response to anti-migrant protests in the country.\n- [Business and economy] Aftermath of the Syrian civil war — During the 63rd Damascus International Fair, Syrian President says that Syria has entered a new phase of reconstruction and development following the recent U.S. decision to lift sanctions against the country and removal as a designated sta\n- [Disasters and accidents] 2026 Nepal floods — Flash floods and mudslides along the Trishuli River impact Nepal and Tibet. At least 160 people are killed, hundreds are injured and 463 others, including over 200 tourists, are reported missing in Nepal, while Chinese Communist Party offic\n- [Disasters and accidents] 2026 Nepal floods — Nepali officials say bridges, roads, power stations, and entire villages have been swept away by the flash flooding with some areas still completely cut-off from search and rescue efforts.\n- [Disasters and accidents] At least 15 infants are killed and another is injured after a fire at a state-run hospital in Islamabad, Pakistan.\n- [Health and environment] Nineteen cases of Japanese encephalitis are confirmed in Madhesh Province, Nepal, causing six deaths.\n- [Health and environment] The U.S. Food and Drug Administration approves the daraxonrasib drug as a treatment for metastatic pancreatic cancer, making it the first RAS inhibitor drug to be approved for the disease. This came after a previous study showed that it nea\n- [International relations] South Korea–United States relations, Japan–United States relations — The U.S. Pacific Command announces that the United States will conduct trilateral military exercises with South Korea's armed forces and Japan's self-defense forces despite U.S. president Donald Trump scaling back on the recent Ulchi-Freedo\n- [Law and crime] Aftermath of the September 11 attacks — The military trial date for al-Qaeda militant Khalid Sheikh Mohammed, who was the mastermind of the September 11 attacks, is set for June 2028 alongside three co-conspirators.\n- [Politics and elections] Deogratius Ndejembi is appointed as Vice President of Tanzania, replacing Emmanuel Nchimbi.\n- [Sports] In American football, the National Football League announces the elimination of the Pro Bowl."
+}
