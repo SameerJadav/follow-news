@@ -1,0 +1,811 @@
+{
+  "min_claim_chars": 20,
+  "max_claims_per_story": 24,
+  "calls": [
+    {
+      "label": "claims-world",
+      "cluster_ids": [
+        0,
+        1
+      ]
+    },
+    {
+      "label": "claims-india",
+      "cluster_ids": [
+        2,
+        3,
+        4
+      ]
+    }
+  ],
+  "rejected_claims": 0,
+  "rejected_clusters": 0,
+  "clusters": [
+    {
+      "cluster_id": 0,
+      "headline_hint": "Russian strike on Kyiv munitions warehouse kills dozens and sparks massive evacuations",
+      "section": "world",
+      "batch_position": 0,
+      "claim_count": 22,
+      "distinct_outlets": 5,
+      "source_kinds": {
+        "fulltext": 22
+      },
+      "claims": [
+        {
+          "id": 1,
+          "cluster_id": 0,
+          "text": "Thirty-seven people died and almost 400 were evacuated after a Russian drone strike hit a military ammunition depot near a residential area on the outskirts of Kyiv.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c86xwqez4npo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 2,
+          "cluster_id": 0,
+          "text": "The strike on the warehouse near Kyiv caused shells, mines, and drones to detonate late on Friday, damaging a care home for the elderly and disabled.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c86xwqez4npo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 3,
+          "cluster_id": 0,
+          "text": "Four children are among the 42 people injured in the Friday night explosion in the Bucha district.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c86xwqez4npo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 4,
+          "cluster_id": 0,
+          "text": "Ukrainian President Volodymyr Zelensky stated that storing explosives next to residential areas was terrible negligence and that criminal proceedings had been opened.",
+          "kind": "quote",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c86xwqez4npo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 5,
+          "cluster_id": 0,
+          "text": "Russia's Ministry of Defence stated its forces targeted an ammunition depot in Myla containing launch boosters and components for long-range unmanned aerial vehicles.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c86xwqez4npo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 6,
+          "cluster_id": 0,
+          "text": "A strike on an ammunition warehouse in Vyshneve in July caused a secondary detonation that killed nine people, injured dozens, and damaged over 280 homes.",
+          "kind": "background",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c86xwqez4npo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 7,
+          "cluster_id": 0,
+          "text": "Ukrainian Prime Minister Sergiy Koretsky stated that making the same storage mistakes in the fifth year of the full-scale invasion constitutes criminal negligence.",
+          "kind": "quote",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c86xwqez4npo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 8,
+          "cluster_id": 0,
+          "text": "Kyiv Mayor Vitaliy Klitschko reported that a two-year-old child died after a Russian drone crashed in Obolonskyi.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c86xwqez4npo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 9,
+          "cluster_id": 0,
+          "text": "The Ukrainian army stated it shot down 233 Russian drones during overnight aerial attacks.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c86xwqez4npo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 10,
+          "cluster_id": 0,
+          "text": "Al Jazeera reported that 38 people were killed and dozens wounded in the Russian strike on the arms depot near Kyiv.",
+          "kind": "figure",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/29/29-08-sv-russia-strikes-arms-depot-kyiv-fm?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 11,
+          "cluster_id": 0,
+          "text": "The attack near Kyiv was the second strike to hit a munitions depot near the Ukrainian capital in less than two months.",
+          "kind": "background",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/29/29-08-sv-russia-strikes-arms-depot-kyiv-fm?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 12,
+          "cluster_id": 0,
+          "text": "Tymur Tkachenko, head of the local regional military administration, said the strike sparked a fire in the Bucha district that damaged at least 50 residential buildings.",
+          "kind": "figure",
+          "outlet": "NPR World",
+          "url": "https://www.npr.org/2026/08/29/nx-s1-5948714/russian-strike-kyiv",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 13,
+          "cluster_id": 0,
+          "text": "Ukrainian media cited regional head Tymur Tkachenko as stating 34 of those killed in the Bucha district strike were residents at a care facility.",
+          "kind": "figure",
+          "outlet": "NPR World",
+          "url": "https://www.npr.org/2026/08/29/nx-s1-5948714/russian-strike-kyiv",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 14,
+          "cluster_id": 0,
+          "text": "Prime Minister Serhii Koretskyi referenced an attack on an ammunition depot in Vyshneve in early July that killed 22 people.",
+          "kind": "background",
+          "outlet": "NPR World",
+          "url": "https://www.npr.org/2026/08/29/nx-s1-5948714/russian-strike-kyiv",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 15,
+          "cluster_id": 0,
+          "text": "President Volodymyr Zelenskyy announced two officials from state-owned companies, including arms manufacturer Ukroboronprom, would be held accountable for illegally storing weapons at Vyshneve.",
+          "kind": "event",
+          "outlet": "NPR World",
+          "url": "https://www.npr.org/2026/08/29/nx-s1-5948714/russian-strike-kyiv",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 16,
+          "cluster_id": 0,
+          "text": "Russian strikes on the southern Kherson region on Saturday killed two people and wounded 27 others, according to regional administration head Oleksandr Prokudin.",
+          "kind": "figure",
+          "outlet": "NPR World",
+          "url": "https://www.npr.org/2026/08/29/nx-s1-5948714/russian-strike-kyiv",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 17,
+          "cluster_id": 0,
+          "text": "Pavlo Palisa, deputy head of Ukraine's presidential office, stated that Ukraine's current interceptor drones have not yet demonstrated expected effectiveness against jet-powered Russian drones.",
+          "kind": "quote",
+          "outlet": "NPR World",
+          "url": "https://www.npr.org/2026/08/29/nx-s1-5948714/russian-strike-kyiv",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 18,
+          "cluster_id": 0,
+          "text": "President Volodymyr Zelenskyy stated that Ukraine aims to increase its long-range drone strikes on Russia to reach 1,000 launches daily.",
+          "kind": "figure",
+          "outlet": "NPR World",
+          "url": "https://www.npr.org/2026/08/29/nx-s1-5948714/russian-strike-kyiv",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 19,
+          "cluster_id": 0,
+          "text": "Taras Didych, head of the Dmytrivka community, was killed while attempting to rescue others during the warehouse explosion.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/aug/29/russian-strike-warehouse-near-kyiv-kills-at-least-37",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 20,
+          "cluster_id": 0,
+          "text": "More than 370 people were evacuated from the area surrounding the struck warehouse in Myla.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/aug/29/russian-strike-warehouse-near-kyiv-kills-at-least-37",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 21,
+          "cluster_id": 0,
+          "text": "An investigation into the July explosion in Vyshneve revealed a state-owned company failed to comply with regulations regarding storing explosives near residential areas.",
+          "kind": "background",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/aug/29/russian-strike-warehouse-near-kyiv-kills-at-least-37",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 22,
+          "cluster_id": 0,
+          "text": "Ukrainian President Volodymyr Zelensky confirmed the depot hit in Myla was owned by the Ukrainian military and stored shells, drones, and other munitions.",
+          "kind": "event",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/warehouse-hit-by-russian-attack-stored-munitions-zelensky-says",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 1,
+      "headline_hint": "Niger military moves to suppress attempted coup and secure capital Niamey",
+      "section": "world",
+      "batch_position": 1,
+      "claim_count": 14,
+      "distinct_outlets": 2,
+      "source_kinds": {
+        "fulltext": 14
+      },
+      "claims": [
+        {
+          "id": 23,
+          "cluster_id": 1,
+          "text": "Niger's military stated it is regaining control following a mutiny in the capital city of Niamey.",
+          "kind": "event",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/29/08-29-26-niger-mutiny-sv?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 24,
+          "cluster_id": 1,
+          "text": "The mutiny in Niamey marked the third major instance of unrest at the capital's airport complex in 2026.",
+          "kind": "background",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/29/08-29-26-niger-mutiny-sv?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 25,
+          "cluster_id": 1,
+          "text": "General Abdourahamane Tiani seized power in Niger in 2023, subsequently severing ties with Western partners and strengthening ties with Russia.",
+          "kind": "background",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/29/08-29-26-niger-mutiny-sv?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 26,
+          "cluster_id": 1,
+          "text": "A group of soldiers in Niger rebelled against officers at a military base and fired at sensitive locations across Niamey.",
+          "kind": "event",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/situation-in-niger-not-stabilised-yet-as-security-forces-deploy-around-airport",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 27,
+          "cluster_id": 1,
+          "text": "Niger's defence ministry stated on state television that armed forces were progressively retaking control of sites targeted in an overnight attack on Niamey.",
+          "kind": "event",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/niger-s-junta-says-regaining-control-after-clashes-in-capital",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 28,
+          "cluster_id": 1,
+          "text": "State television station Tele Sahel resumed broadcasting on Saturday after temporarily going offline during the unrest in Niamey.",
+          "kind": "event",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/niger-s-junta-says-regaining-control-after-clashes-in-capital",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 29,
+          "cluster_id": 1,
+          "text": "Rebel soldiers in Niger attempted to enter the presidential palace and disrupted the national television broadcaster during the mutiny.",
+          "kind": "event",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/africa/20260829-gunfire-and-explosions-heard-near-military-base-in-niger-s-capital",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 30,
+          "cluster_id": 1,
+          "text": "Diplomatic and security sources reported that Niger's presidential guard, assisted by Russian forces, recaptured an air base in Niamey and killed several mutineers by Saturday evening.",
+          "kind": "event",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/africa/20260829-gunfire-and-explosions-heard-near-military-base-in-niger-s-capital",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 31,
+          "cluster_id": 1,
+          "text": "Regional security and African diplomatic sources stated that rebelling troops still held two barracks around Niamey on Saturday.",
+          "kind": "figure",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/africa/20260829-gunfire-and-explosions-heard-near-military-base-in-niger-s-capital",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 32,
+          "cluster_id": 1,
+          "text": "Tele Sahel went off the air for just over an hour after soldiers blocked access to the station, before restoring broadcasts around 10:00 a.m. local time.",
+          "kind": "figure",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/africa/20260829-gunfire-and-explosions-heard-near-military-base-in-niger-s-capital",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 33,
+          "cluster_id": 1,
+          "text": "Niger's Defence Minister General Salifou Mody stated mutinous soldiers held troops hostage at a barracks and opened fire on sensitive sites.",
+          "kind": "event",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/africa/20260829-gunfire-and-explosions-heard-near-military-base-in-niger-s-capital",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 34,
+          "cluster_id": 1,
+          "text": "Witnesses reported heavy gunfire and explosions at Base 101 in Niamey starting shortly after midnight on Saturday.",
+          "kind": "event",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/africa/20260829-gunfire-and-explosions-heard-near-military-base-in-niger-s-capital",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 35,
+          "cluster_id": 1,
+          "text": "The government of neighbouring Algeria condemned the mutiny in Niamey and pledged support for the Nigerien government.",
+          "kind": "event",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/africa/20260829-gunfire-and-explosions-heard-near-military-base-in-niger-s-capital",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 36,
+          "cluster_id": 1,
+          "text": "Niamey airport was attacked twice by jihadists earlier in 2026, first by Islamic State in the Sahel in January and later in late June by the Group for the Support of Islam and Muslims.",
+          "kind": "background",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/africa/20260829-gunfire-and-explosions-heard-near-military-base-in-niger-s-capital",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 2,
+      "headline_hint": "Death toll rises and thousands missing after Himalayan glacial collapse and flash floods trigger massive rescue efforts across Nepal, India, and China",
+      "section": "india",
+      "batch_position": 0,
+      "claim_count": 20,
+      "distinct_outlets": 4,
+      "source_kinds": {
+        "fulltext": 20
+      },
+      "claims": [
+        {
+          "id": 37,
+          "cluster_id": 2,
+          "text": "Nepal's government requested specialized foreign assistance including tunnel rescue teams, locate technology, rapid forensic DNA analysis, and mortuary facilities.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/live/2026/aug/29/nepal-tibet-floods-latest-updates-death-toll-missing-search-and-rescue",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 38,
+          "cluster_id": 2,
+          "text": "An 11-member technical reconnaissance team for tunnel rescue from India was deployed to Nepal, with a Chinese tunnel rescue team expected shortly.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/live/2026/aug/29/nepal-tibet-floods-latest-updates-death-toll-missing-search-and-rescue",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 39,
+          "cluster_id": 2,
+          "text": "Disaster agencies reported nearly 3,000 people missing, including 2,426 in Nepal and 554 in Tibet.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/live/2026/aug/29/nepal-tibet-floods-latest-updates-death-toll-missing-search-and-rescue",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 40,
+          "cluster_id": 2,
+          "text": "The missing list from the flood included at least 777 foreign nationals and 933 workers from hydropower projects along the affected river.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/live/2026/aug/29/nepal-tibet-floods-latest-updates-death-toll-missing-search-and-rescue",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 41,
+          "cluster_id": 2,
+          "text": "The total confirmed death toll reached 682, comprising 675 dead in Nepal and seven confirmed dead in Tibet.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/live/2026/aug/29/nepal-tibet-floods-latest-updates-death-toll-missing-search-and-rescue",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 42,
+          "cluster_id": 2,
+          "text": "The Red Cross estimated that more than 3,700 people were rescued in Nepal, while at least 93,000 people were affected by the catastrophe.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/live/2026/aug/29/nepal-tibet-floods-latest-updates-death-toll-missing-search-and-rescue",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 43,
+          "cluster_id": 2,
+          "text": "Nepali army rescuers pumped air through pipes into tunnels at the Trishuli 3A and 3B hydropower sites to supply trapped workers.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/live/2026/aug/29/nepal-tibet-floods-latest-updates-death-toll-missing-search-and-rescue",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 44,
+          "cluster_id": 2,
+          "text": "Nepalese Energy Minister Biraj Bhakta Shrestha stated that a hole was drilled into a cable tunnel, but no contact was established with trapped personnel.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/live/2026/aug/29/nepal-tibet-floods-latest-updates-death-toll-missing-search-and-rescue",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 45,
+          "cluster_id": 2,
+          "text": "The US State Department pledged an initial $500,000 in emergency humanitarian aid for Nepal.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/live/2026/aug/29/nepal-tibet-floods-latest-updates-death-toll-missing-search-and-rescue",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 46,
+          "cluster_id": 2,
+          "text": "The US Geological Survey attributed the high-altitude border disaster to a massive glacial collapse that triggered downstream debris torrents.",
+          "kind": "background",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/un-nepal-warn-climate-threat-after-deadly-floods-6349841",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 47,
+          "cluster_id": 2,
+          "text": "Nepalese Foreign Minister Shisir Khanal and Chinese Foreign Minister Wang Yi agreed to increase real-time sharing of hydrological and satellite data.",
+          "kind": "event",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/un-nepal-warn-climate-threat-after-deadly-floods-6349841",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 48,
+          "cluster_id": 2,
+          "text": "Nepalese Foreign Minister Shisir Khanal highlighted that Nepal produces approximately 0.01 percent of global greenhouse gas emissions despite suffering severe impacts.",
+          "kind": "figure",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/un-nepal-warn-climate-threat-after-deadly-floods-6349841",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 49,
+          "cluster_id": 2,
+          "text": "UN climate chief Simon Stiell stated that a warming climate driven by fossil fuel burning makes mountain disasters more frequent and severe.",
+          "kind": "quote",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/un-nepal-warn-climate-threat-after-deadly-floods-6349841",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 50,
+          "cluster_id": 2,
+          "text": "Flood survivors in Nuwakot district publicly criticized the Nepalese government for delays in delivering relief aid and searching for missing persons.",
+          "kind": "event",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/29/anger-mounts-in-nepal-over-the-governments-response-to-flash-flood?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 51,
+          "cluster_id": 2,
+          "text": "India's Ministry of External Affairs revised down the number of missing Indian nationals in Nepal to 287 on Saturday evening.",
+          "kind": "figure",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/south-asia/4-at-hydel-unit-among-108-indians-rescued-toll-682/articleshow/133619521.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 52,
+          "cluster_id": 2,
+          "text": "India's Ministry of External Affairs reported that 128 people of Indian origin holding other nationalities remained uncontactable in Nepal.",
+          "kind": "figure",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/south-asia/4-at-hydel-unit-among-108-indians-rescued-toll-682/articleshow/133619521.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 53,
+          "cluster_id": 2,
+          "text": "Indian authorities reported rescuing 88 Indian nationals in Nepal, including four hydropower workers extracted from a site in Rasuwa.",
+          "kind": "figure",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/south-asia/4-at-hydel-unit-among-108-indians-rescued-toll-682/articleshow/133619521.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 54,
+          "cluster_id": 2,
+          "text": "120 Indian nationals crossed the border from Tibet into Nepal on Saturday following the flood disruption.",
+          "kind": "figure",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/south-asia/4-at-hydel-unit-among-108-indians-rescued-toll-682/articleshow/133619521.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 55,
+          "cluster_id": 2,
+          "text": "Chinese authorities in Gyirong port evacuated 555 tourists and relocated 499 local villagers and workers to safety.",
+          "kind": "figure",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/south-asia/4-at-hydel-unit-among-108-indians-rescued-toll-682/articleshow/133619521.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 56,
+          "cluster_id": 2,
+          "text": "Chinese hydrological monitoring confirmed that a major dammed debris lake began naturally draining, reducing immediate outburst flood risks.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/south-asia/4-at-hydel-unit-among-108-indians-rescued-toll-682/articleshow/133619521.cms",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 3,
+      "headline_hint": "RSS chief Mohan Bhagwat addresses landmark New York diaspora event on Indian identity and Hindutva",
+      "section": "india",
+      "batch_position": 1,
+      "claim_count": 12,
+      "distinct_outlets": 5,
+      "source_kinds": {
+        "fulltext": 12
+      },
+      "claims": [
+        {
+          "id": 57,
+          "cluster_id": 3,
+          "text": "RSS chief Mohan Bhagwat delivered a keynote address at the 'Universal Oneness Celebration' hosted by AHEAD at Madison Square Garden in New York.",
+          "kind": "event",
+          "outlet": "NDTV",
+          "url": "https://www.ndtv.com/india-news/unity-and-diversity-in-indias-dna-rss-chief-mohan-bhagwat-at-new-york-event-11976351#publisher=newsstand",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 58,
+          "cluster_id": 3,
+          "text": "Mohan Bhagwat stated that if any Hindu believes there should be no Muslims in India, that person ceases to be a Hindu.",
+          "kind": "quote",
+          "outlet": "NDTV",
+          "url": "https://www.ndtv.com/india-news/unity-and-diversity-in-indias-dna-rss-chief-mohan-bhagwat-at-new-york-event-11976351#publisher=newsstand",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 59,
+          "cluster_id": 3,
+          "text": "Mohan Bhagwat cited RSS volunteers' relief work following the 1996 Charkhi Dadri mid-air collision in Haryana to emphasize non-discriminatory service.",
+          "kind": "background",
+          "outlet": "NDTV",
+          "url": "https://www.ndtv.com/india-news/unity-and-diversity-in-indias-dna-rss-chief-mohan-bhagwat-at-new-york-event-11976351#publisher=newsstand",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 60,
+          "cluster_id": 3,
+          "text": "Mohan Bhagwat spoke to community and interfaith leaders at the 'One World, One Humanity' conference in New York City on August 29, 2026.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/if-hindus-think-muslims-have-no-place-they-cease-to-be-hindu-mohan-bhagwat-in-new-york/article71405968.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 61,
+          "cluster_id": 3,
+          "text": "Mohan Bhagwat stated that RSS volunteers currently run approximately 130,000 community service projects.",
+          "kind": "figure",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/if-hindus-think-muslims-have-no-place-they-cease-to-be-hindu-mohan-bhagwat-in-new-york/article71405968.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 62,
+          "cluster_id": 3,
+          "text": "Mohan Bhagwat noted that the RSS intensified outreach and dialogue with Muslim and Christian communities in India starting in 2018.",
+          "kind": "background",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/if-hindus-think-muslims-have-no-place-they-cease-to-be-hindu-mohan-bhagwat-in-new-york/article71405968.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 63,
+          "cluster_id": 3,
+          "text": "The Universal Oneness Celebration at Madison Square Garden was supported by over 200 Hindu American organizations.",
+          "kind": "background",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/no-place-in-hindu-thought-for-excluding-muslims-bhagwat-in-new-york/articleshow/133617841.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 64,
+          "cluster_id": 3,
+          "text": "New York City Mayor Zohran Mamdani expressed strong opposition to the RSS event, labeling the organization's ideology as exclusionary.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/no-place-in-hindu-thought-for-excluding-muslims-bhagwat-in-new-york/articleshow/133617841.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 65,
+          "cluster_id": 3,
+          "text": "The US Commission on International Religious Freedom (USCIRF) recommended revoking Mohan Bhagwat's visa and imposing sanctions on RSS members.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/no-place-in-hindu-thought-for-excluding-muslims-bhagwat-in-new-york/articleshow/133617841.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 66,
+          "cluster_id": 3,
+          "text": "Mohan Bhagwat arrived in the United States on Tuesday as part of an RSS centenary-year outreach tour covering North America and the UK.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/mohan-bhagwat-iskcon-new-york-news-event-madison-square-garden-us-visit-speech-101788026977855.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 67,
+          "cluster_id": 3,
+          "text": "Civil rights, interfaith, and caste advocacy groups staged protests outside Madison Square Garden opposing Mohan Bhagwat's appearance.",
+          "kind": "event",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/8/29/rss-chiefs-visit-to-us-denounced-as-goodwill-tour-for-hindu-nationalism?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 68,
+          "cluster_id": 3,
+          "text": "Indian Prime Minister Narendra Modi previously addressed an audience of 50,000 people during the 2019 'Howdy, Modi!' event in Texas.",
+          "kind": "figure",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/8/29/rss-chiefs-visit-to-us-denounced-as-goodwill-tour-for-hindu-nationalism?traffic_source=rss",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 4,
+      "headline_hint": "PM Modi arrives in Uzbekistan on two-nation tour to attend SCO summit and bolster regional security",
+      "section": "india",
+      "batch_position": 2,
+      "claim_count": 12,
+      "distinct_outlets": 3,
+      "source_kinds": {
+        "fulltext": 12
+      },
+      "claims": [
+        {
+          "id": 69,
+          "cluster_id": 4,
+          "text": "Indian Prime Minister Narendra Modi arrived in Uzbekistan on Saturday for a two-nation Central Asian visit prior to attending the 26th SCO Summit in Bishkek.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/will-work-with-sco-to-free-region-from-terror-pm-ahead-of-summit/articleshow/133619538.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 70,
+          "cluster_id": 4,
+          "text": "Narendra Modi stated his intent to hold discussions with Uzbek President Shavkat Mirziyoyev on trade, investment, digital connectivity, defense, and energy.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/will-work-with-sco-to-free-region-from-terror-pm-ahead-of-summit/articleshow/133619538.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 71,
+          "cluster_id": 4,
+          "text": "Modi's itinerary in Tashkent included visits to the Shastri Memorial and the Mahatma Gandhi Centre at Tashkent State University of Oriental Studies.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/will-work-with-sco-to-free-region-from-terror-pm-ahead-of-summit/articleshow/133619538.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 72,
+          "cluster_id": 4,
+          "text": "India's Ministry of External Affairs confirmed that Narendra Modi will hold a bilateral meeting with Russian President Vladimir Putin on the margins of the SCO Summit.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/will-work-with-sco-to-free-region-from-terror-pm-ahead-of-summit/articleshow/133619538.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 73,
+          "cluster_id": 4,
+          "text": "Uzbek President Shavkat Mirziyoyev personally greeted Prime Minister Modi upon his late-night arrival at Tashkent airport.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/pm-modi-lands-in-uzbekistan-on-two-nation-visit-president-shavkat-mirziyoyev-receives-him-101788012051648.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 74,
+          "cluster_id": 4,
+          "text": "Prime Minister Modi's aircraft took a detour through Chinese airspace because Pakistani airspace remained closed to Indian aircraft.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/pm-modi-lands-in-uzbekistan-on-two-nation-visit-president-shavkat-mirziyoyev-receives-him-101788012051648.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 75,
+          "cluster_id": 4,
+          "text": "Modi laid a floral wreath at Yangi Uzbekistan Park in Tashkent shortly after his arrival.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/pm-modi-lands-in-uzbekistan-on-two-nation-visit-president-shavkat-mirziyoyev-receives-him-101788012051648.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 76,
+          "cluster_id": 4,
+          "text": "Uzbekistan hosts more than 18,000 Indian residents, including approximately 16,000 medical students.",
+          "kind": "figure",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/pm-modi-lands-in-uzbekistan-on-two-nation-visit-president-shavkat-mirziyoyev-receives-him-101788012051648.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 77,
+          "cluster_id": 4,
+          "text": "Prime Minister Modi scheduled attendance at the opening ceremony of the 6th World Nomad Games in Kyrgyzstan during his tour.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/pm-modi-lands-in-uzbekistan-on-two-nation-visit-president-shavkat-mirziyoyev-receives-him-101788012051648.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 78,
+          "cluster_id": 4,
+          "text": "This trip marks Narendra Modi's fourth official visit to Uzbekistan, following trips in 2015, 2016, and 2022.",
+          "kind": "figure",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/indiacentral-asia-ties-in-focus-as-pm-modi-begins-uzbekistan-and-kyrgyzstan-visit-11787981654965.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 79,
+          "cluster_id": 4,
+          "text": "The Shanghai Cooperation Organisation consists of 10 member states spanning 36 million square kilometers and a population exceeding 3.4 billion people.",
+          "kind": "figure",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/indiacentral-asia-ties-in-focus-as-pm-modi-begins-uzbekistan-and-kyrgyzstan-visit-11787981654965.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 80,
+          "cluster_id": 4,
+          "text": "The SCO accounts for approximately 25 percent of global gross domestic product and over 15 percent of international trade.",
+          "kind": "figure",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/indiacentral-asia-ties-in-focus-as-pm-modi-begins-uzbekistan-and-kyrgyzstan-visit-11787981654965.html",
+          "source_kind": "fulltext"
+        }
+      ]
+    }
+  ],
+  "clusters_with_no_claims": []
+}

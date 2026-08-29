@@ -1,0 +1,468 @@
+{
+  "min_chars": 600,
+  "article_cap": 5000,
+  "articles": [
+    {
+      "seq": 1,
+      "url": "https://www.bbc.co.uk/news/articles/c86xwqez4npo?at_medium=RSS&at_campaign=rss",
+      "http": 200,
+      "elapsed_ms": 310,
+      "error": "",
+      "html_chars": 419501,
+      "jsonld_chars": 0,
+      "paragraph_chars": 5283,
+      "jina_fired": false,
+      "jina_chars": 0,
+      "winner": "paragraphs",
+      "final_chars": 5000,
+      "truncated_at_cap": true,
+      "below_min_chars": false,
+      "files": {
+        "html": true,
+        "jina": false,
+        "text": true
+      }
+    },
+    {
+      "seq": 2,
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/29/29-08-sv-russia-strikes-arms-depot-kyiv-fm?traffic_source=rss",
+      "http": 200,
+      "elapsed_ms": 241,
+      "error": "",
+      "html_chars": 192674,
+      "jsonld_chars": 0,
+      "paragraph_chars": 303,
+      "jina_fired": true,
+      "jina_chars": 11314,
+      "winner": "jina",
+      "final_chars": 5000,
+      "truncated_at_cap": true,
+      "below_min_chars": false,
+      "files": {
+        "html": true,
+        "jina": true,
+        "text": true
+      }
+    },
+    {
+      "seq": 3,
+      "url": "https://www.npr.org/2026/08/29/nx-s1-5948714/russian-strike-kyiv",
+      "http": 200,
+      "elapsed_ms": 372,
+      "error": "",
+      "html_chars": 142664,
+      "jsonld_chars": 0,
+      "paragraph_chars": 5643,
+      "jina_fired": false,
+      "jina_chars": 0,
+      "winner": "paragraphs",
+      "final_chars": 5000,
+      "truncated_at_cap": true,
+      "below_min_chars": false,
+      "files": {
+        "html": true,
+        "jina": false,
+        "text": true
+      }
+    },
+    {
+      "seq": 4,
+      "url": "https://www.theguardian.com/world/2026/aug/29/russian-strike-warehouse-near-kyiv-kills-at-least-37",
+      "http": 200,
+      "elapsed_ms": 222,
+      "error": "",
+      "html_chars": 447405,
+      "jsonld_chars": 0,
+      "paragraph_chars": 2895,
+      "jina_fired": false,
+      "jina_chars": 0,
+      "winner": "paragraphs",
+      "final_chars": 2895,
+      "truncated_at_cap": false,
+      "below_min_chars": false,
+      "files": {
+        "html": true,
+        "jina": false,
+        "text": true
+      }
+    },
+    {
+      "seq": 5,
+      "url": "https://www.france24.com/en/warehouse-hit-by-russian-attack-stored-munitions-zelensky-says",
+      "http": 403,
+      "elapsed_ms": 233,
+      "error": "http 403",
+      "html_chars": 0,
+      "jsonld_chars": 0,
+      "paragraph_chars": 0,
+      "jina_fired": true,
+      "jina_chars": 12717,
+      "winner": "jina",
+      "final_chars": 5000,
+      "truncated_at_cap": true,
+      "below_min_chars": false,
+      "files": {
+        "html": false,
+        "jina": true,
+        "text": true
+      }
+    },
+    {
+      "seq": 6,
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/29/08-29-26-niger-mutiny-sv?traffic_source=rss",
+      "http": 200,
+      "elapsed_ms": 125,
+      "error": "",
+      "html_chars": 191721,
+      "jsonld_chars": 0,
+      "paragraph_chars": 362,
+      "jina_fired": true,
+      "jina_chars": 10685,
+      "winner": "jina",
+      "final_chars": 5000,
+      "truncated_at_cap": true,
+      "below_min_chars": false,
+      "files": {
+        "html": true,
+        "jina": true,
+        "text": true
+      }
+    },
+    {
+      "seq": 7,
+      "url": "https://www.france24.com/en/situation-in-niger-not-stabilised-yet-as-security-forces-deploy-around-airport",
+      "http": 403,
+      "elapsed_ms": 107,
+      "error": "http 403",
+      "html_chars": 0,
+      "jsonld_chars": 0,
+      "paragraph_chars": 0,
+      "jina_fired": true,
+      "jina_chars": 13560,
+      "winner": "jina",
+      "final_chars": 5000,
+      "truncated_at_cap": true,
+      "below_min_chars": false,
+      "files": {
+        "html": false,
+        "jina": true,
+        "text": true
+      }
+    },
+    {
+      "seq": 8,
+      "url": "https://www.france24.com/en/niger-s-junta-says-regaining-control-after-clashes-in-capital",
+      "http": 403,
+      "elapsed_ms": 104,
+      "error": "http 403",
+      "html_chars": 0,
+      "jsonld_chars": 0,
+      "paragraph_chars": 0,
+      "jina_fired": true,
+      "jina_chars": 13258,
+      "winner": "jina",
+      "final_chars": 5000,
+      "truncated_at_cap": true,
+      "below_min_chars": false,
+      "files": {
+        "html": false,
+        "jina": true,
+        "text": true
+      }
+    },
+    {
+      "seq": 9,
+      "url": "https://www.france24.com/en/africa/20260829-gunfire-and-explosions-heard-near-military-base-in-niger-s-capital",
+      "http": 403,
+      "elapsed_ms": 100,
+      "error": "http 403",
+      "html_chars": 0,
+      "jsonld_chars": 0,
+      "paragraph_chars": 0,
+      "jina_fired": true,
+      "jina_chars": 6536,
+      "winner": "jina",
+      "final_chars": 5000,
+      "truncated_at_cap": true,
+      "below_min_chars": false,
+      "files": {
+        "html": false,
+        "jina": true,
+        "text": true
+      }
+    },
+    {
+      "seq": 10,
+      "url": "https://www.theguardian.com/world/live/2026/aug/29/nepal-tibet-floods-latest-updates-death-toll-missing-search-and-rescue",
+      "http": 200,
+      "elapsed_ms": 234,
+      "error": "",
+      "html_chars": 783411,
+      "jsonld_chars": 999,
+      "paragraph_chars": 11762,
+      "jina_fired": false,
+      "jina_chars": 0,
+      "winner": "paragraphs",
+      "final_chars": 5000,
+      "truncated_at_cap": true,
+      "below_min_chars": false,
+      "files": {
+        "html": true,
+        "jina": false,
+        "text": true
+      }
+    },
+    {
+      "seq": 11,
+      "url": "https://www.channelnewsasia.com/world/un-nepal-warn-climate-threat-after-deadly-floods-6349841",
+      "http": 200,
+      "elapsed_ms": 187,
+      "error": "",
+      "html_chars": 498813,
+      "jsonld_chars": 0,
+      "paragraph_chars": 3018,
+      "jina_fired": false,
+      "jina_chars": 0,
+      "winner": "paragraphs",
+      "final_chars": 3018,
+      "truncated_at_cap": false,
+      "below_min_chars": false,
+      "files": {
+        "html": true,
+        "jina": false,
+        "text": true
+      }
+    },
+    {
+      "seq": 12,
+      "url": "https://www.npr.org/2026/08/29/nx-s1-5948125/getting-help-to-nepals-flood-survivors-is-proving-difficult",
+      "http": 200,
+      "elapsed_ms": 156,
+      "error": "",
+      "html_chars": 133547,
+      "jsonld_chars": 0,
+      "paragraph_chars": 375,
+      "jina_fired": true,
+      "jina_chars": 30119,
+      "winner": "jina",
+      "final_chars": 5000,
+      "truncated_at_cap": true,
+      "below_min_chars": false,
+      "files": {
+        "html": true,
+        "jina": true,
+        "text": true
+      }
+    },
+    {
+      "seq": 13,
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/29/anger-mounts-in-nepal-over-the-governments-response-to-flash-flood?traffic_source=rss",
+      "http": 200,
+      "elapsed_ms": 200,
+      "error": "",
+      "html_chars": 188859,
+      "jsonld_chars": 0,
+      "paragraph_chars": 328,
+      "jina_fired": true,
+      "jina_chars": 11284,
+      "winner": "jina",
+      "final_chars": 5000,
+      "truncated_at_cap": true,
+      "below_min_chars": false,
+      "files": {
+        "html": true,
+        "jina": true,
+        "text": true
+      }
+    },
+    {
+      "seq": 14,
+      "url": "https://timesofindia.indiatimes.com/world/south-asia/4-at-hydel-unit-among-108-indians-rescued-toll-682/articleshow/133619521.cms",
+      "http": 200,
+      "elapsed_ms": 255,
+      "error": "",
+      "html_chars": 305550,
+      "jsonld_chars": 3762,
+      "paragraph_chars": 0,
+      "jina_fired": false,
+      "jina_chars": 0,
+      "winner": "jsonld",
+      "final_chars": 3762,
+      "truncated_at_cap": false,
+      "below_min_chars": false,
+      "files": {
+        "html": true,
+        "jina": false,
+        "text": true
+      }
+    },
+    {
+      "seq": 15,
+      "url": "https://www.ndtv.com/india-news/unity-and-diversity-in-indias-dna-rss-chief-mohan-bhagwat-at-new-york-event-11976351#publisher=newsstand",
+      "http": 403,
+      "elapsed_ms": 154,
+      "error": "http 403",
+      "html_chars": 0,
+      "jsonld_chars": 0,
+      "paragraph_chars": 0,
+      "jina_fired": true,
+      "jina_chars": 5372,
+      "winner": "jina",
+      "final_chars": 5000,
+      "truncated_at_cap": true,
+      "below_min_chars": false,
+      "files": {
+        "html": false,
+        "jina": true,
+        "text": true
+      }
+    },
+    {
+      "seq": 16,
+      "url": "https://www.thehindu.com/news/national/if-hindus-think-muslims-have-no-place-they-cease-to-be-hindu-mohan-bhagwat-in-new-york/article71405968.ece",
+      "http": 200,
+      "elapsed_ms": 145,
+      "error": "",
+      "html_chars": 207239,
+      "jsonld_chars": 0,
+      "paragraph_chars": 3885,
+      "jina_fired": false,
+      "jina_chars": 0,
+      "winner": "paragraphs",
+      "final_chars": 3885,
+      "truncated_at_cap": false,
+      "below_min_chars": false,
+      "files": {
+        "html": true,
+        "jina": false,
+        "text": true
+      }
+    },
+    {
+      "seq": 17,
+      "url": "https://timesofindia.indiatimes.com/india/no-place-in-hindu-thought-for-excluding-muslims-bhagwat-in-new-york/articleshow/133617841.cms",
+      "http": 200,
+      "elapsed_ms": 139,
+      "error": "",
+      "html_chars": 323015,
+      "jsonld_chars": 3699,
+      "paragraph_chars": 0,
+      "jina_fired": false,
+      "jina_chars": 0,
+      "winner": "jsonld",
+      "final_chars": 3699,
+      "truncated_at_cap": false,
+      "below_min_chars": false,
+      "files": {
+        "html": true,
+        "jina": false,
+        "text": true
+      }
+    },
+    {
+      "seq": 18,
+      "url": "https://www.hindustantimes.com/india-news/mohan-bhagwat-iskcon-new-york-news-event-madison-square-garden-us-visit-speech-101788026977855.html",
+      "http": 200,
+      "elapsed_ms": 149,
+      "error": "",
+      "html_chars": 442065,
+      "jsonld_chars": 3118,
+      "paragraph_chars": 4815,
+      "jina_fired": false,
+      "jina_chars": 0,
+      "winner": "paragraphs",
+      "final_chars": 4815,
+      "truncated_at_cap": false,
+      "below_min_chars": false,
+      "files": {
+        "html": true,
+        "jina": false,
+        "text": true
+      }
+    },
+    {
+      "seq": 19,
+      "url": "https://www.aljazeera.com/news/2026/8/29/rss-chiefs-visit-to-us-denounced-as-goodwill-tour-for-hindu-nationalism?traffic_source=rss",
+      "http": 200,
+      "elapsed_ms": 130,
+      "error": "",
+      "html_chars": 209851,
+      "jsonld_chars": 0,
+      "paragraph_chars": 6432,
+      "jina_fired": false,
+      "jina_chars": 0,
+      "winner": "paragraphs",
+      "final_chars": 5000,
+      "truncated_at_cap": true,
+      "below_min_chars": false,
+      "files": {
+        "html": true,
+        "jina": false,
+        "text": true
+      }
+    },
+    {
+      "seq": 20,
+      "url": "https://timesofindia.indiatimes.com/india/will-work-with-sco-to-free-region-from-terror-pm-ahead-of-summit/articleshow/133619538.cms",
+      "http": 200,
+      "elapsed_ms": 153,
+      "error": "",
+      "html_chars": 320922,
+      "jsonld_chars": 2901,
+      "paragraph_chars": 0,
+      "jina_fired": false,
+      "jina_chars": 0,
+      "winner": "jsonld",
+      "final_chars": 2901,
+      "truncated_at_cap": false,
+      "below_min_chars": false,
+      "files": {
+        "html": true,
+        "jina": false,
+        "text": true
+      }
+    },
+    {
+      "seq": 21,
+      "url": "https://www.hindustantimes.com/india-news/pm-modi-lands-in-uzbekistan-on-two-nation-visit-president-shavkat-mirziyoyev-receives-him-101788012051648.html",
+      "http": 200,
+      "elapsed_ms": 117,
+      "error": "",
+      "html_chars": 422846,
+      "jsonld_chars": 3246,
+      "paragraph_chars": 4522,
+      "jina_fired": false,
+      "jina_chars": 0,
+      "winner": "paragraphs",
+      "final_chars": 4522,
+      "truncated_at_cap": false,
+      "below_min_chars": false,
+      "files": {
+        "html": true,
+        "jina": false,
+        "text": true
+      }
+    },
+    {
+      "seq": 22,
+      "url": "https://www.livemint.com/news/india/indiacentral-asia-ties-in-focus-as-pm-modi-begins-uzbekistan-and-kyrgyzstan-visit-11787981654965.html",
+      "http": 200,
+      "elapsed_ms": 293,
+      "error": "",
+      "html_chars": 186615,
+      "jsonld_chars": 3087,
+      "paragraph_chars": 3489,
+      "jina_fired": false,
+      "jina_chars": 0,
+      "winner": "paragraphs",
+      "final_chars": 3489,
+      "truncated_at_cap": false,
+      "below_min_chars": false,
+      "files": {
+        "html": true,
+        "jina": false,
+        "text": true
+      }
+    }
+  ]
+}

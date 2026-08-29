@@ -1,0 +1,733 @@
+{
+  "dials": {
+    "WEIGHT_FLOOR": 5,
+    "TIER_WEIGHT": {
+      "lead": 4,
+      "major": 2,
+      "notable": 0
+    },
+    "WIKI_BONUS": 2,
+    "HARD_CAP": 12,
+    "MIN_STORIES_IF_ANY": 3,
+    "MAX_ARTICLES_PER_STORY": 5
+  },
+  "floor_relaxed": false,
+  "kept_weights": [
+    9,
+    6,
+    16,
+    7,
+    5
+  ],
+  "per_section": {
+    "world": 2,
+    "india": 3
+  },
+  "clusters": [
+    {
+      "headline_hint": "Death toll rises and thousands missing after Himalayan glacial collapse and flash floods trigger massive rescue efforts across Nepal, India, and China",
+      "section": "india",
+      "category": "disaster",
+      "tier_requested": "lead",
+      "article_ids": [
+        3,
+        13,
+        25,
+        26,
+        28,
+        30,
+        38,
+        61,
+        69,
+        86,
+        91,
+        93,
+        94,
+        99,
+        106,
+        112,
+        119,
+        123,
+        130,
+        131,
+        136,
+        137,
+        139,
+        151,
+        162,
+        170,
+        173,
+        177,
+        180,
+        186,
+        190,
+        191,
+        198,
+        204,
+        224,
+        226,
+        238,
+        239,
+        242,
+        253,
+        262,
+        274,
+        278,
+        279,
+        280,
+        286,
+        287,
+        288
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        3,
+        13,
+        25,
+        26,
+        28,
+        30,
+        38,
+        61,
+        69,
+        86,
+        91,
+        93,
+        94,
+        99,
+        106,
+        112,
+        119,
+        123,
+        130,
+        131,
+        136,
+        137,
+        139,
+        151,
+        162,
+        170,
+        173,
+        177,
+        180,
+        186,
+        190,
+        191,
+        198,
+        204,
+        224,
+        226,
+        238,
+        239,
+        242,
+        253,
+        262,
+        274,
+        278,
+        279,
+        280,
+        286,
+        287,
+        288
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 12,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 16,
+      "weight_terms": {
+        "distinct_outlets": 12,
+        "tier_weight": 4,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "Nepal-Tibet floods: Nepal calls for technical support for rescue efforts as number of missing rises to nearly 3,000 – latest updates",
+          "url": "https://www.theguardian.com/world/live/2026/aug/29/nepal-tibet-floods-latest-updates-death-toll-missing-search-and-rescue"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "UN, Nepal warn of climate threat after deadly floods",
+          "url": "https://www.channelnewsasia.com/world/un-nepal-warn-climate-threat-after-deadly-floods-6349841"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "Getting help to Nepal's flood survivors is proving difficult",
+          "url": "https://www.npr.org/2026/08/29/nx-s1-5948125/getting-help-to-nepals-flood-survivors-is-proving-difficult"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Anger mounts in Nepal over the government’s response to flash flood",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/29/anger-mounts-in-nepal-over-the-governments-response-to-flash-flood?traffic_source=rss"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "4 at hydropower tunnel among 108 Indians rescued; toll 682",
+          "url": "https://timesofindia.indiatimes.com/world/south-asia/4-at-hydel-unit-among-108-indians-rescued-toll-682/articleshow/133619521.cms"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 43
+    },
+    {
+      "headline_hint": "Russian strike on Kyiv munitions warehouse kills dozens and sparks massive evacuations",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "lead",
+      "article_ids": [
+        37,
+        127,
+        153,
+        187,
+        192,
+        206,
+        229,
+        244,
+        252
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        37,
+        127,
+        153,
+        187,
+        192,
+        206,
+        229,
+        244,
+        252
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 5,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 9,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 4,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "BBC World",
+          "title": "At least 37 dead and hundreds evacuated after strike on Kyiv weapons depot",
+          "url": "https://www.bbc.co.uk/news/articles/c86xwqez4npo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Russian strike on a munitions depot triggers deadly blasts near Kyiv",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/29/29-08-sv-russia-strikes-arms-depot-kyiv-fm?traffic_source=rss"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "Russian strike near Kyiv kills 37, in one of the year's deadliest attacks",
+          "url": "https://www.npr.org/2026/08/29/nx-s1-5948714/russian-strike-kyiv"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Russian drone strike on Kyiv warehouse storing weapons kills at least 37",
+          "url": "https://www.theguardian.com/world/2026/aug/29/russian-strike-warehouse-near-kyiv-kills-at-least-37"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Warehouse hit by Russian attack stored munitions, Zelensky says",
+          "url": "https://www.france24.com/en/warehouse-hit-by-russian-attack-stored-munitions-zelensky-says"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 4
+    },
+    {
+      "headline_hint": "PM Modi arrives in Uzbekistan on two-nation tour to attend SCO summit and bolster regional security",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        29,
+        183,
+        277
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        29,
+        183,
+        277
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 5,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "Will work with SCO to free region from terror: PM ahead of summit",
+          "url": "https://timesofindia.indiatimes.com/india/will-work-with-sco-to-free-region-from-terror-pm-ahead-of-summit/articleshow/133619538.cms"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "PM Modi lands in Uzbekistan on two-nation visit, President Shavkat Mirziyoyev receives him",
+          "url": "https://www.hindustantimes.com/india-news/pm-modi-lands-in-uzbekistan-on-two-nation-visit-president-shavkat-mirziyoyev-receives-him-101788012051648.html"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "India-Central Asia ties in focus as PM Modi begins Uzbekistan and Kyrgyzstan visit",
+          "url": "https://www.livemint.com/news/india/indiacentral-asia-ties-in-focus-as-pm-modi-begins-uzbekistan-and-kyrgyzstan-visit-11787981654965.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Niger military moves to suppress attempted coup and secure capital Niamey",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        122,
+        185,
+        207,
+        271
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        122,
+        185,
+        207,
+        271
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 2,
+      "wiki_backed": true,
+      "wiki_event": "Nigerien television confirms that dissenting elements of the Niger Armed Forces attempted a coup in the nation's capital, Niamey. Attacks are reported on Diori Hamani International Airport and the Presidential Palace.",
+      "weight": 6,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "Niger military says it is regaining control after attempted mutiny",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/29/08-29-26-niger-mutiny-sv?traffic_source=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Situation in Niger 'not stabilised yet' as security forces deploy around airport",
+          "url": "https://www.france24.com/en/situation-in-niger-not-stabilised-yet-as-security-forces-deploy-around-airport"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Niger's junta says 'regaining control' after clashes in capital",
+          "url": "https://www.france24.com/en/niger-s-junta-says-regaining-control-after-clashes-in-capital"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Niger junta says it is back in control after soldiers' mutiny rocks capital",
+          "url": "https://www.france24.com/en/africa/20260829-gunfire-and-explosions-heard-near-military-base-in-niger-s-capital"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Trump administration announces historic deal for US control over one-fifth of Venezuela oil reserves",
+      "section": "world",
+      "category": "economy",
+      "tier_requested": "major",
+      "article_ids": [
+        0,
+        250
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        0,
+        250
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "BBC World",
+          "title": "Trump hails 'historic' deal for US to control 65bn barrels of Venezuela's oil",
+          "url": "https://www.bbc.co.uk/news/articles/cx2zlwe7qj1o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "US to control one fifth of Venezuela's oil reserves, Trump says",
+          "url": "https://www.france24.com/en/us-to-control-one-fifth-of-venezuela-s-oil-reserves-trump-says"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "RSS chief Mohan Bhagwat addresses landmark New York diaspora event on Indian identity and Hindutva",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        14,
+        15,
+        43,
+        79,
+        84,
+        95,
+        149,
+        150,
+        246,
+        258
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        14,
+        15,
+        43,
+        79,
+        84,
+        95,
+        149,
+        150,
+        246,
+        258
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 5,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "NDTV",
+          "title": "\"Unity And Diversity In India's DNA\": RSS Chief Mohan Bhagwat At New York Event",
+          "url": "https://www.ndtv.com/india-news/unity-and-diversity-in-indias-dna-rss-chief-mohan-bhagwat-at-new-york-event-11976351#publisher=newsstand"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "If Hindus think Muslims have no place, they cease to be Hindu: Mohan Bhagwat in New York",
+          "url": "https://www.thehindu.com/news/national/if-hindus-think-muslims-have-no-place-they-cease-to-be-hindu-mohan-bhagwat-in-new-york/article71405968.ece"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "From society to politics: Bhagwat lays out RSS route to change",
+          "url": "https://timesofindia.indiatimes.com/india/no-place-in-hindu-thought-for-excluding-muslims-bhagwat-in-new-york/articleshow/133617841.cms"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "‘Hindu who wants no Muslims in Bharat is not a Hindu’: RSS chief Mohan Bhagwat",
+          "url": "https://www.hindustantimes.com/india-news/mohan-bhagwat-iskcon-new-york-news-event-madison-square-garden-us-visit-speech-101788026977855.html"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "RSS chief’s visit to US denounced as ‘goodwill tour’ for Hindu nationalism",
+          "url": "https://www.aljazeera.com/news/2026/8/29/rss-chiefs-visit-to-us-denounced-as-goodwill-tour-for-hindu-nationalism?traffic_source=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 5
+    },
+    {
+      "headline_hint": "Icelanders vote in tight referendum on whether to restart EU membership negotiations",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        32,
+        201,
+        249,
+        270
+      ],
+      "verdict": "cut:below_floor(2<5)",
+      "valid_ids": [
+        32,
+        201,
+        249,
+        270
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 2,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "Iceland votes in a tight race on whether to resume talks to join the EU",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/29/iceland-votes-in-a-tight-race-on-whether-to-resume-talks-to-join-the-eu?traffic_source=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Referendum on EU membership: An ‘existential question’ for Icelanders",
+          "url": "https://www.france24.com/en/referendum-on-eu-membership-an-existential-question-for-icelanders"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Iceland votes on whether to resume EU membership negotiations",
+          "url": "https://www.france24.com/en/iceland-votes-on-whether-to-resume-eu-membership-negotiations"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Icelanders vote in tight referendum on restarting EU membership talks",
+          "url": "https://www.france24.com/en/europe/20260829-icelanders-vote-in-referendum-on-whether-to-resume-eu-membership-talks"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Argentina defeats Netherlands in penalty shootout to win 2026 Women's Hockey World Cup title",
+      "section": "world",
+      "category": "sport",
+      "tier_requested": "notable",
+      "article_ids": [
+        108
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        108
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 1,
+      "wiki_backed": true,
+      "wiki_event": "Argentina beat the Netherlands in the final after a 1–1 draw and a penalty shoot-out to secure their third World Cup title in women's field hockey.",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 1,
+        "tier_weight": 0,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "Women’s Hockey WC: Argentina stun Netherlands in shootout to win third title",
+          "url": "https://timesofindia.indiatimes.com/sports/hockey/top-stories/womens-hockey-world-cup-argentina-stun-netherlands-in-shootout-thriller-to-win-third-title/articleshow/133616745.cms"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Netanyahu condemns settler violence in West Bank following attacks on Palestinian villages",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "notable",
+      "article_ids": [
+        12,
+        22,
+        72,
+        118
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        12,
+        22,
+        72,
+        118
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "Palestinian woman and NBC News team reportedly attacked in West Bank",
+          "url": "https://www.theguardian.com/world/2026/aug/29/nbc-news-team-attacked-west-bank"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "Netanyahu condemns settler attack in flashpoint West Bank village",
+          "url": "https://www.channelnewsasia.com/world/netanyahu-condemns-settler-attack-in-flashpoint-west-bank-village-6349791"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Netanyahu condemns 'criminal acts of violence' by settlers in West Bank villages",
+          "url": "https://www.france24.com/en/middle-east/20260829-netanyahu-condemns-criminal-acts-of-violence-by-settlers-in-west-bank-villages"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Israeli army arrests six Palestinians after settler violence in West Bank",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/29/israeli-army-arrests-six-palestinians-after-settler-violence-in-west-bank?traffic_source=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "India food safety regulator FSSAI bans compounded hing products from Everest and LG",
+      "section": "india",
+      "category": "economy",
+      "tier_requested": "notable",
+      "article_ids": [
+        21,
+        196,
+        203
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        21,
+        196,
+        203
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "FSSAI bans Everest, LG from selling hing",
+          "url": "https://timesofindia.indiatimes.com/india/fssai-bans-everest-lg-from-selling-hing/articleshow/133619574.cms"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Everest banned from selling hing powder, food regulator finds product ‘sub-standard’",
+          "url": "https://www.hindustantimes.com/india-news/fssai-cracks-whip-on-everest-foods-hing-powder-sales-halted-after-samples-found-substandard-101788005629339.html"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Everest hing ban: FSSAI cites 'excessive starch, low alcohol soluble extract' in compounded asafetida",
+          "url": "https://www.livemint.com/news/india/everest-hing-ban-fssai-cites-excessive-starch-low-alcohol-soluble-extract-in-compounded-asafetida-11788006207416.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Kolkata Police file FIR against Mamata Banerjee for allegedly violating high court rally directions",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        113,
+        141,
+        227,
+        243
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        113,
+        141,
+        227,
+        243
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "The Hindu",
+          "title": "Kolkata Police file FIR against Mamata Banerjee for violating Calcutta High Court order",
+          "url": "https://www.thehindu.com/news/national/west-bengal/fir-against-mamata-banerjee-for-violation-of-calcutta-high-court-order-on-trinamool-student-wing-foundation-day-event/article71404160.ece"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Mamata Banerjee in legal trouble as Kolkata Police file suo moto FIR against former West Bengal CM — here's why",
+          "url": "https://www.livemint.com/news/india/mamata-banerjee-in-legal-trouble-as-kolkata-police-file-suo-moto-fir-against-former-west-bengal-cm-heres-why-11787996939045.html"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "FIR against Mamata Banerjee over violation of high court order on TMC students' wing rally in Kolkata",
+          "url": "https://www.hindustantimes.com/india-news/fir-against-mamata-banerjee-over-alleged-hc-order-violation-on-kolkata-rally-tmcp-students-meet-101787994891340.html"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "Mamata Banerjee booked: FIR filed over TMCP event in Kolkata",
+          "url": "https://www.thehindu.com/videos/mamata-banerjee-booked-fir-filed-over-tmcp-event-in-kolkata/article71405663.ece"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "US deports far-right commentator Milo Yiannopoulos to UK after immigration detention",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        56,
+        100,
+        120
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        56,
+        100,
+        120
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "US says far-right provocateur Milo Yiannopoulos has been deported to UK",
+          "url": "https://www.aljazeera.com/news/2026/8/29/us-says-far-right-provocateur-milo-yiannopoulos-has-been-deported-to-uk?traffic_source=rss"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Right-wing commentator Milo Yiannopoulos deported from US to UK",
+          "url": "https://www.bbc.co.uk/news/articles/cqlw52vr0dwo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Far-right media provocateur Milo Yiannopoulos deported by ICE from US to UK",
+          "url": "https://www.theguardian.com/us-news/2026/aug/29/milo-yiannopoulos-deported-us-to-uk"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    }
+  ]
+}
