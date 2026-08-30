@@ -1,0 +1,1155 @@
+{
+  "min_claim_chars": 20,
+  "max_claims_per_story": 24,
+  "calls": [
+    {
+      "label": "claims-world",
+      "cluster_ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "label": "claims-india",
+      "cluster_ids": [
+        7,
+        8
+      ]
+    }
+  ],
+  "rejected_claims": 0,
+  "rejected_clusters": 0,
+  "clusters": [
+    {
+      "cluster_id": 0,
+      "headline_hint": "Devastating Himalayan floods and glacial collapse in Nepal and Tibet leave hundreds dead and thousands missing",
+      "section": "world",
+      "batch_position": 0,
+      "claim_count": 12,
+      "distinct_outlets": 3,
+      "source_kinds": {
+        "fulltext": 12
+      },
+      "claims": [
+        {
+          "id": 1,
+          "cluster_id": 0,
+          "text": "As of Sunday, 810 people had been reported dead from floods in Nepal and Tibet, including 794 in Nepal and 16 in Tibet.",
+          "kind": "figure",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/south-asia/hunt-intensifies-for-900-missing-at-hydel-units-one-tunnel-head-located/articleshow/133636895.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 2,
+          "cluster_id": 0,
+          "text": "Search teams reported 3,048 people missing across Nepal and Tibet, with 2,502 missing in Nepal and 546 in Tibet.",
+          "kind": "figure",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/south-asia/hunt-intensifies-for-900-missing-at-hydel-units-one-tunnel-head-located/articleshow/133636895.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 3,
+          "cluster_id": 0,
+          "text": "Nepal's disaster management authority NDRRMA stated that 933 workers from hydropower projects were untraced, while the Independent Power Producers' Association Nepal listed 537 unaccounted for.",
+          "kind": "figure",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/south-asia/hunt-intensifies-for-900-missing-at-hydel-units-one-tunnel-head-located/articleshow/133636895.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 4,
+          "cluster_id": 0,
+          "text": "The Nepalese Army airlifted earth-moving machinery via helicopters to the Upper Trishuli-3A hydropower project to reach a mud-filled tunnel entry point.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/south-asia/hunt-intensifies-for-900-missing-at-hydel-units-one-tunnel-head-located/articleshow/133636895.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 5,
+          "cluster_id": 0,
+          "text": "Nepalese Army spokesperson Brig Gen Rajaram Basnet stated that rescuers located the crown head of Trishuli 3A and dug a hole to search for survivors inside the tunnel.",
+          "kind": "quote",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/south-asia/hunt-intensifies-for-900-missing-at-hydel-units-one-tunnel-head-located/articleshow/133636895.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 6,
+          "cluster_id": 0,
+          "text": "India's Ministry of External Affairs stated that 149 Indian nationals had been rescued in Nepal, while 275 Indian nationals remained missing.",
+          "kind": "figure",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/south-asia/hunt-intensifies-for-900-missing-at-hydel-units-one-tunnel-head-located/articleshow/133636895.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 7,
+          "cluster_id": 0,
+          "text": "Chinese authorities stated that 261 foreign nationals from 23 countries were among 546 missing in Gyirong, Tibet, including 49 Indians and 104 Nepalese.",
+          "kind": "figure",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/south-asia/hunt-intensifies-for-900-missing-at-hydel-units-one-tunnel-head-located/articleshow/133636895.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 8,
+          "cluster_id": 0,
+          "text": "India dispatched four relief flights carrying 68.5 tonnes of supplies to Kathmandu, along with a 13-member Indian Army tunnel-rescue team and six forensic teams.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/south-asia/hunt-intensifies-for-900-missing-at-hydel-units-one-tunnel-head-located/articleshow/133636895.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 9,
+          "cluster_id": 0,
+          "text": "Officials and experts from Nepal and China met in Kathmandu on May 27 to discuss monitoring and responding to floods, weather, and glacier hazards.",
+          "kind": "background",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/asia/nepal-china-flood-early-warnings-risks-6350661",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 10,
+          "cluster_id": 0,
+          "text": "Recovering from the Himalayan flood disaster is estimated to cost one-tenth of Nepal's annual economic output.",
+          "kind": "figure",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/asia/nepal-china-flood-early-warnings-risks-6350661",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 11,
+          "cluster_id": 0,
+          "text": "Twelve days before the disaster, China's World Meteorological Centre emailed Nepal warning of a monsoon depression and potential flash floods between August 14 and 19.",
+          "kind": "background",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/asia/nepal-china-flood-early-warnings-risks-6350661",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 12,
+          "cluster_id": 0,
+          "text": "Reports on NDTV noted 734 bodies recovered following the massive flood caused by a glacier collapse in Nepal and Tibet.",
+          "kind": "figure",
+          "outlet": "NDTV",
+          "url": "https://www.ndtv.com/world-news/nepal-flash-flood-2026-live-updates-death-count-rescue-operation-latest-news-rasuwa-nuwakot-bhote-koshi-11973405#publisher=newsstand",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 1,
+      "headline_hint": "US military launches strikes on Iranian rocket launchers on Larak Island in Strait of Hormuz",
+      "section": "world",
+      "batch_position": 1,
+      "claim_count": 12,
+      "distinct_outlets": 5,
+      "source_kinds": {
+        "fulltext": 12
+      },
+      "claims": [
+        {
+          "id": 13,
+          "cluster_id": 1,
+          "text": "US military forces struck Iranian rocket launchers near Larak Island in the Strait of Hormuz on August 30.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/world/us-strikes-iranian-rocket-launchers-near-strait-of-hormuz-after-month-long-pause-in-attacks-tehran-warns-of-response-11788124224327.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 14,
+          "cluster_id": 1,
+          "text": "Around 20% of global oil supplies normally transit through the Strait of Hormuz.",
+          "kind": "background",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/world/us-strikes-iranian-rocket-launchers-near-strait-of-hormuz-after-month-long-pause-in-attacks-tehran-warns-of-response-11788124224327.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 15,
+          "cluster_id": 1,
+          "text": "Iranian officials estimated that Iran has suffered about $270 billion in direct and indirect economic damage during the conflict.",
+          "kind": "figure",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/world/us-strikes-iranian-rocket-launchers-near-strait-of-hormuz-after-month-long-pause-in-attacks-tehran-warns-of-response-11788124224327.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 16,
+          "cluster_id": 1,
+          "text": "The United Kingdom Maritime Trade Operations reported that an unknown projectile struck an oil tanker north of Khasab, Oman, on August 29.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/world/us-strikes-iranian-rocket-launchers-near-strait-of-hormuz-after-month-long-pause-in-attacks-tehran-warns-of-response-11788124224327.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 17,
+          "cluster_id": 1,
+          "text": "US Central Command spokesman Cdr Tim Hawkins stated that Islamic Revolutionary Guard Corps forces were observed preparing to launch rockets carrying sea mines into the Strait of Hormuz.",
+          "kind": "quote",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cx2z72x5z1po?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 18,
+          "cluster_id": 1,
+          "text": "IRGC spokesman Hossein Mohebbi called the US strike a 'strategic and fatal mistake' and vowed that the US would pay economic and military consequences.",
+          "kind": "quote",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cx2z72x5z1po?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 19,
+          "cluster_id": 1,
+          "text": "Iran's Tasnim news agency reported that the US drone strike on Larak Island killed two people and injured two others.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cx2z72x5z1po?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 20,
+          "cluster_id": 1,
+          "text": "The US and Israel initiated wide-ranging strikes on Iran on February 28, beginning a war that has lasted over six months.",
+          "kind": "background",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cx2z72x5z1po?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 21,
+          "cluster_id": 1,
+          "text": "Eighteen US service members have been killed since the conflict with Iran began six months prior.",
+          "kind": "figure",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/us-forces-strike-two-iranian-launchers-irans-larak-island-us-official-says-6350801",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 22,
+          "cluster_id": 1,
+          "text": "A US source reported that Iran launched missiles targeting US forces in Jordan in apparent retaliation, with all incoming missiles intercepted.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/aug/30/us-strikes-iranian-launchers-on-larak-island-amid-strait-of-hormuz-tensions",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 23,
+          "cluster_id": 1,
+          "text": "US President Donald Trump stated that 24 commercial vessels passed through the Strait of Hormuz recently, compared to roughly 130 vessels daily before the war.",
+          "kind": "figure",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/middle-east/20260830-us-forces-strike-iranian-launchers-on-larak-island-in-strait-of-hormuz",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 24,
+          "cluster_id": 1,
+          "text": "As of August 30, the US military reported redirecting 83 commercial vessels and disabling three as part of its blockade of Iranian ports.",
+          "kind": "figure",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/middle-east/20260830-us-forces-strike-iranian-launchers-on-larak-island-in-strait-of-hormuz",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 2,
+      "headline_hint": "US and Venezuela announce 25-year oil agreement to refill US Strategic Petroleum Reserve",
+      "section": "world",
+      "batch_position": 2,
+      "claim_count": 11,
+      "distinct_outlets": 4,
+      "source_kinds": {
+        "fulltext": 11
+      },
+      "claims": [
+        {
+          "id": 25,
+          "cluster_id": 2,
+          "text": "US President Donald Trump announced that crude oil acquired from a new deal with Venezuela will be used to refill the US Strategic Petroleum Reserve.",
+          "kind": "event",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/trump-us-petroleum-reserve-venezuelan-oil-6350666",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 26,
+          "cluster_id": 2,
+          "text": "As of August 21, the US Strategic Petroleum Reserve stood near a 44-year low at approximately 290 million barrels.",
+          "kind": "figure",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/trump-us-petroleum-reserve-venezuelan-oil-6350666",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 27,
+          "cluster_id": 2,
+          "text": "Venezuelan interim President Delcy Rodríguez stated that the 25-year energy agreement with the US covers 17 strategic oilfields and targets a production of over 1.5 million barrels per day.",
+          "kind": "figure",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/trump-us-petroleum-reserve-venezuelan-oil-6350666",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 28,
+          "cluster_id": 2,
+          "text": "Delcy Rodríguez estimated the agreement could generate around $209 billion in revenue for Venezuela based on a $65 per barrel benchmark price, with roughly $19 per barrel going directly to the state.",
+          "kind": "figure",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/trump-us-petroleum-reserve-venezuelan-oil-6350666",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 29,
+          "cluster_id": 2,
+          "text": "The bilateral agreement follows the US capture of former Venezuelan President Nicolás Maduro in January to face federal drug-trafficking charges in New York.",
+          "kind": "background",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/us-news/trump-to-use-venezuelan-oil-to-refill-us-petroleum-reserve-details-of-deal-remain-unclear-11788103351560.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 30,
+          "cluster_id": 2,
+          "text": "US President Donald Trump described the agreement as 'THE BIGGEST OIL DEAL IN WORLD HISTORY'.",
+          "kind": "quote",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/us-news/trump-to-use-venezuelan-oil-to-refill-us-petroleum-reserve-details-of-deal-remain-unclear-11788103351560.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 31,
+          "cluster_id": 2,
+          "text": "A US official stated that a new company formed by the US government and an unnamed private operator received 100-year rights to untapped Venezuelan oilfields, providing the US 55% of effective output.",
+          "kind": "figure",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/us-news/trump-to-use-venezuelan-oil-to-refill-us-petroleum-reserve-details-of-deal-remain-unclear-11788103351560.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 32,
+          "cluster_id": 2,
+          "text": "US Senator Tim Kaine criticized the oil agreement, calling the arrangement 'corruption at epic scale'.",
+          "kind": "quote",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/us-news/trump-to-use-venezuelan-oil-to-refill-us-petroleum-reserve-details-of-deal-remain-unclear-11788103351560.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 33,
+          "cluster_id": 2,
+          "text": "Former PDVSA head Rafael Ramírez accused Rodríguez's administration of 'driving a dagger straight into the heart of the homeland' by handing over 65 billion barrels of reserves to the US.",
+          "kind": "quote",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/aug/30/venezuela-delcy-rodriguez-says-oil-deal-with-trump-has-endless-benefits",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 34,
+          "cluster_id": 2,
+          "text": "Dozens of left-wing protesters marched through Caracas carrying banners opposing foreign control of Venezuelan oil resources.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/aug/30/venezuela-delcy-rodriguez-says-oil-deal-with-trump-has-endless-benefits",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 35,
+          "cluster_id": 2,
+          "text": "The 25-year energy agreement between the US and Venezuela involves an estimated 65 billion barrels of Venezuelan oil reserves.",
+          "kind": "figure",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/us-and-venezuela-seal-25-year-oil-deal",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 3,
+      "headline_hint": "Iceland voters reject proposal to resume EU accession talks in national referendum",
+      "section": "world",
+      "batch_position": 3,
+      "claim_count": 12,
+      "distinct_outlets": 5,
+      "source_kinds": {
+        "fulltext": 12
+      },
+      "claims": [
+        {
+          "id": 36,
+          "cluster_id": 3,
+          "text": "In a national referendum, 52.8% of Icelandic voters rejected resuming EU accession talks while 47.2% voted in favor, with a margin of about 12,600 votes out of over 225,000 cast.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c70le8ed1plo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 37,
+          "cluster_id": 3,
+          "text": "Voter turnout for the referendum reached 82.5%, the highest in any Icelandic election since 2009.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c70le8ed1plo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 38,
+          "cluster_id": 3,
+          "text": "Iceland originally applied for EU membership in 2009 following the 2008 banking collapse, but talks were put on hold in 2013.",
+          "kind": "background",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c70le8ed1plo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 39,
+          "cluster_id": 3,
+          "text": "Fish and marine industries account for nearly 40% of Iceland's total exports.",
+          "kind": "background",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c70le8ed1plo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 40,
+          "cluster_id": 3,
+          "text": "Prime Minister Kristrún Frostadóttir stated after the referendum that the issue of EU membership would not be revisited while her government remains in office.",
+          "kind": "quote",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c70le8ed1plo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 41,
+          "cluster_id": 3,
+          "text": "Referendum results showed a geographic divide, with voters in the capital city of Reykjavík supporting EU accession while rural regions voted against.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c70le8ed1plo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 42,
+          "cluster_id": 3,
+          "text": "Reform UK leader Nigel Farage congratulated Icelanders, stating they had voted 'to keep their independence'.",
+          "kind": "quote",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c70le8ed1plo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 43,
+          "cluster_id": 3,
+          "text": "European Council President António Costa informed Prime Minister Frostadóttir that the EU 'fully respects the democratic choice' of Iceland's voters.",
+          "kind": "quote",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/aug/30/iceland-eu-accession-talks-referendum-result",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 44,
+          "cluster_id": 3,
+          "text": "France 24 reported that around 9,500 votes separated the 52.8% 'No' side from the 47.2% 'Yes' side in Iceland's EU accession referendum.",
+          "kind": "figure",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/video/20260830-iceland-rejects-eu-accession-talks",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 45,
+          "cluster_id": 3,
+          "text": "According to AFP, approximately 90% of companies in Iceland's fisheries sector opposed EU membership.",
+          "kind": "figure",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/world/fishing-sovereignty-and-economic-policy-why-iceland-voters-rejected-eu-membership-in-referendum-11788085925548.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 46,
+          "cluster_id": 3,
+          "text": "Iceland fought a series of maritime disputes with Britain in the 1970s, known as the Cod Wars, over fishing rights.",
+          "kind": "background",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/world/fishing-sovereignty-and-economic-policy-why-iceland-voters-rejected-eu-membership-in-referendum-11788085925548.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 47,
+          "cluster_id": 3,
+          "text": "Prime Minister Kristrún Frostadóttir stated in a July podcast interview that Iceland already adheres to 75% of EU rules.",
+          "kind": "quote",
+          "outlet": "NPR World",
+          "url": "https://www.npr.org/2026/08/29/nx-s1-5948759/iceland-european-union-referendum-vote",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 4,
+      "headline_hint": "NASA launches Nancy Grace Roman Space Telescope to study dark energy and exoplanets",
+      "section": "world",
+      "batch_position": 4,
+      "claim_count": 10,
+      "distinct_outlets": 3,
+      "source_kinds": {
+        "fulltext": 10
+      },
+      "claims": [
+        {
+          "id": 48,
+          "cluster_id": 4,
+          "text": "NASA launched the Nancy Grace Roman Space Telescope aboard a SpaceX rocket from the Kennedy Space Center in Florida on August 30.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/ce87e55vgpjo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 49,
+          "cluster_id": 4,
+          "text": "The Nancy Grace Roman Space Telescope features a field of vision 100 times larger than both the Hubble and James Webb space telescopes.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/ce87e55vgpjo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 50,
+          "cluster_id": 4,
+          "text": "The telescope is traveling on a 100-day journey to an orbit approximately 1 million miles from Earth.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/ce87e55vgpjo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 51,
+          "cluster_id": 4,
+          "text": "NASA administrator Nicky Fox stated that the Roman telescope is expected to discover tens of thousands or up to 100,000 new exoplanets.",
+          "kind": "quote",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/ce87e55vgpjo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 52,
+          "cluster_id": 4,
+          "text": "The telescope is named after physicist Nancy Grace Roman, who served as NASA's first chief astronomer in the 1960s and its first female executive.",
+          "kind": "background",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/ce87e55vgpjo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 53,
+          "cluster_id": 4,
+          "text": "The mission has a five-year primary lifespan with a goal to operate for up to 10 years.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/ce87e55vgpjo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 54,
+          "cluster_id": 4,
+          "text": "SpaceX launched the $4.3 billion space telescope using a Falcon Heavy rocket.",
+          "kind": "figure",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/8/30/nasa-launches-4-3bn-roman-telescope-to-uncover-universes-hidden-secrets?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 55,
+          "cluster_id": 4,
+          "text": "The telescope is heading to Lagrange Point 2, located 1.6 million kilometers (1 million miles) from Earth, to join the James Webb Space Telescope.",
+          "kind": "event",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/8/30/nasa-launches-4-3bn-roman-telescope-to-uncover-universes-hidden-secrets?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 56,
+          "cluster_id": 4,
+          "text": "The telescope's primary survey is planned to cover more than 2 billion galaxies over a period of more than one year.",
+          "kind": "figure",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/8/30/nasa-launches-4-3bn-roman-telescope-to-uncover-universes-hidden-secrets?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 57,
+          "cluster_id": 4,
+          "text": "The Nancy Grace Roman Space Telescope reached orbit 10 minutes after liftoff.",
+          "kind": "figure",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/video/20260830-nasa-launches-new-space-telescope",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 5,
+      "headline_hint": "Google Maps renames Lake Ontario to 'Lake America' for US users following Trump executive order",
+      "section": "world",
+      "batch_position": 5,
+      "claim_count": 12,
+      "distinct_outlets": 5,
+      "source_kinds": {
+        "fulltext": 12
+      },
+      "claims": [
+        {
+          "id": 58,
+          "cluster_id": 5,
+          "text": "President Donald Trump signed an executive order directing US federal agencies to rename Lake Ontario as 'Lake America'.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/us-news/2026/aug/30/canada-trump-lake-ontario-name",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 59,
+          "cluster_id": 5,
+          "text": "Google updated Google Maps to label Lake Ontario as 'Lake America' for users located inside the United States.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/us-news/2026/aug/30/canada-trump-lake-ontario-name",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 60,
+          "cluster_id": 5,
+          "text": "Canadian Prime Minister Mark Carney rejected the renaming, stating that Ontario originates from a 400-year-old Wendat word meaning 'the lake is beautiful, the lake is great'.",
+          "kind": "quote",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/us-news/2026/aug/30/canada-trump-lake-ontario-name",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 61,
+          "cluster_id": 5,
+          "text": "Ontario Premier Doug Ford unveiled a two-story billboard near Grimsby, Ontario, reading 'Lake Ontario. Now and Always.'",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/us-news/2026/aug/30/canada-trump-lake-ontario-name",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 62,
+          "cluster_id": 5,
+          "text": "Wendat Nation Grand Chief Pierre Picard condemned the US renaming order as an attempt to erase Indigenous history and identity.",
+          "kind": "quote",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/us-news/2026/aug/30/canada-trump-lake-ontario-name",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 63,
+          "cluster_id": 5,
+          "text": "The naming dispute occurs alongside an escalating trade conflict in which the US imposed a 50% tariff on Canadian steel and Canada issued retaliatory tariffs.",
+          "kind": "background",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/us-news/2026/aug/30/canada-trump-lake-ontario-name",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 64,
+          "cluster_id": 5,
+          "text": "Google stated that Canadian users will continue to see 'Lake Ontario' on Google Maps, while users outside the US and Canada will see both names.",
+          "kind": "event",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/google-maps-renames-lake-ontario-lake-america-in-us-not-canada-6350646",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 65,
+          "cluster_id": 5,
+          "text": "Apple Maps continued to display 'Lake Ontario' for US users as of August 30.",
+          "kind": "event",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/google-maps-renames-lake-ontario-lake-america-in-us-not-canada-6350646",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 66,
+          "cluster_id": 5,
+          "text": "Ontario Premier Doug Ford stated on ABC's 'This Week' that Trump's executive order was 'like something out of Saturday Night Live'.",
+          "kind": "quote",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/google-maps-renames-lake-ontario-lake-america-in-us-not-canada-6350646",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 67,
+          "cluster_id": 5,
+          "text": "President Trump previously issued an executive order renaming the Gulf of Mexico as the 'Gulf of America' in January 2025.",
+          "kind": "background",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/8/30/google-maps-renames-lake-ontario-after-trumps-decree-on-lake-america?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 68,
+          "cluster_id": 5,
+          "text": "Canadian Prime Minister Mark Carney walked away from US trade negotiations on August 21, calling the proposed terms a 'bad deal'.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/us-news/lake-ontario-is-now-lake-america-on-google-maps-for-us-users-after-trump-s-renaming-order-11788102297032.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 69,
+          "cluster_id": 5,
+          "text": "New York Governor Kathy Hochul announced that New York State would not adopt the name 'Lake America' for the lake.",
+          "kind": "event",
+          "outlet": "NPR World",
+          "url": "https://www.npr.org/2026/08/30/nx-s1-5949254/lake-ontario-america-doug-ford-trump-sign-google",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 6,
+      "headline_hint": "Ferry carrying nearly 270 passengers capsizes and sinks off northern Cyprus, leaving at least eight dead",
+      "section": "world",
+      "batch_position": 6,
+      "claim_count": 11,
+      "distinct_outlets": 4,
+      "source_kinds": {
+        "fulltext": 11
+      },
+      "claims": [
+        {
+          "id": 70,
+          "cluster_id": 6,
+          "text": "At least eight people died and more than a dozen were left missing after a passenger ferry capsized off northern Cyprus.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c770jyd4l7lo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 71,
+          "cluster_id": 6,
+          "text": "Prime Minister Ünal Üstel of the self-proclaimed Turkish Republic of Northern Cyprus stated the ferry carried 259 passengers and eight crew members.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c770jyd4l7lo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 72,
+          "cluster_id": 6,
+          "text": "Authorities detained the ship's captain and seven crew members as part of an investigation into the disaster.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c770jyd4l7lo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 73,
+          "cluster_id": 6,
+          "text": "TRNC Transport Minister Erhan Arıklı reported that the high-speed 40-meter Filo Jet ferry completely sank on Sunday evening.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c770jyd4l7lo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 74,
+          "cluster_id": 6,
+          "text": "Civilian boat captain Mustafa Koc rescued approximately 65 passengers from the water.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c770jyd4l7lo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 75,
+          "cluster_id": 6,
+          "text": "TRNC Prime Minister Ünal Üstel told Turkish broadcaster TRT that 237 people had been rescued while 18 remained missing.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/live/2026/aug/30/northern-cyprus-ferry-capsizes-latest-news-updates",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 76,
+          "cluster_id": 6,
+          "text": "TRNC officials reported that the ferry sank to a depth of 514 meters (1,686 feet) approximately 4 nautical miles off the coast.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/live/2026/aug/30/northern-cyprus-ferry-capsizes-latest-news-updates",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 77,
+          "cluster_id": 6,
+          "text": "Survivor Efe Multici stated that the ferry slammed violently into the water before the front left side burst open and water flooded in.",
+          "kind": "quote",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/live/2026/aug/30/northern-cyprus-ferry-capsizes-latest-news-updates",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 78,
+          "cluster_id": 6,
+          "text": "France 24 reported initial statements from the Turkish ambassador to Nicosia that 172 people were rescued and 89 were missing.",
+          "kind": "figure",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/video/20260830-cyprus-ferry-capsizes-with-hundreds-of-board",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 79,
+          "cluster_id": 6,
+          "text": "Livemint reported that North Cyprus authorities stated 241 people were rescued from the capsized vessel.",
+          "kind": "figure",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/world/ferry-carrying-267-sinks-off-northern-cyprus-8-dead-17-missing-captain-and-7-crew-arrested-11788117959634.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 80,
+          "cluster_id": 6,
+          "text": "Turkey deployed six navy ships, five coast guard vessels, and two helicopters to assist in the search and rescue operation.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/world/ferry-carrying-267-sinks-off-northern-cyprus-8-dead-17-missing-captain-and-7-crew-arrested-11788117959634.html",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 7,
+      "headline_hint": "India and Uzbekistan elevate relationship to Comprehensive Strategic Partnership and sign uranium supply pact",
+      "section": "india",
+      "batch_position": 0,
+      "claim_count": 16,
+      "distinct_outlets": 4,
+      "source_kinds": {
+        "fulltext": 16
+      },
+      "claims": [
+        {
+          "id": 81,
+          "cluster_id": 7,
+          "text": "India and Uzbekistan upgraded their bilateral relations to a comprehensive strategic partnership during talks between Prime Minister Narendra Modi and President Shavkat Mirziyoyev in Tashkent.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/india-uzbekistan-target-long-term-uranium-pact/articleshow/133636838.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 82,
+          "cluster_id": 7,
+          "text": "India and Uzbekistan set an annual bilateral trade target of $5 billion by 2030.",
+          "kind": "figure",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/india-uzbekistan-target-long-term-uranium-pact/articleshow/133636838.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 83,
+          "cluster_id": 7,
+          "text": "PM Narendra Modi announced that India would enter into a long-term arrangement for the supply of uranium from Uzbekistan.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/india-uzbekistan-target-long-term-uranium-pact/articleshow/133636838.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 84,
+          "cluster_id": 7,
+          "text": "India and Uzbekistan agreed to establish a foreign minister-level coordination council to guide bilateral cooperation.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/india-uzbekistan-target-long-term-uranium-pact/articleshow/133636838.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 85,
+          "cluster_id": 7,
+          "text": "India and Uzbekistan signed 11 MoUs covering culture, education, mining, Ayurveda, tourism, and the restoration of Buddhist sites.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/india-uzbekistan-target-long-term-uranium-pact/articleshow/133636838.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 86,
+          "cluster_id": 7,
+          "text": "Annual trade between India and Uzbekistan stands at $1.32 billion.",
+          "kind": "figure",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/india-uzbekistan-target-long-term-uranium-pact/articleshow/133636838.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 87,
+          "cluster_id": 7,
+          "text": "Prime Minister Narendra Modi was conferred with Uzbekistan's Oliy Darajali Do'stlik Order on August 30, 2026.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/thirty-six-honorary-awards-bestowed-upon-prime-minister-narendra-modi-by-other-countries-graphics/article71206617.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 88,
+          "cluster_id": 7,
+          "text": "The Oliy Darajali Do'stlik Order marks the 36th honorary award conferred upon Prime Minister Narendra Modi since 2016.",
+          "kind": "figure",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/thirty-six-honorary-awards-bestowed-upon-prime-minister-narendra-modi-by-other-countries-graphics/article71206617.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 89,
+          "cluster_id": 7,
+          "text": "Commerce ministry data shows bilateral trade between India and Uzbekistan stood at $1.3 billion in 2025, a 33.3% increase from the previous year.",
+          "kind": "figure",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/india-uzbekistan-target-5-billion-trade-by-2030-move-to-cut-barriers-11788094613691.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 90,
+          "cluster_id": 7,
+          "text": "Uzbekistan expressed appreciation for India's support regarding Uzbekistan's accession to the World Trade Organization.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/india-uzbekistan-target-5-billion-trade-by-2030-move-to-cut-barriers-11788094613691.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 91,
+          "cluster_id": 7,
+          "text": "Uzbekistan was the first stop in Prime Minister Narendra Modi's two-nation tour, which also includes a visit to Kyrgyzstan for the SCO Summit.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/uranium-supply-deal-usd-5-billion-annual-trade-by-2030-india-uzbekistan-strengthen-ties-during-pm-modi-visit-101788089804254.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 92,
+          "cluster_id": 7,
+          "text": "Sibi George, secretary (West) in the external affairs ministry, stated that India and Uzbekistan are closing in on signing an agreement for uranium supply very shortly.",
+          "kind": "quote",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/uranium-supply-deal-usd-5-billion-annual-trade-by-2030-india-uzbekistan-strengthen-ties-during-pm-modi-visit-101788089804254.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 93,
+          "cluster_id": 7,
+          "text": "President Shavkat Mirziyoyev announced the introduction of a 30-day visa-free regime for Indian citizens.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/uranium-supply-deal-usd-5-billion-annual-trade-by-2030-india-uzbekistan-strengthen-ties-during-pm-modi-visit-101788089804254.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 94,
+          "cluster_id": 7,
+          "text": "India announced a grant of $1 million for afforestation initiatives in the Aral Sea region.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/uranium-supply-deal-usd-5-billion-annual-trade-by-2030-india-uzbekistan-strengthen-ties-during-pm-modi-visit-101788089804254.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 95,
+          "cluster_id": 7,
+          "text": "NPCI International Payments Ltd signed a commercial agreement with Uzbekistan's National Interbank Processing Centre JSC to allow Indian UPI apps to scan national QR codes in Uzbekistan.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/uranium-supply-deal-usd-5-billion-annual-trade-by-2030-india-uzbekistan-strengthen-ties-during-pm-modi-visit-101788089804254.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 96,
+          "cluster_id": 7,
+          "text": "Prime Minister Narendra Modi arrived in Tashkent on August 29, 2026, for a two-day state visit.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/india-uzbekistan-agree-to-deepen-cooperation-trade-digital-connectivity-pm-modi/article71407371.ece",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 8,
+      "headline_hint": "Cockroach Janta Party movement gains momentum as Sonam Wangchuk and activists address political ambitions and planned march",
+      "section": "india",
+      "batch_position": 1,
+      "claim_count": 16,
+      "distinct_outlets": 4,
+      "source_kinds": {
+        "fulltext": 16
+      },
+      "claims": [
+        {
+          "id": 97,
+          "cluster_id": 8,
+          "text": "Climate activist Sonam Wangchuk stated on the Prakhar Gupta Xperience podcast that Cockroach Janta Party movement organisers appeared to have political ambitions, which he called normal.",
+          "kind": "quote",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/cjp-netas-not-saints-nothing-wrong-in-having-political-ambitions-wangchuk/articleshow/133637108.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 98,
+          "cluster_id": 8,
+          "text": "Sonam Wangchuk advised CJP organizers to maintain the platform as a neutral, apolitical pressure group to retain supporter trust.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/cjp-netas-not-saints-nothing-wrong-in-having-political-ambitions-wangchuk/articleshow/133637108.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 99,
+          "cluster_id": 8,
+          "text": "The Cockroach Janta Party movement led protests that resulted in the resignation of former Education Minister Dharmendra Pradhan.",
+          "kind": "background",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/opinion/op-ed/should-the-cjp-be-a-political-party/article71408640.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 100,
+          "cluster_id": 8,
+          "text": "The 1979 Assam student agitation led by AASU transformed into the Asom Gana Parishad political party, which formed the Assam government in 1985.",
+          "kind": "background",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/opinion/op-ed/should-the-cjp-be-a-political-party/article71408640.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 101,
+          "cluster_id": 8,
+          "text": "The Tamilaga Vettri Kazhagam party, led by C. Joseph Vijay, won and formed the government in Tamil Nadu in 2026.",
+          "kind": "background",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/opinion/op-ed/should-the-cjp-be-a-political-party/article71408640.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 102,
+          "cluster_id": 8,
+          "text": "Cockroach Janta Party founder Abhijeet Dipke stated that the BJP believes it has grown bigger than the RSS.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/bjp-should-listen-to-mohan-bhagwat-cjp-abhijeet-dipke-not-a-hindu-new-york-remark-rss-chief-power-party-modi-news-101788102969521.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 103,
+          "cluster_id": 8,
+          "text": "RSS chief Mohan Bhagwat stated in New York that if any Hindu thinks there should be no Muslims in Bharat, he will not remain a Hindu.",
+          "kind": "quote",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/bjp-should-listen-to-mohan-bhagwat-cjp-abhijeet-dipke-not-a-hindu-new-york-remark-rss-chief-power-party-modi-news-101788102969521.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 104,
+          "cluster_id": 8,
+          "text": "Abhijeet Dipke criticized Prime Minister Narendra Modi for describing protesting Gen Z individuals as 'Dimagi Naxal'.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/bjp-should-listen-to-mohan-bhagwat-cjp-abhijeet-dipke-not-a-hindu-new-york-remark-rss-chief-power-party-modi-news-101788102969521.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 105,
+          "cluster_id": 8,
+          "text": "On August 15, the Cockroach Janta Party launched a campaign organizing volunteer audits of government schools to document basic facilities.",
+          "kind": "event",
+          "outlet": "DW World",
+          "url": "https://www.dw.com/en/india-s-citizen-led-school-audits-test-limits-of-activism/a-78545789?maca=en-rss-en-world-4025-rdf",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 106,
+          "cluster_id": 8,
+          "text": "The Cockroach Janta Party set an initial goal to audit 100 rural government schools over two months.",
+          "kind": "figure",
+          "outlet": "DW World",
+          "url": "https://www.dw.com/en/india-s-citizen-led-school-audits-test-limits-of-activism/a-78545789?maca=en-rss-en-world-4025-rdf",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 107,
+          "cluster_id": 8,
+          "text": "Education Ministry data shows India has over one million government schools, accounting for nearly 70% of all schools while serving under half of the country's 247 million students.",
+          "kind": "background",
+          "outlet": "DW World",
+          "url": "https://www.dw.com/en/india-s-citizen-led-school-audits-test-limits-of-activism/a-78545789?maca=en-rss-en-world-4025-rdf",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 108,
+          "cluster_id": 8,
+          "text": "Authorities in Maharashtra and Rajasthan objected to CJP school audits conducted without prior official permission.",
+          "kind": "event",
+          "outlet": "DW World",
+          "url": "https://www.dw.com/en/india-s-citizen-led-school-audits-test-limits-of-activism/a-78545789?maca=en-rss-en-world-4025-rdf",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 109,
+          "cluster_id": 8,
+          "text": "Uttar Pradesh Chief Minister Yogi Adityanath ordered on-the-spot checks of school facilities and directed police to register cases over misleading school videos.",
+          "kind": "event",
+          "outlet": "DW World",
+          "url": "https://www.dw.com/en/india-s-citizen-led-school-audits-test-limits-of-activism/a-78545789?maca=en-rss-en-world-4025-rdf",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 110,
+          "cluster_id": 8,
+          "text": "Retired Delhi Police officer Rajendra Singh filed a petition in the Supreme Court seeking restrictions on unpermitted marches in Lutyens' Delhi.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/sc-plea-seeks-curbs-on-cjps-sept-5-protest-march-in-lutyens-delhi/articleshow/133632277.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 111,
+          "cluster_id": 8,
+          "text": "The Cockroach Janta Party announced plans for a September 5 protest march from India Gate to Delhi Police Headquarters.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/sc-plea-seeks-curbs-on-cjps-sept-5-protest-march-in-lutyens-delhi/articleshow/133632277.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 112,
+          "cluster_id": 8,
+          "text": "The Supreme Court petition requests postponing or regulating organized demonstrations in Lutyens' Delhi until after the BRICS Summit scheduled for September 12-13.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/sc-plea-seeks-curbs-on-cjps-sept-5-protest-march-in-lutyens-delhi/articleshow/133632277.cms",
+          "source_kind": "fulltext"
+        }
+      ]
+    }
+  ],
+  "clusters_with_no_claims": []
+}
