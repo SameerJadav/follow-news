@@ -1,0 +1,878 @@
+{
+  "dials": {
+    "WEIGHT_FLOOR": 5,
+    "TIER_WEIGHT": {
+      "lead": 4,
+      "major": 2,
+      "notable": 0
+    },
+    "WIKI_BONUS": 2,
+    "HARD_CAP": 12,
+    "MIN_STORIES_IF_ANY": 3,
+    "MAX_ARTICLES_PER_STORY": 5
+  },
+  "floor_relaxed": false,
+  "kept_weights": [
+    16,
+    10,
+    8,
+    7,
+    7,
+    6,
+    6,
+    8,
+    6
+  ],
+  "per_section": {
+    "world": 7,
+    "india": 2
+  },
+  "clusters": [
+    {
+      "headline_hint": "Devastating Himalayan floods and glacial collapse in Nepal and Tibet leave hundreds dead and thousands missing",
+      "section": "world",
+      "category": "disaster",
+      "tier_requested": "lead",
+      "article_ids": [
+        16,
+        28,
+        38,
+        50,
+        84,
+        86,
+        87,
+        104,
+        126,
+        129,
+        131,
+        143,
+        145,
+        148,
+        155,
+        178,
+        182,
+        183,
+        202,
+        205,
+        208,
+        214,
+        219,
+        224,
+        232,
+        264,
+        271,
+        280,
+        285,
+        290,
+        293,
+        299,
+        301,
+        309,
+        315
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        16,
+        28,
+        38,
+        50,
+        84,
+        86,
+        87,
+        104,
+        126,
+        129,
+        131,
+        143,
+        145,
+        148,
+        155,
+        178,
+        182,
+        183,
+        202,
+        205,
+        208,
+        214,
+        219,
+        224,
+        232,
+        264,
+        271,
+        280,
+        285,
+        290,
+        293,
+        299,
+        301,
+        309,
+        315
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 12,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 16,
+      "weight_terms": {
+        "distinct_outlets": 12,
+        "tier_weight": 4,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "Nepal Floods: Hunt intensifies for 900 missing at hydel units, one tunnel head located",
+          "url": "https://timesofindia.indiatimes.com/world/south-asia/hunt-intensifies-for-900-missing-at-hydel-units-one-tunnel-head-located/articleshow/133636895.cms"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "Getting aid to Nepal's flood survivors is the next challenge",
+          "url": "https://www.npr.org/2026/08/30/nx-s1-5948789/getting-aid-to-nepals-flood-survivors-is-the-next-challenge"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Nepal flood relief vehicles trapped as heavy rain turns roads to mud",
+          "url": "https://www.bbc.co.uk/news/videos/c5ydwy004v0o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "Before flood catastrophe, Nepal asked China for early warnings as risks mounted",
+          "url": "https://www.channelnewsasia.com/asia/nepal-china-flood-early-warnings-risks-6350661"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "Nepal Flash Flood Highlights : 734 Bodies Recovered, 275 Indians Among Nearly 2,500 Still Missing",
+          "url": "https://www.ndtv.com/world-news/nepal-flash-flood-2026-live-updates-death-count-rescue-operation-latest-news-rasuwa-nuwakot-bhote-koshi-11973405#publisher=newsstand"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 30
+    },
+    {
+      "headline_hint": "US military launches strikes on Iranian rocket launchers on Larak Island in Strait of Hormuz",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "major",
+      "article_ids": [
+        13,
+        19,
+        22,
+        24,
+        41,
+        43
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        13,
+        19,
+        22,
+        24,
+        41,
+        43
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 6,
+      "wiki_backed": true,
+      "wiki_event": "A spokesperson for the United States Central Command reports that the U.S. military has launched strikes on two Iranian rocket launchers at Larak Island in the strait that were used by Islamic Revolutionary Guard Corps, its first strikes ag",
+      "weight": 10,
+      "weight_terms": {
+        "distinct_outlets": 6,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Livemint",
+          "title": "US strikes Iranian rocket launchers near Strait of Hormuz after month-long pause in attacks; Tehran warns of response",
+          "url": "https://www.livemint.com/news/world/us-strikes-iranian-rocket-launchers-near-strait-of-hormuz-after-month-long-pause-in-attacks-tehran-warns-of-response-11788124224327.html"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "US strikes Iranian launchers on Larak Island in first known attack in weeks",
+          "url": "https://www.bbc.co.uk/news/articles/cx2z72x5z1po?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "US forces strike two Iranian launchers on Iran's Larak island, US official says",
+          "url": "https://www.channelnewsasia.com/world/us-forces-strike-two-iranian-launchers-irans-larak-island-us-official-says-6350801"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "US strikes Iranian launchers on Larak island amid strait of Hormuz tensions",
+          "url": "https://www.theguardian.com/world/2026/aug/30/us-strikes-iranian-launchers-on-larak-island-amid-strait-of-hormuz-tensions"
+        },
+        {
+          "outlet": "France 24",
+          "title": "US forces strike Iranian launchers on Larak island in Strait of Hormuz",
+          "url": "https://www.france24.com/en/middle-east/20260830-us-forces-strike-iranian-launchers-on-larak-island-in-strait-of-hormuz"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 1
+    },
+    {
+      "headline_hint": "Ferry carrying nearly 270 passengers capsizes and sinks off northern Cyprus, leaving at least eight dead",
+      "section": "world",
+      "category": "disaster",
+      "tier_requested": "major",
+      "article_ids": [
+        45,
+        46,
+        48,
+        64,
+        186,
+        207,
+        223,
+        237,
+        241
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        45,
+        46,
+        48,
+        64,
+        186,
+        207,
+        223,
+        237,
+        241
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 6,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Livemint",
+          "title": "World News Today Live Updates on August 31, 2026 : Ferry carrying 267 sinks off Northern Cyprus; 8 dead, 17 missing; Captain and 7 crew arrested",
+          "url": "https://www.livemint.com/news/world/total-world-latest-news-on-august-31-2026-live-updates-11788120672058.html"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Eight killed and others missing after ferry capsizes off northern Cyprus",
+          "url": "https://www.bbc.co.uk/news/articles/c770jyd4l7lo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Captain and crew arrested after at least eight die in northern Cyprus ferry disaster – as it happened",
+          "url": "https://www.theguardian.com/world/live/2026/aug/30/northern-cyprus-ferry-capsizes-latest-news-updates"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Cyprus: Ferry capsizes with hundreds on board",
+          "url": "https://www.france24.com/en/video/20260830-cyprus-ferry-capsizes-with-hundreds-of-board"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Ferry carrying 267 sinks off Northern Cyprus; 8 dead, 17 missing; Captain and 7 crew arrested",
+          "url": "https://www.livemint.com/news/world/ferry-carrying-267-sinks-off-northern-cyprus-8-dead-17-missing-captain-and-7-crew-arrested-11788117959634.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 4
+    },
+    {
+      "headline_hint": "Iceland voters reject proposal to resume EU accession talks in national referendum",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        169,
+        194,
+        196,
+        256,
+        275,
+        313
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        169,
+        194,
+        196,
+        256,
+        275,
+        313
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 5,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "BBC World",
+          "title": "Iceland votes against restarting EU membership talks",
+          "url": "https://www.bbc.co.uk/news/articles/c70le8ed1plo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Iceland rejects EU accession talks after divisive referendum campaign",
+          "url": "https://www.theguardian.com/world/2026/aug/30/iceland-eu-accession-talks-referendum-result"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Iceland rejects EU accession talks",
+          "url": "https://www.france24.com/en/video/20260830-iceland-rejects-eu-accession-talks"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "'Fishing, sovereignty and economic policy': Why Iceland voters rejected EU membership in referendum",
+          "url": "https://www.livemint.com/news/world/fishing-sovereignty-and-economic-policy-why-iceland-voters-rejected-eu-membership-in-referendum-11788085925548.html"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "Icelanders vote 'no' to talks aimed at joining the EU in close referendum",
+          "url": "https://www.npr.org/2026/08/29/nx-s1-5948759/iceland-european-union-referendum-vote"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 1
+    },
+    {
+      "headline_hint": "US and Venezuela announce 25-year oil agreement to refill US Strategic Petroleum Reserve",
+      "section": "world",
+      "category": "economy",
+      "tier_requested": "major",
+      "article_ids": [
+        62,
+        154,
+        189,
+        243,
+        250,
+        308
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        62,
+        154,
+        189,
+        243,
+        250,
+        308
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 6,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 8,
+      "weight_terms": {
+        "distinct_outlets": 6,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Channel News Asia",
+          "title": "Trump says US will refill Strategic Petroleum Reserve using Venezuelan oil",
+          "url": "https://www.channelnewsasia.com/world/trump-us-petroleum-reserve-venezuelan-oil-6350666"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Trump to use Venezuelan oil to refill US petroleum reserve; details of deal remain unclear",
+          "url": "https://www.livemint.com/news/us-news/trump-to-use-venezuelan-oil-to-refill-us-petroleum-reserve-details-of-deal-remain-unclear-11788103351560.html"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Venezuela’s Delcy Rodríguez defends ‘endless’ benefits of her oil deal with Trump",
+          "url": "https://www.theguardian.com/world/2026/aug/30/venezuela-delcy-rodriguez-says-oil-deal-with-trump-has-endless-benefits"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "Energy experts have doubts about Trump's newly proposed Venezuelan oil deal",
+          "url": "https://www.npr.org/2026/08/30/nx-s1-5948708/energy-experts-have-doubts-about-trumps-newly-proposed-venezuelan-oil-deal"
+        },
+        {
+          "outlet": "France 24",
+          "title": "US and Venezuela seal 25-year oil deal",
+          "url": "https://www.france24.com/en/us-and-venezuela-seal-25-year-oil-deal"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 1
+    },
+    {
+      "headline_hint": "NASA launches Nancy Grace Roman Space Telescope to study dark energy and exoplanets",
+      "section": "world",
+      "category": "science",
+      "tier_requested": "major",
+      "article_ids": [
+        74,
+        111,
+        195
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        74,
+        111,
+        195
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 3,
+      "wiki_backed": true,
+      "wiki_event": "NASA launches the Nancy Grace Roman Space Telescope aboard a Falcon Heavy rocket from Florida, United States, to survey the universe, study dark matter and dark energy, and search for exoplanets and supernovae.",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "BBC World",
+          "title": "'A giant leap forward': Nasa launches powerful new space telescope",
+          "url": "https://www.bbc.co.uk/news/articles/ce87e55vgpjo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "NASA launches $4.3bn Roman Telescope to uncover universe’s hidden secrets",
+          "url": "https://www.aljazeera.com/news/2026/8/30/nasa-launches-4-3bn-roman-telescope-to-uncover-universes-hidden-secrets?traffic_source=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "NASA launches new space telescope",
+          "url": "https://www.france24.com/en/video/20260830-nasa-launches-new-space-telescope"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Google Maps renames Lake Ontario to 'Lake America' for US users following Trump executive order",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        72,
+        128,
+        146,
+        161,
+        201,
+        209
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        72,
+        128,
+        146,
+        161,
+        201,
+        209
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 6,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 6,
+      "weight_terms": {
+        "distinct_outlets": 6,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "Canada erects giant ‘Lake Ontario’ sign as spat with Trump over name escalates",
+          "url": "https://www.theguardian.com/us-news/2026/aug/30/canada-trump-lake-ontario-name"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "Google Maps renames Lake Ontario 'Lake America' in US - but not Canada",
+          "url": "https://www.channelnewsasia.com/world/google-maps-renames-lake-ontario-lake-america-in-us-not-canada-6350646"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Google Maps renames Lake Ontario after Trump’s decree on ‘Lake America’",
+          "url": "https://www.aljazeera.com/news/2026/8/30/google-maps-renames-lake-ontario-after-trumps-decree-on-lake-america?traffic_source=rss"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Lake Ontario is now ‘Lake America’ on Google Maps for US users after Trump’s renaming order",
+          "url": "https://www.livemint.com/news/us-news/lake-ontario-is-now-lake-america-on-google-maps-for-us-users-after-trump-s-renaming-order-11788102297032.html"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "Canada claps back at Trump's efforts to rename Lake Ontario as 'Lake America'",
+          "url": "https://www.npr.org/2026/08/30/nx-s1-5949254/lake-ontario-america-doug-ford-trump-sign-google"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 1
+    },
+    {
+      "headline_hint": "Trump calls for FCC action against NBC anchor Kristen Welker over election endorsement coverage",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        56,
+        119,
+        127,
+        139
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        56,
+        119,
+        127,
+        139
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Livemint",
+          "title": "Trump targets NBC host Kristen Welker, demands FCC action over her ‘mixed results’ assessment of his endorsements",
+          "url": "https://www.livemint.com/news/us-news/trump-targets-nbc-host-kristen-welker-demands-fcc-action-over-her-mixed-results-assessment-of-his-endorsements-11788115752932.html"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Trump threatens to report journalist Kristen Welker to broadcast regulator",
+          "url": "https://www.aljazeera.com/news/2026/8/30/trump-threatens-to-report-journalist-kristen-welker-to-broadcast-regulator?traffic_source=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Trump says NBC’s Kristen ‌Welker should face ‘punishment’ from FCC",
+          "url": "https://www.theguardian.com/us-news/2026/aug/30/trump-nbc-kristen-welker-fcc"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Trump says NBC journalist to be reported to FCC for ‘punishment’ over endorsement coverage",
+          "url": "https://www.france24.com/en/americas/20260830-trump-says-nbc-journalist-to-be-reported-to-fcc-for-punishment-over-endorsement-coverage"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Niger military repels airbase mutiny attempt with assistance from Russian forces",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "notable",
+      "article_ids": [
+        160,
+        185
+      ],
+      "verdict": "cut:below_floor(2<5)",
+      "valid_ids": [
+        160,
+        185
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 2,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "BBC World",
+          "title": "Russia says it helped to repel Niger attempted coup",
+          "url": "https://www.bbc.co.uk/news/articles/c5ye8egg596o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Niger junta puts down mutiny with help from Russia's Africa Corps",
+          "url": "https://www.france24.com/en/africa/20260830-niger-junta-aided-by-russian-paramilitary-forces-regains-control-after-mutiny"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Swiss police launch manhunt after shooting at rave in Aarau leaves one dead and five injured",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "notable",
+      "article_ids": [
+        58,
+        107,
+        192,
+        282
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        58,
+        107,
+        192,
+        282
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "Swiss police launch manhunt after rave shooting; terrorism among possible motives",
+          "url": "https://timesofindia.indiatimes.com/world/europe/manhunt-underway-in-switzerland-after-rave-shooting-police-say-terrorism-possible-motive/articleshow/133636515.cms"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Manhunt after shooting at Swiss rave kills woman, 22, and injures five",
+          "url": "https://www.bbc.co.uk/news/articles/c9qr750je1go?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Woman, 22, killed and five injured in shooting at Swiss rave",
+          "url": "https://www.theguardian.com/world/2026/aug/30/shooting-rave-party-switzerland"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Gunman kills one at Swiss rave party",
+          "url": "https://www.france24.com/en/gunman-kills-one-at-swiss-rave-party"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "India and Uzbekistan elevate relationship to Comprehensive Strategic Partnership and sign uranium supply pact",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "lead",
+      "article_ids": [
+        27,
+        68,
+        162,
+        197,
+        239,
+        242,
+        261,
+        269
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        27,
+        68,
+        162,
+        197,
+        239,
+        242,
+        261,
+        269
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 8,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 4,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "India, Uzbekistan target long-term uranium pact, set annual trade target of $5 bn",
+          "url": "https://timesofindia.indiatimes.com/india/india-uzbekistan-target-long-term-uranium-pact/articleshow/133636838.cms"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "PM Modi’s 36 international honours, at a glance | Graphics",
+          "url": "https://www.thehindu.com/news/national/thirty-six-honorary-awards-bestowed-upon-prime-minister-narendra-modi-by-other-countries-graphics/article71206617.ece"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "India, Uzbekistan target $5 billion trade by 2030, move to cut barriers",
+          "url": "https://www.livemint.com/news/india/india-uzbekistan-target-5-billion-trade-by-2030-move-to-cut-barriers-11788094613691.html"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Uranium supply deal, $5 billion annual trade by 2030: India-Uzbekistan strengthen ties during PM Modi's visit",
+          "url": "https://www.hindustantimes.com/india-news/uranium-supply-deal-usd-5-billion-annual-trade-by-2030-india-uzbekistan-strengthen-ties-during-pm-modi-visit-101788089804254.html"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "India, Uzbekistan upgrade ties to comprehensive strategic partnership; set $5 bn trade target",
+          "url": "https://www.thehindu.com/news/national/india-uzbekistan-agree-to-deepen-cooperation-trade-digital-connectivity-pm-modi/article71407371.ece"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 3
+    },
+    {
+      "headline_hint": "Cockroach Janta Party movement gains momentum as Sonam Wangchuk and activists address political ambitions and planned march",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        8,
+        49,
+        175,
+        176,
+        184,
+        220,
+        240,
+        273,
+        287
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        8,
+        49,
+        175,
+        176,
+        184,
+        220,
+        240,
+        273,
+        287
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 6,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "'CJP netas not saints, nothing wrong in having political ambitions': Wangchuk",
+          "url": "https://timesofindia.indiatimes.com/india/cjp-netas-not-saints-nothing-wrong-in-having-political-ambitions-wangchuk/articleshow/133637108.cms"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "Should the CJP be a political party?",
+          "url": "https://www.thehindu.com/opinion/op-ed/should-the-cjp-be-a-political-party/article71408640.ece"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "‘They should listen to Mohan Bhagwat’: CJP's Abhijeet Dipke says BJP in power because of RSS",
+          "url": "https://www.hindustantimes.com/india-news/bjp-should-listen-to-mohan-bhagwat-cjp-abhijeet-dipke-not-a-hindu-new-york-remark-rss-chief-power-party-modi-news-101788102969521.html"
+        },
+        {
+          "outlet": "DW World",
+          "title": "India's citizen-led school audits test limits of activism",
+          "url": "https://www.dw.com/en/india-s-citizen-led-school-audits-test-limits-of-activism/a-78545789?maca=en-rss-en-world-4025-rdf"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "SC plea seeks curbs on CJP’s Sept 5 protest march in Lutyens’ Delhi",
+          "url": "https://timesofindia.indiatimes.com/india/sc-plea-seeks-curbs-on-cjps-sept-5-protest-march-in-lutyens-delhi/articleshow/133632277.cms"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 4
+    },
+    {
+      "headline_hint": "NEET-PG 2026 exam disrupted by Jaipur power outage, retest scheduled for affected candidates",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        12,
+        294
+      ],
+      "verdict": "cut:below_floor(2<5)",
+      "valid_ids": [
+        12,
+        294
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 2,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "NEET-PG 2026 conducted smoothly; retest on Sept 5 for Jaipur candidates hit by glitch",
+          "url": "https://timesofindia.indiatimes.com/india/neet-pg-2026-smooth-retest-for-2-4k-jaipur-kids-hit-by-glitch/articleshow/133637088.cms"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "NEET PG exam rescheduled for nearly 300 candidates over power outage in Jaipur",
+          "url": "https://www.hindustantimes.com/india-news/neet-pg-exam-rescheduled-for-nearly-300-candidates-over-power-outage-in-jaipur-101788078328238.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "IAS officer Divya Mittal resigns after 13 years of civil service in Uttar Pradesh",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        212,
+        263,
+        292
+      ],
+      "verdict": "cut:below_floor(2<5)",
+      "valid_ids": [
+        212,
+        263,
+        292
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 2,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Livemint",
+          "title": "Who is Divya Mittal? Why did IAS officer announce resignation on X after 13 years in civil services? What we know",
+          "url": "https://www.livemint.com/news/india/who-is-divya-mittal-why-did-ias-officer-announce-resignation-on-x-after-13-years-in-civil-services-what-we-know-11788095346536.html"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Who is Divya Mittal? IAS officer resigns after 13 years in civil services",
+          "url": "https://www.hindustantimes.com/india-news/ias-officer-divya-mittal-quits-up-cadre-2013-batch-officer-resignation-civil-services-latest-news-101788082810716.html"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "IAS officer who left finance job in London for civil services resigns after 13 years, recalls ‘unforgettable journey’",
+          "url": "https://www.livemint.com/news/india/ias-officer-who-left-finance-job-in-london-for-civil-services-resigns-after-13-years-recalls-unforgettable-journey-11788076764187.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    }
+  ]
+}
