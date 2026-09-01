@@ -1,0 +1,531 @@
+{
+  "min_chars": 600,
+  "article_cap": 5000,
+  "articles": [
+    {
+      "seq": 1,
+      "url": "https://www.theguardian.com/world/2026/sep/01/us-iran-airstrikes-launch",
+      "http": 200,
+      "elapsed_ms": 193,
+      "error": "",
+      "html_chars": 313123,
+      "jsonld_chars": 0,
+      "paragraph_chars": 5325,
+      "jina_fired": false,
+      "jina_chars": 0,
+      "winner": "paragraphs",
+      "final_chars": 5000,
+      "truncated_at_cap": true,
+      "below_min_chars": false,
+      "files": {
+        "html": true,
+        "jina": false,
+        "text": true
+      }
+    },
+    {
+      "seq": 2,
+      "url": "https://www.bbc.co.uk/news/articles/cj06q4ynpmjo?at_medium=RSS&at_campaign=rss",
+      "http": 200,
+      "elapsed_ms": 363,
+      "error": "",
+      "html_chars": 396682,
+      "jsonld_chars": 0,
+      "paragraph_chars": 3605,
+      "jina_fired": false,
+      "jina_chars": 0,
+      "winner": "paragraphs",
+      "final_chars": 3605,
+      "truncated_at_cap": false,
+      "below_min_chars": false,
+      "files": {
+        "html": true,
+        "jina": false,
+        "text": true
+      }
+    },
+    {
+      "seq": 3,
+      "url": "https://www.livemint.com/news/world/usiran-conflict-flares-again-as-tehran-launches-missiles-and-drones-after-fresh-us-strikes-11788294939987.html",
+      "http": 200,
+      "elapsed_ms": 136,
+      "error": "",
+      "html_chars": 213905,
+      "jsonld_chars": 4546,
+      "paragraph_chars": 5591,
+      "jina_fired": false,
+      "jina_chars": 0,
+      "winner": "paragraphs",
+      "final_chars": 5000,
+      "truncated_at_cap": true,
+      "below_min_chars": false,
+      "files": {
+        "html": true,
+        "jina": false,
+        "text": true
+      }
+    },
+    {
+      "seq": 4,
+      "url": "https://www.france24.com/en/tv-shows/business/20260901-global-bond-selloff-deepens-as-us-launches-fresh-attacks-on-iran",
+      "http": 403,
+      "elapsed_ms": 115,
+      "error": "http 403",
+      "html_chars": 0,
+      "jsonld_chars": 0,
+      "paragraph_chars": 0,
+      "jina_fired": true,
+      "jina_chars": 17801,
+      "winner": "jina",
+      "final_chars": 5000,
+      "truncated_at_cap": true,
+      "below_min_chars": false,
+      "files": {
+        "html": false,
+        "jina": true,
+        "text": true
+      }
+    },
+    {
+      "seq": 5,
+      "url": "https://www.channelnewsasia.com/world/least-four-people-killed-in-iran-when-us-strike-hit-house-where-wedding-was-taking-place-6355866",
+      "http": 200,
+      "elapsed_ms": 139,
+      "error": "",
+      "html_chars": 503083,
+      "jsonld_chars": 0,
+      "paragraph_chars": 5403,
+      "jina_fired": false,
+      "jina_chars": 0,
+      "winner": "paragraphs",
+      "final_chars": 5000,
+      "truncated_at_cap": true,
+      "below_min_chars": false,
+      "files": {
+        "html": true,
+        "jina": false,
+        "text": true
+      }
+    },
+    {
+      "seq": 6,
+      "url": "https://www.bbc.co.uk/news/articles/c5ylm3m67n2o?at_medium=RSS&at_campaign=rss",
+      "http": 200,
+      "elapsed_ms": 50,
+      "error": "",
+      "html_chars": 418438,
+      "jsonld_chars": 0,
+      "paragraph_chars": 5571,
+      "jina_fired": false,
+      "jina_chars": 0,
+      "winner": "paragraphs",
+      "final_chars": 5000,
+      "truncated_at_cap": true,
+      "below_min_chars": false,
+      "files": {
+        "html": true,
+        "jina": false,
+        "text": true
+      }
+    },
+    {
+      "seq": 7,
+      "url": "https://www.france24.com/en/germany-blames-russia-for-airport-drone-incident-hits-back-with-sanctions",
+      "http": 403,
+      "elapsed_ms": 87,
+      "error": "http 403",
+      "html_chars": 0,
+      "jsonld_chars": 0,
+      "paragraph_chars": 0,
+      "jina_fired": true,
+      "jina_chars": 13614,
+      "winner": "jina",
+      "final_chars": 5000,
+      "truncated_at_cap": true,
+      "below_min_chars": false,
+      "files": {
+        "html": false,
+        "jina": true,
+        "text": true
+      }
+    },
+    {
+      "seq": 8,
+      "url": "https://www.theguardian.com/world/live/2026/sep/01/ukraine-russia-strikes-attacks-odesa-zelenskyy-putin-eu-defence-europe-latest-news-updates",
+      "http": 200,
+      "elapsed_ms": 76,
+      "error": "",
+      "html_chars": 809679,
+      "jsonld_chars": 999,
+      "paragraph_chars": 9896,
+      "jina_fired": false,
+      "jina_chars": 0,
+      "winner": "paragraphs",
+      "final_chars": 5000,
+      "truncated_at_cap": true,
+      "below_min_chars": false,
+      "files": {
+        "html": true,
+        "jina": false,
+        "text": true
+      }
+    },
+    {
+      "seq": 9,
+      "url": "https://www.dw.com/en/germany-says-russia-behind-attempted-drone-attack-at-leipzig-airport/a-78584589?maca=en-rss-en-world-4025-rdf",
+      "http": 200,
+      "elapsed_ms": 2092,
+      "error": "",
+      "html_chars": 174862,
+      "jsonld_chars": 0,
+      "paragraph_chars": 4221,
+      "jina_fired": false,
+      "jina_chars": 0,
+      "winner": "paragraphs",
+      "final_chars": 4221,
+      "truncated_at_cap": false,
+      "below_min_chars": false,
+      "files": {
+        "html": true,
+        "jina": false,
+        "text": true
+      }
+    },
+    {
+      "seq": 10,
+      "url": "https://www.theguardian.com/world/2026/sep/01/germany-blames-russia-drone-attack-leipzig-airport",
+      "http": 200,
+      "elapsed_ms": 69,
+      "error": "",
+      "html_chars": 397928,
+      "jsonld_chars": 0,
+      "paragraph_chars": 6659,
+      "jina_fired": false,
+      "jina_chars": 0,
+      "winner": "paragraphs",
+      "final_chars": 5000,
+      "truncated_at_cap": true,
+      "below_min_chars": false,
+      "files": {
+        "html": true,
+        "jina": false,
+        "text": true
+      }
+    },
+    {
+      "seq": 11,
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/1/zelenskyy-warns-airlines-as-ukrainian-drones-target-russian-airspace?traffic_source=rss",
+      "http": 200,
+      "elapsed_ms": 84,
+      "error": "",
+      "html_chars": 192003,
+      "jsonld_chars": 0,
+      "paragraph_chars": 335,
+      "jina_fired": true,
+      "jina_chars": 0,
+      "winner": "paragraphs",
+      "final_chars": 335,
+      "truncated_at_cap": false,
+      "below_min_chars": true,
+      "files": {
+        "html": true,
+        "jina": false,
+        "text": true
+      }
+    },
+    {
+      "seq": 12,
+      "url": "https://www.theguardian.com/world/2026/sep/01/russia-targets-ukraines-rail-network-as-war-enters-deadly-new-phase",
+      "http": 200,
+      "elapsed_ms": 74,
+      "error": "",
+      "html_chars": 495424,
+      "jsonld_chars": 0,
+      "paragraph_chars": 6481,
+      "jina_fired": false,
+      "jina_chars": 0,
+      "winner": "paragraphs",
+      "final_chars": 5000,
+      "truncated_at_cap": true,
+      "below_min_chars": false,
+      "files": {
+        "html": true,
+        "jina": false,
+        "text": true
+      }
+    },
+    {
+      "seq": 13,
+      "url": "https://www.france24.com/en/at-least-12-killed-and-over-a-dozen-injured-in-russian-strikes-on-kyiv",
+      "http": 403,
+      "elapsed_ms": 81,
+      "error": "http 403",
+      "html_chars": 0,
+      "jsonld_chars": 0,
+      "paragraph_chars": 0,
+      "jina_fired": true,
+      "jina_chars": 14628,
+      "winner": "jina",
+      "final_chars": 5000,
+      "truncated_at_cap": true,
+      "below_min_chars": false,
+      "files": {
+        "html": false,
+        "jina": true,
+        "text": true
+      }
+    },
+    {
+      "seq": 14,
+      "url": "https://www.bbc.co.uk/news/articles/cx2zmdgry3do?at_medium=RSS&at_campaign=rss",
+      "http": 200,
+      "elapsed_ms": 73,
+      "error": "",
+      "html_chars": 412577,
+      "jsonld_chars": 0,
+      "paragraph_chars": 2726,
+      "jina_fired": false,
+      "jina_chars": 0,
+      "winner": "paragraphs",
+      "final_chars": 2726,
+      "truncated_at_cap": false,
+      "below_min_chars": false,
+      "files": {
+        "html": true,
+        "jina": false,
+        "text": true
+      }
+    },
+    {
+      "seq": 15,
+      "url": "https://www.theguardian.com/world/2026/sep/01/russia-kills-sixth-night-drone-attacks-ukraine-kyiv",
+      "http": 200,
+      "elapsed_ms": 80,
+      "error": "",
+      "html_chars": 458272,
+      "jsonld_chars": 0,
+      "paragraph_chars": 4000,
+      "jina_fired": false,
+      "jina_chars": 0,
+      "winner": "paragraphs",
+      "final_chars": 4000,
+      "truncated_at_cap": false,
+      "below_min_chars": false,
+      "files": {
+        "html": true,
+        "jina": false,
+        "text": true
+      }
+    },
+    {
+      "seq": 16,
+      "url": "https://www.theguardian.com/australia-news/live/2026/sep/02/anthony-albanese-palau-forum-one-nation-pauline-hanson-channel-contos-ntwnfb",
+      "http": 200,
+      "elapsed_ms": 72,
+      "error": "",
+      "html_chars": 762809,
+      "jsonld_chars": 999,
+      "paragraph_chars": 8079,
+      "jina_fired": false,
+      "jina_chars": 0,
+      "winner": "paragraphs",
+      "final_chars": 5000,
+      "truncated_at_cap": true,
+      "below_min_chars": false,
+      "files": {
+        "html": true,
+        "jina": false,
+        "text": true
+      }
+    },
+    {
+      "seq": 17,
+      "url": "https://www.channelnewsasia.com/asia/nepal-deadly-flood-missing-people-6354476",
+      "http": 200,
+      "elapsed_ms": 53,
+      "error": "",
+      "html_chars": 519102,
+      "jsonld_chars": 0,
+      "paragraph_chars": 7941,
+      "jina_fired": false,
+      "jina_chars": 0,
+      "winner": "paragraphs",
+      "final_chars": 5000,
+      "truncated_at_cap": true,
+      "below_min_chars": false,
+      "files": {
+        "html": true,
+        "jina": false,
+        "text": true
+      }
+    },
+    {
+      "seq": 18,
+      "url": "https://www.france24.com/en/south-africans-missing-in-nepal-s-glacial-flood",
+      "http": 403,
+      "elapsed_ms": 63,
+      "error": "http 403",
+      "html_chars": 0,
+      "jsonld_chars": 0,
+      "paragraph_chars": 0,
+      "jina_fired": true,
+      "jina_chars": 17141,
+      "winner": "jina",
+      "final_chars": 5000,
+      "truncated_at_cap": true,
+      "below_min_chars": false,
+      "files": {
+        "html": false,
+        "jina": true,
+        "text": true
+      }
+    },
+    {
+      "seq": 19,
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/1/nepal-rescuers-race-to-reach-900-missing-hydropower-workers?traffic_source=rss",
+      "http": 200,
+      "elapsed_ms": 43,
+      "error": "",
+      "html_chars": 188123,
+      "jsonld_chars": 0,
+      "paragraph_chars": 211,
+      "jina_fired": true,
+      "jina_chars": 0,
+      "winner": "paragraphs",
+      "final_chars": 211,
+      "truncated_at_cap": false,
+      "below_min_chars": true,
+      "files": {
+        "html": true,
+        "jina": false,
+        "text": true
+      }
+    },
+    {
+      "seq": 20,
+      "url": "https://www.hindustantimes.com/india-news/163-indians-rescued-151-leave-china-as-india-steps-up-rescue-operations-in-nepal-says-centre-101788280841823.html",
+      "http": 200,
+      "elapsed_ms": 146,
+      "error": "",
+      "html_chars": 436128,
+      "jsonld_chars": 3048,
+      "paragraph_chars": 4636,
+      "jina_fired": false,
+      "jina_chars": 0,
+      "winner": "paragraphs",
+      "final_chars": 4636,
+      "truncated_at_cap": false,
+      "below_min_chars": false,
+      "files": {
+        "html": true,
+        "jina": false,
+        "text": true
+      }
+    },
+    {
+      "seq": 21,
+      "url": "https://timesofindia.indiatimes.com/india/pm-modi-repeats-call-to-shun-unnecessary-gold-buys-foreign-weddings-holidays/articleshow/133691767.cms",
+      "http": 200,
+      "elapsed_ms": 60,
+      "error": "",
+      "html_chars": 308440,
+      "jsonld_chars": 3465,
+      "paragraph_chars": 0,
+      "jina_fired": false,
+      "jina_chars": 0,
+      "winner": "jsonld",
+      "final_chars": 3465,
+      "truncated_at_cap": false,
+      "below_min_chars": false,
+      "files": {
+        "html": true,
+        "jina": false,
+        "text": true
+      }
+    },
+    {
+      "seq": 22,
+      "url": "https://www.thehindu.com/news/national/prime-minister-narendra-modi-address-annual-sco-summit-september-1-2026/article71414028.ece",
+      "http": 200,
+      "elapsed_ms": 494,
+      "error": "",
+      "html_chars": 207980,
+      "jsonld_chars": 0,
+      "paragraph_chars": 5164,
+      "jina_fired": false,
+      "jina_chars": 0,
+      "winner": "paragraphs",
+      "final_chars": 5000,
+      "truncated_at_cap": true,
+      "below_min_chars": false,
+      "files": {
+        "html": true,
+        "jina": false,
+        "text": true
+      }
+    },
+    {
+      "seq": 23,
+      "url": "https://www.ndtv.com/india-news/inside-modis-balancing-act-at-the-sco-xi-putin-and-a-pointed-message-for-pakistan-11989015#publisher=newsstand",
+      "http": 403,
+      "elapsed_ms": 51,
+      "error": "http 403",
+      "html_chars": 0,
+      "jsonld_chars": 0,
+      "paragraph_chars": 0,
+      "jina_fired": true,
+      "jina_chars": 9737,
+      "winner": "jina",
+      "final_chars": 5000,
+      "truncated_at_cap": true,
+      "below_min_chars": false,
+      "files": {
+        "html": false,
+        "jina": true,
+        "text": true
+      }
+    },
+    {
+      "seq": 24,
+      "url": "https://www.hindustantimes.com/india-news/dialogue-not-war-modi-pushes-diplomacy-for-west-asia-targets-terror-ecosystem-101788281234946.html",
+      "http": 200,
+      "elapsed_ms": 82,
+      "error": "",
+      "html_chars": 451581,
+      "jsonld_chars": 5269,
+      "paragraph_chars": 6476,
+      "jina_fired": false,
+      "jina_chars": 0,
+      "winner": "paragraphs",
+      "final_chars": 5000,
+      "truncated_at_cap": true,
+      "below_min_chars": false,
+      "files": {
+        "html": true,
+        "jina": false,
+        "text": true
+      }
+    },
+    {
+      "seq": 25,
+      "url": "https://scroll.in/latest/1095394/avoid-foreign-travel-and-gold-purchases-reiterates-pm-modi-in-video-from-kyrgyzstan?utm_source=rss&utm_medium=public",
+      "http": 200,
+      "elapsed_ms": 435,
+      "error": "",
+      "html_chars": 136016,
+      "jsonld_chars": 0,
+      "paragraph_chars": 3184,
+      "jina_fired": false,
+      "jina_chars": 0,
+      "winner": "paragraphs",
+      "final_chars": 3184,
+      "truncated_at_cap": false,
+      "below_min_chars": false,
+      "files": {
+        "html": true,
+        "jina": false,
+        "text": true
+      }
+    }
+  ]
+}

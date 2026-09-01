@@ -1,0 +1,658 @@
+{
+  "dials": {
+    "WEIGHT_FLOOR": 5,
+    "TIER_WEIGHT": {
+      "lead": 4,
+      "major": 2,
+      "notable": 0
+    },
+    "WIKI_BONUS": 2,
+    "HARD_CAP": 12,
+    "MIN_STORIES_IF_ANY": 3,
+    "MAX_ARTICLES_PER_STORY": 5
+  },
+  "floor_relaxed": false,
+  "kept_weights": [
+    14,
+    8,
+    8,
+    14,
+    9
+  ],
+  "per_section": {
+    "world": 3,
+    "india": 2
+  },
+  "clusters": [
+    {
+      "headline_hint": "US and Iran exchange direct strikes in major escalation near Strait of Hormuz",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "lead",
+      "article_ids": [
+        21,
+        22,
+        30,
+        40,
+        43,
+        48,
+        80,
+        126,
+        151,
+        162,
+        171,
+        203,
+        233,
+        242,
+        312,
+        318
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        21,
+        22,
+        30,
+        40,
+        43,
+        48,
+        80,
+        126,
+        151,
+        162,
+        171,
+        203,
+        233,
+        242,
+        312,
+        318
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 8,
+      "wiki_backed": true,
+      "wiki_event": "Iranian president Masoud Pezeshkian says that his country is ready to return to the Islamabad Memorandum signed in June if the United States does the same amidst renewed fighting between the two countries.",
+      "weight": 14,
+      "weight_terms": {
+        "distinct_outlets": 8,
+        "tier_weight": 4,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "US launches new airstrikes on Iranian targets as hostilities flare",
+          "url": "https://www.theguardian.com/world/2026/sep/01/us-iran-airstrikes-launch"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "US strikes Iran as state media reports four killed at wedding party",
+          "url": "https://www.bbc.co.uk/news/articles/cj06q4ynpmjo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "US-Iran conflict flares again as Tehran launches missiles and drones after fresh US strikes",
+          "url": "https://www.livemint.com/news/world/usiran-conflict-flares-again-as-tehran-launches-missiles-and-drones-after-fresh-us-strikes-11788294939987.html"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Global bond selloff deepens as US launches fresh attacks on Iran",
+          "url": "https://www.france24.com/en/tv-shows/business/20260901-global-bond-selloff-deepens-as-us-launches-fresh-attacks-on-iran"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "At least four people killed in Iran when a US strike hit a house where a wedding was taking place",
+          "url": "https://www.channelnewsasia.com/world/least-four-people-killed-in-iran-when-us-strike-hit-house-where-wedding-was-taking-place-6355866"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 11
+    },
+    {
+      "headline_hint": "Germany blames Russia for Leipzig airport drone attack and orders consulate closed",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        34,
+        39,
+        133,
+        136,
+        168,
+        204,
+        207
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        34,
+        39,
+        133,
+        136,
+        168,
+        204,
+        207
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": true,
+      "wiki_event": "Germany raises its threat assessment to \"high\", orders the closure of Russia's consulate in Bonn, North Rhine-Westphalia, and the Russian House in Berlin, and tightens entry controls for Russian nationals after attributing the drone attacks",
+      "weight": 8,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "BBC World",
+          "title": "Germany says Russia behind Leipzig airport drone attack",
+          "url": "https://www.bbc.co.uk/news/articles/c5ylm3m67n2o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Germany blames Russia for airport drone incident, hits back with sanctions",
+          "url": "https://www.france24.com/en/germany-blames-russia-for-airport-drone-incident-hits-back-with-sanctions"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "German police investigating reported explosives at Brandenburg power substation – Europe live",
+          "url": "https://www.theguardian.com/world/live/2026/sep/01/ukraine-russia-strikes-attacks-odesa-zelenskyy-putin-eu-defence-europe-latest-news-updates"
+        },
+        {
+          "outlet": "DW World",
+          "title": "Germany says Russia behind attempted drone attack at Leipzig airport",
+          "url": "https://www.dw.com/en/germany-says-russia-behind-attempted-drone-attack-at-leipzig-airport/a-78584589?maca=en-rss-en-world-4025-rdf"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Germany blames Russia for drone attack at Leipzig airport",
+          "url": "https://www.theguardian.com/world/2026/sep/01/germany-blames-russia-drone-attack-leipzig-airport"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 2
+    },
+    {
+      "headline_hint": "Russian strikes kill at least 12 in Kyiv while targeting Ukraine railway system",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "major",
+      "article_ids": [
+        35,
+        159,
+        225,
+        231,
+        295
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        35,
+        159,
+        225,
+        231,
+        295
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": true,
+      "wiki_event": "Ukrainian officials say that Russian missile and drone attacks on Kyiv and surrounding areas killed at least 12 people, including an Indian national, and injure dozens, while damaging residential buildings and other civilian infrastructure.",
+      "weight": 8,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "Zelenskyy warns airlines as Ukrainian drones target Russian airspace",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/1/zelenskyy-warns-airlines-as-ukrainian-drones-target-russian-airspace?traffic_source=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Russia targets Ukraine’s rail network as war enters deadly new phase",
+          "url": "https://www.theguardian.com/world/2026/sep/01/russia-targets-ukraines-rail-network-as-war-enters-deadly-new-phase"
+        },
+        {
+          "outlet": "France 24",
+          "title": "At least 12 killed and over a dozen injured in Russian strikes on Kyiv",
+          "url": "https://www.france24.com/en/at-least-12-killed-and-over-a-dozen-injured-in-russian-strikes-on-kyiv"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Russian attack hits rail workers in new deadly strikes on Kyiv",
+          "url": "https://www.bbc.co.uk/news/articles/cx2zmdgry3do?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Russia kills at least 12 on sixth night of drone attacks on Kyiv",
+          "url": "https://www.theguardian.com/world/2026/sep/01/russia-kills-sixth-night-drone-attacks-ukraine-kyiv"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "UK Prime Minister Andy Burnham addresses Parliament for the first time",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        41,
+        89,
+        141,
+        205,
+        215,
+        222
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        41,
+        89,
+        141,
+        205,
+        215,
+        222
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "France 24",
+          "title": "Burnham pledges to restore hope as he makes his House of Commons debut as UK leader",
+          "url": "https://www.france24.com/en/burnham-pledges-to-restore-hope-as-he-makes-his-house-of-commons-debut-as-uk-leader"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Burnham blames Brexit and Thatcher for ‘wrong turns’ in first Commons speech as PM",
+          "url": "https://www.theguardian.com/politics/2026/sep/01/burnham-promises-to-bring-optimism-and-substantial-change-in-first-commons-speech-as-pm"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Burnham says Brexit brought ‘decade of low growth’ in first Commons address as prime minister – as it happened",
+          "url": "https://www.theguardian.com/politics/live/2026/sep/01/andy-burnham-statement-commons-prison-release-farage-healey-defence-latest-news-updates"
+        },
+        {
+          "outlet": "France 24",
+          "title": "What to know about the new UK PM's agenda as he faces lawmakers",
+          "url": "https://www.france24.com/en/what-to-know-about-the-new-uk-pm-s-agenda-as-he-faces-lawmakers"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Replay: UK PM Andy Burnham faces lawmakers for first time since taking office",
+          "url": "https://www.france24.com/en/replay-uk-pm-andy-burnham-faces-lawmakers-for-first-time-since-taking-office"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 1
+    },
+    {
+      "headline_hint": "King Haakon VIII takes oath before Norwegian parliament following death of King Harald V",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        250,
+        272
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        250,
+        272
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": true,
+      "wiki_event": "Haakon VIII takes the oath as King of Norway before the Storting following the death of his father, Harald V. His daughter, Ingrid Alexandra, takes the oath as Crown Princess.",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "BBC World",
+          "title": "Norway's new king takes oath as mourners pay respects to his late father",
+          "url": "https://www.bbc.co.uk/news/videos/ceq8945e71ro?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "DW World",
+          "title": "Norway's new King Haakon VIII takes oath in parliament",
+          "url": "https://www.dw.com/en/norway-s-new-king-haakon-viii-takes-oath-in-parliament/a-78606923?maca=en-rss-en-world-4025-rdf"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "John Ternus succeeds Tim Cook as Apple CEO",
+      "section": "world",
+      "category": "technology",
+      "tier_requested": "notable",
+      "article_ids": [
+        152,
+        259,
+        307
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        152,
+        259,
+        307
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "John Ternus succeeds Tim Cook as Apple CEO after 15 years",
+          "url": "https://www.aljazeera.com/economy/2026/9/1/john-ternus-succeeds-tim-cook-as-apple-ceo-after-15-years?traffic_source=rss"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "John Ternus takes over as Apple CEO: Net worth, marriage, career; why Apple choose him to succeed Tim Cook",
+          "url": "https://www.livemint.com/news/us-news/all-about-new-apple-ceo-john-ternus-net-worth-education-and-is-he-married-11788268483886.html"
+        },
+        {
+          "outlet": "DW World",
+          "title": "Can new Apple CEO John Ternus fix the tech giant's AI woes?",
+          "url": "https://www.dw.com/en/can-new-apple-ceo-john-ternus-fix-the-tech-giant-s-ai-woes/a-78575898?maca=en-rss-en-world-4025-rdf"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "PM Modi addresses SCO summit, urging end to terror ecosystems and foreign spending restraint",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "lead",
+      "article_ids": [
+        29,
+        32,
+        46,
+        96,
+        123,
+        170,
+        173,
+        304,
+        320
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        29,
+        32,
+        46,
+        96,
+        123,
+        170,
+        173,
+        304,
+        320
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 5,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 9,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 4,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "PM Modi repeats call to 'shun unnecessary gold buys, foreign weddings &amp; holidays'",
+          "url": "https://timesofindia.indiatimes.com/india/pm-modi-repeats-call-to-shun-unnecessary-gold-buys-foreign-weddings-holidays/articleshow/133691767.cms"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "SCO must dismantle ecosystem of terror financing, recruitment, radicalisation, safe havens: PM",
+          "url": "https://www.thehindu.com/news/national/prime-minister-narendra-modi-address-annual-sco-summit-september-1-2026/article71414028.ece"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "India's Balancing Act At Shanghai Bloc: Xi, Putin, And A Message For Pak",
+          "url": "https://www.ndtv.com/india-news/inside-modis-balancing-act-at-the-sco-xi-putin-and-a-pointed-message-for-pakistan-11989015#publisher=newsstand"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Dialogue, not war: Modi pushes diplomacy for West Asia, targets terror ecosystem",
+          "url": "https://www.hindustantimes.com/india-news/dialogue-not-war-modi-pushes-diplomacy-for-west-asia-targets-terror-ecosystem-101788281234946.html"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "Avoid foreign travel and gold purchases, reiterates PM Modi in video from Kyrgyzstan",
+          "url": "https://scroll.in/latest/1095394/avoid-foreign-travel-and-gold-purchases-reiterates-pm-modi-in-video-from-kyrgyzstan?utm_source=rss&utm_medium=public"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 4
+    },
+    {
+      "headline_hint": "Nepal flash flood death toll passes 1,000 as India leads rescue and identification efforts",
+      "section": "india",
+      "category": "disaster",
+      "tier_requested": "major",
+      "article_ids": [
+        0,
+        15,
+        17,
+        25,
+        50,
+        93,
+        99,
+        124,
+        153,
+        165,
+        169,
+        187,
+        190,
+        230,
+        265,
+        270,
+        288,
+        296,
+        327,
+        328,
+        330,
+        332
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        0,
+        15,
+        17,
+        25,
+        50,
+        93,
+        99,
+        124,
+        153,
+        165,
+        169,
+        187,
+        190,
+        230,
+        265,
+        270,
+        288,
+        296,
+        327,
+        328,
+        330,
+        332
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 10,
+      "wiki_backed": true,
+      "wiki_event": "South Korea's foreign ​ministry announces that the country will deploy a 44-member emergency relief team to Nepal to support search-and-rescue operations after flash floods hit the South Asian country.",
+      "weight": 14,
+      "weight_terms": {
+        "distinct_outlets": 10,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "News live: Five Australians confirmed safe after Nepal-Tibet flooding; Spender backs Contos’s call for opt-in algorithms",
+          "url": "https://www.theguardian.com/australia-news/live/2026/sep/02/anthony-albanese-palau-forum-one-nation-pauline-hanson-channel-contos-ntwnfb"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "Nepal’s riverside communities cling to hope with loved ones missing after deadly flood",
+          "url": "https://www.channelnewsasia.com/asia/nepal-deadly-flood-missing-people-6354476"
+        },
+        {
+          "outlet": "France 24",
+          "title": "South Africans missing in Nepal's glacial flood",
+          "url": "https://www.france24.com/en/south-africans-missing-in-nepal-s-glacial-flood"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Nepal rescuers race to reach 900 missing hydropower workers",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/1/nepal-rescuers-race-to-reach-900-missing-hydropower-workers?traffic_source=rss"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Nepal floods: 163 Indians rescued, 151 leave China as India steps up rescue operations, says Centre",
+          "url": "https://www.hindustantimes.com/india-news/163-indians-rescued-151-leave-china-as-india-steps-up-rescue-operations-in-nepal-says-centre-101788280841823.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 17
+    },
+    {
+      "headline_hint": "Supreme Court quashes all FIRs against NEET student protesters",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        269,
+        289,
+        306,
+        338
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        269,
+        289,
+        306,
+        338
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Hindustan Times",
+          "title": "HT Evening Brief Sept 1: SC quashes all NEET protesters' FIRs, Sanju Samson back in India squad for Afghanistan T20Is",
+          "url": "https://www.hindustantimes.com/india-news/ht-evening-brief-sept-1-sc-quashes-all-neet-protesters-firs-sanju-samson-back-in-india-squad-for-afghanistan-t20is-101788263638263.html"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "CJP calls off September 5 march as SC quashes FIRs linked to youth protests",
+          "url": "https://scroll.in/latest/1095404/cjp-calls-off-september-5-march-as-sc-quashes-firs-linked-to-youth-protests?utm_source=rss&utm_medium=public"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Supreme Court scraps all FIRs for NEET protesters; CJP calls off September 5 march",
+          "url": "https://www.livemint.com/news/india/supreme-court-quashes-firs-against-neet-protesters-cjp-calls-off-september-5-march-11788255311818.html"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "Centre moves Supreme Court to quash FIRs against youth protesters",
+          "url": "https://scroll.in/latest/1095387/centre-moves-supreme-court-to-quash-firs-against-youth-protesters?utm_source=rss&utm_medium=public"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Voter roll revisions trigger controversy over high deletion numbers in multiple states",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        58,
+        105,
+        142,
+        209,
+        340,
+        342
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        58,
+        105,
+        142,
+        209,
+        340,
+        342
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "The Hindu",
+          "title": "Congress attacks BJP over exclusion of over 2 crore voters in Maharashtra SIR",
+          "url": "https://www.thehindu.com/news/national/votes-being-added-deleted-to-make-bjp-win-says-congress-citing-maharashtra-delhi-sir/article71415541.ece"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "Delhi Voter List Revision: Tughlakabad Tops Missing List, Okhla Second",
+          "url": "https://www.ndtv.com/india-news/delhi-voter-list-revision-tughlakabad-tops-missing-list-okhla-second-11989238#publisher=newsstand"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "Hyderabad: SIR deletions equal 89% of 2023 Assembly election turnout, shows study",
+          "url": "https://scroll.in/latest/1095415/hyderabad-sir-deletions-equal-89-of-2023-assembly-election-turnout-shows-study?utm_source=rss&utm_medium=public"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "Women dominate voter deletions in five Old City constituencies in Hyderabad: report",
+          "url": "https://www.thehindu.com/news/cities/Hyderabad/women-dominate-voter-deletions-in-five-old-city-constituencies-in-hyderabad-report/article71415956.ece"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "SIR: 33% Delhi voters deleted from draft list, 21% in Maharashtra",
+          "url": "https://scroll.in/latest/1095388/sir-33-delhi-voters-deleted-from-draft-list-21-in-maharashtra?utm_source=rss&utm_medium=public"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 1
+    }
+  ]
+}
