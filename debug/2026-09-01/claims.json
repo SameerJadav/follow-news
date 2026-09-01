@@ -1,0 +1,949 @@
+{
+  "min_claim_chars": 20,
+  "max_claims_per_story": 24,
+  "calls": [
+    {
+      "label": "claims-world",
+      "cluster_ids": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "label": "claims-india",
+      "cluster_ids": [
+        4,
+        5,
+        6
+      ]
+    }
+  ],
+  "rejected_claims": 0,
+  "rejected_clusters": 0,
+  "clusters": [
+    {
+      "cluster_id": 0,
+      "headline_hint": "Catastrophic glacial flood along Nepal-China border kills over 900 with thousands missing",
+      "section": "world",
+      "batch_position": 0,
+      "claim_count": 17,
+      "distinct_outlets": 4,
+      "source_kinds": {
+        "fulltext": 16,
+        "summary": 1
+      },
+      "claims": [
+        {
+          "id": 1,
+          "cluster_id": 0,
+          "text": "Residents in Nepal returned to flood-ravaged homes to salvage belongings from mud and debris.",
+          "kind": "event",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/31/nothing-is-usable-nepal-residents-return-to-flood-ravaged-homes?traffic_source=rss",
+          "source_kind": "summary"
+        },
+        {
+          "id": 2,
+          "cluster_id": 0,
+          "text": "Rescuers used explosives to blast into the hillside and pumped air into the Trishuli-3A site to reach trapped workers on Monday.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c5ylvgq9q71o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 3,
+          "cluster_id": 0,
+          "text": "Nepal's disaster management authority reported the death toll from the flood disaster on the Nepal-Tibet border reached 939.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c5ylvgq9q71o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 4,
+          "cluster_id": 0,
+          "text": "Nepal's disaster management authority estimated 3,925 people are missing, including 592 foreign nationals.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c5ylvgq9q71o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 5,
+          "cluster_id": 0,
+          "text": "Nepalese Prime Minister Balendra Shah announced that 279 people had been rescued from hydropower plant sites.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c5ylvgq9q71o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 6,
+          "cluster_id": 0,
+          "text": "Nepalese Prime Minister Balendra Shah stated that a total of 11,379 people have been rescued so far across the country.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c5ylvgq9q71o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 7,
+          "cluster_id": 0,
+          "text": "An international rescue team comprising Chinese and Nepalese military personnel alongside experts from India, Korea, and Australia is searching for trapped workers.",
+          "kind": "background",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c5ylvgq9q71o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 8,
+          "cluster_id": 0,
+          "text": "In Chitwan district, river systems brought nearly 300 dead bodies to the banks, prompting makeshift temporary burials.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c5ylvgq9q71o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 9,
+          "cluster_id": 0,
+          "text": "Chinese state media reported an official death toll of 16 in Tibet, with 546 people reported missing.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c5ylvgq9q71o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 10,
+          "cluster_id": 0,
+          "text": "Chinese authorities imposed administrative penalties on individuals speculating online that casualty numbers in Tibet are higher than reported.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c5ylvgq9q71o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 11,
+          "cluster_id": 0,
+          "text": "Eight workers from Assam who were stranded at the Upper Trishuli-1 Hydropower Project returned home late Sunday.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/saw-death-from-close-8-assam-workers-rescued-from-nepal-return-8-missing-101788193241678.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 12,
+          "cluster_id": 0,
+          "text": "Eight workers from Assam who worked at the Upper Trishuli-1 project remain missing following the August 26 flash floods.",
+          "kind": "figure",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/saw-death-from-close-8-assam-workers-rescued-from-nepal-return-8-missing-101788193241678.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 13,
+          "cluster_id": 0,
+          "text": "Nepalese military helicopters spotted stranded workers on a hilltop after two days and provided water and biscuits before airlifting them to Kathmandu.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/saw-death-from-close-8-assam-workers-rescued-from-nepal-return-8-missing-101788193241678.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 14,
+          "cluster_id": 0,
+          "text": "A study by Nepalese scientists found the August 26 flood was triggered by an ice-rock avalanche that travelled 22 kilometres to Rasuwagadhi in just over seven minutes at an average speed of 167 kmph.",
+          "kind": "figure",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/south-asia/nepal-floods-avalanche-from-5200-metres-raced-down-himalayas-at-167-kmph-triggering-deadly-deluge/articleshow/133657450.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 15,
+          "cluster_id": 0,
+          "text": "The study by the Nepal Environment Society found the avalanche originated in the Langtang-Lirung area of Rasuwa at an altitude of approximately 5,200 metres around 8:37 am.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/south-asia/nepal-floods-avalanche-from-5200-metres-raced-down-himalayas-at-167-kmph-triggering-deadly-deluge/articleshow/133657450.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 16,
+          "cluster_id": 0,
+          "text": "Nepalese researchers found no evidence of a glacial lake outburst flood or exceptionally heavy rainfall causing the disaster.",
+          "kind": "background",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/south-asia/nepal-floods-avalanche-from-5200-metres-raced-down-himalayas-at-167-kmph-triggering-deadly-deluge/articleshow/133657450.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 17,
+          "cluster_id": 0,
+          "text": "Preliminary Nepal Electricity Authority data showed 13 hydropower projects and one solar project were affected, knocking 431 MW of generation capacity offline.",
+          "kind": "figure",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/south-asia/nepal-floods-avalanche-from-5200-metres-raced-down-himalayas-at-167-kmph-triggering-deadly-deluge/articleshow/133657450.cms",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 1,
+      "headline_hint": "US and Iran exchange direct military strikes in the Strait of Hormuz and Middle East after a monthlong lull",
+      "section": "world",
+      "batch_position": 1,
+      "claim_count": 15,
+      "distinct_outlets": 5,
+      "source_kinds": {
+        "fulltext": 15
+      },
+      "claims": [
+        {
+          "id": 18,
+          "cluster_id": 1,
+          "text": "US President Donald Trump stated 'We're going to hit them hard' following renewed military exchanges with Iran.",
+          "kind": "quote",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/middle-east/20260831-trump-threatens-to-hit-iran-hard-as-strikes-resume-after-month-long-lull",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 19,
+          "cluster_id": 1,
+          "text": "The United States carried out strikes on Iranian rocket launchers on Larak Island on Sunday to prevent Iran from placing mines in the Strait of Hormuz.",
+          "kind": "event",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/middle-east/20260831-trump-threatens-to-hit-iran-hard-as-strikes-resume-after-month-long-lull",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 20,
+          "cluster_id": 1,
+          "text": "Iranian state media reported three people were killed and several wounded in the US strike on Larak Island.",
+          "kind": "figure",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/middle-east/20260831-trump-threatens-to-hit-iran-hard-as-strikes-resume-after-month-long-lull",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 21,
+          "cluster_id": 1,
+          "text": "Iran's Revolutionary Guards launched ballistic missiles at two US bases in Jordan, claiming to inflict heavy damage.",
+          "kind": "event",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/middle-east/20260831-trump-threatens-to-hit-iran-hard-as-strikes-resume-after-month-long-lull",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 22,
+          "cluster_id": 1,
+          "text": "Iranian President Masoud Pezeshkian called for dialogue at a summit in Kyrgyzstan, stating that continuing the war is neither in Iran's nor the region's interest.",
+          "kind": "quote",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/middle-east/20260831-trump-threatens-to-hit-iran-hard-as-strikes-resume-after-month-long-lull",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 23,
+          "cluster_id": 1,
+          "text": "Donald Trump posted on Truth Social calling Iran a 'Failed Nation' and claiming 'IT IS DEAD!'.",
+          "kind": "quote",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/us-news/trump-calls-iran-a-failed-nation-says-it-is-dead-in-scathing-attack-11788196727531.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 24,
+          "cluster_id": 1,
+          "text": "Iranian Foreign Minister Abbas Araghchi demanded on Iranian state television that the US return to its previous commitments.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/us-news/trump-calls-iran-a-failed-nation-says-it-is-dead-in-scathing-attack-11788196727531.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 25,
+          "cluster_id": 1,
+          "text": "US Vice President JD Vance said Donald Trump's social media post about Kharg Island was intended as a signal to Iran.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/live/2026/aug/31/us-iran-israel-hormuz-oil-donald-trump-larak-kharg-island-uae-jordan-latest-news-updates",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 26,
+          "cluster_id": 1,
+          "text": "A US official stated the American military did not strike Kharg Island during overnight operations.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/live/2026/aug/31/us-iran-israel-hormuz-oil-donald-trump-larak-kharg-island-uae-jordan-latest-news-updates",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 27,
+          "cluster_id": 1,
+          "text": "The United Arab Emirates foreign ministry condemned an Iranian drone attack intercepted over its territorial waters as a dangerous escalation.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/live/2026/aug/31/us-iran-israel-hormuz-oil-donald-trump-larak-kharg-island-uae-jordan-latest-news-updates",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 28,
+          "cluster_id": 1,
+          "text": "US Central Command denied claims by Iranian state TV that a supertanker struck mines in the Strait of Hormuz.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/live/2026/aug/31/us-iran-israel-hormuz-oil-donald-trump-larak-kharg-island-uae-jordan-latest-news-updates",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 29,
+          "cluster_id": 1,
+          "text": "Kharg Island handled about 90 percent of Iran's oil exports before the conflict began on February 28.",
+          "kind": "background",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/us/jd-vance-says-donald-trumps-dramatic-kharg-island-post-was-meant-as-a-signal-to-iran/articleshow/133658179.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 30,
+          "cluster_id": 1,
+          "text": "Iran's Islamic Revolutionary Guard Corps stated two people were killed and two injured in the US strikes on Larak Island.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cx2z72x5z1po?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 31,
+          "cluster_id": 1,
+          "text": "Iran demands commercial tankers passing Larak Island undergo checks and reportedly charges $2 million per crossing.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cx2z72x5z1po?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 32,
+          "cluster_id": 1,
+          "text": "The United States and Israel launched wide-ranging strikes against Iran on February 28, 2026.",
+          "kind": "background",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cx2z72x5z1po?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 2,
+      "headline_hint": "Lionel Messi retires from international football with the Argentina national team",
+      "section": "world",
+      "batch_position": 2,
+      "claim_count": 9,
+      "distinct_outlets": 4,
+      "source_kinds": {
+        "fulltext": 9
+      },
+      "claims": [
+        {
+          "id": 33,
+          "cluster_id": 2,
+          "text": "Lionel Messi announced his retirement from international soccer on Monday, August 31, 2026.",
+          "kind": "event",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/sport/reactions-argentinas-messi-ending-international-career-6352996",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 34,
+          "cluster_id": 2,
+          "text": "Forbes estimates Lionel Messi's total net worth to be approximately $1.1 billion in 2026.",
+          "kind": "figure",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/trends/lionel-messi-net-worth-2026-salary-endorsements-cars-properties-and-luxury-assets-11788197164380.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 35,
+          "cluster_id": 2,
+          "text": "Inter Miami owner Jorge Mas valued Lionel Messi's yearly package with the club between $70 million and $80 million.",
+          "kind": "figure",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/trends/lionel-messi-net-worth-2026-salary-endorsements-cars-properties-and-luxury-assets-11788197164380.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 36,
+          "cluster_id": 2,
+          "text": "Lionel Messi retired from international football at age 39 after 21 years of national-team duty.",
+          "kind": "figure",
+          "outlet": "NPR World",
+          "url": "https://www.npr.org/2026/08/31/nx-s1-5950427/lionel-messi-retires-international-soccer",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 37,
+          "cluster_id": 2,
+          "text": "Lionel Messi made 207 appearances for Argentina and finished as the country's all-time top scorer with 125 goals, including 21 in World Cups.",
+          "kind": "figure",
+          "outlet": "NPR World",
+          "url": "https://www.npr.org/2026/08/31/nx-s1-5950427/lionel-messi-retires-international-soccer",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 38,
+          "cluster_id": 2,
+          "text": "Lionel Messi revealed he drafted his retirement letter on July 21, two days after Argentina lost the 2026 World Cup final to Spain, but delayed publishing it due to his father's declining health.",
+          "kind": "event",
+          "outlet": "NPR World",
+          "url": "https://www.npr.org/2026/08/31/nx-s1-5950427/lionel-messi-retires-international-soccer",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 39,
+          "cluster_id": 2,
+          "text": "Lionel Messi won the 2022 FIFA World Cup in Qatar alongside Copa America titles in 2021 and 2024.",
+          "kind": "background",
+          "outlet": "NPR World",
+          "url": "https://www.npr.org/2026/08/31/nx-s1-5950427/lionel-messi-retires-international-soccer",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 40,
+          "cluster_id": 2,
+          "text": "In 2012, Lionel Messi set a calendar-year record by scoring 91 goals across club and international competitions.",
+          "kind": "figure",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/sports/football/top-stories/lionel-messis-10-most-iconic-moments-as-argentina-legend-retires-from-international-football/articleshow/133657784.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 41,
+          "cluster_id": 2,
+          "text": "Lionel Messi won a record eighth Ballon d'Or in 2023 following his World Cup triumph in Qatar.",
+          "kind": "figure",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/sports/football/top-stories/lionel-messis-10-most-iconic-moments-as-argentina-legend-retires-from-international-football/articleshow/133657784.cms",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 3,
+      "headline_hint": "Vladimir Putin and Xi Jinping hold bilateral talks on sidelines of SCO Summit in Kyrgyzstan",
+      "section": "world",
+      "batch_position": 3,
+      "claim_count": 8,
+      "distinct_outlets": 2,
+      "source_kinds": {
+        "fulltext": 8
+      },
+      "claims": [
+        {
+          "id": 42,
+          "cluster_id": 3,
+          "text": "Chinese President Xi Jinping and Russian President Vladimir Putin met on the sidelines of the Shanghai Cooperation Organisation summit in Bishkek, Kyrgyzstan.",
+          "kind": "event",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/8/31/putin-and-xi-affirm-strategic-alliance-amid-unpredictable-world?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 43,
+          "cluster_id": 3,
+          "text": "The SCO summit in Bishkek marks the 25th anniversary of the regional security and economic bloc.",
+          "kind": "background",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/8/31/putin-and-xi-affirm-strategic-alliance-amid-unpredictable-world?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 44,
+          "cluster_id": 3,
+          "text": "Kremlin spokesperson Dmitry Peskov stated that Xi Jinping and Vladimir Putin primarily discussed economic relations and touched on the Ukraine conflict only in passing.",
+          "kind": "event",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/8/31/putin-and-xi-affirm-strategic-alliance-amid-unpredictable-world?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 45,
+          "cluster_id": 3,
+          "text": "Indian Prime Minister Narendra Modi met with Vladimir Putin in Bishkek and expressed India's willingness to assist in resolving the Ukraine conflict.",
+          "kind": "event",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/8/31/putin-and-xi-affirm-strategic-alliance-amid-unpredictable-world?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 46,
+          "cluster_id": 3,
+          "text": "Chinese President Xi Jinping stated China is ready to work with Russia to advance an equal and orderly multipolar world.",
+          "kind": "quote",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/rest-of-world/uncertainties-rising-xi-jinping-calls-for-stronger-china-russia-cooperation-in-meeting-with-putin-at-sco-summit/articleshow/133656849.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 47,
+          "cluster_id": 3,
+          "text": "Russian President Vladimir Putin proposed expanding cooperation with China in artificial intelligence and digital innovation.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/rest-of-world/uncertainties-rising-xi-jinping-calls-for-stronger-china-russia-cooperation-in-meeting-with-putin-at-sco-summit/articleshow/133656849.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 48,
+          "cluster_id": 3,
+          "text": "Vladimir Putin offered to establish a permanent visa-free regime with China if Beijing considers it beneficial.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/rest-of-world/uncertainties-rising-xi-jinping-calls-for-stronger-china-russia-cooperation-in-meeting-with-putin-at-sco-summit/articleshow/133656849.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 49,
+          "cluster_id": 3,
+          "text": "Vladimir Putin noted that bilateral visa-free travel boosted tourist flows between Russia and China by 43 percent in the first half of the year.",
+          "kind": "figure",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/rest-of-world/uncertainties-rising-xi-jinping-calls-for-stronger-china-russia-cooperation-in-meeting-with-putin-at-sco-summit/articleshow/133656849.cms",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 4,
+      "headline_hint": "PM Narendra Modi meets Putin and Pezeshkian at SCO Summit, calling for peace in Ukraine and West Asia",
+      "section": "india",
+      "batch_position": 0,
+      "claim_count": 17,
+      "distinct_outlets": 4,
+      "source_kinds": {
+        "fulltext": 16,
+        "summary": 1
+      },
+      "claims": [
+        {
+          "id": 50,
+          "cluster_id": 4,
+          "text": "Prime Minister Narendra Modi held bilateral meetings with Kyrgyz President Sadyr Zhaparov and Armenian Prime Minister Nikol Pashinyan ahead of the SCO summit in Bishkek.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/ahead-of-sco-pm-holds-talks-with-kyrgyz-prez-pm-of-armenia/articleshow/133664172.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 51,
+          "cluster_id": 4,
+          "text": "Prime Minister Narendra Modi attended the opening ceremony of the World Nomad Games in Kyrgyzstan.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/ahead-of-sco-pm-holds-talks-with-kyrgyz-prez-pm-of-armenia/articleshow/133664172.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 52,
+          "cluster_id": 4,
+          "text": "Formal bilateral talks between Prime Minister Narendra Modi and Chinese President Xi Jinping were deferred to the upcoming BRICS summit in India on September 12-13.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/ahead-of-sco-pm-holds-talks-with-kyrgyz-prez-pm-of-armenia/articleshow/133664172.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 53,
+          "cluster_id": 4,
+          "text": "Prime Minister Narendra Modi and Armenian PM Nikol Pashinyan discussed bilateral cooperation in defence, pharma, mining, education, economic, and cultural fields.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/ahead-of-sco-pm-holds-talks-with-kyrgyz-prez-pm-of-armenia/articleshow/133664172.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 54,
+          "cluster_id": 4,
+          "text": "Prime Minister Narendra Modi met Iranian President Masoud Pezeshkian on August 31, 2026, in Bishkek, Kyrgyzstan, on the sidelines of the SCO summit.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/pm-modi-meet-iran-president-masoud-pezeshkian-on-the-sidelines-of-sco-summit-in-kyrgyzstan/article71410215.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 55,
+          "cluster_id": 4,
+          "text": "The August 31 meeting was the first top-level meeting between India and Iran since war broke out on Iran in February 2026.",
+          "kind": "background",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/pm-modi-meet-iran-president-masoud-pezeshkian-on-the-sidelines-of-sco-summit-in-kyrgyzstan/article71410215.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 56,
+          "cluster_id": 4,
+          "text": "Prime Minister Narendra Modi urged President Masoud Pezeshkian to ensure peace in West Asia and preserve freedom of navigation in the Strait of Hormuz.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/pm-modi-meet-iran-president-masoud-pezeshkian-on-the-sidelines-of-sco-summit-in-kyrgyzstan/article71410215.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 57,
+          "cluster_id": 4,
+          "text": "Iranian President Masoud Pezeshkian blamed Israel and the U.S. for the conflict and requested Prime Minister Modi to use India's extensive contacts to assist the dialogue process.",
+          "kind": "quote",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/pm-modi-meet-iran-president-masoud-pezeshkian-on-the-sidelines-of-sco-summit-in-kyrgyzstan/article71410215.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 58,
+          "cluster_id": 4,
+          "text": "Iranian President Masoud Pezeshkian stated that Iran remained committed to ceasefire agreements, but the American side failed to fulfill its commitments.",
+          "kind": "quote",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/pm-modi-meet-iran-president-masoud-pezeshkian-on-the-sidelines-of-sco-summit-in-kyrgyzstan/article71410215.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 59,
+          "cluster_id": 4,
+          "text": "In July 2026, an Indian delegation including Bihar Governor Lt. Gen. Syed Ata Hasnain (retd.) and Minister of State Pabitra Margherita attended the funeral of slain Iranian Supreme Leader Ali Khamenei.",
+          "kind": "background",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/pm-modi-meet-iran-president-masoud-pezeshkian-on-the-sidelines-of-sco-summit-in-kyrgyzstan/article71410215.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 60,
+          "cluster_id": 4,
+          "text": "Prime Minister Narendra Modi told Russian President Vladimir Putin in Bishkek that Russia should move from endless war towards the end of war.",
+          "kind": "quote",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/should-move-from-endless-war-to-end-of-war-pm-modi-tells-russian-prez-putin-101788198825616.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 61,
+          "cluster_id": 4,
+          "text": "Prime Minister Narendra Modi and President Vladimir Putin discussed Black Sea attacks on merchant vessels that killed at least five Indian seafarers.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/should-move-from-endless-war-to-end-of-war-pm-modi-tells-russian-prez-putin-101788198825616.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 62,
+          "cluster_id": 4,
+          "text": "Prime Minister Narendra Modi and Russian President Vladimir Putin travelled together in Putin's limousine to the inaugural ceremony of the World Nomad Games.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/should-move-from-endless-war-to-end-of-war-pm-modi-tells-russian-prez-putin-101788198825616.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 63,
+          "cluster_id": 4,
+          "text": "Russian President Vladimir Putin stated that bilateral trade turnover between Russia and India grew by 2.6% in the first half of 2026.",
+          "kind": "figure",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/should-move-from-endless-war-to-end-of-war-pm-modi-tells-russian-prez-putin-101788198825616.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 64,
+          "cluster_id": 4,
+          "text": "Russian President Vladimir Putin noted that the number of Indian students studying in Russia reached almost 40,000 following a seven-fold increase over the past decade.",
+          "kind": "figure",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/should-move-from-endless-war-to-end-of-war-pm-modi-tells-russian-prez-putin-101788198825616.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 65,
+          "cluster_id": 4,
+          "text": "Foreign Secretary Vikram Misri stated after the bilateral meeting that Modi and Putin discussed addressing the growing trade imbalance between India and Russia.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/should-move-from-endless-war-to-end-of-war-pm-modi-tells-russian-prez-putin-101788198825616.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 66,
+          "cluster_id": 4,
+          "text": "Prime Minister Narendra Modi informed Russian President Vladimir Putin that India supports all efforts to end the war in Ukraine.",
+          "kind": "event",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/31/indias-pm-modi-urges-end-to-ukraine-war-in-talks-with-russias-putin?traffic_source=rss",
+          "source_kind": "summary"
+        }
+      ]
+    },
+    {
+      "cluster_id": 5,
+      "headline_hint": "India rejects Hague Court of Arbitration ruling on Indus Waters Treaty as illegal and without jurisdiction",
+      "section": "india",
+      "batch_position": 1,
+      "claim_count": 13,
+      "distinct_outlets": 4,
+      "source_kinds": {
+        "fulltext": 13
+      },
+      "claims": [
+        {
+          "id": 67,
+          "cluster_id": 5,
+          "text": "India's Ministry of External Affairs rejected an interim award on the Indus Waters Treaty issued by the Court of Arbitration in The Hague, calling the body illegally constituted.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/government-terms-arbitration-award-on-indus-waters-treaty-illegal/articleshow/133664981.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 68,
+          "cluster_id": 5,
+          "text": "The Permanent Court of Arbitration in The Hague stated that the Indus Waters Treaty remains fully in force and that India had no justification for suspending the pact.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/government-terms-arbitration-award-on-indus-waters-treaty-illegal/articleshow/133664981.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 69,
+          "cluster_id": 5,
+          "text": "The Permanent Court of Arbitration ruled that India must limit work on a hydroelectric plant under construction in Jammu and Kashmir.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/government-terms-arbitration-award-on-indus-waters-treaty-illegal/articleshow/133664981.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 70,
+          "cluster_id": 5,
+          "text": "The Permanent Court of Arbitration issued an interim order prohibiting India from constructing certain structures of the Ratle hydroelectric project in Jammu and Kashmir.",
+          "kind": "event",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/latest/1095384/india-rejects-international-court-order-on-indus-water-treaty-says-panel-illegally-constituted?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 71,
+          "cluster_id": 5,
+          "text": "India placed the 1960 Indus Waters Treaty in abeyance following an April 22 terror attack in Pahalgam, Jammu and Kashmir, which killed 26 people.",
+          "kind": "background",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/latest/1095384/india-rejects-international-court-order-on-indus-water-treaty-says-panel-illegally-constituted?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 72,
+          "cluster_id": 5,
+          "text": "Under the 1960 Indus Waters Treaty, water from the eastern rivers Beas, Ravi, and Sutlej was allocated to India, while water from the western rivers Indus, Chenab, and Jhelum was allocated to Pakistan.",
+          "kind": "background",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/latest/1095384/india-rejects-international-court-order-on-indus-water-treaty-says-panel-illegally-constituted?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 73,
+          "cluster_id": 5,
+          "text": "Since suspending the treaty, India has accelerated work on several hydropower projects in Jammu and Kashmir, including the Ratle and Kishenganga projects.",
+          "kind": "background",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/latest/1095384/india-rejects-international-court-order-on-indus-water-treaty-says-panel-illegally-constituted?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 74,
+          "cluster_id": 5,
+          "text": "The Court of Arbitration noted that a World Bank-appointed neutral expert will decide by July 2027 whether construction of Indian hydroelectric plants aligns with the Indus Waters Treaty.",
+          "kind": "figure",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/never-recognised-existence-of-india-rejects-hague-arbitration-court-ruling-on-indus-waters-treaty-11788176314083.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 75,
+          "cluster_id": 5,
+          "text": "In June, Chenab Valley Power Projects sought forest land diversion of approximately 197 hectares for the Kirthai Stage-II Hydroelectric Project on the Chenab river.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/never-recognised-existence-of-india-rejects-hague-arbitration-court-ruling-on-indus-waters-treaty-11788176314083.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 76,
+          "cluster_id": 5,
+          "text": "India suspended the Indus Waters Treaty in April 2025 as part of measures responding to a Pahalgam terror attack carried out by a proxy of Lashkar-e-Taiba.",
+          "kind": "background",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/india-rejects-illegal-court-of-arbitrations-award-on-indus-waters-treaty-has-no-jurisdiction-101788175567329.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 77,
+          "cluster_id": 5,
+          "text": "Pakistan petitioned the Permanent Court of Arbitration in The Hague in March 2026 to determine the legal status of the Indus Waters Treaty.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/india-rejects-illegal-court-of-arbitrations-award-on-indus-waters-treaty-has-no-jurisdiction-101788175567329.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 78,
+          "cluster_id": 5,
+          "text": "The Court of Arbitration prohibited India from concreting the Ratle project dam wall and power intake structure above specified levels until 90 days after the Neutral Expert's decision.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/india-rejects-illegal-court-of-arbitrations-award-on-indus-waters-treaty-has-no-jurisdiction-101788175567329.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 79,
+          "cluster_id": 5,
+          "text": "The Court of Arbitration panel evaluating the Indus Waters Treaty dispute was chaired by Sean D. Murphy of the United States.",
+          "kind": "background",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/india-rejects-illegal-court-of-arbitrations-award-on-indus-waters-treaty-has-no-jurisdiction-101788175567329.html",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 6,
+      "headline_hint": "Draft voter lists published across states show millions of voter name deletions",
+      "section": "india",
+      "batch_position": 2,
+      "claim_count": 13,
+      "distinct_outlets": 2,
+      "source_kinds": {
+        "fulltext": 13
+      },
+      "claims": [
+        {
+          "id": 80,
+          "cluster_id": 6,
+          "text": "Draft voter lists published under phase three of the Special Intensive Revision removed 6.15 crore names out of 36.08 crore electors across 16 states and 3 Union Territories.",
+          "kind": "figure",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/draft-voter-lists-see-over-6-crore-deletions-so-far-in-sir-third-phase/article71411677.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 81,
+          "cluster_id": 6,
+          "text": "Out of 36.08 crore electors on the rolls in the phase three revision areas, 29.93 crore names were retained in the draft rolls.",
+          "kind": "figure",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/draft-voter-lists-see-over-6-crore-deletions-so-far-in-sir-third-phase/article71411677.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 82,
+          "cluster_id": 6,
+          "text": "Delhi recorded the highest percentage of voter name deletions in the draft rolls at 32.78 percent.",
+          "kind": "figure",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/draft-voter-lists-see-over-6-crore-deletions-so-far-in-sir-third-phase/article71411677.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 83,
+          "cluster_id": 6,
+          "text": "Maharashtra saw the largest absolute reduction in voters, with 2.06 crore names removed from its draft electoral roll.",
+          "kind": "figure",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/draft-voter-lists-see-over-6-crore-deletions-so-far-in-sir-third-phase/article71411677.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 84,
+          "cluster_id": 6,
+          "text": "Karnataka recorded 1.07 crore voter deletions in its draft electoral list, the second highest in absolute terms.",
+          "kind": "figure",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/draft-voter-lists-see-over-6-crore-deletions-so-far-in-sir-third-phase/article71411677.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 85,
+          "cluster_id": 6,
+          "text": "Karnataka Chief Minister D.K. Shivakumar and Telangana Chief Minister A. Revanth Reddy wrote to Chief Election Commissioner Gyanesh Kumar raising concerns over massive voter deletions.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/draft-voter-lists-see-over-6-crore-deletions-so-far-in-sir-third-phase/article71411677.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 86,
+          "cluster_id": 6,
+          "text": "In March, the Supreme Court unanimously upheld the constitutional validity of the Election Commission of India's Special Intensive Revision process.",
+          "kind": "background",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/draft-voter-lists-see-over-6-crore-deletions-so-far-in-sir-third-phase/article71411677.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 87,
+          "cluster_id": 6,
+          "text": "In Maharashtra, draft voter rolls retained 7.7 crore voters after 21.1 percent of the state's previous voter base was excluded.",
+          "kind": "figure",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/latest/1095385/maharashtra-sir-21-voters-removed-from-draft-electoral-rolls?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 88,
+          "cluster_id": 6,
+          "text": "Pune district had the highest number of uncollected enumeration forms in Maharashtra at 28.6 lakh, followed by Thane at 28.5 lakh and Mumbai Suburban at 26.5 lakh.",
+          "kind": "figure",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/latest/1095385/maharashtra-sir-21-voters-removed-from-draft-electoral-rolls?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 89,
+          "cluster_id": 6,
+          "text": "Voters excluded from Maharashtra's draft rolls can file claims and objections through September 30 ahead of the final roll publication on November 4.",
+          "kind": "event",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/latest/1095385/maharashtra-sir-21-voters-removed-from-draft-electoral-rolls?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 90,
+          "cluster_id": 6,
+          "text": "Delhi's draft voter list deleted 47.7 lakh names, reducing the national capital's electorate by about 33 percent from 1.45 crore to 97.5 lakh.",
+          "kind": "figure",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/latest/1095373/rush-hour-33-voters-deleted-from-delhi-draft-list-sc-stays-fir-against-mohammed-deepak-more?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 91,
+          "cluster_id": 6,
+          "text": "During the Special Intensive Revision in Delhi, Rohini recorded an enumeration form digitisation rate of 83.4 percent, whereas Tughlakabad recorded 52.1 percent.",
+          "kind": "figure",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/latest/1095371/delhi-sir-one-in-three-voters-removed-from-draft-list?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 92,
+          "cluster_id": 6,
+          "text": "Draft rolls removed more than 19 percent of registered voters in Karnataka, 16 percent in Haryana, and 10.8 percent in Andhra Pradesh.",
+          "kind": "figure",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/latest/1095371/delhi-sir-one-in-three-voters-removed-from-draft-list?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        }
+      ]
+    }
+  ],
+  "clusters_with_no_claims": []
+}

@@ -1,0 +1,833 @@
+{
+  "dials": {
+    "WEIGHT_FLOOR": 5,
+    "TIER_WEIGHT": {
+      "lead": 4,
+      "major": 2,
+      "notable": 0
+    },
+    "WIKI_BONUS": 2,
+    "HARD_CAP": 12,
+    "MIN_STORIES_IF_ANY": 3,
+    "MAX_ARTICLES_PER_STORY": 5
+  },
+  "floor_relaxed": false,
+  "kept_weights": [
+    13,
+    12,
+    11,
+    7,
+    13,
+    6,
+    5
+  ],
+  "per_section": {
+    "world": 4,
+    "india": 3
+  },
+  "clusters": [
+    {
+      "headline_hint": "US and Iran exchange direct military strikes in the Strait of Hormuz and Middle East after a monthlong lull",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "lead",
+      "article_ids": [
+        55,
+        98,
+        119,
+        165,
+        166,
+        173,
+        197,
+        200,
+        243,
+        259,
+        290,
+        302,
+        308
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        55,
+        98,
+        119,
+        165,
+        166,
+        173,
+        197,
+        200,
+        243,
+        259,
+        290,
+        302,
+        308
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 6,
+      "wiki_backed": true,
+      "wiki_event": "Iran's Islamic Revolutionary Guard Corps says that a supertanker caught on fire after hitting two naval mines in the Strait of Hormuz. However, the United States Central Command (CENTCOM) on a X social media post denies the claims.",
+      "weight": 12,
+      "weight_terms": {
+        "distinct_outlets": 6,
+        "tier_weight": 4,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "France 24",
+          "title": "Trump threatens to ‘hit Iran hard’ as strikes resume after month-long lull",
+          "url": "https://www.france24.com/en/middle-east/20260831-trump-threatens-to-hit-iran-hard-as-strikes-resume-after-month-long-lull"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Trump calls Iran a ‘failed nation’, says ‘IT IS DEAD’ in scathing attack",
+          "url": "https://www.livemint.com/news/us-news/trump-calls-iran-a-failed-nation-says-it-is-dead-in-scathing-attack-11788196727531.html"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Trump says US will ‘hit Iran hard’ as hostilities resume – as it happened",
+          "url": "https://www.theguardian.com/world/live/2026/aug/31/us-iran-israel-hormuz-oil-donald-trump-larak-kharg-island-uae-jordan-latest-news-updates"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Vance says Trump’s dramatic Kharg Island post was meant as a signal to Iran",
+          "url": "https://timesofindia.indiatimes.com/world/us/jd-vance-says-donald-trumps-dramatic-kharg-island-post-was-meant-as-a-signal-to-iran/articleshow/133658179.cms"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "US and Iran trade strikes for first time in weeks",
+          "url": "https://www.bbc.co.uk/news/articles/cx2z72x5z1po?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 8
+    },
+    {
+      "headline_hint": "Catastrophic glacial flood along Nepal-China border kills over 900 with thousands missing",
+      "section": "world",
+      "category": "disaster",
+      "tier_requested": "major",
+      "article_ids": [
+        3,
+        4,
+        52,
+        63,
+        125,
+        160,
+        175,
+        185,
+        191,
+        192,
+        194,
+        201,
+        213,
+        220,
+        228,
+        231,
+        274,
+        276,
+        306,
+        310,
+        316,
+        317,
+        332,
+        333
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        3,
+        4,
+        52,
+        63,
+        125,
+        160,
+        175,
+        185,
+        191,
+        192,
+        194,
+        201,
+        213,
+        220,
+        228,
+        231,
+        274,
+        276,
+        306,
+        310,
+        316,
+        317,
+        332,
+        333
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 9,
+      "wiki_backed": true,
+      "wiki_event": "It is reported that school principal Rajendra Dawadi has saved over 900 students and 16 faculty members at the Tribhuvan Trishuli Secondary School in Bidur, Nuwakot District, Nepal, 10 minutes before flash floods hit the area last week.",
+      "weight": 13,
+      "weight_terms": {
+        "distinct_outlets": 9,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "France 24",
+          "title": "Melting Himalayas? Nepal disaster exposes growing risk of glacial flooding",
+          "url": "https://www.france24.com/en/tv-shows/the-debate/20260831-melting-himalayas-nepal-disaster-exposes-growing-risk-of-glacial-flooding"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "‘Nothing is usable’: Nepal residents return to flood-ravaged homes",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/31/nothing-is-usable-nepal-residents-return-to-flood-ravaged-homes?traffic_source=rss"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Nepal rescuers blast hillside in search of hydropower workers as families wait anxiously",
+          "url": "https://www.bbc.co.uk/news/articles/c5ylvgq9q71o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "‘Saw death from close’: 8 Assam workers rescued from Nepal return; 8 missing",
+          "url": "https://www.hindustantimes.com/india-news/saw-death-from-close-8-assam-workers-rescued-from-nepal-return-8-missing-101788193241678.html"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Nepal floods: Avalanche raced down Himalayas at 167 kmph, triggering deadly deluge",
+          "url": "https://timesofindia.indiatimes.com/world/south-asia/nepal-floods-avalanche-from-5200-metres-raced-down-himalayas-at-167-kmph-triggering-deadly-deluge/articleshow/133657450.cms"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 19
+    },
+    {
+      "headline_hint": "Lionel Messi retires from international football with the Argentina national team",
+      "section": "world",
+      "category": "sport",
+      "tier_requested": "major",
+      "article_ids": [
+        48,
+        56,
+        153,
+        164,
+        177,
+        187,
+        202,
+        209,
+        210
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        48,
+        56,
+        153,
+        164,
+        177,
+        187,
+        202,
+        209,
+        210
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 7,
+      "wiki_backed": true,
+      "wiki_event": "In association football, Lionel Messi announces his retirement from the Argentina national team after 21 years as the country's top scorer, the player with the most caps, and captain when they won the 2022 FIFA World Cup.",
+      "weight": 11,
+      "weight_terms": {
+        "distinct_outlets": 7,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "Argentinian footballer Lionel Messi announces his retirement",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/31/argentinian-footballer-lionel-messi-announces-his-retirement?traffic_source=rss"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "Reactions to Argentina's Messi ending international career",
+          "url": "https://www.channelnewsasia.com/sport/reactions-argentinas-messi-ending-international-career-6352996"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Lionel Messi Net Worth 2026: Salary, endorsements, cars, properties and luxury assets",
+          "url": "https://www.livemint.com/news/trends/lionel-messi-net-worth-2026-salary-endorsements-cars-properties-and-luxury-assets-11788197164380.html"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "Lionel Messi says he's retiring from playing internationally for Argentina",
+          "url": "https://www.npr.org/2026/08/31/nx-s1-5950427/lionel-messi-retires-international-soccer"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Messi’s 10 most iconic moments as Argentina legend retires from int'l football",
+          "url": "https://timesofindia.indiatimes.com/sports/football/top-stories/lionel-messis-10-most-iconic-moments-as-argentina-legend-retires-from-international-football/articleshow/133657784.cms"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 4
+    },
+    {
+      "headline_hint": "Vladimir Putin and Xi Jinping hold bilateral talks on sidelines of SCO Summit in Kyrgyzstan",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        41,
+        47,
+        199
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        41,
+        47,
+        199
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 3,
+      "wiki_backed": true,
+      "wiki_event": "The 26th Shanghai Cooperation Organisation summit is held in Bishkek, Kyrgyzstan, which coincides with the country's Independence Day and the opening ceremony of the 2026 World Nomad Games.",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "Putin, Xi reaffirm Russia-China ties amid ‘unpredictable’ world",
+          "url": "https://www.aljazeera.com/news/2026/8/31/putin-and-xi-affirm-strategic-alliance-amid-unpredictable-world?traffic_source=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Xi, Putin hold talks ahead of Shanghai Cooperation Organization summit",
+          "url": "https://www.france24.com/en/tv-shows/business/20260831-xi-putin-hold-talks-ahead-of-shanghai-cooperation-organization-summit"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "‘Uncertainties’ rising: Xi calls for stronger cooperation in meeting with Putin",
+          "url": "https://timesofindia.indiatimes.com/world/rest-of-world/uncertainties-rising-xi-jinping-calls-for-stronger-china-russia-cooperation-in-meeting-with-putin-at-sco-summit/articleshow/133656849.cms"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "US Supreme Court allows Trump administration to resume $400 million White House ballroom construction",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        8,
+        17,
+        24,
+        27
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        8,
+        17,
+        24,
+        27
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "Trump’s ballroom construction can resume at White House, supreme court rules – live",
+          "url": "https://www.theguardian.com/us-news/live/2026/aug/31/donald-trump-lake-america-ontario-canada-trade-war-tariffs-jd-vance-g20-latest-news-updates"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "US Supreme Court clears way for Trump to keep building White House ballroom",
+          "url": "https://www.bbc.co.uk/news/articles/c9w457e7ydlo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "White House construction on $400m ballroom can go on, says US Supreme Court",
+          "url": "https://www.aljazeera.com/news/2026/8/31/white-house-construction-on-400m-ballroom-can-go-on-says-us-supreme-court?traffic_source=rss"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "'Golden age of America': Trump celebrates as SC clears $400M White House ballroom",
+          "url": "https://timesofindia.indiatimes.com/world/us/golden-age-of-america-trump-celebrates-as-supreme-court-clears-400m-white-house-ballroom/articleshow/133663130.cms"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Deadly flash flood in the Grand Canyon leaves two dead and over a dozen missing",
+      "section": "world",
+      "category": "disaster",
+      "tier_requested": "notable",
+      "article_ids": [
+        28,
+        51,
+        66
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        28,
+        51,
+        66
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "How intense rains in the Grand Canyon turned into a deadly disaster",
+          "url": "https://www.theguardian.com/us-news/ng-interactive/2026/aug/31/grand-canyon-flash-flood-causes"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Two dead and more than a dozen missing after 'terrifying' flash flood hits Grand Canyon",
+          "url": "https://www.bbc.co.uk/news/articles/clylkjyez1do?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Grand Canyon Under Storm Threat After Deadly Weekend Floods",
+          "url": "https://www.livemint.com/news/grand-canyon-under-storm-threat-after-deadly-weekend-floods-11788205873570.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Deep-sea search efforts underway after ferry capsizes off Northern Cyprus coast",
+      "section": "world",
+      "category": "disaster",
+      "tier_requested": "notable",
+      "article_ids": [
+        121,
+        219,
+        226
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        121,
+        219,
+        226
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "Turkish deep-sea search vessel joins efforts to retrieve 20 still missing after Cyprus ferry disaster",
+          "url": "https://www.theguardian.com/world/2026/aug/31/turkish-deep-sea-search-vessel-tcg-isin-retrieve-20-missing-cyprus-ferry"
+        },
+        {
+          "outlet": "France 24",
+          "title": "In Northern Cyprus, families wait for news of passengers from sunk ferry",
+          "url": "https://www.france24.com/en/in-northern-cyprus-families-wait-for-news-of-passengers-from-sunk-ferry"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "'She slipped out of my hand' - children missing after ferry sinks off northern Cyprus",
+          "url": "https://www.bbc.co.uk/news/articles/c1mv5ggg1l8o?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "PM Narendra Modi meets Putin and Pezeshkian at SCO Summit, calling for peace in Ukraine and West Asia",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "lead",
+      "article_ids": [
+        20,
+        42,
+        46,
+        93,
+        152,
+        155,
+        163,
+        181,
+        215,
+        217,
+        234,
+        236,
+        264,
+        269,
+        285
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        20,
+        42,
+        46,
+        93,
+        152,
+        155,
+        163,
+        181,
+        215,
+        217,
+        234,
+        236,
+        264,
+        269,
+        285
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 7,
+      "wiki_backed": true,
+      "wiki_event": "The 26th Shanghai Cooperation Organisation summit is held in Bishkek, Kyrgyzstan, which coincides with the country's Independence Day and the opening ceremony of the 2026 World Nomad Games.",
+      "weight": 13,
+      "weight_terms": {
+        "distinct_outlets": 7,
+        "tier_weight": 4,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "Ahead of SCO, PM holds talks with Kyrgyz president, PM of Armenia",
+          "url": "https://timesofindia.indiatimes.com/india/ahead-of-sco-pm-holds-talks-with-kyrgyz-prez-pm-of-armenia/articleshow/133664172.cms"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "PM Modi urges Iran to ensure peace, freedom of navigation",
+          "url": "https://www.thehindu.com/news/national/pm-modi-meet-iran-president-masoud-pezeshkian-on-the-sidelines-of-sco-summit-in-kyrgyzstan/article71410215.ece"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Should move from endless war to end of war, PM Modi tells Russian Prez Putin",
+          "url": "https://www.hindustantimes.com/india-news/should-move-from-endless-war-to-end-of-war-pm-modi-tells-russian-prez-putin-101788198825616.html"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "India’s PM Modi urges end to Ukraine war in talks with Russia’s Putin",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/31/indias-pm-modi-urges-end-to-ukraine-war-in-talks-with-russias-putin?traffic_source=rss"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "Need To Move To End Of War: Foreign Ministry To NDTV On PM's Ukraine Comment",
+          "url": "https://www.ndtv.com/india-news/need-to-move-to-end-of-war-foreign-ministry-to-ndtv-on-pms-ukraine-comment-11983788#publisher=newsstand"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 10
+    },
+    {
+      "headline_hint": "Draft voter lists published across states show millions of voter name deletions",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        95,
+        150,
+        207,
+        263,
+        293
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        95,
+        150,
+        207,
+        263,
+        293
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 5,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "The Hindu",
+          "title": "Draft voter lists see over 6 crore deletions so far in SIR third phase",
+          "url": "https://www.thehindu.com/news/national/draft-voter-lists-see-over-6-crore-deletions-so-far-in-sir-third-phase/article71411677.ece"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "Over 2 Crore Voters Excluded From Maharashtra's Draft Electoral Roll",
+          "url": "https://www.ndtv.com/india-news/over-2-crore-voters-excluded-from-maharashtras-draft-electoral-roll-11983917#publisher=newsstand"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "Maharashtra SIR: 21% voters removed from draft electoral rolls",
+          "url": "https://scroll.in/latest/1095385/maharashtra-sir-21-voters-removed-from-draft-electoral-rolls?utm_source=rss&utm_medium=public"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "Rush Hour: 33% voters deleted from Delhi draft list, SC stays FIR against ‘Mohammed’ Deepak & more",
+          "url": "https://scroll.in/latest/1095373/rush-hour-33-voters-deleted-from-delhi-draft-list-sc-stays-fir-against-mohammed-deepak-more?utm_source=rss&utm_medium=public"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "Delhi SIR: One in three voters removed from draft list",
+          "url": "https://scroll.in/latest/1095371/delhi-sir-one-in-three-voters-removed-from-draft-list?utm_source=rss&utm_medium=public"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "India rejects Hague Court of Arbitration ruling on Indus Waters Treaty as illegal and without jurisdiction",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        15,
+        216,
+        275,
+        278
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        15,
+        216,
+        275,
+        278
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 6,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "Government terms arbitration award on Indus Waters Treaty ‘illegal’",
+          "url": "https://timesofindia.indiatimes.com/india/government-terms-arbitration-award-on-indus-waters-treaty-illegal/articleshow/133664981.cms"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "India rejects international court order on Indus Waters Treaty, says panel ‘illegally constituted’",
+          "url": "https://scroll.in/latest/1095384/india-rejects-international-court-order-on-indus-water-treaty-says-panel-illegally-constituted?utm_source=rss&utm_medium=public"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "'Never recognised existence of...': India rejects Hague arbitration court ruling on Indus Waters Treaty",
+          "url": "https://www.livemint.com/news/india/never-recognised-existence-of-india-rejects-hague-arbitration-court-ruling-on-indus-waters-treaty-11788176314083.html"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "India rejects Court of Arbitration's Indus Waters Treaty award: ‘Illegally constituted, has no jurisdiction’",
+          "url": "https://www.hindustantimes.com/india-news/india-rejects-illegal-court-of-arbitrations-award-on-indus-waters-treaty-has-no-jurisdiction-101788175567329.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "India's economy grows 7.8% in Q1 despite global uncertainties and adverse weather",
+      "section": "india",
+      "category": "economy",
+      "tier_requested": "major",
+      "article_ids": [
+        38,
+        136,
+        162
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        38,
+        136,
+        162
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "Economy grew 7.8% in Q1 despite Iran crisis and El Nino conditions",
+          "url": "https://timesofindia.indiatimes.com/business/india-business/economy-grew-7-8-in-q1-despite-iran-crisis-and-el-nino-conditions/articleshow/133662895.cms"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "Congress calls GDP numbers a ‘Greatly Distorted Picture’ of economy",
+          "url": "https://www.thehindu.com/news/national/congress-calls-gdp-numbers-a-greatly-distorted-picture-of-economy/article71412490.ece"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "‘Where are the jobs?’ Congress challenges PM Modi after 7.8% Q1 GDP growth data",
+          "url": "https://timesofindia.indiatimes.com/india/where-are-the-jobs-congress-challenges-pm-modi-after-7-8-q1-gdp-growth-data/articleshow/133659321.cms"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Political row erupts after FIR filed against Rahul Gandhi over Haldwani remarks",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        18,
+        83,
+        261,
+        325
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        18,
+        83,
+        261,
+        325
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "Haldwani ‘purification’ row: Day after FIR against Rahul, BJP, Cong trade barbs",
+          "url": "https://timesofindia.indiatimes.com/india/haldwani-purification-row-day-after-fir-against-rahul-bjp-cong-trade-barbs/articleshow/133664929.cms"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "Keralam CM condemns registration of FIR against Rahul Gandhi",
+          "url": "https://www.thehindu.com/news/national/kerala/keralam-cm-condemns-registration-of-fir-against-rahul-gandhi/article71411288.ece"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Congress to hold massive protests over FIR against Rahul Gandhi: KC Venugopal",
+          "url": "https://www.hindustantimes.com/india-news/congress-to-hold-massive-protests-over-fir-against-rahul-gandhi-kcvenugopal-101788180993295.html"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "Rahul Gandhi booked after he demanded FIR over ‘purification’ ritual in Uttarakhand",
+          "url": "https://scroll.in/latest/1095365/rahul-gandhi-booked-after-he-demanded-fir-over-purification-ritual-in-uttarakhand?utm_source=rss&utm_medium=public"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Massive blast at firecracker factory in Uttar Pradesh's Kaushambi kills 11",
+      "section": "india",
+      "category": "disaster",
+      "tier_requested": "notable",
+      "article_ids": [
+        109,
+        227
+      ],
+      "verdict": "cut:below_floor(2<5)",
+      "valid_ids": [
+        109,
+        227
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 2,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "Firecracker factory blast in India kills 8 children",
+          "url": "https://www.aljazeera.com/news/2026/8/31/firecracker-factory-blast-in-india-kills-8-children?traffic_source=rss"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "11 dead after massive blast in firecracker factory in UP's Kaushambi, rescue ops on",
+          "url": "https://www.hindustantimes.com/india-news/massive-blast-in-firecracker-factory-in-up-kaushambi-deaths-injuries-rescue-operations-101788186788619.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Trump administration considers tightening US H-1B and H-4 work authorization rules",
+      "section": "india",
+      "category": "economy",
+      "tier_requested": "notable",
+      "article_ids": [
+        40,
+        305
+      ],
+      "verdict": "cut:below_floor(1<5)",
+      "valid_ids": [
+        40,
+        305
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 1,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 1,
+      "weight_terms": {
+        "distinct_outlets": 1,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Livemint",
+          "title": "US H-1B visa rules may tighten: Trump administration clears review of proposal to end 60-day grace period after layoffs",
+          "url": "https://www.livemint.com/news/us-news/us-h-1b-visa-rules-may-tighten-trump-administration-clears-review-of-proposal-to-end-60-day-grace-period-after-layoffs-11788209728961.html"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "US to end work permit for spouses of H-1B visa holders? No need to panic yet — All about the buzz over H-4 EAD program",
+          "url": "https://www.livemint.com/news/world/us-to-end-work-permit-for-spouses-of-h-1b-visa-holders-no-need-to-panic-yet-all-about-the-buzz-over-h-4-ead-program-11788169067369.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    }
+  ]
+}
