@@ -1,0 +1,651 @@
+{
+  "min_claim_chars": 20,
+  "max_claims_per_story": 24,
+  "calls": [
+    {
+      "label": "claims-world",
+      "cluster_ids": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "label": "claims-india",
+      "cluster_ids": [
+        3,
+        4
+      ]
+    }
+  ],
+  "rejected_claims": 0,
+  "rejected_clusters": 0,
+  "clusters": [
+    {
+      "cluster_id": 0,
+      "headline_hint": "US and Iran exchange direct strikes in major escalation near Strait of Hormuz",
+      "section": "world",
+      "batch_position": 0,
+      "claim_count": 17,
+      "distinct_outlets": 5,
+      "source_kinds": {
+        "fulltext": 17
+      },
+      "claims": [
+        {
+          "id": 1,
+          "cluster_id": 0,
+          "text": "US Central Command announced that US forces began striking Islamic Revolutionary Guard Corps (IRGC) targets in Iran at 12:00 p.m. ET on Tuesday.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/sep/01/us-iran-airstrikes-launch",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 2,
+          "cluster_id": 0,
+          "text": "US Central Command stated that strikes on IRGC targets were launched in response to attempted attacks on commercial shipping in the Strait of Hormuz and against US service members.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/sep/01/us-iran-airstrikes-launch",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 3,
+          "cluster_id": 0,
+          "text": "Iranian state media reported explosions on Qeshm Island on the northern side of the Strait of Hormuz during the US attacks.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/sep/01/us-iran-airstrikes-launch",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 4,
+          "cluster_id": 0,
+          "text": "Iranian news agency Nour News reported explosions in the port cities of Bandar Abbas and Chabahar.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/sep/01/us-iran-airstrikes-launch",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 5,
+          "cluster_id": 0,
+          "text": "A June Memorandum of Understanding declared an end to fighting that killed thousands in Iran and Lebanon since US and Israeli strikes began on February 28.",
+          "kind": "background",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/sep/01/us-iran-airstrikes-launch",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 6,
+          "cluster_id": 0,
+          "text": "Iranian President Masoud Pezeshkian stated in Bishkek that Iran would immediately reciprocate if the US returns to its commitments under the June memorandum of understanding.",
+          "kind": "quote",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/sep/01/us-iran-airstrikes-launch",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 7,
+          "cluster_id": 0,
+          "text": "Iranian Parliament Speaker Mohammad Baqer Qalibaf warned that if the enemy attempts to prevent Iran from exporting oil from the Persian Gulf, no one will be able to export oil.",
+          "kind": "quote",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/sep/01/us-iran-airstrikes-launch",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 8,
+          "cluster_id": 0,
+          "text": "The Iranian Red Crescent reported four people, including a four-year-old child, were killed and more than 50 injured when missile shrapnel hit a wedding celebration in Sirik, Iran.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cj06q4ynpmjo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 9,
+          "cluster_id": 0,
+          "text": "US Navy Captain Tim Hawkins stated that the US military never targets civilians, unlike the IRGC.",
+          "kind": "quote",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cj06q4ynpmjo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 10,
+          "cluster_id": 0,
+          "text": "The IRGC launched a barrage of ballistic missiles at a US Marine base in Aqaba, Jordan, in response to the attack in Sirik.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cj06q4ynpmjo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 11,
+          "cluster_id": 0,
+          "text": "The Jordanian Armed Forces reported no deaths or injuries resulted from the Iranian missile strike near Aqaba.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cj06q4ynpmjo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 12,
+          "cluster_id": 0,
+          "text": "US President Donald Trump stated on social media that Iran would be hit again at a much harder and higher level if it retaliates against the US strikes.",
+          "kind": "quote",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cj06q4ynpmjo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 13,
+          "cluster_id": 0,
+          "text": "Approximately 20% of the world's oil passes through the strategic waterway of the Strait of Hormuz.",
+          "kind": "background",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/world/usiran-conflict-flares-again-as-tehran-launches-missiles-and-drones-after-fresh-us-strikes-11788294939987.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 14,
+          "cluster_id": 0,
+          "text": "Iranian state media reported US strikes hit a fishmeal factory on Qeshm Island, a fishing pier and maritime tower in Sirik, and an area outside Jiroft Airport.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/world/usiran-conflict-flares-again-as-tehran-launches-missiles-and-drones-after-fresh-us-strikes-11788294939987.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 15,
+          "cluster_id": 0,
+          "text": "Japan's 10-year bond yield reached 3% for the first time since 1996 following the market reaction to US strikes in Iran.",
+          "kind": "figure",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/tv-shows/business/20260901-global-bond-selloff-deepens-as-us-launches-fresh-attacks-on-iran",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 16,
+          "cluster_id": 0,
+          "text": "US national government debt has risen above $40 trillion.",
+          "kind": "figure",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/tv-shows/business/20260901-global-bond-selloff-deepens-as-us-launches-fresh-attacks-on-iran",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 17,
+          "cluster_id": 0,
+          "text": "The US Embassy in Qatar urged Americans in the Middle East to exercise heightened vigilance regarding potential flight cancellations and travel disruptions.",
+          "kind": "event",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/least-four-people-killed-in-iran-when-us-strike-hit-house-where-wedding-was-taking-place-6355866",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 1,
+      "headline_hint": "Germany blames Russia for Leipzig airport drone attack and orders consulate closed",
+      "section": "world",
+      "batch_position": 1,
+      "claim_count": 10,
+      "distinct_outlets": 3,
+      "source_kinds": {
+        "fulltext": 10
+      },
+      "claims": [
+        {
+          "id": 18,
+          "cluster_id": 1,
+          "text": "German Interior Minister Alexander Dobrindt announced that Russia was responsible for an August 4 drone attack at Leipzig/Halle Airport.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c5ylm3m67n2o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 19,
+          "cluster_id": 1,
+          "text": "An explosive drone discovered near Ukrainian cargo planes at Leipzig/Halle Airport on August 4 failed to detonate due to a faulty detonator.",
+          "kind": "background",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c5ylm3m67n2o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 20,
+          "cluster_id": 1,
+          "text": "German Foreign Minister Johann Wadephul announced the ordered closure of the Russian consulate in Bonn.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c5ylm3m67n2o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 21,
+          "cluster_id": 1,
+          "text": "Germany announced it will terminate the contract for the Russian House cultural centre in Berlin.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c5ylm3m67n2o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 22,
+          "cluster_id": 1,
+          "text": "Russian Foreign Ministry spokesperson Maria Zakharova stated Moscow would respond in a mirror-image fashion to Germany's diplomatic measures.",
+          "kind": "quote",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c5ylm3m67n2o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 23,
+          "cluster_id": 1,
+          "text": "German investigators reported finding double-digit numbers of explosive devices near a power substation in Brandenburg in an attempt to cause a regional power outage.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/live/2026/sep/01/ukraine-russia-strikes-attacks-odesa-zelenskyy-putin-eu-defence-europe-latest-news-updates",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 24,
+          "cluster_id": 1,
+          "text": "Ukrainian Foreign Minister Andrii Sybiha warned that Russia's hybrid attack at Leipzig airport is part of a deliberate strategy toward Germany and Europe.",
+          "kind": "quote",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/live/2026/sep/01/ukraine-russia-strikes-attacks-odesa-zelenskyy-putin-eu-defence-europe-latest-news-updates",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 25,
+          "cluster_id": 1,
+          "text": "NATO Secretary General Mark Rutte declared full solidarity with Germany following the Russian hybrid attack in Leipzig.",
+          "kind": "quote",
+          "outlet": "DW World",
+          "url": "https://www.dw.com/en/germany-says-russia-behind-attempted-drone-attack-at-leipzig-airport/a-78584589?maca=en-rss-en-world-4025-rdf",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 26,
+          "cluster_id": 1,
+          "text": "The drone discovered attached to a Ukrainian cargo plane at Leipzig airport on August 4 was carrying 600 grams of explosives.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/sep/01/germany-blames-russia-drone-attack-leipzig-airport",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 27,
+          "cluster_id": 1,
+          "text": "Germany is backing the European Commission's 22nd sanctions package covering 1,600 companies and organizations linked to Russia.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/sep/01/germany-blames-russia-drone-attack-leipzig-airport",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 2,
+      "headline_hint": "Russian strikes kill at least 12 in Kyiv while targeting Ukraine railway system",
+      "section": "world",
+      "batch_position": 2,
+      "claim_count": 13,
+      "distinct_outlets": 4,
+      "source_kinds": {
+        "summary": 1,
+        "fulltext": 12
+      },
+      "claims": [
+        {
+          "id": 28,
+          "cluster_id": 2,
+          "text": "Ukrainian President Volodymyr Zelenskyy warned that Ukrainian drones will continue operating over Russian airspace.",
+          "kind": "quote",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/1/zelenskyy-warns-airlines-as-ukrainian-drones-target-russian-airspace?traffic_source=rss",
+          "source_kind": "summary"
+        },
+        {
+          "id": 29,
+          "cluster_id": 2,
+          "text": "Six Ukrainian railway workers were killed when a Russian ballistic missile hit a locomotive depot in Kyiv on Tuesday.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/sep/01/russia-targets-ukraines-rail-network-as-war-enters-deadly-new-phase",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 30,
+          "cluster_id": 2,
+          "text": "Since Russia's full-scale invasion began, 58 Ukrainian railway staff have been killed and at least 318 injured.",
+          "kind": "background",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/sep/01/russia-targets-ukraines-rail-network-as-war-enters-deadly-new-phase",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 31,
+          "cluster_id": 2,
+          "text": "So far in 2026, Russia has struck Ukraine's railway network more than 1,500 times, damaging 249 carriages and 492 locomotives.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/sep/01/russia-targets-ukraines-rail-network-as-war-enters-deadly-new-phase",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 32,
+          "cluster_id": 2,
+          "text": "Ukrzaliznytsia operates 15,000 miles of track and employs 170,000 workers, making it Ukraine's largest company.",
+          "kind": "background",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/sep/01/russia-targets-ukraines-rail-network-as-war-enters-deadly-new-phase",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 33,
+          "cluster_id": 2,
+          "text": "Overnight Russian strikes on Kyiv killed at least 12 people and injured over a dozen.",
+          "kind": "figure",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/at-least-12-killed-and-over-a-dozen-injured-in-russian-strikes-on-kyiv",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 34,
+          "cluster_id": 2,
+          "text": "Four people were killed in Boryspil, near Kyiv, when a Russian strike hit a residential building.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cx2zmdgry3do?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 35,
+          "cluster_id": 2,
+          "text": "A 26-year-old Indian national was killed in Boryspil on his birthday during Russian strikes.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cx2zmdgry3do?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 36,
+          "cluster_id": 2,
+          "text": "Indian Prime Minister Narendra Modi urged Russian President Vladimir Putin in Kyrgyzstan to move from endless war toward peace.",
+          "kind": "quote",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cx2zmdgry3do?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 37,
+          "cluster_id": 2,
+          "text": "A Ukrainian drone strike hit the Russian Baltic Sea port of Ust-Luga, triggering a fire.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cx2zmdgry3do?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 38,
+          "cluster_id": 2,
+          "text": "Ukrainian air defences shot down 5 Iskander ballistic missiles, 2 Banderol cruise missiles, 5 Kalibr cruise missiles, and 187 out of 218 drones launched by Russia.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/sep/01/russia-kills-sixth-night-drone-attacks-ukraine-kyiv",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 39,
+          "cluster_id": 2,
+          "text": "US defence manufacturer Lockheed Martin produces approximately 600 Pac-3 Patriot interceptor missiles per year.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/sep/01/russia-kills-sixth-night-drone-attacks-ukraine-kyiv",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 40,
+          "cluster_id": 2,
+          "text": "According to AFP analysis, Russian forces captured 35 square miles of Ukrainian territory during August 2026.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/sep/01/russia-kills-sixth-night-drone-attacks-ukraine-kyiv",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 3,
+      "headline_hint": "Nepal flash flood death toll passes 1,000 as India leads rescue and identification efforts",
+      "section": "india",
+      "batch_position": 0,
+      "claim_count": 11,
+      "distinct_outlets": 5,
+      "source_kinds": {
+        "summary": 1,
+        "fulltext": 10
+      },
+      "claims": [
+        {
+          "id": 41,
+          "cluster_id": 3,
+          "text": "Five Australians were confirmed safe following the Nepal floods, reducing the number of unaccounted-for Australian citizens from 43 to 38.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/australia-news/live/2026/sep/02/anthony-albanese-palau-forum-one-nation-pauline-hanson-channel-contos-ntwnfb",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 42,
+          "cluster_id": 3,
+          "text": "Australia's Department of Foreign Affairs and Trade received nearly 800 calls regarding the Nepal floods and dispatched 18 personnel to Nepal.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/australia-news/live/2026/sep/02/anthony-albanese-palau-forum-one-nation-pauline-hanson-channel-contos-ntwnfb",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 43,
+          "cluster_id": 3,
+          "text": "The flash flood began in Tibet on August 26, 2026, when a catastrophic collapse of rock and glacial ice sent water and debris through the Bhote Koshi and Trishuli river systems into Nepal.",
+          "kind": "background",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/asia/nepal-deadly-flood-missing-people-6354476",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 44,
+          "cluster_id": 3,
+          "text": "Nepal's National Disaster Risk Reduction and Management Authority reported 987 bodies recovered, 3,916 people missing, and 11,814 rescued as of Tuesday morning, September 1.",
+          "kind": "figure",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/asia/nepal-deadly-flood-missing-people-6354476",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 45,
+          "cluster_id": 3,
+          "text": "More than 600 hydropower workers were feared trapped underground in tunnels north of Bidur after the disaster.",
+          "kind": "figure",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/asia/nepal-deadly-flood-missing-people-6354476",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 46,
+          "cluster_id": 3,
+          "text": "Africa Disaster Relief launched a search for six South Africans who went missing in the floods along the border between Nepal and China.",
+          "kind": "event",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/south-africans-missing-in-nepal-s-glacial-flood",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 47,
+          "cluster_id": 3,
+          "text": "Rescuers in Nepal prioritized the search for at least 900 workers missing from 12 hydropower projects.",
+          "kind": "figure",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/1/nepal-rescuers-race-to-reach-900-missing-hydropower-workers?traffic_source=rss",
+          "source_kind": "summary"
+        },
+        {
+          "id": 48,
+          "cluster_id": 3,
+          "text": "India's Ministry of External Affairs reported that 163 Indian nationals had been rescued from Nepal and 151 Indian nationals had left China as of September 1.",
+          "kind": "figure",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/163-indians-rescued-151-leave-china-as-india-steps-up-rescue-operations-in-nepal-says-centre-101788280841823.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 49,
+          "cluster_id": 3,
+          "text": "An Indian tunnel rescue team established a foothold in hydropower tunnels in Chilime using improvised floats and innovative methods.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/163-indians-rescued-151-leave-china-as-india-steps-up-rescue-operations-in-nepal-says-centre-101788280841823.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 50,
+          "cluster_id": 3,
+          "text": "By Tuesday evening, September 1, the death toll in Nepal reached 1,050 with around 4,000 people missing, including nearly 600 foreigners from 39 countries.",
+          "kind": "figure",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/163-indians-rescued-151-leave-china-as-india-steps-up-rescue-operations-in-nepal-says-centre-101788280841823.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 51,
+          "cluster_id": 3,
+          "text": "India dispatched a consignment of 37.5 tonnes of relief material, medicines, and food packets to Nepal, bringing total Indian emergency aid to 47.5 tonnes.",
+          "kind": "figure",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/163-indians-rescued-151-leave-china-as-india-steps-up-rescue-operations-in-nepal-says-centre-101788280841823.html",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 4,
+      "headline_hint": "PM Modi addresses SCO summit, urging end to terror ecosystems and foreign spending restraint",
+      "section": "india",
+      "batch_position": 1,
+      "claim_count": 11,
+      "distinct_outlets": 5,
+      "source_kinds": {
+        "fulltext": 11
+      },
+      "claims": [
+        {
+          "id": 52,
+          "cluster_id": 4,
+          "text": "India's GDP grew at 7.8% in the April-June quarter, which Prime Minister Narendra Modi cited while praising economic resilience.",
+          "kind": "figure",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/pm-modi-repeats-call-to-shun-unnecessary-gold-buys-foreign-weddings-holidays/articleshow/133691767.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 53,
+          "cluster_id": 4,
+          "text": "The unit value of gold imports to India moderated to $2.8 per kg, 47% higher than a year earlier, down from $3.5 per kg in June.",
+          "kind": "figure",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/pm-modi-repeats-call-to-shun-unnecessary-gold-buys-foreign-weddings-holidays/articleshow/133691767.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 54,
+          "cluster_id": 4,
+          "text": "Prime Minister Narendra Modi addressed the 26th Shanghai Cooperation Organisation summit in Bishkek, Kyrgyzstan, on September 1, 2026, urging members to dismantle terrorist ecosystems.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/prime-minister-narendra-modi-address-annual-sco-summit-september-1-2026/article71414028.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 55,
+          "cluster_id": 4,
+          "text": "Pakistan assumed the role of Shanghai Cooperation Organisation chair for the 2026-2027 term.",
+          "kind": "background",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/prime-minister-narendra-modi-address-annual-sco-summit-september-1-2026/article71414028.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 56,
+          "cluster_id": 4,
+          "text": "The Bishkek Declaration issued at the SCO summit called for an inclusive government in Taliban-ruled Afghanistan and expressed concern over the conflict in West Asia.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/prime-minister-narendra-modi-address-annual-sco-summit-september-1-2026/article71414028.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 57,
+          "cluster_id": 4,
+          "text": "Prime Minister Narendra Modi held a brief exchange with Chinese President Xi Jinping and a bilateral meeting with Russian President Vladimir Putin in Bishkek.",
+          "kind": "event",
+          "outlet": "NDTV",
+          "url": "https://www.ndtv.com/india-news/inside-modis-balancing-act-at-the-sco-xi-putin-and-a-pointed-message-for-pakistan-11989015#publisher=newsstand",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 58,
+          "cluster_id": 4,
+          "text": "Trade between India and Russia rose from around $13 billion in 2021 to nearly $60 billion in 2025, largely driven by Indian imports of Russian crude oil.",
+          "kind": "figure",
+          "outlet": "NDTV",
+          "url": "https://www.ndtv.com/india-news/inside-modis-balancing-act-at-the-sco-xi-putin-and-a-pointed-message-for-pakistan-11989015#publisher=newsstand",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 59,
+          "cluster_id": 4,
+          "text": "Prime Minister Narendra Modi stated at the SCO summit that the crisis in West Asia must be resolved through dialogue and diplomacy rather than on the battlefield.",
+          "kind": "quote",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/dialogue-not-war-modi-pushes-diplomacy-for-west-asia-targets-terror-ecosystem-101788281234946.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 60,
+          "cluster_id": 4,
+          "text": "SCO leaders adopted joint initiatives on combating drug addiction, biodiversity conservation, and creating the SCO Green Technology Corridor for 2026-2030.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/dialogue-not-war-modi-pushes-diplomacy-for-west-asia-targets-terror-ecosystem-101788281234946.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 61,
+          "cluster_id": 4,
+          "text": "In a video message from Kyrgyzstan, Prime Minister Narendra Modi repeated his appeal for citizens to avoid foreign vacations, destination weddings abroad, and non-essential gold purchases.",
+          "kind": "event",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/latest/1095394/avoid-foreign-travel-and-gold-purchases-reiterates-pm-modi-in-video-from-kyrgyzstan?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 62,
+          "cluster_id": 4,
+          "text": "India's GDP growth of 7.8% in the April-June quarter surpassed the Reserve Bank of India's forecast of 7%.",
+          "kind": "figure",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/latest/1095394/avoid-foreign-travel-and-gold-purchases-reiterates-pm-modi-in-video-from-kyrgyzstan?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        }
+      ]
+    }
+  ],
+  "clusters_with_no_claims": []
+}
