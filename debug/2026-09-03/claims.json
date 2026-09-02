@@ -1,0 +1,874 @@
+{
+  "min_claim_chars": 20,
+  "max_claims_per_story": 24,
+  "calls": [
+    {
+      "label": "claims-world",
+      "cluster_ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "label": "claims-india",
+      "cluster_ids": [
+        6,
+        7,
+        8,
+        9
+      ]
+    }
+  ],
+  "rejected_claims": 0,
+  "rejected_clusters": 0,
+  "clusters": [
+    {
+      "cluster_id": 0,
+      "headline_hint": "Escalation in US-Iran war as strikes continue across Middle East",
+      "section": "world",
+      "batch_position": 0,
+      "claim_count": 13,
+      "distinct_outlets": 5,
+      "source_kinds": {
+        "fulltext": 13
+      },
+      "claims": [
+        {
+          "id": 1,
+          "cluster_id": 0,
+          "text": "US President Donald Trump claimed on Truth Social that the United States has 'almost total control' of the Strait of Hormuz.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/us-news/rise-up-and-fight-trump-challenges-iranians-as-he-claims-us-has-almost-total-control-of-hormuz-11788385015976.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 2,
+          "cluster_id": 0,
+          "text": "US President Donald Trump stated that Iran's economy is 'totally collapsing'.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/us-news/rise-up-and-fight-trump-challenges-iranians-as-he-claims-us-has-almost-total-control-of-hormuz-11788385015976.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 3,
+          "cluster_id": 0,
+          "text": "US President Donald Trump rejected reports by ABC News that he was attempting to force Iran back to negotiations.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/us-news/rise-up-and-fight-trump-challenges-iranians-as-he-claims-us-has-almost-total-control-of-hormuz-11788385015976.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 4,
+          "cluster_id": 0,
+          "text": "US Central Command announced that American forces completed strikes against Iranian air-defence sites, mine-laying capabilities, and communications facilities.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/us-news/rise-up-and-fight-trump-challenges-iranians-as-he-claims-us-has-almost-total-control-of-hormuz-11788385015976.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 5,
+          "cluster_id": 0,
+          "text": "Iran's IRNA news agency reported that the IRGC Aerospace Force launched a ballistic missile attack against Prince Hassan Air Base in Jordan, destroying several drones.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/us-news/rise-up-and-fight-trump-challenges-iranians-as-he-claims-us-has-almost-total-control-of-hormuz-11788385015976.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 6,
+          "cluster_id": 0,
+          "text": "US Senator Thom Tillis called on President Donald Trump to fire Defence Secretary Pete Hegseth due to a 'leadership void' in the military.",
+          "kind": "event",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/9/2/republican-senator-calls-on-trump-to-fire-secretary-of-defence-hegseth?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 7,
+          "cluster_id": 0,
+          "text": "Former US Army Secretary Dan Driscoll submitted his resignation following reported disagreements with Defence Secretary Pete Hegseth.",
+          "kind": "event",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/9/2/republican-senator-calls-on-trump-to-fire-secretary-of-defence-hegseth?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 8,
+          "cluster_id": 0,
+          "text": "More than two-thirds of Americans disapprove of the Trump administration's handling of the war with Iran, according to a University of Massachusetts poll released on August 31.",
+          "kind": "figure",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/9/2/republican-senator-calls-on-trump-to-fire-secretary-of-defence-hegseth?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 9,
+          "cluster_id": 0,
+          "text": "Old and unrelated videos from Dubai, Russia, and the US have been falsely circulated on social media as new Iranian strikes on American bases.",
+          "kind": "event",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/us-iran-war-old-videos-falsely-claim-to-show-new-attacks-on-american-bases-1",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 10,
+          "cluster_id": 0,
+          "text": "Saudi Arabia condemned an attack on the Saudi-owned supertanker Sidr in the Strait of Hormuz that killed two Filipino seafarers.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cx2zxgg4mx9o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 11,
+          "cluster_id": 0,
+          "text": "Iran's health minister stated that 18 people were killed and 108 injured in recent US strikes on Iran.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cx2zxgg4mx9o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 12,
+          "cluster_id": 0,
+          "text": "US Energy Secretary Chris Wright stated that 17 million barrels of oil passed through the Strait of Hormuz by ship on Monday.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cx2zxgg4mx9o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 13,
+          "cluster_id": 0,
+          "text": "Donald Trump suggested on social media that the Strait of Hormuz could be renamed the 'Trump Strait'.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/business/international-business/dire-straits-brand-on-the-run-as-trump-suggests-hormuz-can-be-renamed-in-his-honor/articleshow/133716555.cms",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 1,
+      "headline_hint": "Germany and EU accuse Russia over attempted drone attack on Leipzig airport",
+      "section": "world",
+      "batch_position": 1,
+      "claim_count": 8,
+      "distinct_outlets": 4,
+      "source_kinds": {
+        "fulltext": 8
+      },
+      "claims": [
+        {
+          "id": 14,
+          "cluster_id": 1,
+          "text": "EU foreign policy chief Kaja Kallas announced the EU is preparing sanctions against an additional 1,600 individuals and entities linked to Russia's military sector.",
+          "kind": "event",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/9/2/eu-pursuing-more-russia-sanctions-after-failed-airport-attack-kallas?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 15,
+          "cluster_id": 1,
+          "text": "Three explosive-laden drones were found in and around Leipzig/Halle Airport on August 4, 2026.",
+          "kind": "event",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/9/2/eu-pursuing-more-russia-sanctions-after-failed-airport-attack-kallas?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 16,
+          "cluster_id": 1,
+          "text": "European Commission President Ursula von der Leyen stated that the attempted attack at Leipzig/Halle Airport marked 'a new escalation on European Union soil'.",
+          "kind": "quote",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/9/2/eu-pursuing-more-russia-sanctions-after-failed-airport-attack-kallas?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 17,
+          "cluster_id": 1,
+          "text": "German Foreign Minister Johann Wadephul stated: 'We are not at war, but we are a daily target of hybrid warfare.'",
+          "kind": "quote",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/sep/02/leipzig-airport-attack-fallout-lays-bare-germanys-polarisation-on-russia",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 18,
+          "cluster_id": 1,
+          "text": "The German government decided to shut down the Russian consulate in Bonn and the Russian House cultural centre in Berlin.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/sep/02/leipzig-airport-attack-fallout-lays-bare-germanys-polarisation-on-russia",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 19,
+          "cluster_id": 1,
+          "text": "German police identified two suspects in the Leipzig airport incident, including a Belarusian carrying a Russian passport and an individual with Latvian and Russian passports.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/ce9e810pg7ko?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 20,
+          "cluster_id": 1,
+          "text": "Russian President Vladimir Putin rejected Germany's accusations regarding the Leipzig drone attack, alleging that evidence had been planted.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/ce9e810pg7ko?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 21,
+          "cluster_id": 1,
+          "text": "Leipzig/Halle Airport serves as the home for NATO's Strategic Airlift International Solution (SALIS) to deliver equipment along NATO's eastern flank.",
+          "kind": "background",
+          "outlet": "NPR World",
+          "url": "https://www.npr.org/2026/09/02/g-s1-141502/germany-russia-attempted-drone-attack",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 2,
+      "headline_hint": "Devastating floods in Nepal spark major rescue operations in hydropower tunnels",
+      "section": "world",
+      "batch_position": 2,
+      "claim_count": 7,
+      "distinct_outlets": 5,
+      "source_kinds": {
+        "summary": 1,
+        "fulltext": 6
+      },
+      "claims": [
+        {
+          "id": 22,
+          "cluster_id": 2,
+          "text": "At least 1,204 people have been confirmed dead and more than 4,200 remain missing in Nepal following a flood caused by a glacier collapse.",
+          "kind": "figure",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/asia/nepal-rescuers-survivors-trapped-tunnels-week-6357581",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 23,
+          "cluster_id": 2,
+          "text": "Nepal Electricity Authority board member Amshu Kiran Shahi stated that rescue teams were trying to reach about 900 missing workers inside hydropower project tunnels.",
+          "kind": "figure",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/asia/nepal-rescuers-survivors-trapped-tunnels-week-6357581",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 24,
+          "cluster_id": 2,
+          "text": "In Tibet, China raised its flood death toll to 21, with 541 people listed as missing.",
+          "kind": "figure",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/asia/nepal-rescuers-survivors-trapped-tunnels-week-6357581",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 25,
+          "cluster_id": 2,
+          "text": "Families in Nepal held symbolic funerals as rescuers searched for survivors and bodies following the deadly floods.",
+          "kind": "event",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/2/02-09-sv-nepal-a-week-after-symbolic-funerals-wrap-fm?traffic_source=rss",
+          "source_kind": "summary"
+        },
+        {
+          "id": 26,
+          "cluster_id": 2,
+          "text": "A 23-member team of Indian 'rat miners' offered to join search and rescue operations in flood-hit Nepal.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/23-silkyara-rat-miners-offer-to-join-nepal-tunnel-rescue/articleshow/133719723.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 27,
+          "cluster_id": 2,
+          "text": "Difficult weather and heavy rains worsened rescue operations for trapped tunnel workers in Nepal.",
+          "kind": "event",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/video/20260902-search-continues-for-tunnel-workers-in-nepal-floods",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 28,
+          "cluster_id": 2,
+          "text": "A local resident in Betrawati, Nepal, waited for his wife's body to be retrieved after floods destroyed his village.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/videos/cn0j4k45z32o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 3,
+      "headline_hint": "Maltese court acquits businessman Yorgen Fenech in 2017 murder of journalist Daphne Caruana Galizia",
+      "section": "world",
+      "batch_position": 3,
+      "claim_count": 7,
+      "distinct_outlets": 4,
+      "source_kinds": {
+        "fulltext": 7
+      },
+      "claims": [
+        {
+          "id": 29,
+          "cluster_id": 3,
+          "text": "A Maltese court acquitted tycoon Yorgen Fenech of orchestrating the 2017 car-bomb murder of investigative journalist Daphne Caruana Galizia.",
+          "kind": "event",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/europe/20260902-maltese-tycoon-acquitted-reporter-murder",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 30,
+          "cluster_id": 3,
+          "text": "In June 2025, Robert Agius and Jamie Vella were convicted of supplying the bomb that killed Daphne Caruana Galizia and sentenced to life in prison.",
+          "kind": "background",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/europe/20260902-maltese-tycoon-acquitted-reporter-murder",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 31,
+          "cluster_id": 3,
+          "text": "Investigative journalist Daphne Caruana Galizia was killed by a car bomb near her home in Malta on October 16, 2017.",
+          "kind": "background",
+          "outlet": "NPR World",
+          "url": "https://www.npr.org/2026/09/02/nx-s1-5954420/daphne-caruana-galizia-case-yorgen-fenech-acquitted-malta",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 32,
+          "cluster_id": 3,
+          "text": "Brothers George Degiorgio and Alfred Degiorgio pleaded guilty in 2022 to carrying out the murder of Daphne Caruana Galizia and were sentenced to 40 years in prison.",
+          "kind": "background",
+          "outlet": "NPR World",
+          "url": "https://www.npr.org/2026/09/02/nx-s1-5954420/daphne-caruana-galizia-case-yorgen-fenech-acquitted-malta",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 33,
+          "cluster_id": 3,
+          "text": "A Maltese jury acquitted Yorgen Fenech on both charges by an 8-1 majority vote following eight hours of deliberation.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/sep/02/maltese-tycoon-yorgen-fenech-daphne-caruana-galizia-killing-not-guilty",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 34,
+          "cluster_id": 3,
+          "text": "Yorgen Fenech's defense team argued that Keith Schembri, former chief of staff to Prime Minister Joseph Muscat, was the true mastermind behind the murder.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/sep/02/maltese-tycoon-yorgen-fenech-daphne-caruana-galizia-killing-not-guilty",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 35,
+          "cluster_id": 3,
+          "text": "Former Maltese Prime Minister Joseph Muscat stepped down in January 2020 due to political fallout from Daphne Caruana Galizia's assassination.",
+          "kind": "background",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/9/2/malta-businessman-acquitted-of-plotting-journalist-caruana-galizia-murder?traffic_source=rss",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 4,
+      "headline_hint": "US oversees major oil investment deals between Venezuela and Chevron",
+      "section": "world",
+      "batch_position": 4,
+      "claim_count": 6,
+      "distinct_outlets": 4,
+      "source_kinds": {
+        "fulltext": 6
+      },
+      "claims": [
+        {
+          "id": 36,
+          "cluster_id": 4,
+          "text": "US President Donald Trump announced an agreement claiming the US will take majority ownership of over 65 billion barrels of Venezuela's oil reserves.",
+          "kind": "event",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/commentary/us-donald-trump-venezuela-oil-deal-built-quicksand-6357341",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 37,
+          "cluster_id": 4,
+          "text": "Former Venezuelan President Nicolas Maduro was captured during a US special forces raid on Caracas in January 2026.",
+          "kind": "background",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/commentary/us-donald-trump-venezuela-oil-deal-built-quicksand-6357341",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 38,
+          "cluster_id": 4,
+          "text": "Chevron, Italy's ENI, and GE Vernova signed deals worth tens of billions of dollars with Venezuela.",
+          "kind": "event",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/americas/20260902-us-oversees-signing-of-billions-in-deals-between-venezuela-and-chevron-eni-ge",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 39,
+          "cluster_id": 4,
+          "text": "US Energy Secretary Chris Wright stated in Caracas: 'This is President Trump's grand plan to replace conflict with commerce.'",
+          "kind": "quote",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/sep/02/venezuela-oil-deal-trump-chris-wright",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 40,
+          "cluster_id": 4,
+          "text": "Interim Venezuelan President Delcy Rodríguez described the oil deal as a 'win-win deal' that would generate over $209 billion in revenue.",
+          "kind": "quote",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/sep/02/venezuela-oil-deal-trump-chris-wright",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 41,
+          "cluster_id": 4,
+          "text": "Chevron announced plans to invest over $7 billion over the next five years in Venezuela's Orinoco Belt to expand production to approximately 600,000 barrels per day.",
+          "kind": "figure",
+          "outlet": "NPR World",
+          "url": "https://www.npr.org/2026/09/02/nx-s1-5952190/chevron-venezuela-oil-deal",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 5,
+      "headline_hint": "Israel signals plans for Gaza population resettlement amid West Bank violence",
+      "section": "world",
+      "batch_position": 5,
+      "claim_count": 8,
+      "distinct_outlets": 4,
+      "source_kinds": {
+        "fulltext": 8
+      },
+      "claims": [
+        {
+          "id": 42,
+          "cluster_id": 5,
+          "text": "Israeli Defence Minister Israel Katz stated that US President Donald Trump has frozen, rather than cancelled, a proposal to remove Palestinians from Gaza.",
+          "kind": "event",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/9/2/israel-still-wants-to-remove-palestinians-from-gaza-defence-minister-says?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 43,
+          "cluster_id": 5,
+          "text": "US Senator Chris Van Hollen called for an end to US military aid complicity following statements by Israel's Defence Minister regarding Gaza depopulation.",
+          "kind": "event",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/9/2/israel-still-wants-to-remove-palestinians-from-gaza-defence-minister-says?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 44,
+          "cluster_id": 5,
+          "text": "Israeli Prime Minister Benjamin Netanyahu visited a military post in Gaza and stated Israel will remain on the yellow line until Hamas is disarmed.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/sep/02/israel-seeking-trumps-support-for-plan-to-expel-palestinians-from-gaza",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 45,
+          "cluster_id": 5,
+          "text": "National Security Minister Itamar Ben-Gvir published video from a women's prison taking direct credit for harsh living conditions imposed on Palestinian detainees.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/sep/02/israel-seeking-trumps-support-for-plan-to-expel-palestinians-from-gaza",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 46,
+          "cluster_id": 5,
+          "text": "According to the Gaza health ministry, 73,470 people have been killed in Gaza during the war, including over 1,330 killed since the October 2025 ceasefire.",
+          "kind": "figure",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/middle-east/20260902-israel-organised-and-prepared-to-remove-gaza-population-if-us-gives-green-light-katz",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 47,
+          "cluster_id": 5,
+          "text": "More than 900 people have been killed in Israeli attacks in Gaza during 2026 despite the ceasefire, according to Gaza's Hamas-run Ministry of Health.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c7708dy33pdo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 48,
+          "cluster_id": 5,
+          "text": "Israeli soldiers and settlers raided the West Bank village of al-Mughayyir, killing two 19-year-old Palestinians.",
+          "kind": "event",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/9/2/two-palestinian-killed-as-settlers-israeli-forces-raid-west-bank-village?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 49,
+          "cluster_id": 5,
+          "text": "OCHA reported that at least 79 Palestinians, including 19 children, have been killed in the West Bank by settlers or Israeli forces since the start of 2026.",
+          "kind": "figure",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/9/2/two-palestinian-killed-as-settlers-israeli-forces-raid-west-bank-village?traffic_source=rss",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 6,
+      "headline_hint": "Ayodhya Ram Temple Trust appoints retired Air Marshal Jeetendra Mishra as its first CEO",
+      "section": "india",
+      "batch_position": 0,
+      "claim_count": 10,
+      "distinct_outlets": 4,
+      "source_kinds": {
+        "fulltext": 10
+      },
+      "claims": [
+        {
+          "id": 50,
+          "cluster_id": 6,
+          "text": "The Shri Ram Janmabhoomi Teerth Kshetra Trust appointed retired Air Marshal Jeetendra Mishra as its first Chief Executive Officer.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/who-is-maharaj-govinddev-giri-ayodhya-ram-temple-trust-appoints-new-general-secretary-replacing-champat-rai-11788368173573.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 51,
+          "cluster_id": 6,
+          "text": "The Shri Ram Janmabhoomi Teerth Kshetra Trust appointed Govind Dev Giri as its General Secretary, succeeding Champat Rai.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/who-is-maharaj-govinddev-giri-ayodhya-ram-temple-trust-appoints-new-general-secretary-replacing-champat-rai-11788368173573.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 52,
+          "cluster_id": 6,
+          "text": "The Trust selected retired Air Marshal Jeetendra Mishra from a shortlist of three candidates after evaluating 5,585 applications for the CEO post.",
+          "kind": "figure",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/who-is-maharaj-govinddev-giri-ayodhya-ram-temple-trust-appoints-new-general-secretary-replacing-champat-rai-11788368173573.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 53,
+          "cluster_id": 6,
+          "text": "The Trust appointed Mahesh Bhagchandka as treasurer and inducted Madan Mohan Pandey, Mahesh Bhagchandka, and Dr Nirmala Yadav as new trustees.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/who-is-maharaj-govinddev-giri-ayodhya-ram-temple-trust-appoints-new-general-secretary-replacing-champat-rai-11788368173573.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 54,
+          "cluster_id": 6,
+          "text": "Retired Air Marshal Jeetendra Mishra commanded the Indian Air Force's Western Air Command during Operation Sindoor and was awarded the Sarvottam Yudh Seva Medal.",
+          "kind": "background",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/latest/1095459/ram-temple-trust-appoints-retired-air-marshal-jeetendra-mishra-as-first-ceo?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 55,
+          "cluster_id": 6,
+          "text": "Former General Secretary Champat Rai and trustee Anil Mishra resigned on moral grounds on June 26 following allegations of donation embezzlement.",
+          "kind": "background",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/latest/1095459/ram-temple-trust-appoints-retired-air-marshal-jeetendra-mishra-as-first-ceo?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 56,
+          "cluster_id": 6,
+          "text": "A preliminary report by Uttar Pradesh's Special Investigation Team on June 23 found 70 instances of counting staff hiding cash in their clothing and shoes at the Ram temple.",
+          "kind": "background",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/latest/1095459/ram-temple-trust-appoints-retired-air-marshal-jeetendra-mishra-as-first-ceo?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 57,
+          "cluster_id": 6,
+          "text": "Retired Air Marshal Jeetendra Mishra stated that he learned about his appointment as CEO through television news broadcasts.",
+          "kind": "quote",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/latest/1095459/ram-temple-trust-appoints-retired-air-marshal-jeetendra-mishra-as-first-ceo?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 58,
+          "cluster_id": 6,
+          "text": "Retired Air Marshal Jeetendra Mishra served in the Indian Air Force for nearly 39 years prior to his retirement.",
+          "kind": "background",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/city/lucknow/its-gods-order-air-marshal-jeetendra-mishra-says-ram-temple-ceo-role-another-chance-to-serve-nation/articleshow/133714067.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 59,
+          "cluster_id": 6,
+          "text": "Retired Air Marshal Jeetendra Mishra retired from the Indian Air Force on April 30, 2026.",
+          "kind": "background",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/retired-air-marshal-jeetendra-mishras-first-reaction-after-being-named-ram-temple-first-ceo-ayodhya-grateful-101788358057445.html",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 7,
+      "headline_hint": "Government and opposition clash over accuracy of India's GDP growth data",
+      "section": "india",
+      "batch_position": 1,
+      "claim_count": 9,
+      "distinct_outlets": 4,
+      "source_kinds": {
+        "summary": 2,
+        "fulltext": 7
+      },
+      "claims": [
+        {
+          "id": 60,
+          "cluster_id": 7,
+          "text": "India's former Chief Economic Adviser stated that the double deflator methodology provides a better approach for calculating GDP.",
+          "kind": "quote",
+          "outlet": "NDTV",
+          "url": "https://www.ndtv.com/india-news/ex-chief-economic-advisor-backs-gdp-figure-says-new-methodology-cutting-edge-11993637#publisher=newsstand",
+          "source_kind": "summary"
+        },
+        {
+          "id": 61,
+          "cluster_id": 7,
+          "text": "Union Minister Piyush Goyal stated that ministers do not manufacture data and asserted that India's 7.8 percent GDP growth figure is real.",
+          "kind": "quote",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/business/india-business/ministers-dont-manufacture-data-goyal-hits-out-at-critics-for-questioning-gdp-figures/articleshow/133714520.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 62,
+          "cluster_id": 7,
+          "text": "According to MoSPI data released on August 31, India's real GDP grew 7.8 percent in Q1 FY27, with real GDP estimated at Rs 81.36 lakh crore.",
+          "kind": "figure",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/business/india-business/ministers-dont-manufacture-data-goyal-hits-out-at-critics-for-questioning-gdp-figures/articleshow/133714520.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 63,
+          "cluster_id": 7,
+          "text": "India's nominal GDP reached Rs 88.27 lakh crore in Q1 FY27, up 10.3 percent from Rs 80 lakh crore in Q1 FY26.",
+          "kind": "figure",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/business/india-business/ministers-dont-manufacture-data-goyal-hits-out-at-critics-for-questioning-gdp-figures/articleshow/133714520.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 64,
+          "cluster_id": 7,
+          "text": "Former Finance Secretary Subhash Garg claimed that Q1 FY27 GDP growth in current prices would have been about 2.6 percent if last year's Q1 GDP had not been revised down from roughly Rs 86 lakh crore to Rs 80 lakh crore.",
+          "kind": "figure",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/business/india-business/ministers-dont-manufacture-data-goyal-hits-out-at-critics-for-questioning-gdp-figures/articleshow/133714520.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 65,
+          "cluster_id": 7,
+          "text": "MoSPI stated that Q1 FY26 GDP was initially estimated at Rs 86.05 lakh crore under the 2011-12 base year, but was revised to Rs 80.32 lakh crore after introducing the 2022-23 base year series in February 2026.",
+          "kind": "background",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/few-jobless-people-call-themselves-economists-piyush-goyal-jibes-at-opposition-critics-over-wrong-gdp-number-remark-101788358719506.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 66,
+          "cluster_id": 7,
+          "text": "Sanjeev Sanyal, a member of the Prime Minister's Economic Advisory Council, stated that updating the GDP base year to 2022-23 was delayed due to the Covid-19 pandemic.",
+          "kind": "event",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/latest/1095427/pms-economic-adviser-denies-allegations-of-centre-manipulating-gdp-data?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 67,
+          "cluster_id": 7,
+          "text": "Congress leader Jairam Ramesh criticized the GDP calculations as statistical gymnastics, citing a gap between implied GDP inflation of 2.3 percent and wholesale price index inflation exceeding 9 percent.",
+          "kind": "event",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/latest/1095427/pms-economic-adviser-denies-allegations-of-centre-manipulating-gdp-data?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 68,
+          "cluster_id": 7,
+          "text": "SBI Group Chief Economic Adviser Soumya Kanti Ghosh spoke to NDTV regarding doubts raised about India's GDP growth data.",
+          "kind": "event",
+          "outlet": "NDTV",
+          "url": "https://www.ndtv.com/india-news/sure-sign-of-intellectual-dishonesty-sbi-research-on-doubts-being-raised-on-gdp-growth-data-soumya-kanti-ghosh-group-chief-economic-adviser-sbi-11993614#publisher=newsstand",
+          "source_kind": "summary"
+        }
+      ]
+    },
+    {
+      "cluster_id": 8,
+      "headline_hint": "India strongly condemns demolition of century-old Hindu temple in Narowal, Pakistan",
+      "section": "india",
+      "batch_position": 2,
+      "claim_count": 5,
+      "distinct_outlets": 3,
+      "source_kinds": {
+        "fulltext": 5
+      },
+      "claims": [
+        {
+          "id": 69,
+          "cluster_id": 8,
+          "text": "India's Ministry of External Affairs condemned the reported destruction of a century-old Hindu temple in village Siraj, Narowal district, Pakistan.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/failure-to-protect-this-temple-is-alarming-india-raises-concerns-over-narowal-temple-destruction-11788368559546.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 70,
+          "cluster_id": 8,
+          "text": "MEA spokesperson Randhir Jaiswal called the temple destruction a reprehensible act of vandalism and requested Pakistani authorities to conduct a transparent investigation and restore the structure.",
+          "kind": "quote",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/failure-to-protect-this-temple-is-alarming-india-raises-concerns-over-narowal-temple-destruction-11788368559546.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 71,
+          "cluster_id": 8,
+          "text": "Minority rights group Pakistan Masiha Millat Party alleged the Narowal temple was deliberately demolished to expand an adjacent seminary, while Pakistan's Evacuee Trust Property Board stated it collapsed due to heavy rainfall.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/failure-to-protect-this-temple-is-alarming-india-raises-concerns-over-narowal-temple-destruction-11788368559546.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 72,
+          "cluster_id": 8,
+          "text": "The destroyed Hindu temple in Siraj village was demolished on August 21 and was estimated to be 100 to 125 years old.",
+          "kind": "background",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/reprehensible-act-of-vandalism-india-condemns-demolition-of-century-old-hindu-temple-in-pakistan-seeks-probe/articleshow/133714540.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 73,
+          "cluster_id": 8,
+          "text": "Pakistan Masiha Millat Party chairman Aslam Parvez Sahotra approached authorities seeking legal action against those responsible for destroying the temple.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/alarming-apathy-india-mea-lambasts-pakistan-century-old-temple-demolition-narowal-101788363198411.html",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 9,
+      "headline_hint": "Heavy rainfall and severe flooding submerge parts of North India, killing several",
+      "section": "india",
+      "batch_position": 3,
+      "claim_count": 6,
+      "distinct_outlets": 2,
+      "source_kinds": {
+        "fulltext": 6
+      },
+      "claims": [
+        {
+          "id": 74,
+          "cluster_id": 9,
+          "text": "As of Wednesday, 16,784 people were evacuated to safety due to persistent flood conditions across 23 affected districts in Uttar Pradesh.",
+          "kind": "figure",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/up-floods-over-16k-evacuated-as-23-districts-hit-3-killed-relief-ops-scaled-up-101788375310019.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 75,
+          "cluster_id": 9,
+          "text": "Three people died in rain-related incidents in Uttar Pradesh, including an 18-month-old child in Pratapgarh and two men aged 32 and 55 in Amroha.",
+          "kind": "figure",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/up-floods-over-16k-evacuated-as-23-districts-hit-3-killed-relief-ops-scaled-up-101788375310019.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 76,
+          "cluster_id": 9,
+          "text": "Uttar Pradesh deployed 1,499 boats and 1,067 medical teams to support flood relief operations across affected districts.",
+          "kind": "figure",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/up-floods-over-16k-evacuated-as-23-districts-hit-3-killed-relief-ops-scaled-up-101788375310019.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 77,
+          "cluster_id": 9,
+          "text": "Cumulative rainfall during the southwest monsoon season across India was 13 percent below normal as of September 2, standing at 618.5 mm against the normal 714.3 mm.",
+          "kind": "figure",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/heavy-rain-likely-across-north-central-and-east-india-over-the-next-few-days-11788349795820.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 78,
+          "cluster_id": 9,
+          "text": "All 69 gates of the Sone Barrage at Indrapuri in Bihar were opened on Wednesday to facilitate a water discharge of 5.59 lakh cusecs.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/bihar-on-alert-as-major-rivers-swell-following-heavy-rains-all-69-gates-of-sone-barrage-opened-101788368657394.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 79,
+          "cluster_id": 9,
+          "text": "Major rivers in Bihar, including the Kosi, Gandak, Burhi Gandak, Ganga, and Punpun, flowed above danger marks at multiple locations.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/bihar-on-alert-as-major-rivers-swell-following-heavy-rains-all-69-gates-of-sone-barrage-opened-101788368657394.html",
+          "source_kind": "fulltext"
+        }
+      ]
+    }
+  ],
+  "clusters_with_no_claims": []
+}
