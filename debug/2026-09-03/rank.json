@@ -1,0 +1,967 @@
+{
+  "dials": {
+    "WEIGHT_FLOOR": 5,
+    "TIER_WEIGHT": {
+      "lead": 4,
+      "major": 2,
+      "notable": 0
+    },
+    "WIKI_BONUS": 2,
+    "HARD_CAP": 12,
+    "MIN_STORIES_IF_ANY": 3,
+    "MAX_ARTICLES_PER_STORY": 5
+  },
+  "floor_relaxed": false,
+  "kept_weights": [
+    13,
+    10,
+    9,
+    7,
+    7,
+    6,
+    9,
+    6,
+    6,
+    5
+  ],
+  "per_section": {
+    "world": 6,
+    "india": 4
+  },
+  "clusters": [
+    {
+      "headline_hint": "Escalation in US-Iran war as strikes continue across Middle East",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "lead",
+      "article_ids": [
+        19,
+        23,
+        40,
+        59,
+        65,
+        77,
+        93,
+        114,
+        151,
+        155,
+        157,
+        164,
+        165,
+        189,
+        194,
+        200,
+        201,
+        255,
+        287,
+        291,
+        301,
+        324,
+        330,
+        336
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        19,
+        23,
+        40,
+        59,
+        65,
+        77,
+        93,
+        114,
+        151,
+        155,
+        157,
+        164,
+        165,
+        189,
+        194,
+        200,
+        201,
+        255,
+        287,
+        291,
+        301,
+        324,
+        330,
+        336
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 7,
+      "wiki_backed": true,
+      "wiki_event": "The crew on the {{USS|Abraham Lincoln|CVN-72|6}} arrives at Laem Chabang port near the resort city of Pattaya, Thailand, following a 286-day deployment and reports of mental health challenges on the carrier.",
+      "weight": 13,
+      "weight_terms": {
+        "distinct_outlets": 7,
+        "tier_weight": 4,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Livemint",
+          "title": "‘Rise up and fight’: Trump challenges Iranians as he claims US has ‘almost total control’ of Hormuz",
+          "url": "https://www.livemint.com/news/us-news/rise-up-and-fight-trump-challenges-iranians-as-he-claims-us-has-almost-total-control-of-hormuz-11788385015976.html"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Republican senator calls on Trump to fire Secretary of Defence Hegseth",
+          "url": "https://www.aljazeera.com/news/2026/9/2/republican-senator-calls-on-trump-to-fire-secretary-of-defence-hegseth?traffic_source=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "US-Iran war: Old videos falsely claim to show new attacks on American bases",
+          "url": "https://www.france24.com/en/us-iran-war-old-videos-falsely-claim-to-show-new-attacks-on-american-bases-1"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Iranian attack on Saudi tanker killed two Filipino sailors, Saudi Arabia says",
+          "url": "https://www.bbc.co.uk/news/articles/cx2zxgg4mx9o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Dire straits: Brand on the run as Trump suggests Hormuz can be renamed in his honor",
+          "url": "https://timesofindia.indiatimes.com/business/international-business/dire-straits-brand-on-the-run-as-trump-suggests-hormuz-can-be-renamed-in-his-honor/articleshow/133716555.cms"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 19
+    },
+    {
+      "headline_hint": "Germany and EU accuse Russia over attempted drone attack on Leipzig airport",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        100,
+        168,
+        171,
+        184,
+        300,
+        305,
+        340
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        100,
+        168,
+        171,
+        184,
+        300,
+        305,
+        340
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 6,
+      "wiki_backed": true,
+      "wiki_event": "Following the attempted attack, security authorities are focusing on several suspects with ties to Russia. According to investigations by NDR, WDR, and SZ, the suspects are two men from Belarus and Lithuania who are also said to hold Russia",
+      "weight": 10,
+      "weight_terms": {
+        "distinct_outlets": 6,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "EU pursuing more Russia sanctions after failed airport attack: Kallas",
+          "url": "https://www.aljazeera.com/news/2026/9/2/eu-pursuing-more-russia-sanctions-after-failed-airport-attack-kallas?traffic_source=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Leipzig airport attack fallout exposes Germany’s deepening divide over Russia",
+          "url": "https://www.theguardian.com/world/2026/sep/02/leipzig-airport-attack-fallout-lays-bare-germanys-polarisation-on-russia"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "EU and Nato vow to step up pressure on Russia after 'new escalation' in Germany",
+          "url": "https://www.bbc.co.uk/news/articles/ce9e810pg7ko?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Russia blamed for explosive-laden drone found at German airport",
+          "url": "https://www.france24.com/en/video/20260902-russia-blamed-for-explosive-laden-drone-found-at-german-airport"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "Germany blames Russia for last month's attempted drone attack at Leipzig airport",
+          "url": "https://www.npr.org/2026/09/02/g-s1-141502/germany-russia-attempted-drone-attack"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 2
+    },
+    {
+      "headline_hint": "Maltese court acquits businessman Yorgen Fenech in 2017 murder of journalist Daphne Caruana Galizia",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        17,
+        33,
+        76,
+        86,
+        99,
+        103
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        17,
+        33,
+        76,
+        86,
+        99,
+        103
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 5,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "France 24",
+          "title": "Malta acquits tycoon Yorgen Fenech in investigative journalist's murder case",
+          "url": "https://www.france24.com/en/europe/20260902-maltese-tycoon-acquitted-reporter-murder"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "A jury in Malta acquits a businessman in the killing of reporter Daphne Caruana Galizia",
+          "url": "https://www.npr.org/2026/09/02/nx-s1-5954420/daphne-caruana-galizia-case-yorgen-fenech-acquitted-malta"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Maltese tycoon found not guilty of involvement in Daphne Caruana Galizia murder",
+          "url": "https://www.theguardian.com/world/2026/sep/02/maltese-tycoon-yorgen-fenech-daphne-caruana-galizia-killing-not-guilty"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Malta businessman acquitted of plotting journalist Caruana Galizia murder",
+          "url": "https://www.aljazeera.com/news/2026/9/2/malta-businessman-acquitted-of-plotting-journalist-caruana-galizia-murder?traffic_source=rss"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Maltese tycoon acquitted of orchestrating murder of renowned journalist",
+          "url": "https://www.bbc.co.uk/news/articles/c5ye295pxgxo?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 1
+    },
+    {
+      "headline_hint": "US oversees major oil investment deals between Venezuela and Chevron",
+      "section": "world",
+      "category": "economy",
+      "tier_requested": "major",
+      "article_ids": [
+        15,
+        42,
+        68,
+        115,
+        220,
+        235,
+        302
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        15,
+        42,
+        68,
+        115,
+        220,
+        235,
+        302
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 5,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Channel News Asia",
+          "title": "Commentary: The US-Venezuela oil deal looks like it is built on quicksand",
+          "url": "https://www.channelnewsasia.com/commentary/us-donald-trump-venezuela-oil-deal-built-quicksand-6357341"
+        },
+        {
+          "outlet": "France 24",
+          "title": "US oversees signing of ‘billions’ in deals between Venezuela and Chevron, ENI, GE",
+          "url": "https://www.france24.com/en/americas/20260902-us-oversees-signing-of-billions-in-deals-between-venezuela-and-chevron-eni-ge"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Signing ceremony as US to control a fifth of Venezuela’s oil reserves",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/2/signing-ceremony-as-us-to-control-a-fifth-of-venezuelas-oil-reserves?traffic_source=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Trump ally defends Venezuela oil deal amid ‘gunpoint diplomacy’ criticism",
+          "url": "https://www.theguardian.com/world/2026/sep/02/venezuela-oil-deal-trump-chris-wright"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "Chevron to expand in Venezuela, days after the U.S. and Venezuela strike oil deal",
+          "url": "https://www.npr.org/2026/09/02/nx-s1-5952190/chevron-venezuela-oil-deal"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 2
+    },
+    {
+      "headline_hint": "Israel signals plans for Gaza population resettlement amid West Bank violence",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "major",
+      "article_ids": [
+        34,
+        39,
+        62,
+        117,
+        125,
+        132,
+        150,
+        216,
+        269,
+        316
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        34,
+        39,
+        62,
+        117,
+        125,
+        132,
+        150,
+        216,
+        269,
+        316
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 6,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "Israel still wants to remove Palestinians from Gaza, defence minister says",
+          "url": "https://www.aljazeera.com/news/2026/9/2/israel-still-wants-to-remove-palestinians-from-gaza-defence-minister-says?traffic_source=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Israel ‘seeking Trump’s support for plan to expel Palestinians from Gaza’",
+          "url": "https://www.theguardian.com/world/2026/sep/02/israel-seeking-trumps-support-for-plan-to-expel-palestinians-from-gaza"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Israel ‘organised and prepared’ to remove Gaza population if US gives green light, Katz says",
+          "url": "https://www.france24.com/en/middle-east/20260902-israel-organised-and-prepared-to-remove-gaza-population-if-us-gives-green-light-katz"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "More than 900 killed in Gaza this year despite ceasefire, Hamas-run health ministry says",
+          "url": "https://www.bbc.co.uk/news/articles/c7708dy33pdo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Two Palestinians killed as settlers, Israeli forces raid West Bank village",
+          "url": "https://www.aljazeera.com/news/2026/9/2/two-palestinian-killed-as-settlers-israeli-forces-raid-west-bank-village?traffic_source=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 5
+    },
+    {
+      "headline_hint": "Devastating floods in Nepal spark major rescue operations in hydropower tunnels",
+      "section": "world",
+      "category": "disaster",
+      "tier_requested": "major",
+      "article_ids": [
+        41,
+        48,
+        51,
+        66,
+        78,
+        203,
+        205,
+        237,
+        325,
+        333,
+        339
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        41,
+        48,
+        51,
+        66,
+        78,
+        203,
+        205,
+        237,
+        325,
+        333,
+        339
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 7,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 9,
+      "weight_terms": {
+        "distinct_outlets": 7,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Channel News Asia",
+          "title": "Nepal rescuers race to reach any survivors trapped in tunnels a week after disaster",
+          "url": "https://www.channelnewsasia.com/asia/nepal-rescuers-survivors-trapped-tunnels-week-6357581"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Nepal families hold symbolic funerals, thousands still missing",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/2/02-09-sv-nepal-a-week-after-symbolic-funerals-wrap-fm?traffic_source=rss"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "'23 Silkyara 'rat miners' offer to join Nepal tunnel rescue",
+          "url": "https://timesofindia.indiatimes.com/india/23-silkyara-rat-miners-offer-to-join-nepal-tunnel-rescue/articleshow/133719723.cms"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Search continues for tunnel workers in Nepal floods",
+          "url": "https://www.france24.com/en/video/20260902-search-continues-for-tunnel-workers-in-nepal-floods"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "'Nothing but mud and silt' - the village swept away by deadly floods in Nepal",
+          "url": "https://www.bbc.co.uk/news/videos/cn0j4k45z32o?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 6
+    },
+    {
+      "headline_hint": "Dutch central bank relocates gold reserves to London citing geopolitical unrest",
+      "section": "world",
+      "category": "economy",
+      "tier_requested": "notable",
+      "article_ids": [
+        159
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        159
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 1,
+      "wiki_backed": true,
+      "wiki_event": "The Dutch central bank reallocates 86 tonnes of gold reserves from Ottawa, Canada, and New York City, United States, to London, United Kingdom, increasing the share held there to 32.1%, citing \"increasing geopolitical unrest\".",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 1,
+        "tier_weight": 0,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "BBC World",
+          "title": "Netherlands moves billions in gold to London in 'crisis preparedness' move",
+          "url": "https://www.bbc.co.uk/news/articles/cvgy51xlz39o?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "French President Macron visits UK to view Bayeux Tapestry with King Charles III",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        25,
+        107,
+        142,
+        185
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        25,
+        107,
+        142,
+        185
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "Andy Burnham targets migrant crisis ahead of Macron’s visit to No 10",
+          "url": "https://www.theguardian.com/politics/2026/sep/02/andy-burnham-migrant-crisis-macron-downing-street"
+        },
+        {
+          "outlet": "France 24",
+          "title": "🔴 Live: Macron and Charles III visit historic Bayeux tapestry exhibition together",
+          "url": "https://www.france24.com/en/europe/20260902-france-s-macron-in-britain-to-help-unveil-bayeux-tapestry"
+        },
+        {
+          "outlet": "DW World",
+          "title": "Macron visits Bayeux Tapestry with King Charles, PM Andy Burnham",
+          "url": "https://www.dw.com/en/macron-visits-bayeux-tapestry-with-king-charles-pm-andy-burnham/a-78772317?maca=en-rss-en-world-4025-rdf"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Bayeux tapestry loan symbolises ‘entente amicale’ between France and UK, says King Charles",
+          "url": "https://www.theguardian.com/world/2026/sep/02/bayeux-tapestry-loan-symbolises-entente-amicale-between-france-and-uk-says-king-charles"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Ayodhya Ram Temple Trust appoints retired Air Marshal Jeetendra Mishra as its first CEO",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "lead",
+      "article_ids": [
+        109,
+        133,
+        153,
+        196,
+        211,
+        222,
+        251,
+        261,
+        268,
+        278
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        109,
+        133,
+        153,
+        196,
+        211,
+        222,
+        251,
+        261,
+        268,
+        278
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 5,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 9,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 4,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "NDTV",
+          "title": "Ayodhya Ram Temple Gets Air Force Veteran As CEO, 3 New Members",
+          "url": "https://www.ndtv.com/india-news/retired-air-marshal-jitendra-mishra-to-be-ayodhya-ram-temples-new-ceo-11992100#publisher=newsstand"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Who is Maharaj Govinddev Giri? Ayodhya Ram Temple Trust appoints new general secretary, replacing Champat Rai",
+          "url": "https://www.livemint.com/news/india/who-is-maharaj-govinddev-giri-ayodhya-ram-temple-trust-appoints-new-general-secretary-replacing-champat-rai-11788368173573.html"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "Ram temple trust appoints retired Air Marshal Jeetendra Mishra as first CEO",
+          "url": "https://scroll.in/latest/1095459/ram-temple-trust-appoints-retired-air-marshal-jeetendra-mishra-as-first-ceo?utm_source=rss&utm_medium=public"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "'It's God's order': Ram Temple CEO &amp; war hero welcomes chance to serve nation again",
+          "url": "https://timesofindia.indiatimes.com/city/lucknow/its-gods-order-air-marshal-jeetendra-mishra-says-ram-temple-ceo-role-another-chance-to-serve-nation/articleshow/133714067.cms"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "‘Grateful to Lord Ram’: Retd Air Marshal Jeetendra Mishra’s first reaction after being named Ayodhya temple’s first CEO",
+          "url": "https://www.hindustantimes.com/india-news/retired-air-marshal-jeetendra-mishras-first-reaction-after-being-named-ram-temple-first-ceo-ayodhya-grateful-101788358057445.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 5
+    },
+    {
+      "headline_hint": "Government and opposition clash over accuracy of India's GDP growth data",
+      "section": "india",
+      "category": "economy",
+      "tier_requested": "major",
+      "article_ids": [
+        113,
+        190,
+        191,
+        226,
+        247,
+        276,
+        284
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        113,
+        190,
+        191,
+        226,
+        247,
+        276,
+        284
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 6,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "NDTV",
+          "title": "Ex-Chief Economic Adviser Backs GDP Data, Calls Methodology \"Cutting-Edge\"",
+          "url": "https://www.ndtv.com/india-news/ex-chief-economic-advisor-backs-gdp-figure-says-new-methodology-cutting-edge-11993637#publisher=newsstand"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "'Jobless people on TV': Goyal attacks oppn, ex-finance secy for doubting GDP growth",
+          "url": "https://timesofindia.indiatimes.com/business/india-business/ministers-dont-manufacture-data-goyal-hits-out-at-critics-for-questioning-gdp-figures/articleshow/133714520.cms"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "‘Few jobless people call themselves economists’: Piyush Goyal jibes at Oppn, critics over ‘wrong GDP’ remark",
+          "url": "https://www.hindustantimes.com/india-news/few-jobless-people-call-themselves-economists-piyush-goyal-jibes-at-opposition-critics-over-wrong-gdp-number-remark-101788358719506.html"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "PM’s economic adviser denies allegations of Centre manipulating GDP data",
+          "url": "https://scroll.in/latest/1095427/pms-economic-adviser-denies-allegations-of-centre-manipulating-gdp-data?utm_source=rss&utm_medium=public"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "\"Sure Sign Of Intellectual Dishonesty\": SBI Research On Doubts Being Raised On GDP Growth Data",
+          "url": "https://www.ndtv.com/india-news/sure-sign-of-intellectual-dishonesty-sbi-research-on-doubts-being-raised-on-gdp-growth-data-soumya-kanti-ghosh-group-chief-economic-adviser-sbi-11993614#publisher=newsstand"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 2
+    },
+    {
+      "headline_hint": "Heavy rainfall and severe flooding submerge parts of North India, killing several",
+      "section": "india",
+      "category": "disaster",
+      "tier_requested": "major",
+      "article_ids": [
+        80,
+        108,
+        161,
+        167,
+        243,
+        258
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        80,
+        108,
+        161,
+        167,
+        243,
+        258
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 5,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "NDTV",
+          "title": "3 Killed, Over 16,000 Evacuated As Flood Situation Worsens In UP",
+          "url": "https://www.ndtv.com/india-news/3-killed-over-16-000-evacuated-as-flood-situation-worsens-in-up-11994491#publisher=newsstand"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "UP floods: Over 16K evacuated as 23 districts hit; 3 killed, relief ops scaled up",
+          "url": "https://www.hindustantimes.com/india-news/up-floods-over-16k-evacuated-as-23-districts-hit-3-killed-relief-ops-scaled-up-101788375310019.html"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Heavy rain likely across north, central and east India over the next few days",
+          "url": "https://www.livemint.com/news/heavy-rain-likely-across-north-central-and-east-india-over-the-next-few-days-11788349795820.html"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "Landslides Hit Nainital Villages, Homes At Risk As Rain Continues",
+          "url": "https://www.ndtv.com/india-news/landslides-hit-nainital-villages-homes-at-risk-as-rain-continues-11994067#publisher=newsstand"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Bihar on alert as major rivers swell following heavy rains, all 69 gates of Sone Barrage opened",
+          "url": "https://www.hindustantimes.com/india-news/bihar-on-alert-as-major-rivers-swell-following-heavy-rains-all-69-gates-of-sone-barrage-opened-101788368657394.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 1
+    },
+    {
+      "headline_hint": "India strongly condemns demolition of century-old Hindu temple in Narowal, Pakistan",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        120,
+        160,
+        188,
+        192
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        120,
+        160,
+        188,
+        192
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 6,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "NDTV",
+          "title": "\"Alarming Apathy\": India Condemns Century-Old Temple's Demolition In Pakistan",
+          "url": "https://www.ndtv.com/india-news/alarming-apathy-india-condemns-century-old-temples-demolition-in-pakistan-11994366#publisher=newsstand"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "‘Failure to protect this temple is alarming’: India raises concerns over Narowal temple destruction",
+          "url": "https://www.livemint.com/news/india/failure-to-protect-this-temple-is-alarming-india-raises-concerns-over-narowal-temple-destruction-11788368559546.html"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "'Reprehensible act of vandalism': India flays Pak over demolition of old Hindu temple",
+          "url": "https://timesofindia.indiatimes.com/india/reprehensible-act-of-vandalism-india-condemns-demolition-of-century-old-hindu-temple-in-pakistan-seeks-probe/articleshow/133714540.cms"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "'Alarming apathy': India lambasts Pakistan over demolition of century-old Punjab temple",
+          "url": "https://www.hindustantimes.com/india-news/alarming-apathy-india-mea-lambasts-pakistan-century-old-temple-demolition-narowal-101788363198411.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Bombay High Court orders CBI investigation into death of Disha Salian",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        20,
+        275,
+        299
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        20,
+        275,
+        299
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "CBI probe necessary into Disha Salian's death: HC",
+          "url": "https://timesofindia.indiatimes.com/india/cbi-probe-necessary-into-disha-salians-death-hc/articleshow/133720165.cms"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "A case back in focus: All you need to know about Disha Salian's death case as HC orders CBI probe",
+          "url": "https://www.hindustantimes.com/india-news/disha-salian-death-case-timeline-bombay-hc-murder-cbi-probe-sushant-singh-rajput-aaditya-thackeray-all-about-the-case-101788346741664.html"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "CBI to probe death of Sushant Singh Rajput’s former manager",
+          "url": "https://scroll.in/latest/1095432/cbi-to-probe-death-of-sushant-singh-rajputs-former-manager?utm_source=rss&utm_medium=public"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Allahabad High Court quashes National Security Act detention of student activist",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        84,
+        223,
+        244
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        84,
+        223,
+        244
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "The Hindu",
+          "title": "Allahabad HC quashes NSA detention of student, calls case ‘concocted story’",
+          "url": "https://www.thehindu.com/news/national/uttar-pradesh/allahabad-hc-quashes-aakriti-chaudharys-detention-under-nsa-post-noida-workers-protest/article71419887.ece"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "Noida workers’ protest: HC quashes NSA detention of 25-year-old activist",
+          "url": "https://scroll.in/latest/1095452/noida-workers-protest-hc-quashes-nsa-detention-of-25-year-old-activist?utm_source=rss&utm_medium=public"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Story 'concocted' by state: Allahabad HC quashes DU student's detention under NSA after Noida workers' protest",
+          "url": "https://www.hindustantimes.com/india-news/story-concocted-by-state-allahabad-hc-quashes-du-aakriti-chaudharys-detention-under-nsa-after-noida-workers-protest-101788354798499.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Two Kuki-Zo MLAs return to Manipur Assembly after three years",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        61,
+        81
+      ],
+      "verdict": "cut:below_floor(2<5)",
+      "valid_ids": [
+        61,
+        81
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 2,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "2 Kuki-Zo MLAs set foot in Imphal for 1st time in 3 years",
+          "url": "https://timesofindia.indiatimes.com/india/2-kuki-zo-mlas-set-foot-in-imphal-for-1st-time-in-3-years/articleshow/133719773.cms"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "Two Kuki-Zo MLAs return to Assembly after three-year gap",
+          "url": "https://www.thehindu.com/news/national/manipur/kuki-mlas-attend-manipur-assembly-session/article71419216.ece"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "RBI's special foreign exchange scheme attracts record $127 billion",
+      "section": "india",
+      "category": "economy",
+      "tier_requested": "notable",
+      "article_ids": [
+        140,
+        187
+      ],
+      "verdict": "cut:below_floor(2<5)",
+      "valid_ids": [
+        140,
+        187
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 2,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "NDTV",
+          "title": "NRIs Pour in $127 Billion as Reserve Bank's Dollar Scheme Beats Targets",
+          "url": "https://www.ndtv.com/india-news/nris-pour-in-127-billion-as-reserve-banks-dollar-scheme-beats-targets-11994250#publisher=newsstand"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "India draws record $127 billion through forex deposits: RBI",
+          "url": "https://timesofindia.indiatimes.com/business/india-business/india-draws-record-127-billion-through-forex-deposits-rbi/articleshow/133714586.cms"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    }
+  ]
+}
