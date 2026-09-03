@@ -1,0 +1,707 @@
+{
+  "dials": {
+    "WEIGHT_FLOOR": 5,
+    "TIER_WEIGHT": {
+      "lead": 4,
+      "major": 2,
+      "notable": 0
+    },
+    "WIKI_BONUS": 2,
+    "HARD_CAP": 12,
+    "MIN_STORIES_IF_ANY": 3,
+    "MAX_ARTICLES_PER_STORY": 5
+  },
+  "floor_relaxed": false,
+  "kept_weights": [
+    11,
+    10,
+    8,
+    6,
+    6,
+    8,
+    7,
+    5
+  ],
+  "per_section": {
+    "world": 5,
+    "india": 3
+  },
+  "clusters": [
+    {
+      "headline_hint": "ISRO successfully launches Earth observation satellite EOS-05 into geosynchronous orbit",
+      "section": "india",
+      "category": "science",
+      "tier_requested": "lead",
+      "article_ids": [
+        0,
+        20,
+        21,
+        28,
+        226
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        0,
+        20,
+        21,
+        28,
+        226
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 8,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 4,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "The Hindu",
+          "title": "ISRO successfully launches Earth observation satellite EOS-05",
+          "url": "https://www.thehindu.com/sci-tech/science/isro-gslv-f17-eos-05-satellite-rocket-launch-september-4-sriharikota-updates/article71425914.ece"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "ISRO Successfully Launches GSLV F17 Rocket Carrying Imaging Satellite EOS 5",
+          "url": "https://www.ndtv.com/india-news/isros-gslv-f17-rocket-carrying-imaging-satellite-eos-5-lifts-off-11999834#publisher=newsstand"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Isro’s GSLV-F17 successfully places EOS-05 Earth observation satellite in geosynchronous orbit",
+          "url": "https://timesofindia.indiatimes.com/india/isros-gslv-f17-successfully-places-eos-05-earth-observation-satellite-in-geosynchronous-orbit/articleshow/133746002.cms"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "ISRO's GSLV-F17 carrying EOS-05 earth observation spacecraft takes off from Sriharikota",
+          "url": "https://www.hindustantimes.com/india-news/isros-gslv-f17-carrying-eos-05-earth-observation-spacecraft-takes-off-from-sriharikota-101788470019068.html"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "India's 24x7 eye on China, Pakistan: Why EOS-05 launch on ‘Naughty Boy’ matters",
+          "url": "https://timesofindia.indiatimes.com/defence/news/24x7-eye-on-china-pakistan-borders-why-eos-05-launch-on-naughty-boy-is-key-to-indias-security/articleshow/133739162.cms"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "EAM Jaishankar visits Kyiv, reiterating India's stance on diplomacy and energy security",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        72,
+        81,
+        145,
+        171,
+        225,
+        250
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        72,
+        81,
+        145,
+        171,
+        225,
+        250
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 3,
+      "wiki_backed": true,
+      "wiki_event": "Russian foreign minister Sergey Lavrov says that Russia will close Goethe-Institut cultural centers in Moscow, Saint Petersburg, and Yekaterinburg in response to Germany closing Russia's consulate in Bonn and the Russian House in Berlin fol",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "NDTV",
+          "title": "India Ready To Extend \"Any Help\" To End Russia-Ukraine War: S Jaishankar",
+          "url": "https://www.ndtv.com/india-news/india-ready-to-extend-any-help-to-end-russia-ukraine-war-s-jaishankar-11999630#publisher=newsstand"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Peace hinges on diplomacy, not oil trade: EAM in Ukraine",
+          "url": "https://timesofindia.indiatimes.com/india/peace-hinges-on-diplomacy-not-oil-trade-eam-in-ukraine/articleshow/133745469.cms"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "India ready to support peace efforts, Jaishankar tells Zelenskyy in Kyiv",
+          "url": "https://www.hindustantimes.com/india-news/india-ready-to-support-peace-efforts-jaishankar-tells-zelenskyy-in-kyiv-101788457810123.html"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "‘Buying or not buying Russian oil won’t solve Ukraine crisis’: Jaishankar says India needs to take care of energy needs",
+          "url": "https://www.hindustantimes.com/india-news/buying-or-not-buying-russian-oil-won-t-solve-ukraine-crisis-jaishankar-says-india-needs-to-take-care-of-energy-needs-101788451574017.html"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "'Grateful': Ukraine's Zelensky meets S Jaishankar, hails India's peace push in Ukraine war",
+          "url": "https://www.hindustantimes.com/india-news/peace-is-needed-ukraine-president-zelensky-meets-s-jaishankar-highlights-india-clear-position-on-russia-ukraine-war-101788445461167.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 1
+    },
+    {
+      "headline_hint": "India and Belgium agree to expand cooperation in defense, clean energy, and trade",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        37,
+        151,
+        161,
+        178,
+        191,
+        266,
+        309
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        37,
+        151,
+        161,
+        178,
+        191,
+        266,
+        309
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "Don’t share any sensitive tech with Pak, Rajnath asks Belgian minister",
+          "url": "https://timesofindia.indiatimes.com/defence/news/dont-share-any-sensitive-tech-with-pak-rajnath-asks-belgian-minister-both-countries-ink-10-defence-pacts-on-rockets-military-hardware/articleshow/133745968.cms"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Zorawar: What is special about India's first indigenous light tank? Meaning behind the name, weapons and more",
+          "url": "https://www.livemint.com/news/india/zorawar-what-is-special-about-indias-first-indigenous-light-tank-meaning-behind-the-name-weapons-and-more-11788453412624.html"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "India, Belgium to step up cooperation in defence, law enforcement, semiconductors",
+          "url": "https://www.hindustantimes.com/india-news/india-belgium-to-step-up-cooperation-in-defence-law-enforcement-semiconductors-101788452049563.html"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "India, Belgium sign MoU for renewable energy cooperation",
+          "url": "https://www.livemint.com/news/india-belgium-sign-mou-for-renewable-energy-cooperation-bilateral-cooperation-climate-defence-supply-chains-tech-11788442379335.html"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "India, Belgium aim to double bilateral trade in five years",
+          "url": "https://www.livemint.com/news/india/india-belgium-aim-to-double-bilateral-trade-in-five-years-11788438870425.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 2
+    },
+    {
+      "headline_hint": "Political row erupts in India over revision of GDP calculation methodology and growth figures",
+      "section": "india",
+      "category": "economy",
+      "tier_requested": "notable",
+      "article_ids": [
+        77,
+        121,
+        206,
+        235,
+        251,
+        281
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        77,
+        121,
+        206,
+        235,
+        251,
+        281
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 5,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 5,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "The Hindu",
+          "title": "Congress’s criticism of GDP figures is a ‘dimagi Naxal’ mindset: BJP",
+          "url": "https://www.thehindu.com/news/national/congresss-criticism-of-gdp-figures-is-a-dimagi-naxal-mindset-bjp/article71425465.ece"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Neelkanth Mishra defends GDP data, calls criticism ‘egregiously wrong’",
+          "url": "https://www.livemint.com/news/india/neelkanth-mishra-comes-in-strong-defence-of-india-s-gdp-estimates-hits-back-at-egregiously-wrong-claims-11788438864349.html"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "7.8% GDP growth claim shaky, Centre must provide explanation, says Congress",
+          "url": "https://scroll.in/latest/1095492/7-8-gdp-growth-claim-shaky-centre-must-provide-explanation-says-congress?utm_source=rss&utm_medium=public"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "7.8% growth, but a Rs 6 lakh crore question: Why GDP data has sparked a debate",
+          "url": "https://timesofindia.indiatimes.com/business/india-business/explained-why-indias-7-8-gdp-growth-has-sparked-a-maths-debate/articleshow/133733370.cms"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "'Need to hear’: Kiren Rijiju shares NVIDIA CEO Jensen Huang's big praise for India's IT growth amid GDP row",
+          "url": "https://www.hindustantimes.com/india-news/kiren-rijiju-shares-nvidia-ceo-jensen-huangs-big-praise-for-indias-it-growth-ai-focus-amid-gdp-growth-row-101788433993660.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 1
+    },
+    {
+      "headline_hint": "Middle East conflict escalates as Iran launches strikes on US military bases in Kuwait and UAE",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "lead",
+      "article_ids": [
+        34,
+        36,
+        50,
+        58,
+        147,
+        170,
+        220,
+        234
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        34,
+        36,
+        50,
+        58,
+        147,
+        170,
+        220,
+        234
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 5,
+      "wiki_backed": true,
+      "wiki_event": "Iran's military launches drones and missiles on Ahmad al-Jaber Air Base in Kuwait and Al Minhad Air Base in the United Arab Emirates, targeting United States military facilities and equipment to retaliate for the recent U.S. bombardment of ",
+      "weight": 11,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 4,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "US Vice President JD Vance declines to offer timeline for end of Iran war",
+          "url": "https://www.aljazeera.com/news/2026/9/3/us-vice-president-jd-vance-declines-to-offer-timeline-for-end-of-iran-war?traffic_source=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "JD Vance reacts to airstrike that killed four at Iran wedding: ‘Things happen’",
+          "url": "https://www.theguardian.com/world/2026/sep/03/iran-strikes-wedding-jd-vance"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Trump claims US has ‘virtually unlimited’ ammunition for Iran war, slams ‘treasonous’ critics",
+          "url": "https://www.livemint.com/news/us-news/trump-claims-us-has-virtually-unlimited-ammunition-for-iran-war-slams-treasonous-critics-11788467179360.html"
+        },
+        {
+          "outlet": "DW World",
+          "title": "Trump's Iran strategy: Could this become a forever war?",
+          "url": "https://www.dw.com/en/trump-s-iran-strategy-could-this-become-a-forever-war/a-78875030?maca=en-rss-en-world-4025-rdf"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "How the US war has changed power equations in Iran",
+          "url": "https://scroll.in/article/1095439/how-the-us-war-has-changed-power-equations-in-iran?utm_source=rss&utm_medium=public"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 3
+    },
+    {
+      "headline_hint": "UN and WMO issue global warnings as 'supersized' El Niño threatens extreme climate impacts",
+      "section": "world",
+      "category": "climate",
+      "tier_requested": "major",
+      "article_ids": [
+        33,
+        64,
+        70,
+        181,
+        214,
+        287,
+        329
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        33,
+        64,
+        70,
+        181,
+        214,
+        287,
+        329
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 6,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "El Nino: A phenomenon supercharged by climate change",
+          "url": "https://www.aljazeera.com/features/2026/9/3/el-nino-a-phenomenon-supercharged-by-climate-change?traffic_source=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "El Niño weather phenomenon set to deliver massive blow to global economy",
+          "url": "https://www.france24.com/en/tv-shows/business/20260903-el-ni%C3%B1o-weather-phenomenon-set-to-deliver-massive-blow-to-global-economy"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Minister tells Brits to stock up on days of supplies after ‘supersize’ El Niño warning",
+          "url": "https://www.theguardian.com/environment/2026/sep/03/angela-eagle-uk-stock-up-supplies-el-nino-warning"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Toxic wildfire haze spreads across South East Asia as 'super' El Niño intensifies",
+          "url": "https://www.bbc.co.uk/news/articles/clyqw44w142o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "WMO chief says El Nino could be strongest in four decades",
+          "url": "https://www.france24.com/en/video/20260903-wmo-chief-says-el-nino-could-be-strongest-in-four-decades"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 2
+    },
+    {
+      "headline_hint": "US energy firms sign multi-billion dollar deals in Venezuela amidst political backlash",
+      "section": "world",
+      "category": "economy",
+      "tier_requested": "major",
+      "article_ids": [
+        8,
+        74,
+        175,
+        184,
+        308,
+        320,
+        343
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        8,
+        74,
+        175,
+        184,
+        308,
+        320,
+        343
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 6,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 8,
+      "weight_terms": {
+        "distinct_outlets": 6,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "Why are people calling Venezuela oil deal a new form of US colonialism?",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/3/aje-onl-nf_us-venezuela-oil-deal_colonialism-030926?traffic_source=rss"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "Machado says Venezuela needs 'more than money' after US oil deal",
+          "url": "https://www.channelnewsasia.com/world/machado-venezuela-more-us-oil-deal-6361361"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Nobel laureate Machado: ‘Illegitimate’ Venezuela regime has no right to strike US oil deal",
+          "url": "https://www.theguardian.com/world/2026/sep/03/venezuelan-opposition-leader-questions-us-oil-deal-with-illegitimate-regime"
+        },
+        {
+          "outlet": "France 24",
+          "title": "US energy firms dominate Venezuela deals worth billions",
+          "url": "https://www.france24.com/en/video/20260903-us-energy-firms-dominate-venezuela-deals-worth-billions"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "Critics question legality of Venezuela oil deals",
+          "url": "https://www.npr.org/2026/09/03/nx-s1-5954176/critics-question-legality-of-venezuela-oil-deals"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 2
+    },
+    {
+      "headline_hint": "Rescuers hunt for survivors in flooded hydro tunnels following devastating Nepal flash floods",
+      "section": "world",
+      "category": "disaster",
+      "tier_requested": "major",
+      "article_ids": [
+        1,
+        9,
+        32,
+        52,
+        62,
+        98,
+        134,
+        154,
+        160,
+        172,
+        292,
+        318,
+        332,
+        340
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        1,
+        9,
+        32,
+        52,
+        62,
+        98,
+        134,
+        154,
+        160,
+        172,
+        292,
+        318,
+        332,
+        340
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 8,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 10,
+      "weight_terms": {
+        "distinct_outlets": 8,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "News live: Two more Australians confirmed safe in Nepal-Tibet floods; Hanson to make cost of living ‘worse’, union boss warns",
+          "url": "https://www.theguardian.com/australia-news/live/2026/sep/04/anthony-albanese-pauline-hanson-actu-union-labor-one-nation-coalition-angus-taylor-ntwnfb"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Tougher than Everest rescues: Inside Nepal's biggest airlift",
+          "url": "https://timesofindia.indiatimes.com/world/south-asia/tougher-than-everest-rescues-inside-nepals-biggest-airlift/articleshow/133746265.cms"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Nepal flood victims to be identified through DNA",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/3/nepal-flood-victims-to-be-identified-through-dna?traffic_source=rss"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "Nepali community in Texas grieves and prays for healing after flash floods",
+          "url": "https://www.npr.org/2026/09/03/nx-s1-5954535/nepali-community-in-texas-grieves-and-prays-for-healing-after-flash-floods"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Nepal tunnel rescuers hunt for survivors with rafts and drone",
+          "url": "https://www.bbc.co.uk/news/videos/ckg0eerml02o?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 9
+    },
+    {
+      "headline_hint": "Palestinian teenagers killed in West Bank clash involving Israeli forces and settlers",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "major",
+      "article_ids": [
+        51,
+        78,
+        141,
+        182,
+        213
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        51,
+        78,
+        141,
+        182,
+        213
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 6,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "Israel kills 3 in Gaza as far-right minister plans for Palestinian removals",
+          "url": "https://www.aljazeera.com/news/2026/9/3/israel-kills-3-in-gaza-as-far-right-minister-plans-for-palestinian-removals?traffic_source=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Israelis shoot dead two Palestinian teenagers after settlers encircle village",
+          "url": "https://www.theguardian.com/world/2026/sep/03/israelis-shoot-dead-two-palestinian-teenagers-after-settlers-encircle-village"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Two Palestinian teens killed in West Bank raid by Israeli settlers and army",
+          "url": "https://www.france24.com/en/video/20260903-two-palestinian-teens-killed-in-west-bank-raid-by-israeli-settlers-and-army"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Palestinian teens killed during settler attack on West Bank village, officials say",
+          "url": "https://www.bbc.co.uk/news/articles/cj6482r6yl4o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Far-right Israeli minister outlines plan for removal of all Palestinians from Gaza",
+          "url": "https://www.theguardian.com/world/2026/sep/03/israel-far-right-minister-itamar-ben-gvir-plan-removal-palestinians-gaza"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Nvidia agrees to purchase AI platform Hugging Face for $12.93 billion",
+      "section": "world",
+      "category": "technology",
+      "tier_requested": "notable",
+      "article_ids": [
+        25
+      ],
+      "verdict": "cut:below_floor(1<5)",
+      "valid_ids": [
+        25
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 1,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 1,
+      "weight_terms": {
+        "distinct_outlets": 1,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "France 24",
+          "title": "Nvidia to buy Hugging Face for $12.93 billion in major AI expansion",
+          "url": "https://www.france24.com/en/technology/20260903-nvidia-to-buy-hugging-face-for-12-93-billion-in-major-ai-expansion"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Volkswagen announces plan to cut 100,000 jobs by 2030 in major restructuring",
+      "section": "world",
+      "category": "economy",
+      "tier_requested": "notable",
+      "article_ids": [
+        3
+      ],
+      "verdict": "cut:below_floor(1<5)",
+      "valid_ids": [
+        3
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 1,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 1,
+      "weight_terms": {
+        "distinct_outlets": 1,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "Volkswagen announces it will cut 100,000 jobs by 2030",
+          "url": "https://www.theguardian.com/business/2026/sep/03/volkswagen-confirms-100000-job-cuts-by-2030"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Genetically modified pig kidney keeps human recipient alive for record nine months",
+      "section": "world",
+      "category": "science",
+      "tier_requested": "notable",
+      "article_ids": [
+        2
+      ],
+      "verdict": "cut:below_floor(1<5)",
+      "valid_ids": [
+        2
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 1,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 1,
+      "weight_terms": {
+        "distinct_outlets": 1,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "Genetically modified pig kidney keeps man alive for record nine months",
+          "url": "https://www.theguardian.com/science/2026/sep/03/genetically-modified-pig-kidney-keeps-man-alive-record-nine-months"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    }
+  ]
+}

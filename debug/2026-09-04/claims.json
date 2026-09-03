@@ -1,0 +1,945 @@
+{
+  "min_claim_chars": 20,
+  "max_claims_per_story": 24,
+  "calls": [
+    {
+      "label": "claims-world",
+      "cluster_ids": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "label": "claims-india",
+      "cluster_ids": [
+        5,
+        6,
+        7
+      ]
+    }
+  ],
+  "rejected_claims": 0,
+  "rejected_clusters": 0,
+  "clusters": [
+    {
+      "cluster_id": 0,
+      "headline_hint": "Middle East conflict escalates as Iran launches strikes on US military bases in Kuwait and UAE",
+      "section": "world",
+      "batch_position": 0,
+      "claim_count": 20,
+      "distinct_outlets": 5,
+      "source_kinds": {
+        "fulltext": 20
+      },
+      "claims": [
+        {
+          "id": 1,
+          "cluster_id": 0,
+          "text": "United States Vice President JD Vance declined to offer a timeline for the end of the US-Israeli war on Iran.",
+          "kind": "event",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/9/3/us-vice-president-jd-vance-declines-to-offer-timeline-for-end-of-iran-war?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 2,
+          "cluster_id": 0,
+          "text": "US Vice President JD Vance stated: \"I wouldn't call it a war. Right now, there is no active shooting.\"",
+          "kind": "quote",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/9/3/us-vice-president-jd-vance-declines-to-offer-timeline-for-end-of-iran-war?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 3,
+          "cluster_id": 0,
+          "text": "US Vice President JD Vance stated that major combat operations against Iran lasted about six weeks.",
+          "kind": "figure",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/9/3/us-vice-president-jd-vance-declines-to-offer-timeline-for-end-of-iran-war?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 4,
+          "cluster_id": 0,
+          "text": "Roughly a fifth of the world's oil and gas flowed through the Strait of Hormuz prior to the war.",
+          "kind": "background",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/9/3/us-vice-president-jd-vance-declines-to-offer-timeline-for-end-of-iran-war?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 5,
+          "cluster_id": 0,
+          "text": "US Vice President JD Vance stated a deal transferring control of 65 billion barrels of Venezuelan oil reserves to the US would help lower global oil costs.",
+          "kind": "figure",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/9/3/us-vice-president-jd-vance-declines-to-offer-timeline-for-end-of-iran-war?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 6,
+          "cluster_id": 0,
+          "text": "An attack on a wedding party in Sirik, Iran, reportedly killed at least five people and injured nearly 70 others.",
+          "kind": "figure",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/9/3/us-vice-president-jd-vance-declines-to-offer-timeline-for-end-of-iran-war?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 7,
+          "cluster_id": 0,
+          "text": "An air strike on an Iranian elementary school in Minab killed more than 150 people on the first day of the war.",
+          "kind": "background",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/9/3/us-vice-president-jd-vance-declines-to-offer-timeline-for-end-of-iran-war?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 8,
+          "cluster_id": 0,
+          "text": "As of August, 18 US service members have been killed and 750 wounded in the conflict with Iran.",
+          "kind": "figure",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/9/3/us-vice-president-jd-vance-declines-to-offer-timeline-for-end-of-iran-war?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 9,
+          "cluster_id": 0,
+          "text": "US Vice President JD Vance said \"sometimes things happen\" when asked if an American strike was responsible for deaths at an Iranian wedding.",
+          "kind": "quote",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/sep/03/iran-strikes-wedding-jd-vance",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 10,
+          "cluster_id": 0,
+          "text": "The Iranian Red Crescent reported that four people were killed and more than 50 wounded when missile shrapnel struck a home during a wedding in Kuhestak.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/sep/03/iran-strikes-wedding-jd-vance",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 11,
+          "cluster_id": 0,
+          "text": "Democratic Congressman Ro Khanna called Vice President Vance's statements \"unbelievable gaslighting.\"",
+          "kind": "quote",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/sep/03/iran-strikes-wedding-jd-vance",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 12,
+          "cluster_id": 0,
+          "text": "US President Donald Trump wrote on social media that the US has \"virtually unlimited\" amounts of mid- to high-grade munitions.",
+          "kind": "quote",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/sep/03/iran-strikes-wedding-jd-vance",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 13,
+          "cluster_id": 0,
+          "text": "A February 28 US air attack in Minab killed at least 156 people, mostly schoolchildren.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/sep/03/iran-strikes-wedding-jd-vance",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 14,
+          "cluster_id": 0,
+          "text": "US President Donald Trump called reports of dwindling US ammunition supplies \"100% wrong\" and described those spreading them as \"treasonous.\"",
+          "kind": "quote",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/us-news/trump-claims-us-has-virtually-unlimited-ammunition-for-iran-war-slams-treasonous-critics-11788467179360.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 15,
+          "cluster_id": 0,
+          "text": "Reuters reported on August 4 that the US military has used virtually all of its ATACMS and PrSM surface-to-surface missile stockpiles during the war with Iran.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/us-news/trump-claims-us-has-virtually-unlimited-ammunition-for-iran-war-slams-treasonous-critics-11788467179360.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 16,
+          "cluster_id": 0,
+          "text": "Military leaders warned President Donald Trump in recent weeks that US supplies of Patriot missile interceptors were falling.",
+          "kind": "background",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/us-news/trump-claims-us-has-virtually-unlimited-ammunition-for-iran-war-slams-treasonous-critics-11788467179360.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 17,
+          "cluster_id": 0,
+          "text": "US Central Command launched attacks targeting Iranian air defense sites, radar systems, maritime assets, and mine laying capabilities.",
+          "kind": "event",
+          "outlet": "DW World",
+          "url": "https://www.dw.com/en/trump-s-iran-strategy-could-this-become-a-forever-war/a-78875030?maca=en-rss-en-world-4025-rdf",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 18,
+          "cluster_id": 0,
+          "text": "Jordan reported detecting 13 ballistic missiles in its airspace, 10 of which it intercepted.",
+          "kind": "figure",
+          "outlet": "DW World",
+          "url": "https://www.dw.com/en/trump-s-iran-strategy-could-this-become-a-forever-war/a-78875030?maca=en-rss-en-world-4025-rdf",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 19,
+          "cluster_id": 0,
+          "text": "The United States unveiled measures on August 19 to tighten its financial siege and blockade around Iran's ports.",
+          "kind": "event",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/article/1095439/how-the-us-war-has-changed-power-equations-in-iran?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 20,
+          "cluster_id": 0,
+          "text": "Mojtaba Khamenei appointed Islamic Revolutionary Guard Corps founder Mohsen Rezaee as his representative on Iran's Supreme National Security Council.",
+          "kind": "background",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/article/1095439/how-the-us-war-has-changed-power-equations-in-iran?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 1,
+      "headline_hint": "Rescuers hunt for survivors in flooded hydro tunnels following devastating Nepal flash floods",
+      "section": "world",
+      "batch_position": 1,
+      "claim_count": 8,
+      "distinct_outlets": 4,
+      "source_kinds": {
+        "fulltext": 7,
+        "summary": 1
+      },
+      "claims": [
+        {
+          "id": 21,
+          "cluster_id": 1,
+          "text": "Two additional Australians were confirmed safe after the Nepal-Tibet floods, reducing the number of missing Australians to 36.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/australia-news/live/2026/sep/04/anthony-albanese-pauline-hanson-actu-union-labor-one-nation-coalition-angus-taylor-ntwnfb",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 22,
+          "cluster_id": 1,
+          "text": "More than 1,200 people have been confirmed dead and over 5,500 remain missing following the Nepal-Tibet floods.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/australia-news/live/2026/sep/04/anthony-albanese-pauline-hanson-actu-union-labor-one-nation-coalition-angus-taylor-ntwnfb",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 23,
+          "cluster_id": 1,
+          "text": "Unicef warned that at least 22,000 children in Nepal urgently need safe drinking water and better sanitation.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/australia-news/live/2026/sep/04/anthony-albanese-pauline-hanson-actu-union-labor-one-nation-coalition-angus-taylor-ntwnfb",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 24,
+          "cluster_id": 1,
+          "text": "Helicopters airlifted more than 4,000 people across Rasuwa and Nuwakot following the August 26 Bhote Koshi-Trishuli flood in Nepal.",
+          "kind": "figure",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/south-asia/tougher-than-everest-rescues-inside-nepals-biggest-airlift/articleshow/133746265.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 25,
+          "cluster_id": 1,
+          "text": "Captain Bimal Sharma of Simrik Air stated that flood rescue missions in the Trishuli gorge were tougher than Everest-season flying due to missing landing spots and inaccurate coordinates.",
+          "kind": "quote",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/south-asia/tougher-than-everest-rescues-inside-nepals-biggest-airlift/articleshow/133746265.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 26,
+          "cluster_id": 1,
+          "text": "Nepal flood victims are set to be identified through DNA testing.",
+          "kind": "event",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/3/nepal-flood-victims-to-be-identified-through-dna?traffic_source=rss",
+          "source_kind": "summary"
+        },
+        {
+          "id": 27,
+          "cluster_id": 1,
+          "text": "Rescuers used rafts and drones to search for survivors trapped inside hydro tunnels along Nepal's Trishuli River.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/videos/ckg0eerml02o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 28,
+          "cluster_id": 1,
+          "text": "A glacial collapse in the Himalayas triggered flash flooding and debris flows across the Nepal-Tibet border.",
+          "kind": "background",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/videos/ckg0eerml02o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 2,
+      "headline_hint": "US energy firms sign multi-billion dollar deals in Venezuela amidst political backlash",
+      "section": "world",
+      "batch_position": 2,
+      "claim_count": 10,
+      "distinct_outlets": 5,
+      "source_kinds": {
+        "fulltext": 9,
+        "summary": 1
+      },
+      "claims": [
+        {
+          "id": 29,
+          "cluster_id": 2,
+          "text": "Critics have described the multi-billion-dollar US oil agreement in Venezuela as modern-day colonialism.",
+          "kind": "event",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/3/aje-onl-nf_us-venezuela-oil-deal_colonialism-030926?traffic_source=rss",
+          "source_kind": "summary"
+        },
+        {
+          "id": 30,
+          "cluster_id": 2,
+          "text": "Venezuelan opposition figure María Corina Machado called for a democratic transition following the US-Venezuela oil deal.",
+          "kind": "event",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/machado-venezuela-more-us-oil-deal-6361361",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 31,
+          "cluster_id": 2,
+          "text": "The US-Venezuela agreement grants the United States access to more than 65 billion barrels of oil in Venezuela.",
+          "kind": "figure",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/machado-venezuela-more-us-oil-deal-6361361",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 32,
+          "cluster_id": 2,
+          "text": "US Energy Secretary Chris Wright traveled to Venezuela to oversee agreement signings with Chevron, GE Vernova, and ENI.",
+          "kind": "event",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/machado-venezuela-more-us-oil-deal-6361361",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 33,
+          "cluster_id": 2,
+          "text": "Interim leader Delcy Rodriguez estimated Venezuela will make $209 billion in profit from the energy deals over 25 years.",
+          "kind": "figure",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/machado-venezuela-more-us-oil-deal-6361361",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 34,
+          "cluster_id": 2,
+          "text": "María Corina Machado stated that \"the wealth of our subsoil does not belong to an illegitimate regime – it belongs to the Venezuelan people.\"",
+          "kind": "quote",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/sep/03/venezuelan-opposition-leader-questions-us-oil-deal-with-illegitimate-regime",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 35,
+          "cluster_id": 2,
+          "text": "Delcy Rodríguez assumed power as interim president in January after former president Nicolás Maduro was abducted by US special forces.",
+          "kind": "background",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/sep/03/venezuelan-opposition-leader-questions-us-oil-deal-with-illegitimate-regime",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 36,
+          "cluster_id": 2,
+          "text": "Venezuela possesses the world's largest proven crude oil reserves, estimated at 303 billion barrels.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/sep/03/venezuelan-opposition-leader-questions-us-oil-deal-with-illegitimate-regime",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 37,
+          "cluster_id": 2,
+          "text": "US energy companies signed multi-billion-dollar deals with Venezuela after control of significant oil assets was granted to the US.",
+          "kind": "event",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/video/20260903-us-energy-firms-dominate-venezuela-deals-worth-billions",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 38,
+          "cluster_id": 2,
+          "text": "Chevron made a $7 billion bet on Venezuela's oil industry.",
+          "kind": "figure",
+          "outlet": "NPR World",
+          "url": "https://www.npr.org/2026/09/03/nx-s1-5954176/critics-question-legality-of-venezuela-oil-deals",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 3,
+      "headline_hint": "UN and WMO issue global warnings as 'supersized' El Niño threatens extreme climate impacts",
+      "section": "world",
+      "batch_position": 3,
+      "claim_count": 10,
+      "distinct_outlets": 4,
+      "source_kinds": {
+        "fulltext": 10
+      },
+      "claims": [
+        {
+          "id": 39,
+          "cluster_id": 3,
+          "text": "The disappearance of anchovies along the South American Pacific coast is signaling a major El Niño event.",
+          "kind": "event",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/features/2026/9/3/el-nino-a-phenomenon-supercharged-by-climate-change?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 40,
+          "cluster_id": 3,
+          "text": "UK Met Office projections indicate equatorial Pacific ocean temperatures could spike by 3 degrees Celsius when El Niño peaks in late 2026 or early 2027.",
+          "kind": "figure",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/features/2026/9/3/el-nino-a-phenomenon-supercharged-by-climate-change?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 41,
+          "cluster_id": 3,
+          "text": "WMO Secretary-General Celeste Saulo stated: \"Never before in the 50-year history of the WMO have we launched such a major mobilisation delivering forecasts and services to save lives and livelihoods.\"",
+          "kind": "quote",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/features/2026/9/3/el-nino-a-phenomenon-supercharged-by-climate-change?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 42,
+          "cluster_id": 3,
+          "text": "The British government is planning a public campaign advising citizens to stock up on tinned food and water for national emergencies.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/environment/2026/sep/03/angela-eagle-uk-stock-up-supplies-el-nino-warning",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 43,
+          "cluster_id": 3,
+          "text": "Ocean temperatures at the center of El Niño measured 2.6 degrees Celsius above the 30-year average, with models forecasting a peak of 4 degrees Celsius in November.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/environment/2026/sep/03/angela-eagle-uk-stock-up-supplies-el-nino-warning",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 44,
+          "cluster_id": 3,
+          "text": "UN Secretary-General António Guterres stated that \"El Niño is being supersized before our eyes.\"",
+          "kind": "quote",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/environment/2026/sep/03/angela-eagle-uk-stock-up-supplies-el-nino-warning",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 45,
+          "cluster_id": 3,
+          "text": "The World Food Programme estimated that El Niño is likely to push about 50 million people into acute hunger.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/environment/2026/sep/03/angela-eagle-uk-stock-up-supplies-el-nino-warning",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 46,
+          "cluster_id": 3,
+          "text": "Indonesia's Health Ministry recorded over 50,000 cases of respiratory infections linked to wildfires between July and August, including more than 12,000 cases in children under five.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/clyqw44w142o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 47,
+          "cluster_id": 3,
+          "text": "Professor Bambang Hero Saharjo stated research indicates this year's El Niño could cause wildfires to burn up to 11 million hectares in Indonesia.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/clyqw44w142o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 48,
+          "cluster_id": 3,
+          "text": "The World Meteorological Organization warned that the current El Niño could be the strongest recorded since records began four decades ago.",
+          "kind": "event",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/video/20260903-wmo-chief-says-el-nino-could-be-strongest-in-four-decades",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 4,
+      "headline_hint": "Palestinian teenagers killed in West Bank clash involving Israeli forces and settlers",
+      "section": "world",
+      "batch_position": 4,
+      "claim_count": 10,
+      "distinct_outlets": 3,
+      "source_kinds": {
+        "fulltext": 10
+      },
+      "claims": [
+        {
+          "id": 49,
+          "cluster_id": 4,
+          "text": "An Israeli drone strike in Gaza City's Rimal neighborhood killed one person and injured several others.",
+          "kind": "event",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/9/3/israel-kills-3-in-gaza-as-far-right-minister-plans-for-palestinian-removals?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 50,
+          "cluster_id": 4,
+          "text": "Israel's National Security Minister Itamar Ben-Gvir presented a plan aiming to remove roughly two million Palestinians from the Gaza Strip over seven years.",
+          "kind": "figure",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/9/3/israel-kills-3-in-gaza-as-far-right-minister-plans-for-palestinian-removals?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 51,
+          "cluster_id": 4,
+          "text": "The Gaza Health Ministry reports that at least 73,470 people have been killed in Gaza since October 2023, including over 1,330 since the October ceasefire.",
+          "kind": "figure",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/9/3/israel-kills-3-in-gaza-as-far-right-minister-plans-for-palestinian-removals?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 52,
+          "cluster_id": 4,
+          "text": "Israeli forces and settlers shot dead 16-year-old Khalil Abu Alia and 19-year-old Omar al-Nassan in the West Bank village of al-Mughayyir.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/sep/03/israelis-shoot-dead-two-palestinian-teenagers-after-settlers-encircle-village",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 53,
+          "cluster_id": 4,
+          "text": "Israeli troops demolished homes belonging to 12 Palestinian families in Khirbet al-Taban, leaving 70 residents homeless.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/sep/03/israelis-shoot-dead-two-palestinian-teenagers-after-settlers-encircle-village",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 54,
+          "cluster_id": 4,
+          "text": "Human rights group B'Tselem stated that Khirbet al-Taban is the 66th Palestinian community wiped off the map since October 2023.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/sep/03/israelis-shoot-dead-two-palestinian-teenagers-after-settlers-encircle-village",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 55,
+          "cluster_id": 4,
+          "text": "The UN recorded that at least 81 Palestinians have been killed by Israeli forces or settlers in the West Bank since the start of the year.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cj6482r6yl4o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 56,
+          "cluster_id": 4,
+          "text": "Israeli police arrested a 19-year-old settler on suspicion of involvement in an attack on the West Bank village of Qusra.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cj6482r6yl4o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 57,
+          "cluster_id": 4,
+          "text": "Israeli Prime Minister Benjamin Netanyahu stated at a military outpost that Israel controls 60% of Gaza and will not withdraw.",
+          "kind": "quote",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/sep/03/israel-far-right-minister-itamar-ben-gvir-plan-removal-palestinians-gaza",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 58,
+          "cluster_id": 4,
+          "text": "Israel's Deputy Chief of General Staff Maj Gen Tamir Yadai stated that Israel controls 65% of the Gaza Strip.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/sep/03/israel-far-right-minister-itamar-ben-gvir-plan-removal-palestinians-gaza",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 5,
+      "headline_hint": "ISRO successfully launches Earth observation satellite EOS-05 into geosynchronous orbit",
+      "section": "india",
+      "batch_position": 0,
+      "claim_count": 12,
+      "distinct_outlets": 3,
+      "source_kinds": {
+        "fulltext": 12
+      },
+      "claims": [
+        {
+          "id": 59,
+          "cluster_id": 5,
+          "text": "The Indian Space Research Organisation (ISRO) successfully launched the EOS-05 Earth observation satellite aboard a Geosynchronous Satellite Launch Vehicle (GSLV) on September 4.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/sci-tech/science/isro-gslv-f17-eos-05-satellite-rocket-launch-september-4-sriharikota-updates/article71425914.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 60,
+          "cluster_id": 5,
+          "text": "The GSLV placed EOS-05 into a Sub-Geosynchronous Transfer Orbit 18 minutes after lifting off from Sriharikota at 2.55 a.m. on September 4.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/sci-tech/science/isro-gslv-f17-eos-05-satellite-rocket-launch-september-4-sriharikota-updates/article71425914.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 61,
+          "cluster_id": 5,
+          "text": "EOS-05 is India's first imaging satellite designed to monitor Earth from a geosynchronous orbit approximately 36,000 km high.",
+          "kind": "background",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/sci-tech/science/isro-gslv-f17-eos-05-satellite-rocket-launch-september-4-sriharikota-updates/article71425914.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 62,
+          "cluster_id": 5,
+          "text": "ISRO Chairman Dr. V. Narayanan stated that EOS-05 is the heaviest satellite ever launched by a GSLV rocket, weighing 2,367 kg.",
+          "kind": "figure",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/sci-tech/science/isro-gslv-f17-eos-05-satellite-rocket-launch-september-4-sriharikota-updates/article71425914.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 63,
+          "cluster_id": 5,
+          "text": "EOS-05 replaces the EOS-03 mission, which failed in August 2021 due to a cryogenic upper stage ignition anomaly.",
+          "kind": "background",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/sci-tech/science/isro-gslv-f17-eos-05-satellite-rocket-launch-september-4-sriharikota-updates/article71425914.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 64,
+          "cluster_id": 5,
+          "text": "ISRO had not conducted any launch missions since the failure of the PSLV-C62 mission on January 12, 2026.",
+          "kind": "background",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/sci-tech/science/isro-gslv-f17-eos-05-satellite-rocket-launch-september-4-sriharikota-updates/article71425914.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 65,
+          "cluster_id": 5,
+          "text": "The GSLV-F17 rocket is 51.7 metres tall and has a liftoff mass of 420.5 tonnes.",
+          "kind": "figure",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/isros-gslv-f17-successfully-places-eos-05-earth-observation-satellite-in-geosynchronous-orbit/articleshow/133746002.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 66,
+          "cluster_id": 5,
+          "text": "ISRO Chairman V. Narayanan announced that ISRO plans six more launches in the current financial year, including navigation satellite NVS-03 and the first uncrewed Gaganyaan mission.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/isros-gslv-f17-successfully-places-eos-05-earth-observation-satellite-in-geosynchronous-orbit/articleshow/133746002.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 67,
+          "cluster_id": 5,
+          "text": "India had 21 operational Earth observation satellites as of February 2026.",
+          "kind": "figure",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/isros-gslv-f17-successfully-places-eos-05-earth-observation-satellite-in-geosynchronous-orbit/articleshow/133746002.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 68,
+          "cluster_id": 5,
+          "text": "The GSLV-F17 rocket lifted off following a 27.5-hour countdown from the Satish Dhawan Space Centre in Sriharikota.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/isros-gslv-f17-carrying-eos-05-earth-observation-spacecraft-takes-off-from-sriharikota-101788470019068.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 69,
+          "cluster_id": 5,
+          "text": "The EOS-05 satellite is also designated as Gisat-1A.",
+          "kind": "background",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/defence/news/24x7-eye-on-china-pakistan-borders-why-eos-05-launch-on-naughty-boy-is-key-to-indias-security/articleshow/133739162.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 70,
+          "cluster_id": 5,
+          "text": "EOS-05 carries two multispectral imagers, including one with a spatial resolution of 42 metres per pixel.",
+          "kind": "figure",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/defence/news/24x7-eye-on-china-pakistan-borders-why-eos-05-launch-on-naughty-boy-is-key-to-indias-security/articleshow/133739162.cms",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 6,
+      "headline_hint": "EAM Jaishankar visits Kyiv, reiterating India's stance on diplomacy and energy security",
+      "section": "india",
+      "batch_position": 1,
+      "claim_count": 10,
+      "distinct_outlets": 3,
+      "source_kinds": {
+        "fulltext": 10
+      },
+      "claims": [
+        {
+          "id": 71,
+          "cluster_id": 6,
+          "text": "Indian External Affairs Minister S. Jaishankar held talks with Ukrainian Foreign Minister Andrii Sybiha in Kyiv.",
+          "kind": "event",
+          "outlet": "NDTV",
+          "url": "https://www.ndtv.com/india-news/india-ready-to-extend-any-help-to-end-russia-ukraine-war-s-jaishankar-11999630#publisher=newsstand",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 72,
+          "cluster_id": 6,
+          "text": "External Affairs Minister S. Jaishankar stated in Kyiv that India is ready to extend any help in any manner to end the Russia-Ukraine war.",
+          "kind": "quote",
+          "outlet": "NDTV",
+          "url": "https://www.ndtv.com/india-news/india-ready-to-extend-any-help-to-end-russia-ukraine-war-s-jaishankar-11999630#publisher=newsstand",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 73,
+          "cluster_id": 6,
+          "text": "S. Jaishankar stated that Prime Minister Narendra Modi told Russian President Vladimir Putin in Bishkek that endless war must give way to the end of war.",
+          "kind": "event",
+          "outlet": "NDTV",
+          "url": "https://www.ndtv.com/india-news/india-ready-to-extend-any-help-to-end-russia-ukraine-war-s-jaishankar-11999630#publisher=newsstand",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 74,
+          "cluster_id": 6,
+          "text": "S. Jaishankar met Ukrainian President Volodymyr Zelenskyy during his visit to Kyiv.",
+          "kind": "event",
+          "outlet": "NDTV",
+          "url": "https://www.ndtv.com/india-news/india-ready-to-extend-any-help-to-end-russia-ukraine-war-s-jaishankar-11999630#publisher=newsstand",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 75,
+          "cluster_id": 6,
+          "text": "An Indian national was killed in an attack in Kyiv two days prior to S. Jaishankar's visit.",
+          "kind": "event",
+          "outlet": "NDTV",
+          "url": "https://www.ndtv.com/india-news/india-ready-to-extend-any-help-to-end-russia-ukraine-war-s-jaishankar-11999630#publisher=newsstand",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 76,
+          "cluster_id": 6,
+          "text": "Ukrainian President Volodymyr Zelenskyy stated that Russia launched jet-powered Shahed drones over Kyiv during Jaishankar's visit.",
+          "kind": "event",
+          "outlet": "NDTV",
+          "url": "https://www.ndtv.com/india-news/india-ready-to-extend-any-help-to-end-russia-ukraine-war-s-jaishankar-11999630#publisher=newsstand",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 77,
+          "cluster_id": 6,
+          "text": "S. Jaishankar rejected Western claims that buying Russian oil bankrolls the war, stating India's energy sourcing is based on securing supplies for its 1.4 billion people.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/peace-hinges-on-diplomacy-not-oil-trade-eam-in-ukraine/articleshow/133745469.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 78,
+          "cluster_id": 6,
+          "text": "S. Jaishankar invited Ukrainian Foreign Minister Andrii Sybiha to visit India.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/peace-hinges-on-diplomacy-not-oil-trade-eam-in-ukraine/articleshow/133745469.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 79,
+          "cluster_id": 6,
+          "text": "Russian attacks on merchant shipping in the Black Sea have caused the deaths of five Indian seafarers.",
+          "kind": "figure",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/india-ready-to-support-peace-efforts-jaishankar-tells-zelenskyy-in-kyiv-101788457810123.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 80,
+          "cluster_id": 6,
+          "text": "Ukrainian President Volodymyr Zelenskyy stated that the Shahed drones launched by Russia were built with assistance from Iran.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/peace-is-needed-ukraine-president-zelensky-meets-s-jaishankar-highlights-india-clear-position-on-russia-ukraine-war-101788445461167.html",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 7,
+      "headline_hint": "Political row erupts in India over revision of GDP calculation methodology and growth figures",
+      "section": "india",
+      "batch_position": 2,
+      "claim_count": 10,
+      "distinct_outlets": 4,
+      "source_kinds": {
+        "fulltext": 10
+      },
+      "claims": [
+        {
+          "id": 81,
+          "cluster_id": 7,
+          "text": "The Bharatiya Janata Party accused the Congress party of using flawed calculations to convert India's 7.8% GDP growth figure into an imaginary 2.6%.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/congresss-criticism-of-gdp-figures-is-a-dimagi-naxal-mindset-bjp/article71425465.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 82,
+          "cluster_id": 7,
+          "text": "BJP chief spokesperson Anil Baluni stated that India has revised its GDP base year nine times since Independence.",
+          "kind": "background",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/congresss-criticism-of-gdp-figures-is-a-dimagi-naxal-mindset-bjp/article71425465.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 83,
+          "cluster_id": 7,
+          "text": "World Bank executive director Neelkanth Mishra defended India's 7.8% Q1 GDP growth figure, dismissing claims of data manipulation as egregiously wrong.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/neelkanth-mishra-comes-in-strong-defence-of-india-s-gdp-estimates-hits-back-at-egregiously-wrong-claims-11788438864349.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 84,
+          "cluster_id": 7,
+          "text": "Former Indian finance secretary Subhash Chandra Garg argued that Q1 GDP growth would be 2.6% in nominal terms without the downward revision of the previous year's base figure.",
+          "kind": "figure",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/neelkanth-mishra-comes-in-strong-defence-of-india-s-gdp-estimates-hits-back-at-egregiously-wrong-claims-11788438864349.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 85,
+          "cluster_id": 7,
+          "text": "India revised its GDP calculation base year from 2011-12 to 2022-23 in February 2026.",
+          "kind": "background",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/neelkanth-mishra-comes-in-strong-defence-of-india-s-gdp-estimates-hits-back-at-egregiously-wrong-claims-11788438864349.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 86,
+          "cluster_id": 7,
+          "text": "Credit rating agency JCR upgraded India's sovereign rating from 'BBB+' to 'A-' with a stable outlook.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/neelkanth-mishra-comes-in-strong-defence-of-india-s-gdp-estimates-hits-back-at-egregiously-wrong-claims-11788438864349.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 87,
+          "cluster_id": 7,
+          "text": "The Ministry of Statistics and Programme Implementation reported that India's manufacturing sector grew 9.2% in the April-June quarter of FY 2026-27.",
+          "kind": "figure",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/latest/1095492/7-8-gdp-growth-claim-shaky-centre-must-provide-explanation-says-congress?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 88,
+          "cluster_id": 7,
+          "text": "Congress leader Jairam Ramesh claimed that GDP estimates across four years since 2022-23 were revised downwards by a total of 43 lakh crore rupees.",
+          "kind": "figure",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/latest/1095492/7-8-gdp-growth-claim-shaky-centre-must-provide-explanation-says-congress?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 89,
+          "cluster_id": 7,
+          "text": "Sanjeev Sanyal, a member of the Prime Minister's Economic Advisory Council, denied allegations of GDP data manipulation.",
+          "kind": "event",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/latest/1095492/7-8-gdp-growth-claim-shaky-centre-must-provide-explanation-says-congress?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 90,
+          "cluster_id": 7,
+          "text": "Union Minister Kiren Rijiju shared a video of NVIDIA CEO Jensen Huang praising India's IT growth and AI focus amid the GDP controversy.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/kiren-rijiju-shares-nvidia-ceo-jensen-huangs-big-praise-for-indias-it-growth-ai-focus-amid-gdp-growth-row-101788433993660.html",
+          "source_kind": "fulltext"
+        }
+      ]
+    }
+  ],
+  "clusters_with_no_claims": []
+}
