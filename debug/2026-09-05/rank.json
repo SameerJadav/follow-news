@@ -1,0 +1,705 @@
+{
+  "dials": {
+    "WEIGHT_FLOOR": 5,
+    "TIER_WEIGHT": {
+      "lead": 4,
+      "major": 2,
+      "notable": 0
+    },
+    "WIKI_BONUS": 2,
+    "HARD_CAP": 12,
+    "MIN_STORIES_IF_ANY": 3,
+    "MAX_ARTICLES_PER_STORY": 5
+  },
+  "floor_relaxed": false,
+  "kept_weights": [
+    12,
+    8,
+    6,
+    6,
+    5,
+    15,
+    6,
+    6
+  ],
+  "per_section": {
+    "world": 5,
+    "india": 3
+  },
+  "clusters": [
+    {
+      "headline_hint": "Russian drone strikes Ukraine's SBU headquarters in Kyiv as US envoys prepare peace mission",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "lead",
+      "article_ids": [
+        18,
+        41,
+        45,
+        52,
+        106,
+        164,
+        165,
+        174,
+        181,
+        185,
+        194,
+        296
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        18,
+        41,
+        45,
+        52,
+        106,
+        164,
+        165,
+        174,
+        181,
+        185,
+        194,
+        296
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 8,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 12,
+      "weight_terms": {
+        "distinct_outlets": 8,
+        "tier_weight": 4,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "Witkoff and Kushner will travel to ‘end’ Russia’s war in Ukraine: Trump",
+          "url": "https://www.aljazeera.com/news/2026/9/4/witkoff-and-kushner-will-travel-to-end-russias-war-in-ukraine-trump?traffic_source=rss"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Zelenskyy proposes ceasefire with Russia ahead of US envoys’ Kyiv visit",
+          "url": "https://timesofindia.indiatimes.com/world/europe/zelenskyy-proposes-ceasefire-with-russia-ahead-of-us-envoys-kyiv-visit/articleshow/133777958.cms"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "Russia hits Ukraine's security service headquarters in Kyiv, Zelenskyy says",
+          "url": "https://www.channelnewsasia.com/world/russia-hits-ukraines-security-service-kyiv-6363281"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Trump's peace envoys to visit Moscow and Kyiv over weekend",
+          "url": "https://www.bbc.co.uk/news/articles/c23x0z48x0no?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Ukraine declares 'no airstrikes' as US talks on war expected: 'Russia must ensure ceasefire...'",
+          "url": "https://www.livemint.com/news/world/ukraine-declares-no-airstrikes-as-us-talks-on-war-expected-russia-must-ensure-ceasefire-11788543641196.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 7
+    },
+    {
+      "headline_hint": "Rescue operations continue in Nepal floods as 275 Indian nationals remain missing and workers saved from tunnel",
+      "section": "india",
+      "category": "disaster",
+      "tier_requested": "lead",
+      "article_ids": [
+        3,
+        108,
+        117,
+        123,
+        124,
+        126,
+        157,
+        161,
+        198,
+        201,
+        204,
+        214,
+        217,
+        228,
+        240,
+        283,
+        292,
+        302,
+        315,
+        316,
+        317,
+        328
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        3,
+        108,
+        117,
+        123,
+        124,
+        126,
+        157,
+        161,
+        198,
+        201,
+        204,
+        214,
+        217,
+        228,
+        240,
+        283,
+        292,
+        302,
+        315,
+        316,
+        317,
+        328
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 11,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 15,
+      "weight_terms": {
+        "distinct_outlets": 11,
+        "tier_weight": 4,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "BBC World",
+          "title": "Nepal bet nearly everything on hydropower - the floods show why that's a problem",
+          "url": "https://www.bbc.co.uk/news/articles/cy0zx368prno?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Moment two workers are pulled alive from Nepal tunnel",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/4/moment-two-workers-are-pulled-alive-from-nepal-tunnel?traffic_source=rss"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Nepal floods update: 275 Indians still missing, 169 rescued; govt says no travellers stranded in Tibet",
+          "url": "https://www.livemint.com/news/india/nepal-floods-update-275-indians-still-missing-169-rescued-govt-says-no-travellers-stranded-in-tibet-11788541989471.html"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "Bowring Hospital designated nodal centre for DNA profiling of Karnataka victims missing in Nepal",
+          "url": "https://www.thehindu.com/news/national/karnataka/bowring-hospital-designated-nodal-centre-for-dna-profiling-of-karnataka-victims-missing-in-nepal/article71429599.ece"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Fresh flood fears in Nepal as landslide partially blocks Chaulani river in Darchula",
+          "url": "https://timesofindia.indiatimes.com/world/south-asia/fresh-flood-fears-in-nepal-as-landslide-partially-blocks-chaulani-river-in-darchula/articleshow/133772762.cms"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 17
+    },
+    {
+      "headline_hint": "UN General Assembly votes to adopt new world map accurately representing Africa's size",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        60,
+        72,
+        94,
+        146
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        60,
+        72,
+        94,
+        146
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": true,
+      "wiki_event": "The United Nations General Assembly adopts a resolution supporting the Equal Earth map projection over the Mercator projection, with 164 countries voting in favor, one against (United States), and six abstaining.",
+      "weight": 8,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "BBC World",
+          "title": "UN votes to adopt new world map to reflect Africa's true size",
+          "url": "https://www.bbc.co.uk/news/articles/ce30vp55dnlo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "UN votes to adopt new world map that reflects Africa’s true size",
+          "url": "https://www.aljazeera.com/news/2026/9/4/un-votes-to-adopt-new-world-map-that-reflects-africas-true-size?traffic_source=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "UN ditches Mercator map to adopt more accurate one reflecting Africa's true size",
+          "url": "https://www.france24.com/en/earth/20260904-un-ditches-mercator-map-to-adopt-more-accurate-one-reflecting-africa-s-true-size"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "UN votes to adopt new world map that shows Africa’s true scale",
+          "url": "https://www.theguardian.com/world/2026/sep/04/un-vote-world-map-mercator-equal-earth-africa"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Reform UK aides resign amid investigations into alleged election law and donation breaches",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        33,
+        53,
+        55,
+        100,
+        119,
+        160
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        33,
+        53,
+        55,
+        100,
+        119,
+        160
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 6,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "Nigel Farage heckled as he denies Reform UK took illegal funding",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/4/nigel-farage-heckled-as-he-denies-reform-uk-took-illegal-funding?traffic_source=rss"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "Advisers to Reform UK's Farage step down after allegations of electoral law breach",
+          "url": "https://www.channelnewsasia.com/world/advisers-reform-uks-farage-step-down-after-allegations-electoral-law-breach-6362866"
+        },
+        {
+          "outlet": "France 24",
+          "title": "‘Major potential breaches of British election law’: Inside Channel 4’s investigation into Reform UK",
+          "url": "https://www.france24.com/en/tv-shows/spotlight/20260904-major-potential-breaches-of-british-election-law-understanding-channel-4-s-investigation"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Farage seeks to shore up damaged leadership as scandal engulfs Reform conference",
+          "url": "https://www.theguardian.com/politics/2026/sep/04/nigel-farage-seeks-shore-up-damaged-reform-leadership-scandal-engulfs-party-conference"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Cambridge University examines conduct of academic suspended by Reform UK",
+          "url": "https://www.theguardian.com/politics/2026/sep/04/cambridge-university-probing-conduct-of-academic-suspended-by-reform-uk"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 1
+    },
+    {
+      "headline_hint": "US diesel prices hit record high amid energy market disruptions from Iran conflict",
+      "section": "world",
+      "category": "economy",
+      "tier_requested": "major",
+      "article_ids": [
+        162,
+        259,
+        269
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        162,
+        259,
+        269
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 5,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "US diesel hits record $5.85 a gallon: Why are fuel prices rising?",
+          "url": "https://timesofindia.indiatimes.com/business/international-business/us-diesel-hits-record-5-85-a-gallon-why-are-fuel-prices-rising/articleshow/133769923.cms"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "Trump asks SCOTUS to OK changes to mail-in ballots. And, diesel prices hit record high",
+          "url": "https://www.npr.org/2026/09/04/g-s1-141972/up-first-newsletter-usps-mail-in-voting-irs-schools-christian-castro"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "US diesel prices hit an all-time-high",
+          "url": "https://www.bbc.co.uk/news/articles/c7903r0grx0o?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Escalating clashes between Houthis and Yemeni government forces leave dozens dead in western Yemen",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "major",
+      "article_ids": [
+        77,
+        133
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        77,
+        133
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 2,
+      "wiki_backed": true,
+      "wiki_event": "Over 120 people are confirmed to have been killed since yesterday during the clashes between Houthis and the Yemeni Armed Forces in western Yemen.",
+      "weight": 6,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "DW World",
+          "title": "Yemen: Fighting intensifies amid Houthi push in the west",
+          "url": "https://www.dw.com/en/yemen-fighting-intensifies-amid-houthi-push-in-the-west/a-79039588?maca=en-rss-en-world-4025-rdf"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Yemen’s army says recaptured key territory as clashes with Houthis continue",
+          "url": "https://www.aljazeera.com/news/2026/9/4/yemens-army-says-recaptured-key-territory-as-clashes-with-houthis-continue?traffic_source=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Air India sacks pilot after drug test confirmation following total hydraulics failure on Phuket-Delhi flight",
+      "section": "india",
+      "category": "disaster",
+      "tier_requested": "major",
+      "article_ids": [
+        11,
+        169,
+        205,
+        239,
+        276,
+        308
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        11,
+        169,
+        205,
+        239,
+        276,
+        308
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 6,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "AI Phuket-Delhi flight incident: All 3 hydraulics failed in ‘exceptionally rare’ event",
+          "url": "https://timesofindia.indiatimes.com/india/exceptionally-rare-all-3-hydraulic-systems-of-plane-failed-together/articleshow/133778893.cms"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Air India sacks Phuket-Delhi pilot who tested positive for drugs, calls it a ‘zero-tolerance’ breach",
+          "url": "https://www.livemint.com/news/india/air-india-sacks-phuket-delhi-pilot-who-tested-positive-for-drugs-calls-it-a-zero-tolerance-breach-11788535015519.html"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "Phuket Flight Pilot Who Failed Drug Test Sacked By Air India",
+          "url": "https://www.ndtv.com/india-news/phuket-flight-pilot-who-failed-drug-test-terminated-by-air-india-12002664#publisher=newsstand"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Air India terminates Phuket-Delhi pilot after AAIB confirms ‘non-negative’ psychoactive substance test",
+          "url": "https://www.hindustantimes.com/india-news/air-india-terminates-phuket-delhi-pilot-after-aaib-report-turbulence-hydraulic-systems-dgca-action-101788527381706.html"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Air India Phuket-Delhi flight lost hydraulic systems, take action over pilot drug use: AAIB",
+          "url": "https://www.hindustantimes.com/india-news/phuketdelhi-ai-flight-lost-hydraulic-systems-take-action-over-pilot-drug-use-aaib-101788517344857.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 1
+    },
+    {
+      "headline_hint": "Hindutva influencer Swatantra Bhardwaj detained over alleged assault on protester's father at Jantar Mantar",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        88,
+        92,
+        113,
+        118,
+        139,
+        223,
+        247,
+        250,
+        274,
+        275,
+        282,
+        285
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        88,
+        92,
+        113,
+        118,
+        139,
+        223,
+        247,
+        250,
+        274,
+        275,
+        282,
+        285
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 6,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "NDTV",
+          "title": "\"First Step To Victory\": Teen Dalit Activist On Swatantra Bhardwaj's Detention",
+          "url": "https://www.ndtv.com/india-news/teen-dalit-activist-on-swatantra-bhardwajs-detention-first-step-to-victory-12003882#publisher=newsstand"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Union minister Chirag Paswan’s party seeks FIR against ‘influencer’ Swatantra Bhardwaj, calls for strict action",
+          "url": "https://www.hindustantimes.com/india-news/union-minister-chirag-paswan-party-seeks-fir-against-influencer-swatantra-bhardwaj-calls-for-strict-action-101788540651902.html"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Influencer Swatantra Bhardwaj detained after 'bragging' he 'cracked the skull' of CJP protester's father",
+          "url": "https://www.livemint.com/news/india/influencer-swatantra-bhardwaj-detained-after-claiming-he-cracked-skull-of-nishu-azad-father-11788527914291.html"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "Hindutva influencer who allegedly assaulted CJP protester’s father detained",
+          "url": "https://scroll.in/latest/1095514/hindutva-influencer-who-allegedly-assaulted-cjp-protesters-father-detained?utm_source=rss&utm_medium=public"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "\"Cracked His Skull\" Was Not All. Far-Right Influencer Swatantra Bhardwaj's Vitriol Spanned Hour-Long Podcast",
+          "url": "https://www.ndtv.com/india-news/cracked-his-skull-was-not-all-swatantra-bhardwajs-vitriol-spanned-1-hour-podcast-12003204#publisher=newsstand"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 7
+    },
+    {
+      "headline_hint": "Argentina escalates Falkland Islands sovereignty claim following comments by Donald Trump",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        47,
+        254,
+        286,
+        288,
+        314
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        47,
+        254,
+        286,
+        288,
+        314
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "Trump’s ‘retribution’ could now include Falklands as favor to Milei – and revenge on the UK",
+          "url": "https://www.theguardian.com/us-news/2026/sep/04/trump-argentina-falklands-uk"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "UK support for Falkland Islands 'unwavering' after Argentina restates claims, No 10 says",
+          "url": "https://www.bbc.co.uk/news/articles/cn45jg3zlz4o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "Argentina escalates Falklands dispute with the U.K., seizing on Trump comments",
+          "url": "https://www.npr.org/2026/09/04/g-s1-141945/milei-escalates-falklands-dispute"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Javier Milei: ‘winds of change’ support Argentina’s claim to Falkland Islands",
+          "url": "https://www.theguardian.com/world/2026/sep/04/president-javier-milei-winds-of-change-support-argentina-claim-to-falkland-islands"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "UK hits back at Argentinian Falklands claim and insists islands remain British",
+          "url": "https://www.theguardian.com/uk-news/2026/sep/04/uk-ministers-hit-back-argentinian-falkland-islands-claim"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "US regulator opens safety investigation into Tesla's Cybercab robotaxis",
+      "section": "world",
+      "category": "technology",
+      "tier_requested": "notable",
+      "article_ids": [
+        15,
+        144
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        15,
+        144
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": true,
+      "wiki_event": "The U.S. National Highway Traffic Safety Administration opens an investigation into whether Tesla's new Cybercab robotaxi models are properly certified and demonstrates compliance with motor vehicle safety standards.",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "US regulator opens safety investigation as Tesla launches driverless taxis",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/4/us-regulator-opens-safety-investigation-as-tesla-launches-driverless-taxis?traffic_source=rss"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Tesla Cybercab under federal scrutiny as NHTSA questions certification of 1,000 driverless vehicles",
+          "url": "https://www.livemint.com/news/us-news/tesla-cybercab-under-federal-scrutiny-as-nhtsa-questions-certification-of-1-000-driverless-vehicles-11788536453082.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Kenya orders Tata Chemicals to exit country over local manufacturing concerns",
+      "section": "india",
+      "category": "economy",
+      "tier_requested": "notable",
+      "article_ids": [
+        180,
+        261
+      ],
+      "verdict": "cut:below_floor(2<5)",
+      "valid_ids": [
+        180,
+        261
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 2,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Scroll.in",
+          "title": "Kenya orders Tata Chemicals to exit country, president says firm failed to benefit local population",
+          "url": "https://scroll.in/latest/1095517/tata-chemicals-ordered-to-exit-kenya-president-says-firm-failed-to-benefit-country?utm_source=rss&utm_medium=public"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Tata Chemicals Kenya ‘exit’: What is the Magadi issue behind Ruto's directive? Company responds",
+          "url": "https://www.livemint.com/news/world/tata-chemicals-kenya-exit-what-is-the-magadi-issue-behind-rutos-directive-company-responds-11788515478861.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "SEBI clears NSE's IPO papers for India's largest initial public offering",
+      "section": "india",
+      "category": "economy",
+      "tier_requested": "notable",
+      "article_ids": [
+        0
+      ],
+      "verdict": "cut:below_floor(1<5)",
+      "valid_ids": [
+        0
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 1,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 1,
+      "weight_terms": {
+        "distinct_outlets": 1,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "Sebi clears NSE's IPO papers, to be India's biggest so far",
+          "url": "https://timesofindia.indiatimes.com/business/india-business/sebi-clears-nses-ipo-papers-to-be-indias-biggest-so-far/articleshow/133780072.cms"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    }
+  ]
+}
