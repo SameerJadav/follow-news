@@ -1,0 +1,872 @@
+{
+  "min_claim_chars": 20,
+  "max_claims_per_story": 24,
+  "calls": [
+    {
+      "label": "claims-world",
+      "cluster_ids": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "label": "claims-india",
+      "cluster_ids": [
+        4,
+        5
+      ]
+    }
+  ],
+  "rejected_claims": 0,
+  "rejected_clusters": 0,
+  "clusters": [
+    {
+      "cluster_id": 0,
+      "headline_hint": "US envoys meet Putin in Moscow as Russia orders 72-hour pause in Kyiv strikes",
+      "section": "world",
+      "batch_position": 0,
+      "claim_count": 20,
+      "distinct_outlets": 5,
+      "source_kinds": {
+        "fulltext": 19,
+        "summary": 1
+      },
+      "claims": [
+        {
+          "id": 1,
+          "cluster_id": 0,
+          "text": "US envoys Steve Witkoff and Jared Kushner met Russian President Vladimir Putin in Moscow.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cx2zqp46g8eo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 2,
+          "cluster_id": 0,
+          "text": "Russian President Vladimir Putin told US envoys Steve Witkoff and Jared Kushner during their meeting in Moscow that the current situation is not so easy.",
+          "kind": "quote",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cx2zqp46g8eo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 3,
+          "cluster_id": 0,
+          "text": "Steve Witkoff thanked Vladimir Putin for agreeing with Ukraine to halt strikes on each other's capitals for three days.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cx2zqp46g8eo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 4,
+          "cluster_id": 0,
+          "text": "US envoys Steve Witkoff and Jared Kushner are scheduled to travel to Kyiv on Sunday for diplomatic engagements.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cx2zqp46g8eo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 5,
+          "cluster_id": 0,
+          "text": "US President Donald Trump stated on Friday that Witkoff and Kushner were bringing a proposal to end the war.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cx2zqp46g8eo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 6,
+          "cluster_id": 0,
+          "text": "Talks between Vladimir Putin and the US envoys at the Kremlin lasted for three hours, according to Russian state media.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cx2zqp46g8eo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 7,
+          "cluster_id": 0,
+          "text": "Ukrainian President Volodymyr Zelensky stated that Ukraine is ready to refrain from strikes on Moscow through the end of Saturday, as well as on Sunday and Monday.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cx2zqp46g8eo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 8,
+          "cluster_id": 0,
+          "text": "Vladimir Putin ordered a halt to strikes on Kyiv for three days due to the visit by US envoys.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cx2zqp46g8eo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 9,
+          "cluster_id": 0,
+          "text": "Vladimir Putin stated in televised remarks that Russia had not agreed to a ceasefire for areas of Ukraine outside of Kyiv.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cx2zqp46g8eo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 10,
+          "cluster_id": 0,
+          "text": "Ukrainian President Volodymyr Zelensky said Russia fired demonstrative strikes on airports in Kyiv and Boryspil overnight prior to his planned meeting with US envoys.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cx2zqp46g8eo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 11,
+          "cluster_id": 0,
+          "text": "Ukrainian President Volodymyr Zelensky said an overnight Russian strike on a civilian building in the Dnipro region killed four people and injured five others.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cx2zqp46g8eo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 12,
+          "cluster_id": 0,
+          "text": "CIA Director John Ratcliffe paid a rare visit to the Russian capital a little over a week prior to Steve Witkoff and Jared Kushner's visit.",
+          "kind": "background",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cx2zqp46g8eo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 13,
+          "cluster_id": 0,
+          "text": "US envoys Steve Witkoff and Jared Kushner met Russian President Vladimir Putin at the Kremlin on Saturday.",
+          "kind": "event",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/5/us-envoys-witkoff-kushner-meet-putin-for-talks-on-ukraine-war?traffic_source=rss",
+          "source_kind": "summary"
+        },
+        {
+          "id": 14,
+          "cluster_id": 0,
+          "text": "Kremlin spokesperson Dmitry Peskov stated that Vladimir Putin gave the order from midnight Saturday not to strike Kyiv for three days.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/sep/05/steve-witkoff-jared-kushner-russia-revive-ukraine-talks",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 15,
+          "cluster_id": 0,
+          "text": "Russian strikes on Saturday killed at least seven people in Ukraine, including two in the Bucha district outside Kyiv.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/sep/05/steve-witkoff-jared-kushner-russia-revive-ukraine-talks",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 16,
+          "cluster_id": 0,
+          "text": "Oleksandr Hanzha, head of the local military administration, stated that an overnight Russian strike at a factory in the Dnipropetrovsk region killed five people and wounded five others.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/sep/05/steve-witkoff-jared-kushner-russia-revive-ukraine-talks",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 17,
+          "cluster_id": 0,
+          "text": "A Russian drone hit the headquarters of Ukraine's Security Service (SBU) on Friday.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/sep/05/steve-witkoff-jared-kushner-russia-revive-ukraine-talks",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 18,
+          "cluster_id": 0,
+          "text": "Ground troops in Ukraine remain locked along a 775-mile frontline.",
+          "kind": "background",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/sep/05/steve-witkoff-jared-kushner-russia-revive-ukraine-talks",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 19,
+          "cluster_id": 0,
+          "text": "Vladimir Putin stated at the start of the meeting in Moscow that it is convenient for Russia to work with Steve Witkoff and Jared Kushner.",
+          "kind": "quote",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/europe/trump-sends-his-best-wishes-us-envoys-witkoff-kushner-meet-putin-in-kremlin/articleshow/133813118.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 20,
+          "cluster_id": 0,
+          "text": "Steve Witkoff and Jared Kushner were received in Moscow by Kirill Dmitriev, Vladimir Putin's investment envoy.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/world/trumps-envoys-witkoff-and-kushner-meet-putin-in-moscow-as-us-makes-fresh-push-to-revive-ukraine-peace-talks-11788629564277.html",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 1,
+      "headline_hint": "US military disables three Iranian oil tankers following attacks on American warships",
+      "section": "world",
+      "batch_position": 1,
+      "claim_count": 13,
+      "distinct_outlets": 4,
+      "source_kinds": {
+        "fulltext": 12,
+        "summary": 1
+      },
+      "claims": [
+        {
+          "id": 21,
+          "cluster_id": 1,
+          "text": "US Central Command stated it permanently disabled two Iran-linked oil tankers and completely destroyed a third in the Gulf of Oman.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cj64rrne643o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 22,
+          "cluster_id": 1,
+          "text": "US Central Command stated the strikes on Iranian tankers were in retaliation for Tehran targeting a US aircraft carrier and a guided-missile destroyer.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cj64rrne643o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 23,
+          "cluster_id": 1,
+          "text": "Kharg Island hosts Iran's main oil export terminal, handling approximately 90% of the country's crude oil exports via pipes from the mainland.",
+          "kind": "background",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cj64rrne643o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 24,
+          "cluster_id": 1,
+          "text": "Iranian state media Irib reported that Iran's Islamic Revolutionary Guard Corps retaliated against six ships, including three oil tankers in the Strait of Hormuz and three US-affiliated vessels.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cj64rrne643o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 25,
+          "cluster_id": 1,
+          "text": "US Defence Secretary Pete Hegseth posted on social media that if Iran shoots at US ships, the US will destroy and sink their oil tankers.",
+          "kind": "quote",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cj64rrne643o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 26,
+          "cluster_id": 1,
+          "text": "The US resumed attacks against Iran after striking two rocket launchers to prevent them from laying naval mines in the Strait of Hormuz.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cj64rrne643o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 27,
+          "cluster_id": 1,
+          "text": "The average price for a gallon of diesel in the US reached $5.85, up from $3.71 a year prior.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cj64rrne643o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 28,
+          "cluster_id": 1,
+          "text": "US Vice President JD Vance stated he was extremely sceptical regarding Iranian claims that US strikes killed four people at a wedding in Sirik, Iran.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cj64rrne643o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 29,
+          "cluster_id": 1,
+          "text": "US Central Command reported that its forces struck three Iranian crude oil carriers on Saturday.",
+          "kind": "event",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/5/us-says-it-hit-three-iranian-oil-tankers-after-attacks-on-warships?traffic_source=rss",
+          "source_kind": "summary"
+        },
+        {
+          "id": 30,
+          "cluster_id": 1,
+          "text": "US Central Command commander Admiral Brad Cooper stated that the US military would destroy Iran's oil fleet if necessary to defend American forces.",
+          "kind": "quote",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/sep/05/us-military-iran-tankers",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 31,
+          "cluster_id": 1,
+          "text": "A preliminary US military inquiry found that a February 28 strike on a school compound in Minab that killed at least 156 people resulted from outdated coordinates identifying the school as part of a naval base.",
+          "kind": "background",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/sep/05/us-military-iran-tankers",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 32,
+          "cluster_id": 1,
+          "text": "US Central Command identified the permanently disabled tankers as M/T Downy, struck off Kharg Island, and M/T Stark 1, struck near Jask.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/defence/international/watch-us-strikes-3-iranian-oil-tankers-after-iran-targets-2-navy-warships/articleshow/133805095.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 33,
+          "cluster_id": 1,
+          "text": "US Central Command identified the destroyed third tanker as M/T Kylo, also known as Noxen, which was struck in the Gulf of Oman.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/defence/international/watch-us-strikes-3-iranian-oil-tankers-after-iran-targets-2-navy-warships/articleshow/133805095.cms",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 2,
+      "headline_hint": "Rescuers pull survivors from wreckage 10 days after catastrophic Nepal-China floods",
+      "section": "world",
+      "batch_position": 2,
+      "claim_count": 12,
+      "distinct_outlets": 5,
+      "source_kinds": {
+        "fulltext": 12
+      },
+      "claims": [
+        {
+          "id": 34,
+          "cluster_id": 2,
+          "text": "Chandika Kumari Shrestha, 64, was rescued semi-conscious from the upper floor of a four-storey house buried in debris in Betrawati, Nuwakot district, 10 days after floods hit Nepal.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/south-asia/10-days-after-nepal-flash-floods-woman-chinese-man-rescued/articleshow/133815989.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 35,
+          "cluster_id": 2,
+          "text": "Chinese worker Luhaitao was rescued alive from 225 metres inside the Audit 4 tunnel of the Upper Trishuli-1 hydropower project in Rasuwa.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/south-asia/10-days-after-nepal-flash-floods-woman-chinese-man-rescued/articleshow/133815989.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 36,
+          "cluster_id": 2,
+          "text": "Luhaitao was rescued by a joint team of Nepal army personnel and South Korean experts and flown to Birendra Military Hospital.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/south-asia/10-days-after-nepal-flash-floods-woman-chinese-man-rescued/articleshow/133815989.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 37,
+          "cluster_id": 2,
+          "text": "Local officials in Betrawati stated that only five of around 300 houses remained standing after the flood.",
+          "kind": "figure",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/south-asia/10-days-after-nepal-flash-floods-woman-chinese-man-rescued/articleshow/133815989.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 38,
+          "cluster_id": 2,
+          "text": "More than 1,300 people were killed after a collapse of ice, rock, and mud swept through a Himalayan valley in Nepal.",
+          "kind": "figure",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/video/20260905-chinese-national-rescued-from-nepal-tunnel-10-days-after-flash-flood",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 39,
+          "cluster_id": 2,
+          "text": "Nepal's national disaster authority reported that the flood disaster killed at least 1,331 people in Nepal and left about 5,000 missing, including 589 foreign nationals.",
+          "kind": "figure",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/9/5/rescuers-pull-chinese-worker-nepali-woman-from-flood-wreckage-alive?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 40,
+          "cluster_id": 2,
+          "text": "Officials in Tibet recorded 31 deaths and 531 people missing following the disaster across the border.",
+          "kind": "figure",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/9/5/rescuers-pull-chinese-worker-nepali-woman-from-flood-wreckage-alive?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 41,
+          "cluster_id": 2,
+          "text": "About 900 workers remain unaccounted for at hydropower construction sites in Nepal, with roughly 500 believed trapped inside tunnels across 12 projects.",
+          "kind": "figure",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/9/5/rescuers-pull-chinese-worker-nepali-woman-from-flood-wreckage-alive?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 42,
+          "cluster_id": 2,
+          "text": "Nearly 100% of Nepal's electricity comes from hydropower, earning nearly $200m annually from exports to India and Bangladesh.",
+          "kind": "background",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cy0zx368prno?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 43,
+          "cluster_id": 2,
+          "text": "The floods severely damaged 12 hydropower plants in the Trishuli River basin and knocked out more than 10% of Nepal's total power generation capacity.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cy0zx368prno?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 44,
+          "cluster_id": 2,
+          "text": "The Upper Trishuli-1 project is valued at about $647m and represents one of Nepal's largest foreign direct investment ventures.",
+          "kind": "background",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cy0zx368prno?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 45,
+          "cluster_id": 2,
+          "text": "Nepal's disaster management agency reported that at least 1,375 people have been killed in the floods, with more than 5,000 missing.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/sep/05/rescuers-nepal-find-two-more-people-alive-flood-disaster",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 3,
+      "headline_hint": "UN adopts resolution approving new world map reflecting Africa's true size",
+      "section": "world",
+      "batch_position": 3,
+      "claim_count": 12,
+      "distinct_outlets": 5,
+      "source_kinds": {
+        "fulltext": 12
+      },
+      "claims": [
+        {
+          "id": 46,
+          "cluster_id": 3,
+          "text": "The United Nations voted on Friday to support a shift away from the 16th-century Mercator global map toward one reflecting countries' true sizes.",
+          "kind": "event",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/video/20260905-un-approves-resolution-in-support-of-map-that-shows-africa-s-true-size",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 47,
+          "cluster_id": 3,
+          "text": "The UN General Assembly adopted the Correct the Map resolution to address discrepancies in the Mercator map projection.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cly5r60v4mro?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 48,
+          "cluster_id": 3,
+          "text": "The African continent is approximately 14 times larger than Greenland in reality, despite appearing similar in size on the Mercator map.",
+          "kind": "background",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cly5r60v4mro?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 49,
+          "cluster_id": 3,
+          "text": "Flemish cartographer Gerardus Mercator created the Mercator map in 1569 to aid European sailors in ocean navigation.",
+          "kind": "background",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cly5r60v4mro?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 50,
+          "cluster_id": 3,
+          "text": "The Equal Earth map projection was developed by a team of cartographers in 2018 and was adopted by African Union members in February.",
+          "kind": "background",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cly5r60v4mro?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 51,
+          "cluster_id": 3,
+          "text": "The African-led UN resolution championing equal-area map projections was adopted with 164 countries voting in favour, one voting against, and six abstaining.",
+          "kind": "figure",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/world/europe-shrinks-africa-grows-the-un-vote-that-could-change-the-world-map-you-know-11788613080376.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 52,
+          "cluster_id": 3,
+          "text": "India voted in favour of the UN map resolution, while the United States was the only country to vote against it.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/world/europe-shrinks-africa-grows-the-un-vote-that-could-change-the-world-map-you-know-11788613080376.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 53,
+          "cluster_id": 3,
+          "text": "Ukraine abstained from the UN vote over concerns regarding how certain Equal Earth maps depict Ukrainian territories occupied by Russia.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/world/europe-shrinks-africa-grows-the-un-vote-that-could-change-the-world-map-you-know-11788613080376.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 54,
+          "cluster_id": 3,
+          "text": "Togo's Foreign Minister Robert Dussey stated that a fair map does not change world geography but changes how the world is seen.",
+          "kind": "quote",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/latest/1095522/united-nations-adopts-new-map-showing-africa-larger?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 55,
+          "cluster_id": 3,
+          "text": "The US delegation objected to the UN map resolution, claiming it was part of a larger radical ideological project.",
+          "kind": "event",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/latest/1095522/united-nations-adopts-new-map-showing-africa-larger?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 56,
+          "cluster_id": 3,
+          "text": "Togo introduced the Correct the Map resolution at the UN on behalf of the 54 African member states and supported by the African Union.",
+          "kind": "event",
+          "outlet": "NPR World",
+          "url": "https://www.npr.org/2026/09/04/nx-s1-5958611/africa-world-map-un-vote",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 57,
+          "cluster_id": 3,
+          "text": "Yaryna Ferencevych, deputy US representative to the UN Economic and Social Council, stated that resolutions like Correct the Map are causing the institution to lose credibility.",
+          "kind": "quote",
+          "outlet": "NPR World",
+          "url": "https://www.npr.org/2026/09/04/nx-s1-5958611/africa-world-map-un-vote",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 4,
+      "headline_hint": "PM Modi addresses SRCC centenary, defends 7.8% GDP growth and warns Pakistan on terror",
+      "section": "india",
+      "batch_position": 0,
+      "claim_count": 18,
+      "distinct_outlets": 4,
+      "source_kinds": {
+        "fulltext": 18
+      },
+      "claims": [
+        {
+          "id": 58,
+          "cluster_id": 4,
+          "text": "Prime Minister Narendra Modi addressed the centenary celebrations at Shri Ram College of Commerce (SRCC) in Delhi on Saturday evening.",
+          "kind": "event",
+          "outlet": "NDTV",
+          "url": "https://www.ndtv.com/india-news/pm-narendra-modis-half-water-half-air-redux-at-delhi-college-srcc-13-years-after-big-launch-speech-12006877#publisher=newsstand",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 59,
+          "cluster_id": 4,
+          "text": "PM Narendra Modi previously spoke at SRCC in February 2013 while serving as the Chief Minister of Gujarat.",
+          "kind": "background",
+          "outlet": "NDTV",
+          "url": "https://www.ndtv.com/india-news/pm-narendra-modis-half-water-half-air-redux-at-delhi-college-srcc-13-years-after-big-launch-speech-12006877#publisher=newsstand",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 60,
+          "cluster_id": 4,
+          "text": "PM Narendra Modi recalled his 2013 glass analogy at SRCC, stating that he sees the glass as full, with half water and half air.",
+          "kind": "quote",
+          "outlet": "NDTV",
+          "url": "https://www.ndtv.com/india-news/pm-narendra-modis-half-water-half-air-redux-at-delhi-college-srcc-13-years-after-big-launch-speech-12006877#publisher=newsstand",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 61,
+          "cluster_id": 4,
+          "text": "PM Narendra Modi cited India's first-quarter GDP growth rate of 7.8 per cent as evidence of economic strength during global uncertainty.",
+          "kind": "figure",
+          "outlet": "NDTV",
+          "url": "https://www.ndtv.com/india-news/pm-narendra-modis-half-water-half-air-redux-at-delhi-college-srcc-13-years-after-big-launch-speech-12006877#publisher=newsstand",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 62,
+          "cluster_id": 4,
+          "text": "PM Narendra Modi described critics of the GDP growth numbers as 'naraaz fufa-ji' (grumpy uncles) who focus only on negativity.",
+          "kind": "quote",
+          "outlet": "NDTV",
+          "url": "https://www.ndtv.com/india-news/pm-narendra-modis-half-water-half-air-redux-at-delhi-college-srcc-13-years-after-big-launch-speech-12006877#publisher=newsstand",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 63,
+          "cluster_id": 4,
+          "text": "Congress MP Pawan Khera criticized PM Narendra Modi's speech on X, calling it so boring that 'even onions would burst into tears'.",
+          "kind": "quote",
+          "outlet": "NDTV",
+          "url": "https://www.ndtv.com/india-news/pm-narendra-modis-half-water-half-air-redux-at-delhi-college-srcc-13-years-after-big-launch-speech-12006877#publisher=newsstand",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 64,
+          "cluster_id": 4,
+          "text": "Congress leader Kanhaiya Kumar stated that PM Narendra Modi focused on 2013 and 2047 while failing to address student or public issues.",
+          "kind": "event",
+          "outlet": "NDTV",
+          "url": "https://www.ndtv.com/india-news/pm-narendra-modis-half-water-half-air-redux-at-delhi-college-srcc-13-years-after-big-launch-speech-12006877#publisher=newsstand",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 65,
+          "cluster_id": 4,
+          "text": "PM Narendra Modi is currently serving his third consecutive term as Prime Minister and completes 25 years as head of government next month.",
+          "kind": "figure",
+          "outlet": "NDTV",
+          "url": "https://www.ndtv.com/india-news/pm-narendra-modis-half-water-half-air-redux-at-delhi-college-srcc-13-years-after-big-launch-speech-12006877#publisher=newsstand",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 66,
+          "cluster_id": 4,
+          "text": "PM Narendra Modi stated at SRCC that those who placed India among the 'fragile five' economies are now unable to digest India's 7.8% growth.",
+          "kind": "quote",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/pm-modi-takes-swipe-at-fragile-5-critics-at-srcc-visit-says-they-are-unable-to-digest-india-s-7-8-growth-11788622318295.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 67,
+          "cluster_id": 4,
+          "text": "Former senior Finance Ministry official Subhash Chandra Garg alleged that the 7.8% Q1 GDP growth rate was overstated due to downward base revisions.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/pm-modi-takes-swipe-at-fragile-5-critics-at-srcc-visit-says-they-are-unable-to-digest-india-s-7-8-growth-11788622318295.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 68,
+          "cluster_id": 4,
+          "text": "Subhash Chandra Garg claimed nominal GDP growth would have been 2.6 per cent if the previous year's Q1 base had not been revised downward from ₹86 lakh crore to ₹80 lakh crore.",
+          "kind": "figure",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/pm-modi-takes-swipe-at-fragile-5-critics-at-srcc-visit-says-they-are-unable-to-digest-india-s-7-8-growth-11788622318295.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 69,
+          "cluster_id": 4,
+          "text": "Former RBI Governor Raghuram Rajan questioned why strong economic growth has not translated into higher private investment and job creation.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/pm-modi-takes-swipe-at-fragile-5-critics-at-srcc-visit-says-they-are-unable-to-digest-india-s-7-8-growth-11788622318295.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 70,
+          "cluster_id": 4,
+          "text": "India's Ministry of Statistics held a press briefing to defend the revised GDP methodology implemented in February.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/pm-modi-takes-swipe-at-fragile-5-critics-at-srcc-visit-says-they-are-unable-to-digest-india-s-7-8-growth-11788622318295.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 71,
+          "cluster_id": 4,
+          "text": "PM Narendra Modi stated that if Pakistan indulges in misadventure, Indian armed forces enter their territory and strike.",
+          "kind": "quote",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/naraz-fufa-opposes-everything-to-jhooth-ki-goonj-top-quotes-from-pm-modi-srcc-address-congress-reacts-101788622252106.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 72,
+          "cluster_id": 4,
+          "text": "PM Narendra Modi stated that his Independence Day speech reference to 'Dimagi Naxal' exposed political opponents like a homeopathic dose.",
+          "kind": "quote",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/naraz-fufa-opposes-everything-to-jhooth-ki-goonj-top-quotes-from-pm-modi-srcc-address-congress-reacts-101788622252106.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 73,
+          "cluster_id": 4,
+          "text": "Congress leader Kanhaiya Kumar called PM Narendra Modi's address at SRCC a 'PR campaign' held ahead of Delhi University student elections.",
+          "kind": "quote",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/naraz-fufa-opposes-everything-to-jhooth-ki-goonj-top-quotes-from-pm-modi-srcc-address-congress-reacts-101788622252106.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 74,
+          "cluster_id": 4,
+          "text": "PM Narendra Modi criticized the Congress party's student outreach campaign 'Chhatron Ki Goonj', describing it as 'jhooth ki goonj'.",
+          "kind": "quote",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/jhooth-ki-goonj-pm-modi-takes-swipe-at-rahul-attacks-mai-baap-culture/articleshow/133805599.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 75,
+          "cluster_id": 4,
+          "text": "The Congress party's 'Chhatron Ki Goonj' campaign focuses on student issues including exam paper leaks, rising education costs, and unemployment.",
+          "kind": "background",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/jhooth-ki-goonj-pm-modi-takes-swipe-at-rahul-attacks-mai-baap-culture/articleshow/133805599.cms",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 5,
+      "headline_hint": "Government advances Census 2027 enumeration in four poll-bound states",
+      "section": "india",
+      "batch_position": 1,
+      "claim_count": 10,
+      "distinct_outlets": 2,
+      "source_kinds": {
+        "fulltext": 10
+      },
+      "claims": [
+        {
+          "id": 76,
+          "cluster_id": 5,
+          "text": "The Central Government has advanced the population enumeration phase of Census 2027 in Uttar Pradesh, Goa, Punjab, and non-snow-bound Uttarakhand to December 1, 2026 – January 4, 2027.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/census-2027-enumeration-advanced-in-four-poll-bound-states/articleshow/133814645.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 77,
+          "cluster_id": 5,
+          "text": "The reference date for the advanced Census enumeration in Uttar Pradesh, Goa, Punjab, and non-snow-bound Uttarakhand is set for January 5, 2027.",
+          "kind": "figure",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/census-2027-enumeration-advanced-in-four-poll-bound-states/articleshow/133814645.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 78,
+          "cluster_id": 5,
+          "text": "A 15-day self-enumeration window for Census 2027 will open in the four poll-bound states from November 16 to November 30, 2026.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/census-2027-enumeration-advanced-in-four-poll-bound-states/articleshow/133814645.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 79,
+          "cluster_id": 5,
+          "text": "Assembly elections are scheduled to take place in Uttar Pradesh, Uttarakhand, Punjab, Goa, and Manipur in February-March 2027.",
+          "kind": "background",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/census-2027-enumeration-advanced-in-four-poll-bound-states/articleshow/133814645.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 80,
+          "cluster_id": 5,
+          "text": "The Census phase in Manipur was deferred following local demands to conduct the National Register of Citizens (NRC) exercise first.",
+          "kind": "background",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/census-2027-enumeration-advanced-in-four-poll-bound-states/articleshow/133814645.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 81,
+          "cluster_id": 5,
+          "text": "Census 2027 will be India's first digital census and will collect caste data for the first time since 1931.",
+          "kind": "background",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/census-2027-enumeration-advanced-in-four-poll-bound-states/articleshow/133814645.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 82,
+          "cluster_id": 5,
+          "text": "A revisional round for Census enumeration in Uttar Pradesh, Goa, Punjab, and non-snow-bound Uttarakhand will take place from January 5 to January 9, 2027.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/centre-prepones-population-count-in-poll-bound-up-goa-uttarakhand-punjab-101788621227730.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 83,
+          "cluster_id": 5,
+          "text": "Government officials stated dates were advanced to prevent manpower conflicts, as teachers and state personnel are utilized for both census duties and elections.",
+          "kind": "background",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/centre-prepones-population-count-in-poll-bound-up-goa-uttarakhand-punjab-101788621227730.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 84,
+          "cluster_id": 5,
+          "text": "The Ministry of Home Affairs deferred the Census in Manipur on August 31 amid ongoing state violence and demands for an updated NRC.",
+          "kind": "background",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/centre-prepones-population-count-in-poll-bound-up-goa-uttarakhand-punjab-101788621227730.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 85,
+          "cluster_id": 5,
+          "text": "The national population census was originally scheduled for 2021 but was delayed due to the COVID-19 pandemic.",
+          "kind": "background",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/centre-prepones-population-count-in-poll-bound-up-goa-uttarakhand-punjab-101788621227730.html",
+          "source_kind": "fulltext"
+        }
+      ]
+    }
+  ],
+  "clusters_with_no_claims": []
+}
