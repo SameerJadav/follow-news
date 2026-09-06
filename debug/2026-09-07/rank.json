@@ -1,0 +1,647 @@
+{
+  "dials": {
+    "WEIGHT_FLOOR": 5,
+    "TIER_WEIGHT": {
+      "lead": 4,
+      "major": 2,
+      "notable": 0
+    },
+    "WIKI_BONUS": 2,
+    "HARD_CAP": 12,
+    "MIN_STORIES_IF_ANY": 3,
+    "MAX_ARTICLES_PER_STORY": 5
+  },
+  "floor_relaxed": false,
+  "kept_weights": [
+    15,
+    11,
+    10,
+    7,
+    7,
+    12,
+    7
+  ],
+  "per_section": {
+    "world": 5,
+    "india": 2
+  },
+  "clusters": [
+    {
+      "headline_hint": "US envoys Kushner and Witkoff visit Kyiv for peace talks following Moscow meetings",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "lead",
+      "article_ids": [
+        20,
+        25,
+        30,
+        69,
+        81,
+        90,
+        104,
+        146,
+        201,
+        206,
+        227,
+        228,
+        268,
+        274
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        20,
+        25,
+        30,
+        69,
+        81,
+        90,
+        104,
+        146,
+        201,
+        206,
+        227,
+        228,
+        268,
+        274
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 9,
+      "wiki_backed": true,
+      "wiki_event": "U.S. envoys Steve Witkoff and Jared Kushner make their first visit to Kyiv, Ukraine, to meet with Ukrainian president Volodymyr Zelenskyy for talks amidst renewed efforts to end the war.",
+      "weight": 15,
+      "weight_terms": {
+        "distinct_outlets": 9,
+        "tier_weight": 4,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "NPR World",
+          "title": "U.S. envoys visit Kyiv for first time after meeting Putin in Moscow",
+          "url": "https://www.npr.org/2026/09/06/nx-s1-5959728/u-s-envoys-visit-kyiv-for-first-time-after-meeting-putin-in-moscow"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Peace talks rich in symbolism but fundamental differences between Russia and Ukraine remain",
+          "url": "https://www.bbc.co.uk/news/articles/c980j5m8mpro?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "US envoys Kushner and Witkoff visit Kyiv for first time after Putin talks",
+          "url": "https://www.theguardian.com/world/2026/sep/06/us-envoys-jared-kushner-steve-witkoff-arrive-kyiv-talks-on-ending-war"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Witkoff says peace talks have been ‘very meaningful’ in Ukraine",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/6/witkoff-says-peace-talks-have-been-very-meaningful-in-ukraine?traffic_source=rss"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "US envoys make first Kyiv visit amid Ukraine war peace push",
+          "url": "https://www.channelnewsasia.com/world/us-envoys-make-first-kyiv-visit-amid-ukraine-war-peace-push-6365591"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 9
+    },
+    {
+      "headline_hint": "Far-right AfD wins state election in Saxony-Anhalt, Germany",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        10,
+        26,
+        78,
+        86,
+        97,
+        121,
+        154,
+        159,
+        163,
+        194,
+        205,
+        215,
+        248,
+        284
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        10,
+        26,
+        78,
+        86,
+        97,
+        121,
+        154,
+        159,
+        163,
+        194,
+        205,
+        215,
+        248,
+        284
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 6,
+      "wiki_backed": true,
+      "wiki_event": "Exit polls show the far-right Alternative for Germany party winning the Saxony-Anhalt state election in Germany, but failing to secure an absolute majority of seats.",
+      "weight": 10,
+      "weight_terms": {
+        "distinct_outlets": 6,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "BBC World",
+          "title": "Germany's far-right AfD set for big win in eastern state, just short of majority",
+          "url": "https://www.bbc.co.uk/news/articles/cy4zejgz3z9o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Can AfD form Germany’s first far-right state government since World War II?",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/6/06-09-sv-germany-afd-wins-saxony-de-fm?traffic_source=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Far-right AfD wins key German state election but may fail to secure majority",
+          "url": "https://www.theguardian.com/world/2026/sep/06/saxony-anhalt-germany-afd-exit-poll-ulrich-siegmund"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "AfD projected to score historic victory in German state election, but path to power remains unclear",
+          "url": "https://www.livemint.com/news/us-news/afd-projected-to-score-historic-victory-in-german-state-election-but-path-to-power-remains-unclear-11788716551220.html"
+        },
+        {
+          "outlet": "France 24",
+          "title": "\"Ready to talk\": German far-right celebrates victory",
+          "url": "https://www.france24.com/en/tv-shows/spotlight/20260906-ready-to-talk-german-far-right-celebrates-victory"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 9
+    },
+    {
+      "headline_hint": "Amazon Air cargo plane crashes at Miami International Airport, killing at least five",
+      "section": "world",
+      "category": "disaster",
+      "tier_requested": "major",
+      "article_ids": [
+        4,
+        6,
+        17,
+        19,
+        29,
+        31,
+        36,
+        45
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        4,
+        6,
+        17,
+        19,
+        29,
+        31,
+        36,
+        45
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 7,
+      "wiki_backed": true,
+      "wiki_event": "21 Air Flight 7598, a Boeing 767-300 operated by Amazon Air, overshoots the runway and strikes vehicles while landing at Miami International Airport in Miami, United States, causing at least five dead and five wounded.",
+      "weight": 11,
+      "weight_terms": {
+        "distinct_outlets": 7,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "France 24",
+          "title": "Amazon cargo plane crashes at Miami airport, killing at least five",
+          "url": "https://www.france24.com/en/americas/20260906-amazon-cargo-plane-crashes-miami-airport-killing-at-least-five"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "At least five dead after Amazon cargo plane crashes at Miami airport",
+          "url": "https://www.theguardian.com/us-news/2026/sep/06/amazon-cargo-plane-crashes-miami-airport"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Amazon cargo plane crashes in US while landing at Miami airport",
+          "url": "https://www.aljazeera.com/news/2026/9/6/amazon-cargo-plane-crashes-in-us-while-landing-at-miami-airport?traffic_source=rss"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Amazon cargo plane crashes at Miami airport after overshooting runway, fire erupts",
+          "url": "https://www.livemint.com/news/us-news/amazon-cargo-plane-crashes-at-miami-airport-after-overshooting-runway-fire-erupts-11788727190248.html"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Video shows damaged Amazon cargo plane after crash",
+          "url": "https://www.bbc.co.uk/news/videos/c62k8dz8r4lo?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 3
+    },
+    {
+      "headline_hint": "Tensions escalate as US and Iran exchange strikes and warnings in Gulf region",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "major",
+      "article_ids": [
+        50,
+        114,
+        141,
+        145,
+        160,
+        197,
+        282
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        50,
+        114,
+        141,
+        145,
+        160,
+        197,
+        282
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 5,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Livemint",
+          "title": "US denies Iran's claim of strike on American vessel near Strait of Hormuz",
+          "url": "https://www.livemint.com/news/us-news/us-denies-irans-claim-of-strike-on-american-vessel-near-strait-of-hormuz-11788723096763.html"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Energy secretary says US might not reach nuclear agreement with Iran",
+          "url": "https://www.theguardian.com/world/2026/sep/06/us-iran-nuclear-agreement-chris-wright"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Iran warns of 'faster, heavier, more painful response' to US attacks",
+          "url": "https://www.bbc.co.uk/news/articles/cp8d56w7d9po?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Trump official says ‘there may not be a nuclear agreement’ with Iran",
+          "url": "https://www.aljazeera.com/news/2026/9/6/trump-official-says-there-may-not-be-a-nuclear-agreement-with-iran?traffic_source=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Iran claims strike on US ship in Strait of Hormuz as fighting escalates",
+          "url": "https://www.france24.com/en/video/20260906-iran-claims-strike-on-us-ship-in-strait-of-hormuz-as-fighting-escalates"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 2
+    },
+    {
+      "headline_hint": "Volcanic ash from Anak Krakatoa eruption disrupts flights at Jakarta airport",
+      "section": "world",
+      "category": "disaster",
+      "tier_requested": "notable",
+      "article_ids": [
+        61,
+        166,
+        191,
+        231,
+        264
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        61,
+        166,
+        191,
+        231,
+        264
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 5,
+      "wiki_backed": true,
+      "wiki_event": "Jakarta's Soekarno–Hatta International Airport, Indonesia's busiest airport, suspends flight operations after volcanic ash from Anak Krakatoa reaches the airport.",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 0,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "Indonesia volcano eruption disrupts hundreds of flights",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/6/indonesia-volcano-eruption-disrupts-hundreds-of-flights?traffic_source=rss"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Volcano eruption leaves 170,000 passengers stranded in Indonesia",
+          "url": "https://www.bbc.co.uk/news/articles/cvgy5k4n07ko?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Volcanic eruption halts flights at Jakarta and seven other Indonesian airports",
+          "url": "https://www.theguardian.com/world/2026/sep/06/volcanic-ash-cloud-halts-flights-at-indonesias-main-international-airport"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Indonesia's Anak Krakatau eruption halts flights, schools, fishing",
+          "url": "https://www.france24.com/en/video/20260906-indonesia-s-anak-krakatau-eruption-halts-flights-schools-fishing"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Krakatau volcano eruption: Volcanic ash forces suspension of over 300 flights at Jakarta's Soekarno-Hatta airport",
+          "url": "https://www.livemint.com/news/world/krakatau-volcano-eruption-over-300-flights-suspended-at-indonesias-main-airport-as-ash-spreads-across-java-sumatra-11788689468235.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Rescue operations continue in Nepal following catastrophic floods",
+      "section": "world",
+      "category": "disaster",
+      "tier_requested": "notable",
+      "article_ids": [
+        66,
+        105,
+        283,
+        309
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        66,
+        105,
+        283,
+        309
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Channel News Asia",
+          "title": "Nepali rescuers buoyed by miracle finds but tough conditions persist",
+          "url": "https://www.channelnewsasia.com/asia/nepali-rescuers-buoyed-miracle-finds-tough-conditions-persist-6365891"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Photos: UN urges global aid after China, Nepal floods kill over 1,300",
+          "url": "https://www.aljazeera.com/gallery/2026/9/6/photos-nepal-flood-survivors-face-overwhelming-devastation?traffic_source=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Nepal floods: Search operations enter 12th day",
+          "url": "https://www.france24.com/en/video/20260906-nepal-floods-search-operations-enter-12th-day"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Watch: Moment 64-year-old Nepali woman is found alive in mud-buried home",
+          "url": "https://www.bbc.co.uk/news/videos/c4gd24d1d0do?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "At least five dead after five-storey hostel building collapses in Satya Niketan, Delhi",
+      "section": "india",
+      "category": "disaster",
+      "tier_requested": "lead",
+      "article_ids": [
+        33,
+        40,
+        48,
+        49,
+        62,
+        64,
+        72,
+        126,
+        132,
+        133,
+        143,
+        150,
+        168,
+        190,
+        192,
+        195,
+        198,
+        200,
+        213,
+        219,
+        225,
+        236,
+        237,
+        251,
+        253,
+        255,
+        258,
+        266,
+        269,
+        285
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        33,
+        40,
+        48,
+        49,
+        62,
+        64,
+        72,
+        126,
+        132,
+        133,
+        143,
+        150,
+        168,
+        190,
+        192,
+        195,
+        198,
+        200,
+        213,
+        219,
+        225,
+        236,
+        237,
+        251,
+        253,
+        255,
+        258,
+        266,
+        269,
+        285
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 8,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 12,
+      "weight_terms": {
+        "distinct_outlets": 8,
+        "tier_weight": 4,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "The Hindu",
+          "title": "Delhi building collapse LIVE: At least five dead; FIR registered against alleged owner",
+          "url": "https://www.thehindu.com/news/cities/Delhi/delhi-satya-niketan-building-collapse-south-west-delhi-rescue-work-death-toll-september-3-2026/article71435076.ece"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "At least five killed in New Delhi building collapse",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/6/at-least-five-killed-in-new-delhi-building-collapse?traffic_source=rss"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "Delhi Building Collapse Raises Questions On Safety, Student Organisations Protest",
+          "url": "https://www.ndtv.com/india-news/delhi-building-collapse-raises-questions-on-safety-student-organisations-protest-12010786#publisher=newsstand"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "ABVP members protest, vandalise MCD office in Delhi over building collapse incident | Video",
+          "url": "https://www.hindustantimes.com/india-news/abvp-members-protest-vandalise-mcd-office-in-delhi-over-satya-niketan-building-collapse-incident-video-101788714664181.html"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Dozens feared trapped in collapsed building in Delhi",
+          "url": "https://www.bbc.co.uk/news/articles/c8r6ezx1jmro?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 25
+    },
+    {
+      "headline_hint": "ISRO and IN-SPACe reject privatisation reports, asserting space agency's role will not diminish",
+      "section": "india",
+      "category": "science",
+      "tier_requested": "major",
+      "article_ids": [
+        37,
+        123,
+        129,
+        151,
+        175,
+        176
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        37,
+        123,
+        129,
+        151,
+        175,
+        176
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 5,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "Agency won't be privatised or its role diminished: Isro",
+          "url": "https://timesofindia.indiatimes.com/india/isro-will-never-be-privatised-its-role-wont-be-diminished-space-agency-inspace-chief/articleshow/133851245.cms"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "'Importance Will Not Be Diminished': ISRO Says It Will Not Be Privatised",
+          "url": "https://www.ndtv.com/india-news/importance-will-not-be-diminished-isro-says-it-will-not-be-privatised-12010518#publisher=newsstand"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "ISRO won’t be ‘diminished’, says IN-SPACe chairman",
+          "url": "https://www.thehindu.com/news/national/isro-staff-bodies-seek-clarification-on-the-trajectory-of-privatisation/article71434745.ece"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "ISRO’s role ‘by no means diminishing’: Space agency, Pawan Goenka address staff’s privatisation concerns",
+          "url": "https://www.livemint.com/news/india/isros-role-by-no-means-diminishing-space-agency-chairman-pawan-goenka-address-staff-s-privatisation-concerns-11788708171870.html"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "‘Completely baseless’: ISRO rejects reports of privatisation, calls them ‘incorrect’",
+          "url": "https://www.hindustantimes.com/india-news/completely-baseless-isro-rejects-reports-of-privatisation-calls-them-incorrect-101788708794158.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 1
+    },
+    {
+      "headline_hint": "Manipur publishes final electoral rolls showing over 6% voter names removed",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        108,
+        234,
+        263
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        108,
+        234,
+        263
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "The Hindu",
+          "title": "1.85 lakh voters deleted from Manipur, Sikkim electoral rolls after SIR",
+          "url": "https://www.thehindu.com/news/national/185-lakh-voters-deleted-from-manipur-sikkim-electoral-rolls-after-sir/article71435981.ece"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Manipur final electoral roll records 1.96 million voters after revision",
+          "url": "https://www.hindustantimes.com/india-news/manipur-final-electoral-roll-records-1-96-million-voters-after-revision-101788698947734.html"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "Manipur SIR: Over 6% voters removed from final list",
+          "url": "https://scroll.in/latest/1095540/manipur-sir-over-6-voters-removed-from-final-list?utm_source=rss&utm_medium=public"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    }
+  ]
+}

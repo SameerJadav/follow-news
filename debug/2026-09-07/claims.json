@@ -1,0 +1,920 @@
+{
+  "min_claim_chars": 20,
+  "max_claims_per_story": 24,
+  "calls": [
+    {
+      "label": "claims-world",
+      "cluster_ids": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "label": "claims-india",
+      "cluster_ids": [
+        5,
+        6
+      ]
+    }
+  ],
+  "rejected_claims": 0,
+  "rejected_clusters": 0,
+  "clusters": [
+    {
+      "cluster_id": 0,
+      "headline_hint": "US envoys Kushner and Witkoff visit Kyiv for peace talks following Moscow meetings",
+      "section": "world",
+      "batch_position": 0,
+      "claim_count": 16,
+      "distinct_outlets": 4,
+      "source_kinds": {
+        "fulltext": 16
+      },
+      "claims": [
+        {
+          "id": 1,
+          "cluster_id": 0,
+          "text": "US envoys Steve Witkoff and Jared Kushner visited Kyiv for the first time since Russia's full-scale invasion of Ukraine.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c980j5m8mpro?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 2,
+          "cluster_id": 0,
+          "text": "US envoys Steve Witkoff and Jared Kushner travelled to Kyiv by train due to the risk of Russian drone strikes.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c980j5m8mpro?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 3,
+          "cluster_id": 0,
+          "text": "Ukrainian President Volodymyr Zelensky greeted Steve Witkoff and Jared Kushner at Kyiv's Saint Sophia Cathedral.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c980j5m8mpro?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 4,
+          "cluster_id": 0,
+          "text": "Russian drones hit the headquarters of Ukraine's security services near Saint Sophia Cathedral on Friday.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c980j5m8mpro?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 5,
+          "cluster_id": 0,
+          "text": "UK National Security Adviser Jonathan Powell and other European national security advisers joined the talks in Kyiv.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c980j5m8mpro?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 6,
+          "cluster_id": 0,
+          "text": "Vladimir Putin told US envoys in Moscow that Russia was making 'tangible advances' on the battlefield.",
+          "kind": "quote",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c980j5m8mpro?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 7,
+          "cluster_id": 0,
+          "text": "Ukrainian officials claim that in August Russia suffered 42,000 dead or wounded casualties and Ukraine gained more territory than it lost.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c980j5m8mpro?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 8,
+          "cluster_id": 0,
+          "text": "Russia and Ukraine agreed to a short-term pause in air strikes during the US envoys' visit to Kyiv.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c980j5m8mpro?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 9,
+          "cluster_id": 0,
+          "text": "Russian strikes bombed Kyiv's two main airports on Friday, forcing Jared Kushner and Steve Witkoff to travel by train.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/sep/06/us-envoys-jared-kushner-steve-witkoff-arrive-kyiv-talks-on-ending-war",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 10,
+          "cluster_id": 0,
+          "text": "Russia and Ukraine pledged to refrain from attacking each other's capitals over the weekend to ensure safe passage for the US envoys.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/sep/06/us-envoys-jared-kushner-steve-witkoff-arrive-kyiv-talks-on-ending-war",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 11,
+          "cluster_id": 0,
+          "text": "Volodymyr Zelenskyy stated that Ukraine is counting on a winter package from the US and Europe including air defence, energy support, and American LNG.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/sep/06/us-envoys-jared-kushner-steve-witkoff-arrive-kyiv-talks-on-ending-war",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 12,
+          "cluster_id": 0,
+          "text": "Ukrainian authorities reported on Sunday that at least eight people were killed and 69 injured across Ukraine in the past day.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/sep/06/us-envoys-jared-kushner-steve-witkoff-arrive-kyiv-talks-on-ending-war",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 13,
+          "cluster_id": 0,
+          "text": "Peace talks between Russia and Ukraine have focused on a 20-point peace plan put forward by Washington and Kyiv in December.",
+          "kind": "background",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/sep/06/us-envoys-jared-kushner-steve-witkoff-arrive-kyiv-talks-on-ending-war",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 14,
+          "cluster_id": 0,
+          "text": "US envoy Steve Witkoff stated that peace talks in Ukraine have been 'very meaningful'.",
+          "kind": "quote",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/6/witkoff-says-peace-talks-have-been-very-meaningful-in-ukraine?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 15,
+          "cluster_id": 0,
+          "text": "Jared Kushner and Steve Witkoff held three hours of talks with Russian President Vladimir Putin in Moscow on Saturday.",
+          "kind": "event",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/us-envoys-make-first-kyiv-visit-amid-ukraine-war-peace-push-6365591",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 16,
+          "cluster_id": 0,
+          "text": "Ukraine reported striking the Ryazan oil refinery about 480 km inside Russia overnight, causing a fire.",
+          "kind": "event",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/us-envoys-make-first-kyiv-visit-amid-ukraine-war-peace-push-6365591",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 1,
+      "headline_hint": "Amazon Air cargo plane crashes at Miami International Airport, killing at least five",
+      "section": "world",
+      "batch_position": 1,
+      "claim_count": 11,
+      "distinct_outlets": 4,
+      "source_kinds": {
+        "fulltext": 11
+      },
+      "claims": [
+        {
+          "id": 17,
+          "cluster_id": 1,
+          "text": "At least five people were killed and five injured after an Amazon cargo plane overshot the runway at Miami International Airport on Sunday and crashed into several vehicles.",
+          "kind": "figure",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/americas/20260906-amazon-cargo-plane-crashes-miami-airport-killing-at-least-five",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 18,
+          "cluster_id": 1,
+          "text": "Miami Sheriff Rosie Cordero-Stutz stated there was 'no apparent threat to public safety' following the crash.",
+          "kind": "quote",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/americas/20260906-amazon-cargo-plane-crashes-miami-airport-killing-at-least-five",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 19,
+          "cluster_id": 1,
+          "text": "An Amazon cargo plane arriving from San Juan, Puerto Rico, overshot the runway at Miami International Airport on Sunday afternoon and struck several vehicles.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/us-news/2026/sep/06/amazon-cargo-plane-crashes-miami-airport",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 20,
+          "cluster_id": 1,
+          "text": "Miami-Dade County Mayor Daniella Levine Cava stated that five people were killed and five others were injured in the crash.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/us-news/2026/sep/06/amazon-cargo-plane-crashes-miami-airport",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 21,
+          "cluster_id": 1,
+          "text": "The FAA confirmed 21 Air Flight 7598, a Boeing 767-300 cargo aircraft, overran the runway at Miami International Airport around 2 pm local time on Sunday, September 6.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/us-news/2026/sep/06/amazon-cargo-plane-crashes-miami-airport",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 22,
+          "cluster_id": 1,
+          "text": "All runways and taxiways at Miami International Airport were closed as of 3 pm following the cargo plane crash.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/us-news/2026/sep/06/amazon-cargo-plane-crashes-miami-airport",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 23,
+          "cluster_id": 1,
+          "text": "More than 60 units from Miami-Dade Fire Rescue responded to the scene of the plane crash.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/us-news/2026/sep/06/amazon-cargo-plane-crashes-miami-airport",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 24,
+          "cluster_id": 1,
+          "text": "Miami-Dade Sheriff's Office closed NW 67th Avenue between NW 25th Street and NW 36th Street following the crash.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/us-news/2026/sep/06/amazon-cargo-plane-crashes-miami-airport",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 25,
+          "cluster_id": 1,
+          "text": "US Transportation Secretary Sean Duffy stated that the agency issued a full ground stop in Miami after the crash.",
+          "kind": "event",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/9/6/amazon-cargo-plane-crashes-in-us-while-landing-at-miami-airport?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 26,
+          "cluster_id": 1,
+          "text": "The Boeing 767-300 cargo plane involved in the crash was over 32 years old, having first flown in June 1994 as a passenger aircraft.",
+          "kind": "background",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/us-news/amazon-cargo-plane-crashes-at-miami-airport-after-overshooting-runway-fire-erupts-11788727190248.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 27,
+          "cluster_id": 1,
+          "text": "Cargo carrier 21 Air began operating Boeing 767-300 freighters for Amazon in 2024.",
+          "kind": "background",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/us-news/amazon-cargo-plane-crashes-at-miami-airport-after-overshooting-runway-fire-erupts-11788727190248.html",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 2,
+      "headline_hint": "Far-right AfD wins state election in Saxony-Anhalt, Germany",
+      "section": "world",
+      "batch_position": 2,
+      "claim_count": 10,
+      "distinct_outlets": 3,
+      "source_kinds": {
+        "fulltext": 10
+      },
+      "claims": [
+        {
+          "id": 28,
+          "cluster_id": 2,
+          "text": "Incomplete results show Alternative for Germany (AfD) set to win a record 44% of the vote in the Saxony-Anhalt state election.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cy4zejgz3z9o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 29,
+          "cluster_id": 2,
+          "text": "AfD state leader Ulrich Siegmund described the election result in Saxony-Anhalt as 'sensational'.",
+          "kind": "quote",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cy4zejgz3z9o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 30,
+          "cluster_id": 2,
+          "text": "Saxony-Anhalt has a population of 2.1 million and its branch of the AfD is classified by domestic intelligence as 'right-wing extremist'.",
+          "kind": "background",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cy4zejgz3z9o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 31,
+          "cluster_id": 2,
+          "text": "Voter turnout in the Saxony-Anhalt state election was estimated at 78%.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cy4zejgz3z9o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 32,
+          "cluster_id": 2,
+          "text": "The conservative CDU finished second in the Saxony-Anhalt election with just over 17% of the vote.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cy4zejgz3z9o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 33,
+          "cluster_id": 2,
+          "text": "Exit polls showed Die Linke won 9.3%, the Social Democrats won 8.4%, and the Greens won 8.7% in the Saxony-Anhalt state election.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/sep/06/saxony-anhalt-germany-afd-exit-poll-ulrich-siegmund",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 34,
+          "cluster_id": 2,
+          "text": "The BSW party reached the 5% threshold required to enter the state parliament in Saxony-Anhalt.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/sep/06/saxony-anhalt-germany-afd-exit-poll-ulrich-siegmund",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 35,
+          "cluster_id": 2,
+          "text": "AfD candidate Ulrich Siegmund promised to launch a remigration and deportation offensive, ban rainbow flags in schools, and halt new windfarm construction if AfD forms a government.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/sep/06/saxony-anhalt-germany-afd-exit-poll-ulrich-siegmund",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 36,
+          "cluster_id": 2,
+          "text": "Modern Germany has never had a far-right or right-wing populist party lead a national government, state government, or major-city administration since World War II.",
+          "kind": "background",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/us-news/afd-projected-to-score-historic-victory-in-german-state-election-but-path-to-power-remains-unclear-11788716551220.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 37,
+          "cluster_id": 2,
+          "text": "CDU national general secretary Franziska Hoppermann described the election result as 'very difficult' for her party while rejecting cooperation with the AfD.",
+          "kind": "quote",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/us-news/afd-projected-to-score-historic-victory-in-german-state-election-but-path-to-power-remains-unclear-11788716551220.html",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 3,
+      "headline_hint": "Tensions escalate as US and Iran exchange strikes and warnings in Gulf region",
+      "section": "world",
+      "batch_position": 3,
+      "claim_count": 9,
+      "distinct_outlets": 4,
+      "source_kinds": {
+        "fulltext": 9
+      },
+      "claims": [
+        {
+          "id": 38,
+          "cluster_id": 3,
+          "text": "The US denied Iran's claim that it struck an unmanned American vessel near the Strait of Hormuz, calling the allegation a 'total lie'.",
+          "kind": "quote",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/us-news/us-denies-irans-claim-of-strike-on-american-vessel-near-strait-of-hormuz-11788723096763.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 39,
+          "cluster_id": 3,
+          "text": "US Energy Secretary Chris Wright stated on CNN that around 9 million barrels of oil a day were currently passing through the Strait of Hormuz.",
+          "kind": "figure",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/us-news/us-denies-irans-claim-of-strike-on-american-vessel-near-strait-of-hormuz-11788723096763.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 40,
+          "cluster_id": 3,
+          "text": "The US-Iran conflict began on February 28 with US and Israeli attacks on Iran.",
+          "kind": "background",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/us-news/us-denies-irans-claim-of-strike-on-american-vessel-near-strait-of-hormuz-11788723096763.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 41,
+          "cluster_id": 3,
+          "text": "US Energy Secretary Chris Wright stated on ABC that there 'may not' be a nuclear agreement reached with Iran.",
+          "kind": "quote",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/sep/06/us-iran-nuclear-agreement-chris-wright",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 42,
+          "cluster_id": 3,
+          "text": "According to a New York Times report, August was the deadliest month for merchant vessels in the Strait of Hormuz area since March.",
+          "kind": "background",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/sep/06/us-iran-nuclear-agreement-chris-wright",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 43,
+          "cluster_id": 3,
+          "text": "Iranian Parliament Speaker Mohammad Bagher Ghalibaf stated that Americans must understand 'before it is too late' that the 'rules of the game have changed'.",
+          "kind": "quote",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cp8d56w7d9po?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 44,
+          "cluster_id": 3,
+          "text": "US Defence Secretary Pete Hegseth warned that if Iran shoots at US ships, the US will destroy and sink their oil tankers.",
+          "kind": "quote",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cp8d56w7d9po?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 45,
+          "cluster_id": 3,
+          "text": "The average price for one gallon of diesel in the US reached $5.85 on Friday.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cp8d56w7d9po?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 46,
+          "cluster_id": 3,
+          "text": "US Energy Secretary Chris Wright stated that the US is degrading Iran's capacity to develop nuclear weapons and deliver them.",
+          "kind": "quote",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/9/6/trump-official-says-there-may-not-be-a-nuclear-agreement-with-iran?traffic_source=rss",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 4,
+      "headline_hint": "Volcanic ash from Anak Krakatoa eruption disrupts flights at Jakarta airport",
+      "section": "world",
+      "batch_position": 4,
+      "claim_count": 10,
+      "distinct_outlets": 4,
+      "source_kinds": {
+        "fulltext": 10
+      },
+      "claims": [
+        {
+          "id": 47,
+          "cluster_id": 4,
+          "text": "Two new eruptions were recorded as Indonesia's Anak Krakatau continued to spew volcanic ash, disrupting hundreds of flights across six airports.",
+          "kind": "event",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/6/indonesia-volcano-eruption-disrupts-hundreds-of-flights?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 48,
+          "cluster_id": 4,
+          "text": "Indonesian authorities temporarily suspended operations at eight airports due to volcanic ash from Anak Krakatau, leaving around 170,000 passengers stranded.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cvgy5k4n07ko?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 49,
+          "cluster_id": 4,
+          "text": "The Indonesian transport ministry reported that 1,558 flights were delayed due to airport closures.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cvgy5k4n07ko?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 50,
+          "cluster_id": 4,
+          "text": "Volcanic ash from Anak Krakatau reached up to 20,000 feet on the Java side and 50,000 feet on the Sumatra side.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cvgy5k4n07ko?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 51,
+          "cluster_id": 4,
+          "text": "Indonesian authorities confirmed there is no tsunami warning associated with the recent activity of Anak Krakatau.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cvgy5k4n07ko?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 52,
+          "cluster_id": 4,
+          "text": "Booming sounds from the eruption of Anak Krakatau were heard up to 435 miles (700 km) away.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/sep/06/volcanic-ash-cloud-halts-flights-at-indonesias-main-international-airport",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 53,
+          "cluster_id": 4,
+          "text": "Indonesia's disaster mitigation agency BNPB announced plans to conduct a weather modification operation involving cloud-seeding to wash away volcanic ash.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/sep/06/volcanic-ash-cloud-halts-flights-at-indonesias-main-international-airport",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 54,
+          "cluster_id": 4,
+          "text": "Port authorities prohibited ships in the Sunda Strait from going within a two-mile radius of Anak Krakatau.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/sep/06/volcanic-ash-cloud-halts-flights-at-indonesias-main-international-airport",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 55,
+          "cluster_id": 4,
+          "text": "Volcanic ash from Mount Anak Krakatau forced the suspension of over 300 flights at Jakarta's Soekarno-Hatta International Airport on Sunday.",
+          "kind": "figure",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/world/krakatau-volcano-eruption-over-300-flights-suspended-at-indonesias-main-airport-as-ash-spreads-across-java-sumatra-11788689468235.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 56,
+          "cluster_id": 4,
+          "text": "A previous eruption and collapse of Anak Krakatau in 2018 triggered a tsunami that killed over 400 people.",
+          "kind": "background",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/world/krakatau-volcano-eruption-over-300-flights-suspended-at-indonesias-main-airport-as-ash-spreads-across-java-sumatra-11788689468235.html",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 5,
+      "headline_hint": "At least five dead after five-storey hostel building collapses in Satya Niketan, Delhi",
+      "section": "india",
+      "batch_position": 0,
+      "claim_count": 19,
+      "distinct_outlets": 4,
+      "source_kinds": {
+        "fulltext": 19
+      },
+      "claims": [
+        {
+          "id": 57,
+          "cluster_id": 5,
+          "text": "A five-storey building housing college students collapsed on September 6, 2026, in South West Delhi's Satya Niketan area.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/cities/Delhi/delhi-satya-niketan-building-collapse-south-west-delhi-rescue-work-death-toll-september-3-2026/article71435076.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 58,
+          "cluster_id": 5,
+          "text": "At least five people were killed in the Satya Niketan building collapse on September 6, 2026.",
+          "kind": "figure",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/cities/Delhi/delhi-satya-niketan-building-collapse-south-west-delhi-rescue-work-death-toll-september-3-2026/article71435076.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 59,
+          "cluster_id": 5,
+          "text": "Satya Niketan is a dense hub for paying guest accommodation near Delhi University's South Campus.",
+          "kind": "background",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/cities/Delhi/delhi-satya-niketan-building-collapse-south-west-delhi-rescue-work-death-toll-september-3-2026/article71435076.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 60,
+          "cluster_id": 5,
+          "text": "Eleven people were pulled out of the collapsed building in Satya Niketan and taken to the hospital.",
+          "kind": "figure",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/cities/Delhi/delhi-satya-niketan-building-collapse-south-west-delhi-rescue-work-death-toll-september-3-2026/article71435076.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 61,
+          "cluster_id": 5,
+          "text": "Delhi Police stated they are registering an FIR against Anand Bansal, who operates the Hostel Daze paying guest accommodation.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/cities/Delhi/delhi-satya-niketan-building-collapse-south-west-delhi-rescue-work-death-toll-september-3-2026/article71435076.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 62,
+          "cluster_id": 5,
+          "text": "Residents stated that the collapsed Satya Niketan building was at least 50 years old and comprised a basement plus five upper floors.",
+          "kind": "background",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/cities/Delhi/delhi-satya-niketan-building-collapse-south-west-delhi-rescue-work-death-toll-september-3-2026/article71435076.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 63,
+          "cluster_id": 5,
+          "text": "Repair work was underway in the basement of the Satya Niketan building when the collapse occurred.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/cities/Delhi/delhi-satya-niketan-building-collapse-south-west-delhi-rescue-work-death-toll-september-3-2026/article71435076.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 64,
+          "cluster_id": 5,
+          "text": "Delhi Chief Minister Rekha Gupta ordered a magisterial probe into the Satya Niketan building collapse.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/cities/Delhi/delhi-satya-niketan-building-collapse-south-west-delhi-rescue-work-death-toll-september-3-2026/article71435076.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 65,
+          "cluster_id": 5,
+          "text": "The Municipal Corporation of Delhi stated that the collapsed building violated building norms, which permitted only a ground floor plus first floor.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/cities/Delhi/delhi-satya-niketan-building-collapse-south-west-delhi-rescue-work-death-toll-september-3-2026/article71435076.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 66,
+          "cluster_id": 5,
+          "text": "The Municipal Corporation of Delhi evacuated tenants from an adjoining girls' paying guest building and sealed it.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/cities/Delhi/delhi-satya-niketan-building-collapse-south-west-delhi-rescue-work-death-toll-september-3-2026/article71435076.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 67,
+          "cluster_id": 5,
+          "text": "At least five people were killed and nine rescued after a building housing mostly students collapsed in New Delhi's Satya Niketan area on September 6, 2026.",
+          "kind": "event",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/6/at-least-five-killed-in-new-delhi-building-collapse?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 68,
+          "cluster_id": 5,
+          "text": "Around 150 to 200 members of the ABVP student organization protested at Delhi's Civic Centre against the Municipal Corporation of Delhi following the Satya Niketan building collapse.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/abvp-members-protest-vandalise-mcd-office-in-delhi-over-satya-niketan-building-collapse-incident-video-101788714664181.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 69,
+          "cluster_id": 5,
+          "text": "A security guard was injured when ABVP protesters attempted to forcibly enter the main Civic Centre building in Delhi.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/abvp-members-protest-vandalise-mcd-office-in-delhi-over-satya-niketan-building-collapse-incident-video-101788714664181.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 70,
+          "cluster_id": 5,
+          "text": "Delhi Police detained around 15 students following the protest at the Civic Centre and initiated proceedings under the Delhi Police Act.",
+          "kind": "figure",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/abvp-members-protest-vandalise-mcd-office-in-delhi-over-satya-niketan-building-collapse-incident-video-101788714664181.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 71,
+          "cluster_id": 5,
+          "text": "Deputy Commissioner of Police Amit Goel stated that an FIR was registered against building owner Hariram and others at the South Campus police station.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/abvp-members-protest-vandalise-mcd-office-in-delhi-over-satya-niketan-building-collapse-incident-video-101788714664181.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 72,
+          "cluster_id": 5,
+          "text": "Eyewitnesses told local media that up to 50 people were inside the five-storey building in Satya Niketan when it collapsed at around 13:30 local time on Sunday.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c8r6ezx1jmro?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 73,
+          "cluster_id": 5,
+          "text": "A local shop owner stated that the building leaseholder was conducting excavation work in the basement to expand the hostel.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c8r6ezx1jmro?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 74,
+          "cluster_id": 5,
+          "text": "More than 1,000 building collapses have been recorded in Delhi over the past three years according to fire department figures.",
+          "kind": "background",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c8r6ezx1jmro?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 75,
+          "cluster_id": 5,
+          "text": "Eleven people were killed in April when a residential building collapsed in north-eastern Delhi.",
+          "kind": "background",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c8r6ezx1jmro?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 6,
+      "headline_hint": "ISRO and IN-SPACe reject privatisation reports, asserting space agency's role will not diminish",
+      "section": "india",
+      "batch_position": 1,
+      "claim_count": 14,
+      "distinct_outlets": 4,
+      "source_kinds": {
+        "fulltext": 14
+      },
+      "claims": [
+        {
+          "id": 76,
+          "cluster_id": 6,
+          "text": "ISRO rejected reports suggesting it will be privatised or its role diminished, calling such assertions baseless and incorrect.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/isro-will-never-be-privatised-its-role-wont-be-diminished-space-agency-inspace-chief/articleshow/133851245.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 77,
+          "cluster_id": 6,
+          "text": "IN-SPACe chairman Pawan Goenka stated that ISRO will remain the bedrock of the Indian space sector and lead next-generation space programmes.",
+          "kind": "quote",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/isro-will-never-be-privatised-its-role-wont-be-diminished-space-agency-inspace-chief/articleshow/133851245.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 78,
+          "cluster_id": 6,
+          "text": "IN-SPACe chairman Pawan Goenka stated that India has set a target of achieving 50 space launches a year by 2030.",
+          "kind": "figure",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/isro-will-never-be-privatised-its-role-wont-be-diminished-space-agency-inspace-chief/articleshow/133851245.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 79,
+          "cluster_id": 6,
+          "text": "India currently has over 450 space startups, compared to a handful five years ago.",
+          "kind": "background",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/isro-will-never-be-privatised-its-role-wont-be-diminished-space-agency-inspace-chief/articleshow/133851245.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 80,
+          "cluster_id": 6,
+          "text": "Indian private company Skyroot successfully launched its Vikram-1 rocket into orbit on July 18.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/isro-will-never-be-privatised-its-role-wont-be-diminished-space-agency-inspace-chief/articleshow/133851245.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 81,
+          "cluster_id": 6,
+          "text": "Nine ISRO employee associations sent a joint letter dated September 4 to ISRO Chairperson V. Narayanan seeking official clarification on plans to transfer manufacturing and operations to private entities.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/isro-staff-bodies-seek-clarification-on-the-trajectory-of-privatisation/article71434745.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 82,
+          "cluster_id": 6,
+          "text": "The ISRO employee associations cited public remarks made on August 21 by IN-SPACe chairman Pawan Goenka stating that ISRO would eventually not manufacture launch vehicles.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/isro-staff-bodies-seek-clarification-on-the-trajectory-of-privatisation/article71434745.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 83,
+          "cluster_id": 6,
+          "text": "India aims to grow its space economy from approximately $8.4 billion to $44 billion by 2033.",
+          "kind": "figure",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/isro-staff-bodies-seek-clarification-on-the-trajectory-of-privatisation/article71434745.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 84,
+          "cluster_id": 6,
+          "text": "Employees of India's Department of Space are exempted from the statutory definition of industry and are organized as service associations rather than trade unions.",
+          "kind": "background",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/isro-staff-bodies-seek-clarification-on-the-trajectory-of-privatisation/article71434745.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 85,
+          "cluster_id": 6,
+          "text": "ISRO launched its EOS-05 Earth imaging satellite aboard the GSLV-F17 from Sriharikota on September 4.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/isro-staff-bodies-seek-clarification-on-the-trajectory-of-privatisation/article71434745.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 86,
+          "cluster_id": 6,
+          "text": "ISRO employee associations stated in their letter that a policy reducing ISRO to a residual R&D boutique while launch vehicle production passes out of public hands cannot be accepted without debate.",
+          "kind": "quote",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/isros-role-by-no-means-diminishing-space-agency-chairman-pawan-goenka-address-staff-s-privatisation-concerns-11788708171870.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 87,
+          "cluster_id": 6,
+          "text": "India's space goals include establishing the Bharatiya Antariksh Station by 2035 and conducting an Indian crewed mission to the Moon by 2040.",
+          "kind": "figure",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/isros-role-by-no-means-diminishing-space-agency-chairman-pawan-goenka-address-staff-s-privatisation-concerns-11788708171870.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 88,
+          "cluster_id": 6,
+          "text": "ISRO stated that strategic and nationally critical capabilities will continue to be governed by security, safety, quality, and national-interest considerations under government ownership.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/completely-baseless-isro-rejects-reports-of-privatisation-calls-them-incorrect-101788708794158.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 89,
+          "cluster_id": 6,
+          "text": "The letter to ISRO leadership was signed by employee associations from centres including the ISRO Staff Association, SHAR Employees Association, and ISAC Employees Association.",
+          "kind": "background",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/completely-baseless-isro-rejects-reports-of-privatisation-calls-them-incorrect-101788708794158.html",
+          "source_kind": "fulltext"
+        }
+      ]
+    }
+  ],
+  "clusters_with_no_claims": []
+}
