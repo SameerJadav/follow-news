@@ -1,0 +1,690 @@
+{
+  "dials": {
+    "WEIGHT_FLOOR": 5,
+    "TIER_WEIGHT": {
+      "lead": 4,
+      "major": 2,
+      "notable": 0
+    },
+    "WIKI_BONUS": 2,
+    "HARD_CAP": 12,
+    "MIN_STORIES_IF_ANY": 3,
+    "MAX_ARTICLES_PER_STORY": 5
+  },
+  "floor_relaxed": false,
+  "kept_weights": [
+    9,
+    9,
+    8,
+    6,
+    6,
+    5,
+    10
+  ],
+  "per_section": {
+    "world": 6,
+    "india": 1
+  },
+  "clusters": [
+    {
+      "headline_hint": "Far-right AfD wins historic victory in Germany's Saxony-Anhalt state election",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "lead",
+      "article_ids": [
+        58,
+        63,
+        134,
+        180,
+        188,
+        209,
+        218,
+        222,
+        223,
+        225,
+        226,
+        232,
+        247,
+        250,
+        270,
+        312
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        58,
+        63,
+        134,
+        180,
+        188,
+        209,
+        218,
+        222,
+        223,
+        225,
+        226,
+        232,
+        247,
+        250,
+        270,
+        312
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 5,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 9,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 4,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "What are the implications of AfD’s electoral rise for Germany and Europe?",
+          "url": "https://www.aljazeera.com/video/inside-story/2026/9/7/what-are-the-implications-of-afds-electoral-rise-for-germany-and-europe?traffic_source=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Only the beginning? German far-right's breakthrough shakes Europe to its core",
+          "url": "https://www.france24.com/en/tv-shows/the-debate/20260907-only-the-beginning-german-far-right-s-breakthrough-shakes-europe-to-its-core"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "German chancellor vows to stay in office despite AfD triumph in state election",
+          "url": "https://www.theguardian.com/world/2026/sep/07/german-chancellor-friedrich-merz-cdu-afd-saxony-anhalt"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Shifting right? What AfD's victory in Germany means for Europe, Russia &amp; US",
+          "url": "https://timesofindia.indiatimes.com/world/europe/europe-turning-right-what-afds-victory-in-germany-means-for-europe-russia-us/articleshow/133875702.cms"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Germany's far-right AfD says 'democracy demands' parties work with them after state election win",
+          "url": "https://www.bbc.co.uk/news/articles/cpd0113082eo?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 11
+    },
+    {
+      "headline_hint": "At least 7 dead in Delhi PG building collapse, HC orders high-level MCD probe",
+      "section": "india",
+      "category": "disaster",
+      "tier_requested": "lead",
+      "article_ids": [
+        38,
+        70,
+        73,
+        86,
+        102,
+        155,
+        164,
+        165,
+        189,
+        207,
+        234,
+        248,
+        267,
+        268,
+        282,
+        284,
+        285,
+        291,
+        298,
+        306
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        38,
+        70,
+        73,
+        86,
+        102,
+        155,
+        164,
+        165,
+        189,
+        207,
+        234,
+        248,
+        267,
+        268,
+        282,
+        284,
+        285,
+        291,
+        298,
+        306
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 6,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 10,
+      "weight_terms": {
+        "distinct_outlets": 6,
+        "tier_weight": 4,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "NDTV",
+          "title": "Gift Amid Grief: Delhi Building Collapse Victim's Family Donates His Corneas",
+          "url": "https://www.ndtv.com/india-news/delhi-building-collapse-victim-arpits-family-donates-his-corneas-12015406#publisher=newsstand"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Satya Niketan collapse: Why did Delhi Police arrest a retired IAF sergeant and family? What was found during probe?",
+          "url": "https://www.livemint.com/news/india/satya-niketan-collapse-why-did-delhi-police-arrest-a-retired-iaf-sergeant-and-family-what-was-found-during-probe-11788797463842.html"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "CJP's 7 demands after Satya Niketan tragedy: ‘Probe PG mafia, build government hostels’",
+          "url": "https://www.hindustantimes.com/india-news/cockroach-janta-party-saurav-das-cjp-7-demands-after-satya-niketan-pg-collapse-probe-pg-mafia-build-government-hostels-101788788387827.html"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "7 dead in Delhi PG collapse: Hostel agreement said ‘not responsible’ for any tragedy",
+          "url": "https://timesofindia.indiatimes.com/city/delhi/7-dead-in-satya-niketan-tragedy-hostel-agreement-said-not-responsible-for-casualties-or-risk/articleshow/133883346.cms"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "Rush Hour: Delhi building collapse toll rises to 7, court summons journalist Sudhir Chaudhary & more",
+          "url": "https://scroll.in/latest/1095559/rush-hour-delhi-building-collapse-toll-rises-to-7-court-summons-journalist-sudhir-chaudhary-more?utm_source=rss&utm_medium=public"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 15
+    },
+    {
+      "headline_hint": "US envoys Witkoff and Kushner hold peace talks in Ukraine after Moscow meeting",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "major",
+      "article_ids": [
+        31,
+        103,
+        280,
+        281,
+        323
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        31,
+        103,
+        280,
+        281,
+        323
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 6,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Channel News Asia",
+          "title": "US envoy sees 'movement' toward three-way talks with Russia, Ukraine",
+          "url": "https://www.channelnewsasia.com/world/us-envoy-sees-movement-toward-three-way-talks-russia-ukraine-6368071"
+        },
+        {
+          "outlet": "France 24",
+          "title": "'What we see right now is that Putin has zero interest in ending the war', Ukrainian MP Yasko says",
+          "url": "https://www.france24.com/en/what-we-see-right-now-is-that-putin-has-zero-interest-in-ending-the-war-ukrainian-mp-yasko-says"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "Kushner and Witkoff visit Ukraine with hopes of restarting peace talks with Russia",
+          "url": "https://www.npr.org/2026/09/07/nx-s1-5959692/kushner-and-witkoff-visit-ukraine-with-hopes-of-restarting-peace-talks-with-russia"
+        },
+        {
+          "outlet": "DW World",
+          "title": "US envoys Witkoff and Kushner hold Ukraine talks after meeting Putin",
+          "url": "https://www.dw.com/en/us-envoys-witkoff-and-kushner-hold-ukraine-talks-after-meeting-putin/a-79054779?maca=en-rss-en-world-4025-rdf"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "Former U.S. ambassador to Ukraine on efforts to strike a compromise with Russia",
+          "url": "https://www.npr.org/2026/09/07/nx-s1-5959696/former-u-s-ambassador-to-ukraine-on-efforts-to-strike-a-compromise-with-russia"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Strait of Hormuz disruptions surge oil prices as Iran and Oman seek safe route agreement",
+      "section": "world",
+      "category": "economy",
+      "tier_requested": "major",
+      "article_ids": [
+        26,
+        72,
+        100,
+        116
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        26,
+        72,
+        100,
+        116
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": true,
+      "wiki_event": "Oman's navy says that they have rescued 16 crew members from a Saudi Arabia-flagged oil tanker SIDR that was attacked a week ago in the Strait of Hormuz.",
+      "weight": 8,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "Oil prices surge as US-Iran strikes intensify in Strait of Hormuz",
+          "url": "https://www.aljazeera.com/economy/2026/9/7/oil-prices-surge-as-us-iran-strikes-intensify-in-strait-of-hormuz?traffic_source=rss"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "6-week high: India's crude import price hits $100-a-barrel mark",
+          "url": "https://timesofindia.indiatimes.com/business/india-business/6-week-high-indias-crude-import-price-hits-100-a-barrel-mark/articleshow/133895072.cms"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "India's Gulf Balancing Act Gets A Parliament Check-In",
+          "url": "https://www.ndtv.com/india-news/indias-gulf-balancing-act-gets-a-parliament-check-in-12015220#publisher=newsstand"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Strait of Hormuz deal: Iran and Oman to set temporary safe route as tanker traffic falls amid war",
+          "url": "https://www.livemint.com/news/world/strait-of-hormuz-deal-iran-and-oman-to-set-temporary-safe-route-as-tanker-traffic-falls-amid-war-11788804289846.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Israeli airstrikes on southern Lebanon kill at least 11 people including children",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "major",
+      "article_ids": [
+        22,
+        219,
+        235,
+        242
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        22,
+        219,
+        235,
+        242
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 2,
+      "wiki_backed": true,
+      "wiki_event": "Nine people, including two children, are killed, and five others are injured in an Israeli airstrike on a residential building in Kfar Reman, Lebanon. Separately, in the same city, two medics are killed in another airstrike on a vehicle.",
+      "weight": 6,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "France 24",
+          "title": "Israel intensifies South Lebanon strikes, killing 13 after weeks-long lull",
+          "url": "https://www.france24.com/en/middle-east/20260907-israeli-strikes-south-lebanon-violence"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Israeli strikes in southern Lebanese village kill 12",
+          "url": "https://www.bbc.co.uk/news/articles/c5yl96vz0edo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Israeli strikes on southern Lebanon kill 11",
+          "url": "https://www.france24.com/en/video/20260907-israeli-strikes-on-southern-lebanon-kill-11"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Two children among dead in Israeli strikes on Lebanon",
+          "url": "https://www.france24.com/en/video/20260907-two-children-among-dead-in-israeli-strikes-on-lebanon"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Amazon cargo plane crashes at Miami airport, killing 5 people",
+      "section": "world",
+      "category": "disaster",
+      "tier_requested": "major",
+      "article_ids": [
+        5,
+        15,
+        275,
+        310
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        5,
+        15,
+        275,
+        310
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 5,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "BBC World",
+          "title": "Flight recorders recovered from 'devastating' Amazon cargo plane crash",
+          "url": "https://www.bbc.co.uk/news/articles/ce8e32n8epeo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Federal investigators search for cause of Amazon cargo jet crash that killed five",
+          "url": "https://www.theguardian.com/us-news/2026/sep/07/amazon-cargo-plane-crash-miami-airport"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "5 dead after crash at Miami Airport. And, Germany's far-right wins state election",
+          "url": "https://www.npr.org/2026/09/07/g-s1-142210/up-first-newsletter-miami-plane-crash-ukraine-affirmative-for-germany"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Five killed as Amazon cargo plane crashes at Miami airport",
+          "url": "https://www.bbc.co.uk/news/videos/c4grd9mg3rvo?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Convicted war criminal Ratko Mladic buried with military honors in Belgrade",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        17,
+        20,
+        126,
+        198,
+        206
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        17,
+        20,
+        126,
+        198,
+        206
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 5,
+      "wiki_backed": true,
+      "wiki_event": "A military funeral and burial is held for convicted war criminal Ratko Mladić in Belgrade, Serbia, despite objections from the European Union.",
+      "weight": 9,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Channel News Asia",
+          "title": "Thousands bid farewell to Bosnian Serb war criminal in Belgrade",
+          "url": "https://www.channelnewsasia.com/world/thousands-bid-farewell-bosnian-serb-war-criminal-in-belgrade-6368116"
+        },
+        {
+          "outlet": "France 24",
+          "title": "EU says no place for 'glorification of war criminals' as Mladic buried",
+          "url": "https://www.france24.com/en/eu-says-no-place-for-glorification-of-war-criminals-as-mladic-buried"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Thousands attend funeral of war criminal Ratko Mladic in Serbia",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/7/thousands-attend-funeral-of-war-criminal-ratko-mladic-in-serbia?traffic_source=rss"
+        },
+        {
+          "outlet": "DW World",
+          "title": "War criminal Ratko Mladic buried with military honors in Belgrade, Serbia",
+          "url": "https://www.dw.com/en/war-criminal-ratko-mladic-buried-with-military-honors-in-belgrade-serbia/a-79148678?maca=en-rss-en-world-4025-rdf"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Thousands turn out in Serbia for funeral of  'Butcher of Bosnia' Ratko Mladić",
+          "url": "https://www.bbc.co.uk/news/articles/cn5dkk7yw74o?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "India clears Rs 1.1 lakh crore defense procurement proposals",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        37,
+        185
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        37,
+        185
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "Govt clears Rs 1.1 lakh crore proposals to buy military hardware",
+          "url": "https://timesofindia.indiatimes.com/defence/news/govt-clears-rs-1-1-lakh-crore-proposals-to-buy-military-hardware/articleshow/133896681.cms"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Rajnath Singh-led DAC clears military capability boost worth  ₹1.1 lakh crore",
+          "url": "https://www.hindustantimes.com/india-news/rajnath-singh-led-dac-clears-military-capability-boost-worth-rs-1-1-lakh-crore-101788795864802.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Allahabad HC quashes student's NSA detention, reprimands Noida DM",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        62,
+        129,
+        159,
+        161,
+        173
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        62,
+        129,
+        159,
+        161,
+        173
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "The Hindu",
+          "title": "‘Conduct worthy of derision’: Allahabad HC pulls up District Magistrate over NSA detention of law student",
+          "url": "https://www.thehindu.com/news/national/conduct-worthy-of-derision-allahabad-hc-pulls-up-district-magistrate-over-nsa-detention-of-law-student/article71439929.ece"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "'Orwellian Dystopia’: HC raps Noida DM over student’s detention during workers' protest",
+          "url": "https://timesofindia.indiatimes.com/india/workers-protest-will-reduce-up-to-orwellian-dystopia-allahabad-hc-raps-noida-dm-over-students-nsa-detention-labour/articleshow/133891619.cms"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "‘Conduct worthy of derision’: HC rebukes Noida DM over illegal NSA detention",
+          "url": "https://www.hindustantimes.com/india-news/conduct-worthy-of-derision-hc-rebukes-noida-dm-over-illegal-nsa-detention-101788800964879.html"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "‘Worthy of derision’: HC on Noida official order to detain 25-year-old activist under NSA",
+          "url": "https://scroll.in/latest/1095569/worthy-of-derision-hc-on-noida-official-who-detained-25-year-old-activist-after-noida-protests?utm_source=rss&utm_medium=public"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "'Orwellian dystopia': Allahabad HC reprimands Noida DM over DU student's NSA detention during Noida workers protest",
+          "url": "https://www.hindustantimes.com/india-news/allahabad-hc-reprimands-noida-dm-medha-roopam-over-du-student-akriti-chaudhary-nsa-detention-noida-worker-protest-101788795614779.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Gauhati HC directs Assam to pay compensation for woman wrongfully pushed to Bangladesh",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        112,
+        192,
+        319
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        112,
+        192,
+        319
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "The Hindu",
+          "title": "Assam told to pay ₹2 lakh to husband of woman pushed into Bangladesh",
+          "url": "https://www.thehindu.com/news/national/assam/assam-told-to-pay-2-lakh-to-husband-of-woman-pushed-into-bangladesh/article71439149.ece"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Gauhati HC orders Assam to pay  ₹2 lakh to family of woman pushed to Bangladesh",
+          "url": "https://www.hindustantimes.com/india-news/gauhati-hc-orders-assam-to-pay-rs-2-lakh-to-family-of-woman-pushed-to-bangladesh-101788794423171.html"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "In a first, Gauhati HC asks Assam government to pay Rs 2 lakh to woman pushed into Bangladesh",
+          "url": "https://scroll.in/article/1095539/in-a-first-gauhati-hc-asks-assam-government-to-pay-rs-2-lakh-to-woman-pushed-into-bangladesh?utm_source=rss&utm_medium=public"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "North Korea and Russia open first road bridge across shared border",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        295
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        295
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 1,
+      "wiki_backed": true,
+      "wiki_event": "North Korea and Russia opens their first road bridge at its border, solidifying its relationship.",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 1,
+        "tier_weight": 0,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "Russia and North Korea open first road bridge across their shared border",
+          "url": "https://www.theguardian.com/world/2026/sep/07/russia-north-korea-open-first-road-bridge-tumen-river"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Avalanche kills 11 climbers on Mount Mizhirgi in Russia",
+      "section": "world",
+      "category": "disaster",
+      "tier_requested": "notable",
+      "article_ids": [
+        202
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        202
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 1,
+      "wiki_backed": true,
+      "wiki_event": "Eleven climbers are killed and six others are injured after an avalanche struck a group of 33 on Mount Mizhirgi in Kabardino-Balkaria, Russia. Six other climbers are missing as rescuers continue search operations.",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 1,
+        "tier_weight": 0,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "France 24",
+          "title": "Avalanche kills at least 11 climbers in southern Russia",
+          "url": "https://www.france24.com/en/video/20260907-avalanche-kills-at-least-11-climbers-in-southern-russia"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    }
+  ]
+}
