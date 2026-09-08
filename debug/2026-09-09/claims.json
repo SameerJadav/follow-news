@@ -1,0 +1,818 @@
+{
+  "min_claim_chars": 20,
+  "max_claims_per_story": 24,
+  "calls": [
+    {
+      "label": "claims-world",
+      "cluster_ids": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "label": "claims-india",
+      "cluster_ids": [
+        4,
+        5
+      ]
+    }
+  ],
+  "rejected_claims": 0,
+  "rejected_clusters": 0,
+  "clusters": [
+    {
+      "cluster_id": 0,
+      "headline_hint": "US-Iran conflict expands as Houthis strike Saudi energy facilities and US hits Iranian tankers",
+      "section": "world",
+      "batch_position": 0,
+      "claim_count": 17,
+      "distinct_outlets": 5,
+      "source_kinds": {
+        "summary": 1,
+        "fulltext": 16
+      },
+      "claims": [
+        {
+          "id": 1,
+          "cluster_id": 0,
+          "text": "Yemen's Houthis launched drone and missile attacks against four southern Saudi cities on Tuesday, September 8, setting oil installations on fire and wounding dozens.",
+          "kind": "event",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/iran-us-war-expands-houthis-saudi-arabia-6371136",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 2,
+          "cluster_id": 0,
+          "text": "Saudi authorities reported that 73 people, including women and children, were hurt in the Houthi attacks across southern Saudi Arabia.",
+          "kind": "figure",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/iran-us-war-expands-houthis-saudi-arabia-6371136",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 3,
+          "cluster_id": 0,
+          "text": "US forces struck multiple Iranian tankers linked to the IRGC after Iranian attempts to hit a US Navy warship.",
+          "kind": "event",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/iran-us-war-expands-houthis-saudi-arabia-6371136",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 4,
+          "cluster_id": 0,
+          "text": "Iranian state media reported that a US missile struck an Iranian oil tanker 6km from Kharg Island and attacked another near Jask on the Gulf of Oman.",
+          "kind": "event",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/iran-us-war-expands-houthis-saudi-arabia-6371136",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 5,
+          "cluster_id": 0,
+          "text": "The IRGC warned crews aboard oil tankers in Kuwaiti and Bahraini ports to evacuate immediately, threatening to target the vessels.",
+          "kind": "event",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/iran-us-war-expands-houthis-saudi-arabia-6371136",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 6,
+          "cluster_id": 0,
+          "text": "The US Treasury announced new aviation-related sanctions aimed at grounding Iranian airlines.",
+          "kind": "event",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/iran-us-war-expands-houthis-saudi-arabia-6371136",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 7,
+          "cluster_id": 0,
+          "text": "Iran's IRGC stated it captured a US submersible near the Strait of Hormuz, while a US official said a defective underwater military drone had malfunctioned.",
+          "kind": "event",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/iran-us-war-expands-houthis-saudi-arabia-6371136",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 8,
+          "cluster_id": 0,
+          "text": "US officials told CNN that US strikes targeted multiple Iranian oil tankers linked to the Islamic Revolutionary Guard Corps near Kharg Island on Tuesday.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/middle-east/us-strikes-iranian-tankers-near-kharg-island-tehran-threatens-gulf-oil-vessels/articleshow/133942382.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 9,
+          "cluster_id": 0,
+          "text": "The Trump administration imposed sanctions targeting 27 Iranian airlines and nine service providers accused of supporting Mahan Air.",
+          "kind": "figure",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/middle-east/us-strikes-iranian-tankers-near-kharg-island-tehran-threatens-gulf-oil-vessels/articleshow/133942382.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 10,
+          "cluster_id": 0,
+          "text": "Iranian Armed Forces chief of staff Ali Abdollahi warned that any attack on Iranian oil tankers would trigger strikes against US bases across the region.",
+          "kind": "quote",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/world/iran-claims-us-missile-hit-tanker-near-kharg-island-irgc-says-mq-1-drone-downed-over-strait-of-hormuz-11788898120584.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 11,
+          "cluster_id": 0,
+          "text": "The IRGC claimed it intercepted and destroyed an MQ-1 drone over the Strait of Hormuz using a new Iranian air defence system.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/world/iran-claims-us-missile-hit-tanker-near-kharg-island-irgc-says-mq-1-drone-downed-over-strait-of-hormuz-11788898120584.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 12,
+          "cluster_id": 0,
+          "text": "International benchmark Brent crude briefly reached $99.46 a barrel on Tuesday amid rising Gulf tensions.",
+          "kind": "figure",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/world/iran-claims-us-missile-hit-tanker-near-kharg-island-irgc-says-mq-1-drone-downed-over-strait-of-hormuz-11788898120584.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 13,
+          "cluster_id": 0,
+          "text": "Iranian Foreign Minister Abbas Araghchi stated that talks with Oman on managing the Strait of Hormuz had achieved significant progress.",
+          "kind": "quote",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/world/iran-claims-us-missile-hit-tanker-near-kharg-island-irgc-says-mq-1-drone-downed-over-strait-of-hormuz-11788898120584.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 14,
+          "cluster_id": 0,
+          "text": "Israeli airstrikes in southern Lebanon on Monday killed 13 people, according to the Lebanese Health Ministry.",
+          "kind": "figure",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/world/iran-claims-us-missile-hit-tanker-near-kharg-island-irgc-says-mq-1-drone-downed-over-strait-of-hormuz-11788898120584.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 15,
+          "cluster_id": 0,
+          "text": "US Navy Capt Tim Hawkins stated that a defective older-model US drone surveillance submersible malfunctioned in regional waters and contained no sensitive data or classified radar equipment.",
+          "kind": "quote",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/us-news/2026/sep/08/iran-underwater-drone-strait-of-hormuz",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 16,
+          "cluster_id": 0,
+          "text": "The conflict has claimed the lives of 18 US service members.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/us-news/2026/sep/08/iran-underwater-drone-strait-of-hormuz",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 17,
+          "cluster_id": 0,
+          "text": "Fighting between government forces and Iran-backed Houthis in Yemen is raising fears of a return to full-scale war.",
+          "kind": "event",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/8/09-08-hosted-yemen-explainer?traffic_source=rss",
+          "source_kind": "summary"
+        }
+      ]
+    },
+    {
+      "cluster_id": 1,
+      "headline_hint": "UK, France, and Canada ban imports from West Bank settlements, prompting Israel to close British consulate",
+      "section": "world",
+      "batch_position": 1,
+      "claim_count": 14,
+      "distinct_outlets": 4,
+      "source_kinds": {
+        "summary": 1,
+        "fulltext": 13
+      },
+      "claims": [
+        {
+          "id": 18,
+          "cluster_id": 1,
+          "text": "Twelve countries, including Britain, France, Spain, and Canada, acted together in introducing or considering measures against trade with Israeli settlements in the West Bank.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c5ydlex9yn3o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 19,
+          "cluster_id": 1,
+          "text": "Israel ordered the closure of the UK's consulate in East Jerusalem and removed British representatives from the International Gaza Support Centre.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c5ydlex9yn3o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 20,
+          "cluster_id": 1,
+          "text": "The UK government banned goods from Israeli West Bank settlements, restricted services to settlements, and placed limits on arms sales that contribute to the occupation.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c5ydlex9yn3o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 21,
+          "cluster_id": 1,
+          "text": "British Foreign Secretary Ed Miliband stated that settler terrorism in parts of the West Bank amounted to ethnic cleansing of Palestinians while the Israeli government turned a blind eye.",
+          "kind": "quote",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c5ydlex9yn3o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 22,
+          "cluster_id": 1,
+          "text": "Palestinian ambassador Dr Husam Zomlot called the British government's trade decision a turning point in the UK-Palestine relationship.",
+          "kind": "quote",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c5ydlex9yn3o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 23,
+          "cluster_id": 1,
+          "text": "Israel announced the shutdown of the UK Consulate in occupied East Jerusalem following Britain's ban on settlement goods.",
+          "kind": "event",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/8/what-the-uk-ban-on-goods-from-illegal-israeli-settlements-really-means?traffic_source=rss",
+          "source_kind": "summary"
+        },
+        {
+          "id": 24,
+          "cluster_id": 1,
+          "text": "Israeli Foreign Minister Gideon Sa'ar announced retaliatory measures against the UK, including entry bans on 12 Britons such as former Labour leader Jeremy Corbyn and 10 MPs.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/politics/live/2026/sep/08/uk-us-trade-israel-sanctions-labour-ed-miliband-farage-latest-news-updates",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 25,
+          "cluster_id": 1,
+          "text": "UK Prime Minister Andy Burnham stated that targeted measures were brought forward not against the Israeli people, but in support of a two-state solution.",
+          "kind": "quote",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/politics/live/2026/sep/08/uk-us-trade-israel-sanctions-labour-ed-miliband-farage-latest-news-updates",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 26,
+          "cluster_id": 1,
+          "text": "UK Conservative Party leader Kemi Badenoch criticized the British government's decision to ban settlement trade and accused the Labour government of antisemitism.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/politics/live/2026/sep/08/uk-us-trade-israel-sanctions-labour-ed-miliband-farage-latest-news-updates",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 27,
+          "cluster_id": 1,
+          "text": "Britain, France, and Canada announced trade restrictions blocking imports from Israeli West Bank settlements.",
+          "kind": "event",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/israels-foreign-minister-says-it-closing-british-consulate-in-east-jerusalem-6370516",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 28,
+          "cluster_id": 1,
+          "text": "Canadian Foreign Minister Anita Anand stated on X that illegal settlements in the West Bank significantly undermine long-term peace objectives.",
+          "kind": "quote",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/israels-foreign-minister-says-it-closing-british-consulate-in-east-jerusalem-6370516",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 29,
+          "cluster_id": 1,
+          "text": "France cited the frenzied expansion of settlements and a flare-up of violence as its rationale for banning West Bank settlement goods.",
+          "kind": "quote",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/israels-foreign-minister-says-it-closing-british-consulate-in-east-jerusalem-6370516",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 30,
+          "cluster_id": 1,
+          "text": "US Secretary of State Marco Rubio stated Washington will not follow Britain, France, and Canada in blocking imports from Israeli settlements.",
+          "kind": "event",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/israels-foreign-minister-says-it-closing-british-consulate-in-east-jerusalem-6370516",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 31,
+          "cluster_id": 1,
+          "text": "Israel announced plans for 1,000 new West Bank homes on Tuesday.",
+          "kind": "figure",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/israels-foreign-minister-says-it-closing-british-consulate-in-east-jerusalem-6370516",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 2,
+      "headline_hint": "Canada's retaliatory tariffs on $20 billion of US goods take effect as trade dispute escalates",
+      "section": "world",
+      "batch_position": 2,
+      "claim_count": 12,
+      "distinct_outlets": 5,
+      "source_kinds": {
+        "fulltext": 12
+      },
+      "claims": [
+        {
+          "id": 32,
+          "cluster_id": 2,
+          "text": "Aluminum Association of Canada President Jean Simard stated that US industrial demand substantially exceeds domestic production capacity, making tariffs ineffective at reducing Canadian aluminum in the US market.",
+          "kind": "quote",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/tv-shows/spotlight/20260908-accelerating-diversification-canada-seeks-economic-sovereignty-amid-trump-s-nonsensical-posturing",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 33,
+          "cluster_id": 2,
+          "text": "Donald Trump threatened to block Canadian aircraft maker Bombardier from selling in the US market unless it moves manufacturing to the United States.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/us/trump-takes-trade-war-with-canada-to-ice/articleshow/133933622.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 34,
+          "cluster_id": 2,
+          "text": "Bombardier employs over 3,000 people in the US and works with roughly 2,800 American companies across 47 states.",
+          "kind": "figure",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/us/trump-takes-trade-war-with-canada-to-ice/articleshow/133933622.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 35,
+          "cluster_id": 2,
+          "text": "Canadian Prime Minister Mark Carney noted that Canada is the largest customer for US goods in 26 states.",
+          "kind": "figure",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/us/trump-takes-trade-war-with-canada-to-ice/articleshow/133933622.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 36,
+          "cluster_id": 2,
+          "text": "Canadian Prime Minister Mark Carney stated in a video address that Canada's trade pivot away from the US will come at a cost but is necessary to protect Canadian workers.",
+          "kind": "quote",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c8jdev0422jo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 37,
+          "cluster_id": 2,
+          "text": "Canada's counter-tariffs ranging from 15% to 50% came into force on Tuesday, targeting nearly C$28 billion ($20 billion) worth of American goods.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c8jdev0422jo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 38,
+          "cluster_id": 2,
+          "text": "The US maintains a 25% tariff on Canadian cars, trucks, steel, aluminium, and lumber, alongside 50% tariffs imposed in late August on Canadian dairy, alcohol, hockey sticks, and perfume.",
+          "kind": "background",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c8jdev0422jo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 39,
+          "cluster_id": 2,
+          "text": "Canada lost roughly 41,000 jobs in August following the collapse of trade negotiations and new US tariffs.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c8jdev0422jo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 40,
+          "cluster_id": 2,
+          "text": "Canada's retaliatory tariffs of up to 50% on around $20 billion of US goods went into effect at midnight on Tuesday.",
+          "kind": "event",
+          "outlet": "NPR World",
+          "url": "https://www.npr.org/2026/09/08/g-s1-142302/up-first-newsletter-trumpapalooza-amazon-cargo-plane-crash-canada-tariffs",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 41,
+          "cluster_id": 2,
+          "text": "The Gordie Howe International Bridge connecting Detroit, Michigan and Windsor, Ontario opened recently without US officials attending the event.",
+          "kind": "event",
+          "outlet": "DW World",
+          "url": "https://www.dw.com/en/us-canada-tariff-dispute-weighs-on-cross-border-ties/a-78815803?maca=en-rss-en-world-4025-rdf",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 42,
+          "cluster_id": 2,
+          "text": "The Financial Accountability Office of Ontario estimated the new tariff regime will cost 119,000 local jobs in Ontario in 2026.",
+          "kind": "figure",
+          "outlet": "DW World",
+          "url": "https://www.dw.com/en/us-canada-tariff-dispute-weighs-on-cross-border-ties/a-78815803?maca=en-rss-en-world-4025-rdf",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 43,
+          "cluster_id": 2,
+          "text": "US consumers faced record average new car sales prices exceeding $52,000 in September.",
+          "kind": "figure",
+          "outlet": "DW World",
+          "url": "https://www.dw.com/en/us-canada-tariff-dispute-weighs-on-cross-border-ties/a-78815803?maca=en-rss-en-world-4025-rdf",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 3,
+      "headline_hint": "Trump and Putin hold hour-long phone call as US seeks to revive Ukraine peace efforts",
+      "section": "world",
+      "batch_position": 3,
+      "claim_count": 14,
+      "distinct_outlets": 4,
+      "source_kinds": {
+        "fulltext": 14
+      },
+      "claims": [
+        {
+          "id": 44,
+          "cluster_id": 3,
+          "text": "US President Donald Trump held an hour-long phone call with Russian President Vladimir Putin on Tuesday, stating he wanted a swift end to the war in Ukraine.",
+          "kind": "event",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/europe/20260908-trump-tells-putin-he-wants-swift-end-to-ukraine-war-kremlin-says",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 45,
+          "cluster_id": 3,
+          "text": "The Putin-Trump call followed a weekend visit to Moscow and Kyiv by US envoys Steve Witkoff and Jared Kushner.",
+          "kind": "event",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/europe/20260908-trump-tells-putin-he-wants-swift-end-to-ukraine-war-kremlin-says",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 46,
+          "cluster_id": 3,
+          "text": "Kremlin aide Yuri Ushakov stated that Vladimir Putin told Donald Trump that Russia has no aggressive plans towards European states.",
+          "kind": "quote",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/europe/20260908-trump-tells-putin-he-wants-swift-end-to-ukraine-war-kremlin-says",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 47,
+          "cluster_id": 3,
+          "text": "Yuri Ushakov described the hour-long telephone call between Donald Trump and Vladimir Putin as constructive and quite frank.",
+          "kind": "quote",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/9/8/trump-putin-hold-frank-phone-call-as-us-restarts-ukraine-deal-efforts?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 48,
+          "cluster_id": 3,
+          "text": "Ukrainian President Volodymyr Zelenskyy thanked Donald Trump for allowing US envoys Steve Witkoff and Jared Kushner to visit Ukraine despite ongoing fighting.",
+          "kind": "event",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/9/8/trump-putin-hold-frank-phone-call-as-us-restarts-ukraine-deal-efforts?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 49,
+          "cluster_id": 3,
+          "text": "Russian strikes on Tuesday morning killed at least five civilians and wounded 25 others in Kyiv, while Ukrainian attacks caused casualties in Bryansk, Kursk, and Crimea.",
+          "kind": "figure",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/9/8/trump-putin-hold-frank-phone-call-as-us-restarts-ukraine-deal-efforts?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 50,
+          "cluster_id": 3,
+          "text": "US envoys Steve Witkoff and Jared Kushner met Vladimir Putin in Moscow on Saturday for over three hours before traveling to Kyiv on Sunday.",
+          "kind": "figure",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/us-news/trump-putin-hold-hour-long-phone-call-on-ukraine-war-us-seeks-to-revive-stalled-peace-talks-11788882716964.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 51,
+          "cluster_id": 3,
+          "text": "Ukrainian President Volodymyr Zelenskyy stated following talks with US envoys that he did not see a quick end to the conflict.",
+          "kind": "quote",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/us-news/trump-putin-hold-hour-long-phone-call-on-ukraine-war-us-seeks-to-revive-stalled-peace-talks-11788882716964.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 52,
+          "cluster_id": 3,
+          "text": "Ukrainian President Volodymyr Zelenskyy stated that the peace ideas presented by US envoy Jared Kushner included a couple of very good, worthwhile ideas.",
+          "kind": "quote",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/us/putin-trump-hold-1-hour-call-after-visit-by-us-envoys-to-broker-russia-ukraine-peace/articleshow/133930129.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 53,
+          "cluster_id": 3,
+          "text": "Volodymyr Zelenskyy expressed hope to meet Donald Trump around September 20 during the UN General Assembly in New York.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/us/putin-trump-hold-1-hour-call-after-visit-by-us-envoys-to-broker-russia-ukraine-peace/articleshow/133930129.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 54,
+          "cluster_id": 3,
+          "text": "UK Defence Secretary Wes Streeting stated Ukraine requires 300 Patriot missiles, 500 air-to-air interceptors, and $2 billion for additional drones.",
+          "kind": "figure",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/us/putin-trump-hold-1-hour-call-after-visit-by-us-envoys-to-broker-russia-ukraine-peace/articleshow/133930129.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 55,
+          "cluster_id": 3,
+          "text": "The European Commission approved a 3.2 billion euro ($3.7 billion) loan for Kyiv to purchase components for Patriot air defence systems.",
+          "kind": "figure",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/us/putin-trump-hold-1-hour-call-after-visit-by-us-envoys-to-broker-russia-ukraine-peace/articleshow/133930129.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 56,
+          "cluster_id": 3,
+          "text": "Kremlin spokesman Dmitry Peskov stated that Russia remains confident in its military potential and believes victory is very close on the battlefield.",
+          "kind": "quote",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/us/putin-trump-hold-1-hour-call-after-visit-by-us-envoys-to-broker-russia-ukraine-peace/articleshow/133930129.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 57,
+          "cluster_id": 3,
+          "text": "The Institute for the Study of War reported that Russian forces will not seize Donetsk until 2032 at their current rate of advance.",
+          "kind": "figure",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/us/putin-trump-hold-1-hour-call-after-visit-by-us-envoys-to-broker-russia-ukraine-peace/articleshow/133930129.cms",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 4,
+      "headline_hint": "Fatal Delhi building collapse triggers MCD demolition drive and Supreme Court review",
+      "section": "india",
+      "batch_position": 0,
+      "claim_count": 15,
+      "distinct_outlets": 4,
+      "source_kinds": {
+        "fulltext": 15
+      },
+      "claims": [
+        {
+          "id": 58,
+          "cluster_id": 4,
+          "text": "A five-storey building housing a boys' paying guest accommodation in Satya Niketan collapsed on Sunday afternoon, killing seven people and injuring several others.",
+          "kind": "figure",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/no-forms-no-questions-just-come-good-samaritan-s-offer-to-displaced-students-after-satya-niketan-building-collapse-11788887816594.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 59,
+          "cluster_id": 4,
+          "text": "Harteerath Singh Ahluwalia of the Hemkunt Foundation announced that Gurdwara Moti Bagh is offering free shelter and food to students displaced by the Satya Niketan building collapse.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/no-forms-no-questions-just-come-good-samaritan-s-offer-to-displaced-students-after-satya-niketan-building-collapse-11788887816594.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 60,
+          "cluster_id": 4,
+          "text": "Delhi Police arrested property owner Urmila Gupta, her husband Hariram Gupta, and their son Mahesh Gupta on charges of culpable homicide and negligence following the building collapse.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/no-forms-no-questions-just-come-good-samaritan-s-offer-to-displaced-students-after-satya-niketan-building-collapse-11788887816594.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 61,
+          "cluster_id": 4,
+          "text": "Labour contractor Sanoj was apprehended by police in Kasganj, Uttar Pradesh, for questioning in connection with the Satya Niketan collapse.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/no-forms-no-questions-just-come-good-samaritan-s-offer-to-displaced-students-after-satya-niketan-building-collapse-11788887816594.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 62,
+          "cluster_id": 4,
+          "text": "The Satya Niketan building was undergoing basement repairs and ground-floor commercial extension renovation work when it collapsed.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/no-forms-no-questions-just-come-good-samaritan-s-offer-to-displaced-students-after-satya-niketan-building-collapse-11788887816594.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 63,
+          "cluster_id": 4,
+          "text": "A Supreme Court bench of Justices Ahsanuddin Amanullah and R Mahadevan agreed to examine PG building collapses and safety concerns across India.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/no-forms-no-questions-just-come-good-samaritan-s-offer-to-displaced-students-after-satya-niketan-building-collapse-11788887816594.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 64,
+          "cluster_id": 4,
+          "text": "Satya Niketan experienced a previous building collapse in April 2022 that killed two people and injured four others.",
+          "kind": "background",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/no-forms-no-questions-just-come-good-samaritan-s-offer-to-displaced-students-after-satya-niketan-building-collapse-11788887816594.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 65,
+          "cluster_id": 4,
+          "text": "Bhupendra Jaj, whose son Arpit died in the Satya Niketan building collapse, urged parents not to send their children to Delhi to study.",
+          "kind": "quote",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/dont-send-your-children-to-delhi-to-study-fathers-appeal-to-parents-after-losing-son-in-satya-niketan-tragedy-101788884449144.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 66,
+          "cluster_id": 4,
+          "text": "The family of deceased student Arpit Jaj donated his undamaged eye to a patient in need following his death in the collapse.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/dont-send-your-children-to-delhi-to-study-fathers-appeal-to-parents-after-losing-son-in-satya-niketan-tragedy-101788884449144.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 67,
+          "cluster_id": 4,
+          "text": "Delhi Chief Minister Rekha Gupta instructed the Municipal Corporation of Delhi to demolish a dilapidated building adjacent to the collapse site in Satya Niketan.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/dont-send-your-children-to-delhi-to-study-fathers-appeal-to-parents-after-losing-son-in-satya-niketan-tragedy-101788884449144.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 68,
+          "cluster_id": 4,
+          "text": "The Municipal Corporation of Delhi demolished 24 properties and sealed seven illegal structures across Delhi following the Satya Niketan collapse.",
+          "kind": "figure",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/satya-niketan-building-collapse-mcd-crackdown-begins-across-delhi-24-properties-demolished-7-sealed/articleshow/133930245.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 69,
+          "cluster_id": 4,
+          "text": "The Municipal Corporation of Delhi suspended South Zone deputy commissioner Rakesh Kumar and four engineers pending disciplinary proceedings.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/satya-niketan-building-collapse-mcd-crackdown-begins-across-delhi-24-properties-demolished-7-sealed/articleshow/133930245.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 70,
+          "cluster_id": 4,
+          "text": "Delhi Lieutenant Governor Taranjit Singh Sandhu ordered a structural audit of all buildings in paying guest accommodation hubs within a week.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/satya-niketan-building-collapse-mcd-crackdown-begins-across-delhi-24-properties-demolished-7-sealed/articleshow/133930245.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 71,
+          "cluster_id": 4,
+          "text": "The Delhi High Court criticized Delhi University and municipal authorities for failing to provide adequate hostel facilities, forcing students into unsafe paying guest accommodations.",
+          "kind": "event",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/latest/1095577/very-very-pathetic-hc-criticises-delhi-university-civil-body-over-building-collapse?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 72,
+          "cluster_id": 4,
+          "text": "A Delhi High Court bench comprising Chief Justice DK Upadhyaya and Justice Tejas Karia directed the MCD to inspect all paying guest accommodations and submit a compliance report within a week.",
+          "kind": "event",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/latest/1095577/very-very-pathetic-hc-criticises-delhi-university-civil-body-over-building-collapse?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 5,
+      "headline_hint": "PM Modi calls for global expansion of UPI and homegrown financial standards at Fintech Festival",
+      "section": "india",
+      "batch_position": 1,
+      "claim_count": 7,
+      "distinct_outlets": 2,
+      "source_kinds": {
+        "fulltext": 7
+      },
+      "claims": [
+        {
+          "id": 73,
+          "cluster_id": 5,
+          "text": "Prime Minister Narendra Modi inaugurated the seventh edition of the Global Fintech Fest and urged the fintech ecosystem to expand UPI's global reach.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/pm-modi-says-upi-now-live-in-11-countries-pushes-for-further-global-reach-101788885696468.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 74,
+          "cluster_id": 5,
+          "text": "Prime Minister Narendra Modi stated that India's economy achieved 7.8 per cent real GDP growth in the June quarter despite challenges from the West Asia conflict.",
+          "kind": "figure",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/pm-modi-says-upi-now-live-in-11-countries-pushes-for-further-global-reach-101788885696468.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 75,
+          "cluster_id": 5,
+          "text": "Real-time payment transactions using UPI reached 24.51 billion as of August.",
+          "kind": "figure",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/pm-modi-says-upi-now-live-in-11-countries-pushes-for-further-global-reach-101788885696468.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 76,
+          "cluster_id": 5,
+          "text": "The UPI platform is currently live in 11 countries and is linked with Singapore's local payment system.",
+          "kind": "figure",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/pm-modi-says-upi-now-live-in-11-countries-pushes-for-further-global-reach-101788885696468.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 77,
+          "cluster_id": 5,
+          "text": "Prime Minister Narendra Modi urged the fintech industry to focus on non-payment transactions, including access to savings products, pensions, and insurance.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/pm-modi-says-upi-now-live-in-11-countries-pushes-for-further-global-reach-101788885696468.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 78,
+          "cluster_id": 5,
+          "text": "Japan Credit Rating Agency upgraded India's sovereign credit rating to 'A-' from 'BBB+', its first such upgrade for India in three decades.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/pm-modi-says-upi-now-live-in-11-countries-pushes-for-further-global-reach-101788885696468.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 79,
+          "cluster_id": 5,
+          "text": "RBI Governor Sanjay Malhotra stated at the Global Fintech Fest that Indian fintech firms have reshaped finance by taking banking directly into the hands of every citizen.",
+          "kind": "quote",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/pm-modi-fintech-global-fintech-fest-upi-11788877570482.html",
+          "source_kind": "fulltext"
+        }
+      ]
+    }
+  ],
+  "clusters_with_no_claims": []
+}

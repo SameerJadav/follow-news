@@ -1,0 +1,702 @@
+{
+  "dials": {
+    "WEIGHT_FLOOR": 5,
+    "TIER_WEIGHT": {
+      "lead": 4,
+      "major": 2,
+      "notable": 0
+    },
+    "WIKI_BONUS": 2,
+    "HARD_CAP": 12,
+    "MIN_STORIES_IF_ANY": 3,
+    "MAX_ARTICLES_PER_STORY": 5
+  },
+  "floor_relaxed": false,
+  "kept_weights": [
+    14,
+    12,
+    10,
+    8,
+    7,
+    7
+  ],
+  "per_section": {
+    "world": 4,
+    "india": 2
+  },
+  "clusters": [
+    {
+      "headline_hint": "US-Iran conflict expands as Houthis strike Saudi energy facilities and US hits Iranian tankers",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "lead",
+      "article_ids": [
+        3,
+        24,
+        27,
+        33,
+        46,
+        47,
+        49,
+        57,
+        151,
+        183,
+        235,
+        299,
+        304
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        3,
+        24,
+        27,
+        33,
+        46,
+        47,
+        49,
+        57,
+        151,
+        183,
+        235,
+        299,
+        304
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 8,
+      "wiki_backed": true,
+      "wiki_event": "Houthi forces launch ballistic missiles and drones at several locations in Saudi Arabia, injuring 73 people, including civilians, and causing fires that temporarily halt operations at some energy facilities.",
+      "weight": 14,
+      "weight_terms": {
+        "distinct_outlets": 8,
+        "tier_weight": 4,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Channel News Asia",
+          "title": "War expands as Iran-backed Houthis attack Saudi cities and US strikes Iranian tankers",
+          "url": "https://www.channelnewsasia.com/world/iran-us-war-expands-houthis-saudi-arabia-6371136"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "US strikes Iranian tankers near Kharg Island; Tehran threatens Gulf oil vessels",
+          "url": "https://timesofindia.indiatimes.com/world/middle-east/us-strikes-iranian-tankers-near-kharg-island-tehran-threatens-gulf-oil-vessels/articleshow/133942382.cms"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "US strikes Iranian tankers after attempted missile attacks on its Navy warship: Report",
+          "url": "https://www.livemint.com/news/world/iran-claims-us-missile-hit-tanker-near-kharg-island-irgc-says-mq-1-drone-downed-over-strait-of-hormuz-11788898120584.html"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Iran claims to have seized American drone US says had ‘malfunctioned’",
+          "url": "https://www.theguardian.com/us-news/2026/sep/08/iran-underwater-drone-strait-of-hormuz"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "What’s happening in the Yemen war?",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/8/09-08-hosted-yemen-explainer?traffic_source=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 8
+    },
+    {
+      "headline_hint": "UK, France, and Canada ban imports from West Bank settlements, prompting Israel to close British consulate",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        23,
+        28,
+        39,
+        90,
+        94,
+        99,
+        120,
+        125,
+        165,
+        167,
+        172,
+        201,
+        206,
+        207,
+        217,
+        219,
+        245,
+        247
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        23,
+        28,
+        39,
+        90,
+        94,
+        99,
+        120,
+        125,
+        165,
+        167,
+        172,
+        201,
+        206,
+        207,
+        217,
+        219,
+        245,
+        247
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 8,
+      "wiki_backed": true,
+      "wiki_event": "In return to the sanctions by the UK government, the Israeli government announces it will close the UK consulate in East Jerusalem. Israel also forbids Britain from participating in the US-led mission for Gaza, and bans some British officia",
+      "weight": 12,
+      "weight_terms": {
+        "distinct_outlets": 8,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "BBC World",
+          "title": "Paul Adams: British-Israeli relations at lowest ebb in decades",
+          "url": "https://www.bbc.co.uk/news/articles/c5ydlex9yn3o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "What the UK ban on goods from illegal Israeli settlements really means",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/8/what-the-uk-ban-on-goods-from-illegal-israeli-settlements-really-means?traffic_source=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "UK, France, ⁠Canada sanction Israeli West Bank goods",
+          "url": "https://www.france24.com/en/tv-shows/a-propos/20260908-uk-france-canada-sanction-israeli-west-bank-goods"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Burnham says Britain will ‘continue to act in support of our values’ after UK launches sanctions on Israel – as it happened",
+          "url": "https://www.theguardian.com/politics/live/2026/sep/08/uk-us-trade-israel-sanctions-labour-ed-miliband-farage-latest-news-updates"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "Israel's foreign minister says it is closing British consulate in East Jerusalem",
+          "url": "https://www.channelnewsasia.com/world/israels-foreign-minister-says-it-closing-british-consulate-in-east-jerusalem-6370516"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 13
+    },
+    {
+      "headline_hint": "Canada's retaliatory tariffs on $20 billion of US goods take effect as trade dispute escalates",
+      "section": "world",
+      "category": "economy",
+      "tier_requested": "major",
+      "article_ids": [
+        41,
+        58,
+        81,
+        173,
+        220,
+        269,
+        278,
+        283,
+        322,
+        329
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        41,
+        58,
+        81,
+        173,
+        220,
+        269,
+        278,
+        283,
+        322,
+        329
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 6,
+      "wiki_backed": true,
+      "wiki_event": "Canada's retaliatory tariffs of 15% to 50% on CA$27.6 billion (US$19.9 billion) of U.S. goods, including steel, dairy products, appliances, agricultural equipment, paper products, and electronics, take effect in response to U.S. tariffs on ",
+      "weight": 10,
+      "weight_terms": {
+        "distinct_outlets": 6,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "France 24",
+          "title": "Accelerating diversification: Canada seeks economic sovereignty amid Trump's 'nonsensical' posturing",
+          "url": "https://www.france24.com/en/tv-shows/spotlight/20260908-accelerating-diversification-canada-seeks-economic-sovereignty-amid-trump-s-nonsensical-posturing"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Trump takes trade war with Canada to ice",
+          "url": "https://timesofindia.indiatimes.com/world/us/trump-takes-trade-war-with-canada-to-ice/articleshow/133933622.cms"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Carney says US trade war 'will come at a cost' as Canada strikes back on tariffs",
+          "url": "https://www.bbc.co.uk/news/articles/c8jdev0422jo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "GOP to host unusual midterm convention. And, Canada's retaliatory tariffs take effect",
+          "url": "https://www.npr.org/2026/09/08/g-s1-142302/up-first-newsletter-trumpapalooza-amazon-cargo-plane-crash-canada-tariffs"
+        },
+        {
+          "outlet": "DW World",
+          "title": "US-Canada tariff dispute weighs on cross-border ties",
+          "url": "https://www.dw.com/en/us-canada-tariff-dispute-weighs-on-cross-border-ties/a-78815803?maca=en-rss-en-world-4025-rdf"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 5
+    },
+    {
+      "headline_hint": "Trump and Putin hold hour-long phone call as US seeks to revive Ukraine peace efforts",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        92,
+        122,
+        130,
+        181,
+        218
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        92,
+        122,
+        130,
+        181,
+        218
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": true,
+      "wiki_event": "Russia launches drones and missiles at Kyiv, Ukraine, following a weekend pause in strikes, killing five people and injuring at least 10. The attacks damage civilian infrastructure at at least 16 locations and cause fires in five districts.",
+      "weight": 8,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "France 24",
+          "title": "Trump tells Putin he wants swift end to Ukraine war, Kremlin says",
+          "url": "https://www.france24.com/en/europe/20260908-trump-tells-putin-he-wants-swift-end-to-ukraine-war-kremlin-says"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Trump, Putin hold ‘frank’ phone call as US revives Ukraine peace efforts",
+          "url": "https://www.aljazeera.com/news/2026/9/8/trump-putin-hold-frank-phone-call-as-us-restarts-ukraine-deal-efforts?traffic_source=rss"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Trump, Putin hold hour-long phone call on Ukraine war; US seeks to revive stalled peace talks",
+          "url": "https://www.livemint.com/news/us-news/trump-putin-hold-hour-long-phone-call-on-ukraine-war-us-seeks-to-revive-stalled-peace-talks-11788882716964.html"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Putin, Trump hold 1-hour call after visit by US envoys to broker Russia-Ukraine peace",
+          "url": "https://timesofindia.indiatimes.com/world/us/putin-trump-hold-1-hour-call-after-visit-by-us-envoys-to-broker-russia-ukraine-peace/articleshow/133930129.cms"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Missiles or mediation? Trump envoys shuttle between Russia and Ukraine",
+          "url": "https://www.france24.com/en/tv-shows/the-debate/20260908-missiles-or-mediation-trump-envoys-shuttle-between-russia-and-ukraine"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "UK air traffic control technical failure causes widespread flight disruptions and cancellations",
+      "section": "world",
+      "category": "technology",
+      "tier_requested": "notable",
+      "article_ids": [
+        13,
+        37,
+        52,
+        184,
+        194
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        13,
+        37,
+        52,
+        184,
+        194
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "UK air traffic control problem strands hundreds of thousands of passengers",
+          "url": "https://www.theguardian.com/business/2026/sep/08/air-traffic-control-issue-flights-delays-disruption-uk"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Hundreds of flights delayed, cancelled after UK air traffic control glitch",
+          "url": "https://www.aljazeera.com/news/2026/9/8/hundreds-of-flights-delayed-cancelled-after-uk-air-traffic-control-glitch?traffic_source=rss"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Over 600 flights cancelled as air traffic control glitch disrupts UK airports",
+          "url": "https://timesofindia.indiatimes.com/world/europe/nearly-300-flights-cancelled-across-uk-after-air-traffic-control-glitch-major-airports-hit/articleshow/133932658.cms"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Major UK ATC failure cancels 300 flights: Heathrow, Manchester hit; EasyJet, British Airways warn of delays",
+          "url": "https://www.livemint.com/news/world/uk-airports-ground-flights-over-air-traffic-control-issue-easyjet-british-airways-heathrow-gatwick-manchester-11788881979362.html"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Hundreds of UK flights disrupted by air traffic control glitch",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/8/hundreds-of-uk-flights-disrupted-by-air-traffic-control-glitch?traffic_source=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Australia introduces bill to let social media users opt out of feed algorithms",
+      "section": "world",
+      "category": "technology",
+      "tier_requested": "notable",
+      "article_ids": [
+        0,
+        241,
+        293,
+        305,
+        320
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        0,
+        241,
+        293,
+        305,
+        320
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "Australian politics live: Albanese makes ‘no apology’ for $6m golf club grant in own electorate; Victorian bills may rise by $100 under Coalition",
+          "url": "https://www.theguardian.com/australia-news/live/2026/sep/09/coalition-victoria-energy-bills-labor-one-nation-super-digital-duty-of-care-ntwnfb"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "Australian social media users to be offered choice to opt out of algorithms",
+          "url": "https://www.npr.org/2026/09/08/g-s1-142311/australian-social-media-users-to-be-offered-choice-to-opt-out-of-algorithms"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Australia picks new fight with social media cos? Labour govt proposes legislation to allow users to decide algorithm",
+          "url": "https://www.livemint.com/news/world/australia-picks-new-fight-with-social-media-cos-labour-govt-proposes-legislation-to-allow-users-to-decide-algorithm-11788857199049.html"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "'Good to have choice': Australians on opting out of social media algorithms",
+          "url": "https://www.bbc.co.uk/news/videos/clyl2dnjgkro?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Australia to force social media platforms to allow users to opt out of algorithms",
+          "url": "https://www.theguardian.com/australia-news/2026/sep/08/australia-social-media-algorithm-switch-off-opt-out-digital-duty-of-care"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "PM Modi calls for global expansion of UPI and homegrown financial standards at Fintech Festival",
+      "section": "india",
+      "category": "economy",
+      "tier_requested": "lead",
+      "article_ids": [
+        160,
+        203,
+        223
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        160,
+        203,
+        223
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 4,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Hindustan Times",
+          "title": "PM Modi says UPI now live in 11 countries, pushes for further global reach",
+          "url": "https://www.hindustantimes.com/india-news/pm-modi-says-upi-now-live-in-11-countries-pushes-for-further-global-reach-101788885696468.html"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "PM Modi urges fintech sector to expand beyond UPI into savings, credit and insurance",
+          "url": "https://www.livemint.com/news/india/pm-modi-fintech-global-fintech-fest-upi-11788877570482.html"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "At Fintect Fest, PM Modi Pushes For Global Expansion Of UPI",
+          "url": "https://www.ndtv.com/india-news/at-fintect-fest-pm-narendra-modi-pushes-for-global-expansion-of-upi-12019171#publisher=newsstand"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Fatal Delhi building collapse triggers MCD demolition drive and Supreme Court review",
+      "section": "india",
+      "category": "disaster",
+      "tier_requested": "major",
+      "article_ids": [
+        63,
+        114,
+        149,
+        152,
+        188,
+        216,
+        281,
+        291,
+        321,
+        325
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        63,
+        114,
+        149,
+        152,
+        188,
+        216,
+        281,
+        291,
+        321,
+        325
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 5,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "NDTV",
+          "title": "Delhi's Hauz Rani Fire, Hostel Collapse: 3 Officials, 2 Tragedies, 1 Question",
+          "url": "https://www.ndtv.com/india-news/delhi-pg-building-collapse-5-officials-suspended-court-orders-high-level-inquiry-12015545#publisher=newsstand"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "‘No forms, no questions—just come’: Good Samaritan’s offer to displaced students after Satya Niketan building collapse",
+          "url": "https://www.livemint.com/news/india/no-forms-no-questions-just-come-good-samaritan-s-offer-to-displaced-students-after-satya-niketan-building-collapse-11788887816594.html"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "'Don't send your children to Delhi to study': Father's appeal to parents after losing son in Satya Niketan tragedy",
+          "url": "https://www.hindustantimes.com/india-news/dont-send-your-children-to-delhi-to-study-fathers-appeal-to-parents-after-losing-son-in-satya-niketan-tragedy-101788884449144.html"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Satya Niketan building collapse: MCD crackdown begins; 24 properties demolished",
+          "url": "https://timesofindia.indiatimes.com/india/satya-niketan-building-collapse-mcd-crackdown-begins-across-delhi-24-properties-demolished-7-sealed/articleshow/133930245.cms"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "‘Very, very pathetic’: HC criticises Delhi University, civil body over building collapse",
+          "url": "https://scroll.in/latest/1095577/very-very-pathetic-hc-criticises-delhi-university-civil-body-over-building-collapse?utm_source=rss&utm_medium=public"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 5
+    },
+    {
+      "headline_hint": "India and China hold military commander level border talks in Arunachal Pradesh sector",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        61,
+        171
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        61,
+        171
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "Ahead of Brics, India &amp; China hold military talks in Arunachal",
+          "url": "https://timesofindia.indiatimes.com/india/1st-corps-commander-level-india-china-talks-in-eastern-sector-held-over-2-days-mea-says-ties-gradually-moving-in-positive-direction/articleshow/133940419.cms"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "India, China military commanders hold rare border talks in Arunachal sector",
+          "url": "https://www.hindustantimes.com/india-news/india-china-military-commanders-hold-rare-border-talks-in-arunachal-sector-101788885955110.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "NIA charge sheet drops UAPA anti-terror charges against US national and six Ukrainians",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        15,
+        174,
+        230,
+        238
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        15,
+        174,
+        230,
+        238
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "NIA drops UAPA against American, 6 Ukrainians held in 'terror link' case",
+          "url": "https://timesofindia.indiatimes.com/india/nia-drops-uapa-against-american-6-ukrainians-held-in-terror-link-case/articleshow/133942670.cms"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "No Terror Charges Yet On US Mercenary Matthew VanDyke, 6 Ukrainians In 'Drone Training' Case",
+          "url": "https://www.ndtv.com/india-news/no-terror-charges-yet-on-us-national-matthew-vandyke-6-ukrainians-in-drone-training-case-12019778#publisher=newsstand"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "NIA chargesheets 7 foreigners arrested for suspected links with Myanmar armed groups",
+          "url": "https://scroll.in/latest/1095607/nia-chargesheets-7-foreigners-arrested-for-suspected-links-with-myanmar-armed-groups?utm_source=rss&utm_medium=public"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "In NIA charge sheet, no terror charges against US national VanDyke, 6 Ukrainians",
+          "url": "https://www.hindustantimes.com/india-news/in-nia-charge-sheet-no-terror-charges-against-us-national-vandyke-6-ukrainians-101788874731469.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Fatal beating of Manipuri musician in Delhi sparks political row",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        119,
+        134,
+        264,
+        311
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        119,
+        134,
+        264,
+        311
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "NDTV",
+          "title": "Vigil In Manipur Over Musician's Death, Chief Minister Writes To Rekha Gupta",
+          "url": "https://www.ndtv.com/india-news/chongtham-vikram-vigil-in-manipur-over-musicians-death-chief-minister-writes-to-rekha-gupta-12020252#publisher=newsstand"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Guitarist, music teacher: Who was Chongtham Vikram Singh, Manipuri singer killed in Delhi",
+          "url": "https://www.hindustantimes.com/india-news/guitarist-music-teacher-who-was-chongtham-vikram-singh-manipuri-singer-killed-in-delhi-101788865564002.html"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "Manipuri musician beaten to death in Delhi for objecting to noise outside his home",
+          "url": "https://scroll.in/latest/1095575/manipuri-musician-beaten-to-death-in-delhi-for-objecting-to-noise-outside-his-home?utm_source=rss&utm_medium=public"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "After Manipur Musician Beaten To Death In Delhi, Kiren Rijiju vs Rahul Gandhi Over \"Playing Politics\"",
+          "url": "https://www.ndtv.com/india-news/after-manipur-musician-chongtham-vikram-singh-killed-in-delhi-kiren-rijiju-vs-rahul-gandhi-12018148#publisher=newsstand"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    }
+  ]
+}
