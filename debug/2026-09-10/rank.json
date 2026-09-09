@@ -1,0 +1,924 @@
+{
+  "dials": {
+    "WEIGHT_FLOOR": 5,
+    "TIER_WEIGHT": {
+      "lead": 4,
+      "major": 2,
+      "notable": 0
+    },
+    "WIKI_BONUS": 2,
+    "HARD_CAP": 12,
+    "MIN_STORIES_IF_ANY": 3,
+    "MAX_ARTICLES_PER_STORY": 5
+  },
+  "floor_relaxed": false,
+  "kept_weights": [
+    12,
+    6,
+    5,
+    5,
+    5,
+    5,
+    7,
+    7
+  ],
+  "per_section": {
+    "world": 6,
+    "india": 2
+  },
+  "clusters": [
+    {
+      "headline_hint": "US and Iran exchange heavy maritime strikes as Middle East conflict pushes crude oil above $100",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "lead",
+      "article_ids": [
+        42,
+        55,
+        93,
+        113,
+        140,
+        175,
+        193,
+        276,
+        326
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        42,
+        55,
+        93,
+        113,
+        140,
+        175,
+        193,
+        276,
+        326
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 6,
+      "wiki_backed": true,
+      "wiki_event": "Iran's Islamic Revolutionary Guard Corps launch missiles at the Muwaffaq Salti Air Base in Azraq, Jordan, reporting damage to maintenance facilities, deployment areas, and hangars. Jordan says its forces have intercepted 18 Iranian missiles",
+      "weight": 12,
+      "weight_terms": {
+        "distinct_outlets": 6,
+        "tier_weight": 4,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "Trump says Iran war ‘will end immediately’ after US midterm elections",
+          "url": "https://www.aljazeera.com/news/2026/9/9/trump-says-iran-war-will-end-immediately-after-us-midterm-elections?traffic_source=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Iran and US strike tankers in biggest shipping attack since war began",
+          "url": "https://www.france24.com/en/middle-east/20260909-iran-and-us-strike-tankers-in-biggest-shipping-attack-since-war-began"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "'They're desperate to affect election': Trump declares Iran war will end after midterms",
+          "url": "https://timesofindia.indiatimes.com/world/us/theyre-desperate-to-affect-election-trump-declares-iran-war-will-end-after-us-midterms/articleshow/133982252.cms"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Oil prices rise above $100 a barrel for first time since July as Iran war escalates",
+          "url": "https://www.theguardian.com/business/2026/sep/09/oil-prices-rise-iran-war-brent-crude-inflation-higher-interest-rates"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Oil hits $100 a barrel for first time since July after US and Houthi strikes",
+          "url": "https://www.bbc.co.uk/news/articles/cyvznqypz0yo?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 4
+    },
+    {
+      "headline_hint": "IAEA board refers Iran to UN Security Council over nuclear non-compliance",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        59,
+        61,
+        103
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        59,
+        61,
+        103
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 5,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "IAEA board refers Iran to UN Security Council over nuclear ‘non-compliance’",
+          "url": "https://www.aljazeera.com/news/2026/9/9/iaea-board-resolves-to-report-iran-to-security-council-over-nuclear-program?traffic_source=rss"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Iran referred to UN Security Council for nuclear non-compliance",
+          "url": "https://www.bbc.co.uk/news/articles/ckgwj4kl5lno?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Iran Nuclear Impasse Deepens After US Wins UN Watchdog Vote",
+          "url": "https://www.livemint.com/news/us-news/iran-nuclear-impasse-deepens-after-us-wins-un-watchdog-vote-11788981453559.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Twelve nations including UK, France, and Canada impose sanctions on West Bank Israeli settlements",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        52,
+        151,
+        162,
+        182,
+        227,
+        236
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        52,
+        151,
+        162,
+        182,
+        227,
+        236
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 5,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "Burnham defends UK ban on Israeli settlement trade",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/9/burnham-defends-uk-ban-on-israeli-settlement-trade?traffic_source=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Senior UK rabbis come out in support of sanctions on Israeli settlements",
+          "url": "https://www.theguardian.com/politics/2026/sep/09/senior-uk-rabbis-come-out-in-support-of-sanctions-on-israeli-settlements"
+        },
+        {
+          "outlet": "France 24",
+          "title": "12 countries including France, UK and Canada to sanction Israeli settlements",
+          "url": "https://www.france24.com/en/video/20260909-12-countries-including-france-uk-and-canada-to-sanction-israeli-settlements"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "‘It’s a good start’: prominent Israelis welcome UK sanctions on illegal settlements",
+          "url": "https://www.theguardian.com/world/2026/sep/09/israelis-welcome-uk-sanctions-on-settlements-palestine-west-bank"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Israel sanctions will not hurt intelligence sharing between spy agencies, says Miliband",
+          "url": "https://www.theguardian.com/politics/2026/sep/09/israel-sanctions-will-not-hurt-intelligence-sharing-between-spy-agencies-says-miliband"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 1
+    },
+    {
+      "headline_hint": "US-Canada trade war escalates as Washington bans imports of Canadian dairy, alcohol, and motorcycles",
+      "section": "world",
+      "category": "economy",
+      "tier_requested": "major",
+      "article_ids": [
+        282,
+        341
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        282,
+        341
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "BBC World",
+          "title": "US to ban imports of some Canadian alcohol, dairy goods and motorbikes",
+          "url": "https://www.bbc.co.uk/news/articles/c99dm1000p7o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "US bans Canadian dairy, alcohol and motorcycles as trade war escalates",
+          "url": "https://www.theguardian.com/us-news/2026/sep/08/trump-canada-trade-war-dairy-alcohol"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Republicans open midterm convention in Dallas with Donald Trump at center stage",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        1,
+        41,
+        118,
+        323
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        1,
+        41,
+        118,
+        323
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 5,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "Republicans’ midterm convention kicks off as national party chair says event will be about ‘defying history’ – live",
+          "url": "https://www.theguardian.com/us-news/live/2026/sep/09/donald-trump-rnc-republican-national-convention-jd-vance-midterms-latest-news-updates"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Trump 'believes in the power of his own charisma', analyst says",
+          "url": "https://www.france24.com/en/tv-shows/a-propos/20260909-trump-believes-in-the-power-of-his-own-charisma-analyst-says"
+        },
+        {
+          "outlet": "DW World",
+          "title": "Trump takes center stage at Republican midterm convention",
+          "url": "https://www.dw.com/en/trump-takes-center-stage-at-republican-midterm-convention/a-79189744?maca=en-rss-en-world-4025-rdf"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Republicans put Trump center stage in US midterms gamble",
+          "url": "https://www.france24.com/en/republicans-put-trump-center-stage-in-us-midterms-gamble"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "German Chancellor Merz clashes with AfD and cancels call with Trump after far-right election win",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        179,
+        201,
+        220,
+        244,
+        247
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        179,
+        201,
+        220,
+        244,
+        247
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 5,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Scroll.in",
+          "title": "How will the victory by Germany’s far-right AfD in a state election affect the country’s politics?",
+          "url": "https://scroll.in/article/1095594/how-will-the-victory-by-germanys-far-right-afd-in-a-state-election-affect-the-countrys-politics?utm_source=rss&utm_medium=public"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Germany’s Merz cancels phone call with Trump after social media post celebrating AfD win – as it happened",
+          "url": "https://www.theguardian.com/world/live/2026/sep/09/europe-ukraine-russia-zelenskyy-germany-merz-afd-norway-king-harald-v-latest-news-updates"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Germany's Merz attacks AfD in stormy debate after far-right election win",
+          "url": "https://www.bbc.co.uk/news/articles/c98679wr78do?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "‘I fear the price could be high’: Inside the German state where the far-right surged",
+          "url": "https://www.theguardian.com/world/2026/sep/09/i-fear-the-price-could-be-high-inside-the-german-state-where-the-far-right-surged"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Merz accuses AfD of ‘ethnic cleansing’ policy and cancels call with Trump",
+          "url": "https://www.theguardian.com/world/2026/sep/09/friedrich-merz-afd-far-right-accused-seeking-ethnic-cleansing-saxony-anhalt-election"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Apple unveils iPhone 18 Pro series and its first foldable smartphone, the iPhone Duo",
+      "section": "world",
+      "category": "technology",
+      "tier_requested": "major",
+      "article_ids": [
+        69,
+        109,
+        125,
+        143,
+        148,
+        153
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        69,
+        109,
+        125,
+        143,
+        148,
+        153
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 6,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "Apple debuts $1,999 passport-shaped foldable phone, called Duo",
+          "url": "https://www.aljazeera.com/economy/2026/9/9/apple-debuts-1999-passport-shaped-foldable-phone-called-duo?traffic_source=rss"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Apple increases prices of iPhone 17 series, iPhone Air &amp; iPhone 16",
+          "url": "https://timesofindia.indiatimes.com/technology/tech-news/apple-increases-prices-of-all-iphones-in-india-heres-how-much-iphone-17-series-iphone-air-iphone-16-cost-now/articleshow/133981549.cms"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "Apple iPhone Launch Event Live Updates: Apple Launches First Foldable iPhone, Gives Hat-Tip To iPad",
+          "url": "https://www.ndtv.com/india-news/iphone-18-apple-watch-apple-iphone-launch-event-live-updates-apples-set-to-unveil-first-foldable-iphone-12024766#publisher=newsstand"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "iPhone 18 India prices: Pro starts at  ₹1,64,900; Pro Max priced from  ₹1,79,900",
+          "url": "https://www.hindustantimes.com/india-news/iphone-18-india-prices-revealed-pro-starts-at-rs-1-64-900-pro-max-priced-from-rs-179900-101788754308434.html"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Apple's 1st foldable phone launched: Specifications, features &amp; price in India of iPhone Duo",
+          "url": "https://timesofindia.indiatimes.com/technology/tech-news/apple-iphone-duo-launched-specifications-features-and-price/articleshow/133980600.cms"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 1
+    },
+    {
+      "headline_hint": "UK flight chaos continues following air traffic control system failure",
+      "section": "world",
+      "category": "disaster",
+      "tier_requested": "notable",
+      "article_ids": [
+        12,
+        184,
+        331
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        12,
+        184,
+        331
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "‘Everyone’s had their holidays ruined’: outrage after UK airport chaos",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/9/everyones-had-their-holidays-ruined-outrage-after-uk-airport-chaos?traffic_source=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Air traffic control boss given a week to report after UK flight chaos causes 2,000 cancellations",
+          "url": "https://www.theguardian.com/world/2026/sep/09/uk-flight-cancellations-nats-martin-rolfe-heidi-alexander"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "UK air traffic control fault disrupts over 1,000 flights, airlines call for reform; Air India issues advisory for flyers",
+          "url": "https://www.livemint.com/news/world/uk-air-traffic-control-fault-disrupts-over-1-000-flights-airlines-call-for-reform-air-india-issues-advisory-for-flyers-11788924382068.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Anthropic safety researcher quits over existential AI risks as company discloses security breach",
+      "section": "world",
+      "category": "technology",
+      "tier_requested": "notable",
+      "article_ids": [
+        79,
+        183,
+        187,
+        315
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        79,
+        183,
+        187,
+        315
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Channel News Asia",
+          "title": "Anthropic discloses fourth AI hacking incident missed in earlier review",
+          "url": "https://www.channelnewsasia.com/business/anthropic-discloses-fourth-ai-hacking-incident-missed-in-earlier-review-6373916"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "AI-pocalypse now? Anthropic gearheads sound alarm over advances",
+          "url": "https://timesofindia.indiatimes.com/technology/tech-news/ai-pocalypse-now-anthropic-gearheads-sound-alarm-over-advances/articleshow/133975625.cms"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "Opinion: Opinion | The Insider's Warning: Why Anthropic Researcher's Resignation Is Big",
+          "url": "https://www.ndtv.com/opinion/the-insiders-warning-why-anthropic-researchers-resignation-should-worry-us-12023478#publisher=newsstand"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "‘It could kill us all’: Anthropic researcher quits over AI safety concerns",
+          "url": "https://scroll.in/latest/1095620/it-could-kill-us-all-anthropic-researcher-quits-over-ai-safety-concerns?utm_source=rss&utm_medium=public"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Plane carrying Ukrainian President Volodymyr Zelenskyy nearly hit by drone in Moldova",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "notable",
+      "article_ids": [
+        65,
+        134
+      ],
+      "verdict": "cut:below_floor(2<5)",
+      "valid_ids": [
+        65,
+        134
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 2,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "Zelenskyy's plane nearly hit by drone while taking off from Moldova",
+          "url": "https://timesofindia.indiatimes.com/world/europe/zelenskyys-plane-nearly-hit-by-drone-while-taking-off-from-moldova-norway-pm/articleshow/133983144.cms"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Zelenskyy’s plane ‘almost hit’ by drone on way to Oslo, Norwegian PM says",
+          "url": "https://www.aljazeera.com/news/2026/9/9/zelenskyys-plane-almost-hit-by-drone-on-way-to-oslo-norwegian-pm-says?traffic_source=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "New Delhi prepares to host 18th BRICS Summit as PM Modi sets bilateral meetings",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "lead",
+      "article_ids": [
+        10,
+        205,
+        270,
+        272,
+        303,
+        306
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        10,
+        205,
+        270,
+        272,
+        303,
+        306
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 4,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "Brics to kick off with talks to boost multilateralism",
+          "url": "https://timesofindia.indiatimes.com/india/brics-to-kick-off-with-talks-to-boost-multilateralism/articleshow/133985269.cms"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Piyush Goyal to meet Russian counterpart Anton Alikhanov on Thursday",
+          "url": "https://www.hindustantimes.com/india-news/piyush-goyal-to-meet-russian-counterpart-anton-alikhanov-on-thursday-101788967149886.html"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "BRICS Summit 2026: Dates, venue, timings and complete itinerary",
+          "url": "https://www.livemint.com/news/india/brics-summit-2026-dates-venue-timings-and-complete-itinerary-11788941919316.html"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Traffic advisory in Delhi till 10pm for BRICS motorcade rehearsal: 35+ roads hit, airport routes diverted",
+          "url": "https://www.hindustantimes.com/india-news/traffic-advisory-in-delhi-from-7pm-to-10pm-for-brics-motorcade-rehearsal-35-roads-hit-airport-routes-diverted-sept-9-101788951384800.html"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "PM Modi's gala dinner, sessions, family photo and more: Full schedule of BRICS Summit 2026",
+          "url": "https://www.hindustantimes.com/india-news/pm-modis-gala-dinner-meets-family-photo-and-more-full-schedule-of-brics-summit-2026-101788947955525.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 1
+    },
+    {
+      "headline_hint": "Crackdown on unsafe PG hostels follows fatal Delhi building collapse in Satya Niketan",
+      "section": "india",
+      "category": "disaster",
+      "tier_requested": "major",
+      "article_ids": [
+        133,
+        185,
+        188,
+        197,
+        254,
+        285,
+        314,
+        321
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        133,
+        185,
+        188,
+        197,
+        254,
+        285,
+        314,
+        321
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 5,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "NDTV",
+          "title": "3 Delhi Hostel Buildings Declared Dangerous After Satya Niketan Tragedy",
+          "url": "https://www.ndtv.com/india-news/3-delhi-hostel-buildings-declared-dangerous-after-satya-niketan-tragedy-12025321#publisher=newsstand"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "MCD surveys 1,252 PG buildings after Satya Niketan tragedy; 3 found 'dangerous', 9 need major repairs",
+          "url": "https://www.hindustantimes.com/india-news/mcd-surveys-1252-pg-buildings-after-delhis-satya-niketan-pg-collapse-3-found-dangerous-9-need-major-repairs-101788969453508.html"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "3 trucks of debris, 1 missing wall: How renovation doomed Delhi PG building",
+          "url": "https://timesofindia.indiatimes.com/city/delhi/delhi-building-collapse-renovation-3-truckloads-of-debris-and-wall-removal-weakened-structure-probe-finds/articleshow/133969454.cms"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "Why social media thinks government intentionally slowed internet after Delhi building collapse",
+          "url": "https://scroll.in/article/1095624/why-social-media-thinks-government-intentionally-slowed-internet-after-delhi-building-collapse?utm_source=rss&utm_medium=public"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Delhi Satya Niketan building collapse: PG operator arrested, adjacent unsafe building demolished | Top updates",
+          "url": "https://www.livemint.com/news/india/delhi-satya-niketan-building-collapse-pg-operator-arrested-adjacent-unsafe-building-demolished-top-updates-11788933027984.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 3
+    },
+    {
+      "headline_hint": "US suspends Cognizant's green card PERM filings amid immigration fraud probe",
+      "section": "india",
+      "category": "economy",
+      "tier_requested": "major",
+      "article_ids": [
+        166,
+        192
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        166,
+        192
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Hindustan Times",
+          "title": "US suspends Cognizant's green card filings: How will the move affect Indians?",
+          "url": "https://www.hindustantimes.com/india-news/us-suspends-cognizants-green-card-filings-how-will-the-move-affect-indians-101788964618745.html"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "US suspends Cognizant’s green-card filings amid visa fraud probe",
+          "url": "https://timesofindia.indiatimes.com/world/us/us-suspends-cognizants-green-card-filings-amid-visa-fraud-probe/articleshow/133974893.cms"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Scaffolding collapse at under-construction complex in Gujarat's Gandhinagar traps several workers",
+      "section": "india",
+      "category": "disaster",
+      "tier_requested": "notable",
+      "article_ids": [
+        78,
+        131,
+        155,
+        167
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        78,
+        131,
+        155,
+        167
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "The Hindu",
+          "title": "15 workers rescued, 12 hospitalised after iron slab collapses at construction site in Gandhinagar",
+          "url": "https://www.thehindu.com/news/national/gujarat/workers-rescued-several-feared-trapped-as-iron-slab-falls-at-building-site-in-gandhinagar/article71448971.ece"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Scaffolding collapses at under-construction complex in Gujarat's Gandhinagar; 12 workers rescued, 10 still trapped",
+          "url": "https://www.hindustantimes.com/india-news/scaffolding-collapses-at-under-construction-complex-in-gujarat-gandhinagar-12-workers-rescued-10-still-trapped-101788977897797.html"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "Several Feared Trapped As Crane Collapses At Construction Site In Gandhinagar",
+          "url": "https://www.ndtv.com/india-news/several-feared-trapped-as-crane-collapses-at-construction-site-in-gandhinagar-12025027#publisher=newsstand"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Over 10 feared trapped as under-construction building collapses in Gandhinagar",
+          "url": "https://timesofindia.indiatimes.com/city/ahmedabad/gandhinagar-building-collapse-portion-of-under-construction-structure-collapses-in-kudasan-rescue-on/articleshow/133978356.cms"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Joint probe launched in Odisha after five smuggled infant orangutans are rescued",
+      "section": "india",
+      "category": "climate",
+      "tier_requested": "notable",
+      "article_ids": [
+        262,
+        263,
+        294,
+        312
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        262,
+        263,
+        294,
+        312
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Scroll.in",
+          "title": "Five infant orangutans found in Odisha forests, trafficking probe launched",
+          "url": "https://scroll.in/latest/1095638/five-infant-orangutans-found-in-odisha-forests-trafficking-probe-launched?utm_source=rss&utm_medium=public"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Black SUV caught on CCTV in focus as police probe possible trafficking of orangutans in Odisha's Balasore",
+          "url": "https://www.hindustantimes.com/india-news/black-suv-caught-on-cctv-in-focus-as-police-probe-possible-trafficking-of-orangutans-in-odisha-balasore-101788954011477.html"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Baby orangutans found in Indian forest spark trafficking inquiry",
+          "url": "https://www.bbc.co.uk/news/articles/cvgynv90599o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Joint probe launched into smuggling of 5 orangutans in Odisha's Balasore",
+          "url": "https://www.hindustantimes.com/india-news/joint-probe-launched-into-smuggling-of-5-orangutans-in-odisha-s-balasore-101788945677383.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Union Cabinet approves Rs 20,804 crore for eight railway multi-tracking projects",
+      "section": "india",
+      "category": "economy",
+      "tier_requested": "notable",
+      "article_ids": [
+        28,
+        191
+      ],
+      "verdict": "cut:below_floor(2<5)",
+      "valid_ids": [
+        28,
+        191
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 2,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "8 railway multi-tracking projects worth Rs 20,804 crore approved",
+          "url": "https://timesofindia.indiatimes.com/india/8-railway-multi-tracking-projects-worth-rs-20804-crore-approved/articleshow/133984650.cms"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "CCEA clears  ₹20,804 crore rail upgrade to ease congestion across 9 states",
+          "url": "https://www.hindustantimes.com/india-news/cceaclears-20-804-crore-rail-upgrade-to-ease-congestion-across-9-states-101788969310550.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Political clash erupts between National Conference, Congress, and BJP over Vande Mataram protocol",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        27,
+        75,
+        157,
+        207
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        27,
+        75,
+        157,
+        207
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "'Rahul mian' can't grasp Vande importance: Nitin Nabin",
+          "url": "https://timesofindia.indiatimes.com/india/rahul-mian-cant-grasp-vande-importance-nitin-nabin/articleshow/133984692.cms"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "National Conference, Congress exchange barbs after Omar, Farooq stand for full version of Vande Mataram",
+          "url": "https://www.thehindu.com/news/national/national-conference-congress-exchangebarbs-after-omar-farooq-stand-for-full-version-of-vande-mataram/article71448175.ece"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "BJP asks Gujarat Congress MLA to apologise for sitting during Vande Mataram",
+          "url": "https://www.hindustantimes.com/india-news/bjp-asks-gujarat-congress-mla-to-apologise-for-sitting-during-vande-mataram-101788967030222.html"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "NC tells Congress: Full Vande Mataram a constitutional duty",
+          "url": "https://timesofindia.indiatimes.com/india/nc-tells-congress-full-vande-mataram-a-constitutional-duty/articleshow/133982734.cms"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    }
+  ]
+}
