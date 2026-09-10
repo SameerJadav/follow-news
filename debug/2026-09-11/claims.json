@@ -1,0 +1,867 @@
+{
+  "min_claim_chars": 20,
+  "max_claims_per_story": 24,
+  "calls": [
+    {
+      "label": "claims-world",
+      "cluster_ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "label": "claims-india",
+      "cluster_ids": [
+        6,
+        7
+      ]
+    }
+  ],
+  "rejected_claims": 0,
+  "rejected_clusters": 0,
+  "clusters": [
+    {
+      "cluster_id": 0,
+      "headline_hint": "Houthis capture strategic Yemeni port city of Mokha as crude oil prices surge past $100",
+      "section": "world",
+      "batch_position": 0,
+      "claim_count": 14,
+      "distinct_outlets": 5,
+      "source_kinds": {
+        "fulltext": 13,
+        "summary": 1
+      },
+      "claims": [
+        {
+          "id": 1,
+          "cluster_id": 0,
+          "text": "The benchmark US oil contract West Texas Intermediate rose above $100 a barrel on September 10 after Houthis seized Mocha.",
+          "kind": "figure",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/surging-oil-prices-higher-bond-yields-weigh-stocks-6377296",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 2,
+          "cluster_id": 0,
+          "text": "Brent crude soared more than 6 percent past $107 a barrel on September 10, hitting its highest level since May.",
+          "kind": "figure",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/surging-oil-prices-higher-bond-yields-weigh-stocks-6377296",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 3,
+          "cluster_id": 0,
+          "text": "The 30-year US Treasury bond yield reached 5.36 percent, marking a new peak since 2007.",
+          "kind": "figure",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/surging-oil-prices-higher-bond-yields-weigh-stocks-6377296",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 4,
+          "cluster_id": 0,
+          "text": "US producer price inflation climbed to 5.4 percent in August, up from 4.8 percent in July.",
+          "kind": "figure",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/surging-oil-prices-higher-bond-yields-weigh-stocks-6377296",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 5,
+          "cluster_id": 0,
+          "text": "A Yemeni military source told AFP that Houthi forces were advancing towards the strategic Bab al-Mandab strait.",
+          "kind": "event",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/surging-oil-prices-higher-bond-yields-weigh-stocks-6377296",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 6,
+          "cluster_id": 0,
+          "text": "Rystad Energy analyst Jorge Leon stated that oil flow through the Strait of Hormuz dropped from around 8 million barrels per day in late August to between 1.5 million and 2 million barrels per day.",
+          "kind": "quote",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/surging-oil-prices-higher-bond-yields-weigh-stocks-6377296",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 7,
+          "cluster_id": 0,
+          "text": "The European Central Bank increased its benchmark interest rate to 2.5 percent on September 10.",
+          "kind": "event",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/surging-oil-prices-higher-bond-yields-weigh-stocks-6377296",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 8,
+          "cluster_id": 0,
+          "text": "Fighting reignited in Yemen as Houthi forces pushed south towards the Bab al-Mandab Strait.",
+          "kind": "event",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/10/whats-happening-in-yemen-and-how-did-we-get-here-3?traffic_source=rss",
+          "source_kind": "summary"
+        },
+        {
+          "id": 9,
+          "cluster_id": 0,
+          "text": "The port city of Mokha is located approximately 80 kilometers (50 miles) from the Bab el-Mandeb Strait.",
+          "kind": "background",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/iran-backed-houthi-rebels-take-strategic-port-city-in-yemen-raising-threat-to-red-sea-shipping",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 10,
+          "cluster_id": 0,
+          "text": "Military sources and witnesses told the BBC that Houthis captured the Red Sea port city of Mokha from Saudi-backed forces.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/middle-east/houthis-seize-yemens-strategic-red-sea-port-city-of-mokha-from-saudi-backed-forces/articleshow/134025249.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 11,
+          "cluster_id": 0,
+          "text": "Pro-government commander Tarek Salah stated his forces relocated their command centre on the west coast to a safe location.",
+          "kind": "quote",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/middle-east/houthis-seize-yemens-strategic-red-sea-port-city-of-mokha-from-saudi-backed-forces/articleshow/134025249.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 12,
+          "cluster_id": 0,
+          "text": "A Yemeni military source told AFP that Houthi fighters captured Zuqar Island in the Red Sea following rocket barrages and a boat assault.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c4g7vr0lngwo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 13,
+          "cluster_id": 0,
+          "text": "Houthi spokesman Yahya Sarea stated Saudi warplanes carried out 64 air strikes across four western Yemeni provinces within 24 hours.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c4g7vr0lngwo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 14,
+          "cluster_id": 0,
+          "text": "Saudi authorities reported that Houthi missile and drone strikes on September 8 injured 73 civilians and temporarily halted operations at multiple oil facilities.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c4g7vr0lngwo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 1,
+      "headline_hint": "Cargo ship fire at Qingdao port in China leaves at least 25 dead",
+      "section": "world",
+      "batch_position": 1,
+      "claim_count": 8,
+      "distinct_outlets": 4,
+      "source_kinds": {
+        "summary": 1,
+        "fulltext": 7
+      },
+      "claims": [
+        {
+          "id": 15,
+          "cluster_id": 1,
+          "text": "At least 25 people were killed after a fire broke out aboard a ship at a shipyard in China.",
+          "kind": "figure",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/10/09-10-china-shipyard-fire-clip-mp4?traffic_source=rss",
+          "source_kind": "summary"
+        },
+        {
+          "id": 16,
+          "cluster_id": 1,
+          "text": "CCTV reported 25 people were killed in a fire on a foreign-flagged cargo vessel docked in Qingdao, China.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cj4jyv7l92eo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 17,
+          "cluster_id": 1,
+          "text": "Out of 42 people on board the vessel, 17 were evacuated and five were hospitalized in stable condition.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cj4jyv7l92eo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 18,
+          "cluster_id": 1,
+          "text": "The ship fire in Qingdao began around 11:15 local time during maintenance and was extinguished just over three hours later.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cj4jyv7l92eo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 19,
+          "cluster_id": 1,
+          "text": "The ship involved was the Ocean Melody, a 190-meter Liberia-flagged carrier that arrived in Qingdao on August 31.",
+          "kind": "background",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cj4jyv7l92eo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 20,
+          "cluster_id": 1,
+          "text": "Chinese President Xi Jinping instructed authorities to thoroughly investigate fire hazards and strictly hold responsible parties to account.",
+          "kind": "quote",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/world/china-cargo-ship-fire-20-killed-5-missing-xi-jinping-calls-for-search-and-rescue-ops-11789040067421.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 21,
+          "cluster_id": 1,
+          "text": "A shipyard explosion in Fujian province in August killed a rescue worker and injured 12 people.",
+          "kind": "background",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/world/china-cargo-ship-fire-20-killed-5-missing-xi-jinping-calls-for-search-and-rescue-ops-11789040067421.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 22,
+          "cluster_id": 1,
+          "text": "Five people remain missing following the cargo vessel fire at a shipyard in Qingdao.",
+          "kind": "figure",
+          "outlet": "DW World",
+          "url": "https://www.dw.com/en/china-cargo-ship-fire-kills-at-least-25/a-79212704?maca=en-rss-en-world-4025-rdf",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 2,
+      "headline_hint": "US Republicans hold midterm convention in Dallas as Trump promises $5,000 dividend for Americans",
+      "section": "world",
+      "batch_position": 2,
+      "claim_count": 10,
+      "distinct_outlets": 5,
+      "source_kinds": {
+        "fulltext": 9,
+        "summary": 1
+      },
+      "claims": [
+        {
+          "id": 23,
+          "cluster_id": 2,
+          "text": "RNC chair Joe Gruters opened the second night of the Republican midterm convention in Dallas, marking the one-year anniversary of Charlie Kirk's death.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/us-news/live/2026/sep/10/donald-trump-republican-midterm-convention-dividend-offer-5000-vance-latest-news-updates",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 24,
+          "cluster_id": 2,
+          "text": "House Speaker Mike Johnson warned convention delegates that swing-seat Democrats vote with socialists and that communists will be in Congress next year.",
+          "kind": "quote",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/us-news/live/2026/sep/10/donald-trump-republican-midterm-convention-dividend-offer-5000-vance-latest-news-updates",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 25,
+          "cluster_id": 2,
+          "text": "Prosecutor Joe diGenova resigned from leading a Justice Department inquiry targeting former government officials who investigated Donald Trump.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/us-news/live/2026/sep/10/donald-trump-republican-midterm-convention-dividend-offer-5000-vance-latest-news-updates",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 26,
+          "cluster_id": 2,
+          "text": "Donald Trump stated to CBS News that he does not believe Congress would need to approve proposed $5,000 checks for Americans.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/us-news/live/2026/sep/10/donald-trump-republican-midterm-convention-dividend-offer-5000-vance-latest-news-updates",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 27,
+          "cluster_id": 2,
+          "text": "Republicans gathered in Dallas to close their midterm convention ahead of the upcoming elections.",
+          "kind": "event",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/liveblog/2026/9/10/republican-midterm-convention-live-trump-headlines-day-2-of-dallas-rally?traffic_source=rss",
+          "source_kind": "summary"
+        },
+        {
+          "id": 28,
+          "cluster_id": 2,
+          "text": "Democratic Senator John Fetterman made a surprise virtual address at the GOP midterm convention in Dallas, praising Republican Senator Dave McCormick.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/us-news/senator-john-fetterman-sparks-democratic-party-backlash-after-appearance-at-republican-midterm-convention-11789059560792.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 29,
+          "cluster_id": 2,
+          "text": "Pennsylvania state Representative Malcolm Kenyatta criticized John Fetterman as the laziest Benedict Arnold America has seen and called on him to resign.",
+          "kind": "quote",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/us-news/senator-john-fetterman-sparks-democratic-party-backlash-after-appearance-at-republican-midterm-convention-11789059560792.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 30,
+          "cluster_id": 2,
+          "text": "Distributing $5,000 checks to all 276.8 million American adults would cost an estimated $1.384 trillion.",
+          "kind": "figure",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/americas/20260910-what-to-know-about-trump-s-5-000-dividend-pledge",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 31,
+          "cluster_id": 2,
+          "text": "The US government collected a record $195 billion in customs duties during fiscal year 2025.",
+          "kind": "figure",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/americas/20260910-what-to-know-about-trump-s-5-000-dividend-pledge",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 32,
+          "cluster_id": 2,
+          "text": "The US has brought in approximately $475 billion in tariff and excise tax revenue since early 2025, with over $100 billion refunded following Supreme Court rulings.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c8r6vj7r8rko?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 3,
+      "headline_hint": "August recorded as joint-hottest month on record globally amid growing El Nino pattern",
+      "section": "world",
+      "batch_position": 3,
+      "claim_count": 7,
+      "distinct_outlets": 4,
+      "source_kinds": {
+        "fulltext": 7
+      },
+      "claims": [
+        {
+          "id": 33,
+          "cluster_id": 3,
+          "text": "The Copernicus Climate Change Service reported August 2026 was the joint-warmest month ever recorded globally, tying July 2023.",
+          "kind": "figure",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/global-climate-record-august-this-year-joint-warmest-month-with-july-23/articleshow/134033453.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 34,
+          "cluster_id": 3,
+          "text": "August 2026 was 1.65 degrees Celsius warmer than the estimated 1850-1900 pre-industrial baseline.",
+          "kind": "figure",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/global-climate-record-august-this-year-joint-warmest-month-with-july-23/articleshow/134033453.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 35,
+          "cluster_id": 3,
+          "text": "India recorded a mean monthly temperature of 28.01 degrees Celsius in August 2026, making it the country's warmest August since 1901.",
+          "kind": "figure",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/global-climate-record-august-this-year-joint-warmest-month-with-july-23/articleshow/134033453.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 36,
+          "cluster_id": 3,
+          "text": "Europe's climate monitor reported an unprecedented El Nino pattern is continuing to grow globally.",
+          "kind": "background",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/video/20260910-august-hottest-month-ever-recorded-globally-as-huge-el-nino-emerges",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 37,
+          "cluster_id": 3,
+          "text": "Daily global extra-polar sea surface temperature reached a record high of 21.11 degrees Celsius on August 2026.",
+          "kind": "figure",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/august-joint-hottest-month-on-record-global-temperatures-again-above-1-5-c-c3s-says-101789039043097.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 38,
+          "cluster_id": 3,
+          "text": "Major European rivers including the Rhine, Danube, Southern Bug, and Dnieper experienced exceptionally low flows during August.",
+          "kind": "background",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/august-joint-hottest-month-on-record-global-temperatures-again-above-1-5-c-c3s-says-101789039043097.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 39,
+          "cluster_id": 3,
+          "text": "June through August 2026 in the contiguous US averaged 74.37 degrees Fahrenheit (23.54 degrees Celsius), breaking the 1936 Dust Bowl record by nearly 0.4 degrees Fahrenheit.",
+          "kind": "figure",
+          "outlet": "NPR World",
+          "url": "https://www.npr.org/2026/09/10/nx-s1-5964676/scientists-august-hottest",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 4,
+      "headline_hint": "Israeli military destroys Hezbollah tunnel network in southern Lebanon, triggering 4.1 magnitude tremor",
+      "section": "world",
+      "batch_position": 4,
+      "claim_count": 4,
+      "distinct_outlets": 3,
+      "source_kinds": {
+        "fulltext": 3,
+        "summary": 1
+      },
+      "claims": [
+        {
+          "id": 40,
+          "cluster_id": 4,
+          "text": "Israel announced on September 10 that it destroyed Hezbollah tunnels beneath the Ali al-Taher ridge in southern Lebanon.",
+          "kind": "event",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/middle-east/20260910-israel-hezbollah-tunnels-lebanon-earthquake",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 41,
+          "cluster_id": 4,
+          "text": "The US Geological Survey recorded a magnitude 4.1 tremor in southern Lebanon near the tunnel destruction site.",
+          "kind": "figure",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/middle-east/20260910-israel-hezbollah-tunnels-lebanon-earthquake",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 42,
+          "cluster_id": 4,
+          "text": "Israel's military stated it destroyed a network of Hezbollah tunnels located on the Ali al-Taher ridge.",
+          "kind": "event",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/10/israel-says-it-destroyed-key-hezbollah-tunnels-in-southern-lebanon?traffic_source=rss",
+          "source_kind": "summary"
+        },
+        {
+          "id": 43,
+          "cluster_id": 4,
+          "text": "UN peacekeepers escorted NPR journalists behind Israeli lines as Israel expanded its presence in South Lebanon.",
+          "kind": "event",
+          "outlet": "NPR World",
+          "url": "https://www.npr.org/2026/09/10/nx-s1-5962860/un-peacekeepers-give-npr-a-rare-look-behind-israeli-lines",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 5,
+      "headline_hint": "School fire in eastern Democratic Republic of Congo kills more than 20 children",
+      "section": "world",
+      "batch_position": 5,
+      "claim_count": 6,
+      "distinct_outlets": 3,
+      "source_kinds": {
+        "fulltext": 5,
+        "summary": 1
+      },
+      "claims": [
+        {
+          "id": 44,
+          "cluster_id": 5,
+          "text": "At least 24 schoolchildren died in a stampede while fleeing a fire that engulfed two schools in Bukavu, DR Congo.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cgjq15j7318o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 45,
+          "cluster_id": 5,
+          "text": "Around 300 houses were destroyed by the fire in Bukavu's Kadutu commune.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cgjq15j7318o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 46,
+          "cluster_id": 5,
+          "text": "M23 rebels captured the South Kivu provincial capital of Bukavu in February 2025.",
+          "kind": "background",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cgjq15j7318o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 47,
+          "cluster_id": 5,
+          "text": "South Kivu Vice Governor Dunia Masumbuko Bwenge reported 19 girls and five boys were killed, and 29 people were injured in the Bukavu fire.",
+          "kind": "figure",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/rest-of-world/at-least-24-schoolchildren-killed-after-fire-engulfs-schools-in-rebel-controlled-congo/articleshow/134022871.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 48,
+          "cluster_id": 5,
+          "text": "A hospital in Bukavu admitted over 50 students from the fire, 14 of whom died.",
+          "kind": "figure",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/rest-of-world/at-least-24-schoolchildren-killed-after-fire-engulfs-schools-in-rebel-controlled-congo/articleshow/134022871.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 49,
+          "cluster_id": 5,
+          "text": "Authorities confirmed at least 14 schoolchildren were killed in the fire that swept through schools in DR Congo.",
+          "kind": "figure",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/10/more-than-a-dozen-children-killed-in-fire-in-eastern-dr-congo-schools?traffic_source=rss",
+          "source_kind": "summary"
+        }
+      ]
+    },
+    {
+      "cluster_id": 6,
+      "headline_hint": "BRICS Summit 2026 begins in New Delhi as Vladimir Putin and Xi Jinping arrive for talks with PM Modi",
+      "section": "india",
+      "batch_position": 0,
+      "claim_count": 19,
+      "distinct_outlets": 5,
+      "source_kinds": {
+        "fulltext": 19
+      },
+      "claims": [
+        {
+          "id": 50,
+          "cluster_id": 6,
+          "text": "Russian President Vladimir Putin landed in New Delhi to attend the BRICS summit and hold a bilateral meeting with Prime Minister Narendra Modi.",
+          "kind": "event",
+          "outlet": "NDTV",
+          "url": "https://www.ndtv.com/india-news/putin-lands-in-delhi-for-brics-summit-to-hold-bilateral-with-pm-modi-today-12030799#publisher=newsstand",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 51,
+          "cluster_id": 6,
+          "text": "Russian President Vladimir Putin arrived in India on early Friday ahead of the BRICS Summit 2026.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/russia-president-vladimir-putin-arrives-in-india-ahead-of-brics-summit-2026-to-meet-pm-modi/articleshow/134031374.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 52,
+          "cluster_id": 6,
+          "text": "The BRICS Summit 2026 marks Vladimir Putin's first overseas participation in a BRICS summit since Russia invaded Ukraine in February 2022.",
+          "kind": "background",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/russia-president-vladimir-putin-arrives-in-india-ahead-of-brics-summit-2026-to-meet-pm-modi/articleshow/134031374.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 53,
+          "cluster_id": 6,
+          "text": "Prime Minister Narendra Modi and Russian President Vladimir Putin previously met on the sidelines of the Shanghai Cooperation Organisation summit in Bishkek on August 31.",
+          "kind": "background",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/russia-president-vladimir-putin-arrives-in-india-ahead-of-brics-summit-2026-to-meet-pm-modi/articleshow/134031374.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 54,
+          "cluster_id": 6,
+          "text": "Russian presidential spokesperson Dmitry Peskov stated that Russia and India are exploring cooperation in rare earths and the possible sale of Sukhoi Su-57 stealth fighter jets to India.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/russia-president-vladimir-putin-arrives-in-india-ahead-of-brics-summit-2026-to-meet-pm-modi/articleshow/134031374.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 55,
+          "cluster_id": 6,
+          "text": "Union Civil Aviation Minister Kinjarapu Ram Mohan Naidu confirmed that India and Russia have stepped up talks on manufacturing aircraft in India, including the IL-114 turboprop and Sukhoi Superjet 100.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/russia-president-vladimir-putin-arrives-in-india-ahead-of-brics-summit-2026-to-meet-pm-modi/articleshow/134031374.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 56,
+          "cluster_id": 6,
+          "text": "Special airspace restrictions apply from September 11 to September 13 within a 300-km radius of New Delhi for the BRICS Summit.",
+          "kind": "figure",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/brics-summit-2026-delhi-airspace-curbs-tighten-as-flight-restrictions-begin-what-it-means-for-igi-passengers-11789072322813.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 57,
+          "cluster_id": 6,
+          "text": "Normal scheduled commercial flights at Delhi's Indira Gandhi International Airport will continue to take off and land during the BRICS Summit.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/brics-summit-2026-delhi-airspace-curbs-tighten-as-flight-restrictions-begin-what-it-means-for-igi-passengers-11789072322813.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 58,
+          "cluster_id": 6,
+          "text": "Nearly 4,800 traffic personnel have been deployed in Delhi for security and traffic management during the summit.",
+          "kind": "figure",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/brics-summit-2026-delhi-airspace-curbs-tighten-as-flight-restrictions-begin-what-it-means-for-igi-passengers-11789072322813.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 59,
+          "cluster_id": 6,
+          "text": "Safdarjung Airport will remain closed during the security period, except for specified IAF and BSF helicopter operations.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/brics-summit-2026-delhi-airspace-curbs-tighten-as-flight-restrictions-begin-what-it-means-for-igi-passengers-11789072322813.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 60,
+          "cluster_id": 6,
+          "text": "Aircraft climbing near the restricted zone around Delhi must reach Flight Level 290, around 29,000 feet, by the time they are 200 km from the capital.",
+          "kind": "figure",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/brics-summit-2026-delhi-airspace-curbs-tighten-as-flight-restrictions-begin-what-it-means-for-igi-passengers-11789072322813.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 61,
+          "cluster_id": 6,
+          "text": "The 18th BRICS summit is being hosted at Bharat Mandapam in New Delhi.",
+          "kind": "background",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/amid-global-crisis-top-leaders-to-attend-brics-summit-this-weekend/article71453048.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 62,
+          "cluster_id": 6,
+          "text": "Chinese President Xi Jinping, Egyptian President Abdel Fattah El-Sisi, Ethiopia's Prime Minister Abiy Ahmed Ali, and Indonesian President Prabowo Subianto are among the leaders expected to attend the BRICS summit in New Delhi.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/amid-global-crisis-top-leaders-to-attend-brics-summit-this-weekend/article71453048.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 63,
+          "cluster_id": 6,
+          "text": "UN Secretary-General Antonio Guterres, WHO head Tedros Adhanom Ghebreyesus, and WTO Director-General Ngozi Okonjo-Iweala are scheduled to attend the BRICS summit.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/amid-global-crisis-top-leaders-to-attend-brics-summit-this-weekend/article71453048.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 64,
+          "cluster_id": 6,
+          "text": "Iranian President Masoud Pezeshkian is scheduled to attend the summit, marking his first visit to India since taking office after President Ebrahim Raisi died in a helicopter crash in 2024.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/amid-global-crisis-top-leaders-to-attend-brics-summit-this-weekend/article71453048.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 65,
+          "cluster_id": 6,
+          "text": "Minister of State for Foreign Affairs Humayun Kobir confirmed that Bangladesh will not be represented at the summit despite an invitation to Prime Minister Tarique Rahman.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/amid-global-crisis-top-leaders-to-attend-brics-summit-this-weekend/article71453048.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 66,
+          "cluster_id": 6,
+          "text": "Union Commerce and Industry Minister Piyush Goyal stated India and Russia aim to reach target goals of $100 billion in bilateral trade and $50 billion in two-way investment by 2030.",
+          "kind": "figure",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/indiarussia-ties-poised-for-new-phase-of-trade-technology-and-industrial-cooperation-piyush-goyal-101789058105109.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 67,
+          "cluster_id": 6,
+          "text": "Bilateral trade between India and Russia currently stands at around $60 billion.",
+          "kind": "figure",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/indiarussia-ties-poised-for-new-phase-of-trade-technology-and-industrial-cooperation-piyush-goyal-101789058105109.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 68,
+          "cluster_id": 6,
+          "text": "The BRICS Summit 2026 takes place in New Delhi from September 12-13 under the theme 'Building for Resilience, Innovation, Cooperation and Sustainability'.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/indiarussia-ties-poised-for-new-phase-of-trade-technology-and-industrial-cooperation-piyush-goyal-101789058105109.html",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 7,
+      "headline_hint": "Aftermath of Satya Niketan building collapse triggers MCD enforcement action and Supreme Court scrutiny",
+      "section": "india",
+      "batch_position": 1,
+      "claim_count": 13,
+      "distinct_outlets": 3,
+      "source_kinds": {
+        "fulltext": 13
+      },
+      "claims": [
+        {
+          "id": 69,
+          "cluster_id": 7,
+          "text": "Satya Niketan PG operator Shubham Tyagi was denied anticipatory bail by a Delhi court following a building collapse.",
+          "kind": "event",
+          "outlet": "NDTV",
+          "url": "https://www.ndtv.com/india-news/delhi-building-collapse-satya-niketan-pg-operator-shubham-tyagi-denied-anticipatory-bail-12030584#publisher=newsstand",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 70,
+          "cluster_id": 7,
+          "text": "The Municipal Corporation of Delhi sealed at least 56 jewellery and bullion-related shops in Chandni Chowk's Kucha Mahajani on Thursday.",
+          "kind": "figure",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/mcd-crackdown-on-illegal-buildings-56-jewellery-shops-in-chandni-chowk-sealed-owners-say-goods-worth-crores-locked-101789060508141.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 71,
+          "cluster_id": 7,
+          "text": "The MCD enforcement drive was intensified following a fatal building collapse in Satya Niketan on September 6 that left seven people dead.",
+          "kind": "background",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/mcd-crackdown-on-illegal-buildings-56-jewellery-shops-in-chandni-chowk-sealed-owners-say-goods-worth-crores-locked-101789060508141.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 72,
+          "cluster_id": 7,
+          "text": "The All India Bullion and Jewellers Association questioned whether, after the Satya Niketan tragedy, only traders will bear the brunt or if action will also be taken against government departments and politicians.",
+          "kind": "quote",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/mcd-crackdown-on-illegal-buildings-56-jewellery-shops-in-chandni-chowk-sealed-owners-say-goods-worth-crores-locked-101789060508141.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 73,
+          "cluster_id": 7,
+          "text": "A five-storey paying guest building collapsed in Delhi's Satya Niketan on September 6, killing seven people and injuring 12.",
+          "kind": "figure",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/gold-silver-worth-crores-locked-inside-here-s-why-mcd-sealed-dozens-of-jewellery-shops-in-chandni-chowk-delhi-11789042712355.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 74,
+          "cluster_id": 7,
+          "text": "Five of the seven people killed in the Satya Niketan PG building collapse were Delhi University students.",
+          "kind": "background",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/gold-silver-worth-crores-locked-inside-here-s-why-mcd-sealed-dozens-of-jewellery-shops-in-chandni-chowk-delhi-11789042712355.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 75,
+          "cluster_id": 7,
+          "text": "Initial findings revealed the collapsed 50-year-old building in Satya Niketan had five floors despite only two floors being permitted.",
+          "kind": "background",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/gold-silver-worth-crores-locked-inside-here-s-why-mcd-sealed-dozens-of-jewellery-shops-in-chandni-chowk-delhi-11789042712355.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 76,
+          "cluster_id": 7,
+          "text": "Police arrested the owner of the collapsed Satya Niketan building, his son, the operator, and a contractor.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/gold-silver-worth-crores-locked-inside-here-s-why-mcd-sealed-dozens-of-jewellery-shops-in-chandni-chowk-delhi-11789042712355.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 77,
+          "cluster_id": 7,
+          "text": "The Municipal Corporation of Delhi suspended five municipal officials over alleged negligence related to the Satya Niketan collapse.",
+          "kind": "figure",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/gold-silver-worth-crores-locked-inside-here-s-why-mcd-sealed-dozens-of-jewellery-shops-in-chandni-chowk-delhi-11789042712355.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 78,
+          "cluster_id": 7,
+          "text": "A Supreme Court Bench of Justices Ahsanuddin Amanullah and R Mahadevan directed authorities across India to file affidavits on compliance with directions regarding unauthorized constructions.",
+          "kind": "event",
+          "outlet": "NDTV",
+          "url": "https://www.ndtv.com/india-news/supreme-court-asks-states-to-give-report-on-action-against-illegal-buildings-12030358#publisher=newsstand",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 79,
+          "cluster_id": 7,
+          "text": "Amicus curiae Ajit Kumar Sinha brought the Satya Niketan building collapse in Motibagh to the Supreme Court's attention.",
+          "kind": "event",
+          "outlet": "NDTV",
+          "url": "https://www.ndtv.com/india-news/supreme-court-asks-states-to-give-report-on-action-against-illegal-buildings-12030358#publisher=newsstand",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 80,
+          "cluster_id": 7,
+          "text": "The Delhi High Court scheduled further hearings on the public interest litigation regarding the Satya Niketan incident for September 25.",
+          "kind": "figure",
+          "outlet": "NDTV",
+          "url": "https://www.ndtv.com/india-news/supreme-court-asks-states-to-give-report-on-action-against-illegal-buildings-12030358#publisher=newsstand",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 81,
+          "cluster_id": 7,
+          "text": "Three additional engineers were suspended for negligence following the Delhi building collapse.",
+          "kind": "figure",
+          "outlet": "NDTV",
+          "url": "https://www.ndtv.com/india-news/3-more-engineers-suspended-for-negligence-after-delhi-building-collapse-12030224#publisher=newsstand",
+          "source_kind": "fulltext"
+        }
+      ]
+    }
+  ],
+  "clusters_with_no_claims": []
+}

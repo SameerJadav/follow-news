@@ -1,0 +1,742 @@
+{
+  "dials": {
+    "WEIGHT_FLOOR": 5,
+    "TIER_WEIGHT": {
+      "lead": 4,
+      "major": 2,
+      "notable": 0
+    },
+    "WIKI_BONUS": 2,
+    "HARD_CAP": 12,
+    "MIN_STORIES_IF_ANY": 3,
+    "MAX_ARTICLES_PER_STORY": 5
+  },
+  "floor_relaxed": false,
+  "kept_weights": [
+    13,
+    8,
+    7,
+    6,
+    5,
+    5,
+    11,
+    7
+  ],
+  "per_section": {
+    "world": 6,
+    "india": 2
+  },
+  "clusters": [
+    {
+      "headline_hint": "BRICS Summit 2026 begins in New Delhi as Vladimir Putin and Xi Jinping arrive for talks with PM Modi",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "lead",
+      "article_ids": [
+        18,
+        26,
+        27,
+        35,
+        37,
+        41,
+        60,
+        62,
+        125,
+        175,
+        177,
+        182,
+        207,
+        217,
+        221,
+        228,
+        248,
+        262,
+        297
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        18,
+        26,
+        27,
+        35,
+        37,
+        41,
+        60,
+        62,
+        125,
+        175,
+        177,
+        182,
+        207,
+        217,
+        221,
+        228,
+        248,
+        262,
+        297
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 5,
+      "wiki_backed": true,
+      "wiki_event": "Crude oil prices in the United States, including from Brent Crude and West Texas Intermediate, reach US$100, the highest since May, amidst renewed tensions between the U.S. and Iran.",
+      "weight": 11,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 4,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "NDTV",
+          "title": "Putin Lands In Delhi For BRICS Summit, To Hold Bilateral With PM Modi Today",
+          "url": "https://www.ndtv.com/india-news/putin-lands-in-delhi-for-brics-summit-to-hold-bilateral-with-pm-modi-today-12030799#publisher=newsstand"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Putin arrives in India ahead of Brics Summit 2026, to meet PM Modi",
+          "url": "https://timesofindia.indiatimes.com/india/russia-president-vladimir-putin-arrives-in-india-ahead-of-brics-summit-2026-to-meet-pm-modi/articleshow/134031374.cms"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "BRICS Summit 2026: Delhi airspace curbs tighten as flight restrictions begin – What it means for IGI passengers",
+          "url": "https://www.livemint.com/news/india/brics-summit-2026-delhi-airspace-curbs-tighten-as-flight-restrictions-begin-what-it-means-for-igi-passengers-11789072322813.html"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "Wars, global crises may top agenda of 18th BRICS summit",
+          "url": "https://www.thehindu.com/news/national/amid-global-crisis-top-leaders-to-attend-brics-summit-this-weekend/article71453048.ece"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "India-Russia ties poised for new phase of trade, technology and industrial cooperation: Piyush Goyal",
+          "url": "https://www.hindustantimes.com/india-news/indiarussia-ties-poised-for-new-phase-of-trade-technology-and-industrial-cooperation-piyush-goyal-101789058105109.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 14
+    },
+    {
+      "headline_hint": "Houthis capture strategic Yemeni port city of Mokha as crude oil prices surge past $100",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "lead",
+      "article_ids": [
+        0,
+        65,
+        100,
+        128,
+        133,
+        141,
+        181,
+        272,
+        287,
+        320
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        0,
+        65,
+        100,
+        128,
+        133,
+        141,
+        181,
+        272,
+        287,
+        320
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 7,
+      "wiki_backed": true,
+      "wiki_event": "Houthis captures the port city of Mokha, as government forces retreat from the districts of Hays and Al Khawkhah. A mass exodus of the area from civilians towards Aden is further reported.",
+      "weight": 13,
+      "weight_terms": {
+        "distinct_outlets": 7,
+        "tier_weight": 4,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Channel News Asia",
+          "title": "Surging oil prices, higher bond yields weigh on stocks",
+          "url": "https://www.channelnewsasia.com/world/surging-oil-prices-higher-bond-yields-weigh-stocks-6377296"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "What’s happening in Yemen and how did we get here?",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/10/whats-happening-in-yemen-and-how-did-we-get-here-3?traffic_source=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Iran-backed Houthi rebels take strategic port city in Yemen, raising threat to Red Sea shipping",
+          "url": "https://www.france24.com/en/iran-backed-houthi-rebels-take-strategic-port-city-in-yemen-raising-threat-to-red-sea-shipping"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Houthis seize Yemen's strategic Red Sea port city of Mokha from Saudi-backed forces",
+          "url": "https://timesofindia.indiatimes.com/world/middle-east/houthis-seize-yemens-strategic-red-sea-port-city-of-mokha-from-saudi-backed-forces/articleshow/134025249.cms"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Yemen's Houthis reportedly seize strategic Red Sea port of Mokha",
+          "url": "https://www.bbc.co.uk/news/articles/c4g7vr0lngwo?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 5
+    },
+    {
+      "headline_hint": "August recorded as joint-hottest month on record globally amid growing El Nino pattern",
+      "section": "world",
+      "category": "climate",
+      "tier_requested": "major",
+      "article_ids": [
+        6,
+        195,
+        280,
+        296
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        6,
+        195,
+        280,
+        296
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 6,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "Global climate record: August this year joint-warmest month with July '23",
+          "url": "https://timesofindia.indiatimes.com/india/global-climate-record-august-this-year-joint-warmest-month-with-july-23/articleshow/134033453.cms"
+        },
+        {
+          "outlet": "France 24",
+          "title": "August hottest month ever recorded globally as huge El Nino emerges",
+          "url": "https://www.france24.com/en/video/20260910-august-hottest-month-ever-recorded-globally-as-huge-el-nino-emerges"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "August joint warmest month ever recorded globally, tied with July 2023: C3S report",
+          "url": "https://www.hindustantimes.com/india-news/august-joint-hottest-month-on-record-global-temperatures-again-above-1-5-c-c3s-says-101789039043097.html"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "Scientists say August was Earth's hottest month they've measured",
+          "url": "https://www.npr.org/2026/09/10/nx-s1-5964676/scientists-august-hottest"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Cargo ship fire at Qingdao port in China leaves at least 25 dead",
+      "section": "world",
+      "category": "disaster",
+      "tier_requested": "major",
+      "article_ids": [
+        124,
+        261,
+        269,
+        273
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        124,
+        261,
+        269,
+        273
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": true,
+      "wiki_event": "At least 20 people are killed and five others are reported missing after a fire breaks out on a cargo ship in Qingdao, Shandong, China.",
+      "weight": 8,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "Fire onboard ship at Chinese shipyard kills 25 people",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/10/09-10-china-shipyard-fire-clip-mp4?traffic_source=rss"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Twenty-five dead after fire on cargo ship in eastern China",
+          "url": "https://www.bbc.co.uk/news/articles/cj4jyv7l92eo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "China Cargo Ship Fire: Death toll rises to 25; Xi Jinping says ‘all regions must draw profound lessons from incident’",
+          "url": "https://www.livemint.com/news/world/china-cargo-ship-fire-20-killed-5-missing-xi-jinping-calls-for-search-and-rescue-ops-11789040067421.html"
+        },
+        {
+          "outlet": "DW World",
+          "title": "China: Cargo ship fire kills at least 25",
+          "url": "https://www.dw.com/en/china-cargo-ship-fire-kills-at-least-25/a-79212704?maca=en-rss-en-world-4025-rdf"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "US Republicans hold midterm convention in Dallas as Trump promises $5,000 dividend for Americans",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        8,
+        33,
+        145,
+        157,
+        176,
+        310,
+        317
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        8,
+        33,
+        145,
+        157,
+        176,
+        310,
+        317
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 5,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "JD Vance to address Republican midterm convention after Trump’s $5,000 offer sparks bribery claims – live",
+          "url": "https://www.theguardian.com/us-news/live/2026/sep/10/donald-trump-republican-midterm-convention-dividend-offer-5000-vance-latest-news-updates"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Republican midterm convention live: Trump, Vance headline day two in Dallas",
+          "url": "https://www.aljazeera.com/news/liveblog/2026/9/10/republican-midterm-convention-live-trump-headlines-day-2-of-dallas-rally?traffic_source=rss"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Senator John Fetterman sparks Democratic Party backlash after appearance at Republican midterm convention",
+          "url": "https://www.livemint.com/news/us-news/senator-john-fetterman-sparks-democratic-party-backlash-after-appearance-at-republican-midterm-convention-11789059560792.html"
+        },
+        {
+          "outlet": "France 24",
+          "title": "What to know about Trump's pledge of $5,000 to 'every American' if GOP wins midterms",
+          "url": "https://www.france24.com/en/americas/20260910-what-to-know-about-trump-s-5-000-dividend-pledge"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Can Trump really pay $5,000 to every American adult?",
+          "url": "https://www.bbc.co.uk/news/articles/c8r6vj7r8rko?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 2
+    },
+    {
+      "headline_hint": "Israeli military destroys Hezbollah tunnel network in southern Lebanon, triggering 4.1 magnitude tremor",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "major",
+      "article_ids": [
+        22,
+        38,
+        72,
+        299
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        22,
+        38,
+        72,
+        299
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 5,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "France 24",
+          "title": "Israel destroys Hezbollah tunnel network in south Lebanon, triggering 4.1-magnitude tremor",
+          "url": "https://www.france24.com/en/middle-east/20260910-israel-hezbollah-tunnels-lebanon-earthquake"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Israel says it destroyed key Hezbollah tunnels in southern Lebanon",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/10/israel-says-it-destroyed-key-hezbollah-tunnels-in-southern-lebanon?traffic_source=rss"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "UN peacekeepers give NPR a rare look behind Israeli lines",
+          "url": "https://www.npr.org/2026/09/10/nx-s1-5962860/un-peacekeepers-give-npr-a-rare-look-behind-israeli-lines"
+        },
+        {
+          "outlet": "France 24",
+          "title": "🔴 Live: Israel demolition of Hezbollah tunnels in south Lebanon caused 4.1-magnitude quake",
+          "url": "https://www.france24.com/en/middle-east/20260910-middle-east-live-trump-warns-iran-not-to-get-cute-over-activity-at-pickaxe-mountain"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "School fire in eastern Democratic Republic of Congo kills more than 20 children",
+      "section": "world",
+      "category": "disaster",
+      "tier_requested": "major",
+      "article_ids": [
+        103,
+        153,
+        155
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        103,
+        153,
+        155
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 5,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "BBC World",
+          "title": "More than 20 children killed in DR Congo school fire",
+          "url": "https://www.bbc.co.uk/news/articles/cgjq15j7318o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "At least 24 schoolchildren killed after fire engulfs schools in rebel-controlled Congo",
+          "url": "https://timesofindia.indiatimes.com/world/rest-of-world/at-least-24-schoolchildren-killed-after-fire-engulfs-schools-in-rebel-controlled-congo/articleshow/134022871.cms"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "More than a dozen children killed in fire in eastern DR Congo schools",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/10/more-than-a-dozen-children-killed-in-fire-in-eastern-dr-congo-schools?traffic_source=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "US DHS proposes eliminating 60-day grace period for H-1B and work visa holders after job loss",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        119,
+        192
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        119,
+        192
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Livemint",
+          "title": "H-1B visa issue: Trump administration proposes scrapping 60-day grace period, Indian techies to be affected",
+          "url": "https://www.livemint.com/news/us-news/h1b-visa-issue-trump-administration-proposes-scrapping-60-day-grace-period-indian-techies-to-be-affected-11789064597291.html"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "US govt proposes scrapping 60-day grace period for foreign workers after job loss",
+          "url": "https://timesofindia.indiatimes.com/world/us/dhs-proposes-scrapping-60-day-grace-period-for-foreign-workers-after-job-loss/articleshow/134018637.cms"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Aftermath of Satya Niketan building collapse triggers MCD enforcement action and Supreme Court scrutiny",
+      "section": "india",
+      "category": "disaster",
+      "tier_requested": "major",
+      "article_ids": [
+        98,
+        150,
+        161,
+        165,
+        172,
+        243,
+        256,
+        260,
+        268
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        98,
+        150,
+        161,
+        165,
+        172,
+        243,
+        256,
+        260,
+        268
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 3,
+      "wiki_backed": true,
+      "wiki_event": "Sri Lanka's Supreme Court overturns a 2019 presidential pardon granted to Buddhist monk Galagoda Aththe Gnanasara and orders him to serve the remainder of his six-year prison sentence for criminally intimidating human rights activist Sandya",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "NDTV",
+          "title": "Delhi Building Collapse: Satya Niketan PG Operator Denied Anticipatory Bail",
+          "url": "https://www.ndtv.com/india-news/delhi-building-collapse-satya-niketan-pg-operator-shubham-tyagi-denied-anticipatory-bail-12030584#publisher=newsstand"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "MCD crackdown on illegal buildings: 56 jewellery shops in Chandni Chowk sealed, owners say goods worth crores locked",
+          "url": "https://www.hindustantimes.com/india-news/mcd-crackdown-on-illegal-buildings-56-jewellery-shops-in-chandni-chowk-sealed-owners-say-goods-worth-crores-locked-101789060508141.html"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Gold, silver worth crores locked inside: Here’s why MCD sealed dozens of jewellery shops in Chandni Chowk, Delhi",
+          "url": "https://www.livemint.com/news/india/gold-silver-worth-crores-locked-inside-here-s-why-mcd-sealed-dozens-of-jewellery-shops-in-chandni-chowk-delhi-11789042712355.html"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "Supreme Court Asks States To Give Report On Action Against Illegal Buildings",
+          "url": "https://www.ndtv.com/india-news/supreme-court-asks-states-to-give-report-on-action-against-illegal-buildings-12030358#publisher=newsstand"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "3 More Engineers Suspended For Negligence After Delhi Building Collapse",
+          "url": "https://www.ndtv.com/india-news/3-more-engineers-suspended-for-negligence-after-delhi-building-collapse-12030224#publisher=newsstand"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 4
+    },
+    {
+      "headline_hint": "Algeria severs diplomatic ties with United Arab Emirates over alleged hostile actions",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        84,
+        188
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        84,
+        188
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": true,
+      "wiki_event": "Algeria cuts diplomatic relations with the United Arab Emirates, without specifying a reason.",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "Algeria cuts diplomatic ties with UAE: What we know",
+          "url": "https://www.aljazeera.com/news/2026/9/10/algeria-cuts-diplomatic-ties-with-uae-what-we-know?traffic_source=rss"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Algeria cuts diplomatic ties with UAE over 'provocative, hostile' actions",
+          "url": "https://timesofindia.indiatimes.com/world/middle-east/algeria-cuts-diplomatic-ties-with-uae-over-provocative-hostile-actions/articleshow/134019170.cms"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Peru joins US-led 'Shield of the Americas' alliance to combat drug cartels",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        32,
+        321
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        32,
+        321
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": true,
+      "wiki_event": "Peruvian president Keiko Fujimori announces that the country will join the Shield of the Americas coalition against drug cartels following a visit from U.S. Secretary of State Marco Rubio.",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "Peru joins US-led ‘Shield of the Americas’ security alliance",
+          "url": "https://www.aljazeera.com/news/2026/9/10/peru-joins-us-led-shield-of-the-americas-security-alliance?traffic_source=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Rubio signals shift to working with allies to fight drug trade as latest boat strike kills three",
+          "url": "https://www.theguardian.com/us-news/2026/sep/09/rubio-us-allies-drug-trafficking"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Indian government updates e-commerce rules to curb deceptive pricing and search practices",
+      "section": "india",
+      "category": "economy",
+      "tier_requested": "notable",
+      "article_ids": [
+        50,
+        57,
+        210,
+        236
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        50,
+        57,
+        210,
+        236
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "Checks on e-commerce platforms from October: FSSAI",
+          "url": "https://timesofindia.indiatimes.com/india/checks-on-e-commerce-platforms-from-october-fssai/articleshow/134029959.cms"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Govt tightens e-commerce rules on discounts, search, sponsored listings",
+          "url": "https://www.livemint.com/news/ecommerce-platforms-to-face-tighter-rules-on-discounts-search-results-and-sponsored-listings-11789050186264.html"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Government tightens e-commerce rules to curb deceptive pricing, search practices",
+          "url": "https://www.hindustantimes.com/india-news/govt-tightens-e-commerce-rules-to-curb-deceptive-pricing-search-practices-101789049304728.html"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Shopping online? From January, you'll see the discount margin",
+          "url": "https://timesofindia.indiatimes.com/business/india-business/shopping-online-from-january-youll-see-the-discount-margin/articleshow/134029680.cms"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "US Department of Homeland Security faces backlash over social media post stereotyping Indian drivers",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        225,
+        290,
+        307
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        225,
+        290,
+        307
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "Wrong turn, DHS: My name is 'Singh' and I’m not a bad truck driver",
+          "url": "https://timesofindia.indiatimes.com/world/us/wrong-turn-dhs-my-name-is-singh-and-im-not-a-bad-truck-driver/articleshow/134014675.cms"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "'Transformers were aliens too': Social media reacts to Trump administration's racist poster targeting Indian drivers",
+          "url": "https://www.livemint.com/news/us-news/transformers-were-aliens-too-social-media-reacts-to-trump-administrations-racist-poster-targeting-indian-drivers-11789032516232.html"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "‘Singh doesn’t know how to drive’: US Homeland Security gets flak for ‘anti-Indian’ post",
+          "url": "https://scroll.in/latest/1095649/singh-doesnt-know-how-to-drive-us-homeland-security-gets-flak-for-anti-indian-post?utm_source=rss&utm_medium=public"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    }
+  ]
+}
