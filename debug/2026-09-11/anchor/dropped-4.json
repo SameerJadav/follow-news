@@ -1,0 +1,121 @@
+{
+  "cluster_id": 4,
+  "section": "world",
+  "headline_hint": "Israeli military destroys Hezbollah tunnel network in southern Lebanon, triggering 4.1 magnitude tremor",
+  "reason": "body_too_short",
+  "metrics": {
+    "word_count": 69,
+    "min_body_words": 80,
+    "marker_count": 6,
+    "min_markers": 2,
+    "dropped_markers": 0,
+    "unanchored_share": 0.015,
+    "max_unanchored_share": 0.2,
+    "claim_outlets": 3,
+    "claims_available": 4,
+    "raw_body_chars": 505,
+    "unsourced_figures": [],
+    "gate_unsourced_figures": true
+  },
+  "raw_model_output": {
+    "cluster_id": 4,
+    "headline": "Israeli military destroys Hezbollah tunnel network in southern Lebanon",
+    "body": "Israeli forces destroyed Hezbollah tunnels beneath the Ali al-Taher ridge in southern Lebanon on September 10 [c40]. Israel's military said it destroyed a network of Hezbollah tunnels located on the ridge [c42].\n\nThe US Geological Survey recorded a magnitude 4.1 tremor in southern Lebanon [c41]. The tremor occurred near the tunnel destruction site [c41].\n\nIsrael also expanded its presence in South Lebanon [c43]. UN peacekeepers escorted NPR journalists behind Israeli lines during the operation [c43].",
+    "vocab": [
+      {
+        "term": "tremor",
+        "say": "TREM-er",
+        "meaning": "A mild shaking of the ground or an earthquake."
+      },
+      {
+        "term": "escorted",
+        "say": "ess-KOR-tid",
+        "meaning": "Accompanied someone to offer protection or guidance."
+      }
+    ]
+  },
+  "parsed_body": "Israeli forces destroyed Hezbollah tunnels beneath the Ali al-Taher ridge in southern Lebanon on September 10. Israel's military said it destroyed a network of Hezbollah tunnels located on the ridge.\n\nThe US Geological Survey recorded a magnitude 4.1 tremor in southern Lebanon. The tremor occurred near the tunnel destruction site.\n\nIsrael also expanded its presence in South Lebanon. UN peacekeepers escorted NPR journalists behind Israeli lines during the operation.",
+  "markers": [
+    {
+      "start": 0,
+      "end": 109,
+      "claim_id": 40,
+      "outlet": "France 24",
+      "url": "https://www.france24.com/en/middle-east/20260910-israel-hezbollah-tunnels-lebanon-earthquake"
+    },
+    {
+      "start": 111,
+      "end": 198,
+      "claim_id": 42,
+      "outlet": "Al Jazeera",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/10/israel-says-it-destroyed-key-hezbollah-tunnels-in-southern-lebanon?traffic_source=rss"
+    },
+    {
+      "start": 201,
+      "end": 277,
+      "claim_id": 41,
+      "outlet": "France 24",
+      "url": "https://www.france24.com/en/middle-east/20260910-israel-hezbollah-tunnels-lebanon-earthquake"
+    },
+    {
+      "start": 279,
+      "end": 331,
+      "claim_id": 41,
+      "outlet": "France 24",
+      "url": "https://www.france24.com/en/middle-east/20260910-israel-hezbollah-tunnels-lebanon-earthquake"
+    },
+    {
+      "start": 334,
+      "end": 384,
+      "claim_id": 43,
+      "outlet": "NPR World",
+      "url": "https://www.npr.org/2026/09/10/nx-s1-5962860/un-peacekeepers-give-npr-a-rare-look-behind-israeli-lines"
+    },
+    {
+      "start": 386,
+      "end": 468,
+      "claim_id": 43,
+      "outlet": "NPR World",
+      "url": "https://www.npr.org/2026/09/10/nx-s1-5962860/un-peacekeepers-give-npr-a-rare-look-behind-israeli-lines"
+    }
+  ],
+  "claims_available": [
+    {
+      "id": 40,
+      "cluster_id": 4,
+      "text": "Israel announced on September 10 that it destroyed Hezbollah tunnels beneath the Ali al-Taher ridge in southern Lebanon.",
+      "kind": "event",
+      "outlet": "France 24",
+      "url": "https://www.france24.com/en/middle-east/20260910-israel-hezbollah-tunnels-lebanon-earthquake",
+      "source_kind": "fulltext"
+    },
+    {
+      "id": 41,
+      "cluster_id": 4,
+      "text": "The US Geological Survey recorded a magnitude 4.1 tremor in southern Lebanon near the tunnel destruction site.",
+      "kind": "figure",
+      "outlet": "France 24",
+      "url": "https://www.france24.com/en/middle-east/20260910-israel-hezbollah-tunnels-lebanon-earthquake",
+      "source_kind": "fulltext"
+    },
+    {
+      "id": 42,
+      "cluster_id": 4,
+      "text": "Israel's military stated it destroyed a network of Hezbollah tunnels located on the Ali al-Taher ridge.",
+      "kind": "event",
+      "outlet": "Al Jazeera",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/10/israel-says-it-destroyed-key-hezbollah-tunnels-in-southern-lebanon?traffic_source=rss",
+      "source_kind": "summary"
+    },
+    {
+      "id": 43,
+      "cluster_id": 4,
+      "text": "UN peacekeepers escorted NPR journalists behind Israeli lines as Israel expanded its presence in South Lebanon.",
+      "kind": "event",
+      "outlet": "NPR World",
+      "url": "https://www.npr.org/2026/09/10/nx-s1-5962860/un-peacekeepers-give-npr-a-rare-look-behind-israeli-lines",
+      "source_kind": "fulltext"
+    }
+  ],
+  "unsourced_figures": []
+}
