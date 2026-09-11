@@ -1,0 +1,819 @@
+{
+  "dials": {
+    "WEIGHT_FLOOR": 5,
+    "TIER_WEIGHT": {
+      "lead": 4,
+      "major": 2,
+      "notable": 0
+    },
+    "WIKI_BONUS": 2,
+    "HARD_CAP": 12,
+    "MIN_STORIES_IF_ANY": 3,
+    "MAX_ARTICLES_PER_STORY": 5
+  },
+  "floor_relaxed": false,
+  "kept_weights": [
+    15,
+    13,
+    8,
+    7,
+    6,
+    5,
+    15
+  ],
+  "per_section": {
+    "world": 6,
+    "india": 1
+  },
+  "clusters": [
+    {
+      "headline_hint": "PM Modi hosts world leaders in New Delhi for 18th BRICS Summit, holding key bilateral talks with Putin and Pezeshkian",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "lead",
+      "article_ids": [
+        40,
+        46,
+        59,
+        73,
+        85,
+        90,
+        98,
+        99,
+        101,
+        102,
+        104,
+        115,
+        116,
+        130,
+        148,
+        152,
+        160,
+        165,
+        169,
+        172,
+        176,
+        189,
+        192,
+        206,
+        210,
+        211,
+        225,
+        227,
+        234,
+        236,
+        241,
+        244,
+        245,
+        247,
+        249,
+        251,
+        253,
+        262,
+        263,
+        265,
+        268,
+        274,
+        277,
+        278,
+        282,
+        285,
+        286,
+        289,
+        298,
+        326
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        40,
+        46,
+        59,
+        73,
+        85,
+        90,
+        98,
+        99,
+        101,
+        102,
+        104,
+        115,
+        116,
+        130,
+        148,
+        152,
+        160,
+        165,
+        169,
+        172,
+        176,
+        189,
+        192,
+        206,
+        210,
+        211,
+        225,
+        227,
+        234,
+        236,
+        241,
+        244,
+        245,
+        247,
+        249,
+        251,
+        253,
+        262,
+        263,
+        265,
+        268,
+        274,
+        277,
+        278,
+        282,
+        285,
+        286,
+        289,
+        298,
+        326
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 9,
+      "wiki_backed": true,
+      "wiki_event": "A research study at the Icahn School of Medicine at Mount Sinai reports that, in the aftermath of the September 11 attacks, World Trade Center responders living in greener neighborhoods had lower risks of frailty, PTSD, and depression. Grea",
+      "weight": 15,
+      "weight_terms": {
+        "distinct_outlets": 9,
+        "tier_weight": 4,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "Can BRICS help reshape global order by strengthening emerging economies?",
+          "url": "https://www.aljazeera.com/video/inside-story/2026/9/11/can-brics-help-reshape-global-order-by-strengthening-emerging-economies?traffic_source=rss"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "BRICS Summit 2026 updates on Sept.11: PM Modi stresses need to protect navigation, seafarers in talks with Iran's Pezeshkian",
+          "url": "https://www.thehindu.com/news/national/brics-summit-india-world-leaders-in-new-delhi-key-agenda-live-updates-september-11-2026/article71454538.ece"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "India hopes Iran and UAE will show flexibility, allow Brics declaration",
+          "url": "https://timesofindia.indiatimes.com/india/pm-doubles-down-on-friendship-with-iran-seeks-win-win-strategy-hope-mounts-for-brics-declaration/articleshow/134086783.cms"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "'US, Israel Want To Bully Us, But We Won't Kneel': Iran President In Delhi",
+          "url": "https://www.ndtv.com/india-news/us-israel-want-to-bully-us-but-we-wont-kneel-iran-president-masoud-pezeshkian-in-delhi-12035281#publisher=newsstand"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "‘Umeed karta hun…’: Russian diplomat speaks fluent Hindi, expresses optimism ahead of BRICS summit",
+          "url": "https://www.hindustantimes.com/india-news/umeed-karta-hun-russian-diplomat-speaks-fluent-hindi-expresses-optimism-ahead-of-brics-summit-101789145175057.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 45
+    },
+    {
+      "headline_hint": "India and EU advance toward historic free trade agreement expected to cut tariffs on 96% of exports",
+      "section": "india",
+      "category": "economy",
+      "tier_requested": "major",
+      "article_ids": [
+        196,
+        228,
+        238
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        196,
+        228,
+        238
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Livemint",
+          "title": "EU moves India trade deal closer to finish line",
+          "url": "https://www.livemint.com/news/india/eu-moves-india-trade-deal-closer-to-finish-line-11789129057338.html"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "EU Commission takes crucial step to finalise India-EU free trade deal with India",
+          "url": "https://www.hindustantimes.com/india-news/european-commission-forwards-proposals-for-signing-india-eu-fta-101789133234801.html"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "India-EU FTA nears finish line: 96% tariff cuts, €4 billion savings and more: Here's a look at what the deal offers",
+          "url": "https://www.livemint.com/news/indiaeu-fta-nears-finish-line-96-tariff-cuts-4-billion-savings-and-more-heres-a-look-at-what-the-deal-offers-11789134147736.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Yemen's Houthis seize Bab el-Mandeb Strait passages and strike Saudi oil pipeline, raising global trade alarm",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "lead",
+      "article_ids": [
+        2,
+        8,
+        20,
+        38,
+        50,
+        58,
+        79,
+        113,
+        147,
+        156,
+        161,
+        173,
+        179,
+        261,
+        283,
+        308,
+        319
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        2,
+        8,
+        20,
+        38,
+        50,
+        58,
+        79,
+        113,
+        147,
+        156,
+        161,
+        173,
+        179,
+        261,
+        283,
+        308,
+        319
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 9,
+      "wiki_backed": true,
+      "wiki_event": "Yemen's Houthis seize Perim Island in the Strait of Bab al-Mandab after government forces withdrew, completing their takeover of the surrounding area and giving them control of territory overlooking a major sea lane between the Red Sea and ",
+      "weight": 15,
+      "weight_terms": {
+        "distinct_outlets": 9,
+        "tier_weight": 4,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Channel News Asia",
+          "title": "Yemen's Houthis take over strait vital to global shipping",
+          "url": "https://www.channelnewsasia.com/world/yemen-houthis-red-sea-shipping-iran-war-6379706"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Houthis claim major advance in Yemen and tighten grip on Red Sea shipping lane",
+          "url": "https://www.bbc.co.uk/news/articles/c23x72yx2rvo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Saudi Arabia says East-West pipeline hit by drones launched from Iraq",
+          "url": "https://www.aljazeera.com/news/2026/9/11/saudi-arabia-says-east-west-pipeline-hit-by-drones-launched-from-iraq?traffic_source=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Iran-backed Houthis seize near control of vital Bab el-Mandeb shipping lane",
+          "url": "https://www.france24.com/en/middle-east/20260911-iran-backed-houthis-seize-near-control-of-vital-bab-el-mandeb-shipping-lane"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Saudi Arabian oil pipeline system struck by projectiles? Satellite images reveal extensive fire damage, says report",
+          "url": "https://www.livemint.com/news/world/saudi-arabian-oil-pipeline-system-struck-by-projectiles-satellite-images-reveal-extensive-fire-damage-says-report-11789145816757.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 12
+    },
+    {
+      "headline_hint": "United States commemorates the 25th anniversary of the September 11 terrorist attacks",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        5,
+        22,
+        28,
+        62,
+        91,
+        93,
+        96,
+        120,
+        123,
+        128,
+        144,
+        150,
+        154,
+        155,
+        167,
+        171,
+        175,
+        183,
+        186,
+        193,
+        208,
+        209,
+        215,
+        222,
+        223,
+        229,
+        235,
+        314,
+        318,
+        323,
+        329
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        5,
+        22,
+        28,
+        62,
+        91,
+        93,
+        96,
+        120,
+        123,
+        128,
+        144,
+        150,
+        154,
+        155,
+        167,
+        171,
+        175,
+        183,
+        186,
+        193,
+        208,
+        209,
+        215,
+        222,
+        223,
+        229,
+        235,
+        314,
+        318,
+        323,
+        329
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 9,
+      "wiki_backed": true,
+      "wiki_event": "A research study at the Icahn School of Medicine at Mount Sinai reports that, in the aftermath of the September 11 attacks, World Trade Center responders living in greener neighborhoods had lower risks of frailty, PTSD, and depression. Grea",
+      "weight": 13,
+      "weight_terms": {
+        "distinct_outlets": 9,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "CIA releases dozens of presidential daily briefs on Bin Laden and al-Qaida from before 9/11",
+          "url": "https://www.theguardian.com/us-news/2026/sep/11/cia-releases-presidential-briefs-bin-laden-al-qaida"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Somber tributes as US marks the 25th anniversary of September 11 attacks",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/11/somber-tributes-as-us-marks-the-25th-anniversary-of-september-11-attacks?traffic_source=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Spotlight",
+          "url": "https://www.france24.com/en/tv-shows/spotlight/20260911-spotlight"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "'That's why we fight': Trump links 9/11 to Iran conflict",
+          "url": "https://www.channelnewsasia.com/world/trump-sept11-iran-6379381"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Did Trump defend Iran war and link it to 9/11 at Pentagon memorial? Here's what the US President said",
+          "url": "https://www.livemint.com/news/us-news/did-donald-trump-defend-iran-war-and-link-it-to-9-11-at-pentagon-memorial-heres-what-the-us-president-said-11789149200308.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 26
+    },
+    {
+      "headline_hint": "Dozen missing and tens dead after fatal ferry fire off Coron in the Philippines",
+      "section": "world",
+      "category": "disaster",
+      "tier_requested": "major",
+      "article_ids": [
+        300,
+        312
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        300,
+        312
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 2,
+      "wiki_backed": true,
+      "wiki_event": "The death toll from the MV June Aster ferry fire off Coron, Palawan, Philippines, rises from five to 35 after firefighters boarded the burned vessel and recovered 30 additional bodies. The coast guard continues searching for dozens of missi",
+      "weight": 6,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "DW World",
+          "title": "Philippines ferry fire: Search continues for dozens missing",
+          "url": "https://www.dw.com/en/philippines-ferry-fire-search-continues-for-dozens-missing/a-79223425?maca=en-rss-en-world-4025-rdf"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Philippine rescuers board ferry 40 hours after blaze began",
+          "url": "https://www.bbc.co.uk/news/articles/c9dwx97pl5no?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Russian jet-powered drones strike Kyiv fuel infrastructure while ground forces push into Donbas",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "major",
+      "article_ids": [
+        69,
+        140,
+        258,
+        335
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        69,
+        140,
+        258,
+        335
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": true,
+      "wiki_event": "Russian drone strikes hit two petrol stations in Kyiv, Ukraine, killing two people and injuring 12 others. A separate attack on a residential building injures eight people, while another strike kills a woman in Kyiv Oblast.",
+      "weight": 8,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "France 24",
+          "title": "Zelensky urges Trump to impose new Russia sanctions 'now', after deadly Ukraine strikes",
+          "url": "https://www.france24.com/en/europe/20260911-zelensky-urges-trump-to-impose-new-russia-sanctions-now-after-deadly-ukraine-strikes"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Jet-powered Russian drones hit Kyiv petrol stations, killing 2",
+          "url": "https://timesofindia.indiatimes.com/world/europe/jet-powered-russian-drones-hit-kyiv-petrol-stations-killing-2-ukrainian-strikes-kill-3-in-russia/articleshow/134081704.cms"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Russia targets Kyiv petrol stations for first time with jet-powered drones",
+          "url": "https://www.theguardian.com/world/2026/sep/11/russia-kyiv-petrol-stations-jet-powered-drones-ukraine"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Civilians told to flee Ukraine's fortress cities as Russia bids to control Donbas",
+          "url": "https://www.bbc.co.uk/news/articles/cwyz89w59l3o?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Hong Kong court sentences pro-democracy Tiananmen vigil organizers to up to 7 years under security law",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        138,
+        297,
+        311
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        138,
+        297,
+        311
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 3,
+      "wiki_backed": true,
+      "wiki_event": "A Hong Kong court sentences pro-democracy activists Lee Cheuk-yan and Chow Hang-tung to seven years in prison each for inciting subversion under the national security law for leading the Hong Kong Alliance in Support of Patriotic Democratic",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "BBC World",
+          "title": "Hong Kong's Tiananmen activists sentenced to up to seven years in prison",
+          "url": "https://www.bbc.co.uk/news/articles/cvgyvk2djk4o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "DW World",
+          "title": "Hong Kong Tiananmen activists jailed for up to 7 years",
+          "url": "https://www.dw.com/en/hong-kong-tiananmen-activists-jailed-for-up-to-7-years/a-79224243?maca=en-rss-en-world-4025-rdf"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "Hong Kong court sentences 3 Tiananmen vigil organizers to prison",
+          "url": "https://www.npr.org/2026/09/11/g-s1-142832/hong-kong-court-sentences-vigil-organizers"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Anthropic thwarts biological weapon attempt as US lawmakers push for AI risk regulations",
+      "section": "world",
+      "category": "technology",
+      "tier_requested": "notable",
+      "article_ids": [
+        13,
+        29,
+        66,
+        180,
+        188,
+        302,
+        336
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        13,
+        29,
+        66,
+        180,
+        188,
+        302,
+        336
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 5,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 5,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Channel News Asia",
+          "title": "Commentary: Some Anthropic engineers think AI might end us. Why race ahead?",
+          "url": "https://www.channelnewsasia.com/commentary/anthropic-claude-ai-agent-risks-6378466"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "US legislators push AI safety laws amid human extinction warnings",
+          "url": "https://www.aljazeera.com/economy/2026/9/11/us-legislators-push-ai-safety-laws-amid-human-extinction-warnings?traffic_source=rss"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "Will AI End Humanity? Inside The Growing Apocalypse Fears",
+          "url": "https://www.ndtv.com/india-news/will-ai-end-humanity-inside-the-growing-apocalypse-fears-12034647#publisher=newsstand"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Anthropic stops bid to use AI for biological weapons research; flags rising misuse",
+          "url": "https://timesofindia.indiatimes.com/technology/anthropic-disrupts-attempts-to-use-ai-for-biological-weapons-research-report-flags-rising-misuse/articleshow/134074496.cms"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Anthropic blocks possible attempt to use AI to make biological weapons",
+          "url": "https://www.bbc.co.uk/news/articles/cx2zrrpkx20o?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 2
+    },
+    {
+      "headline_hint": "Tragic school fire in Bukavu, DRC kills dozens of children",
+      "section": "world",
+      "category": "disaster",
+      "tier_requested": "notable",
+      "article_ids": [
+        36,
+        61
+      ],
+      "verdict": "cut:below_floor(2<5)",
+      "valid_ids": [
+        36,
+        61
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 2,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "France 24",
+          "title": "Children die in a school fire in Bukavu",
+          "url": "https://www.france24.com/en/tv-shows/eye-on-africa/20260911-children-die-in-a-school-fire-in-bukavu"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Deadly DRC school fire prompts calls for safety reforms",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/11/deadly-drc-school-fire-prompts-calls-for-safety-reforms?traffic_source=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "UK House of Commons rejects bill to legalise assisted dying",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        127,
+        139
+      ],
+      "verdict": "cut:below_floor(2<5)",
+      "valid_ids": [
+        127,
+        139
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 2,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "Why did the assisted dying bill fail in the Commons? | Rowena Mason",
+          "url": "https://www.theguardian.com/society/2026/sep/11/why-did-assisted-dying-bill-fail-commons-england-wales-analysis"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "UK lawmakers vote against bill to legalise assisted dying",
+          "url": "https://www.aljazeera.com/news/2026/9/11/uk-lawmakers-vote-against-bill-to-legalise-assisted-dying?traffic_source=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "US health agencies declare end to largest recorded cyclosporiasis food poisoning outbreak",
+      "section": "world",
+      "category": "health",
+      "tier_requested": "notable",
+      "article_ids": [
+        105,
+        136
+      ],
+      "verdict": "cut:below_floor(2<5)",
+      "valid_ids": [
+        105,
+        136
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 2,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Livemint",
+          "title": "US declares largest-ever multistate cyclosporiasis outbreak over after contaminated lettuce sickens thousands",
+          "url": "https://www.livemint.com/news/us-news/us-declares-largest-ever-multistate-cyclosporiasis-outbreak-over-after-contaminated-lettuce-sickens-thousands-11789149733790.html"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "US declares end of largest recorded cyclosporiasis outbreak",
+          "url": "https://www.aljazeera.com/news/2026/9/11/us-declares-end-of-largest-recorded-cyclosporiasis-outbreak?traffic_source=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "India and Indonesia coordinate after five trafficked baby orangutans are rescued in Odisha",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        174,
+        269
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        174,
+        269
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": true,
+      "wiki_event": "Indonesia works with Indian authorities to repatriate five baby orangutans found in an Odisha forest after suspected trafficking. Odisha Police and India's Wildlife Crime Control Bureau examine how the apes, which are native to Borneo and S",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Hindustan Times",
+          "title": "Odisha STF detains three in Bengal’s Digha over recovery of 5 orangutans",
+          "url": "https://www.hindustantimes.com/india-news/odisha-stf-detains-three-in-bengal-s-digha-over-recovery-of-5-orangutans-101789141997946.html"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "Indonesia asks India to hand over five infant orangutans rescued from Odisha",
+          "url": "https://scroll.in/latest/1095684/indonesia-asks-india-to-hand-over-five-infant-orangutans-rescued-from-odisha?utm_source=rss&utm_medium=public"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "US envoy Sergio Gor visits Manipur and holds meetings with state leadership",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        67,
+        106
+      ],
+      "verdict": "cut:below_floor(2<5)",
+      "valid_ids": [
+        67,
+        106
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 2,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Hindustan Times",
+          "title": "U.S. envoy Sergio Gor visits Manipur, meets CM and governor",
+          "url": "https://www.hindustantimes.com/india-news/us-envoy-sergio-gor-vists-manipur-meets-cm-and-governor-101789154179365.html"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "US Envoy Sergio Gor Visits Manipur, Meets Governor, Chief Minister",
+          "url": "https://www.ndtv.com/india-news/us-envoy-sergio-gor-visits-manipur-meets-governor-chief-minister-12033819#publisher=newsstand"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    }
+  ]
+}
