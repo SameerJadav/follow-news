@@ -1,0 +1,19 @@
+{
+  "call": 4,
+  "label": "write",
+  "model": "gemini-3.6-flash",
+  "latency_ms": 80840,
+  "prompt_chars": 13095,
+  "system_chars": 4458,
+  "response_chars": 12506,
+  "finish_reason": "FinishReason.STOP",
+  "malformed_json": false,
+  "json_retries": 0,
+  "max_output_tokens": 32768,
+  "usage": {
+    "prompt_token_count": 4394,
+    "candidates_token_count": 3156,
+    "total_token_count": 20032,
+    "thoughts_token_count": 12482
+  }
+}
