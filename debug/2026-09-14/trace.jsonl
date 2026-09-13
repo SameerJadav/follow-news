@@ -1,0 +1,142 @@
+{"run": "digest", "t": 0, "kind": "digest", "stage": "tracer", "msg": "capture started", "level": 1, "day": "2026-09-14"}
+{"run": "digest", "t": 1982, "kind": "dbg", "msg": "digest: window since=2026-09-12T22:25:47+00:00 (prev_generated_at=2026-09-12 22:25:47+00:00)"}
+{"run": "digest", "t": 2090, "kind": "dbg", "msg": "feed 'BBC World': http=200 raw_items=23 usable=23"}
+{"run": "digest", "t": 2090, "kind": "event", "stage": "feeds", "outlet": "BBC World", "url": "https://feeds.bbci.co.uk/news/world/rss.xml", "http": 200, "elapsed_ms": 96, "bytes": 18151, "raw_items": 23, "usable": 23, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 2321, "kind": "dbg", "msg": "feed 'Al Jazeera': http=200 raw_items=25 usable=25"}
+{"run": "digest", "t": 2321, "kind": "event", "stage": "feeds", "outlet": "Al Jazeera", "url": "https://www.aljazeera.com/xml/rss/all.xml", "http": 200, "elapsed_ms": 219, "bytes": 17092, "raw_items": 25, "usable": 25, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 2640, "kind": "dbg", "msg": "feed 'Guardian World': http=200 raw_items=45 usable=45"}
+{"run": "digest", "t": 2641, "kind": "event", "stage": "feeds", "outlet": "Guardian World", "url": "https://www.theguardian.com/world/rss", "http": 200, "elapsed_ms": 260, "bytes": 149210, "raw_items": 45, "usable": 45, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 2840, "kind": "dbg", "msg": "feed 'NPR World': http=200 raw_items=10 usable=10"}
+{"run": "digest", "t": 2840, "kind": "event", "stage": "feeds", "outlet": "NPR World", "url": "https://feeds.npr.org/1004/rss.xml", "http": 200, "elapsed_ms": 191, "bytes": 13662, "raw_items": 10, "usable": 10, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 3346, "kind": "dbg", "msg": "feed 'DW World': http=200 raw_items=12 usable=12"}
+{"run": "digest", "t": 3346, "kind": "event", "stage": "feeds", "outlet": "DW World", "url": "https://rss.dw.com/rdf/rss-en-world", "http": 200, "elapsed_ms": 498, "bytes": 11774, "raw_items": 12, "usable": 12, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 3550, "kind": "dbg", "msg": "feed 'France 24': http=200 raw_items=24 usable=24"}
+{"run": "digest", "t": 3550, "kind": "event", "stage": "feeds", "outlet": "France 24", "url": "https://www.france24.com/en/rss", "http": 200, "elapsed_ms": 191, "bytes": 28430, "raw_items": 24, "usable": 24, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 3755, "kind": "dbg", "msg": "feed 'Channel News Asia': http=200 raw_items=20 usable=20"}
+{"run": "digest", "t": 3755, "kind": "event", "stage": "feeds", "outlet": "Channel News Asia", "url": "https://www.channelnewsasia.com/api/v1/rss-outbound-feed?_format=xml", "http": 200, "elapsed_ms": 194, "bytes": 14996, "raw_items": 20, "usable": 20, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 3890, "kind": "dbg", "msg": "feed 'The Hindu': http=200 raw_items=60 usable=60"}
+{"run": "digest", "t": 3890, "kind": "event", "stage": "feeds", "outlet": "The Hindu", "url": "https://www.thehindu.com/news/national/feeder/default.rss", "http": 200, "elapsed_ms": 114, "bytes": 43739, "raw_items": 60, "usable": 60, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 4262, "kind": "dbg", "msg": "feed 'NDTV': http=200 raw_items=20 usable=20"}
+{"run": "digest", "t": 4262, "kind": "event", "stage": "feeds", "outlet": "NDTV", "url": "https://feeds.feedburner.com/ndtvnews-india-news", "http": 200, "elapsed_ms": 361, "bytes": 27374, "raw_items": 20, "usable": 20, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 4380, "kind": "dbg", "msg": "feed 'Hindustan Times': http=200 raw_items=100 usable=100"}
+{"run": "digest", "t": 4381, "kind": "event", "stage": "feeds", "outlet": "Hindustan Times", "url": "https://www.hindustantimes.com/feeds/rss/india-news/rssfeed.xml", "http": 200, "elapsed_ms": 84, "bytes": 104576, "raw_items": 100, "usable": 100, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 4451, "kind": "dbg", "msg": "feed 'Times of India': http=200 raw_items=47 usable=47"}
+{"run": "digest", "t": 4451, "kind": "event", "stage": "feeds", "outlet": "Times of India", "url": "https://timesofindia.indiatimes.com/rssfeedstopstories.cms", "http": 200, "elapsed_ms": 51, "bytes": 46955, "raw_items": 47, "usable": 47, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 4620, "kind": "dbg", "msg": "feed 'Livemint': http=200 raw_items=35 usable=35"}
+{"run": "digest", "t": 4620, "kind": "event", "stage": "feeds", "outlet": "Livemint", "url": "https://www.livemint.com/rss/news", "http": 200, "elapsed_ms": 149, "bytes": 40962, "raw_items": 35, "usable": 35, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 5077, "kind": "dbg", "msg": "feed 'Scroll.in': http=200 raw_items=100 usable=100"}
+{"run": "digest", "t": 5077, "kind": "event", "stage": "feeds", "outlet": "Scroll.in", "url": "https://feeds.feedburner.com/ScrollinArticles.rss", "http": 200, "elapsed_ms": 328, "bytes": 299871, "raw_items": 100, "usable": 100, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 5084, "kind": "dbg", "msg": "gather: 387 article(s) after window+dedupe; by outlet: {'BBC World': 14, 'Channel News Asia': 19, 'Guardian World': 24, 'Al Jazeera': 25, 'Times of India': 45, 'Livemint': 35, 'France 24': 24, 'The Hindu': 60, 'NPR World': 2, 'Hindustan Times': 97, 'NDTV': 20, 'Scroll.in': 20, 'DW World': 2}"}
+{"run": "digest", "t": 5084, "kind": "dbg", "msg": "gather: 13/13 feed(s) live, 387 article(s)"}
+{"run": "digest", "t": 5087, "kind": "event", "stage": "stage", "name": "gather", "ms": 3104, "ok": true, "error": ""}
+{"run": "digest", "t": 5087, "kind": "dbg", "msg": "gather: QUORUM OK — live=13/3 min, articles=387/20 min"}
+{"run": "digest", "t": 5087, "kind": "dbg", "msg": "rank: select pool 387 -> 305; capped outlets: {'The Hindu': 20, 'Hindustan Times': 57, 'Times of India': 5}"}
+{"run": "digest", "t": 5091, "kind": "event", "stage": "stage", "name": "pool", "ms": 4, "ok": true, "error": ""}
+{"run": "digest", "t": 5233, "kind": "dbg", "msg": "wiki: 2026_September_14 http=200 events=0"}
+{"run": "digest", "t": 5233, "kind": "event", "stage": "wikipedia", "page": "2026_September_14", "http": 200, "bytes": 192, "events": 0, "verdict": "ok"}
+{"run": "digest", "t": 5366, "kind": "dbg", "msg": "wiki: 2026_September_13 http=200 events=8"}
+{"run": "digest", "t": 5366, "kind": "event", "stage": "wikipedia", "page": "2026_September_13", "http": 200, "bytes": 4611, "events": 8, "verdict": "ok"}
+{"run": "digest", "t": 5368, "kind": "event", "stage": "stage", "name": "wikipedia", "ms": 276, "ok": true, "error": ""}
+{"run": "digest", "t": 5477, "kind": "dbg", "msg": "llm: call #1 model=gemini-3.6-flash label=select prompt=75536ch"}
+{"run": "digest", "t": 27728, "kind": "dbg", "msg": "llm: select finish_reason=FinishReason.STOP"}
+{"run": "digest", "t": 27732, "kind": "event", "stage": "llm", "call": 1, "label": "select", "model": "gemini-3.6-flash", "latency_ms": 22251, "prompt_chars": 75536, "system_chars": 2517, "response_chars": 2340, "finish_reason": "FinishReason.STOP", "malformed_json": false, "json_retries": 0, "max_output_tokens": 32768, "usage": {"prompt_token_count": 18429, "candidates_token_count": 767, "total_token_count": 23610, "thoughts_token_count": 4414}}
+{"run": "digest", "t": 27733, "kind": "dbg", "msg": "llm: select_stories -> 11 raw cluster(s)"}
+{"run": "digest", "t": 27733, "kind": "event", "stage": "stage", "name": "select", "ms": 22365, "ok": true, "error": ""}
+{"run": "digest", "t": 27734, "kind": "dbg", "msg": "rank: [india] outlets=8 tier=lead wiki=yes weight=14 '18th BRICS Summit hosted in New Delhi with focus on Global South, trade, and regional security'"}
+{"run": "digest", "t": 27734, "kind": "dbg", "msg": "rank: [world] outlets=5 tier=lead wiki=yes weight=11 'Swedish general election sees tight deadlock between opposition bloc and government parties'"}
+{"run": "digest", "t": 27734, "kind": "dbg", "msg": "rank: [world] outlets=5 tier=major wiki=yes weight=9 \"At least six dead and over 130 missing after ferry capsizes in Indonesia's Java Sea\""}
+{"run": "digest", "t": 27734, "kind": "dbg", "msg": "rank: [world] outlets=6 tier=major wiki=no weight=8 'Russian drone strikes Ukrainian train near Polish border shortly after visits by European leaders'"}
+{"run": "digest", "t": 27735, "kind": "dbg", "msg": "rank: [world] outlets=6 tier=major wiki=no weight=8 'Houthi strikes on Saudi military targets trigger regional escalation and oil price surge'"}
+{"run": "digest", "t": 27735, "kind": "dbg", "msg": "rank: [india] outlets=3 tier=major wiki=no weight=5 \"India wins Women's Asia Cup title but team declines trophy from ACC chief Mohsin Naqvi\""}
+{"run": "digest", "t": 27735, "kind": "dbg", "msg": "rank: [india] outlets=4 tier=major wiki=no weight=6 'Commercial ship with Indian crew attacked off Oman, search operation underway for missing seafarer'"}
+{"run": "digest", "t": 27735, "kind": "dbg", "msg": "rank: [world] outlets=3 tier=notable wiki=yes weight=5 \"United States defeats France to claim 12th FIBA Women's Basketball World Cup title\""}
+{"run": "digest", "t": 27735, "kind": "dbg", "msg": "rank: [world] outlets=4 tier=notable wiki=no weight=4 'Tech leaders and experts debate calls to slow down AI development amid existential risk concerns'"}
+{"run": "digest", "t": 27736, "kind": "dbg", "msg": "rank: [india] outlets=4 tier=notable wiki=no weight=4 'Maratha quota activist Manoj Jarange Patil announces fast unto death in Mumbai'"}
+{"run": "digest", "t": 27736, "kind": "dbg", "msg": "rank: [india] outlets=2 tier=notable wiki=no weight=2 'Bangladesh seeks to reset diplomatic ties with India through bilateral discussions'"}
+{"run": "digest", "t": 27736, "kind": "dbg", "msg": "rank: 11 scored, 0 id(s) rejected, 8 kept {'world': 5, 'india': 3}; weights=[11, 9, 8, 8, 5, 14, 6, 5]"}
+{"run": "digest", "t": 27737, "kind": "event", "stage": "stage", "name": "rank", "ms": 3, "ok": true, "error": ""}
+{"run": "digest", "t": 27739, "kind": "dbg", "msg": "wiki: 8 curated event(s); 4 matched a selected story, 4 not covered"}
+{"run": "digest", "t": 27739, "kind": "dbg", "msg": "wiki: NOT COVERED [Armed conflicts and attacks] Hezbollah–Israel conflict — The Ghana Army says that Battalion 92 of the United Nations Interim Force in Lebanon will return to Ghana following a year of duty in southern Lebanon."}
+{"run": "digest", "t": 27739, "kind": "dbg", "msg": "wiki: NOT COVERED [Disasters and accidents] Sinking of the MV Matui — One person dies, 12 are rescued, and more than 30 remain missing after the sinking of the MV Matui ferry off Espiritu Santo, Vanuatu, during rough seas."}
+{"run": "digest", "t": 27739, "kind": "dbg", "msg": "wiki: NOT COVERED [International relations] Myanmar's Union Government revokes Kyaw Moe Tun's status as the country's permanent representative to the United Nations, accusing him of illegal activities, as the UN Credentials Committee prepares to consider the country's disputed repres"}
+{"run": "digest", "t": 27739, "kind": "dbg", "msg": "wiki: NOT COVERED [Politics and elections] Kosovo political deadlock — The Assembly of Kosovo is declared constituted by acting president and speaker Albulena Haxhiu, but without the deputy speaker from the PDK. The Assembly then accepts the fourth cabinet of incumbent prime minister Albin Kurti. The PDK and t"}
+{"run": "digest", "t": 27833, "kind": "dbg", "msg": "extract: 2049ch https://www.bbc.co.uk/news/articles/c0qx5d79kdeo?at_medium=RSS&at_campaign=rss"}
+{"run": "digest", "t": 28058, "kind": "dbg", "msg": "extract: 4745ch https://www.theguardian.com/world/live/2026/sep/13/sweden-general-election-social-democrats-magdalena-sweden-democrats-ulf-kristersson-andersson-far-right-europe-latest-news-updates"}
+{"run": "digest", "t": 28140, "kind": "dbg", "msg": "extract: 3865ch https://timesofindia.indiatimes.com/world/europe/sweden-opposition-holds-narrow-lead-in-tight-election-projection-shows-as-vote-counting-continues/articleshow/134226934.cms"}
+{"run": "digest", "t": 28537, "kind": "dbg", "msg": "extract: via_jina https://www.aljazeera.com/video/newsfeed/2026/9/13/swedes-vote-in-election-that-could-see-far-right-in-government?traffic_source=rss: http=403"}
+{"run": "digest", "t": 31538, "kind": "dbg", "msg": "extract: 264ch https://www.aljazeera.com/video/newsfeed/2026/9/13/swedes-vote-in-election-that-could-see-far-right-in-government?traffic_source=rss"}
+{"run": "digest", "t": 31724, "kind": "dbg", "msg": "extract: fetch_html https://www.france24.com/en/tv-shows/spotlight/20260913-sweden-election-aftermath-a-hard-night-for-the-hard-right: http=403"}
+{"run": "digest", "t": 35320, "kind": "dbg", "msg": "extract: 18692ch https://www.france24.com/en/tv-shows/spotlight/20260913-sweden-election-aftermath-a-hard-night-for-the-hard-right"}
+{"run": "digest", "t": 35378, "kind": "dbg", "msg": "extract: 3225ch https://www.bbc.co.uk/news/articles/cvgykzgljlyo?at_medium=RSS&at_campaign=rss"}
+{"run": "digest", "t": 35455, "kind": "dbg", "msg": "extract: fetch_html https://www.france24.com/en/indonesia-second-ferry-disaster-in-five-days: http=403"}
+{"run": "digest", "t": 39519, "kind": "dbg", "msg": "extract: 12656ch https://www.france24.com/en/indonesia-second-ferry-disaster-in-five-days"}
+{"run": "digest", "t": 39842, "kind": "dbg", "msg": "extract: 2857ch https://www.theguardian.com/world/2026/sep/13/indonesian-rescue-crews-searching-for-140-people-after-ferry-hit-bad-weather"}
+{"run": "digest", "t": 40295, "kind": "dbg", "msg": "extract: 4551ch https://www.npr.org/2026/09/13/g-s1-143114/about-130-missing-after-indonesian-passenger-ship-overturns"}
+{"run": "digest", "t": 42746, "kind": "dbg", "msg": "extract: 3454ch https://www.livemint.com/news/world/indonesian-passenger-ship-with-243-onboard-loses-contact-one-dies-103-evacuated-what-we-know-so-far-11789275564387.html"}
+{"run": "digest", "t": 42886, "kind": "dbg", "msg": "extract: 2835ch https://www.aljazeera.com/news/2026/9/13/poland-ukraine-accuse-russia-of-escalation-after-strikes-near-border?traffic_source=rss"}
+{"run": "digest", "t": 42943, "kind": "dbg", "msg": "extract: 5017ch https://www.bbc.co.uk/news/articles/cy5zg41dkqwo?at_medium=RSS&at_campaign=rss"}
+{"run": "digest", "t": 43000, "kind": "dbg", "msg": "extract: fetch_html https://www.france24.com/en/europe/20260913-poland-ukraine-slam-russian-strikes-near-border-as-escalation: http=403"}
+{"run": "digest", "t": 46476, "kind": "dbg", "msg": "extract: 6487ch https://www.france24.com/en/europe/20260913-poland-ukraine-slam-russian-strikes-near-border-as-escalation"}
+{"run": "digest", "t": 46538, "kind": "dbg", "msg": "extract: 3547ch https://timesofindia.indiatimes.com/world/europe/russia-strikes-train-near-poland-border-minutes-after-boris-johnson-european-leaders-pass-through/articleshow/134216343.cms"}
+{"run": "digest", "t": 46735, "kind": "dbg", "msg": "extract: 6242ch https://www.theguardian.com/world/2026/sep/13/russian-drone-hits-kyiv-warsaw-passenger-train-polish-border"}
+{"run": "digest", "t": 46821, "kind": "dbg", "msg": "extract: 847ch https://www.channelnewsasia.com/business/oil-prices-jump-more-3-after-new-strikes-saudi-strait-hormuz-6381966"}
+{"run": "digest", "t": 46941, "kind": "dbg", "msg": "extract: 3814ch https://www.aljazeera.com/news/2026/9/13/tehran-and-muscat-delay-talks-citing-regional-consensus-need?traffic_source=rss"}
+{"run": "digest", "t": 47005, "kind": "dbg", "msg": "extract: 1581ch https://timesofindia.indiatimes.com/world/middle-east/some-regional-countries-requested-iran-after-meeting-with-gulf-states-in-oman-postponed/articleshow/134224097.cms"}
+{"run": "digest", "t": 47064, "kind": "dbg", "msg": "extract: fetch_html https://www.france24.com/en/tv-shows/spotlight/20260913-sucker-punch-how-the-houthis-shocked-the-gulf: http=403"}
+{"run": "digest", "t": 50370, "kind": "dbg", "msg": "extract: 17520ch https://www.france24.com/en/tv-shows/spotlight/20260913-sucker-punch-how-the-houthis-shocked-the-gulf"}
+{"run": "digest", "t": 50595, "kind": "dbg", "msg": "extract: 1907ch https://www.thehindu.com/news/national/jaishankar-holds-talks-on-west-asia-conflict-with-saudi-foreign-minister/article71464135.ece"}
+{"run": "digest", "t": 50747, "kind": "dbg", "msg": "extract: 2262ch https://www.aljazeera.com/sports/2026/9/13/usa-defeat-france-to-win-12th-fiba-womens-basketball-world-cup?traffic_source=rss"}
+{"run": "digest", "t": 51261, "kind": "dbg", "msg": "extract: 1935ch https://www.channelnewsasia.com/sport/usa-overcome-14-point-deficit-beat-france-97-79-win-womens-world-cup-6381771"}
+{"run": "digest", "t": 51320, "kind": "dbg", "msg": "extract: fetch_html https://www.france24.com/en/sport/20260913-us-beats-spirited-france-to-win-12th-women-s-basketball-world-cup: http=403"}
+{"run": "digest", "t": 54803, "kind": "dbg", "msg": "extract: 3919ch https://www.france24.com/en/sport/20260913-us-beats-spirited-france-to-win-12th-women-s-basketball-world-cup"}
+{"run": "digest", "t": 64201, "kind": "dbg", "msg": "extract: 29756ch https://www.npr.org/2026/09/13/nx-s1-5967045/world-leaders-gathered-for-the-annual-brics-summit-here-are-the-takeaways"}
+{"run": "digest", "t": 64324, "kind": "dbg", "msg": "extract: 28264ch https://www.thehindu.com/news/national/brics-summit-india-world-leaders-in-new-delhi-key-agenda-live-updates-september-12-2026/article71459005.ece"}
+{"run": "digest", "t": 64452, "kind": "dbg", "msg": "extract: 5127ch https://www.hindustantimes.com/india-news/pm-modi-s-bilateral-talks-put-security-trade-in-focus-101789327732640.html"}
+{"run": "digest", "t": 64497, "kind": "dbg", "msg": "extract: fetch_html https://www.ndtv.com/india-news/brics-summit-2026-live-updates-today-pm-narendra-modi-putin-xi-jinping-meet-bharat-mandapam-traffic-new-delhi-declaration-backs-return-of-antiquities-12039405#publisher=newsstand: http=403"}
+{"run": "digest", "t": 73549, "kind": "dbg", "msg": "extract: 81199ch https://www.ndtv.com/india-news/brics-summit-2026-live-updates-today-pm-narendra-modi-putin-xi-jinping-meet-bharat-mandapam-traffic-new-delhi-declaration-backs-return-of-antiquities-12039405#publisher=newsstand"}
+{"run": "digest", "t": 73646, "kind": "dbg", "msg": "extract: 4287ch https://timesofindia.indiatimes.com/india/brics-day-2-pm-flags-critical-minerals-tech-weaponisation-amid-global-tensions/articleshow/134220477.cms"}
+{"run": "digest", "t": 73829, "kind": "dbg", "msg": "extract: 2643ch https://www.thehindu.com/news/national/indian-missing-after-attack-on-panama-flagged-tanker-off-oman-mea-says-search-ops-on/article71464456.ece"}
+{"run": "digest", "t": 73882, "kind": "dbg", "msg": "extract: fetch_html https://www.ndtv.com/india-news/ship-with-indian-crew-attacked-off-oman-coast-13-rescued-1-missing-12041892#publisher=newsstand: http=403"}
+{"run": "digest", "t": 78974, "kind": "dbg", "msg": "extract: 32568ch https://www.ndtv.com/india-news/ship-with-indian-crew-attacked-off-oman-coast-13-rescued-1-missing-12041892#publisher=newsstand"}
+{"run": "digest", "t": 79036, "kind": "dbg", "msg": "extract: 2989ch https://timesofindia.indiatimes.com/india/unacceptable-india-condemns-attack-on-commercial-vessel-off-oman-13-indians-rescued/articleshow/134203824.cms"}
+{"run": "digest", "t": 79198, "kind": "dbg", "msg": "extract: 3419ch https://www.hindustantimes.com/india-news/india-condemns-attack-on-vessel-off-oman-coast-13-indian-crew-members-rescued-1-missing-101789311281232.html"}
+{"run": "digest", "t": 79409, "kind": "dbg", "msg": "extract: 5296ch https://www.aljazeera.com/sports/2026/9/13/india-win-womens-asia-cup-but-do-not-accept-trophy?traffic_source=rss"}
+{"run": "digest", "t": 79546, "kind": "dbg", "msg": "extract: 2311ch https://www.thehindu.com/sport/cricket/asia-cup-indian-womens-cricket-team-refuses-to-accept-trophy-from-acc-head-mohsin-naqvi/article71464494.ece"}
+{"run": "digest", "t": 79631, "kind": "dbg", "msg": "extract: 1487ch https://timesofindia.indiatimes.com/sports/cricket/news/india-womens-team-refuses-asia-cup-trophy-from-mohsin-naqvi-after-title-win/articleshow/134220894.cms"}
+{"run": "digest", "t": 79697, "kind": "dbg", "msg": "extract: 3041ch https://timesofindia.indiatimes.com/sports/cricket/womens-asia-cup/news/harmanpreets-india-avenge-2024-final-defeat-beat-sri-lanka-by-72-runs-to-lift-eighth-womens-asia-cup-title/articleshow/134217047.cms"}
+{"run": "digest", "t": 79700, "kind": "event", "stage": "stage", "name": "extract", "ms": 51960, "ok": true, "error": ""}
+{"run": "digest", "t": 79736, "kind": "dbg", "msg": "llm: call #2 model=gemini-3.6-flash label=claims-world prompt=81633ch"}
+{"run": "digest", "t": 105987, "kind": "dbg", "msg": "llm: claims-world finish_reason=FinishReason.STOP"}
+{"run": "digest", "t": 105988, "kind": "event", "stage": "llm", "call": 2, "label": "claims-world", "model": "gemini-3.6-flash", "latency_ms": 26250, "prompt_chars": 81633, "system_chars": 2135, "response_chars": 11123, "finish_reason": "FinishReason.STOP", "malformed_json": false, "json_retries": 0, "max_output_tokens": 32768, "usage": {"prompt_token_count": 21514, "candidates_token_count": 2700, "total_token_count": 28184, "thoughts_token_count": 3970}}
+{"run": "digest", "t": 105989, "kind": "dbg", "msg": "llm: claims: [world] 16 claim(s) from 4 outlet(s) 'Swedish general election sees tight deadlock between opposition bloc and government parties'"}
+{"run": "digest", "t": 105989, "kind": "dbg", "msg": "llm: claims: [world] 13 claim(s) from 5 outlet(s) \"At least six dead and over 130 missing after ferry capsizes in Indonesia's Java Sea\""}
+{"run": "digest", "t": 105989, "kind": "dbg", "msg": "llm: claims: [world] 14 claim(s) from 5 outlet(s) 'Russian drone strikes Ukrainian train near Polish border shortly after visits by European leaders'"}
+{"run": "digest", "t": 105989, "kind": "dbg", "msg": "llm: claims: [world] 12 claim(s) from 4 outlet(s) 'Houthi strikes on Saudi military targets trigger regional escalation and oil price surge'"}
+{"run": "digest", "t": 105989, "kind": "dbg", "msg": "llm: claims: [world] 11 claim(s) from 3 outlet(s) \"United States defeats France to claim 12th FIBA Women's Basketball World Cup title\""}
+{"run": "digest", "t": 106025, "kind": "dbg", "msg": "llm: call #3 model=gemini-3.6-flash label=claims-india prompt=52902ch"}
+{"run": "digest", "t": 129595, "kind": "dbg", "msg": "llm: claims-india finish_reason=FinishReason.STOP"}
+{"run": "digest", "t": 129596, "kind": "event", "stage": "llm", "call": 3, "label": "claims-india", "model": "gemini-3.6-flash", "latency_ms": 23570, "prompt_chars": 52902, "system_chars": 2135, "response_chars": 5638, "finish_reason": "FinishReason.STOP", "malformed_json": false, "json_retries": 0, "max_output_tokens": 32768, "usage": {"prompt_token_count": 14997, "candidates_token_count": 1493, "total_token_count": 19392, "thoughts_token_count": 2902}}
+{"run": "digest", "t": 129597, "kind": "dbg", "msg": "llm: claims: [india] 8 claim(s) from 3 outlet(s) '18th BRICS Summit hosted in New Delhi with focus on Global South, trade, and regional security'"}
+{"run": "digest", "t": 129597, "kind": "dbg", "msg": "llm: claims: [india] 7 claim(s) from 3 outlet(s) 'Commercial ship with Indian crew attacked off Oman, search operation underway for missing seafarer'"}
+{"run": "digest", "t": 129597, "kind": "dbg", "msg": "llm: claims: [india] 8 claim(s) from 3 outlet(s) \"India wins Women's Asia Cup title but team declines trophy from ACC chief Mohsin Naqvi\""}
+{"run": "digest", "t": 129597, "kind": "dbg", "msg": "llm: extract_claims -> 8/8 cluster(s), 89 claim(s) total, 0 cluster(s) rejected, 0 claim(s) rejected"}
+{"run": "digest", "t": 129599, "kind": "event", "stage": "stage", "name": "claims", "ms": 49899, "ok": true, "error": ""}
+{"run": "digest", "t": 129635, "kind": "dbg", "msg": "llm: call #4 model=gemini-3.6-flash label=write prompt=15433ch"}
+{"run": "digest", "t": 185381, "kind": "dbg", "msg": "llm: write finish_reason=FinishReason.STOP"}
+{"run": "digest", "t": 185382, "kind": "event", "stage": "llm", "call": 4, "label": "write", "model": "gemini-3.6-flash", "latency_ms": 55745, "prompt_chars": 15433, "system_chars": 4458, "response_chars": 15656, "finish_reason": "FinishReason.STOP", "malformed_json": false, "json_retries": 0, "max_output_tokens": 32768, "usage": {"prompt_token_count": 5089, "candidates_token_count": 4240, "total_token_count": 17992, "thoughts_token_count": 8663}}
+{"run": "digest", "t": 185391, "kind": "dbg", "msg": "llm: write_stories -> 8 story/stories written, 0 dropped, 0 thin-sourced"}
+{"run": "digest", "t": 185391, "kind": "event", "stage": "stage", "name": "write", "ms": 55792, "ok": true, "error": ""}
+{"run": "digest", "t": 185393, "kind": "dbg", "msg": "digest: wrote /home/runner/work/follow-news/follow-news/data/2026-09-14.json with 8 story/stories"}
+{"run": "digest", "t": 185545, "kind": "event", "stage": "stage", "name": "render", "ms": 152, "ok": true, "error": ""}
+{"run": "digest", "t": 185545, "kind": "dbg", "msg": "digest: 4 LLM call(s) this run"}
+{"run": "digest", "t": 185546, "kind": "event", "stage": "tracer", "msg": "capture finished", "ok": true, "ms": 185546, "bytes": 12481922}
+{"run": "follow", "t": 0, "kind": "follow", "stage": "tracer", "msg": "capture started", "level": 1, "day": "2026-09-14"}
+{"run": "follow", "t": 3, "kind": "dbg", "msg": "extract: cache enabled at /home/runner/work/follow-news/follow-news/cache/extract.json (121 url(s))"}
+{"run": "follow", "t": 321, "kind": "dbg", "msg": "follow: run -> 3 existing record(s), 3 owner issue(s) in scope"}
+{"run": "follow", "t": 322, "kind": "dbg", "msg": "dossier: grounded ceiling of 20 is over 14 days old; re-probing"}
+{"run": "follow", "t": 323, "kind": "dbg", "msg": "follow: sweep -> nothing to research; 0 active follow(s) all current"}
+{"run": "follow", "t": 323, "kind": "dbg", "msg": "follow: wrote /home/runner/work/follow-news/follow-news/followed/1/record.json"}
+{"run": "follow", "t": 324, "kind": "dbg", "msg": "follow: wrote /home/runner/work/follow-news/follow-news/followed/2/record.json"}
+{"run": "follow", "t": 326, "kind": "dbg", "msg": "follow: wrote /home/runner/work/follow-news/follow-news/followed/3/record.json"}
+{"run": "follow", "t": 475, "kind": "dbg", "msg": "follow: run -> done, 0 grounded call(s) this run"}
+{"run": "follow", "t": 476, "kind": "event", "stage": "tracer", "msg": "capture finished", "ok": true, "ms": 476, "bytes": 4462}
