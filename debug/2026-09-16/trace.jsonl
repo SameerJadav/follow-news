@@ -1,0 +1,150 @@
+{"run": "digest", "t": 0, "kind": "digest", "stage": "tracer", "msg": "capture started", "level": 1, "day": "2026-09-16"}
+{"run": "digest", "t": 1785, "kind": "dbg", "msg": "digest: window since=2026-09-15T00:46:18+00:00 (prev_generated_at=2026-09-15 00:46:18+00:00)"}
+{"run": "digest", "t": 1973, "kind": "dbg", "msg": "feed 'BBC World': http=200 raw_items=27 usable=27"}
+{"run": "digest", "t": 1973, "kind": "event", "stage": "feeds", "outlet": "BBC World", "url": "https://feeds.bbci.co.uk/news/world/rss.xml", "http": 200, "elapsed_ms": 178, "bytes": 20948, "raw_items": 27, "usable": 27, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 2229, "kind": "dbg", "msg": "feed 'Al Jazeera': http=200 raw_items=25 usable=25"}
+{"run": "digest", "t": 2229, "kind": "event", "stage": "feeds", "outlet": "Al Jazeera", "url": "https://www.aljazeera.com/xml/rss/all.xml", "http": 200, "elapsed_ms": 245, "bytes": 16899, "raw_items": 25, "usable": 25, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 2480, "kind": "dbg", "msg": "feed 'Guardian World': http=200 raw_items=45 usable=45"}
+{"run": "digest", "t": 2480, "kind": "event", "stage": "feeds", "outlet": "Guardian World", "url": "https://www.theguardian.com/world/rss", "http": 200, "elapsed_ms": 197, "bytes": 157792, "raw_items": 45, "usable": 45, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 2885, "kind": "dbg", "msg": "feed 'NPR World': http=200 raw_items=10 usable=10"}
+{"run": "digest", "t": 2885, "kind": "event", "stage": "feeds", "outlet": "NPR World", "url": "https://feeds.npr.org/1004/rss.xml", "http": 200, "elapsed_ms": 397, "bytes": 14231, "raw_items": 10, "usable": 10, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 3206, "kind": "dbg", "msg": "feed 'DW World': http=200 raw_items=12 usable=12"}
+{"run": "digest", "t": 3206, "kind": "event", "stage": "feeds", "outlet": "DW World", "url": "https://rss.dw.com/rdf/rss-en-world", "http": 200, "elapsed_ms": 314, "bytes": 11687, "raw_items": 12, "usable": 12, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 3574, "kind": "dbg", "msg": "feed 'France 24': http=200 raw_items=24 usable=24"}
+{"run": "digest", "t": 3574, "kind": "event", "stage": "feeds", "outlet": "France 24", "url": "https://www.france24.com/en/rss", "http": 200, "elapsed_ms": 357, "bytes": 28523, "raw_items": 24, "usable": 24, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 4011, "kind": "dbg", "msg": "feed 'Channel News Asia': http=200 raw_items=20 usable=20"}
+{"run": "digest", "t": 4011, "kind": "event", "stage": "feeds", "outlet": "Channel News Asia", "url": "https://www.channelnewsasia.com/api/v1/rss-outbound-feed?_format=xml", "http": 200, "elapsed_ms": 427, "bytes": 17353, "raw_items": 20, "usable": 20, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 4188, "kind": "dbg", "msg": "feed 'The Hindu': http=200 raw_items=60 usable=60"}
+{"run": "digest", "t": 4188, "kind": "event", "stage": "feeds", "outlet": "The Hindu", "url": "https://www.thehindu.com/news/national/feeder/default.rss", "http": 200, "elapsed_ms": 160, "bytes": 44036, "raw_items": 60, "usable": 60, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 4488, "kind": "dbg", "msg": "feed 'NDTV': http=200 raw_items=20 usable=20"}
+{"run": "digest", "t": 4488, "kind": "event", "stage": "feeds", "outlet": "NDTV", "url": "https://feeds.feedburner.com/ndtvnews-india-news", "http": 200, "elapsed_ms": 288, "bytes": 27948, "raw_items": 20, "usable": 20, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 4657, "kind": "dbg", "msg": "feed 'Hindustan Times': http=200 raw_items=100 usable=100"}
+{"run": "digest", "t": 4657, "kind": "event", "stage": "feeds", "outlet": "Hindustan Times", "url": "https://www.hindustantimes.com/feeds/rss/india-news/rssfeed.xml", "http": 200, "elapsed_ms": 141, "bytes": 97948, "raw_items": 100, "usable": 100, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 4922, "kind": "dbg", "msg": "feed 'Times of India': http=200 raw_items=47 usable=47"}
+{"run": "digest", "t": 4922, "kind": "event", "stage": "feeds", "outlet": "Times of India", "url": "https://timesofindia.indiatimes.com/rssfeedstopstories.cms", "http": 200, "elapsed_ms": 248, "bytes": 49793, "raw_items": 47, "usable": 47, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 5127, "kind": "dbg", "msg": "feed 'Livemint': http=200 raw_items=35 usable=35"}
+{"run": "digest", "t": 5127, "kind": "event", "stage": "feeds", "outlet": "Livemint", "url": "https://www.livemint.com/rss/news", "http": 200, "elapsed_ms": 192, "bytes": 37925, "raw_items": 35, "usable": 35, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 5530, "kind": "dbg", "msg": "feed 'Scroll.in': http=200 raw_items=100 usable=100"}
+{"run": "digest", "t": 5530, "kind": "event", "stage": "feeds", "outlet": "Scroll.in", "url": "https://feeds.feedburner.com/ScrollinArticles.rss", "http": 200, "elapsed_ms": 292, "bytes": 300184, "raw_items": 100, "usable": 100, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 5537, "kind": "dbg", "msg": "gather: 415 article(s) after window+dedupe; by outlet: {'Times of India': 43, 'Guardian World': 33, 'BBC World': 21, 'The Hindu': 60, 'Channel News Asia': 20, 'NPR World': 7, 'Al Jazeera': 25, 'France 24': 23, 'Livemint': 35, 'NDTV': 20, 'DW World': 8, 'Hindustan Times': 95, 'Scroll.in': 25}"}
+{"run": "digest", "t": 5537, "kind": "dbg", "msg": "gather: 13/13 feed(s) live, 415 article(s)"}
+{"run": "digest", "t": 5539, "kind": "event", "stage": "stage", "name": "gather", "ms": 3753, "ok": true, "error": ""}
+{"run": "digest", "t": 5539, "kind": "dbg", "msg": "gather: QUORUM OK — live=13/3 min, articles=415/20 min"}
+{"run": "digest", "t": 5539, "kind": "dbg", "msg": "rank: select pool 415 -> 337; capped outlets: {'The Hindu': 20, 'Times of India': 3, 'Hindustan Times': 55}"}
+{"run": "digest", "t": 5543, "kind": "event", "stage": "stage", "name": "pool", "ms": 4, "ok": true, "error": ""}
+{"run": "digest", "t": 5667, "kind": "dbg", "msg": "wiki: 2026_September_16 http=200 events=0"}
+{"run": "digest", "t": 5667, "kind": "event", "stage": "wikipedia", "page": "2026_September_16", "http": 200, "bytes": 192, "events": 0, "verdict": "ok"}
+{"run": "digest", "t": 5774, "kind": "dbg", "msg": "wiki: 2026_September_15 http=200 events=18"}
+{"run": "digest", "t": 5774, "kind": "event", "stage": "wikipedia", "page": "2026_September_15", "http": 200, "bytes": 9578, "events": 18, "verdict": "ok"}
+{"run": "digest", "t": 5775, "kind": "event", "stage": "stage", "name": "wikipedia", "ms": 231, "ok": true, "error": ""}
+{"run": "digest", "t": 5875, "kind": "dbg", "msg": "llm: call #1 model=gemini-3.6-flash label=select prompt=87911ch"}
+{"run": "digest", "t": 34306, "kind": "dbg", "msg": "llm: select finish_reason=FinishReason.STOP"}
+{"run": "digest", "t": 34307, "kind": "event", "stage": "llm", "call": 1, "label": "select", "model": "gemini-3.6-flash", "latency_ms": 28430, "prompt_chars": 87911, "system_chars": 2517, "response_chars": 2561, "finish_reason": "FinishReason.STOP", "malformed_json": false, "json_retries": 0, "max_output_tokens": 32768, "usage": {"prompt_token_count": 20839, "candidates_token_count": 787, "total_token_count": 26981, "thoughts_token_count": 5355}}
+{"run": "digest", "t": 34308, "kind": "dbg", "msg": "llm: select_stories -> 13 raw cluster(s)"}
+{"run": "digest", "t": 34308, "kind": "event", "stage": "stage", "name": "select", "ms": 28532, "ok": true, "error": ""}
+{"run": "digest", "t": 34308, "kind": "dbg", "msg": "rank: [world] outlets=5 tier=lead wiki=yes weight=11 'NATO jets down drone over Lithuania as Russian warship fires flares at Danish helicopter'"}
+{"run": "digest", "t": 34309, "kind": "dbg", "msg": "rank: [world] outlets=5 tier=major wiki=no weight=7 \"US Supreme Court blocks Trump's executive order on mail-in voting\""}
+{"run": "digest", "t": 34309, "kind": "dbg", "msg": "rank: [world] outlets=9 tier=major wiki=yes weight=13 'Houthis seize Red Sea islands and tanker attacked in Strait of Hormuz as regional conflict widens'"}
+{"run": "digest", "t": 34309, "kind": "dbg", "msg": "rank: [world] outlets=4 tier=major wiki=no weight=6 'US acknowledges deploying weapons in space to counter adversary threats'"}
+{"run": "digest", "t": 34310, "kind": "dbg", "msg": "rank: [world] outlets=6 tier=major wiki=yes weight=10 'Reports reveal US war with Iran has cost $38 billion and depleted missile stockpiles'"}
+{"run": "digest", "t": 34310, "kind": "dbg", "msg": "rank: [world] outlets=4 tier=notable wiki=no weight=4 \"Canada's Carney pivots toward EU alliance and investment amid US trade conflict\""}
+{"run": "digest", "t": 34310, "kind": "dbg", "msg": "rank: [world] outlets=3 tier=notable wiki=no weight=3 'Suspected sabotage causes widespread disruption across Dutch rail network'"}
+{"run": "digest", "t": 34310, "kind": "dbg", "msg": "rank: [world] outlets=3 tier=notable wiki=no weight=3 \"Imran Khan's family and supporters raise alarms over his health in Pakistani prison\""}
+{"run": "digest", "t": 34311, "kind": "dbg", "msg": "rank: [india] outlets=6 tier=lead wiki=no weight=10 'Government notifies 0.4% MDR charge on UPI merchant payments above Rs 2,000'"}
+{"run": "digest", "t": 34311, "kind": "dbg", "msg": "rank: [india] outlets=2 tier=major wiki=no weight=4 'NDA allies TDP and Shiv Sena support implementation of Uniform Civil Code in NDA-ruled states'"}
+{"run": "digest", "t": 34311, "kind": "dbg", "msg": "rank: [india] outlets=3 tier=notable wiki=no weight=3 'Meta to report child safety and CSAM data directly to Indian law enforcement'"}
+{"run": "digest", "t": 34311, "kind": "dbg", "msg": "rank: [india] outlets=3 tier=notable wiki=no weight=3 \"India calls Pakistan's increased bounty on Jaish-e-Mohammed chief Masood Azhar a gimmick\""}
+{"run": "digest", "t": 34311, "kind": "dbg", "msg": "rank: [india] outlets=2 tier=notable wiki=no weight=2 'CBI books Arunachal anti-dam activist Bhanu Tatak over foreign funding violations'"}
+{"run": "digest", "t": 34312, "kind": "dbg", "msg": "rank: 13 scored, 0 id(s) rejected, 6 kept {'world': 5, 'india': 1}; weights=[13, 11, 10, 7, 6, 10]"}
+{"run": "digest", "t": 34312, "kind": "event", "stage": "stage", "name": "rank", "ms": 4, "ok": true, "error": ""}
+{"run": "digest", "t": 34314, "kind": "dbg", "msg": "wiki: 18 curated event(s); 4 matched a selected story, 14 not covered"}
+{"run": "digest", "t": 34315, "kind": "dbg", "msg": "wiki: NOT COVERED [Armed conflicts and attacks] Middle Eastern crisis — The Kuwaiti energy ministry reports that Kuwait's electrical grid has held despite attacks from Iran against it."}
+{"run": "digest", "t": 34315, "kind": "dbg", "msg": "wiki: NOT COVERED [Business and economy] Kenya announces bans on exports of unprocessed gold and establishes at least three refineries, seeking to maximize its economic value by increasing domestic processing."}
+{"run": "digest", "t": 34315, "kind": "dbg", "msg": "wiki: NOT COVERED [Health and environment] 2026 Ebola epidemic — The United Nations reports that daily Ebola cases in the Democratic Republic of the Congo declined from about 120 to 80, while 10 of 62 affected health zones record no new infections for more than 22 days."}
+{"run": "digest", "t": 34315, "kind": "dbg", "msg": "wiki: NOT COVERED [Law and crime] 2024 Bangladesh quota reform movement, Controversies related to Sheikh Hasina, death — A court in Bangladesh sentences seven Awami League leaders who were former officials in former prime minister Sheikh Hasina's government to death in absentia over their role in deadly crackdowns on the anti-government protests in 2024."}
+{"run": "digest", "t": 34315, "kind": "dbg", "msg": "wiki: NOT COVERED [Law and crime] Femicide in Latin America, Gender inequality in El Salvador — A court in El Salvador sentences a man to death for stalking and aggravated femicide, the first death sentence for this crime in the country's history."}
+{"run": "digest", "t": 34315, "kind": "dbg", "msg": "wiki: NOT COVERED [Law and crime] Phillips family disappearances — A New Zealand inquiry finds that police and Oranga Tamariki failed to act on warnings that Tom Phillips might abduct his three children and possessed firearms, contributing to missed opportunities to prevent or end their nearly four-year di"}
+{"run": "digest", "t": 34315, "kind": "dbg", "msg": "wiki: NOT COVERED [Law and crime] The Brazilian public prosecutor's office files a civil action against Vale, the world's largest iron ore producer and one of Brazil's biggest companies, as well as the national mining agency and the Minas Gerais state government. The lawsui"}
+{"run": "digest", "t": 34315, "kind": "dbg", "msg": "wiki: NOT COVERED [Law and crime] Former Golden Dawn spokesperson Ilias Kasidiaris is released from prison in Domokos, Phthiotis, Greece, after serving part of a 13-year sentence for leading a criminal organization and announces plans to return to politics, although he rema"}
+{"run": "digest", "t": 34315, "kind": "dbg", "msg": "wiki: NOT COVERED [Law and crime] ProRail services across northern and central parts of the Netherlands are disrupted by a sabotage operation after pipes are attached to tracks, resulting in the failure of railway signals."}
+{"run": "digest", "t": 34315, "kind": "dbg", "msg": "wiki: NOT COVERED [Law and crime] Romanian farmers clash with gendarmes in Bucharest during protests against live export restrictions and other policies. The confrontations leave 24 people injured, including eight gendarmes, while police detain 26 protesters."}
+{"run": "digest", "t": 34315, "kind": "dbg", "msg": "wiki: NOT COVERED [Politics and elections] Reactions to the 2026 Iran war — United States representative Thomas Massie files articles for impeachment against defense secretary Pete Hegseth for allegedly violating the War Powers Resolution by declaring war against Iran without congressional approval."}
+{"run": "digest", "t": 34315, "kind": "dbg", "msg": "wiki: NOT COVERED [Sports] 2026 Asian Games — The Italian cruise ship Costa Serena docks in Nagoya, Japan, to house about 4,000 Asian Games athletes and officials as delegations report accommodation problems, including undersized beds, leaking sinks, and room shortages."}
+{"run": "digest", "t": 34315, "kind": "dbg", "msg": "wiki: NOT COVERED [Sports] In association football, UEFA announces that the Champions League finals in 2028 and 2029 will be held at the Allianz Arena in Munich, Germany, and Camp Nou in Barcelona, Spain, respectively."}
+{"run": "digest", "t": 34315, "kind": "dbg", "msg": "wiki: NOT COVERED [Sports] The World Athletics Championships in 2029 and 2031 are awarded to Nairobi, Kenya, and Munich, Germany, respectively. It will be the first event to be held on the continent of Africa."}
+{"run": "digest", "t": 34576, "kind": "dbg", "msg": "extract: 2658ch https://www.thehindu.com/news/international/tanker-hit-by-projectile-near-strait-of-hormuz-was-operating-in-dark-mode/article71469903.ece"}
+{"run": "digest", "t": 34888, "kind": "dbg", "msg": "extract: fetch_html http://www.france24.com/en/saudi-crown-prince-seeks-neighbours-backing-as-houthi-attacks-rattle-red-sea-oil-routes: http=403"}
+{"run": "digest", "t": 38281, "kind": "dbg", "msg": "extract: 14492ch http://www.france24.com/en/saudi-crown-prince-seeks-neighbours-backing-as-houthi-attacks-rattle-red-sea-oil-routes"}
+{"run": "digest", "t": 38580, "kind": "dbg", "msg": "extract: 1730ch https://www.aljazeera.com/news/2026/9/15/egypts-sisi-meets-mbs-backs-saudi-call-for-secure-red-sea-navigation?traffic_source=rss"}
+{"run": "digest", "t": 38762, "kind": "dbg", "msg": "extract: 6406ch https://www.theguardian.com/world/2026/sep/15/houthis-threaten-saudi-arabia-strikes-un-warning-humanitarian-crisis-yemen"}
+{"run": "digest", "t": 39278, "kind": "dbg", "msg": "extract: 6757ch https://scroll.in/article/1095761/divide-among-brics-nations-exposed-as-houthi-rebels-seize-oil-chokepoint-in-red-sea?utm_source=rss&utm_medium=public"}
+{"run": "digest", "t": 39417, "kind": "dbg", "msg": "extract: fetch_html http://www.france24.com/en/europe/20260915-nato-jets-down-drone-over-lithuania-as-russian-ship-fires-flares-at-danish-helicopter: http=403"}
+{"run": "digest", "t": 42761, "kind": "dbg", "msg": "extract: 4767ch http://www.france24.com/en/europe/20260915-nato-jets-down-drone-over-lithuania-as-russian-ship-fires-flares-at-danish-helicopter"}
+{"run": "digest", "t": 42916, "kind": "dbg", "msg": "extract: 1996ch https://www.aljazeera.com/news/2026/9/15/nato-jet-shoots-down-suspected-russian-drone-over-lithuania?traffic_source=rss"}
+{"run": "digest", "t": 43194, "kind": "dbg", "msg": "extract: 6635ch https://www.theguardian.com/world/2026/sep/15/nato-jets-shoot-down-drone-violating-lithuania-airspace-kaunas"}
+{"run": "digest", "t": 43423, "kind": "dbg", "msg": "extract: 4001ch https://www.bbc.co.uk/news/articles/cwn8mjl31p5yo?at_medium=RSS&at_campaign=rss"}
+{"run": "digest", "t": 43885, "kind": "dbg", "msg": "extract: 6723ch https://www.npr.org/2026/09/15/g-s1-143284/nato-jets-down-drone-in-lithuanian-airspace"}
+{"run": "digest", "t": 44120, "kind": "dbg", "msg": "extract: 4614ch https://www.theguardian.com/world/2026/sep/15/iran-war-cost-cbo-report"}
+{"run": "digest", "t": 44345, "kind": "dbg", "msg": "extract: 2981ch https://www.channelnewsasia.com/world/iran-war-cost-us-pentagon-munition-6387176"}
+{"run": "digest", "t": 44548, "kind": "dbg", "msg": "extract: 3541ch https://www.bbc.co.uk/news/articles/c9gk58xgng0vo?at_medium=RSS&at_campaign=rss"}
+{"run": "digest", "t": 45433, "kind": "dbg", "msg": "extract: 3731ch https://www.livemint.com/news/us-news/iran-war-costs-us-military-38-billion-as-cbo-warns-of-billions-more-in-monthly-expenses-11789501056348.html"}
+{"run": "digest", "t": 45701, "kind": "dbg", "msg": "extract: 7626ch https://timesofindia.indiatimes.com/defence/international/33-4bn-war-cost-22-3bn-on-munitions-what-us-lost-in-6-months-of-iran-war/articleshow/134268852.cms"}
+{"run": "digest", "t": 45921, "kind": "dbg", "msg": "extract: 31283ch https://www.theguardian.com/us-news/live/2026/sep/15/supreme-court-mail-ballot-restrictions-midterm-elections-trump-ai-politics-latest-news-updates"}
+{"run": "digest", "t": 46086, "kind": "dbg", "msg": "extract: 2017ch https://www.aljazeera.com/news/2026/9/15/blanche-says-admin-will-comply-with-mail-ballot-ruling-defends-trump?traffic_source=rss"}
+{"run": "digest", "t": 46303, "kind": "dbg", "msg": "extract: 1771ch https://timesofindia.indiatimes.com/world/us/trump-slams-3-justices-he-nominated-after-mail-voting-setback-not-the-people-i-interviewed/articleshow/134266970.cms"}
+{"run": "digest", "t": 46454, "kind": "dbg", "msg": "extract: 4800ch https://www.livemint.com/news/us-news/horrible-highly-political-ruling-trump-attacks-supreme-court-after-mail-in-voting-setback-11789480143233.html"}
+{"run": "digest", "t": 46783, "kind": "dbg", "msg": "extract: 4323ch https://www.npr.org/2026/09/15/g-s1-143294/up-first-newsletter-bernie-sanders-steve-bannon-ai-mail-in-ballots-kennedy-center-emmys"}
+{"run": "digest", "t": 46923, "kind": "dbg", "msg": "extract: fetch_html http://www.france24.com/en/us-acknowledges-for-the-first-time-that-it-has-deployed-weapons-in-space: http=403"}
+{"run": "digest", "t": 50370, "kind": "dbg", "msg": "extract: 14452ch http://www.france24.com/en/us-acknowledges-for-the-first-time-that-it-has-deployed-weapons-in-space"}
+{"run": "digest", "t": 53885, "kind": "dbg", "msg": "extract: 23660ch https://www.bbc.co.uk/news/videos/cmn07yjqg5rwo?at_medium=RSS&at_campaign=rss"}
+{"run": "digest", "t": 54051, "kind": "dbg", "msg": "extract: 6356ch https://timesofindia.indiatimes.com/world/us/good-heavens-us-reveals-it-has-placed-weapons-in-space/articleshow/134269076.cms"}
+{"run": "digest", "t": 54454, "kind": "dbg", "msg": "extract: 4589ch https://www.livemint.com/news/world/china-russia-warn-against-weaponisation-of-space-after-us-confirms-orbital-weapons-11789477120343.html"}
+{"run": "digest", "t": 54647, "kind": "dbg", "msg": "extract: 7007ch https://www.bbc.co.uk/news/articles/cmy4zqgk97wlo?at_medium=RSS&at_campaign=rss"}
+{"run": "digest", "t": 54789, "kind": "dbg", "msg": "extract: fetch_html https://www.ndtv.com/india-news/upi-charges-explained-who-pays-for-upi-transactions-how-much-is-upi-charge-12051163#publisher=newsstand: http=403"}
+{"run": "digest", "t": 59973, "kind": "dbg", "msg": "extract: 6965ch https://www.ndtv.com/india-news/upi-charges-explained-who-pays-for-upi-transactions-how-much-is-upi-charge-12051163#publisher=newsstand"}
+{"run": "digest", "t": 60299, "kind": "dbg", "msg": "extract: 4251ch https://www.thehindu.com/business/npci-introduces-04-percent-mdr-charge-on-upi-payments-above-rs-2000-exempts-small-merchants-person-to-person-transfers/article71468913.ece"}
+{"run": "digest", "t": 60628, "kind": "dbg", "msg": "extract: 4808ch https://www.hindustantimes.com/india-news/modi-tax-opposition-slams-centre-over-upi-charges-on-merchant-transactions-rahul-gandhi-kharge-pawan-khera-target-pm-101789490367023.html"}
+{"run": "digest", "t": 61079, "kind": "dbg", "msg": "extract: 3352ch https://scroll.in/latest/1095751/upi-transactions-up-to-rs-2000-rupay-debit-card-payments-to-remain-free-says-centre?utm_source=rss&utm_medium=public"}
+{"run": "digest", "t": 61342, "kind": "dbg", "msg": "extract: 22850ch https://timesofindia.indiatimes.com/business/india-business/what-does-mdr-on-person-to-merchant-upi-transactions-above-rs-2000-mean-for-you-faqs-answered/articleshow/134266181.cms"}
+{"run": "digest", "t": 61344, "kind": "event", "stage": "stage", "name": "extract", "ms": 27029, "ok": true, "error": ""}
+{"run": "digest", "t": 61380, "kind": "dbg", "msg": "llm: call #2 model=gemini-3.6-flash label=claims-world prompt=106835ch"}
+{"run": "digest", "t": 88478, "kind": "dbg", "msg": "llm: claims-world finish_reason=FinishReason.STOP"}
+{"run": "digest", "t": 88479, "kind": "event", "stage": "llm", "call": 2, "label": "claims-world", "model": "gemini-3.6-flash", "latency_ms": 27097, "prompt_chars": 106835, "system_chars": 2135, "response_chars": 12723, "finish_reason": "FinishReason.STOP", "malformed_json": false, "json_retries": 0, "max_output_tokens": 32768, "usage": {"prompt_token_count": 25588, "candidates_token_count": 3191, "total_token_count": 31520, "thoughts_token_count": 2741}}
+{"run": "digest", "t": 88480, "kind": "dbg", "msg": "llm: claims: [world] 15 claim(s) from 5 outlet(s) 'Houthis seize Red Sea islands and tanker attacked in Strait of Hormuz as regional conflict widens'"}
+{"run": "digest", "t": 88480, "kind": "dbg", "msg": "llm: claims: [world] 11 claim(s) from 5 outlet(s) 'NATO jets down drone over Lithuania as Russian warship fires flares at Danish helicopter'"}
+{"run": "digest", "t": 88480, "kind": "dbg", "msg": "llm: claims: [world] 11 claim(s) from 5 outlet(s) 'Reports reveal US war with Iran has cost $38 billion and depleted missile stockpiles'"}
+{"run": "digest", "t": 88480, "kind": "dbg", "msg": "llm: claims: [world] 8 claim(s) from 5 outlet(s) \"US Supreme Court blocks Trump's executive order on mail-in voting\""}
+{"run": "digest", "t": 88480, "kind": "dbg", "msg": "llm: claims: [world] 8 claim(s) from 4 outlet(s) 'US acknowledges deploying weapons in space to counter adversary threats'"}
+{"run": "digest", "t": 88517, "kind": "dbg", "msg": "llm: call #3 model=gemini-3.6-flash label=claims-india prompt=23492ch"}
+{"run": "digest", "t": 91994, "kind": "dbg", "msg": "ratelimit: claims-india transient failure (1/3), retrying in 7s: ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"}
+{"run": "digest", "t": 91994, "kind": "event", "stage": "ratelimit", "label": "claims-india", "verdict": "transient_retry", "attempt": 1, "attempts_allowed": 3, "wait_s": 7.1, "error": "ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"}
+{"run": "digest", "t": 100776, "kind": "dbg", "msg": "ratelimit: claims-india transient failure (2/3), retrying in 11s: ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"}
+{"run": "digest", "t": 100776, "kind": "event", "stage": "ratelimit", "label": "claims-india", "verdict": "transient_retry", "attempt": 2, "attempts_allowed": 3, "wait_s": 11.2, "error": "ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"}
+{"run": "digest", "t": 130208, "kind": "dbg", "msg": "llm: claims-india finish_reason=FinishReason.STOP"}
+{"run": "digest", "t": 130208, "kind": "event", "stage": "llm", "call": 3, "label": "claims-india", "model": "gemini-3.6-flash", "latency_ms": 41690, "prompt_chars": 23492, "system_chars": 2135, "response_chars": 4928, "finish_reason": "FinishReason.STOP", "malformed_json": false, "json_retries": 0, "max_output_tokens": 32768, "usage": {"prompt_token_count": 5962, "candidates_token_count": 1268, "total_token_count": 9754, "thoughts_token_count": 2524}}
+{"run": "digest", "t": 130208, "kind": "dbg", "msg": "llm: claims: [india] 20 claim(s) from 5 outlet(s) 'Government notifies 0.4% MDR charge on UPI merchant payments above Rs 2,000'"}
+{"run": "digest", "t": 130208, "kind": "dbg", "msg": "llm: extract_claims -> 6/6 cluster(s), 73 claim(s) total, 0 cluster(s) rejected, 0 claim(s) rejected"}
+{"run": "digest", "t": 130212, "kind": "event", "stage": "stage", "name": "claims", "ms": 68867, "ok": true, "error": ""}
+{"run": "digest", "t": 130248, "kind": "dbg", "msg": "llm: call #4 model=gemini-3.6-flash label=write prompt=13330ch"}
+{"run": "digest", "t": 139934, "kind": "dbg", "msg": "ratelimit: write transient failure (1/3), retrying in 5s: ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"}
+{"run": "digest", "t": 139934, "kind": "event", "stage": "ratelimit", "label": "write", "verdict": "transient_retry", "attempt": 1, "attempts_allowed": 3, "wait_s": 5.5, "error": "ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"}
+{"run": "digest", "t": 239028, "kind": "dbg", "msg": "llm: write finish_reason=FinishReason.STOP"}
+{"run": "digest", "t": 239028, "kind": "event", "stage": "llm", "call": 4, "label": "write", "model": "gemini-3.6-flash", "latency_ms": 108779, "prompt_chars": 13330, "system_chars": 4458, "response_chars": 13700, "finish_reason": "FinishReason.STOP", "malformed_json": false, "json_retries": 0, "max_output_tokens": 32768, "usage": {"prompt_token_count": 4385, "candidates_token_count": 3571, "total_token_count": 19439, "thoughts_token_count": 11483}}
+{"run": "digest", "t": 239032, "kind": "dbg", "msg": "anchor: clean_vocab dropped 1 item(s)"}
+{"run": "digest", "t": 239035, "kind": "dbg", "msg": "anchor: clean_vocab dropped 1 item(s)"}
+{"run": "digest", "t": 239035, "kind": "dbg", "msg": "llm: write_stories -> 6 story/stories written, 0 dropped, 0 thin-sourced"}
+{"run": "digest", "t": 239035, "kind": "event", "stage": "stage", "name": "write", "ms": 108823, "ok": true, "error": ""}
+{"run": "digest", "t": 239037, "kind": "dbg", "msg": "digest: wrote /home/runner/work/follow-news/follow-news/data/2026-09-16.json with 6 story/stories"}
+{"run": "digest", "t": 239152, "kind": "event", "stage": "stage", "name": "render", "ms": 114, "ok": true, "error": ""}
+{"run": "digest", "t": 239152, "kind": "dbg", "msg": "digest: 4 LLM call(s) this run"}
+{"run": "digest", "t": 239152, "kind": "event", "stage": "tracer", "msg": "capture finished", "ok": true, "ms": 239152, "bytes": 9735255}
+{"run": "follow", "t": 0, "kind": "follow", "stage": "tracer", "msg": "capture started", "level": 1, "day": "2026-09-16"}
+{"run": "follow", "t": 3, "kind": "dbg", "msg": "extract: cache enabled at /home/runner/work/follow-news/follow-news/cache/extract.json (121 url(s))"}
+{"run": "follow", "t": 350, "kind": "dbg", "msg": "follow: run -> 3 existing record(s), 3 owner issue(s) in scope"}
+{"run": "follow", "t": 352, "kind": "dbg", "msg": "dossier: grounded ceiling of 20 is over 14 days old; re-probing"}
+{"run": "follow", "t": 352, "kind": "dbg", "msg": "follow: sweep -> nothing to research; 0 active follow(s) all current"}
+{"run": "follow", "t": 353, "kind": "dbg", "msg": "follow: wrote /home/runner/work/follow-news/follow-news/followed/1/record.json"}
+{"run": "follow", "t": 353, "kind": "dbg", "msg": "follow: wrote /home/runner/work/follow-news/follow-news/followed/2/record.json"}
+{"run": "follow", "t": 355, "kind": "dbg", "msg": "follow: wrote /home/runner/work/follow-news/follow-news/followed/3/record.json"}
+{"run": "follow", "t": 471, "kind": "dbg", "msg": "follow: run -> done, 0 grounded call(s) this run"}
+{"run": "follow", "t": 471, "kind": "event", "stage": "tracer", "msg": "capture finished", "ok": true, "ms": 471, "bytes": 4596}
