@@ -1,0 +1,952 @@
+{
+  "min_claim_chars": 20,
+  "max_claims_per_story": 24,
+  "calls": [
+    {
+      "label": "claims-world",
+      "cluster_ids": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "label": "claims-india",
+      "cluster_ids": [
+        5,
+        6,
+        7
+      ]
+    }
+  ],
+  "rejected_claims": 0,
+  "rejected_clusters": 0,
+  "clusters": [
+    {
+      "cluster_id": 0,
+      "headline_hint": "Tensions escalate in Middle East as Houthis hit Saudi pipeline, delaying Strait of Hormuz talks and sending oil prices soaring",
+      "section": "world",
+      "batch_position": 0,
+      "claim_count": 14,
+      "distinct_outlets": 4,
+      "source_kinds": {
+        "fulltext": 14
+      },
+      "claims": [
+        {
+          "id": 1,
+          "cluster_id": 0,
+          "text": "Brent crude futures rose $1.24 to $106.93 a barrel on Tuesday following attacks on Saudi Arabian energy infrastructure.",
+          "kind": "figure",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/business/oil-prices-rise-saudi-pipeline-outage-fresh-attacks-raise-supply-concerns-6384666",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 2,
+          "cluster_id": 0,
+          "text": "U.S. West Texas Intermediate futures rose $1.29 to $102.65 a barrel on Tuesday.",
+          "kind": "figure",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/business/oil-prices-rise-saudi-pipeline-outage-fresh-attacks-raise-supply-concerns-6384666",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 3,
+          "cluster_id": 0,
+          "text": "Houthi forces launched a missile and drone attack targeting aircraft hangars and ammunition depots at the Khamis Mushait military airbase in southern Saudi Arabia on Monday.",
+          "kind": "event",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/business/oil-prices-rise-saudi-pipeline-outage-fresh-attacks-raise-supply-concerns-6384666",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 4,
+          "cluster_id": 0,
+          "text": "Saudi Arabia's East-West pipeline transports oil across the country to the Red Sea port of Yanbu, allowing exports to bypass the Strait of Hormuz.",
+          "kind": "background",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/business/oil-prices-rise-saudi-pipeline-outage-fresh-attacks-raise-supply-concerns-6384666",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 5,
+          "cluster_id": 0,
+          "text": "Commodity vessel transits through the Strait of Hormuz dropped to fewer than 10 per day over the weekend, compared to a 10-day average of 14.",
+          "kind": "figure",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/business/oil-prices-rise-saudi-pipeline-outage-fresh-attacks-raise-supply-concerns-6384666",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 6,
+          "cluster_id": 0,
+          "text": "The Saudi-led coalition stated that 13 civilians were injured in Saudi Arabia following a wave of ballistic missile and drone attacks by Houthi forces.",
+          "kind": "figure",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/liveblog/2026/9/15/iran-war-live-centcom-refutes-iran-claim-supertanker-hit-hormuz-mines?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 7,
+          "cluster_id": 0,
+          "text": "Mohsen Rezaei, secretary of Iran's Supreme National Security Council, stated that Iran will not enter talks with the United States until Tehran's conditions are met.",
+          "kind": "event",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/liveblog/2026/9/15/iran-war-live-centcom-refutes-iran-claim-supertanker-hit-hormuz-mines?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 8,
+          "cluster_id": 0,
+          "text": "Houthi military spokesperson Yahya Saree stated that Saudi warplanes carried out 58 air raids across six provinces within a 24-hour period.",
+          "kind": "figure",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/liveblog/2026/9/15/iran-war-live-centcom-refutes-iran-claim-supertanker-hit-hormuz-mines?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 9,
+          "cluster_id": 0,
+          "text": "U.S. Central Command rejected Iranian claims that the Panama-flagged tanker El Gaia hit a naval mine, stating it was struck by an Iranian drone off the coast of Oman over the weekend after being hit by an Iranian missile last month.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/middle-east/vessel-attacked-by-iran-twice-us-rejects-irgc-claim-that-panama-flagged-tanker-hit-naval-mine/articleshow/134248017.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 10,
+          "cluster_id": 0,
+          "text": "Thirteen of the 14 Indian crew members aboard the oil tanker El Gaia were rescued off the coast of Oman, while one Indian crew member remained missing.",
+          "kind": "figure",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/middle-east/vessel-attacked-by-iran-twice-us-rejects-irgc-claim-that-panama-flagged-tanker-hit-naval-mine/articleshow/134248017.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 11,
+          "cluster_id": 0,
+          "text": "Tehran imposed a virtual blockade on the Strait of Hormuz in March 2026 following U.S.-Israeli military strikes on Iran on February 28.",
+          "kind": "background",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/middle-east/vessel-attacked-by-iran-twice-us-rejects-irgc-claim-that-panama-flagged-tanker-hit-naval-mine/articleshow/134248017.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 12,
+          "cluster_id": 0,
+          "text": "Brent crude surged to more than $108.50 a barrel on Monday, representing a 3.7 percent daily increase.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/business/2026/sep/14/oil-prices-rise-drone-attacks-saudi-arabia-east-west-pipeline",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 13,
+          "cluster_id": 0,
+          "text": "The yield on 10-year U.S. Treasury bonds reached 5 percent on Monday, marking its highest level since October 2023.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/business/2026/sep/14/oil-prices-rise-drone-attacks-saudi-arabia-east-west-pipeline",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 14,
+          "cluster_id": 0,
+          "text": "Iran-aligned Houthi forces captured the strategic island of Perim in the Bab al-Mandab strait on Sunday.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/business/2026/sep/14/oil-prices-rise-drone-attacks-saudi-arabia-east-west-pipeline",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 1,
+      "headline_hint": "Russian drone strikes Ukrainian train near Polish border following claims of energy attack pause",
+      "section": "world",
+      "batch_position": 1,
+      "claim_count": 10,
+      "distinct_outlets": 4,
+      "source_kinds": {
+        "fulltext": 10
+      },
+      "claims": [
+        {
+          "id": 15,
+          "cluster_id": 1,
+          "text": "U.S. President Donald Trump posted on Truth Social that Ukraine and Russia agreed not to strike each other's energy infrastructure.",
+          "kind": "event",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/europe/20260914-zelensky-says-ukraine-ready-to-de-escalate-if-russia-halts-strikes",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 16,
+          "cluster_id": 1,
+          "text": "Ukrainian President Volodymyr Zelenskyy stated that Ukraine is willing to halt strikes on Russian critical infrastructure if Russia stops its attacks on Ukrainian energy targets.",
+          "kind": "event",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/europe/20260914-zelensky-says-ukraine-ready-to-de-escalate-if-russia-halts-strikes",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 17,
+          "cluster_id": 1,
+          "text": "European Union member states extended the deadline for renewing sanctions against Russia by one week following a push by France to remove Uzbek-Russian tycoon Alisher Usmanov from the blacklist.",
+          "kind": "event",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/europe/20260914-zelensky-says-ukraine-ready-to-de-escalate-if-russia-halts-strikes",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 18,
+          "cluster_id": 1,
+          "text": "A member of the British armed forces died in a non-hostile road traffic incident in Ukraine on Saturday.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/uk-news/2026/sep/14/uk-armed-forces-member-killed-in-crash-ukraine",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 19,
+          "cluster_id": 1,
+          "text": "A Russian drone struck Yahodyn train station near the Polish border on Sunday shortly after a train carrying former British Prime Minister Boris Johnson departed.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/uk-news/2026/sep/14/uk-armed-forces-member-killed-in-crash-ukraine",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 20,
+          "cluster_id": 1,
+          "text": "Kyrylo Budanov, head of the Ukrainian president's office, stated that Ukraine is preparing for a new round of US-mediated trilateral talks with Russia in October.",
+          "kind": "event",
+          "outlet": "DW World",
+          "url": "https://www.dw.com/en/ukraine-russia-set-for-new-round-of-us-mediated-talks/a-79261147?maca=en-rss-en-world-4025-rdf",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 21,
+          "cluster_id": 1,
+          "text": "A summer 2026 poll by the Kyiv International Institute of Sociology found that 60 percent of Ukrainians support freezing frontline fighting in exchange for security guarantees.",
+          "kind": "figure",
+          "outlet": "DW World",
+          "url": "https://www.dw.com/en/ukraine-russia-set-for-new-round-of-us-mediated-talks/a-79261147?maca=en-rss-en-world-4025-rdf",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 22,
+          "cluster_id": 1,
+          "text": "NATO Secretary-General Mark Rutte pledged increased support for Ukraine and strengthened defenses along NATO's eastern border following Russian drone strikes near Poland.",
+          "kind": "event",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/9/14/nato-pledges-increased-support-for-ukraine-after-russia-strikes-warsaw-bound-train?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 23,
+          "cluster_id": 1,
+          "text": "Polish Defense Minister Wladyslaw Kosiniak-Kamysz stated that the Polish military recovered a suspected Russian military drone from the Baltic Sea near Jaroslawiec.",
+          "kind": "event",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/9/14/nato-pledges-increased-support-for-ukraine-after-russia-strikes-warsaw-bound-train?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 24,
+          "cluster_id": 1,
+          "text": "Russian forces struck two cargo vessels in the Black Sea on Monday, according to reports from Interfax.",
+          "kind": "event",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/9/14/nato-pledges-increased-support-for-ukraine-after-russia-strikes-warsaw-bound-train?traffic_source=rss",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 2,
+      "headline_hint": "Tech leaders call for pause in AI development, triggering market decline as Trump dismisses safety concerns",
+      "section": "world",
+      "batch_position": 2,
+      "claim_count": 9,
+      "distinct_outlets": 3,
+      "source_kinds": {
+        "fulltext": 9
+      },
+      "claims": [
+        {
+          "id": 25,
+          "cluster_id": 2,
+          "text": "Anthropic CEO Dario Amodei published an essay titled 'We Must Pace the Frontier' urging a slowdown in artificial intelligence development.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/business/2026/sep/14/ai-linked-stocks-fall-tech-bosses-call-slowdown-anthropic-openai",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 26,
+          "cluster_id": 2,
+          "text": "OpenAI CEO Sam Altman, Google DeepMind CEO Demis Hassabis, and SpaceX CEO Elon Musk expressed support for Dario Amodei's call to slow AI development.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/business/2026/sep/14/ai-linked-stocks-fall-tech-bosses-call-slowdown-anthropic-openai",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 27,
+          "cluster_id": 2,
+          "text": "U.S. President Donald Trump dismissed efforts to regulate artificial intelligence, posting that calls for guardrails are a 'sick conspiracy'.",
+          "kind": "quote",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/business/2026/sep/14/ai-linked-stocks-fall-tech-bosses-call-slowdown-anthropic-openai",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 28,
+          "cluster_id": 2,
+          "text": "Shares in Nvidia fell 3.3 percent and SoftBank stock slumped 13 percent on Monday following tech leaders' public warnings regarding AI safety.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/business/2026/sep/14/ai-linked-stocks-fall-tech-bosses-call-slowdown-anthropic-openai",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 29,
+          "cluster_id": 2,
+          "text": "Anthropic co-founder Jack Clark told the BBC that a third-party AI 'kill switch' may be required to prevent potential catastrophes.",
+          "kind": "quote",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/business/2026/sep/14/ai-linked-stocks-fall-tech-bosses-call-slowdown-anthropic-openai",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 30,
+          "cluster_id": 2,
+          "text": "Anthropic and OpenAI filed SEC documentation one week apart to list on public markets at target valuations exceeding $1 trillion.",
+          "kind": "figure",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/commentary/openai-anthropic-ai-rivalry-common-good-6383081",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 31,
+          "cluster_id": 2,
+          "text": "OpenAI and Google signed agreements with the U.S. Pentagon in February 2026 after Anthropic refused to allow its AI models to be used for autonomous lethal weapons or mass surveillance.",
+          "kind": "background",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/commentary/openai-anthropic-ai-rivalry-common-good-6383081",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 32,
+          "cluster_id": 2,
+          "text": "Elon Musk's X Corp and SpaceXAI dropped their antitrust claims against Apple over its ChatGPT integration while continuing their lawsuit against OpenAI.",
+          "kind": "event",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/9/14/elon-musks-x-corp-and-spacexai-drop-antitrust-lawsuit-against-apple?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 33,
+          "cluster_id": 2,
+          "text": "X Corp and SpaceXAI filed an antitrust lawsuit in August 2025 alleging Apple and OpenAI colluded to make ChatGPT the exclusive AI chatbot integrated into the iPhone operating system.",
+          "kind": "background",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/9/14/elon-musks-x-corp-and-spacexai-drop-antitrust-lawsuit-against-apple?traffic_source=rss",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 3,
+      "headline_hint": "Nigeria's Dangote Refinery launches $1.6 billion public offering in Africa's largest IPO",
+      "section": "world",
+      "batch_position": 3,
+      "claim_count": 9,
+      "distinct_outlets": 4,
+      "source_kinds": {
+        "fulltext": 9
+      },
+      "claims": [
+        {
+          "id": 34,
+          "cluster_id": 3,
+          "text": "Nigerian industrialist Aliko Dangote launched an initial public offering for the Dangote Petroleum Refinery seeking to raise $1.6 billion from retail investors across Africa.",
+          "kind": "event",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/technology/20260915-dangote-refinery-launches-africa-biggest-ipo-for-retail-investors",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 35,
+          "cluster_id": 3,
+          "text": "The Dangote Petroleum Refinery IPO offers retail investors a minimum 10-share bundle for 5,250 naira ($4).",
+          "kind": "figure",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/technology/20260915-dangote-refinery-launches-africa-biggest-ipo-for-retail-investors",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 36,
+          "cluster_id": 3,
+          "text": "Aliko Dangote will retain an 87 percent ownership stake in the Dangote Petroleum Refinery following the public offering.",
+          "kind": "figure",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/technology/20260915-dangote-refinery-launches-africa-biggest-ipo-for-retail-investors",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 37,
+          "cluster_id": 3,
+          "text": "The Dangote Petroleum Refinery supplies more than 70 percent of Nigeria's domestic energy consumption.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cxly50gzldz9o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 38,
+          "cluster_id": 3,
+          "text": "The Dangote Petroleum Refinery generated an after-tax profit of $1.82 billion in the first half of 2026 after posting a $476 million loss in 2025.",
+          "kind": "figure",
+          "outlet": "DW World",
+          "url": "https://www.dw.com/en/ipo-for-the-people-is-out-of-reach-for-many-in-nigeria/a-79263398?maca=en-rss-en-world-4025-rdf",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 39,
+          "cluster_id": 3,
+          "text": "Dangote Industries plans to use funds raised from the IPO to support a $14.3 billion expansion aimed at increasing refining capacity from 700,000 to 1.4 million barrels per day.",
+          "kind": "figure",
+          "outlet": "DW World",
+          "url": "https://www.dw.com/en/ipo-for-the-people-is-out-of-reach-for-many-in-nigeria/a-79263398?maca=en-rss-en-world-4025-rdf",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 40,
+          "cluster_id": 3,
+          "text": "Aliko Dangote plans to launch an oil processing plant in Kenya in partnership with eastern African governments.",
+          "kind": "event",
+          "outlet": "DW World",
+          "url": "https://www.dw.com/en/ipo-for-the-people-is-out-of-reach-for-many-in-nigeria/a-79263398?maca=en-rss-en-world-4025-rdf",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 41,
+          "cluster_id": 3,
+          "text": "The initial public offering for the Dangote Petroleum Refinery opened on the Nigerian exchange with subscription running until October 13.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/sep/14/aliko-dangote-nigeria-africa-richest-man-ipo",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 42,
+          "cluster_id": 3,
+          "text": "Aliko Dangote plans to build a $17 billion energy complex in Lamu, Kenya, with a refining capacity of 700,000 barrels per day.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/sep/14/aliko-dangote-nigeria-africa-richest-man-ipo",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 4,
+      "headline_hint": "Leaders of Scotland, Wales, and Northern Ireland sign historic pact calling for independence from UK",
+      "section": "world",
+      "batch_position": 4,
+      "claim_count": 7,
+      "distinct_outlets": 2,
+      "source_kinds": {
+        "fulltext": 7
+      },
+      "claims": [
+        {
+          "id": 43,
+          "cluster_id": 4,
+          "text": "Scottish First Minister John Swinney, Welsh First Minister Rhun ap Iorwerth, and Northern Ireland First Minister Michelle O'Neill signed a Memorandum of Understanding in Cardiff calling for independence from the United Kingdom.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/uk/scotland-northern-ireland-and-wales-sign-mou-to-break-away-from-uk/articleshow/134247408.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 44,
+          "cluster_id": 4,
+          "text": "Sinn Féin president Mary Lou McDonald signed the Cardiff memorandum alongside the first ministers of Scotland, Wales, and Northern Ireland.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/uk/scotland-northern-ireland-and-wales-sign-mou-to-break-away-from-uk/articleshow/134247408.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 45,
+          "cluster_id": 4,
+          "text": "Plaid Cymru's victory in the May Senedd elections ended Labour's continuous governance of Wales that began with devolution in 1999.",
+          "kind": "background",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/uk/scotland-northern-ireland-and-wales-sign-mou-to-break-away-from-uk/articleshow/134247408.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 46,
+          "cluster_id": 4,
+          "text": "Conservative shadow Scottish secretary Harriet Cross characterized the Cardiff meeting as a 'separatist summit' and a 'performative photo call'.",
+          "kind": "quote",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/uk/scotland-northern-ireland-and-wales-sign-mou-to-break-away-from-uk/articleshow/134247408.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 47,
+          "cluster_id": 4,
+          "text": "Downing Street stated that UK Prime Minister Andy Burnham is focused on tackling the cost-of-living crisis rather than engaging in constitutional debates.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/uk/scotland-northern-ireland-and-wales-sign-mou-to-break-away-from-uk/articleshow/134247408.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 48,
+          "cluster_id": 4,
+          "text": "The joint statement signed by the SNP, Plaid Cymru, and Sinn Féin declared that Europe is their common home and that the future of their nations belongs in the European Union.",
+          "kind": "quote",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/world/partition-in-uk-scotland-wales-and-northern-ireland-push-for-exit-from-united-kingdom-europe-is-our-common-home-11789392780803.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 49,
+          "cluster_id": 4,
+          "text": "UK Prime Minister Andy Burnham rejected calls to hold another Scottish independence referendum before the next general election.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/world/partition-in-uk-scotland-wales-and-northern-ireland-push-for-exit-from-united-kingdom-europe-is-our-common-home-11789392780803.html",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 5,
+      "headline_hint": "BJP wins majority in Rajasthan urban local body elections",
+      "section": "india",
+      "batch_position": 0,
+      "claim_count": 18,
+      "distinct_outlets": 4,
+      "source_kinds": {
+        "fulltext": 18
+      },
+      "claims": [
+        {
+          "id": 50,
+          "cluster_id": 5,
+          "text": "The Bharatiya Janata Party emerged as the single largest party in Rajasthan's urban local body elections, winning 4,179 wards out of 10,235 declared wards.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/city/jaipur/bjp-wins-but-independents-rewrite-rajasthan-civic-poll-math/articleshow/134247421.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 51,
+          "cluster_id": 5,
+          "text": "In the Rajasthan urban local body polls, Congress won 3,613 wards and independent candidates won 2,273 wards.",
+          "kind": "figure",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/city/jaipur/bjp-wins-but-independents-rewrite-rajasthan-civic-poll-math/articleshow/134247421.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 52,
+          "cluster_id": 5,
+          "text": "The BJP secured clear majorities in four municipal corporations in Rajasthan: Jaipur, Bhilwara, Kota, and Udaipur.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/city/jaipur/bjp-wins-but-independents-rewrite-rajasthan-civic-poll-math/articleshow/134247421.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 53,
+          "cluster_id": 5,
+          "text": "In Jhalawar, Congress won the municipal council, taking control of a former stronghold of former chief minister Vasundhara Raje.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/city/jaipur/bjp-wins-but-independents-rewrite-rajasthan-civic-poll-math/articleshow/134247421.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 54,
+          "cluster_id": 5,
+          "text": "The Aam Aadmi Party made its political debut in Rajasthan by winning control of its maiden municipal body in Baran.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/city/jaipur/bjp-wins-but-independents-rewrite-rajasthan-civic-poll-math/articleshow/134247421.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 55,
+          "cluster_id": 5,
+          "text": "In Chief Minister Bhajan Lal Sharma's home turf of Bharatpur, independents won 36 wards, BJP won 20 wards, and Congress won seven wards.",
+          "kind": "figure",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/city/jaipur/bjp-wins-but-independents-rewrite-rajasthan-civic-poll-math/articleshow/134247421.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 56,
+          "cluster_id": 5,
+          "text": "The State Election Commission postponed chairperson and deputy chairperson elections in Jaipur, Jodhpur, Kota municipal corporations, and Suket municipality due to EVM technical glitches.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/city/jaipur/bjp-wins-but-independents-rewrite-rajasthan-civic-poll-math/articleshow/134247421.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 57,
+          "cluster_id": 5,
+          "text": "The State Election Commission ordered repolling at 10 polling stations in Jaipur, Jodhpur, Kota, and Suket for September 16, with counting scheduled for September 17.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/city/jaipur/bjp-wins-but-independents-rewrite-rajasthan-civic-poll-math/articleshow/134247421.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 58,
+          "cluster_id": 5,
+          "text": "The BJP secured 55 out of 100 wards in the Kota Municipal Corporation election to cross the majority threshold.",
+          "kind": "figure",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/rajasthan/bjp-wins-kota-municipal-elections-poll-for-chairperson-postponed-after-evm-glitches-in-some-wards/article71466402.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 59,
+          "cluster_id": 5,
+          "text": "Congress candidate Laxmi Sharma sat on a dharna outside JDB College in Kota demanding transparency after counting in Ward 87 was put on hold due to EVM malfunction.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/rajasthan/bjp-wins-kota-municipal-elections-poll-for-chairperson-postponed-after-evm-glitches-in-some-wards/article71466402.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 60,
+          "cluster_id": 5,
+          "text": "In Bundi, three independent candidates—Prabhat Devi, Aatmaram Chopdar, and Vishal Sharma—joined the BJP after the election, giving the party a full majority.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/rajasthan/bjp-wins-kota-municipal-elections-poll-for-chairperson-postponed-after-evm-glitches-in-some-wards/article71466402.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 61,
+          "cluster_id": 5,
+          "text": "Congress won 42 of 80 wards in Bikaner Municipal Corporation to secure a majority.",
+          "kind": "figure",
+          "outlet": "NDTV",
+          "url": "https://www.ndtv.com/india-news/bjp-emerges-ahead-of-congress-in-rajasthans-urban-local-body-polls-12046459#publisher=newsstand",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 62,
+          "cluster_id": 5,
+          "text": "In Jodhpur Municipal Corporation, BJP and Congress tied with 44 wards each in the 100-member body.",
+          "kind": "figure",
+          "outlet": "NDTV",
+          "url": "https://www.ndtv.com/india-news/bjp-emerges-ahead-of-congress-in-rajasthans-urban-local-body-polls-12046459#publisher=newsstand",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 63,
+          "cluster_id": 5,
+          "text": "In Ajmer, Congress emerged as the largest party winning 37 of 80 wards, while BJP won 32 and Independents won 11.",
+          "kind": "figure",
+          "outlet": "NDTV",
+          "url": "https://www.ndtv.com/india-news/bjp-emerges-ahead-of-congress-in-rajasthans-urban-local-body-polls-12046459#publisher=newsstand",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 64,
+          "cluster_id": 5,
+          "text": "More than 1.44 crore voters were eligible to vote across 309 urban local bodies in Rajasthan in two phases on September 9 and 11.",
+          "kind": "background",
+          "outlet": "NDTV",
+          "url": "https://www.ndtv.com/india-news/bjp-emerges-ahead-of-congress-in-rajasthans-urban-local-body-polls-12046459#publisher=newsstand",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 65,
+          "cluster_id": 5,
+          "text": "Rajasthan Congress president Govind Singh Dotasra stated that the BJP's lead over Congress in this election was less than one percentage point.",
+          "kind": "quote",
+          "outlet": "NDTV",
+          "url": "https://www.ndtv.com/india-news/bjp-emerges-ahead-of-congress-in-rajasthans-urban-local-body-polls-12046459#publisher=newsstand",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 66,
+          "cluster_id": 5,
+          "text": "21-year-old Congress candidate Faiz Hasan won Ward 71 in Jaipur Municipal Corporation with 5,426 votes.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/gen-z-enters-jaipur-municipal-corporation-as-21-year-old-faiz-hasan-wins-ward-71-101789380412067.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 67,
+          "cluster_id": 5,
+          "text": "Prime Minister Narendra Modi hailed the BJP's victory in Rajasthan civic polls on X, describing it as proof of the 'victory of truth over the echo of falsehood'.",
+          "kind": "quote",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/rajasthan/rajasthan-urban-local-body-poll-results-victory-of-truth-over-echo-of-falsehood-pm-modi-says/article71466388.ece",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 6,
+      "headline_hint": "Amit Shah targets 2029 for nationwide Uniform Civil Code implementation amid coalition caution",
+      "section": "india",
+      "batch_position": 1,
+      "claim_count": 13,
+      "distinct_outlets": 4,
+      "source_kinds": {
+        "fulltext": 13
+      },
+      "claims": [
+        {
+          "id": 68,
+          "cluster_id": 6,
+          "text": "Union Home Minister Amit Shah stated in Mumbai that he is confident the Uniform Civil Code will be introduced in 21 BJP-NDA ruled states before 2029.",
+          "kind": "quote",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/on-shahs-ucc-claim-3-bjp-allies-sound-caution/articleshow/134249377.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 69,
+          "cluster_id": 6,
+          "text": "TDP parliamentary party leader Lavu Sri Krishna Devarayalu stated that TDP will involve various stakeholders before adopting the Uniform Civil Code in Andhra Pradesh.",
+          "kind": "quote",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/on-shahs-ucc-claim-3-bjp-allies-sound-caution/articleshow/134249377.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 70,
+          "cluster_id": 6,
+          "text": "JD(U) working president Sanjay Jha stated that he will meet Union Home Minister Amit Shah to discuss the Uniform Civil Code issue.",
+          "kind": "quote",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/on-shahs-ucc-claim-3-bjp-allies-sound-caution/articleshow/134249377.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 71,
+          "cluster_id": 6,
+          "text": "LJP (Ram Vilas) chief Chirag Paswan called for the Uniform Civil Code proposal to be made public and undergo comprehensive consultation before his party states its position.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/on-shahs-ucc-claim-3-bjp-allies-sound-caution/articleshow/134249377.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 72,
+          "cluster_id": 6,
+          "text": "JD(U) MLA Shyam Rajak stated that the Uniform Civil Code will never be implemented in Bihar at any cost.",
+          "kind": "quote",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/bihar/rift-within-nda-over-implementation-of-ucc-in-bihar/article71466095.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 73,
+          "cluster_id": 6,
+          "text": "HAM (S) national president Santosh Kumar Suman stated that if Home Minister Amit Shah proposed UCC, there must be good things in it, and alliance leaders would be taken into confidence.",
+          "kind": "quote",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/bihar/rift-within-nda-over-implementation-of-ucc-in-bihar/article71466095.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 74,
+          "cluster_id": 6,
+          "text": "RJD spokesperson Shakti Yadav stated that the RJD will never allow the Uniform Civil Code to be implemented in Bihar.",
+          "kind": "quote",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/bihar/rift-within-nda-over-implementation-of-ucc-in-bihar/article71466095.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 75,
+          "cluster_id": 6,
+          "text": "AIMIM president Asaduddin Owaisi stated that a Uniform Civil Code is not about equality but about targeting Muslims and imposing Hindu law on non-Hindus.",
+          "kind": "quote",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/countrys-soul-is-its-pluralism-owaisi-slams-amit-shahs-remarks-on-ucc-in-21-nda-ruled-states-before-2029-101789382872613.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 76,
+          "cluster_id": 6,
+          "text": "Uttarakhand passed the Uniform Civil Code Act in February 2024 and fully enforced it on January 27, 2025.",
+          "kind": "background",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/uniform-civil-code-amit-shah-targets-2029-rollout-across-21-nda-states-where-is-ucc-already-in-force-11789372433501.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 77,
+          "cluster_id": 6,
+          "text": "The Gujarat Legislative Assembly passed the Gujarat Uniform Civil Code in March 2026.",
+          "kind": "background",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/uniform-civil-code-amit-shah-targets-2029-rollout-across-21-nda-states-where-is-ucc-already-in-force-11789372433501.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 78,
+          "cluster_id": 6,
+          "text": "The Assam Legislative Assembly passed the Uniform Civil Code, Assam, Bill in May 2026, while exempting members of Scheduled Tribes.",
+          "kind": "background",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/uniform-civil-code-amit-shah-targets-2029-rollout-across-21-nda-states-where-is-ucc-already-in-force-11789372433501.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 79,
+          "cluster_id": 6,
+          "text": "The Madhya Pradesh Legislative Assembly passed the Madhya Pradesh Uniform Civil Code Bill in July 2026.",
+          "kind": "background",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/uniform-civil-code-amit-shah-targets-2029-rollout-across-21-nda-states-where-is-ucc-already-in-force-11789372433501.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 80,
+          "cluster_id": 6,
+          "text": "Maharashtra, West Bengal, and Chhattisgarh have formed committees to draft Uniform Civil Code legislation.",
+          "kind": "background",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/uniform-civil-code-amit-shah-targets-2029-rollout-across-21-nda-states-where-is-ucc-already-in-force-11789372433501.html",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 7,
+      "headline_hint": "CBI registers FIR in Disha Salian death case following High Court order",
+      "section": "india",
+      "batch_position": 2,
+      "claim_count": 11,
+      "distinct_outlets": 3,
+      "source_kinds": {
+        "fulltext": 11
+      },
+      "claims": [
+        {
+          "id": 81,
+          "cluster_id": 7,
+          "text": "The Central Bureau of Investigation registered an FIR on September 13 to probe the death of celebrity manager Disha Salian under IPC sections for gang rape, murder, and destruction of evidence.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/cbi-files-fir-in-disha-salians-death-case-after-hc-order/articleshow/134249326.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 82,
+          "cluster_id": 7,
+          "text": "Disha Salian died on June 8, 2020, after falling from the 14th floor of a residential building in Mumbai.",
+          "kind": "background",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/cbi-files-fir-in-disha-salians-death-case-after-hc-order/articleshow/134249326.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 83,
+          "cluster_id": 7,
+          "text": "The CBI FIR mentions several individuals whose roles require investigation, including Aaditya Thackeray, Dino Morea, Rhea Chakraborty, Uddhav Thackeray, and Sachin Vaze, though no one is formally named as an accused.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/cbi-files-fir-in-disha-salians-death-case-after-hc-order/articleshow/134249326.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 84,
+          "cluster_id": 7,
+          "text": "A division bench of the Bombay High Court directed the CBI on September 2 to register an FIR into Disha Salian's death based on a statement by her father, Satish Salian.",
+          "kind": "event",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/latest/1095732/cbi-names-uddhav-aaditya-thackeray-in-sushant-singh-rajputs-former-manager-death-case?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 85,
+          "cluster_id": 7,
+          "text": "The Bombay High Court stated that the failure of Mumbai Police to register an FIR for six years raised questions and noted glaring discrepancies in the prior investigation.",
+          "kind": "event",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/latest/1095732/cbi-names-uddhav-aaditya-thackeray-in-sushant-singh-rajputs-former-manager-death-case?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 86,
+          "cluster_id": 7,
+          "text": "Actor Sushant Singh Rajput was found dead at his residence on June 14, 2020, six days after Disha Salian's death.",
+          "kind": "background",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/latest/1095732/cbi-names-uddhav-aaditya-thackeray-in-sushant-singh-rajputs-former-manager-death-case?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 87,
+          "cluster_id": 7,
+          "text": "Satish Salian recorded a fresh statement at the CBI's Bandra-Kurla Complex office in Mumbai on September 12.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/cbi-registers-fir-in-disha-salian-death-case-as-probe-begins-after-bombay-high-court-order-101789376858153.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 88,
+          "cluster_id": 7,
+          "text": "The CBI FIR alleges extraordinary contradictions and suppression of records regarding the seizure and use of Disha Salian's mobile phone.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/cbi-registers-fir-in-disha-salian-death-case-as-probe-begins-after-bombay-high-court-order-101789376858153.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 89,
+          "cluster_id": 7,
+          "text": "NCP (SP) leader Supriya Sule expressed surprise at the CBI registering an FIR, noting that the same government had previously closed the case.",
+          "kind": "quote",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/same-government-had-closed-the-case-supriya-sule-questions-fresh-cbi-probe-into-disha-salians-death/articleshow/134245820.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 90,
+          "cluster_id": 7,
+          "text": "AIMIM leader Waris Pathan stated that the Disha Salian case should not be given political color and should be left for the court to decide.",
+          "kind": "quote",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/same-government-had-closed-the-case-supriya-sule-questions-fresh-cbi-probe-into-disha-salians-death/articleshow/134245820.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 91,
+          "cluster_id": 7,
+          "text": "Satish Salian's lawyer Nilesh Ojha stated that the CBI FIR invokes IPC Sections 376D, 302, 201, 217, 218, and 120B.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/same-government-had-closed-the-case-supriya-sule-questions-fresh-cbi-probe-into-disha-salians-death/articleshow/134245820.cms",
+          "source_kind": "fulltext"
+        }
+      ]
+    }
+  ],
+  "clusters_with_no_claims": []
+}
