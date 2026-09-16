@@ -1,0 +1,781 @@
+{
+  "min_claim_chars": 20,
+  "max_claims_per_story": 24,
+  "calls": [
+    {
+      "label": "claims-world",
+      "cluster_ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "label": "claims-india",
+      "cluster_ids": [
+        6,
+        7
+      ]
+    }
+  ],
+  "rejected_claims": 0,
+  "rejected_clusters": 0,
+  "clusters": [
+    {
+      "cluster_id": 0,
+      "headline_hint": "US Federal Reserve raises interest rates for first time in three years, defying Donald Trump",
+      "section": "world",
+      "batch_position": 0,
+      "claim_count": 12,
+      "distinct_outlets": 4,
+      "source_kinds": {
+        "fulltext": 12
+      },
+      "claims": [
+        {
+          "id": 1,
+          "cluster_id": 0,
+          "text": "The US Federal Reserve unanimously voted on September 16, 2026, to raise its benchmark interest rate by a quarter-percentage point to a range of 3.75% to 4%.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/us-news/live/2026/sep/16/donald-trump-iran-russia-midterms-north-carolina-latest-news-updates",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 2,
+          "cluster_id": 0,
+          "text": "US President Donald Trump demanded a rate cut following the Federal Reserve decision, stating that interest rates in the United States should be 1% or less.",
+          "kind": "quote",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/us-news/live/2026/sep/16/donald-trump-iran-russia-midterms-north-carolina-latest-news-updates",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 3,
+          "cluster_id": 0,
+          "text": "Federal Reserve Chair Kevin Warsh defended the rate hike by stating that inflation is too high and has been for too long.",
+          "kind": "quote",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/us-news/live/2026/sep/16/donald-trump-iran-russia-midterms-north-carolina-latest-news-updates",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 4,
+          "cluster_id": 0,
+          "text": "The US Congress passed the Lindsey O Graham Sanctioning Russia and Iran Act of 2026 in a 262-159 vote.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/us-news/live/2026/sep/16/donald-trump-iran-russia-midterms-north-carolina-latest-news-updates",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 5,
+          "cluster_id": 0,
+          "text": "The US Federal Reserve targets an inflation rate of 2% or below, but US inflation has remained above target for more than five years.",
+          "kind": "background",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cw4gmlyvj422o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 6,
+          "cluster_id": 0,
+          "text": "Major US banks JP Morgan, KeyCorp, and BNY raised their prime lending rate on Wednesday to 7% from 6.75%.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cw4gmlyvj422o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 7,
+          "cluster_id": 0,
+          "text": "A majority of Federal Reserve policymakers expect interest rates to be hiked again before the end of 2026 to between 4% and 4.25%.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cw4gmlyvj422o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 8,
+          "cluster_id": 0,
+          "text": "Senate Democratic leader Chuck Schumer criticized the interest rate increase, stating it would make everything more expensive and blaming Donald Trump's economic management.",
+          "kind": "quote",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cw4gmlyvj422o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 9,
+          "cluster_id": 0,
+          "text": "White House senior deputy press secretary Kush Desai described the Federal Reserve rate hike as unfortunate.",
+          "kind": "quote",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/business/international-business/were-the-best-credit-trump-calls-for-lower-us-interest-rates-after-first-fed-hike-in-3-years/articleshow/134296503.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 10,
+          "cluster_id": 0,
+          "text": "The Federal Reserve raised its 2026 inflation forecast to 3.7%, up from its previous projection of 3.6%.",
+          "kind": "figure",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/business/international-business/were-the-best-credit-trump-calls-for-lower-us-interest-rates-after-first-fed-hike-in-3-years/articleshow/134296503.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 11,
+          "cluster_id": 0,
+          "text": "US consumer price index inflation for August 2026 came in at 3.4%.",
+          "kind": "figure",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/us-fed-rate-decision-inflation-warsh-trump-6390046",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 12,
+          "cluster_id": 0,
+          "text": "Yields on 10-year US Treasury bonds rose past the 5% threshold following the Federal Reserve rate hike announcement.",
+          "kind": "figure",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/us-fed-rate-decision-inflation-warsh-trump-6390046",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 1,
+      "headline_hint": "Escalation in Middle East conflict as Saudi Arabia accuses Houthis of targeting Mecca and shooting down F-15",
+      "section": "world",
+      "batch_position": 1,
+      "claim_count": 9,
+      "distinct_outlets": 5,
+      "source_kinds": {
+        "fulltext": 9
+      },
+      "claims": [
+        {
+          "id": 13,
+          "cluster_id": 1,
+          "text": "Houthi forces released a video claiming to show a Saudi fighter jet shot down in Yemen's Marib Governorate.",
+          "kind": "event",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/16/new-video-claims-to-show-saudi-fighter-jet-houthis-say-they-shot-down?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 14,
+          "cluster_id": 1,
+          "text": "Saudi Arabia accused Yemen's Houthi rebels of launching an attempted drone attack toward Mecca, which Saudi forces intercepted.",
+          "kind": "event",
+          "outlet": "France 24",
+          "url": "http://www.france24.com/en/middle-east/20260916-saudi-arabia-accuses-houthis-of-targeting-mecca-calling-it-a-red-line",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 15,
+          "cluster_id": 1,
+          "text": "Saudi Arabia's East-West pipeline was shut down following an attack by Iranian-backed militias in Iraq.",
+          "kind": "background",
+          "outlet": "France 24",
+          "url": "http://www.france24.com/en/middle-east/20260916-saudi-arabia-accuses-houthis-of-targeting-mecca-calling-it-a-red-line",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 16,
+          "cluster_id": 1,
+          "text": "Global crude oil prices remain above $100 a barrel.",
+          "kind": "figure",
+          "outlet": "France 24",
+          "url": "http://www.france24.com/en/middle-east/20260916-saudi-arabia-accuses-houthis-of-targeting-mecca-calling-it-a-red-line",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 17,
+          "cluster_id": 1,
+          "text": "Houthi military spokesperson Yahya Saree claimed Houthi forces shot down a Saudi F-15 fighter jet using a locally made air-to-air missile over Marib province.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/middle-east/houthis-claim-to-have-shot-down-saudi-f-15-release-video-of-missile-hit-images-of-wreckage-video/articleshow/134293834.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 18,
+          "cluster_id": 1,
+          "text": "Saudi-led coalition spokesperson Turki al-Maliki stated that the security of the Two Holy Mosques and pilgrims is a red line.",
+          "kind": "quote",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/middle-east/houthis-claim-to-have-shot-down-saudi-f-15-release-video-of-missile-hit-images-of-wreckage-video/articleshow/134293834.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 19,
+          "cluster_id": 1,
+          "text": "US officials met with Houthi leaders over the weekend at the US embassy in Muscat, Oman.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/sep/16/us-officials-decide-against-backing-saudi-arabia-yemen-meeting-houthi-leaders",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 20,
+          "cluster_id": 1,
+          "text": "Houthi leaders assured US officials that their 2025 ceasefire holds and that they will not target US shipping in the Red Sea.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/sep/16/us-officials-decide-against-backing-saudi-arabia-yemen-meeting-houthi-leaders",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 21,
+          "cluster_id": 1,
+          "text": "Suez Canal earnings fell by approximately $6 billion in 2024 due to security disruptions in the Red Sea.",
+          "kind": "figure",
+          "outlet": "DW World",
+          "url": "https://www.dw.com/en/how-the-houthis-are-also-putting-egypt-under-pressure/a-79291103?maca=en-rss-en-world-4025-rdf",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 2,
+      "headline_hint": "European Union proposes associate membership for Canada amid rising geopolitical tensions with US",
+      "section": "world",
+      "batch_position": 2,
+      "claim_count": 6,
+      "distinct_outlets": 4,
+      "source_kinds": {
+        "fulltext": 6
+      },
+      "claims": [
+        {
+          "id": 22,
+          "cluster_id": 2,
+          "text": "European Commission President Ursula von der Leyen proposed opening the door for Canada to become the European Union's first associate member during her State of the Union address on September 16, 2026.",
+          "kind": "event",
+          "outlet": "NPR World",
+          "url": "https://www.npr.org/2026/09/16/nx-s1-5971043/eu-canada-carney-tariffs-trump",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 23,
+          "cluster_id": 2,
+          "text": "Canada became the only non-European country permitted to participate in the European Union's 150-billion-euro fund for joint defense purchases.",
+          "kind": "background",
+          "outlet": "NPR World",
+          "url": "https://www.npr.org/2026/09/16/nx-s1-5971043/eu-canada-carney-tariffs-trump",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 24,
+          "cluster_id": 2,
+          "text": "Ten of the European Union's 27 member states have not yet ratified the free-trade agreement with Canada.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/sep/16/eu-offer-canada-blueprint-britain-brexit",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 25,
+          "cluster_id": 2,
+          "text": "Canada spends 2% of its GDP on defense and has committed with NATO partners to increase total defense spending to 5% of GDP by 2035.",
+          "kind": "figure",
+          "outlet": "DW World",
+          "url": "https://www.dw.com/en/can-canada-and-the-eu-build-a-deeper-partnership/a-79295388?maca=en-rss-en-world-4025-rdf",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 26,
+          "cluster_id": 2,
+          "text": "Ursula von der Leyen proposed the creation of a European Security Council that would include the UK and Ukraine.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cjwyzrr9d3dko?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 27,
+          "cluster_id": 2,
+          "text": "Ursula von der Leyen proposed a ban on social media platforms for children under 13 across the European Union.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cjwyzrr9d3dko?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 3,
+      "headline_hint": "Hague tribunal sentences former Kosovo President Hashim Thaçi to 25 years for war crimes",
+      "section": "world",
+      "batch_position": 3,
+      "claim_count": 8,
+      "distinct_outlets": 4,
+      "source_kinds": {
+        "fulltext": 8
+      },
+      "claims": [
+        {
+          "id": 28,
+          "cluster_id": 3,
+          "text": "The Specialist Court in The Hague found former Kosovo President Hashim Thaçi guilty of war crimes.",
+          "kind": "event",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/16/kosovos-former-president-guilty-of-war-crimes?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 29,
+          "cluster_id": 3,
+          "text": "Former Kosovo Liberation Army leaders Hashim Thaçi and Jakup Krasniqi were each sentenced to 25 years in prison by the Kosovo Specialist Chambers.",
+          "kind": "figure",
+          "outlet": "DW World",
+          "url": "https://www.dw.com/en/shock-in-kosovo-as-hague-convicts-former-president-thaci/a-79294916?maca=en-rss-en-world-4025-rdf",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 30,
+          "cluster_id": 3,
+          "text": "Former KLA leaders Kadri Veseli and Rexhep Selimi were sentenced to 18 years and 13 years in prison respectively.",
+          "kind": "figure",
+          "outlet": "DW World",
+          "url": "https://www.dw.com/en/shock-in-kosovo-as-hague-convicts-former-president-thaci/a-79294916?maca=en-rss-en-world-4025-rdf",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 31,
+          "cluster_id": 3,
+          "text": "Kosovo Prime Minister Albin Kurti called the convictions and sentences handed down to the four former KLA leaders an unacceptable injustice.",
+          "kind": "quote",
+          "outlet": "DW World",
+          "url": "https://www.dw.com/en/shock-in-kosovo-as-hague-convicts-former-president-thaci/a-79294916?maca=en-rss-en-world-4025-rdf",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 32,
+          "cluster_id": 3,
+          "text": "In Sweden's election, the left-leaning opposition is projected to win 176 seats in parliament compared to 173 for the governing coalition and Sweden Democrats.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/live/2026/sep/16/european-union-ursula-von-der-leyen-eu-europe-latest-news-updates",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 33,
+          "cluster_id": 3,
+          "text": "Hashim Thaçi and his co-defendants were convicted of arbitrary detention of 385 people, cruel treatment of 49, torture of 303 detainees, and the murder of 96 people.",
+          "kind": "figure",
+          "outlet": "NPR World",
+          "url": "https://www.npr.org/2026/09/16/g-s1-143560/kosovo-former-president-war-crimes",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 34,
+          "cluster_id": 3,
+          "text": "Dutch riot police detained two people following brief clashes with Hashim Thaçi supporters outside the court in The Hague.",
+          "kind": "event",
+          "outlet": "NPR World",
+          "url": "https://www.npr.org/2026/09/16/g-s1-143560/kosovo-former-president-war-crimes",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 35,
+          "cluster_id": 3,
+          "text": "The 1998-1999 Kosovo War left approximately 13,000 people dead, including about 9,000 ethnic Albanian Kosovars.",
+          "kind": "background",
+          "outlet": "DW World",
+          "url": "https://www.dw.com/en/kosovo-ex-president-thaci-sentenced-to-25-years-for-war-crimes/a-79286344?maca=en-rss-en-world-4025-rdf",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 4,
+      "headline_hint": "US administration advances $2.8 billion arms package to Israel including heavy munitions",
+      "section": "world",
+      "batch_position": 4,
+      "claim_count": 5,
+      "distinct_outlets": 2,
+      "source_kinds": {
+        "fulltext": 5
+      },
+      "claims": [
+        {
+          "id": 36,
+          "cluster_id": 4,
+          "text": "Representative Gregory Meeks placed a hold on a proposed $2.8 billion US arms transfer to Israel.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/us-news/2026/sep/16/us-arms-sale-israel-gregory-meeks",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 37,
+          "cluster_id": 4,
+          "text": "The proposed $2.8 billion arms package to Israel includes 20,000 MK-84 bombs, 20,000 BLU-117 bombs, and 20,000 I-2000 penetrator warheads.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/us-news/2026/sep/16/us-arms-sale-israel-gregory-meeks",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 38,
+          "cluster_id": 4,
+          "text": "US Secretary of State Marco Rubio declared a national security emergency in 2025 to bypass congressional review and fast-track nearly $3 billion in weapons sales to Israel.",
+          "kind": "background",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/us-news/2026/sep/16/us-arms-sale-israel-gregory-meeks",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 39,
+          "cluster_id": 4,
+          "text": "The Biden administration paused a shipment of 2,000-pound bombs to Israel in 2024, a decision Donald Trump reversed after taking office in January 2025.",
+          "kind": "background",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/us-news/us-plans-to-deliver-powerful-weapons-to-israel-in-2-8-billion-sale-what-s-in-the-package-and-what-it-means-11789569530965.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 40,
+          "cluster_id": 4,
+          "text": "More than 100 House Democrats voted in July 2026 to end US military assistance to Israel.",
+          "kind": "figure",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/us-news/us-plans-to-deliver-powerful-weapons-to-israel-in-2-8-billion-sale-what-s-in-the-package-and-what-it-means-11789569530965.html",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 5,
+      "headline_hint": "Airstrike-damaged building in Gaza City collapses, killing at least 21 Palestinians",
+      "section": "world",
+      "batch_position": 5,
+      "claim_count": 7,
+      "distinct_outlets": 3,
+      "source_kinds": {
+        "fulltext": 7
+      },
+      "claims": [
+        {
+          "id": 41,
+          "cluster_id": 5,
+          "text": "A war-damaged seven-story building collapsed in Gaza, killing at least 20 people.",
+          "kind": "figure",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/16/rescue-workers-search-for-survivors-after-gaza-building-collapse?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 42,
+          "cluster_id": 5,
+          "text": "At least 21 people, including eight children, were killed when a six-story building damaged by a prior Israeli strike collapsed in Gaza City's Tal al-Hawa area.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cvp8d00j9gg5o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 43,
+          "cluster_id": 5,
+          "text": "United Nations Development Programme Gaza head Alessandro Mrakic warned that around 400 war-damaged buildings across Gaza are at imminent risk of collapse.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cvp8d00j9gg5o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 44,
+          "cluster_id": 5,
+          "text": "More than 73,790 people have been killed in Gaza since October 7, 2023, according to Gaza's health ministry.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cvp8d00j9gg5o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 45,
+          "cluster_id": 5,
+          "text": "Gaza's health ministry reported that 1,369 Palestinians have been killed and 4,627 wounded since the ceasefire took effect on October 11, 2025.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/sep/16/building-gaza-city-damaged-israeli-strikes-collapses-killed",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 46,
+          "cluster_id": 5,
+          "text": "Israeli Defence Minister Israel Katz stated that 70% of Gaza's population had been emptied from their homes during Israel's military offensive.",
+          "kind": "quote",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/sep/16/building-gaza-city-damaged-israeli-strikes-collapses-killed",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 47,
+          "cluster_id": 5,
+          "text": "Nine members of Hayat al-Ajlah's extended family were killed when the al-Saada building collapsed in western Gaza City.",
+          "kind": "figure",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/9/16/nowhere-to-go-gazas-damaged-buildings-turn-deadly?traffic_source=rss",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 6,
+      "headline_hint": "Pakistani naval vessel collides with Indian warship in Arabian Sea, sparking diplomatic protest",
+      "section": "india",
+      "batch_position": 0,
+      "claim_count": 11,
+      "distinct_outlets": 3,
+      "source_kinds": {
+        "fulltext": 11
+      },
+      "claims": [
+        {
+          "id": 48,
+          "cluster_id": 6,
+          "text": "Pakistan Navy corvette PNS Hunain collided with a frontline Indian Navy warship in the North Arabian Sea on the evening of September 15, 2026.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/india-pakistan-vessel-collision-arabian-sea-protest-lodged-september-16-2026/article71471556.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 49,
+          "cluster_id": 6,
+          "text": "The Ministry of External Affairs summoned Pakistan's Chargé d'Affaires in New Delhi to lodge a strong diplomatic protest over the collision.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/india-pakistan-vessel-collision-arabian-sea-protest-lodged-september-16-2026/article71471556.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 50,
+          "cluster_id": 6,
+          "text": "PNS Hunain sustained damage in the collision and returned to harbour, while the Indian vessel suffered minor damage and continued its routine surveillance mission.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/india-pakistan-vessel-collision-arabian-sea-protest-lodged-september-16-2026/article71471556.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 51,
+          "cluster_id": 6,
+          "text": "The Indian Ministry of External Affairs stated that the Pakistani naval ship's conduct violated Article 10 of the April 1991 bilateral Agreement on Advance Notice on Military Exercises, Manoeuvres and Troops Movements.",
+          "kind": "background",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/india-pakistan-vessel-collision-arabian-sea-protest-lodged-september-16-2026/article71471556.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 52,
+          "cluster_id": 6,
+          "text": "Pakistan summoned the Chargé d'Affaires of the Indian High Commission in Islamabad to lodge a protest over what it termed a highly provocative action in Pakistan's exclusive economic zone.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/india-pakistan-vessel-collision-arabian-sea-protest-lodged-september-16-2026/article71471556.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 53,
+          "cluster_id": 6,
+          "text": "PNS Hunain is a Yarmook-class offshore patrol vessel built by Damen Shipyards in Romania and commissioned into the Pakistan Navy in July 2024.",
+          "kind": "background",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/india-pakistan-vessel-collision-arabian-sea-protest-lodged-september-16-2026/article71471556.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 54,
+          "cluster_id": 6,
+          "text": "Article 10 of the 1991 agreement between India and Pakistan mandates that naval ships and submarines maintain a distance of at least three nautical miles from each other to avoid accidents in international waters.",
+          "kind": "background",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/arabian-sea-face-off-india-protests-after-pak-warship-collides-with-vessel-101789579394895.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 55,
+          "cluster_id": 6,
+          "text": "Pakistan's foreign ministry summoned Indian Chargé d'Affaires Satyanjal Pandey late on Wednesday night regarding the naval collision.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/arabian-sea-face-off-india-protests-after-pak-warship-collides-with-vessel-101789579394895.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 56,
+          "cluster_id": 6,
+          "text": "The collision was the first reported military incident involving India and Pakistan since four days of hostilities in May 2025 following the Pahalgam terror attack.",
+          "kind": "background",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/arabian-sea-face-off-india-protests-after-pak-warship-collides-with-vessel-101789579394895.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 57,
+          "cluster_id": 6,
+          "text": "The last recorded collision between Indian and Pakistani warships occurred in June 2011, when PNS Babur touched INS Godavari during an anti-piracy patrol in the Gulf of Aden.",
+          "kind": "background",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/arabian-sea-face-off-india-protests-after-pak-warship-collides-with-vessel-101789579394895.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 58,
+          "cluster_id": 6,
+          "text": "A source told the Times of India that the captain of the Indian warship exercised extreme restraint to prevent a severe accident.",
+          "kind": "quote",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/pak-vessel-pns-hunain-damaged-after-collision-with-indian-warship-in-north-arabian-sea-returns-to-harbour/articleshow/134291641.cms",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 7,
+      "headline_hint": "Backlash and legal challenges mount over 0.4% UPI merchant transaction charges",
+      "section": "india",
+      "batch_position": 1,
+      "claim_count": 14,
+      "distinct_outlets": 4,
+      "source_kinds": {
+        "fulltext": 14
+      },
+      "claims": [
+        {
+          "id": 59,
+          "cluster_id": 7,
+          "text": "Jammu and Kashmir Chief Minister Omar Abdullah backed the Centre's decision to levy charges on certain UPI transactions, stating that operating digital payment infrastructure is costly.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/jammu-and-kashmir/jk-cm-omar-abdullah-backs-centre-on-upi-charges/article71474141.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 60,
+          "cluster_id": 7,
+          "text": "Jammu and Kashmir Chief Minister Omar Abdullah stated that person-to-person money transfers carry no charge under the new UPI levy framework.",
+          "kind": "background",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/jammu-and-kashmir/jk-cm-omar-abdullah-backs-centre-on-upi-charges/article71474141.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 61,
+          "cluster_id": 7,
+          "text": "Leader of Opposition Rahul Gandhi criticized Prime Minister Narendra Modi over the new Merchant Discount Rate framework for UPI transactions, calling it a UPI tax.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/upi-charges-row-chidambaram-among-5-congress-mps-who-had-backed-revenue-framework/articleshow/134293943.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 62,
+          "cluster_id": 7,
+          "text": "A Parliamentary Standing Committee on Finance report presented on August 12, 2026, recommended a tiered Merchant Discount Rate revenue framework for high-value UPI transactions.",
+          "kind": "background",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/upi-charges-row-chidambaram-among-5-congress-mps-who-had-backed-revenue-framework/articleshow/134293943.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 63,
+          "cluster_id": 7,
+          "text": "Congress MPs P Chidambaram, Manish Tewari, Gaurav Gogoi, Kishori Lal, and K Gopinath were members of the Standing Committee on Finance that adopted the UPI MDR report without recorded dissent.",
+          "kind": "background",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/upi-charges-row-chidambaram-among-5-congress-mps-who-had-backed-revenue-framework/articleshow/134293943.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 64,
+          "cluster_id": 7,
+          "text": "The Union government ruled out any rollback of the proposed 0.4 per cent Merchant Discount Rate on UPI transactions above Rs 2,000, set to take effect on October 15, 2026.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/upi-charges-row-chidambaram-among-5-congress-mps-who-had-backed-revenue-framework/articleshow/134293943.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 65,
+          "cluster_id": 7,
+          "text": "The Union government clarified that merchant transactions up to Rs 2,000 and all person-to-person transfers will remain free of Merchant Discount Rate charges.",
+          "kind": "background",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/upi-charges-row-chidambaram-among-5-congress-mps-who-had-backed-revenue-framework/articleshow/134293943.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 66,
+          "cluster_id": 7,
+          "text": "Advocate Anjan Datta filed a public interest litigation in the Supreme Court seeking the quashing of the Centre's new Merchant Discount Rate framework for UPI.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/first-legal-challenge-against-upi-mdr-filed-in-supreme-court-11789569772258.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 67,
+          "cluster_id": 7,
+          "text": "Under the Centre's September 15 framework, a 0.4% Merchant Discount Rate will apply to UPI merchant payments of ₹2,000 or more, capped at ₹300 for transactions of ₹75,000 or more.",
+          "kind": "background",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/first-legal-challenge-against-upi-mdr-filed-in-supreme-court-11789569772258.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 68,
+          "cluster_id": 7,
+          "text": "Small merchants receiving up to ₹1 lakh per month through UPI QR payments are excluded from the new Merchant Discount Rate framework.",
+          "kind": "background",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/first-legal-challenge-against-upi-mdr-filed-in-supreme-court-11789569772258.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 69,
+          "cluster_id": 7,
+          "text": "Capital market transactions via UPI will incur a 0.02% Merchant Discount Rate capped at ₹300, while specified essential sectors will incur a flat ₹5 charge.",
+          "kind": "background",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/first-legal-challenge-against-upi-mdr-filed-in-supreme-court-11789569772258.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 70,
+          "cluster_id": 7,
+          "text": "The Retailers Association of India warned that the 0.4% Merchant Discount Rate on UPI transactions could reverse digital payment adoption among small retailers.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/think-twice-about-accepting-cash-retailers-body-on-new-upi-merchant-fee-101789570139912.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 71,
+          "cluster_id": 7,
+          "text": "Retailers Association of India CEO Kumar Rajagopalan stated that small merchants will now think twice about whether to accept cash or UPI.",
+          "kind": "quote",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/think-twice-about-accepting-cash-retailers-body-on-new-upi-merchant-fee-101789570139912.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 72,
+          "cluster_id": 7,
+          "text": "The Clothing Manufacturers Association of India expressed concern that adding a Merchant Discount Rate on UPI at the start of the festive season creates additional pressure on retailers.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/think-twice-about-accepting-cash-retailers-body-on-new-upi-merchant-fee-101789570139912.html",
+          "source_kind": "fulltext"
+        }
+      ]
+    }
+  ],
+  "clusters_with_no_claims": []
+}
