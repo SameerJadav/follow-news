@@ -1,0 +1,781 @@
+{
+  "dials": {
+    "WEIGHT_FLOOR": 5,
+    "TIER_WEIGHT": {
+      "lead": 4,
+      "major": 2,
+      "notable": 0
+    },
+    "WIKI_BONUS": 2,
+    "HARD_CAP": 12,
+    "MIN_STORIES_IF_ANY": 3,
+    "MAX_ARTICLES_PER_STORY": 5
+  },
+  "floor_relaxed": false,
+  "kept_weights": [
+    9,
+    6,
+    6,
+    6,
+    6,
+    6,
+    5,
+    5,
+    10,
+    7,
+    6
+  ],
+  "per_section": {
+    "world": 8,
+    "india": 3
+  },
+  "clusters": [
+    {
+      "headline_hint": "US House passes bill enabling 100% tariffs on India over Russian oil purchases",
+      "section": "india",
+      "category": "economy",
+      "tier_requested": "lead",
+      "article_ids": [
+        121,
+        175,
+        178,
+        232,
+        271,
+        273,
+        324,
+        327
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        121,
+        175,
+        178,
+        232,
+        271,
+        273,
+        324,
+        327
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 6,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 10,
+      "weight_terms": {
+        "distinct_outlets": 6,
+        "tier_weight": 4,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "France 24",
+          "title": "India vows to protect energy security after new US tariffs over Russian oil",
+          "url": "https://www.france24.com/en/india-vows-to-protect-energy-security-after-new-us-tariffs-over-russian-oil"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "'People first': India's envoy to US strikes defiant note as Trump's 100% tariffs loom",
+          "url": "https://timesofindia.indiatimes.com/india/people-first-indias-envoy-to-us-strikes-defiant-note-as-trumps-100-tariffs-loom/articleshow/134317143.cms"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "China warns against linking tariffs to Russian oil purchases, says it will not accept ‘long-arm jurisdiction’",
+          "url": "https://www.livemint.com/news/world/china-warns-against-linking-tariffs-to-russian-oil-purchases-says-it-will-not-accept-long-arm-jurisdiction-11789660637492.html"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "Rush Hour: India assures energy security amid tariff threat, police questioned on protest ban & more",
+          "url": "https://scroll.in/latest/1095818/rush-hour-india-assures-energy-security-amid-tariff-threat-police-questioned-on-protest-ban-more?utm_source=rss&utm_medium=public"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "India-US tariff timeline: How Trump went from 10 to 100% duty over Russian oil purchase in last 1.5 years",
+          "url": "https://www.hindustantimes.com/india-news/india-us-tariff-timeline-how-trump-went-from-10-to-100-duty-over-russian-oil-purchase-in-last-1-5-years-101789641022855.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 3
+    },
+    {
+      "headline_hint": "Election Commission freezes Trinamool Congress name and symbol amid factional dispute",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        13,
+        126,
+        159,
+        165,
+        174,
+        180,
+        181
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        13,
+        126,
+        159,
+        165,
+        174,
+        180,
+        181
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 5,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "EC accepts TMC split, freezes name, symbol in interim order",
+          "url": "https://timesofindia.indiatimes.com/india/ec-accepts-tmc-split-freezes-name-symbol-in-interim-order/articleshow/134323242.cms"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "Election Commission bars both factions of Trinamool from using party name, symbol for byelections",
+          "url": "https://www.thehindu.com/news/national/west-bengal/eci-bars-both-factions-of-trinamool-from-using-party-name-symbol-for-byelections/article71478009.ece"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "In Fight For Trinamool Name And Symbol, Poll Body's Freeze Ahead Of Bypolls",
+          "url": "https://www.ndtv.com/india-news/poll-body-freezes-trinamool-name-and-symbol-neither-faction-can-use-them-for-bypolls-12061292#publisher=newsstand"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Mamata Banerjee losing TMC? Election Commission freezes Trinamool Congress name and party symbol",
+          "url": "https://www.livemint.com/news/india/election-commission-freezes-mamata-banerjee-s-trinamool-congress-name-and-party-symbol-11789664070325.html"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "ECI reserves TMC symbol amid dispute; asks Mamata, Ritabrata factions to pick new names, symbols ahead of bypolls",
+          "url": "https://www.hindustantimes.com/india-news/eci-reserves-tmc-symbol-amid-dispute-asks-mamata-banerjee-ritabrata-faction-to-pick-new-names-symbols-bengal-bypolls-101789663057317.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 2
+    },
+    {
+      "headline_hint": "Indian government clarifies UPI Merchant Discount Rate policy to protect consumers",
+      "section": "india",
+      "category": "economy",
+      "tier_requested": "major",
+      "article_ids": [
+        51,
+        94,
+        204,
+        237,
+        239,
+        253,
+        257,
+        313
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        51,
+        94,
+        204,
+        237,
+        239,
+        253,
+        257,
+        313
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 6,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "'In talks with payment platforms to ensure UPI fee not passed on to consumers': Govt",
+          "url": "https://timesofindia.indiatimes.com/business/india-business/upi-fee-government-payment-gateways-discuss-ways-to-stop-merchants-passing-burden-to-consumers/articleshow/134321080.cms"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "LPG agencies likely to face the heat of MDR, plan to approach government",
+          "url": "https://www.thehindu.com/news/cities/Hyderabad/lpg-agencies-likely-to-face-the-heat-of-mdr-plan-to-approach-government/article71477655.ece"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "UPI MDR: PCI fact-checks Kerala Congress'  ₹146 claim on  ₹30,924 diesel payment, says charge is  ₹5",
+          "url": "https://www.livemint.com/news/india/upi-mdr-pci-fact-checks-kerala-congress-146-claim-on-30-924-diesel-payment-says-charge-is-rs-5-11789653792531.html"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Bharatpe backs UPI MDR charges, says Ashneer Grover's criticism not company's view: ‘No ties with him since 2024’",
+          "url": "https://www.hindustantimes.com/india-news/bharatpe-backs-upi-charges-says-ashneer-grovers-criticism-not-companys-view-no-ties-with-him-since-2024-101789645119821.html"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "UPI MDR decision: FinMin rejects claims of US influence, says NPCI rules aim to support domestic competition",
+          "url": "https://www.livemint.com/news/india/upi-mdr-decision-finmin-rejects-claims-of-us-influence-says-npci-rules-aim-to-support-domestic-competition-11789649987487.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 3
+    },
+    {
+      "headline_hint": "Australia tightens visa rules for international students and holidaymakers, affecting Indian applicants",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        214,
+        215,
+        256,
+        286,
+        328
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        214,
+        215,
+        256,
+        286,
+        328
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "Amid claims of ‘mass migration’, Labor hopes a measured approach will take the hot air out of the debate",
+          "url": "https://www.theguardian.com/australia-news/2026/sep/18/amid-claims-of-mass-migration-labor-hopes-a-measured-approach-will-take-the-hot-air-out-of-the-debate"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Indian students face tough choices as Australia restricts family visas: Inside Canberra’s sharp immigration turn",
+          "url": "https://www.livemint.com/news/indian-students-face-tough-choices-as-australia-restricts-family-visas-inside-canberra-s-sharp-immigration-turn-11789639545674.html"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "International students, 'visa hoppers' and backpackers targeted in Australia migration crackdown",
+          "url": "https://www.bbc.co.uk/news/articles/cm986j81ky55o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Tony Burke rejects farmers’ claims that immigration changes will increase food prices",
+          "url": "https://www.theguardian.com/australia-news/2026/sep/18/tony-burke-rejects-farmers-claims-immigration-changes-will-increase-food-prices-ntwnfb"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Australian immigration crackdown: New ballot system, working holiday visas - Are Indians impacted? What about students?",
+          "url": "https://www.livemint.com/news/australias-new-visa-restrictions-will-ban-most-students-from-bringing-family-what-it-means-for-indians-11789637181469.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "India proposes mandatory CCTV surveillance at pharmacies to curb unauthorized prescription drug sales",
+      "section": "india",
+      "category": "health",
+      "tier_requested": "notable",
+      "article_ids": [
+        25,
+        227,
+        264,
+        277,
+        294
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        25,
+        227,
+        264,
+        277,
+        294
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "Buying meds may have to be recorded on CCTV",
+          "url": "https://timesofindia.indiatimes.com/india/buying-meds-may-have-to-be-recorded-on-cctv/articleshow/134323093.cms"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Amid govt's proposal for CCTVs at medical stores, 64% of consumers say chemists rarely ask for prescription: Survey",
+          "url": "https://www.livemint.com/news/india/amid-govt-proposal-for-cctvs-at-medical-stores-64-of-consumers-say-chemists-rarely-ask-for-prescription-survey-11789648077190.html"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Why Health Ministry has proposed CCTV surveillance at medical stores for prescription drugs",
+          "url": "https://www.hindustantimes.com/india-news/why-health-ministry-has-proposed-cctv-surveillance-at-medical-stores-for-prescription-drugs-101789642403548.html"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Govt proposes mandatory CCTV to monitor unauthorised sale of prescription drugs",
+          "url": "https://www.hindustantimes.com/india-news/govt-proposes-mandatory-cctv-to-monitor-unauthorised-sale-of-prescription-drugs-101789643011957.html"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "India proposes mandatory CCTVs at medical stores to regulate prescription drug sales",
+          "url": "https://www.livemint.com/news/india/health-ministry-mandatory-cctv-coverage-medical-stores-prescription-drugs-regulation-of-sales-chemists-pharmacies-11789625876785.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "EU proposes associate membership for Canada, drawing trade threats from Donald Trump",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "lead",
+      "article_ids": [
+        58,
+        71,
+        78,
+        82,
+        84,
+        85,
+        142,
+        173,
+        191,
+        200,
+        251,
+        309
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        58,
+        71,
+        78,
+        82,
+        84,
+        85,
+        142,
+        173,
+        191,
+        200,
+        251,
+        309
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 5,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 9,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 4,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "France 24",
+          "title": "The Canada-EU partnership 'a classic win-win situation', economist says",
+          "url": "https://www.france24.com/en/tv-shows/a-propos/20260917-the-canada-eu-partnership-a-classic-win-win-situation-economist-says"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Can ‘middle powers’ come together to build a new economic alliance?",
+          "url": "https://www.aljazeera.com/video/inside-story/2026/9/17/can-middle-powers-come-together-to-build-a-new-economic-alliance-2?traffic_source=rss"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "Behind the overture from the European Union to Canada",
+          "url": "https://www.npr.org/2026/09/17/nx-s1-5973029/behind-the-overture-from-the-european-union-to-canada"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Canadians welcome closer ties with Europe as tensions simmer with US",
+          "url": "https://www.bbc.co.uk/news/articles/cx980qj57r89o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Taking on Trump: Canada and EU forge closer ties – The Latest",
+          "url": "https://www.theguardian.com/news/audio/2026/sep/17/taking-on-trump-canada-and-eu-forge-closer-ties-the-latest"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 7
+    },
+    {
+      "headline_hint": "US Federal Reserve raises interest rates for first time in three years",
+      "section": "world",
+      "category": "economy",
+      "tier_requested": "major",
+      "article_ids": [
+        39,
+        53,
+        281,
+        338
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        39,
+        53,
+        281,
+        338
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 5,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Channel News Asia",
+          "title": "CNA Explains: Should Singapore homeowners review their mortgages after the Fed's rate hike?",
+          "url": "https://www.channelnewsasia.com/singapore/home-loans-fed-rate-hike-fixed-floating-mortgage-6391396"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "The Fed raises interest rates. And, EU proposes Canada become an 'associate member'",
+          "url": "https://www.npr.org/2026/09/17/g-s1-143783/up-first-newsletter-federal-reserve-interest-rates-gas-prices-war-canada-european-union"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "US interest rates raised for first time in three years",
+          "url": "https://www.bbc.co.uk/news/articles/cw4gmlyvj422o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "Stocks climb as oil retreats, Fed calms inflation fears",
+          "url": "https://www.channelnewsasia.com/world/us-stocks-oil-fed-decision-inflation-6393196"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Swedish Prime Minister Ulf Kristersson resigns following election defeat",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        203,
+        248
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        203,
+        248
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 2,
+      "wiki_backed": true,
+      "wiki_event": "Ulf Kristersson announces his resignation as Prime Minister of Sweden after his right-wing bloc win 173 seats in the Riksdag, compared to 176 won by the opposition, led by Magdalena Andersson.",
+      "weight": 6,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "Sweden’s PM resigns after centre-left bloc wins slim majority in election",
+          "url": "https://www.theguardian.com/world/2026/sep/17/sweden-elections-prime-minister-resigns"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Swedish PM Kristersson resigns after election loss",
+          "url": "https://www.bbc.co.uk/news/articles/cxr50l3d762po?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "UN experts report reasonable grounds US committed war crimes in military strikes in Iran",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "major",
+      "article_ids": [
+        72,
+        225,
+        235,
+        249
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        72,
+        225,
+        235,
+        249
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 6,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "BBC World",
+          "title": "UN experts say grounds to believe US committed war crimes in Iran strikes",
+          "url": "https://www.bbc.co.uk/news/articles/cm9w4n5nverdo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "UN experts flag two US strikes in Iran over possible war crimes: Which ones?",
+          "url": "https://www.livemint.com/news/us-news/un-experts-flag-two-us-strikes-in-iran-over-possible-war-crimes-which-ones-11789651893095.html"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Iran school bombing: grounds to believe US was behind atrocity, UN finds",
+          "url": "https://www.theguardian.com/world/2026/sep/17/iran-school-bombing-un-mission-us-military-behind-attack"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "U.N.-backed experts cite possible U.S. war crimes in Iran, including a school attack",
+          "url": "https://www.npr.org/2026/09/17/nx-s1-5972934/us-iran-war-un-report-alleged-war-crimes"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Russia holds parliamentary elections amid ongoing conflict and economic strain",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        27,
+        66,
+        179,
+        329
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        27,
+        66,
+        179,
+        329
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 6,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "Russia election: Could other parties challenge United Russia?",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/17/aje-onl-nf_medvedenkod-parties_challenge_united_russia-170926?traffic_source=rss"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Russia kicks off voting in first parliamentary election since Ukraine war began",
+          "url": "https://timesofindia.indiatimes.com/world/europe/russia-kicks-off-voting-in-first-parliamentary-election-since-ukraine-war-began/articleshow/134321045.cms"
+        },
+        {
+          "outlet": "DW World",
+          "title": "A war-fatigued and anxious Russia picks a new parliament",
+          "url": "https://www.dw.com/en/a-war-fatigued-and-anxious-russia-picks-a-new-parliament/a-79312440?maca=en-rss-en-world-4025-rdf"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Rosenberg: Russia's elections will have few surprises, but for the Kremlin they matter",
+          "url": "https://www.bbc.co.uk/news/articles/ck62m0r4r1y3o?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "US approves visas for Iranian delegation led by President Pezeshkian to attend UN General Assembly",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        6,
+        44,
+        46,
+        48,
+        56
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        6,
+        44,
+        46,
+        48,
+        56
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 6,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "Iran war live: Trump weighs ‘big decision’ on Iran, tanker hit in Hormuz",
+          "url": "https://www.aljazeera.com/news/liveblog/2026/9/18/iran-war-live-trump-weighs-big-decision-on-iran-tanker-hit-in-hormuz?traffic_source=rss"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Trump says ‘big decision’ coming on Iran war as he prepares to meet six Gulf leaders at UN General Assembly",
+          "url": "https://www.livemint.com/news/us-news/trump-says-big-decision-coming-on-iran-war-as-he-prepares-to-meet-six-gulf-leaders-at-un-general-assembly-11789680832470.html"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "US allows Iran delegation to attend UN assembly: Official",
+          "url": "https://www.channelnewsasia.com/world/us-iran-delegation-un-assembly-6393261"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "US to allow Iran delegation to attend UN meetings in New York as war passes half-year mark",
+          "url": "https://www.bbc.co.uk/news/articles/c6n8m72r13ngo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "US approves visas for top Iranian leaders to attend UN General Assembly",
+          "url": "https://www.aljazeera.com/news/2026/9/17/us-approves-visas-for-top-iranian-leaders-to-attend-un-general-assembly?traffic_source=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Biologists discover new wild cat species 'Tilcayo' in cloud forests of Bolivia",
+      "section": "world",
+      "category": "science",
+      "tier_requested": "notable",
+      "article_ids": [
+        69,
+        160,
+        184
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        69,
+        160,
+        184
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": true,
+      "wiki_event": "Biologists publish a study in the journal Current Biology describing a new species of wild cat belonging to the genus Leopardus, commonly called the \"tilcayo\", in the Yungas cloud forests of Bolivia. This discovery marks the first new cat s",
+      "weight": 5,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "New cat species identified for first time in more than a century in Bolivia",
+          "url": "https://www.theguardian.com/world/2026/sep/17/new-cat-species-identified-bolivia"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "This ‘weird cat’ had scientists stunned—It’s a new species discovered after 100 years",
+          "url": "https://www.livemint.com/news/trends/this-weird-cat-had-scientists-stunned-it-s-a-new-species-found-after-100-years-11789665004175.html"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Meet Tilcayo: Tiny wild cat discovered in Bolivia's forests after more than a century",
+          "url": "https://timesofindia.indiatimes.com/science/meet-tilcayo-the-tiny-wild-cat-discovered-in-bolivias-cloud-forests-after-more-than-a-century/articleshow/134316459.cms"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "US administration approves $24.3 billion F-35 fighter jet sale to Saudi Arabia",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        49,
+        65,
+        161,
+        315
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        49,
+        65,
+        161,
+        315
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 4,
+      "wiki_backed": true,
+      "wiki_event": "Al-Akhbar reports that Saudi Arabia has sent a proposal for Oman to mediate a two-week ceasefire with the Houthis.",
+      "weight": 6,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 0,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "Trump administration approves sale of F-35 jets to Saudi Arabia",
+          "url": "https://www.aljazeera.com/news/2026/9/17/trump-administration-approves-sale-of-f-35-jets-to-saudi-arabia?traffic_source=rss"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "US approves sale of 48 F-35 jets to Saudi Arabia",
+          "url": "https://www.channelnewsasia.com/world/us-approves-sale-48-f-35-jets-saudi-arabia-6393136"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "US advances $24.3bn Saudi F-35 deal despite concerns over kingdom's China ties",
+          "url": "https://timesofindia.indiatimes.com/defence/international/us-advances-24-3-billion-saudi-f-35-deal-despite-concerns-over-kingdoms-china-ties/articleshow/134318051.cms"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Could China steal F-35 tech through Saudi Arabia deal? Report flags link amid Beijing's past record",
+          "url": "https://www.livemint.com/news/world/could-china-steal-f-35-tech-through-saudi-arabia-deal-report-flags-link-amid-beijings-past-record-11789628901669.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    }
+  ]
+}
