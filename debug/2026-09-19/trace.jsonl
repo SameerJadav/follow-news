@@ -1,0 +1,142 @@
+{"run": "digest", "t": 0, "kind": "digest", "stage": "tracer", "msg": "capture started", "level": 1, "day": "2026-09-19"}
+{"run": "digest", "t": 1555, "kind": "dbg", "msg": "digest: window since=2026-09-18T00:36:22+00:00 (prev_generated_at=2026-09-18 00:36:22+00:00)"}
+{"run": "digest", "t": 1733, "kind": "dbg", "msg": "feed 'BBC World': http=200 raw_items=26 usable=26"}
+{"run": "digest", "t": 1733, "kind": "event", "stage": "feeds", "outlet": "BBC World", "url": "https://feeds.bbci.co.uk/news/world/rss.xml", "http": 200, "elapsed_ms": 167, "bytes": 20405, "raw_items": 26, "usable": 26, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 1922, "kind": "dbg", "msg": "feed 'Al Jazeera': http=200 raw_items=25 usable=25"}
+{"run": "digest", "t": 1922, "kind": "event", "stage": "feeds", "outlet": "Al Jazeera", "url": "https://www.aljazeera.com/xml/rss/all.xml", "http": 200, "elapsed_ms": 181, "bytes": 17219, "raw_items": 25, "usable": 25, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 2088, "kind": "dbg", "msg": "feed 'Guardian World': http=200 raw_items=45 usable=45"}
+{"run": "digest", "t": 2088, "kind": "event", "stage": "feeds", "outlet": "Guardian World", "url": "https://www.theguardian.com/world/rss", "http": 200, "elapsed_ms": 133, "bytes": 152487, "raw_items": 45, "usable": 45, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 2257, "kind": "dbg", "msg": "feed 'NPR World': http=200 raw_items=10 usable=10"}
+{"run": "digest", "t": 2257, "kind": "event", "stage": "feeds", "outlet": "NPR World", "url": "https://feeds.npr.org/1004/rss.xml", "http": 200, "elapsed_ms": 163, "bytes": 14376, "raw_items": 10, "usable": 10, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 2771, "kind": "dbg", "msg": "feed 'DW World': http=200 raw_items=13 usable=13"}
+{"run": "digest", "t": 2771, "kind": "event", "stage": "feeds", "outlet": "DW World", "url": "https://rss.dw.com/rdf/rss-en-world", "http": 200, "elapsed_ms": 509, "bytes": 12747, "raw_items": 13, "usable": 13, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 3003, "kind": "dbg", "msg": "feed 'France 24': http=200 raw_items=24 usable=24"}
+{"run": "digest", "t": 3003, "kind": "event", "stage": "feeds", "outlet": "France 24", "url": "https://www.france24.com/en/rss", "http": 200, "elapsed_ms": 224, "bytes": 27950, "raw_items": 24, "usable": 24, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 3239, "kind": "dbg", "msg": "feed 'Channel News Asia': http=200 raw_items=20 usable=20"}
+{"run": "digest", "t": 3239, "kind": "event", "stage": "feeds", "outlet": "Channel News Asia", "url": "https://www.channelnewsasia.com/api/v1/rss-outbound-feed?_format=xml", "http": 200, "elapsed_ms": 229, "bytes": 17016, "raw_items": 20, "usable": 20, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 3769, "kind": "dbg", "msg": "feed 'The Hindu': http=200 raw_items=60 usable=60"}
+{"run": "digest", "t": 3769, "kind": "event", "stage": "feeds", "outlet": "The Hindu", "url": "https://www.thehindu.com/news/national/feeder/default.rss", "http": 200, "elapsed_ms": 518, "bytes": 43784, "raw_items": 60, "usable": 60, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 4068, "kind": "dbg", "msg": "feed 'NDTV': http=200 raw_items=20 usable=20"}
+{"run": "digest", "t": 4068, "kind": "event", "stage": "feeds", "outlet": "NDTV", "url": "https://feeds.feedburner.com/ndtvnews-india-news", "http": 200, "elapsed_ms": 291, "bytes": 27610, "raw_items": 20, "usable": 20, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 4270, "kind": "dbg", "msg": "feed 'Hindustan Times': http=200 raw_items=100 usable=100"}
+{"run": "digest", "t": 4270, "kind": "event", "stage": "feeds", "outlet": "Hindustan Times", "url": "https://www.hindustantimes.com/feeds/rss/india-news/rssfeed.xml", "http": 200, "elapsed_ms": 181, "bytes": 97860, "raw_items": 100, "usable": 100, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 4416, "kind": "dbg", "msg": "feed 'Times of India': http=200 raw_items=45 usable=45"}
+{"run": "digest", "t": 4416, "kind": "event", "stage": "feeds", "outlet": "Times of India", "url": "https://timesofindia.indiatimes.com/rssfeedstopstories.cms", "http": 200, "elapsed_ms": 135, "bytes": 46487, "raw_items": 45, "usable": 45, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 4698, "kind": "dbg", "msg": "feed 'Livemint': http=200 raw_items=35 usable=35"}
+{"run": "digest", "t": 4698, "kind": "event", "stage": "feeds", "outlet": "Livemint", "url": "https://www.livemint.com/rss/news", "http": 200, "elapsed_ms": 273, "bytes": 37022, "raw_items": 35, "usable": 35, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 5022, "kind": "dbg", "msg": "feed 'Scroll.in': http=200 raw_items=100 usable=100"}
+{"run": "digest", "t": 5022, "kind": "event", "stage": "feeds", "outlet": "Scroll.in", "url": "https://feeds.feedburner.com/ScrollinArticles.rss", "http": 200, "elapsed_ms": 251, "bytes": 301267, "raw_items": 100, "usable": 100, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 5028, "kind": "dbg", "msg": "gather: 420 article(s) after window+dedupe; by outlet: {'BBC World': 17, 'Channel News Asia': 20, 'Guardian World': 37, 'France 24': 23, 'Times of India': 41, 'Al Jazeera': 25, 'The Hindu': 60, 'Livemint': 35, 'NDTV': 20, 'DW World': 6, 'NPR World': 8, 'Hindustan Times': 98, 'Scroll.in': 30}"}
+{"run": "digest", "t": 5028, "kind": "dbg", "msg": "gather: 13/13 feed(s) live, 420 article(s)"}
+{"run": "digest", "t": 5029, "kind": "event", "stage": "stage", "name": "gather", "ms": 3473, "ok": true, "error": ""}
+{"run": "digest", "t": 5029, "kind": "dbg", "msg": "gather: QUORUM OK — live=13/3 min, articles=420/20 min"}
+{"run": "digest", "t": 5029, "kind": "dbg", "msg": "rank: select pool 420 -> 341; capped outlets: {'The Hindu': 20, 'Hindustan Times': 58, 'Times of India': 1}"}
+{"run": "digest", "t": 5032, "kind": "event", "stage": "stage", "name": "pool", "ms": 3, "ok": true, "error": ""}
+{"run": "digest", "t": 5131, "kind": "dbg", "msg": "wiki: 2026_September_19 http=200 events=0"}
+{"run": "digest", "t": 5131, "kind": "event", "stage": "wikipedia", "page": "2026_September_19", "http": 200, "bytes": 192, "events": 0, "verdict": "ok"}
+{"run": "digest", "t": 5241, "kind": "dbg", "msg": "wiki: 2026_September_18 http=200 events=14"}
+{"run": "digest", "t": 5241, "kind": "event", "stage": "wikipedia", "page": "2026_September_18", "http": 200, "bytes": 7652, "events": 14, "verdict": "ok"}
+{"run": "digest", "t": 5242, "kind": "event", "stage": "stage", "name": "wikipedia", "ms": 209, "ok": true, "error": ""}
+{"run": "digest", "t": 5316, "kind": "dbg", "msg": "llm: call #1 model=gemini-3.6-flash label=select prompt=87940ch"}
+{"run": "digest", "t": 24543, "kind": "dbg", "msg": "llm: select finish_reason=FinishReason.STOP"}
+{"run": "digest", "t": 24544, "kind": "event", "stage": "llm", "call": 1, "label": "select", "model": "gemini-3.6-flash", "latency_ms": 19227, "prompt_chars": 87940, "system_chars": 2517, "response_chars": 2722, "finish_reason": "FinishReason.STOP", "malformed_json": false, "json_retries": 0, "max_output_tokens": 32768, "usage": {"prompt_token_count": 21053, "candidates_token_count": 991, "total_token_count": 25290, "thoughts_token_count": 3246}}
+{"run": "digest", "t": 24545, "kind": "dbg", "msg": "llm: select_stories -> 11 raw cluster(s)"}
+{"run": "digest", "t": 24545, "kind": "event", "stage": "stage", "name": "select", "ms": 19303, "ok": true, "error": ""}
+{"run": "digest", "t": 24546, "kind": "dbg", "msg": "rank: [india] outlets=5 tier=lead wiki=no weight=9 'Election Commission freezes TMC name and symbol as Mamata Banerjee approaches Supreme Court'"}
+{"run": "digest", "t": 24546, "kind": "dbg", "msg": "rank: [india] outlets=4 tier=major wiki=yes weight=8 'Trump signs Russia sanctions bill allowing up to 100% tariffs on Indian energy imports'"}
+{"run": "digest", "t": 24546, "kind": "dbg", "msg": "rank: [india] outlets=3 tier=notable wiki=yes weight=5 \"India rejects Pakistan's account of Arabian Sea naval collision\""}
+{"run": "digest", "t": 24546, "kind": "dbg", "msg": "rank: [world] outlets=5 tier=lead wiki=no weight=9 'US and Denmark reach agreement to expand military presence and security control in Greenland'"}
+{"run": "digest", "t": 24546, "kind": "dbg", "msg": "rank: [world] outlets=7 tier=major wiki=no weight=9 'Trump bans CNN, MS NOW, and Politico from White House press access'"}
+{"run": "digest", "t": 24547, "kind": "dbg", "msg": "rank: [world] outlets=2 tier=major wiki=yes weight=6 'Bank of Japan raises interest rate to 31-year high of 1.25%'"}
+{"run": "digest", "t": 24547, "kind": "dbg", "msg": "rank: [world] outlets=3 tier=major wiki=yes weight=7 \"Suicide bombing near police facility and mosque in Pakistan's Kohat kills over 20\""}
+{"run": "digest", "t": 24547, "kind": "dbg", "msg": "rank: [world] outlets=3 tier=notable wiki=no weight=3 'US approves $24.3 billion sale of F-35 stealth warplanes to Saudi Arabia'"}
+{"run": "digest", "t": 24547, "kind": "dbg", "msg": "rank: [world] outlets=2 tier=notable wiki=no weight=2 'Warren Buffett steps down as Berkshire Hathaway chairman after six decades'"}
+{"run": "digest", "t": 24547, "kind": "dbg", "msg": "rank: [world] outlets=4 tier=notable wiki=yes weight=6 'Protests erupt in Nigeria after 37 suspected illegal miners die in police custody'"}
+{"run": "digest", "t": 24547, "kind": "dbg", "msg": "rank: [world] outlets=4 tier=notable wiki=no weight=4 'Macron warns of rising Russian hybrid attacks targeting European infrastructure'"}
+{"run": "digest", "t": 24547, "kind": "dbg", "msg": "rank: 11 scored, 0 id(s) rejected, 8 kept {'world': 5, 'india': 3}; weights=[9, 9, 7, 6, 6, 9, 8, 5]"}
+{"run": "digest", "t": 24548, "kind": "event", "stage": "stage", "name": "rank", "ms": 2, "ok": true, "error": ""}
+{"run": "digest", "t": 24549, "kind": "dbg", "msg": "wiki: 14 curated event(s); 5 matched a selected story, 9 not covered"}
+{"run": "digest", "t": 24549, "kind": "dbg", "msg": "wiki: NOT COVERED [Armed conflicts and attacks] Middle Eastern crisis — The IRNA reports that Iran's Islamic Revolutionary Guard Corps has hit the Togo-flagged oil tanker Trend as it attempted to pass the Strait of Hormuz."}
+{"run": "digest", "t": 24549, "kind": "dbg", "msg": "wiki: NOT COVERED [Disasters and accidents] 2024–2026 Cuba blackouts — Millions of people are left without electricity in Cuba as a result of a collapse of the country's energy power grid."}
+{"run": "digest", "t": 24549, "kind": "dbg", "msg": "wiki: NOT COVERED [International relations] Polish prime minister Donald Tusk announces that Poland has joined the Anti-Ballistic Missile Coalition to develop a joint anti-ballistic missile defence system with some other European countries."}
+{"run": "digest", "t": 24549, "kind": "dbg", "msg": "wiki: NOT COVERED [Law and crime] 1MDB scandal — King Sultan Ibrahim of Malaysia grants former prime minister Najib Razak a conditional pardon, allowing him to serve the remainder of his sentence under house arrest until August 23, 2028, following his corruption conviction linked to 1MDB."}
+{"run": "digest", "t": 24549, "kind": "dbg", "msg": "wiki: NOT COVERED [Law and crime] 2026 Ceuta migrant crisis — Spanish police begin moving more than 3,000 migrants from beaches in Ceuta to temporary accommodation at the port. The operation prompts crowding and clashes, with officers firing warning shots and several people sustaining injuries."}
+{"run": "digest", "t": 24549, "kind": "dbg", "msg": "wiki: NOT COVERED [Law and crime] 2026 South Cotabato school shooting — Three students, including the perpetrator, are killed ‌and eight others are injured ​in ​a mass shooting at a ⁠secondary ​school in ​Banga, South Cotabato, Philippines."}
+{"run": "digest", "t": 24549, "kind": "dbg", "msg": "wiki: NOT COVERED [Law and crime] Russia designates filmmaker Andrey Zvyagintsev a foreign agent, subjecting him to financial restrictions, reporting requirements, and mandatory labels on published material. Zvyagintsev, who lives abroad, has criticized the Russo-Ukrainian "}
+{"run": "digest", "t": 24549, "kind": "dbg", "msg": "wiki: NOT COVERED [Politics and elections] Protests against the 2026 Iran war — A pro-government rally is held in Tehran, Iran, in what is called the biggest show of defiance since the war started on February 28."}
+{"run": "digest", "t": 24549, "kind": "dbg", "msg": "wiki: NOT COVERED [Politics and elections] 2026 Russian legislative election — Russians begin voting to elect 450 seats of the State Duma over a period of three days following Ukrainian attacks upon oil infrastructure. The elections are also held under strict control during the Russo-Ukrainian war, combined with an on"}
+{"run": "digest", "t": 24773, "kind": "dbg", "msg": "extract: 23271ch https://www.theguardian.com/us-news/live/2026/sep/18/us-politics-midterms-early-voting-cost-of-living-iran-war-trump-kennedy-center-institute-of-peace-latest-news-updates"}
+{"run": "digest", "t": 24942, "kind": "dbg", "msg": "extract: 5782ch https://www.bbc.co.uk/news/articles/c6e30580jqjpo?at_medium=RSS&at_campaign=rss"}
+{"run": "digest", "t": 25315, "kind": "dbg", "msg": "extract: 3330ch https://www.livemint.com/news/us-news/trump-blocks-3-media-outlets-from-white-house-reporting-fake-news-they-write-fiction-and-lies-11789764310239.html"}
+{"run": "digest", "t": 25960, "kind": "dbg", "msg": "extract: 2060ch https://www.channelnewsasia.com/world/trump-says-cnn-ms-now-politico-banned-white-house-6395821"}
+{"run": "digest", "t": 26268, "kind": "dbg", "msg": "extract: 3471ch https://www.aljazeera.com/news/2026/9/18/trump-bans-news-outlets-cnn-ms-now-and-politico-from-white-house?traffic_source=rss"}
+{"run": "digest", "t": 26373, "kind": "dbg", "msg": "extract: 2445ch https://www.bbc.co.uk/news/articles/c63d7lexyym1o?at_medium=RSS&at_campaign=rss"}
+{"run": "digest", "t": 26574, "kind": "dbg", "msg": "extract: fetch_html https://www.france24.com/en/europe/20260918-greenland-denmark-us-deal-un-general-assembly: http=403"}
+{"run": "digest", "t": 30102, "kind": "dbg", "msg": "extract: 14721ch https://www.france24.com/en/europe/20260918-greenland-denmark-us-deal-un-general-assembly"}
+{"run": "digest", "t": 31079, "kind": "dbg", "msg": "extract: 2659ch https://www.channelnewsasia.com/world/us-and-denmark-reach-deal-greenland-trump-says-6395916"}
+{"run": "digest", "t": 31185, "kind": "dbg", "msg": "extract: 1287ch https://www.aljazeera.com/news/2026/9/18/trump-claims-deal-with-denmark-gives-us-permanent-control-over-greenland?traffic_source=rss"}
+{"run": "digest", "t": 31573, "kind": "dbg", "msg": "extract: 3541ch https://timesofindia.indiatimes.com/world/us/us-reaches-deal-with-denmark-for-permanent-security-control-over-greenland-says-donald-trump/articleshow/134343806.cms"}
+{"run": "digest", "t": 32063, "kind": "dbg", "msg": "extract: 4545ch https://www.channelnewsasia.com/world/pakistan-bomb-attack-mosque-police-offices-6395946"}
+{"run": "digest", "t": 32179, "kind": "dbg", "msg": "extract: 2348ch https://www.bbc.co.uk/news/articles/ckn9wenz8wjwo?at_medium=RSS&at_campaign=rss"}
+{"run": "digest", "t": 32346, "kind": "dbg", "msg": "extract: 2652ch https://www.livemint.com/news/pakistan-suicide-attack-16-killed-including-5-police-personnel-as-explosives-laden-vehicle-hits-kohat-police-facility-11789730119838.html"}
+{"run": "digest", "t": 32457, "kind": "dbg", "msg": "extract: fetch_html https://www.france24.com/en/uproar-in-niger-state-37-die-in-custody: http=403"}
+{"run": "digest", "t": 35751, "kind": "dbg", "msg": "extract: 18764ch https://www.france24.com/en/uproar-in-niger-state-37-die-in-custody"}
+{"run": "digest", "t": 35858, "kind": "dbg", "msg": "extract: 4947ch https://www.theguardian.com/world/2026/sep/18/survivor-panic-struggle-breathe-nigeria-prison-cell-died-minna"}
+{"run": "digest", "t": 35965, "kind": "dbg", "msg": "extract: 4173ch https://www.bbc.co.uk/news/articles/cw980qp2n3p4o?at_medium=RSS&at_campaign=rss"}
+{"run": "digest", "t": 36114, "kind": "dbg", "msg": "extract: 3206ch https://www.aljazeera.com/news/2026/9/18/nigerian-forces-fire-at-protesters-rallying-over-deaths-of-detained-miners?traffic_source=rss"}
+{"run": "digest", "t": 36642, "kind": "dbg", "msg": "extract: 3344ch https://www.channelnewsasia.com/world/stocks-us-market-fed-inflation-yen-falls-6395886"}
+{"run": "digest", "t": 36764, "kind": "dbg", "msg": "extract: 4427ch https://www.theguardian.com/business/2026/sep/18/japan-raises-interest-rates-to-31-year-high-rising-prices"}
+{"run": "digest", "t": 36975, "kind": "dbg", "msg": "extract: 2312ch https://www.thehindu.com/news/national/west-bengal/mamata-banerjee-moves-supreme-court-against-freeze-on-tmc-symbol/article71482413.ece"}
+{"run": "digest", "t": 37210, "kind": "dbg", "msg": "extract: fetch_html https://www.ndtv.com/india-news/two-flowers-one-stem-who-is-the-real-trinamool-what-the-congress-shiv-sena-and-ncp-splits-tell-us-12065977#publisher=newsstand: http=403"}
+{"run": "digest", "t": 41888, "kind": "dbg", "msg": "extract: 9499ch https://www.ndtv.com/india-news/two-flowers-one-stem-who-is-the-real-trinamool-what-the-congress-shiv-sena-and-ncp-splits-tell-us-12065977#publisher=newsstand"}
+{"run": "digest", "t": 42012, "kind": "dbg", "msg": "extract: 4579ch https://www.hindustantimes.com/india-news/mamata-move-supreme-court-against-ec-order-freezing-tmc-name-symbol-101789749683047.html"}
+{"run": "digest", "t": 42137, "kind": "dbg", "msg": "extract: 1279ch https://timesofindia.indiatimes.com/india/mamata-banerjee-moves-supreme-court-against-eci-decision-to-freeze-tmc-name-symbol/articleshow/134339829.cms"}
+{"run": "digest", "t": 42595, "kind": "dbg", "msg": "extract: 5382ch https://scroll.in/latest/1095845/congress-candidate-for-nandigram-bye-poll-arrested-hours-after-mamata-extends-support?utm_source=rss&utm_medium=public"}
+{"run": "digest", "t": 42794, "kind": "dbg", "msg": "extract: 2672ch https://timesofindia.indiatimes.com/business/international-business/trump-signs-russia-sanctions-bill-into-law-gains-authority-to-impose-100-tariff-on-india-and-china/articleshow/134344362.cms"}
+{"run": "digest", "t": 42936, "kind": "dbg", "msg": "extract: 2148ch https://www.theguardian.com/us-news/2026/sep/18/trump-signs-russia-sanctions-bill"}
+{"run": "digest", "t": 43033, "kind": "dbg", "msg": "extract: 4778ch https://www.hindustantimes.com/india-news/trump-to-sign-russia-sanctions-bill-today-that-threatens-100-per-cent-tariffs-on-india-101789751001313.html"}
+{"run": "digest", "t": 43346, "kind": "dbg", "msg": "extract: 3826ch https://www.livemint.com/news/us-targets-india-with-100-tariffs-over-russian-oil-but-spares-uranium-what-the-sanctions-bill-says-11789724501612.html"}
+{"run": "digest", "t": 43515, "kind": "dbg", "msg": "extract: 4332ch https://www.livemint.com/news/india/india-rejects-pakistans-allegations-over-collision-in-arabian-sea-pns-hunain-conducted-in-unacceptable-manner-11789735316641.html"}
+{"run": "digest", "t": 43653, "kind": "dbg", "msg": "extract: 5471ch https://www.hindustantimes.com/india-news/same-old-stalling-india-hits-back-at-pakistan-over-naval-collision-response-navy-ships-101789729256799.html"}
+{"run": "digest", "t": 43814, "kind": "dbg", "msg": "extract: 3954ch https://timesofindia.indiatimes.com/india/pns-hunain-violated-maritime-norms-india-rejects-pakistans-usual-prevarication-over-naval-collision/articleshow/134333051.cms"}
+{"run": "digest", "t": 43987, "kind": "dbg", "msg": "extract: 3963ch https://www.livemint.com/news/india/totally-unacceptable-to-us-india-condemns-houthi-attacks-flags-red-sea-security-risks-11789732964191.html"}
+{"run": "digest", "t": 43988, "kind": "event", "stage": "stage", "name": "extract", "ms": 19438, "ok": true, "error": ""}
+{"run": "digest", "t": 44014, "kind": "dbg", "msg": "llm: call #2 model=gemini-3.6-flash label=claims-world prompt=71701ch"}
+{"run": "digest", "t": 72152, "kind": "dbg", "msg": "llm: claims-world finish_reason=FinishReason.STOP"}
+{"run": "digest", "t": 72153, "kind": "event", "stage": "llm", "call": 2, "label": "claims-world", "model": "gemini-3.6-flash", "latency_ms": 28137, "prompt_chars": 71701, "system_chars": 2135, "response_chars": 14164, "finish_reason": "FinishReason.STOP", "malformed_json": false, "json_retries": 0, "max_output_tokens": 32768, "usage": {"prompt_token_count": 17072, "candidates_token_count": 3529, "total_token_count": 23015, "thoughts_token_count": 2414}}
+{"run": "digest", "t": 72154, "kind": "dbg", "msg": "llm: claims: [world] 20 claim(s) from 5 outlet(s) 'Trump bans CNN, MS NOW, and Politico from White House press access'"}
+{"run": "digest", "t": 72154, "kind": "dbg", "msg": "llm: claims: [world] 10 claim(s) from 4 outlet(s) 'US and Denmark reach agreement to expand military presence and security control in Greenland'"}
+{"run": "digest", "t": 72154, "kind": "dbg", "msg": "llm: claims: [world] 10 claim(s) from 3 outlet(s) \"Suicide bombing near police facility and mosque in Pakistan's Kohat kills over 20\""}
+{"run": "digest", "t": 72154, "kind": "dbg", "msg": "llm: claims: [world] 10 claim(s) from 3 outlet(s) 'Protests erupt in Nigeria after 37 suspected illegal miners die in police custody'"}
+{"run": "digest", "t": 72154, "kind": "dbg", "msg": "llm: claims: [world] 9 claim(s) from 2 outlet(s) 'Bank of Japan raises interest rate to 31-year high of 1.25%'"}
+{"run": "digest", "t": 72179, "kind": "dbg", "msg": "llm: call #3 model=gemini-3.6-flash label=claims-india prompt=51527ch"}
+{"run": "digest", "t": 92935, "kind": "dbg", "msg": "llm: claims-india finish_reason=FinishReason.STOP"}
+{"run": "digest", "t": 92935, "kind": "event", "stage": "llm", "call": 3, "label": "claims-india", "model": "gemini-3.6-flash", "latency_ms": 20755, "prompt_chars": 51527, "system_chars": 2135, "response_chars": 7834, "finish_reason": "FinishReason.STOP", "malformed_json": false, "json_retries": 0, "max_output_tokens": 32768, "usage": {"prompt_token_count": 11631, "candidates_token_count": 1996, "total_token_count": 15612, "thoughts_token_count": 1985}}
+{"run": "digest", "t": 92936, "kind": "dbg", "msg": "llm: claims: [india] 12 claim(s) from 4 outlet(s) 'Election Commission freezes TMC name and symbol as Mamata Banerjee approaches Supreme Court'"}
+{"run": "digest", "t": 92936, "kind": "dbg", "msg": "llm: claims: [india] 9 claim(s) from 3 outlet(s) 'Trump signs Russia sanctions bill allowing up to 100% tariffs on Indian energy imports'"}
+{"run": "digest", "t": 92936, "kind": "dbg", "msg": "llm: claims: [india] 8 claim(s) from 2 outlet(s) \"India rejects Pakistan's account of Arabian Sea naval collision\""}
+{"run": "digest", "t": 92936, "kind": "dbg", "msg": "llm: extract_claims -> 8/8 cluster(s), 88 claim(s) total, 0 cluster(s) rejected, 0 claim(s) rejected"}
+{"run": "digest", "t": 92937, "kind": "event", "stage": "stage", "name": "claims", "ms": 48949, "ok": true, "error": ""}
+{"run": "digest", "t": 92962, "kind": "dbg", "msg": "llm: call #4 model=gemini-3.6-flash label=write prompt=16978ch"}
+{"run": "digest", "t": 96191, "kind": "dbg", "msg": "ratelimit: write transient failure (1/3), retrying in 6s: ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"}
+{"run": "digest", "t": 96191, "kind": "event", "stage": "ratelimit", "label": "write", "verdict": "transient_retry", "attempt": 1, "attempts_allowed": 3, "wait_s": 6.1, "error": "ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"}
+{"run": "digest", "t": 112599, "kind": "dbg", "msg": "ratelimit: write transient failure (2/3), retrying in 11s: ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"}
+{"run": "digest", "t": 112599, "kind": "event", "stage": "ratelimit", "label": "write", "verdict": "transient_retry", "attempt": 2, "attempts_allowed": 3, "wait_s": 11.2, "error": "ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"}
+{"run": "digest", "t": 184673, "kind": "dbg", "msg": "llm: write finish_reason=FinishReason.STOP"}
+{"run": "digest", "t": 184674, "kind": "event", "stage": "llm", "call": 4, "label": "write", "model": "gemini-3.6-flash", "latency_ms": 91710, "prompt_chars": 16978, "system_chars": 4458, "response_chars": 14822, "finish_reason": "FinishReason.STOP", "malformed_json": false, "json_retries": 0, "max_output_tokens": 32768, "usage": {"prompt_token_count": 5209, "candidates_token_count": 3715, "total_token_count": 19044, "thoughts_token_count": 10120}}
+{"run": "digest", "t": 184678, "kind": "dbg", "msg": "llm: write_stories -> 8 story/stories written, 0 dropped, 0 thin-sourced"}
+{"run": "digest", "t": 184678, "kind": "event", "stage": "stage", "name": "write", "ms": 91740, "ok": true, "error": ""}
+{"run": "digest", "t": 184679, "kind": "dbg", "msg": "digest: wrote /home/runner/work/follow-news/follow-news/data/2026-09-19.json with 8 story/stories"}
+{"run": "digest", "t": 184791, "kind": "event", "stage": "stage", "name": "render", "ms": 111, "ok": true, "error": ""}
+{"run": "digest", "t": 184791, "kind": "dbg", "msg": "digest: 4 LLM call(s) this run"}
+{"run": "digest", "t": 184791, "kind": "event", "stage": "tracer", "msg": "capture finished", "ok": true, "ms": 184791, "bytes": 11879194}
+{"run": "follow", "t": 0, "kind": "follow", "stage": "tracer", "msg": "capture started", "level": 1, "day": "2026-09-19"}
+{"run": "follow", "t": 2, "kind": "dbg", "msg": "extract: cache enabled at /home/runner/work/follow-news/follow-news/cache/extract.json (121 url(s))"}
+{"run": "follow", "t": 357, "kind": "dbg", "msg": "follow: run -> 3 existing record(s), 3 owner issue(s) in scope"}
+{"run": "follow", "t": 358, "kind": "dbg", "msg": "dossier: grounded ceiling of 20 is over 14 days old; re-probing"}
+{"run": "follow", "t": 358, "kind": "dbg", "msg": "follow: sweep -> nothing to research; 0 active follow(s) all current"}
+{"run": "follow", "t": 359, "kind": "dbg", "msg": "follow: wrote /home/runner/work/follow-news/follow-news/followed/1/record.json"}
+{"run": "follow", "t": 359, "kind": "dbg", "msg": "follow: wrote /home/runner/work/follow-news/follow-news/followed/2/record.json"}
+{"run": "follow", "t": 361, "kind": "dbg", "msg": "follow: wrote /home/runner/work/follow-news/follow-news/followed/3/record.json"}
+{"run": "follow", "t": 458, "kind": "dbg", "msg": "follow: run -> done, 0 grounded call(s) this run"}
+{"run": "follow", "t": 458, "kind": "event", "stage": "tracer", "msg": "capture finished", "ok": true, "ms": 458, "bytes": 4798}
