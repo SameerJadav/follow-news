@@ -1,0 +1,925 @@
+{
+  "min_claim_chars": 20,
+  "max_claims_per_story": 24,
+  "calls": [
+    {
+      "label": "claims-world",
+      "cluster_ids": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "label": "claims-india",
+      "cluster_ids": [
+        5,
+        6,
+        7
+      ]
+    }
+  ],
+  "rejected_claims": 0,
+  "rejected_clusters": 0,
+  "clusters": [
+    {
+      "cluster_id": 0,
+      "headline_hint": "Trump bans CNN, MS NOW, and Politico from White House press access",
+      "section": "world",
+      "batch_position": 0,
+      "claim_count": 20,
+      "distinct_outlets": 5,
+      "source_kinds": {
+        "fulltext": 20
+      },
+      "claims": [
+        {
+          "id": 1,
+          "cluster_id": 0,
+          "text": "When asked by NBC News correspondent Kelly O'Donnell what he envisioned bans on media outlets looking like, US President Donald Trump responded: 'Oh, the ban on the free press, right?'",
+          "kind": "quote",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/us-news/live/2026/sep/18/us-politics-midterms-early-voting-cost-of-living-iran-war-trump-kennedy-center-institute-of-peace-latest-news-updates",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 2,
+          "cluster_id": 0,
+          "text": "Regarding his White House press ban, Donald Trump stated: 'I don't want them in my office. I don't want them here. I would say the ban would go as far as you can.'",
+          "kind": "quote",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/us-news/live/2026/sep/18/us-politics-midterms-early-voting-cost-of-living-iran-war-trump-kennedy-center-institute-of-peace-latest-news-updates",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 3,
+          "cluster_id": 0,
+          "text": "US President Donald Trump stated he intends to sue CNN, Politico, and MS Now.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/us-news/live/2026/sep/18/us-politics-midterms-early-voting-cost-of-living-iran-war-trump-kennedy-center-institute-of-peace-latest-news-updates",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 4,
+          "cluster_id": 0,
+          "text": "US President Donald Trump signed the Lindsey O Graham Sanctioning Russia and Iran Act into law on Friday.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/us-news/live/2026/sep/18/us-politics-midterms-early-voting-cost-of-living-iran-war-trump-kennedy-center-institute-of-peace-latest-news-updates",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 5,
+          "cluster_id": 0,
+          "text": "The House of Representatives passed the Lindsey O Graham Sanctioning Russia and Iran Act in a bipartisan 262-159 vote two days before it was signed into law.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/us-news/live/2026/sep/18/us-politics-midterms-early-voting-cost-of-living-iran-war-trump-kennedy-center-institute-of-peace-latest-news-updates",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 6,
+          "cluster_id": 0,
+          "text": "The Lindsey O Graham Sanctioning Russia and Iran Act allows the US president to impose tariffs of up to 100% on buyers of Russian energy, including China.",
+          "kind": "background",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/us-news/live/2026/sep/18/us-politics-midterms-early-voting-cost-of-living-iran-war-trump-kennedy-center-institute-of-peace-latest-news-updates",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 7,
+          "cluster_id": 0,
+          "text": "The leaders of the US, Denmark, and Greenland announced on Friday that they expect to sign an Arctic security pact next week during the UN General Assembly.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/us-news/live/2026/sep/18/us-politics-midterms-early-voting-cost-of-living-iran-war-trump-kennedy-center-institute-of-peace-latest-news-updates",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 8,
+          "cluster_id": 0,
+          "text": "US President Donald Trump announced on Truth Social on Friday that he is immediately banning CNN, MS NOW, and Politico from the White House.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c6e30580jqjpo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 9,
+          "cluster_id": 0,
+          "text": "CNN called Donald Trump's White House ban an 'illegal assault' on fundamental, constitutionally-protected press freedoms.",
+          "kind": "quote",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c6e30580jqjpo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 10,
+          "cluster_id": 0,
+          "text": "Politico released a statement saying it 'will continue to fairly report on this White House and future ones' and will vigorously defend its First Amendment rights.",
+          "kind": "quote",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c6e30580jqjpo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 11,
+          "cluster_id": 0,
+          "text": "In February 2025, the White House took control of the press pool covering the president, ending over a century of management by the White House Correspondents Association.",
+          "kind": "background",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c6e30580jqjpo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 12,
+          "cluster_id": 0,
+          "text": "In February 2025, the Trump administration barred Associated Press reporters and photographers from limited-access spaces after the agency continued using the term 'Gulf of Mexico' instead of 'Gulf of America'.",
+          "kind": "background",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c6e30580jqjpo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 13,
+          "cluster_id": 0,
+          "text": "Jameel Jaffer, executive director of the Knight First Amendment Institute at Columbia University, stated that the press pool is a 'public forum' under the First Amendment and excluding journalists based on viewpoint is unconstitutional.",
+          "kind": "quote",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c6e30580jqjpo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 14,
+          "cluster_id": 0,
+          "text": "Bruce Brown, president of the Reporters Committee for Freedom of the Press, called President Trump's media ban 'flatly unconstitutional' and 'textbook viewpoint discrimination.'",
+          "kind": "quote",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c6e30580jqjpo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 15,
+          "cluster_id": 0,
+          "text": "Donald Trump posted on Truth Social that CNN, MS NOW, and Politico are banned from the White House due to their constant reporting of 'FAKE NEWS'.",
+          "kind": "quote",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/us-news/trump-blocks-3-media-outlets-from-white-house-reporting-fake-news-they-write-fiction-and-lies-11789764310239.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 16,
+          "cluster_id": 0,
+          "text": "Former US President Richard Nixon previously placed restrictions on the Washington Post over its reporting on the Watergate scandal.",
+          "kind": "background",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/trump-says-cnn-ms-now-politico-banned-white-house-6395821",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 17,
+          "cluster_id": 0,
+          "text": "Donald Trump told reporters in the Oval Office that banned outlets 'purposely write negative news' to try to diminish Republicans.",
+          "kind": "quote",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/9/18/trump-bans-news-outlets-cnn-ms-now-and-politico-from-white-house?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 18,
+          "cluster_id": 0,
+          "text": "Reporters Without Borders stated it is appalled by Donald Trump's threat to ban news outlets and is exploring legal avenues to respond.",
+          "kind": "quote",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/9/18/trump-bans-news-outlets-cnn-ms-now-and-politico-from-white-house?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 19,
+          "cluster_id": 0,
+          "text": "Donald Trump previously berated news outlets that reported on US munitions stockpiles being strained by the war on Iran as 'treasonous scum'.",
+          "kind": "quote",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/9/18/trump-bans-news-outlets-cnn-ms-now-and-politico-from-white-house?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 20,
+          "cluster_id": 0,
+          "text": "Amnesty International posted on social media accusing the Trump administration of trying to 'stifle scrutiny and evade accountability' by punishing journalists.",
+          "kind": "quote",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/9/18/trump-bans-news-outlets-cnn-ms-now-and-politico-from-white-house?traffic_source=rss",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 1,
+      "headline_hint": "US and Denmark reach agreement to expand military presence and security control in Greenland",
+      "section": "world",
+      "batch_position": 1,
+      "claim_count": 10,
+      "distinct_outlets": 4,
+      "source_kinds": {
+        "fulltext": 10
+      },
+      "claims": [
+        {
+          "id": 21,
+          "cluster_id": 1,
+          "text": "The US and Denmark announced a security deal regarding Greenland to be signed at the United Nations General Assembly.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c63d7lexyym1o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 22,
+          "cluster_id": 1,
+          "text": "Donald Trump stated on Truth Social that the Greenland security agreement comes at 'no cost to the United States'.",
+          "kind": "quote",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c63d7lexyym1o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 23,
+          "cluster_id": 1,
+          "text": "Denmark's Prime Minister Mette Frederiksen stated the security deal 'strengthens our common security in the Arctic and the North Atlantic area' while recognizing the sovereignty of the Kingdom and Greenlandic self-determination.",
+          "kind": "quote",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c63d7lexyym1o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 24,
+          "cluster_id": 1,
+          "text": "Chairman of the Greenland Government Jens-Frederik Nielsen confirmed in a statement that Greenland, Denmark, and the US are about to enter into a security agreement.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c63d7lexyym1o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 25,
+          "cluster_id": 1,
+          "text": "US Secretary of State Marco Rubio called the agreement a 'historic deal' and a 'huge win for the United States and the American people'.",
+          "kind": "quote",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c63d7lexyym1o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 26,
+          "cluster_id": 1,
+          "text": "An anonymous US State Department official stated the Greenland agreement explicitly guarantees the US complete ability to secure and defend the American continent, including permanent access, basing, and overflight rights.",
+          "kind": "quote",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/us-and-denmark-reach-deal-greenland-trump-says-6395916",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 27,
+          "cluster_id": 1,
+          "text": "A US State Department official stated the Greenland agreement guarantees that China and Russia cannot set up bases or send troops to Greenland.",
+          "kind": "quote",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/us-and-denmark-reach-deal-greenland-trump-says-6395916",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 28,
+          "cluster_id": 1,
+          "text": "Donald Trump posted on Truth Social that plans will begin immediately to develop a large military presence in appropriate parts of Greenland.",
+          "kind": "quote",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/9/18/trump-claims-deal-with-denmark-gives-us-permanent-control-over-greenland?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 29,
+          "cluster_id": 1,
+          "text": "Donald Trump referred to the Greenland security pact as an 'Infinite Life' agreement with no end date.",
+          "kind": "quote",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/us/us-reaches-deal-with-denmark-for-permanent-security-control-over-greenland-says-donald-trump/articleshow/134343806.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 30,
+          "cluster_id": 1,
+          "text": "The United States currently maintains a military installation at Pituffik Space Base in Greenland under existing defense arrangements with Denmark.",
+          "kind": "background",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/us/us-reaches-deal-with-denmark-for-permanent-security-control-over-greenland-says-donald-trump/articleshow/134343806.cms",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 2,
+      "headline_hint": "Suicide bombing near police facility and mosque in Pakistan's Kohat kills over 20",
+      "section": "world",
+      "batch_position": 2,
+      "claim_count": 10,
+      "distinct_outlets": 3,
+      "source_kinds": {
+        "fulltext": 10
+      },
+      "claims": [
+        {
+          "id": 31,
+          "cluster_id": 2,
+          "text": "A vehicle bomb explosion and gun attack on a mosque near police offices in Pakistan's Kohat district killed at least 21 people and injured 80.",
+          "kind": "event",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/pakistan-bomb-attack-mosque-police-offices-6395946",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 32,
+          "cluster_id": 2,
+          "text": "Six armed gunmen and one suicide bomber involved in the Kohat compound attack were killed by police.",
+          "kind": "figure",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/pakistan-bomb-attack-mosque-police-offices-6395946",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 33,
+          "cluster_id": 2,
+          "text": "A roadside bomb struck a security forces convoy in Pakistan's Hangu district on Thursday, killing six soldiers.",
+          "kind": "event",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/pakistan-bomb-attack-mosque-police-offices-6395946",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 34,
+          "cluster_id": 2,
+          "text": "Pakistani government troops killed 10 suspected Pakistani Taliban militants during raids on Thursday.",
+          "kind": "figure",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/pakistan-bomb-attack-mosque-police-offices-6395946",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 35,
+          "cluster_id": 2,
+          "text": "Turkish intelligence chief Ibrahim Kalin met with Pakistani Prime Minister Shehbaz Sharif, Field Marshal Asim Munir, and Lt. Gen. Asim Malik to discuss Afghanistan-Pakistan tensions.",
+          "kind": "event",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/pakistan-bomb-attack-mosque-police-offices-6395946",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 36,
+          "cluster_id": 2,
+          "text": "Fifteen police officers and a four-year-old child were among those killed in the Kohat mosque suicide attack.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/ckn9wenz8wjwo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 37,
+          "cluster_id": 2,
+          "text": "Khyber Pakhtunkhwa Police suggested a faction of the Tehrik-e-Taliban Pakistan (TTP) carried out the attack in Kohat.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/ckn9wenz8wjwo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 38,
+          "cluster_id": 2,
+          "text": "UN Secretary-General António Guterres strongly condemned the Kohat bombing, stating attacks targeting places of worship are unacceptable.",
+          "kind": "quote",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/ckn9wenz8wjwo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 39,
+          "cluster_id": 2,
+          "text": "Pakistani security forces killed seven militants during two separate operations in Balochistan province.",
+          "kind": "figure",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/pakistan-suicide-attack-16-killed-including-5-police-personnel-as-explosives-laden-vehicle-hits-kohat-police-facility-11789730119838.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 40,
+          "cluster_id": 2,
+          "text": "In February, a suicide bombing at the Khadija Tul Kubra Mosque in Islamabad killed at least 31 people.",
+          "kind": "background",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/pakistan-suicide-attack-16-killed-including-5-police-personnel-as-explosives-laden-vehicle-hits-kohat-police-facility-11789730119838.html",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 3,
+      "headline_hint": "Protests erupt in Nigeria after 37 suspected illegal miners die in police custody",
+      "section": "world",
+      "batch_position": 3,
+      "claim_count": 10,
+      "distinct_outlets": 3,
+      "source_kinds": {
+        "fulltext": 10
+      },
+      "claims": [
+        {
+          "id": 41,
+          "cluster_id": 3,
+          "text": "Thirty-seven suspected illegal gold miners died while held in custody in a cell operated by the Nigeria Security and Civil Defence Corps (NSCDC) in Minna, Niger state.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/sep/18/survivor-panic-struggle-breathe-nigeria-prison-cell-died-minna",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 42,
+          "cluster_id": 3,
+          "text": "Police fired teargas at protesters and imposed an overnight 6pm curfew in Minna following demonstrations over the miners' deaths.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/sep/18/survivor-panic-struggle-breathe-nigeria-prison-cell-died-minna",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 43,
+          "cluster_id": 3,
+          "text": "An intelligence report seen by AFP indicated that preliminary findings point to overcrowding and inadequate ventilation as the cause of death for the 37 miners.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/sep/18/survivor-panic-struggle-breathe-nigeria-prison-cell-died-minna",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 44,
+          "cluster_id": 3,
+          "text": "Niger State Governor Umar Bago declared three days of mourning and postponed the start of election campaigning following the incident.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/sep/18/survivor-panic-struggle-breathe-nigeria-prison-cell-died-minna",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 45,
+          "cluster_id": 3,
+          "text": "Nigeria Interior Minister Olubunmi Tunji-Ojo ordered the immediate suspension of Niger state NSCDC commandant Suberu Siyaka Aniviye pending an investigation.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/sep/18/survivor-panic-struggle-breathe-nigeria-prison-cell-died-minna",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 46,
+          "cluster_id": 3,
+          "text": "The 37 deceased detainees were buried on Thursday according to Islamic tradition without forensic examinations being performed.",
+          "kind": "background",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/sep/18/survivor-panic-struggle-breathe-nigeria-prison-cell-died-minna",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 47,
+          "cluster_id": 3,
+          "text": "NSCDC spokesperson Babawale Afolabi stated that more than 50 people had been arrested in the raids prior to the deaths.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cw980qp2n3p4o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 48,
+          "cluster_id": 3,
+          "text": "The NSCDC initially claimed the detainees may have died due to a diphtheria outbreak before later stating the cause of death was unconfirmed.",
+          "kind": "background",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cw980qp2n3p4o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 49,
+          "cluster_id": 3,
+          "text": "Security forces in Nigeria opened fire and deployed tear gas during a second day of protests in Minna on Friday.",
+          "kind": "event",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/9/18/nigerian-forces-fire-at-protesters-rallying-over-deaths-of-detained-miners?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 50,
+          "cluster_id": 3,
+          "text": "Niger State Governor Umar Bago imposed a 24-hour curfew in response to violent protests targeting government buildings in Minna.",
+          "kind": "event",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/9/18/nigerian-forces-fire-at-protesters-rallying-over-deaths-of-detained-miners?traffic_source=rss",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 4,
+      "headline_hint": "Bank of Japan raises interest rate to 31-year high of 1.25%",
+      "section": "world",
+      "batch_position": 4,
+      "claim_count": 9,
+      "distinct_outlets": 2,
+      "source_kinds": {
+        "fulltext": 9
+      },
+      "claims": [
+        {
+          "id": 51,
+          "cluster_id": 4,
+          "text": "The Bank of Japan raised its target interest rate by 25 basis points to 1.25% in a 7-2 majority vote.",
+          "kind": "event",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/stocks-us-market-fed-inflation-yen-falls-6395886",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 52,
+          "cluster_id": 4,
+          "text": "The Japanese yen fell against the US dollar following the Bank of Japan's rate hike announcement.",
+          "kind": "event",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/stocks-us-market-fed-inflation-yen-falls-6395886",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 53,
+          "cluster_id": 4,
+          "text": "French football player Kylian Mbappe signed an endorsement deal with Swiss sportswear brand On, ending his long partnership with Nike.",
+          "kind": "event",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/stocks-us-market-fed-inflation-yen-falls-6395886",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 54,
+          "cluster_id": 4,
+          "text": "The Bank of Japan's interest rate increase to 1.25% brings borrowing costs in Japan to their highest level since 1995.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/business/2026/sep/18/japan-raises-interest-rates-to-31-year-high-rising-prices",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 55,
+          "cluster_id": 4,
+          "text": "Bank of Japan Governor Kazuo Ueda stated he would not rule out back-to-back interest rate hikes, noting it depends on how price conditions develop.",
+          "kind": "quote",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/business/2026/sep/18/japan-raises-interest-rates-to-31-year-high-rising-prices",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 56,
+          "cluster_id": 4,
+          "text": "The rate of inflation in Japan was 1.9% in August.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/business/2026/sep/18/japan-raises-interest-rates-to-31-year-high-rising-prices",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 57,
+          "cluster_id": 4,
+          "text": "US Treasury Secretary Scott Bessent warned currency traders not to bet against the yen, stating he had insight into Japanese policy actions.",
+          "kind": "quote",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/business/2026/sep/18/japan-raises-interest-rates-to-31-year-high-rising-prices",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 58,
+          "cluster_id": 4,
+          "text": "In late July, the US Treasury sold at least $10 billion in euros to buy yen and support the Japanese currency.",
+          "kind": "background",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/business/2026/sep/18/japan-raises-interest-rates-to-31-year-high-rising-prices",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 59,
+          "cluster_id": 4,
+          "text": "The Bank of England voted to hold UK interest rates unchanged at 3.75%.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/business/2026/sep/18/japan-raises-interest-rates-to-31-year-high-rising-prices",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 5,
+      "headline_hint": "Election Commission freezes TMC name and symbol as Mamata Banerjee approaches Supreme Court",
+      "section": "india",
+      "batch_position": 0,
+      "claim_count": 12,
+      "distinct_outlets": 4,
+      "source_kinds": {
+        "fulltext": 12
+      },
+      "claims": [
+        {
+          "id": 60,
+          "cluster_id": 5,
+          "text": "The Trinamool Congress faction led by former West Bengal Chief Minister Mamata Banerjee filed a petition in the Supreme Court on September 18, 2026, challenging the Election Commission of India's decision to freeze the party's name and symbol.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/west-bengal/mamata-banerjee-moves-supreme-court-against-freeze-on-tmc-symbol/article71482413.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 61,
+          "cluster_id": 5,
+          "text": "On September 17, 2026, the Election Commission of India issued an interim order barring the use of the All India Trinamool Congress name and symbol in the upcoming West Bengal Assembly byelections in Nandigram and Rejinagar.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/west-bengal/mamata-banerjee-moves-supreme-court-against-freeze-on-tmc-symbol/article71482413.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 62,
+          "cluster_id": 5,
+          "text": "The Election Commission of India allotted the name 'Mamata All India Trinamool Congress' and the 'football player' symbol to Mamata Banerjee's faction, while allotting 'Democratic Trinamool Congress' and the 'envelope' symbol to Ritabrata Banerjee's faction.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/west-bengal/mamata-banerjee-moves-supreme-court-against-freeze-on-tmc-symbol/article71482413.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 63,
+          "cluster_id": 5,
+          "text": "Mamata Banerjee's faction filed a petition in the Supreme Court highlighting delays in disqualification proceedings pending before the West Bengal Assembly Speaker against 10 rebel legislators.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/west-bengal/mamata-banerjee-moves-supreme-court-against-freeze-on-tmc-symbol/article71482413.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 64,
+          "cluster_id": 5,
+          "text": "Mamata Banerjee founded the All India Trinamool Congress in 1998 after splitting from the Indian National Congress and hand-drew its original 'Jora Ghas Phool' symbol.",
+          "kind": "background",
+          "outlet": "NDTV",
+          "url": "https://www.ndtv.com/india-news/two-flowers-one-stem-who-is-the-real-trinamool-what-the-congress-shiv-sena-and-ncp-splits-tell-us-12065977#publisher=newsstand",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 65,
+          "cluster_id": 5,
+          "text": "Mamata Banerjee described the loss of her party's original name and symbol as a 'black day' in India's democratic history.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/mamata-move-supreme-court-against-ec-order-freezing-tmc-name-symbol-101789749683047.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 66,
+          "cluster_id": 5,
+          "text": "Both Trinamool Congress factions were recognized as political parties in West Bengal, Meghalaya, and Tripura.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/mamata-move-supreme-court-against-ec-order-freezing-tmc-name-symbol-101789749683047.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 67,
+          "cluster_id": 5,
+          "text": "Mamata Banerjee announced that her faction would not contest the Nandigram Assembly by-election and would instead support Congress candidate Milan Pradhan.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/mamata-move-supreme-court-against-ec-order-freezing-tmc-name-symbol-101789749683047.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 68,
+          "cluster_id": 5,
+          "text": "Sanchita Pradhan Dey, the candidate initially chosen by Mamata Banerjee's faction for the Nandigram bypoll, withdrew her nomination.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/mamata-move-supreme-court-against-ec-order-freezing-tmc-name-symbol-101789749683047.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 69,
+          "cluster_id": 5,
+          "text": "Congress candidate for the Nandigram Assembly by-election Milan Pradhan was arrested on September 18, 2026, in connection with a 2007 murder case.",
+          "kind": "event",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/latest/1095845/congress-candidate-for-nandigram-bye-poll-arrested-hours-after-mamata-extends-support?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 70,
+          "cluster_id": 5,
+          "text": "Nearly 60 out of 80 Trinamool Congress MLAs in the West Bengal Assembly rebelled against party leadership following the May Assembly elections.",
+          "kind": "figure",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/latest/1095845/congress-candidate-for-nandigram-bye-poll-arrested-hours-after-mamata-extends-support?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 71,
+          "cluster_id": 5,
+          "text": "In June 2026, 20 out of 28 Trinamool Congress Lok Sabha MPs announced a merger with the Tripura-based Nationalist Citizens Party of India.",
+          "kind": "figure",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/latest/1095845/congress-candidate-for-nandigram-bye-poll-arrested-hours-after-mamata-extends-support?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 6,
+      "headline_hint": "Trump signs Russia sanctions bill allowing up to 100% tariffs on Indian energy imports",
+      "section": "india",
+      "batch_position": 1,
+      "claim_count": 9,
+      "distinct_outlets": 3,
+      "source_kinds": {
+        "fulltext": 9
+      },
+      "claims": [
+        {
+          "id": 72,
+          "cluster_id": 6,
+          "text": "US President Donald Trump signed the 'Lindsey O. Graham Sanctioning Russia and Iran Act of 2026' into law on Friday, September 18, 2026.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/business/international-business/trump-signs-russia-sanctions-bill-into-law-gains-authority-to-impose-100-tariff-on-india-and-china/articleshow/134344362.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 73,
+          "cluster_id": 6,
+          "text": "Republican Senator Lindsey Graham, after whom the sanctions bill was named, died in July 2026.",
+          "kind": "background",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/business/international-business/trump-signs-russia-sanctions-bill-into-law-gains-authority-to-impose-100-tariff-on-india-and-china/articleshow/134344362.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 74,
+          "cluster_id": 6,
+          "text": "The sanctions bill passed the US Senate in an 86-11 vote in August 2026 and cleared the House of Representatives in a 262-159 vote.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/business/international-business/trump-signs-russia-sanctions-bill-into-law-gains-authority-to-impose-100-tariff-on-india-and-china/articleshow/134344362.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 75,
+          "cluster_id": 6,
+          "text": "The newly signed US law gives the president authority to impose tariffs of up to 100 percent on imports from the five largest buyers of Russian oil or natural gas, including India and China.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/business/international-business/trump-signs-russia-sanctions-bill-into-law-gains-authority-to-impose-100-tariff-on-india-and-china/articleshow/134344362.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 76,
+          "cluster_id": 6,
+          "text": "The law extends the Iran Sanctions Act for an additional five years.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/business/international-business/trump-signs-russia-sanctions-bill-into-law-gains-authority-to-impose-100-tariff-on-india-and-china/articleshow/134344362.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 77,
+          "cluster_id": 6,
+          "text": "India's Ministry of External Affairs warned that the US sanctions legislation could impact India-US bilateral relations and global energy markets.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/trump-to-sign-russia-sanctions-bill-today-that-threatens-100-per-cent-tariffs-on-india-101789751001313.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 78,
+          "cluster_id": 6,
+          "text": "Under the US bill, countries importing less than 15 percent of Russia's natural gas exports may qualify for an exemption if they take significant steps to reduce imports.",
+          "kind": "background",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/trump-to-sign-russia-sanctions-bill-today-that-threatens-100-per-cent-tariffs-on-india-101789751001313.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 79,
+          "cluster_id": 6,
+          "text": "According to the US Energy Information Administration, Russia supplied 3.284 million separative work units of enrichment services to US civilian nuclear operators in 2025, accounting for roughly 26 percent of total purchases.",
+          "kind": "figure",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/us-targets-india-with-100-tariffs-over-russian-oil-but-spares-uranium-what-the-sanctions-bill-says-11789724501612.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 80,
+          "cluster_id": 6,
+          "text": "The US Department of Energy awarded Orano USA a $900 million task order in January 2026 to build domestic uranium enrichment capacity.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/us-targets-india-with-100-tariffs-over-russian-oil-but-spares-uranium-what-the-sanctions-bill-says-11789724501612.html",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 7,
+      "headline_hint": "India rejects Pakistan's account of Arabian Sea naval collision",
+      "section": "india",
+      "batch_position": 2,
+      "claim_count": 8,
+      "distinct_outlets": 2,
+      "source_kinds": {
+        "fulltext": 8
+      },
+      "claims": [
+        {
+          "id": 81,
+          "cluster_id": 7,
+          "text": "India rejected allegations from Pakistan regarding a collision between the Indian warship INS Kolkata and the Pakistani naval vessel PNS Hunain in the Arabian Sea on September 15, 2026.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/india-rejects-pakistans-allegations-over-collision-in-arabian-sea-pns-hunain-conducted-in-unacceptable-manner-11789735316641.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 82,
+          "cluster_id": 7,
+          "text": "India summoned Pakistan's Charge d'Affaires Saad Warraich to lodge a strong protest over PNS Hunain's conduct.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/india-rejects-pakistans-allegations-over-collision-in-arabian-sea-pns-hunain-conducted-in-unacceptable-manner-11789735316641.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 83,
+          "cluster_id": 7,
+          "text": "Ministry of External Affairs spokesperson Randhir Jaiswal stated that PNS Hunain carried out a dangerous overtaking manoeuvre violating Article 10 of the 1991 bilateral agreement requiring warships to maintain a 3-nautical-mile distance.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/india-rejects-pakistans-allegations-over-collision-in-arabian-sea-pns-hunain-conducted-in-unacceptable-manner-11789735316641.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 84,
+          "cluster_id": 7,
+          "text": "INS Kolkata sustained no major damage and remained deployed at sea following the collision, while PNS Hunain was observed returning to harbour after sustaining damage.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/india-rejects-pakistans-allegations-over-collision-in-arabian-sea-pns-hunain-conducted-in-unacceptable-manner-11789735316641.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 85,
+          "cluster_id": 7,
+          "text": "Pakistan summoned Indian Charge d'Affaires Satyanjal Pandey and alleged that aggressive manoeuvres by the Indian warship within Pakistan's exclusive economic zone caused the collision.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/same-old-stalling-india-hits-back-at-pakistan-over-naval-collision-response-navy-ships-101789729256799.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 86,
+          "cluster_id": 7,
+          "text": "The last recorded collision between Indian and Pakistani warships occurred in 2011 when INS Godavari was marginally damaged by PNS Babur during anti-piracy operations in the Gulf of Aden.",
+          "kind": "background",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/same-old-stalling-india-hits-back-at-pakistan-over-naval-collision-response-navy-ships-101789729256799.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 87,
+          "cluster_id": 7,
+          "text": "Ministry of External Affairs spokesperson Randhir Jaiswal strongly condemned Houthi attacks on Saudi Arabia, including targets in civilian areas and economic assets.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/totally-unacceptable-to-us-india-condemns-houthi-attacks-flags-red-sea-security-risks-11789732964191.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 88,
+          "cluster_id": 7,
+          "text": "Uttarakhand Chief Minister Pushkar Singh Dhami wrote to External Affairs Minister S. Jaishankar in August requesting government intervention for Indramani Nautiyal, an Indian truck driver held in Saudi Arabia over an unpaid fine of approximately 2.29 crore rupees.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/totally-unacceptable-to-us-india-condemns-houthi-attacks-flags-red-sea-security-risks-11789732964191.html",
+          "source_kind": "fulltext"
+        }
+      ]
+    }
+  ],
+  "clusters_with_no_claims": []
+}

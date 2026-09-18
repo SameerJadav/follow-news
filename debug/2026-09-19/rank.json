@@ -1,0 +1,648 @@
+{
+  "dials": {
+    "WEIGHT_FLOOR": 5,
+    "TIER_WEIGHT": {
+      "lead": 4,
+      "major": 2,
+      "notable": 0
+    },
+    "WIKI_BONUS": 2,
+    "HARD_CAP": 12,
+    "MIN_STORIES_IF_ANY": 3,
+    "MAX_ARTICLES_PER_STORY": 5
+  },
+  "floor_relaxed": false,
+  "kept_weights": [
+    9,
+    9,
+    7,
+    6,
+    6,
+    9,
+    8,
+    5
+  ],
+  "per_section": {
+    "world": 5,
+    "india": 3
+  },
+  "clusters": [
+    {
+      "headline_hint": "Election Commission freezes TMC name and symbol as Mamata Banerjee approaches Supreme Court",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "lead",
+      "article_ids": [
+        55,
+        104,
+        108,
+        121,
+        132,
+        148,
+        155,
+        156,
+        174,
+        176,
+        204,
+        215,
+        227,
+        228,
+        230,
+        236,
+        256,
+        260,
+        282,
+        285,
+        286,
+        291,
+        301,
+        324
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        55,
+        104,
+        108,
+        121,
+        132,
+        148,
+        155,
+        156,
+        174,
+        176,
+        204,
+        215,
+        227,
+        228,
+        230,
+        236,
+        256,
+        260,
+        282,
+        285,
+        286,
+        291,
+        301,
+        324
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 5,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 9,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 4,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "The Hindu",
+          "title": "Mamata moves Supreme Court against ECI’s freeze on Trinamool Congress symbol",
+          "url": "https://www.thehindu.com/news/national/west-bengal/mamata-banerjee-moves-supreme-court-against-freeze-on-tmc-symbol/article71482413.ece"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "Mamata Banerjee Drew Her Party's Symbol By Hand. It's Now Tied To An Indira Gandhi Case",
+          "url": "https://www.ndtv.com/india-news/two-flowers-one-stem-who-is-the-real-trinamool-what-the-congress-shiv-sena-and-ncp-splits-tell-us-12065977#publisher=newsstand"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Mamata moves Supreme Court against EC order freezing TMC name, symbol",
+          "url": "https://www.hindustantimes.com/india-news/mamata-move-supreme-court-against-ec-order-freezing-tmc-name-symbol-101789749683047.html"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Mamata moves Supreme Court against EC decision to freeze TMC name, symbol",
+          "url": "https://timesofindia.indiatimes.com/india/mamata-banerjee-moves-supreme-court-against-eci-decision-to-freeze-tmc-name-symbol/articleshow/134339829.cms"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "Congress candidate for Nandigram bye-poll arrested hours after Mamata extends support",
+          "url": "https://scroll.in/latest/1095845/congress-candidate-for-nandigram-bye-poll-arrested-hours-after-mamata-extends-support?utm_source=rss&utm_medium=public"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 19
+    },
+    {
+      "headline_hint": "Trump signs Russia sanctions bill allowing up to 100% tariffs on Indian energy imports",
+      "section": "india",
+      "category": "economy",
+      "tier_requested": "major",
+      "article_ids": [
+        6,
+        8,
+        141,
+        273
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        6,
+        8,
+        141,
+        273
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": true,
+      "wiki_event": "Russia places the local assets of Auchan and Nestlé under temporary administration, transferring their control to Russian firm L.E.V. Management, headed by interior minister Vladimir Kolokoltsev. The government cites the companies' origins ",
+      "weight": 8,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "Trump signs Russia sanctions bill into law, allowing up to 100% tariffs on India",
+          "url": "https://timesofindia.indiatimes.com/business/international-business/trump-signs-russia-sanctions-bill-into-law-gains-authority-to-impose-100-tariff-on-india-and-china/articleshow/134344362.cms"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Trump signs bill imposing sanctions on Russia and giving him more power to levy tariffs",
+          "url": "https://www.theguardian.com/us-news/2026/sep/18/trump-signs-russia-sanctions-bill"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Trump to sign Russia sanctions bill today that threatens 100% tariffs on India: Report",
+          "url": "https://www.hindustantimes.com/india-news/trump-to-sign-russia-sanctions-bill-today-that-threatens-100-per-cent-tariffs-on-india-101789751001313.html"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "US targets India with 100% tariffs over Russian oil, but spares uranium: What the sanctions bill says",
+          "url": "https://www.livemint.com/news/us-targets-india-with-100-tariffs-over-russian-oil-but-spares-uranium-what-the-sanctions-bill-says-11789724501612.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "India rejects Pakistan's account of Arabian Sea naval collision",
+      "section": "india",
+      "category": "conflict",
+      "tier_requested": "notable",
+      "article_ids": [
+        232,
+        248,
+        275,
+        280
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        232,
+        248,
+        275,
+        280
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": true,
+      "wiki_event": "Pakistan's medical regulator orders Afghan students enrolled in medical and dental programs to leave their colleges and return to Afghanistan. Dozens challenge the directive in court, while a Lahore judge temporarily suspends expulsions in ",
+      "weight": 5,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Livemint",
+          "title": "India rejects Pakistan's allegations over ship collision in Arabian Sea: ‘PNS Hunain conducted in unacceptable manner'",
+          "url": "https://www.livemint.com/news/india/india-rejects-pakistans-allegations-over-collision-in-arabian-sea-pns-hunain-conducted-in-unacceptable-manner-11789735316641.html"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "‘Same old stalling as expected’: India hits back at Pakistan over naval collision response",
+          "url": "https://www.hindustantimes.com/india-news/same-old-stalling-india-hits-back-at-pakistan-over-naval-collision-response-navy-ships-101789729256799.html"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "‘PNS Hunain violated maritime norms’: India rejects Pak's claims over naval collision",
+          "url": "https://timesofindia.indiatimes.com/india/pns-hunain-violated-maritime-norms-india-rejects-pakistans-usual-prevarication-over-naval-collision/articleshow/134333051.cms"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "‘Totally unacceptable to us’: India condemns Houthi attacks, flags Red Sea security risks",
+          "url": "https://www.livemint.com/news/india/totally-unacceptable-to-us-india-condemns-houthi-attacks-flags-red-sea-security-risks-11789732964191.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "US and Denmark reach agreement to expand military presence and security control in Greenland",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "lead",
+      "article_ids": [
+        0,
+        4,
+        7,
+        11,
+        16
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        0,
+        4,
+        7,
+        11,
+        16
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 5,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 9,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 4,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "BBC World",
+          "title": "US and Denmark reach deal over Greenland's security",
+          "url": "https://www.bbc.co.uk/news/articles/c63d7lexyym1o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Trump says US, Denmark reach deal to expand military presence in Greenland",
+          "url": "https://www.france24.com/en/europe/20260918-greenland-denmark-us-deal-un-general-assembly"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "US and Denmark reach deal on Greenland, Trump says",
+          "url": "https://www.channelnewsasia.com/world/us-and-denmark-reach-deal-greenland-trump-says-6395916"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Trump claims deal with Denmark gives US ‘permanent control’ over Greenland",
+          "url": "https://www.aljazeera.com/news/2026/9/18/trump-claims-deal-with-denmark-gives-us-permanent-control-over-greenland?traffic_source=rss"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "US reaches deal with Denmark for ‘permanent security control’ over Greenland",
+          "url": "https://timesofindia.indiatimes.com/world/us/us-reaches-deal-with-denmark-for-permanent-security-control-over-greenland-says-donald-trump/articleshow/134343806.cms"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Trump bans CNN, MS NOW, and Politico from White House press access",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        5,
+        15,
+        20,
+        32,
+        41,
+        46,
+        58,
+        64,
+        71,
+        73
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        5,
+        15,
+        20,
+        32,
+        41,
+        46,
+        58,
+        64,
+        71,
+        73
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 7,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 9,
+      "weight_terms": {
+        "distinct_outlets": 7,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "Trump doubles down on banning CNN, MS Now and Politico from White House and warns more outlets could follow – live",
+          "url": "https://www.theguardian.com/us-news/live/2026/sep/18/us-politics-midterms-early-voting-cost-of-living-iran-war-trump-kennedy-center-institute-of-peace-latest-news-updates"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Trump says he is banning CNN and Politico from White House",
+          "url": "https://www.bbc.co.uk/news/articles/c6e30580jqjpo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Trump bans CNN, MSNOW, and Politico from White House: ‘Reporting FAKE NEWS’, ‘They write fiction and lies’",
+          "url": "https://www.livemint.com/news/us-news/trump-blocks-3-media-outlets-from-white-house-reporting-fake-news-they-write-fiction-and-lies-11789764310239.html"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "Trump says CNN, MS NOW, Politico banned from White House",
+          "url": "https://www.channelnewsasia.com/world/trump-says-cnn-ms-now-politico-banned-white-house-6395821"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Trump bans CNN, MS NOW, Politico from the White House for ‘fake news’",
+          "url": "https://www.aljazeera.com/news/2026/9/18/trump-bans-news-outlets-cnn-ms-now-and-politico-from-white-house?traffic_source=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 5
+    },
+    {
+      "headline_hint": "Bank of Japan raises interest rate to 31-year high of 1.25%",
+      "section": "world",
+      "category": "economy",
+      "tier_requested": "major",
+      "article_ids": [
+        24,
+        321
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        24,
+        321
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 2,
+      "wiki_backed": true,
+      "wiki_event": "The Bank of Japan raises its benchmark interest rate by 0.25 percentage points to 1.25%, the highest level since 1995, citing inflation pressures from rising energy costs and a weak yen, and signals further increases.",
+      "weight": 6,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Channel News Asia",
+          "title": "Global stocks mixed as yen falls despite Bank of Japan rate hike",
+          "url": "https://www.channelnewsasia.com/world/stocks-us-market-fed-inflation-yen-falls-6395886"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Japan raises interest rates to 31-year high to curb impact of rising prices",
+          "url": "https://www.theguardian.com/business/2026/sep/18/japan-raises-interest-rates-to-31-year-high-rising-prices"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Suicide bombing near police facility and mosque in Pakistan's Kohat kills over 20",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "major",
+      "article_ids": [
+        17,
+        52,
+        258
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        17,
+        52,
+        258
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 3,
+      "wiki_backed": true,
+      "wiki_event": "A suicide car bombing outside a mosque located inside a police station in Kohat District, Khyber Pakhtunkhwa, Pakistan, kills at least 27 people, including 15 policemen, and injures 75 more. The Hafiz Gul Bahadur Group claims responsibility",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Channel News Asia",
+          "title": "Bombing at mosque near police offices in Pakistan kills at least 21",
+          "url": "https://www.channelnewsasia.com/world/pakistan-bomb-attack-mosque-police-offices-6395946"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "At least 21 killed after vehicle loaded with explosives rams Pakistan mosque",
+          "url": "https://www.bbc.co.uk/news/articles/ckn9wenz8wjwo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Pakistan suicide attack: 16 killed, including 5 police personnel, as explosives-laden vehicle hits Kohat police facility",
+          "url": "https://www.livemint.com/news/pakistan-suicide-attack-16-killed-including-5-police-personnel-as-explosives-laden-vehicle-hits-kohat-police-facility-11789730119838.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "US approves $24.3 billion sale of F-35 stealth warplanes to Saudi Arabia",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        231,
+        262,
+        334
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        231,
+        262,
+        334
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "France 24",
+          "title": "US approves sale of F-35 fighter jets to Saudi Arabia",
+          "url": "https://www.france24.com/en/video/20260918-us-approves-sale-of-f-35-fighter-jets-to-saudi-arabia"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Lockheed Martin F-35 Lightning II: What the $24.3 billion US-Saudi deal means for the Middle East",
+          "url": "https://www.livemint.com/news/world/lockheed-martin-f-35-lightning-ii-what-the-24-3-billion-us-saudi-deal-means-for-the-middle-east-11789727421338.html"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Why US plan to sell F-35 warplanes to Saudi Arabia is controversial",
+          "url": "https://www.bbc.co.uk/news/articles/c3x2zrn01pxko?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Warren Buffett steps down as Berkshire Hathaway chairman after six decades",
+      "section": "world",
+      "category": "economy",
+      "tier_requested": "notable",
+      "article_ids": [
+        105,
+        143
+      ],
+      "verdict": "cut:below_floor(2<5)",
+      "valid_ids": [
+        105,
+        143
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 2,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "Warren Buffett steps down as Berkshire Hathaway chairman",
+          "url": "https://www.aljazeera.com/economy/2026/9/18/warren-buffett-steps-down-as-berkshire-hathaway-chairman?traffic_source=rss"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Warren Buffett steps down after six decades at Berkshire - 'Father Time always wins'",
+          "url": "https://www.bbc.co.uk/news/articles/cvj64dl1w6yno?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Protests erupt in Nigeria after 37 suspected illegal miners die in police custody",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        39,
+        136,
+        180,
+        181
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        39,
+        136,
+        180,
+        181
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 4,
+      "wiki_backed": true,
+      "wiki_event": "Protests erupt in Minna, Niger State, Nigeria, after 37 miners died yesterday in custody of the Security and Civil Defence Corps following raids on suspected illegal mines. Niger state governor Mohammed Umar Bago imposes a curfew.",
+      "weight": 6,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 0,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "France 24",
+          "title": "Uproar in Niger state, 37 die in custody",
+          "url": "https://www.france24.com/en/uproar-in-niger-state-37-die-in-custody"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Survivors recount panic and struggle to breathe in Nigerian prison cell where 37 died",
+          "url": "https://www.theguardian.com/world/2026/sep/18/survivor-panic-struggle-breathe-nigeria-prison-cell-died-minna"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Dozens of suspected illegal miners die in Nigerian custody",
+          "url": "https://www.bbc.co.uk/news/articles/cw980qp2n3p4o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Nigerian forces fire at protesters rallying over deaths of detained miners",
+          "url": "https://www.aljazeera.com/news/2026/9/18/nigerian-forces-fire-at-protesters-rallying-over-deaths-of-detained-miners?traffic_source=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Macron warns of rising Russian hybrid attacks targeting European infrastructure",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "notable",
+      "article_ids": [
+        53,
+        122,
+        188,
+        223,
+        239
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        53,
+        122,
+        188,
+        223,
+        239
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Channel News Asia",
+          "title": "Macron warns of Russian 'hybrid' threat after meeting presidential hopefuls",
+          "url": "https://www.channelnewsasia.com/world/macron-russia-hybrid-attacks-europe-6395731"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Russian hybrid attacks against Europe intensifying, says Macron",
+          "url": "https://www.bbc.co.uk/news/articles/cm2dw1w9d3yjo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Macron warns of growing Russian threat: How ‘hybrid attacks’ are targeting Europe",
+          "url": "https://www.livemint.com/news/world/macron-warns-of-growing-russian-threat-how-hybrid-attacks-are-targeting-europe-11789741049350.html"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Macron addresses energy crisis, warns of 'hybrid attacks'",
+          "url": "https://www.france24.com/en/video/20260918-macron-addresses-energy-crisis-warns-of-hybrid-attacks"
+        },
+        {
+          "outlet": "France 24",
+          "title": "REPLAY: Macron orders plan to counter 'Russian hybrid attacks'",
+          "url": "https://www.france24.com/en/video/20260918-replay-macron-orders-plan-to-counter-russian-hybrid-attacks"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    }
+  ]
+}
