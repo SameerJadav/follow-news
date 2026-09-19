@@ -1,0 +1,596 @@
+{
+  "dials": {
+    "WEIGHT_FLOOR": 5,
+    "TIER_WEIGHT": {
+      "lead": 4,
+      "major": 2,
+      "notable": 0
+    },
+    "WIKI_BONUS": 2,
+    "HARD_CAP": 12,
+    "MIN_STORIES_IF_ANY": 3,
+    "MAX_ARTICLES_PER_STORY": 5
+  },
+  "floor_relaxed": false,
+  "kept_weights": [
+    8,
+    7,
+    7,
+    6,
+    5,
+    7,
+    5
+  ],
+  "per_section": {
+    "world": 5,
+    "india": 2
+  },
+  "clusters": [
+    {
+      "headline_hint": "US enacts legislation targeting buyers of Russian oil as India defends its energy security",
+      "section": "india",
+      "category": "economy",
+      "tier_requested": "lead",
+      "article_ids": [
+        30,
+        170,
+        300
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        30,
+        170,
+        300
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 4,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "The Hindu",
+          "title": "How will the U.S.’s Sanctioning Act affect India? | Explained",
+          "url": "https://www.thehindu.com/news/national/how-will-the-uss-sanctioning-act-affect-india-explained/article71485870.ece"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Trump tariffs ‘unfair’: India will buy energy from commercially viable sources, says MoS amid Russia-Iran sanctions law",
+          "url": "https://www.livemint.com/news/india/trump-tariffs-unfair-india-will-buy-energy-from-commercially-viable-sources-says-mos-amid-russia-iran-sanctions-law-11789828160506.html"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "Trump signs bill allowing 100% tariffs on India, other countries for buying Russian oil",
+          "url": "https://scroll.in/latest/1095849/trump-signs-bill-allowing-100-tariffs-on-india-other-countries-for-buying-russian-oil?utm_source=rss&utm_medium=public"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Iran sets seven conditions for US ceasefire talks as Middle East conflict escalates",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "lead",
+      "article_ids": [
+        27,
+        29,
+        79,
+        201
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        27,
+        29,
+        79,
+        201
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 4,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "Iran gives US 7 conditions to restart talks, says ‘threats won't achieve results’",
+          "url": "https://timesofindia.indiatimes.com/world/middle-east/iran-gives-us-3-conditions-to-restart-talks-says-trumps-threats-will-not-achieve-results/articleshow/134360212.cms"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Hegseth kicks off ‘Send Me Tour’ amid Iran war backlash",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/19/hegseth-kicks-off-send-me-tour-amid-iran-war-backlash?traffic_source=rss"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Iran war sends oil tanker rates past $1 million a day: Who is paying the bill and who is making money?",
+          "url": "https://www.livemint.com/news/world/iran-war-sends-oil-tanker-rates-past-1-million-a-day-who-is-paying-the-bill-and-who-is-making-money-11789819050960.html"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Iran says conditions to re-engage in talks, end war sent to US via Qatar",
+          "url": "https://www.aljazeera.com/news/2026/9/19/iran-says-conditions-to-re-engage-in-talks-end-war-sent-to-us-via-qatar?traffic_source=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Houthis launch ballistic missiles targeting Saudi capital Riyadh",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "major",
+      "article_ids": [
+        1,
+        26,
+        57,
+        151,
+        169,
+        185,
+        205,
+        288
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        1,
+        26,
+        57,
+        151,
+        169,
+        185,
+        205,
+        288
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 5,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "Saudi-led coalition says defences intercept Houthi missile fired at Riyadh",
+          "url": "https://www.aljazeera.com/news/2026/9/19/saudi-led-coalition-says-defences-intercept-houthi-missile-fired-at-riyadh?traffic_source=rss"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Houthis say they targeted Saudi capital with ballistic missiles",
+          "url": "https://www.bbc.co.uk/news/articles/cwly5d9v7r43o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Houthis claim attacks on Saudi capital after flames, black smoke seen near Riyadh airport",
+          "url": "https://www.livemint.com/news/world/houthis-claim-attacks-on-saudi-capital-after-flames-black-smoke-seen-near-riyadh-airport-11789843604832.html"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Thick smoke seen near Riyadh airport after air raid alerts in Saudi capital",
+          "url": "https://www.theguardian.com/world/2026/sep/19/saudi-arabia-riyadh-airport"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Black smoke seen near Riyadh amid air raid alerts in Saudi Arabia",
+          "url": "https://www.france24.com/en/black-smoke-seen-near-riyadh-amid-air-raid-alerts-in-saudi-arabia"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 3
+    },
+    {
+      "headline_hint": "US and Denmark reach Arctic security deal to expand military presence in Greenland",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        32,
+        107,
+        227,
+        239,
+        294,
+        298,
+        301
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        32,
+        107,
+        227,
+        239,
+        294,
+        298,
+        301
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 6,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 8,
+      "weight_terms": {
+        "distinct_outlets": 6,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "Denmark says ‘binding’ US deal on Greenland won’t compromise sovereignty",
+          "url": "https://www.aljazeera.com/news/2026/9/19/denmark-says-binding-us-deal-on-greenland-wont-compromise-sovereignty?traffic_source=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Greenland Deal: Greenland: A Trump Win or Danish Masterclass?",
+          "url": "https://www.france24.com/en/tv-shows/spotlight/20260919-greenland-deal-greenland-a-trump-win-or-danish-masterclass"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Nato welcomes Greenland deal as Trump says it will give US 'permanent security control'",
+          "url": "https://www.bbc.co.uk/news/articles/c63d7lexyym1o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "U.S. and Denmark reach deal to build U.S. military presence in Greenland",
+          "url": "https://www.npr.org/2026/09/19/g-s1-144158/us-and-denmark-reach-deal"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "Trump announces Greenland security deal with Denmark",
+          "url": "https://scroll.in/latest/1095850/trump-announces-us-deal-with-denmark-for-permanent-security-control-of-greenland?utm_source=rss&utm_medium=public"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 2
+    },
+    {
+      "headline_hint": "US and Chinese officials hold high-level talks ahead of Trump-Xi White House summit",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        22,
+        25,
+        42,
+        101,
+        193
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        22,
+        25,
+        42,
+        101,
+        193
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Livemint",
+          "title": "Melania Trump to launch ‘IMPERIA’ during UNGA week: Why women CEOs are at the centre of it",
+          "url": "https://www.livemint.com/news/us-news/melania-trump-to-launch-imperia-during-unga-week-why-women-ceos-are-at-the-centre-of-it-11789844321946.html"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "US Treasury's Bessent, China's He to meet on Sunday at JPMorgan headquarters",
+          "url": "https://www.channelnewsasia.com/business/us-treasurys-bessent-chinas-he-meet-sunday-jpmorgan-headquarters-6396966"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Trump-Xi state dinner: Why America’s biggest tech bosses will be at the table",
+          "url": "https://www.livemint.com/news/us-news/trumpxi-state-dinner-why-america-s-biggest-tech-bosses-will-be-at-the-table-11789848887821.html"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "US-China talks: 7 key issues Scott Bessent and He Lifeng will tackle before Trump-Xi summit",
+          "url": "https://www.livemint.com/news/us-news/uschina-talks-7-key-issues-scott-bessent-and-he-lifeng-will-tackle-before-trump-xi-summit-11789836234879.html"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Trump-Xi state dinner: JPMorgan’s Jamie Dimon, Citi’s Jane Fraser join elite guest list — who else is attending?",
+          "url": "https://www.livemint.com/news/us-news/trumpxi-state-dinner-jpmorgan-s-jamie-dimon-citi-s-jane-fraser-join-elite-guest-list-who-else-is-attending-11789823032871.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "ABVP secures key victories in Delhi University Students' Union elections",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        108,
+        126,
+        129,
+        186,
+        198,
+        202,
+        207,
+        240,
+        269,
+        285
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        108,
+        126,
+        129,
+        186,
+        198,
+        202,
+        207,
+        240,
+        269,
+        285
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 5,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "The Hindu",
+          "title": "ABVP wins 3 DUSU posts; independent candidate Deepanshu Shokeen gets vice-president’s position",
+          "url": "https://www.thehindu.com/news/cities/Delhi/delhi-university-students-union-election-result-counting-on-september-19-2026/article71483753.ece"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "‘Tight slap on his face’: BJP targets Rahul Gandhi after ABVP's big win in DUSU elections",
+          "url": "https://www.hindustantimes.com/india-news/tight-slap-on-his-face-bjp-rahul-gandhi-abvps-big-win-dusu-2026-election-results-nsui-congress-101789828782110.html"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "DUSU election results: Who is Deepanshu Shokeen? Independent candidate wins VP post after being denied NSUI ticket",
+          "url": "https://www.livemint.com/news/india/dusu-election-results-who-is-deepanshu-shokeen-independent-candidate-wins-vp-post-after-being-denied-nsui-ticket-11789823136528.html"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "‘Majority did not vote for them’, says CJP's Saurav Das as ABVP sweeps DUSU polls",
+          "url": "https://www.hindustantimes.com/india-news/majority-did-not-vote-for-them-says-cjp-saurav-das-as-abvp-sweeps-delhi-university-dusu-polls-101789825959056.html"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "From international tennis tournaments to new DUSU president: Who is ABVP's Yash Dabas?",
+          "url": "https://www.hindustantimes.com/india-news/from-international-tennis-tournaments-to-new-delhi-university-polls-dusu-president-who-is-abvp-yash-dabas-101789822217884.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 5
+    },
+    {
+      "headline_hint": "White House revokes press credentials for CNN, MS NOW, and Politico reporters",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        52,
+        100,
+        124,
+        127,
+        157
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        52,
+        100,
+        124,
+        127,
+        157
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 5,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 5,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "BBC World",
+          "title": "Journalists denied White House access after Trump banned some media outlets",
+          "url": "https://www.bbc.co.uk/news/articles/cj4gklz9dxplo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "A ‘ban on the free press’: White House bars journalists from three outlets",
+          "url": "https://www.aljazeera.com/news/2026/9/19/a-ban-on-the-free-press-white-house-bars-journalists-from-three-outlets?traffic_source=rss"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "White House turns away CNN, MS NOW, Politico reporters after Trump announces ban",
+          "url": "https://www.channelnewsasia.com/world/white-house-turns-away-cnn-ms-now-politico-reporters-after-trump-announces-ban-6396876"
+        },
+        {
+          "outlet": "France 24",
+          "title": "CNN, MS NOW, Politico reporters blocked from White House after Trump ban",
+          "url": "https://www.france24.com/en/americas/20260919-cnn-ms-now-politico-reporters-blocked-from-white-house-after-trump-ban"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "MS Now, CNN and Politico say reporters have been denied access to White House",
+          "url": "https://www.theguardian.com/us-news/2026/sep/19/ms-now-reporters-denied-access-white-house-trump-ban"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Donald Trump announces plans to establish 'AI Force' and appoint AI tsar",
+      "section": "world",
+      "category": "technology",
+      "tier_requested": "notable",
+      "article_ids": [
+        15,
+        36,
+        39,
+        75,
+        99,
+        112
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        15,
+        36,
+        39,
+        75,
+        99,
+        112
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 6,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 6,
+      "weight_terms": {
+        "distinct_outlets": 6,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "BBC World",
+          "title": "Trump says US will form 'AI Force' and appoint an artificial intelligence tsar",
+          "url": "https://www.bbc.co.uk/news/articles/cqlykr2vrv04o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Trump to create ‘AI Force’ to monitor technology as fears over out-of-control agents grow",
+          "url": "https://www.theguardian.com/us-news/2026/sep/19/donald-trump-ai-force"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Trump says he will create ‘AI Force’ with new ‘AI czar’",
+          "url": "https://www.aljazeera.com/news/2026/9/19/trump-says-he-will-create-ai-force-with-new-ai-czar?traffic_source=rss"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Trump announces ‘AI Force’, plans to name AI czar: ‘We will not in any way hinder or stifle growth’",
+          "url": "https://www.livemint.com/news/us-news/trump-announces-ai-force-plans-to-name-ai-czar-we-will-not-in-any-way-hinder-or-stifle-growth-11789842303172.html"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "'Only high IQ individuals need apply': Trump announces 'AI Force'",
+          "url": "https://timesofindia.indiatimes.com/world/us/only-high-iq-individuals-need-apply-trump-announces-ai-force/articleshow/134358415.cms"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 1
+    },
+    {
+      "headline_hint": "Cuba suffers another major nationwide power grid collapse",
+      "section": "world",
+      "category": "disaster",
+      "tier_requested": "notable",
+      "article_ids": [
+        89,
+        203,
+        243
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        89,
+        203,
+        243
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "Cuba works to restore power after another major nationwide blackout",
+          "url": "https://www.aljazeera.com/news/2026/9/19/cuba-works-to-restore-power-after-another-major-nationwide-blackout?traffic_source=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Millions without power in Cuba as electrical grid collapses again",
+          "url": "https://www.france24.com/en/millions-without-power-in-cuba-as-electrical-grid-collapses-again"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Millions without power as Cuba hit by latest major blackout",
+          "url": "https://www.bbc.co.uk/news/articles/c6j9x4387lzxo?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "PM Modi challenges Western climate narrative, highlighting global emissions inequality",
+      "section": "india",
+      "category": "climate",
+      "tier_requested": "notable",
+      "article_ids": [
+        17,
+        261
+      ],
+      "verdict": "cut:below_floor(2<5)",
+      "valid_ids": [
+        17,
+        261
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 2,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "PM Modi pushes back on West’s narrative over emissions",
+          "url": "https://timesofindia.indiatimes.com/india/pm-pushes-back-on-wests-narrative-over-emissions/articleshow/134360293.cms"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "PM Modi flags climate inequality, says developed nations' carbon emissions 6 times more | Top quotes",
+          "url": "https://www.livemint.com/news/india/pm-modi-flags-climate-inequality-says-developed-nations-carbon-emissions-6-times-more-top-quotes-11789803659346.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    }
+  ]
+}
