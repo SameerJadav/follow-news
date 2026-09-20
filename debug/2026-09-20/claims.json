@@ -1,0 +1,667 @@
+{
+  "min_claim_chars": 20,
+  "max_claims_per_story": 24,
+  "calls": [
+    {
+      "label": "claims-world",
+      "cluster_ids": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "label": "claims-india",
+      "cluster_ids": [
+        3,
+        4
+      ]
+    }
+  ],
+  "rejected_claims": 0,
+  "rejected_clusters": 0,
+  "clusters": [
+    {
+      "cluster_id": 0,
+      "headline_hint": "US and Denmark reach security agreement over military presence in Greenland",
+      "section": "world",
+      "batch_position": 0,
+      "claim_count": 13,
+      "distinct_outlets": 4,
+      "source_kinds": {
+        "fulltext": 13
+      },
+      "claims": [
+        {
+          "id": 1,
+          "cluster_id": 0,
+          "text": "The United States and Denmark announced a security agreement regarding Greenland to resolve a diplomatic dispute.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c63d7lexyym1o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 2,
+          "cluster_id": 0,
+          "text": "Donald Trump posted on Truth Social that Denmark would grant the US permanent control over security, and all other needs in Greenland at no cost to the United States.",
+          "kind": "quote",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c63d7lexyym1o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 3,
+          "cluster_id": 0,
+          "text": "The security deal between the US, Denmark, and Greenland is expected to be signed next week at the UN General Assembly.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c63d7lexyym1o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 4,
+          "cluster_id": 0,
+          "text": "A US State Department official stated the agreement bans non-NATO countries from building military bases in Greenland or making investments in sensitive sectors.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c63d7lexyym1o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 5,
+          "cluster_id": 0,
+          "text": "Danish Prime Minister Mette Frederiksen stated the agreement strengthens common security in the Arctic and North Atlantic while recognizing the sovereignty and territorial integrity of the Kingdom of Denmark and the right of the Greenlandic people to self-determination.",
+          "kind": "quote",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c63d7lexyym1o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 6,
+          "cluster_id": 0,
+          "text": "French President Emmanuel Macron stated that the agreement reaffirms Danish sovereignty over Greenland and respects international law.",
+          "kind": "quote",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c63d7lexyym1o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 7,
+          "cluster_id": 0,
+          "text": "Danish Foreign Minister Lars Lokke Rasmussen called the deal a binding agreement that strengthens security while respecting Denmark's red lines.",
+          "kind": "quote",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/9/19/denmark-says-binding-us-deal-on-greenland-wont-compromise-sovereignty?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 8,
+          "cluster_id": 0,
+          "text": "Greenland Prime Minister Jens-Frederik Nielsen stated the agreement recognizes Greenland's interests and is to the benefit of all parties.",
+          "kind": "quote",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/9/19/denmark-says-binding-us-deal-on-greenland-wont-compromise-sovereignty?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 9,
+          "cluster_id": 0,
+          "text": "Greenland has a population of roughly 56,000 residents, with more than two-thirds of its territory lying within the Arctic Circle.",
+          "kind": "figure",
+          "outlet": "NPR World",
+          "url": "https://www.npr.org/2026/09/19/g-s1-144158/us-and-denmark-reach-deal",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 10,
+          "cluster_id": 0,
+          "text": "The United States operates Pituffik Space Base in northwestern Greenland under the Defense of Greenland Treaty signed in 1951.",
+          "kind": "background",
+          "outlet": "NPR World",
+          "url": "https://www.npr.org/2026/09/19/g-s1-144158/us-and-denmark-reach-deal",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 11,
+          "cluster_id": 0,
+          "text": "US Secretary of State Marco Rubio called the agreement a historic deal that permanently and completely addresses US national security concerns.",
+          "kind": "quote",
+          "outlet": "NPR World",
+          "url": "https://www.npr.org/2026/09/19/g-s1-144158/us-and-denmark-reach-deal",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 12,
+          "cluster_id": 0,
+          "text": "Donald Trump first floated the idea of buying Greenland from Denmark in 2019 during his first term as US president.",
+          "kind": "background",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/latest/1095850/trump-announces-us-deal-with-denmark-for-permanent-security-control-of-greenland?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 13,
+          "cluster_id": 0,
+          "text": "In January 2026, Donald Trump indicated the US could use force to seize Greenland.",
+          "kind": "event",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/latest/1095850/trump-announces-us-deal-with-denmark-for-permanent-security-control-of-greenland?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 1,
+      "headline_hint": "Donald Trump announces plans to create an AI Force and name a new AI czar",
+      "section": "world",
+      "batch_position": 1,
+      "claim_count": 11,
+      "distinct_outlets": 4,
+      "source_kinds": {
+        "fulltext": 11
+      },
+      "claims": [
+        {
+          "id": 14,
+          "cluster_id": 1,
+          "text": "US President Donald Trump announced plans to form an AI Force and appoint an artificial intelligence czar.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cqlykr2vrv04o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 15,
+          "cluster_id": 1,
+          "text": "Donald Trump stated that artificial intelligence could eventually account for as much as 25% of the United States' GDP.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cqlykr2vrv04o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 16,
+          "cluster_id": 1,
+          "text": "Tech executives including Dario Amodei of Anthropic, Sam Altman of OpenAI, and Elon Musk of xAI have advocated for a slowdown or regulations in AI development.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cqlykr2vrv04o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 17,
+          "cluster_id": 1,
+          "text": "The UK Parliament's Joint Committee on Human Rights published a report calling for a new AI bill to address risks posed by the technology.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cqlykr2vrv04o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 18,
+          "cluster_id": 1,
+          "text": "Donald Trump stated on social media that candidates for the proposed AI Czar position must be high IQ individuals.",
+          "kind": "quote",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/us-news/2026/sep/19/donald-trump-ai-force",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 19,
+          "cluster_id": 1,
+          "text": "California Governor Gavin Newsom announced plans for a panel to develop AI safety regulations, including a potential kill switch for misaligned AI programs.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/us-news/2026/sep/19/donald-trump-ai-force",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 20,
+          "cluster_id": 1,
+          "text": "An Anthropic researcher warned that AI companies are gambling with lives and that AI could pose existential risks to humanity by the end of the decade.",
+          "kind": "background",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/us-news/2026/sep/19/donald-trump-ai-force",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 21,
+          "cluster_id": 1,
+          "text": "Former US AI czar David Sacks resigned earlier in the year and currently chairs Trump's Council of Advisors on Science and Technology.",
+          "kind": "background",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/9/19/trump-says-he-will-create-ai-force-with-new-ai-czar?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 22,
+          "cluster_id": 1,
+          "text": "The US House of Representatives passed a bill in a 417 to 3 vote to minimize the impact of AI data center electricity usage on residents' utility bills.",
+          "kind": "figure",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/9/19/trump-says-he-will-create-ai-force-with-new-ai-czar?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 23,
+          "cluster_id": 1,
+          "text": "US President Donald Trump and Chinese President Xi Jinping are scheduled to meet at the White House on September 24, with AI competition expected to be discussed.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/us-news/trump-announces-ai-force-plans-to-name-ai-czar-we-will-not-in-any-way-hinder-or-stifle-growth-11789842303172.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 24,
+          "cluster_id": 1,
+          "text": "Donald Trump stated his administration will not hinder or stifle the growth of the AI industry but will use existing criminal and civil laws to target bad actors.",
+          "kind": "quote",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/us-news/trump-announces-ai-force-plans-to-name-ai-czar-we-will-not-in-any-way-hinder-or-stifle-growth-11789842303172.html",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 2,
+      "headline_hint": "Houthi rebels fire ballistic missiles at Saudi capital Riyadh, causing airport disruptions",
+      "section": "world",
+      "batch_position": 2,
+      "claim_count": 12,
+      "distinct_outlets": 4,
+      "source_kinds": {
+        "fulltext": 12
+      },
+      "claims": [
+        {
+          "id": 25,
+          "cluster_id": 2,
+          "text": "Iran-backed Houthi militants launched drone and ballistic missile attacks targeting the Saudi capital Riyadh and Aramco facilities in Yanbu.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cwly5d9v7r43o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 26,
+          "cluster_id": 2,
+          "text": "A column of black smoke rose from fuel tanks near King Khalid International Airport in Riyadh, leading to temporary flight delays and cancellations.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cwly5d9v7r43o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 27,
+          "cluster_id": 2,
+          "text": "Saudi authorities intercepted a ballistic missile over Riyadh and stopped hostile aerial attempts over Bish, Taif, Farasan, and Yanbu.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cwly5d9v7r43o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 28,
+          "cluster_id": 2,
+          "text": "Houthi military spokesman Yahya al-Sarea stated the attacks were in response to 300 Saudi strikes across Yemen over the past week.",
+          "kind": "quote",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cwly5d9v7r43o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 29,
+          "cluster_id": 2,
+          "text": "Fighting between Houthis and Saudi-backed government forces in Yemen claimed 48 lives on Saturday, including 31 Houthi fighters and 17 government soldiers.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cwly5d9v7r43o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 30,
+          "cluster_id": 2,
+          "text": "Turkish Foreign Minister Hakan Fidan stated Turkiye would consider how to support Saudi Arabia under a trilateral defence pact signed in Mecca on August 7.",
+          "kind": "event",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/9/19/turkiye-backs-saudi-arabias-security-amid-escalating-houthi-attacks-fm?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 31,
+          "cluster_id": 2,
+          "text": "Pakistani military spokesperson Lieutenant-General Ahmed Sharif Chaudhry stated Pakistan would physically defend Saudi Arabia to any extent under the Mecca Defence Alliance.",
+          "kind": "quote",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/9/19/turkiye-backs-saudi-arabias-security-amid-escalating-houthi-attacks-fm?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 32,
+          "cluster_id": 2,
+          "text": "The United Nations reported that renewed fighting in Yemen has displaced over 112,000 people.",
+          "kind": "figure",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/world/houthis-claim-attacks-on-saudi-capital-after-flames-black-smoke-seen-near-riyadh-airport-11789843604832.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 33,
+          "cluster_id": 2,
+          "text": "The United States approved a $24.3 billion sale of 48 F-35 fighter jets to Saudi Arabia.",
+          "kind": "figure",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/world/houthis-claim-attacks-on-saudi-capital-after-flames-black-smoke-seen-near-riyadh-airport-11789843604832.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 34,
+          "cluster_id": 2,
+          "text": "Iranian Supreme National Security Council Secretary Mohsen Rezaei stated Tehran wants the Saudi-Houthi war to end.",
+          "kind": "quote",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/world/houthis-claim-attacks-on-saudi-capital-after-flames-black-smoke-seen-near-riyadh-airport-11789843604832.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 35,
+          "cluster_id": 2,
+          "text": "The UN Security Council issued a statement condemning Houthi attacks on Saudi civilian and energy infrastructure.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/sep/19/saudi-arabia-riyadh-airport",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 36,
+          "cluster_id": 2,
+          "text": "The Houthis recently seized control of the port of Mokha, Perim Island, and the Red Sea islands of Greater and Lesser Hanish.",
+          "kind": "background",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/sep/19/saudi-arabia-riyadh-airport",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 3,
+      "headline_hint": "US enacts law imposing tariffs on India over Russian oil imports",
+      "section": "india",
+      "batch_position": 0,
+      "claim_count": 13,
+      "distinct_outlets": 3,
+      "source_kinds": {
+        "fulltext": 13
+      },
+      "claims": [
+        {
+          "id": 37,
+          "cluster_id": 3,
+          "text": "U.S. President Donald Trump signed into law the Lindsey O. Graham Sanctioning Russia and Iran Act, 2026.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/how-will-the-uss-sanctioning-act-affect-india-explained/article71485870.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 38,
+          "cluster_id": 3,
+          "text": "The Act permits the U.S. to impose a 100% tariff on imports from countries that continue to import crude oil or natural gas from Russia 30 days after its enactment.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/how-will-the-uss-sanctioning-act-affect-india-explained/article71485870.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 39,
+          "cluster_id": 3,
+          "text": "The Act originally aimed to cut off funding for Russia's war in Ukraine by sanctioning top Russian leadership and major energy customers.",
+          "kind": "background",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/how-will-the-uss-sanctioning-act-affect-india-explained/article71485870.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 40,
+          "cluster_id": 3,
+          "text": "The text of the Act was amended to extend sanctions on Iran for another five years until 2031.",
+          "kind": "background",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/how-will-the-uss-sanctioning-act-affect-india-explained/article71485870.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 41,
+          "cluster_id": 3,
+          "text": "Russia accounted for more than 51% of India's crude oil imports in July 2026.",
+          "kind": "figure",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/how-will-the-uss-sanctioning-act-affect-india-explained/article71485870.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 42,
+          "cluster_id": 3,
+          "text": "India faces an existing 10% tariff under Section 301 of the Trade Act of 1974 and a 50% tariff under Section 232 of the Trade Expansion Act of 1962.",
+          "kind": "background",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/how-will-the-uss-sanctioning-act-affect-india-explained/article71485870.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 43,
+          "cluster_id": 3,
+          "text": "Union Minister of State for External Affairs Kirti Vardhan Singh stated that India considers the U.S. tariffs very unfair and will buy energy from commercially viable and economical sources independently.",
+          "kind": "quote",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/trump-tariffs-unfair-india-will-buy-energy-from-commercially-viable-sources-says-mos-amid-russia-iran-sanctions-law-11789828160506.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 44,
+          "cluster_id": 3,
+          "text": "The White House confirmed President Trump signed H.R. 5334, the Lindsey O. Graham Sanctioning Russia and Iran Act of 2026, into law on Friday, September 18, 2026.",
+          "kind": "figure",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/trump-tariffs-unfair-india-will-buy-energy-from-commercially-viable-sources-says-mos-amid-russia-iran-sanctions-law-11789828160506.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 45,
+          "cluster_id": 3,
+          "text": "The legislation cleared the U.S. Senate with an 86-11 vote in August and passed the House of Representatives 262-159.",
+          "kind": "figure",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/trump-tariffs-unfair-india-will-buy-energy-from-commercially-viable-sources-says-mos-amid-russia-iran-sanctions-law-11789828160506.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 46,
+          "cluster_id": 3,
+          "text": "Republican Senator Lindsey Graham, who spearheaded the bill, died in July 2026.",
+          "kind": "background",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/latest/1095849/trump-signs-bill-allowing-100-tariffs-on-india-other-countries-for-buying-russian-oil?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 47,
+          "cluster_id": 3,
+          "text": "India's Ministry of External Affairs stated that New Delhi is committed to ensuring energy security through diversified sourcing and market dynamics, and will take all necessary steps to protect its economic interests.",
+          "kind": "quote",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/latest/1095849/trump-signs-bill-allowing-100-tariffs-on-india-other-countries-for-buying-russian-oil?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 48,
+          "cluster_id": 3,
+          "text": "The Trump administration imposed a 25% punitive tariff on India in August 2025 over Russian oil imports, which Trump removed in February 2026 following an interim trade deal.",
+          "kind": "background",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/latest/1095849/trump-signs-bill-allowing-100-tariffs-on-india-other-countries-for-buying-russian-oil?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 49,
+          "cluster_id": 3,
+          "text": "India's Russian oil imports reached an 11-month high in April 2026 following the U.S. and Israel war on Iran, after dropping to a 38-month low in December 2025.",
+          "kind": "figure",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/latest/1095849/trump-signs-bill-allowing-100-tariffs-on-india-other-countries-for-buying-russian-oil?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 4,
+      "headline_hint": "ABVP wins top posts in Delhi University Students' Union elections",
+      "section": "india",
+      "batch_position": 1,
+      "claim_count": 15,
+      "distinct_outlets": 3,
+      "source_kinds": {
+        "fulltext": 15
+      },
+      "claims": [
+        {
+          "id": 50,
+          "cluster_id": 4,
+          "text": "The Akhil Bharatiya Vidyarthi Parishad (ABVP) won three central panel posts in the Delhi University Students' Union (DUSU) elections.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/cities/Delhi/delhi-university-students-union-election-result-counting-on-september-19-2026/article71483753.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 51,
+          "cluster_id": 4,
+          "text": "Independent candidate Deepanshu Shokeen won the DUSU vice-presidential post with 30,615 votes, defeating ABVP's Ishu Maurya who received 16,901 votes.",
+          "kind": "figure",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/cities/Delhi/delhi-university-students-union-election-result-counting-on-september-19-2026/article71483753.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 52,
+          "cluster_id": 4,
+          "text": "ABVP's Yash Dabas was elected DUSU president with 24,576 votes, defeating NSUI's Vijay Shankar Meena who received 22,523 votes.",
+          "kind": "figure",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/cities/Delhi/delhi-university-students-union-election-result-counting-on-september-19-2026/article71483753.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 53,
+          "cluster_id": 4,
+          "text": "ABVP's Riya Chhawdi won the DUSU secretary post with 21,650 votes against NSUI's Namrata Chaudhary who received 14,869 votes.",
+          "kind": "figure",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/cities/Delhi/delhi-university-students-union-election-result-counting-on-september-19-2026/article71483753.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 54,
+          "cluster_id": 4,
+          "text": "ABVP's Lakshay Raj Singh won the joint secretary post by a margin of 837 votes against Vishesh Yadav of Samajwadi Chhatra Sabha.",
+          "kind": "figure",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/cities/Delhi/delhi-university-students-union-election-result-counting-on-september-19-2026/article71483753.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 55,
+          "cluster_id": 4,
+          "text": "Voter turnout for the DUSU elections was 40.46%, compared to 39.5% in the previous year.",
+          "kind": "figure",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/cities/Delhi/delhi-university-students-union-election-result-counting-on-september-19-2026/article71483753.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 56,
+          "cluster_id": 4,
+          "text": "The National Students' Union of India (NSUI) drew a blank in the Delhi University Students' Union central panel elections.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/tight-slap-on-his-face-bjp-rahul-gandhi-abvps-big-win-dusu-2026-election-results-nsui-congress-101789828782110.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 57,
+          "cluster_id": 4,
+          "text": "Union Home Minister Amit Shah congratulated ABVP, stating the victory reflects youth trust in the council's Nation First ideology.",
+          "kind": "quote",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/tight-slap-on-his-face-bjp-rahul-gandhi-abvps-big-win-dusu-2026-election-results-nsui-congress-101789828782110.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 58,
+          "cluster_id": 4,
+          "text": "Deepanshu Shokeen chose to run as an independent candidate after learning on September 11 that he was denied a ticket by NSUI.",
+          "kind": "background",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/dusu-election-results-who-is-deepanshu-shokeen-independent-candidate-wins-vp-post-after-being-denied-nsui-ticket-11789823136528.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 59,
+          "cluster_id": 4,
+          "text": "Deepanshu Shokeen hails from Peeragarhi village in west Delhi, where his father works as a bus conductor and his mother as an Anganwadi teacher.",
+          "kind": "background",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/dusu-election-results-who-is-deepanshu-shokeen-independent-candidate-wins-vp-post-after-being-denied-nsui-ticket-11789823136528.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 60,
+          "cluster_id": 4,
+          "text": "More than 2,000 police and paramilitary personnel were deployed across Delhi University during the vote counting process.",
+          "kind": "figure",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/dusu-election-results-who-is-deepanshu-shokeen-independent-candidate-wins-vp-post-after-being-denied-nsui-ticket-11789823136528.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 61,
+          "cluster_id": 4,
+          "text": "CJP co-convenor Saurav Das stated on X that a majority of students opposed the current regime but their votes were fractured.",
+          "kind": "quote",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/majority-did-not-vote-for-them-says-cjp-saurav-das-as-abvp-sweeps-delhi-university-dusu-polls-101789825959056.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 62,
+          "cluster_id": 4,
+          "text": "Yash Dabas is an international-level tennis player who represented Delhi University at the Khelo India University Games and All-India University Games.",
+          "kind": "background",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/from-international-tennis-tournaments-to-new-delhi-university-polls-dusu-president-who-is-abvp-yash-dabas-101789822217884.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 63,
+          "cluster_id": 4,
+          "text": "Yash Dabas completed his undergraduate degree at Sri Guru Tegh Bahadur Khalsa College and is pursuing an MA in Buddhist Studies at Delhi University.",
+          "kind": "background",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/from-international-tennis-tournaments-to-new-delhi-university-polls-dusu-president-who-is-abvp-yash-dabas-101789822217884.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 64,
+          "cluster_id": 4,
+          "text": "DUSU President-elect Yash Dabas announced that his first priority would be conducting a safety audit of all college hostels and paying guest accommodations.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/from-international-tennis-tournaments-to-new-delhi-university-polls-dusu-president-who-is-abvp-yash-dabas-101789822217884.html",
+          "source_kind": "fulltext"
+        }
+      ]
+    }
+  ],
+  "clusters_with_no_claims": []
+}
