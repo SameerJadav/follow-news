@@ -1,0 +1,115 @@
+{"run": "digest", "t": 0, "kind": "digest", "stage": "tracer", "msg": "capture started", "level": 1, "day": "2026-09-21"}
+{"run": "digest", "t": 1980, "kind": "dbg", "msg": "digest: window since=2026-09-20T00:14:25+00:00 (prev_generated_at=2026-09-20 00:14:25+00:00)"}
+{"run": "digest", "t": 2073, "kind": "dbg", "msg": "feed 'BBC World': http=200 raw_items=27 usable=27"}
+{"run": "digest", "t": 2073, "kind": "event", "stage": "feeds", "outlet": "BBC World", "url": "https://feeds.bbci.co.uk/news/world/rss.xml", "http": 200, "elapsed_ms": 81, "bytes": 21212, "raw_items": 27, "usable": 27, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 2156, "kind": "dbg", "msg": "feed 'Al Jazeera': http=200 raw_items=25 usable=25"}
+{"run": "digest", "t": 2156, "kind": "event", "stage": "feeds", "outlet": "Al Jazeera", "url": "https://www.aljazeera.com/xml/rss/all.xml", "http": 200, "elapsed_ms": 72, "bytes": 16980, "raw_items": 25, "usable": 25, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 2363, "kind": "dbg", "msg": "feed 'Guardian World': http=200 raw_items=45 usable=45"}
+{"run": "digest", "t": 2363, "kind": "event", "stage": "feeds", "outlet": "Guardian World", "url": "https://www.theguardian.com/world/rss", "http": 200, "elapsed_ms": 151, "bytes": 150170, "raw_items": 45, "usable": 45, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 2442, "kind": "dbg", "msg": "feed 'NPR World': http=200 raw_items=10 usable=10"}
+{"run": "digest", "t": 2442, "kind": "event", "stage": "feeds", "outlet": "NPR World", "url": "https://feeds.npr.org/1004/rss.xml", "http": 200, "elapsed_ms": 70, "bytes": 14442, "raw_items": 10, "usable": 10, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 2665, "kind": "dbg", "msg": "feed 'DW World': http=200 raw_items=11 usable=11"}
+{"run": "digest", "t": 2665, "kind": "event", "stage": "feeds", "outlet": "DW World", "url": "https://rss.dw.com/rdf/rss-en-world", "http": 200, "elapsed_ms": 217, "bytes": 10796, "raw_items": 11, "usable": 11, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 2793, "kind": "dbg", "msg": "feed 'France 24': http=200 raw_items=24 usable=24"}
+{"run": "digest", "t": 2793, "kind": "event", "stage": "feeds", "outlet": "France 24", "url": "https://www.france24.com/en/rss", "http": 200, "elapsed_ms": 115, "bytes": 28657, "raw_items": 24, "usable": 24, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 2875, "kind": "dbg", "msg": "feed 'Channel News Asia': http=200 raw_items=20 usable=20"}
+{"run": "digest", "t": 2875, "kind": "event", "stage": "feeds", "outlet": "Channel News Asia", "url": "https://www.channelnewsasia.com/api/v1/rss-outbound-feed?_format=xml", "http": 200, "elapsed_ms": 70, "bytes": 15953, "raw_items": 20, "usable": 20, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 2963, "kind": "dbg", "msg": "feed 'The Hindu': http=200 raw_items=60 usable=60"}
+{"run": "digest", "t": 2963, "kind": "event", "stage": "feeds", "outlet": "The Hindu", "url": "https://www.thehindu.com/news/national/feeder/default.rss", "http": 200, "elapsed_ms": 67, "bytes": 43187, "raw_items": 60, "usable": 60, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 3193, "kind": "dbg", "msg": "feed 'NDTV': http=200 raw_items=20 usable=20"}
+{"run": "digest", "t": 3193, "kind": "event", "stage": "feeds", "outlet": "NDTV", "url": "https://feeds.feedburner.com/ndtvnews-india-news", "http": 200, "elapsed_ms": 219, "bytes": 28322, "raw_items": 20, "usable": 20, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 3294, "kind": "dbg", "msg": "feed 'Hindustan Times': http=200 raw_items=100 usable=100"}
+{"run": "digest", "t": 3294, "kind": "event", "stage": "feeds", "outlet": "Hindustan Times", "url": "https://www.hindustantimes.com/feeds/rss/india-news/rssfeed.xml", "http": 200, "elapsed_ms": 67, "bytes": 97122, "raw_items": 100, "usable": 100, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 3376, "kind": "dbg", "msg": "feed 'Times of India': http=200 raw_items=47 usable=47"}
+{"run": "digest", "t": 3376, "kind": "event", "stage": "feeds", "outlet": "Times of India", "url": "https://timesofindia.indiatimes.com/rssfeedstopstories.cms", "http": 200, "elapsed_ms": 63, "bytes": 44278, "raw_items": 47, "usable": 47, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 3602, "kind": "dbg", "msg": "feed 'Livemint': http=200 raw_items=35 usable=35"}
+{"run": "digest", "t": 3602, "kind": "event", "stage": "feeds", "outlet": "Livemint", "url": "https://www.livemint.com/rss/news", "http": 200, "elapsed_ms": 212, "bytes": 37996, "raw_items": 35, "usable": 35, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 3960, "kind": "dbg", "msg": "feed 'Scroll.in': http=200 raw_items=100 usable=100"}
+{"run": "digest", "t": 3961, "kind": "event", "stage": "feeds", "outlet": "Scroll.in", "url": "https://feeds.feedburner.com/ScrollinArticles.rss", "http": 200, "elapsed_ms": 238, "bytes": 296691, "raw_items": 100, "usable": 100, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 3967, "kind": "dbg", "msg": "gather: 360 article(s) after window+dedupe; by outlet: {'Guardian World': 25, 'Times of India': 44, 'Al Jazeera': 25, 'Channel News Asia': 20, 'France 24': 24, 'NPR World': 6, 'Livemint': 33, 'BBC World': 8, 'The Hindu': 60, 'Hindustan Times': 71, 'NDTV': 20, 'Scroll.in': 22, 'DW World': 2}"}
+{"run": "digest", "t": 3967, "kind": "dbg", "msg": "gather: 13/13 feed(s) live, 360 article(s)"}
+{"run": "digest", "t": 3969, "kind": "event", "stage": "stage", "name": "gather", "ms": 1989, "ok": true, "error": ""}
+{"run": "digest", "t": 3969, "kind": "dbg", "msg": "gather: QUORUM OK — live=13/3 min, articles=360/20 min"}
+{"run": "digest", "t": 3970, "kind": "dbg", "msg": "rank: select pool 360 -> 305; capped outlets: {'The Hindu': 20, 'Times of India': 4, 'Hindustan Times': 31}"}
+{"run": "digest", "t": 3973, "kind": "event", "stage": "stage", "name": "pool", "ms": 3, "ok": true, "error": ""}
+{"run": "digest", "t": 4089, "kind": "dbg", "msg": "wiki: 2026_September_21 http=200 events=0"}
+{"run": "digest", "t": 4089, "kind": "event", "stage": "wikipedia", "page": "2026_September_21", "http": 200, "bytes": 192, "events": 0, "verdict": "ok"}
+{"run": "digest", "t": 4200, "kind": "dbg", "msg": "wiki: 2026_September_20 http=200 events=11"}
+{"run": "digest", "t": 4201, "kind": "event", "stage": "wikipedia", "page": "2026_September_20", "http": 200, "bytes": 5561, "events": 11, "verdict": "ok"}
+{"run": "digest", "t": 4202, "kind": "event", "stage": "stage", "name": "wikipedia", "ms": 228, "ok": true, "error": ""}
+{"run": "digest", "t": 4307, "kind": "dbg", "msg": "llm: call #1 model=gemini-3.6-flash label=select prompt=75342ch"}
+{"run": "digest", "t": 25896, "kind": "dbg", "msg": "llm: select finish_reason=FinishReason.STOP"}
+{"run": "digest", "t": 25897, "kind": "event", "stage": "llm", "call": 1, "label": "select", "model": "gemini-3.6-flash", "latency_ms": 21588, "prompt_chars": 75342, "system_chars": 2517, "response_chars": 2896, "finish_reason": "FinishReason.STOP", "malformed_json": false, "json_retries": 0, "max_output_tokens": 32768, "usage": {"prompt_token_count": 18274, "candidates_token_count": 1046, "total_token_count": 22130, "thoughts_token_count": 2810}}
+{"run": "digest", "t": 25898, "kind": "dbg", "msg": "llm: select_stories -> 12 raw cluster(s)"}
+{"run": "digest", "t": 25898, "kind": "event", "stage": "stage", "name": "select", "ms": 21695, "ok": true, "error": ""}
+{"run": "digest", "t": 25898, "kind": "dbg", "msg": "rank: [world] outlets=5 tier=lead wiki=yes weight=11 'Ukraine launches massive drone attack on Moscow during Russian elections'"}
+{"run": "digest", "t": 25899, "kind": "dbg", "msg": "rank: [world] outlets=6 tier=major wiki=yes weight=10 'Tensions surge as Houthis target Riyadh and US-Iran war escalates'"}
+{"run": "digest", "t": 25899, "kind": "dbg", "msg": "rank: [world] outlets=4 tier=major wiki=yes weight=8 \"Friedrich Merz's CDU party suffers heavy losses in German state elections\""}
+{"run": "digest", "t": 25899, "kind": "dbg", "msg": "rank: [world] outlets=2 tier=notable wiki=yes weight=4 'Haiti extradites 18 suspects in 2021 assassination of President Moïse to US'"}
+{"run": "digest", "t": 25899, "kind": "dbg", "msg": "rank: [world] outlets=3 tier=notable wiki=no weight=3 'US and Chinese economic officials hold talks ahead of Trump-Xi summit'"}
+{"run": "digest", "t": 25900, "kind": "dbg", "msg": "rank: [world] outlets=4 tier=notable wiki=no weight=4 'Italian PM Giorgia Meloni announces plans to ban burqas in schools'"}
+{"run": "digest", "t": 25900, "kind": "dbg", "msg": "rank: [world] outlets=2 tier=notable wiki=yes weight=4 'Iran closes French language centre in Tehran citing diplomatic violations'"}
+{"run": "digest", "t": 25900, "kind": "dbg", "msg": "rank: [india] outlets=5 tier=lead wiki=no weight=9 'Controversy erupts over voter list revision notices in Delhi Special Intensive Revision'"}
+{"run": "digest", "t": 25900, "kind": "dbg", "msg": "rank: [india] outlets=3 tier=major wiki=no weight=5 \"Assam CM lays foundation stone for Adani's mega power project\""}
+{"run": "digest", "t": 25901, "kind": "dbg", "msg": "rank: [india] outlets=4 tier=major wiki=no weight=6 'Heavy monsoon rains cause deadly landslides and flash floods in Kerala'"}
+{"run": "digest", "t": 25901, "kind": "dbg", "msg": "rank: [india] outlets=2 tier=notable wiki=no weight=2 'Dispute deepens between Tata Trusts and Tata Sons board over listing and control'"}
+{"run": "digest", "t": 25901, "kind": "dbg", "msg": "rank: [india] outlets=3 tier=notable wiki=no weight=3 \"BJP and opposition spar over comedian mimicking PM Modi at Rahul Gandhi's event\""}
+{"run": "digest", "t": 25901, "kind": "dbg", "msg": "rank: 12 scored, 0 id(s) rejected, 6 kept {'world': 3, 'india': 3}; weights=[11, 10, 8, 9, 6, 5]"}
+{"run": "digest", "t": 25902, "kind": "event", "stage": "stage", "name": "rank", "ms": 4, "ok": true, "error": ""}
+{"run": "digest", "t": 25903, "kind": "dbg", "msg": "wiki: 11 curated event(s); 4 matched a selected story, 7 not covered"}
+{"run": "digest", "t": 25903, "kind": "dbg", "msg": "wiki: NOT COVERED [Disasters and accidents] 2026 Atlantic hurricane season — The National Hurricane Center reports that Tropical Depression Six strengthened into Tropical Storm Fay amidst an unusually quiet Atlantic hurricane season caused by El Niño, becoming the sixth named storm of the season."}
+{"run": "digest", "t": 25904, "kind": "dbg", "msg": "wiki: NOT COVERED [Health and environment] 2026 Ebola epidemic — The Democratic Republic of the Congo launches vaccinations for frontline workers amdist the Ebola outbreak in the country."}
+{"run": "digest", "t": 25904, "kind": "dbg", "msg": "wiki: NOT COVERED [Law and crime] Assassination of Jovenel Moïse — Haiti sends 18 suspects in the July 2021 assassination of President Jovenel Moïse to the United States to face federal charges related to the killing."}
+{"run": "digest", "t": 25904, "kind": "dbg", "msg": "wiki: NOT COVERED [Law and crime] Pakistani police arrest businesswoman Aleema Khan, sister of jailed former prime minister Imran Khan, at her home in Lahore, Punjab, one week before his Pakistan Tehreek-e-Insaf party's planned protest march. Police and the government do no"}
+{"run": "digest", "t": 25904, "kind": "dbg", "msg": "wiki: NOT COVERED [Law and crime] Four unauthorized miners are killed in a shooting targeting a vehicle by unidentified gunmen in Barkin Ladi, Plateau State, Nigeria."}
+{"run": "digest", "t": 25904, "kind": "dbg", "msg": "wiki: NOT COVERED [Sports] 2026 Asian Games — Japanese triathlete {{ill|Takumi Hojo|ja|北條巧}} wins the first gold medal of the 2026 Asian Games."}
+{"run": "digest", "t": 25904, "kind": "dbg", "msg": "wiki: NOT COVERED [Sports] 2026 NFL season — In American football, the matchup between the Tampa Bay Buccaneers and Cleveland Browns at Raymond James Stadium in Tampa, Florida, U.S., is delayed due to lightning."}
+{"run": "digest", "t": 26093, "kind": "dbg", "msg": "extract: fetch_html https://www.france24.com/en/europe/20260920-russia-s-ruling-party-on-track-to-win-election-after-ukraine-s-drone-attacks-on-moscow: http=403"}
+{"run": "digest", "t": 29365, "kind": "dbg", "msg": "extract: 6629ch https://www.france24.com/en/europe/20260920-russia-s-ruling-party-on-track-to-win-election-after-ukraine-s-drone-attacks-on-moscow"}
+{"run": "digest", "t": 29510, "kind": "dbg", "msg": "extract: 2468ch https://timesofindia.indiatimes.com/world/europe/russia-wraps-up-first-wartime-parliamentary-election-kremlin-set-to-retain-control/articleshow/134374935.cms"}
+{"run": "digest", "t": 29597, "kind": "dbg", "msg": "extract: 4002ch https://www.theguardian.com/world/2026/sep/20/hundreds-of-drones-target-moscow-on-last-day-of-voting-in-russias-parliamentary-election"}
+{"run": "digest", "t": 29732, "kind": "dbg", "msg": "extract: 3979ch https://www.bbc.co.uk/news/articles/c34gdjk1ne8yo?at_medium=RSS&at_campaign=rss"}
+{"run": "digest", "t": 30017, "kind": "dbg", "msg": "extract: 3268ch https://www.npr.org/2026/09/20/nx-s1-5975372/ukraine-fires-drones-at-russia-moscow"}
+{"run": "digest", "t": 30288, "kind": "dbg", "msg": "extract: via_jina https://www.aljazeera.com/video/newsfeed/2026/9/20/qatar-pm-urges-gulf-security-framework-with-iran?traffic_source=rss: http=403"}
+{"run": "digest", "t": 33290, "kind": "dbg", "msg": "extract: 301ch https://www.aljazeera.com/video/newsfeed/2026/9/20/qatar-pm-urges-gulf-security-framework-with-iran?traffic_source=rss"}
+{"run": "digest", "t": 33417, "kind": "dbg", "msg": "extract: 3788ch https://www.theguardian.com/politics/2026/sep/20/uk-budget-made-harder-donald-trump-war-iran-bridget-phillipson-andy-burnham"}
+{"run": "digest", "t": 33507, "kind": "dbg", "msg": "extract: 2181ch https://timesofindia.indiatimes.com/world/us/when-do-i-blow-entire-nation-up-trumps-ultimatum-after-iran-warns-of-decisive-war/articleshow/134372224.cms"}
+{"run": "digest", "t": 33550, "kind": "dbg", "msg": "extract: fetch_html https://www.france24.com/en/houthi-attacks-and-no-western-support-what-are-saudi-arabia-s-options: http=403"}
+{"run": "digest", "t": 37619, "kind": "dbg", "msg": "extract: 13683ch https://www.france24.com/en/houthi-attacks-and-no-western-support-what-are-saudi-arabia-s-options"}
+{"run": "digest", "t": 37729, "kind": "dbg", "msg": "extract: 6606ch https://www.livemint.com/news/world/iran-war-tehran-sets-7-terms-to-renew-us-talks-what-are-the-demands-will-us-strike-against-houthis-what-we-know-11789880465957.html"}
+{"run": "digest", "t": 37787, "kind": "dbg", "msg": "extract: 3948ch https://www.bbc.co.uk/news/articles/cvwyz29n0nn2o?at_medium=RSS&at_campaign=rss"}
+{"run": "digest", "t": 37884, "kind": "dbg", "msg": "extract: 5440ch https://www.theguardian.com/world/2026/sep/20/friedrich-merz-chancellor-germany-state-elections-cdu-afd-linke-berlin"}
+{"run": "digest", "t": 38034, "kind": "dbg", "msg": "extract: 2701ch https://www.npr.org/2026/09/20/g-s1-144211/germanys-merz-vows-to-press-ahead-with-reforms-after-historic-state-election-defeat"}
+{"run": "digest", "t": 38075, "kind": "dbg", "msg": "extract: fetch_html https://www.france24.com/en/tv-shows/spotlight/20260920-germany-merz-vows-to-push-on-despite-setbacks: http=403"}
+{"run": "digest", "t": 44136, "kind": "dbg", "msg": "extract: 19259ch https://www.france24.com/en/tv-shows/spotlight/20260920-germany-merz-vows-to-push-on-despite-setbacks"}
+{"run": "digest", "t": 44176, "kind": "dbg", "msg": "extract: fetch_html https://www.france24.com/en/exit-polls-show-disaster-for-merz-cdu-party-in-two-state-elections: http=403"}
+{"run": "digest", "t": 48552, "kind": "dbg", "msg": "extract: 13014ch https://www.france24.com/en/exit-polls-show-disaster-for-merz-cdu-party-in-two-state-elections"}
+{"run": "digest", "t": 48685, "kind": "dbg", "msg": "extract: 5231ch https://www.hindustantimes.com/india-news/notices-do-not-mean-deletion-election-commission-ec-clarifies-after-kejriwal-jaishankar-advani-get-sir-letters-101789919166051.html"}
+{"run": "digest", "t": 48846, "kind": "dbg", "msg": "extract: 6723ch https://www.livemint.com/news/india/delhi-sir-got-an-ec-notice-ceo-says-names-won-t-be-automatically-deleted-after-advani-jaishankar-among-those-flagged-11789913825204.html"}
+{"run": "digest", "t": 49258, "kind": "dbg", "msg": "extract: 4411ch https://scroll.in/latest/1095866/delhi-sir-rekha-gupta-arvind-kejriwal-among-33-lakh-voters-issued-notices-to-validate-details?utm_source=rss&utm_medium=public"}
+{"run": "digest", "t": 49321, "kind": "dbg", "msg": "extract: fetch_html https://www.ndtv.com/india-news/notice-doesnt-mean-exclusion-poll-body-after-row-over-delhi-voter-list-12072887#publisher=newsstand: http=403"}
+{"run": "digest", "t": 54373, "kind": "dbg", "msg": "extract: 5554ch https://www.ndtv.com/india-news/notice-doesnt-mean-exclusion-poll-body-after-row-over-delhi-voter-list-12072887#publisher=newsstand"}
+{"run": "digest", "t": 54506, "kind": "dbg", "msg": "extract: 3116ch https://timesofindia.indiatimes.com/india/not-just-rekha-gupta-and-arvind-kejriwal-lk-advani-manish-sisodia-issued-notices-in-delhi-sir/articleshow/134368051.cms"}
+{"run": "digest", "t": 54620, "kind": "dbg", "msg": "extract: 3072ch https://www.hindustantimes.com/india-news/as-rains-intensify-in-keralam-cm-orders-hourly-assessment-of-situation-101789938159367.html"}
+{"run": "digest", "t": 54767, "kind": "dbg", "msg": "extract: 1613ch https://www.thehindu.com/news/national/kerala/one-dead-four-missing-in-nilambur-flash-floods/article71488413.ece"}
+{"run": "digest", "t": 54807, "kind": "dbg", "msg": "extract: fetch_html https://www.ndtv.com/india-news/chennai-tourist-dies-in-kerala-landslide-friend-injured-12073431#publisher=newsstand: http=403"}
+{"run": "digest", "t": 59604, "kind": "dbg", "msg": "extract: 30767ch https://www.ndtv.com/india-news/chennai-tourist-dies-in-kerala-landslide-friend-injured-12073431#publisher=newsstand"}
+{"run": "digest", "t": 59671, "kind": "dbg", "msg": "extract: 2536ch https://timesofindia.indiatimes.com/city/kochi/3-dead-after-landslide-hits-keralas-idukki/articleshow/134371135.cms"}
+{"run": "digest", "t": 59709, "kind": "dbg", "msg": "extract: fetch_html https://www.ndtv.com/india-news/our-average-cost-will-come-down-himanta-sarma-on-adani-power-project-12073242#publisher=newsstand: http=403"}
+{"run": "digest", "t": 64295, "kind": "dbg", "msg": "extract: 31309ch https://www.ndtv.com/india-news/our-average-cost-will-come-down-himanta-sarma-on-adani-power-project-12073242#publisher=newsstand"}
+{"run": "digest", "t": 64612, "kind": "dbg", "msg": "extract: 4669ch https://scroll.in/latest/1095874/assam-cm-lays-foundation-for-adani-power-project-on-land-cleared-by-evicting-1400-muslim-families?utm_source=rss&utm_medium=public"}
+{"run": "digest", "t": 64732, "kind": "dbg", "msg": "extract: 4144ch https://www.hindustantimes.com/india-news/assam-cm-lays-foundation-stone-for-48-000-crore-adani-power-project-101789910066323.html"}
+{"run": "digest", "t": 64776, "kind": "dbg", "msg": "extract: fetch_html https://www.ndtv.com/india-news/gen-z-speed-jeet-adani-praises-himanta-sarmas-energy-calls-assam-home-12073222#publisher=newsstand: http=403"}
+{"run": "digest", "t": 70305, "kind": "dbg", "msg": "extract: 33436ch https://www.ndtv.com/india-news/gen-z-speed-jeet-adani-praises-himanta-sarmas-energy-calls-assam-home-12073222#publisher=newsstand"}
+{"run": "digest", "t": 70412, "kind": "dbg", "msg": "extract: fetch_html https://www.ndtv.com/india-news/himanta-sarma-lays-foundation-stone-for-adani-powers-3-200-mw-assam-project-12072008#publisher=newsstand: http=403"}
+{"run": "digest", "t": 75007, "kind": "dbg", "msg": "extract: 32949ch https://www.ndtv.com/india-news/himanta-sarma-lays-foundation-stone-for-adani-powers-3-200-mw-assam-project-12072008#publisher=newsstand"}
+{"run": "digest", "t": 75009, "kind": "event", "stage": "stage", "name": "extract", "ms": 49104, "ok": true, "error": ""}
+{"run": "digest", "t": 75044, "kind": "dbg", "msg": "llm: call #2 model=gemini-3.6-flash label=claims-world prompt=59014ch"}
+{"run": "digest", "t": 80030, "kind": "dbg", "msg": "ratelimit: claims-world transient failure (1/3), retrying in 5s: ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"}
+{"run": "digest", "t": 80030, "kind": "event", "stage": "ratelimit", "label": "claims-world", "verdict": "transient_retry", "attempt": 1, "attempts_allowed": 3, "wait_s": 5.2, "error": "ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"}
+{"run": "digest", "t": 96347, "kind": "dbg", "msg": "ratelimit: claims-world transient failure (2/3), retrying in 13s: ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"}
+{"run": "digest", "t": 96347, "kind": "event", "stage": "ratelimit", "label": "claims-world", "verdict": "transient_retry", "attempt": 2, "attempts_allowed": 3, "wait_s": 12.7, "error": "ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"}
+{"run": "digest", "t": 112629, "kind": "dbg", "msg": "ratelimit: claims-world TRANSIENT FAILURE after 3 attempt(s), giving up: ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"}
+{"run": "digest", "t": 112629, "kind": "event", "stage": "ratelimit", "label": "claims-world", "verdict": "transient_exhausted", "attempt": 3, "attempts_allowed": 3, "error": "ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"}
+{"run": "digest", "t": 112629, "kind": "event", "stage": "stage", "name": "claims", "ms": 37620, "ok": false, "error": "ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"}
+{"run": "digest", "t": 112629, "kind": "event", "stage": "tracer", "msg": "capture finished", "ok": false, "ms": 112629, "bytes": 7761034}
