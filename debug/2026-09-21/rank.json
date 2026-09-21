@@ -13,140 +13,65 @@
   },
   "floor_relaxed": false,
   "kept_weights": [
-    11,
+    12,
     10,
-    8,
+    10,
     5,
     9,
-    6,
-    5
+    6
   ],
   "per_section": {
     "world": 4,
-    "india": 3
+    "india": 2
   },
   "clusters": [
     {
-      "headline_hint": "US and Iran exchange warnings as Houthis strike Riyadh and war costs rise",
+      "headline_hint": "Ukraine launches massive drone attack on Moscow as Russian parliamentary elections wrap up",
       "section": "world",
       "category": "conflict",
       "tier_requested": "lead",
       "article_ids": [
-        52,
-        62,
-        76,
-        138,
-        212,
-        226,
-        229,
-        289,
-        295,
-        297,
-        304,
-        306
+        75,
+        134,
+        159,
+        163,
+        261,
+        262,
+        285,
+        290
       ],
       "verdict": "kept",
       "valid_ids": [
-        52,
-        62,
-        76,
-        138,
-        212,
-        226,
-        229,
-        289,
-        295,
-        297,
-        304,
-        306
+        75,
+        134,
+        159,
+        163,
+        261,
+        262,
+        285,
+        290
       ],
       "tier_final": "lead",
-      "distinct_outlets": 5,
+      "distinct_outlets": 6,
       "wiki_backed": true,
-      "wiki_event": "Iranian authorities seal a French language centre affiliated with the French embassy in Tehran under a judicial order. Prosecutors say it operated without a licence and conducted activities against Iranian culture and national security.",
-      "weight": 11,
+      "wiki_event": "Ukrainian forces launch a massive drone attack on Moscow Oblast, Russia, with more than 1,600 long-range drones launched from Ukraine. At least two people are killed with hundreds more evacuated while Moscow Refinery is on fire following se",
+      "weight": 12,
       "weight_terms": {
-        "distinct_outlets": 5,
+        "distinct_outlets": 6,
         "tier_weight": 4,
         "wiki_bonus": 2
       },
       "weight_floor": 5,
       "articles": [
         {
-          "outlet": "Times of India",
-          "title": "Iran threatens 'painful retaliation' if US strikes as Trump warns of 'big things'",
-          "url": "https://timesofindia.indiatimes.com/world/middle-east/iran-warns-us-allies-against-new-attack-threatens-retaliation/articleshow/134374995.cms"
-        },
-        {
-          "outlet": "Guardian World",
-          "title": "UK minister warns of impact of Trump’s Iran war on next month’s budget",
-          "url": "https://www.theguardian.com/politics/2026/sep/20/uk-budget-made-harder-donald-trump-war-iran-bridget-phillipson-andy-burnham"
-        },
-        {
           "outlet": "France 24",
-          "title": "Houthi attacks and no Western support: What are Saudi Arabia's options ?",
-          "url": "https://www.france24.com/en/houthi-attacks-and-no-western-support-what-are-saudi-arabia-s-options"
+          "title": "Live: Putin's party dominates in elections, Moscow vows revenge after massive drone attack",
+          "url": "https://www.france24.com/en/europe/20260921-live-united-russia-dominates-in-elections-moscow-vows-revenge-after-massive-drone-attack"
         },
-        {
-          "outlet": "Livemint",
-          "title": "Iran war: Tehran sets 7 terms to renew US talks — what are the demands? Will US strike against Houthis? What we know",
-          "url": "https://www.livemint.com/news/world/iran-war-tehran-sets-7-terms-to-renew-us-talks-what-are-the-demands-will-us-strike-against-houthis-what-we-know-11789880465957.html"
-        },
-        {
-          "outlet": "NPR World",
-          "title": "Saudi Arabia says Houthis tried to attack its capital",
-          "url": "https://www.npr.org/2026/09/19/nx-s1-5974980/saudi-arabia-houthis-attempted-attack-capital"
-        }
-      ],
-      "articles_dropped_by_diversity_cap": 7
-    },
-    {
-      "headline_hint": "Ukraine launches massive drone barrage at Moscow as Russian elections conclude",
-      "section": "world",
-      "category": "conflict",
-      "tier_requested": "major",
-      "article_ids": [
-        11,
-        49,
-        54,
-        193,
-        194,
-        245,
-        251,
-        263
-      ],
-      "verdict": "kept",
-      "valid_ids": [
-        11,
-        49,
-        54,
-        193,
-        194,
-        245,
-        251,
-        263
-      ],
-      "tier_final": "major",
-      "distinct_outlets": 6,
-      "wiki_backed": true,
-      "wiki_event": "Ukrainian forces launch a massive drone attack on Moscow Oblast, Russia, with more than 1,600 long-range drones launched from Ukraine. At least two people are killed with hundreds more evacuated while Moscow Refinery is on fire following se",
-      "weight": 10,
-      "weight_terms": {
-        "distinct_outlets": 6,
-        "tier_weight": 2,
-        "wiki_bonus": 2
-      },
-      "weight_floor": 5,
-      "articles": [
         {
           "outlet": "Al Jazeera",
-          "title": "Polls close in Russian wartime election with ruling party set to dominate",
+          "title": "Ruling party dominates early results in Russia’s wartime parliamentary vote",
           "url": "https://www.aljazeera.com/news/2026/9/20/polls-close-in-russian-wartime-election-with-ruling-party-set-to-dominate?traffic_source=rss"
-        },
-        {
-          "outlet": "France 24",
-          "title": "Russia's ruling party on track to win election after Ukraine's drone attacks on Moscow",
-          "url": "https://www.france24.com/en/europe/20260920-russia-s-ruling-party-on-track-to-win-election-after-ukraine-s-drone-attacks-on-moscow"
         },
         {
           "outlet": "Times of India",
@@ -167,38 +92,118 @@
       "articles_dropped_by_diversity_cap": 3
     },
     {
-      "headline_hint": "German Chancellor Merz admits election disaster after CDU loses two state polls",
+      "headline_hint": "US-Iran tensions escalate as Tehran warns of retaliation and Houthis target Riyadh",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "major",
+      "article_ids": [
+        73,
+        110,
+        113,
+        128,
+        152,
+        160,
+        161,
+        168,
+        169,
+        183,
+        196,
+        277,
+        306,
+        313
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        73,
+        110,
+        113,
+        128,
+        152,
+        160,
+        161,
+        168,
+        169,
+        183,
+        196,
+        277,
+        306,
+        313
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 6,
+      "wiki_backed": true,
+      "wiki_event": "Iranian authorities seal a French language centre affiliated with the French embassy in Tehran under a judicial order. Prosecutors say it operated without a licence and conducted activities against Iranian culture and national security.",
+      "weight": 10,
+      "weight_terms": {
+        "distinct_outlets": 6,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "US tells citizens to leave Iran immediately, warns of travel disruptions",
+          "url": "https://timesofindia.indiatimes.com/world/middle-east/us-tells-citizens-to-leave-iran-immediately-warns-of-travel-disruptions/articleshow/134378207.cms"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "US-Iran war LIVE Updates: IRGC says it shot down US MQ-1 drone over Strait of Hormuz",
+          "url": "https://www.livemint.com/news/us-news/usiran-war-live-update-donald-trump-strait-of-hormuz-tehran-travel-warning-painful-attacks-us-bases-saudi-yemen-houthis-11789953418288.html"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Iran war live: Tehran warns US against new strikes; fighting rages in Yemen",
+          "url": "https://www.aljazeera.com/news/liveblog/2026/9/21/iran-war-live-tehran-warns-us-against-new-strikes-fighting-rages-in-yemen?traffic_source=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "UK minister warns of impact of Trump’s Iran war on next month’s budget",
+          "url": "https://www.theguardian.com/politics/2026/sep/20/uk-budget-made-harder-donald-trump-war-iran-bridget-phillipson-andy-burnham"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Houthi attacks and no Western support: What are Saudi Arabia's options ?",
+          "url": "https://www.france24.com/en/houthi-attacks-and-no-western-support-what-are-saudi-arabia-s-options"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 9
+    },
+    {
+      "headline_hint": "German Chancellor Merz faces pressure after severe state election losses to AfD and Left",
       "section": "world",
       "category": "politics",
       "tier_requested": "major",
       "article_ids": [
-        46,
-        90,
-        126,
-        130,
-        144,
-        160,
-        188,
-        250
+        53,
+        64,
+        89,
+        198,
+        221,
+        223,
+        232,
+        241,
+        256
       ],
       "verdict": "kept",
       "valid_ids": [
-        46,
-        90,
-        126,
-        130,
-        144,
-        160,
-        188,
-        250
+        53,
+        64,
+        89,
+        198,
+        221,
+        223,
+        232,
+        241,
+        256
       ],
       "tier_final": "major",
-      "distinct_outlets": 4,
+      "distinct_outlets": 6,
       "wiki_backed": true,
       "wiki_event": "State elections are held in Germany for the Landtag of Mecklenburg-Vorpommern and the Berlin House of Representatives, with an expected decline for the Chancellor Friedrich Merz's party, the CDU.",
-      "weight": 8,
+      "weight": 10,
       "weight_terms": {
-        "distinct_outlets": 4,
+        "distinct_outlets": 6,
         "tier_weight": 2,
         "wiki_bonus": 2
       },
@@ -210,6 +215,16 @@
           "url": "https://www.bbc.co.uk/news/articles/cvwyz29n0nn2o?at_medium=RSS&at_campaign=rss"
         },
         {
+          "outlet": "Channel News Asia",
+          "title": "German Chancellor Merz under pressure after bruising state election losses",
+          "url": "https://www.channelnewsasia.com/world/german-chancellor-friedrich-merz-state-election-losses-6398601"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "AfD tops another German state poll, Merz’s CDU crashes to historic low",
+          "url": "https://timesofindia.indiatimes.com/world/rest-of-world/afd-tops-another-german-state-poll-merzs-cdu-crashes-to-historic-low/articleshow/134378082.cms"
+        },
+        {
           "outlet": "Guardian World",
           "title": "Friedrich Merz vows to stay in office after CDU ‘disaster’ in German state elections",
           "url": "https://www.theguardian.com/world/2026/sep/20/friedrich-merz-chancellor-germany-state-elections-cdu-afd-linke-berlin"
@@ -218,309 +233,153 @@
           "outlet": "NPR World",
           "title": "Germany's Merz vows to press ahead with reforms after historic state election defeat",
           "url": "https://www.npr.org/2026/09/20/g-s1-144211/germanys-merz-vows-to-press-ahead-with-reforms-after-historic-state-election-defeat"
-        },
-        {
-          "outlet": "France 24",
-          "title": "Germany: Merz vows to \"push on despite setbacks\"",
-          "url": "https://www.france24.com/en/tv-shows/spotlight/20260920-germany-merz-vows-to-push-on-despite-setbacks"
-        },
-        {
-          "outlet": "France 24",
-          "title": "Exit polls show 'disaster' for Merz' CDU party in two state elections",
-          "url": "https://www.france24.com/en/exit-polls-show-disaster-for-merz-cdu-party-in-two-state-elections"
         }
       ],
-      "articles_dropped_by_diversity_cap": 3
+      "articles_dropped_by_diversity_cap": 4
     },
     {
-      "headline_hint": "US and Chinese economic officials hold high-level talks ahead of Trump-Xi summit",
+      "headline_hint": "Media investigation uncovers US third-country deportation agreements in Africa",
       "section": "world",
       "category": "politics",
       "tier_requested": "major",
       "article_ids": [
-        31,
-        41,
-        58
+        1,
+        3,
+        4,
+        5,
+        226
       ],
-      "verdict": "kept",
+      "verdict": "cut:below_floor(3<5)",
       "valid_ids": [
-        31,
-        41,
-        58
+        1,
+        3,
+        4,
+        5,
+        226
       ],
       "tier_final": "major",
-      "distinct_outlets": 3,
+      "distinct_outlets": 1,
       "wiki_backed": false,
       "wiki_event": "",
-      "weight": 5,
+      "weight": 3,
       "weight_terms": {
-        "distinct_outlets": 3,
+        "distinct_outlets": 1,
         "tier_weight": 2,
         "wiki_bonus": 0
       },
       "weight_floor": 5,
       "articles": [
         {
+          "outlet": "France 24",
+          "title": "Third-country removals: Trump’s deportation policy by the numbers",
+          "url": "https://www.france24.com/en/americas/20260921-third-country-removals-trump-deportation-policy-numbers"
+        },
+        {
+          "outlet": "France 24",
+          "title": "ICE, Trump and Africa: Secret deals, broken lives",
+          "url": "https://www.france24.com/en/tv-shows/reporters/20260921-ice-trump-and-africa-secret-deals-broken-lives"
+        },
+        {
+          "outlet": "France 24",
+          "title": "‘Waiting for us to crack’: In Cameroon, the victims of Trump’s deportations face uncertain fates",
+          "url": "https://www.france24.com/en/africa/20260921-waiting-for-us-to-crack-victims-of-trump-deportations-face-uncertain-fates-in-cameroon"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Deported to Africa: An international investigation into Trump’s migrant policy",
+          "url": "https://www.france24.com/en/africa/20260921-deported-to-africa-an-international-investigation-into-trump-s-migrant-policy"
+        },
+        {
+          "outlet": "France 24",
+          "title": "The Deportation Project: Inside the Trump administration's secret deals to expel people worldwide",
+          "url": "https://www.france24.com/en/video/20260920-the-deportation-project-inside-the-trump-administration-s-secret-deals-to-expel-people-worldwide"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "US and China hold AI safety discussions ahead of upcoming Trump-Xi summit",
+      "section": "world",
+      "category": "technology",
+      "tier_requested": "notable",
+      "article_ids": [
+        84,
+        120,
+        148,
+        165,
+        300
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        84,
+        120,
+        148,
+        165,
+        300
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 5,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 5,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "France 24",
+          "title": "US, China discuss AI safety ahead of Trump-Xi summit",
+          "url": "https://www.france24.com/en/americas/20260921-us-china-discuss-ai-safety-ahead-of-trump-xi-summit"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "US seeks 'AI dialogue' with China as officials set stage for Trump-Xi summit",
+          "url": "https://www.channelnewsasia.com/world/us-china-meeting-trade-ai-successful-bessent-he-lifeng-6398376"
+        },
+        {
           "outlet": "NPR World",
           "title": "Defining global leadership in AI at Trump-Xi summit",
           "url": "https://www.npr.org/2026/09/20/nx-s1-5973116/defining-global-leadership-in-ai-at-trump-xi-summit"
         },
         {
-          "outlet": "Channel News Asia",
-          "title": "Top US, Chinese economic officials meet ahead of Trump-Xi summit",
-          "url": "https://www.channelnewsasia.com/world/us-china-officials-meet-trump-xi-summit-6398086"
-        },
-        {
           "outlet": "Al Jazeera",
-          "title": "US, China open high-level talks ahead of Trump-Xi summit",
+          "title": "US proposes AI safety notification mechanism in talks with China",
           "url": "https://www.aljazeera.com/economy/2026/9/20/us-china-open-high-level-talks-ahead-of-trump-xi-summit?traffic_source=rss"
-        }
-      ],
-      "articles_dropped_by_diversity_cap": 0
-    },
-    {
-      "headline_hint": "Haiti extradites 18 suspects in Jovenel Moise assassination to United States",
-      "section": "world",
-      "category": "politics",
-      "tier_requested": "notable",
-      "article_ids": [
-        43,
-        48
-      ],
-      "verdict": "cut:below_floor(4<5)",
-      "valid_ids": [
-        43,
-        48
-      ],
-      "tier_final": "notable",
-      "distinct_outlets": 2,
-      "wiki_backed": true,
-      "wiki_event": "Haiti sends 18 suspects in the July 2021 assassination of President Jovenel Moïse to the United States to face federal charges related to the killing.",
-      "weight": 4,
-      "weight_terms": {
-        "distinct_outlets": 2,
-        "tier_weight": 0,
-        "wiki_bonus": 2
-      },
-      "weight_floor": 5,
-      "articles": [
-        {
-          "outlet": "Al Jazeera",
-          "title": "Eighteen suspects extradited to US over Haitian president’s 2021 killing",
-          "url": "https://www.aljazeera.com/news/2026/9/20/eighteen-suspects-extradited-to-us-over-haitian-presidents-2021-killing?traffic_source=rss"
         },
         {
           "outlet": "Guardian World",
-          "title": "More than a dozen arrested in connection with 2021 assassination of Haitian president",
-          "url": "https://www.theguardian.com/world/2026/sep/20/more-than-a-dozen-arrested-in-connection-with-assassination-of-haitian-president"
+          "title": "Why China is pushing back on US warnings over rapid AI development",
+          "url": "https://www.theguardian.com/world/2026/sep/20/why-china-is-pushing-back-on-us-warnings-over-rapid-ai-development"
         }
       ],
       "articles_dropped_by_diversity_cap": 0
     },
     {
-      "headline_hint": "Pakistan police arrest Imran Khan's sister Aleema Khan ahead of planned protests",
-      "section": "world",
-      "category": "politics",
-      "tier_requested": "notable",
-      "article_ids": [
-        72
-      ],
-      "verdict": "cut:below_floor(3<5)",
-      "valid_ids": [
-        72
-      ],
-      "tier_final": "notable",
-      "distinct_outlets": 1,
-      "wiki_backed": true,
-      "wiki_event": "Pakistani police arrest businesswoman Aleema Khan, sister of jailed former prime minister Imran Khan, at her home in Lahore, Punjab, one week before his Pakistan Tehreek-e-Insaf party's planned protest march. Police and the government do no",
-      "weight": 3,
-      "weight_terms": {
-        "distinct_outlets": 1,
-        "tier_weight": 0,
-        "wiki_bonus": 2
-      },
-      "weight_floor": 5,
-      "articles": [
-        {
-          "outlet": "BBC World",
-          "title": "Sister of Pakistan's ex-PM Imran Khan arrested",
-          "url": "https://www.bbc.co.uk/news/articles/cm36l2pye2kwo?at_medium=RSS&at_campaign=rss"
-        }
-      ],
-      "articles_dropped_by_diversity_cap": 0
-    },
-    {
-      "headline_hint": "Iran closes French language centre in Tehran, prompting diplomatic backlash",
-      "section": "world",
-      "category": "politics",
-      "tier_requested": "notable",
-      "article_ids": [
-        15,
-        210
-      ],
-      "verdict": "cut:below_floor(4<5)",
-      "valid_ids": [
-        15,
-        210
-      ],
-      "tier_final": "notable",
-      "distinct_outlets": 2,
-      "wiki_backed": true,
-      "wiki_event": "Iranian authorities seal a French language centre affiliated with the French embassy in Tehran under a judicial order. Prosecutors say it operated without a licence and conducted activities against Iranian culture and national security.",
-      "weight": 4,
-      "weight_terms": {
-        "distinct_outlets": 2,
-        "tier_weight": 0,
-        "wiki_bonus": 2
-      },
-      "weight_floor": 5,
-      "articles": [
-        {
-          "outlet": "Al Jazeera",
-          "title": "France to summon Iran envoy after language centre closure in Tehran",
-          "url": "https://www.aljazeera.com/news/2026/9/20/france-to-summon-iran-envoy-after-language-centre-closure-in-tehran?traffic_source=rss"
-        },
-        {
-          "outlet": "France 24",
-          "title": "Iran closes French language centre in Tehran for ‘illegal acts’",
-          "url": "https://www.france24.com/en/middle-east/20260920-iran-closes-french-language-centre-in-tehran-for-illegal-acts"
-        }
-      ],
-      "articles_dropped_by_diversity_cap": 0
-    },
-    {
-      "headline_hint": "Macron and Carney pledge closer France-Canada ties amid shifting global alliances",
-      "section": "world",
-      "category": "politics",
-      "tier_requested": "notable",
-      "article_ids": [
-        42,
-        65,
-        92,
-        95
-      ],
-      "verdict": "cut:below_floor(3<5)",
-      "valid_ids": [
-        42,
-        65,
-        92,
-        95
-      ],
-      "tier_final": "notable",
-      "distinct_outlets": 3,
-      "wiki_backed": false,
-      "wiki_event": "",
-      "weight": 3,
-      "weight_terms": {
-        "distinct_outlets": 3,
-        "tier_weight": 0,
-        "wiki_bonus": 0
-      },
-      "weight_floor": 5,
-      "articles": [
-        {
-          "outlet": "Channel News Asia",
-          "title": "France's Macron, Canada's Carney announce closer ties",
-          "url": "https://www.channelnewsasia.com/world/france-canada-macron-carney-closer-ties-6398076"
-        },
-        {
-          "outlet": "Al Jazeera",
-          "title": "France’s Macron and Canada’s Carney announce plans to build stronger ties",
-          "url": "https://www.aljazeera.com/news/2026/9/20/frances-macron-and-canadas-carney-announce-plans-to-build-stronger-ties?traffic_source=rss"
-        },
-        {
-          "outlet": "France 24",
-          "title": "Macron, Carney hail new chapter in France-Canada ties at symbolic archipelago meeting",
-          "url": "https://www.france24.com/en/france/20260920-macron-carney-hail-new-chapter-in-france-canada-ties-at-symbolic-archipelago-meeting"
-        },
-        {
-          "outlet": "France 24",
-          "title": "Replay: Macron, Carney hail new chapter on France-Canada ties at St. Pierre and Miquelon meeting",
-          "url": "https://www.france24.com/en/replay-macron-carney-hail-new-chapter-on-france-canada-ties-at-st-pierre-and-miquelon-meeting"
-        }
-      ],
-      "articles_dropped_by_diversity_cap": 0
-    },
-    {
-      "headline_hint": "Italian PM Meloni proposes ban on burqas and niqabs in schools",
-      "section": "world",
-      "category": "politics",
-      "tier_requested": "notable",
-      "article_ids": [
-        44,
-        99,
-        127,
-        196
-      ],
-      "verdict": "cut:below_floor(4<5)",
-      "valid_ids": [
-        44,
-        99,
-        127,
-        196
-      ],
-      "tier_final": "notable",
-      "distinct_outlets": 4,
-      "wiki_backed": false,
-      "wiki_event": "",
-      "weight": 4,
-      "weight_terms": {
-        "distinct_outlets": 4,
-        "tier_weight": 0,
-        "wiki_bonus": 0
-      },
-      "weight_floor": 5,
-      "articles": [
-        {
-          "outlet": "Channel News Asia",
-          "title": "Italy to ban burqas in schools, PM Meloni says",
-          "url": "https://www.channelnewsasia.com/world/italy-ban-burqas-in-schools-pm-meloni-says-6398061"
-        },
-        {
-          "outlet": "Livemint",
-          "title": "Giorgia Meloni plans burqa, niqab ban in Italian schools and cap on foreign students in classrooms",
-          "url": "https://www.livemint.com/news/world/giorgia-meloni-plans-burqa-niqab-ban-in-italian-schools-and-cap-on-foreign-students-in-classrooms-11789925960986.html"
-        },
-        {
-          "outlet": "Al Jazeera",
-          "title": "Meloni promises to ban burqas, niqabs in Italy’s schools",
-          "url": "https://www.aljazeera.com/news/2026/9/20/meloni-promises-to-ban-burqas-niqabs-in-italys-schools?traffic_source=rss"
-        },
-        {
-          "outlet": "Times of India",
-          "title": "Italy to limit foreign students, ban burqa and hijab in schools",
-          "url": "https://timesofindia.indiatimes.com/world/europe/italy-to-limit-foreign-students-ban-burqa-and-hijab-in-schools/articleshow/134370277.cms"
-        }
-      ],
-      "articles_dropped_by_diversity_cap": 0
-    },
-    {
-      "headline_hint": "Controversy erupts over Delhi voter list revision notices issued to prominent figures",
+      "headline_hint": "Election Commission issues SIR notices to millions of Delhi voters, prompting political reaction",
       "section": "india",
       "category": "politics",
       "tier_requested": "lead",
       "article_ids": [
-        132,
-        141,
-        162,
-        169,
-        175,
-        205,
-        235,
-        248,
-        283
+        107,
+        174,
+        225,
+        231,
+        243,
+        247,
+        267
       ],
       "verdict": "kept",
       "valid_ids": [
-        132,
-        141,
-        162,
-        169,
-        175,
-        205,
-        235,
-        248,
-        283
+        107,
+        174,
+        225,
+        231,
+        243,
+        247,
+        267
       ],
       "tier_final": "lead",
       "distinct_outlets": 5,
@@ -535,14 +394,19 @@
       "weight_floor": 5,
       "articles": [
         {
+          "outlet": "Hindustan Times",
+          "title": "Name mismatch, age difference and more: Why 3.3 million voters in Delhi received poll panel's SIR notice",
+          "url": "https://www.hindustantimes.com/india-news/name-mismatch-age-difference-and-more-why-3-3-million-voters-in-delhi-received-ec-notices-after-sir-bid-in-capital-101789954533654.html"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "SIR: As against 80.62 lakh shifted, absent names, only 6.66 lakh Form-6 applications",
+          "url": "https://www.thehindu.com/news/cities/bangalore/sir-against-8062-lakh-shifted-absent-names-only-666-lakh-form-6-applications/article71488325.ece"
+        },
+        {
           "outlet": "Times of India",
           "title": "Delhi SIRprises: Jaishankar, Dhankhar, Advani &amp; more issued notices for ‘discrepancies’",
           "url": "https://timesofindia.indiatimes.com/city/delhi/lk-advani-dhankar-sisodia-also-issued-sir-notices/articleshow/134372553.cms"
-        },
-        {
-          "outlet": "Hindustan Times",
-          "title": "'Notices do not mean name deletion': EC clarifies after Kejriwal, Jaishankar, Advani get SIR letters",
-          "url": "https://www.hindustantimes.com/india-news/notices-do-not-mean-deletion-election-commission-ec-clarifies-after-kejriwal-jaishankar-advani-get-sir-letters-101789919166051.html"
         },
         {
           "outlet": "Livemint",
@@ -553,43 +417,133 @@
           "outlet": "Scroll.in",
           "title": "Delhi SIR: Election Commissioner SS Sandhu, CM Rekha Gupta among 33 lakh issued notices",
           "url": "https://scroll.in/latest/1095866/delhi-sir-rekha-gupta-arvind-kejriwal-among-33-lakh-voters-issued-notices-to-validate-details?utm_source=rss&utm_medium=public"
-        },
-        {
-          "outlet": "NDTV",
-          "title": "Poll Body Chief, S Jaishankar Among Those Facing Notices Over Voter List",
-          "url": "https://www.ndtv.com/india-news/notice-doesnt-mean-exclusion-poll-body-after-row-over-delhi-voter-list-12072887#publisher=newsstand"
         }
       ],
-      "articles_dropped_by_diversity_cap": 4
+      "articles_dropped_by_diversity_cap": 2
     },
     {
-      "headline_hint": "Assam CM lays foundation for Rs 48,000 crore Adani power plant",
+      "headline_hint": "Protests and legal probe follow death by suicide of IIT Bombay student",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        68,
+        104,
+        172,
+        305
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        68,
+        104,
+        172,
+        305
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 6,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "NDTV",
+          "title": "\"You Are Not Carrying It Alone\": IIT Kharagpur Director's Message For Students Amid IIT Bombay Case",
+          "url": "https://www.ndtv.com/education/you-are-not-carrying-it-alone-iit-kharagpur-directors-message-for-students-amid-iit-bombay-case-12074202#publisher=newsstand"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "Crime branch to probe IIT-Bombay student death case; faculty forum backs professor named in FIR",
+          "url": "https://www.thehindu.com/news/national/maharashtra/crime-branch-to-probe-iit-bombay-student-death-case-faculty-forum-backs-professor-named-in-fir/article71488479.ece"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "IIT-Bombay suicide case: Director meets students demanding professor's suspension",
+          "url": "https://timesofindia.indiatimes.com/city/mumbai/iit-bombay-death-institute-director-meets-protesting-students-signs-list-of-18-demands/articleshow/134374550.cms"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "FIR filed against IIT-B professor after student dies by suicide, parents allege caste discrimination",
+          "url": "https://scroll.in/latest/1095867/fir-filed-against-iit-b-professor-after-student-dies-by-suicide-parents-allege-caste-discrimination?utm_source=rss&utm_medium=public"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Legal dispute deepens over Tata Trusts leadership and corporate governance",
       "section": "india",
       "category": "economy",
       "tier_requested": "major",
       "article_ids": [
-        152,
-        156,
-        158,
-        190,
-        219
+        138,
+        188,
+        211
       ],
-      "verdict": "kept",
+      "verdict": "cut:below_floor(4<5)",
       "valid_ids": [
-        152,
-        156,
-        158,
-        190,
-        219
+        138,
+        188,
+        211
       ],
       "tier_final": "major",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "Tata dispute: Lawyers Abhishek Singhvi, Harish Salve now on opposing sides",
+          "url": "https://timesofindia.indiatimes.com/business/india-business/tata-dipute-singhvi-salve-now-on-opposing-sides/articleshow/134375598.cms"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "Tata Trusts Against Listing, Diverted Attention: Harish Salve To NDTV",
+          "url": "https://www.ndtv.com/india-news/trustees-put-on-notice-by-government-harish-salve-on-listing-row-at-tatas-12073306#publisher=newsstand"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "'Runaway Board': Abhishek Singhvi Backs Tata Trusts' 'Shareholder Primacy'",
+          "url": "https://www.ndtv.com/india-news/noel-tata-tata-despite-abhishek-singhvi-backs-tata-trusts-shareholder-primacy-calls-tata-sons-board-runaway-board-12073137#publisher=newsstand"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Assam CM lays foundation stone for Rs 48,000-crore Adani thermal power project",
+      "section": "india",
+      "category": "economy",
+      "tier_requested": "notable",
+      "article_ids": [
+        236,
+        258,
+        272
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        236,
+        258,
+        272
+      ],
+      "tier_final": "notable",
       "distinct_outlets": 3,
       "wiki_backed": false,
       "wiki_event": "",
-      "weight": 5,
+      "weight": 3,
       "weight_terms": {
         "distinct_outlets": 3,
-        "tier_weight": 2,
+        "tier_weight": 0,
         "wiki_bonus": 0
       },
       "weight_floor": 5,
@@ -606,90 +560,29 @@
         },
         {
           "outlet": "Hindustan Times",
-          "title": "Assam CM lays foundation stone for  ₹48,000 crore Adani power project",
+          "title": "Assam CM Sarma lays foundation stone for  ₹48,000 crore Adani power project, set to boost local economy",
           "url": "https://www.hindustantimes.com/india-news/assam-cm-lays-foundation-stone-for-48-000-crore-adani-power-project-101789910066323.html"
-        },
-        {
-          "outlet": "NDTV",
-          "title": "'Gen Z Speed': Jeet Adani Praises Himanta Sarma's Energy, Calls Assam 'Home'",
-          "url": "https://www.ndtv.com/india-news/gen-z-speed-jeet-adani-praises-himanta-sarmas-energy-calls-assam-home-12073222#publisher=newsstand"
-        },
-        {
-          "outlet": "NDTV",
-          "title": "Himanta Sarma Lays Foundation Stone For Adani Power's 3,200 MW Assam Project",
-          "url": "https://www.ndtv.com/india-news/himanta-sarma-lays-foundation-stone-for-adani-powers-3-200-mw-assam-project-12072008#publisher=newsstand"
         }
       ],
       "articles_dropped_by_diversity_cap": 0
     },
     {
-      "headline_hint": "Heavy rains trigger fatal landslides and flash floods across Kerala",
+      "headline_hint": "Heavy rain and landslides in Kerala cause casualties and regional alerts",
       "section": "india",
       "category": "disaster",
-      "tier_requested": "major",
-      "article_ids": [
-        35,
-        79,
-        119,
-        163
-      ],
-      "verdict": "kept",
-      "valid_ids": [
-        35,
-        79,
-        119,
-        163
-      ],
-      "tier_final": "major",
-      "distinct_outlets": 4,
-      "wiki_backed": false,
-      "wiki_event": "",
-      "weight": 6,
-      "weight_terms": {
-        "distinct_outlets": 4,
-        "tier_weight": 2,
-        "wiki_bonus": 0
-      },
-      "weight_floor": 5,
-      "articles": [
-        {
-          "outlet": "Hindustan Times",
-          "title": "As rains intensify in Keralam, CM orders hourly assessment of situation",
-          "url": "https://www.hindustantimes.com/india-news/as-rains-intensify-in-keralam-cm-orders-hourly-assessment-of-situation-101789938159367.html"
-        },
-        {
-          "outlet": "The Hindu",
-          "title": "3 dead, three missing in Nilambur flash flood",
-          "url": "https://www.thehindu.com/news/national/kerala/one-dead-four-missing-in-nilambur-flash-floods/article71488413.ece"
-        },
-        {
-          "outlet": "NDTV",
-          "title": "Chennai Tourist Dies In Kerala Landslide, Friend Injured",
-          "url": "https://www.ndtv.com/india-news/chennai-tourist-dies-in-kerala-landslide-friend-injured-12073431#publisher=newsstand"
-        },
-        {
-          "outlet": "Times of India",
-          "title": "Landslide, flash flood kill 6 in Kerala amid heavy rain alert - video",
-          "url": "https://timesofindia.indiatimes.com/city/kochi/3-dead-after-landslide-hits-keralas-idukki/articleshow/134371135.cms"
-        }
-      ],
-      "articles_dropped_by_diversity_cap": 0
-    },
-    {
-      "headline_hint": "BJP and opposition clash over mimicry of PM Modi at Rahul Gandhi event",
-      "section": "india",
-      "category": "politics",
       "tier_requested": "notable",
       "article_ids": [
-        142,
-        181,
-        252
+        0,
+        151,
+        187,
+        217
       ],
       "verdict": "cut:below_floor(3<5)",
       "valid_ids": [
-        142,
-        181,
-        252
+        0,
+        151,
+        187,
+        217
       ],
       "tier_final": "notable",
       "distinct_outlets": 3,
@@ -705,37 +598,42 @@
       "articles": [
         {
           "outlet": "The Hindu",
-          "title": "BJP leaders slam mimicry of PM at Rahul Gandhi’s student event",
-          "url": "https://www.thehindu.com/news/national/madhya-pradesh/bjp-leaders-slam-mimicry-of-pm-at-rahul-gandhis-student-event/article71488585.ece"
-        },
-        {
-          "outlet": "Times of India",
-          "title": "BJP, Congress trade barbs over PM Modi mimicry at Rahul Gandhi’s Indore event",
-          "url": "https://timesofindia.indiatimes.com/india/bjp-congress-trade-barbs-over-pm-modi-mimicry-at-rahul-gandhis-indore-event/articleshow/134370571.cms"
+          "title": "Kerala rains: Two killed, one injured as heavy rain triggers landslips across Idukki",
+          "url": "https://www.thehindu.com/news/national/kerala/kerala-rains-two-killed-one-injured-as-heavy-rain-triggers-landslips-across-idukki/article71490158.ece"
         },
         {
           "outlet": "Hindustan Times",
-          "title": "‘Cheap theatre’ vs ‘democratic right’: BJP, Opposition spar over PM Modi's mimicry at Rahul Gandhi event",
-          "url": "https://www.hindustantimes.com/india-news/cheap-theatre-vs-democratic-right-bjp-opposition-congress-aap-tmc-spar-pm-modi-mimicry-rahul-gandhi-indore-event-101789897303326.html"
+          "title": "As rains intensify in Keralam, CM orders hourly assessment of situation",
+          "url": "https://www.hindustantimes.com/india-news/as-rains-intensify-in-keralam-cm-orders-hourly-assessment-of-situation-101789938159367.html"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "Chennai Tourist Dies In Kerala Landslide, Friend Injured",
+          "url": "https://www.ndtv.com/india-news/chennai-tourist-dies-in-kerala-landslide-friend-injured-12073431#publisher=newsstand"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "3 dead, three missing in Nilambur flash flood",
+          "url": "https://www.thehindu.com/news/national/kerala/one-dead-four-missing-in-nilambur-flash-floods/article71488413.ece"
         }
       ],
       "articles_dropped_by_diversity_cap": 0
     },
     {
-      "headline_hint": "Legal debate intensifies over Tata Trusts governance and listing policy",
+      "headline_hint": "Karnataka FDA cancels and suspends licences in counterfeit drug crackdown",
       "section": "india",
-      "category": "economy",
+      "category": "health",
       "tier_requested": "notable",
       "article_ids": [
-        16,
-        80,
-        109
+        77,
+        208,
+        251
       ],
       "verdict": "cut:below_floor(2<5)",
       "valid_ids": [
-        16,
-        80,
-        109
+        77,
+        208,
+        251
       ],
       "tier_final": "notable",
       "distinct_outlets": 2,
@@ -750,19 +648,19 @@
       "weight_floor": 5,
       "articles": [
         {
-          "outlet": "Times of India",
-          "title": "Tata dipute: Lawyers Singhvi, Salve now on opposing sides",
-          "url": "https://timesofindia.indiatimes.com/business/india-business/tata-dipute-singhvi-salve-now-on-opposing-sides/articleshow/134375598.cms"
+          "outlet": "Hindustan Times",
+          "title": "Karnataka FDA cancels 16, suspends 8 drug licences in counterfeit medicine crackdown",
+          "url": "https://www.hindustantimes.com/india-news/fda-cancels-16-suspends-8-drug-licences-in-ktaka-101789932029030.html"
         },
         {
-          "outlet": "NDTV",
-          "title": "Tata Trusts Against Listing, Diverted Attention: Harish Salve To NDTV",
-          "url": "https://www.ndtv.com/india-news/trustees-put-on-notice-by-government-harish-salve-on-listing-row-at-tatas-12073306#publisher=newsstand"
+          "outlet": "Livemint",
+          "title": "Karnataka FDA cracks down on fake drug racket: 24 licences hit,  ₹5 cr stock seized — what did it find during raid?",
+          "url": "https://www.livemint.com/news/india/karnataka-fda-cracks-down-on-fake-drug-racket-24-licences-hit-rs-5-cr-stock-seized-what-did-it-find-during-raid-11789924262491.html"
         },
         {
-          "outlet": "NDTV",
-          "title": "'Runaway Board': Abhishek Singhvi Backs Tata Trusts' 'Shareholder Primacy'",
-          "url": "https://www.ndtv.com/india-news/noel-tata-tata-despite-abhishek-singhvi-backs-tata-trusts-shareholder-primacy-calls-tata-sons-board-runaway-board-12073137#publisher=newsstand"
+          "outlet": "Hindustan Times",
+          "title": "FDA cancels 16, suspends eight drug licences in Karnataka",
+          "url": "https://www.hindustantimes.com/india-news/fda-cancels-16-suspends-eight-drug-licences-in-karnataka-101789917927424.html"
         }
       ],
       "articles_dropped_by_diversity_cap": 0
