@@ -1,0 +1,674 @@
+{
+  "min_claim_chars": 20,
+  "max_claims_per_story": 24,
+  "calls": [
+    {
+      "label": "claims-world",
+      "cluster_ids": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "label": "claims-india",
+      "cluster_ids": [
+        4,
+        5
+      ]
+    }
+  ],
+  "rejected_claims": 0,
+  "rejected_clusters": 0,
+  "clusters": [
+    {
+      "cluster_id": 0,
+      "headline_hint": "Ukraine launches massive drone attack on Moscow as Russian parliamentary elections wrap up",
+      "section": "world",
+      "batch_position": 0,
+      "claim_count": 11,
+      "distinct_outlets": 4,
+      "source_kinds": {
+        "fulltext": 11
+      },
+      "claims": [
+        {
+          "id": 1,
+          "cluster_id": 0,
+          "text": "United Russia received nearly 58 percent of the party-list vote with about 58 percent of precincts counted in Russia's parliamentary election.",
+          "kind": "figure",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/9/20/polls-close-in-russian-wartime-election-with-ruling-party-set-to-dominate?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 2,
+          "cluster_id": 0,
+          "text": "Voter turnout at the close of polls in the Russian parliamentary election stood at 56.66 percent.",
+          "kind": "figure",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/9/20/polls-close-in-russian-wartime-election-with-ruling-party-set-to-dominate?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 3,
+          "cluster_id": 0,
+          "text": "The election was the first parliamentary vote held in Russia since the start of its full-scale invasion of Ukraine in 2022.",
+          "kind": "background",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/9/20/polls-close-in-russian-wartime-election-with-ruling-party-set-to-dominate?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 4,
+          "cluster_id": 0,
+          "text": "Authorities in Kyiv denounced voting in Russian-occupied areas of Ukraine as illegal and urged foreign governments not to recognize the results.",
+          "kind": "event",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/9/20/polls-close-in-russian-wartime-election-with-ruling-party-set-to-dominate?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 5,
+          "cluster_id": 0,
+          "text": "Russia's Defence Ministry reported that its forces shot down 1,110 Ukrainian drones across Russia, Crimea, and the Black Sea.",
+          "kind": "figure",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/europe/russia-wraps-up-first-wartime-parliamentary-election-kremlin-set-to-retain-control/articleshow/134374935.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 6,
+          "cluster_id": 0,
+          "text": "Russian election chief Ella Pamfilova stated that Russia's electronic voting system was targeted by cyberattacks.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/europe/russia-wraps-up-first-wartime-parliamentary-election-kremlin-set-to-retain-control/articleshow/134374935.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 7,
+          "cluster_id": 0,
+          "text": "Moscow Mayor Sergey Sobyanin stated that more than 1,600 drones were intercepted and shot down, including 450 aimed at Moscow.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/sep/20/hundreds-of-drones-target-moscow-on-last-day-of-voting-in-russias-parliamentary-election",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 8,
+          "cluster_id": 0,
+          "text": "Ukrainian President Volodymyr Zelenskyy stated Ukraine used domestically produced Flamingo cruise missiles to strike targets in Moscow.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/sep/20/hundreds-of-drones-target-moscow-on-last-day-of-voting-in-russias-parliamentary-election",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 9,
+          "cluster_id": 0,
+          "text": "A drone strike caused damage to a facility at the Moscow oil refinery.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/sep/20/hundreds-of-drones-target-moscow-on-last-day-of-voting-in-russias-parliamentary-election",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 10,
+          "cluster_id": 0,
+          "text": "A 44-year-old woman was killed in Sofyino after a drone struck a three-storey residential building.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c34gdjk1ne8yo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 11,
+          "cluster_id": 0,
+          "text": "Ukrainian officials stated that nine people, including three children, were killed in Russian attacks in the Kyiv and Sumy regions on Saturday.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c34gdjk1ne8yo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 1,
+      "headline_hint": "US-Iran tensions escalate as Tehran warns of retaliation and Houthis target Riyadh",
+      "section": "world",
+      "batch_position": 1,
+      "claim_count": 8,
+      "distinct_outlets": 4,
+      "source_kinds": {
+        "summary": 1,
+        "fulltext": 7
+      },
+      "claims": [
+        {
+          "id": 12,
+          "cluster_id": 1,
+          "text": "The US Virtual Embassy in Iran issued a security alert urging American citizens to leave Iran immediately and avoid travelling there for any reason.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/middle-east/us-tells-citizens-to-leave-iran-immediately-warns-of-travel-disruptions/articleshow/134378207.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 13,
+          "cluster_id": 1,
+          "text": "Saudi-led coalition forces intercepted a ballistic missile launched towards Riyadh and reported attempted attacks targeting Bish, Taif, Farasan, and Yanbu.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/middle-east/us-tells-citizens-to-leave-iran-immediately-warns-of-travel-disruptions/articleshow/134378207.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 14,
+          "cluster_id": 1,
+          "text": "US President Donald Trump stated he is in a 'deciding mode' regarding potential military action, continued economic pressure, or a deal with Iran.",
+          "kind": "quote",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/us-news/usiran-war-live-update-donald-trump-strait-of-hormuz-tehran-travel-warning-painful-attacks-us-bases-saudi-yemen-houthis-11789953418288.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 15,
+          "cluster_id": 1,
+          "text": "Iran's Khatam al-Anbiya Central Headquarters warned that all US bases and interests in the region will face continuous and painful attacks if Washington resumes military action against Tehran.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/us-news/usiran-war-live-update-donald-trump-strait-of-hormuz-tehran-travel-warning-painful-attacks-us-bases-saudi-yemen-houthis-11789953418288.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 16,
+          "cluster_id": 1,
+          "text": "Iran's Revolutionary Guards stated its aerospace force tracked and destroyed a US military MQ-1 drone over the Strait of Hormuz.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/us-news/usiran-war-live-update-donald-trump-strait-of-hormuz-tehran-travel-warning-painful-attacks-us-bases-saudi-yemen-houthis-11789953418288.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 17,
+          "cluster_id": 1,
+          "text": "Houthi military spokesman Yahya Saree stated Saudi Arabia conducted 28 air strikes targeting the governorates of Taiz, Al-Jawf, and Marib.",
+          "kind": "figure",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/us-news/usiran-war-live-update-donald-trump-strait-of-hormuz-tehran-travel-warning-painful-attacks-us-bases-saudi-yemen-houthis-11789953418288.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 18,
+          "cluster_id": 1,
+          "text": "Tehran stated it learned the US may be planning new strikes and warned of retaliation without limitations.",
+          "kind": "event",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/liveblog/2026/9/21/iran-war-live-tehran-warns-us-against-new-strikes-fighting-rages-in-yemen?traffic_source=rss",
+          "source_kind": "summary"
+        },
+        {
+          "id": 19,
+          "cluster_id": 1,
+          "text": "UK Cabinet minister Bridget Phillipson stated the UK's upcoming budget will be made more difficult by Donald Trump's war with Iran due to oil supply disruptions and inflation.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/politics/2026/sep/20/uk-budget-made-harder-donald-trump-war-iran-bridget-phillipson-andy-burnham",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 2,
+      "headline_hint": "German Chancellor Merz faces pressure after severe state election losses to AfD and Left",
+      "section": "world",
+      "batch_position": 2,
+      "claim_count": 7,
+      "distinct_outlets": 4,
+      "source_kinds": {
+        "fulltext": 7
+      },
+      "claims": [
+        {
+          "id": 20,
+          "cluster_id": 2,
+          "text": "German Chancellor Friedrich Merz called the CDU's election performance in Mecklenburg-Vorpommern 'a disaster' but stated he would remain in office.",
+          "kind": "quote",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cvwyz29n0nn2o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 21,
+          "cluster_id": 2,
+          "text": "Public broadcasters projected the far-right AfD to win 38% of the vote in Mecklenburg-Vorpommern, ahead of the SPD on 35%.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cvwyz29n0nn2o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 22,
+          "cluster_id": 2,
+          "text": "In Berlin's state election, Die Linke led projections with nearly 26% of the vote, ahead of the CDU on 19%.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cvwyz29n0nn2o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 23,
+          "cluster_id": 2,
+          "text": "German Chancellor Friedrich Merz cleared his calendar and skipped a planned trip to New York for the UN General Assembly following election losses for his CDU party.",
+          "kind": "event",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/german-chancellor-friedrich-merz-state-election-losses-6398601",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 24,
+          "cluster_id": 2,
+          "text": "German Chancellor Friedrich Merz's personal approval ratings hover just above 10 percent.",
+          "kind": "figure",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/german-chancellor-friedrich-merz-state-election-losses-6398601",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 25,
+          "cluster_id": 2,
+          "text": "The CDU secured 4.9 percent of the vote in Mecklenburg-Western Pomerania, marking its worst state election result since 1949.",
+          "kind": "figure",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/rest-of-world/afd-tops-another-german-state-poll-merzs-cdu-crashes-to-historic-low/articleshow/134378082.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 26,
+          "cluster_id": 2,
+          "text": "The far-right AfD party leads national opinion polls in Germany with approximately 30 percent support.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/sep/20/friedrich-merz-chancellor-germany-state-elections-cdu-afd-linke-berlin",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 3,
+      "headline_hint": "US and China hold AI safety discussions ahead of upcoming Trump-Xi summit",
+      "section": "world",
+      "batch_position": 3,
+      "claim_count": 7,
+      "distinct_outlets": 3,
+      "source_kinds": {
+        "fulltext": 7
+      },
+      "claims": [
+        {
+          "id": 27,
+          "cluster_id": 3,
+          "text": "US Treasury Secretary Scott Bessent and Chinese Vice Premier He Lifeng led talks that lasted around eight hours at JPMorgan Chase's headquarters in New York.",
+          "kind": "figure",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/americas/20260921-us-china-discuss-ai-safety-ahead-of-trump-xi-summit",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 28,
+          "cluster_id": 3,
+          "text": "The US proposed creating a 'US-China AI dialogue' that includes a notification mechanism for high-level national security incidents resulting from AI.",
+          "kind": "event",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/americas/20260921-us-china-discuss-ai-safety-ahead-of-trump-xi-summit",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 29,
+          "cluster_id": 3,
+          "text": "US President Donald Trump and Chinese President Xi Jinping are scheduled to hold a summit meeting at the White House on Thursday.",
+          "kind": "event",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/americas/20260921-us-china-discuss-ai-safety-ahead-of-trump-xi-summit",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 30,
+          "cluster_id": 3,
+          "text": "US Trade Representative Jamieson Greer stated export controls on advanced AI chips and semiconductor manufacturing equipment were not part of the proposed US-China AI notification mechanism.",
+          "kind": "event",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/economy/2026/9/20/us-china-open-high-level-talks-ahead-of-trump-xi-summit?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 31,
+          "cluster_id": 3,
+          "text": "The US-China trade truce agreed upon in Busan, South Korea, in October 2025 is scheduled to expire on November 10.",
+          "kind": "background",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/economy/2026/9/20/us-china-open-high-level-talks-ahead-of-trump-xi-summit?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 32,
+          "cluster_id": 3,
+          "text": "Anthropic chief executive Dario Amodei called for a worldwide pacing of frontier AI development requiring cooperation with China.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/sep/20/why-china-is-pushing-back-on-us-warnings-over-rapid-ai-development",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 33,
+          "cluster_id": 3,
+          "text": "China released the third iteration of its AI safety governance framework addressing risks from AI agents, cybersecurity threats from frontier models, and recursive self-improvement.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/sep/20/why-china-is-pushing-back-on-us-warnings-over-rapid-ai-development",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 4,
+      "headline_hint": "Election Commission issues SIR notices to millions of Delhi voters, prompting political reaction",
+      "section": "india",
+      "batch_position": 0,
+      "claim_count": 17,
+      "distinct_outlets": 5,
+      "source_kinds": {
+        "fulltext": 17
+      },
+      "claims": [
+        {
+          "id": 34,
+          "cluster_id": 4,
+          "text": "Not being mapped to the previous Special Intensive Revision (SIR) accounted for 42% of the notices issued to voters on Delhi's draft electoral roll.",
+          "kind": "figure",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/name-mismatch-age-difference-and-more-why-3-3-million-voters-in-delhi-received-ec-notices-after-sir-bid-in-capital-101789954533654.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 35,
+          "cluster_id": 4,
+          "text": "Name mismatches with the previous electoral roll accounted for 41% of SIR notices issued in Delhi, with parent name mismatches comprising 24% and self-name mismatches comprising 17%.",
+          "kind": "figure",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/name-mismatch-age-difference-and-more-why-3-3-million-voters-in-delhi-received-ec-notices-after-sir-bid-in-capital-101789954533654.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 36,
+          "cluster_id": 4,
+          "text": "Discrepancies in age differences accounted for 16% of the SIR notices issued in Delhi.",
+          "kind": "figure",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/name-mismatch-age-difference-and-more-why-3-3-million-voters-in-delhi-received-ec-notices-after-sir-bid-in-capital-101789954533654.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 37,
+          "cluster_id": 4,
+          "text": "A total of 59,791 SIR notices issued to voters in Delhi had no reason listed against them.",
+          "kind": "figure",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/name-mismatch-age-difference-and-more-why-3-3-million-voters-in-delhi-received-ec-notices-after-sir-bid-in-capital-101789954533654.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 38,
+          "cluster_id": 4,
+          "text": "Shyam Mukhija, aged 125 from Sadar Bazar assembly constituency in Old Delhi, was the oldest person served an SIR notice due to a self-name mismatch.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/name-mismatch-age-difference-and-more-why-3-3-million-voters-in-delhi-received-ec-notices-after-sir-bid-in-capital-101789954533654.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 39,
+          "cluster_id": 4,
+          "text": "Notices were issued to 34.5% of men, 33.4% of women, and 50% of transgender individuals on Delhi's draft electoral roll.",
+          "kind": "figure",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/name-mismatch-age-difference-and-more-why-3-3-million-voters-in-delhi-received-ec-notices-after-sir-bid-in-capital-101789954533654.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 40,
+          "cluster_id": 4,
+          "text": "More than 80.62 lakh voter names were deleted from draft rolls after being marked as shifted or absent, but only 6.66 lakh Form-6 applications were submitted for inclusion.",
+          "kind": "figure",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/cities/bangalore/sir-against-8062-lakh-shifted-absent-names-only-666-lakh-form-6-applications/article71488325.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 41,
+          "cluster_id": 4,
+          "text": "During the SIR process in Bihar, the total electorate decreased from 7.89 crore to about 7.42 crore despite 21.53 lakh electors being added through Form-6 applications.",
+          "kind": "background",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/cities/bangalore/sir-against-8062-lakh-shifted-absent-names-only-666-lakh-form-6-applications/article71488325.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 42,
+          "cluster_id": 4,
+          "text": "Prominent political and official figures served SIR notices in Delhi include LK Advani, Jagdeep Dhankhar, S Jaishankar, Sukhbir Singh Sandhu, Manish Sisodia, and Delhi Chief Minister Rekha Gupta.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/city/delhi/lk-advani-dhankar-sisodia-also-issued-sir-notices/articleshow/134372553.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 43,
+          "cluster_id": 4,
+          "text": "Deceased former chairman of the Economic Advisory Council to the Prime Minister Bibek Debroy was issued an SIR notice as his name appeared on the flagged draft rolls.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/city/delhi/lk-advani-dhankar-sisodia-also-issued-sir-notices/articleshow/134372553.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 44,
+          "cluster_id": 4,
+          "text": "The Delhi Chief Electoral Officer's office stated that disposal of notices will be completed by October 29, 2026, and the final electoral roll will be published on November 4, 2026.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/city/delhi/lk-advani-dhankar-sisodia-also-issued-sir-notices/articleshow/134372553.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 45,
+          "cluster_id": 4,
+          "text": "Lawyer Kapil Sibal described the Special Intensive Revision as a 'special intensive deletion' aimed at removing valid voters.",
+          "kind": "quote",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/city/delhi/lk-advani-dhankar-sisodia-also-issued-sir-notices/articleshow/134372553.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 46,
+          "cluster_id": 4,
+          "text": "The Election Commission of India launched the Special Intensive Revision exercise in Delhi on May 14.",
+          "kind": "background",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/delhi-sir-got-an-ec-notice-ceo-says-names-won-t-be-automatically-deleted-after-advani-jaishankar-among-those-flagged-11789913825204.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 47,
+          "cluster_id": 4,
+          "text": "Authorities in Delhi received 84,263 Form-6 applications for voter inclusion between August 31 and September 19, following 2,12,400 applications received up to August 30.",
+          "kind": "figure",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/delhi-sir-got-an-ec-notice-ceo-says-names-won-t-be-automatically-deleted-after-advani-jaishankar-among-those-flagged-11789913825204.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 48,
+          "cluster_id": 4,
+          "text": "Delhi Chief Minister Rekha Gupta was issued an SIR notice because the age difference between her and her parents appeared to be under 15 years.",
+          "kind": "event",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/latest/1095866/delhi-sir-rekha-gupta-arvind-kejriwal-among-33-lakh-voters-issued-notices-to-validate-details?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 49,
+          "cluster_id": 4,
+          "text": "Former Supreme Court judge Justice Madan B Lokur received an SIR notice because the age gap between him and his grandfather was recorded as 40 years or less.",
+          "kind": "event",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/latest/1095866/delhi-sir-rekha-gupta-arvind-kejriwal-among-33-lakh-voters-issued-notices-to-validate-details?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 50,
+          "cluster_id": 4,
+          "text": "Delhi is among 19 states and Union Territories included in the third phase of the Special Intensive Revision voter roll process.",
+          "kind": "background",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/latest/1095866/delhi-sir-rekha-gupta-arvind-kejriwal-among-33-lakh-voters-issued-notices-to-validate-details?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 5,
+      "headline_hint": "Protests and legal probe follow death by suicide of IIT Bombay student",
+      "section": "india",
+      "batch_position": 1,
+      "claim_count": 13,
+      "distinct_outlets": 4,
+      "source_kinds": {
+        "summary": 1,
+        "fulltext": 12
+      },
+      "claims": [
+        {
+          "id": 51,
+          "cluster_id": 5,
+          "text": "The director of IIT Kharagpur sent a message reminding students that their admission to the institute serves as evidence of sustained effort.",
+          "kind": "event",
+          "outlet": "NDTV",
+          "url": "https://www.ndtv.com/education/you-are-not-carrying-it-alone-iit-kharagpur-directors-message-for-students-amid-iit-bombay-case-12074202#publisher=newsstand",
+          "source_kind": "summary"
+        },
+        {
+          "id": 52,
+          "cluster_id": 5,
+          "text": "The Mumbai Police transferred the investigation into the death of an IIT Bombay student to the Crime Branch, to be led by an Assistant Commissioner of Police.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/maharashtra/crime-branch-to-probe-iit-bombay-student-death-case-faculty-forum-backs-professor-named-in-fir/article71488479.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 53,
+          "cluster_id": 5,
+          "text": "Sahil, a second-year IIT Bombay student, was found dead in his hostel room after an invigilating professor reported him for possessing a phone during an examination.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/maharashtra/crime-branch-to-probe-iit-bombay-student-death-case-faculty-forum-backs-professor-named-in-fir/article71488479.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 54,
+          "cluster_id": 5,
+          "text": "Sahil's father filed an FIR against Professor Suryanarayana Doolla under the Scheduled Castes and Scheduled Tribes (Prevention of Atrocities) Act, alleging three months of harassment.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/maharashtra/crime-branch-to-probe-iit-bombay-student-death-case-faculty-forum-backs-professor-named-in-fir/article71488479.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 55,
+          "cluster_id": 5,
+          "text": "The Faculty Forum of IIT Bombay defended Professor Suryanarayana Doolla, stating he was executing institute-approved procedures during exam invigilation.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/maharashtra/crime-branch-to-probe-iit-bombay-student-death-case-faculty-forum-backs-professor-named-in-fir/article71488479.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 56,
+          "cluster_id": 5,
+          "text": "IIT Bombay Director Shireesh Kedare denied allegations of caste-based discrimination, stating student caste information remains confidential from faculty and administrators.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/maharashtra/crime-branch-to-probe-iit-bombay-student-death-case-faculty-forum-backs-professor-named-in-fir/article71488479.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 57,
+          "cluster_id": 5,
+          "text": "Sahil Wakode, a 20-year-old second-year student of energy science and engineering at IIT Bombay, died by suicide in the third such case on the campus this year.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/city/mumbai/iit-bombay-death-institute-director-meets-protesting-students-signs-list-of-18-demands/articleshow/134374550.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 58,
+          "cluster_id": 5,
+          "text": "IIT Bombay Director Shireesh Kedare signed a document agreeing to 18 demands presented by protesting students during a late-night meeting at the campus gate.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/city/mumbai/iit-bombay-death-institute-director-meets-protesting-students-signs-list-of-18-demands/articleshow/134374550.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 59,
+          "cluster_id": 5,
+          "text": "Protesting students demanded the suspension of Professor Suryanarayana Doolla, an open apology, an independent probe committee, and faculty sensitisation.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/city/mumbai/iit-bombay-death-institute-director-meets-protesting-students-signs-list-of-18-demands/articleshow/134374550.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 60,
+          "cluster_id": 5,
+          "text": "IIT Bombay planned to replace ceiling fans with wall-mounted fans in student hostels as a preventive safety measure following recent suicides.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/city/mumbai/iit-bombay-death-institute-director-meets-protesting-students-signs-list-of-18-demands/articleshow/134374550.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 61,
+          "cluster_id": 5,
+          "text": "Mumbai Police registered an FIR charging Professor Suryanarayan Doolla and unidentified persons with abetment to suicide and violations of the SC/ST Act.",
+          "kind": "event",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/latest/1095867/fir-filed-against-iit-b-professor-after-student-dies-by-suicide-parents-allege-caste-discrimination?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 62,
+          "cluster_id": 5,
+          "text": "IIT Bombay stated that Sahil Wakode was caught using a mobile phone to upload an exam question paper onto the ChatGPT AI chatbot.",
+          "kind": "event",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/latest/1095867/fir-filed-against-iit-b-professor-after-student-dies-by-suicide-parents-allege-caste-discrimination?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 63,
+          "cluster_id": 5,
+          "text": "Sahil Wakode's family refused to claim his body from Rajawadi Hospital for seven hours until police assured them the case was transferred to the Crime Branch.",
+          "kind": "event",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/latest/1095867/fir-filed-against-iit-b-professor-after-student-dies-by-suicide-parents-allege-caste-discrimination?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        }
+      ]
+    }
+  ],
+  "clusters_with_no_claims": []
+}
