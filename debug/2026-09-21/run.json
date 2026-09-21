@@ -2,27 +2,27 @@
   "kind": "digest",
   "day": "2026-09-21",
   "ok": false,
-  "started_at": "2026-09-20T22:34:41Z",
-  "finished_at": "2026-09-20T22:36:34Z",
-  "elapsed_ms": 112629,
+  "started_at": "2026-09-21T00:23:59Z",
+  "finished_at": "2026-09-21T00:26:35Z",
+  "elapsed_ms": 156578,
   "argv": [
     "digest.py",
     "--if-missing"
   ],
   "python": "3.12.3",
-  "git_sha": "5640d5360999f0c66d45a22f6cde996f5a8ae47b",
+  "git_sha": "c99ee6e8ade214096dd731802b3612d5078d75ed",
   "debug_level": 1,
-  "bytes_written": 7761034,
+  "bytes_written": 8669526,
   "byte_cap_reached": false,
   "env": {
     "DIGEST_DEBUG": "1",
     "CI": "true",
     "GITHUB_ACTIONS": "true",
-    "GITHUB_RUN_ID": "35542106072",
+    "GITHUB_RUN_ID": "35547563006",
     "GITHUB_RUN_ATTEMPT": "1",
     "GITHUB_WORKFLOW": "digest",
     "GITHUB_EVENT_NAME": "schedule",
-    "GITHUB_SHA": "5640d5360999f0c66d45a22f6cde996f5a8ae47b",
+    "GITHUB_SHA": "c99ee6e8ade214096dd731802b3612d5078d75ed",
     "GITHUB_REF": "refs/heads/main",
     "RUNNER_OS": "Linux"
   },
@@ -68,7 +68,7 @@
   "stages": [
     {
       "stage": "gather",
-      "ms": 1989,
+      "ms": 3623,
       "error": ""
     },
     {
@@ -78,33 +78,33 @@
     },
     {
       "stage": "wikipedia",
-      "ms": 228,
+      "ms": 272,
       "error": ""
     },
     {
       "stage": "select",
-      "ms": 21695,
+      "ms": 25299,
       "error": ""
     },
     {
       "stage": "rank",
-      "ms": 4,
+      "ms": 2,
       "error": ""
     },
     {
       "stage": "extract",
-      "ms": 49104,
+      "ms": 52753,
       "error": ""
     },
     {
       "stage": "claims",
-      "ms": 37620,
+      "ms": 73144,
       "error": "ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"
     }
   ],
   "window": {
     "since": "2026-09-20T00:14:25+00:00",
-    "now": "2026-09-20T22:34:43.784812+00:00",
+    "now": "2026-09-21T00:24:00.748759+00:00",
     "prev_generated_at": "2026-09-20 00:14:25+00:00"
   },
   "stopped_at": "claims",
