@@ -16,45 +16,54 @@
     11,
     10,
     8,
+    5,
     9,
     6,
     5
   ],
   "per_section": {
-    "world": 3,
+    "world": 4,
     "india": 3
   },
   "clusters": [
     {
-      "headline_hint": "Ukraine launches massive drone attack on Moscow during Russian elections",
+      "headline_hint": "US and Iran exchange warnings as Houthis strike Riyadh and war costs rise",
       "section": "world",
       "category": "conflict",
       "tier_requested": "lead",
       "article_ids": [
-        37,
-        40,
-        184,
-        185,
-        242,
-        243,
-        249,
-        260
+        52,
+        62,
+        76,
+        138,
+        212,
+        226,
+        229,
+        289,
+        295,
+        297,
+        304,
+        306
       ],
       "verdict": "kept",
       "valid_ids": [
-        37,
-        40,
-        184,
-        185,
-        242,
-        243,
-        249,
-        260
+        52,
+        62,
+        76,
+        138,
+        212,
+        226,
+        229,
+        289,
+        295,
+        297,
+        304,
+        306
       ],
       "tier_final": "lead",
       "distinct_outlets": 5,
       "wiki_backed": true,
-      "wiki_event": "Ukrainian forces launch a massive drone attack on Moscow Oblast, Russia, with more than 1,600 long-range drones launched from Ukraine. At least two people are killed with hundreds more evacuated while Moscow Refinery is on fire following se",
+      "wiki_event": "Iranian authorities seal a French language centre affiliated with the French embassy in Tehran under a judicial order. Prosecutors say it operated without a licence and conducted activities against Iranian culture and national security.",
       "weight": 11,
       "weight_terms": {
         "distinct_outlets": 5,
@@ -63,6 +72,77 @@
       },
       "weight_floor": 5,
       "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "Iran threatens 'painful retaliation' if US strikes as Trump warns of 'big things'",
+          "url": "https://timesofindia.indiatimes.com/world/middle-east/iran-warns-us-allies-against-new-attack-threatens-retaliation/articleshow/134374995.cms"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "UK minister warns of impact of Trump’s Iran war on next month’s budget",
+          "url": "https://www.theguardian.com/politics/2026/sep/20/uk-budget-made-harder-donald-trump-war-iran-bridget-phillipson-andy-burnham"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Houthi attacks and no Western support: What are Saudi Arabia's options ?",
+          "url": "https://www.france24.com/en/houthi-attacks-and-no-western-support-what-are-saudi-arabia-s-options"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Iran war: Tehran sets 7 terms to renew US talks — what are the demands? Will US strike against Houthis? What we know",
+          "url": "https://www.livemint.com/news/world/iran-war-tehran-sets-7-terms-to-renew-us-talks-what-are-the-demands-will-us-strike-against-houthis-what-we-know-11789880465957.html"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "Saudi Arabia says Houthis tried to attack its capital",
+          "url": "https://www.npr.org/2026/09/19/nx-s1-5974980/saudi-arabia-houthis-attempted-attack-capital"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 7
+    },
+    {
+      "headline_hint": "Ukraine launches massive drone barrage at Moscow as Russian elections conclude",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "major",
+      "article_ids": [
+        11,
+        49,
+        54,
+        193,
+        194,
+        245,
+        251,
+        263
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        11,
+        49,
+        54,
+        193,
+        194,
+        245,
+        251,
+        263
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 6,
+      "wiki_backed": true,
+      "wiki_event": "Ukrainian forces launch a massive drone attack on Moscow Oblast, Russia, with more than 1,600 long-range drones launched from Ukraine. At least two people are killed with hundreds more evacuated while Moscow Refinery is on fire following se",
+      "weight": 10,
+      "weight_terms": {
+        "distinct_outlets": 6,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "Polls close in Russian wartime election with ruling party set to dominate",
+          "url": "https://www.aljazeera.com/news/2026/9/20/polls-close-in-russian-wartime-election-with-ruling-party-set-to-dominate?traffic_source=rss"
+        },
         {
           "outlet": "France 24",
           "title": "Russia's ruling party on track to win election after Ukraine's drone attacks on Moscow",
@@ -82,120 +162,35 @@
           "outlet": "BBC World",
           "title": "Largest attack on Moscow sees Ukraine fire hundreds of drones, mayor says",
           "url": "https://www.bbc.co.uk/news/articles/c34gdjk1ne8yo?at_medium=RSS&at_campaign=rss"
-        },
-        {
-          "outlet": "NPR World",
-          "title": "Ukraine fires over 1,000 drones at Russia, including hundreds launched at Moscow",
-          "url": "https://www.npr.org/2026/09/20/nx-s1-5975372/ukraine-fires-drones-at-russia-moscow"
         }
       ],
       "articles_dropped_by_diversity_cap": 3
     },
     {
-      "headline_hint": "Tensions surge as Houthis target Riyadh and US-Iran war escalates",
-      "section": "world",
-      "category": "conflict",
-      "tier_requested": "major",
-      "article_ids": [
-        25,
-        39,
-        48,
-        49,
-        62,
-        74,
-        125,
-        205,
-        221,
-        224,
-        287,
-        293,
-        295,
-        302,
-        304
-      ],
-      "verdict": "kept",
-      "valid_ids": [
-        25,
-        39,
-        48,
-        49,
-        62,
-        74,
-        125,
-        205,
-        221,
-        224,
-        287,
-        293,
-        295,
-        302,
-        304
-      ],
-      "tier_final": "major",
-      "distinct_outlets": 6,
-      "wiki_backed": true,
-      "wiki_event": "Iranian authorities seal a French language centre affiliated with the French embassy in Tehran under a judicial order. Prosecutors say it operated without a licence and conducted activities against Iranian culture and national security.",
-      "weight": 10,
-      "weight_terms": {
-        "distinct_outlets": 6,
-        "tier_weight": 2,
-        "wiki_bonus": 2
-      },
-      "weight_floor": 5,
-      "articles": [
-        {
-          "outlet": "Al Jazeera",
-          "title": "Qatar PM urges Gulf security framework with Iran",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/20/qatar-pm-urges-gulf-security-framework-with-iran?traffic_source=rss"
-        },
-        {
-          "outlet": "Guardian World",
-          "title": "UK minister warns of impact of Trump’s Iran war on next month’s budget",
-          "url": "https://www.theguardian.com/politics/2026/sep/20/uk-budget-made-harder-donald-trump-war-iran-bridget-phillipson-andy-burnham"
-        },
-        {
-          "outlet": "Times of India",
-          "title": "‘When do I blow entire nation up?' Trump's ultimatum after Iran warns of 'decisive war'",
-          "url": "https://timesofindia.indiatimes.com/world/us/when-do-i-blow-entire-nation-up-trumps-ultimatum-after-iran-warns-of-decisive-war/articleshow/134372224.cms"
-        },
-        {
-          "outlet": "France 24",
-          "title": "Houthi attacks and no Western support: What are Saudi Arabia's options ?",
-          "url": "https://www.france24.com/en/houthi-attacks-and-no-western-support-what-are-saudi-arabia-s-options"
-        },
-        {
-          "outlet": "Livemint",
-          "title": "Iran war: Tehran sets 7 terms to renew US talks — what are the demands? Will US strike against Houthis? What we know",
-          "url": "https://www.livemint.com/news/world/iran-war-tehran-sets-7-terms-to-renew-us-talks-what-are-the-demands-will-us-strike-against-houthis-what-we-know-11789880465957.html"
-        }
-      ],
-      "articles_dropped_by_diversity_cap": 10
-    },
-    {
-      "headline_hint": "Friedrich Merz's CDU party suffers heavy losses in German state elections",
+      "headline_hint": "German Chancellor Merz admits election disaster after CDU loses two state polls",
       "section": "world",
       "category": "politics",
       "tier_requested": "major",
       "article_ids": [
-        34,
-        76,
-        114,
-        118,
-        131,
-        152,
-        179,
-        248
+        46,
+        90,
+        126,
+        130,
+        144,
+        160,
+        188,
+        250
       ],
       "verdict": "kept",
       "valid_ids": [
-        34,
-        76,
-        114,
-        118,
-        131,
-        152,
-        179,
-        248
+        46,
+        90,
+        126,
+        130,
+        144,
+        160,
+        188,
+        250
       ],
       "tier_final": "major",
       "distinct_outlets": 4,
@@ -238,18 +233,64 @@
       "articles_dropped_by_diversity_cap": 3
     },
     {
-      "headline_hint": "Haiti extradites 18 suspects in 2021 assassination of President Moïse to US",
+      "headline_hint": "US and Chinese economic officials hold high-level talks ahead of Trump-Xi summit",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        31,
+        41,
+        58
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        31,
+        41,
+        58
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 5,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "NPR World",
+          "title": "Defining global leadership in AI at Trump-Xi summit",
+          "url": "https://www.npr.org/2026/09/20/nx-s1-5973116/defining-global-leadership-in-ai-at-trump-xi-summit"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "Top US, Chinese economic officials meet ahead of Trump-Xi summit",
+          "url": "https://www.channelnewsasia.com/world/us-china-officials-meet-trump-xi-summit-6398086"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "US, China open high-level talks ahead of Trump-Xi summit",
+          "url": "https://www.aljazeera.com/economy/2026/9/20/us-china-open-high-level-talks-ahead-of-trump-xi-summit?traffic_source=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Haiti extradites 18 suspects in Jovenel Moise assassination to United States",
       "section": "world",
       "category": "politics",
       "tier_requested": "notable",
       "article_ids": [
-        31,
-        36
+        43,
+        48
       ],
       "verdict": "cut:below_floor(4<5)",
       "valid_ids": [
-        31,
-        36
+        43,
+        48
       ],
       "tier_final": "notable",
       "distinct_outlets": 2,
@@ -277,20 +318,93 @@
       "articles_dropped_by_diversity_cap": 0
     },
     {
-      "headline_hint": "US and Chinese economic officials hold talks ahead of Trump-Xi summit",
+      "headline_hint": "Pakistan police arrest Imran Khan's sister Aleema Khan ahead of planned protests",
       "section": "world",
       "category": "politics",
       "tier_requested": "notable",
       "article_ids": [
-        19,
-        29,
-        44
+        72
       ],
       "verdict": "cut:below_floor(3<5)",
       "valid_ids": [
-        19,
-        29,
-        44
+        72
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 1,
+      "wiki_backed": true,
+      "wiki_event": "Pakistani police arrest businesswoman Aleema Khan, sister of jailed former prime minister Imran Khan, at her home in Lahore, Punjab, one week before his Pakistan Tehreek-e-Insaf party's planned protest march. Police and the government do no",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 1,
+        "tier_weight": 0,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "BBC World",
+          "title": "Sister of Pakistan's ex-PM Imran Khan arrested",
+          "url": "https://www.bbc.co.uk/news/articles/cm36l2pye2kwo?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Iran closes French language centre in Tehran, prompting diplomatic backlash",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        15,
+        210
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        15,
+        210
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": true,
+      "wiki_event": "Iranian authorities seal a French language centre affiliated with the French embassy in Tehran under a judicial order. Prosecutors say it operated without a licence and conducted activities against Iranian culture and national security.",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "France to summon Iran envoy after language centre closure in Tehran",
+          "url": "https://www.aljazeera.com/news/2026/9/20/france-to-summon-iran-envoy-after-language-centre-closure-in-tehran?traffic_source=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Iran closes French language centre in Tehran for ‘illegal acts’",
+          "url": "https://www.france24.com/en/middle-east/20260920-iran-closes-french-language-centre-in-tehran-for-illegal-acts"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Macron and Carney pledge closer France-Canada ties amid shifting global alliances",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        42,
+        65,
+        92,
+        95
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        42,
+        65,
+        92,
+        95
       ],
       "tier_final": "notable",
       "distinct_outlets": 3,
@@ -305,40 +419,45 @@
       "weight_floor": 5,
       "articles": [
         {
-          "outlet": "NPR World",
-          "title": "Defining global leadership in AI at Trump-Xi summit",
-          "url": "https://www.npr.org/2026/09/20/nx-s1-5973116/defining-global-leadership-in-ai-at-trump-xi-summit"
-        },
-        {
           "outlet": "Channel News Asia",
-          "title": "Top US, Chinese economic officials meet ahead of Trump-Xi summit",
-          "url": "https://www.channelnewsasia.com/world/us-china-officials-meet-trump-xi-summit-6398086"
+          "title": "France's Macron, Canada's Carney announce closer ties",
+          "url": "https://www.channelnewsasia.com/world/france-canada-macron-carney-closer-ties-6398076"
         },
         {
           "outlet": "Al Jazeera",
-          "title": "US, China open high-level talks ahead of Trump-Xi summit",
-          "url": "https://www.aljazeera.com/economy/2026/9/20/us-china-open-high-level-talks-ahead-of-trump-xi-summit?traffic_source=rss"
+          "title": "France’s Macron and Canada’s Carney announce plans to build stronger ties",
+          "url": "https://www.aljazeera.com/news/2026/9/20/frances-macron-and-canadas-carney-announce-plans-to-build-stronger-ties?traffic_source=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Macron, Carney hail new chapter in France-Canada ties at symbolic archipelago meeting",
+          "url": "https://www.france24.com/en/france/20260920-macron-carney-hail-new-chapter-in-france-canada-ties-at-symbolic-archipelago-meeting"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Replay: Macron, Carney hail new chapter on France-Canada ties at St. Pierre and Miquelon meeting",
+          "url": "https://www.france24.com/en/replay-macron-carney-hail-new-chapter-on-france-canada-ties-at-st-pierre-and-miquelon-meeting"
         }
       ],
       "articles_dropped_by_diversity_cap": 0
     },
     {
-      "headline_hint": "Italian PM Giorgia Meloni announces plans to ban burqas in schools",
+      "headline_hint": "Italian PM Meloni proposes ban on burqas and niqabs in schools",
       "section": "world",
       "category": "politics",
       "tier_requested": "notable",
       "article_ids": [
-        32,
-        85,
-        115,
-        187
+        44,
+        99,
+        127,
+        196
       ],
       "verdict": "cut:below_floor(4<5)",
       "valid_ids": [
-        32,
-        85,
-        115,
-        187
+        44,
+        99,
+        127,
+        196
       ],
       "tier_final": "notable",
       "distinct_outlets": 4,
@@ -376,69 +495,32 @@
       "articles_dropped_by_diversity_cap": 0
     },
     {
-      "headline_hint": "Iran closes French language centre in Tehran citing diplomatic violations",
-      "section": "world",
-      "category": "politics",
-      "tier_requested": "notable",
-      "article_ids": [
-        2,
-        203
-      ],
-      "verdict": "cut:below_floor(4<5)",
-      "valid_ids": [
-        2,
-        203
-      ],
-      "tier_final": "notable",
-      "distinct_outlets": 2,
-      "wiki_backed": true,
-      "wiki_event": "Iranian authorities seal a French language centre affiliated with the French embassy in Tehran under a judicial order. Prosecutors say it operated without a licence and conducted activities against Iranian culture and national security.",
-      "weight": 4,
-      "weight_terms": {
-        "distinct_outlets": 2,
-        "tier_weight": 0,
-        "wiki_bonus": 2
-      },
-      "weight_floor": 5,
-      "articles": [
-        {
-          "outlet": "Al Jazeera",
-          "title": "France to summon Iran envoy after language centre closure in Tehran",
-          "url": "https://www.aljazeera.com/news/2026/9/20/france-to-summon-iran-envoy-after-language-centre-closure-in-tehran?traffic_source=rss"
-        },
-        {
-          "outlet": "France 24",
-          "title": "Iran closes French language centre in Tehran for ‘illegal acts’",
-          "url": "https://www.france24.com/en/middle-east/20260920-iran-closes-french-language-centre-in-tehran-for-illegal-acts"
-        }
-      ],
-      "articles_dropped_by_diversity_cap": 0
-    },
-    {
-      "headline_hint": "Controversy erupts over voter list revision notices in Delhi Special Intensive Revision",
+      "headline_hint": "Controversy erupts over Delhi voter list revision notices issued to prominent figures",
       "section": "india",
       "category": "politics",
       "tier_requested": "lead",
       "article_ids": [
-        128,
-        154,
-        161,
-        166,
-        197,
-        227,
-        231,
-        246
+        132,
+        141,
+        162,
+        169,
+        175,
+        205,
+        235,
+        248,
+        283
       ],
       "verdict": "kept",
       "valid_ids": [
-        128,
-        154,
-        161,
-        166,
-        197,
-        227,
-        231,
-        246
+        132,
+        141,
+        162,
+        169,
+        175,
+        205,
+        235,
+        248,
+        283
       ],
       "tier_final": "lead",
       "distinct_outlets": 5,
@@ -452,6 +534,11 @@
       },
       "weight_floor": 5,
       "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "Delhi SIRprises: Jaishankar, Dhankhar, Advani &amp; more issued notices for ‘discrepancies’",
+          "url": "https://timesofindia.indiatimes.com/city/delhi/lk-advani-dhankar-sisodia-also-issued-sir-notices/articleshow/134372553.cms"
+        },
         {
           "outlet": "Hindustan Times",
           "title": "'Notices do not mean name deletion': EC clarifies after Kejriwal, Jaishankar, Advani get SIR letters",
@@ -471,34 +558,29 @@
           "outlet": "NDTV",
           "title": "Poll Body Chief, S Jaishankar Among Those Facing Notices Over Voter List",
           "url": "https://www.ndtv.com/india-news/notice-doesnt-mean-exclusion-poll-body-after-row-over-delhi-voter-list-12072887#publisher=newsstand"
-        },
-        {
-          "outlet": "Times of India",
-          "title": "From BJP veteran Advani to Kejriwal: High-profile names get Delhi SIR notices",
-          "url": "https://timesofindia.indiatimes.com/india/not-just-rekha-gupta-and-arvind-kejriwal-lk-advani-manish-sisodia-issued-notices-in-delhi-sir/articleshow/134368051.cms"
         }
       ],
-      "articles_dropped_by_diversity_cap": 3
+      "articles_dropped_by_diversity_cap": 4
     },
     {
-      "headline_hint": "Assam CM lays foundation stone for Adani's mega power project",
+      "headline_hint": "Assam CM lays foundation for Rs 48,000 crore Adani power plant",
       "section": "india",
       "category": "economy",
       "tier_requested": "major",
       "article_ids": [
-        141,
-        147,
-        150,
-        181,
-        214
+        152,
+        156,
+        158,
+        190,
+        219
       ],
       "verdict": "kept",
       "valid_ids": [
-        141,
-        147,
-        150,
-        181,
-        214
+        152,
+        156,
+        158,
+        190,
+        219
       ],
       "tier_final": "major",
       "distinct_outlets": 3,
@@ -541,22 +623,22 @@
       "articles_dropped_by_diversity_cap": 0
     },
     {
-      "headline_hint": "Heavy monsoon rains cause deadly landslides and flash floods in Kerala",
+      "headline_hint": "Heavy rains trigger fatal landslides and flash floods across Kerala",
       "section": "india",
       "category": "disaster",
       "tier_requested": "major",
       "article_ids": [
-        23,
-        65,
-        105,
-        155
+        35,
+        79,
+        119,
+        163
       ],
       "verdict": "kept",
       "valid_ids": [
-        23,
-        65,
-        105,
-        155
+        35,
+        79,
+        119,
+        163
       ],
       "tier_final": "major",
       "distinct_outlets": 4,
@@ -594,73 +676,20 @@
       "articles_dropped_by_diversity_cap": 0
     },
     {
-      "headline_hint": "Dispute deepens between Tata Trusts and Tata Sons board over listing and control",
-      "section": "india",
-      "category": "economy",
-      "tier_requested": "notable",
-      "article_ids": [
-        3,
-        66,
-        95,
-        188
-      ],
-      "verdict": "cut:below_floor(2<5)",
-      "valid_ids": [
-        3,
-        66,
-        95,
-        188
-      ],
-      "tier_final": "notable",
-      "distinct_outlets": 2,
-      "wiki_backed": false,
-      "wiki_event": "",
-      "weight": 2,
-      "weight_terms": {
-        "distinct_outlets": 2,
-        "tier_weight": 0,
-        "wiki_bonus": 0
-      },
-      "weight_floor": 5,
-      "articles": [
-        {
-          "outlet": "Times of India",
-          "title": "Tata dipute: Lawyers Singhvi, Salve now on opposing sides",
-          "url": "https://timesofindia.indiatimes.com/business/india-business/tata-dipute-singhvi-salve-now-on-opposing-sides/articleshow/134375598.cms"
-        },
-        {
-          "outlet": "NDTV",
-          "title": "Tata Trusts Against Listing, Diverted Attention: Harish Salve To NDTV",
-          "url": "https://www.ndtv.com/india-news/trustees-put-on-notice-by-government-harish-salve-on-listing-row-at-tatas-12073306#publisher=newsstand"
-        },
-        {
-          "outlet": "NDTV",
-          "title": "'Runaway Board': Abhishek Singhvi Backs Tata Trusts' 'Shareholder Primacy'",
-          "url": "https://www.ndtv.com/india-news/noel-tata-tata-despite-abhishek-singhvi-backs-tata-trusts-shareholder-primacy-calls-tata-sons-board-runaway-board-12073137#publisher=newsstand"
-        },
-        {
-          "outlet": "Times of India",
-          "title": "'Condition was not met': Tata Trusts challenges Chandrasekaran reappointment resolution",
-          "url": "https://timesofindia.indiatimes.com/business/india-business/condition-was-not-met-tata-trusts-challenges-chandrasekaran-reappointment-resolution/articleshow/134370043.cms"
-        }
-      ],
-      "articles_dropped_by_diversity_cap": 0
-    },
-    {
-      "headline_hint": "BJP and opposition spar over comedian mimicking PM Modi at Rahul Gandhi's event",
+      "headline_hint": "BJP and opposition clash over mimicry of PM Modi at Rahul Gandhi event",
       "section": "india",
       "category": "politics",
       "tier_requested": "notable",
       "article_ids": [
-        129,
-        172,
-        250
+        142,
+        181,
+        252
       ],
       "verdict": "cut:below_floor(3<5)",
       "valid_ids": [
-        129,
-        172,
-        250
+        142,
+        181,
+        252
       ],
       "tier_final": "notable",
       "distinct_outlets": 3,
@@ -688,6 +717,52 @@
           "outlet": "Hindustan Times",
           "title": "‘Cheap theatre’ vs ‘democratic right’: BJP, Opposition spar over PM Modi's mimicry at Rahul Gandhi event",
           "url": "https://www.hindustantimes.com/india-news/cheap-theatre-vs-democratic-right-bjp-opposition-congress-aap-tmc-spar-pm-modi-mimicry-rahul-gandhi-indore-event-101789897303326.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Legal debate intensifies over Tata Trusts governance and listing policy",
+      "section": "india",
+      "category": "economy",
+      "tier_requested": "notable",
+      "article_ids": [
+        16,
+        80,
+        109
+      ],
+      "verdict": "cut:below_floor(2<5)",
+      "valid_ids": [
+        16,
+        80,
+        109
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 2,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "Tata dipute: Lawyers Singhvi, Salve now on opposing sides",
+          "url": "https://timesofindia.indiatimes.com/business/india-business/tata-dipute-singhvi-salve-now-on-opposing-sides/articleshow/134375598.cms"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "Tata Trusts Against Listing, Diverted Attention: Harish Salve To NDTV",
+          "url": "https://www.ndtv.com/india-news/trustees-put-on-notice-by-government-harish-salve-on-listing-row-at-tatas-12073306#publisher=newsstand"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "'Runaway Board': Abhishek Singhvi Backs Tata Trusts' 'Shareholder Primacy'",
+          "url": "https://www.ndtv.com/india-news/noel-tata-tata-despite-abhishek-singhvi-backs-tata-trusts-shareholder-primacy-calls-tata-sons-board-runaway-board-12073137#publisher=newsstand"
         }
       ],
       "articles_dropped_by_diversity_cap": 0
