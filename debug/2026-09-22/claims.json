@@ -1,0 +1,920 @@
+{
+  "min_claim_chars": 20,
+  "max_claims_per_story": 24,
+  "calls": [
+    {
+      "label": "claims-world",
+      "cluster_ids": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "label": "claims-india",
+      "cluster_ids": [
+        3,
+        4,
+        5,
+        6
+      ]
+    }
+  ],
+  "rejected_claims": 0,
+  "rejected_clusters": 0,
+  "clusters": [
+    {
+      "cluster_id": 0,
+      "headline_hint": "Major US news outlets sue Trump White House over press ban as TV networks suspend pool coverage",
+      "section": "world",
+      "batch_position": 0,
+      "claim_count": 20,
+      "distinct_outlets": 4,
+      "source_kinds": {
+        "fulltext": 20
+      },
+      "claims": [
+        {
+          "id": 1,
+          "cluster_id": 0,
+          "text": "US President Donald Trump unveiled a new helipad on the White House South Lawn and cut a ribbon leading to it on Monday.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/us/watch-press-pool-boycott-leaves-trump-barely-audible-at-white-house-event/articleshow/134401459.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 2,
+          "cluster_id": 0,
+          "text": "Donald Trump was barely audible during live broadcast of the helipad event because Marine One drowned out his voice and standard TV pool microphones were absent.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/us/watch-press-pool-boycott-leaves-trump-barely-audible-at-white-house-event/articleshow/134401459.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 3,
+          "cluster_id": 0,
+          "text": "The White House TV press pool comprises five major networks: ABC, CBS, CNN, Fox News, and NBC.",
+          "kind": "background",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/us/watch-press-pool-boycott-leaves-trump-barely-audible-at-white-house-event/articleshow/134401459.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 4,
+          "cluster_id": 0,
+          "text": "The five TV pool networks suspended pooled broadcast coverage of President Trump after he banned CNN, MS NOW, and Politico from White House grounds.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/us/watch-press-pool-boycott-leaves-trump-barely-audible-at-white-house-event/articleshow/134401459.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 5,
+          "cluster_id": 0,
+          "text": "The five TV networks stated jointly: 'The public has a vital interest in receiving accurate, independent information about its government. No administration should restrict a news organisation because it objects to its reporting.'",
+          "kind": "quote",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/us/watch-press-pool-boycott-leaves-trump-barely-audible-at-white-house-event/articleshow/134401459.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 6,
+          "cluster_id": 0,
+          "text": "C-SPAN declined to broadcast the White House helipad ceremony because it relies on the TV pool feed.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/us/watch-press-pool-boycott-leaves-trump-barely-audible-at-white-house-event/articleshow/134401459.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 7,
+          "cluster_id": 0,
+          "text": "The White House launched 'Trump TV', a 24/7 streaming platform featuring administration announcements, presidential speeches, and coverage related to Donald Trump.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/us/watch-press-pool-boycott-leaves-trump-barely-audible-at-white-house-event/articleshow/134401459.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 8,
+          "cluster_id": 0,
+          "text": "'Trump TV' began its initial broadcast by streaming Donald Trump's July 3 address at Mount Rushmore on the White House YouTube channel.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/us-news/white-house-launches-trump-tv-as-cnn-ms-now-and-politico-move-court-over-press-ban-what-we-know-so-far-11790044199024.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 9,
+          "cluster_id": 0,
+          "text": "CNN, Politico, and MS NOW filed an emergency First Amendment lawsuit in DC District Court seeking to restore their White House press credentials.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/us-news/white-house-launches-trump-tv-as-cnn-ms-now-and-politico-move-court-over-press-ban-what-we-know-so-far-11790044199024.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 10,
+          "cluster_id": 0,
+          "text": "CNN, Politico, and MS NOW stated in their lawsuit: 'This ban could not be a more direct assault on the First Amendment nor a more blatant violation of our most fundamental constitutional principles.'",
+          "kind": "quote",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/us-news/white-house-launches-trump-tv-as-cnn-ms-now-and-politico-move-court-over-press-ban-what-we-know-so-far-11790044199024.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 11,
+          "cluster_id": 0,
+          "text": "Donald Trump defended the restrictions on CNN, Politico, and MS NOW, stating that news outlets accused of publishing 'fake news' have no constitutional right to White House grounds access.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/us-news/white-house-launches-trump-tv-as-cnn-ms-now-and-politico-move-court-over-press-ban-what-we-know-so-far-11790044199024.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 12,
+          "cluster_id": 0,
+          "text": "Donald Trump said outside Gracie Mansion regarding press boycott threats: 'They said they were going to boycott me, but they never boycott me. So I wasn't very worried about that. Look at all that press.'",
+          "kind": "quote",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/us-news/white-house-launches-trump-tv-as-cnn-ms-now-and-politico-move-court-over-press-ban-what-we-know-so-far-11790044199024.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 13,
+          "cluster_id": 0,
+          "text": "US District Judge Tim Kelly was assigned to preside over the First Amendment lawsuit brought by CNN, MS NOW, and Politico against the Trump administration.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/us-news/live/2026/sep/21/donald-trump-arch-media-white-house-press-ban-mamdani-ai-unga-latest-news-updates",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 14,
+          "cluster_id": 0,
+          "text": "Judge Tim Kelly previously ordered the Trump administration to restore White House credentials for CNN journalist Jim Acosta in 2018.",
+          "kind": "background",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/us-news/live/2026/sep/21/donald-trump-arch-media-white-house-press-ban-mamdani-ai-unga-latest-news-updates",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 15,
+          "cluster_id": 0,
+          "text": "News outlets including the New York Times and Washington Post delayed publishing still photographs from White House pool coverage until midnight in solidarity with barred outlets.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/us-news/live/2026/sep/21/donald-trump-arch-media-white-house-press-ban-mamdani-ai-unga-latest-news-updates",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 16,
+          "cluster_id": 0,
+          "text": "New York City Mayor Zohran Mamdani expressed disagreement with Donald Trump's press ban and welcomed all journalists onto the lawn at Gracie Mansion.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/us-news/live/2026/sep/21/donald-trump-arch-media-white-house-press-ban-mamdani-ai-unga-latest-news-updates",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 17,
+          "cluster_id": 0,
+          "text": "Donald Trump announced the White House ban on CNN, Politico, and MS NOW on Friday, accusing them of writing 'fiction or lies'.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cm0e32rwvrryo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 18,
+          "cluster_id": 0,
+          "text": "Fox News Washington bureau chief Bryan Boughton notified newsrooms that the TV pool would stop providing designated pool coverage for President Trump starting Monday.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cm0e32rwvrryo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 19,
+          "cluster_id": 0,
+          "text": "On Monday, the five-seat CNN booth in the White House press basement was left empty and powered off, forcing CNN reporters to broadcast live from a public sidewalk outside.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cm0e32rwvrryo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 20,
+          "cluster_id": 0,
+          "text": "Conservative news outlet Real America's Voice was listed as the secondary press crew for Donald Trump's trip to New York.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cm0e32rwvrryo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 1,
+      "headline_hint": "Houthis press offensive in Yemen as UK offers aerial refueling to Saudi Arabia",
+      "section": "world",
+      "batch_position": 1,
+      "claim_count": 19,
+      "distinct_outlets": 4,
+      "source_kinds": {
+        "fulltext": 19
+      },
+      "claims": [
+        {
+          "id": 21,
+          "cluster_id": 1,
+          "text": "Houthi forces battled Saudi-backed Yemeni government troops on Monday for control of the strategic Kahboub Mountains in Taiz and Lahj provinces.",
+          "kind": "event",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/9/22/houthis-battle-for-strategic-heights-in-yemen-as-thousands-more-flee-homes?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 22,
+          "cluster_id": 1,
+          "text": "The Kahboub Mountains overlook the Bab al-Mandeb Strait and Mayyun Island in the Red Sea.",
+          "kind": "background",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/9/22/houthis-battle-for-strategic-heights-in-yemen-as-thousands-more-flee-homes?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 23,
+          "cluster_id": 1,
+          "text": "The New York Times reported that President Donald Trump ordered air strikes against the Houthis on Sunday but cancelled them at the last minute.",
+          "kind": "event",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/9/22/houthis-battle-for-strategic-heights-in-yemen-as-thousands-more-flee-homes?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 24,
+          "cluster_id": 1,
+          "text": "Fighting in Yemen since August 6 has killed at least 674 people and displaced more than 158,000 individuals, according to Yemeni officials and the World Health Organization.",
+          "kind": "figure",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/9/22/houthis-battle-for-strategic-heights-in-yemen-as-thousands-more-flee-homes?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 25,
+          "cluster_id": 1,
+          "text": "Houthi leader Abdel-Malik al-Houthi stated in an address that the US was considering joint military escalation with Saudi Arabia against Houthi forces.",
+          "kind": "quote",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/9/22/houthis-battle-for-strategic-heights-in-yemen-as-thousands-more-flee-homes?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 26,
+          "cluster_id": 1,
+          "text": "Yemeni government forces chief of staff Major-General Abdulaziz al-Majidi stated that soldiers and tribal allies liberated several areas on the outskirts of Taiz.",
+          "kind": "event",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/9/22/houthis-battle-for-strategic-heights-in-yemen-as-thousands-more-flee-homes?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 27,
+          "cluster_id": 1,
+          "text": "Houthi-affiliated Al Masirah TV reported a late Monday strike in Mocha killed six civilians, including two children and a woman.",
+          "kind": "event",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/9/22/houthis-battle-for-strategic-heights-in-yemen-as-thousands-more-flee-homes?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 28,
+          "cluster_id": 1,
+          "text": "More than 18 million people in Yemen currently face acute food insecurity, according to the World Food Programme.",
+          "kind": "figure",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/9/22/houthis-battle-for-strategic-heights-in-yemen-as-thousands-more-flee-homes?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 29,
+          "cluster_id": 1,
+          "text": "Brent crude rose 0.51% to $100.80 per barrel and US West Texas Intermediate crude rose 0.43% to $92.77 per barrel on Tuesday.",
+          "kind": "figure",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/business/international-business/oil-remains-above-100-per-barrel-as-traders-await-potential-us-iran-talks/articleshow/134400106.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 30,
+          "cluster_id": 1,
+          "text": "Houthi forces claimed responsibility for attacks targeting Riyadh and a Saudi Aramco facility in Yanbu.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/business/international-business/oil-remains-above-100-per-barrel-as-traders-await-potential-us-iran-talks/articleshow/134400106.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 31,
+          "cluster_id": 1,
+          "text": "Only 12 commodity vessels passed through the Strait of Hormuz over the weekend compared to 35 vessels during the previous weekend.",
+          "kind": "figure",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/business/international-business/oil-remains-above-100-per-barrel-as-traders-await-potential-us-iran-talks/articleshow/134400106.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 32,
+          "cluster_id": 1,
+          "text": "US Treasury Secretary Scott Bessent warned that foreign companies servicing Iranian airlines could face secondary sanctions starting September 23.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/us-news/us-iran-war-live-updates-oil-price-strait-of-hormuz-houthis-attack-saudi-trump-red-sea-11790038133488.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 33,
+          "cluster_id": 1,
+          "text": "UKMTO reported that an outbound LPG tanker and another vessel were struck by projectiles or debris in the Strait of Hormuz, causing minor crew injuries on one vessel.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/us-news/us-iran-war-live-updates-oil-price-strait-of-hormuz-houthis-attack-saudi-trump-red-sea-11790038133488.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 34,
+          "cluster_id": 1,
+          "text": "The Trump administration proposed a $5 billion fund to rebuild Middle Eastern energy infrastructure and bypass reliance on the Strait of Hormuz.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/us-news/us-iran-war-live-updates-oil-price-strait-of-hormuz-houthis-attack-saudi-trump-red-sea-11790038133488.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 35,
+          "cluster_id": 1,
+          "text": "President Donald Trump held a phone conversation with Yemeni President Rashad al-Alimi regarding Houthi advances near the Bab el-Mandeb Strait.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/us-news/us-iran-war-live-updates-oil-price-strait-of-hormuz-houthis-attack-saudi-trump-red-sea-11790038133488.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 36,
+          "cluster_id": 1,
+          "text": "G7 foreign ministers released a joint statement calling on Iran to end its military support for Houthi forces in Yemen.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/us-news/us-iran-war-live-updates-oil-price-strait-of-hormuz-houthis-attack-saudi-trump-red-sea-11790038133488.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 37,
+          "cluster_id": 1,
+          "text": "UK Prime Minister Andy Burnham announced that the UK agreed to supply defensive air-to-air refuelling via an RAF Voyager for Saudi Arabian jets.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/politics/2026/sep/21/uk-to-give-support-to-saudi-jets-in-attempt-to-counter-houthi-fighters",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 38,
+          "cluster_id": 1,
+          "text": "UK Prime Minister Andy Burnham stated he will ask US President Donald Trump to de-escalate the conflict in Iran during their Tuesday meeting.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/politics/2026/sep/21/uk-to-give-support-to-saudi-jets-in-attempt-to-counter-houthi-fighters",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 39,
+          "cluster_id": 1,
+          "text": "The UK and US militaries recently tested an Excalibur drone in British waters, launching a heavyweight torpedo designed to sink ships and submarines.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/politics/2026/sep/21/uk-to-give-support-to-saudi-jets-in-attempt-to-counter-houthi-fighters",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 2,
+      "headline_hint": "World leaders gather for 81st UN General Assembly amid escalating global conflicts",
+      "section": "world",
+      "batch_position": 2,
+      "claim_count": 14,
+      "distinct_outlets": 3,
+      "source_kinds": {
+        "fulltext": 14
+      },
+      "claims": [
+        {
+          "id": 40,
+          "cluster_id": 2,
+          "text": "Approximately 130 heads of state and government are scheduled to address the 81st session of the UN General Assembly starting Tuesday.",
+          "kind": "figure",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/americas/20260922-world-leaders-gather-at-un-amid-wars-ai-fears-and-global-divisions",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 41,
+          "cluster_id": 2,
+          "text": "US President Donald Trump and French President Emmanuel Macron are scheduled to address the UN General Assembly on Tuesday following UN Secretary-General Antonio Guterres.",
+          "kind": "event",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/americas/20260922-world-leaders-gather-at-un-amid-wars-ai-fears-and-global-divisions",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 42,
+          "cluster_id": 2,
+          "text": "Ukrainian President Volodymyr Zelenskyy and Iranian President Masoud Pezeshkian are scheduled to address the UN General Assembly on Wednesday.",
+          "kind": "event",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/americas/20260922-world-leaders-gather-at-un-amid-wars-ai-fears-and-global-divisions",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 43,
+          "cluster_id": 2,
+          "text": "Israeli Prime Minister Benjamin Netanyahu is scheduled to address the UN General Assembly in person on Thursday.",
+          "kind": "event",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/americas/20260922-world-leaders-gather-at-un-amid-wars-ai-fears-and-global-divisions",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 44,
+          "cluster_id": 2,
+          "text": "Palestinian President Mahmoud Abbas will address the UN General Assembly by video on Thursday after being denied a US visa.",
+          "kind": "event",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/americas/20260922-world-leaders-gather-at-un-amid-wars-ai-fears-and-global-divisions",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 45,
+          "cluster_id": 2,
+          "text": "Chinese President Xi Jinping is skipping the UN General Assembly to meet Donald Trump in Washington on Wednesday, sending a vice president to New York instead.",
+          "kind": "event",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/americas/20260922-world-leaders-gather-at-un-amid-wars-ai-fears-and-global-divisions",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 46,
+          "cluster_id": 2,
+          "text": "Russian President Vladimir Putin and Indian Prime Minister Narendra Modi are not attending the 81st UN General Assembly session.",
+          "kind": "event",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/americas/20260922-world-leaders-gather-at-un-amid-wars-ai-fears-and-global-divisions",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 47,
+          "cluster_id": 2,
+          "text": "UN Secretary-General Antonio Guterres' second five-year term ends on December 31.",
+          "kind": "background",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/americas/20260922-world-leaders-gather-at-un-amid-wars-ai-fears-and-global-divisions",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 48,
+          "cluster_id": 2,
+          "text": "The theme for the 81st UN General Assembly General Debate is 'Restoring trust, managing transformation: a United Nations that delivers for all'.",
+          "kind": "background",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/us-news/unga-2026-wars-ai-fears-and-un-reform-dominate-as-world-leaders-gather-in-nyc-what-else-in-on-the-agenda-11790043462562.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 49,
+          "cluster_id": 2,
+          "text": "Indian External Affairs Minister S. Jaishankar is leading the Indian delegation and will address the UN General Assembly on September 26.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/us-news/unga-2026-wars-ai-fears-and-un-reform-dominate-as-world-leaders-gather-in-nyc-what-else-in-on-the-agenda-11790043462562.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 50,
+          "cluster_id": 2,
+          "text": "Brazilian President Luiz Inacio Lula da Silva is scheduled to speak second at the UN General Assembly opening on Tuesday morning, followed by President Donald Trump.",
+          "kind": "event",
+          "outlet": "NPR World",
+          "url": "https://www.npr.org/2026/09/21/g-s1-144238/up-first-newsletter-united-nations-general-assembly-trump-arch-faa-ai-federal-agent-shooting",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 51,
+          "cluster_id": 2,
+          "text": "President Donald Trump announced plans on Truth Social for a proposed 250-foot military arch in Washington, D.C., equipped with sniper positions and weaponry.",
+          "kind": "event",
+          "outlet": "NPR World",
+          "url": "https://www.npr.org/2026/09/21/g-s1-144238/up-first-newsletter-united-nations-general-assembly-trump-arch-faa-ai-federal-agent-shooting",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 52,
+          "cluster_id": 2,
+          "text": "The Federal Aviation Administration is preparing an $875 million AI-powered software overhaul called SMART to streamline air traffic control.",
+          "kind": "event",
+          "outlet": "NPR World",
+          "url": "https://www.npr.org/2026/09/21/g-s1-144238/up-first-newsletter-united-nations-general-assembly-trump-arch-faa-ai-federal-agent-shooting",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 53,
+          "cluster_id": 2,
+          "text": "The US Department of Homeland Security launched an investigation after a federal immigration officer shot and injured 28-year-old Venezuelan citizen Wilber Rafael Garces Perez during an operation in Austin, Texas.",
+          "kind": "event",
+          "outlet": "NPR World",
+          "url": "https://www.npr.org/2026/09/21/g-s1-144238/up-first-newsletter-united-nations-general-assembly-trump-arch-faa-ai-federal-agent-shooting",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 3,
+      "headline_hint": "India receives support from Visegrad Four group for permanent UN Security Council seat",
+      "section": "india",
+      "batch_position": 0,
+      "claim_count": 12,
+      "distinct_outlets": 3,
+      "source_kinds": {
+        "fulltext": 12
+      },
+      "claims": [
+        {
+          "id": 54,
+          "cluster_id": 3,
+          "text": "India and the Visegrad Four (V4) group—comprising Poland, Hungary, Slovakia, and the Czech Republic—agreed to deepen political, economic, technological, defence, and people-to-people ties.",
+          "kind": "event",
+          "outlet": "NDTV",
+          "url": "https://www.ndtv.com/world-news/europes-visegrad-group-backs-indias-permanent-un-security-council-seat-12079172#publisher=newsstand",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 55,
+          "cluster_id": 3,
+          "text": "The Visegrad Four group backed India's bid for a permanent seat on the United Nations Security Council.",
+          "kind": "event",
+          "outlet": "NDTV",
+          "url": "https://www.ndtv.com/world-news/europes-visegrad-group-backs-indias-permanent-un-security-council-seat-12079172#publisher=newsstand",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 56,
+          "cluster_id": 3,
+          "text": "External Affairs Minister S. Jaishankar met foreign leaders of the V4 group on the margins of the 81st session of the UN General Assembly.",
+          "kind": "event",
+          "outlet": "NDTV",
+          "url": "https://www.ndtv.com/world-news/europes-visegrad-group-backs-indias-permanent-un-security-council-seat-12079172#publisher=newsstand",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 57,
+          "cluster_id": 3,
+          "text": "India and the V4 nations agreed to establish an Annual Business Forum and hold annual meetings between their foreign ministers.",
+          "kind": "event",
+          "outlet": "NDTV",
+          "url": "https://www.ndtv.com/world-news/europes-visegrad-group-backs-indias-permanent-un-security-council-seat-12079172#publisher=newsstand",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 58,
+          "cluster_id": 3,
+          "text": "Slovakia's Foreign Minister Juraj Blanar stated on behalf of the V4 group that India, as an upcoming superpower in the Indo-Pacific region, must be a permanent member of the UN Security Council.",
+          "kind": "quote",
+          "outlet": "NDTV",
+          "url": "https://www.ndtv.com/world-news/europes-visegrad-group-backs-indias-permanent-un-security-council-seat-12079172#publisher=newsstand",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 59,
+          "cluster_id": 3,
+          "text": "The UN Security Council was established in 1945, with China, France, Russia, the United Kingdom, and the United States holding its five permanent seats.",
+          "kind": "background",
+          "outlet": "NDTV",
+          "url": "https://www.ndtv.com/world-news/europes-visegrad-group-backs-indias-permanent-un-security-council-seat-12079172#publisher=newsstand",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 60,
+          "cluster_id": 3,
+          "text": "The Visegrad Group was formed in 1991 in Visegrad, Hungary, following the collapse of the Soviet Union.",
+          "kind": "background",
+          "outlet": "NDTV",
+          "url": "https://www.ndtv.com/world-news/europes-visegrad-group-backs-indias-permanent-un-security-council-seat-12079172#publisher=newsstand",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 61,
+          "cluster_id": 3,
+          "text": "External Affairs Minister S. Jaishankar co-chaired the Partners for Multilateralism, International Law, Peace & Prosperity Summit in New York alongside European Council President António Costa.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/jaishankar-urges-reformed-multilateralism-amid-rising-geopolitical-tensions/article71494091.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 62,
+          "cluster_id": 3,
+          "text": "The Partners for Multilateralism initiative was founded by leaders of the European Union, Brazil, Kenya, and Canada.",
+          "kind": "background",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/jaishankar-urges-reformed-multilateralism-amid-rising-geopolitical-tensions/article71494091.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 63,
+          "cluster_id": 3,
+          "text": "A joint editorial by Partners for Multilateralism co-authors noted that 2025 saw state-based armed conflicts across 35 countries and global military spending of nearly $3 trillion.",
+          "kind": "figure",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/jaishankar-urges-reformed-multilateralism-amid-rising-geopolitical-tensions/article71494091.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 64,
+          "cluster_id": 3,
+          "text": "External Affairs Minister S. Jaishankar is scheduled to address the UN General Assembly General Debate on September 26.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/global-order-under-stress-jaishankar-calls-for-stronger-multilateralism-at-unga/articleshow/134400877.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 65,
+          "cluster_id": 3,
+          "text": "External Affairs Minister S. Jaishankar formally launched India's campaign for a non-permanent UN Security Council seat for the 2028-29 term in July.",
+          "kind": "background",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/visegrad-four-backs-india-for-permanent-unsc-seat-jaishankar-calls-first-india-v4-meet-historic/articleshow/134397233.cms",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 4,
+      "headline_hint": "Political controversy and police action follow viral harassment video of minors in Bihar",
+      "section": "india",
+      "batch_position": 1,
+      "claim_count": 9,
+      "distinct_outlets": 3,
+      "source_kinds": {
+        "fulltext": 9
+      },
+      "claims": [
+        {
+          "id": 66,
+          "cluster_id": 4,
+          "text": "Bihar Police filed FIRs against 120 social media account operators for revealing the identity of a minor girl in a viral video.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/bihar-police-file-firs-against-120-accounts-for-revealing-jamui-minor-s-identity-warn-against-sharing-videos-101790047349481.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 67,
+          "cluster_id": 4,
+          "text": "On September 19, a Class 10 girl and her male friend returning from tuition in Jamui were intercepted, harassed, and sexually assaulted by a group of local youths.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/bihar-police-file-firs-against-120-accounts-for-revealing-jamui-minor-s-identity-warn-against-sharing-videos-101790047349481.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 68,
+          "cluster_id": 4,
+          "text": "A Special Investigation Team led by female SDPO Deepti Monali was established, leading to the identification of seven suspects and the arrest of three minors.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/bihar-police-file-firs-against-120-accounts-for-revealing-jamui-minor-s-identity-warn-against-sharing-videos-101790047349481.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 69,
+          "cluster_id": 4,
+          "text": "Jamui SP Bishwajeet Dayal stated police registered an FIR under the POCSO Act and Bharatiya Nyaya Sanhita after tracing victims through a vehicle registration number visible in the video.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/bihar-police-file-firs-against-120-accounts-for-revealing-jamui-minor-s-identity-warn-against-sharing-videos-101790047349481.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 70,
+          "cluster_id": 4,
+          "text": "Congress leader Rahul Gandhi called the Jamui incident deeply disturbing and demanded that the perpetrators be prosecuted under the POCSO Act.",
+          "kind": "quote",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/bihar-police-file-firs-against-120-accounts-for-revealing-jamui-minor-s-identity-warn-against-sharing-videos-101790047349481.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 71,
+          "cluster_id": 4,
+          "text": "Bihar Minister Shrawon Kumar drew public criticism for describing the harassment of the minor girl in Jamui as an isolated ('Chhitputh') incident.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/chhitputh-ghatna-hoti-rehti-hai-bihar-ministers-remarks-on-jamui-harassment-case-triggers-row/articleshow/134401676.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 72,
+          "cluster_id": 4,
+          "text": "JD(U) state president Umesh Kushwaha referred to the Jamui assault as an isolated incident while asserting that law and order was worse prior to 2005.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/chhitputh-ghatna-hoti-rehti-hai-bihar-ministers-remarks-on-jamui-harassment-case-triggers-row/articleshow/134401676.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 73,
+          "cluster_id": 4,
+          "text": "RJD leader Tejashwi Yadav criticized JD(U) leaders for describing the assault on minors as isolated, calling the incident shameful and a blot on Bihar.",
+          "kind": "quote",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/chhitputh-ghatna-hoti-rehti-hai-bihar-ministers-remarks-on-jamui-harassment-case-triggers-row/articleshow/134401676.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 74,
+          "cluster_id": 4,
+          "text": "The National Commission for Women took suo motu cognisance of the Jamui incident on September 21, 2026, with Chairperson Vijaya Rahatkar directing the Bihar DGP to file an immediate FIR.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/bihar/ncw-takes-suo-motu-cognizance-of-jamui-incident/article71491840.ece",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 5,
+      "headline_hint": "Fire at Telangana's RIMS hospital newborn care unit kills two infants",
+      "section": "india",
+      "batch_position": 2,
+      "claim_count": 6,
+      "distinct_outlets": 2,
+      "source_kinds": {
+        "fulltext": 6
+      },
+      "claims": [
+        {
+          "id": 75,
+          "cluster_id": 5,
+          "text": "Two preterm infants, aged four and five days, died after a fire broke out at the Special Newborn Care Unit (SNCU) of RIMS hospital in Adilabad, Telangana, around 11:50 p.m. on September 21, 2026.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/telangana/two-infants-die-in-fire-accident-at-telanganas-adilabad-hospital-sncu-ward-28-children-rescued/article71494002.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 76,
+          "cluster_id": 5,
+          "text": "Adilabad DMHO Dr. Sadhana stated the fire was triggered when an air conditioner in the SNCU reception area caught fire, sending smoke into enclosed glass-windowed wards.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/telangana/two-infants-die-in-fire-accident-at-telanganas-adilabad-hospital-sncu-ward-28-children-rescued/article71494002.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 77,
+          "cluster_id": 5,
+          "text": "Patient attendants broke glass windows in the unit to clear accumulated smoke and helped evacuate infants.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/telangana/two-infants-die-in-fire-accident-at-telanganas-adilabad-hospital-sncu-ward-28-children-rescued/article71494002.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 78,
+          "cluster_id": 5,
+          "text": "Telangana Chief Minister A. Revanth Reddy ordered an inquiry into the fire and instructed officials to strengthen fire safety measures across hospitals statewide.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/telangana/two-infants-die-in-fire-accident-at-telanganas-adilabad-hospital-sncu-ward-28-children-rescued/article71494002.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 79,
+          "cluster_id": 5,
+          "text": "Adilabad Collector Rajarshi Shah stated 27 newborns were undergoing treatment in the RIMS unit at the time of the fire incident.",
+          "kind": "figure",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/2-infants-killed-as-fire-breaks-out-in-newborn-care-unit-in-telangana-hospital-101790051154575.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 80,
+          "cluster_id": 5,
+          "text": "Telangana Health Minister C. Damodar Raja Narasimha confirmed that the other rescued infants were in stable condition without immediate complications.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/2-infants-killed-as-fire-breaks-out-in-newborn-care-unit-in-telangana-hospital-101790051154575.html",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 6,
+      "headline_hint": "IIT Bombay student body demands welfare reforms following student suicide",
+      "section": "india",
+      "batch_position": 3,
+      "claim_count": 9,
+      "distinct_outlets": 3,
+      "source_kinds": {
+        "fulltext": 9
+      },
+      "claims": [
+        {
+          "id": 81,
+          "cluster_id": 6,
+          "text": "IIT Bombay suspended Professor Suryanarayana Doolla from his post as Dean of Administrative Affairs following the suicide of student Sahil Wakode.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/iit-faculty-delhi-bombay-madras-support-professor-suryanarayana-doolla-after-suspension-over-student-suicide-101790045534991.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 82,
+          "cluster_id": 6,
+          "text": "Professor Doolla served as an exam invigilator on September 18 when 20-year-old BTech student Sahil Wakode was caught using ChatGPT on a mobile phone.",
+          "kind": "background",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/iit-faculty-delhi-bombay-madras-support-professor-suryanarayana-doolla-after-suspension-over-student-suicide-101790045534991.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 83,
+          "cluster_id": 6,
+          "text": "Mumbai Police charged Professor Doolla with abetment to suicide and alleged caste discrimination under the Bharatiya Nyaya Sanhita and SC/ST Act.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/iit-faculty-delhi-bombay-madras-support-professor-suryanarayana-doolla-after-suspension-over-student-suicide-101790045534991.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 84,
+          "cluster_id": 6,
+          "text": "Faculty bodies from IIT Bombay, IIT Delhi, and IIT Madras issued statements supporting Professor Doolla, stating he was following Senate-approved exam rules.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/iit-faculty-delhi-bombay-madras-support-professor-suryanarayana-doolla-after-suspension-over-student-suicide-101790045534991.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 85,
+          "cluster_id": 6,
+          "text": "IIT Bombay student representatives issued a statement on September 21 stating their campus protests were aimed at institutional reforms and not at justifying academic misconduct.",
+          "kind": "event",
+          "outlet": "NDTV",
+          "url": "https://www.ndtv.com/india-news/protest-not-to-justify-cheating-but-over-systemic-issues-iit-bombay-students-12079003#publisher=newsstand",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 86,
+          "cluster_id": 6,
+          "text": "IIT Bombay Director Shireesh B. Kedare met with protesting students and signed a document acknowledging a charter of student demands.",
+          "kind": "event",
+          "outlet": "NDTV",
+          "url": "https://www.ndtv.com/india-news/protest-not-to-justify-cheating-but-over-systemic-issues-iit-bombay-students-12079003#publisher=newsstand",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 87,
+          "cluster_id": 6,
+          "text": "Student representatives clarified that asking for Professor Doolla to step down as Dean was a precautionary measure for an independent investigation rather than a presumption of guilt.",
+          "kind": "event",
+          "outlet": "NDTV",
+          "url": "https://www.ndtv.com/india-news/protest-not-to-justify-cheating-but-over-systemic-issues-iit-bombay-students-12079003#publisher=newsstand",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 88,
+          "cluster_id": 6,
+          "text": "IIT Bombay issued an official apology for its initial press statement regarding the circumstances of Sahil Wakode's death, noting it was premature to state details prior to official police findings.",
+          "kind": "event",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/latest/1095891/iit-b-student-suicide-professor-accused-of-caste-discrimination-suspended-from-deans-post?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 89,
+          "cluster_id": 6,
+          "text": "Sahil Wakode's parents alleged that their son was subjected to caste discrimination for three months and threatened with suspension prior to his death.",
+          "kind": "event",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/latest/1095891/iit-b-student-suicide-professor-accused-of-caste-discrimination-suspended-from-deans-post?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        }
+      ]
+    }
+  ],
+  "clusters_with_no_claims": []
+}
