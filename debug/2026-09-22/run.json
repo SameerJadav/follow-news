@@ -2,27 +2,27 @@
   "kind": "digest",
   "day": "2026-09-22",
   "ok": false,
-  "started_at": "2026-09-21T23:26:37Z",
-  "finished_at": "2026-09-21T23:28:07Z",
-  "elapsed_ms": 90324,
+  "started_at": "2026-09-22T00:59:24Z",
+  "finished_at": "2026-09-22T01:00:10Z",
+  "elapsed_ms": 45833,
   "argv": [
     "digest.py",
     "--if-missing"
   ],
   "python": "3.12.3",
-  "git_sha": "6fab89921cab66701206c3a7dbd5e09b6104efe4",
+  "git_sha": "ade6c4a369a423262043f2a72094bd3e858d39a2",
   "debug_level": 1,
-  "bytes_written": 11789653,
+  "bytes_written": 1060724,
   "byte_cap_reached": false,
   "env": {
     "DIGEST_DEBUG": "1",
     "CI": "true",
     "GITHUB_ACTIONS": "true",
-    "GITHUB_RUN_ID": "35667550840",
+    "GITHUB_RUN_ID": "35674079194",
     "GITHUB_RUN_ATTEMPT": "1",
     "GITHUB_WORKFLOW": "digest",
     "GITHUB_EVENT_NAME": "schedule",
-    "GITHUB_SHA": "6fab89921cab66701206c3a7dbd5e09b6104efe4",
+    "GITHUB_SHA": "ade6c4a369a423262043f2a72094bd3e858d39a2",
     "GITHUB_REF": "refs/heads/main",
     "RUNNER_OS": "Linux"
   },
@@ -68,45 +68,30 @@
   "stages": [
     {
       "stage": "gather",
-      "ms": 3455,
+      "ms": 3077,
       "error": ""
     },
     {
       "stage": "pool",
-      "ms": 3,
+      "ms": 4,
       "error": ""
     },
     {
       "stage": "wikipedia",
-      "ms": 380,
+      "ms": 242,
       "error": ""
     },
     {
       "stage": "select",
-      "ms": 26891,
-      "error": ""
-    },
-    {
-      "stage": "rank",
-      "ms": 3,
-      "error": ""
-    },
-    {
-      "stage": "extract",
-      "ms": 29944,
-      "error": ""
-    },
-    {
-      "stage": "claims",
-      "ms": 27774,
+      "ms": 40657,
       "error": "ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"
     }
   ],
   "window": {
     "since": "2026-09-21T05:10:45+00:00",
-    "now": "2026-09-21T23:26:39.075699+00:00",
+    "now": "2026-09-22T00:59:26.542097+00:00",
     "prev_generated_at": "2026-09-21 05:10:45+00:00"
   },
-  "stopped_at": "claims",
+  "stopped_at": "select",
   "stopped_error": "ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"
 }
