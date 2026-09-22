@@ -14,47 +14,51 @@
   "floor_relaxed": false,
   "kept_weights": [
     10,
+    10,
     8,
+    9,
     7,
     6,
-    6,
-    9,
     5
   ],
   "per_section": {
-    "world": 5,
-    "india": 2
+    "world": 3,
+    "india": 4
   },
   "clusters": [
     {
-      "headline_hint": "US TV networks boycott White House coverage after Trump administration bans major news outlets",
+      "headline_hint": "Major US news outlets sue Trump White House over press ban as TV networks suspend pool coverage",
       "section": "world",
       "category": "politics",
       "tier_requested": "lead",
       "article_ids": [
-        7,
-        8,
-        18,
-        34,
-        53,
-        159,
+        61,
+        102,
+        133,
+        136,
+        145,
         163,
-        169,
-        217,
-        239
+        165,
+        197,
+        212,
+        254,
+        257,
+        293
       ],
       "verdict": "kept",
       "valid_ids": [
-        7,
-        8,
-        18,
-        34,
-        53,
-        159,
+        61,
+        102,
+        133,
+        136,
+        145,
         163,
-        169,
-        217,
-        239
+        165,
+        197,
+        212,
+        254,
+        257,
+        293
       ],
       "tier_final": "lead",
       "distinct_outlets": 6,
@@ -69,59 +73,63 @@
       "weight_floor": 5,
       "articles": [
         {
+          "outlet": "Times of India",
+          "title": "Watch: Press pool boycott leaves Trump barely audible at White House event",
+          "url": "https://timesofindia.indiatimes.com/world/us/watch-press-pool-boycott-leaves-trump-barely-audible-at-white-house-event/articleshow/134401459.cms"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "White House launches ‘Trump TV’ as CNN, MS NOW and Politico move court over press ban: What we know so far",
+          "url": "https://www.livemint.com/news/us-news/white-house-launches-trump-tv-as-cnn-ms-now-and-politico-move-court-over-press-ban-what-we-know-so-far-11790044199024.html"
+        },
+        {
           "outlet": "Guardian World",
-          "title": "Trump says he’ll probably lose lawsuit brought by news outlets he banned from White House, blaming judge appointed by ‘TRUMP’ – live",
+          "title": "Trump says he’ll probably lose lawsuit brought by news outlets he banned from White House, blaming judge appointed by ‘TRUMP’ – as it happened",
           "url": "https://www.theguardian.com/us-news/live/2026/sep/21/donald-trump-arch-media-white-house-press-ban-mamdani-ai-unga-latest-news-updates"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Mamdani challenges Trump over White House press ban during meeting",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/22/mamdani-challenges-trump-over-white-house-press-ban-during-meeting?traffic_source=rss"
         },
         {
           "outlet": "BBC World",
           "title": "CNN, MS NOW and Politico file lawsuit against Trump's White House ban",
           "url": "https://www.bbc.co.uk/news/articles/cm0e32rwvrryo?at_medium=RSS&at_campaign=rss"
-        },
-        {
-          "outlet": "Times of India",
-          "title": "‘Dangerous for our Country’: Trump slams CNN, Politico, MS NOW over White House lawsuit",
-          "url": "https://timesofindia.indiatimes.com/world/us/dangerous-for-our-country-trump-slams-cnn-politico-ms-now-over-white-house-lawsuit/articleshow/134397621.cms"
-        },
-        {
-          "outlet": "Al Jazeera",
-          "title": "Trump speech inaudible as US networks boycott White House event",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/21/trump-speech-inaudible-as-us-networks-boycott-white-house-event?traffic_source=rss"
-        },
-        {
-          "outlet": "Livemint",
-          "title": "Trump blocks CNN, MS NOW and Politico: Why White House press pool matters",
-          "url": "https://www.livemint.com/news/us-news/trump-blocks-cnn-ms-now-and-politico-why-white-house-press-pool-matters-11790006906123.html"
         }
       ],
-      "articles_dropped_by_diversity_cap": 5
+      "articles_dropped_by_diversity_cap": 7
     },
     {
-      "headline_hint": "UK offers air support to Saudi Arabia as Houthi conflict escalates and US declines aid",
+      "headline_hint": "World leaders gather for 81st UN General Assembly amid escalating global conflicts",
       "section": "world",
-      "category": "conflict",
+      "category": "politics",
       "tier_requested": "major",
       "article_ids": [
-        32,
-        171,
-        202,
-        207,
-        222,
-        284
+        58,
+        90,
+        158,
+        159,
+        217,
+        306,
+        309,
+        315
       ],
       "verdict": "kept",
       "valid_ids": [
-        32,
-        171,
-        202,
-        207,
-        222,
-        284
+        58,
+        90,
+        158,
+        159,
+        217,
+        306,
+        309,
+        315
       ],
       "tier_final": "major",
       "distinct_outlets": 4,
       "wiki_backed": true,
-      "wiki_event": "The Red Sea International Film Festival in Saudi Arabia is postponed to 2027 due to the ongoing conflict with the Houthis.",
+      "wiki_event": "U.S. senior advisor Massad Boulos says that he has held talks with Egyptian Foreign Minister Badr Abdelatty and Sudanese Foreign Minister Mohieddin Salem at the United Nations General Assembly meeting in a effort to end the three-year long ",
       "weight": 8,
       "weight_terms": {
         "distinct_outlets": 4,
@@ -131,65 +139,255 @@
       "weight_floor": 5,
       "articles": [
         {
-          "outlet": "Guardian World",
-          "title": "UK to give support to Saudi jets in attempt to counter Houthi fighters",
-          "url": "https://www.theguardian.com/politics/2026/sep/21/uk-to-give-support-to-saudi-jets-in-attempt-to-counter-houthi-fighters"
+          "outlet": "France 24",
+          "title": "World leaders gather at UN amid wars, AI fears and global divisions",
+          "url": "https://www.france24.com/en/americas/20260922-world-leaders-gather-at-un-amid-wars-ai-fears-and-global-divisions"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "UNGA 2026: Wars, AI fears and UN reform dominate as world leaders gather in NYC – What else in on agenda?",
+          "url": "https://www.livemint.com/news/us-news/unga-2026-wars-ai-fears-and-un-reform-dominate-as-world-leaders-gather-in-nyc-what-else-in-on-the-agenda-11790043462562.html"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Here’s what to pay attention to at the UNGA",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/22/aje-onl-nf_heres-what-to-pay-attention-to-at-the-unga-210926?traffic_source=rss"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "World leaders convene for UNGA. And, Trump says D.C. arch will be a 'military complex'",
+          "url": "https://www.npr.org/2026/09/21/g-s1-144238/up-first-newsletter-united-nations-general-assembly-trump-arch-faa-ai-federal-agent-shooting"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Trump returns to the UN, what will he say?",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/22/aje-onl-nf_trump-returns-to-the-un-what-will-he-say-210926?traffic_source=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 3
+    },
+    {
+      "headline_hint": "Houthis press offensive in Yemen as UK offers aerial refueling to Saudi Arabia",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "major",
+      "article_ids": [
+        15,
+        64,
+        140,
+        153,
+        162,
+        195,
+        261,
+        276,
+        284,
+        311
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        15,
+        64,
+        140,
+        153,
+        162,
+        195,
+        261,
+        276,
+        284,
+        311
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 6,
+      "wiki_backed": true,
+      "wiki_event": "British prime minister Andy Burnham says that the United Kingdom will offer Saudi Arabia aerial refueling in its ongoing conflict with the Houthis.",
+      "weight": 10,
+      "weight_terms": {
+        "distinct_outlets": 6,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "Houthis battle for strategic heights in Yemen as thousands more flee homes",
+          "url": "https://www.aljazeera.com/news/2026/9/22/houthis-battle-for-strategic-heights-in-yemen-as-thousands-more-flee-homes?traffic_source=rss"
         },
         {
           "outlet": "France 24",
-          "title": "Saudi Arabia left without US help against Houthis",
-          "url": "https://www.france24.com/en/saudi-arabia-left-without-us-help-against-houthis"
+          "title": "Middle East live: Yemen fighting escalates as Trump heads to UN",
+          "url": "https://www.france24.com/en/middle-east/20260922-middle-east-live-yemen-fighting-escalates-as-trump-heads-to-un"
         },
         {
           "outlet": "Times of India",
-          "title": "Trump dodged Yemen's plea for military support amid Houthi attacks on Riyadh: Report",
-          "url": "https://timesofindia.indiatimes.com/world/middle-east/trump-dodged-yemens-plea-for-military-support-against-houthis-amid-attacks-on-saudi-arabia-report/articleshow/134392205.cms"
+          "title": "Oil remains above $100 per barrel as traders await potential US-Iran talks",
+          "url": "https://timesofindia.indiatimes.com/business/international-business/oil-remains-above-100-per-barrel-as-traders-await-potential-us-iran-talks/articleshow/134400106.cms"
         },
         {
-          "outlet": "BBC World",
-          "title": "Yemenis flee across Red Sea as Houthis and Saudi-backed forces escalate war",
-          "url": "https://www.bbc.co.uk/news/articles/cw4gm7l742dmo?at_medium=RSS&at_campaign=rss"
+          "outlet": "Livemint",
+          "title": "US-Iran War LIVE: US threatens Iran airlines with shutdown; oil prices edge higher",
+          "url": "https://www.livemint.com/news/us-news/us-iran-war-live-updates-oil-price-strait-of-hormuz-houthis-attack-saudi-trump-red-sea-11790038133488.html"
         },
         {
           "outlet": "Guardian World",
-          "title": "Houthis move to seize strategic terrain after Trump calls off airstrikes at last minute",
-          "url": "https://www.theguardian.com/world/2026/sep/21/houthis-seize-strategic-terrain-yemen-trump-calls-off-airstrikes-last-minute"
+          "title": "UK to give support to Saudi jets in attempt to counter Houthi fighters",
+          "url": "https://www.theguardian.com/politics/2026/sep/21/uk-to-give-support-to-saudi-jets-in-attempt-to-counter-houthi-fighters"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 5
+    },
+    {
+      "headline_hint": "Typhoon Dujuan causes deaths, power outages and travel disruption in Japan",
+      "section": "world",
+      "category": "disaster",
+      "tier_requested": "notable",
+      "article_ids": [
+        14,
+        168,
+        214,
+        255,
+        262,
+        312
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        14,
+        168,
+        214,
+        255,
+        262,
+        312
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "At least two people killed in Japan as typhoon Dujuan triggers heavy rain, landslides",
+          "url": "https://www.theguardian.com/world/2026/sep/22/typhoon-dujuan-japan-latest-weather-millions-told-to-evacuate-tokyo"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Typhoon Dujuan kills two in Japan, causes travel chaos near Tokyo",
+          "url": "https://www.aljazeera.com/news/2026/9/22/typhoon-dujuan-hits-japan-with-deadly-floods-travel-chaos-near-tokyo?traffic_source=rss"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Millions urged to evacuate as powerful Typhoon Dujuan hits Japan",
+          "url": "https://www.bbc.co.uk/news/articles/cm3wj2lexl97o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Typhoon Dujuan: Japan urges two million to evacuate",
+          "url": "https://www.france24.com/en/video/20260921-typhoon-dujuan-japan-urges-two-million-to-evacuate"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Watch: Timelapse shows typhoon barrelling towards Japan",
+          "url": "https://www.bbc.co.uk/news/videos/cm0j3224p6j8o?at_medium=RSS&at_campaign=rss"
         }
       ],
       "articles_dropped_by_diversity_cap": 1
     },
     {
-      "headline_hint": "German Chancellor Friedrich Merz faces crisis as ruling CDU loses heavily to far-right AfD",
+      "headline_hint": "US East Coast flight operations disrupted by air traffic control outage",
       "section": "world",
-      "category": "politics",
-      "tier_requested": "major",
+      "category": "disaster",
+      "tier_requested": "notable",
       "article_ids": [
-        157,
-        185,
-        198,
-        199,
-        234,
-        283,
-        300
+        138,
+        150,
+        174,
+        220,
+        221
       ],
-      "verdict": "kept",
+      "verdict": "cut:below_floor(4<5)",
       "valid_ids": [
-        157,
-        185,
-        198,
-        199,
-        234,
-        283,
-        300
+        138,
+        150,
+        174,
+        220,
+        221
       ],
-      "tier_final": "major",
+      "tier_final": "notable",
       "distinct_outlets": 4,
       "wiki_backed": false,
       "wiki_event": "",
-      "weight": 6,
+      "weight": 4,
       "weight_terms": {
         "distinct_outlets": 4,
-        "tier_weight": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "US airports resume operations after telecom outage disrupts thousands of flights",
+          "url": "https://timesofindia.indiatimes.com/world/us/northeast-us-airports-resume-operations-after-telecom-outage-disrupts-thousands-of-flights/articleshow/134400218.cms"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Over 1,000 flights cancelled as air travel disrupted across US Northeast; services resume: What caused the outage?",
+          "url": "https://www.livemint.com/news/us-news/over-1-000-flights-cancelled-as-air-travel-disrupted-across-us-northeast-services-resume-what-caused-the-outage-11790039694714.html"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Flights resume across US north-east after FAA communications failure",
+          "url": "https://www.theguardian.com/us-news/2026/sep/21/airports-flight-ground-stop-hacking-threat"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "FAA halts flights to major US East Coast airports amid outage",
+          "url": "https://www.aljazeera.com/economy/2026/9/21/faa-halts-flights-to-major-us-east-coast-airports-amid-outage?traffic_source=rss"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "NYC Airports Face Delays After Air Traffic Control Outage",
+          "url": "https://www.livemint.com/news/nyc-airports-face-delays-after-air-traffic-control-outage-11790020581299.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "German Chancellor Friedrich Merz vows to stay in office after regional election setbacks",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        252,
+        268,
+        272,
+        273,
+        290,
+        314
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        252,
+        268,
+        272,
+        273,
+        290,
+        314
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 0,
         "wiki_bonus": 0
       },
       "weight_floor": 5,
@@ -220,191 +418,23 @@
           "url": "https://www.theguardian.com/world/live/2026/sep/21/merz-german-chancellor-state-elections-russia-ukraine-europe-live-latest-news"
         }
       ],
-      "articles_dropped_by_diversity_cap": 2
-    },
-    {
-      "headline_hint": "Typhoon Dujuan batters Japan, triggering mass evacuations and widespread transport disruptions",
-      "section": "world",
-      "category": "disaster",
-      "tier_requested": "major",
-      "article_ids": [
-        12,
-        57,
-        140,
-        160,
-        173,
-        287
-      ],
-      "verdict": "kept",
-      "valid_ids": [
-        12,
-        57,
-        140,
-        160,
-        173,
-        287
-      ],
-      "tier_final": "major",
-      "distinct_outlets": 5,
-      "wiki_backed": false,
-      "wiki_event": "",
-      "weight": 7,
-      "weight_terms": {
-        "distinct_outlets": 5,
-        "tier_weight": 2,
-        "wiki_bonus": 0
-      },
-      "weight_floor": 5,
-      "articles": [
-        {
-          "outlet": "Channel News Asia",
-          "title": "Flights scrapped, evacuations urged as Typhoon Dujuan wallops Japan",
-          "url": "https://www.channelnewsasia.com/east-asia/japan-flights-cancelled-typhoon-dujuan-evacuations-tokyo-6400821"
-        },
-        {
-          "outlet": "BBC World",
-          "title": "Millions urged to evacuate as powerful Typhoon Dujuan hits Japan",
-          "url": "https://www.bbc.co.uk/news/articles/cm3wj2lexl97o?at_medium=RSS&at_campaign=rss"
-        },
-        {
-          "outlet": "Al Jazeera",
-          "title": "Airplane makes ‘miracle’ landing as Typhoon Dujuan hits Japan",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/21/airplane-makes-miracle-landing-as-typhoon-dujuan-hits-japan?traffic_source=rss"
-        },
-        {
-          "outlet": "France 24",
-          "title": "Typhoon Dujuan: Japan urges two million to evacuate",
-          "url": "https://www.france24.com/en/video/20260921-typhoon-dujuan-japan-urges-two-million-to-evacuate"
-        },
-        {
-          "outlet": "Guardian World",
-          "title": "Japanese islands brace for Dujuan to become a typhoon again",
-          "url": "https://www.theguardian.com/environment/2026/sep/21/weather-tracker-japan-typhoon-dujuan"
-        }
-      ],
       "articles_dropped_by_diversity_cap": 1
     },
     {
-      "headline_hint": "Russia's ruling United Russia party retains supermajority in parliamentary election",
-      "section": "world",
-      "category": "politics",
-      "tier_requested": "major",
-      "article_ids": [
-        62,
-        232,
-        306,
-        316
-      ],
-      "verdict": "kept",
-      "valid_ids": [
-        62,
-        232,
-        306,
-        316
-      ],
-      "tier_final": "major",
-      "distinct_outlets": 4,
-      "wiki_backed": false,
-      "wiki_event": "",
-      "weight": 6,
-      "weight_terms": {
-        "distinct_outlets": 4,
-        "tier_weight": 2,
-        "wiki_bonus": 0
-      },
-      "weight_floor": 5,
-      "articles": [
-        {
-          "outlet": "Al Jazeera",
-          "title": "Putin’s party wins supermajority in Russia’s parliamentary election",
-          "url": "https://www.aljazeera.com/news/2026/9/21/pro-putin-party-wins-supermajority-amid-ramped-up-ukrainian-attacks?traffic_source=rss"
-        },
-        {
-          "outlet": "Guardian World",
-          "title": "Putin consolidates grip on Russia as 49 Ukraine war veterans elected to parliament",
-          "url": "https://www.theguardian.com/world/2026/sep/21/putin-consolidates-grip-russia-ukraine-war-veterans-elected-duma"
-        },
-        {
-          "outlet": "NPR World",
-          "title": "How Russia's parliamentary election might affect the war in Ukraine",
-          "url": "https://www.npr.org/2026/09/21/nx-s1-5975460/how-russias-parliamentary-election-might-affect-the-war-in-ukraine"
-        },
-        {
-          "outlet": "BBC World",
-          "title": "'No surprises' as results emerge in Russian parliamentary election",
-          "url": "https://www.bbc.co.uk/news/videos/cjp30pq0rx6ro?at_medium=RSS&at_campaign=rss"
-        }
-      ],
-      "articles_dropped_by_diversity_cap": 0
-    },
-    {
-      "headline_hint": "Paramount settles state antitrust lawsuits to clear path for $110 billion Warner Bros merger",
-      "section": "world",
-      "category": "economy",
-      "tier_requested": "notable",
-      "article_ids": [
-        4,
-        9,
-        41,
-        137
-      ],
-      "verdict": "cut:below_floor(2<5)",
-      "valid_ids": [
-        4,
-        9,
-        41,
-        137
-      ],
-      "tier_final": "notable",
-      "distinct_outlets": 2,
-      "wiki_backed": false,
-      "wiki_event": "",
-      "weight": 2,
-      "weight_terms": {
-        "distinct_outlets": 2,
-        "tier_weight": 0,
-        "wiki_bonus": 0
-      },
-      "weight_floor": 5,
-      "articles": [
-        {
-          "outlet": "France 24",
-          "title": "Paramount settles with US states to clear Warner Bros. mega-merger",
-          "url": "https://www.france24.com/en/video/20260921-paramount-settles-with-us-states-to-clear-warner-bros-mega-merger"
-        },
-        {
-          "outlet": "Al Jazeera",
-          "title": "Paramount settles with US states, union to win Warner Bros takeover",
-          "url": "https://www.aljazeera.com/economy/2026/9/21/paramount-settles-with-us-states-in-step-towards-merger-with-warner-bros?traffic_source=rss"
-        },
-        {
-          "outlet": "France 24",
-          "title": "Paramount settles with US states, clearing path for Warner Bros. merger",
-          "url": "https://www.france24.com/en/americas/20260921-paramount-settles-with-us-states-clearing-path-for-warner-bros-merger"
-        },
-        {
-          "outlet": "France 24",
-          "title": "Paramount, US states settle antitrust lawsuit over Warner Bros. acquisition",
-          "url": "https://www.france24.com/en/tv-shows/business/20260921-paramount-us-states-settle-antitrust-lawsuit-over-warner-bros-acquisition"
-        }
-      ],
-      "articles_dropped_by_diversity_cap": 0
-    },
-    {
-      "headline_hint": "EU regulator fines Google €403 million over handling of user location data",
+      "headline_hint": "EU fines Google 403 million euros over misuse of user location data",
       "section": "world",
       "category": "technology",
       "tier_requested": "notable",
       "article_ids": [
-        197,
-        249,
-        269
+        271,
+        298,
+        308
       ],
       "verdict": "cut:below_floor(3<5)",
       "valid_ids": [
-        197,
-        249,
-        269
+        271,
+        298,
+        308
       ],
       "tier_final": "notable",
       "distinct_outlets": 3,
@@ -437,47 +467,174 @@
       "articles_dropped_by_diversity_cap": 0
     },
     {
-      "headline_hint": "Assault on teenagers in Bihar's Jamui sparks intense political fallout and police arrests",
+      "headline_hint": "India receives support from Visegrad Four group for permanent UN Security Council seat",
       "section": "india",
       "category": "politics",
       "tier_requested": "lead",
       "article_ids": [
-        46,
-        105,
-        156,
-        194,
-        265,
-        271,
-        280,
-        282
+        20,
+        31,
+        36,
+        129,
+        152,
+        173
       ],
       "verdict": "kept",
       "valid_ids": [
-        46,
-        105,
-        156,
-        194,
-        265,
-        271,
-        280,
-        282
+        20,
+        31,
+        36,
+        129,
+        152,
+        173
       ],
       "tier_final": "lead",
-      "distinct_outlets": 5,
-      "wiki_backed": false,
-      "wiki_event": "",
+      "distinct_outlets": 3,
+      "wiki_backed": true,
+      "wiki_event": "U.S. senior advisor Massad Boulos says that he has held talks with Egyptian Foreign Minister Badr Abdelatty and Sudanese Foreign Minister Mohieddin Salem at the United Nations General Assembly meeting in a effort to end the three-year long ",
       "weight": 9,
       "weight_terms": {
-        "distinct_outlets": 5,
+        "distinct_outlets": 3,
         "tier_weight": 4,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "NDTV",
+          "title": "India's UN Security Council Seat Bid Gets Support From 4 European Countries",
+          "url": "https://www.ndtv.com/world-news/europes-visegrad-group-backs-indias-permanent-un-security-council-seat-12079172#publisher=newsstand"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "Jaishankar urges reformed multilateralism amid rising geopolitical tensions",
+          "url": "https://www.thehindu.com/news/national/jaishankar-urges-reformed-multilateralism-amid-rising-geopolitical-tensions/article71494091.ece"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "‘Global order under stress’: Jaishankar calls for stronger multilateralism at UNGA",
+          "url": "https://timesofindia.indiatimes.com/india/global-order-under-stress-jaishankar-calls-for-stronger-multilateralism-at-unga/articleshow/134400877.cms"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "'Historic occasion': Jaishankar describes first V4+India Foreign Ministers meeting",
+          "url": "https://www.thehindu.com/news/national/historic-occasion-jaishankar-describes-first-v4india-foreign-ministers-meeting/article71493950.ece"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Inevitable veto power? 4 European nations back India’s permanent UN seat bid",
+          "url": "https://timesofindia.indiatimes.com/india/visegrad-four-backs-india-for-permanent-unsc-seat-jaishankar-calls-first-india-v4-meet-historic/articleshow/134397233.cms"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 1
+    },
+    {
+      "headline_hint": "Fire at Telangana's RIMS hospital newborn care unit kills two infants",
+      "section": "india",
+      "category": "disaster",
+      "tier_requested": "major",
+      "article_ids": [
+        12,
+        30,
+        78,
+        79
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        12,
+        30,
+        78,
+        79
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 6,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
         "wiki_bonus": 0
       },
       "weight_floor": 5,
       "articles": [
         {
           "outlet": "The Hindu",
-          "title": "Class 10 girl and boy returning from coaching groped and assaulted in Bihar’s Jamui, sparking a political row",
-          "url": "https://www.thehindu.com/news/national/bihar/two-class-10-students-a-girl-and-a-boy-groped-and-harassed-in-bihars-jamui-sparking-a-political-row/article71491560.ece"
+          "title": "Two infants killed in fire accident at Telangana’s RIMS Adilabad hospital SNCU ward, 25 children rescued",
+          "url": "https://www.thehindu.com/news/national/telangana/two-infants-die-in-fire-accident-at-telanganas-adilabad-hospital-sncu-ward-28-children-rescued/article71494002.ece"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "2 infants killed as fire breaks out in newborn care unit in Telangana hospital",
+          "url": "https://www.hindustantimes.com/india-news/2-infants-killed-as-fire-breaks-out-in-newborn-care-unit-in-telangana-hospital-101790051154575.html"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "5-day-old infant dies after fire breaks out at Telangana's RIMS hospital; 28 newborns rescued",
+          "url": "https://timesofindia.indiatimes.com/city/hyderabad/5-day-old-infant-dies-after-fire-breaks-out-at-telanganas-rims-hospital-28-newborns-rescued/articleshow/134401145.cms"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "2 Infants Killed As AC Blast Triggers Fire At Telangana Hospital",
+          "url": "https://www.ndtv.com/india-news/adilabad-2-infants-killed-as-ac-blast-triggers-fire-at-telangana-hospital-12079000#publisher=newsstand"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Political controversy and police action follow viral harassment video of minors in Bihar",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        26,
+        33,
+        72,
+        77,
+        147,
+        191,
+        235,
+        251,
+        270
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        26,
+        33,
+        72,
+        77,
+        147,
+        191,
+        235,
+        251,
+        270
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 5,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Hindustan Times",
+          "title": "120 accounts booked, warning issued: Bihar Police take action over Jamui minor's identity",
+          "url": "https://www.hindustantimes.com/india-news/bihar-police-file-firs-against-120-accounts-for-revealing-jamui-minor-s-identity-warn-against-sharing-videos-101790047349481.html"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "'Chhitputh ghatna': Bihar minister's outrageous remark on Jamui harassment video",
+          "url": "https://timesofindia.indiatimes.com/india/chhitputh-ghatna-hoti-rehti-hai-bihar-ministers-remarks-on-jamui-harassment-case-triggers-row/articleshow/134401676.cms"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "NCW takes suo motu cognizance of Jamui incident",
+          "url": "https://www.thehindu.com/news/national/bihar/ncw-takes-suo-motu-cognizance-of-jamui-incident/article71491840.ece"
         },
         {
           "outlet": "NDTV",
@@ -485,181 +642,96 @@
           "url": "https://www.ndtv.com/india-news/on-bihar-groping-video-opposition-attacks-ministers-petty-cases-shocker-12077274#publisher=newsstand"
         },
         {
-          "outlet": "Hindustan Times",
-          "title": "‘Recall Bihar before 2005’, JD(U) state chief says on Jamui harassment row; RJD alleges ‘goonda raj’",
-          "url": "https://www.hindustantimes.com/india-news/recall-bihar-before-2005-jdu-state-chief-umesh-singh-kushwaha-jamui-harassment-row-congress-rjd-allege-goonda-raj-101790003810456.html"
-        },
-        {
           "outlet": "Scroll.in",
           "title": "Bihar: Three arrested after videos show minor girl, boy being harassed and assaulted in Jamui",
           "url": "https://scroll.in/latest/1095905/bihar-three-arrested-after-videos-show-minor-girl-boy-being-harassed-and-assaulted-in-jamui?utm_source=rss&utm_medium=public"
-        },
-        {
-          "outlet": "Times of India",
-          "title": "Bihar harassment horror: Police arrest three, launch manhunt for four others",
-          "url": "https://timesofindia.indiatimes.com/india/bihar-harassment-horror-police-arrest-three-launch-manhunt-for-four-others/articleshow/134387784.cms"
         }
       ],
-      "articles_dropped_by_diversity_cap": 3
+      "articles_dropped_by_diversity_cap": 4
     },
     {
-      "headline_hint": "Delhi court revives complaint against Sonia Gandhi over voter list entry case",
-      "section": "india",
-      "category": "politics",
-      "tier_requested": "major",
-      "article_ids": [
-        44,
-        251,
-        292
-      ],
-      "verdict": "kept",
-      "valid_ids": [
-        44,
-        251,
-        292
-      ],
-      "tier_final": "major",
-      "distinct_outlets": 3,
-      "wiki_backed": false,
-      "wiki_event": "",
-      "weight": 5,
-      "weight_terms": {
-        "distinct_outlets": 3,
-        "tier_weight": 2,
-        "wiki_bonus": 0
-      },
-      "weight_floor": 5,
-      "articles": [
-        {
-          "outlet": "The Hindu",
-          "title": "Court orders fresh hearing in Sonia Gandhi’s voter roll entry case",
-          "url": "https://www.thehindu.com/news/national/delhi-court-sets-aside-magistrate-order-refusing-probe-in-sonia-gandhis-pre-citizenship-electoral-entry/article71490940.ece"
-        },
-        {
-          "outlet": "Scroll.in",
-          "title": "Court sets aside order refusing FIR against Sonia Gandhi for ‘forgery’ in her voter list inclusion",
-          "url": "https://scroll.in/latest/1095902/court-sets-aside-order-refusing-fir-against-sonia-gandhi-for-forgery-in-her-voter-list-inclusion?utm_source=rss&utm_medium=public"
-        },
-        {
-          "outlet": "Hindustan Times",
-          "title": "Delhi court revives complaint against Sonia Gandhi over alleged voter list forgery",
-          "url": "https://www.hindustantimes.com/india-news/delhi-court-revives-complaint-against-sonia-gandhi-over-alleged-voter-list-forgery-sir-101789982485646.html"
-        }
-      ],
-      "articles_dropped_by_diversity_cap": 0
-    },
-    {
-      "headline_hint": "India-New Zealand free trade agreement set to take effect on October 20",
-      "section": "india",
-      "category": "economy",
-      "tier_requested": "major",
-      "article_ids": [
-        45,
-        179
-      ],
-      "verdict": "cut:below_floor(4<5)",
-      "valid_ids": [
-        45,
-        179
-      ],
-      "tier_final": "major",
-      "distinct_outlets": 2,
-      "wiki_backed": false,
-      "wiki_event": "",
-      "weight": 4,
-      "weight_terms": {
-        "distinct_outlets": 2,
-        "tier_weight": 2,
-        "wiki_bonus": 0
-      },
-      "weight_floor": 5,
-      "articles": [
-        {
-          "outlet": "Times of India",
-          "title": "New Zealand trade pact to take effect on Oct 20, to give duty-free access",
-          "url": "https://timesofindia.indiatimes.com/business/india-business/new-zealand-trade-pact-to-take-effect-on-oct-20-to-give-duty-free-access/articleshow/134397576.cms"
-        },
-        {
-          "outlet": "Hindustan Times",
-          "title": "India-New Zealand FTA to come into force on October 20, Piyush Goyal says",
-          "url": "https://www.hindustantimes.com/india-news/indianew-zealand-fta-to-come-into-force-on-october-20-piyush-goyal-says-101790005605009.html"
-        }
-      ],
-      "articles_dropped_by_diversity_cap": 0
-    },
-    {
-      "headline_hint": "IIT Bombay professor removed as dean following student suicide probe",
+      "headline_hint": "IIT Bombay student body demands welfare reforms following student suicide",
       "section": "india",
       "category": "politics",
       "tier_requested": "notable",
       "article_ids": [
-        201,
-        241,
-        276,
-        294,
-        297
+        35,
+        51,
+        74,
+        97,
+        101,
+        142,
+        234,
+        275,
+        313
       ],
-      "verdict": "cut:below_floor(4<5)",
+      "verdict": "kept",
       "valid_ids": [
-        201,
-        241,
-        276,
-        294,
-        297
+        35,
+        51,
+        74,
+        97,
+        101,
+        142,
+        234,
+        275,
+        313
       ],
       "tier_final": "notable",
-      "distinct_outlets": 4,
+      "distinct_outlets": 5,
       "wiki_backed": false,
       "wiki_event": "",
-      "weight": 4,
+      "weight": 5,
       "weight_terms": {
-        "distinct_outlets": 4,
+        "distinct_outlets": 5,
         "tier_weight": 0,
         "wiki_bonus": 0
       },
       "weight_floor": 5,
       "articles": [
         {
+          "outlet": "Hindustan Times",
+          "title": "‘Was simply discharging duties’: IIT Bombay, Delhi, Madras faculty rally behind professor Suryanarayana Doolla",
+          "url": "https://www.hindustantimes.com/india-news/iit-faculty-delhi-bombay-madras-support-professor-suryanarayana-doolla-after-suspension-over-student-suicide-101790045534991.html"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "Protest Not To Justify Cheating But Over Systemic Issues: IIT Bombay Students",
+          "url": "https://www.ndtv.com/india-news/protest-not-to-justify-cheating-but-over-systemic-issues-iit-bombay-students-12079003#publisher=newsstand"
+        },
+        {
           "outlet": "Livemint",
-          "title": "Who is Suryakant Waghmore? IIT-Bombay professor questions faculty protest of dean's removal over student suicide",
-          "url": "https://www.livemint.com/news/india/who-is-suryakant-waghmore-iit-bombay-professor-questions-faculty-protest-of-deans-removal-over-student-suicide-11789999470890.html"
+          "title": "IIT Bombay suicide: Student Reps demand systemic reforms, clarify stance on Prof Doolla | Top updates",
+          "url": "https://www.livemint.com/news/india/iit-bombay-suicide-student-reps-demand-systemic-reforms-clarify-stance-on-prof-doolla-top-updates-11790042569928.html"
         },
         {
           "outlet": "Times of India",
-          "title": "IIT-B student suicide: Forensic team reaches campus; students await open house with director",
-          "url": "https://timesofindia.indiatimes.com/india/iit-bombay-student-suicide-faculty-march-in-support-of-prof-doolla-victims-father-claims-casteism-top-developments/articleshow/134389978.cms"
-        },
-        {
-          "outlet": "Hindustan Times",
-          "title": "IIT Bombay faculty forum backs professor accused of abetting student suicide",
-          "url": "https://www.hindustantimes.com/india-news/iit-bombay-faculty-forum-backs-professor-accused-of-abetting-student-suicide-101789987302415.html"
+          "title": "‘We don’t condone cheating’: IIT Bombay students call for reforms after Sahil’s death",
+          "url": "https://timesofindia.indiatimes.com/india/we-dont-condone-cheating-iit-bombay-students-call-for-reforms-after-sahils-death/articleshow/134400137.cms"
         },
         {
           "outlet": "Scroll.in",
           "title": "IIT-B student suicide: Professor accused of caste discrimination suspended as dean",
           "url": "https://scroll.in/latest/1095891/iit-b-student-suicide-professor-accused-of-caste-discrimination-suspended-from-deans-post?utm_source=rss&utm_medium=public"
-        },
-        {
-          "outlet": "Hindustan Times",
-          "title": "Who is Suryanarayana Doolla? IIT Bombay professor in focus in student suicide case",
-          "url": "https://www.hindustantimes.com/india-news/who-is-suryanarayana-doolla-iit-bombay-suspends-dean-of-student-affairs-amid-student-suicide-probe-101789979279738.html"
         }
       ],
-      "articles_dropped_by_diversity_cap": 0
+      "articles_dropped_by_diversity_cap": 4
     },
     {
-      "headline_hint": "SIT uncovers 105 instances of unauthorized donation removal at Ayodhya's Ram Temple",
+      "headline_hint": "Karnataka High Court forms SIT to investigate KPSC recruitment scam",
       "section": "india",
       "category": "politics",
       "tier_requested": "notable",
       "article_ids": [
-        82,
-        233
+        40,
+        42,
+        108
       ],
       "verdict": "cut:below_floor(2<5)",
       "valid_ids": [
-        82,
-        233
+        40,
+        42,
+        108
       ],
       "tier_final": "notable",
       "distinct_outlets": 2,
@@ -675,13 +747,18 @@
       "articles": [
         {
           "outlet": "The Hindu",
-          "title": "Ram Temple donations theft case: SIT report finds 105 instances of unauthorised currency removal",
-          "url": "https://www.thehindu.com/news/national/ram-temple-donations-theft-case-chargesheet-on-or-before-september-25/article71491193.ece"
+          "title": "Karnataka HC orders court-monitored probe into KPSC irregularities; sets up SIT headed by DGP Alok Kumar",
+          "url": "https://www.thehindu.com/news/national/karnataka/karnataka-high-court-sets-up-sit-headed-by-dgp-alok-kumar-to-probe-kpsc-irregularities/article71491421.ece"
         },
         {
           "outlet": "Hindustan Times",
-          "title": "SIT finds 105 theft instances at Ram Temple, aims to file charge sheet by Sept 25",
-          "url": "https://www.hindustantimes.com/india-news/105-theft-instances-found-at-ram-temple-by-sit-aims-to-file-charge-sheet-by-sept-25-101789997983882.html"
+          "title": "HC Constitutes SIT To Probe KPSC Veterinary Recruitment Scam",
+          "url": "https://www.hindustantimes.com/india-news/hc-constitutes-sit-to-probe-kpsc-veterinary-recruitment-scam-101790019766833.html"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "KPSC veterinary officer recruitment scam: CID probe reveals money trail, question-paper leak network in Karnataka",
+          "url": "https://www.thehindu.com/news/national/karnataka/kpsc-veterinary-officer-recruitment-scam-cid-probe-reveals-money-trail-question-paper-leak-network/article71492602.ece"
         }
       ],
       "articles_dropped_by_diversity_cap": 0
