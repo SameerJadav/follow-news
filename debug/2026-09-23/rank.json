@@ -1,0 +1,731 @@
+{
+  "dials": {
+    "WEIGHT_FLOOR": 5,
+    "TIER_WEIGHT": {
+      "lead": 4,
+      "major": 2,
+      "notable": 0
+    },
+    "WIKI_BONUS": 2,
+    "HARD_CAP": 12,
+    "MIN_STORIES_IF_ANY": 3,
+    "MAX_ARTICLES_PER_STORY": 5
+  },
+  "floor_relaxed": false,
+  "kept_weights": [
+    13,
+    9,
+    9,
+    6,
+    6
+  ],
+  "per_section": {
+    "world": 4,
+    "india": 1
+  },
+  "clusters": [
+    {
+      "headline_hint": "US and Iran hold talks on UNGA sidelines as Trump balances threats and negotiations",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "lead",
+      "article_ids": [
+        3,
+        4,
+        9,
+        11,
+        26,
+        47,
+        50,
+        61,
+        80,
+        116,
+        143,
+        147,
+        162,
+        174,
+        183,
+        193,
+        195,
+        209,
+        231,
+        258,
+        290,
+        306,
+        315
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        3,
+        4,
+        9,
+        11,
+        26,
+        47,
+        50,
+        61,
+        80,
+        116,
+        143,
+        147,
+        162,
+        174,
+        183,
+        193,
+        195,
+        209,
+        231,
+        258,
+        290,
+        306,
+        315
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 9,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 13,
+      "weight_terms": {
+        "distinct_outlets": 9,
+        "tier_weight": 4,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "Trump defends actions in Iran and Venezuela in UN General Assembly address amid rising tensions with allies – live",
+          "url": "https://www.theguardian.com/us-news/live/2026/sep/22/donald-trump-unga-speech-iran-middle-east-ukraine-latest-news-updates"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Trump officials meet Iran mediators for over 3 hours: All you need to know",
+          "url": "https://timesofindia.indiatimes.com/world/us/kushner-witkoff-meet-iran-mediators-for-over-3-hours-all-you-need-to-know/articleshow/134423442.cms"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Iran war live: Trump confirms ‘very good’ meeting with Iran at UN",
+          "url": "https://www.aljazeera.com/news/liveblog/2026/9/23/iran-war-live-trump-confirms-very-good-meeting-with-iran-at-un?traffic_source=rss"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Trump threatens to 'annihilate' Iran in UN speech as officials meet on sidelines",
+          "url": "https://www.bbc.co.uk/news/articles/c52e0ywl9pr7o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "Oil prices retreat as markets welcome US-Iran talks",
+          "url": "https://www.channelnewsasia.com/world/oil-prices-retreat-markets-welcome-us-iran-talks-6403421"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 18
+    },
+    {
+      "headline_hint": "US, Denmark, and Greenland sign security agreement granting expanded military access",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        24,
+        51,
+        63,
+        133,
+        180,
+        194,
+        223
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        24,
+        51,
+        63,
+        133,
+        180,
+        194,
+        223
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 5,
+      "wiki_backed": true,
+      "wiki_event": "Denmark, Greenland, and the United States sign an agreement expanding U.S. military access to Greenland, permitting new defence areas and a missile defence system while reaffirming Greenland's self-determination and amending the 1951 defenc",
+      "weight": 9,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Channel News Asia",
+          "title": "Trump, Greenland, Denmark sign deal in bid to end Arctic standoff",
+          "url": "https://www.channelnewsasia.com/world/trump-greenland-denmark-sign-deal-arctic-military-6403576"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "US to build two military bases in Greenland under new deal with Denmark",
+          "url": "https://www.bbc.co.uk/news/articles/c9dr74g32g8go?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "US signs ‘tremendous’ security deal with Denmark and Greenland",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/22/us-signs-tremendous-security-deal-with-denmark-and-greenland?traffic_source=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "US to build new military bases in Greenland as deal seeks to end tensions between Nato allies - as it happened",
+          "url": "https://www.theguardian.com/world/live/2026/sep/22/eu-trump-russia-putin-sanctions-ukraine-greenland-denmark-zelenskyy-latest-news-updates"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Trump signs US-Denmark-Greenland agreement: What the new US security deal means",
+          "url": "https://www.livemint.com/news/us-news/trump-signs-us-denmark-greenland-agreement-what-the-new-us-security-agreement-means-11790092732510.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 2
+    },
+    {
+      "headline_hint": "Escalation in Yemen conflict as Houthis launch offensive and UK offers air support to Saudi Arabia",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "major",
+      "article_ids": [
+        240,
+        250,
+        296,
+        312,
+        330,
+        339
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        240,
+        250,
+        296,
+        312,
+        330,
+        339
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 5,
+      "wiki_backed": true,
+      "wiki_event": "The Houthi-affiliated Saba News Agency reports that Saudi airstrikes on the Houthi-held city of Mokha, Yemen, have killed six civilians.",
+      "weight": 9,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "Up to 169 killed in Yemen as Houthis battle for Red Sea coastal heights",
+          "url": "https://www.theguardian.com/world/2026/sep/22/yemen-houthis-battle-strategic-red-sea-heights"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Iran must stop arming Houthis in Yemen, G7 says ahead of UN General Assembly",
+          "url": "https://www.bbc.co.uk/news/articles/cwm2qpmepmlzo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "Houthis try to push deeper into western Yemen, upending life, witnesses tell NPR",
+          "url": "https://www.npr.org/2026/09/22/g-s1-144261/yemen-houthis-saudi-iran-humanitarian-crisis"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "UK to give ‘defensive’ support to Saudi Arabia against Houthis: Why Britain is stepping in as US holds back",
+          "url": "https://www.livemint.com/news/uk-to-give-defensive-support-to-saudi-arabia-against-houthis-why-britain-is-stepping-in-as-us-holds-back-11790063158483.html"
+        },
+        {
+          "outlet": "DW World",
+          "title": "G7 demands Houthis 'immediately' cease Saudi strikes",
+          "url": "https://www.dw.com/en/g7-demands-houthis-immediately-cease-saudi-strikes/a-79364964?maca=en-rss-en-world-4025-rdf"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 1
+    },
+    {
+      "headline_hint": "Hurricane Polo rapidly intensifies to Category 5 storm off Mexico",
+      "section": "world",
+      "category": "disaster",
+      "tier_requested": "major",
+      "article_ids": [
+        36,
+        117,
+        144
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        36,
+        117,
+        144
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 2,
+      "wiki_backed": true,
+      "wiki_event": "The National Hurricane Center reports that Hurricane Polo has strengthened into a category 5 Pacific hurricane.",
+      "weight": 6,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Livemint",
+          "title": "Hurricane Polo Becomes One of 2026’s Strongest Storms Off Mexico",
+          "url": "https://www.livemint.com/news/hurricane-polo-becomes-one-of-2026-s-strongest-storms-off-mexico-11790115282361.html"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Hurricane Polo, rapidly intensifying from strong El Niño patterns, rages off coast of Mexico",
+          "url": "https://www.theguardian.com/world/2026/sep/22/hurricane-polo-mexico"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Hurricane Polo reaches Category 5 strength: When it is likely to make landfall and which areas to be worst affected?",
+          "url": "https://www.livemint.com/news/us-news/hurricane-polo-reaches-category-5-strength-when-it-is-likely-to-make-landfall-and-which-areas-to-be-worst-affected-11790098503867.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Typhoon Dujuan hits Japan, leaving four dead and causing severe disruption",
+      "section": "world",
+      "category": "disaster",
+      "tier_requested": "notable",
+      "article_ids": [
+        331,
+        354
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        331,
+        354
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 1,
+      "wiki_backed": true,
+      "wiki_event": "Typhoon Dujuan kills at least four people and injures 22 others in Japan, while six remain missing after landslides. More than 45,000 households in Chiba Prefecture lose power, and over 460 homes are damaged.",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 1,
+        "tier_weight": 0,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "At least four people killed in Japan as typhoon Dujuan triggers heavy rain, landslides",
+          "url": "https://www.theguardian.com/world/2026/sep/22/typhoon-dujuan-japan-latest-weather-millions-told-to-evacuate-tokyo"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Japanese islands brace for Dujuan to become a typhoon again",
+          "url": "https://www.theguardian.com/environment/2026/sep/21/weather-tracker-japan-typhoon-dujuan"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Sri Lanka court convicts 15 men over 2019 Easter Sunday bombings",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "notable",
+      "article_ids": [
+        100,
+        255
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        100,
+        255
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": true,
+      "wiki_event": "Sri Lanka's High Court convicts 15 men involved in the Easter bombings in 2019.",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "BBC World",
+          "title": "Sri Lanka court convicts 15 men over deadly Easter Sunday bombings",
+          "url": "https://www.bbc.co.uk/news/articles/cqy7z275yx65o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "Sri Lanka court convicts 15 over deadly 2019 Easter bombings",
+          "url": "https://www.npr.org/2026/09/22/g-s1-144514/sri-lanka-court-convicts-15-over-deadly-2019-easter-bombings"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Major US news outlets sue Trump administration over White House access ban",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        69,
+        175,
+        295,
+        300,
+        328
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        69,
+        175,
+        295,
+        300,
+        328
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Livemint",
+          "title": "Trump says CNN, MS NOW, Politico could return to White House if court rules against media ban",
+          "url": "https://www.livemint.com/news/us-news/trump-says-cnn-ms-now-politico-could-return-to-white-house-if-court-rules-against-media-ban-11790109377772.html"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "‘You shouldn’t be here covering me’: Trump confronts CNN’s Kaitlan Collins at UN amid White House ban",
+          "url": "https://timesofindia.indiatimes.com/world/us/you-shouldnt-be-here-covering-me-trump-confronts-cnns-kaitlan-collins-at-un-amid-white-house-ban/articleshow/134416955.cms"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "CNN, MS NOW and Politico sue Trump. And, Paramount settles in massive merger lawsuit",
+          "url": "https://www.npr.org/2026/09/22/g-s1-144512/up-first-newsletter-press-lawsuit-cnn-msnow-politico-unga-trump-speech-paramount-deal"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "US news channels boycott Trump coverage after he bans CNN, ‘Politico’",
+          "url": "https://scroll.in/latest/1095908/us-news-channels-boycott-trump-coverage-after-he-bans-cnn-politico?utm_source=rss&utm_medium=public"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "A journalist once barred from the White House says this media ban is different",
+          "url": "https://www.npr.org/2026/09/22/nx-s1-5976755/jim-acosta-white-house-media-ban"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Supreme Court scrutinises Election Commission over voter roll revisions amid disenfranchisement claims",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "lead",
+      "article_ids": [
+        14,
+        271,
+        298,
+        352,
+        360
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        14,
+        271,
+        298,
+        352,
+        360
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 6,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 4,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "The Hindu",
+          "title": "Maharashtra SIR: 30% electorate likely to be disenfranchised, says Congress",
+          "url": "https://www.thehindu.com/news/national/maharashtra/206-crore-voter-roll-exclusions-in-maharashtra-alarming-says-congress-seeks-probe/article71495289.ece"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "Delhi SIR notices seem ‘machine-generated’, clarity needed on ‘logical discrepancies’, says SC",
+          "url": "https://scroll.in/latest/1095921/delhi-sir-notices-seem-machine-generated-clarity-needed-on-logical-discrepancies-says-sc?utm_source=rss&utm_medium=public"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "Odisha SIR: Over 17 lakh names deleted from final voter list",
+          "url": "https://scroll.in/latest/1095916/odisha-sir-over-17-lakh-names-deleted-from-final-voter-list?utm_source=rss&utm_medium=public"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "‘Flawed’ SIR process hurting even BJP leaders, says Mallikarjun Kharge",
+          "url": "https://scroll.in/latest/1095898/flawed-sir-process-hurting-even-bjp-leaders-says-mallikarjun-kharge?utm_source=rss&utm_medium=public"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "Nagaland SIR: Over 11% voters removed from draft list",
+          "url": "https://scroll.in/latest/1095884/nagaland-sir-over-11-voters-removed-from-draft-list?utm_source=rss&utm_medium=public"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Supreme Court calls exorbitant pricing of essential cancer drugs extortion",
+      "section": "india",
+      "category": "health",
+      "tier_requested": "notable",
+      "article_ids": [
+        19,
+        135
+      ],
+      "verdict": "cut:below_floor(2<5)",
+      "valid_ids": [
+        19,
+        135
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 2,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "Exorbitant pricing of drugs is ‘extortion': Supreme Court",
+          "url": "https://timesofindia.indiatimes.com/india/exorbitant-pricing-of-drugs-is-extortion-supreme-court/articleshow/134423165.cms"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "‘Broad daylight dacoity’, says Supreme Court on overpricing of essential cancer drugs",
+          "url": "https://www.thehindu.com/news/national/broad-daylight-dacoity-says-supreme-court-on-overpricing-of-essential-cancer-drugs/article71497051.ece"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Supreme Court rules not singing all stanzas of Vande Mataram should not be criminalised",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        21,
+        280,
+        319
+      ],
+      "verdict": "cut:below_floor(2<5)",
+      "valid_ids": [
+        21,
+        280,
+        319
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 2,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "‘Vande Mataram’ row: Courts can’t dictate what nat’l song should be, says SC",
+          "url": "https://timesofindia.indiatimes.com/india/courts-cant-dictate-what-natl-song-should-be-shouldnt-punish-for-refusing-to-sing-vande-mataram-supreme-court/articleshow/134423155.cms"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "Not singing all six stanzas of ‘Vande Mataram’ should not attract criminal action, says SC",
+          "url": "https://scroll.in/latest/1095912/not-singing-all-six-stanzas-of-vande-mataram-should-not-attract-criminal-action-says-sc?utm_source=rss&utm_medium=public"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "'Naxalites can't make law': Heated exchange between lawyers during Vande Mataram hearing",
+          "url": "https://timesofindia.indiatimes.com/india/naxalites-cant-make-law-heated-exchange-between-lawyers-during-vande-mataram-sc-hearing/articleshow/134412269.cms"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "US F-35 jets to join IAF Tarang Shakti exercise as LCA Tejas delays are addressed",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        27,
+        123,
+        261
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        27,
+        123,
+        261
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "In a first, US F-35 fighters to take part in IAF exercise",
+          "url": "https://timesofindia.indiatimes.com/defence/news/in-a-first-uss-5th-gen-stealth-jet-f-35-to-take-part-in-iafs-multinational-exercise-tarang-shakti/articleshow/134423102.cms"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "Seven foreign air forces to join Tarang Shakti-26 exercise in Jodhpur",
+          "url": "https://www.thehindu.com/news/national/seven-foreign-air-forces-to-join-tarang-shakti-26-exercise-in-jodhpur/article71496344.ece"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Technical issues delaying LCA Mk-1A to be resolved in 1-2 months: IAF vice chief",
+          "url": "https://www.hindustantimes.com/india-news/technical-issues-delaying-lca-mk-1a-to-be-resolved-in-1-2-months-iaf-vice-chief-101790082540513.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "IIT Bombay dean suspended following student suicide and caste discrimination allegations",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        216,
+        260,
+        274,
+        355
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        216,
+        260,
+        274,
+        355
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "'Told him to tolerate it': Parents regret advice to kid in IIT-B suicide case",
+          "url": "https://timesofindia.indiatimes.com/city/mumbai/made-a-mistake-by-telling-him-to-tolerate-it-grieving-parents-demand-arrests-in-iit-bombay-student-suicide-case/articleshow/134414786.cms"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "'He told us about casteism, harassment': Parents of IIT Bombay student who died by suicide",
+          "url": "https://www.hindustantimes.com/india-news/he-told-us-he-was-facing-casteism-mother-of-iit-bombay-student-who-died-by-suicide-professor-doolla-101790082084944.html"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "IIT-B student suicide: Professor accused of caste discrimination suspended as dean",
+          "url": "https://scroll.in/latest/1095891/iit-b-student-suicide-professor-accused-of-caste-discrimination-suspended-from-deans-post?utm_source=rss&utm_medium=public"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "‘Let evidence decide’: Shehzad Poonawalla ‘stands with’ IIT Bombay's Professor Doolla at centre of student suicide",
+          "url": "https://www.hindustantimes.com/india-news/let-evidence-decide-shehzad-poonawalla-stands-with-iit-bombay-professor-doolla-at-centre-of-student-suicide-101790075041834.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Outrage and safety concerns mount in Delhi after minor gang-raped in Kalkaji",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        66,
+        160,
+        208,
+        282
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        66,
+        160,
+        208,
+        282
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "The Hindu",
+          "title": "Astha Kunj Park gang-rape: LSR suspends classes; students consider leaving Delhi amid safety fears",
+          "url": "https://www.thehindu.com/news/cities/Delhi/astha-kunj-park-gang-rape-lsr-suspends-classes-students-consider-leaving-delhi-amid-safety-fears/article71496925.ece"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Kalkaji rape case: DU's LSR college shifts classes online amid safety concerns",
+          "url": "https://timesofindia.indiatimes.com/city/delhi/safety-security-paramount-lady-shri-ram-college-cancels-classes-goes-online-after-kalkaji-mandir-gang-rape-case/articleshow/134417900.cms"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "‘Every single day, we hit a new low’: Cong questions Delhi CM over Kalkaji gangrape case",
+          "url": "https://www.hindustantimes.com/india-news/pawan-khera-rekha-gupta-kalkaji-rape-case-every-single-day-we-hit-a-new-low-cong-questions-delhi-cm-over-kalkaji-gan-101790086542901.html"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Temple visit, fake cops, threats with knife and gun: Shocking details in Kalkaji gangrape case",
+          "url": "https://www.hindustantimes.com/india-news/temple-visit-fake-cops-threats-with-knife-and-gun-shocking-details-in-kalkaji-gangrape-case-101790077603517.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    }
+  ]
+}
