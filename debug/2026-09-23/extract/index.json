@@ -1,0 +1,489 @@
+{
+  "min_chars": 600,
+  "article_cap": 5000,
+  "articles": [
+    {
+      "seq": 1,
+      "url": "https://www.theguardian.com/us-news/live/2026/sep/22/donald-trump-unga-speech-iran-middle-east-ukraine-latest-news-updates",
+      "http": 200,
+      "elapsed_ms": 196,
+      "error": "",
+      "html_chars": 924236,
+      "jsonld_chars": 1000,
+      "paragraph_chars": 21614,
+      "jina_fired": false,
+      "jina_chars": 0,
+      "winner": "paragraphs",
+      "final_chars": 5000,
+      "truncated_at_cap": true,
+      "below_min_chars": false,
+      "files": {
+        "html": true,
+        "jina": false,
+        "text": true
+      }
+    },
+    {
+      "seq": 2,
+      "url": "https://timesofindia.indiatimes.com/world/us/kushner-witkoff-meet-iran-mediators-for-over-3-hours-all-you-need-to-know/articleshow/134423442.cms",
+      "http": 200,
+      "elapsed_ms": 1492,
+      "error": "",
+      "html_chars": 312894,
+      "jsonld_chars": 3847,
+      "paragraph_chars": 0,
+      "jina_fired": false,
+      "jina_chars": 0,
+      "winner": "jsonld",
+      "final_chars": 3847,
+      "truncated_at_cap": false,
+      "below_min_chars": false,
+      "files": {
+        "html": true,
+        "jina": false,
+        "text": true
+      }
+    },
+    {
+      "seq": 3,
+      "url": "https://www.aljazeera.com/news/liveblog/2026/9/23/iran-war-live-trump-confirms-very-good-meeting-with-iran-at-un?traffic_source=rss",
+      "http": 200,
+      "elapsed_ms": 172,
+      "error": "",
+      "html_chars": 191497,
+      "jsonld_chars": 0,
+      "paragraph_chars": 0,
+      "jina_fired": true,
+      "jina_chars": 15001,
+      "winner": "jina",
+      "final_chars": 5000,
+      "truncated_at_cap": true,
+      "below_min_chars": false,
+      "files": {
+        "html": true,
+        "jina": true,
+        "text": true
+      }
+    },
+    {
+      "seq": 4,
+      "url": "https://www.bbc.co.uk/news/articles/c52e0ywl9pr7o?at_medium=RSS&at_campaign=rss",
+      "http": 200,
+      "elapsed_ms": 152,
+      "error": "",
+      "html_chars": 443436,
+      "jsonld_chars": 0,
+      "paragraph_chars": 5108,
+      "jina_fired": false,
+      "jina_chars": 0,
+      "winner": "paragraphs",
+      "final_chars": 5000,
+      "truncated_at_cap": true,
+      "below_min_chars": false,
+      "files": {
+        "html": true,
+        "jina": false,
+        "text": true
+      }
+    },
+    {
+      "seq": 5,
+      "url": "https://www.channelnewsasia.com/world/oil-prices-retreat-markets-welcome-us-iran-talks-6403421",
+      "http": 200,
+      "elapsed_ms": 452,
+      "error": "",
+      "html_chars": 496644,
+      "jsonld_chars": 0,
+      "paragraph_chars": 451,
+      "jina_fired": true,
+      "jina_chars": 61494,
+      "winner": "jina",
+      "final_chars": 5000,
+      "truncated_at_cap": true,
+      "below_min_chars": false,
+      "files": {
+        "html": true,
+        "jina": true,
+        "text": true
+      }
+    },
+    {
+      "seq": 6,
+      "url": "https://www.channelnewsasia.com/world/trump-greenland-denmark-sign-deal-arctic-military-6403576",
+      "http": 200,
+      "elapsed_ms": 114,
+      "error": "",
+      "html_chars": 504807,
+      "jsonld_chars": 0,
+      "paragraph_chars": 5073,
+      "jina_fired": false,
+      "jina_chars": 0,
+      "winner": "paragraphs",
+      "final_chars": 5000,
+      "truncated_at_cap": true,
+      "below_min_chars": false,
+      "files": {
+        "html": true,
+        "jina": false,
+        "text": true
+      }
+    },
+    {
+      "seq": 7,
+      "url": "https://www.bbc.co.uk/news/articles/c9dr74g32g8go?at_medium=RSS&at_campaign=rss",
+      "http": 200,
+      "elapsed_ms": 91,
+      "error": "",
+      "html_chars": 433427,
+      "jsonld_chars": 0,
+      "paragraph_chars": 5410,
+      "jina_fired": false,
+      "jina_chars": 0,
+      "winner": "paragraphs",
+      "final_chars": 5000,
+      "truncated_at_cap": true,
+      "below_min_chars": false,
+      "files": {
+        "html": true,
+        "jina": false,
+        "text": true
+      }
+    },
+    {
+      "seq": 8,
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/22/us-signs-tremendous-security-deal-with-denmark-and-greenland?traffic_source=rss",
+      "http": 200,
+      "elapsed_ms": 144,
+      "error": "",
+      "html_chars": 202836,
+      "jsonld_chars": 0,
+      "paragraph_chars": 334,
+      "jina_fired": true,
+      "jina_chars": 11687,
+      "winner": "jina",
+      "final_chars": 5000,
+      "truncated_at_cap": true,
+      "below_min_chars": false,
+      "files": {
+        "html": true,
+        "jina": true,
+        "text": true
+      }
+    },
+    {
+      "seq": 9,
+      "url": "https://www.theguardian.com/world/live/2026/sep/22/eu-trump-russia-putin-sanctions-ukraine-greenland-denmark-zelenskyy-latest-news-updates",
+      "http": 200,
+      "elapsed_ms": 203,
+      "error": "",
+      "html_chars": 1486681,
+      "jsonld_chars": 1000,
+      "paragraph_chars": 16723,
+      "jina_fired": false,
+      "jina_chars": 0,
+      "winner": "paragraphs",
+      "final_chars": 5000,
+      "truncated_at_cap": true,
+      "below_min_chars": false,
+      "files": {
+        "html": true,
+        "jina": false,
+        "text": true
+      }
+    },
+    {
+      "seq": 10,
+      "url": "https://www.livemint.com/news/us-news/trump-signs-us-denmark-greenland-agreement-what-the-new-us-security-agreement-means-11790092732510.html",
+      "http": 200,
+      "elapsed_ms": 250,
+      "error": "",
+      "html_chars": 199924,
+      "jsonld_chars": 4622,
+      "paragraph_chars": 4547,
+      "jina_fired": false,
+      "jina_chars": 0,
+      "winner": "jsonld",
+      "final_chars": 4622,
+      "truncated_at_cap": false,
+      "below_min_chars": false,
+      "files": {
+        "html": true,
+        "jina": false,
+        "text": true
+      }
+    },
+    {
+      "seq": 11,
+      "url": "https://www.theguardian.com/world/2026/sep/22/yemen-houthis-battle-strategic-red-sea-heights",
+      "http": 200,
+      "elapsed_ms": 139,
+      "error": "",
+      "html_chars": 417491,
+      "jsonld_chars": 0,
+      "paragraph_chars": 5548,
+      "jina_fired": false,
+      "jina_chars": 0,
+      "winner": "paragraphs",
+      "final_chars": 5000,
+      "truncated_at_cap": true,
+      "below_min_chars": false,
+      "files": {
+        "html": true,
+        "jina": false,
+        "text": true
+      }
+    },
+    {
+      "seq": 12,
+      "url": "https://www.bbc.co.uk/news/articles/cwm2qpmepmlzo?at_medium=RSS&at_campaign=rss",
+      "http": 200,
+      "elapsed_ms": 93,
+      "error": "",
+      "html_chars": 427743,
+      "jsonld_chars": 0,
+      "paragraph_chars": 6080,
+      "jina_fired": false,
+      "jina_chars": 0,
+      "winner": "paragraphs",
+      "final_chars": 5000,
+      "truncated_at_cap": true,
+      "below_min_chars": false,
+      "files": {
+        "html": true,
+        "jina": false,
+        "text": true
+      }
+    },
+    {
+      "seq": 13,
+      "url": "https://www.npr.org/2026/09/22/g-s1-144261/yemen-houthis-saudi-iran-humanitarian-crisis",
+      "http": 200,
+      "elapsed_ms": 286,
+      "error": "",
+      "html_chars": 213379,
+      "jsonld_chars": 0,
+      "paragraph_chars": 10271,
+      "jina_fired": false,
+      "jina_chars": 0,
+      "winner": "paragraphs",
+      "final_chars": 5000,
+      "truncated_at_cap": true,
+      "below_min_chars": false,
+      "files": {
+        "html": true,
+        "jina": false,
+        "text": true
+      }
+    },
+    {
+      "seq": 14,
+      "url": "https://www.livemint.com/news/uk-to-give-defensive-support-to-saudi-arabia-against-houthis-why-britain-is-stepping-in-as-us-holds-back-11790063158483.html",
+      "http": 200,
+      "elapsed_ms": 169,
+      "error": "",
+      "html_chars": 188770,
+      "jsonld_chars": 3043,
+      "paragraph_chars": 3296,
+      "jina_fired": false,
+      "jina_chars": 0,
+      "winner": "paragraphs",
+      "final_chars": 3296,
+      "truncated_at_cap": false,
+      "below_min_chars": false,
+      "files": {
+        "html": true,
+        "jina": false,
+        "text": true
+      }
+    },
+    {
+      "seq": 15,
+      "url": "https://www.dw.com/en/g7-demands-houthis-immediately-cease-saudi-strikes/a-79364964?maca=en-rss-en-world-4025-rdf",
+      "http": 200,
+      "elapsed_ms": 938,
+      "error": "",
+      "html_chars": 203554,
+      "jsonld_chars": 0,
+      "paragraph_chars": 3007,
+      "jina_fired": false,
+      "jina_chars": 0,
+      "winner": "paragraphs",
+      "final_chars": 3007,
+      "truncated_at_cap": false,
+      "below_min_chars": false,
+      "files": {
+        "html": true,
+        "jina": false,
+        "text": true
+      }
+    },
+    {
+      "seq": 16,
+      "url": "https://www.livemint.com/news/hurricane-polo-becomes-one-of-2026-s-strongest-storms-off-mexico-11790115282361.html",
+      "http": 200,
+      "elapsed_ms": 184,
+      "error": "",
+      "html_chars": 174909,
+      "jsonld_chars": 2610,
+      "paragraph_chars": 2728,
+      "jina_fired": false,
+      "jina_chars": 0,
+      "winner": "paragraphs",
+      "final_chars": 2728,
+      "truncated_at_cap": false,
+      "below_min_chars": false,
+      "files": {
+        "html": true,
+        "jina": false,
+        "text": true
+      }
+    },
+    {
+      "seq": 17,
+      "url": "https://www.theguardian.com/world/2026/sep/22/hurricane-polo-mexico",
+      "http": 200,
+      "elapsed_ms": 108,
+      "error": "",
+      "html_chars": 320910,
+      "jsonld_chars": 0,
+      "paragraph_chars": 2870,
+      "jina_fired": false,
+      "jina_chars": 0,
+      "winner": "paragraphs",
+      "final_chars": 2870,
+      "truncated_at_cap": false,
+      "below_min_chars": false,
+      "files": {
+        "html": true,
+        "jina": false,
+        "text": true
+      }
+    },
+    {
+      "seq": 18,
+      "url": "https://www.livemint.com/news/us-news/hurricane-polo-reaches-category-5-strength-when-it-is-likely-to-make-landfall-and-which-areas-to-be-worst-affected-11790098503867.html",
+      "http": 200,
+      "elapsed_ms": 152,
+      "error": "",
+      "html_chars": 190851,
+      "jsonld_chars": 2638,
+      "paragraph_chars": 5350,
+      "jina_fired": false,
+      "jina_chars": 0,
+      "winner": "paragraphs",
+      "final_chars": 5000,
+      "truncated_at_cap": true,
+      "below_min_chars": false,
+      "files": {
+        "html": true,
+        "jina": false,
+        "text": true
+      }
+    },
+    {
+      "seq": 19,
+      "url": "https://www.thehindu.com/news/national/maharashtra/206-crore-voter-roll-exclusions-in-maharashtra-alarming-says-congress-seeks-probe/article71495289.ece",
+      "http": 200,
+      "elapsed_ms": 232,
+      "error": "",
+      "html_chars": 211567,
+      "jsonld_chars": 0,
+      "paragraph_chars": 3912,
+      "jina_fired": false,
+      "jina_chars": 0,
+      "winner": "paragraphs",
+      "final_chars": 3912,
+      "truncated_at_cap": false,
+      "below_min_chars": false,
+      "files": {
+        "html": true,
+        "jina": false,
+        "text": true
+      }
+    },
+    {
+      "seq": 20,
+      "url": "https://scroll.in/latest/1095921/delhi-sir-notices-seem-machine-generated-clarity-needed-on-logical-discrepancies-says-sc?utm_source=rss&utm_medium=public",
+      "http": 200,
+      "elapsed_ms": 444,
+      "error": "",
+      "html_chars": 138418,
+      "jsonld_chars": 0,
+      "paragraph_chars": 3798,
+      "jina_fired": false,
+      "jina_chars": 0,
+      "winner": "paragraphs",
+      "final_chars": 3798,
+      "truncated_at_cap": false,
+      "below_min_chars": false,
+      "files": {
+        "html": true,
+        "jina": false,
+        "text": true
+      }
+    },
+    {
+      "seq": 21,
+      "url": "https://scroll.in/latest/1095916/odisha-sir-over-17-lakh-names-deleted-from-final-voter-list?utm_source=rss&utm_medium=public",
+      "http": 200,
+      "elapsed_ms": 467,
+      "error": "",
+      "html_chars": 133896,
+      "jsonld_chars": 0,
+      "paragraph_chars": 3178,
+      "jina_fired": false,
+      "jina_chars": 0,
+      "winner": "paragraphs",
+      "final_chars": 3178,
+      "truncated_at_cap": false,
+      "below_min_chars": false,
+      "files": {
+        "html": true,
+        "jina": false,
+        "text": true
+      }
+    },
+    {
+      "seq": 22,
+      "url": "https://scroll.in/latest/1095898/flawed-sir-process-hurting-even-bjp-leaders-says-mallikarjun-kharge?utm_source=rss&utm_medium=public",
+      "http": 200,
+      "elapsed_ms": 419,
+      "error": "",
+      "html_chars": 137544,
+      "jsonld_chars": 0,
+      "paragraph_chars": 4097,
+      "jina_fired": false,
+      "jina_chars": 0,
+      "winner": "paragraphs",
+      "final_chars": 4097,
+      "truncated_at_cap": false,
+      "below_min_chars": false,
+      "files": {
+        "html": true,
+        "jina": false,
+        "text": true
+      }
+    },
+    {
+      "seq": 23,
+      "url": "https://scroll.in/latest/1095884/nagaland-sir-over-11-voters-removed-from-draft-list?utm_source=rss&utm_medium=public",
+      "http": 200,
+      "elapsed_ms": 453,
+      "error": "",
+      "html_chars": 133629,
+      "jsonld_chars": 0,
+      "paragraph_chars": 2535,
+      "jina_fired": false,
+      "jina_chars": 0,
+      "winner": "paragraphs",
+      "final_chars": 2535,
+      "truncated_at_cap": false,
+      "below_min_chars": false,
+      "files": {
+        "html": true,
+        "jina": false,
+        "text": true
+      }
+    }
+  ]
+}
