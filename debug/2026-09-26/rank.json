@@ -1,0 +1,770 @@
+{
+  "dials": {
+    "WEIGHT_FLOOR": 5,
+    "TIER_WEIGHT": {
+      "lead": 4,
+      "major": 2,
+      "notable": 0
+    },
+    "WIKI_BONUS": 2,
+    "HARD_CAP": 12,
+    "MIN_STORIES_IF_ANY": 3,
+    "MAX_ARTICLES_PER_STORY": 5
+  },
+  "floor_relaxed": false,
+  "kept_weights": [
+    10,
+    7,
+    7,
+    7,
+    7,
+    6,
+    6,
+    5,
+    11,
+    5
+  ],
+  "per_section": {
+    "world": 8,
+    "india": 2
+  },
+  "clusters": [
+    {
+      "headline_hint": "Opposition and NDA allies step up pressure on Election Commission over voter list revision, CEC Gyanesh Kumar faces protests",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "lead",
+      "article_ids": [
+        1,
+        7,
+        25,
+        33,
+        76,
+        96,
+        104,
+        123,
+        124,
+        141,
+        164,
+        192,
+        198,
+        238,
+        252,
+        265,
+        266,
+        273,
+        278,
+        288,
+        302,
+        315,
+        329,
+        361,
+        364
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        1,
+        7,
+        25,
+        33,
+        76,
+        96,
+        104,
+        123,
+        124,
+        141,
+        164,
+        192,
+        198,
+        238,
+        252,
+        265,
+        266,
+        273,
+        278,
+        288,
+        302,
+        315,
+        329,
+        361,
+        364
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 7,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 11,
+      "weight_terms": {
+        "distinct_outlets": 7,
+        "tier_weight": 4,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "3 BJP allies say EC must clear air, can't lose people's trust",
+          "url": "https://timesofindia.indiatimes.com/india/3-bjp-allies-say-ec-must-clear-air-cant-lose-peoples-trust/articleshow/134495064.cms"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "U.P. Congress leaders clash with police, detained during protest against Chief Election Commissioner",
+          "url": "https://www.thehindu.com/news/national/uttar-pradesh/up-congress-leaders-clash-with-police-detained-during-protest-against-chief-election-commissioner/article71509301.ece"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "Amid Row, Bengal BJP Chief Says Gyanesh Kumar Deserves Padma Bhushan",
+          "url": "https://www.ndtv.com/india-news/amid-row-bengal-bjp-chief-says-gyanesh-kumar-deserves-padma-bhushan-for-sir-12099590#publisher=newsstand"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "Son of SC judge who heard election commissioner appointment act case is EC lawyer",
+          "url": "https://scroll.in/latest/1096010/son-of-sc-judge-who-heard-election-commissioner-appointment-act-case-is-ec-lawyer?utm_source=rss&utm_medium=public"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "India’s Cockroach movement joins opposition push to oust election chief",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/25/09-25-india-election-chief-protests-sv?traffic_source=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 20
+    },
+    {
+      "headline_hint": "Trump and Xi Jinping conclude high-stakes summit in Washington",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "lead",
+      "article_ids": [
+        15,
+        23,
+        86,
+        101,
+        145,
+        159,
+        167,
+        259,
+        271,
+        282,
+        287,
+        295,
+        321,
+        326,
+        328,
+        340,
+        342,
+        349
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        15,
+        23,
+        86,
+        101,
+        145,
+        159,
+        167,
+        259,
+        271,
+        282,
+        287,
+        295,
+        321,
+        326,
+        328,
+        340,
+        342,
+        349
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 6,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 10,
+      "weight_terms": {
+        "distinct_outlets": 6,
+        "tier_weight": 4,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "Trump and Chinese president Xi end summit without major agreement on AI",
+          "url": "https://www.theguardian.com/technology/2026/sep/25/trump-xi-ai-arms-race"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Trump mocks Biden’s autopen use while showing Xi presidential portraits",
+          "url": "https://timesofindia.indiatimes.com/world/us/this-is-the-autopen-trump-mocks-biden-while-showing-xi-presidential-portraits/articleshow/134492460.cms"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "Takeaways from the Trump-Xi state visit: Pageantry and pandas",
+          "url": "https://www.npr.org/2026/09/25/nx-s1-5981265/takeaways-trump-xi-state-visit-pageantry-pandas"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Pope in Paris, Xi in DC, AI at a Crossroads",
+          "url": "https://www.france24.com/en/tv-shows/the-world-this-week/20260925-pope-in-paris-xi-in-dc-ai-at-a-crossroads"
+        },
+        {
+          "outlet": "DW World",
+          "title": "After Xi-Trump summit, US-China rivalry remains frozen. Is this to Beijing's advantage?",
+          "url": "https://www.dw.com/en/after-xi-trump-summit-us-china-rivalry-remains-frozen-is-this-to-beijing-s-advantage/a-79427127?maca=en-rss-en-world-4025-rdf"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 13
+    },
+    {
+      "headline_hint": "Netanyahu addresses UN General Assembly amid mass walkouts and protests",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        65,
+        67,
+        118,
+        149,
+        280,
+        300,
+        312,
+        318,
+        344,
+        350
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        65,
+        67,
+        118,
+        149,
+        280,
+        300,
+        312,
+        318,
+        344,
+        350
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 5,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "Which countries walked out of Netanyahu’s UNGA speech?",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/25/which-countries-walked-out-of-netanyahus-unga-speech?traffic_source=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Protests erupt as Netanyahu gives inflammatory UN speech - The Latest",
+          "url": "https://www.theguardian.com/news/audio/2026/sep/25/protests-erupt-as-netanyahu-gives-inflammatory-un-speech-the-latest"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Netanyahu defends Israeli military action as delegates walk out before UN speech",
+          "url": "https://www.bbc.co.uk/news/articles/c3y0z7kxlegdo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "Netanyahu rages against critics, including Mamdani, at the U.N. General Assembly",
+          "url": "https://www.npr.org/2026/09/25/nx-s1-5979852/israels-prime-minister-addresses-u-n-general-assembly"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "Gaza genocide allegations ‘greatest lie of the century’, claims Benjamin Netanyahu",
+          "url": "https://scroll.in/latest/1095989/gaza-genocide-allegations-greatest-lie-of-the-century-claims-benjamin-netanyahu?utm_source=rss&utm_medium=public"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 5
+    },
+    {
+      "headline_hint": "Iran offers seven-day plan to reopen Strait of Hormuz in exchange for US sanctions relief",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        10,
+        28,
+        52,
+        193,
+        311,
+        345
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        10,
+        28,
+        52,
+        193,
+        311,
+        345
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 5,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "Iran to reopen Strait of Hormuz within a week if US agrees to plan",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/25/iran-to-reopen-strait-of-hormuz-within-a-week-if-us-agrees-to-plan?traffic_source=rss"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "Wall Street stocks rise, greeting optimism over possible US-Iran deal",
+          "url": "https://www.channelnewsasia.com/world/wall-street-stocks-rise-greeting-optimism-over-possible-us-iran-deal-6412011"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Iran offers to reopen Strait of Hormuz in 7 days: 3 conditions it has set for Trump",
+          "url": "https://www.livemint.com/news/us-news/iran-offers-to-reopen-strait-of-hormuz-in-7-days-3-conditions-it-has-set-for-trump-11790367464037.html"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Trump faces tough choices as Iran dangles deal to reopen Hormuz before US midterms",
+          "url": "https://www.theguardian.com/world/2026/sep/25/trump-tough-choices-iran-accelerated-deal-reopen-hormuz-midterm-elections"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "Iran's president says his country has 'no trust' in U.S. in meeting with journalists",
+          "url": "https://www.npr.org/2026/09/25/nx-s1-5980398/irans-president-says-his-country-has-no-trust-in-u-s-in-meeting-with-journalists"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 1
+    },
+    {
+      "headline_hint": "Pope Leo XIV visits France, warning against AI threats and addressing Notre-Dame",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        62,
+        68,
+        178,
+        187,
+        197,
+        203,
+        209,
+        211,
+        217,
+        219,
+        220,
+        243,
+        246,
+        366
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        62,
+        68,
+        178,
+        187,
+        197,
+        203,
+        209,
+        211,
+        217,
+        219,
+        220,
+        243,
+        246,
+        366
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 5,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "France 24",
+          "title": "‘I hope France wakes up’: Young Catholics flood the streets for Pope Leo's Paris visit",
+          "url": "https://www.france24.com/en/france/20260925-i-hope-france-wakes-up-young-catholics-flood-the-streets-for-pope-leo-s-paris-visit"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Pope Leo warns of AI threat to humanity at start of three-day France visit",
+          "url": "https://www.theguardian.com/world/2026/sep/25/pope-leo-ai-threat-to-humanity-three-day-france-visit"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Pope warns against 'losing humanity' to AI machines",
+          "url": "https://www.bbc.co.uk/news/articles/cmq8j904212po?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "Pope Leo warns a 'paradise of machines' could undermine humanity on his France visit",
+          "url": "https://www.npr.org/2026/09/25/nx-s1-5981140/pope-leo-france"
+        },
+        {
+          "outlet": "DW World",
+          "title": "'Pope fever' takes hold as Pope Leo visits France",
+          "url": "https://www.dw.com/en/pope-fever-takes-hold-as-pope-leo-visits-france/a-79401291?maca=en-rss-en-world-4025-rdf"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 9
+    },
+    {
+      "headline_hint": "US Supreme Court permits Trump administration to use federal database for voter citizenship checks",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        37,
+        45,
+        84,
+        143,
+        170
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        37,
+        45,
+        84,
+        143,
+        170
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 5,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Livemint",
+          "title": "Trump’s voter verification system returns: What changed after Supreme Court ruling",
+          "url": "https://www.livemint.com/news/us-news/trumps-voter-verification-system-returns-what-changed-after-supreme-court-ruling-11790365501392.html"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "Top court grants Trump bid to use federal database to verify voter rolls",
+          "url": "https://www.channelnewsasia.com/world/trump-supreme-court-elections-database-6411921"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Supreme Court allows Trump to use controversial database to check voter citizenship",
+          "url": "https://www.bbc.co.uk/news/articles/ck05rrj3jeylo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "US top court allows Trump to use controversial voter verification system",
+          "url": "https://www.aljazeera.com/news/2026/9/25/us-top-court-allows-trump-to-use-controversial-voter-verification-system?traffic_source=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "US Supreme Court allows Trump to use controversial voter 'verification' system",
+          "url": "https://www.france24.com/en/americas/20260925-supreme-court-restores-trump-mass-voter-verification-system-despite-outcry"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "OpenAI faces privacy concerns over user image leaks and AI agent breach in Australia",
+      "section": "world",
+      "category": "technology",
+      "tier_requested": "major",
+      "article_ids": [
+        4,
+        49,
+        207,
+        319,
+        325,
+        351
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        4,
+        49,
+        207,
+        319,
+        325,
+        351
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 5,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "OpenAI says agents leaked 53 images from ChatGPT users in latest example of rogue activity",
+          "url": "https://www.theguardian.com/technology/2026/sep/25/openai-agents-leaked-53-images-chatgpt"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "Exclusive-OpenAI works to understand full scope of agent activity as user data leak emerges",
+          "url": "https://www.channelnewsasia.com/business/exclusive-openai-works-understand-full-scope-agent-activity-user-data-leak-emerges-6411996"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Why Australia chose the world's biggest political stage to reveal OpenAI hack",
+          "url": "https://www.bbc.co.uk/news/articles/cr3eqk15ld14o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "OpenAI hack on Australian government reveals anxiety at heart of global artificial intelligence dilemma",
+          "url": "https://www.theguardian.com/technology/2026/sep/26/openai-hack-australian-government-anxiety-global-dilemma-artificial-intelligence"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Pocock calls for AI safety act after Medicare breach – as it happened",
+          "url": "https://www.theguardian.com/australia-news/live/2026/sep/25/anthony-albanese-open-ai-hack-united-nations-angus-taylor-coalition-ntwnfb"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 1
+    },
+    {
+      "headline_hint": "Escalating fighting in Ethiopia's Tigray region sparks fears of wider conflict",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "major",
+      "article_ids": [
+        54,
+        158,
+        257,
+        324,
+        358
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        54,
+        158,
+        257,
+        324,
+        358
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 6,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "France 24",
+          "title": "Telecoms disruption raises fears as heavy fighting strikes Ethiopia",
+          "url": "https://www.france24.com/en/tv-shows/eye-on-africa/20260925-telecoms-disruption-raises-fears-as-heavy-fighting-strikes-ethiopia"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Internet restricted after fighting breaks out in Ethiopia's Tigray region",
+          "url": "https://www.bbc.co.uk/news/articles/cqp8dxxg325no?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "DW World",
+          "title": "Why Eritrea matters as fighting returns to Ethiopia's Tigray",
+          "url": "https://www.dw.com/en/why-eritrea-matters-as-fighting-returns-to-ethiopia-s-tigray/a-79426582?maca=en-rss-en-world-4025-rdf"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Rebel offensive against Ethiopian army stokes fears of return to civil war",
+          "url": "https://www.theguardian.com/world/2026/sep/24/fears-return-to-war-tigray-rebels-launch-offensive-against-ethiopian-army"
+        },
+        {
+          "outlet": "DW World",
+          "title": "How renewed fighting in Tigray could spread across the Horn of Africa",
+          "url": "https://www.dw.com/en/how-renewed-fighting-in-tigray-could-spread-across-the-horn-of-africa/a-79410333?maca=en-rss-en-world-4025-rdf"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Houthi missile strikes on Saudi Arabia trigger French defense support and warnings from Pakistan",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "major",
+      "article_ids": [
+        39,
+        64,
+        72,
+        249,
+        336
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        39,
+        64,
+        72,
+        249,
+        336
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 6,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "Houthi attack on Mecca, Medina would cross ‘red line’, Pakistan PM tells UN",
+          "url": "https://www.aljazeera.com/news/2026/9/25/houthi-attack-on-mecca-medina-would-cross-red-line-pakistan-pm-tells-un?traffic_source=rss"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Pakistan PM draws ‘red line’ over Mecca at UN, defends Saudi-Türkiye defence pact",
+          "url": "https://timesofindia.indiatimes.com/world/pakistan/no-muslim-can-even-dare-pakistan-pm-at-un-condemns-houthi-attacks-draws-red-line-over-mecca/articleshow/134492050.cms"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Macron says ‘military resources’ to be sent to Saudi Arabia",
+          "url": "https://www.france24.com/en/macron-says-military-resources-to-be-sent-to-saudi-arabia"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Saudi Arabia intercepts wave of Houthi missiles as oil climbs to one-week high",
+          "url": "https://www.theguardian.com/world/2026/sep/25/saudi-arabia-intercepts-houthi-missiles-oil-prices-climbs"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Pakistan PM calls Houthi threats to Saudi holy sites a ‘red line’",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/25/pakistan-pm-calls-houthi-threats-to-saudi-holy-sites-a-red?traffic_source=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "India and Liberia form UN maritime safety group to protect seafarers from attacks",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        31,
+        98,
+        168,
+        245
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        31,
+        98,
+        168,
+        245
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 5,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "On UNGA margins, India &amp; Liberia set up sailors' safety body",
+          "url": "https://timesofindia.indiatimes.com/india/on-unga-margins-india-liberia-set-up-sailors-safety-body/articleshow/134492296.cms"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "India, Liberia Launch Safety Group To Protect Seafarers Amid Attacks On Ships",
+          "url": "https://www.ndtv.com/india-news/india-liberia-launch-safety-group-to-protect-seafarers-amid-attacks-on-ships-12099523#publisher=newsstand"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "India, Liberia launch UN shipping safety group; Jaishankar urges action against attacks on seafarers",
+          "url": "https://www.hindustantimes.com/india-news/india-liberia-launch-un-shipping-safety-group-jaishankar-urges-action-against-attacks-on-seafarers-101790354806866.html"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "‘Attacks on civilian shipping simply indefensible’: Jaishankar's strong message at UNGA",
+          "url": "https://www.hindustantimes.com/india-news/eam-s-jaishankar-strong-message-at-united-nations-general-assembly-civilian-shipping-attack-on-indians-liberia-gulf-101790344868920.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Centre extends AFSPA status in Manipur and parts of Arunachal Pradesh",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        183,
+        260,
+        262
+      ],
+      "verdict": "cut:below_floor(2<5)",
+      "valid_ids": [
+        183,
+        260,
+        262
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 2,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Hindustan Times",
+          "title": "Centre extends AFSPA in parts of Arunachal Pradesh for another six months",
+          "url": "https://www.hindustantimes.com/india-news/centre-extends-afspa-in-parts-of-arunachal-pradesh-for-another-six-months-101790352220611.html"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Manipur: MHA declares majority of state as ‘disturbed area’ under AFSPA for 6 month from October 1: What does it mean?",
+          "url": "https://www.livemint.com/news/india/manipur-mha-declares-majority-of-state-as-disturbed-area-under-afspa-for-6-month-from-october-1-what-does-it-mean-11790341459663.html"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Centre extends Manipur's ‘disturbed area’ status for six more months as violence continues",
+          "url": "https://www.hindustantimes.com/india-news/centre-extends-manipurs-disturbed-area-status-for-six-more-months-afspa-violence-101790342140375.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    }
+  ]
+}
