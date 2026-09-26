@@ -1,28 +1,28 @@
 {
   "kind": "digest",
   "day": "2026-09-26",
-  "ok": false,
-  "started_at": "2026-09-25T23:22:20Z",
-  "finished_at": "2026-09-25T23:25:27Z",
-  "elapsed_ms": 187362,
+  "ok": true,
+  "started_at": "2026-09-26T00:45:42Z",
+  "finished_at": "2026-09-26T00:50:20Z",
+  "elapsed_ms": 277332,
   "argv": [
     "digest.py",
     "--if-missing"
   ],
   "python": "3.12.3",
-  "git_sha": "27e97c8811e28f1ac7278635bc4c495920ee9eba",
+  "git_sha": "e6af435f4fa2342eb8a825cacbc8e41b4b9453c9",
   "debug_level": 1,
-  "bytes_written": 15933503,
+  "bytes_written": 14488059,
   "byte_cap_reached": false,
   "env": {
     "DIGEST_DEBUG": "1",
     "CI": "true",
     "GITHUB_ACTIONS": "true",
-    "GITHUB_RUN_ID": "36200736509",
+    "GITHUB_RUN_ID": "36206010281",
     "GITHUB_RUN_ATTEMPT": "1",
     "GITHUB_WORKFLOW": "digest",
     "GITHUB_EVENT_NAME": "schedule",
-    "GITHUB_SHA": "27e97c8811e28f1ac7278635bc4c495920ee9eba",
+    "GITHUB_SHA": "e6af435f4fa2342eb8a825cacbc8e41b4b9453c9",
     "GITHUB_REF": "refs/heads/main",
     "RUNNER_OS": "Linux"
   },
@@ -68,50 +68,53 @@
   "stages": [
     {
       "stage": "gather",
-      "ms": 3172,
+      "ms": 2452,
       "error": ""
     },
     {
       "stage": "pool",
-      "ms": 3,
-      "error": ""
-    },
-    {
-      "stage": "wikipedia",
-      "ms": 269,
-      "error": ""
-    },
-    {
-      "stage": "select",
-      "ms": 19891,
-      "error": ""
-    },
-    {
-      "stage": "rank",
       "ms": 2,
       "error": ""
     },
     {
+      "stage": "wikipedia",
+      "ms": 508,
+      "error": ""
+    },
+    {
+      "stage": "select",
+      "ms": 36941,
+      "error": ""
+    },
+    {
+      "stage": "rank",
+      "ms": 1,
+      "error": ""
+    },
+    {
       "stage": "extract",
-      "ms": 49628,
+      "ms": 49491,
       "error": ""
     },
     {
       "stage": "claims",
-      "ms": 82427,
+      "ms": 89790,
       "error": ""
     },
     {
       "stage": "write",
-      "ms": 30572,
-      "error": "ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"
+      "ms": 96852,
+      "error": ""
+    },
+    {
+      "stage": "render",
+      "ms": 135,
+      "error": ""
     }
   ],
   "window": {
-    "since": "2026-09-23T23:22:21.431656+00:00",
-    "now": "2026-09-25T23:22:21.431656+00:00",
+    "since": "2026-09-24T00:45:43.865514+00:00",
+    "now": "2026-09-26T00:45:43.865514+00:00",
     "prev_generated_at": "2026-09-21 05:10:45+00:00"
-  },
-  "stopped_at": "write",
-  "stopped_error": "ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"
+  }
 }
