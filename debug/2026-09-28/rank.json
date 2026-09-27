@@ -1,0 +1,716 @@
+{
+  "dials": {
+    "WEIGHT_FLOOR": 5,
+    "TIER_WEIGHT": {
+      "lead": 4,
+      "major": 2,
+      "notable": 0
+    },
+    "WIKI_BONUS": 2,
+    "HARD_CAP": 12,
+    "MIN_STORIES_IF_ANY": 3,
+    "MAX_ARTICLES_PER_STORY": 5
+  },
+  "floor_relaxed": false,
+  "kept_weights": [
+    12,
+    9,
+    8,
+    7,
+    7,
+    5,
+    9,
+    9,
+    7
+  ],
+  "per_section": {
+    "world": 6,
+    "india": 3
+  },
+  "clusters": [
+    {
+      "headline_hint": "US rejects Iranian peace proposal to reopen Strait of Hormuz as tensions flare",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "lead",
+      "article_ids": [
+        6,
+        48,
+        94,
+        110,
+        113,
+        159,
+        164,
+        223,
+        286,
+        287,
+        292,
+        296
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        6,
+        48,
+        94,
+        110,
+        113,
+        159,
+        164,
+        223,
+        286,
+        287,
+        292,
+        296
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 8,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 12,
+      "weight_terms": {
+        "distinct_outlets": 8,
+        "tier_weight": 4,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "France 24",
+          "title": "Trump expects Iran talks next week after rejecting seven-day truce proposal",
+          "url": "https://www.france24.com/en/middle-east/20260927-trump-expects-iran-talks-next-week-after-rejecting-seven-day-truce-proposal"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Why has Trump rejected Iran’s peace proposal?",
+          "url": "https://www.aljazeera.com/video/inside-story/2026/9/27/why-has-trump-rejected-irans-peace-proposal?traffic_source=rss"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "Trump expects new Iran talks despite rejecting deal offer",
+          "url": "https://www.channelnewsasia.com/world/trump-iran-talks-rejects-deal-6414031"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "US rejects Iran's claim of capturing underwater drone, calls move 'desperate'",
+          "url": "https://timesofindia.indiatimes.com/world/middle-east/us-rejects-irans-claim-of-capturing-underwater-drone-calls-move-clearly-desperate/articleshow/134523402.cms"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "UN ambassador Waltz says Iran was not negotiating ‘in good faith’ to end war",
+          "url": "https://www.theguardian.com/us-news/2026/sep/27/trump-un-ambassador-iran-war"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 7
+    },
+    {
+      "headline_hint": "Five arrested near UK RAF air base used by US forces on suspicion of terror and explosives plot",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "major",
+      "article_ids": [
+        14,
+        25,
+        36,
+        75,
+        77,
+        201,
+        218,
+        256,
+        261,
+        284
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        14,
+        25,
+        36,
+        75,
+        77,
+        201,
+        218,
+        256,
+        261,
+        284
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 5,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "Late-night drive and a 999 call: farmer’s chance encounter that led to terrorism arrests at RAF base",
+          "url": "https://www.theguardian.com/uk-news/2026/sep/27/villagers-raf-fairford-evacuation"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "Five arrested near UK air base used by U.S. bombers in Iran war",
+          "url": "https://www.npr.org/2026/09/27/nx-s1-5982718/five-arrested-near-uk-air-base-used-by-u-s-bombers-in-iran-war"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Five arrested near UK RAF base over suspected explosives ‘terror’ plot",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/27/five-arrested-near-uk-raf-base-over-suspected-explosives-terror-plot?traffic_source=rss"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "5 held in UK for suspected plot to attack air base used by US",
+          "url": "https://timesofindia.indiatimes.com/world/uk/5-held-in-uk-for-suspected-plot-to-attack-air-base-used-by-us/articleshow/134525372.cms"
+        },
+        {
+          "outlet": "France 24",
+          "title": "UK: Police arrest 5 on suspicion of preparing a terrorist act",
+          "url": "https://www.france24.com/en/uk-police-arrest-5-on-suspicion-of-preparing-a-terrorist-act"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 5
+    },
+    {
+      "headline_hint": "Serbian President Aleksandar Vucic resigns amid prolonged protests to run for prime minister",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        42,
+        47,
+        63,
+        91
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        42,
+        47,
+        63,
+        91
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": true,
+      "wiki_event": "President of Serbia Aleksandar Vučić resigns in order to run for prime minister in the upcoming parliamentary election. Speaker of the National Assembly Ana Brnabić becomes acting president.",
+      "weight": 8,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "Serbian President Aleksandar Vucic resigns amid prolonged protests",
+          "url": "https://www.aljazeera.com/news/2026/9/27/serbian-president-aleksandar-vucic-resigns-amid-prolonged-protests?traffic_source=rss"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Embattled Serbian president resigns, paving way for early elections",
+          "url": "https://www.bbc.co.uk/news/articles/ckpq0g7z5pjjo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Serbia’s populist president Aleksandar Vučić resigns to run for prime minister",
+          "url": "https://www.theguardian.com/world/2026/sep/27/serbia-president-aleksandar-vucic-resigns-run-prime-minister"
+        },
+        {
+          "outlet": "France 24",
+          "title": "🔴 Serbian President Aleksandar Vucic resigns, expected to run for prime minister",
+          "url": "https://www.france24.com/en/europe/20260927-serbian-president-aleksandar-vucic-resigns-expected-to-run-for-prime-minister"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Mass shootings near Johannesburg and Cape Town leave 27 dead in South Africa",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "major",
+      "article_ids": [
+        147,
+        209,
+        215,
+        221,
+        236,
+        241
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        147,
+        209,
+        215,
+        221,
+        236,
+        241
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 5,
+      "wiki_backed": true,
+      "wiki_event": "Ten people are killed and 11 others are injured in a mass shooting at a store in Lwandle, City of Cape Town, South Africa. Police search for the perpetrators.",
+      "weight": 9,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "Dozens killed in two mass shootings in South Africa",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/27/dozens-killed-in-two-mass-shootings-in-south-africa?traffic_source=rss"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Two mass shootings in South Africa leave 27 dead",
+          "url": "https://www.bbc.co.uk/news/articles/ck5ywnp075d1o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "South Africa shootings leave 27 killed",
+          "url": "https://www.france24.com/en/south-africa-shootings-leave-27-killed"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "At least 27 dead after two mass shootings in South Africa, police say",
+          "url": "https://www.theguardian.com/world/2026/sep/27/mass-shootings-south-africa-johannesburg-cape-town"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "South Africa reels from spate of mass shootings that killed 38 people in a week",
+          "url": "https://www.npr.org/2026/09/27/nx-s1-5982488/south-africa-mass-shootings-killed-38-week"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 1
+    },
+    {
+      "headline_hint": "Powerful nor'easter storm batters US East Coast causing flooding and power outages",
+      "section": "world",
+      "category": "disaster",
+      "tier_requested": "major",
+      "article_ids": [
+        2,
+        16,
+        219,
+        240,
+        306,
+        308
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        2,
+        16,
+        219,
+        240,
+        306,
+        308
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 5,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "Powerful storm floods US Northeast, causes power outages",
+          "url": "https://www.aljazeera.com/news/2026/9/27/powerful-storm-floods-us-northeast-causes-power-outages?traffic_source=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Nor’easter storm batters US east coast with heavy winds and power outages",
+          "url": "https://www.theguardian.com/us-news/2026/sep/27/noreaster-storm-east-coast-death-power-outages"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "New York and Northeast Facing Another Day of Wild Weather",
+          "url": "https://www.livemint.com/news/us-news/new-york-and-northeast-facing-another-day-of-wild-weather-11790516910196.html"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "One dead as nor'easter storm pummels New York and New Jersey",
+          "url": "https://www.bbc.co.uk/news/articles/ck1wxxzn5jndo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "DW World",
+          "title": "Powerful storm batters northeast US, hundreds of flights canceled",
+          "url": "https://www.dw.com/en/powerful-storm-batters-northeast-us-hundreds-of-flights-canceled/a-79446676?maca=en-rss-en-world-4025-rdf"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 1
+    },
+    {
+      "headline_hint": "Swiss voters overwhelmingly reject referendum proposal for stricter military neutrality",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        122,
+        176,
+        191
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        122,
+        176,
+        191
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": true,
+      "wiki_event": "Swiss voters reject an initiative that proposed to enshrine a stricter form of Swiss neutrality, which would have prevented Switzerland from imposing economic sanctions and cooperating with NATO.",
+      "weight": 5,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "France 24",
+          "title": "Non! Why the Swiss rejected stricter neutrality",
+          "url": "https://www.france24.com/en/tv-shows/spotlight/20260927-non-why-the-swiss-rejected-stricter-neutrality"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Switzerland rejects stricter interpretation of its neutrality",
+          "url": "https://www.bbc.co.uk/news/articles/cm750plvwy9vo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Swiss voters reject stricter neutrality rules that would have curbed Nato cooperation",
+          "url": "https://www.theguardian.com/world/2026/sep/27/swiss-vote-reject-stricter-neutrality-rules-nato"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Russian aerial attacks across Ukraine kill at least eight people",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "notable",
+      "article_ids": [
+        15,
+        111,
+        266,
+        275
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        15,
+        111,
+        266,
+        275
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "France 24",
+          "title": "Russian attacks kill eight in Ukraine after Moscow vows to continue war",
+          "url": "https://www.france24.com/en/europe/20260927-russian-strikes-kill-eight-ukraine-war-moscow"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "Russian strikes on Ukraine kill 8",
+          "url": "https://www.channelnewsasia.com/world/russian-strikes-ukraine-kill-8-6413936"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Russian Strikes Kill Four in Ukraine, Damage Kyiv Data Center",
+          "url": "https://www.livemint.com/news/world/russian-strikes-kill-four-in-ukraine-damage-kyiv-data-center-11790504414709.html"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Russian strikes kill four in Ukraine",
+          "url": "https://www.france24.com/en/russian-strikes-kill-four-in-ukraine"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Bank unions call off three-day nationwide strike after reaching understanding with IBA",
+      "section": "india",
+      "category": "economy",
+      "tier_requested": "lead",
+      "article_ids": [
+        20,
+        45,
+        65,
+        76,
+        81,
+        100,
+        112,
+        116,
+        174,
+        193
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        20,
+        45,
+        65,
+        76,
+        81,
+        100,
+        112,
+        116,
+        174,
+        193
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 5,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 9,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 4,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "Bank unions call off 3-day strike after assurances, IBA to study demands",
+          "url": "https://timesofindia.indiatimes.com/india/bank-unions-call-off-3-day-strike-after-assurances-iba-to-study-demands/articleshow/134526239.cms"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Bank employees worked on Sunday but Monday strike deferred; change in plan triggers meme fest online",
+          "url": "https://www.livemint.com/news/trends/bank-employees-worked-on-sunday-but-monday-strike-deferred-change-in-plan-triggers-meme-fest-online-11790534100063.html"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "Bank unions defer three-day nationwide strike after ‘understandings reached’ with IBA",
+          "url": "https://www.thehindu.com/business/Industry/bank-unions-defer-three-day-nationwide-strike-ubfu/article71517225.ece"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "3-Day Bank Strike Deferred After Meeting Between Association, Unions",
+          "url": "https://www.ndtv.com/india-news/3-day-bank-strike-deferred-after-meeting-between-banks-association-unions-12106408#publisher=newsstand"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "3-day bank strike deferred after talks between bank body and unions",
+          "url": "https://www.hindustantimes.com/india-news/3day-bank-strike-deferred-after-talks-between-bank-body-and-unions-101790531868301.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 5
+    },
+    {
+      "headline_hint": "Violent student protests erupt at Punjab's Lovely Professional University following rape allegations",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        5,
+        23,
+        69,
+        137,
+        144,
+        152,
+        203,
+        232,
+        295
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        5,
+        23,
+        69,
+        137,
+        144,
+        152,
+        203,
+        232,
+        295
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 7,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 9,
+      "weight_terms": {
+        "distinct_outlets": 7,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "LPU protests: Over 2,000 police deployed after stone-pelting, vehicles set ablaze",
+          "url": "https://timesofindia.indiatimes.com/india/lpu-unrest-over-2000-police-deployed-after-stone-pelting-vehicles-set-ablaze/articleshow/134528785.cms"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Alleged rape on campus sparks violent protest at Indian university",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/27/alleged-rape-on-campus-sparks-violent-protest-at-indian-university?traffic_source=rss"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "Students Deny 'Rape' In Video Released By Punjab's Lovely Professional University, Then Call It Scripted",
+          "url": "https://www.ndtv.com/india-news/punjab-university-lpu-students-protest-rape-lovely-professional-university-12106376#publisher=newsstand"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "LPU postpones mid-term exams, suspends classes for 10 days amid violent protests",
+          "url": "https://www.hindustantimes.com/india-news/violence-punjab-lovely-professional-university-lpu-postpones-mid-term-exams-suspends-classes-for-ten-days-rape-suicide-101790529078792.html"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "Punjab’s LPU student protesters block NH-44, clash with police after alleged rape of female student",
+          "url": "https://www.thehindu.com/news/national/punjab/punjab-varsity-students-protest-block-highway-over-rape-of-female-student/article71515254.ece"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 4
+    },
+    {
+      "headline_hint": "Political row erupts in Delhi after Minister Parvesh Verma slaps man during road inspection",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        103,
+        132,
+        154,
+        180,
+        186,
+        192,
+        229,
+        244
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        103,
+        132,
+        154,
+        180,
+        186,
+        192,
+        229,
+        244
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 5,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Livemint",
+          "title": "Parvesh Verma slap row: What to know about Tilak Nagar road inspection incident in Delhi as AAP protests — 5 points",
+          "url": "https://www.livemint.com/news/india/parvesh-verma-slap-row-what-to-know-about-tilak-nagar-road-inspection-incident-in-delhi-as-aap-protests-5-points-11790529723551.html"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "‘Hooliganism won’t be tolerated; what is his crime?': Rahul Gandhi, AAP rage over Parvesh Verma's slapgate",
+          "url": "https://www.hindustantimes.com/india-news/hooliganism-wont-be-tolerated-what-is-his-crime-rahul-gandhi-aap-rage-over-parvesh-vermas-slapgate-tilak-nagar-101790527436669.html"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "Video: Delhi Minister Parvesh Verma Loses Cool, Slaps Man Filming Inspection",
+          "url": "https://www.ndtv.com/india-news/video-delhi-minister-parvesh-verma-loses-cool-slaps-man-in-delhi-12104998#publisher=newsstand"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "Delhi deputy CM slaps AAP worker during altercation about poor road quality",
+          "url": "https://scroll.in/latest/1096055/delhi-deputy-cm-slaps-aap-worker-during-altercation-over-poor-road-quality?utm_source=rss&utm_medium=public"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Parvesh Verma slap row: Man files complaint, police reveal prior FIR against him",
+          "url": "https://timesofindia.indiatimes.com/india/threatened-to-kill-me-man-files-complaint-against-delhi-pwd-minister-parvesh-verma-over-slap-during-road-inspection/articleshow/134522216.cms"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 3
+    },
+    {
+      "headline_hint": "IndiGo Airbus A321 flight suffers tail strike during landing approach in Bengaluru",
+      "section": "india",
+      "category": "disaster",
+      "tier_requested": "notable",
+      "article_ids": [
+        37,
+        139,
+        150,
+        167,
+        172
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        37,
+        139,
+        150,
+        167,
+        172
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "IndiGo A321 suffers tail strike in Bengaluru",
+          "url": "https://timesofindia.indiatimes.com/india/indigo-a321-suffers-tail-strike-in-bengaluru/articleshow/134526157.cms"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "IndiGo flight suffers tail strike while landing in Bengaluru amid gusty weather conditions",
+          "url": "https://www.livemint.com/news/india/indigo-flight-suffers-tail-strike-while-landing-in-bengaluru-amid-gusty-weather-conditions-11790526027337.html"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "IndiGo Flight Suffers Tail Strike In Bengaluru, Airline Blames Weather",
+          "url": "https://www.ndtv.com/india-news/indigo-flight-suffers-tail-strike-in-bengaluru-airline-blames-weather-12106249#publisher=newsstand"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Bengaluru-bound IndiGo flight suffers tail strike while landing at Kempegowda airport; DGCA to probe incident",
+          "url": "https://www.hindustantimes.com/india-news/bengalurubound-indigo-flight-suffers-tail-strike-while-landing-at-kempegowda-airport-dgca-to-probe-incident-101790525461947.html"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "IndiGo A321 enroute Blr suffers tail strike; plane lands safely in second attempt",
+          "url": "https://timesofindia.indiatimes.com/india/indigo-a321-suffers-tail-strike-during-go-around-at-bangalore-plane-lands-safely-in-second-attempt/articleshow/134523319.cms"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    }
+  ]
+}
