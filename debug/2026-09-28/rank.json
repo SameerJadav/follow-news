@@ -15,52 +15,49 @@
   "kept_weights": [
     12,
     9,
-    8,
+    9,
     7,
-    7,
+    6,
+    5,
     5,
     9,
     9,
-    7
+    5
   ],
   "per_section": {
-    "world": 6,
+    "world": 7,
     "india": 3
   },
   "clusters": [
     {
-      "headline_hint": "US rejects Iranian peace proposal to reopen Strait of Hormuz as tensions flare",
+      "headline_hint": "Trump rejects Iran's peace proposal to reopen Strait of Hormuz amid escalating Middle East tensions",
       "section": "world",
       "category": "conflict",
       "tier_requested": "lead",
       "article_ids": [
-        6,
-        48,
-        94,
-        110,
-        113,
-        159,
-        164,
-        223,
-        286,
-        287,
+        12,
+        14,
+        36,
+        79,
+        124,
+        183,
         292,
-        296
+        293,
+        298,
+        302
       ],
       "verdict": "kept",
       "valid_ids": [
-        6,
-        48,
-        94,
-        110,
-        113,
-        159,
-        164,
-        223,
-        286,
-        287,
+        12,
+        14,
+        36,
+        79,
+        124,
+        183,
         292,
-        296
+        293,
+        298,
+        302
       ],
       "tier_final": "lead",
       "distinct_outlets": 8,
@@ -75,14 +72,19 @@
       "weight_floor": 5,
       "articles": [
         {
+          "outlet": "Al Jazeera",
+          "title": "Iran war live: Tehran says it’s fully prepared for war amid Hormuz tensions",
+          "url": "https://www.aljazeera.com/news/liveblog/2026/9/28/iran-war-live-tehran-warns-its-fully-prepared-for-war-amid-hormuz-tensions?traffic_source=rss"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "'Mk 18 Mod 2 Kingfish': IRGC claims second US underwater drone seized in Strait of Hormuz",
+          "url": "https://timesofindia.indiatimes.com/world/middle-east/iran-claims-second-us-drone-seized-in-strait-of-hormuz-identifies-it-as-mk-18-kingfish/articleshow/134528963.cms"
+        },
+        {
           "outlet": "France 24",
           "title": "Trump expects Iran talks next week after rejecting seven-day truce proposal",
           "url": "https://www.france24.com/en/middle-east/20260927-trump-expects-iran-talks-next-week-after-rejecting-seven-day-truce-proposal"
-        },
-        {
-          "outlet": "Al Jazeera",
-          "title": "Why has Trump rejected Iran’s peace proposal?",
-          "url": "https://www.aljazeera.com/video/inside-story/2026/9/27/why-has-trump-rejected-irans-peace-proposal?traffic_source=rss"
         },
         {
           "outlet": "Channel News Asia",
@@ -90,47 +92,100 @@
           "url": "https://www.channelnewsasia.com/world/trump-iran-talks-rejects-deal-6414031"
         },
         {
-          "outlet": "Times of India",
-          "title": "US rejects Iran's claim of capturing underwater drone, calls move 'desperate'",
-          "url": "https://timesofindia.indiatimes.com/world/middle-east/us-rejects-irans-claim-of-capturing-underwater-drone-calls-move-clearly-desperate/articleshow/134523402.cms"
-        },
-        {
           "outlet": "Guardian World",
           "title": "UN ambassador Waltz says Iran was not negotiating ‘in good faith’ to end war",
           "url": "https://www.theguardian.com/us-news/2026/sep/27/trump-un-ambassador-iran-war"
         }
       ],
-      "articles_dropped_by_diversity_cap": 7
+      "articles_dropped_by_diversity_cap": 5
     },
     {
-      "headline_hint": "Five arrested near UK RAF air base used by US forces on suspicion of terror and explosives plot",
+      "headline_hint": "Serbian President Aleksandar Vucic resigns to run for prime minister",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        11,
+        73,
+        78,
+        93,
+        121
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        11,
+        73,
+        78,
+        93,
+        121
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 5,
+      "wiki_backed": true,
+      "wiki_event": "President of Serbia Aleksandar Vučić resigns in order to run for prime minister in the upcoming parliamentary election. Speaker of the National Assembly Ana Brnabić becomes acting president.",
+      "weight": 9,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "Vucic steps down as Serbia’s president, eyes prime minister’s post in October election",
+          "url": "https://timesofindia.indiatimes.com/world/rest-of-world/vucic-quits-serbian-presidency-eyes-prime-ministers-post-in-october-election/articleshow/134529016.cms"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Serbian President Aleksandar Vucic resigns amid prolonged protests",
+          "url": "https://www.aljazeera.com/news/2026/9/27/serbian-president-aleksandar-vucic-resigns-amid-prolonged-protests?traffic_source=rss"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Embattled Serbian president resigns, paving way for early elections",
+          "url": "https://www.bbc.co.uk/news/articles/ckpq0g7z5pjjo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Serbia’s populist president Aleksandar Vučić resigns to run for prime minister",
+          "url": "https://www.theguardian.com/world/2026/sep/27/serbia-president-aleksandar-vucic-resigns-run-prime-minister"
+        },
+        {
+          "outlet": "France 24",
+          "title": "🔴 Serbian President Aleksandar Vucic resigns, expected to run for prime minister",
+          "url": "https://www.france24.com/en/europe/20260927-serbian-president-aleksandar-vucic-resigns-expected-to-run-for-prime-minister"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Five arrested near UK RAF base over suspected explosives terror plot",
       "section": "world",
       "category": "conflict",
       "tier_requested": "major",
       "article_ids": [
-        14,
-        25,
-        36,
-        75,
-        77,
-        201,
-        218,
-        256,
-        261,
-        284
+        44,
+        56,
+        67,
+        105,
+        107,
+        215,
+        229,
+        262,
+        267
       ],
       "verdict": "kept",
       "valid_ids": [
-        14,
-        25,
-        36,
-        75,
-        77,
-        201,
-        218,
-        256,
-        261,
-        284
+        44,
+        56,
+        67,
+        105,
+        107,
+        215,
+        229,
+        262,
+        267
       ],
       "tier_final": "major",
       "distinct_outlets": 5,
@@ -170,82 +225,31 @@
           "url": "https://www.france24.com/en/uk-police-arrest-5-on-suspicion-of-preparing-a-terrorist-act"
         }
       ],
-      "articles_dropped_by_diversity_cap": 5
+      "articles_dropped_by_diversity_cap": 4
     },
     {
-      "headline_hint": "Serbian President Aleksandar Vucic resigns amid prolonged protests to run for prime minister",
-      "section": "world",
-      "category": "politics",
-      "tier_requested": "major",
-      "article_ids": [
-        42,
-        47,
-        63,
-        91
-      ],
-      "verdict": "kept",
-      "valid_ids": [
-        42,
-        47,
-        63,
-        91
-      ],
-      "tier_final": "major",
-      "distinct_outlets": 4,
-      "wiki_backed": true,
-      "wiki_event": "President of Serbia Aleksandar Vučić resigns in order to run for prime minister in the upcoming parliamentary election. Speaker of the National Assembly Ana Brnabić becomes acting president.",
-      "weight": 8,
-      "weight_terms": {
-        "distinct_outlets": 4,
-        "tier_weight": 2,
-        "wiki_bonus": 2
-      },
-      "weight_floor": 5,
-      "articles": [
-        {
-          "outlet": "Al Jazeera",
-          "title": "Serbian President Aleksandar Vucic resigns amid prolonged protests",
-          "url": "https://www.aljazeera.com/news/2026/9/27/serbian-president-aleksandar-vucic-resigns-amid-prolonged-protests?traffic_source=rss"
-        },
-        {
-          "outlet": "BBC World",
-          "title": "Embattled Serbian president resigns, paving way for early elections",
-          "url": "https://www.bbc.co.uk/news/articles/ckpq0g7z5pjjo?at_medium=RSS&at_campaign=rss"
-        },
-        {
-          "outlet": "Guardian World",
-          "title": "Serbia’s populist president Aleksandar Vučić resigns to run for prime minister",
-          "url": "https://www.theguardian.com/world/2026/sep/27/serbia-president-aleksandar-vucic-resigns-run-prime-minister"
-        },
-        {
-          "outlet": "France 24",
-          "title": "🔴 Serbian President Aleksandar Vucic resigns, expected to run for prime minister",
-          "url": "https://www.france24.com/en/europe/20260927-serbian-president-aleksandar-vucic-resigns-expected-to-run-for-prime-minister"
-        }
-      ],
-      "articles_dropped_by_diversity_cap": 0
-    },
-    {
-      "headline_hint": "Mass shootings near Johannesburg and Cape Town leave 27 dead in South Africa",
+      "headline_hint": "Mass shootings near Johannesburg and Cape Town leave at least 27 dead",
       "section": "world",
       "category": "conflict",
       "tier_requested": "major",
       "article_ids": [
-        147,
-        209,
-        215,
+        9,
         221,
-        236,
-        241
+        226,
+        228,
+        232,
+        244,
+        247
       ],
       "verdict": "kept",
       "valid_ids": [
-        147,
-        209,
-        215,
+        9,
         221,
-        236,
-        241
+        226,
+        228,
+        232,
+        244,
+        247
       ],
       "tier_final": "major",
       "distinct_outlets": 5,
@@ -261,8 +265,8 @@
       "articles": [
         {
           "outlet": "Al Jazeera",
-          "title": "Dozens killed in two mass shootings in South Africa",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/27/dozens-killed-in-two-mass-shootings-in-south-africa?traffic_source=rss"
+          "title": "South African police discover body of 11th woman near Johannesburg",
+          "url": "https://www.aljazeera.com/news/2026/9/28/south-african-police-discover-body-of-10th-woman-near-johannesburg?traffic_source=rss"
         },
         {
           "outlet": "BBC World",
@@ -285,42 +289,47 @@
           "url": "https://www.npr.org/2026/09/27/nx-s1-5982488/south-africa-mass-shootings-killed-38-week"
         }
       ],
-      "articles_dropped_by_diversity_cap": 1
+      "articles_dropped_by_diversity_cap": 2
     },
     {
-      "headline_hint": "Powerful nor'easter storm batters US East Coast causing flooding and power outages",
+      "headline_hint": "Deadly nor'easter storm batters US East Coast with heavy rain and power outages",
       "section": "world",
       "category": "disaster",
-      "tier_requested": "major",
+      "tier_requested": "notable",
       "article_ids": [
-        2,
         16,
-        219,
-        240,
-        306,
-        308
+        32,
+        46,
+        230,
+        312,
+        314
       ],
       "verdict": "kept",
       "valid_ids": [
-        2,
         16,
-        219,
-        240,
-        306,
-        308
+        32,
+        46,
+        230,
+        312,
+        314
       ],
-      "tier_final": "major",
+      "tier_final": "notable",
       "distinct_outlets": 5,
       "wiki_backed": false,
       "wiki_event": "",
-      "weight": 7,
+      "weight": 5,
       "weight_terms": {
         "distinct_outlets": 5,
-        "tier_weight": 2,
+        "tier_weight": 0,
         "wiki_bonus": 0
       },
       "weight_floor": 5,
       "articles": [
+        {
+          "outlet": "BBC World",
+          "title": "One dead as nor'easter storm pummels New York and New Jersey",
+          "url": "https://www.bbc.co.uk/news/articles/ck1wxxzn5jndo?at_medium=RSS&at_campaign=rss"
+        },
         {
           "outlet": "Al Jazeera",
           "title": "Powerful storm floods US Northeast, causes power outages",
@@ -337,11 +346,6 @@
           "url": "https://www.livemint.com/news/us-news/new-york-and-northeast-facing-another-day-of-wild-weather-11790516910196.html"
         },
         {
-          "outlet": "BBC World",
-          "title": "One dead as nor'easter storm pummels New York and New Jersey",
-          "url": "https://www.bbc.co.uk/news/articles/ck1wxxzn5jndo?at_medium=RSS&at_campaign=rss"
-        },
-        {
           "outlet": "DW World",
           "title": "Powerful storm batters northeast US, hundreds of flights canceled",
           "url": "https://www.dw.com/en/powerful-storm-batters-northeast-us-hundreds-of-flights-canceled/a-79446676?maca=en-rss-en-world-4025-rdf"
@@ -350,20 +354,20 @@
       "articles_dropped_by_diversity_cap": 1
     },
     {
-      "headline_hint": "Swiss voters overwhelmingly reject referendum proposal for stricter military neutrality",
+      "headline_hint": "Swiss voters reject proposal for stricter definition of national neutrality",
       "section": "world",
       "category": "politics",
       "tier_requested": "notable",
       "article_ids": [
-        122,
-        176,
-        191
+        147,
+        193,
+        205
       ],
       "verdict": "kept",
       "valid_ids": [
-        122,
-        176,
-        191
+        147,
+        193,
+        205
       ],
       "tier_final": "notable",
       "distinct_outlets": 3,
@@ -396,87 +400,94 @@
       "articles_dropped_by_diversity_cap": 0
     },
     {
-      "headline_hint": "Russian aerial attacks across Ukraine kill at least eight people",
+      "headline_hint": "Airstrike on market in Yemen's Taiz kills seven and wounds dozens",
       "section": "world",
       "category": "conflict",
       "tier_requested": "notable",
       "article_ids": [
-        15,
-        111,
-        266,
-        275
+        27,
+        54,
+        63,
+        64,
+        84
       ],
-      "verdict": "cut:below_floor(3<5)",
+      "verdict": "kept",
       "valid_ids": [
-        15,
-        111,
-        266,
-        275
+        27,
+        54,
+        63,
+        64,
+        84
       ],
       "tier_final": "notable",
-      "distinct_outlets": 3,
-      "wiki_backed": false,
-      "wiki_event": "",
-      "weight": 3,
+      "distinct_outlets": 4,
+      "wiki_backed": true,
+      "wiki_event": "Saudi Arabia's air forces carries out an airstrike at a market in Taiz, Yemen, killing seven people and wounding 40 more.",
+      "weight": 6,
       "weight_terms": {
-        "distinct_outlets": 3,
+        "distinct_outlets": 4,
         "tier_weight": 0,
-        "wiki_bonus": 0
+        "wiki_bonus": 2
       },
       "weight_floor": 5,
       "articles": [
         {
-          "outlet": "France 24",
-          "title": "Russian attacks kill eight in Ukraine after Moscow vows to continue war",
-          "url": "https://www.france24.com/en/europe/20260927-russian-strikes-kill-eight-ukraine-war-moscow"
-        },
-        {
           "outlet": "Channel News Asia",
-          "title": "Russian strikes on Ukraine kill 8",
-          "url": "https://www.channelnewsasia.com/world/russian-strikes-ukraine-kill-8-6413936"
+          "title": "Houthis say Saudi strikes on Yemen's Taiz leave dozens of casualties",
+          "url": "https://www.channelnewsasia.com/world/yemen-taiz-strikes-houthis-saudi-arabia-6414126"
         },
         {
-          "outlet": "Livemint",
-          "title": "Russian Strikes Kill Four in Ukraine, Damage Kyiv Data Center",
-          "url": "https://www.livemint.com/news/world/russian-strikes-kill-four-in-ukraine-damage-kyiv-data-center-11790504414709.html"
+          "outlet": "BBC World",
+          "title": "Inside Yemen's front-line city as Houthis battle for control",
+          "url": "https://www.bbc.co.uk/news/articles/cw98005ndz7no?at_medium=RSS&at_campaign=rss"
         },
         {
-          "outlet": "France 24",
-          "title": "Russian strikes kill four in Ukraine",
-          "url": "https://www.france24.com/en/russian-strikes-kill-four-in-ukraine"
+          "outlet": "Al Jazeera",
+          "title": "Deadly strike hits market in Yemen’s Taiz",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/27/deadly-strike-hits-market-in-yemens-taiz?traffic_source=rss"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Yemeni government forces claim four Iranian experts killed in Taiz",
+          "url": "https://timesofindia.indiatimes.com/world/middle-east/4-iranian-experts-killed-in-taiz-as-yemen-army-unleashes-756-operation-offensive-against-houthis/articleshow/134525782.cms"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Watch: BBC reports from the front-line of an escalating war in Yemen",
+          "url": "https://www.bbc.co.uk/news/videos/crp3kgjygnkeo?at_medium=RSS&at_campaign=rss"
         }
       ],
       "articles_dropped_by_diversity_cap": 0
     },
     {
-      "headline_hint": "Bank unions call off three-day nationwide strike after reaching understanding with IBA",
+      "headline_hint": "Bank unions defer nationwide 3-day strike after reaching understanding with IBA",
       "section": "india",
       "category": "economy",
       "tier_requested": "lead",
       "article_ids": [
-        20,
-        45,
-        65,
+        50,
         76,
-        81,
-        100,
-        112,
-        116,
-        174,
-        193
+        95,
+        106,
+        111,
+        129,
+        137,
+        141,
+        192,
+        207
       ],
       "verdict": "kept",
       "valid_ids": [
-        20,
-        45,
-        65,
+        50,
         76,
-        81,
-        100,
-        112,
-        116,
-        174,
-        193
+        95,
+        106,
+        111,
+        129,
+        137,
+        141,
+        192,
+        207
       ],
       "tier_final": "lead",
       "distinct_outlets": 5,
@@ -519,32 +530,32 @@
       "articles_dropped_by_diversity_cap": 5
     },
     {
-      "headline_hint": "Violent student protests erupt at Punjab's Lovely Professional University following rape allegations",
+      "headline_hint": "Violent protests break out at Punjab's Lovely Professional University over alleged rape case",
       "section": "india",
       "category": "politics",
       "tier_requested": "major",
       "article_ids": [
-        5,
-        23,
-        69,
-        137,
-        144,
-        152,
-        203,
-        232,
-        295
+        35,
+        53,
+        99,
+        160,
+        166,
+        173,
+        216,
+        240,
+        301
       ],
       "verdict": "kept",
       "valid_ids": [
-        5,
-        23,
-        69,
-        137,
-        144,
-        152,
-        203,
-        232,
-        295
+        35,
+        53,
+        99,
+        160,
+        166,
+        173,
+        216,
+        240,
+        301
       ],
       "tier_final": "major",
       "distinct_outlets": 7,
@@ -587,39 +598,39 @@
       "articles_dropped_by_diversity_cap": 4
     },
     {
-      "headline_hint": "Political row erupts in Delhi after Minister Parvesh Verma slaps man during road inspection",
+      "headline_hint": "Delhi Minister Parvesh Verma involved in controversy over alleged slap incident during inspection",
       "section": "india",
       "category": "politics",
-      "tier_requested": "major",
+      "tier_requested": "notable",
       "article_ids": [
-        103,
-        132,
-        154,
-        180,
-        186,
-        192,
-        229,
-        244
+        131,
+        155,
+        175,
+        197,
+        201,
+        206,
+        237,
+        250
       ],
       "verdict": "kept",
       "valid_ids": [
-        103,
-        132,
-        154,
-        180,
-        186,
-        192,
-        229,
-        244
+        131,
+        155,
+        175,
+        197,
+        201,
+        206,
+        237,
+        250
       ],
-      "tier_final": "major",
+      "tier_final": "notable",
       "distinct_outlets": 5,
       "wiki_backed": false,
       "wiki_event": "",
-      "weight": 7,
+      "weight": 5,
       "weight_terms": {
         "distinct_outlets": 5,
-        "tier_weight": 2,
+        "tier_weight": 0,
         "wiki_bonus": 0
       },
       "weight_floor": 5,
@@ -653,24 +664,84 @@
       "articles_dropped_by_diversity_cap": 3
     },
     {
-      "headline_hint": "IndiGo Airbus A321 flight suffers tail strike during landing approach in Bengaluru",
+      "headline_hint": "Opposition parties demand resignation of Chief Election Commissioner Gyanesh Kumar over bias claims",
       "section": "india",
-      "category": "disaster",
+      "category": "politics",
       "tier_requested": "notable",
       "article_ids": [
-        37,
-        139,
-        150,
-        167,
-        172
+        152,
+        184,
+        222,
+        243,
+        260,
+        313
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        152,
+        184,
+        222,
+        243,
+        260,
+        313
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "The Hindu",
+          "title": "M.A. Baby meets Kejriwal ahead of INDIA bloc meeting on Election Commission",
+          "url": "https://www.thehindu.com/news/national/ma-baby-meets-kejriwal-ahead-of-india-bloc-meeting-on-election-commission/article71516130.ece"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Why Mumbai police denied permission to CJP for October 2 protest against CEC Gyanesh Kumar",
+          "url": "https://www.hindustantimes.com/india-news/why-mumbai-police-denied-permission-to-cjp-for-october-2-protest-against-cec-gyanesh-kumar-101790523912934.html"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "Gyanesh Kumar ‘used to recruit for BJP’, alleges Rahul Gandhi after ex-Keralam IAS officer’s claims",
+          "url": "https://scroll.in/latest/1096040/gyanesh-kumar-used-to-recruit-for-bjp-alleges-rahul-gandhi-after-ex-keralam-ias-officers-claims?utm_source=rss&utm_medium=public"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "'Such tactics...': Dipke says Mumbai Police denied permission for CJP's October 2 protest against CEC Gyanesh Kumar",
+          "url": "https://www.hindustantimes.com/india-news/mumbai-police-denied-permission-for-cjp-october-2-protest-against-cec-gyanesh-kumar-says-abhijeet-dipke-101790517624615.html"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Congress to hold protest across Jharkhand on September 28, seek resignation of CEC Gyanesh Kumar",
+          "url": "https://www.hindustantimes.com/india-news/congress-to-hold-protest-across-jharkhand-on-september-28-seek-resignation-of-cec-gyanesh-kumar-101790513785477.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 1
+    },
+    {
+      "headline_hint": "CJP activists released following police detention in Assam",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        114,
+        172,
+        178,
+        203
       ],
       "verdict": "cut:below_floor(4<5)",
       "valid_ids": [
-        37,
-        139,
-        150,
-        167,
-        172
+        114,
+        172,
+        178,
+        203
       ],
       "tier_final": "notable",
       "distinct_outlets": 4,
@@ -685,29 +756,63 @@
       "weight_floor": 5,
       "articles": [
         {
-          "outlet": "Times of India",
-          "title": "IndiGo A321 suffers tail strike in Bengaluru",
-          "url": "https://timesofindia.indiatimes.com/india/indigo-a321-suffers-tail-strike-in-bengaluru/articleshow/134526157.cms"
-        },
-        {
-          "outlet": "Livemint",
-          "title": "IndiGo flight suffers tail strike while landing in Bengaluru amid gusty weather conditions",
-          "url": "https://www.livemint.com/news/india/indigo-flight-suffers-tail-strike-while-landing-in-bengaluru-amid-gusty-weather-conditions-11790526027337.html"
-        },
-        {
-          "outlet": "NDTV",
-          "title": "IndiGo Flight Suffers Tail Strike In Bengaluru, Airline Blames Weather",
-          "url": "https://www.ndtv.com/india-news/indigo-flight-suffers-tail-strike-in-bengaluru-airline-blames-weather-12106249#publisher=newsstand"
+          "outlet": "The Hindu",
+          "title": "'Illegal detention' by Assam Police finally ended: CJP’s Ashutosh Ranka after release",
+          "url": "https://www.thehindu.com/news/national/cjps-ashutosh-ranka-his-team-detained/article71515449.ece"
         },
         {
           "outlet": "Hindustan Times",
-          "title": "Bengaluru-bound IndiGo flight suffers tail strike while landing at Kempegowda airport; DGCA to probe incident",
-          "url": "https://www.hindustantimes.com/india-news/bengalurubound-indigo-flight-suffers-tail-strike-while-landing-at-kempegowda-airport-dgca-to-probe-incident-101790525461947.html"
+          "title": "Ashutosh Ranka says team CJP's ‘illegal detention’ by Assam Police 'finally ended'; Dipke reacts",
+          "url": "https://www.hindustantimes.com/india-news/ashutosh-ranka-says-illegal-detention-by-assam-police-finally-ended-cjp-team-chief-dipke-reacts-101790527524604.html"
         },
         {
           "outlet": "Times of India",
-          "title": "IndiGo A321 enroute Blr suffers tail strike; plane lands safely in second attempt",
-          "url": "https://timesofindia.indiatimes.com/india/indigo-a321-suffers-tail-strike-during-go-around-at-bangalore-plane-lands-safely-in-second-attempt/articleshow/134523319.cms"
+          "title": "‘Illegal detention by Assam Police has finally ended’: CJP’s Ranka to address press",
+          "url": "https://timesofindia.indiatimes.com/city/guwahati/illegal-detention-by-assam-police-has-finally-ended-cjps-ashutosh-ranka-to-address-press/articleshow/134523500.cms"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "Assam: CJP convenor Ashutosh Ranka, nearly 30 volunteers detained by police",
+          "url": "https://scroll.in/latest/1096043/assam-cjp-convenor-ashutosh-ranka-nearly-30-volunteers-detained-by-police?utm_source=rss&utm_medium=public"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "India raises concerns over US sanctions law targeting Russian oil purchases",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        158,
+        219
+      ],
+      "verdict": "cut:below_floor(2<5)",
+      "valid_ids": [
+        158,
+        219
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 2,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "The Hindu",
+          "title": "Amid concerns over Russia sanctions law, Foreign Secretary meets U.S. delegation",
+          "url": "https://www.thehindu.com/news/national/amid-concerns-over-russia-sanctions-law-foreign-secretary-meets-us-delegation/article71516990.ece"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "‘US won't let India become next China’: Russian envoy claims ‘Freudian slip’ revealed Washington's concerns",
+          "url": "https://www.hindustantimes.com/india-news/us-will-not-let-india-become-next-china-russian-envoy-denis-alipov-says-freudian-slip-revealed-washington-concerns-101790517637417.html"
         }
       ],
       "articles_dropped_by_diversity_cap": 0

@@ -145,3 +145,149 @@
 {"run": "digest", "t": 242663, "kind": "event", "stage": "ratelimit", "label": "write", "verdict": "transient_exhausted", "attempt": 3, "attempts_allowed": 3, "error": "ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"}
 {"run": "digest", "t": 242663, "kind": "event", "stage": "stage", "name": "write", "ms": 65519, "ok": false, "error": "ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"}
 {"run": "digest", "t": 242663, "kind": "event", "stage": "tracer", "msg": "capture finished", "ok": false, "ms": 242663, "bytes": 12101717}
+{"run": "digest", "t": 0, "kind": "digest", "stage": "tracer", "msg": "capture started", "level": 1, "day": "2026-09-28"}
+{"run": "digest", "t": 1780, "kind": "dbg", "msg": "digest: window since=2026-09-26T23:02:28+00:00 (prev_generated_at=2026-09-26 23:02:28+00:00)"}
+{"run": "digest", "t": 2023, "kind": "dbg", "msg": "feed 'BBC World': http=200 raw_items=26 usable=26"}
+{"run": "digest", "t": 2023, "kind": "event", "stage": "feeds", "outlet": "BBC World", "url": "https://feeds.bbci.co.uk/news/world/rss.xml", "http": 200, "elapsed_ms": 233, "bytes": 20199, "raw_items": 26, "usable": 26, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 2325, "kind": "dbg", "msg": "feed 'Al Jazeera': http=200 raw_items=25 usable=25"}
+{"run": "digest", "t": 2325, "kind": "event", "stage": "feeds", "outlet": "Al Jazeera", "url": "https://www.aljazeera.com/xml/rss/all.xml", "http": 200, "elapsed_ms": 292, "bytes": 17101, "raw_items": 25, "usable": 25, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 2521, "kind": "dbg", "msg": "feed 'Guardian World': http=200 raw_items=45 usable=45"}
+{"run": "digest", "t": 2521, "kind": "event", "stage": "feeds", "outlet": "Guardian World", "url": "https://www.theguardian.com/world/rss", "http": 200, "elapsed_ms": 150, "bytes": 149391, "raw_items": 45, "usable": 45, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 2729, "kind": "dbg", "msg": "feed 'NPR World': http=200 raw_items=10 usable=10"}
+{"run": "digest", "t": 2729, "kind": "event", "stage": "feeds", "outlet": "NPR World", "url": "https://feeds.npr.org/1004/rss.xml", "http": 200, "elapsed_ms": 200, "bytes": 12769, "raw_items": 10, "usable": 10, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 4232, "kind": "dbg", "msg": "feed 'DW World': http=200 raw_items=11 usable=11"}
+{"run": "digest", "t": 4232, "kind": "event", "stage": "feeds", "outlet": "DW World", "url": "https://rss.dw.com/rdf/rss-en-world", "http": 200, "elapsed_ms": 1497, "bytes": 10792, "raw_items": 11, "usable": 11, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 4529, "kind": "dbg", "msg": "feed 'France 24': http=200 raw_items=24 usable=24"}
+{"run": "digest", "t": 4529, "kind": "event", "stage": "feeds", "outlet": "France 24", "url": "https://www.france24.com/en/rss", "http": 200, "elapsed_ms": 286, "bytes": 27621, "raw_items": 24, "usable": 24, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 4712, "kind": "dbg", "msg": "feed 'Channel News Asia': http=200 raw_items=20 usable=20"}
+{"run": "digest", "t": 4712, "kind": "event", "stage": "feeds", "outlet": "Channel News Asia", "url": "https://www.channelnewsasia.com/api/v1/rss-outbound-feed?_format=xml", "http": 200, "elapsed_ms": 173, "bytes": 17818, "raw_items": 20, "usable": 20, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 4823, "kind": "dbg", "msg": "feed 'The Hindu': http=200 raw_items=60 usable=60"}
+{"run": "digest", "t": 4823, "kind": "event", "stage": "feeds", "outlet": "The Hindu", "url": "https://www.thehindu.com/news/national/feeder/default.rss", "http": 200, "elapsed_ms": 94, "bytes": 44267, "raw_items": 60, "usable": 60, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 5115, "kind": "dbg", "msg": "feed 'NDTV': http=200 raw_items=20 usable=20"}
+{"run": "digest", "t": 5115, "kind": "event", "stage": "feeds", "outlet": "NDTV", "url": "https://feeds.feedburner.com/ndtvnews-india-news", "http": 200, "elapsed_ms": 282, "bytes": 28600, "raw_items": 20, "usable": 20, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 5246, "kind": "dbg", "msg": "feed 'Hindustan Times': http=200 raw_items=100 usable=100"}
+{"run": "digest", "t": 5246, "kind": "event", "stage": "feeds", "outlet": "Hindustan Times", "url": "https://www.hindustantimes.com/feeds/rss/india-news/rssfeed.xml", "http": 200, "elapsed_ms": 104, "bytes": 97610, "raw_items": 100, "usable": 100, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 5321, "kind": "dbg", "msg": "feed 'Times of India': http=200 raw_items=44 usable=44"}
+{"run": "digest", "t": 5321, "kind": "event", "stage": "feeds", "outlet": "Times of India", "url": "https://timesofindia.indiatimes.com/rssfeedstopstories.cms", "http": 200, "elapsed_ms": 60, "bytes": 41773, "raw_items": 44, "usable": 44, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 5563, "kind": "dbg", "msg": "feed 'Livemint': http=200 raw_items=35 usable=35"}
+{"run": "digest", "t": 5563, "kind": "event", "stage": "feeds", "outlet": "Livemint", "url": "https://www.livemint.com/rss/news", "http": 200, "elapsed_ms": 231, "bytes": 37392, "raw_items": 35, "usable": 35, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 5868, "kind": "dbg", "msg": "feed 'Scroll.in': http=200 raw_items=100 usable=100"}
+{"run": "digest", "t": 5868, "kind": "event", "stage": "feeds", "outlet": "Scroll.in", "url": "https://feeds.feedburner.com/ScrollinArticles.rss", "http": 200, "elapsed_ms": 202, "bytes": 300462, "raw_items": 100, "usable": 100, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 5880, "kind": "dbg", "msg": "gather: 381 article(s) after window+dedupe; by outlet: {'Channel News Asia': 20, 'Guardian World': 27, 'Times of India': 43, 'Al Jazeera': 25, 'BBC World': 18, 'France 24': 23, 'Livemint': 35, 'NPR World': 7, 'The Hindu': 60, 'NDTV': 20, 'Hindustan Times': 76, 'DW World': 5, 'Scroll.in': 22}"}
+{"run": "digest", "t": 5880, "kind": "dbg", "msg": "gather: 13/13 feed(s) live, 381 article(s)"}
+{"run": "digest", "t": 5882, "kind": "event", "stage": "stage", "name": "gather", "ms": 4102, "ok": true, "error": ""}
+{"run": "digest", "t": 5883, "kind": "dbg", "msg": "gather: QUORUM OK — live=13/3 min, articles=381/20 min"}
+{"run": "digest", "t": 5883, "kind": "dbg", "msg": "rank: select pool 381 -> 322; capped outlets: {'The Hindu': 20, 'Times of India': 3, 'Hindustan Times': 36}"}
+{"run": "digest", "t": 5887, "kind": "event", "stage": "stage", "name": "pool", "ms": 4, "ok": true, "error": ""}
+{"run": "digest", "t": 6033, "kind": "dbg", "msg": "wiki: 2026_September_28 http=200 events=0"}
+{"run": "digest", "t": 6033, "kind": "event", "stage": "wikipedia", "page": "2026_September_28", "http": 200, "bytes": 192, "events": 0, "verdict": "ok"}
+{"run": "digest", "t": 6169, "kind": "dbg", "msg": "wiki: 2026_September_27 http=200 events=11"}
+{"run": "digest", "t": 6170, "kind": "event", "stage": "wikipedia", "page": "2026_September_27", "http": 200, "bytes": 4893, "events": 11, "verdict": "ok"}
+{"run": "digest", "t": 6171, "kind": "event", "stage": "stage", "name": "wikipedia", "ms": 284, "ok": true, "error": ""}
+{"run": "digest", "t": 6273, "kind": "dbg", "msg": "llm: call #1 model=gemini-3.6-flash label=select prompt=79091ch"}
+{"run": "digest", "t": 31134, "kind": "dbg", "msg": "llm: select finish_reason=FinishReason.STOP"}
+{"run": "digest", "t": 31152, "kind": "event", "stage": "llm", "call": 1, "label": "select", "model": "gemini-3.6-flash", "latency_ms": 24860, "prompt_chars": 79091, "system_chars": 2517, "response_chars": 3281, "finish_reason": "FinishReason.STOP", "malformed_json": false, "json_retries": 0, "max_output_tokens": 32768, "usage": {"prompt_token_count": 19201, "candidates_token_count": 1189, "total_token_count": 24817, "thoughts_token_count": 4427}}
+{"run": "digest", "t": 31153, "kind": "dbg", "msg": "llm: select_stories -> 13 raw cluster(s)"}
+{"run": "digest", "t": 31153, "kind": "event", "stage": "stage", "name": "select", "ms": 24981, "ok": true, "error": ""}
+{"run": "digest", "t": 31154, "kind": "dbg", "msg": "rank: [world] outlets=8 tier=lead wiki=no weight=12 \"Trump rejects Iran's peace proposal to reopen Strait of Hormuz amid escalating Middle East tensions\""}
+{"run": "digest", "t": 31154, "kind": "dbg", "msg": "rank: [world] outlets=5 tier=major wiki=yes weight=9 'Serbian President Aleksandar Vucic resigns to run for prime minister'"}
+{"run": "digest", "t": 31154, "kind": "dbg", "msg": "rank: [world] outlets=5 tier=major wiki=no weight=7 'Five arrested near UK RAF base over suspected explosives terror plot'"}
+{"run": "digest", "t": 31154, "kind": "dbg", "msg": "rank: [world] outlets=5 tier=major wiki=yes weight=9 'Mass shootings near Johannesburg and Cape Town leave at least 27 dead'"}
+{"run": "digest", "t": 31155, "kind": "dbg", "msg": "rank: [world] outlets=5 tier=notable wiki=no weight=5 \"Deadly nor'easter storm batters US East Coast with heavy rain and power outages\""}
+{"run": "digest", "t": 31155, "kind": "dbg", "msg": "rank: [world] outlets=3 tier=notable wiki=yes weight=5 'Swiss voters reject proposal for stricter definition of national neutrality'"}
+{"run": "digest", "t": 31155, "kind": "dbg", "msg": "rank: [world] outlets=4 tier=notable wiki=yes weight=6 \"Airstrike on market in Yemen's Taiz kills seven and wounds dozens\""}
+{"run": "digest", "t": 31155, "kind": "dbg", "msg": "rank: [india] outlets=5 tier=lead wiki=no weight=9 'Bank unions defer nationwide 3-day strike after reaching understanding with IBA'"}
+{"run": "digest", "t": 31155, "kind": "dbg", "msg": "rank: [india] outlets=7 tier=major wiki=no weight=9 \"Violent protests break out at Punjab's Lovely Professional University over alleged rape case\""}
+{"run": "digest", "t": 31156, "kind": "dbg", "msg": "rank: [india] outlets=5 tier=notable wiki=no weight=5 'Delhi Minister Parvesh Verma involved in controversy over alleged slap incident during inspection'"}
+{"run": "digest", "t": 31156, "kind": "dbg", "msg": "rank: [india] outlets=3 tier=notable wiki=no weight=3 'Opposition parties demand resignation of Chief Election Commissioner Gyanesh Kumar over bias claims'"}
+{"run": "digest", "t": 31156, "kind": "dbg", "msg": "rank: [india] outlets=4 tier=notable wiki=no weight=4 'CJP activists released following police detention in Assam'"}
+{"run": "digest", "t": 31156, "kind": "dbg", "msg": "rank: [india] outlets=2 tier=notable wiki=no weight=2 'India raises concerns over US sanctions law targeting Russian oil purchases'"}
+{"run": "digest", "t": 31156, "kind": "dbg", "msg": "rank: 13 scored, 0 id(s) rejected, 10 kept {'world': 7, 'india': 3}; weights=[12, 9, 9, 7, 6, 5, 5, 9, 9, 5]"}
+{"run": "digest", "t": 31158, "kind": "event", "stage": "stage", "name": "rank", "ms": 4, "ok": true, "error": ""}
+{"run": "digest", "t": 31159, "kind": "dbg", "msg": "wiki: 11 curated event(s); 4 matched a selected story, 7 not covered"}
+{"run": "digest", "t": 31159, "kind": "dbg", "msg": "wiki: NOT COVERED [Armed conflicts and attacks] 2026 Afghanistan–Pakistan war — Afghanistan forces kill 28 fighters allegedly associated with the Islamic State and capture another 32 from Pakistan."}
+{"run": "digest", "t": 31160, "kind": "dbg", "msg": "wiki: NOT COVERED [Disasters and accidents] A bus carrying Filipino tourists veers off a highway near Munich, Germany, killing two people and wounding 25 more."}
+{"run": "digest", "t": 31160, "kind": "dbg", "msg": "wiki: NOT COVERED [International relations] China–United States relations — Two giant pandas, Ping Ping and Fu Shuang, arrive at the Atlanta zoo from the Hartsfield–Jackson Atlanta International Airport in Atlanta, Georgia, U.S., as part of an agreement signed between the U.S. and China."}
+{"run": "digest", "t": 31160, "kind": "dbg", "msg": "wiki: NOT COVERED [Law and crime] Five men are arrested in relation to a 'major incident' at RAF Fairford air base in England. They are arrested on suspicion of committing offences that violate the Explosives Act 1875."}
+{"run": "digest", "t": 31160, "kind": "dbg", "msg": "wiki: NOT COVERED [Politics and elections] 2026 French Senate election — The National Rally clears the 10-seat threshold in the Senate of France, allowing the party to meet qualifications for the formation of a far-right parliamentary group."}
+{"run": "digest", "t": 31160, "kind": "dbg", "msg": "wiki: NOT COVERED [Politics and elections] 2026 São Toméan parliamentary election — Citizens of São Tomé and Príncipe vote to elect 55 members of the National Assembly."}
+{"run": "digest", "t": 31160, "kind": "dbg", "msg": "wiki: NOT COVERED [Sports] 2026 Billie Jean King Cup finals — In tennis, the Czech Republic wins its 12th Billie Jean King Cup title and first since 2018 after defeating Ukraine 2–0 in the final in Shenzhen, Guangdong, China."}
+{"run": "digest", "t": 34849, "kind": "dbg", "msg": "extract: 13448ch https://www.aljazeera.com/news/liveblog/2026/9/28/iran-war-live-tehran-warns-its-fully-prepared-for-war-amid-hormuz-tensions?traffic_source=rss"}
+{"run": "digest", "t": 34927, "kind": "dbg", "msg": "extract: 2661ch https://timesofindia.indiatimes.com/world/middle-east/iran-claims-second-us-drone-seized-in-strait-of-hormuz-identifies-it-as-mk-18-kingfish/articleshow/134528963.cms"}
+{"run": "digest", "t": 35073, "kind": "dbg", "msg": "extract: fetch_html https://www.france24.com/en/middle-east/20260927-trump-expects-iran-talks-next-week-after-rejecting-seven-day-truce-proposal: http=403"}
+{"run": "digest", "t": 38474, "kind": "dbg", "msg": "extract: 5250ch https://www.france24.com/en/middle-east/20260927-trump-expects-iran-talks-next-week-after-rejecting-seven-day-truce-proposal"}
+{"run": "digest", "t": 38654, "kind": "dbg", "msg": "extract: 4558ch https://www.channelnewsasia.com/world/trump-iran-talks-rejects-deal-6414031"}
+{"run": "digest", "t": 38763, "kind": "dbg", "msg": "extract: 4808ch https://www.theguardian.com/us-news/2026/sep/27/trump-un-ambassador-iran-war"}
+{"run": "digest", "t": 38832, "kind": "dbg", "msg": "extract: 2233ch https://timesofindia.indiatimes.com/world/rest-of-world/vucic-quits-serbian-presidency-eyes-prime-ministers-post-in-october-election/articleshow/134529016.cms"}
+{"run": "digest", "t": 38963, "kind": "dbg", "msg": "extract: 6123ch https://www.aljazeera.com/news/2026/9/27/serbian-president-aleksandar-vucic-resigns-amid-prolonged-protests?traffic_source=rss"}
+{"run": "digest", "t": 39176, "kind": "dbg", "msg": "extract: 3170ch https://www.bbc.co.uk/news/articles/ckpq0g7z5pjjo?at_medium=RSS&at_campaign=rss"}
+{"run": "digest", "t": 39624, "kind": "dbg", "msg": "extract: 3847ch https://www.theguardian.com/world/2026/sep/27/serbia-president-aleksandar-vucic-resigns-run-prime-minister"}
+{"run": "digest", "t": 39689, "kind": "dbg", "msg": "extract: fetch_html https://www.france24.com/en/europe/20260927-serbian-president-aleksandar-vucic-resigns-expected-to-run-for-prime-minister: http=403"}
+{"run": "digest", "t": 43082, "kind": "dbg", "msg": "extract: 3306ch https://www.france24.com/en/europe/20260927-serbian-president-aleksandar-vucic-resigns-expected-to-run-for-prime-minister"}
+{"run": "digest", "t": 43208, "kind": "dbg", "msg": "extract: 2948ch https://www.aljazeera.com/news/2026/9/28/south-african-police-discover-body-of-10th-woman-near-johannesburg?traffic_source=rss"}
+{"run": "digest", "t": 43274, "kind": "dbg", "msg": "extract: 2830ch https://www.bbc.co.uk/news/articles/ck5ywnp075d1o?at_medium=RSS&at_campaign=rss"}
+{"run": "digest", "t": 43337, "kind": "dbg", "msg": "extract: fetch_html https://www.france24.com/en/south-africa-shootings-leave-27-killed: http=403"}
+{"run": "digest", "t": 48575, "kind": "dbg", "msg": "extract: 12758ch https://www.france24.com/en/south-africa-shootings-leave-27-killed"}
+{"run": "digest", "t": 49138, "kind": "dbg", "msg": "extract: 4764ch https://www.theguardian.com/world/2026/sep/27/mass-shootings-south-africa-johannesburg-cape-town"}
+{"run": "digest", "t": 49460, "kind": "dbg", "msg": "extract: 3520ch https://www.npr.org/2026/09/27/nx-s1-5982488/south-africa-mass-shootings-killed-38-week"}
+{"run": "digest", "t": 49672, "kind": "dbg", "msg": "extract: 5190ch https://www.theguardian.com/uk-news/2026/sep/27/villagers-raf-fairford-evacuation"}
+{"run": "digest", "t": 61510, "kind": "dbg", "msg": "extract: 35863ch https://www.npr.org/2026/09/27/nx-s1-5982718/five-arrested-near-uk-air-base-used-by-u-s-bombers-in-iran-war"}
+{"run": "digest", "t": 74892, "kind": "dbg", "msg": "extract: 11442ch https://www.aljazeera.com/video/newsfeed/2026/9/27/five-arrested-near-uk-raf-base-over-suspected-explosives-terror-plot?traffic_source=rss"}
+{"run": "digest", "t": 75085, "kind": "dbg", "msg": "extract: 2092ch https://timesofindia.indiatimes.com/world/uk/5-held-in-uk-for-suspected-plot-to-attack-air-base-used-by-us/articleshow/134525372.cms"}
+{"run": "digest", "t": 75331, "kind": "dbg", "msg": "extract: fetch_html https://www.france24.com/en/uk-police-arrest-5-on-suspicion-of-preparing-a-terrorist-act: http=403"}
+{"run": "digest", "t": 82498, "kind": "dbg", "msg": "extract: 13896ch https://www.france24.com/en/uk-police-arrest-5-on-suspicion-of-preparing-a-terrorist-act"}
+{"run": "digest", "t": 82696, "kind": "dbg", "msg": "extract: 3058ch https://www.channelnewsasia.com/world/yemen-taiz-strikes-houthis-saudi-arabia-6414126"}
+{"run": "digest", "t": 82757, "kind": "dbg", "msg": "extract: 8130ch https://www.bbc.co.uk/news/articles/cw98005ndz7no?at_medium=RSS&at_campaign=rss"}
+{"run": "digest", "t": 86309, "kind": "dbg", "msg": "extract: 10773ch https://www.aljazeera.com/video/newsfeed/2026/9/27/deadly-strike-hits-market-in-yemens-taiz?traffic_source=rss"}
+{"run": "digest", "t": 86429, "kind": "dbg", "msg": "extract: 2343ch https://timesofindia.indiatimes.com/world/middle-east/4-iranian-experts-killed-in-taiz-as-yemen-army-unleashes-756-operation-offensive-against-houthis/articleshow/134525782.cms"}
+{"run": "digest", "t": 86501, "kind": "dbg", "msg": "extract: 715ch https://www.bbc.co.uk/news/videos/crp3kgjygnkeo?at_medium=RSS&at_campaign=rss"}
+{"run": "digest", "t": 86583, "kind": "dbg", "msg": "extract: 2611ch https://www.bbc.co.uk/news/articles/ck1wxxzn5jndo?at_medium=RSS&at_campaign=rss"}
+{"run": "digest", "t": 86708, "kind": "dbg", "msg": "extract: 2167ch https://www.aljazeera.com/news/2026/9/27/powerful-storm-floods-us-northeast-causes-power-outages?traffic_source=rss"}
+{"run": "digest", "t": 86915, "kind": "dbg", "msg": "extract: 3161ch https://www.theguardian.com/us-news/2026/sep/27/noreaster-storm-east-coast-death-power-outages"}
+{"run": "digest", "t": 87025, "kind": "dbg", "msg": "extract: 3523ch https://www.livemint.com/news/us-news/new-york-and-northeast-facing-another-day-of-wild-weather-11790516910196.html"}
+{"run": "digest", "t": 87720, "kind": "dbg", "msg": "extract: 2953ch https://www.dw.com/en/powerful-storm-batters-northeast-us-hundreds-of-flights-canceled/a-79446676?maca=en-rss-en-world-4025-rdf"}
+{"run": "digest", "t": 87790, "kind": "dbg", "msg": "extract: fetch_html https://www.france24.com/en/tv-shows/spotlight/20260927-non-why-the-swiss-rejected-stricter-neutrality: http=403"}
+{"run": "digest", "t": 91696, "kind": "dbg", "msg": "extract: 19432ch https://www.france24.com/en/tv-shows/spotlight/20260927-non-why-the-swiss-rejected-stricter-neutrality"}
+{"run": "digest", "t": 91755, "kind": "dbg", "msg": "extract: 2186ch https://www.bbc.co.uk/news/articles/cm750plvwy9vo?at_medium=RSS&at_campaign=rss"}
+{"run": "digest", "t": 91856, "kind": "dbg", "msg": "extract: 2913ch https://www.theguardian.com/world/2026/sep/27/swiss-vote-reject-stricter-neutrality-rules-nato"}
+{"run": "digest", "t": 91931, "kind": "dbg", "msg": "extract: 2838ch https://timesofindia.indiatimes.com/india/lpu-unrest-over-2000-police-deployed-after-stone-pelting-vehicles-set-ablaze/articleshow/134528785.cms"}
+{"run": "digest", "t": 95351, "kind": "dbg", "msg": "extract: 10822ch https://www.aljazeera.com/video/newsfeed/2026/9/27/alleged-rape-on-campus-sparks-violent-protest-at-indian-university?traffic_source=rss"}
+{"run": "digest", "t": 95414, "kind": "dbg", "msg": "extract: fetch_html https://www.ndtv.com/india-news/punjab-university-lpu-students-protest-rape-lovely-professional-university-12106376#publisher=newsstand: http=403"}
+{"run": "digest", "t": 95644, "kind": "dbg", "msg": "extract: via_jina https://www.ndtv.com/india-news/punjab-university-lpu-students-protest-rape-lovely-professional-university-12106376#publisher=newsstand: http=403"}
+{"run": "digest", "t": 98646, "kind": "dbg", "msg": "extract: 0ch https://www.ndtv.com/india-news/punjab-university-lpu-students-protest-rape-lovely-professional-university-12106376#publisher=newsstand"}
+{"run": "digest", "t": 98885, "kind": "dbg", "msg": "extract: 4189ch https://www.hindustantimes.com/india-news/violence-punjab-lovely-professional-university-lpu-postpones-mid-term-exams-suspends-classes-for-ten-days-rape-suicide-101790529078792.html"}
+{"run": "digest", "t": 99147, "kind": "dbg", "msg": "extract: 4447ch https://www.thehindu.com/news/national/punjab/punjab-varsity-students-protest-block-highway-over-rape-of-female-student/article71515254.ece"}
+{"run": "digest", "t": 99340, "kind": "dbg", "msg": "extract: 895ch https://timesofindia.indiatimes.com/india/bank-unions-call-off-3-day-strike-after-assurances-iba-to-study-demands/articleshow/134526239.cms"}
+{"run": "digest", "t": 99396, "kind": "dbg", "msg": "extract: 6012ch https://www.livemint.com/news/trends/bank-employees-worked-on-sunday-but-monday-strike-deferred-change-in-plan-triggers-meme-fest-online-11790534100063.html"}
+{"run": "digest", "t": 99576, "kind": "dbg", "msg": "extract: 2552ch https://www.thehindu.com/business/Industry/bank-unions-defer-three-day-nationwide-strike-ubfu/article71517225.ece"}
+{"run": "digest", "t": 99622, "kind": "dbg", "msg": "extract: fetch_html https://www.ndtv.com/india-news/3-day-bank-strike-deferred-after-meeting-between-banks-association-unions-12106408#publisher=newsstand: http=403"}
+{"run": "digest", "t": 99736, "kind": "dbg", "msg": "extract: via_jina https://www.ndtv.com/india-news/3-day-bank-strike-deferred-after-meeting-between-banks-association-unions-12106408#publisher=newsstand: http=403"}
+{"run": "digest", "t": 102737, "kind": "dbg", "msg": "extract: 0ch https://www.ndtv.com/india-news/3-day-bank-strike-deferred-after-meeting-between-banks-association-unions-12106408#publisher=newsstand"}
+{"run": "digest", "t": 102899, "kind": "dbg", "msg": "extract: 4429ch https://www.hindustantimes.com/india-news/3day-bank-strike-deferred-after-talks-between-bank-body-and-unions-101790531868301.html"}
+{"run": "digest", "t": 102962, "kind": "dbg", "msg": "extract: 4728ch https://www.livemint.com/news/india/parvesh-verma-slap-row-what-to-know-about-tilak-nagar-road-inspection-incident-in-delhi-as-aap-protests-5-points-11790529723551.html"}
+{"run": "digest", "t": 103114, "kind": "dbg", "msg": "extract: 4745ch https://www.hindustantimes.com/india-news/hooliganism-wont-be-tolerated-what-is-his-crime-rahul-gandhi-aap-rage-over-parvesh-vermas-slapgate-tilak-nagar-101790527436669.html"}
+{"run": "digest", "t": 103169, "kind": "dbg", "msg": "extract: fetch_html https://www.ndtv.com/india-news/video-delhi-minister-parvesh-verma-loses-cool-slaps-man-in-delhi-12104998#publisher=newsstand: http=403"}
+{"run": "digest", "t": 103293, "kind": "dbg", "msg": "extract: via_jina https://www.ndtv.com/india-news/video-delhi-minister-parvesh-verma-loses-cool-slaps-man-in-delhi-12104998#publisher=newsstand: http=403"}
+{"run": "digest", "t": 106295, "kind": "dbg", "msg": "extract: 0ch https://www.ndtv.com/india-news/video-delhi-minister-parvesh-verma-loses-cool-slaps-man-in-delhi-12104998#publisher=newsstand"}
+{"run": "digest", "t": 106712, "kind": "dbg", "msg": "extract: 2809ch https://scroll.in/latest/1096055/delhi-deputy-cm-slaps-aap-worker-during-altercation-over-poor-road-quality?utm_source=rss&utm_medium=public"}
+{"run": "digest", "t": 106785, "kind": "dbg", "msg": "extract: 4309ch https://timesofindia.indiatimes.com/india/threatened-to-kill-me-man-files-complaint-against-delhi-pwd-minister-parvesh-verma-over-slap-during-road-inspection/articleshow/134522216.cms"}
+{"run": "digest", "t": 106787, "kind": "event", "stage": "stage", "name": "extract", "ms": 75627, "ok": true, "error": ""}
+{"run": "digest", "t": 106822, "kind": "dbg", "msg": "llm: call #2 model=gemini-3.6-flash label=claims-world prompt=126716ch"}
+{"run": "digest", "t": 145773, "kind": "dbg", "msg": "llm: claims-world finish_reason=FinishReason.STOP"}
+{"run": "digest", "t": 145777, "kind": "event", "stage": "llm", "call": 2, "label": "claims-world", "model": "gemini-3.6-flash", "latency_ms": 38951, "prompt_chars": 126716, "system_chars": 2135, "response_chars": 20922, "finish_reason": "FinishReason.STOP", "malformed_json": false, "json_retries": 0, "max_output_tokens": 32768, "usage": {"prompt_token_count": 34122, "candidates_token_count": 5484, "total_token_count": 43358, "thoughts_token_count": 3752}}
+{"run": "digest", "t": 145779, "kind": "dbg", "msg": "llm: claims: [world] 21 claim(s) from 5 outlet(s) \"Trump rejects Iran's peace proposal to reopen Strait of Hormuz amid escalating Middle East tensions\""}
+{"run": "digest", "t": 145779, "kind": "dbg", "msg": "llm: claims: [world] 16 claim(s) from 5 outlet(s) 'Serbian President Aleksandar Vucic resigns to run for prime minister'"}
+{"run": "digest", "t": 145779, "kind": "dbg", "msg": "llm: claims: [world] 17 claim(s) from 4 outlet(s) 'Mass shootings near Johannesburg and Cape Town leave at least 27 dead'"}
+{"run": "digest", "t": 145779, "kind": "dbg", "msg": "llm: claims: [world] 10 claim(s) from 3 outlet(s) 'Five arrested near UK RAF base over suspected explosives terror plot'"}
+{"run": "digest", "t": 145779, "kind": "dbg", "msg": "llm: claims: [world] 10 claim(s) from 3 outlet(s) \"Airstrike on market in Yemen's Taiz kills seven and wounds dozens\""}
+{"run": "digest", "t": 145779, "kind": "dbg", "msg": "llm: claims: [world] 14 claim(s) from 5 outlet(s) \"Deadly nor'easter storm batters US East Coast with heavy rain and power outages\""}
+{"run": "digest", "t": 145779, "kind": "dbg", "msg": "llm: claims: [world] 7 claim(s) from 2 outlet(s) 'Swiss voters reject proposal for stricter definition of national neutrality'"}
+{"run": "digest", "t": 145815, "kind": "dbg", "msg": "llm: call #3 model=gemini-3.6-flash label=claims-india prompt=49221ch"}
+{"run": "digest", "t": 148805, "kind": "dbg", "msg": "ratelimit: claims-india transient failure (1/3), retrying in 6s: ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"}
+{"run": "digest", "t": 148805, "kind": "event", "stage": "ratelimit", "label": "claims-india", "verdict": "transient_retry", "attempt": 1, "attempts_allowed": 3, "wait_s": 5.6, "error": "ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"}
+{"run": "digest", "t": 162078, "kind": "dbg", "msg": "ratelimit: claims-india transient failure (2/3), retrying in 13s: ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"}
+{"run": "digest", "t": 162078, "kind": "event", "stage": "ratelimit", "label": "claims-india", "verdict": "transient_retry", "attempt": 2, "attempts_allowed": 3, "wait_s": 12.7, "error": "ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"}
+{"run": "digest", "t": 190462, "kind": "dbg", "msg": "ratelimit: claims-india TRANSIENT FAILURE after 3 attempt(s), giving up: ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"}
+{"run": "digest", "t": 190462, "kind": "event", "stage": "ratelimit", "label": "claims-india", "verdict": "transient_exhausted", "attempt": 3, "attempts_allowed": 3, "error": "ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"}
+{"run": "digest", "t": 190462, "kind": "event", "stage": "stage", "name": "claims", "ms": 83675, "ok": false, "error": "ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"}
+{"run": "digest", "t": 190462, "kind": "event", "stage": "tracer", "msg": "capture finished", "ok": false, "ms": 190462, "bytes": 14276574}
