@@ -1,17 +1,37 @@
 {
   "max_events": 60,
-  "parsed": 11,
-  "used": 11,
+  "parsed": 17,
+  "used": 17,
   "events": [
     {
       "category": "Armed conflicts and attacks",
-      "topic": "Middle Eastern crisis",
-      "text": "Saudi Arabia's air forces carries out an airstrike at a market in Taiz, Yemen, killing seven people and wounding 40 more."
+      "topic": "Yemeni civil war",
+      "text": "Saudi Arabia's air forces carry out an airstrike at a market in Taiz, Yemen, killing seven people and wounding 40 more."
+    },
+    {
+      "category": "Armed conflicts and attacks",
+      "topic": "Russo-Ukrainian war",
+      "text": "Russian and Ukrainian forces exchange strikes that kill at least eight people in Ukraine and one in Russia, hitting Kyiv and its outskirts; the Kharkiv and Odesa Oblasts; Sumy; and Russian-occupied Enerhodar, all in Ukraine; and Russia's Be"
+    },
+    {
+      "category": "Armed conflicts and attacks",
+      "topic": "Russo-Ukrainian war",
+      "text": "Russian strikes hit Kyivstar's headquarters and multiple data centres in Kyiv, including a facility struck twice that injures two children and an adult. Russia also says it targeted a Vodafone Ukraine data centre."
     },
     {
       "category": "Armed conflicts and attacks",
       "topic": "2026 Afghanistan–Pakistan war",
-      "text": "Afghanistan forces kill 28 fighters allegedly associated with the Islamic State and capture another 32 from Pakistan."
+      "text": "Afghan forces kill 28 fighters allegedly associated with the Islamic State and capture another 32 from Pakistan."
+    },
+    {
+      "category": "Armed conflicts and attacks",
+      "topic": "Ethiopian civil conflict",
+      "text": "A drone strikes Tigrai Television's headquarters in Mekelle, Tigray Region, Ethiopia, forcing the station off air, while Tigray People's Liberation Front forces capture Erebti, Afar Region, and advance toward Afdera."
+    },
+    {
+      "category": "Business and economy",
+      "topic": "Turkish economic crisis",
+      "text": "Former Turkish family minister Fatma Betül Sayan Kaya resigns from her positions in the ruling Justice and Development Party amid scrutiny over alleged links to an investment-fund scandal that prompted the Capital Markets Board to liquidate"
     },
     {
       "category": "Disasters and accidents",
@@ -21,7 +41,7 @@
     {
       "category": "International relations",
       "topic": "China–United States relations",
-      "text": "Two giant pandas, Ping Ping and Fu Shuang, arrive at the Atlanta zoo from the Hartsfield–Jackson Atlanta International Airport in Atlanta, Georgia, U.S., as part of an agreement signed between the U.S. and China."
+      "text": "Two giant pandas, Ping Ping and Fu Shuang, arrive at the Atlanta zoo in Georgia, U.S., as part of an agreement signed between China and the U.S. during Chinese leader Xi Jinping's state visit last week."
     },
     {
       "category": "Law and crime",
@@ -36,7 +56,7 @@
     {
       "category": "Politics and elections",
       "topic": "2026 French Senate election",
-      "text": "The National Rally clears the 10-seat threshold in the Senate of France, allowing the party to meet qualifications for the formation of a far-right parliamentary group."
+      "text": "The National Rally clears the 10-seat threshold in the Senate of France, allowing the party to meet qualifications to form a far-right parliamentary group."
     },
     {
       "category": "Politics and elections",
@@ -46,7 +66,7 @@
     {
       "category": "Politics and elections",
       "topic": "2026 Serbian parliamentary election",
-      "text": "President of Serbia Aleksandar Vučić resigns in order to run for prime minister in the upcoming parliamentary election. Speaker of the National Assembly Ana Brnabić becomes acting president."
+      "text": "Serbian president Aleksandar Vučić resigns in order to run for prime minister in the upcoming parliamentary election. Speaker of the National Assembly Ana Brnabić becomes acting president."
     },
     {
       "category": "Politics and elections",
@@ -55,9 +75,19 @@
     },
     {
       "category": "Sports",
+      "topic": "2026 Berlin Marathon",
+      "text": "The Berlin Marathon is held in Germany, with Guye Adola and Tigst Assefa winning their respective marathon races although Assefa sustained cramps prior to the finish line."
+    },
+    {
+      "category": "Sports",
       "topic": "2026 Billie Jean King Cup finals",
       "text": "In tennis, the Czech Republic wins its 12th Billie Jean King Cup title and first since 2018 after defeating Ukraine 2–0 in the final in Shenzhen, Guangdong, China."
+    },
+    {
+      "category": "Sports",
+      "topic": "2026 UCI Road World Championships",
+      "text": "In cycling, Brandon McNulty of the United States wins the men's road race world title in Montreal, Canada, becoming the first American champion in 33 years after finishing 13 seconds ahead of Australia's Michael Matthews."
     }
   ],
-  "prompt_block": "WIKIPEDIA CURRENT EVENTS (curated checklist — see rules above)\n- [Armed conflicts and attacks] Middle Eastern crisis — Saudi Arabia's air forces carries out an airstrike at a market in Taiz, Yemen, killing seven people and wounding 40 more.\n- [Armed conflicts and attacks] 2026 Afghanistan–Pakistan war — Afghanistan forces kill 28 fighters allegedly associated with the Islamic State and capture another 32 from Pakistan.\n- [Disasters and accidents] A bus carrying Filipino tourists veers off a highway near Munich, Germany, killing two people and wounding 25 more.\n- [International relations] China–United States relations — Two giant pandas, Ping Ping and Fu Shuang, arrive at the Atlanta zoo from the Hartsfield–Jackson Atlanta International Airport in Atlanta, Georgia, U.S., as part of an agreement signed between the U.S. and China.\n- [Law and crime] Crime in South Africa — Ten people are killed and 11 others are injured in a mass shooting at a store in Lwandle, City of Cape Town, South Africa. Police search for the perpetrators.\n- [Law and crime] Five men are arrested in relation to a 'major incident' at RAF Fairford air base in England. They are arrested on suspicion of committing offences that violate the Explosives Act 1875.\n- [Politics and elections] 2026 French Senate election — The National Rally clears the 10-seat threshold in the Senate of France, allowing the party to meet qualifications for the formation of a far-right parliamentary group.\n- [Politics and elections] 2026 São Toméan parliamentary election — Citizens of São Tomé and Príncipe vote to elect 55 members of the National Assembly.\n- [Politics and elections] 2026 Serbian parliamentary election — President of Serbia Aleksandar Vučić resigns in order to run for prime minister in the upcoming parliamentary election. Speaker of the National Assembly Ana Brnabić becomes acting president.\n- [Politics and elections] 2026 Swiss referendums — Swiss voters reject an initiative that proposed to enshrine a stricter form of Swiss neutrality, which would have prevented Switzerland from imposing economic sanctions and cooperating with NATO.\n- [Sports] 2026 Billie Jean King Cup finals — In tennis, the Czech Republic wins its 12th Billie Jean King Cup title and first since 2018 after defeating Ukraine 2–0 in the final in Shenzhen, Guangdong, China."
+  "prompt_block": "WIKIPEDIA CURRENT EVENTS (curated checklist — see rules above)\n- [Armed conflicts and attacks] Yemeni civil war — Saudi Arabia's air forces carry out an airstrike at a market in Taiz, Yemen, killing seven people and wounding 40 more.\n- [Armed conflicts and attacks] Russo-Ukrainian war — Russian and Ukrainian forces exchange strikes that kill at least eight people in Ukraine and one in Russia, hitting Kyiv and its outskirts; the Kharkiv and Odesa Oblasts; Sumy; and Russian-occupied Enerhodar, all in Ukraine; and Russia's Be\n- [Armed conflicts and attacks] Russo-Ukrainian war — Russian strikes hit Kyivstar's headquarters and multiple data centres in Kyiv, including a facility struck twice that injures two children and an adult. Russia also says it targeted a Vodafone Ukraine data centre.\n- [Armed conflicts and attacks] 2026 Afghanistan–Pakistan war — Afghan forces kill 28 fighters allegedly associated with the Islamic State and capture another 32 from Pakistan.\n- [Armed conflicts and attacks] Ethiopian civil conflict — A drone strikes Tigrai Television's headquarters in Mekelle, Tigray Region, Ethiopia, forcing the station off air, while Tigray People's Liberation Front forces capture Erebti, Afar Region, and advance toward Afdera.\n- [Business and economy] Turkish economic crisis — Former Turkish family minister Fatma Betül Sayan Kaya resigns from her positions in the ruling Justice and Development Party amid scrutiny over alleged links to an investment-fund scandal that prompted the Capital Markets Board to liquidate\n- [Disasters and accidents] A bus carrying Filipino tourists veers off a highway near Munich, Germany, killing two people and wounding 25 more.\n- [International relations] China–United States relations — Two giant pandas, Ping Ping and Fu Shuang, arrive at the Atlanta zoo in Georgia, U.S., as part of an agreement signed between China and the U.S. during Chinese leader Xi Jinping's state visit last week.\n- [Law and crime] Crime in South Africa — Ten people are killed and 11 others are injured in a mass shooting at a store in Lwandle, City of Cape Town, South Africa. Police search for the perpetrators.\n- [Law and crime] Five men are arrested in relation to a 'major incident' at RAF Fairford air base in England. They are arrested on suspicion of committing offences that violate the Explosives Act 1875.\n- [Politics and elections] 2026 French Senate election — The National Rally clears the 10-seat threshold in the Senate of France, allowing the party to meet qualifications to form a far-right parliamentary group.\n- [Politics and elections] 2026 São Toméan parliamentary election — Citizens of São Tomé and Príncipe vote to elect 55 members of the National Assembly.\n- [Politics and elections] 2026 Serbian parliamentary election — Serbian president Aleksandar Vučić resigns in order to run for prime minister in the upcoming parliamentary election. Speaker of the National Assembly Ana Brnabić becomes acting president.\n- [Politics and elections] 2026 Swiss referendums — Swiss voters reject an initiative that proposed to enshrine a stricter form of Swiss neutrality, which would have prevented Switzerland from imposing economic sanctions and cooperating with NATO.\n- [Sports] 2026 Berlin Marathon — The Berlin Marathon is held in Germany, with Guye Adola and Tigst Assefa winning their respective marathon races although Assefa sustained cramps prior to the finish line.\n- [Sports] 2026 Billie Jean King Cup finals — In tennis, the Czech Republic wins its 12th Billie Jean King Cup title and first since 2018 after defeating Ukraine 2–0 in the final in Shenzhen, Guangdong, China.\n- [Sports] 2026 UCI Road World Championships — In cycling, Brandon McNulty of the United States wins the men's road race world title in Montreal, Canada, becoming the first American champion in 33 years after finishing 13 seconds ahead of Australia's Michael Matthews."
 }
