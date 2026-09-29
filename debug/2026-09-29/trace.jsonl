@@ -1,0 +1,141 @@
+{"run": "digest", "t": 0, "kind": "digest", "stage": "tracer", "msg": "capture started", "level": 1, "day": "2026-09-29"}
+{"run": "digest", "t": 1847, "kind": "dbg", "msg": "digest: window since=2026-09-27T00:27:34.994872+00:00 (prev_generated_at=2026-09-26 23:02:28+00:00)"}
+{"run": "digest", "t": 1966, "kind": "dbg", "msg": "feed 'BBC World': http=200 raw_items=35 usable=35"}
+{"run": "digest", "t": 1966, "kind": "event", "stage": "feeds", "outlet": "BBC World", "url": "https://feeds.bbci.co.uk/news/world/rss.xml", "http": 200, "elapsed_ms": 104, "bytes": 26986, "raw_items": 35, "usable": 35, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 2125, "kind": "dbg", "msg": "feed 'Al Jazeera': http=200 raw_items=25 usable=25"}
+{"run": "digest", "t": 2125, "kind": "event", "stage": "feeds", "outlet": "Al Jazeera", "url": "https://www.aljazeera.com/xml/rss/all.xml", "http": 200, "elapsed_ms": 148, "bytes": 16923, "raw_items": 25, "usable": 25, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 2373, "kind": "dbg", "msg": "feed 'Guardian World': http=200 raw_items=45 usable=45"}
+{"run": "digest", "t": 2373, "kind": "event", "stage": "feeds", "outlet": "Guardian World", "url": "https://www.theguardian.com/world/rss", "http": 200, "elapsed_ms": 192, "bytes": 151905, "raw_items": 45, "usable": 45, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 2598, "kind": "dbg", "msg": "feed 'NPR World': http=200 raw_items=10 usable=10"}
+{"run": "digest", "t": 2598, "kind": "event", "stage": "feeds", "outlet": "NPR World", "url": "https://feeds.npr.org/1004/rss.xml", "http": 200, "elapsed_ms": 217, "bytes": 13035, "raw_items": 10, "usable": 10, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 3184, "kind": "dbg", "msg": "feed 'DW World': http=200 raw_items=13 usable=13"}
+{"run": "digest", "t": 3184, "kind": "event", "stage": "feeds", "outlet": "DW World", "url": "https://rss.dw.com/rdf/rss-en-world", "http": 200, "elapsed_ms": 579, "bytes": 13098, "raw_items": 13, "usable": 13, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 3380, "kind": "dbg", "msg": "feed 'France 24': http=200 raw_items=24 usable=24"}
+{"run": "digest", "t": 3380, "kind": "event", "stage": "feeds", "outlet": "France 24", "url": "https://www.france24.com/en/rss", "http": 200, "elapsed_ms": 183, "bytes": 29871, "raw_items": 24, "usable": 24, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 3565, "kind": "dbg", "msg": "feed 'Channel News Asia': http=200 raw_items=20 usable=20"}
+{"run": "digest", "t": 3565, "kind": "event", "stage": "feeds", "outlet": "Channel News Asia", "url": "https://www.channelnewsasia.com/api/v1/rss-outbound-feed?_format=xml", "http": 200, "elapsed_ms": 174, "bytes": 18905, "raw_items": 20, "usable": 20, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 3748, "kind": "dbg", "msg": "feed 'The Hindu': http=200 raw_items=60 usable=60"}
+{"run": "digest", "t": 3748, "kind": "event", "stage": "feeds", "outlet": "The Hindu", "url": "https://www.thehindu.com/news/national/feeder/default.rss", "http": 200, "elapsed_ms": 164, "bytes": 42915, "raw_items": 60, "usable": 60, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 3965, "kind": "dbg", "msg": "feed 'NDTV': http=200 raw_items=20 usable=20"}
+{"run": "digest", "t": 3965, "kind": "event", "stage": "feeds", "outlet": "NDTV", "url": "https://feeds.feedburner.com/ndtvnews-india-news", "http": 200, "elapsed_ms": 206, "bytes": 28822, "raw_items": 20, "usable": 20, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 4374, "kind": "dbg", "msg": "feed 'Hindustan Times': http=200 raw_items=100 usable=100"}
+{"run": "digest", "t": 4374, "kind": "event", "stage": "feeds", "outlet": "Hindustan Times", "url": "https://www.hindustantimes.com/feeds/rss/india-news/rssfeed.xml", "http": 200, "elapsed_ms": 375, "bytes": 97655, "raw_items": 100, "usable": 100, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 4552, "kind": "dbg", "msg": "feed 'Times of India': http=200 raw_items=46 usable=46"}
+{"run": "digest", "t": 4553, "kind": "event", "stage": "feeds", "outlet": "Times of India", "url": "https://timesofindia.indiatimes.com/rssfeedstopstories.cms", "http": 200, "elapsed_ms": 162, "bytes": 44832, "raw_items": 46, "usable": 46, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 4886, "kind": "dbg", "msg": "feed 'Livemint': http=200 raw_items=35 usable=35"}
+{"run": "digest", "t": 4886, "kind": "event", "stage": "feeds", "outlet": "Livemint", "url": "https://www.livemint.com/rss/news", "http": 200, "elapsed_ms": 320, "bytes": 38079, "raw_items": 35, "usable": 35, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 5220, "kind": "dbg", "msg": "feed 'Scroll.in': http=200 raw_items=100 usable=100"}
+{"run": "digest", "t": 5220, "kind": "event", "stage": "feeds", "outlet": "Scroll.in", "url": "https://feeds.feedburner.com/ScrollinArticles.rss", "http": 200, "elapsed_ms": 205, "bytes": 303549, "raw_items": 100, "usable": 100, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 5227, "kind": "dbg", "msg": "gather: 458 article(s) after window+dedupe; by outlet: {'Channel News Asia': 20, 'Times of India': 45, 'Guardian World': 35, 'France 24': 23, 'Al Jazeera': 25, 'NDTV': 20, 'BBC World': 32, 'NPR World': 10, 'Hindustan Times': 100, 'The Hindu': 60, 'Livemint': 35, 'DW World': 10, 'Scroll.in': 43}"}
+{"run": "digest", "t": 5227, "kind": "dbg", "msg": "gather: 13/13 feed(s) live, 458 article(s)"}
+{"run": "digest", "t": 5229, "kind": "event", "stage": "stage", "name": "gather", "ms": 3381, "ok": true, "error": ""}
+{"run": "digest", "t": 5229, "kind": "dbg", "msg": "gather: QUORUM OK — live=13/3 min, articles=458/20 min"}
+{"run": "digest", "t": 5229, "kind": "dbg", "msg": "rank: select pool 458 -> 370; capped outlets: {'The Hindu': 20, 'Hindustan Times': 60, 'Times of India': 5, 'Scroll.in': 3}"}
+{"run": "digest", "t": 5234, "kind": "event", "stage": "stage", "name": "pool", "ms": 4, "ok": true, "error": ""}
+{"run": "digest", "t": 5546, "kind": "dbg", "msg": "wiki: 2026_September_29 http=200 events=0"}
+{"run": "digest", "t": 5547, "kind": "event", "stage": "wikipedia", "page": "2026_September_29", "http": 200, "bytes": 192, "events": 0, "verdict": "ok"}
+{"run": "digest", "t": 5731, "kind": "dbg", "msg": "wiki: 2026_September_28 http=200 events=8"}
+{"run": "digest", "t": 5731, "kind": "event", "stage": "wikipedia", "page": "2026_September_28", "http": 200, "bytes": 4291, "events": 8, "verdict": "ok"}
+{"run": "digest", "t": 5732, "kind": "event", "stage": "stage", "name": "wikipedia", "ms": 498, "ok": true, "error": ""}
+{"run": "digest", "t": 5835, "kind": "dbg", "msg": "llm: call #1 model=gemini-3.6-flash label=select prompt=91379ch"}
+{"run": "digest", "t": 39680, "kind": "dbg", "msg": "llm: select finish_reason=FinishReason.STOP"}
+{"run": "digest", "t": 39681, "kind": "event", "stage": "llm", "call": 1, "label": "select", "model": "gemini-3.6-flash", "latency_ms": 33845, "prompt_chars": 91379, "system_chars": 2517, "response_chars": 5729, "finish_reason": "FinishReason.STOP", "malformed_json": false, "json_retries": 0, "max_output_tokens": 32768, "usage": {"prompt_token_count": 22143, "candidates_token_count": 1983, "total_token_count": 30503, "thoughts_token_count": 6377}}
+{"run": "digest", "t": 39682, "kind": "dbg", "msg": "llm: select_stories -> 23 raw cluster(s)"}
+{"run": "digest", "t": 39682, "kind": "event", "stage": "stage", "name": "select", "ms": 33949, "ok": true, "error": ""}
+{"run": "digest", "t": 39682, "kind": "dbg", "msg": "rank: [world] outlets=7 tier=lead wiki=no weight=11 \"Donald Trump rejects Iran's peace proposal to end war, sending oil prices soaring\""}
+{"run": "digest", "t": 39683, "kind": "dbg", "msg": "rank: [world] outlets=7 tier=major wiki=no weight=9 'UK police investigate suspected bomb plot near RAF Fairford airbase used by US'"}
+{"run": "digest", "t": 39683, "kind": "dbg", "msg": "rank: [world] outlets=5 tier=major wiki=no weight=7 'Controversy and trade talks follow summit between Donald Trump and Xi Jinping'"}
+{"run": "digest", "t": 39683, "kind": "dbg", "msg": "rank: [world] outlets=2 tier=major wiki=no weight=4 'Pope Leo XIV wraps up four-day visit to France with call for European dialogue'"}
+{"run": "digest", "t": 39683, "kind": "dbg", "msg": "rank: [world] outlets=3 tier=major wiki=yes weight=7 \"SpaceX's Starship reaches orbit for the first time on Flight 14 test mission\""}
+{"run": "digest", "t": 39683, "kind": "dbg", "msg": "rank: [world] outlets=3 tier=major wiki=yes weight=7 'Russian drone strikes hit National Academy of Sciences in central Kyiv'"}
+{"run": "digest", "t": 39684, "kind": "dbg", "msg": "rank: [world] outlets=1 tier=major wiki=no weight=3 'Anthropic files for IPO, revealing existential risk warnings and surging costs'"}
+{"run": "digest", "t": 39684, "kind": "dbg", "msg": "rank: [world] outlets=4 tier=major wiki=no weight=6 'Spate of mass shootings in South Africa leaves dozens dead across two provinces'"}
+{"run": "digest", "t": 39684, "kind": "dbg", "msg": "rank: [world] outlets=3 tier=notable wiki=yes weight=5 'Avalanche and severe flooding hit Nepal, leaving dead and missing'"}
+{"run": "digest", "t": 39684, "kind": "dbg", "msg": "rank: [world] outlets=2 tier=notable wiki=no weight=2 'OpenAI shelves new AI model GPT-6.1 Astra over safety concerns during internal testing'"}
+{"run": "digest", "t": 39684, "kind": "dbg", "msg": "rank: [world] outlets=3 tier=notable wiki=no weight=3 'US prosecutors reopen investigation into alleged 2024 gang rape at Cornell University fraternity'"}
+{"run": "digest", "t": 39684, "kind": "dbg", "msg": "rank: [world] outlets=2 tier=notable wiki=no weight=2 'French student protests and blockades over school resources spur political clash'"}
+{"run": "digest", "t": 39684, "kind": "dbg", "msg": "rank: [india] outlets=7 tier=lead wiki=no weight=11 'Opposition parties and civic groups protest against Election Commission over voter roll revision'"}
+{"run": "digest", "t": 39685, "kind": "dbg", "msg": "rank: [india] outlets=4 tier=major wiki=no weight=6 'Jammu & Kashmir Assembly passes resolution seeking restoration of statehood amid BJP walkout'"}
+{"run": "digest", "t": 39685, "kind": "dbg", "msg": "rank: [india] outlets=4 tier=major wiki=no weight=6 'Supreme Court takes suo motu cognisance of recent sexual assault cases in Delhi-NCR'"}
+{"run": "digest", "t": 39685, "kind": "dbg", "msg": "rank: [india] outlets=4 tier=major wiki=no weight=6 'Protests and unrest erupt at Lovely Professional University over alleged campus sexual assault'"}
+{"run": "digest", "t": 39685, "kind": "dbg", "msg": "rank: [india] outlets=3 tier=major wiki=no weight=5 \"Supreme Court reviews FSSAI's front-of-pack warning labels and food safety regulations\""}
+{"run": "digest", "t": 39685, "kind": "dbg", "msg": "rank: [india] outlets=2 tier=major wiki=no weight=4 'UAE signals additional $25 billion investment in India as bilateral trade targets double'"}
+{"run": "digest", "t": 39685, "kind": "dbg", "msg": "rank: [india] outlets=3 tier=major wiki=yes weight=7 'Heavy monsoon floods and deep depression cause widespread damage across Uttar Pradesh and Odisha'"}
+{"run": "digest", "t": 39685, "kind": "dbg", "msg": "rank: [india] outlets=2 tier=notable wiki=no weight=2 'Delhi government announces winter anti-pollution action plan including strict vehicle rules'"}
+{"run": "digest", "t": 39685, "kind": "dbg", "msg": "rank: [india] outlets=2 tier=notable wiki=no weight=2 \"Clashes and legal resolution surround partial demolition of Ujjain's Shahi Masjid\""}
+{"run": "digest", "t": 39686, "kind": "dbg", "msg": "rank: [india] outlets=2 tier=notable wiki=no weight=2 'Gautam Adani and group firms settle public shareholding case with SEBI'"}
+{"run": "digest", "t": 39686, "kind": "dbg", "msg": "rank: [india] outlets=2 tier=notable wiki=no weight=2 'FBI places gangster Goldy Brar on 10 Most Wanted list with $1 million bounty'"}
+{"run": "digest", "t": 39686, "kind": "dbg", "msg": "rank: 23 scored, 0 id(s) rejected, 12 kept {'world': 7, 'india': 5}; weights=[11, 9, 7, 7, 7, 6, 5, 11, 7, 6, 6, 6]"}
+{"run": "digest", "t": 39687, "kind": "event", "stage": "stage", "name": "rank", "ms": 5, "ok": true, "error": ""}
+{"run": "digest", "t": 39689, "kind": "dbg", "msg": "wiki: 8 curated event(s); 4 matched a selected story, 4 not covered"}
+{"run": "digest", "t": 39689, "kind": "dbg", "msg": "wiki: NOT COVERED [Armed conflicts and attacks] Somali Civil War — At least 23 people are killed and others are injured as heavy clashes breaks out across the South West State of Somalia, as forces loyal to former president Abdiaziz Laftagareen launch a major armed assault on troops of Aden Madobe and Hass"}
+{"run": "digest", "t": 39689, "kind": "dbg", "msg": "wiki: NOT COVERED [Armed conflicts and attacks] Russo-Ukrainian war — Polish military jets are scrambled in response to Russian airstrikes on Ukraine. Individuals in Lublin Voivodeship are briefly urged to seek shelter before an alert is lifted."}
+{"run": "digest", "t": 39689, "kind": "dbg", "msg": "wiki: NOT COVERED [Business and economy] Russian president Vladimir Putin places German retailer Metro AG's Russian assets under temporary administration, removing Metro's operational control amid broader Russian restrictions on businesses from countries it classifies as unfriendl"}
+{"run": "digest", "t": 39689, "kind": "dbg", "msg": "wiki: NOT COVERED [Disasters and accidents] 2026 Bangkok floods — Flooding and landslides kill at least eight people each in Myanmar and Thailand, while 20 to 30 people remain missing in Tanintharyi Region and more than 1.7 million people across Bangkok and 27 Thai provinces are affected."}
+{"run": "digest", "t": 43406, "kind": "dbg", "msg": "extract: 17561ch https://www.aljazeera.com/news/liveblog/2026/9/29/iran-war-live-trump-says-he-did-not-offer-tehran-sanctions-relief?traffic_source=rss"}
+{"run": "digest", "t": 43666, "kind": "dbg", "msg": "extract: 17232ch https://www.theguardian.com/us-news/live/2026/sep/28/donald-trump-iran-negotiations-fuel-deportations-media-china-latest-news-updates"}
+{"run": "digest", "t": 43902, "kind": "dbg", "msg": "extract: 2303ch https://timesofindia.indiatimes.com/world/middle-east/very-soon-trump-predicts-us-victory-in-iran-war-says-gas-prices-will-tumble/articleshow/134550107.cms"}
+{"run": "digest", "t": 44085, "kind": "dbg", "msg": "extract: fetch_html https://www.france24.com/en/tv-shows/spotlight/20260928-saudis-furious-trump-flips-flops-between-deal-with-iran-and-attacks-in-devastating-fashion: http=403"}
+{"run": "digest", "t": 47389, "kind": "dbg", "msg": "extract: 18869ch https://www.france24.com/en/tv-shows/spotlight/20260928-saudis-furious-trump-flips-flops-between-deal-with-iran-and-attacks-in-devastating-fashion"}
+{"run": "digest", "t": 47654, "kind": "dbg", "msg": "extract: 3110ch https://www.livemint.com/news/india/trump-no-to-irans-peace-offer-sends-oil-soaring-11790600254698.html"}
+{"run": "digest", "t": 51085, "kind": "dbg", "msg": "extract: 11747ch https://www.aljazeera.com/video/newsfeed/2026/9/28/uk-too-soon-to-blame-airbase-plot-on-foreign-state?traffic_source=rss"}
+{"run": "digest", "t": 62560, "kind": "dbg", "msg": "extract: 34385ch https://www.npr.org/2026/09/28/nx-s1-5983550/british-men-released-on-bail-after-suspected-terror-plot"}
+{"run": "digest", "t": 62769, "kind": "dbg", "msg": "extract: 5087ch https://www.theguardian.com/uk-news/2026/sep/28/men-arrested-raf-fairford-counter-terrorism-police"}
+{"run": "digest", "t": 62862, "kind": "dbg", "msg": "extract: fetch_html https://www.france24.com/en/tv-shows/a-propos/20260928-expert-says-uk-airbase-plot-fits-into-a-very-intense-pattern-we-ve-been-seeing-in-past-two-months: http=403"}
+{"run": "digest", "t": 66201, "kind": "dbg", "msg": "extract: 19065ch https://www.france24.com/en/tv-shows/a-propos/20260928-expert-says-uk-airbase-plot-fits-into-a-very-intense-pattern-we-ve-been-seeing-in-past-two-months"}
+{"run": "digest", "t": 66407, "kind": "dbg", "msg": "extract: 5284ch https://www.channelnewsasia.com/world/uk-examines-foreign-state-involvement-in-suspected-airbase-plot-releases-suspects-6416761"}
+{"run": "digest", "t": 66655, "kind": "dbg", "msg": "extract: 2654ch https://timesofindia.indiatimes.com/world/us/trump-denies-offering-us-arms-to-chinas-xi-contradicts-his-own-envoy/articleshow/134550046.cms"}
+{"run": "digest", "t": 66809, "kind": "dbg", "msg": "extract: 3812ch https://www.theguardian.com/world/2026/sep/28/trump-xi-jinping-china-buy-weapons"}
+{"run": "digest", "t": 67179, "kind": "dbg", "msg": "extract: 3668ch https://www.livemint.com/news/us-news/us-china-release-list-of-imported-goods-worth-30-billion-that-could-see-tariff-reductions-check-here-11790583301036.html"}
+{"run": "digest", "t": 67405, "kind": "dbg", "msg": "extract: 6138ch https://www.bbc.co.uk/news/articles/cxp84g2ly1mjo?at_medium=RSS&at_campaign=rss"}
+{"run": "digest", "t": 68337, "kind": "dbg", "msg": "extract: 5262ch https://www.dw.com/en/no-public-mentions-of-taiwan-at-official-xi-and-trump-meeting/a-79445378?maca=en-rss-en-world-4025-rdf"}
+{"run": "digest", "t": 72027, "kind": "dbg", "msg": "extract: 10648ch https://www.aljazeera.com/video/newsfeed/2026/9/28/fiery-end-for-spacex-starship-mission?traffic_source=rss"}
+{"run": "digest", "t": 72142, "kind": "dbg", "msg": "extract: 638ch https://www.bbc.co.uk/news/videos/c6ge4lp442npo?at_medium=RSS&at_campaign=rss"}
+{"run": "digest", "t": 72320, "kind": "dbg", "msg": "extract: 4705ch https://timesofindia.indiatimes.com/world/us/spacexs-biggest-most-powerful-rocket-reaches-earth-orbit-for-first-time/articleshow/134543670.cms"}
+{"run": "digest", "t": 72488, "kind": "dbg", "msg": "extract: fetch_html https://www.france24.com/en/ukrainian-arms-producers-warn-competitive-edge-eroding-due-to-stringent-export-licence-rules: http=403"}
+{"run": "digest", "t": 79499, "kind": "dbg", "msg": "extract: 13418ch https://www.france24.com/en/ukrainian-arms-producers-warn-competitive-edge-eroding-due-to-stringent-export-licence-rules"}
+{"run": "digest", "t": 82955, "kind": "dbg", "msg": "extract: 23649ch https://www.bbc.co.uk/news/videos/cqj9xkdyrvgzo?at_medium=RSS&at_campaign=rss"}
+{"run": "digest", "t": 83109, "kind": "dbg", "msg": "extract: 4094ch https://www.theguardian.com/world/2026/sep/28/russia-strike-on-kyiv-science-academy-drone-ukraine"}
+{"run": "digest", "t": 83207, "kind": "dbg", "msg": "extract: fetch_html https://www.france24.com/en/ethiopian-forces-claim-tigray-town: http=403"}
+{"run": "digest", "t": 86546, "kind": "dbg", "msg": "extract: 17300ch https://www.france24.com/en/ethiopian-forces-claim-tigray-town"}
+{"run": "digest", "t": 86665, "kind": "dbg", "msg": "extract: 5967ch https://www.bbc.co.uk/news/articles/c6m27dprvzv7o?at_medium=RSS&at_campaign=rss"}
+{"run": "digest", "t": 86830, "kind": "dbg", "msg": "extract: 4764ch https://www.theguardian.com/world/2026/sep/27/mass-shootings-south-africa-johannesburg-cape-town"}
+{"run": "digest", "t": 87242, "kind": "dbg", "msg": "extract: 3500ch https://www.npr.org/2026/09/27/nx-s1-5982488/south-africa-mass-shootings-killed-38-week"}
+{"run": "digest", "t": 98436, "kind": "dbg", "msg": "extract: 10698ch https://www.aljazeera.com/video/newsfeed/2026/9/28/aje-onl-nf_nepal-hit-by-deadly-floods-landslides-avalanche-280926?traffic_source=rss"}
+{"run": "digest", "t": 98569, "kind": "dbg", "msg": "extract: 3777ch https://www.bbc.co.uk/news/articles/cwjdvml9e897o?at_medium=RSS&at_campaign=rss"}
+{"run": "digest", "t": 99994, "kind": "dbg", "msg": "extract: 2069ch https://www.dw.com/en/avalanche-in-nepal-leaves-2-dead-several-missing/a-79450101?maca=en-rss-en-world-4025-rdf"}
+{"run": "digest", "t": 100503, "kind": "dbg", "msg": "extract: 1335ch https://timesofindia.indiatimes.com/india/these-are-only-byelections-says-cji-as-sc-declines-urgent-hearing-on-wb-sir-pleas/articleshow/134553252.cms"}
+{"run": "digest", "t": 100671, "kind": "dbg", "msg": "extract: 4852ch https://www.thehindu.com/news/national/maharashtra/sir-row-congress-holds-protest-across-maharashtra-seeking-gyanesh-kumars-removal/article71520317.ece"}
+{"run": "digest", "t": 100844, "kind": "dbg", "msg": "extract: fetch_html https://www.ndtv.com/india-news/rahul-gandhi-flags-727-voter-exclusions-in-delhi-what-poll-body-said-12111683#publisher=newsstand: http=403"}
+{"run": "digest", "t": 104207, "kind": "dbg", "msg": "extract: 33563ch https://www.ndtv.com/india-news/rahul-gandhi-flags-727-voter-exclusions-in-delhi-what-poll-body-said-12111683#publisher=newsstand"}
+{"run": "digest", "t": 104735, "kind": "dbg", "msg": "extract: 5789ch https://scroll.in/latest/1096078/ec-has-become-dictatorial-ex-bureaucrats-demand-cec-gyanesh-kumars-resignation?utm_source=rss&utm_medium=public"}
+{"run": "digest", "t": 104915, "kind": "dbg", "msg": "extract: 4577ch https://www.hindustantimes.com/india-news/ask-for-pm-modi-resignation-directly-arvind-kejriwal-to-cjp-abhijeet-dipke-amid-eci-row-cec-gyanesh-kumar-101790604699398.html"}
+{"run": "digest", "t": 105012, "kind": "dbg", "msg": "extract: fetch_html https://www.ndtv.com/india-news/odisha-floods-to-delhi-chill-depression-in-bay-of-bengal-leaves-rain-trail-12110901#publisher=newsstand: http=403"}
+{"run": "digest", "t": 112733, "kind": "dbg", "msg": "extract: 32892ch https://www.ndtv.com/india-news/odisha-floods-to-delhi-chill-depression-in-bay-of-bengal-leaves-rain-trail-12110901#publisher=newsstand"}
+{"run": "digest", "t": 112848, "kind": "dbg", "msg": "extract: 3856ch https://www.hindustantimes.com/india-news/another-deep-depression-forms-myanmar-after-cyclone-arnab-threat-passes-heres-what-imd-said-101790584204529.html"}
+{"run": "digest", "t": 113266, "kind": "dbg", "msg": "extract: 3852ch https://scroll.in/latest/1096057/uttar-pradesh-56-killed-46-injured-in-floods?utm_source=rss&utm_medium=public"}
+{"run": "digest", "t": 113905, "kind": "dbg", "msg": "extract: 2759ch https://timesofindia.indiatimes.com/india/omar-abdullah-if-guns-decide-statehood-pakistan-will-decide/articleshow/134548876.cms"}
+{"run": "digest", "t": 113992, "kind": "dbg", "msg": "extract: fetch_html https://www.ndtv.com/india-news/dont-allow-statehood-resolution-j-k-bureaucrats-letter-to-assembly-speaker-12111057#publisher=newsstand: http=403"}
+{"run": "digest", "t": 118277, "kind": "dbg", "msg": "extract: 32190ch https://www.ndtv.com/india-news/dont-allow-statehood-resolution-j-k-bureaucrats-letter-to-assembly-speaker-12111057#publisher=newsstand"}
+{"run": "digest", "t": 118727, "kind": "dbg", "msg": "extract: 3061ch https://scroll.in/latest/1096075/j-k-passes-omar-abdullahs-statehood-resolution-amid-walkout-by-bjp?utm_source=rss&utm_medium=public"}
+{"run": "digest", "t": 118843, "kind": "dbg", "msg": "extract: 1705ch https://www.hindustantimes.com/india-news/jk-assembly-passes-statehood-resolution-with-references-to-autonomy-article-370-bjp-walks-out-101790585048258.html"}
+{"run": "digest", "t": 118929, "kind": "dbg", "msg": "extract: fetch_html https://www.ndtv.com/india-news/bike-patrols-surprise-night-checks-at-delhi-parks-after-kalkaji-gang-rape-12111578#publisher=newsstand: http=403"}
+{"run": "digest", "t": 127847, "kind": "dbg", "msg": "extract: 34130ch https://www.ndtv.com/india-news/bike-patrols-surprise-night-checks-at-delhi-parks-after-kalkaji-gang-rape-12111578#publisher=newsstand"}
+{"run": "digest", "t": 128074, "kind": "dbg", "msg": "extract: 9133ch https://www.thehindu.com/news/cities/Delhi/supreme-court-register-suo-motu-case-on-delhi-rape-case/article71518477.ece"}
+{"run": "digest", "t": 131680, "kind": "dbg", "msg": "extract: 24134ch https://www.bbc.co.uk/news/videos/cm70lpg5z45go?at_medium=RSS&at_campaign=rss"}
+{"run": "digest", "t": 132129, "kind": "dbg", "msg": "extract: 3285ch https://scroll.in/latest/1096064/sc-says-recent-delhi-rape-cases-show-failure-of-police-administration-takes-suo-moto-cognisance?utm_source=rss&utm_medium=public"}
+{"run": "digest", "t": 132330, "kind": "dbg", "msg": "extract: 4943ch https://www.thehindu.com/news/national/punjab/punjab-campus-violence-triggers-political-slugfest-university-blames-outsiders/article71520862.ece"}
+{"run": "digest", "t": 132496, "kind": "dbg", "msg": "extract: 3933ch https://www.hindustantimes.com/india-news/campus-defaced-classes-suspended-vehicles-on-fire-punjab-lpu-latest-updates-after-violent-protests-over-student-rape-101790612595891.html"}
+{"run": "digest", "t": 133121, "kind": "dbg", "msg": "extract: 3104ch https://timesofindia.indiatimes.com/city/chandigarh/lpu-on-boil-3-female-students-say-university-posted-video-without-consent-say-they-face-abuse/articleshow/134538908.cms"}
+{"run": "digest", "t": 133533, "kind": "dbg", "msg": "extract: 4300ch https://scroll.in/latest/1096056/lovely-professional-university-suspends-classes-amid-protests-against-alleged-rape-on-campus?utm_source=rss&utm_medium=public"}
+{"run": "digest", "t": 133662, "kind": "dbg", "msg": "extract: 5202ch https://www.hindustantimes.com/india-news/miscreants-entered-campus-wore-masks-lpu-students-recall-horrific-night-of-unrest-101790579214339.html"}
+{"run": "digest", "t": 133666, "kind": "event", "stage": "stage", "name": "extract", "ms": 93976, "ok": true, "error": ""}
+{"run": "digest", "t": 133701, "kind": "dbg", "msg": "llm: call #2 model=gemini-3.6-flash label=claims-world prompt=123876ch"}
+{"run": "digest", "t": 143663, "kind": "dbg", "msg": "ratelimit: claims-world transient failure (1/3), retrying in 7s: ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"}
+{"run": "digest", "t": 143663, "kind": "event", "stage": "ratelimit", "label": "claims-world", "verdict": "transient_retry", "attempt": 1, "attempts_allowed": 3, "wait_s": 6.9, "error": "ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"}
+{"run": "digest", "t": 153538, "kind": "dbg", "msg": "ratelimit: claims-world transient failure (2/3), retrying in 13s: ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"}
+{"run": "digest", "t": 153538, "kind": "event", "stage": "ratelimit", "label": "claims-world", "verdict": "transient_retry", "attempt": 2, "attempts_allowed": 3, "wait_s": 13.0, "error": "ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"}
+{"run": "digest", "t": 169785, "kind": "dbg", "msg": "ratelimit: claims-world TRANSIENT FAILURE after 3 attempt(s), giving up: ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"}
+{"run": "digest", "t": 169785, "kind": "event", "stage": "ratelimit", "label": "claims-world", "verdict": "transient_exhausted", "attempt": 3, "attempts_allowed": 3, "error": "ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"}
+{"run": "digest", "t": 169785, "kind": "event", "stage": "stage", "name": "claims", "ms": 36119, "ok": false, "error": "ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"}
+{"run": "digest", "t": 169785, "kind": "event", "stage": "tracer", "msg": "capture finished", "ok": false, "ms": 169785, "bytes": 15021216}
