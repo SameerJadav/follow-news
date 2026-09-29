@@ -1,0 +1,1278 @@
+{
+  "dials": {
+    "WEIGHT_FLOOR": 5,
+    "TIER_WEIGHT": {
+      "lead": 4,
+      "major": 2,
+      "notable": 0
+    },
+    "WIKI_BONUS": 2,
+    "HARD_CAP": 12,
+    "MIN_STORIES_IF_ANY": 3,
+    "MAX_ARTICLES_PER_STORY": 5
+  },
+  "floor_relaxed": false,
+  "kept_weights": [
+    11,
+    9,
+    7,
+    7,
+    7,
+    6,
+    5,
+    11,
+    7,
+    6,
+    6,
+    6
+  ],
+  "per_section": {
+    "world": 7,
+    "india": 5
+  },
+  "clusters": [
+    {
+      "headline_hint": "Donald Trump rejects Iran's peace proposal to end war, sending oil prices soaring",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "lead",
+      "article_ids": [
+        7,
+        9,
+        64,
+        115,
+        139,
+        141,
+        225,
+        249,
+        336,
+        357,
+        360
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        7,
+        9,
+        64,
+        115,
+        139,
+        141,
+        225,
+        249,
+        336,
+        357,
+        360
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 7,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 11,
+      "weight_terms": {
+        "distinct_outlets": 7,
+        "tier_weight": 4,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "Iran war live: Trump says he did not offer Tehran sanctions relief",
+          "url": "https://www.aljazeera.com/news/liveblog/2026/9/29/iran-war-live-trump-says-he-did-not-offer-tehran-sanctions-relief?traffic_source=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Trump doubles down on claims US will win war with Iran ‘one way or another’ as talks are in doubt – US politics live",
+          "url": "https://www.theguardian.com/us-news/live/2026/sep/28/donald-trump-iran-negotiations-fuel-deportations-media-china-latest-news-updates"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "'Very soon’: Trump predicts US victory in Iran war, says gas prices will tumble",
+          "url": "https://timesofindia.indiatimes.com/world/middle-east/very-soon-trump-predicts-us-victory-in-iran-war-says-gas-prices-will-tumble/articleshow/134550107.cms"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Trump ‘flips & flops’ with Iran between making a deal and threats to attack in ‘devastating fashion’",
+          "url": "https://www.france24.com/en/tv-shows/spotlight/20260928-saudis-furious-trump-flips-flops-between-deal-with-iran-and-attacks-in-devastating-fashion"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Trump ‘no’ to Iran’s peace offer sends oil soaring",
+          "url": "https://www.livemint.com/news/india/trump-no-to-irans-peace-offer-sends-oil-soaring-11790600254698.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 6
+    },
+    {
+      "headline_hint": "UK police investigate suspected bomb plot near RAF Fairford airbase used by US",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "major",
+      "article_ids": [
+        21,
+        39,
+        42,
+        53,
+        58,
+        66,
+        70,
+        71,
+        106,
+        165,
+        178,
+        257,
+        262,
+        275,
+        328
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        21,
+        39,
+        42,
+        53,
+        58,
+        66,
+        70,
+        71,
+        106,
+        165,
+        178,
+        257,
+        262,
+        275,
+        328
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 7,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 9,
+      "weight_terms": {
+        "distinct_outlets": 7,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "UK: ‘Too soon’ to blame airbase plot on foreign state",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/28/uk-too-soon-to-blame-airbase-plot-on-foreign-state?traffic_source=rss"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "British men released on bail after suspected terror plot",
+          "url": "https://www.npr.org/2026/09/28/nx-s1-5983550/british-men-released-on-bail-after-suspected-terror-plot"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Five UK nationals arrested near RAF Fairford released on bail",
+          "url": "https://www.theguardian.com/uk-news/2026/sep/28/men-arrested-raf-fairford-counter-terrorism-police"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Expert says UK airbase plot 'fits into a very intense pattern we've been seeing in past two months'",
+          "url": "https://www.france24.com/en/tv-shows/a-propos/20260928-expert-says-uk-airbase-plot-fits-into-a-very-intense-pattern-we-ve-been-seeing-in-past-two-months"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "UK examines foreign state involvement in suspected airbase plot, releases suspects",
+          "url": "https://www.channelnewsasia.com/world/uk-examines-foreign-state-involvement-in-suspected-airbase-plot-releases-suspects-6416761"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 10
+    },
+    {
+      "headline_hint": "Controversy and trade talks follow summit between Donald Trump and Xi Jinping",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        79,
+        192,
+        277,
+        303,
+        306,
+        358
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        79,
+        192,
+        277,
+        303,
+        306,
+        358
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 5,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "Trump denies offering US weapons to China, contradicts ambassador’s account",
+          "url": "https://timesofindia.indiatimes.com/world/us/trump-denies-offering-us-arms-to-chinas-xi-contradicts-his-own-envoy/articleshow/134550046.cms"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Trump asked Xi Jinping if China would like to buy US weapons, American ambassador says",
+          "url": "https://www.theguardian.com/world/2026/sep/28/trump-xi-jinping-china-buy-weapons"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "US, China release list of imported goods worth $30 billion that could see tariff reductions: Check here",
+          "url": "https://www.livemint.com/news/us-news/us-china-release-list-of-imported-goods-worth-30-billion-that-could-see-tariff-reductions-check-here-11790583301036.html"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Trump-Xi summit: What wasn't said might matter the most",
+          "url": "https://www.bbc.co.uk/news/articles/cxp84g2ly1mjo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "DW World",
+          "title": "No public mentions of Taiwan at official Xi and Trump meeting",
+          "url": "https://www.dw.com/en/no-public-mentions-of-taiwan-at-official-xi-and-trump-meeting/a-79445378?maca=en-rss-en-world-4025-rdf"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 1
+    },
+    {
+      "headline_hint": "Pope Leo XIV wraps up four-day visit to France with call for European dialogue",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        118,
+        160,
+        177,
+        195,
+        202,
+        332
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        118,
+        160,
+        177,
+        195,
+        202,
+        332
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "France 24",
+          "title": "Leo the moderate? Pope in France defends EU values",
+          "url": "https://www.france24.com/en/tv-shows/the-debate/20260928-leo-the-moderate-pope-in-france-defends-eu-values"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Pope says 'scourge' of abuse must be rooted out as he visits Lourdes",
+          "url": "https://www.bbc.co.uk/news/articles/cm5y5nj8ejj8o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "🔴 Pope Leo leaves France after ending four-day visit with plea for Europe to foster global dialogue",
+          "url": "https://www.france24.com/en/france/20260928-live-pope-leo-xiv-arrives-in-metz-for-final-stop-of-france-visit"
+        },
+        {
+          "outlet": "France 24",
+          "title": "French hotels, souvenir shops benefit from pope business boost",
+          "url": "https://www.france24.com/en/video/20260928-french-hotels-souvenir-shops-benefit-from-pope-business-boost"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Pope Leo wraps up France visit, urging Europe to help combat 'lies and deceit'",
+          "url": "https://www.france24.com/en/europe/20260928-pope-leo-wraps-up-france-visit-urging-europe-to-help-combat-lies-and-deceit"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 1
+    },
+    {
+      "headline_hint": "SpaceX's Starship reaches orbit for the first time on Flight 14 test mission",
+      "section": "world",
+      "category": "technology",
+      "tier_requested": "major",
+      "article_ids": [
+        17,
+        234,
+        246
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        17,
+        234,
+        246
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 3,
+      "wiki_backed": true,
+      "wiki_event": "SpaceX's Starship Flight 14 launches into orbit from Starbase, Texas, United States. However, it also returns early to Earth.",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "Fiery end for SpaceX Starship mission",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/28/fiery-end-for-spacex-starship-mission?traffic_source=rss"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Watch: From launch to fiery splashdown, SpaceX's Starship completes orbit test",
+          "url": "https://www.bbc.co.uk/news/videos/c6ge4lp442npo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "SpaceX's 'biggest, most powerful' rocket reaches Earth orbit for first time",
+          "url": "https://timesofindia.indiatimes.com/world/us/spacexs-biggest-most-powerful-rocket-reaches-earth-orbit-for-first-time/articleshow/134543670.cms"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Russian drone strikes hit National Academy of Sciences in central Kyiv",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "major",
+      "article_ids": [
+        98,
+        168,
+        210
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        98,
+        168,
+        210
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 3,
+      "wiki_backed": true,
+      "wiki_event": "At least 24 people, including the former secretary of the National Security and Defence Council, Volodymyr Horbulin, are injured and three are killed by Russian drone strikes on the National Academy of Sciences of Ukraine building, a health",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "France 24",
+          "title": "Ukrainian arms producers warn competitive edge eroding due to stringent export licence rules",
+          "url": "https://www.france24.com/en/ukrainian-arms-producers-warn-competitive-edge-eroding-due-to-stringent-export-licence-rules"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "People escape historic Kyiv building hit by Russian drone",
+          "url": "https://www.bbc.co.uk/news/videos/cqj9xkdyrvgzo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Daytime Russian strike on Kyiv’s science academy kills at least one",
+          "url": "https://www.theguardian.com/world/2026/sep/28/russia-strike-on-kyiv-science-academy-drone-ukraine"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Anthropic files for IPO, revealing existential risk warnings and surging costs",
+      "section": "world",
+      "category": "technology",
+      "tier_requested": "major",
+      "article_ids": [
+        0,
+        1,
+        14,
+        27
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        0,
+        1,
+        14,
+        27
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 1,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 1,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Channel News Asia",
+          "title": "Exclusive-Anthropic warns AI may pose 'existential risks to humanity' in IPO filing",
+          "url": "https://www.channelnewsasia.com/business/exclusive-anthropic-warns-ai-may-pose-existential-risks-humanity-in-ipo-filing-6417036"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "Exclusive-Anthropic leaders to control AI lab via 'Founder LLC' to promote public good over market forces",
+          "url": "https://www.channelnewsasia.com/business/exclusive-anthropic-leaders-control-ai-lab-founder-llc-promote-public-good-over-market-forces-6417026"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "Anthropic's path from AI startup to industry-defining IPO",
+          "url": "https://www.channelnewsasia.com/business/anthropics-path-ai-startup-industry-defining-ipo-6416996"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "Exclusive-Anthropic's IPO prospectus shows sweeping AI vision, surging costs",
+          "url": "https://www.channelnewsasia.com/business/exclusive-anthropics-ipo-prospectus-shows-sweeping-ai-vision-surging-costs-6416961"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Spate of mass shootings in South Africa leaves dozens dead across two provinces",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "major",
+      "article_ids": [
+        78,
+        163,
+        344,
+        347
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        78,
+        163,
+        344,
+        347
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 6,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "France 24",
+          "title": "Ethiopian forces claim Tigray town",
+          "url": "https://www.france24.com/en/ethiopian-forces-claim-tigray-town"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Twelve women have been killed in one part of South Africa since July. Here's what we know so far",
+          "url": "https://www.bbc.co.uk/news/articles/c6m27dprvzv7o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "At least 27 dead after two mass shootings in South Africa, police say",
+          "url": "https://www.theguardian.com/world/2026/sep/27/mass-shootings-south-africa-johannesburg-cape-town"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "South Africa reels from spate of mass shootings that killed 38 people in a week",
+          "url": "https://www.npr.org/2026/09/27/nx-s1-5982488/south-africa-mass-shootings-killed-38-week"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Avalanche and severe flooding hit Nepal, leaving dead and missing",
+      "section": "world",
+      "category": "disaster",
+      "tier_requested": "notable",
+      "article_ids": [
+        88,
+        193,
+        333
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        88,
+        193,
+        333
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": true,
+      "wiki_event": "An avalanche kills at least two climbers and leaves 14 others missing at the base camp of the Himalayan mountain Nemjung in Manang District, Nepal, as heavy snowfall hampers rescue operations.",
+      "weight": 5,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "Nepal hit by deadly floods, landslides, and avalanche",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/28/aje-onl-nf_nepal-hit-by-deadly-floods-landslides-avalanche-280926?traffic_source=rss"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Four bodies found after avalanche hits Himalayan climbing group",
+          "url": "https://www.bbc.co.uk/news/articles/cwjdvml9e897o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "DW World",
+          "title": "Avalanche in Nepal leaves 2 dead, several missing",
+          "url": "https://www.dw.com/en/avalanche-in-nepal-leaves-2-dead-several-missing/a-79450101?maca=en-rss-en-world-4025-rdf"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "OpenAI shelves new AI model GPT-6.1 Astra over safety concerns during internal testing",
+      "section": "world",
+      "category": "technology",
+      "tier_requested": "notable",
+      "article_ids": [
+        32,
+        36
+      ],
+      "verdict": "cut:below_floor(2<5)",
+      "valid_ids": [
+        32,
+        36
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 2,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "OpenAI scraps release of new model over safety concerns in internal testing",
+          "url": "https://www.theguardian.com/technology/2026/sep/28/openai-new-model-astra-release-scrapped"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "OpenAI shelves new AI model after internal safety tests: Report",
+          "url": "https://www.channelnewsasia.com/business/open-ai-new-model-safety-6416906"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "US prosecutors reopen investigation into alleged 2024 gang rape at Cornell University fraternity",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        4,
+        41,
+        143
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        4,
+        41,
+        143
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "France 24",
+          "title": "US prosecutors reopen Cornell university gang rape investigation",
+          "url": "https://www.france24.com/en/americas/20260929-us-prosecutors-cornell-university-gang-rape-investigation"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Investigation of alleged gang-rape at Cornell University fraternity house reopened",
+          "url": "https://www.theguardian.com/us-news/2026/sep/28/cornell-fraternity-investigation-alleged-gang-rape"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "US prosecutors reopen case of alleged gang rape at Cornell University",
+          "url": "https://www.bbc.co.uk/news/articles/c5wyzrm0n74ro?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "French student protests and blockades over school resources spur political clash",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        13,
+        51,
+        75
+      ],
+      "verdict": "cut:below_floor(2<5)",
+      "valid_ids": [
+        13,
+        51,
+        75
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 2,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "France 24",
+          "title": "French student protests fuel political clash ahead of 2027 Presidential vote",
+          "url": "https://www.france24.com/en/france/20260928-french-student-protests-political-clash-presidential-vote"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "French PM warns against escalation of school protests after 164 arrested",
+          "url": "https://www.bbc.co.uk/news/articles/cmqxvnn49rg2o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "France braces for a day of strikes and protests over civil servants' pay",
+          "url": "https://www.france24.com/en/tv-shows/business/20260928-france-braces-for-a-day-of-strikes-and-protests-over-civil-servants-pay"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Opposition parties and civic groups protest against Election Commission over voter roll revision",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "lead",
+      "article_ids": [
+        11,
+        25,
+        60,
+        82,
+        140,
+        142,
+        149,
+        196,
+        218,
+        221,
+        228,
+        283,
+        284,
+        294,
+        296,
+        299,
+        301,
+        366
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        11,
+        25,
+        60,
+        82,
+        140,
+        142,
+        149,
+        196,
+        218,
+        221,
+        228,
+        283,
+        284,
+        294,
+        296,
+        299,
+        301,
+        366
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 7,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 11,
+      "weight_terms": {
+        "distinct_outlets": 7,
+        "tier_weight": 4,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "These are only byelections, says CJI as SC declines urgent hearing on WB SIR pleas",
+          "url": "https://timesofindia.indiatimes.com/india/these-are-only-byelections-says-cji-as-sc-declines-urgent-hearing-on-wb-sir-pleas/articleshow/134553252.cms"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "SIR row: Congress holds protest across Maharashtra seeking Gyanesh Kumar’s removal",
+          "url": "https://www.thehindu.com/news/national/maharashtra/sir-row-congress-holds-protest-across-maharashtra-seeking-gyanesh-kumars-removal/article71520317.ece"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "Rahul Gandhi Flags 727 Voter Exclusions In Delhi. What Poll Body Said",
+          "url": "https://www.ndtv.com/india-news/rahul-gandhi-flags-727-voter-exclusions-in-delhi-what-poll-body-said-12111683#publisher=newsstand"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "‘EC has become dictatorial’: Ex-bureaucrats demand CEC Gyanesh Kumar’s resignation",
+          "url": "https://scroll.in/latest/1096078/ec-has-become-dictatorial-ex-bureaucrats-demand-cec-gyanesh-kumars-resignation?utm_source=rss&utm_medium=public"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "‘Ask for PM Modi's resignation directly': Arvind Kejriwal to CJP amid protest call against CEC Gyanesh Kumar",
+          "url": "https://www.hindustantimes.com/india-news/ask-for-pm-modi-resignation-directly-arvind-kejriwal-to-cjp-abhijeet-dipke-amid-eci-row-cec-gyanesh-kumar-101790604699398.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 13
+    },
+    {
+      "headline_hint": "Jammu & Kashmir Assembly passes resolution seeking restoration of statehood amid BJP walkout",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        137,
+        172,
+        237,
+        302
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        137,
+        172,
+        237,
+        302
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 6,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "Omar Abdullah: If guns decide statehood, Pakistan will decide",
+          "url": "https://timesofindia.indiatimes.com/india/omar-abdullah-if-guns-decide-statehood-pakistan-will-decide/articleshow/134548876.cms"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "J&K Bureaucrats Oppose Statehood Resolution In Rare Letter To Assembly Speaker",
+          "url": "https://www.ndtv.com/india-news/dont-allow-statehood-resolution-j-k-bureaucrats-letter-to-assembly-speaker-12111057#publisher=newsstand"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "J&K passes Omar Abdullah’s statehood resolution amid walkout by BJP",
+          "url": "https://scroll.in/latest/1096075/j-k-passes-omar-abdullahs-statehood-resolution-amid-walkout-by-bjp?utm_source=rss&utm_medium=public"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "J&K Assembly passes statehood resolution with references to autonomy, Article 370; BJP walks out",
+          "url": "https://www.hindustantimes.com/india-news/jk-assembly-passes-statehood-resolution-with-references-to-autonomy-article-370-bjp-walks-out-101790585048258.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Supreme Court takes suo motu cognisance of recent sexual assault cases in Delhi-NCR",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        124,
+        135,
+        191,
+        297
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        124,
+        135,
+        191,
+        297
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 6,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "NDTV",
+          "title": "Bike Patrols, Surprise Night Checks At Delhi Parks After Kalkaji Gang Rape",
+          "url": "https://www.ndtv.com/india-news/bike-patrols-surprise-night-checks-at-delhi-parks-after-kalkaji-gang-rape-12111578#publisher=newsstand"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "Supreme Court takes suo motu cognisance of recent sexual assault cases in Delhi-NCR, flags ‘lax patrolling’ by authorities",
+          "url": "https://www.thehindu.com/news/cities/Delhi/supreme-court-register-suo-motu-case-on-delhi-rape-case/article71518477.ece"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Women protest in the streets of Delhi after string of sexual assaults",
+          "url": "https://www.bbc.co.uk/news/videos/cm70lpg5z45go?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "SC says recent Delhi rape cases show failure of police, administration; takes suo moto cognisance",
+          "url": "https://scroll.in/latest/1096064/sc-says-recent-delhi-rape-cases-show-failure-of-police-administration-takes-suo-moto-cognisance?utm_source=rss&utm_medium=public"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Protests and unrest erupt at Lovely Professional University over alleged campus sexual assault",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        92,
+        181,
+        282,
+        291,
+        293,
+        317,
+        346
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        92,
+        181,
+        282,
+        291,
+        293,
+        317,
+        346
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 6,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "The Hindu",
+          "title": "Punjab campus violence triggers political slugfest; university blames outsiders",
+          "url": "https://www.thehindu.com/news/national/punjab/punjab-campus-violence-triggers-political-slugfest-university-blames-outsiders/article71520862.ece"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Campus defaced, vehicles burnt, classes suspended: Punjab's LPU returns to uneasy calm day after violent protests",
+          "url": "https://www.hindustantimes.com/india-news/campus-defaced-classes-suspended-vehicles-on-fire-punjab-lpu-latest-updates-after-violent-protests-over-student-rape-101790612595891.html"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "'Leave us alone': 3 students say LPU posted rape 'truth' video without consent",
+          "url": "https://timesofindia.indiatimes.com/city/chandigarh/lpu-on-boil-3-female-students-say-university-posted-video-without-consent-say-they-face-abuse/articleshow/134538908.cms"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "Lovely Professional University suspends classes amid protests against alleged rape on campus",
+          "url": "https://scroll.in/latest/1096056/lovely-professional-university-suspends-classes-amid-protests-against-alleged-rape-on-campus?utm_source=rss&utm_medium=public"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "‘Miscreants entered campus, wore masks’: LPU students recall 'horrific' night of unrest",
+          "url": "https://www.hindustantimes.com/india-news/miscreants-entered-campus-wore-masks-lpu-students-recall-horrific-night-of-unrest-101790579214339.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 2
+    },
+    {
+      "headline_hint": "Supreme Court reviews FSSAI's front-of-pack warning labels and food safety regulations",
+      "section": "india",
+      "category": "health",
+      "tier_requested": "major",
+      "article_ids": [
+        2,
+        187,
+        281,
+        292,
+        300
+      ],
+      "verdict": "cut:hard_cap(>12)",
+      "valid_ids": [
+        2,
+        187,
+        281,
+        292,
+        300
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 5,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "Supreme Court: Will fix timeline for FSSAI to enforce front-of-pack labelling",
+          "url": "https://timesofindia.indiatimes.com/india/supreme-court-will-fix-timeline-for-fssai-to-enforce-front-of-pack-labelling/articleshow/134553288.cms"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "FSSAI’s energy drink crackdown: Red Bull sues regulator, says label ban could bring business to standstill",
+          "url": "https://www.livemint.com/news/india/fssais-energy-drink-crackdown-red-bull-sues-regulator-says-label-ban-could-bring-business-to-standstill-11790612215109.html"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Raids, red labels and junk food curbs: India's food safety crackdown",
+          "url": "https://www.hindustantimes.com/india-news/raids-red-labels-and-junk-food-curbs-india-s-food-safety-crackdown-101790587407183.html"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "FSSAI red labels: 'Indians associate red colour with...' | Why food companies say warnings could confuse consumers",
+          "url": "https://www.livemint.com/news/india/fssai-red-labels-indians-associate-red-colour-with-why-food-companies-say-warnings-could-confuse-consumers-11790589019954.html"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "‘Do not disappoint us’: SC reserves order on FSSAI front-of-pack labels",
+          "url": "https://www.livemint.com/news/fssai-front-of-pack-warning-labels-supreme-court-packaged-food-11790581423971.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "UAE signals additional $25 billion investment in India as bilateral trade targets double",
+      "section": "india",
+      "category": "economy",
+      "tier_requested": "major",
+      "article_ids": [
+        56,
+        180
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        56,
+        180
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "The Hindu",
+          "title": "UAE signals another $25 billion investment in India; eyes ports, energy and space sectors: Goyal",
+          "url": "https://www.thehindu.com/business/Economy/uae-signals-another-25-billion-investment-in-india-eyes-ports-energy-and-space-sectors-goyal/article71520349.ece"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "UAE intends to invest $25 billion more in India, says Goyal",
+          "url": "https://www.livemint.com/news/india/uae-intends-to-invest-25-billion-more-in-india-in-near-future-says-goyal-11790611075149.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Heavy monsoon floods and deep depression cause widespread damage across Uttar Pradesh and Odisha",
+      "section": "india",
+      "category": "disaster",
+      "tier_requested": "major",
+      "article_ids": [
+        198,
+        270,
+        313
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        198,
+        270,
+        313
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 3,
+      "wiki_backed": true,
+      "wiki_event": "Eighty-one people in Uttar Pradesh, India, and 21 more in Nepal are killed during heavy floods and landslides in the past three days.",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "NDTV",
+          "title": "Odisha Floods To Delhi Chill: Depression In Bay Of Bengal Leaves Rain Trail",
+          "url": "https://www.ndtv.com/india-news/odisha-floods-to-delhi-chill-depression-in-bay-of-bengal-leaves-rain-trail-12110901#publisher=newsstand"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Another deep depression forms after Cyclone Arnab threat passes: Here's what IMD said",
+          "url": "https://www.hindustantimes.com/india-news/another-deep-depression-forms-myanmar-after-cyclone-arnab-threat-passes-heres-what-imd-said-101790584204529.html"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "Uttar Pradesh: 56 killed, 46 injured in floods",
+          "url": "https://scroll.in/latest/1096057/uttar-pradesh-56-killed-46-injured-in-floods?utm_source=rss&utm_medium=public"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Delhi government announces winter anti-pollution action plan including strict vehicle rules",
+      "section": "india",
+      "category": "climate",
+      "tier_requested": "notable",
+      "article_ids": [
+        223,
+        266,
+        267,
+        276,
+        289
+      ],
+      "verdict": "cut:below_floor(2<5)",
+      "valid_ids": [
+        223,
+        266,
+        267,
+        276,
+        289
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 2,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Livemint",
+          "title": "Delhi steps up winter air pollution action with time-bound measures across key sectors",
+          "url": "https://www.livemint.com/news/delhi-steps-up-winter-air-pollution-action-with-time-bound-measures-across-key-sectors-11790595253291.html"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Delhi CM attends meeting with Union environment minister on pollution measures",
+          "url": "https://www.hindustantimes.com/india-news/delhi-cm-attends-meeting-with-union-environment-minister-on-pollution-measures-101790594952957.html"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Delhi’s new PUC rule from October 1: Which vehicles could face  ₹10,000 fine?",
+          "url": "https://www.livemint.com/news/india/delhis-new-puc-rule-from-october-1-which-vehicles-could-face-10-000-fine-11790593831106.html"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "'No PUC, no fuel' rule, 150 more e-buses on roads: How Delhi govt plans to curb winter pollution",
+          "url": "https://www.hindustantimes.com/india-news/no-puc-no-fuel-rule-150-more-e-buses-on-roads-how-delhi-govt-plans-to-curb-winter-pollution-101790591496957.html"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Doubled parking fees, WFH for 50% workforce, construction ban &amp; more: Delhi govt ahead of winter air pollution",
+          "url": "https://www.livemint.com/news/india/doubled-parking-fees-wfh-for-50-workforce-construction-ban-more-delhi-govt-ahead-of-winter-air-pollution-11790586917791.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Clashes and legal resolution surround partial demolition of Ujjain's Shahi Masjid",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        179,
+        211,
+        241,
+        259
+      ],
+      "verdict": "cut:below_floor(2<5)",
+      "valid_ids": [
+        179,
+        211,
+        241,
+        259
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 2,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Hindustan Times",
+          "title": "Ujjain mosque demolition: MP HC disposes of pleas by Muslim side after 'settlement' with civic body",
+          "url": "https://www.hindustantimes.com/india-news/ujjain-mosque-demolition-hc-disposes-of-pleas-by-muslim-side-after-settlement-with-civic-body-101790613396993.html"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "Unrest in Ujjain over mosque demolition: HC disposes Muslim side appeal, part of structure razed",
+          "url": "https://scroll.in/latest/1096077/unrest-in-ujjain-over-mosque-demolition-hc-disposes-muslim-side-appeal-portion-of-structure-razed?utm_source=rss&utm_medium=public"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "Rush Hour: Ujjain mosque demolition protest turns violent, SC’s 4-month deadline on TMC row & more",
+          "url": "https://scroll.in/latest/1096073/rush-hour-ujjain-mosque-demolition-protest-turns-violent-scs-4-month-deadline-on-tmc-row-more?utm_source=rss&utm_medium=public"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "Ujjain: Tear gas fired as police, protesters clash during demonstration against mosque demolition",
+          "url": "https://scroll.in/latest/1096058/ujjain-tear-gas-fired-as-police-protesters-clash-during-demonstration-against-mosque-demolition?utm_source=rss&utm_medium=public"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Gautam Adani and group firms settle public shareholding case with SEBI",
+      "section": "india",
+      "category": "economy",
+      "tier_requested": "notable",
+      "article_ids": [
+        83,
+        173
+      ],
+      "verdict": "cut:below_floor(2<5)",
+      "valid_ids": [
+        83,
+        173
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 2,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "NDTV",
+          "title": "Adani Group Cleared Of Minimum Public Shareholding Violation Charges By SEBI",
+          "url": "https://www.ndtv.com/india-news/adani-group-cleared-of-minimum-public-shareholding-violation-charges-12111627#publisher=newsstand"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Gautam Adani, 4 group firms settle with Sebi in minimum public shareholding violation case",
+          "url": "https://timesofindia.indiatimes.com/business/india-business/gautam-adani-4-group-firms-settle-with-sebi-in-minimum-public-shareholding-violation-case/articleshow/134547086.cms"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "FBI places gangster Goldy Brar on 10 Most Wanted list with $1 million bounty",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        48,
+        107
+      ],
+      "verdict": "cut:below_floor(2<5)",
+      "valid_ids": [
+        48,
+        107
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 2,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Hindustan Times",
+          "title": "Gangster Goldy Brar added to FBI's 10 Most Wanted list with $1 million reward",
+          "url": "https://www.hindustantimes.com/india-news/gangster-goldy-brar-added-to-fbis-10-most-wanted-list-with-1-million-reward-101790632166096.html"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "FBI adds Goldy Brar to its 10 most wanted list, offers $1 million reward",
+          "url": "https://timesofindia.indiatimes.com/india/fbi-puts-gangster-goldy-brar-on-ten-most-wanted-fugitives-list/articleshow/134549606.cms"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    }
+  ]
+}
