@@ -13,49 +13,121 @@
   },
   "floor_relaxed": false,
   "kept_weights": [
+    9,
     8,
-    8,
+    7,
+    7,
     6,
     5,
-    10,
+    5,
+    8,
+    5,
     5
   ],
   "per_section": {
-    "world": 4,
-    "india": 2
+    "world": 7,
+    "india": 3
   },
   "clusters": [
     {
-      "headline_hint": "US completes military withdrawal from Iraq as forces depart remaining bases",
+      "headline_hint": "Trump and tech executives sign voluntary accord on AI safety standards",
       "section": "world",
-      "category": "conflict",
+      "category": "technology",
       "tier_requested": "lead",
       "article_ids": [
-        3,
-        39,
-        102,
-        128,
-        248,
-        279
+        55,
+        58,
+        66,
+        90,
+        132,
+        145,
+        208,
+        210,
+        223,
+        237,
+        238
       ],
       "verdict": "kept",
       "valid_ids": [
-        3,
-        39,
-        102,
-        128,
-        248,
-        279
+        55,
+        58,
+        66,
+        90,
+        132,
+        145,
+        208,
+        210,
+        223,
+        237,
+        238
       ],
       "tier_final": "lead",
-      "distinct_outlets": 4,
+      "distinct_outlets": 5,
       "wiki_backed": false,
       "wiki_event": "",
+      "weight": 9,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 4,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Livemint",
+          "title": "Trump tells AI giants to ‘self-police’: What does ‘morally binding’ White House accord mean?",
+          "url": "https://www.livemint.com/news/us-news/trump-tells-ai-giants-to-self-police-what-does-morally-binding-white-house-accord-mean-11790740588600.html"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Google CEO 'agrees' that tech firms need to innovate responsibly",
+          "url": "https://timesofindia.indiatimes.com/technology/tech-news/google-ceo-sundar-pichai-agrees-to-the-call-that-technology-companies-need-to-innovate-responsibly-says-as-i-shared-today-/articleshow/134581734.cms"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Three takeaways from Trump's 'Super Intelligence' summit",
+          "url": "https://www.bbc.co.uk/news/articles/cme30dz5vkzko?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Trump backs AI self-regulation at tech summit but is it enough?",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/30/trump-backs-ai-self-regulation-at-tech-summit-but-is-it-enough?traffic_source=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Trump says AI companies sign voluntary accord on safety controls",
+          "url": "https://www.france24.com/en/technology/20260929-trump-says-ai-companies-sign-voluntary-accord-on-safety-controls"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 6
+    },
+    {
+      "headline_hint": "US completes military withdrawal from Iraq after 23-year presence",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "major",
+      "article_ids": [
+        195,
+        220,
+        300,
+        313
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        195,
+        220,
+        300,
+        313
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": true,
+      "wiki_event": "American troops complete their withdrawal from Iraq after a 23-year presence in the country that started with the 2003 U.S. invasion.",
       "weight": 8,
       "weight_terms": {
         "distinct_outlets": 4,
-        "tier_weight": 4,
-        "wiki_bonus": 0
+        "tier_weight": 2,
+        "wiki_bonus": 2
       },
       "weight_floor": 5,
       "articles": [
@@ -78,106 +150,143 @@
           "outlet": "DW World",
           "title": "Iraq: US troops withdraw from their Iraqi US-led Operation Inherent Resolve mission against ISIS after 12 years",
           "url": "https://www.dw.com/en/iraq-us-troops-withdraw-from-their-iraqi-us-led-operation-inherent-resolve-mission-against-isis-after-12-years/a-79462926?maca=en-rss-en-world-4025-rdf"
-        },
-        {
-          "outlet": "Al Jazeera",
-          "title": "US troops fully withdraw from Baghdad base after two decades",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/29/us-troops-fully-withdraw-from-baghdad-base-after-two-decades?traffic_source=rss"
         }
       ],
-      "articles_dropped_by_diversity_cap": 1
+      "articles_dropped_by_diversity_cap": 0
     },
     {
-      "headline_hint": "Trump renames AI 'super intelligence' and signs safety accord with tech leaders",
+      "headline_hint": "Morocco appoints Fatima Ezzahra El Mansouri as country's first female prime minister",
       "section": "world",
-      "category": "technology",
+      "category": "politics",
       "tier_requested": "major",
       "article_ids": [
-        22,
-        24,
-        44,
-        57,
-        68,
-        80,
-        82,
-        180,
-        186
+        171,
+        262,
+        272
       ],
       "verdict": "kept",
       "valid_ids": [
-        22,
-        24,
-        44,
-        57,
-        68,
-        80,
-        82,
-        180,
-        186
+        171,
+        262,
+        272
       ],
       "tier_final": "major",
-      "distinct_outlets": 6,
+      "distinct_outlets": 3,
+      "wiki_backed": true,
+      "wiki_event": "King Mohammed VI appoints Fatima Ezzahra El Mansouri as the first female prime minister of Morocco after her victory in the general elections on 23 September.",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "King appoints Morocco’s first female prime minister",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/30/king-appoints-moroccos-first-female-prime-minister-2?traffic_source=rss"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "First female prime minister named in Morocco after winning elections",
+          "url": "https://www.bbc.co.uk/news/articles/c674kkjllw17o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "🔴 Marrakesh mayor Fatima Ezzahra El Mansouri becomes first woman prime minister of Morocco",
+          "url": "https://www.france24.com/en/africa/20260929-morocco-king-appoints-first-woman-prime-minister-el-mansouri-after-parliamentary-vote"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Mass student and public sector protests trigger over 400 arrests across France",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        54,
+        97,
+        215,
+        231,
+        232,
+        286
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        54,
+        97,
+        215,
+        231,
+        232,
+        286
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 5,
       "wiki_backed": false,
       "wiki_event": "",
-      "weight": 8,
+      "weight": 7,
       "weight_terms": {
-        "distinct_outlets": 6,
+        "distinct_outlets": 5,
         "tier_weight": 2,
         "wiki_bonus": 0
       },
       "weight_floor": 5,
       "articles": [
         {
-          "outlet": "Al Jazeera",
-          "title": "Trump, top tech firms sign accord to ‘self-police’ AI development",
-          "url": "https://www.aljazeera.com/news/2026/9/29/trump-top-tech-firms-sign-accord-to-self-police-ai-development?traffic_source=rss"
-        },
-        {
           "outlet": "Times of India",
-          "title": "‘Bigger than internet’: Trump officially renames AI as ‘super intelligence’",
-          "url": "https://timesofindia.indiatimes.com/world/us/bigger-than-the-internet-trump-officially-renames-ai-as-super-intelligence/articleshow/134576549.cms"
+          "title": "Student protests rock France, over 400 detained: Why are schools protesting",
+          "url": "https://timesofindia.indiatimes.com/world/europe/student-protests-rock-france-with-over-400-detained-why-are-schools-protesting-explained/articleshow/134581586.cms"
         },
         {
-          "outlet": "France 24",
-          "title": "Trump says AI companies sign voluntary accord on safety controls",
-          "url": "https://www.france24.com/en/technology/20260929-trump-says-ai-companies-sign-voluntary-accord-on-safety-controls"
+          "outlet": "Al Jazeera",
+          "title": "Public workers in France strike over pay as student protests turn violent",
+          "url": "https://www.aljazeera.com/news/2026/9/30/french-public-workers-strike-over-pay-as-student-protests-turn-violent?traffic_source=rss"
         },
         {
-          "outlet": "Channel News Asia",
-          "title": "Trump releases AI accord with tech executives",
-          "url": "https://www.channelnewsasia.com/business/trump-releases-ai-accord-tech-executives-6419886"
+          "outlet": "Guardian World",
+          "title": "Hundreds detained as student protests across France turn violent",
+          "url": "https://www.theguardian.com/world/2026/sep/29/french-students-police-clash-school-blockades-violent"
         },
         {
           "outlet": "BBC World",
-          "title": "Trump rules out joint US-China venture to develop AI",
-          "url": "https://www.bbc.co.uk/news/articles/cwly5lmvy38qo?at_medium=RSS&at_campaign=rss"
+          "title": "More than 400 detained as France student protests escalate",
+          "url": "https://www.bbc.co.uk/news/articles/c862epne7glyo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "French civil servants strike, demand additional budgetary resources",
+          "url": "https://www.france24.com/en/video/20260929-french-civil-servants-strike-demand-additional-budgetary-resources"
         }
       ],
-      "articles_dropped_by_diversity_cap": 4
+      "articles_dropped_by_diversity_cap": 1
     },
     {
-      "headline_hint": "US Supreme Court permits Trump administration to resume third-country deportations",
+      "headline_hint": "US Supreme Court allows Trump administration to resume third-country deportations",
       "section": "world",
       "category": "politics",
       "tier_requested": "major",
       "article_ids": [
-        2,
-        35,
-        56
+        180,
+        188,
+        217,
+        230
       ],
       "verdict": "kept",
       "valid_ids": [
-        2,
-        35,
-        56
+        180,
+        188,
+        217,
+        230
       ],
       "tier_final": "major",
-      "distinct_outlets": 3,
+      "distinct_outlets": 4,
       "wiki_backed": false,
       "wiki_event": "",
-      "weight": 5,
+      "weight": 6,
       "weight_terms": {
-        "distinct_outlets": 3,
+        "distinct_outlets": 4,
         "tier_weight": 2,
         "wiki_bonus": 0
       },
@@ -185,8 +294,13 @@
       "articles": [
         {
           "outlet": "Guardian World",
-          "title": "Supreme court allows Trump to temporarily resume deporting people to third countries – live",
+          "title": "Supreme court allows Trump to temporarily resume deporting people to third countries – as it happened",
           "url": "https://www.theguardian.com/us-news/live/2026/sep/29/donald-trump-iran-ai-jack-smith-media-white-house-latest-news-updates"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Trump wins temporary Supreme Court nod to deport migrants to ‘third countries’",
+          "url": "https://timesofindia.indiatimes.com/world/us/us-supreme-court-allows-trump-admin-to-resume-controversial-third-country-deportations/articleshow/134577106.cms"
         },
         {
           "outlet": "France 24",
@@ -202,23 +316,76 @@
       "articles_dropped_by_diversity_cap": 0
     },
     {
-      "headline_hint": "Fatima Ezzahra El Mansouri appointed as Morocco's first female prime minister",
+      "headline_hint": "Russian airstrikes hit Kyiv and damage Ukrainian industrial infrastructure",
       "section": "world",
-      "category": "politics",
+      "category": "conflict",
+      "tier_requested": "major",
+      "article_ids": [
+        1,
+        91,
+        213,
+        340
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        1,
+        91,
+        213,
+        340
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 5,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "France 24",
+          "title": "Live: Several people killed as Russia launches new round of strikes on Kyiv",
+          "url": "https://www.france24.com/en/europe/20260930-live-several-people-killed-as-russia-launches-new-round-of-strikes-on-kyiv"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Missile alerts cost Ukraine $45m for every hour they halt businesses",
+          "url": "https://www.theguardian.com/world/2026/sep/30/missile-alerts-cost-ukraine-businesses-halt"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Ukraine's prized steel industry left in ruins by Russian missile campaign",
+          "url": "https://www.bbc.co.uk/news/articles/cjkg7k6z9296o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "People escape historic Kyiv building hit by Russian drone",
+          "url": "https://www.bbc.co.uk/news/videos/cqj9xkdyrvgzo?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Israeli settlers attack West Bank village of Jalud, injuring security personnel",
+      "section": "world",
+      "category": "conflict",
       "tier_requested": "notable",
       "article_ids": [
-        183,
-        200
+        287,
+        307
       ],
       "verdict": "cut:below_floor(4<5)",
       "valid_ids": [
-        183,
-        200
+        287,
+        307
       ],
       "tier_final": "notable",
       "distinct_outlets": 2,
       "wiki_backed": true,
-      "wiki_event": "King Mohammed VI appoints Fatima Ezzahra El Mansouri as the first female prime minister of Morocco after her victory in the general elections on 23 September.",
+      "wiki_event": "More than 100 Israeli settlers attack the Palestinian village of Jalud in the occupied West Bank, burning two homes and injuring three Israeli security personnel while preventing a displaced Palestinian family from returning home.",
       "weight": 4,
       "weight_terms": {
         "distinct_outlets": 2,
@@ -228,210 +395,51 @@
       "weight_floor": 5,
       "articles": [
         {
-          "outlet": "BBC World",
-          "title": "First female prime minister named in Morocco after winning elections",
-          "url": "https://www.bbc.co.uk/news/articles/c674kkjllw17o?at_medium=RSS&at_campaign=rss"
+          "outlet": "France 24",
+          "title": "Over 100 settlers attack Occupied West Bank village, clash with Israeli forces",
+          "url": "https://www.france24.com/en/video/20260929-over-100-settlers-attack-occupied-west-bank-village-clash-with-israeli-forces"
         },
         {
-          "outlet": "France 24",
-          "title": "🔴 Marrakesh mayor Fatima Ezzahra El Mansouri becomes first woman prime minister of Morocco",
-          "url": "https://www.france24.com/en/africa/20260929-morocco-king-appoints-first-woman-prime-minister-el-mansouri-after-parliamentary-vote"
+          "outlet": "BBC World",
+          "title": "Israeli settlers attack West Bank village and block Palestinian family's return home",
+          "url": "https://www.bbc.co.uk/news/articles/cvlylj41egxgo?at_medium=RSS&at_campaign=rss"
         }
       ],
       "articles_dropped_by_diversity_cap": 0
     },
     {
-      "headline_hint": "More than 400 detained across France amid escalating student protests over school conditions",
-      "section": "world",
-      "category": "politics",
-      "tier_requested": "notable",
-      "article_ids": [
-        32,
-        65,
-        66,
-        76
-      ],
-      "verdict": "cut:below_floor(3<5)",
-      "valid_ids": [
-        32,
-        65,
-        66,
-        76
-      ],
-      "tier_final": "notable",
-      "distinct_outlets": 3,
-      "wiki_backed": false,
-      "wiki_event": "",
-      "weight": 3,
-      "weight_terms": {
-        "distinct_outlets": 3,
-        "tier_weight": 0,
-        "wiki_bonus": 0
-      },
-      "weight_floor": 5,
-      "articles": [
-        {
-          "outlet": "Guardian World",
-          "title": "Hundreds detained as student protests across France turn violent",
-          "url": "https://www.theguardian.com/world/2026/sep/29/french-students-police-clash-school-blockades-violent"
-        },
-        {
-          "outlet": "BBC World",
-          "title": "More than 400 detained as France student protests escalate",
-          "url": "https://www.bbc.co.uk/news/articles/c862epne7glyo?at_medium=RSS&at_campaign=rss"
-        },
-        {
-          "outlet": "Al Jazeera",
-          "title": "French students clash with police as protests over education cuts spread",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/29/french-students-clash-with-police-as-protests-over-education-cuts-spread?traffic_source=rss"
-        },
-        {
-          "outlet": "BBC World",
-          "title": "Fires and blockades as students stage school protests across France",
-          "url": "https://www.bbc.co.uk/news/videos/cmy0zey3ey2lo?at_medium=RSS&at_campaign=rss"
-        }
-      ],
-      "articles_dropped_by_diversity_cap": 0
-    },
-    {
-      "headline_hint": "French far-right leader Jordan Bardella denies antisemitism claims as 'total war' on party",
-      "section": "world",
-      "category": "politics",
-      "tier_requested": "notable",
-      "article_ids": [
-        34,
-        207,
-        230,
-        231,
-        264
-      ],
-      "verdict": "cut:below_floor(3<5)",
-      "valid_ids": [
-        34,
-        207,
-        230,
-        231,
-        264
-      ],
-      "tier_final": "notable",
-      "distinct_outlets": 3,
-      "wiki_backed": false,
-      "wiki_event": "",
-      "weight": 3,
-      "weight_terms": {
-        "distinct_outlets": 3,
-        "tier_weight": 0,
-        "wiki_bonus": 0
-      },
-      "weight_floor": 5,
-      "articles": [
-        {
-          "outlet": "France 24",
-          "title": "Still the same far-right? Le Pen's National Rally denies fresh antisemitism claims",
-          "url": "https://www.france24.com/en/tv-shows/the-debate/20260929-still-the-same-far-right-le-pen-s-national-rally-denies-fresh-antisemitism-claims"
-        },
-        {
-          "outlet": "Guardian World",
-          "title": "National Rally’s Jordan Bardella rails at ‘war’ on party after antisemitism claims",
-          "url": "https://www.theguardian.com/world/2026/sep/29/jordan-bardella-national-rally-antisemitism-claims-france"
-        },
-        {
-          "outlet": "BBC World",
-          "title": "French hard-right leader accuses opponents of 'total war' after claims of antisemitism",
-          "url": "https://www.bbc.co.uk/news/articles/cmn45k85gj34o?at_medium=RSS&at_campaign=rss"
-        },
-        {
-          "outlet": "France 24",
-          "title": "French far-right leader Bardella denies anti-Semitism accusations",
-          "url": "https://www.france24.com/en/video/20260929-french-far-right-leader-bardella-denies-anti-semitism-accusations"
-        },
-        {
-          "outlet": "France 24",
-          "title": "France's Le Pen defiant after top ally hit by antisemitism claims",
-          "url": "https://www.france24.com/en/video/20260929-france-s-le-pen-defiant-after-top-ally-hit-by-antisemitism-claims"
-        }
-      ],
-      "articles_dropped_by_diversity_cap": 0
-    },
-    {
-      "headline_hint": "Estonia blames Russia for arson attack on defence company supplying Ukraine",
+      "headline_hint": "UK police investigate suspected security threat near RAF Fairford airbase",
       "section": "world",
       "category": "conflict",
       "tier_requested": "notable",
       "article_ids": [
-        113,
-        210,
-        229
-      ],
-      "verdict": "cut:below_floor(2<5)",
-      "valid_ids": [
-        113,
-        210,
-        229
-      ],
-      "tier_final": "notable",
-      "distinct_outlets": 2,
-      "wiki_backed": false,
-      "wiki_event": "",
-      "weight": 2,
-      "weight_terms": {
-        "distinct_outlets": 2,
-        "tier_weight": 0,
-        "wiki_bonus": 0
-      },
-      "weight_floor": 5,
-      "articles": [
-        {
-          "outlet": "BBC World",
-          "title": "Estonia blames Russia for arson at defence company supplying Ukraine",
-          "url": "https://www.bbc.co.uk/news/articles/c6m27l4er4jxo?at_medium=RSS&at_campaign=rss"
-        },
-        {
-          "outlet": "Guardian World",
-          "title": "‘We will not be intimidated,’ says Estonian PM after attributing recent arson attack to Russia – as it happened",
-          "url": "https://www.theguardian.com/world/live/2026/sep/29/ukraine-russia-war-odesa-overnight-lithuania-mark-rutte-europe-latest-news-updates"
-        },
-        {
-          "outlet": "Guardian World",
-          "title": "Estonia blames Russia for arson attack on drone maker supplying Ukraine",
-          "url": "https://www.theguardian.com/world/2026/sep/29/estonia-blames-russia-arson-attack-drone-maker-ukraine"
-        }
-      ],
-      "articles_dropped_by_diversity_cap": 0
-    },
-    {
-      "headline_hint": "UK counter-terrorism police investigate security scare near RAF Fairford airbase",
-      "section": "world",
-      "category": "conflict",
-      "tier_requested": "notable",
-      "article_ids": [
-        70,
-        85,
-        91,
-        127,
-        311,
-        331,
-        346,
-        352
+        234,
+        243,
+        249,
+        320,
+        337,
+        338,
+        351,
+        357
       ],
       "verdict": "kept",
       "valid_ids": [
-        70,
-        85,
-        91,
-        127,
-        311,
-        331,
-        346,
-        352
+        234,
+        243,
+        249,
+        320,
+        337,
+        338,
+        351,
+        357
       ],
       "tier_final": "notable",
-      "distinct_outlets": 6,
+      "distinct_outlets": 5,
       "wiki_backed": false,
       "wiki_event": "",
-      "weight": 6,
+      "weight": 5,
       "weight_terms": {
-        "distinct_outlets": 6,
+        "distinct_outlets": 5,
         "tier_weight": 0,
         "wiki_bonus": 0
       },
@@ -441,11 +449,6 @@
           "outlet": "Guardian World",
           "title": "Suspect in RAF Fairford case called police to report incident",
           "url": "https://www.theguardian.com/uk-news/2026/sep/29/raf-fairford-police-uk-counter-terrorism"
-        },
-        {
-          "outlet": "Al Jazeera",
-          "title": "What we know about RAF Fairford ‘bomb plot’",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/29/what-we-know-about-raf-fairford-bomb?traffic_source=rss"
         },
         {
           "outlet": "Livemint",
@@ -461,185 +464,71 @@
           "outlet": "DW World",
           "title": "UK: US government questions bail for Fairford base suspects",
           "url": "https://www.dw.com/en/uk-us-government-questions-bail-for-fairford-base-suspects/a-79468803?maca=en-rss-en-world-4025-rdf"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "British men released on bail after suspected terror plot",
+          "url": "https://www.npr.org/2026/09/28/nx-s1-5983550/british-men-released-on-bail-after-suspected-terror-plot"
         }
       ],
       "articles_dropped_by_diversity_cap": 3
     },
     {
-      "headline_hint": "Spain announces ban on evictions following mass protests over housing crisis",
-      "section": "world",
-      "category": "politics",
-      "tier_requested": "notable",
-      "article_ids": [
-        81,
-        133,
-        197,
-        226,
-        359
-      ],
-      "verdict": "cut:below_floor(4<5)",
-      "valid_ids": [
-        81,
-        133,
-        197,
-        226,
-        359
-      ],
-      "tier_final": "notable",
-      "distinct_outlets": 4,
-      "wiki_backed": false,
-      "wiki_event": "",
-      "weight": 4,
-      "weight_terms": {
-        "distinct_outlets": 4,
-        "tier_weight": 0,
-        "wiki_bonus": 0
-      },
-      "weight_floor": 5,
-      "articles": [
-        {
-          "outlet": "Al Jazeera",
-          "title": "Spain protests: Evicted 87-year-old woman to return to Madrid home",
-          "url": "https://www.aljazeera.com/news/2026/9/29/spain-protests-evicted-87-year-old-woman-to-return-to-madrid-home?traffic_source=rss"
-        },
-        {
-          "outlet": "BBC World",
-          "title": "Spain announces ban on evictions after protests over 87-year-old woman's removal from flat",
-          "url": "https://www.bbc.co.uk/news/articles/cwm2qmjgy93do?at_medium=RSS&at_campaign=rss"
-        },
-        {
-          "outlet": "Guardian World",
-          "title": "Spain announces plan to ease housing crisis amid outcry over eviction of 87-year-old",
-          "url": "https://www.theguardian.com/world/2026/sep/29/spanish-government-approves-measures-ease-housing-crisis-outcry-eviction"
-        },
-        {
-          "outlet": "NPR World",
-          "title": "Eviction of 87-year-old sparks protests in Madrid over housing crisis",
-          "url": "https://www.npr.org/2026/09/28/nx-s1-5983303/encampment-protest-madrid-housing-crisis"
-        },
-        {
-          "outlet": "Al Jazeera",
-          "title": "Madrid residents feel the impact of Spain’s housing crisis",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/29/madrid-residents-feel-the-impact-of-spains-housing-crisis?traffic_source=rss"
-        }
-      ],
-      "articles_dropped_by_diversity_cap": 0
-    },
-    {
-      "headline_hint": "US retaliatory ban on $1bn of Canadian goods takes effect in ongoing trade row",
-      "section": "world",
-      "category": "economy",
-      "tier_requested": "notable",
-      "article_ids": [
-        96,
-        244
-      ],
-      "verdict": "cut:below_floor(2<5)",
-      "valid_ids": [
-        96,
-        244
-      ],
-      "tier_final": "notable",
-      "distinct_outlets": 2,
-      "wiki_backed": false,
-      "wiki_event": "",
-      "weight": 2,
-      "weight_terms": {
-        "distinct_outlets": 2,
-        "tier_weight": 0,
-        "wiki_bonus": 0
-      },
-      "weight_floor": 5,
-      "articles": [
-        {
-          "outlet": "Al Jazeera",
-          "title": "US ban on $1bn of Canadian goods takes effect in Trump’s latest retaliation",
-          "url": "https://www.aljazeera.com/economy/2026/9/29/us-ban-on-1bn-of-canadian-goods-takes-effect-in-trumps-latest-retaliation?traffic_source=rss"
-        },
-        {
-          "outlet": "BBC World",
-          "title": "US ban on Canadian alcohol and dairy takes effect as trade war drags on",
-          "url": "https://www.bbc.co.uk/news/articles/cm1j43y146d2o?at_medium=RSS&at_campaign=rss"
-        }
-      ],
-      "articles_dropped_by_diversity_cap": 0
-    },
-    {
-      "headline_hint": "Congress and INDIA bloc demand CEC Gyanesh Kumar's resignation over voter roll revision",
+      "headline_hint": "INDIA bloc and opposition demand CEC Gyanesh Kumar's resignation over voter roll revision",
       "section": "india",
       "category": "politics",
       "tier_requested": "lead",
       "article_ids": [
-        13,
-        14,
-        21,
-        46,
-        123,
-        125,
-        138,
-        160,
-        185,
-        201,
-        251,
-        271,
-        277,
-        298,
-        310,
-        313,
-        318,
-        326,
-        338,
-        356
+        11,
+        35,
+        67,
+        85,
+        101,
+        167,
+        303,
+        325,
+        332,
+        343
       ],
       "verdict": "kept",
       "valid_ids": [
-        13,
-        14,
-        21,
-        46,
-        123,
-        125,
-        138,
-        160,
-        185,
-        201,
-        251,
-        271,
-        277,
-        298,
-        310,
-        313,
-        318,
-        326,
-        338,
-        356
+        11,
+        35,
+        67,
+        85,
+        101,
+        167,
+        303,
+        325,
+        332,
+        343
       ],
       "tier_final": "lead",
-      "distinct_outlets": 6,
+      "distinct_outlets": 4,
       "wiki_backed": false,
       "wiki_event": "",
-      "weight": 10,
+      "weight": 8,
       "weight_terms": {
-        "distinct_outlets": 6,
+        "distinct_outlets": 4,
         "tier_weight": 4,
         "wiki_bonus": 0
       },
       "weight_floor": 5,
       "articles": [
         {
-          "outlet": "Times of India",
-          "title": "Not just CEC, PM Modi and Shah should also resign for 'vote chori', says CWC",
-          "url": "https://timesofindia.indiatimes.com/india/not-just-cec-pm-modi-and-shah-should-also-resign-for-vote-chori-says-cwc/articleshow/134576710.cms"
+          "outlet": "The Hindu",
+          "title": "At CWC meet, Rahul says Modi told him: ‘When we go, you will come'",
+          "url": "https://www.thehindu.com/news/national/when-we-go-you-will-come-rahul-gandhi-says-pm-told-him-only-congress-can-defeat-bjp/article71523738.ece"
         },
         {
-          "outlet": "The Hindu",
-          "title": "Mamata in Delhi to participate in INDIA bloc meetings, Suvendu takes a dig",
-          "url": "https://www.thehindu.com/news/national/west-bengal/mamata-in-delhi-to-participate-in-india-bloc-meetings-suvendu-takes-a-dig/article71524694.ece"
+          "outlet": "Hindustan Times",
+          "title": "‘Why just Padma Bhushan, give Gyanesh Kumar Bharat Ratna’: Omar Abdullah's dig at CEC",
+          "url": "https://www.hindustantimes.com/india-news/why-just-padma-bhushan-give-gyanesh-kumar-bharat-ratna-omar-abdullah-dig-at-cec-101790741386555.html"
         },
         {
           "outlet": "NDTV",
-          "title": "INDIA Bloc To Meet Today Over Poll Body Row: Options And Gameplan",
-          "url": "https://www.ndtv.com/india-news/india-bloc-to-meet-today-over-poll-body-row-options-and-gameplan-12116922#publisher=newsstand"
+          "title": "INDIA Meet On 'Op Gyanesh Kumar' Today, Sources Reject Attacks On Poll Panel",
+          "url": "https://www.ndtv.com/india-news/election-commission-sir-india-alliance-meet-on-gyanesh-kumar-today-sources-reject-attacks-on-poll-panel-12117788#publisher=newsstand"
         },
         {
           "outlet": "Scroll.in",
@@ -647,28 +536,120 @@
           "url": "https://scroll.in/latest/1096106/congress-demands-modi-gyanesh-kumars-resignation-suspension-of-sir?utm_source=rss&utm_medium=public"
         },
         {
-          "outlet": "Hindustan Times",
-          "title": "PM's resignation, pause SIR: Congress lists its demands amid ECI dissent row",
-          "url": "https://www.hindustantimes.com/india-news/restore-names-of-130-million-deleted-voters-halt-sir-says-cwc-resolution-101790682146776.html"
+          "outlet": "The Hindu",
+          "title": "Congress workers booked for attempt to murder over ‘defacement’ of CEC Gyanesh Kumar’s Agra house",
+          "url": "https://www.thehindu.com/news/national/congress-workers-booked-for-attempt-to-murder-over-defacement-of-cec-gyanesh-kumars-agra-house/article71526795.ece"
         }
       ],
-      "articles_dropped_by_diversity_cap": 15
+      "articles_dropped_by_diversity_cap": 5
     },
     {
-      "headline_hint": "CISF jawan kills four colleagues in fratricide shooting at J&K Kathua hydel plant",
+      "headline_hint": "Jammu and Kashmir Assembly passes resolution seeking restoration of statehood",
       "section": "india",
       "category": "politics",
       "tier_requested": "major",
       "article_ids": [
-        142,
-        159,
-        211
+        77,
+        107,
+        348
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        77,
+        107,
+        348
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "The Hindu",
+          "title": "How Omar Abdullah’s resolution puts autonomy debate on centre stage again | Explained",
+          "url": "https://www.thehindu.com/news/national/jammu-and-kashmir/how-omar-abdullahs-resolution-puts-autonomy-debate-on-centre-stage-again-explained/article71526697.ece"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "J&K passes Omar Abdullah’s statehood resolution amid walkout by BJP",
+          "url": "https://scroll.in/latest/1096075/j-k-passes-omar-abdullahs-statehood-resolution-amid-walkout-by-bjp?utm_source=rss&utm_medium=public"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "‘Can officers act as government?’ Congress seeks discussion on CS, Law Secretary letters in J&K Assembly",
+          "url": "https://www.thehindu.com/news/national/jammu-and-kashmir/can-officers-act-as-government-congress-seeks-discussion-on-cs-law-secretary-letters-in-jk-assembly/article71525135.ece"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Top Lashkar-e-Taiba commander Hashim Moosa killed in Budgam encounter",
+      "section": "india",
+      "category": "conflict",
+      "tier_requested": "major",
+      "article_ids": [
+        65,
+        125,
+        138
       ],
       "verdict": "kept",
       "valid_ids": [
-        142,
-        159,
-        211
+        65,
+        125,
+        138
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 5,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "The Hindu",
+          "title": "LeT ‘commander’ Hashim Moosa killed in Budgam operation: Army",
+          "url": "https://www.thehindu.com/news/national/jammu-and-kashmir/terrorist-killed-in-ongoing-operation-in-kashmirs-budgam/article71525620.ece"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Pahalgam terrorist Hashim Moosa killed, body recovered in J&amp;K's Budgam",
+          "url": "https://timesofindia.indiatimes.com/india/let-terrorist-mohammad-asif-killed-in-jk-body-recovered-with-war-like-stores/articleshow/134578984.cms"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Operation Korag: Top Lashkar-e-Taiba terrorist 'Moosa' killed in encounter in J&K's Budgam",
+          "url": "https://www.hindustantimes.com/india-news/top-lashkar-e-taiba-terrorist-sulaiman-shah-musa-killed-in-j-k-encounter-pakistan-101790735601731.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Indian Coast Guard seizes Rs 3,000 crore worth of drugs from Iranian boat in Arabian Sea",
+      "section": "india",
+      "category": "conflict",
+      "tier_requested": "major",
+      "article_ids": [
+        88,
+        102,
+        148
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        88,
+        102,
+        148
       ],
       "tier_final": "major",
       "distinct_outlets": 3,
@@ -684,214 +665,37 @@
       "articles": [
         {
           "outlet": "Times of India",
-          "title": "CISF jawan kills 4 colleagues at Kathua hydel plant",
-          "url": "https://timesofindia.indiatimes.com/india/cisf-jawan-kills-4-colleagues-at-kathua-hydel-plant/articleshow/134572873.cms"
+          "title": "Iranian boat with Pakistani crew caught with Rs 3,000 crore drugs in Arabian Sea",
+          "url": "https://timesofindia.indiatimes.com/india/526-kg-drugs-worth-rs-3000-crore-seized-from-iranian-boat-with-pakistani-crew/articleshow/134580685.cms"
         },
         {
-          "outlet": "Livemint",
-          "title": "Kathua shooting: CISF Head Constable kills 4 colleagues in Jammu and Kashmir",
-          "url": "https://www.livemint.com/news/india/kathua-shooting-cisf-head-constable-kills-4-colleagues-in-jammu-and-kashmir-11790703879092.html"
+          "outlet": "The Hindu",
+          "title": "₹3,000 crore drugs seized from Iranian boat in Arabian Sea; 5 Pakistan nationals detained",
+          "url": "https://www.thehindu.com/news/national/3000-crore-drugs-seized-from-iranian-boat-in-arabian-sea-5-pakistan-nationals-detained/article71526673.ece"
         },
         {
           "outlet": "Hindustan Times",
-          "title": "CISF jawan kills four colleagues with AK-47 in suspected fratricide in J&K's Kathua, arrested",
-          "url": "https://www.hindustantimes.com/india-news/cisf-jawan-kills-four-colleagues-in-alleged-fratricide-case-in-j-ks-kathua-accused-arrested-101790693787934.html"
+          "title": "Iranian boat, Pakistani crew held with drugs worth  ₹3,000 crore as coast guard busts smuggling bid",
+          "url": "https://www.hindustantimes.com/india-news/iranian-boat-pakistani-crew-held-with-drugs-worth-rs-3-000-crore-as-coast-guard-busts-smuggling-bid-arabian-sea-101790735009134.html"
         }
       ],
       "articles_dropped_by_diversity_cap": 0
     },
     {
-      "headline_hint": "CAQM tightens GRAP air pollution rules for older vehicles across Delhi-NCR",
-      "section": "india",
-      "category": "climate",
-      "tier_requested": "major",
-      "article_ids": [
-        166,
-        189,
-        221,
-        261
-      ],
-      "verdict": "cut:below_floor(4<5)",
-      "valid_ids": [
-        166,
-        189,
-        221,
-        261
-      ],
-      "tier_final": "major",
-      "distinct_outlets": 2,
-      "wiki_backed": false,
-      "wiki_event": "",
-      "weight": 4,
-      "weight_terms": {
-        "distinct_outlets": 2,
-        "tier_weight": 2,
-        "wiki_bonus": 0
-      },
-      "weight_floor": 5,
-      "articles": [
-        {
-          "outlet": "Hindustan Times",
-          "title": "BS-IV and below vehicles no more exempt from Delhi-NCR pollution curbs Grap III & IV",
-          "url": "https://www.hindustantimes.com/india-news/bsiv-older-vehicles-no-more-exempt-from-delhi-ncr-pollution-curbs-grap-iii-iv-caqm-removes-exemptions-101790704676240.html"
-        },
-        {
-          "outlet": "Livemint",
-          "title": "CAQM modifies GRAP rules: Here’s what you need to know about new Delhi-NCR restrictions",
-          "url": "https://www.livemint.com/news/india/caqm-modifies-grap-rules-here-s-what-you-need-to-know-about-new-delhi-ncr-restrictions-11790700338936.html"
-        },
-        {
-          "outlet": "Livemint",
-          "title": "Delhi to restrict older vehicles registered outside city from Nov 1 | Should you worry?",
-          "url": "https://www.livemint.com/news/india/delhi-to-restrict-older-vehicles-registered-outside-city-from-nov-1-should-you-worry-11790686146026.html"
-        },
-        {
-          "outlet": "Hindustan Times",
-          "title": "Older goods vehicles lose GRAP exemptions in Delhi-NCR as CAQM revises air curbs",
-          "url": "https://www.hindustantimes.com/india-news/caqm-removes-exemptions-for-older-goods-vehicles-under-strict-grap-stages-101790685147276.html"
-        }
-      ],
-      "articles_dropped_by_diversity_cap": 0
-    },
-    {
-      "headline_hint": "NIA arrests 13 in multi-state raids over JMB terror conspiracy",
-      "section": "india",
-      "category": "conflict",
-      "tier_requested": "major",
-      "article_ids": [
-        187,
-        215,
-        237
-      ],
-      "verdict": "cut:below_floor(4<5)",
-      "valid_ids": [
-        187,
-        215,
-        237
-      ],
-      "tier_final": "major",
-      "distinct_outlets": 2,
-      "wiki_backed": false,
-      "wiki_event": "",
-      "weight": 4,
-      "weight_terms": {
-        "distinct_outlets": 2,
-        "tier_weight": 2,
-        "wiki_bonus": 0
-      },
-      "weight_floor": 5,
-      "articles": [
-        {
-          "outlet": "Times of India",
-          "title": "NIA arrests 13 in JMB-linked terror conspiracy case after searches across 3 states",
-          "url": "https://timesofindia.indiatimes.com/india/nia-arrests-13-in-jmb-linked-terror-conspiracy-case-after-searches-across-3-states/articleshow/134570982.cms"
-        },
-        {
-          "outlet": "Hindustan Times",
-          "title": "NIA arrests 13 in Assam, Bengal, Keralam over links with IMK terror outfit",
-          "url": "https://www.hindustantimes.com/india-news/nia-arrests-13-in-assam-bengal-keralam-over-links-with-imk-terror-outfit-101790693669898.html"
-        },
-        {
-          "outlet": "Hindustan Times",
-          "title": "NIA arrests 6 in Assam’s Barpeta, searches 16 sites in Imam Mahmuder Kafila terror probe",
-          "url": "https://www.hindustantimes.com/india-news/nia-arrests-6-in-assam-searches-16-sites-in-imam-mahmuder-kafila-terror-probe-101790690490942.html"
-        }
-      ],
-      "articles_dropped_by_diversity_cap": 0
-    },
-    {
-      "headline_hint": "J&K Assembly passes statehood resolution despite opposition walkout by BJP",
+      "headline_hint": "Three Gujarat residents missing and allegedly kidnapped in Ethiopia en route to US",
       "section": "india",
       "category": "politics",
       "tier_requested": "notable",
       "article_ids": [
-        92,
-        343
-      ],
-      "verdict": "cut:below_floor(2<5)",
-      "valid_ids": [
-        92,
-        343
-      ],
-      "tier_final": "notable",
-      "distinct_outlets": 2,
-      "wiki_backed": false,
-      "wiki_event": "",
-      "weight": 2,
-      "weight_terms": {
-        "distinct_outlets": 2,
-        "tier_weight": 0,
-        "wiki_bonus": 0
-      },
-      "weight_floor": 5,
-      "articles": [
-        {
-          "outlet": "Times of India",
-          "title": "'Will strain Centre-J&amp;K ties': BJP asks chief secy to ‘throw away’ statehood resolution",
-          "url": "https://timesofindia.indiatimes.com/india/bjp-asks-chief-secy-to-throw-away-statehood-resolution-says-it-will-strain-centre-jk-ties/articleshow/134573733.cms"
-        },
-        {
-          "outlet": "Scroll.in",
-          "title": "J&K passes Omar Abdullah’s statehood resolution amid walkout by BJP",
-          "url": "https://scroll.in/latest/1096075/j-k-passes-omar-abdullahs-statehood-resolution-amid-walkout-by-bjp?utm_source=rss&utm_medium=public"
-        }
-      ],
-      "articles_dropped_by_diversity_cap": 0
-    },
-    {
-      "headline_hint": "Supreme Court quashes NSA detention of Sambhal violence suspect, penalises UP government",
-      "section": "india",
-      "category": "politics",
-      "tier_requested": "notable",
-      "article_ids": [
-        42,
-        314
-      ],
-      "verdict": "cut:below_floor(2<5)",
-      "valid_ids": [
-        42,
-        314
-      ],
-      "tier_final": "notable",
-      "distinct_outlets": 2,
-      "wiki_backed": false,
-      "wiki_event": "",
-      "weight": 2,
-      "weight_terms": {
-        "distinct_outlets": 2,
-        "tier_weight": 0,
-        "wiki_bonus": 0
-      },
-      "weight_floor": 5,
-      "articles": [
-        {
-          "outlet": "Times of India",
-          "title": "Supreme Court imposes 10 lakh cost on UP government for illegal NSA detention",
-          "url": "https://timesofindia.indiatimes.com/india/supreme-court-imposes-10-lakh-cost-on-up-government-for-illegal-nsa-detention/articleshow/134576449.cms"
-        },
-        {
-          "outlet": "Scroll.in",
-          "title": "Sambhal violence: SC quashes NSA detention of  alleged organiser, imposes Rs 10 lakh cost on UP",
-          "url": "https://scroll.in/latest/1096088/sambhal-violence-sc-quashes-nsa-detention-of-alleged-organiser-imposes-rs-10-lakh-cost?utm_source=rss&utm_medium=public"
-        }
-      ],
-      "articles_dropped_by_diversity_cap": 0
-    },
-    {
-      "headline_hint": "Lashkar-e-Taiba commander killed in encounter with security forces in Budgam, J&K",
-      "section": "india",
-      "category": "conflict",
-      "tier_requested": "notable",
-      "article_ids": [
-        107,
-        121,
-        137
+        6,
+        7,
+        124
       ],
       "verdict": "cut:below_floor(3<5)",
       "valid_ids": [
-        107,
-        121,
-        137
+        6,
+        7,
+        124
       ],
       "tier_final": "notable",
       "distinct_outlets": 3,
@@ -907,57 +711,64 @@
       "articles": [
         {
           "outlet": "The Hindu",
-          "title": "Terrorist killed in ongoing operation in Kashmir’s Budgam",
-          "url": "https://www.thehindu.com/news/national/jammu-and-kashmir/terrorist-killed-in-ongoing-operation-in-kashmirs-budgam/article71525620.ece"
+          "title": "3 U.S.-bound Gujarat residents missing in Ethiopia; kin allege abduction, ₹1 crore ransom demand",
+          "url": "https://www.thehindu.com/news/national/gujarat/3-us-bound-gujarat-residents-missing-in-ethiopia-kin-allege-abduction-1-crore-ransom-demand/article71526848.ece"
         },
         {
           "outlet": "Times of India",
-          "title": "Budgam encounter: Army kills LeT terrorist after fierce gunfight in Yousmarg",
-          "url": "https://timesofindia.indiatimes.com/india/budgam-encounter-army-kills-let-terrorist-in-fierce-gunfight-in-yousmarg/articleshow/134573357.cms"
+          "title": "‘Rs 1 crore ransom’: 3 Gujarat residents heading to US kidnapped in Ethiopia",
+          "url": "https://timesofindia.indiatimes.com/india/rs-1-crore-ransom-3-gujarat-residents-heading-to-us-kidnapped-in-ethiopia/articleshow/134582601.cms"
         },
         {
-          "outlet": "NDTV",
-          "title": "Lashkar Terrorist Gunned Down During Encounter With Security Forces In J&K",
-          "url": "https://www.ndtv.com/india-news/terrorist-killed-during-encounter-with-security-forces-in-jammu-and-kashmirs-budgam-12116877#publisher=newsstand"
+          "outlet": "Hindustan Times",
+          "title": "3 Indian relatives taking illegal route to US go missing, family claims abduction in Ethiopia",
+          "url": "https://www.hindustantimes.com/india-news/3-gujarat-residents-on-illegal-route-to-us-go-missing-family-claims-abduction-in-ethiopia-ransom-demand-rs-1-crore-101790734132295.html"
         }
       ],
       "articles_dropped_by_diversity_cap": 0
     },
     {
-      "headline_hint": "India rejects Turkish President Erdogan's Kashmir comments at UNGA",
+      "headline_hint": "CISF jawan kills four colleagues in Kathua power project shooting",
       "section": "india",
-      "category": "politics",
+      "category": "conflict",
       "tier_requested": "notable",
       "article_ids": [
-        239,
-        243
+        137,
+        251,
+        253
       ],
-      "verdict": "cut:below_floor(2<5)",
+      "verdict": "cut:below_floor(3<5)",
       "valid_ids": [
-        239,
-        243
+        137,
+        251,
+        253
       ],
       "tier_final": "notable",
-      "distinct_outlets": 2,
+      "distinct_outlets": 3,
       "wiki_backed": false,
       "wiki_event": "",
-      "weight": 2,
+      "weight": 3,
       "weight_terms": {
-        "distinct_outlets": 2,
+        "distinct_outlets": 3,
         "tier_weight": 0,
         "wiki_bonus": 0
       },
       "weight_floor": 5,
       "articles": [
         {
-          "outlet": "Times of India",
-          "title": "'No locus standi': India rejects Turkey president's remarks on Kashmir at UNGA",
-          "url": "https://timesofindia.indiatimes.com/india/no-locus-standi-india-rejects-turkey-president-erdogans-remarks-on-kashmir-at-unga/articleshow/134568765.cms"
+          "outlet": "Scroll.in",
+          "title": "J&K: Four CISF personnel shot dead by colleague in Kathua",
+          "url": "https://scroll.in/latest/1096109/j-k-four-cisf-personnel-shot-dead-by-colleague-in-kathua?utm_source=rss&utm_medium=public"
         },
         {
-          "outlet": "Hindustan Times",
-          "title": "‘Unwarranted, no locus standi’: India rejects Turkish President Erdogan's Kashmir remarks at UNGA",
-          "url": "https://www.hindustantimes.com/india-news/india-rejects-turkish-president-erdogans-kashmir-remarks-at-unga-unwarranted-no-locus-standi-101790689693460.html"
+          "outlet": "Times of India",
+          "title": "CISF jawan kills 4 colleagues at Kathua hydel plant",
+          "url": "https://timesofindia.indiatimes.com/india/cisf-jawan-kills-4-colleagues-at-kathua-hydel-plant/articleshow/134572873.cms"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Kathua shooting: CISF Head Constable kills 4 colleagues in Jammu and Kashmir",
+          "url": "https://www.livemint.com/news/india/kathua-shooting-cisf-head-constable-kills-4-colleagues-in-jammu-and-kashmir-11790703879092.html"
         }
       ],
       "articles_dropped_by_diversity_cap": 0

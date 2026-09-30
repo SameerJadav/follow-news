@@ -1,12 +1,17 @@
 {
   "max_events": 60,
-  "parsed": 14,
-  "used": 14,
+  "parsed": 19,
+  "used": 19,
   "events": [
     {
       "category": "Armed conflicts and attacks",
-      "topic": "Somali Civil War",
-      "text": "The Puntland Maritime Police Force successfully frees another hijacked oil tanker, the MT Honour ​25, following an ongoing week-long counter-piracy operation near Bayla, Karkaar, Puntland, after it was seized by Somali pirates on 21 April ​"
+      "topic": "Iraqi conflict",
+      "text": "American troops complete their withdrawal from Iraq after a 23-year presence in the country that started with the 2003 U.S. invasion."
+    },
+    {
+      "category": "Armed conflicts and attacks",
+      "topic": "Gaza war",
+      "text": "More than 100 Israeli settlers attack the Palestinian village of Jalud in the occupied West Bank, burning two homes and injuring three Israeli security personnel while preventing a displaced Palestinian family from returning home."
     },
     {
       "category": "Armed conflicts and attacks",
@@ -14,9 +19,19 @@
       "text": "An Israeli airstrike kills Izz al-Din al-Beik, head of Hamas's armed wing in the northern Gaza Strip."
     },
     {
+      "category": "Armed conflicts and attacks",
+      "topic": "Somali Civil War",
+      "text": "The Puntland Maritime Police Force successfully frees another hijacked oil tanker, the MT Honour ​25, following an ongoing week-long counter-piracy operation near Bayla, Karkaar, Puntland, after it was seized by Somali pirates on 21 April ​"
+    },
+    {
       "category": "Business and economy",
       "topic": "Economic impact of the 2026 Iran war",
       "text": "The Reserve Bank of Australia raises its cash rate by 0.25 percentage points to 4.60 percent, the highest level since 2011, citing persistently high inflation above its 2–3 percent target range."
+    },
+    {
+      "category": "Business and economy",
+      "topic": "Julius Baer Group controversies",
+      "text": "The Swiss Financial Market Supervisory Authority (FINMA) concludes its investigation into the Julius Baer Group, finding serious risk-management and anti–money laundering failures. FINMA orders additional capital requirements, compliance re"
     },
     {
       "category": "Disasters and accidents",
@@ -64,6 +79,11 @@
       "text": "Seventeen people are arrested during a security operation involving 800 police officers against a \"suspected organised crime group\" in five cities in the United Kingdom, including London. A police officer is stabbed and wounded during one o"
     },
     {
+      "category": "Law and crime",
+      "topic": "",
+      "text": "The Six Flags Magic Mountain amusement park in Valencia, California, U.S., announces that the X2 roller coaster will close permanently after several lawsuits alleged that over 100 riders sustained brain injuries while riding the attraction."
+    },
+    {
       "category": "Politics and elections",
       "topic": "2026 Moroccan general election",
       "text": "King Mohammed VI appoints Fatima Ezzahra El Mansouri as the first female prime minister of Morocco after her victory in the general elections on 23 September."
@@ -72,7 +92,12 @@
       "category": "Sports",
       "topic": "2026 Asian Games",
       "text": "In badminton, South Korea's An Se-young wins the women's singles gold medal at the 2026 Asian Games, becoming the first woman to win two singles titles and the first to defend the title, defeating Japan's Akane Yamaguchi 21–17, 21–9."
+    },
+    {
+      "category": "Sports",
+      "topic": "",
+      "text": "In association football, an independent Premier League commission finds Manchester City guilty of almost all 115-plus financial charges, including inflating revenue by more than £900 million (US$1.19 billion) and failing to cooperate with t"
     }
   ],
-  "prompt_block": "WIKIPEDIA CURRENT EVENTS (curated checklist — see rules above)\n- [Armed conflicts and attacks] Somali Civil War — The Puntland Maritime Police Force successfully frees another hijacked oil tanker, the MT Honour ​25, following an ongoing week-long counter-piracy operation near Bayla, Karkaar, Puntland, after it was seized by Somali pirates on 21 April ​\n- [Armed conflicts and attacks] Gaza war — An Israeli airstrike kills Izz al-Din al-Beik, head of Hamas's armed wing in the northern Gaza Strip.\n- [Business and economy] Economic impact of the 2026 Iran war — The Reserve Bank of Australia raises its cash rate by 0.25 percentage points to 4.60 percent, the highest level since 2011, citing persistently high inflation above its 2–3 percent target range.\n- [Disasters and accidents] A Tupolev Tu-95 crashes near Krasnoyarovo, Amur Oblast, Russia, killing six of the seven people on board.\n- [Health and environment] The Japan Meteorological Agency reports rainfall in Tokyo for 34 consecutive days through today, the longest streak since records began in 1886 and one day longer than the previous record set in 2019.\n- [Health and environment] The U.S. Food and Drug Administration issues two recalls for more than 25,000 bottles of chlorthalidone, a diuretic antihypertensive drug, created by Indian-based Inventia Healthcare Limited, due to faulty dissolution times in the human bod\n- [International relations] North Korea–South Korea relations — South Korean defense minister Kang Shin-chul says that land mines planted by North Korea likely caused two explosions last week that injured three South Korean soldiers in the Demilitarized Zone south of the military demarcation line, poten\n- [International relations] Haitian crisis — The United Nations Security Council extends the mandate of the Gang Suppression Force in Haiti by six months, allowing the multinational force to continue supporting Haitian security forces against armed gangs.\n- [International relations] Malaysia–Myanmar relations, Myanmar civil war — Malaysia begins repatriating about 1,500 Burmese nationals from immigration detention centres under the first phase of a programme covering 5,000 people.\n- [Law and crime] Myanmar civil war — Twenty-one people are arrested in Myanmar for allegedly donating to the NUG-linked People's Revolution Supply Family fundraising platform as the government identifies more than 2,700 alleged contributors.\n- [Law and crime] 2026 Staškov school stabbing — A teacher is killed and a student and another teacher are wounded in a mass stabbing at a secondary school in Staškov, Slovakia. The perpetrator, a fellow student, is arrested.\n- [Law and crime] Seventeen people are arrested during a security operation involving 800 police officers against a \"suspected organised crime group\" in five cities in the United Kingdom, including London. A police officer is stabbed and wounded during one o\n- [Politics and elections] 2026 Moroccan general election — King Mohammed VI appoints Fatima Ezzahra El Mansouri as the first female prime minister of Morocco after her victory in the general elections on 23 September.\n- [Sports] 2026 Asian Games — In badminton, South Korea's An Se-young wins the women's singles gold medal at the 2026 Asian Games, becoming the first woman to win two singles titles and the first to defend the title, defeating Japan's Akane Yamaguchi 21–17, 21–9."
+  "prompt_block": "WIKIPEDIA CURRENT EVENTS (curated checklist — see rules above)\n- [Armed conflicts and attacks] Iraqi conflict — American troops complete their withdrawal from Iraq after a 23-year presence in the country that started with the 2003 U.S. invasion.\n- [Armed conflicts and attacks] Gaza war — More than 100 Israeli settlers attack the Palestinian village of Jalud in the occupied West Bank, burning two homes and injuring three Israeli security personnel while preventing a displaced Palestinian family from returning home.\n- [Armed conflicts and attacks] Gaza war — An Israeli airstrike kills Izz al-Din al-Beik, head of Hamas's armed wing in the northern Gaza Strip.\n- [Armed conflicts and attacks] Somali Civil War — The Puntland Maritime Police Force successfully frees another hijacked oil tanker, the MT Honour ​25, following an ongoing week-long counter-piracy operation near Bayla, Karkaar, Puntland, after it was seized by Somali pirates on 21 April ​\n- [Business and economy] Economic impact of the 2026 Iran war — The Reserve Bank of Australia raises its cash rate by 0.25 percentage points to 4.60 percent, the highest level since 2011, citing persistently high inflation above its 2–3 percent target range.\n- [Business and economy] Julius Baer Group controversies — The Swiss Financial Market Supervisory Authority (FINMA) concludes its investigation into the Julius Baer Group, finding serious risk-management and anti–money laundering failures. FINMA orders additional capital requirements, compliance re\n- [Disasters and accidents] A Tupolev Tu-95 crashes near Krasnoyarovo, Amur Oblast, Russia, killing six of the seven people on board.\n- [Health and environment] The Japan Meteorological Agency reports rainfall in Tokyo for 34 consecutive days through today, the longest streak since records began in 1886 and one day longer than the previous record set in 2019.\n- [Health and environment] The U.S. Food and Drug Administration issues two recalls for more than 25,000 bottles of chlorthalidone, a diuretic antihypertensive drug, created by Indian-based Inventia Healthcare Limited, due to faulty dissolution times in the human bod\n- [International relations] North Korea–South Korea relations — South Korean defense minister Kang Shin-chul says that land mines planted by North Korea likely caused two explosions last week that injured three South Korean soldiers in the Demilitarized Zone south of the military demarcation line, poten\n- [International relations] Haitian crisis — The United Nations Security Council extends the mandate of the Gang Suppression Force in Haiti by six months, allowing the multinational force to continue supporting Haitian security forces against armed gangs.\n- [International relations] Malaysia–Myanmar relations, Myanmar civil war — Malaysia begins repatriating about 1,500 Burmese nationals from immigration detention centres under the first phase of a programme covering 5,000 people.\n- [Law and crime] Myanmar civil war — Twenty-one people are arrested in Myanmar for allegedly donating to the NUG-linked People's Revolution Supply Family fundraising platform as the government identifies more than 2,700 alleged contributors.\n- [Law and crime] 2026 Staškov school stabbing — A teacher is killed and a student and another teacher are wounded in a mass stabbing at a secondary school in Staškov, Slovakia. The perpetrator, a fellow student, is arrested.\n- [Law and crime] Seventeen people are arrested during a security operation involving 800 police officers against a \"suspected organised crime group\" in five cities in the United Kingdom, including London. A police officer is stabbed and wounded during one o\n- [Law and crime] The Six Flags Magic Mountain amusement park in Valencia, California, U.S., announces that the X2 roller coaster will close permanently after several lawsuits alleged that over 100 riders sustained brain injuries while riding the attraction.\n- [Politics and elections] 2026 Moroccan general election — King Mohammed VI appoints Fatima Ezzahra El Mansouri as the first female prime minister of Morocco after her victory in the general elections on 23 September.\n- [Sports] 2026 Asian Games — In badminton, South Korea's An Se-young wins the women's singles gold medal at the 2026 Asian Games, becoming the first woman to win two singles titles and the first to defend the title, defeating Japan's Akane Yamaguchi 21–17, 21–9.\n- [Sports] In association football, an independent Premier League commission finds Manchester City guilty of almost all 115-plus financial charges, including inflating revenue by more than £900 million (US$1.19 billion) and failing to cooperate with t"
 }
