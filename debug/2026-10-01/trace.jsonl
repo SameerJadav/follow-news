@@ -1,0 +1,48 @@
+{"run": "digest", "t": 0, "kind": "digest", "stage": "tracer", "msg": "capture started", "level": 1, "day": "2026-10-01"}
+{"run": "digest", "t": 1805, "kind": "dbg", "msg": "digest: window since=2026-09-29T00:01:08.782899+00:00 (prev_generated_at=2026-09-26 23:02:28+00:00)"}
+{"run": "digest", "t": 1934, "kind": "dbg", "msg": "feed 'BBC World': http=200 raw_items=31 usable=31"}
+{"run": "digest", "t": 1934, "kind": "event", "stage": "feeds", "outlet": "BBC World", "url": "https://feeds.bbci.co.uk/news/world/rss.xml", "http": 200, "elapsed_ms": 117, "bytes": 23875, "raw_items": 31, "usable": 31, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 2208, "kind": "dbg", "msg": "feed 'Al Jazeera': http=200 raw_items=25 usable=25"}
+{"run": "digest", "t": 2208, "kind": "event", "stage": "feeds", "outlet": "Al Jazeera", "url": "https://www.aljazeera.com/xml/rss/all.xml", "http": 200, "elapsed_ms": 263, "bytes": 17101, "raw_items": 25, "usable": 25, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 2396, "kind": "dbg", "msg": "feed 'Guardian World': http=200 raw_items=45 usable=45"}
+{"run": "digest", "t": 2396, "kind": "event", "stage": "feeds", "outlet": "Guardian World", "url": "https://www.theguardian.com/world/rss", "http": 200, "elapsed_ms": 134, "bytes": 152033, "raw_items": 45, "usable": 45, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 2579, "kind": "dbg", "msg": "feed 'NPR World': http=200 raw_items=10 usable=10"}
+{"run": "digest", "t": 2579, "kind": "event", "stage": "feeds", "outlet": "NPR World", "url": "https://feeds.npr.org/1004/rss.xml", "http": 200, "elapsed_ms": 175, "bytes": 14464, "raw_items": 10, "usable": 10, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 3145, "kind": "dbg", "msg": "feed 'DW World': http=200 raw_items=13 usable=13"}
+{"run": "digest", "t": 3145, "kind": "event", "stage": "feeds", "outlet": "DW World", "url": "https://rss.dw.com/rdf/rss-en-world", "http": 200, "elapsed_ms": 560, "bytes": 13794, "raw_items": 13, "usable": 13, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 3346, "kind": "dbg", "msg": "feed 'France 24': http=200 raw_items=24 usable=24"}
+{"run": "digest", "t": 3347, "kind": "event", "stage": "feeds", "outlet": "France 24", "url": "https://www.france24.com/en/rss", "http": 200, "elapsed_ms": 190, "bytes": 29687, "raw_items": 24, "usable": 24, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 3503, "kind": "dbg", "msg": "feed 'Channel News Asia': http=200 raw_items=20 usable=20"}
+{"run": "digest", "t": 3503, "kind": "event", "stage": "feeds", "outlet": "Channel News Asia", "url": "https://www.channelnewsasia.com/api/v1/rss-outbound-feed?_format=xml", "http": 200, "elapsed_ms": 145, "bytes": 18747, "raw_items": 20, "usable": 20, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 3615, "kind": "dbg", "msg": "feed 'The Hindu': http=200 raw_items=60 usable=60"}
+{"run": "digest", "t": 3615, "kind": "event", "stage": "feeds", "outlet": "The Hindu", "url": "https://www.thehindu.com/news/national/feeder/default.rss", "http": 200, "elapsed_ms": 93, "bytes": 44087, "raw_items": 60, "usable": 60, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 3980, "kind": "dbg", "msg": "feed 'NDTV': http=200 raw_items=20 usable=20"}
+{"run": "digest", "t": 3981, "kind": "event", "stage": "feeds", "outlet": "NDTV", "url": "https://feeds.feedburner.com/ndtvnews-india-news", "http": 200, "elapsed_ms": 356, "bytes": 28954, "raw_items": 20, "usable": 20, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 4183, "kind": "dbg", "msg": "feed 'Hindustan Times': http=200 raw_items=100 usable=100"}
+{"run": "digest", "t": 4183, "kind": "event", "stage": "feeds", "outlet": "Hindustan Times", "url": "https://www.hindustantimes.com/feeds/rss/india-news/rssfeed.xml", "http": 200, "elapsed_ms": 171, "bytes": 97117, "raw_items": 100, "usable": 100, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 4329, "kind": "dbg", "msg": "feed 'Times of India': http=200 raw_items=47 usable=47"}
+{"run": "digest", "t": 4329, "kind": "event", "stage": "feeds", "outlet": "Times of India", "url": "https://timesofindia.indiatimes.com/rssfeedstopstories.cms", "http": 200, "elapsed_ms": 128, "bytes": 45181, "raw_items": 47, "usable": 47, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 5095, "kind": "dbg", "msg": "feed 'Livemint': http=200 raw_items=35 usable=35"}
+{"run": "digest", "t": 5095, "kind": "event", "stage": "feeds", "outlet": "Livemint", "url": "https://www.livemint.com/rss/news", "http": 200, "elapsed_ms": 754, "bytes": 37433, "raw_items": 35, "usable": 35, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 5446, "kind": "dbg", "msg": "feed 'Scroll.in': http=200 raw_items=100 usable=100"}
+{"run": "digest", "t": 5446, "kind": "event", "stage": "feeds", "outlet": "Scroll.in", "url": "https://feeds.feedburner.com/ScrollinArticles.rss", "http": 200, "elapsed_ms": 227, "bytes": 309494, "raw_items": 100, "usable": 100, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 5453, "kind": "dbg", "msg": "gather: 465 article(s) after window+dedupe; by outlet: {'Guardian World': 35, 'BBC World': 31, 'Channel News Asia': 20, 'France 24': 23, 'Al Jazeera': 25, 'Times of India': 47, 'DW World': 13, 'NPR World': 10, 'Livemint': 35, 'The Hindu': 60, 'NDTV': 20, 'Hindustan Times': 100, 'Scroll.in': 46}"}
+{"run": "digest", "t": 5453, "kind": "dbg", "msg": "gather: 13/13 feed(s) live, 465 article(s)"}
+{"run": "digest", "t": 5454, "kind": "event", "stage": "stage", "name": "gather", "ms": 3648, "ok": true, "error": ""}
+{"run": "digest", "t": 5454, "kind": "dbg", "msg": "gather: QUORUM OK — live=13/3 min, articles=465/20 min"}
+{"run": "digest", "t": 5454, "kind": "dbg", "msg": "rank: select pool 465 -> 372; capped outlets: {'The Hindu': 20, 'Times of India': 7, 'Hindustan Times': 60, 'Scroll.in': 6}"}
+{"run": "digest", "t": 5459, "kind": "event", "stage": "stage", "name": "pool", "ms": 4, "ok": true, "error": ""}
+{"run": "digest", "t": 5638, "kind": "dbg", "msg": "wiki: 2026_October_1 http=200 events=0"}
+{"run": "digest", "t": 5638, "kind": "event", "stage": "wikipedia", "page": "2026_October_1", "http": 200, "bytes": 190, "events": 0, "verdict": "ok"}
+{"run": "digest", "t": 5830, "kind": "dbg", "msg": "wiki: 2026_September_30 http=200 events=5"}
+{"run": "digest", "t": 5830, "kind": "event", "stage": "wikipedia", "page": "2026_September_30", "http": 200, "bytes": 3246, "events": 5, "verdict": "ok"}
+{"run": "digest", "t": 5831, "kind": "event", "stage": "stage", "name": "wikipedia", "ms": 371, "ok": true, "error": ""}
+{"run": "digest", "t": 5931, "kind": "dbg", "msg": "llm: call #1 model=gemini-3.6-flash label=select prompt=91445ch"}
+{"run": "digest", "t": 7340, "kind": "dbg", "msg": "ratelimit: select transient failure (1/3), retrying in 7s: ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"}
+{"run": "digest", "t": 7340, "kind": "event", "stage": "ratelimit", "label": "select", "verdict": "transient_retry", "attempt": 1, "attempts_allowed": 3, "wait_s": 6.8, "error": "ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"}
+{"run": "digest", "t": 14776, "kind": "dbg", "msg": "ratelimit: select transient failure (2/3), retrying in 11s: ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"}
+{"run": "digest", "t": 14776, "kind": "event", "stage": "ratelimit", "label": "select", "verdict": "transient_retry", "attempt": 2, "attempts_allowed": 3, "wait_s": 11.2, "error": "ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"}
+{"run": "digest", "t": 26663, "kind": "dbg", "msg": "ratelimit: select TRANSIENT FAILURE after 3 attempt(s), giving up: ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"}
+{"run": "digest", "t": 26663, "kind": "event", "stage": "ratelimit", "label": "select", "verdict": "transient_exhausted", "attempt": 3, "attempts_allowed": 3, "error": "ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"}
+{"run": "digest", "t": 26664, "kind": "event", "stage": "stage", "name": "select", "ms": 20832, "ok": false, "error": "ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"}
+{"run": "digest", "t": 26664, "kind": "event", "stage": "tracer", "msg": "capture finished", "ok": false, "ms": 26664, "bytes": 1072463}
