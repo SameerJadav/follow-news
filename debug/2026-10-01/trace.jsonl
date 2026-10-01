@@ -94,3 +94,138 @@
 {"run": "digest", "t": 29090, "kind": "event", "stage": "ratelimit", "label": "select", "verdict": "transient_exhausted", "attempt": 3, "attempts_allowed": 3, "error": "ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"}
 {"run": "digest", "t": 29090, "kind": "event", "stage": "stage", "name": "select", "ms": 24842, "ok": false, "error": "ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"}
 {"run": "digest", "t": 29090, "kind": "event", "stage": "tracer", "msg": "capture finished", "ok": false, "ms": 29090, "bytes": 1072942}
+{"run": "digest", "t": 0, "kind": "digest", "stage": "tracer", "msg": "capture started", "level": 1, "day": "2026-10-01"}
+{"run": "digest", "t": 1274, "kind": "dbg", "msg": "digest: window since=2026-09-29T06:13:48.873790+00:00 (prev_generated_at=2026-09-26 23:02:28+00:00)"}
+{"run": "digest", "t": 1495, "kind": "dbg", "msg": "feed 'BBC World': http=200 raw_items=32 usable=32"}
+{"run": "digest", "t": 1495, "kind": "event", "stage": "feeds", "outlet": "BBC World", "url": "https://feeds.bbci.co.uk/news/world/rss.xml", "http": 200, "elapsed_ms": 212, "bytes": 24617, "raw_items": 32, "usable": 32, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 1658, "kind": "dbg", "msg": "feed 'Al Jazeera': http=200 raw_items=25 usable=25"}
+{"run": "digest", "t": 1658, "kind": "event", "stage": "feeds", "outlet": "Al Jazeera", "url": "https://www.aljazeera.com/xml/rss/all.xml", "http": 200, "elapsed_ms": 155, "bytes": 17130, "raw_items": 25, "usable": 25, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 1973, "kind": "dbg", "msg": "feed 'Guardian World': http=200 raw_items=45 usable=45"}
+{"run": "digest", "t": 1973, "kind": "event", "stage": "feeds", "outlet": "Guardian World", "url": "https://www.theguardian.com/world/rss", "http": 200, "elapsed_ms": 282, "bytes": 148129, "raw_items": 45, "usable": 45, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 2271, "kind": "dbg", "msg": "feed 'NPR World': http=200 raw_items=10 usable=10"}
+{"run": "digest", "t": 2271, "kind": "event", "stage": "feeds", "outlet": "NPR World", "url": "https://feeds.npr.org/1004/rss.xml", "http": 200, "elapsed_ms": 292, "bytes": 14464, "raw_items": 10, "usable": 10, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 2775, "kind": "dbg", "msg": "feed 'DW World': http=200 raw_items=13 usable=13"}
+{"run": "digest", "t": 2775, "kind": "event", "stage": "feeds", "outlet": "DW World", "url": "https://rss.dw.com/rdf/rss-en-world", "http": 200, "elapsed_ms": 499, "bytes": 13794, "raw_items": 13, "usable": 13, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 2998, "kind": "dbg", "msg": "feed 'France 24': http=200 raw_items=24 usable=24"}
+{"run": "digest", "t": 2998, "kind": "event", "stage": "feeds", "outlet": "France 24", "url": "https://www.france24.com/en/rss", "http": 200, "elapsed_ms": 214, "bytes": 29636, "raw_items": 24, "usable": 24, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 3248, "kind": "dbg", "msg": "feed 'Channel News Asia': http=200 raw_items=20 usable=20"}
+{"run": "digest", "t": 3248, "kind": "event", "stage": "feeds", "outlet": "Channel News Asia", "url": "https://www.channelnewsasia.com/api/v1/rss-outbound-feed?_format=xml", "http": 200, "elapsed_ms": 242, "bytes": 18367, "raw_items": 20, "usable": 20, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 3376, "kind": "dbg", "msg": "feed 'The Hindu': http=200 raw_items=60 usable=60"}
+{"run": "digest", "t": 3376, "kind": "event", "stage": "feeds", "outlet": "The Hindu", "url": "https://www.thehindu.com/news/national/feeder/default.rss", "http": 200, "elapsed_ms": 115, "bytes": 47170, "raw_items": 60, "usable": 60, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 3682, "kind": "dbg", "msg": "feed 'NDTV': http=200 raw_items=20 usable=20"}
+{"run": "digest", "t": 3682, "kind": "event", "stage": "feeds", "outlet": "NDTV", "url": "https://feeds.feedburner.com/ndtvnews-india-news", "http": 200, "elapsed_ms": 299, "bytes": 29167, "raw_items": 20, "usable": 20, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 3795, "kind": "dbg", "msg": "feed 'Hindustan Times': http=200 raw_items=100 usable=100"}
+{"run": "digest", "t": 3795, "kind": "event", "stage": "feeds", "outlet": "Hindustan Times", "url": "https://www.hindustantimes.com/feeds/rss/india-news/rssfeed.xml", "http": 200, "elapsed_ms": 92, "bytes": 98037, "raw_items": 100, "usable": 100, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 3935, "kind": "dbg", "msg": "feed 'Times of India': http=200 raw_items=44 usable=44"}
+{"run": "digest", "t": 3935, "kind": "event", "stage": "feeds", "outlet": "Times of India", "url": "https://timesofindia.indiatimes.com/rssfeedstopstories.cms", "http": 200, "elapsed_ms": 129, "bytes": 44973, "raw_items": 44, "usable": 44, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 4111, "kind": "dbg", "msg": "feed 'Livemint': http=200 raw_items=35 usable=35"}
+{"run": "digest", "t": 4111, "kind": "event", "stage": "feeds", "outlet": "Livemint", "url": "https://www.livemint.com/rss/news", "http": 200, "elapsed_ms": 167, "bytes": 36980, "raw_items": 35, "usable": 35, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 4373, "kind": "dbg", "msg": "feed 'Scroll.in': http=200 raw_items=100 usable=100"}
+{"run": "digest", "t": 4373, "kind": "event", "stage": "feeds", "outlet": "Scroll.in", "url": "https://feeds.feedburner.com/ScrollinArticles.rss", "http": 200, "elapsed_ms": 186, "bytes": 309873, "raw_items": 100, "usable": 100, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 4378, "kind": "dbg", "msg": "gather: 465 article(s) after window+dedupe; by outlet: {'Guardian World': 35, 'Channel News Asia': 20, 'France 24': 23, 'Scroll.in': 48, 'NDTV': 20, 'The Hindu': 60, 'Hindustan Times': 100, 'Al Jazeera': 25, 'BBC World': 32, 'Times of India': 44, 'Livemint': 35, 'DW World': 13, 'NPR World': 10}"}
+{"run": "digest", "t": 4378, "kind": "dbg", "msg": "gather: 13/13 feed(s) live, 465 article(s)"}
+{"run": "digest", "t": 4379, "kind": "event", "stage": "stage", "name": "gather", "ms": 3104, "ok": true, "error": ""}
+{"run": "digest", "t": 4379, "kind": "dbg", "msg": "gather: QUORUM OK — live=13/3 min, articles=465/20 min"}
+{"run": "digest", "t": 4379, "kind": "dbg", "msg": "rank: select pool 465 -> 373; capped outlets: {'Hindustan Times': 60, 'The Hindu': 20, 'Times of India': 4, 'Scroll.in': 8}"}
+{"run": "digest", "t": 4383, "kind": "event", "stage": "stage", "name": "pool", "ms": 3, "ok": true, "error": ""}
+{"run": "digest", "t": 4524, "kind": "dbg", "msg": "wiki: 2026_October_1 http=200 events=0"}
+{"run": "digest", "t": 4525, "kind": "event", "stage": "wikipedia", "page": "2026_October_1", "http": 200, "bytes": 190, "events": 0, "verdict": "ok"}
+{"run": "digest", "t": 4639, "kind": "dbg", "msg": "wiki: 2026_September_30 http=200 events=6"}
+{"run": "digest", "t": 4639, "kind": "event", "stage": "wikipedia", "page": "2026_September_30", "http": 200, "bytes": 3676, "events": 6, "verdict": "ok"}
+{"run": "digest", "t": 4640, "kind": "event", "stage": "stage", "name": "wikipedia", "ms": 257, "ok": true, "error": ""}
+{"run": "digest", "t": 4714, "kind": "dbg", "msg": "llm: call #1 model=gemini-3.6-flash label=select prompt=95487ch"}
+{"run": "digest", "t": 5201, "kind": "dbg", "msg": "ratelimit: select transient failure (1/3), retrying in 7s: ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"}
+{"run": "digest", "t": 5201, "kind": "event", "stage": "ratelimit", "label": "select", "verdict": "transient_retry", "attempt": 1, "attempts_allowed": 3, "wait_s": 6.7, "error": "ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"}
+{"run": "digest", "t": 16556, "kind": "dbg", "msg": "ratelimit: select transient failure (2/3), retrying in 12s: ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"}
+{"run": "digest", "t": 16556, "kind": "event", "stage": "ratelimit", "label": "select", "verdict": "transient_retry", "attempt": 2, "attempts_allowed": 3, "wait_s": 11.7, "error": "ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"}
+{"run": "digest", "t": 49791, "kind": "dbg", "msg": "llm: select finish_reason=FinishReason.STOP"}
+{"run": "digest", "t": 49792, "kind": "event", "stage": "llm", "call": 1, "label": "select", "model": "gemini-3.6-flash", "latency_ms": 45077, "prompt_chars": 95487, "system_chars": 2517, "response_chars": 2788, "finish_reason": "FinishReason.STOP", "malformed_json": false, "json_retries": 0, "max_output_tokens": 32768, "usage": {"prompt_token_count": 22826, "candidates_token_count": 1113, "total_token_count": 27737, "thoughts_token_count": 3798}}
+{"run": "digest", "t": 49792, "kind": "dbg", "msg": "llm: select_stories -> 11 raw cluster(s)"}
+{"run": "digest", "t": 49792, "kind": "event", "stage": "stage", "name": "select", "ms": 45151, "ok": true, "error": ""}
+{"run": "digest", "t": 49792, "kind": "dbg", "msg": "rank: [world] outlets=4 tier=lead wiki=yes weight=10 'US completes military withdrawal from Iraq after 23 years'"}
+{"run": "digest", "t": 49793, "kind": "dbg", "msg": "rank: [world] outlets=4 tier=major wiki=no weight=6 \"Russia launches massive strikes on Ukraine's energy grid\""}
+{"run": "digest", "t": 49793, "kind": "dbg", "msg": "rank: [world] outlets=6 tier=major wiki=yes weight=10 'Tennessee death row inmate Christa Pike survives failed lethal injection'"}
+{"run": "digest", "t": 49793, "kind": "dbg", "msg": "rank: [world] outlets=4 tier=notable wiki=no weight=4 'Swiss glaciers suffer accelerated melting losing huge volume of ice'"}
+{"run": "digest", "t": 49793, "kind": "dbg", "msg": "rank: [world] outlets=3 tier=notable wiki=no weight=3 'French student protests escalate over school conditions leading to clashes'"}
+{"run": "digest", "t": 49793, "kind": "dbg", "msg": "rank: [world] outlets=2 tier=notable wiki=no weight=2 'US judge approves settlement clearing Paramount takeover of Warner Bros'"}
+{"run": "digest", "t": 49793, "kind": "dbg", "msg": "rank: [world] outlets=2 tier=notable wiki=no weight=2 'Heavy fighting resumes in Tigray region of Ethiopia'"}
+{"run": "digest", "t": 49793, "kind": "dbg", "msg": "rank: [india] outlets=12 tier=lead wiki=yes weight=18 'Indian pilot Captain Smit Machchhar saves Flydubai flight after mid-air cockpit attack'"}
+{"run": "digest", "t": 49794, "kind": "dbg", "msg": "rank: [india] outlets=6 tier=major wiki=no weight=8 'INDIA bloc launches nationwide protests against Election Commission over SIR voter drive'"}
+{"run": "digest", "t": 49794, "kind": "dbg", "msg": "rank: [india] outlets=3 tier=notable wiki=no weight=3 'Commercial LPG cylinder prices hiked in India'"}
+{"run": "digest", "t": 49794, "kind": "dbg", "msg": "rank: [india] outlets=2 tier=notable wiki=no weight=2 'Protests turn violent in Arunachal Pradesh against proposed Siang mega dam'"}
+{"run": "digest", "t": 49794, "kind": "dbg", "msg": "rank: 11 scored, 0 id(s) rejected, 5 kept {'world': 3, 'india': 2}; weights=[10, 10, 6, 18, 8]"}
+{"run": "digest", "t": 49794, "kind": "event", "stage": "stage", "name": "rank", "ms": 2, "ok": true, "error": ""}
+{"run": "digest", "t": 49795, "kind": "dbg", "msg": "wiki: 6 curated event(s); 3 matched a selected story, 3 not covered"}
+{"run": "digest", "t": 49795, "kind": "dbg", "msg": "wiki: NOT COVERED [Law and crime] Capital punishment in the United States — Pike is sent to a hospital following the failed administration of two rounds of the drugs used to perform the lethal injection."}
+{"run": "digest", "t": 49795, "kind": "dbg", "msg": "wiki: NOT COVERED [Law and crime] 2026 Turkish LGBTQ raids, Censorship in Turkey, Censorship of LGBTQ issues — A Turkish court orders the closure of independent news website T24 and its social media accounts after the justice ministry reported that the outlet had published 118 items during the previous year which the court classified as \"LGBTQ propa"}
+{"run": "digest", "t": 49795, "kind": "dbg", "msg": "wiki: NOT COVERED [Politics and elections] 2026 Romanian political crisis — Romania's parliament rejects prime minister-designate Siegfried Mureșan's proposed government, receiving 182 of the 233 votes required for approval, prolonging the political crisis that began after Ilie Bolojan's government fell in May."}
+{"run": "digest", "t": 50067, "kind": "dbg", "msg": "extract: 3776ch https://www.channelnewsasia.com/world/us-tennessee-christa-pike-hospital-failed-execution-6423586"}
+{"run": "digest", "t": 50187, "kind": "dbg", "msg": "extract: 5692ch https://www.bbc.co.uk/news/articles/cq8r6rjdvlx6o?at_medium=RSS&at_campaign=rss"}
+{"run": "digest", "t": 50355, "kind": "dbg", "msg": "extract: fetch_html https://www.france24.com/en/americas/20261001-execution-of-convicted-us-killer-christa-pike-fails-despite-two-lethal-injections: http=403"}
+{"run": "digest", "t": 53689, "kind": "dbg", "msg": "extract: 7449ch https://www.france24.com/en/americas/20261001-execution-of-convicted-us-killer-christa-pike-fails-despite-two-lethal-injections"}
+{"run": "digest", "t": 54003, "kind": "dbg", "msg": "extract: via_jina https://www.aljazeera.com/video/newsfeed/2026/10/1/execution-of-us-woman-christa-pike-fails-after-botched-lethal-injection?traffic_source=rss: http=403"}
+{"run": "digest", "t": 57004, "kind": "dbg", "msg": "extract: 294ch https://www.aljazeera.com/video/newsfeed/2026/10/1/execution-of-us-woman-christa-pike-fails-after-botched-lethal-injection?traffic_source=rss"}
+{"run": "digest", "t": 57124, "kind": "dbg", "msg": "extract: 4683ch https://www.theguardian.com/us-news/2026/sep/30/tennessee-execution-halted-christa-pike"}
+{"run": "digest", "t": 57355, "kind": "dbg", "msg": "extract: 6245ch https://www.livemint.com/news/world/us-completes-iraq-withdrawal-23-years-4-419-military-deaths-1-79-trillion-in-costs-key-numbers-11790824151007.html"}
+{"run": "digest", "t": 57609, "kind": "dbg", "msg": "extract: via_jina https://www.aljazeera.com/video/newsfeed/2026/10/1/iraq-celebrates-sovereignty-day-as-us-troops-complete-withdrawal?traffic_source=rss: http=403"}
+{"run": "digest", "t": 60610, "kind": "dbg", "msg": "extract: 271ch https://www.aljazeera.com/video/newsfeed/2026/10/1/iraq-celebrates-sovereignty-day-as-us-troops-complete-withdrawal?traffic_source=rss"}
+{"run": "digest", "t": 60704, "kind": "dbg", "msg": "extract: 5653ch https://www.bbc.co.uk/news/articles/c65ym1dyn92mo?at_medium=RSS&at_campaign=rss"}
+{"run": "digest", "t": 60969, "kind": "dbg", "msg": "extract: 3543ch https://www.npr.org/2026/09/30/g-s1-145604/up-first-newsletter-iraq-us-troops-scotus-deportations-trump-ai"}
+{"run": "digest", "t": 61091, "kind": "dbg", "msg": "extract: 7015ch https://www.livemint.com/news/world/trump-calls-iraq-exit-a-victory-over-isis-why-june-2027-is-now-crucial-for-baghdad-11790796345462.html"}
+{"run": "digest", "t": 61153, "kind": "dbg", "msg": "extract: fetch_html https://www.france24.com/en/europe/20261001-russia-launches-major-attack-on-ukraine-energy-grid-causing-power-cuts: http=403"}
+{"run": "digest", "t": 64394, "kind": "dbg", "msg": "extract: 6870ch https://www.france24.com/en/europe/20261001-russia-launches-major-attack-on-ukraine-energy-grid-causing-power-cuts"}
+{"run": "digest", "t": 64478, "kind": "dbg", "msg": "extract: 5842ch https://www.bbc.co.uk/news/articles/cqx2ze420kpyo?at_medium=RSS&at_campaign=rss"}
+{"run": "digest", "t": 64784, "kind": "dbg", "msg": "extract: via_jina https://www.aljazeera.com/video/newsfeed/2026/9/30/aje-onl-nf_russian-drone-crashes-on-kyiv-playground-300926?traffic_source=rss: http=403"}
+{"run": "digest", "t": 67786, "kind": "dbg", "msg": "extract: 222ch https://www.aljazeera.com/video/newsfeed/2026/9/30/aje-onl-nf_russian-drone-crashes-on-kyiv-playground-300926?traffic_source=rss"}
+{"run": "digest", "t": 68006, "kind": "dbg", "msg": "extract: 766ch https://www.npr.org/2026/09/30/nx-s1-5984948/how-ukrainians-are-coping-with-new-more-deadly-russian-attacks"}
+{"run": "digest", "t": 68101, "kind": "dbg", "msg": "extract: 4066ch https://www.bbc.co.uk/news/articles/ckjw5jx2l393o?at_medium=RSS&at_campaign=rss"}
+{"run": "digest", "t": 68165, "kind": "dbg", "msg": "extract: fetch_html https://www.france24.com/en/middle-east/20261001-live-flydubai-suspends-flights-to-and-from-israel-after-pilot-attack: http=403"}
+{"run": "digest", "t": 71436, "kind": "dbg", "msg": "extract: 14133ch https://www.france24.com/en/middle-east/20261001-live-flydubai-suspends-flights-to-and-from-israel-after-pilot-attack"}
+{"run": "digest", "t": 71570, "kind": "dbg", "msg": "extract: 2722ch https://www.thehindu.com/news/national/president-murmu-pm-modi-praise-indian-pilot-smit-machchhar-for-saving-flydubai-flight-from-crash/article71531524.ece"}
+{"run": "digest", "t": 71661, "kind": "dbg", "msg": "extract: 6337ch https://www.livemint.com/news/trends/delay-is-not-my-problem-as-long-as-hero-pilot-capt-smit-machchhars-eerie-foresight-months-before-flydubai-stabbing-11790828655944.html"}
+{"run": "digest", "t": 71801, "kind": "dbg", "msg": "extract: fetch_html https://www.ndtv.com/india-news/before-smit-machchhar-there-was-neerja-bhanot-story-of-2-aviation-heroes-12123486#publisher=newsstand: http=403"}
+{"run": "digest", "t": 75284, "kind": "dbg", "msg": "extract: 34252ch https://www.ndtv.com/india-news/before-smit-machchhar-there-was-neerja-bhanot-story-of-2-aviation-heroes-12123486#publisher=newsstand"}
+{"run": "digest", "t": 75556, "kind": "dbg", "msg": "extract: 2063ch https://www.theguardian.com/world/2026/oct/01/australian-couple-on-flydubai-plane-to-israel-ntwnfb"}
+{"run": "digest", "t": 75617, "kind": "dbg", "msg": "extract: fetch_html https://www.ndtv.com/india-news/tcs-who-at-poll-body-ordered-changes-to-form-6-rahul-gandhis-big-question-to-election-commission-12123618#publisher=newsstand: http=403"}
+{"run": "digest", "t": 78882, "kind": "dbg", "msg": "extract: 4728ch https://www.ndtv.com/india-news/tcs-who-at-poll-body-ordered-changes-to-form-6-rahul-gandhis-big-question-to-election-commission-12123618#publisher=newsstand"}
+{"run": "digest", "t": 79045, "kind": "dbg", "msg": "extract: 3681ch https://www.hindustantimes.com/india-news/rss-to-meet-in-indore-in-november-roll-out-structural-changes-101790833170830.html"}
+{"run": "digest", "t": 79213, "kind": "dbg", "msg": "extract: 2074ch https://timesofindia.indiatimes.com/india/voices-against-electoral-capture-getting-louder-congress-targets-ec-over-sir/articleshow/134608784.cms"}
+{"run": "digest", "t": 79374, "kind": "dbg", "msg": "extract: 1730ch https://www.thehindu.com/news/national/odisha/soon-after-sir-odishas-chief-electoral-officer-applies-vrs/article71531376.ece"}
+{"run": "digest", "t": 79565, "kind": "dbg", "msg": "extract: 6273ch https://www.livemint.com/news/india/nationwide-nrc-push-why-rss-wants-it-and-why-owaisi-calls-it-100-times-worse-than-sir-amid-oppn-gyanesh-kumar-row-11790830662201.html"}
+{"run": "digest", "t": 79567, "kind": "event", "stage": "stage", "name": "extract", "ms": 29771, "ok": true, "error": ""}
+{"run": "digest", "t": 79592, "kind": "dbg", "msg": "llm: call #2 model=gemini-3.6-flash label=claims-world prompt=54548ch"}
+{"run": "digest", "t": 80120, "kind": "dbg", "msg": "ratelimit: claims-world transient failure (1/3), retrying in 7s: ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"}
+{"run": "digest", "t": 80121, "kind": "event", "stage": "ratelimit", "label": "claims-world", "verdict": "transient_retry", "attempt": 1, "attempts_allowed": 3, "wait_s": 7.3, "error": "ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"}
+{"run": "digest", "t": 118949, "kind": "dbg", "msg": "llm: claims-world finish_reason=FinishReason.STOP"}
+{"run": "digest", "t": 118950, "kind": "event", "stage": "llm", "call": 2, "label": "claims-world", "model": "gemini-3.6-flash", "latency_ms": 39356, "prompt_chars": 54548, "system_chars": 2135, "response_chars": 8293, "finish_reason": "FinishReason.STOP", "malformed_json": false, "json_retries": 0, "max_output_tokens": 32768, "usage": {"prompt_token_count": 12737, "candidates_token_count": 1870, "total_token_count": 19935, "thoughts_token_count": 5328}}
+{"run": "digest", "t": 118950, "kind": "dbg", "msg": "llm: claims: [world] 17 claim(s) from 5 outlet(s) 'Tennessee death row inmate Christa Pike survives failed lethal injection'"}
+{"run": "digest", "t": 118950, "kind": "dbg", "msg": "llm: claims: [world] 15 claim(s) from 4 outlet(s) 'US completes military withdrawal from Iraq after 23 years'"}
+{"run": "digest", "t": 118950, "kind": "dbg", "msg": "llm: claims: [world] 12 claim(s) from 4 outlet(s) \"Russia launches massive strikes on Ukraine's energy grid\""}
+{"run": "digest", "t": 118977, "kind": "dbg", "msg": "llm: call #3 model=gemini-3.6-flash label=claims-india prompt=38942ch"}
+{"run": "digest", "t": 140713, "kind": "dbg", "msg": "llm: claims-india finish_reason=FinishReason.STOP"}
+{"run": "digest", "t": 140714, "kind": "event", "stage": "llm", "call": 3, "label": "claims-india", "model": "gemini-3.6-flash", "latency_ms": 21736, "prompt_chars": 38942, "system_chars": 2135, "response_chars": 7738, "finish_reason": "FinishReason.STOP", "malformed_json": false, "json_retries": 0, "max_output_tokens": 32768, "usage": {"prompt_token_count": 10800, "candidates_token_count": 1963, "total_token_count": 15844, "thoughts_token_count": 3081}}
+{"run": "digest", "t": 140715, "kind": "dbg", "msg": "llm: claims: [india] 16 claim(s) from 5 outlet(s) 'Indian pilot Captain Smit Machchhar saves Flydubai flight after mid-air cockpit attack'"}
+{"run": "digest", "t": 140715, "kind": "dbg", "msg": "llm: claims: [india] 15 claim(s) from 5 outlet(s) 'INDIA bloc launches nationwide protests against Election Commission over SIR voter drive'"}
+{"run": "digest", "t": 140715, "kind": "dbg", "msg": "llm: extract_claims -> 5/5 cluster(s), 75 claim(s) total, 0 cluster(s) rejected, 0 claim(s) rejected"}
+{"run": "digest", "t": 140716, "kind": "event", "stage": "stage", "name": "claims", "ms": 61149, "ok": true, "error": ""}
+{"run": "digest", "t": 140741, "kind": "dbg", "msg": "llm: call #4 model=gemini-3.6-flash label=write prompt=13908ch"}
+{"run": "digest", "t": 142996, "kind": "dbg", "msg": "ratelimit: write transient failure (1/3), retrying in 7s: ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"}
+{"run": "digest", "t": 142996, "kind": "event", "stage": "ratelimit", "label": "write", "verdict": "transient_retry", "attempt": 1, "attempts_allowed": 3, "wait_s": 7.5, "error": "ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"}
+{"run": "digest", "t": 195602, "kind": "dbg", "msg": "llm: write finish_reason=FinishReason.STOP"}
+{"run": "digest", "t": 195602, "kind": "event", "stage": "llm", "call": 4, "label": "write", "model": "gemini-3.6-flash", "latency_ms": 54860, "prompt_chars": 13908, "system_chars": 4458, "response_chars": 11304, "finish_reason": "FinishReason.STOP", "malformed_json": false, "json_retries": 0, "max_output_tokens": 32768, "usage": {"prompt_token_count": 4502, "candidates_token_count": 2827, "total_token_count": 14954, "thoughts_token_count": 7625}}
+{"run": "digest", "t": 195609, "kind": "dbg", "msg": "llm: write_stories -> 5 story/stories written, 0 dropped, 0 thin-sourced"}
+{"run": "digest", "t": 195609, "kind": "event", "stage": "stage", "name": "write", "ms": 54893, "ok": true, "error": ""}
+{"run": "digest", "t": 195610, "kind": "dbg", "msg": "digest: wrote /home/runner/work/follow-news/follow-news/data/2026-10-01.json with 5 story/stories"}
+{"run": "digest", "t": 195739, "kind": "event", "stage": "stage", "name": "render", "ms": 128, "ok": true, "error": ""}
+{"run": "digest", "t": 195739, "kind": "dbg", "msg": "digest: 4 LLM call(s) this run"}
+{"run": "digest", "t": 195739, "kind": "event", "stage": "tracer", "msg": "capture finished", "ok": true, "ms": 195739, "bytes": 7697396}
+{"run": "follow", "t": 0, "kind": "follow", "stage": "tracer", "msg": "capture started", "level": 1, "day": "2026-10-01"}
+{"run": "follow", "t": 2, "kind": "dbg", "msg": "extract: cache enabled at /home/runner/work/follow-news/follow-news/cache/extract.json (121 url(s))"}
+{"run": "follow", "t": 390, "kind": "dbg", "msg": "follow: run -> 3 existing record(s), 3 owner issue(s) in scope"}
+{"run": "follow", "t": 391, "kind": "dbg", "msg": "dossier: grounded ceiling of 20 is over 14 days old; re-probing"}
+{"run": "follow", "t": 391, "kind": "dbg", "msg": "follow: sweep -> nothing to research; 0 active follow(s) all current"}
+{"run": "follow", "t": 392, "kind": "dbg", "msg": "follow: wrote /home/runner/work/follow-news/follow-news/followed/1/record.json"}
+{"run": "follow", "t": 393, "kind": "dbg", "msg": "follow: wrote /home/runner/work/follow-news/follow-news/followed/2/record.json"}
+{"run": "follow", "t": 395, "kind": "dbg", "msg": "follow: wrote /home/runner/work/follow-news/follow-news/followed/3/record.json"}
+{"run": "follow", "t": 518, "kind": "dbg", "msg": "follow: run -> done, 0 grounded call(s) this run"}
+{"run": "follow", "t": 519, "kind": "event", "stage": "tracer", "msg": "capture finished", "ok": true, "ms": 519, "bytes": 5134}
