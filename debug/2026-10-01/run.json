@@ -1,28 +1,28 @@
 {
   "kind": "digest",
-  "day": "2026-09-24",
+  "day": "2026-10-01",
   "ok": false,
-  "started_at": "2026-09-24T05:06:35Z",
-  "finished_at": "2026-09-24T05:07:02Z",
-  "elapsed_ms": 26450,
+  "started_at": "2026-10-01T00:01:06Z",
+  "finished_at": "2026-10-01T00:01:33Z",
+  "elapsed_ms": 26664,
   "argv": [
     "digest.py",
     "--if-missing"
   ],
   "python": "3.12.3",
-  "git_sha": "85071e965bdd459eecfda06f7d07425806888a98",
+  "git_sha": "fdcc50b0ab4d6cedfe79fa1a7c3d4059ebad91c8",
   "debug_level": 1,
-  "bytes_written": 1068694,
+  "bytes_written": 1072463,
   "byte_cap_reached": false,
   "env": {
     "DIGEST_DEBUG": "1",
     "CI": "true",
     "GITHUB_ACTIONS": "true",
-    "GITHUB_RUN_ID": "35958478843",
+    "GITHUB_RUN_ID": "36793982328",
     "GITHUB_RUN_ATTEMPT": "1",
     "GITHUB_WORKFLOW": "digest",
     "GITHUB_EVENT_NAME": "schedule",
-    "GITHUB_SHA": "85071e965bdd459eecfda06f7d07425806888a98",
+    "GITHUB_SHA": "fdcc50b0ab4d6cedfe79fa1a7c3d4059ebad91c8",
     "GITHUB_REF": "refs/heads/main",
     "RUNNER_OS": "Linux"
   },
@@ -68,29 +68,29 @@
   "stages": [
     {
       "stage": "gather",
-      "ms": 3424,
+      "ms": 3648,
       "error": ""
     },
     {
       "stage": "pool",
-      "ms": 5,
+      "ms": 4,
       "error": ""
     },
     {
       "stage": "wikipedia",
-      "ms": 385,
+      "ms": 371,
       "error": ""
     },
     {
       "stage": "select",
-      "ms": 20751,
+      "ms": 20832,
       "error": "ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"
     }
   ],
   "window": {
-    "since": "2026-09-22T05:06:37.529993+00:00",
-    "now": "2026-09-24T05:06:37.529993+00:00",
-    "prev_generated_at": "2026-09-21 05:10:45+00:00"
+    "since": "2026-09-29T00:01:08.782899+00:00",
+    "now": "2026-10-01T00:01:08.782899+00:00",
+    "prev_generated_at": "2026-09-26 23:02:28+00:00"
   },
   "stopped_at": "select",
   "stopped_error": "ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"
