@@ -1,0 +1,1041 @@
+{
+  "dials": {
+    "WEIGHT_FLOOR": 5,
+    "TIER_WEIGHT": {
+      "lead": 4,
+      "major": 2,
+      "notable": 0
+    },
+    "WIKI_BONUS": 2,
+    "HARD_CAP": 12,
+    "MIN_STORIES_IF_ANY": 3,
+    "MAX_ARTICLES_PER_STORY": 5
+  },
+  "floor_relaxed": false,
+  "kept_weights": [
+    11,
+    9,
+    7,
+    6,
+    6,
+    5,
+    11,
+    11,
+    7
+  ],
+  "per_section": {
+    "world": 6,
+    "india": 3
+  },
+  "clusters": [
+    {
+      "headline_hint": "G7 nations agree to release 100m barrels of oil and diesel to combat surging prices",
+      "section": "world",
+      "category": "economy",
+      "tier_requested": "lead",
+      "article_ids": [
+        58,
+        59,
+        87,
+        93,
+        173,
+        210,
+        244,
+        260
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        58,
+        59,
+        87,
+        93,
+        173,
+        210,
+        244,
+        260
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 7,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 11,
+      "weight_terms": {
+        "distinct_outlets": 7,
+        "tier_weight": 4,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "BBC World",
+          "title": "G7 to release 100 million barrels of oil and diesel after Trump export ban threat",
+          "url": "https://www.bbc.co.uk/news/articles/ck87zg8jnwngo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "The G7 will release 100 million reserve barrels of diesel fuel over the next 4 months",
+          "url": "https://www.npr.org/2026/10/02/nx-s1-5989397/the-g7-will-release-100-million-reserve-barrels-of-diesel-fuel-over-the-next-4-months"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Trump says Europe agreed to release ‘massive amount’ of diesel reserves",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/10/2/aje-onl-nf_ig_thumb_diesel-021026?traffic_source=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "G7 to release up to 100m barrels of emergency oil and diesel reserves",
+          "url": "https://www.theguardian.com/business/2026/oct/02/g7-release-barrels-oil-diesel-reserves-emergency"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Big win for Trump: Europe, G7 nations to release 'massive amount' of diesel &amp; oil",
+          "url": "https://timesofindia.indiatimes.com/world/us/trump-says-europe-to-release-massive-amount-of-diesel-immediately/articleshow/134642020.cms"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 3
+    },
+    {
+      "headline_hint": "Mass student protests over classroom conditions escalate across France",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        37,
+        91,
+        143,
+        218,
+        220,
+        227,
+        228,
+        241,
+        245,
+        262
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        37,
+        91,
+        143,
+        218,
+        220,
+        227,
+        228,
+        241,
+        245,
+        262
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 5,
+      "wiki_backed": true,
+      "wiki_event": "Mass rioting continues for a third day across France with hundreds reportedly injured and over 500 schools shut, while more than 2,000 people are arrested.",
+      "weight": 9,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "BBC World",
+          "title": "Riot police clash with students as education protests rage in France",
+          "url": "https://www.bbc.co.uk/news/articles/ck3r5dxxwqzpo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "French Unrest: Are we witnessing a new 'Yellow Vests' movement?",
+          "url": "https://www.france24.com/en/tv-shows/spotlight/20261002-french-unrest-are-we-witnessing-a-new-yellow-vests-movement"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Fires, clashes and mass arrests as student protests turn violent in France: Video",
+          "url": "https://timesofindia.indiatimes.com/world/europe/fires-clashes-and-mass-arrests-as-student-protests-turn-violent-in-france-video/articleshow/134644452.cms"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Fires, fury and hundreds of arrests as France gripped by student protests",
+          "url": "https://www.theguardian.com/world/2026/oct/02/student-protests-shut-schools-across-france"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Why are French students taking to the streets? Around 400 schools shut as protests spread across the country",
+          "url": "https://www.livemint.com/news/world/why-are-french-students-taking-to-the-streets-around-400-schools-shut-as-protests-spread-across-the-country-11790945864117.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 5
+    },
+    {
+      "headline_hint": "Brazil prepares for tense presidential election between Lula and Flavio Bolsonaro",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        38,
+        40,
+        54,
+        163,
+        172,
+        195,
+        201,
+        243,
+        257,
+        318,
+        325
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        38,
+        40,
+        54,
+        163,
+        172,
+        195,
+        201,
+        243,
+        257,
+        318,
+        325
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 5,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "Brazil’s Lula says only he can stop rise of fascism under Bolsonaro’s son",
+          "url": "https://www.theguardian.com/world/2026/oct/02/brazil-lula-stop-fascism-bolsonaro-son"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "How Brazil's two leading presidential candidates are talking about crime",
+          "url": "https://www.npr.org/2026/10/02/nx-s1-5986091/how-brazils-two-leading-presidential-candidates-are-talking-about-crime"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "Lula, Bolsonaro trade blows in final scramble for votes in Brazil",
+          "url": "https://www.channelnewsasia.com/world/lula-bolsonaro-trade-blows-in-final-scramble-votes-in-brazil-6428181"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "How the Banco Master scandal injected chaos into Brazil’s presidential race",
+          "url": "https://www.aljazeera.com/features/longform/2026/10/2/how-the-banco-master-scandal-injected-chaos-into-brazils-presidential-race?traffic_source=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Brazil’s Lula gears up for ‘last dance’ with run for fourth presidential term",
+          "url": "https://www.france24.com/en/americas/20261002-brazil-s-lula-gears-up-for-last-dance-with-run-for-fourth-presidential-term"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 6
+    },
+    {
+      "headline_hint": "Spanish parliament rejects government emergency housing decrees as protests continue",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        162,
+        166,
+        191,
+        198,
+        242
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        162,
+        166,
+        191,
+        198,
+        242
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 4,
+      "wiki_backed": true,
+      "wiki_event": "Spain's parliament rejects two government housing decrees that would have expanded protections against evictions, limited some real-estate practices, encouraged rentals through tax incentives, and allowed tenants to renew residential leases",
+      "weight": 6,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 0,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "DW World",
+          "title": "Spain's parliament rejects housing bill as protests continue",
+          "url": "https://www.dw.com/en/spain-s-parliament-rejects-housing-bill-as-protests-continue/a-79522683?maca=en-rss-en-world-4025-rdf"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Spanish right wing votes down housing crisis plans as protest movement grows",
+          "url": "https://www.theguardian.com/world/2026/oct/02/spanish-right-wing-votes-down-housing-crisis-plans-protest-movement-grows"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Spanish PM Sánchez loses key housing crisis vote after eviction of woman, 87",
+          "url": "https://www.bbc.co.uk/news/articles/c623dlk4y75mo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Spanish lawmakers vote down affordable housing bills in blow to Sanchez’s government",
+          "url": "https://www.france24.com/en/europe/20261002-spanish-lawmakers-vote-down-affordable-housing-bills-in-blow-to-sanchez-s-government"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Spain housing protests rage ahead of key government vote",
+          "url": "https://www.france24.com/en/video/20261002-spain-housing-protests-rage-ahead-of-key-government-vote"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "New York Governor appoints special prosecutor in Cornell University gang rape inquiry",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        85,
+        140,
+        141,
+        211,
+        225,
+        259,
+        328
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        85,
+        140,
+        141,
+        211,
+        225,
+        259,
+        328
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 5,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 5,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Channel News Asia",
+          "title": "New York governor vows to close loophole after alleged Cornell gang rape",
+          "url": "https://www.channelnewsasia.com/world/cornell-gang-rape-cases-hochul-6428071"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Woman at centre of Cornell rape inquiry was 'failed' by officials, says New York governor",
+          "url": "https://www.bbc.co.uk/news/articles/cqvg04718lr9o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "‘I want the truth’: NY governor appoints prosecutor in Cornell rape case",
+          "url": "https://www.aljazeera.com/news/2026/10/2/i-want-the-truth-ny-governor-appoints-prosecutor-in-cornell-rape-case?traffic_source=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "The Cornell 7: Allegations spark fury over gang rape culture",
+          "url": "https://www.france24.com/en/tv-shows/the-51/20261002-the-cornell-7-allegations-spark-fury-over-gang-rape-culture"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "Cornell rape case gets special prosecutor. And, Renee Good's family sues the government",
+          "url": "https://www.npr.org/2026/10/02/g-s1-146075/up-first-newsletter-cornell-assault-case-christa-pike-jobs-report-renee-good"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 2
+    },
+    {
+      "headline_hint": "Tennessee death row inmate Christa Pike survives botched execution attempt",
+      "section": "world",
+      "category": "health",
+      "tier_requested": "notable",
+      "article_ids": [
+        8,
+        44,
+        52,
+        62,
+        221,
+        301
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        8,
+        44,
+        52,
+        62,
+        221,
+        301
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Channel News Asia",
+          "title": "Tennessee execution survivor Christa Pike on ventilator, attorneys say",
+          "url": "https://www.channelnewsasia.com/world/christa-pike-murder-execution-failed-ventilator-6428356"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Christa Pike unconscious, on ventilator after botched execution: Lawyers",
+          "url": "https://www.aljazeera.com/news/2026/10/2/christa-pike-unconscious-on-ventilator-after-botched-execution-lawyers?traffic_source=rss"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "US murderer Christa Pike unconscious and on ventilator after failed execution, lawyers say",
+          "url": "https://www.bbc.co.uk/news/articles/c3kgqw7zvz47o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "On ventilator and unconscious, what's next for Christa Pike after surviving lethal injection",
+          "url": "https://www.livemint.com/news/us-news/on-ventilator-and-unconscious-whats-next-for-christa-pike-after-surviving-lethal-injection-11790970610841.html"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "I've seen nearly 500 executions - but never one like Christa Pike's",
+          "url": "https://www.bbc.co.uk/news/articles/c6d949gq47x9o?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 1
+    },
+    {
+      "headline_hint": "Ethiopian military forces push back Tigray rebels as Eritrea cuts diplomatic ties",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "notable",
+      "article_ids": [
+        50,
+        63,
+        175,
+        294
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        50,
+        63,
+        175,
+        294
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 4,
+      "wiki_backed": true,
+      "wiki_event": "Ethiopian government forces push Tigray People's Liberation Front (TPLF) rebels out of Afar Region after recapturing the towns of Abala, Erebti and Megale.",
+      "weight": 6,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 0,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "France 24",
+          "title": "Ethiopian army pushes back Tigrayan rebels",
+          "url": "https://www.france24.com/en/tv-shows/eye-on-africa/20261002-ethiopian-army-pushes-back-tigrayan-rebels"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Could conflict in Ethiopia expand across the region?",
+          "url": "https://www.aljazeera.com/video/inside-story/2026/10/2/could-conflict-in-ethiopia-expand-across-the-region?traffic_source=rss"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Ethiopia and Eritrea cut diplomatic ties as northern conflict escalates",
+          "url": "https://www.bbc.co.uk/news/articles/crpd0d0jl0y0o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "DW World",
+          "title": "Ethiopia: Who could bring the warring sides to the negotiation table?",
+          "url": "https://www.dw.com/en/ethiopia-who-could-bring-the-warring-sides-to-the-negotiation-table/a-79475529?maca=en-rss-en-world-4025-rdf"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Israel Supreme Court overturns ban on Arab parties competing in upcoming election",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        68,
+        83,
+        122,
+        145
+      ],
+      "verdict": "cut:below_floor(2<5)",
+      "valid_ids": [
+        68,
+        83,
+        122,
+        145
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 2,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Channel News Asia",
+          "title": "Israel top court puts Arab parties back on ballot",
+          "url": "https://www.channelnewsasia.com/world/israel-arab-ballot-election-court-6428141"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Arab party leader withdraws from Israeli elections",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/10/2/arab-party-leader-withdraws-from-israeli-elections?traffic_source=rss"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Israel’s Supreme Court overturns election panel ban on Arab parties",
+          "url": "https://www.aljazeera.com/news/2026/10/2/israels-supreme-court-overturns-election-panel-ban-on-arab-parties?traffic_source=rss"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Jerusalem Daily: Who gets to run in Israel’s elections?",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/10/2/jerusalem-daily-who-gets-to-run-in-israels-elections?traffic_source=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Russian strikes intensify on Ukrainian capital Kyiv, targeting key infrastructure",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "notable",
+      "article_ids": [
+        167,
+        193,
+        208
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        167,
+        193,
+        208
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Livemint",
+          "title": "‘There are no rules now’: Zelensky reveals Putin’s alleged new war order",
+          "url": "https://www.livemint.com/news/world/there-are-no-rules-now-zelensky-reveals-putin-s-alleged-new-war-order-11790956664852.html"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Intensified Russian strikes are tearing Kyiv apart, warns mayor",
+          "url": "https://www.bbc.co.uk/news/articles/c6wyv44y4ywjo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "‘The enemy is tearing our city apart’: terror in Kyiv as Russia ramps up attacks",
+          "url": "https://www.theguardian.com/world/2026/oct/02/terror-kyiv-russia-ramps-up-attacks-ukraine"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "US job growth slows sharply in September as unemployment rate ticks up",
+      "section": "world",
+      "category": "economy",
+      "tier_requested": "notable",
+      "article_ids": [
+        26,
+        171,
+        237
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        26,
+        171,
+        237
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Channel News Asia",
+          "title": "US jobs data boosts stocks as oil prices dip",
+          "url": "https://www.channelnewsasia.com/world/us-jobs-data-boosts-stocks-oil-prices-dip-6428296"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "US adds just 29,000 jobs as unemployment rises before midterm elections",
+          "url": "https://www.aljazeera.com/economy/2026/10/2/us-job-growth-slows-as-unemployment-rises-before-midterm-elections?traffic_source=rss"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "US jobs report September 2026: Hiring slows sharply to 29,000 jobs, unemployment rises to 4.2%",
+          "url": "https://www.livemint.com/news/us-news/us-jobs-report-september-2026-hiring-slows-sharply-to-29-000-jobs-unemployment-rises-to-42-11790945793267.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Two Iranian men charged in UK over alleged terror plot targeting Jewish community",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "notable",
+      "article_ids": [
+        3,
+        10
+      ],
+      "verdict": "cut:below_floor(2<5)",
+      "valid_ids": [
+        3,
+        10
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 2,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Livemint",
+          "title": "Two Iranian Men Charged Over Plot Targeting UK Jewish Community",
+          "url": "https://www.livemint.com/news/world/two-iranian-men-charged-over-plot-targeting-uk-jewish-community-11790984085296.html"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Two Iranian men charged over alleged terror plot targeting Manchester’s Jewish community",
+          "url": "https://www.theguardian.com/uk-news/2026/oct/02/charged-alleged-terror-plot-manchester-jewish-community"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Protests erupt across India demanding Chief Election Commissioner's resignation over voter roll deletions",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "lead",
+      "article_ids": [
+        49,
+        51,
+        64,
+        66,
+        74,
+        98,
+        105,
+        120,
+        121,
+        125,
+        126,
+        138,
+        142,
+        144,
+        150,
+        170,
+        196,
+        209,
+        226,
+        249,
+        250,
+        265,
+        269,
+        274,
+        279,
+        285,
+        287,
+        288,
+        291,
+        307,
+        329
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        49,
+        51,
+        64,
+        66,
+        74,
+        98,
+        105,
+        120,
+        121,
+        125,
+        126,
+        138,
+        142,
+        144,
+        150,
+        170,
+        196,
+        209,
+        226,
+        249,
+        250,
+        265,
+        269,
+        274,
+        279,
+        285,
+        287,
+        288,
+        291,
+        307,
+        329
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 7,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 11,
+      "weight_terms": {
+        "distinct_outlets": 7,
+        "tier_weight": 4,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "Anti-CEC protests: Rahul says Lathi can stop a crowd, but not a question",
+          "url": "https://timesofindia.indiatimes.com/india/lathi-can-stop-a-crowd-but-not-a-question-rahul/articleshow/134646567.cms"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "Deleted, and left in limbo",
+          "url": "https://www.thehindu.com/news/national/deleted-and-left-in-limbo/article71538194.ece"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "700 Detained As Delhi, Mumbai See Big Protests Against Gyanesh Kumar",
+          "url": "https://www.ndtv.com/india-news/700-detained-as-delhi-mumbai-see-big-protests-against-gyanesh-kumar-12130718#publisher=newsstand"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "‘Are you afraid of BJP’: Stalin targets CM Vijay for alleged silence over SIR-CEC",
+          "url": "https://www.hindustantimes.com/india-news/stalin-targets-vijay-for-alleged-silence-over-sir-cec-row-are-you-afraid-of-bjp-dmk-tvk-tamil-nadu-october-6-bypoll-101790951070344.html"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "India’s Cockroach movement launches new protests over changes to voter roll",
+          "url": "https://www.theguardian.com/world/2026/oct/02/india-cockroach-movement-protests-mumbai-changes-voter-roll"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 26
+    },
+    {
+      "headline_hint": "Indian pilot Smit Machchhar hailed as hero after thwarting cockpit attack on Flydubai flight",
+      "section": "india",
+      "category": "conflict",
+      "tier_requested": "major",
+      "article_ids": [
+        0,
+        11,
+        22,
+        24,
+        25,
+        46,
+        99,
+        104,
+        151,
+        188,
+        203,
+        224,
+        230,
+        234,
+        238,
+        252,
+        258,
+        263,
+        270,
+        290,
+        296,
+        299,
+        305,
+        309,
+        314
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        0,
+        11,
+        22,
+        24,
+        25,
+        46,
+        99,
+        104,
+        151,
+        188,
+        203,
+        224,
+        230,
+        234,
+        238,
+        252,
+        258,
+        263,
+        270,
+        290,
+        296,
+        299,
+        305,
+        309,
+        314
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 9,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 11,
+      "weight_terms": {
+        "distinct_outlets": 9,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "5 Indian nationals rescued after Kuwait tanker hit in Strait of Hormuz",
+          "url": "https://timesofindia.indiatimes.com/india/5-indian-seafarers-safely-rescued-after-kuwait-flagged-tanker-struck-by-projectile-in-strait-of-hormuz/articleshow/134650154.cms"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Flydubai pilot recounts cockpit stabbing in call with Indian PM Modi",
+          "url": "https://www.aljazeera.com/news/2026/10/2/flydubai-pilot-recounts-cockpit-stabbing-in-call-with-indian-pm-modi?traffic_source=rss"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "Flydubai Incident Highlights: Israel Minister Calls For Naming Lounge At Main Airport After Smit Machchhar",
+          "url": "https://www.ndtv.com/world-news/flydubai-flight-fz1073-incident-live-updates-indian-pilot-smit-machchhar-omani-co-pilot-crash-attempt-tabuk-landing-dubai-uae-netanyahu-trump-iran-war-12128203#publisher=newsstand"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "Israeli officials to question co-pilot of flydubai flight, source says",
+          "url": "https://www.channelnewsasia.com/world/flydubai-flight-israel-co-pilot-question-6427416"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Suicide by plane or terrorism? Speculation over motive in flight 1073 attack",
+          "url": "https://www.theguardian.com/world/2026/oct/02/aviation-security-flydubai-flight-israel"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 20
+    },
+    {
+      "headline_hint": "Congress reshuffles state leadership appointing new chiefs in Punjab and Uttar Pradesh",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        9,
+        76,
+        97,
+        132,
+        134,
+        147,
+        155,
+        174,
+        178,
+        181,
+        183,
+        213
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        9,
+        76,
+        97,
+        132,
+        134,
+        147,
+        155,
+        174,
+        178,
+        181,
+        183,
+        213
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 5,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "Congress abruptly replaces Ajay Rai as state chief in poll-bound UP",
+          "url": "https://timesofindia.indiatimes.com/city/lucknow/congress-abruptly-replaces-ajay-rai-as-state-chief-in-poll-bound-up/articleshow/134650061.cms"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "Aradhana Misra Mona appointed as new chief of Uttar Pradesh Congress",
+          "url": "https://www.thehindu.com/news/national/uttar-pradesh/aradhana-misra-mona-appointed-as-new-chief-of-uttar-pradesh-congress/article71538200.ece"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "'Will Strengthen Alliance With Samajwadi Party': New UP Congress Chief Aradhana Misra",
+          "url": "https://www.ndtv.com/india-news/will-strengthen-alliance-with-samajwadi-party-new-up-congress-chief-aradhana-mishra-12131812#publisher=newsstand"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Pargat Singh appointed Punjab Congress chief ahead of assembly elections after Raja Warring resigns",
+          "url": "https://www.livemint.com/news/india/pargat-singh-appointed-punjab-congress-chief-ahead-of-assembly-elections-after-raja-warring-resigns-11790960716437.html"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Congress appoints Aradhna Mishra Mona as new UP chief, Imran Masood as working president ahead of 2027 polls",
+          "url": "https://www.hindustantimes.com/india-news/congress-appoints-aradhna-mishra-mona-as-new-up-chief-imran-masood-working-president-ahead-of-2027-polls-101790957268714.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 7
+    },
+    {
+      "headline_hint": "Gujarat receives Presidential assent for Uniform Civil Code law",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        90,
+        158,
+        253
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        90,
+        158,
+        253
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "With President’s nod, Gujarat becomes second state after Uttarakhand to get UCC",
+          "url": "https://timesofindia.indiatimes.com/city/ahmedabad/gujarat-ucc-to-come-into-force-after-rules-are-notified/articleshow/134645292.cms"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "President Gives Assent, Gujarat Becomes 2nd State To Get Uniform Civil Code",
+          "url": "https://www.ndtv.com/india-news/president-gives-assent-gujarat-becomes-2nd-state-to-get-uniform-civil-code-12131033#publisher=newsstand"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Gujarat UCC Bill gets President Murmu’s assent, becomes 2nd state after Uttarakhand",
+          "url": "https://www.hindustantimes.com/india-news/gujarat-ucc-bill-gets-president-murmu-s-assent-becomes-2nd-state-after-uttarakhand-101790941535248.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "India formally standardises and maps 28 geographical places and features in Ladakh",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        27,
+        30,
+        271
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        27,
+        30,
+        271
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "To counter China, India formally puts Gogra, Hot Spring &amp; others on map",
+          "url": "https://timesofindia.indiatimes.com/india/to-counter-china-india-formally-puts-gogra-hot-spring-others-on-map/articleshow/134646655.cms"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "India standardises names of 28 places in Ladakh",
+          "url": "https://www.thehindu.com/news/national/ladakh/india-standardises-names-of-28-places-in-ladakh/article71538275.ece"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "India formally names 28 places and features in Ladakh on official map amid China push | Why it matters",
+          "url": "https://www.livemint.com/news/india-formally-names-28-places-and-features-in-ladakh-on-official-map-amid-china-s-push-why-it-matters-11790930338366.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    }
+  ]
+}
