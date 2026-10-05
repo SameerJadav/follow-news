@@ -1,0 +1,783 @@
+{
+  "dials": {
+    "WEIGHT_FLOOR": 5,
+    "TIER_WEIGHT": {
+      "lead": 4,
+      "major": 2,
+      "notable": 0
+    },
+    "WIKI_BONUS": 2,
+    "HARD_CAP": 12,
+    "MIN_STORIES_IF_ANY": 3,
+    "MAX_ARTICLES_PER_STORY": 5
+  },
+  "floor_relaxed": false,
+  "kept_weights": [
+    13,
+    9,
+    9,
+    8,
+    7,
+    5,
+    12,
+    8,
+    7
+  ],
+  "per_section": {
+    "world": 6,
+    "india": 3
+  },
+  "clusters": [
+    {
+      "headline_hint": "Brazil presidential election heads to runoff as Flávio Bolsonaro leads incumbent Lula in first round",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "lead",
+      "article_ids": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        45,
+        46,
+        47,
+        71,
+        73,
+        103,
+        160,
+        226,
+        233,
+        234,
+        250,
+        257,
+        275,
+        321,
+        324,
+        333
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        45,
+        46,
+        47,
+        71,
+        73,
+        103,
+        160,
+        226,
+        233,
+        234,
+        250,
+        257,
+        275,
+        321,
+        324,
+        333
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 7,
+      "wiki_backed": true,
+      "wiki_event": "Brazilians head to the polls to elect their president, vice president, 513 members of Chamber of Deputies and 54 members in the Federal Senate. Incumbent president Luiz Inácio Lula da Silva is running for the fourth non-consecutive term, wh",
+      "weight": 13,
+      "weight_terms": {
+        "distinct_outlets": 7,
+        "tier_weight": 4,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "BBC World",
+          "title": "Brazil election goes to run-off as right-wing Flávio Bolsonaro wins first round",
+          "url": "https://www.bbc.co.uk/news/articles/ck1l34ed592no?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "DW World",
+          "title": "Brazil election: Bolsonaro and Lula head to runoff",
+          "url": "https://www.dw.com/en/brazil-election-bolsonaro-and-lula-head-to-runoff/a-79533857?maca=en-rss-en-world-4025-rdf"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Brazil presidential election 2026: first-round live results",
+          "url": "https://www.theguardian.com/world/ng-interactive/2026/oct/04/brazil-presidential-election-2026-first-round-live-results"
+        },
+        {
+          "outlet": "France 24",
+          "title": "🔴 Brazil presidential election heads to runoff with Bolsonaro ahead of Lula",
+          "url": "https://www.france24.com/en/americas/20261005-brazil-presidential-election-runoff-bolsonaro-lula"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "Brazil's presidential race heads to Lula–Bolsonaro run-off as right gains ground",
+          "url": "https://www.npr.org/2026/10/04/nx-s1-5981181/brazil-presidential-lula-bolsonaro"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 17
+    },
+    {
+      "headline_hint": "Widespread protests in India over Special Intensive Revision of voter rolls and demands for CEC resignation",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "lead",
+      "article_ids": [
+        40,
+        72,
+        109,
+        118,
+        131,
+        149,
+        153,
+        154,
+        163,
+        177,
+        181,
+        194,
+        196,
+        197,
+        212,
+        213,
+        215,
+        231,
+        252,
+        253,
+        255,
+        282,
+        283,
+        285,
+        291,
+        293,
+        294,
+        297,
+        299,
+        317,
+        331,
+        345,
+        347
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        40,
+        72,
+        109,
+        118,
+        131,
+        149,
+        153,
+        154,
+        163,
+        177,
+        181,
+        194,
+        196,
+        197,
+        212,
+        213,
+        215,
+        231,
+        252,
+        253,
+        255,
+        282,
+        283,
+        285,
+        291,
+        293,
+        294,
+        297,
+        299,
+        317,
+        331,
+        345,
+        347
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 8,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 12,
+      "weight_terms": {
+        "distinct_outlets": 8,
+        "tier_weight": 4,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "Democracy in peril as voters illegally ousted: Ex-SC judge Nariman",
+          "url": "https://timesofindia.indiatimes.com/india/democracy-in-peril-as-voters-illegally-ousted-former-sc-judge-justice-rohinton-fali-nariman/articleshow/134680618.cms"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "SIR voter list: Form 6, 7, 8 or 9? Which form to use for Aadhaar, address change, name deletion",
+          "url": "https://www.livemint.com/news/india/sir-voter-list-form-6-7-8-or-9-which-form-to-use-for-aadhaar-address-change-name-deletion-11791136733634.html"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "500 detained in Delhi on Day 3 of protests seeking CEC’s exit; Thackerays lead Mumbai march",
+          "url": "https://www.thehindu.com/news/national/500-detained-in-delhi-on-day-3-of-protests-seeking-cecs-exit-thackerays-lead-mumbai-march/article71544629.ece"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Indian police accused of sexually harassing journalists at protest",
+          "url": "https://www.bbc.co.uk/news/articles/c9e8lvm6nrr3o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Mass protests demanding poll chief resignation shake India for third day",
+          "url": "https://www.aljazeera.com/news/2026/10/4/mass-protests-demanding-poll-chief-resignation-shake-india-for-third-day?traffic_source=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 28
+    },
+    {
+      "headline_hint": "Co-pilot attempted terrorist attack on Flydubai flight saved after Indian captain subdues attacker",
+      "section": "india",
+      "category": "conflict",
+      "tier_requested": "major",
+      "article_ids": [
+        27,
+        107,
+        126,
+        137,
+        225,
+        242,
+        295,
+        304,
+        314,
+        336,
+        340
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        27,
+        107,
+        126,
+        137,
+        225,
+        242,
+        295,
+        304,
+        314,
+        336,
+        340
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 6,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 8,
+      "weight_terms": {
+        "distinct_outlets": 6,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "Flydubai co-pilot allegedly tried to crash plane after hijack attempt failed",
+          "url": "https://timesofindia.indiatimes.com/world/middle-east/flydubai-flight-incident-omani-co-pilot-may-have-tried-to-cut-engines-after-cockpit-attack/articleshow/134683005.cms"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Police investigating Flydubai co-pilot’s Australia ties",
+          "url": "https://www.aljazeera.com/news/2026/10/4/police-investigating-flydubai-co-pilots-australia-ties?traffic_source=rss"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "FlyDubai attack: Israel had crew list, so how did ‘barred’ pilot evade checks? What we know",
+          "url": "https://www.livemint.com/news/world/flydubai-attack-israel-had-crew-list-so-how-did-barred-pilot-evade-checks-what-we-know-11791132802555.html"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Australia investigating Flydubai co-pilot's links to country",
+          "url": "https://www.bbc.co.uk/news/articles/cxly4nym57q9o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Flydubai co-pilot’s time in Australia being investigated by security agencies after alleged cockpit attack",
+          "url": "https://www.theguardian.com/world/2026/oct/04/flydubai-co-pilot-time-in-australia-being-investigated-security-agencies-ntwnfb"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 6
+    },
+    {
+      "headline_hint": "German Chancellor Friedrich Merz visits Kyiv as Russian strikes hit city's infrastructure",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "major",
+      "article_ids": [
+        58,
+        96,
+        139,
+        144,
+        161,
+        174,
+        186,
+        200,
+        208,
+        246,
+        259,
+        274
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        58,
+        96,
+        139,
+        144,
+        161,
+        174,
+        186,
+        200,
+        208,
+        246,
+        259,
+        274
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 7,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 9,
+      "weight_terms": {
+        "distinct_outlets": 7,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "1 dead as Russian drones hit desi pharma plant in Ukraine",
+          "url": "https://timesofindia.indiatimes.com/india/1-dead-as-russian-drones-hit-desi-pharma-plant-in-ukraine/articleshow/134680367.cms"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "Russian strikes hit Kyiv while Germany's Merz visits",
+          "url": "https://www.channelnewsasia.com/world/russian-strikes-kyiv-germany-merz-visits-6431646"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Ukraine ready for US-backed talks with Russia: Zelenskyy",
+          "url": "https://www.aljazeera.com/news/2026/10/4/ukraine-ready-for-us-backed-talks-with-russia-zelenskyy?traffic_source=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Russia strikes Kyiv bridge as German chancellor visits Ukraine in show of support",
+          "url": "https://www.theguardian.com/world/2026/oct/04/russia-strikes-kyiv-bridge-german-chancellor-merz-visits-ukraine"
+        },
+        {
+          "outlet": "France 24",
+          "title": "German Chancellor in Kyiv: \"Ukraine will need our support\"",
+          "url": "https://www.france24.com/en/german-chancellor-in-kyiv-ukraine-will-need-our-support"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 7
+    },
+    {
+      "headline_hint": "US withdraws B-1 bombers from UK air base following terror plot investigation",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "major",
+      "article_ids": [
+        28,
+        30,
+        36,
+        39,
+        53,
+        56
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        28,
+        30,
+        36,
+        39,
+        53,
+        56
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 6,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 8,
+      "weight_terms": {
+        "distinct_outlets": 6,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "France 24",
+          "title": "US withdraws all B-1 bombers from British military base RAF Fairford",
+          "url": "https://www.france24.com/en/europe/20261004-us-bombers-raf-fairford-uk-pentagon"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "US removes B-1 bombers from UK's Fairford air base amid security concerns",
+          "url": "https://www.channelnewsasia.com/world/us-removes-bombers-uk-fairford-base-security-concerns-6431771"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "US withdraws B-1 bomber aircraft from UK’s Fairford base amid Iran fears",
+          "url": "https://www.aljazeera.com/news/2026/10/4/us-withdraws-b-1-bomber-aircraft-from-uks-fairford-base-amid-iran-fears?traffic_source=rss"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Pentagon Redeploys Bombers From UK Base at Center of Terror Plot",
+          "url": "https://www.livemint.com/news/world/pentagon-redeploys-bombers-from-uk-base-at-center-of-terror-plot-11791151617575.html"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "US withdraws all bombers from UK's Fairford base after suspected terror plot",
+          "url": "https://timesofindia.indiatimes.com/world/us/re-deployed-to-their-home-stations-us-withdraws-all-bombers-from-uks-raf-fairford-after-suspected-terror-plot/articleshow/134680412.cms"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 1
+    },
+    {
+      "headline_hint": "Yemen government launches offensive against Houthis after vital supply route cut",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "major",
+      "article_ids": [
+        1,
+        10,
+        81,
+        156,
+        238
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        1,
+        10,
+        81,
+        156,
+        238
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 5,
+      "wiki_backed": true,
+      "wiki_event": "The Houthis take control of Al-Turbah, Yemen.",
+      "weight": 9,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "Yemen’s Saudi-backed government launches military drive to retake all Houthi-held territory",
+          "url": "https://www.theguardian.com/world/2026/oct/05/saudi-backed-yemen-government-military-drive-retake-houthi-territory"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Iran war live: Yemen fighting intensifies; Tehran says ready for US attacks",
+          "url": "https://www.aljazeera.com/news/liveblog/2026/10/5/iran-war-live-fighting-in-yemen-intensifies-tehran-says-ready-for-us-war?traffic_source=rss"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "Yemen presidency announces military drive to retake all Houthi territory",
+          "url": "https://www.channelnewsasia.com/world/yemen-presidency-military-houthi-territory-6431676"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Yemen's government announces all-out war to reclaim land from Houthis",
+          "url": "https://www.bbc.co.uk/news/articles/cx8dzj9vpp01o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Yemen's government declares counter-offensive as Houthis cut vital route to besieged city",
+          "url": "https://www.france24.com/en/middle-east/20261004-yemen-leader-announces-counter-offensive-as-houthis-cut-off-supply-route-besieged-city-taiz"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "India engages with both Moscow and Kyiv to mediate end to Russia-Ukraine conflict",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        62,
+        136,
+        143,
+        147,
+        207,
+        216,
+        232,
+        339
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        62,
+        136,
+        143,
+        147,
+        207,
+        216,
+        232,
+        339
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 5,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "EAM Jaishankar says US has chosen to become 'lonelier power'",
+          "url": "https://timesofindia.indiatimes.com/india/external-affairs-minister-s-jaishankar-says-us-has-chosen-to-become-lonelier-power/articleshow/134680336.cms"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "India is discussing agreements on grains and maritime safety with Moscow and Kyiv: Jaishankar",
+          "url": "https://www.thehindu.com/news/national/india-is-going-beyond-advocacy-on-the-russia-ukraine-conflict-jaishankar/article71543379.ece"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "India In Talks With Both Russia And Ukraine To End War: S Jaishankar",
+          "url": "https://www.ndtv.com/india-news/russia-ukraine-war-india-in-talks-with-both-russia-and-ukraine-to-end-war-s-jaishankar-12138236#publisher=newsstand"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "India has 'gone beyond advocacy', held talks with both Russia and Ukraine to end war: Jaishankar",
+          "url": "https://www.hindustantimes.com/india-news/india-holds-talks-with-russia-ukraine-on-ending-war-jaishankar-101791123968850.html"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "India proposal to end Russia war ‘most comprehensive’, says Ukraine",
+          "url": "https://scroll.in/latest/1096164/india-proposal-to-end-russia-war-most-comprehensive-says-ukraine?utm_source=rss&utm_medium=public"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 3
+    },
+    {
+      "headline_hint": "Ethiopian forces take control of Tigray capital Mekelle after TPLF withdrawal",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "major",
+      "article_ids": [
+        3,
+        230,
+        268
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        3,
+        230,
+        268
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 3,
+      "wiki_backed": true,
+      "wiki_event": "Ethiopian forces capture Mekelle, the capital of the Tigray Region, after the withdrawal of the Tigray People's Liberation Front.",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "Four African leaders issue joint declaration as Ethiopia war escalates",
+          "url": "https://www.aljazeera.com/news/2026/10/5/four-african-leaders-issue-joint-declaration-as-ethiopia-war-escalates?traffic_source=rss"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Ethiopian rebel forces withdraw from Tigray regional capital",
+          "url": "https://www.bbc.co.uk/news/articles/cqm249v07j4xo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Ethiopian federal forces control Tigray capital as regional rivals meet in Egypt",
+          "url": "https://www.france24.com/en/africa/20261004-ethiopian-federal-forces-control-tigray-capital-as-regional-rivals-meet-in-egypt"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "France orders closure of up to 500 schools as student protests intensify",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        80,
+        193,
+        203,
+        224,
+        241,
+        322
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        80,
+        193,
+        203,
+        224,
+        241,
+        322
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 5,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 5,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "France to shutter up to 500 schools as more student protests called",
+          "url": "https://www.aljazeera.com/news/2026/10/4/france-to-shutter-up-to-500-schools-as-more-student-protests-called?traffic_source=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "More than 400 schools in France to be closed on Monday as more protests planned",
+          "url": "https://www.theguardian.com/world/2026/oct/04/schools-france-closed-protests-planned"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "French student protests escalate: Up to 500 schools to remain closed on Monday, 5 October",
+          "url": "https://www.livemint.com/news/world/french-student-protests-escalate-up-to-500-schools-to-remain-closed-on-monday-5-october-11791118109393.html"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Hundreds of schools to shut Monday as France braces for more student protests",
+          "url": "https://www.france24.com/en/france/20261004-up-to-500-french-schools-to-be-totally-or-partly-closed-monday-due-to-protests"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "France arrests 5,000 people, mostly teens, as school protests spread",
+          "url": "https://www.npr.org/2026/10/03/nx-s1-5989532/france-arrests-5-000-people-mostly-teens-as-school-protests-spread"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 1
+    },
+    {
+      "headline_hint": "Pro-nationalist candidates win in Bosnia and Herzegovina general elections",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        26,
+        66,
+        79,
+        343
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        26,
+        66,
+        79,
+        343
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "DW World",
+          "title": "Nationalists top Bosnia-Herzegovina's divisive election",
+          "url": "https://www.dw.com/en/nationalists-top-bosnia-herzegovina-s-divisive-election/a-79535336?maca=en-rss-en-world-4025-rdf"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Bosnian Serb nationalist Dodik declares party victory in Bosnia election",
+          "url": "https://www.theguardian.com/world/2026/oct/04/bosnian-serb-nationalist-dodik-declares-party-victory-in-bosnia-election"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Will elections bring change to multi-ethnic Bosnia and Herzegovina?",
+          "url": "https://www.aljazeera.com/video/inside-story/2026/10/4/will-elections-bring-change-to-multi-ethnic-bosnia-and-herzegovina?traffic_source=rss"
+        },
+        {
+          "outlet": "DW World",
+          "title": "Bosnia and Herzegovina is still shaped by war, separatism, EU ambitions",
+          "url": "https://www.dw.com/en/bosnia-and-herzegovina-is-still-shaped-by-war-separatism-eu-ambitions/a-79523557?maca=en-rss-en-world-4025-rdf"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Imran Khan's party launches protest march toward Islamabad after government talks break down",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        48,
+        76,
+        82
+      ],
+      "verdict": "cut:below_floor(2<5)",
+      "valid_ids": [
+        48,
+        76,
+        82
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 2,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Channel News Asia",
+          "title": "Pro-Imran Khan march starts in Pakistan's northwest",
+          "url": "https://www.channelnewsasia.com/asia/pro-imran-khan-march-starts-in-pakistans-northwest-6431786"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Imran Khan’s party launches march to Islamabad demanding his release",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/10/4/imran-khans-party-launches-march-to-islamabad-demanding-his-release?traffic_source=rss"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Pro-Imran Khan mass rally launched after Pakistan government talks fail",
+          "url": "https://www.aljazeera.com/news/2026/10/4/pro-imran-khan-mass-rally-launched-after-pakistan-government-talks-fail?traffic_source=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    }
+  ]
+}
