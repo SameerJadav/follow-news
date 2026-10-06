@@ -1,0 +1,861 @@
+{
+  "dials": {
+    "WEIGHT_FLOOR": 5,
+    "TIER_WEIGHT": {
+      "lead": 4,
+      "major": 2,
+      "notable": 0
+    },
+    "WIKI_BONUS": 2,
+    "HARD_CAP": 12,
+    "MIN_STORIES_IF_ANY": 3,
+    "MAX_ARTICLES_PER_STORY": 5
+  },
+  "floor_relaxed": false,
+  "kept_weights": [
+    10,
+    10,
+    8,
+    8,
+    7,
+    6,
+    11,
+    9,
+    8
+  ],
+  "per_section": {
+    "world": 6,
+    "india": 3
+  },
+  "clusters": [
+    {
+      "headline_hint": "Brazil presidential election heads to runoff between Flávio Bolsonaro and Lula",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "lead",
+      "article_ids": [
+        71,
+        120,
+        130,
+        145,
+        183,
+        185,
+        240,
+        305,
+        334,
+        342,
+        343
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        71,
+        120,
+        130,
+        145,
+        183,
+        185,
+        240,
+        305,
+        334,
+        342,
+        343
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 6,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 10,
+      "weight_terms": {
+        "distinct_outlets": 6,
+        "tier_weight": 4,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "BBC World",
+          "title": "Right-wing Flávio Bolsonaro wins first round of Brazil election",
+          "url": "https://www.bbc.co.uk/news/articles/ck1l34ed592no?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Brazil’s presidential race head for a tough runoff",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/10/5/brazils-presidential-race-head-for-a-tough-runoff?traffic_source=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Concerns of US interference weigh on Brazil vote",
+          "url": "https://www.france24.com/en/concerns-of-us-interference-weigh-on-brazil-vote"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Flávio Bolsonaro poised to win Brazilian presidency after shock first-round victory",
+          "url": "https://www.theguardian.com/world/2026/oct/05/flavio-bolsonaro-brazilian-presidency-election-shock-first-round-victory"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "SCOTUS hears major climate change case. And, Brazil's presidential race goes to runoff",
+          "url": "https://www.npr.org/2026/10/05/g-s1-146406/up-first-newsletter-flydubai-investigation-colorado-suncor-exxon-brazil-presidential-elections"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 6
+    },
+    {
+      "headline_hint": "Nobel Prize in Medicine awarded to trio for optogenetics breakthroughs in brain research",
+      "section": "world",
+      "category": "science",
+      "tier_requested": "major",
+      "article_ids": [
+        100,
+        292,
+        306,
+        314
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        100,
+        292,
+        306,
+        314
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": true,
+      "wiki_event": "American Karl Deisseroth of Stanford University, and Germans Peter Hegemann of Humboldt University and Georg Nagel of the University of Würzburg are jointly awarded the Nobel Prize in Medicine for \"their discoveries concerning light-gated i",
+      "weight": 8,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "France 24",
+          "title": "Switching on brain cells: the Nobel-winning science of optogenetics",
+          "url": "https://www.france24.com/en/switching-on-brain-cells-the-nobel-winning-science-of-optogenetics"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "Nobel Prize in Medicine awarded to three scientists for brain research",
+          "url": "https://scroll.in/latest/1096197/nobel-prize-in-medicine-awarded-to-three-scientists-for-brain-research?utm_source=rss&utm_medium=public"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Nobel Prize awarded for revealing inner workings of the brain",
+          "url": "https://www.bbc.co.uk/news/articles/c5ev3ypmzly8o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "Nobel medicine prize goes to 3 scientists for research into brain activity",
+          "url": "https://www.npr.org/2026/10/05/g-s1-146400/nobel-medicine-prize"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Yemeni government forces launch offensive to reclaim Red Sea coast and Bab al-Mandab from Houthis",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "major",
+      "article_ids": [
+        15,
+        45,
+        62,
+        122,
+        126,
+        155,
+        168,
+        174,
+        239,
+        249
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        15,
+        45,
+        62,
+        122,
+        126,
+        155,
+        168,
+        174,
+        239,
+        249
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 6,
+      "wiki_backed": true,
+      "wiki_event": "The Presidential Leadership Council launches a large-scale military operation against Houthis in Yemen, with the aim to capture all Houthi-controlled territories.",
+      "weight": 10,
+      "weight_terms": {
+        "distinct_outlets": 6,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "Houthis target Aramco refinery, Saudi capital airport as Mecca defence pact activated",
+          "url": "https://timesofindia.indiatimes.com/world/middle-east/houthis-target-aramco-refinery-saudi-capital-airport-as-mecca-defence-pact-activated-report/articleshow/134720643.cms"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Yemeni military says it has 'secured' Red Sea waterway",
+          "url": "https://www.bbc.co.uk/news/articles/cw8rzd6lp0xpo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Iran war live: Yemen forces reclaim strategic port city Mocha from Houthis",
+          "url": "https://www.aljazeera.com/news/liveblog/2026/10/6/iran-war-live-yemen-forces-reclaim-strategic-port-city-mocha-from-houthis?traffic_source=rss"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Yemen Says It’s Retaken Mocha as Battle for Bab El-Mandeb Looms",
+          "url": "https://www.livemint.com/news/yemen-says-it-s-retaken-mocha-as-battle-for-bab-el-mandeb-looms-11791233947899.html"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Saudi-backed forces recapture key areas around strait from Houthis in Yemen",
+          "url": "https://www.theguardian.com/world/2026/oct/05/saudi-forces-recapture-key-areas-strait-houthis-yemen"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 5
+    },
+    {
+      "headline_hint": "Spanish Prime Minister Pedro Sánchez calls snap general election over housing crisis defeat",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        161,
+        162,
+        321,
+        322
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        161,
+        162,
+        321,
+        322
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 3,
+      "wiki_backed": true,
+      "wiki_event": "Spanish prime minister Pedro Sánchez calls a snap general election for 29 November after Parliament voted down two emergency housing decrees that would have restricted evictions, frozen rents, and blocked vulture-fund property buys.",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "France 24",
+          "title": "Sanchez chose 'best moment in a sea of troubles' to call for snap election, analyst says",
+          "url": "https://www.france24.com/en/sanchez-chose-best-moment-in-a-sea-of-troubles-to-call-for-snap-election-analyst-says"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Spain PM pins hopes on housing crisis to help win snap election",
+          "url": "https://www.bbc.co.uk/news/articles/ck5yn81qqde0o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "Spain's prime minister calls early elections as pressure mounts over housing crisis",
+          "url": "https://www.npr.org/2026/10/05/nx-s1-5991404/spain-snap-elections"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Watch: How Spain's housing crisis has resulted in an early general election",
+          "url": "https://www.bbc.co.uk/news/videos/c83vqk2k2k20o?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "High school student protests over school conditions escalate across France",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        112,
+        141,
+        144,
+        229,
+        230,
+        233,
+        246,
+        248,
+        331
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        112,
+        141,
+        144,
+        229,
+        230,
+        233,
+        246,
+        248,
+        331
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 6,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "BBC World",
+          "title": "France braces for national day of school protests after injuries and mass arrests",
+          "url": "https://www.bbc.co.uk/news/articles/cr4g1q1elxnjo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "‘France has fallen’: Far-right figures fuel Islamophobic claims with false student protest videos",
+          "url": "https://www.france24.com/en/france-has-fallen-far-right-figures-fuel-islamophobic-claims-with-false-student-protest-videos-1"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Nearly 200 students injured in French schools protests as clashes with police continue – as it happened",
+          "url": "https://www.theguardian.com/world/live/2026/oct/05/europe-spain-pedro-sanchez-election-housing-france-school-protests-ukraine-russia-latest-news-updates"
+        },
+        {
+          "outlet": "DW World",
+          "title": "Hundreds of French schools shut, teen loses hand in protests",
+          "url": "https://www.dw.com/en/hundreds-of-french-schools-shut-teen-loses-hand-in-protests/a-79542656?maca=en-rss-en-world-4025-rdf"
+        },
+        {
+          "outlet": "France 24",
+          "title": "'We are effectively maiming young people' - expert questions France's response to student protests",
+          "url": "https://www.france24.com/en/we-are-effectively-maiming-young-people-expert-questions-france-s-response-to-student-protests"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 4
+    },
+    {
+      "headline_hint": "Plague scare in Siberia triggers quarantine and US monitoring following lab worker's death",
+      "section": "world",
+      "category": "health",
+      "tier_requested": "notable",
+      "article_ids": [
+        74,
+        108,
+        119,
+        167,
+        220,
+        237,
+        290,
+        312
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        74,
+        108,
+        119,
+        167,
+        220,
+        237,
+        290,
+        312
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 8,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 8,
+      "weight_terms": {
+        "distinct_outlets": 8,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Channel News Asia",
+          "title": "Dozens quarantined in Siberia after plague institute lab worker dies",
+          "url": "https://www.channelnewsasia.com/world/russia-siberia-plague-lab-worker-dies-quarantined-6433201"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "US 'watching closely' after plague researcher dies in Russia",
+          "url": "https://www.bbc.co.uk/news/articles/cv5yn3nwp5n5o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Trump says US ready to aid Russia with plague outbreak in Siberia",
+          "url": "https://www.aljazeera.com/news/2026/10/5/trump-says-us-ready-to-aid-russia-with-plague-outbreak-in-siberia?traffic_source=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Russian officials say 'situation under control' after plague reports",
+          "url": "https://www.france24.com/en/russian-officials-say-situation-under-control-after-plague-reports"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Russia lab worker dies of 'severe pneumonia', sparking plague scare; dozens quarantined: What we know so far",
+          "url": "https://www.livemint.com/news/world/russia-lab-worker-dies-of-neumonic-plague-sparking-bubonic-plague-scare-dozens-quarantined-11791219197326.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 3
+    },
+    {
+      "headline_hint": "Nigerian Air Force plane crash in Ondo State kills 32 people",
+      "section": "world",
+      "category": "disaster",
+      "tier_requested": "notable",
+      "article_ids": [
+        213
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        213
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 1,
+      "wiki_backed": true,
+      "wiki_event": "A Nigerian Air Force ATR 42-500 aircraft carrying 32 people crashes in Ondo State, Nigeria.",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 1,
+        "tier_weight": 0,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Livemint",
+          "title": "Nigeria Air Force plane crashes en route to Lagos, killing all 32 on board- What we know",
+          "url": "https://www.livemint.com/news/world/nigeria-air-force-plane-crashes-en-route-to-lagos-killing-all-32-on-board-what-we-know-11791221569589.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Arrest of US Marine in Okinawa over murder of local woman sparks backlash in Japan",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        308,
+        324,
+        352
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        308,
+        324,
+        352
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "NPR World",
+          "title": "U.S. Marine suspected in woman's death arrested in Japan",
+          "url": "https://www.npr.org/2026/10/05/nx-s1-5990879/u-s-marine-suspected-in-womans-death-arrested-in-japan"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "'Not again': Arrest of US marine for murder reignites protests in Japan's Okinawa",
+          "url": "https://www.bbc.co.uk/news/articles/cwgkv70gg1j3o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "US marine arrested in Japan on suspicion of killing woman, police say",
+          "url": "https://www.theguardian.com/us-news/2026/oct/04/marine-arrested-japan-suspicion-murder"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Supreme Court says Form 6 changes were not approved by it, sparking Opposition fire on CEC Gyanesh Kumar",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "lead",
+      "article_ids": [
+        2,
+        7,
+        18,
+        26,
+        36,
+        46,
+        101,
+        109,
+        125,
+        140,
+        142,
+        238,
+        251,
+        280,
+        285,
+        297,
+        317,
+        337,
+        354
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        2,
+        7,
+        18,
+        26,
+        36,
+        46,
+        101,
+        109,
+        125,
+        140,
+        142,
+        238,
+        251,
+        280,
+        285,
+        297,
+        317,
+        337,
+        354
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 5,
+      "wiki_backed": true,
+      "wiki_event": "The International Criminal Court unseals arrest warrants for Taliban education minister Habibullah Agha and higher education minister Neda Mohammad Nadeem, accusing them of the crime against humanity of gender-based persecution in Afghanist",
+      "weight": 11,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 4,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Hindustan Times",
+          "title": "Congress plans nationwide stir seeking CEC’s removal; restoration of eligible voters among the 130 million deleted",
+          "url": "https://www.hindustantimes.com/india-news/congress-plans-nationwide-stir-seeking-cec-s-removal-restoration-of-eligible-voters-among-the-130-million-deleted-101791225604488.html"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "ECI fact-checks claims on Form 6 following SC observation",
+          "url": "https://www.thehindu.com/news/national/eci-fact-checks-claims-on-form-6-following-sc-observation/article71548392.ece"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Form 6 not modified, only declaration added: Election Commission",
+          "url": "https://timesofindia.indiatimes.com/india/form-6-not-modified-only-declaration-added-election-commission/articleshow/134717170.cms"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "SC declines interim order on plea for CEC Gyanesh Kumar’s suspension, seeks EC response",
+          "url": "https://scroll.in/latest/1096189/sc-declines-interim-order-on-plea-for-cec-gyanesh-kumars-suspension-seeks-ec-response?utm_source=rss&utm_medium=public"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "SC declines to suspend CEC Gyanesh Kumar, seeks response on poll body decisions",
+          "url": "https://www.livemint.com/news/india/cec-gyanesh-kumar-sir-voter-list-india-supreme-court-order-on-cec-11791189277401.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 14
+    },
+    {
+      "headline_hint": "Delhi Police promotion withheld following sexual harassment allegations by women journalists at Jantar Mantar",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        50,
+        63,
+        159,
+        214,
+        215,
+        264,
+        294,
+        309,
+        318,
+        349
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        50,
+        63,
+        159,
+        214,
+        215,
+        264,
+        294,
+        309,
+        318,
+        349
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 6,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 8,
+      "weight_terms": {
+        "distinct_outlets": 6,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "The Hindu",
+          "title": "Delhi Govt withholds current duty charge of Additional DCP given to officer accused of sexually harassing journalist",
+          "url": "https://www.thehindu.com/news/cities/Delhi/delhi-govt-withholds-current-duty-charge-of-additional-dcp-given-to-officeraccused-of-sexually-harassing-journalist/article71548845.ece"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Delhi Police ACP's additional DCP charge withheld amid harassment inquiry",
+          "url": "https://timesofindia.indiatimes.com/india/delhi-police-acp-vivek-bhagats-additional-dcp-charge-withheld-amid-harassment-inquiry/articleshow/134716782.cms"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "Delhi Cop Vivek Bhagat's Promotion Withheld Amid Sexual Harassment Allegation",
+          "url": "https://www.ndtv.com/india-news/delhi-cop-vivek-bhagats-promotion-withheld-amid-sexual-harassment-allegation-12143125#publisher=newsstand"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "‘Females treated with dignity’: Delhi Police reject assault claims, issue journalist guidelines as accused cop gets promoted",
+          "url": "https://www.hindustantimes.com/india-news/females-treated-with-dignity-delhi-police-reject-assault-claims-issue-journalist-guidelines-as-accused-cop-gets-promoted-101791217771982.html"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "Journalist who alleged she was sexually assaulted by Delhi Police officer detained for a second time",
+          "url": "https://scroll.in/latest/1096188/journalist-who-alleged-she-was-sexually-assaulted-by-delhi-police-officer-detained-for-a-second-time?utm_source=rss&utm_medium=public"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 5
+    },
+    {
+      "headline_hint": "Investigation reveals Flydubai co-pilot's attack on Indian captain was planned extremist plot",
+      "section": "india",
+      "category": "conflict",
+      "tier_requested": "major",
+      "article_ids": [
+        8,
+        16,
+        187,
+        204,
+        205,
+        275,
+        296,
+        307
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        8,
+        16,
+        187,
+        204,
+        205,
+        275,
+        296,
+        307
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 7,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 9,
+      "weight_terms": {
+        "distinct_outlets": 7,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "Trump blames Iran for flydubai incident, Vance 'defers', says 'nothing conclusively yet'",
+          "url": "https://timesofindia.indiatimes.com/world/us/trump-blames-iran-for-flydubai-incident-vance-defers-says-nothing-conclusively-yet/articleshow/134720849.cms"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "US-Iran war LIVE: Trump \"personally\" thinks Iran behind attack on Flydubai flight after Vance says US yet to find a link",
+          "url": "https://www.livemint.com/news/us-news/us-iran-war-news-latest-live-updates-donald-trump-hormuz-abbas-araghchi-flydubai-attack-jd-vance-ghalibaf-11791249835663.html"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "\"Ultimate Heroism\": flyadeal Executives Praise Captain Smit Machchhar",
+          "url": "https://www.ndtv.com/india-news/ultimate-heroism-flyadeal-executives-praise-captain-smit-machchhar-12142943#publisher=newsstand"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Flydubai co-pilot originally planned attack for July, investigators believe",
+          "url": "https://www.theguardian.com/world/2026/oct/05/flydubai-co-pilot-originally-planned-attack-for-july-investigators-believe"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Flydubai incident exposes lapses in pilot vetting, cockpit security and intelligence",
+          "url": "https://www.hindustantimes.com/india-news/flydubai-incident-deep-aviation-and-security-failures-smit-machchhar-indian-pilot-attacked-9-11-israel-uae-dubai-saudi-101791203164032.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 3
+    },
+    {
+      "headline_hint": "BJP names eight Rajya Sabha candidates in Uttar Pradesh, dropping Union ministers Hardeep Puri and BL Verma",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        5,
+        34,
+        117,
+        262,
+        281
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        5,
+        34,
+        117,
+        262,
+        281
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Hindustan Times",
+          "title": "BJP’s new Uttar Pradesh Rajya Sabha team: Who are the eight new faces?",
+          "url": "https://www.hindustantimes.com/india-news/bjps-new-uttar-pradesh-rajya-sabha-team-who-are-the-eight-new-faces-101791250950414.html"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Rajya Sabha polls: 8 fresh BJP faces for UP, Hardeep Puri among 2 ministers dropped",
+          "url": "https://timesofindia.indiatimes.com/india/rajya-sabha-polls-8-fresh-bjp-faces-for-up-hardeep-puri-among-2-ministers-dropped/articleshow/134716837.cms"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "Union minister Hardeep Singh Puri not among BJP Rajya Sabha candidates",
+          "url": "https://scroll.in/latest/1096199/union-minister-hardeep-singh-puri-not-among-bjp-rajya-sabha-candidates?utm_source=rss&utm_medium=public"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "UP Rajya Sabha elections: BJP releases list of 8 candidates; Ministers Hardeep Puri, BL Verma dropped",
+          "url": "https://www.livemint.com/news/india/up-rajya-sabha-elections-bjp-releases-list-of-8-candidates-ministers-hardeep-puri-bl-verma-dropped-11791197357242.html"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "BJP names 8 Rajya Sabha candidates in UP, drops union ministers Hardeep Singh Puri, BL Verma and sitting members",
+          "url": "https://www.hindustantimes.com/india-news/bjp-names-8-rajya-sabha-candidates-in-up-drops-union-ministers-hardeep-singh-puri-bl-verma-and-sitting-members-101791244884331.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Centre notifies elevation of three High Court Chief Justices to Supreme Court",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        99,
+        269,
+        287
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        99,
+        269,
+        287
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "Supreme Court may get 3 judges today, to be one short of full strength",
+          "url": "https://timesofindia.indiatimes.com/india/supreme-court-may-get-3-judges-today-to-be-one-short-of-full-strength/articleshow/134717182.cms"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Meet Justices Sunita Agarwal, DK Upadhyay, Aparesh Singh: Centre notifies appointment of 3 judges to Supreme Court",
+          "url": "https://www.livemint.com/news/india/meet-justices-sunita-agarwal-dk-upadhyay-aparesh-singh-centre-notifies-appointment-of-3-judges-to-supreme-court-11791201406043.html"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Centre notifies appointment of three high court chief justices as Supreme Court judges",
+          "url": "https://www.hindustantimes.com/india-news/centre-notifies-appointment-of-three-high-court-chief-justices-as-supreme-court-judges-justice-sunita-agarwal-devendra-kumar-upadhyaya-aparesh-kumar-101791201623259.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "India and Switzerland sign five key pacts during PM Modi's talks with Swiss President",
+      "section": "india",
+      "category": "economy",
+      "tier_requested": "notable",
+      "article_ids": [
+        115,
+        216
+      ],
+      "verdict": "cut:below_floor(2<5)",
+      "valid_ids": [
+        115,
+        216
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 2,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "India, Switzerland eye deeper ties in trade, investment, tech",
+          "url": "https://timesofindia.indiatimes.com/india/india-switzerland-eye-deeper-ties-in-trade-investment-tech/articleshow/134716858.cms"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "India, Switzerland sign 5 pacts as PM Modi, President Guy Parmelin discuss trade, defence and nuclear energy",
+          "url": "https://www.hindustantimes.com/india-news/india-switzerland-sign-5-pacts-as-pm-modi-president-guy-parmelin-discuss-trade-defence-and-nuclear-energy-new-delhi-101791220602661.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    }
+  ]
+}

@@ -1,0 +1,1058 @@
+{
+  "min_claim_chars": 20,
+  "max_claims_per_story": 24,
+  "calls": [
+    {
+      "label": "claims-world",
+      "cluster_ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "label": "claims-india",
+      "cluster_ids": [
+        6,
+        7,
+        8
+      ]
+    }
+  ],
+  "rejected_claims": 0,
+  "rejected_clusters": 0,
+  "clusters": [
+    {
+      "cluster_id": 0,
+      "headline_hint": "Brazil presidential election heads to runoff between Flávio Bolsonaro and Lula",
+      "section": "world",
+      "batch_position": 0,
+      "claim_count": 13,
+      "distinct_outlets": 4,
+      "source_kinds": {
+        "summary": 1,
+        "fulltext": 12
+      },
+      "claims": [
+        {
+          "id": 1,
+          "cluster_id": 0,
+          "text": "Right-wing candidate Flávio Bolsonaro won the first round of Brazil's presidential election against President Luiz Inácio Lula da Silva but failed to secure an outright majority.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/ck1l34ed592no?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 2,
+          "cluster_id": 0,
+          "text": "A runoff election between Flávio Bolsonaro and Luiz Inácio Lula da Silva is scheduled for 25 October.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/ck1l34ed592no?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 3,
+          "cluster_id": 0,
+          "text": "With almost all votes counted, Flávio Bolsonaro secured 47% of the vote while Luiz Inácio Lula da Silva received 45%.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/ck1l34ed592no?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 4,
+          "cluster_id": 0,
+          "text": "Flávio Bolsonaro is the son of former Brazilian president Jair Bolsonaro, who is serving a 27-year prison sentence for masterminding a failed coup following the 2022 election.",
+          "kind": "background",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/ck1l34ed592no?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 5,
+          "cluster_id": 0,
+          "text": "US President Donald Trump stated that Flávio Bolsonaro achieved a 'very, very big victory' in the first round of Brazil's election.",
+          "kind": "quote",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/ck1l34ed592no?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 6,
+          "cluster_id": 0,
+          "text": "Flávio Bolsonaro pledged to grant amnesty to his father and to supporters involved in the 8 January 2023 riots if elected president.",
+          "kind": "background",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/ck1l34ed592no?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 7,
+          "cluster_id": 0,
+          "text": "Flávio Bolsonaro acknowledged asking jailed banker Daniel Vorcaro for 134 million reais ($25.9 million) to fund a biographical film about his father.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/ck1l34ed592no?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 8,
+          "cluster_id": 0,
+          "text": "The first round of Brazil's presidential election revealed major gains for Bolsonaro, sending the race into a runoff.",
+          "kind": "event",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/10/5/brazils-presidential-race-head-for-a-tough-runoff?traffic_source=rss",
+          "source_kind": "summary"
+        },
+        {
+          "id": 9,
+          "cluster_id": 0,
+          "text": "Flávio Bolsonaro received 56.1 million votes (47.03%) compared to Luiz Inácio Lula da Silva's 53.8 million votes (45.16%) in the first round.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/05/flavio-bolsonaro-brazilian-presidency-election-shock-first-round-victory",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 10,
+          "cluster_id": 0,
+          "text": "Four relatives of Jair Bolsonaro were elected to Congress, including his wife Michelle to the Senate and his sons Carlos and Jair Renan and brother Renato to legislative seats.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/05/flavio-bolsonaro-brazilian-presidency-election-shock-first-round-victory",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 11,
+          "cluster_id": 0,
+          "text": "Jair Bolsonaro's Liberal Party won 28 of 81 seats in the Brazilian Senate, reaching a 43-seat majority alongside other hard-right parties.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/05/flavio-bolsonaro-brazilian-presidency-election-shock-first-round-victory",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 12,
+          "cluster_id": 0,
+          "text": "Argentinian President Javier Milei celebrated Flávio Bolsonaro's victory over 'the communist Lula'.",
+          "kind": "quote",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/05/flavio-bolsonaro-brazilian-presidency-election-shock-first-round-victory",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 13,
+          "cluster_id": 0,
+          "text": "Brazil's presidential race will advance to a runoff between President Luiz Inácio Lula da Silva and Senator Flávio Bolsonaro.",
+          "kind": "event",
+          "outlet": "NPR World",
+          "url": "https://www.npr.org/2026/10/05/g-s1-146406/up-first-newsletter-flydubai-investigation-colorado-suncor-exxon-brazil-presidential-elections",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 1,
+      "headline_hint": "Yemeni government forces launch offensive to reclaim Red Sea coast and Bab al-Mandab from Houthis",
+      "section": "world",
+      "batch_position": 1,
+      "claim_count": 12,
+      "distinct_outlets": 5,
+      "source_kinds": {
+        "summary": 1,
+        "fulltext": 11
+      },
+      "claims": [
+        {
+          "id": 14,
+          "cluster_id": 1,
+          "text": "Houthi rebels claimed to launch missile and drone attacks on King Khalid International Airport in Riyadh, an Aramco refinery in Rabigh, Abha International Airport, and a military base in Khamis Mushait.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/middle-east/houthis-target-aramco-refinery-saudi-capital-airport-as-mecca-defence-pact-activated-report/articleshow/134720643.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 15,
+          "cluster_id": 1,
+          "text": "Saudi Arabia, Pakistan, and Türkiye activated the Mecca defence pact to coordinate collective-defence deployments following Houthi attacks.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/middle-east/houthis-target-aramco-refinery-saudi-capital-airport-as-mecca-defence-pact-activated-report/articleshow/134720643.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 16,
+          "cluster_id": 1,
+          "text": "Yemeni pro-government forces backed by Saudi Arabia announced they secured the Bab al-Mandab Strait as part of Operation Yemen Dawn.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cw8rzd6lp0xpo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 17,
+          "cluster_id": 1,
+          "text": "The Saudi-led military coalition reported that its fighter jets destroyed 324 targets since the start of the offensive in Yemen.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cw8rzd6lp0xpo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 18,
+          "cluster_id": 1,
+          "text": "The Houthi-run Humanitarian Operations Co-ordination Centre warned civilian airlines that Saudi airspace is no longer safe due to ongoing military operations.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cw8rzd6lp0xpo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 19,
+          "cluster_id": 1,
+          "text": "Yemen's health ministry reported that at least 959 people have been killed and 5,000 injured in fighting since 6 August.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cw8rzd6lp0xpo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 20,
+          "cluster_id": 1,
+          "text": "Türkiye and Pakistan agreed to rapidly deploy military forces to bolster Saudi security under the Mecca defence pact.",
+          "kind": "event",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/liveblog/2026/10/6/iran-war-live-yemen-forces-reclaim-strategic-port-city-mocha-from-houthis?traffic_source=rss",
+          "source_kind": "summary"
+        },
+        {
+          "id": 21,
+          "cluster_id": 1,
+          "text": "Yemeni armed forces recaptured the Red Sea port city of Mocha from Houthi control.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/yemen-says-it-s-retaken-mocha-as-battle-for-bab-el-mandeb-looms-11791233947899.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 22,
+          "cluster_id": 1,
+          "text": "The Saudi-led coalition provided air support to Yemeni ground forces using 100 fighter jets early on Monday.",
+          "kind": "figure",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/yemen-says-it-s-retaken-mocha-as-battle-for-bab-el-mandeb-looms-11791233947899.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 23,
+          "cluster_id": 1,
+          "text": "Yemeni government forces recaptured the towns of Dhubab, Bab, and Hadeid near the Bab al-Mandab strait.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/05/saudi-forces-recapture-key-areas-strait-houthis-yemen",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 24,
+          "cluster_id": 1,
+          "text": "Houthi fighters captured the town of Turbah and cut off a main supply route connecting Taiz with Aden.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/05/saudi-forces-recapture-key-areas-strait-houthis-yemen",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 25,
+          "cluster_id": 1,
+          "text": "Fighting across Taiz province killed more than 70 people over 24 hours, including 34 government troops and 39 Houthi fighters.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/05/saudi-forces-recapture-key-areas-strait-houthis-yemen",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 2,
+      "headline_hint": "Plague scare in Siberia triggers quarantine and US monitoring following lab worker's death",
+      "section": "world",
+      "batch_position": 2,
+      "claim_count": 10,
+      "distinct_outlets": 4,
+      "source_kinds": {
+        "fulltext": 10
+      },
+      "claims": [
+        {
+          "id": 26,
+          "cluster_id": 2,
+          "text": "A 28-year-old laboratory worker named Darya Shipilova at the Irkutsk Anti-Plague Research Institute of Siberia and the Far East died of pneumonia of unestablished origin.",
+          "kind": "event",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/russia-siberia-plague-lab-worker-dies-quarantined-6433201",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 27,
+          "cluster_id": 2,
+          "text": "About 200 people who had contact with the deceased laboratory worker in Irkutsk region were placed under medical quarantine.",
+          "kind": "figure",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/russia-siberia-plague-lab-worker-dies-quarantined-6433201",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 28,
+          "cluster_id": 2,
+          "text": "US President Donald Trump stated the laboratory worker's death was a 'big problem for Russia' and offered US assistance.",
+          "kind": "quote",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/russia-siberia-plague-lab-worker-dies-quarantined-6433201",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 29,
+          "cluster_id": 2,
+          "text": "Irkutsk Governor Igor Kobzev stated that no microorganisms linked to the lab worker's duties were found in her biological samples.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cv5yn3nwp5n5o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 30,
+          "cluster_id": 2,
+          "text": "Darya Shipilova had recently visited the Buryatia region bordering Mongolia, where Yersinia pestis is found among wild rodents.",
+          "kind": "background",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cv5yn3nwp5n5o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 31,
+          "cluster_id": 2,
+          "text": "Pneumonic plague is caused by the bacterium Yersinia pestis and is nearly always fatal if not treated promptly with antibiotics.",
+          "kind": "background",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cv5yn3nwp5n5o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 32,
+          "cluster_id": 2,
+          "text": "US Secretary of State Marco Rubio stated regarding the Siberian plague scare that 'I don't think it's cause for alarm, but it is cause for focus and a cause to just keep an eye on it'.",
+          "kind": "quote",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/5/trump-says-us-ready-to-aid-russia-with-plague-outbreak-in-siberia?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 33,
+          "cluster_id": 2,
+          "text": "The World Health Organization stated that the public health risk to the general population from the incident in Siberia appears low.",
+          "kind": "event",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/5/trump-says-us-ready-to-aid-russia-with-plague-outbreak-in-siberia?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 34,
+          "cluster_id": 2,
+          "text": "Rospotrebnadzor head Anna Popova flew to Siberia for an emergency meeting following the laboratory worker's death.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/world/russia-lab-worker-dies-of-neumonic-plague-sparking-bubonic-plague-scare-dozens-quarantined-11791219197326.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 35,
+          "cluster_id": 2,
+          "text": "Russian health officials identified two cases of COVID-19 and two cases of rhinoviruses among individuals who had contact with the deceased lab worker.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/world/russia-lab-worker-dies-of-neumonic-plague-sparking-bubonic-plague-scare-dozens-quarantined-11791219197326.html",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 3,
+      "headline_hint": "Nobel Prize in Medicine awarded to trio for optogenetics breakthroughs in brain research",
+      "section": "world",
+      "batch_position": 3,
+      "claim_count": 6,
+      "distinct_outlets": 4,
+      "source_kinds": {
+        "fulltext": 6
+      },
+      "claims": [
+        {
+          "id": 36,
+          "cluster_id": 3,
+          "text": "Karl Deisseroth, Peter Hegemann, and Georg Nagel were awarded the Nobel Prize in Physiology or Medicine for their development of optogenetics.",
+          "kind": "event",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/switching-on-brain-cells-the-nobel-winning-science-of-optogenetics",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 37,
+          "cluster_id": 3,
+          "text": "Peter Hegemann and Georg Nagel discovered the light-sensitive protein channelrhodopsin in a single-celled alga.",
+          "kind": "background",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/latest/1096197/nobel-prize-in-medicine-awarded-to-three-scientists-for-brain-research?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 38,
+          "cluster_id": 3,
+          "text": "Karl Deisseroth developed a method to turn channelrhodopsin into a light-controlled switch for nerve cells.",
+          "kind": "background",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/latest/1096197/nobel-prize-in-medicine-awarded-to-three-scientists-for-brain-research?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 39,
+          "cluster_id": 3,
+          "text": "The three Nobel laureates in Medicine will equally share 12 million Swedish krona in prize money.",
+          "kind": "figure",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/latest/1096197/nobel-prize-in-medicine-awarded-to-three-scientists-for-brain-research?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 40,
+          "cluster_id": 3,
+          "text": "Researchers are conducting clinical trials using optogenetics to try to restore vision in patients suffering from retinitis pigmentosa.",
+          "kind": "background",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c5ev3ypmzly8o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 41,
+          "cluster_id": 3,
+          "text": "The 2026 Nobel Prize in Physiology or Medicine was awarded to Karl Deisseroth, 54, Peter Hegemann, 71, and Georg Nagel, 73.",
+          "kind": "figure",
+          "outlet": "NPR World",
+          "url": "https://www.npr.org/2026/10/05/g-s1-146400/nobel-medicine-prize",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 4,
+      "headline_hint": "Spanish Prime Minister Pedro Sánchez calls snap general election over housing crisis defeat",
+      "section": "world",
+      "batch_position": 4,
+      "claim_count": 8,
+      "distinct_outlets": 2,
+      "source_kinds": {
+        "fulltext": 8
+      },
+      "claims": [
+        {
+          "id": 42,
+          "cluster_id": 4,
+          "text": "Spanish Prime Minister Pedro Sánchez called a snap general election for 29 November after his government's housing legislation was rejected by congress.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/ck5yn81qqde0o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 43,
+          "cluster_id": 4,
+          "text": "Pedro Sánchez's Socialist Party is trailing the conservative People's Party (PP) in public opinion polls.",
+          "kind": "background",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/ck5yn81qqde0o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 44,
+          "cluster_id": 4,
+          "text": "Prime Minister Pedro Sánchez's wife, Begoña Gómez, faces an upcoming trial on allegations of misuse of funds and influence peddling.",
+          "kind": "background",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/ck5yn81qqde0o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 45,
+          "cluster_id": 4,
+          "text": "More than 70,000 migrants arrived in the Spanish North African exclave of Ceuta in July.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/ck5yn81qqde0o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 46,
+          "cluster_id": 4,
+          "text": "Nationwide housing protests erupted across Spain following the televised eviction of an 87-year-old woman in Madrid.",
+          "kind": "background",
+          "outlet": "NPR World",
+          "url": "https://www.npr.org/2026/10/05/nx-s1-5991404/spain-snap-elections",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 47,
+          "cluster_id": 4,
+          "text": "Pedro Sánchez, 54, has served as Spain's prime minister since 2018.",
+          "kind": "figure",
+          "outlet": "NPR World",
+          "url": "https://www.npr.org/2026/10/05/nx-s1-5991404/spain-snap-elections",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 48,
+          "cluster_id": 4,
+          "text": "Popular Party leader Alberto Núñez Feijóo welcomed the snap election, stating 'At last, the Spanish people will decide. These aren't elections like the previous ones. This is about Spain beating Sánchez.'",
+          "kind": "quote",
+          "outlet": "NPR World",
+          "url": "https://www.npr.org/2026/10/05/nx-s1-5991404/spain-snap-elections",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 49,
+          "cluster_id": 4,
+          "text": "In his speech announcing elections, Pedro Sánchez warned Spaniards about an 'extreme-right wave' taking hold in other countries.",
+          "kind": "quote",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/videos/c83vqk2k2k20o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 5,
+      "headline_hint": "High school student protests over school conditions escalate across France",
+      "section": "world",
+      "batch_position": 5,
+      "claim_count": 10,
+      "distinct_outlets": 4,
+      "source_kinds": {
+        "fulltext": 10
+      },
+      "claims": [
+        {
+          "id": 50,
+          "cluster_id": 5,
+          "text": "High school student protests across France have resulted in over 5,000 arrests and at least 190 students injured.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cr4g1q1elxnjo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 51,
+          "cluster_id": 5,
+          "text": "A 15-year-old student had his hand blown off during a confrontation with police near a high school in Lens.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cr4g1q1elxnjo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 52,
+          "cluster_id": 5,
+          "text": "French Prime Minister Sébastien Lecornu announced measures to address student grievances while vowing no concessions to violence.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cr4g1q1elxnjo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 53,
+          "cluster_id": 5,
+          "text": "La France Insoumise leader Jean-Luc Mélenchon called the demonstrations the 'most powerful high school and university student youth movement' in France since 1968.",
+          "kind": "quote",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cr4g1q1elxnjo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 54,
+          "cluster_id": 5,
+          "text": "National Rally leader Marine Le Pen called for a new anti-rioting law, describing the protests as riots organized by professionals.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cr4g1q1elxnjo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 55,
+          "cluster_id": 5,
+          "text": "Far-right figures including Alex Jones and Tommy Robinson circulated outdated and misleading videos online to frame French student protests as an Islamist or anti-white uprising.",
+          "kind": "event",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/france-has-fallen-far-right-figures-fuel-islamophobic-claims-with-false-student-protest-videos-1",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 56,
+          "cluster_id": 5,
+          "text": "A 15-year-old protester in Lens picked up a police stun grenade that exploded in his hand.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/live/2026/oct/05/europe-spain-pedro-sanchez-election-housing-france-school-protests-ukraine-russia-latest-news-updates",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 57,
+          "cluster_id": 5,
+          "text": "French Education Minister Édouard Geffray stated that 400 to 500 high schools were completely or partially closed on Monday due to security concerns.",
+          "kind": "figure",
+          "outlet": "DW World",
+          "url": "https://www.dw.com/en/hundreds-of-french-schools-shut-teen-loses-hand-in-protests/a-79542656?maca=en-rss-en-world-4025-rdf",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 58,
+          "cluster_id": 5,
+          "text": "Education Minister Édouard Geffray reported that 24 schools were burned or ransacked and 78 education staff members injured since protests began.",
+          "kind": "figure",
+          "outlet": "DW World",
+          "url": "https://www.dw.com/en/hundreds-of-french-schools-shut-teen-loses-hand-in-protests/a-79542656?maca=en-rss-en-world-4025-rdf",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 59,
+          "cluster_id": 5,
+          "text": "In La Ciotat, a 16-year-old was detained after a 59-year-old teacher was struck and doused with gasoline on the sidelines of a demonstration.",
+          "kind": "figure",
+          "outlet": "DW World",
+          "url": "https://www.dw.com/en/hundreds-of-french-schools-shut-teen-loses-hand-in-protests/a-79542656?maca=en-rss-en-world-4025-rdf",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 6,
+      "headline_hint": "Supreme Court says Form 6 changes were not approved by it, sparking Opposition fire on CEC Gyanesh Kumar",
+      "section": "india",
+      "batch_position": 0,
+      "claim_count": 18,
+      "distinct_outlets": 5,
+      "source_kinds": {
+        "fulltext": 18
+      },
+      "claims": [
+        {
+          "id": 60,
+          "cluster_id": 6,
+          "text": "The Congress party announced it will launch a series of protests under the banner 'Vote Bachao, Desh Bachao' to demand the removal of Chief Election Commissioner Gyanesh Kumar.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/congress-plans-nationwide-stir-seeking-cec-s-removal-restoration-of-eligible-voters-among-the-130-million-deleted-101791225604488.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 61,
+          "cluster_id": 6,
+          "text": "The Congress party claims 130 million eligible voters have been deleted from India's electoral rolls.",
+          "kind": "figure",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/congress-plans-nationwide-stir-seeking-cec-s-removal-restoration-of-eligible-voters-among-the-130-million-deleted-101791225604488.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 62,
+          "cluster_id": 6,
+          "text": "Congress president Mallikarjun Kharge and Leader of the Opposition Rahul Gandhi led a preparatory meeting with party leaders to plan the nationwide campaign.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/congress-plans-nationwide-stir-seeking-cec-s-removal-restoration-of-eligible-voters-among-the-130-million-deleted-101791225604488.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 63,
+          "cluster_id": 6,
+          "text": "The Congress party invited the DMK and AAP to participate in an INDIA bloc march to the Election Commission on Tuesday and a rally at Ramlila Maidan on November 1.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/congress-plans-nationwide-stir-seeking-cec-s-removal-restoration-of-eligible-voters-among-the-130-million-deleted-101791225604488.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 64,
+          "cluster_id": 6,
+          "text": "The AAP exited the INDIA alliance following the Lok Sabha elections, while the DMK parted ways with Congress in June after Congress supported the TVK government.",
+          "kind": "background",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/congress-plans-nationwide-stir-seeking-cec-s-removal-restoration-of-eligible-voters-among-the-130-million-deleted-101791225604488.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 65,
+          "cluster_id": 6,
+          "text": "Congress general secretary KC Venugopal announced that block-level protests, bike rallies, and effigy burnings of Gyanesh Kumar will occur between October 10 and October 20.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/congress-plans-nationwide-stir-seeking-cec-s-removal-restoration-of-eligible-voters-among-the-130-million-deleted-101791225604488.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 66,
+          "cluster_id": 6,
+          "text": "Congress plans six protest yatras from Haryana, Uttar Pradesh, and Rajasthan on November 25 and 26 to mark Constitution Day.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/congress-plans-nationwide-stir-seeking-cec-s-removal-restoration-of-eligible-voters-among-the-130-million-deleted-101791225604488.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 67,
+          "cluster_id": 6,
+          "text": "Chief Justice of India Surya Kant stated in court, 'any modification to Form 6 has not been approved by us. Let's be clear.'",
+          "kind": "quote",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/eci-fact-checks-claims-on-form-6-following-sc-observation/article71548392.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 68,
+          "cluster_id": 6,
+          "text": "Rahul Gandhi posted on X that Chief Election Commissioner Gyanesh Kumar changed Form 6 illegally and unilaterally to assist the BJP.",
+          "kind": "quote",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/eci-fact-checks-claims-on-form-6-following-sc-observation/article71548392.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 69,
+          "cluster_id": 6,
+          "text": "The Election Commission of India posted on X that Rahul Gandhi's statements were misleading, stating the Special Intensive Revision order for Bihar was unanimously approved and upheld by the Supreme Court on May 27, 2026.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/eci-fact-checks-claims-on-form-6-following-sc-observation/article71548392.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 70,
+          "cluster_id": 6,
+          "text": "The Press Information Bureau fact-checked claims by Cockroach Janta Party's Ashutosh Ranka, stating the Election Commission's September 26, 2026 press release remains publicly available.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/eci-fact-checks-claims-on-form-6-following-sc-observation/article71548392.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 71,
+          "cluster_id": 6,
+          "text": "Election Commission officials clarified that Form 6 itself was not changed, but an additional declaration form, Annexure D, was introduced under the Special Intensive Revision documentation framework.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/form-6-not-modified-only-declaration-added-election-commission/articleshow/134717170.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 72,
+          "cluster_id": 6,
+          "text": "On September 29, the Election Commission removed the requirement for the additional declaration form in states and Union Territories where Special Intensive Revision was completed or had not yet started.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/form-6-not-modified-only-declaration-added-election-commission/articleshow/134717170.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 73,
+          "cluster_id": 6,
+          "text": "The Supreme Court declined to issue an interim order suspending Chief Election Commissioner Gyanesh Kumar and instead sought responses from the ECI and Union government.",
+          "kind": "event",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/latest/1096189/sc-declines-interim-order-on-plea-for-cec-gyanesh-kumars-suspension-seeks-ec-response?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 74,
+          "cluster_id": 6,
+          "text": "A Supreme Court bench consisting of Chief Justice Surya Kant, Justice Joymalya Bagchi, and Justice V. Mohana issued notices to CEC Kumar, Election Commissioners Sukhbir Singh Sandhu and Vivek Joshi, and Deputy Election Commissioner Maneesh Garg.",
+          "kind": "event",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/latest/1096189/sc-declines-interim-order-on-plea-for-cec-gyanesh-kumars-suspension-seeks-ec-response?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 75,
+          "cluster_id": 6,
+          "text": "The Indian Express reported on September 23 that Election Commissioners Sandhu and Joshi formally objected 14 times in 10 months to decisions regarding the Special Intensive Revision.",
+          "kind": "background",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/latest/1096189/sc-declines-interim-order-on-plea-for-cec-gyanesh-kumars-suspension-seeks-ec-response?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 76,
+          "cluster_id": 6,
+          "text": "A petition filed in the Supreme Court requested an investigation into the deletion of 13.8 crore voters across 31 states and Union Territories.",
+          "kind": "figure",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/latest/1096189/sc-declines-interim-order-on-plea-for-cec-gyanesh-kumars-suspension-seeks-ec-response?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 77,
+          "cluster_id": 6,
+          "text": "Senior counsel Vikas Singh, representing petitioner Rakesh Singh, argued before the Supreme Court for an immediate restraint on Chief Election Commissioner Kumar to safeguard electoral credibility.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/cec-gyanesh-kumar-sir-voter-list-india-supreme-court-order-on-cec-11791189277401.html",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 7,
+      "headline_hint": "Investigation reveals Flydubai co-pilot's attack on Indian captain was planned extremist plot",
+      "section": "india",
+      "batch_position": 1,
+      "claim_count": 12,
+      "distinct_outlets": 5,
+      "source_kinds": {
+        "fulltext": 12
+      },
+      "claims": [
+        {
+          "id": 78,
+          "cluster_id": 7,
+          "text": "US President Donald Trump stated he personally believes Iran was responsible for the flydubai incident, saying 'I do. I personally do.'",
+          "kind": "quote",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/us/trump-blames-iran-for-flydubai-incident-vance-defers-says-nothing-conclusively-yet/articleshow/134720849.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 79,
+          "cluster_id": 7,
+          "text": "US Vice President JD Vance stated regarding Iranian involvement, 'I wouldn't say I've seen anything conclusively just yet.'",
+          "kind": "quote",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/us/trump-blames-iran-for-flydubai-incident-vance-defers-says-nothing-conclusively-yet/articleshow/134720849.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 80,
+          "cluster_id": 7,
+          "text": "The UAE is leading an international investigation into a September 30 attack aboard a flydubai flight from Dubai to Tel Aviv carrying 170 passengers.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/us/trump-blames-iran-for-flydubai-incident-vance-defers-says-nothing-conclusively-yet/articleshow/134720849.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 81,
+          "cluster_id": 7,
+          "text": "An Omani co-pilot attacked flight captain Smit Machchhar with a crash axe in an attempt to crash a flydubai flight at Ben Gurion Airport.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/us-news/us-iran-war-news-latest-live-updates-donald-trump-hormuz-abbas-araghchi-flydubai-attack-jd-vance-ghalibaf-11791249835663.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 82,
+          "cluster_id": 7,
+          "text": "US President Donald Trump stated that B-1 bombers were moved from their UK base due to fresh terror threats.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/us-news/us-iran-war-news-latest-live-updates-donald-trump-hormuz-abbas-araghchi-flydubai-attack-jd-vance-ghalibaf-11791249835663.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 83,
+          "cluster_id": 7,
+          "text": "Acting CEO of flyadeal Sanjiv Kapoor praised Captain Smit Machchhar's actions, calling them 'sheer heroic activity' and 'ultimate heroism'.",
+          "kind": "quote",
+          "outlet": "NDTV",
+          "url": "https://www.ndtv.com/india-news/ultimate-heroism-flyadeal-executives-praise-captain-smit-machchhar-12142943#publisher=newsstand",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 84,
+          "cluster_id": 7,
+          "text": "The co-pilot who attacked Captain Machchhar was identified as Omani national Hamam Alhammami.",
+          "kind": "event",
+          "outlet": "NDTV",
+          "url": "https://www.ndtv.com/india-news/ultimate-heroism-flyadeal-executives-praise-captain-smit-machchhar-12142943#publisher=newsstand",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 85,
+          "cluster_id": 7,
+          "text": "Investigators believe 29-year-old Hamam al-Hammami originally planned his attack on a flydubai flight for July before postponing it.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/05/flydubai-co-pilot-originally-planned-attack-for-july-investigators-believe",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 86,
+          "cluster_id": 7,
+          "text": "Hammami launched his attack approximately two hours and 20 minutes after takeoff on flydubai flight FZ1073.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/05/flydubai-co-pilot-originally-planned-attack-for-july-investigators-believe",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 87,
+          "cluster_id": 7,
+          "text": "Hammami worked for Oman Air from 2018 until June 2025, when he was reassigned to a desk job due to concerns over extremist views.",
+          "kind": "background",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/05/flydubai-co-pilot-originally-planned-attack-for-july-investigators-believe",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 88,
+          "cluster_id": 7,
+          "text": "Captain Machchhar unlocked the cockpit security door, allowing passengers to overpower Hammami before a reserve pilot landed the plane in north-western Saudi Arabia.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/05/flydubai-co-pilot-originally-planned-attack-for-july-investigators-believe",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 89,
+          "cluster_id": 7,
+          "text": "Captain Smit Machchhar suffered severe injuries to his head, chest, and hands during the confrontation in the cockpit.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/flydubai-incident-deep-aviation-and-security-failures-smit-machchhar-indian-pilot-attacked-9-11-israel-uae-dubai-saudi-101791203164032.html",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 8,
+      "headline_hint": "Delhi Police promotion withheld following sexual harassment allegations by women journalists at Jantar Mantar",
+      "section": "india",
+      "batch_position": 2,
+      "claim_count": 12,
+      "distinct_outlets": 4,
+      "source_kinds": {
+        "fulltext": 12
+      },
+      "claims": [
+        {
+          "id": 90,
+          "cluster_id": 8,
+          "text": "The Delhi government withheld the current duty charge assignment of Additional Deputy Commissioner of Police given to ACP Vivek Bhagat following sexual harassment allegations.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/cities/Delhi/delhi-govt-withholds-current-duty-charge-of-additional-dcp-given-to-officeraccused-of-sexually-harassing-journalist/article71548845.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 91,
+          "cluster_id": 8,
+          "text": "ACP Vivek Bhagat voluntarily requested not to take up the current duty charge until a full enquiry into the allegations is completed.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/cities/Delhi/delhi-govt-withholds-current-duty-charge-of-additional-dcp-given-to-officeraccused-of-sexually-harassing-journalist/article71548845.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 92,
+          "cluster_id": 8,
+          "text": "Three women journalists accused Delhi Police officers of sexual harassment during an October 3 protest against CEC Gyanesh Kumar at Jantar Mantar.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/cities/Delhi/delhi-govt-withholds-current-duty-charge-of-additional-dcp-given-to-officeraccused-of-sexually-harassing-journalist/article71548845.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 93,
+          "cluster_id": 8,
+          "text": "The Delhi Police forwarded the sexual harassment complaints received from women journalists to the Crime Branch for further inquiry.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/cities/Delhi/delhi-govt-withholds-current-duty-charge-of-additional-dcp-given-to-officeraccused-of-sexually-harassing-journalist/article71548845.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 94,
+          "cluster_id": 8,
+          "text": "The proposal to confer current duty charge to 12 DANIPS officers was initiated on August 25 and approved on October 5.",
+          "kind": "background",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/delhi-police-acp-vivek-bhagats-additional-dcp-charge-withheld-amid-harassment-inquiry/articleshow/134716782.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 95,
+          "cluster_id": 8,
+          "text": "ACP Vivek Bhagat serves as Sub-Divisional Police Officer (SDPO) of Connaught Place.",
+          "kind": "background",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/delhi-police-acp-vivek-bhagats-additional-dcp-charge-withheld-amid-harassment-inquiry/articleshow/134716782.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 96,
+          "cluster_id": 8,
+          "text": "The Delhi Police called physical assault allegations against female protesters 'baseless and misleading', stating female staff handled female protesters with dignity.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/females-treated-with-dignity-delhi-police-reject-assault-claims-issue-journalist-guidelines-as-accused-cop-gets-promoted-101791217771982.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 97,
+          "cluster_id": 8,
+          "text": "The Delhi Police issued guidelines advising journalists covering protests to visibly display valid organisation or PIB/DIP accreditation cards.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/females-treated-with-dignity-delhi-police-reject-assault-claims-issue-journalist-guidelines-as-accused-cop-gets-promoted-101791217771982.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 98,
+          "cluster_id": 8,
+          "text": "One journalist alleged ACP Bhagat pushed and sexually assaulted her when she questioned the absence of female police personnel during protester detentions.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/females-treated-with-dignity-delhi-police-reject-assault-claims-issue-journalist-guidelines-as-accused-cop-gets-promoted-101791217771982.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 99,
+          "cluster_id": 8,
+          "text": "A woman journalist who alleged ACP Bhagat sexually harassed her was detained for a second time on Monday outside Parliament Street police station.",
+          "kind": "event",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/latest/1096188/journalist-who-alleged-she-was-sexually-assaulted-by-delhi-police-officer-detained-for-a-second-time?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 100,
+          "cluster_id": 8,
+          "text": "Seventeen people were detained alongside the journalist on Monday, with Cockroach Janta Party's Ratna Singh alleging that police assaulted the detainees.",
+          "kind": "event",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/latest/1096188/journalist-who-alleged-she-was-sexually-assaulted-by-delhi-police-officer-detained-for-a-second-time?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 101,
+          "cluster_id": 8,
+          "text": "Digipub News India Foundation demanded that FIRs be registered against the police officers accused of sexually harassing women journalists.",
+          "kind": "event",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/latest/1096188/journalist-who-alleged-she-was-sexually-assaulted-by-delhi-police-officer-detained-for-a-second-time?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        }
+      ]
+    }
+  ],
+  "clusters_with_no_claims": []
+}
