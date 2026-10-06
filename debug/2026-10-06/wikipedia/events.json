@@ -1,22 +1,32 @@
 {
   "max_events": 60,
-  "parsed": 10,
-  "used": 10,
+  "parsed": 14,
+  "used": 14,
   "events": [
     {
       "category": "Armed conflicts",
-      "topic": "Yemeni civil war (2014–present)",
+      "topic": "Yemeni civil war",
       "text": "The Presidential Leadership Council launches a large-scale military operation against Houthis in Yemen, with the aim to capture all Houthi-controlled territories."
     },
     {
       "category": "Armed conflicts",
-      "topic": "Yemeni civil war (2014–present)",
+      "topic": "Yemeni civil war",
       "text": "A Yemeni government offensive pushes the Houthis from the Bab al-Mandab Strait."
+    },
+    {
+      "category": "Business and economy",
+      "topic": "2026 Brazilian general election",
+      "text": "Brazil's benchmark Índice Bovespa index rises nearly 9% to almost 210,000 points after the first round of the presidential election, surpassing 200,000 points for the first time."
+    },
+    {
+      "category": "Business and economy",
+      "topic": "",
+      "text": "Russian president Vladimir Putin approves the restructuring of UniCredit Bank Russia and the subsequent sale of most of the business to a United Arab Emirates-based private investor, while UniCredit retains its payments operations."
     },
     {
       "category": "International relations",
       "topic": "United Kingdom–United States relations",
-      "text": "The United States Air Force withdraws all of its B-1 Lancer strategic bombers from RAF Fairford in Gloucestershire, England. The US Department of Defense confirms the bombers have returned to bases in the United States."
+      "text": "The United States Air Force withdraws all of its B-1 Lancer strategic bombers from RAF Fairford in Gloucestershire, England. The U.S. Department of Defense confirms the bombers have returned to bases in the United States."
     },
     {
       "category": "Disasters and accidents",
@@ -26,12 +36,17 @@
     {
       "category": "Disasters and accidents",
       "topic": "",
-      "text": "The death toll increases to over 30 people, with dozens still missing, of the two ships that collided yesterday on the Congo River near Lukolela, Congo."
+      "text": "The death toll increases to over 30 people, with dozens still missing, of the two ships that collided yesterday on the Congo River near Lukolela, Democratic Republic of the Congo."
     },
     {
       "category": "Law and crime",
       "topic": "International Criminal Court investigation in Afghanistan",
       "text": "The International Criminal Court unseals arrest warrants for Taliban education minister Habibullah Agha and higher education minister Neda Mohammad Nadeem, accusing them of the crime against humanity of gender-based persecution in Afghanist"
+    },
+    {
+      "category": "Law and crime",
+      "topic": "",
+      "text": "Protesters clash with police in Pristina, Kosovo, after parliament fails to advance legislation limiting the Kosovo Specialist Chambers' powers. One police officer and 11 civilians are injured."
     },
     {
       "category": "Politics and elections",
@@ -45,6 +60,11 @@
     },
     {
       "category": "Politics and elections",
+      "topic": "2026 Quebec general election",
+      "text": "The Parti Québécois are elected into a minority government while the ruling Coalition Avenir Québec face an electoral wipeout."
+    },
+    {
+      "category": "Politics and elections",
       "topic": "2026 Spanish general election, 2026 Spanish housing protests",
       "text": "Spanish prime minister Pedro Sánchez calls a snap general election for 29 November after Parliament voted down two emergency housing decrees that would have restricted evictions, frozen rents, and blocked vulture-fund property buys."
     },
@@ -54,5 +74,5 @@
       "text": "American Karl Deisseroth of Stanford University, and Germans Peter Hegemann of Humboldt University and Georg Nagel of the University of Würzburg are jointly awarded the Nobel Prize in Medicine for \"their discoveries concerning light-gated i"
     }
   ],
-  "prompt_block": "WIKIPEDIA CURRENT EVENTS (curated checklist — see rules above)\n- [Armed conflicts] Yemeni civil war (2014–present) — The Presidential Leadership Council launches a large-scale military operation against Houthis in Yemen, with the aim to capture all Houthi-controlled territories.\n- [Armed conflicts] Yemeni civil war (2014–present) — A Yemeni government offensive pushes the Houthis from the Bab al-Mandab Strait.\n- [International relations] United Kingdom–United States relations — The United States Air Force withdraws all of its B-1 Lancer strategic bombers from RAF Fairford in Gloucestershire, England. The US Department of Defense confirms the bombers have returned to bases in the United States.\n- [Disasters and accidents] 2026 Nigerian Air Force ATR 42 crash — A Nigerian Air Force ATR 42-500 aircraft carrying 32 people crashes in Ondo State, Nigeria.\n- [Disasters and accidents] The death toll increases to over 30 people, with dozens still missing, of the two ships that collided yesterday on the Congo River near Lukolela, Congo.\n- [Law and crime] International Criminal Court investigation in Afghanistan — The International Criminal Court unseals arrest warrants for Taliban education minister Habibullah Agha and higher education minister Neda Mohammad Nadeem, accusing them of the crime against humanity of gender-based persecution in Afghanist\n- [Politics and elections] 2025–2026 Kosovo political deadlock — In Kosovo, the acting presidency of Albulena Haxhiu becomes de facto due to her having continuously served in the position for more than six months since assuming office on 4 April, violating the third paragraph of Article 90 in the constit\n- [Politics and elections] 2026 Quebec general election — Voters in Quebec, Canada, elect members to the National Assembly.\n- [Politics and elections] 2026 Spanish general election, 2026 Spanish housing protests — Spanish prime minister Pedro Sánchez calls a snap general election for 29 November after Parliament voted down two emergency housing decrees that would have restricted evictions, frozen rents, and blocked vulture-fund property buys.\n- [Science and technology] American Karl Deisseroth of Stanford University, and Germans Peter Hegemann of Humboldt University and Georg Nagel of the University of Würzburg are jointly awarded the Nobel Prize in Medicine for \"their discoveries concerning light-gated i"
+  "prompt_block": "WIKIPEDIA CURRENT EVENTS (curated checklist — see rules above)\n- [Armed conflicts] Yemeni civil war — The Presidential Leadership Council launches a large-scale military operation against Houthis in Yemen, with the aim to capture all Houthi-controlled territories.\n- [Armed conflicts] Yemeni civil war — A Yemeni government offensive pushes the Houthis from the Bab al-Mandab Strait.\n- [Business and economy] 2026 Brazilian general election — Brazil's benchmark Índice Bovespa index rises nearly 9% to almost 210,000 points after the first round of the presidential election, surpassing 200,000 points for the first time.\n- [Business and economy] Russian president Vladimir Putin approves the restructuring of UniCredit Bank Russia and the subsequent sale of most of the business to a United Arab Emirates-based private investor, while UniCredit retains its payments operations.\n- [International relations] United Kingdom–United States relations — The United States Air Force withdraws all of its B-1 Lancer strategic bombers from RAF Fairford in Gloucestershire, England. The U.S. Department of Defense confirms the bombers have returned to bases in the United States.\n- [Disasters and accidents] 2026 Nigerian Air Force ATR 42 crash — A Nigerian Air Force ATR 42-500 aircraft carrying 32 people crashes in Ondo State, Nigeria.\n- [Disasters and accidents] The death toll increases to over 30 people, with dozens still missing, of the two ships that collided yesterday on the Congo River near Lukolela, Democratic Republic of the Congo.\n- [Law and crime] International Criminal Court investigation in Afghanistan — The International Criminal Court unseals arrest warrants for Taliban education minister Habibullah Agha and higher education minister Neda Mohammad Nadeem, accusing them of the crime against humanity of gender-based persecution in Afghanist\n- [Law and crime] Protesters clash with police in Pristina, Kosovo, after parliament fails to advance legislation limiting the Kosovo Specialist Chambers' powers. One police officer and 11 civilians are injured.\n- [Politics and elections] 2025–2026 Kosovo political deadlock — In Kosovo, the acting presidency of Albulena Haxhiu becomes de facto due to her having continuously served in the position for more than six months since assuming office on 4 April, violating the third paragraph of Article 90 in the constit\n- [Politics and elections] 2026 Quebec general election — Voters in Quebec, Canada, elect members to the National Assembly.\n- [Politics and elections] 2026 Quebec general election — The Parti Québécois are elected into a minority government while the ruling Coalition Avenir Québec face an electoral wipeout.\n- [Politics and elections] 2026 Spanish general election, 2026 Spanish housing protests — Spanish prime minister Pedro Sánchez calls a snap general election for 29 November after Parliament voted down two emergency housing decrees that would have restricted evictions, frozen rents, and blocked vulture-fund property buys.\n- [Science and technology] American Karl Deisseroth of Stanford University, and Germans Peter Hegemann of Humboldt University and Georg Nagel of the University of Würzburg are jointly awarded the Nobel Prize in Medicine for \"their discoveries concerning light-gated i"
 }
