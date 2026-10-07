@@ -1,17 +1,27 @@
 {
   "max_events": 60,
-  "parsed": 12,
-  "used": 12,
+  "parsed": 15,
+  "used": 15,
   "events": [
     {
       "category": "Armed conflicts and attacks",
-      "topic": "Yemeni civil war",
+      "topic": "Middle Eastern crisis",
       "text": "The Houthis launches missiles against the airports of Najran and Jizan, in Saudi Arabia, causing material damages and wounding three people."
     },
     {
       "category": "Armed conflicts and attacks",
-      "topic": "Gaza war",
-      "text": "Israeli Defense Minister Israel Katz says that the Israel Defense Forces has killed 4,000 militants who took part in the Hamas-led attacks on Israel on October 7, 2023."
+      "topic": "Middle Eastern crisis",
+      "text": "Israeli defense minister Israel Katz says that the military has killed 4,000 militants who took part in the Hamas-led attacks on Israel on October 7, 2023."
+    },
+    {
+      "category": "Armed conflicts and attacks",
+      "topic": "Somali Civil War",
+      "text": "Four Indonesian seamen return home after Puntland maritime police rescued 17 crew members from the hijacked oil tanker MT Honour 25. Somali pirates had held the crew for more than five months and killed five members."
+    },
+    {
+      "category": "Armed conflicts and attacks",
+      "topic": "Peruvian security crisis",
+      "text": "Three gunmen and one national police officer are killed and another is wounded after an operation in Inambari District, Tambopata province, Madre de Dios. Authorities seize 15 AKM rifles, a pistol, and five grenades."
     },
     {
       "category": "Armed conflicts and attacks",
@@ -21,7 +31,7 @@
     {
       "category": "Business and economy",
       "topic": "Acquisition of Warner Bros. Discovery by Paramount",
-      "text": "The merger between Paramount Skydance and Warner Bros. Discovery into Skydance takes effect."
+      "text": "The merger between American media conglomerates Paramount Skydance and Warner Bros. Discovery into Skydance takes effect."
     },
     {
       "category": "Health and environment",
@@ -31,22 +41,17 @@
     {
       "category": "Health and environment",
       "topic": "2026 Ebola epidemic",
-      "text": "Nairobi Hospital steps up its infection-control measures, tracing, and staff monitoring following Kenya's first imported case of Ebola."
+      "text": "The Nairobi Hospital steps up its infection-control measures, tracing, and staff monitoring following Kenya's first imported case of Ebola."
     },
     {
       "category": "Health and environment",
       "topic": "",
-      "text": "The Daily Mail reports that a second person has died from a pneumonic plague outbreak that contains Yersinia pestis."
-    },
-    {
-      "category": "Law and crime",
-      "topic": "2024 Cornell University rape allegations",
-      "text": "The faculty of Cornell University are reportedly preparing a no-confidence vote against the university's administration, including its president, Michael Kotlikoff, over its handling of rape allegations from 2024."
+      "text": "Indonesia halts a program to clear millions of hectares of forest for rice cultivation after achieving rice self-sufficiency, and plans instead to increase yields on existing farmland through improved agricultural methods."
     },
     {
       "category": "Law and crime",
       "topic": "",
-      "text": "August Hanning, former head of Germany's Federal Intelligence Service, is arrested at his home in Nordwalde after being charged by the country's Federal Public Prosecutor General with treason, espionage, and trading state secrets. A former "
+      "text": "August Hanning, former head of Germany's Federal Intelligence Service, is arrested at his home in Nordwalde, North Rhine-Westphalia, after being charged by the country's Federal Public Prosecutor General with treason, espionage, and trading"
     },
     {
       "category": "Law and crime",
@@ -55,14 +60,24 @@
     },
     {
       "category": "Politics and elections",
+      "topic": "2026 Haitian general election, Haitian crisis",
+      "text": "Haiti's Provisional Electoral Council postpones presidential and legislative elections scheduled for December 13, citing technical, operational, and security requirements."
+    },
+    {
+      "category": "Politics and elections",
       "topic": "2026 Kosovan presidential election",
-      "text": "After passing the jurisdiction amendments to the Kosovo Specialist Chambers, the Kuvendi began the procedure to elect a president on 6 October, finishing the voting process minutes after the constitutional deadline on midnight 7 October. Ju"
+      "text": "The Kuvendi begins the procedure to elect a president on 6 October, finishing the voting process minutes after the constitutional deadline on midnight 7 October. Justina Pula is declared the next president of Kosovo."
     },
     {
       "category": "Science and technology",
       "topic": "",
       "text": "Belgian physicist Francis Halzen from the University of Wisconsin–Madison is awarded the Nobel Prize in Physics for his \"decisive contributions to the IceCube Neutrino Observatory and the discovery of high-energy neutrinos of astrophysical "
+    },
+    {
+      "category": "Science and technology",
+      "topic": "",
+      "text": "OpenAI releases 377 results on open problems in mathematics in areas such as algebra, number theory, combinatorics and theoretical computer science."
     }
   ],
-  "prompt_block": "WIKIPEDIA CURRENT EVENTS (curated checklist — see rules above)\n- [Armed conflicts and attacks] Yemeni civil war — The Houthis launches missiles against the airports of Najran and Jizan, in Saudi Arabia, causing material damages and wounding three people.\n- [Armed conflicts and attacks] Gaza war — Israeli Defense Minister Israel Katz says that the Israel Defense Forces has killed 4,000 militants who took part in the Hamas-led attacks on Israel on October 7, 2023.\n- [Armed conflicts and attacks] A ship sinks off the coast of Bulgaria after being struck by a drone.\n- [Business and economy] Acquisition of Warner Bros. Discovery by Paramount — The merger between Paramount Skydance and Warner Bros. Discovery into Skydance takes effect.\n- [Health and environment] 2026 Ebola epidemic — Kenya confirms its first imported case of the Bundibugyo strain of the Ebolavirus in Nairobi in a deceased male who traveled from the Democratic Republic of the Congo.\n- [Health and environment] 2026 Ebola epidemic — Nairobi Hospital steps up its infection-control measures, tracing, and staff monitoring following Kenya's first imported case of Ebola.\n- [Health and environment] The Daily Mail reports that a second person has died from a pneumonic plague outbreak that contains Yersinia pestis.\n- [Law and crime] 2024 Cornell University rape allegations — The faculty of Cornell University are reportedly preparing a no-confidence vote against the university's administration, including its president, Michael Kotlikoff, over its handling of rape allegations from 2024.\n- [Law and crime] August Hanning, former head of Germany's Federal Intelligence Service, is arrested at his home in Nordwalde after being charged by the country's Federal Public Prosecutor General with treason, espionage, and trading state secrets. A former \n- [Law and crime] Riots break out in Liège, Belgium, following a day of student protests, resulting in damaged shops and destroyed bus shelters in the city center.\n- [Politics and elections] 2026 Kosovan presidential election — After passing the jurisdiction amendments to the Kosovo Specialist Chambers, the Kuvendi began the procedure to elect a president on 6 October, finishing the voting process minutes after the constitutional deadline on midnight 7 October. Ju\n- [Science and technology] Belgian physicist Francis Halzen from the University of Wisconsin–Madison is awarded the Nobel Prize in Physics for his \"decisive contributions to the IceCube Neutrino Observatory and the discovery of high-energy neutrinos of astrophysical "
+  "prompt_block": "WIKIPEDIA CURRENT EVENTS (curated checklist — see rules above)\n- [Armed conflicts and attacks] Middle Eastern crisis — The Houthis launches missiles against the airports of Najran and Jizan, in Saudi Arabia, causing material damages and wounding three people.\n- [Armed conflicts and attacks] Middle Eastern crisis — Israeli defense minister Israel Katz says that the military has killed 4,000 militants who took part in the Hamas-led attacks on Israel on October 7, 2023.\n- [Armed conflicts and attacks] Somali Civil War — Four Indonesian seamen return home after Puntland maritime police rescued 17 crew members from the hijacked oil tanker MT Honour 25. Somali pirates had held the crew for more than five months and killed five members.\n- [Armed conflicts and attacks] Peruvian security crisis — Three gunmen and one national police officer are killed and another is wounded after an operation in Inambari District, Tambopata province, Madre de Dios. Authorities seize 15 AKM rifles, a pistol, and five grenades.\n- [Armed conflicts and attacks] A ship sinks off the coast of Bulgaria after being struck by a drone.\n- [Business and economy] Acquisition of Warner Bros. Discovery by Paramount — The merger between American media conglomerates Paramount Skydance and Warner Bros. Discovery into Skydance takes effect.\n- [Health and environment] 2026 Ebola epidemic — Kenya confirms its first imported case of the Bundibugyo strain of the Ebolavirus in Nairobi in a deceased male who traveled from the Democratic Republic of the Congo.\n- [Health and environment] 2026 Ebola epidemic — The Nairobi Hospital steps up its infection-control measures, tracing, and staff monitoring following Kenya's first imported case of Ebola.\n- [Health and environment] Indonesia halts a program to clear millions of hectares of forest for rice cultivation after achieving rice self-sufficiency, and plans instead to increase yields on existing farmland through improved agricultural methods.\n- [Law and crime] August Hanning, former head of Germany's Federal Intelligence Service, is arrested at his home in Nordwalde, North Rhine-Westphalia, after being charged by the country's Federal Public Prosecutor General with treason, espionage, and trading\n- [Law and crime] Riots break out in Liège, Belgium, following a day of student protests, resulting in damaged shops and destroyed bus shelters in the city center.\n- [Politics and elections] 2026 Haitian general election, Haitian crisis — Haiti's Provisional Electoral Council postpones presidential and legislative elections scheduled for December 13, citing technical, operational, and security requirements.\n- [Politics and elections] 2026 Kosovan presidential election — The Kuvendi begins the procedure to elect a president on 6 October, finishing the voting process minutes after the constitutional deadline on midnight 7 October. Justina Pula is declared the next president of Kosovo.\n- [Science and technology] Belgian physicist Francis Halzen from the University of Wisconsin–Madison is awarded the Nobel Prize in Physics for his \"decisive contributions to the IceCube Neutrino Observatory and the discovery of high-energy neutrinos of astrophysical \n- [Science and technology] OpenAI releases 377 results on open problems in mathematics in areas such as algebra, number theory, combinatorics and theoretical computer science."
 }
