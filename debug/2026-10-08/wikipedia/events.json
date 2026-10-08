@@ -1,12 +1,17 @@
 {
   "max_events": 60,
-  "parsed": 11,
-  "used": 11,
+  "parsed": 15,
+  "used": 15,
   "events": [
     {
       "category": "Armed conflicts and attacks",
-      "topic": "Middle Eastern crisis",
+      "topic": "Russo-Ukrainian war",
       "text": "Bulgaria halts the search for the 12 Syrian sailors missing since yesterday after a merchant ship sank after being hit by a drone strike in its waters. The perpetrators are still unknown."
+    },
+    {
+      "category": "Armed conflicts and attacks",
+      "topic": "Middle Eastern crisis",
+      "text": "Houthi forces claim attacks on Abha International Airport and Riyadh's King Khalid International Airport in Saudi Arabia that killed three civilians and injured 36 others since yesterday."
     },
     {
       "category": "Armed conflicts and attacks",
@@ -24,6 +29,21 @@
       "text": "The Malian Armed Forces and the Russian Africa Corps retake Kidal, which was captured by the Azawad Liberation Front five months ago, after days of airstrikes and ground operations."
     },
     {
+      "category": "Armed conflicts and attacks",
+      "topic": "Sudanese civil war",
+      "text": "Four women are killed in a Rapid Support Forces drone strike on homes and a mosque in Ad-Damazin, Blue Nile State, Sudan."
+    },
+    {
+      "category": "Business and economy",
+      "topic": "",
+      "text": "Guinea sets nationwide price ceilings for bottled water after a ban on single-use plastic water sachets causes shortages and higher prices, with retail packs of several bottle sizes capped at 25,000 francs (US$2.84)."
+    },
+    {
+      "category": "Business and economy",
+      "topic": "",
+      "text": "The Reserve Bank of India raises its benchmark repo rate by 25 basis points to 5.5%, its first increase since February 2023."
+    },
+    {
       "category": "Health and environment",
       "topic": "Climate change in Australia, Mining in Australia",
       "text": "Australia's High Court rejects MACH Energy's appeal to expand the Mount Pleasant coal mine in New South Wales, finding that planning authorities failed to adequately consider greenhouse gas emissions from burning exported coal overseas."
@@ -32,6 +52,11 @@
       "category": "Health and environment",
       "topic": "Climate change in Antarctica",
       "text": "The British Antarctic Survey reports that Zavodovski Island in Antarctica has lost more than 500,000 chinstrap penguins since 2011, ending its status as the world's largest penguin colony as warming waters reduce access to Antarctic krill."
+    },
+    {
+      "category": "Law and crime",
+      "topic": "Elections in Mexico",
+      "text": "Mexican president Claudia Sheinbaum signs a decree prohibiting Mexicans with dual citizenship from running for president or governor."
     },
     {
       "category": "Law and crime",
@@ -45,11 +70,6 @@
     },
     {
       "category": "Law and crime",
-      "topic": "Elections in Mexico",
-      "text": "Mexican president Claudia Sheinbaum signs a decree prohibiting Mexicans with dual citizenship from running for president or governor."
-    },
-    {
-      "category": "Law and crime",
       "topic": "",
       "text": "Nine people are injured in a mass stabbing at a high school in Ostrołęka, Poland. The suspect, a 19-year-old student, is arrested after being injured himself."
     },
@@ -59,5 +79,5 @@
       "text": "French Henri B. Kagan from the Paris-Saclay University and Japanese Kensō Soai from the Tokyo University of Science are jointly awarded the Nobel Prize in Chemistry for \"the discovery of non-linear effects and autocatalysis in asymmetric or"
     }
   ],
-  "prompt_block": "WIKIPEDIA CURRENT EVENTS (curated checklist — see rules above)\n- [Armed conflicts and attacks] Middle Eastern crisis — Bulgaria halts the search for the 12 Syrian sailors missing since yesterday after a merchant ship sank after being hit by a drone strike in its waters. The perpetrators are still unknown.\n- [Armed conflicts and attacks] Middle Eastern crisis — Israeli settlers launch an attack in the occupied West Bank targeting Palestinians, killing a man and wounding 16 other people.\n- [Armed conflicts and attacks] Ethiopian civil conflict — Eritrean forces are reported to have entered Ethiopia's Tigray Region and are moving south toward Mekelle.\n- [Armed conflicts and attacks] Mali War — The Malian Armed Forces and the Russian Africa Corps retake Kidal, which was captured by the Azawad Liberation Front five months ago, after days of airstrikes and ground operations.\n- [Health and environment] Climate change in Australia, Mining in Australia — Australia's High Court rejects MACH Energy's appeal to expand the Mount Pleasant coal mine in New South Wales, finding that planning authorities failed to adequately consider greenhouse gas emissions from burning exported coal overseas.\n- [Health and environment] Climate change in Antarctica — The British Antarctic Survey reports that Zavodovski Island in Antarctica has lost more than 500,000 chinstrap penguins since 2011, ending its status as the world's largest penguin colony as warming waters reduce access to Antarctic krill.\n- [Law and crime] Libor scandal — The Court of Appeal in London, United Kingdom, quashes the convictions of five former Barclays traders for manipulating Libor and Euribor, following a 2025 Supreme Court ruling that found legal errors had made similar convictions unsafe.\n- [Law and crime] Spillover of the 2026 French lycée protests — For a second consecutive day, riots occur in Liège, Belgium, following earlier student protests, prompting authorities to close the Guillemins railway station and urge local businesses to shut down. Over 100 people are arrested.\n- [Law and crime] Elections in Mexico — Mexican president Claudia Sheinbaum signs a decree prohibiting Mexicans with dual citizenship from running for president or governor.\n- [Law and crime] Nine people are injured in a mass stabbing at a high school in Ostrołęka, Poland. The suspect, a 19-year-old student, is arrested after being injured himself.\n- [Science and technology] French Henri B. Kagan from the Paris-Saclay University and Japanese Kensō Soai from the Tokyo University of Science are jointly awarded the Nobel Prize in Chemistry for \"the discovery of non-linear effects and autocatalysis in asymmetric or"
+  "prompt_block": "WIKIPEDIA CURRENT EVENTS (curated checklist — see rules above)\n- [Armed conflicts and attacks] Russo-Ukrainian war — Bulgaria halts the search for the 12 Syrian sailors missing since yesterday after a merchant ship sank after being hit by a drone strike in its waters. The perpetrators are still unknown.\n- [Armed conflicts and attacks] Middle Eastern crisis — Houthi forces claim attacks on Abha International Airport and Riyadh's King Khalid International Airport in Saudi Arabia that killed three civilians and injured 36 others since yesterday.\n- [Armed conflicts and attacks] Middle Eastern crisis — Israeli settlers launch an attack in the occupied West Bank targeting Palestinians, killing a man and wounding 16 other people.\n- [Armed conflicts and attacks] Ethiopian civil conflict — Eritrean forces are reported to have entered Ethiopia's Tigray Region and are moving south toward Mekelle.\n- [Armed conflicts and attacks] Mali War — The Malian Armed Forces and the Russian Africa Corps retake Kidal, which was captured by the Azawad Liberation Front five months ago, after days of airstrikes and ground operations.\n- [Armed conflicts and attacks] Sudanese civil war — Four women are killed in a Rapid Support Forces drone strike on homes and a mosque in Ad-Damazin, Blue Nile State, Sudan.\n- [Business and economy] Guinea sets nationwide price ceilings for bottled water after a ban on single-use plastic water sachets causes shortages and higher prices, with retail packs of several bottle sizes capped at 25,000 francs (US$2.84).\n- [Business and economy] The Reserve Bank of India raises its benchmark repo rate by 25 basis points to 5.5%, its first increase since February 2023.\n- [Health and environment] Climate change in Australia, Mining in Australia — Australia's High Court rejects MACH Energy's appeal to expand the Mount Pleasant coal mine in New South Wales, finding that planning authorities failed to adequately consider greenhouse gas emissions from burning exported coal overseas.\n- [Health and environment] Climate change in Antarctica — The British Antarctic Survey reports that Zavodovski Island in Antarctica has lost more than 500,000 chinstrap penguins since 2011, ending its status as the world's largest penguin colony as warming waters reduce access to Antarctic krill.\n- [Law and crime] Elections in Mexico — Mexican president Claudia Sheinbaum signs a decree prohibiting Mexicans with dual citizenship from running for president or governor.\n- [Law and crime] Libor scandal — The Court of Appeal in London, United Kingdom, quashes the convictions of five former Barclays traders for manipulating Libor and Euribor, following a 2025 Supreme Court ruling that found legal errors had made similar convictions unsafe.\n- [Law and crime] Spillover of the 2026 French lycée protests — For a second consecutive day, riots occur in Liège, Belgium, following earlier student protests, prompting authorities to close the Guillemins railway station and urge local businesses to shut down. Over 100 people are arrested.\n- [Law and crime] Nine people are injured in a mass stabbing at a high school in Ostrołęka, Poland. The suspect, a 19-year-old student, is arrested after being injured himself.\n- [Science and technology] French Henri B. Kagan from the Paris-Saclay University and Japanese Kensō Soai from the Tokyo University of Science are jointly awarded the Nobel Prize in Chemistry for \"the discovery of non-linear effects and autocatalysis in asymmetric or"
 }
