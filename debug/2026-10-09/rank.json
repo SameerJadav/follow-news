@@ -1,0 +1,990 @@
+{
+  "dials": {
+    "WEIGHT_FLOOR": 5,
+    "TIER_WEIGHT": {
+      "lead": 4,
+      "major": 2,
+      "notable": 0
+    },
+    "WIKI_BONUS": 2,
+    "HARD_CAP": 12,
+    "MIN_STORIES_IF_ANY": 3,
+    "MAX_ARTICLES_PER_STORY": 5
+  },
+  "floor_relaxed": false,
+  "kept_weights": [
+    12,
+    10,
+    8,
+    7,
+    7,
+    7,
+    5,
+    11,
+    8,
+    8,
+    5,
+    5
+  ],
+  "per_section": {
+    "world": 7,
+    "india": 5
+  },
+  "clusters": [
+    {
+      "headline_hint": "Opposition intensifies nationwide protests against Election Commission over voter list deletions ahead of mass Delhi demonstration",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "lead",
+      "article_ids": [
+        9,
+        10,
+        27,
+        29,
+        40,
+        41,
+        87,
+        101,
+        102,
+        105,
+        119,
+        149,
+        150,
+        152,
+        163,
+        165,
+        167,
+        171,
+        178,
+        230,
+        236,
+        247,
+        292,
+        308,
+        311,
+        336,
+        338,
+        340,
+        370,
+        373
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        9,
+        10,
+        27,
+        29,
+        40,
+        41,
+        87,
+        101,
+        102,
+        105,
+        119,
+        149,
+        150,
+        152,
+        163,
+        165,
+        167,
+        171,
+        178,
+        230,
+        236,
+        247,
+        292,
+        308,
+        311,
+        336,
+        338,
+        340,
+        370,
+        373
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 7,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 11,
+      "weight_terms": {
+        "distinct_outlets": 7,
+        "tier_weight": 4,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "The Hindu",
+          "title": "CEC row LIVE updates: INDIA bloc leaders likely to march towards Rashtrapati Bhavan today",
+          "url": "https://www.thehindu.com/news/national/cec-gyanesh-kumar-controversy-live-updates-india-bloc-congress-jantar-mantar-cjp-protest-live-updates-october-9-2026/article71562437.ece"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "‘Cover it from a distance’: Delhi Police after claims of journalists under house arrest",
+          "url": "https://timesofindia.indiatimes.com/india/cover-it-from-a-distance-delhi-police-releases-statement-after-accusations-of-journalists-being-placed-under-house-arrest/articleshow/134812462.cms"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "All mail, express trains arriving at New Delhi, Hazrat Nizamuddin stations till 2 pm on Oct 10 cancelled: Sources",
+          "url": "https://www.hindustantimes.com/india-news/all-trains-arriving-at-new-delhi-hazrat-nizamuddin-stations-on-oct-10-cancelled-ndls-cjp-jantar-mantar-protest-101791523442836.html"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "CJP protest on October 10: Railways cancel trains to 2 Delhi stations; 40 Metro stations may shut",
+          "url": "https://www.livemint.com/news/india/cjp-protest-railways-cancel-all-mail-express-trains-reaching-new-delhi-hazrat-nizamuddin-on-october-10-11791522583015.html"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "Video: Congress Leaders Slap Each Other During INDIA Bloc Protest Rally In Faridabad",
+          "url": "https://www.ndtv.com/india-news/video-congress-leaders-slap-each-other-during-india-bloc-protest-rally-in-faridabad-12159473#publisher=newsstand"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 25
+    },
+    {
+      "headline_hint": "US suspends Indian IT majors including TCS, Infosys, and Wipro from PERM green card programme",
+      "section": "india",
+      "category": "economy",
+      "tier_requested": "major",
+      "article_ids": [
+        45,
+        69,
+        74,
+        93,
+        100,
+        109,
+        125,
+        217,
+        232,
+        271,
+        285
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        45,
+        69,
+        74,
+        93,
+        100,
+        109,
+        125,
+        217,
+        232,
+        271,
+        285
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 6,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 8,
+      "weight_terms": {
+        "distinct_outlets": 6,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "The Hindu",
+          "title": "PM under 'GyaneshGate' siege, will not retaliate to U.S. visa crackdown: Congress",
+          "url": "https://www.thehindu.com/news/national/congress-says-pm-under-gyaneshgate-siege/article71562610.ece"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Nasscom pushes back on US green card freeze: ‘Immigration, talent mobility distinct issues’",
+          "url": "https://www.hindustantimes.com/india-news/nasscom-pushes-back-on-us-green-card-freeze-immigration-talent-mobility-distinct-issues-microsoft-reaction-h1b-101791516565330.html"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "IT firms including TCS, Infosys suspended from US green card: How it hits Indians",
+          "url": "https://timesofindia.indiatimes.com/business/india-business/8-it-firms-including-tcs-infosys-microsoft-wipro-suspended-from-us-green-card-programme-perm-how-does-it-hit-indian-professionals/articleshow/134803978.cms"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "‘Indian IT firms comply with local laws’: Nasscom defends industry after US PERM freeze",
+          "url": "https://www.livemint.com/news/us-news/indian-it-firms-comply-with-local-laws-nasscom-defends-industry-after-us-perm-freeze-11791513669601.html"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "Infosys, Tata, Wipro among Indian IT firms suspended from US green card programme",
+          "url": "https://scroll.in/latest/1096275/infosys-tata-wipro-among-indian-it-firms-suspended-from-us-green-card-programme?utm_source=rss&utm_medium=public"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 6
+    },
+    {
+      "headline_hint": "Elon Musk accuses Indian 'oligarchs' of blocking Starlink entry as government rejects allegations",
+      "section": "india",
+      "category": "technology",
+      "tier_requested": "major",
+      "article_ids": [
+        51,
+        143,
+        211,
+        239,
+        258,
+        288,
+        348
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        51,
+        143,
+        211,
+        239,
+        258,
+        288,
+        348
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 6,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 8,
+      "weight_terms": {
+        "distinct_outlets": 6,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "The Hindu",
+          "title": "Telangana CM backs digital innovation, says India must protect ‘Brand India’",
+          "url": "https://www.thehindu.com/news/national/telangana/telangana-cm-backs-digital-innovation-says-india-must-protect-brand-india/article71562484.ece"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "India rejects Starlink allegations even as Musk escalates attack",
+          "url": "https://www.hindustantimes.com/india-news/india-rejects-starlink-allegations-even-as-musk-escalates-attack-101791486391500.html"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Starlink entry row: Is Ambani the real boss of India, asks Elon Musk",
+          "url": "https://timesofindia.indiatimes.com/business/india-business/stralinks-india-entry-row-is-ambani-the-real-boss-of-india-asks-elon-musk/articleshow/134800745.cms"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "\"Is Ambani The Real Boss Of India?\" Musk On Starlink Row",
+          "url": "https://www.ndtv.com/india-news/complied-with-every-law-why-no-licence-elon-musk-on-starlink-row-12158409#publisher=newsstand"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Rahul Gandhi reacts to Elon Musk's ‘Is Ambani the real boss of India?’: Here's a look at their conversation on X",
+          "url": "https://www.livemint.com/news/india/rahul-gandhi-reacts-to-elon-musks-is-ambani-the-real-boss-of-india-heres-a-look-at-their-conversation-on-x-11791478621947.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 2
+    },
+    {
+      "headline_hint": "By-election results: BJP gains in West Bengal as TVK leads in Tamil Nadu and AINRC wins Puducherry",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        5,
+        8,
+        32,
+        80,
+        103,
+        111,
+        120,
+        169
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        5,
+        8,
+        32,
+        80,
+        103,
+        111,
+        120,
+        169
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 5,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "The Hindu",
+          "title": "Bypoll results LIVE: BJP widens lead in West Bengal; TVK leads in Tamil Nadu",
+          "url": "https://www.thehindu.com/news/national/byelection-bypoll-results-nandigram-rejinagar-madurantakam-dharapuram-thattanchavady-nagaon-live-updates-october-9-2026/article71562394.ece"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "West Bengal by-elections result LIVE: BJP leads in Nandiram and Rejinagar in early trends",
+          "url": "https://www.hindustantimes.com/india-news/west-bengal-byelection-bypolls-counting-result-live-updates-rejinagar-nandiram-bjp-tmc-mamata-banerjee-101791519539113.html"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "By-Election Results 2026 LIVE Updates: Bengal's Nandigram In Focus As Counting On For Bypolls In 6 Seats Across 4 States",
+          "url": "https://www.ndtv.com/india-news/by-election-results-2026-live-updates-nandigram-rejinagar-nagaon-dharapuram-madurantakam-thattanchavady-bypoll-vote-counting-winners-list-12159329#publisher=newsstand"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "Counting begins for Bengal bypolls, BJP's first electoral test after coming to power",
+          "url": "https://www.thehindu.com/news/national/west-bengal/counting-begins-for-bengal-bypolls-as-bjp-faces-first-electoral-test/article71562480.ece"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Nandigram bypoll result: BJP's Hasirani Rath leads in early trends for key West Bengal seat",
+          "url": "https://www.hindustantimes.com/india-news/nandigram-election-bypoll-result-2026-live-update-bjp-hasirani-rath-congress-milan-pradhan-bjp-tmc-west-bengal-news-101791518030409.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 3
+    },
+    {
+      "headline_hint": "Kerala High Court orders FIR against CM Pinarayi Vijayan in CMRL bribery case",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        16,
+        21,
+        34
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        16,
+        21,
+        34
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": true,
+      "wiki_event": "High Court judge Nicholas Hilliard of England and Wales quashes search warrants used on Andrew Mountbatten-Windsor's homes, finding errors in Thames Valley Police's applications and issuing judge Mark Lucraft's consideration of legally prot",
+      "weight": 5,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "The Hindu",
+          "title": "CMRL payoff case: Kerala HC orders registration of FIR against Pinarayi Vijayan, kin based on ED report",
+          "url": "https://www.thehindu.com/news/national/kerala/cmrl-pay-off-case-kerala-hc-orders-registration-of-fir-against-pinarayi-vijayan-kin-based-on-ed-report/article71562715.ece"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Kerala HC allows plea to register FIR against Vijayan based on ED report in CMRL 'bribery' case",
+          "url": "https://www.hindustantimes.com/india-news/kerala-hc-allows-plea-to-register-fir-against-pinarayi-vijayan-daughter-veena-based-on-ed-report-in-cmrl-bribery-case-101791524406168.html"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Kerala HC orders FIR against former CM Vijayan in CMRL bribery case",
+          "url": "https://timesofindia.indiatimes.com/india/kerala-hc-orders-fir-against-former-cm-pinarayi-vijayan-in-cmrl-bribery-case/articleshow/134810261.cms"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Trump rules out Iran strikes before US midterms as USS Abraham Lincoln completes deployment",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "lead",
+      "article_ids": [
+        137,
+        162,
+        180,
+        185,
+        191,
+        192,
+        207,
+        208,
+        246,
+        290
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        137,
+        162,
+        180,
+        185,
+        191,
+        192,
+        207,
+        208,
+        246,
+        290
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 6,
+      "wiki_backed": true,
+      "wiki_event": "The {{USS|Abraham Lincoln|CVN-72|6}} returns to San Diego, California, U.S., at the North Island Naval Air Station following its nearly seven-month deployment in the Middle East.",
+      "weight": 12,
+      "weight_terms": {
+        "distinct_outlets": 6,
+        "tier_weight": 4,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Channel News Asia",
+          "title": "Oil falls as Trump comments on Iran talks ease supply concerns",
+          "url": "https://www.channelnewsasia.com/business/oil-falls-trump-comments-iran-talks-ease-supply-concerns-6444926"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "USS Abraham Lincoln returns after record-breaking deployment",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/10/9/uss-abraham-lincoln-returns-after-record-breaking-deployment?traffic_source=rss"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "The long-deployed USS Lincoln returns home to San Diego Bay",
+          "url": "https://www.npr.org/2026/10/08/nx-s1-5995911/the-long-deployed-uss-lincoln-returns-home-to-san-diego-bay"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "​​USS Lincoln docks in San Diego after 10-month mission",
+          "url": "https://www.bbc.co.uk/news/videos/cwp8gnp14xr2o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Trump says US, Iran in ‘productive’ talks, rules out attack before midterm polls in November",
+          "url": "https://www.livemint.com/news/us-news/trump-says-us-iran-in-productive-talks-rules-out-attack-before-midterm-polls-in-november-11791482483647.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 5
+    },
+    {
+      "headline_hint": "Russian missile strike on public buses in Kramatorsk kills 30 amid escalating aerial attack on Ukraine",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "major",
+      "article_ids": [
+        55,
+        220,
+        263,
+        270,
+        302,
+        320,
+        324,
+        328
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        55,
+        220,
+        263,
+        270,
+        302,
+        320,
+        324,
+        328
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 5,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "BBC World",
+          "title": "As freezing winter approaches, Kyiv residents look for shelter elsewhere",
+          "url": "https://www.bbc.co.uk/news/articles/c6zjx7jexz1do?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Black sea and black ops: How exposed is Europe to Ukraine war spillover?",
+          "url": "https://www.france24.com/en/tv-shows/the-debate/20261008-black-sea-and-black-ops-how-exposed-is-europe-to-ukraine-war-spillover"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Russian attack on bus kills at least 30 people near Ukraine frontline",
+          "url": "https://www.theguardian.com/world/2026/oct/08/russian-attack-buses-ukraine-frontline-kramatorsk"
+        },
+        {
+          "outlet": "DW World",
+          "title": "Security in the Black Sea region: is Bulgaria the weak link in Europe's defense against threats from Russia?",
+          "url": "https://www.dw.com/en/security-in-the-black-sea-region-is-bulgaria-the-weak-link-in-europe-s-defense-against-threats-from-russia/a-79592663?maca=en-rss-en-world-4025-rdf"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "Russian strikes on Ukraine's public buses leave 30 dead as blackouts worsen in Kyiv",
+          "url": "https://www.npr.org/2026/10/08/g-s1-147106/russia-ukraine-war"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 3
+    },
+    {
+      "headline_hint": "French high school students clash with police in massive nationwide protests over school conditions",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        142,
+        216,
+        219,
+        225,
+        228,
+        265,
+        286,
+        301,
+        353
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        142,
+        216,
+        219,
+        225,
+        228,
+        265,
+        286,
+        301,
+        353
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 5,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Channel News Asia",
+          "title": "France pledges more teachers after school students vow no let-up",
+          "url": "https://www.channelnewsasia.com/world/france-pledges-more-teachers-school-protests-6444911"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "French ministers scramble to appease students after 10 days of protests",
+          "url": "https://www.theguardian.com/world/2026/oct/08/france-student-protests-schools-vow-to-continue"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Police use tear gas and water cannons on student protestors in Paris",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/10/8/police-use-tear-gas-and-water-cannons-on-student-protestors-in-paris?traffic_source=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "‘Nothing will stop us’: French student protests show few signs of ending",
+          "url": "https://www.france24.com/en/france/20261008-nothing-will-stop-us-french-student-protests-show-few-signs-of-ending"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "France's school protests: What lies behind the anger",
+          "url": "https://www.bbc.co.uk/news/articles/c6n9rgg80z94o?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 4
+    },
+    {
+      "headline_hint": "US Pentagon announces firing squad execution of Fort Hood shooter Nidal Hasan will be livestreamed",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        91,
+        98,
+        174,
+        196,
+        200,
+        212
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        91,
+        98,
+        174,
+        196,
+        200,
+        212
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 6,
+      "wiki_backed": true,
+      "wiki_event": "United States secretary of defense Pete Hegseth announces the firing squad execution of Nidal Hasan, the perpetrator of the 2009 Fort Hood shooting, will be publicly broadcasted.",
+      "weight": 10,
+      "weight_terms": {
+        "distinct_outlets": 6,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "BBC World",
+          "title": "Firing squad execution to be livestreamed, Pentagon says",
+          "url": "https://www.bbc.co.uk/news/articles/cmy0r96xygx6o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "US plans to livestream Fort Hood shooter’s death; first public execution in 90 years",
+          "url": "https://timesofindia.indiatimes.com/world/us/us-plans-to-livestream-fort-hood-shooters-death-first-public-execution-in-90-years/articleshow/134805300.cms"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Who is Nidal Malik Hasan? Pentagon says Fort Hood shooter's firing squad execution will be livestreamed",
+          "url": "https://www.livemint.com/news/us-news/who-is-nidal-malik-hasan-pentagon-says-fort-hood-shooters-firing-squad-execution-will-be-livestreamed-11791508082144.html"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Hegseth says firing squad execution of Fort Hood shooter will be ‘public’",
+          "url": "https://www.aljazeera.com/news/2026/10/8/hegseth-says-firing-squad-execution-of-fort-hood-shooter-will-be-public?traffic_source=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Pentagon says execution of Fort Hood shooter will be livestreamed",
+          "url": "https://www.theguardian.com/us-news/2026/oct/08/hegseth-fort-hood-shooter-public-execution"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 1
+    },
+    {
+      "headline_hint": "ICE agent shoots man in New York City with child inside vehicle, sparking widespread anger and protests",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        37,
+        68,
+        71,
+        104,
+        144,
+        164,
+        187
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        37,
+        68,
+        71,
+        104,
+        144,
+        164,
+        187
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 6,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 8,
+      "weight_terms": {
+        "distinct_outlets": 6,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Channel News Asia",
+          "title": "New York City man shot in car with child present by ICE agents: Mayor",
+          "url": "https://www.channelnewsasia.com/world/new-york-city-man-shot-car-ice-agents-mamdani-6445246"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Uproar in NY after ICE shoots man with child in the car",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/10/9/uproar-in-ny-after-ice-shoots-man-with-child-in-the-car?traffic_source=rss"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "ICE agent shoots man in New York City",
+          "url": "https://www.bbc.co.uk/news/articles/c59vzk9yypn3o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "'ICE out of our neighbourhoods’: Shooting of man sparks protests in New York",
+          "url": "https://timesofindia.indiatimes.com/world/us/ice-out-of-our-neighbourhoods-shooting-of-dominican-man-sparks-protests-in-new-york/articleshow/134804207.cms"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "ICE agent shoots man in New York City with five-year-old reportedly in car",
+          "url": "https://www.theguardian.com/us-news/2026/oct/08/nyc-shooting-federal-agent"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 2
+    },
+    {
+      "headline_hint": "Hurricane Isaias strengthens to Category 2 as it approaches US Gulf Coast, forcing evacuations",
+      "section": "world",
+      "category": "disaster",
+      "tier_requested": "major",
+      "article_ids": [
+        4,
+        170,
+        321
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        4,
+        170,
+        321
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 3,
+      "wiki_backed": true,
+      "wiki_event": "In the United States, Georgia governor Brian Kemp declares a state of emergency ahead of Hurricane Isaias.",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Livemint",
+          "title": "Hurricane Isaias: 63% of Gulf oil output shut in as Florida, Alabama brace for landfall | 5 key updates",
+          "url": "https://www.livemint.com/news/us-news/hurricane-isaias-63-of-gulf-oil-output-shut-in-as-florida-alabama-brace-for-landfall-5-key-updates-11791524390583.html"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Millions on alert as Hurricane Isaias set to bring dangerous storm surge",
+          "url": "https://www.theguardian.com/world/2026/oct/08/hurricane-isaias-gulf-coast"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "Isaias intensifies to hurricane. And, judge orders Pike execution evidence preserved",
+          "url": "https://www.npr.org/2026/10/08/g-s1-147105/up-first-newsletter-hurricane-isaias-house-elections-christa-pike-nidal-hasan-cnn-ms-now-politico"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Houthi missile strike on Riyadh airport triggers airline flight cancellations and advisories",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "notable",
+      "article_ids": [
+        20,
+        136,
+        160,
+        175,
+        268
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        20,
+        136,
+        160,
+        175,
+        268
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Livemint",
+          "title": "Saudi Arabia-Houthi conflict escalates: Airlines suspend Riyadh flights after attacks | Watch",
+          "url": "https://www.livemint.com/news/world/saudi-arabia-houthi-conflict-escalates-airlines-suspend-riyadh-flights-after-attacks-watch-11791523084516.html"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Houthis claim attack on Riyadh airport as airlines suspend flights to Saudi capital",
+          "url": "https://www.theguardian.com/world/2026/oct/09/riyadh-airport-flights-suspended-houthis-claim-attack"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Air India, Akasa Air and IndiGo suspend Riyadh flights after airport blast reports",
+          "url": "https://timesofindia.indiatimes.com/india/air-india-akasa-air-and-indigo-suspend-riyadh-flights-after-airport-blast-reports/articleshow/134804095.cms"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Indigo, Air India Express, Akasa Air cancel flights to Riyadh after Houthi attacks on airports",
+          "url": "https://www.hindustantimes.com/india-news/air-india-express-indigo-akasa-air-cancel-flights-to-saudi-arabia-riyadh-airport-after-yemen-houthis-attack-saudi-arabia-airports-101791505326610.html"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Saudi Arabia-Houthi conflict: Indian Embassy in Riyadh issues advisory; Air India, IndiGo, Akasa cancel flights",
+          "url": "https://www.livemint.com/news/world/saudi-arabia-houthi-conflict-indian-embassy-in-riyadh-issues-advisory-urges-nationals-to-remain-vigilant-11791475804794.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "South Korea recalls ambassador to Ukraine after dispute over North Korean POW transfer disclosure",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        273,
+        313,
+        327
+      ],
+      "verdict": "cut:hard_cap(>12)",
+      "valid_ids": [
+        273,
+        313,
+        327
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": true,
+      "wiki_event": "South Korea recalls its ambassador to Ukraine after accusing Ukraine of breaching a non-disclosure agreement by disclosing the transfer of two captured North Korean soldiers to South Korea. Ukraine denies that such an agreement existed.",
+      "weight": 5,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "BBC World",
+          "title": "South Korea recalls Ukraine envoy over prisoner-of-war row",
+          "url": "https://www.bbc.co.uk/news/articles/ckwy48rrz95vo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "South Korea to recall its ambassador to Ukraine over North Korean POW dispute",
+          "url": "https://www.npr.org/2026/10/08/g-s1-147115/south-korea-to-recall-its-ambassador-to-ukraine-over-north-korean-pow-dispute"
+        },
+        {
+          "outlet": "DW World",
+          "title": "South Korea recalls Ukraine ambassador amid POW dispute",
+          "url": "https://www.dw.com/en/south-korea-recalls-ukraine-ambassador-amid-pow-dispute/a-79590511?maca=en-rss-en-world-4025-rdf"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Death of evicted 87-year-old pensioner sparks mass protests against housing crisis across Spain",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        173,
+        224,
+        229,
+        233,
+        341,
+        342
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        173,
+        224,
+        229,
+        233,
+        341,
+        342
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 5,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 5,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "Protests, debate follow death of Maricarmen, 87, Spain protest symbol",
+          "url": "https://www.aljazeera.com/news/2026/10/9/protests-debate-follow-death-of-maricarmen-87-spain-protest-symbol?traffic_source=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Spain mourns Maricarmen Abascal, whose eviction sparked housing protests",
+          "url": "https://www.france24.com/en/spain-mourns-maricarmen-abascal-whose-eviction-sparked-housing-protests"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Thousands march in Madrid after death of evicted pensioner Maricarmen",
+          "url": "https://www.theguardian.com/world/2026/oct/08/thousands-to-march-in-madrid-after-death-of-evicted-pensioner-maricarmen"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Protesters blame 'vulture funds' for Spain's housing crisis",
+          "url": "https://www.bbc.co.uk/news/articles/c3j4790elkx7o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "Maricarmen, the 87-year-old woman whose eviction shook Spain, has died",
+          "url": "https://www.npr.org/2026/10/08/nx-s1-5994868/maricarmen-eviction-spain-dies"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 1
+    },
+    {
+      "headline_hint": "US files new torture charges against ousted Venezuelan president Nicolas Maduro and wife Cilia Flores",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        193,
+        249,
+        256,
+        279
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        193,
+        249,
+        256,
+        279
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "France 24",
+          "title": "US files new torture charges against  Venezuela's Nicolas Maduro and wife Cilia Flores",
+          "url": "https://www.france24.com/en/americas/20261008-us-files-new-torture-charges-venezuela-nicolas-maduro-cilia-flores"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Nicolás Maduro and his wife indicted for alleged torture of US citizens",
+          "url": "https://www.theguardian.com/world/2026/oct/08/cilia-flores-nicolas-maduro-new-york-court"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Venezuela's ex-leader Nicolás Maduro charged with conspiracy to commit torture",
+          "url": "https://www.bbc.co.uk/news/articles/c5pvgn7xvxpzo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "New U.S. indictment charges former Venezuelan President Nicolás Maduro with torture",
+          "url": "https://www.npr.org/2026/10/08/nx-s1-5995360/venezuela-nicolas-maduro-torture-charges"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    }
+  ]
+}
