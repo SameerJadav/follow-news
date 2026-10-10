@@ -1,0 +1,590 @@
+{
+  "since": "2026-10-08 00:09:05.538609+00:00",
+  "configured": 13,
+  "live": 13,
+  "degraded": false,
+  "by_outlet_after_dedupe": {
+    "Guardian World": 41,
+    "Times of India": 47,
+    "The Hindu": 60,
+    "Channel News Asia": 20,
+    "NDTV": 20,
+    "Al Jazeera": 25,
+    "BBC World": 32,
+    "Livemint": 35,
+    "France 24": 22,
+    "NPR World": 10,
+    "DW World": 13,
+    "Hindustan Times": 99,
+    "Scroll.in": 49
+  },
+  "feeds": [
+    {
+      "outlet": "BBC World",
+      "url": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "http": 200,
+      "raw_items": 32,
+      "usable": 32,
+      "error": ""
+    },
+    {
+      "outlet": "Al Jazeera",
+      "url": "https://www.aljazeera.com/xml/rss/all.xml",
+      "http": 200,
+      "raw_items": 25,
+      "usable": 25,
+      "error": ""
+    },
+    {
+      "outlet": "Guardian World",
+      "url": "https://www.theguardian.com/world/rss",
+      "http": 200,
+      "raw_items": 45,
+      "usable": 45,
+      "error": ""
+    },
+    {
+      "outlet": "NPR World",
+      "url": "https://feeds.npr.org/1004/rss.xml",
+      "http": 200,
+      "raw_items": 10,
+      "usable": 10,
+      "error": ""
+    },
+    {
+      "outlet": "DW World",
+      "url": "https://rss.dw.com/rdf/rss-en-world",
+      "http": 200,
+      "raw_items": 13,
+      "usable": 13,
+      "error": ""
+    },
+    {
+      "outlet": "France 24",
+      "url": "https://www.france24.com/en/rss",
+      "http": 200,
+      "raw_items": 24,
+      "usable": 24,
+      "error": ""
+    },
+    {
+      "outlet": "Channel News Asia",
+      "url": "https://www.channelnewsasia.com/api/v1/rss-outbound-feed?_format=xml",
+      "http": 200,
+      "raw_items": 20,
+      "usable": 20,
+      "error": ""
+    },
+    {
+      "outlet": "The Hindu",
+      "url": "https://www.thehindu.com/news/national/feeder/default.rss",
+      "http": 200,
+      "raw_items": 60,
+      "usable": 60,
+      "error": ""
+    },
+    {
+      "outlet": "NDTV",
+      "url": "https://feeds.feedburner.com/ndtvnews-india-news",
+      "http": 200,
+      "raw_items": 20,
+      "usable": 20,
+      "error": ""
+    },
+    {
+      "outlet": "Hindustan Times",
+      "url": "https://www.hindustantimes.com/feeds/rss/india-news/rssfeed.xml",
+      "http": 200,
+      "raw_items": 100,
+      "usable": 100,
+      "error": ""
+    },
+    {
+      "outlet": "Times of India",
+      "url": "https://timesofindia.indiatimes.com/rssfeedstopstories.cms",
+      "http": 200,
+      "raw_items": 47,
+      "usable": 47,
+      "error": ""
+    },
+    {
+      "outlet": "Livemint",
+      "url": "https://www.livemint.com/rss/news",
+      "http": 200,
+      "raw_items": 35,
+      "usable": 35,
+      "error": ""
+    },
+    {
+      "outlet": "Scroll.in",
+      "url": "https://feeds.feedburner.com/ScrollinArticles.rss",
+      "http": 200,
+      "raw_items": 100,
+      "usable": 100,
+      "error": ""
+    }
+  ],
+  "dropped_articles": [
+    {
+      "reason": "out_of_window",
+      "outlet": "Guardian World",
+      "title": "Supporters of Imran Khan start march on locked-down Islamabad",
+      "url": "https://www.theguardian.com/world/2026/oct/05/jailed-imran-khan-march-on-islamabad-pakistan",
+      "published": "2026-10-05 15:19:46+00:00",
+      "since": "2026-10-08 00:09:05.538609+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Guardian World",
+      "title": "India’s Cockroach movement launches new protests over changes to voter roll",
+      "url": "https://www.theguardian.com/world/2026/oct/02/india-cockroach-movement-protests-mumbai-changes-voter-roll",
+      "published": "2026-10-02 14:42:16+00:00",
+      "since": "2026-10-08 00:09:05.538609+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Guardian World",
+      "title": "Eastern Spain braces for torrential rain and flooding",
+      "url": "https://www.theguardian.com/environment/2026/oct/02/weather-tracker-eastern-spain-torrential-rain-flooding-nepal-landslides",
+      "published": "2026-10-02 08:58:10+00:00",
+      "since": "2026-10-08 00:09:05.538609+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Guardian World",
+      "title": "‘I was fighting for my life’: Indian pilot hailed as hero recalls flydubai cockpit attack",
+      "url": "https://www.theguardian.com/world/2026/oct/02/indian-pilot-smit-machchhar-recalls-flydubai-cockpit-attack",
+      "published": "2026-10-02 08:39:40+00:00",
+      "since": "2026-10-08 00:09:05.538609+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Three years since October 7, Gaza has faded from headlines. All eyes are now on Israel’s elections",
+      "url": "https://scroll.in/article/1096237/three-years-since-october-7-gaza-has-faded-from-headlines-all-eyes-are-now-on-israels-elections?utm_source=rss&utm_medium=public",
+      "published": "2026-10-07 16:30:00+00:00",
+      "since": "2026-10-08 00:09:05.538609+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Delhi: Seven injured in Seemapuri building collapse",
+      "url": "https://scroll.in/latest/1096242/delhi-seven-injured-in-seemapuri-building-collapse?utm_source=rss&utm_medium=public",
+      "published": "2026-10-07 14:15:00+00:00",
+      "since": "2026-10-08 00:09:05.538609+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Rush Hour: Rahul Gandhi detained for third time in two days of Opposition protest against CEC & more",
+      "url": "https://scroll.in/latest/1096241/rush-hour-rahul-gandhi-detained-for-third-time-in-two-days-of-opposition-protest-against-cec-more?utm_source=rss&utm_medium=public",
+      "published": "2026-10-07 13:32:12+00:00",
+      "since": "2026-10-08 00:09:05.538609+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Rahul Gandhi detained at Jantar Mantar during day 2 of Opposition protest demanding CEC resignation",
+      "url": "https://scroll.in/latest/1096240/opposition-mps-at-jantar-mantar-for-day-2-of-protests-demanding-gyanesh-kumar-resignation?utm_source=rss&utm_medium=public",
+      "published": "2026-10-07 15:11:31+00:00",
+      "since": "2026-10-08 00:09:05.538609+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Fiction from Tibet: Lama Alak Drong is beaten and starved when Chinese colonisers arrive",
+      "url": "https://scroll.in/article/1095446/fiction-from-tibet-lama-alak-drong-is-beaten-and-starved-when-chinese-colonisers-arrive?utm_source=rss&utm_medium=public",
+      "published": "2026-10-07 12:00:00+00:00",
+      "since": "2026-10-08 00:09:05.538609+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Delhi HC refuses to direct security personnel to wear body cameras during protests",
+      "url": "https://scroll.in/latest/1096236/delhi-hc-refuses-to-direct-security-personnel-to-wear-body-cameras-during-protests?utm_source=rss&utm_medium=public",
+      "published": "2026-10-07 12:00:55+00:00",
+      "since": "2026-10-08 00:09:05.538609+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Henri Kagan, Kenso Soai win chemistry Nobel for research into mirror-image molecules",
+      "url": "https://scroll.in/latest/1096239/henri-kagan-kenso-soai-win-chemistry-nobel-for-research-into-mirror-image-molecules?utm_source=rss&utm_medium=public",
+      "published": "2026-10-07 10:54:06+00:00",
+      "since": "2026-10-08 00:09:05.538609+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "SC to ‘take a call’ on recalling split verdict in pleas against EC appointments Act",
+      "url": "https://scroll.in/latest/1096235/sc-to-take-a-call-on-recalling-split-verdict-in-pleas-against-ec-appointments-act?utm_source=rss&utm_medium=public",
+      "published": "2026-10-07 12:23:58+00:00",
+      "since": "2026-10-08 00:09:05.538609+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "HC allows PepsiCo, Monster to sell existing stock of ‘energy drinks’",
+      "url": "https://scroll.in/latest/1096233/hc-allows-pepsico-monster-to-sell-existing-stock-of-energy-drinks?utm_source=rss&utm_medium=public",
+      "published": "2026-10-07 09:55:34+00:00",
+      "since": "2026-10-08 00:09:05.538609+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "‘Any dissent termed anti-national’: Ex-bureaucrats urge civil servants to uphold Constitution values",
+      "url": "https://scroll.in/latest/1096234/any-dissent-termed-anti-national-ex-bureaucrats-urge-civil-servants-to-uphold-constitution-values?utm_source=rss&utm_medium=public",
+      "published": "2026-10-07 09:33:42+00:00",
+      "since": "2026-10-08 00:09:05.538609+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Semiconductors are driving the global economy. A new book looks at its human and environmental costs",
+      "url": "https://scroll.in/article/1095894/semiconductors-are-driving-the-global-economy-a-new-book-looks-at-its-human-and-environmental-costs?utm_source=rss&utm_medium=public",
+      "published": "2026-10-07 08:00:00+00:00",
+      "since": "2026-10-08 00:09:05.538609+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "CEC Gyanesh Kumar postpones Chhattisgarh visit amid nationwide protests demanding his resignation",
+      "url": "https://scroll.in/latest/1096229/cec-gyanesh-kumar-postpones-chhattisgarh-visit-amid-nationwide-protests-demanding-his-resignation?utm_source=rss&utm_medium=public",
+      "published": "2026-10-07 07:42:41+00:00",
+      "since": "2026-10-08 00:09:05.538609+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "RBI raises repo rate by 25 basis points to 5.5% amid rising inflation",
+      "url": "https://scroll.in/latest/1096231/rbi-raises-repo-rate-by-25-basis-points-to-5-5-amid-rising-inflation?utm_source=rss&utm_medium=public",
+      "published": "2026-10-07 07:49:30+00:00",
+      "since": "2026-10-08 00:09:05.538609+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "HC asks how Chhattisgarh can determine citizenship of 4 Muslims while Bengal SIR appeals are pending",
+      "url": "https://scroll.in/latest/1096230/hc-asks-how-chhattisgarh-can-determine-citizenship-of-4-muslims-while-bengal-sir-appeals-are-pending?utm_source=rss&utm_medium=public",
+      "published": "2026-10-07 06:57:07+00:00",
+      "since": "2026-10-08 00:09:05.538609+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "SIR: Hyderabad BJP booth agent booked for misusing Form 7 to seek deletion of 30 Muslim voters",
+      "url": "https://scroll.in/latest/1096227/sir-hyderabad-bjp-level-booth-agent-booked-for-misusing-form-7-to-seek-deletion-of-30-muslim-voters?utm_source=rss&utm_medium=public",
+      "published": "2026-10-07 05:58:35+00:00",
+      "since": "2026-10-08 00:09:05.538609+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Congress MPs Rahul Gandhi, Priyanka Gandhi Vadra booked after protest against CEC",
+      "url": "https://scroll.in/latest/1096228/traitors-of-democracy-being-protected-rahul-gandhi-after-detention-during-protests-against-cec?utm_source=rss&utm_medium=public",
+      "published": "2026-10-07 05:58:17+00:00",
+      "since": "2026-10-08 00:09:05.538609+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "How Netanyahu and Modi turn security failures into political weapons",
+      "url": "https://scroll.in/article/1096222/how-netanyahu-and-modi-turn-security-failures-into-political-weapons?utm_source=rss&utm_medium=public",
+      "published": "2026-10-07 03:51:46+00:00",
+      "since": "2026-10-08 00:09:05.538609+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Saeed Naqvi on being the first journalist to interview Nelson Mandela after his release from jail",
+      "url": "https://scroll.in/article/1095901/saeed-naqvi-on-being-the-first-journalist-to-interview-nelson-mandela-after-his-release-from-jail?utm_source=rss&utm_medium=public",
+      "published": "2026-10-07 03:00:00+00:00",
+      "since": "2026-10-08 00:09:05.538609+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Kashmir-born filmmaker detained in the US by ICE two weeks ago still awaits bail hearing",
+      "url": "https://scroll.in/article/1096226/kashmir-born-filmmaker-detained-in-the-us-by-ice-two-weeks-ago-still-awaits-bail-hearing?utm_source=rss&utm_medium=public",
+      "published": "2026-10-07 06:33:02+00:00",
+      "since": "2026-10-08 00:09:05.538609+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Ground report: Muslim voters stopped, Opposition arrested, journalists blocked in Bengal bye-poll",
+      "url": "https://scroll.in/article/1096225/police-acting-like-bjp-agent-bengal-bye-election-was-rigged-allege-opposition-workers?utm_source=rss&utm_medium=public",
+      "published": "2026-10-07 08:18:38+00:00",
+      "since": "2026-10-08 00:09:05.538609+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Ethiopia is slipping into a war again that could expand to more countries",
+      "url": "https://scroll.in/article/1096139/ethiopia-is-slipping-into-a-war-again-that-could-expand-to-more-countries?utm_source=rss&utm_medium=public",
+      "published": "2026-10-06 16:30:00+00:00",
+      "since": "2026-10-08 00:09:05.538609+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Man accused of creating Muslim women ‘auction’ app discharged for lack of evidence",
+      "url": "https://scroll.in/latest/1096224/man-accused-of-creating-muslim-women-auction-app-discharged-for-lack-of-evidence?utm_source=rss&utm_medium=public",
+      "published": "2026-10-06 14:40:00+00:00",
+      "since": "2026-10-08 00:09:05.538609+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "11 Indians injured in attack on ship in Strait of Hormuz",
+      "url": "https://scroll.in/latest/1096223/11-indians-injured-in-attack-on-ship-in-strait-of-hormuz?utm_source=rss&utm_medium=public",
+      "published": "2026-10-06 14:16:20+00:00",
+      "since": "2026-10-08 00:09:05.538609+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Bangladesh measles outbreak claims 900 lives – and serves as warning for why vaccination matters",
+      "url": "https://scroll.in/article/1096201/bangladesh-measles-outbreak-claims-900-lives-and-serves-as-warning-for-why-vaccination-matters?utm_source=rss&utm_medium=public",
+      "published": "2026-10-06 14:00:00+00:00",
+      "since": "2026-10-08 00:09:05.538609+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Rush Hour: Opposition protests against CEC, physics Nobel for high-energy neutrinos discovery & more",
+      "url": "https://scroll.in/latest/1096216/rush-hour-opposition-protests-against-cec-physics-nobel-for-high-energy-neutrinos-discovery-more?utm_source=rss&utm_medium=public",
+      "published": "2026-10-06 13:49:09+00:00",
+      "since": "2026-10-08 00:09:05.538609+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "For children: Moyna’s happy world in the Sunderbans begins to shift after her father disappears",
+      "url": "https://scroll.in/article/1095580/for-children-moynas-happy-world-in-the-sunderbans-begins-to-shift-after-her-father-disappears?utm_source=rss&utm_medium=public",
+      "published": "2026-10-06 12:00:00+00:00",
+      "since": "2026-10-08 00:09:05.538609+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "‘Weaponised’ tariffs complicating US trade deal talks, says Nirmala Sitharaman",
+      "url": "https://scroll.in/latest/1096219/weaponised-tariffs-complicating-us-trade-deal-talks-says-nirmala-sitharaman?utm_source=rss&utm_medium=public",
+      "published": "2026-10-06 11:43:14+00:00",
+      "since": "2026-10-08 00:09:05.538609+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Maharashtra Police pressuring CJP volunteers not to join October 10 Delhi protest, alleges Dipke",
+      "url": "https://scroll.in/latest/1096221/maharashtra-police-pressuring-cjp-volunteers-against-joining-october-10-delhi-protest-alleges-dipke?utm_source=rss&utm_medium=public",
+      "published": "2026-10-06 11:20:52+00:00",
+      "since": "2026-10-08 00:09:05.538609+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Francis Halzen awarded physics Nobel for discovery of high-energy neutrinos of astrophysical origin",
+      "url": "https://scroll.in/latest/1096218/francis-halzen-awarded-physics-nobel-for-discovery-of-high-energy-neutrinos-of-astrophysical-origin?utm_source=rss&utm_medium=public",
+      "published": "2026-10-06 11:05:50+00:00",
+      "since": "2026-10-08 00:09:05.538609+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Delhi: 17 students, journalists arrested during protests against CEC Gyanesh Kumar granted bail",
+      "url": "https://scroll.in/latest/1096214/delhi-17-students-journalists-arrested-during-protests-against-cec-gyanesh-kumar-granted-bail?utm_source=rss&utm_medium=public",
+      "published": "2026-10-06 10:45:18+00:00",
+      "since": "2026-10-08 00:09:05.538609+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Bengal bye-polls: MLA Humayun Kabir arrested after scuffle with police in Rejinagar",
+      "url": "https://scroll.in/latest/1096217/bengal-bye-polls-mla-humayun-kabir-arrested-after-scuffle-with-police-in-rejinagar?utm_source=rss&utm_medium=public",
+      "published": "2026-10-06 10:09:00+00:00",
+      "since": "2026-10-08 00:09:05.538609+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Bengal SIR tribunal judges say EC portal delaying disposal of cases, reports ‘The Indian Express’",
+      "url": "https://scroll.in/latest/1096213/bengal-sir-tribunal-judges-say-ec-portal-delaying-disposal-of-cases-reports-the-indian-express?utm_source=rss&utm_medium=public",
+      "published": "2026-10-06 10:50:47+00:00",
+      "since": "2026-10-08 00:09:05.538609+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Hindutva influencer who allegedly assaulted CJP protester’s father gets bail",
+      "url": "https://scroll.in/latest/1096212/hindutva-influencer-who-allegedly-assaulted-cjp-protesters-father-gets-bail?utm_source=rss&utm_medium=public",
+      "published": "2026-10-06 08:20:10+00:00",
+      "since": "2026-10-08 00:09:05.538609+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Fiction: An enchanted heirloom from Ava’s traumatic childhood is guarded by a spirit animal",
+      "url": "https://scroll.in/article/1095972/fiction-an-enchanted-heirloom-from-avas-traumatic-childhood-is-guarded-by-a-spirit-animal?utm_source=rss&utm_medium=public",
+      "published": "2026-10-06 08:00:00+00:00",
+      "since": "2026-10-08 00:09:05.538609+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Godrej Literature Live! The Mumbai Litfest announces its 2026 book longlists in five categories",
+      "url": "https://scroll.in/article/1096211/godrej-literature-live-the-mumbai-litfest-announces-longlists-in-five-categories-for-its-2026-book?utm_source=rss&utm_medium=public",
+      "published": "2026-10-06 16:06:09+00:00",
+      "since": "2026-10-08 00:09:05.538609+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Madhya Pradesh: Did not anticipate Ladli Behna scheme’s ‘financial burden’, says CM",
+      "url": "https://scroll.in/latest/1096207/madhya-pradesh-did-not-anticipate-ladli-bahin-schemes-financial-burden-says-cm?utm_source=rss&utm_medium=public",
+      "published": "2026-10-06 07:53:14+00:00",
+      "since": "2026-10-08 00:09:05.538609+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Maharashtra to cut water supply by 10% amid drought, El Niño concerns",
+      "url": "https://scroll.in/latest/1096209/maharashtra-to-cut-water-supply-by-10-from-october-16-amid-rainfall-deficit-el-nino-concerns?utm_source=rss&utm_medium=public",
+      "published": "2026-10-06 08:24:55+00:00",
+      "since": "2026-10-08 00:09:05.538609+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Explainer: Why the Election Commission’s Form 6 for new voters has triggered a legal row",
+      "url": "https://scroll.in/article/1096208/explainer-why-the-election-commissions-form-6-for-new-voters-has-triggered-a-legal-row?utm_source=rss&utm_medium=public",
+      "published": "2026-10-06 07:00:00+00:00",
+      "since": "2026-10-08 00:09:05.538609+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Rahul Gandhi, 50 MPs detained during protest near EC office demanding Gyanesh Kumar resignation",
+      "url": "https://scroll.in/latest/1096210/opposition-mps-march-to-ec-office-demanding-cec-resignation-stopped-by-police?utm_source=rss&utm_medium=public",
+      "published": "2026-10-06 16:01:16+00:00",
+      "since": "2026-10-08 00:09:05.538609+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Delhi withholds additional charge for police officer accused of sexually assaulting journalist",
+      "url": "https://scroll.in/latest/1096206/delhi-withholds-giving-additional-charge-to-police-officer-accused-of-sexually-assaulting-journalist?utm_source=rss&utm_medium=public",
+      "published": "2026-10-06 08:29:01+00:00",
+      "since": "2026-10-08 00:09:05.538609+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "The world order is ‘complicated’. Can Indian foreign policy navigate ‘situationships’?",
+      "url": "https://scroll.in/article/1096076/the-world-order-is-complicated-can-indian-foreign-policy-navigate-situationships?utm_source=rss&utm_medium=public",
+      "published": "2026-10-06 03:30:00+00:00",
+      "since": "2026-10-08 00:09:05.538609+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Missives from the heart: When Hindi cinema put the letter to song",
+      "url": "https://scroll.in/reel/1096204/missives-from-the-heart-when-hindi-cinema-put-the-letter-to-song?utm_source=rss&utm_medium=public",
+      "published": "2026-10-06 03:15:00+00:00",
+      "since": "2026-10-08 00:09:05.538609+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Jeffrey Archer, British author and former politician, dies at 86",
+      "url": "https://scroll.in/latest/1096205/jeffrey-archer-british-author-and-former-politician-dies-at-86?utm_source=rss&utm_medium=public",
+      "published": "2026-10-06 05:06:58+00:00",
+      "since": "2026-10-08 00:09:05.538609+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "A new book examines why rural women are undergoing sterilisation despite ambivalence about surgery",
+      "url": "https://scroll.in/article/1095900/a-new-book-examines-why-rural-women-are-undergoing-sterilisation-despite-ambivalence-about-surgery?utm_source=rss&utm_medium=public",
+      "published": "2026-10-06 03:00:01+00:00",
+      "since": "2026-10-08 00:09:05.538609+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "‘Are they above the Assembly?’ Why Jammu and Kashmir politicians are up in arms against bureaucrats",
+      "url": "https://scroll.in/article/1096196/are-they-above-the-assembly-why-jammu-and-kashmir-politicians-are-up-in-arms-against-bureaucrats?utm_source=rss&utm_medium=public",
+      "published": "2026-10-06 01:00:00+00:00",
+      "since": "2026-10-08 00:09:05.538609+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "How El Niño is causing droughts in parts of the world and floods elsewhere",
+      "url": "https://scroll.in/article/1096140/how-el-nino-is-causing-droughts-in-parts-of-the-world-and-floods-elsewhere?utm_source=rss&utm_medium=public",
+      "published": "2026-10-05 16:30:00+00:00",
+      "since": "2026-10-08 00:09:05.538609+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "‘Sohla’ trailer: Marathi movie is about a rite of passage from childhood to adolescence",
+      "url": "https://scroll.in/reel/1096202/sohla-trailer-marathi-movie-is-about-a-rite-of-passage-from-childhood-to-adolescence?utm_source=rss&utm_medium=public",
+      "published": "2026-10-05 15:56:29+00:00",
+      "since": "2026-10-08 00:09:05.538609+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "SIR: Telangana poll chief orders action against persons misusing Form 7 to delete eligible voters",
+      "url": "https://scroll.in/latest/1096198/sir-telangana-poll-chief-orders-action-against-persons-misusing-form-7-to-delete-eligible-voters?utm_source=rss&utm_medium=public",
+      "published": "2026-10-05 14:46:25+00:00",
+      "since": "2026-10-08 00:09:05.538609+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Scabies: The invisible skin infection that is more than skin-deep",
+      "url": "https://scroll.in/article/1096200/scabies-the-invisible-skin-infection-that-is-more-than-skin-deep?utm_source=rss&utm_medium=public",
+      "published": "2026-10-05 14:00:00+00:00",
+      "since": "2026-10-08 00:09:05.538609+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Union minister Hardeep Singh Puri not among BJP Rajya Sabha candidates",
+      "url": "https://scroll.in/latest/1096199/union-minister-hardeep-singh-puri-not-among-bjp-rajya-sabha-candidates?utm_source=rss&utm_medium=public",
+      "published": "2026-10-05 13:59:00+00:00",
+      "since": "2026-10-08 00:09:05.538609+00:00"
+    },
+    {
+      "reason": "out_of_window",
+      "outlet": "Scroll.in",
+      "title": "Watch: Great Indian Bustard conservation story is told through animation and Jaipur blue pottery",
+      "url": "https://scroll.in/reel/1096191/watch-great-indian-bustard-conservation-story-is-told-through-animation-and-jaipur-blue-pottery?utm_source=rss&utm_medium=public",
+      "published": "2026-10-05 13:51:01+00:00",
+      "since": "2026-10-08 00:09:05.538609+00:00"
+    },
+    {
+      "reason": "dup_url",
+      "outlet": "France 24",
+      "title": "Powerful 7.6 magnitude quake shakes Panama, triggering tsunami warnings",
+      "url": "https://www.france24.com/en/americas/20261009-powerful-7-6-magnitude-quake-shakes-panama-triggering-tsunami-warning",
+      "collided_with": "https://www.france24.com/en/americas/20261009-powerful-7-6-magnitude-quake-shakes-panama-triggering-tsunami-warning"
+    },
+    {
+      "reason": "dup_url",
+      "outlet": "France 24",
+      "title": "FlyDubai co-pilot planned suicide attack on Tel Aviv airport, inspired by 9/11, prosecutor says",
+      "url": "https://www.france24.com/en/middle-east/20261009-flydubai-co-pilot-planned-suicide-attack-on-tel-aviv-airport-inspired-by-9-11",
+      "collided_with": "https://www.france24.com/en/middle-east/20261009-flydubai-co-pilot-planned-suicide-attack-on-tel-aviv-airport-inspired-by-9-11"
+    },
+    {
+      "reason": "dup_title",
+      "outlet": "Hindustan Times",
+      "title": "BJP’s Dinesh Arya elected unopposed to Rajya Sabha from Uttarakhand",
+      "url": "https://www.hindustantimes.com/india-news/bjps-dinesh-arya-elected-unopposed-to-rajya-sabha-from-uttarakhand-101791547904182.html",
+      "collided_with": "https://www.thehindu.com/news/national/uttarakhand/bjps-dinesh-arya-elected-unopposed-to-rajya-sabha-from-uttarakhand/article71565339.ece"
+    }
+  ]
+}

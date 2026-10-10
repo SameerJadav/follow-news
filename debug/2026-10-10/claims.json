@@ -1,0 +1,711 @@
+{
+  "min_claim_chars": 20,
+  "max_claims_per_story": 24,
+  "calls": [
+    {
+      "label": "claims-world",
+      "cluster_ids": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "label": "claims-india",
+      "cluster_ids": [
+        3,
+        4,
+        5
+      ]
+    }
+  ],
+  "rejected_claims": 0,
+  "rejected_clusters": 0,
+  "clusters": [
+    {
+      "cluster_id": 0,
+      "headline_hint": "Navi Pillay wins 2026 Nobel Peace Prize as US responds with sweeping sanctions against International Criminal Court",
+      "section": "world",
+      "batch_position": 0,
+      "claim_count": 9,
+      "distinct_outlets": 2,
+      "source_kinds": {
+        "fulltext": 9
+      },
+      "claims": [
+        {
+          "id": 1,
+          "cluster_id": 0,
+          "text": "South African judge Navi Pillay was awarded the 2026 Nobel Peace Prize.",
+          "kind": "event",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/south-african-judge-awarded-nobel-peace-prize",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 2,
+          "cluster_id": 0,
+          "text": "The Trump administration announced sanctions targeting the International Criminal Court as an institution.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cj20vkkx3rdvo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 3,
+          "cluster_id": 0,
+          "text": "US Secretary of State Marco Rubio stated that the sanctions include a ban on US entities making financial transactions with the International Criminal Court.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cj20vkkx3rdvo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 4,
+          "cluster_id": 0,
+          "text": "US Secretary of State Marco Rubio warned, \"Either the ICC will end its threats, or we will end the ICC.\"",
+          "kind": "quote",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cj20vkkx3rdvo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 5,
+          "cluster_id": 0,
+          "text": "The International Criminal Court was founded in 2002 to prosecute war crimes, crimes against humanity, and genocide, and has 125 member states.",
+          "kind": "background",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cj20vkkx3rdvo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 6,
+          "cluster_id": 0,
+          "text": "The United States provided a six-month grace period before certain sanctions on the International Criminal Court take effect.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cj20vkkx3rdvo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 7,
+          "cluster_id": 0,
+          "text": "UN Secretary-General Antonio Guterres called the US decision \"a serious blow to our collective pursuit of international criminal justice, of which the ICC is a key pillar\".",
+          "kind": "quote",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cj20vkkx3rdvo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 8,
+          "cluster_id": 0,
+          "text": "Israeli Prime Minister Benjamin Netanyahu welcomed the US sanctions, describing the International Criminal Court as a political body that threatens democratic sovereignty.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cj20vkkx3rdvo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 9,
+          "cluster_id": 0,
+          "text": "The United States, Russia, China, India, and Israel are not member states of the International Criminal Court.",
+          "kind": "background",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cj20vkkx3rdvo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 1,
+      "headline_hint": "Trump agrees deal with Putin to buy Russian diesel, triggering fierce backlash from Ukraine and allies",
+      "section": "world",
+      "batch_position": 1,
+      "claim_count": 9,
+      "distinct_outlets": 4,
+      "source_kinds": {
+        "fulltext": 9
+      },
+      "claims": [
+        {
+          "id": 10,
+          "cluster_id": 1,
+          "text": "US President Donald Trump announced an agreement with Russian President Vladimir Putin allowing Moscow to supply diesel to the US and global markets.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cm1dwgr666wno?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 11,
+          "cluster_id": 1,
+          "text": "The US Treasury Department issued a temporary licence suspending sanctions on Russian diesel exports through April 7, 2027.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cm1dwgr666wno?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 12,
+          "cluster_id": 1,
+          "text": "Under the agreement, Russia is scheduled to supply 300,000 tonnes of diesel immediately, 500,000 tonnes in November, 1 million tonnes shortly after, and another 3 million tonnes depending on refinery conditions.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cm1dwgr666wno?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 13,
+          "cluster_id": 1,
+          "text": "Ukrainian President Volodymyr Zelenskyy condemned the deal, stating that easing sanctions on Russian energy plays into Moscow's hands and prolongs the war.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cm1dwgr666wno?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 14,
+          "cluster_id": 1,
+          "text": "The average price of diesel in the United States stood at $6.28 per gallon at the time of the announcement, down from a record $6.53 per gallon in late September.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cm1dwgr666wno?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 15,
+          "cluster_id": 1,
+          "text": "Ukrainian drone strikes on Russian oil refineries caused Russia's diesel production to fall by an estimated 30 percent.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cm1dwgr666wno?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 16,
+          "cluster_id": 1,
+          "text": "Democratic Senator Chris Van Hollen and several Republican lawmakers condemned President Donald Trump for lifting sanctions on Russian fossil fuels.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/us-news/live/2026/oct/09/pentagon-fort-hood-livestream-firing-squad-execution-reaction-backlash-pete-hegseth-donald-trump-mussolini-latest-news-updates",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 17,
+          "cluster_id": 1,
+          "text": "President Donald Trump reached the diesel agreement during a phone call with Vladimir Putin originally scheduled to discuss a suspected case of plague in Russia.",
+          "kind": "event",
+          "outlet": "NPR World",
+          "url": "https://www.npr.org/2026/10/09/nx-s1-5996912/trump-says-u-s-to-get-diesel-from-russia-relaxing-pressure-on-moscow-to-ease-prices-before-midterms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 18,
+          "cluster_id": 1,
+          "text": "Average regular gasoline prices in the United States rose more than 46 percent since late February to $4.37 per gallon, while diesel prices increased 67 percent over the same period.",
+          "kind": "figure",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/trump-russia-diesel-putin-global-markets-6447926",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 2,
+      "headline_hint": "Powerful 7.7-magnitude earthquake hits Panama, triggering tsunami warnings across Central and South America",
+      "section": "world",
+      "batch_position": 2,
+      "claim_count": 10,
+      "distinct_outlets": 3,
+      "source_kinds": {
+        "fulltext": 10
+      },
+      "claims": [
+        {
+          "id": 19,
+          "cluster_id": 2,
+          "text": "A 7.6-magnitude earthquake struck Panama, centered near the community of Pitaloza Arriba, according to the US Geological Survey.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/09/panama-earthquake",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 20,
+          "cluster_id": 2,
+          "text": "Panamanian President José Raúl Mulino appealed for calm following the earthquake, stating on X, \"What happened should not be used to generate alarm and disorder.\"",
+          "kind": "quote",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/09/panama-earthquake",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 21,
+          "cluster_id": 2,
+          "text": "The earthquake caused structural collapses and damage in Penonomé, including at the St John Baptist Cathedral, the governor's office building, and the Dos Continentes hotel.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/09/panama-earthquake",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 22,
+          "cluster_id": 2,
+          "text": "Tocumen International Airport in Panama City temporarily suspended flight operations and evacuated facilities to conduct safety checks.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/09/panama-earthquake",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 23,
+          "cluster_id": 2,
+          "text": "The Panama Canal Authority confirmed that ship traffic and operations along the canal continued normally following the earthquake.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/09/panama-earthquake",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 24,
+          "cluster_id": 2,
+          "text": "The US Geological Survey registered the main earthquake at magnitude 7.7 at a depth of 12.6 kilometers, making it the strongest quake in that part of Panama since at least 1951.",
+          "kind": "figure",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/aftershocks-rock-panama-following-largest-quake-in-decades-11791584798350.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 25,
+          "cluster_id": 2,
+          "text": "Preliminary estimates from the US Geological Survey indicate that economic losses in Panama from the earthquake are likely to exceed $1 billion.",
+          "kind": "figure",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/aftershocks-rock-panama-following-largest-quake-in-decades-11791584798350.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 26,
+          "cluster_id": 2,
+          "text": "Panama City's Metro system temporarily halted service on lines 1 and 2 as a precaution after the quake.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/aftershocks-rock-panama-following-largest-quake-in-decades-11791584798350.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 27,
+          "cluster_id": 2,
+          "text": "Panama's Ministry of Education ordered schools across the country to close following the earthquake.",
+          "kind": "event",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/9/tsunami-warnings-across-latin-america-after-7-7-magnitude-earthquake-hits?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 28,
+          "cluster_id": 2,
+          "text": "Twin earthquakes in northern Venezuela killed at least 6,500 people in June 2026, while a magnitude 7.4 quake in Colombia killed at least 289 people in August 2026.",
+          "kind": "background",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/9/tsunami-warnings-across-latin-america-after-7-7-magnitude-earthquake-hits?traffic_source=rss",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 3,
+      "headline_hint": "Massive security clampdown and transport curbs in Delhi as CJP and Opposition launch anti-CEC protests",
+      "section": "india",
+      "batch_position": 0,
+      "claim_count": 14,
+      "distinct_outlets": 5,
+      "source_kinds": {
+        "fulltext": 13,
+        "summary": 1
+      },
+      "claims": [
+        {
+          "id": 29,
+          "cluster_id": 3,
+          "text": "Union Minister Chirag Paswan stated on Friday regarding CJP's protest that 'They are the youth of India. Nobody can stop them.'",
+          "kind": "quote",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/how-many-trains-can-one-stop-cant-halt-youth-of-india-union-minister-chirag-paswan/articleshow/134845713.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 30,
+          "cluster_id": 3,
+          "text": "Union Minister Chirag Paswan previously called for clarification regarding CEC Gyanesh Kumar's decision-making but backed out after the Election Commission stated decisions were unanimous.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/how-many-trains-can-one-stop-cant-halt-youth-of-india-union-minister-chirag-paswan/articleshow/134845713.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 31,
+          "cluster_id": 3,
+          "text": "The Cockroach Janta Party released a poster calling for supporters to gather at Jantar Mantar at 10 a.m. on October 10, 2026, demanding the resignation of CEC Gyanesh Kumar and the rollback of the Special Intensive Revision.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/cities/Delhi/cjp-protests-jantar-mantar-new-delhi-election-commissioner-gyanesh-kumar-resignation-sir-cec-row-october-10-2026-live-news/article71566021.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 32,
+          "cluster_id": 3,
+          "text": "Delhi Police denied permission to the Cockroach Janta Party to hold a protest at Jantar Mantar on October 10, 2026, citing alleged rule violations in an earlier demonstration.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/cities/Delhi/cjp-protests-jantar-mantar-new-delhi-election-commissioner-gyanesh-kumar-resignation-sir-cec-row-october-10-2026-live-news/article71566021.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 33,
+          "cluster_id": 3,
+          "text": "Authorities deployed 23,000 security personnel and closed 45 metro stations across Delhi ahead of the planned CJP protest.",
+          "kind": "figure",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/cities/Delhi/cjp-protests-jantar-mantar-new-delhi-election-commissioner-gyanesh-kumar-resignation-sir-cec-row-october-10-2026-live-news/article71566021.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 34,
+          "cluster_id": 3,
+          "text": "The Union Ministry of Home Affairs directed all States and Union Territories to coordinate with Delhi Police to prevent protesters from moving toward Delhi.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/cities/Delhi/cjp-protests-jantar-mantar-new-delhi-election-commissioner-gyanesh-kumar-resignation-sir-cec-row-october-10-2026-live-news/article71566021.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 35,
+          "cluster_id": 3,
+          "text": "CJP founder Abhijeet Dipke stated on X that he would reach Delhi by 9:30 a.m. and urged protesters to keep the protest going even if he is detained.",
+          "kind": "quote",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/cities/Delhi/cjp-protests-jantar-mantar-new-delhi-election-commissioner-gyanesh-kumar-resignation-sir-cec-row-october-10-2026-live-news/article71566021.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 36,
+          "cluster_id": 3,
+          "text": "NSUI Jamia Millia Islamia Secretary Ebin Basil reported that four female students were detained by police near Jamia around 11:30 p.m. before being released around 3 a.m.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/cities/Delhi/cjp-protests-jantar-mantar-new-delhi-election-commissioner-gyanesh-kumar-resignation-sir-cec-row-october-10-2026-live-news/article71566021.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 37,
+          "cluster_id": 3,
+          "text": "The Centre alleged that over 200 police personnel were injured during CJP's protest in July.",
+          "kind": "figure",
+          "outlet": "NDTV",
+          "url": "https://www.ndtv.com/india-news/at-cjp-hearing-centre-brings-up-sexual-harassment-of-policewoman-12164031#publisher=newsstand",
+          "source_kind": "summary"
+        },
+        {
+          "id": 38,
+          "cluster_id": 3,
+          "text": "In an open letter, 42 retired judges defended Chief Election Commissioner Gyanesh Kumar and criticized CJP-led protests against the Election Commission of India.",
+          "kind": "background",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/when-bjp-protested-against-the-election-commission-in-2014-heres-where-and-why-it-happened-11791569390041.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 39,
+          "cluster_id": 3,
+          "text": "In May 2014, the BJP staged protests against the Election Commission of India after its prime ministerial candidate Narendra Modi was denied permission to hold a rally in Varanasi.",
+          "kind": "background",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/when-bjp-protested-against-the-election-commission-in-2014-heres-where-and-why-it-happened-11791569390041.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 40,
+          "cluster_id": 3,
+          "text": "Delhi Police sent a letter on October 9 to CJP co-convener Saurav Das and joint secretary Balkrishna stating their communication on October 7 did not constitute a proper application submitted 10 days in advance.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/public-safety-past-lapses-why-delhi-police-denied-cjp-permission-for-jantar-mantar-october-10-gyanesh-kumar-protest-101791570038308.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 41,
+          "cluster_id": 3,
+          "text": "Delhi Police reported identifying 2,873 people via CCTV from a July 20 march, claiming 989 of them had criminal antecedents.",
+          "kind": "figure",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/public-safety-past-lapses-why-delhi-police-denied-cjp-permission-for-jantar-mantar-october-10-gyanesh-kumar-protest-101791570038308.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 42,
+          "cluster_id": 3,
+          "text": "Delhi Police stated that Jantar Mantar has an official capacity to accommodate around 1,000 people at a time.",
+          "kind": "background",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/public-safety-past-lapses-why-delhi-police-denied-cjp-permission-for-jantar-mantar-october-10-gyanesh-kumar-protest-101791570038308.html",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 4,
+      "headline_hint": "US suspends PERM green card program for major IT firms, prompting concern and official reaction in India",
+      "section": "india",
+      "batch_position": 1,
+      "claim_count": 11,
+      "distinct_outlets": 5,
+      "source_kinds": {
+        "fulltext": 10,
+        "summary": 1
+      },
+      "claims": [
+        {
+          "id": 43,
+          "cluster_id": 4,
+          "text": "The Trump administration suspended eight major tech companies, including TCS, Infosys, Wipro, HCLTech, Microsoft, Adobe, Cognizant, and Capgemini, from the US PERM program on October 8.",
+          "kind": "event",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/asia/us-green-card-crackdown-clouds-indian-tech-workers-american-dream-6446536",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 44,
+          "cluster_id": 4,
+          "text": "US Labor Secretary Keith Sonderling announced that US authorities will stop accepting new applications and processing pending ones under the PERM program for the affected firms.",
+          "kind": "event",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/asia/us-green-card-crackdown-clouds-indian-tech-workers-american-dream-6446536",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 45,
+          "cluster_id": 4,
+          "text": "India's Ministry of External Affairs stated that the US PERM suspension does not advance shared ambitions and affects green card processing, though existing H-1B visas remain valid.",
+          "kind": "event",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/asia/us-green-card-crackdown-clouds-indian-tech-workers-american-dream-6446536",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 46,
+          "cluster_id": 4,
+          "text": "Tata Consultancy Services stated in a stock exchange filing that it submitted fewer than 10 PERM applications over the past two years and still plans to hire 15,000 US employees over five years.",
+          "kind": "event",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/asia/us-green-card-crackdown-clouds-indian-tech-workers-american-dream-6446536",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 47,
+          "cluster_id": 4,
+          "text": "India's Ministry of External Affairs issued an official statement on October 9 regarding the US immigration restrictions.",
+          "kind": "event",
+          "outlet": "NDTV",
+          "url": "https://www.ndtv.com/india-news/us-is-kicking-the-ladder-after-climbing-it-ex-amazon-h-1b-worker-to-ndtv-12163645#publisher=newsstand",
+          "source_kind": "summary"
+        },
+        {
+          "id": 48,
+          "cluster_id": 4,
+          "text": "Pan IIT Alumni India urged IIT graduates to return to India to work, citing uncertainty in US immigration policies.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/build-here-scale-here-die-here-pan-iit-alumni-india-chairman-on-us-perm-h1-b-news-from-trump-admin-11791565743265.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 49,
+          "cluster_id": 4,
+          "text": "PanIIT Alumni India Chairman Prabhat Kumar stated, 'A visa was never a stable foundation for a career... Build here. Scale here. Die here.'",
+          "kind": "quote",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/build-here-scale-here-die-here-pan-iit-alumni-india-chairman-on-us-perm-h1-b-news-from-trump-admin-11791565743265.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 50,
+          "cluster_id": 4,
+          "text": "Indian nationals received 71% of all H-1B visas issued by the US in the 2023-24 financial year.",
+          "kind": "figure",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/latest/1096286/does-not-advance-shared-ambitions-mea-on-us-suspending-it-firms-from-green-card-programme?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 51,
+          "cluster_id": 4,
+          "text": "US Vice President JD Vance urged US companies to hire 'great American workers' instead of 'foreign indentured servants'.",
+          "kind": "quote",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/latest/1096286/does-not-advance-shared-ambitions-mea-on-us-suspending-it-firms-from-green-card-programme?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 52,
+          "cluster_id": 4,
+          "text": "India's Ministry of External Affairs called US Vice President JD Vance's comments deeply offensive and unwarranted.",
+          "kind": "event",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/latest/1096286/does-not-advance-shared-ambitions-mea-on-us-suspending-it-firms-from-green-card-programme?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 53,
+          "cluster_id": 4,
+          "text": "MEA spokesperson Randhir Jaiswal stated that talent mobility adds value to both the Indian and US economies and helps US companies with cutting-edge talent and job creation.",
+          "kind": "quote",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/us-perm-suspension-wont-affect-h1b-visas-may-impact-green-cards-india-modi-govt-trump-vance-mea-permanent-labor-certification-101791543932755.html",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 5,
+      "headline_hint": "Assembly bypoll election results declared across states as BJP wins in Bengal and Assam while TVK sweeps Tamil Nadu",
+      "section": "india",
+      "batch_position": 2,
+      "claim_count": 14,
+      "distinct_outlets": 4,
+      "source_kinds": {
+        "fulltext": 13,
+        "summary": 1
+      },
+      "claims": [
+        {
+          "id": 54,
+          "cluster_id": 5,
+          "text": "TVK won two assembly bypolls in Tamil Nadu, securing victories in Dharapuram and Madurantakam.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/assembly-bypolls-tvk-wins-2-seats-in-tn-bjp-also-bags-2-in-bengal/articleshow/134845566.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 55,
+          "cluster_id": 5,
+          "text": "In Tamil Nadu, TVK's P Sathyabama won Dharapuram by 9,471 votes, and Maragatham Kumaravel won Madurantakam by 20,040 votes.",
+          "kind": "figure",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/assembly-bypolls-tvk-wins-2-seats-in-tn-bjp-also-bags-2-in-bengal/articleshow/134845566.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 56,
+          "cluster_id": 5,
+          "text": "The bypoll wins increased TVK's tally in the 234-member Tamil Nadu assembly from 107 to 109 seats.",
+          "kind": "figure",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/assembly-bypolls-tvk-wins-2-seats-in-tn-bjp-also-bags-2-in-bengal/articleshow/134845566.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 57,
+          "cluster_id": 5,
+          "text": "In West Bengal, the BJP retained the Nandigram assembly seat and won the Rejinagar assembly seat from AJUP.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/assembly-bypolls-tvk-wins-2-seats-in-tn-bjp-also-bags-2-in-bengal/articleshow/134845566.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 58,
+          "cluster_id": 5,
+          "text": "BJP candidate Shankharavh Sarkar won the Rejinagar assembly bypoll in West Bengal by 75,816 votes.",
+          "kind": "figure",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/assembly-bypolls-tvk-wins-2-seats-in-tn-bjp-also-bags-2-in-bengal/articleshow/134845566.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 59,
+          "cluster_id": 5,
+          "text": "In Assam, BJP's Devasish Sharma won the Nagaon Lok Sabha seat, leading AIUDF's Badruddin Ajmal by over 1.5 lakh votes.",
+          "kind": "figure",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/assembly-bypolls-tvk-wins-2-seats-in-tn-bjp-also-bags-2-in-bengal/articleshow/134845566.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 60,
+          "cluster_id": 5,
+          "text": "AINRC candidate Ashok Anand won the Thattanchavady assembly bypoll in Puducherry by over 8,400 votes.",
+          "kind": "figure",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/assembly-bypolls-tvk-wins-2-seats-in-tn-bjp-also-bags-2-in-bengal/articleshow/134845566.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 61,
+          "cluster_id": 5,
+          "text": "AJUP leader Humayun Kabir announced he will move to Dubai after completing a promised mosque following his son's bypoll loss in Rejinagar.",
+          "kind": "event",
+          "outlet": "NDTV",
+          "url": "https://www.ndtv.com/india-news/will-go-to-dubai-humayun-kabir-after-son-loses-rejinagar-bypoll-to-bjp-12163988#publisher=newsstand",
+          "source_kind": "summary"
+        },
+        {
+          "id": 62,
+          "cluster_id": 5,
+          "text": "Raijor Dal chief Akhil Gogoi demanded the resignation of Assam Congress president Gaurav Gogoi following the party's defeat in the Nagaon Lok Sabha by-election.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/gaurav-gogoi-failed-completely-should-resign-akhil-gogoi-slams-congress-after-nagaon-lok-sabha-bypoll-setback-101791560878394.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 63,
+          "cluster_id": 5,
+          "text": "Akhil Gogoi stated that Congress's minority vote share in Nagaon dropped from 25% to 5%.",
+          "kind": "figure",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/gaurav-gogoi-failed-completely-should-resign-akhil-gogoi-slams-congress-after-nagaon-lok-sabha-bypoll-setback-101791560878394.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 64,
+          "cluster_id": 5,
+          "text": "Meta took down a viral video posted by AJUP leader Golam Nabi Azad alleging BJP candidate Shankharav Sarkar improperly entered an EVM booth in Rejinagar following a legal request from Indian authorities.",
+          "kind": "event",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/article/1096277/meta-blocks-viral-video-post-alleging-that-bjp-candidate-in-bengal-bye-poll-looted-votes?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 65,
+          "cluster_id": 5,
+          "text": "Official Rejinagar bypoll results showed BJP's Shankharav Sarkar won with 1,29,914 votes while Azad received 54,098 votes.",
+          "kind": "figure",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/article/1096277/meta-blocks-viral-video-post-alleging-that-bjp-candidate-in-bengal-bye-poll-looted-votes?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 66,
+          "cluster_id": 5,
+          "text": "In Nandigram, BJP's Hasirani Rath defeated Congress candidate Milan Pradhan by 1,22,753 votes.",
+          "kind": "figure",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/article/1096277/meta-blocks-viral-video-post-alleging-that-bjp-candidate-in-bengal-bye-poll-looted-votes?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 67,
+          "cluster_id": 5,
+          "text": "Prime Minister Narendra Modi stated that the bypoll victories reflect the public's deep connection with the NDA's good governance agenda.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/bypolls-win-shows-deep-connect-with-people-pm-modi/articleshow/134842832.cms",
+          "source_kind": "fulltext"
+        }
+      ]
+    }
+  ],
+  "clusters_with_no_claims": []
+}
