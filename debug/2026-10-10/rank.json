@@ -1,0 +1,693 @@
+{
+  "dials": {
+    "WEIGHT_FLOOR": 5,
+    "TIER_WEIGHT": {
+      "lead": 4,
+      "major": 2,
+      "notable": 0
+    },
+    "WIKI_BONUS": 2,
+    "HARD_CAP": 12,
+    "MIN_STORIES_IF_ANY": 3,
+    "MAX_ARTICLES_PER_STORY": 5
+  },
+  "floor_relaxed": false,
+  "kept_weights": [
+    15,
+    11,
+    8,
+    14,
+    7,
+    6
+  ],
+  "per_section": {
+    "world": 3,
+    "india": 3
+  },
+  "clusters": [
+    {
+      "headline_hint": "Trump agrees deal with Putin to buy Russian diesel, triggering fierce backlash from Ukraine and allies",
+      "section": "world",
+      "category": "economy",
+      "tier_requested": "lead",
+      "article_ids": [
+        0,
+        5,
+        51,
+        71,
+        84,
+        95,
+        100,
+        103
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        0,
+        5,
+        51,
+        71,
+        84,
+        95,
+        100,
+        103
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 7,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 11,
+      "weight_terms": {
+        "distinct_outlets": 7,
+        "tier_weight": 4,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "‘I want to thank President Putin’, Trump says after agreeing to lift sanctions on Russian diesel – US politics live",
+          "url": "https://www.theguardian.com/us-news/live/2026/oct/09/pentagon-fort-hood-livestream-firing-squad-execution-reaction-backlash-pete-hegseth-donald-trump-mussolini-latest-news-updates"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Trump announces deal for Russian diesel as Zelensky criticises 'gift to Putin'",
+          "url": "https://www.bbc.co.uk/news/articles/cm1dwgr666wno?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "Trump says U.S. to get diesel from Russia, relaxing pressure on Moscow to ease prices before midterms",
+          "url": "https://www.npr.org/2026/10/09/nx-s1-5996912/trump-says-u-s-to-get-diesel-from-russia-relaxing-pressure-on-moscow-to-ease-prices-before-midterms"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "Trump says Putin agrees to major release of diesel to US, global markets",
+          "url": "https://www.channelnewsasia.com/world/trump-russia-diesel-putin-global-markets-6447926"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Trump strikes diesel deal with Putin, reversing years of pressure on Russia over Ukraine war",
+          "url": "https://www.france24.com/en/europe/20261009-trump-strikes-diesel-deal-with-putin-reversing-years-of-pressure-on-russia-over-ukraine-war"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 3
+    },
+    {
+      "headline_hint": "Navi Pillay wins 2026 Nobel Peace Prize as US responds with sweeping sanctions against International Criminal Court",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        53,
+        69,
+        87,
+        89,
+        107,
+        131,
+        149,
+        162,
+        169,
+        173,
+        184,
+        193,
+        210,
+        221,
+        226,
+        228,
+        232,
+        238,
+        239,
+        299,
+        309,
+        311,
+        312,
+        321
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        53,
+        69,
+        87,
+        89,
+        107,
+        131,
+        149,
+        162,
+        169,
+        173,
+        184,
+        193,
+        210,
+        221,
+        226,
+        228,
+        232,
+        238,
+        239,
+        299,
+        309,
+        311,
+        312,
+        321
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 11,
+      "wiki_backed": true,
+      "wiki_event": "South African judge and former United Nations High Commissioner for Human Rights Navi Pillay is awarded the Nobel Peace Prize for \"her efforts to promote peace and international law\".",
+      "weight": 15,
+      "weight_terms": {
+        "distinct_outlets": 11,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "France 24",
+          "title": "South African judge awarded Nobel Peace Prize",
+          "url": "https://www.france24.com/en/south-african-judge-awarded-nobel-peace-prize"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "South African human rights lawyer Navi Pillay wins Nobel Peace Prize",
+          "url": "https://www.npr.org/2026/10/09/nx-s1-5996461/south-african-human-rights-lawyer-navi-pillay-wins-nobel-peace-prize"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Human rights veteran Navi Pillay wins 2026 Nobel Peace Prize",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/10/9/human-rights-veteran-navi-pillay-wins-2026-nobel-peace-prize?traffic_source=rss"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "US announces sanctions on ICC, hours after Nobel award to former judge",
+          "url": "https://www.channelnewsasia.com/world/us-icc-sanctions-rubio-nobel-prize-6447851"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "US unveils sanctions on ICC in move court condemns as 'assault on rule of law'",
+          "url": "https://www.bbc.co.uk/news/articles/cj20vkkx3rdvo?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 19
+    },
+    {
+      "headline_hint": "Powerful 7.7-magnitude earthquake hits Panama, triggering tsunami warnings across Central and South America",
+      "section": "world",
+      "category": "disaster",
+      "tier_requested": "major",
+      "article_ids": [
+        27,
+        31,
+        68,
+        111,
+        129,
+        145
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        27,
+        31,
+        68,
+        111,
+        129,
+        145
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 6,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 8,
+      "weight_terms": {
+        "distinct_outlets": 6,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "Powerful 7.6-magnitude earthquake hits Panama and triggers tsunami warnings",
+          "url": "https://www.theguardian.com/world/2026/oct/09/panama-earthquake"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Aftershocks Rock Panama Following Largest Quake in Decades",
+          "url": "https://www.livemint.com/news/aftershocks-rock-panama-following-largest-quake-in-decades-11791584798350.html"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Powerful magnitude 7.7 earthquake hits Panama, damaging buildings",
+          "url": "https://www.bbc.co.uk/news/articles/c620r39zdp9wo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Panama earthquake: Tsunami warnings issued after magnitude 7.7 quake",
+          "url": "https://www.aljazeera.com/news/2026/10/9/tsunami-warnings-across-latin-america-after-7-7-magnitude-earthquake-hits?traffic_source=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "🔴 Powerful 7.6 magnitude quake shakes Panama, triggering tsunami warning",
+          "url": "https://www.france24.com/en/americas/20261009-powerful-7-6-magnitude-quake-shakes-panama-triggering-tsunami-warning"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 1
+    },
+    {
+      "headline_hint": "Isaias strengthens to Category 3 hurricane as it threatens US Gulf Coast",
+      "section": "world",
+      "category": "disaster",
+      "tier_requested": "notable",
+      "article_ids": [
+        1,
+        305,
+        368
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        1,
+        305,
+        368
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": true,
+      "wiki_event": "Isaias strengthens into a category 3 Atlantic hurricane.",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "‘Life-threatening storm surge’ headed to US Gulf coast as residents brace for Isais",
+          "url": "https://www.theguardian.com/world/2026/oct/09/hurricane-isaias-gulf-coast"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "Isaias intensifies to hurricane. And, judge orders Pike execution evidence preserved",
+          "url": "https://www.npr.org/2026/10/08/g-s1-147105/up-first-newsletter-hurricane-isaias-house-elections-christa-pike-nidal-hasan-cnn-ms-now-politico"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Isaias strengthens to become first Atlantic hurricane of 2026 season",
+          "url": "https://www.theguardian.com/environment/2026/oct/09/isaias-strengthens-first-atlantic-hurricane-2026"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Flydubai co-pilot plotted suicide attack on Tel Aviv airport, UAE prosecutors allege",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "notable",
+      "article_ids": [
+        86,
+        93,
+        176,
+        181
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        86,
+        93,
+        176,
+        181
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "Flydubai co-pilot planned suicide attack on Israeli airport, UAE prosecutors say",
+          "url": "https://www.theguardian.com/world/2026/oct/09/flydubai-co-pilot-planned-suicide-attack-on-israeli-airport-uae-prosecutors-say"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Flydubai co-pilot plotted ‘suicide’ attack on Israel, UAE says",
+          "url": "https://www.aljazeera.com/news/2026/10/9/flydubai-co-pilot-plotted-suicide-attack-on-israel-uae-says?traffic_source=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "🔴 FlyDubai co-pilot planned suicide attack on Tel Aviv airport, inspired by 9/11, UAE prosecutor says",
+          "url": "https://www.france24.com/en/middle-east/20261009-flydubai-co-pilot-planned-suicide-attack-on-tel-aviv-airport-inspired-by-9-11"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Omani flydubai co-pilot planned to crash plane into Israeli airport, claims UAE",
+          "url": "https://timesofindia.indiatimes.com/world/middle-east/inspired-by-9/11-omani-flydubai-co-pilot-planned-to-crash-jet-into-israeli-airport-claims-uae/articleshow/134839501.cms"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Massive security clampdown and transport curbs in Delhi as CJP and Opposition launch anti-CEC protests",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "lead",
+      "article_ids": [
+        2,
+        3,
+        4,
+        23,
+        34,
+        58,
+        122,
+        123,
+        124,
+        125,
+        128,
+        133,
+        147,
+        148,
+        151,
+        157,
+        159,
+        168,
+        171,
+        174,
+        178,
+        180,
+        183,
+        189,
+        203,
+        205,
+        206,
+        211,
+        213,
+        215,
+        219,
+        223,
+        225,
+        230,
+        237,
+        241,
+        250,
+        251,
+        252,
+        255,
+        261,
+        265,
+        273,
+        275,
+        277,
+        281,
+        291,
+        301,
+        304,
+        313,
+        315,
+        328,
+        344,
+        361
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        2,
+        3,
+        4,
+        23,
+        34,
+        58,
+        122,
+        123,
+        124,
+        125,
+        128,
+        133,
+        147,
+        148,
+        151,
+        157,
+        159,
+        168,
+        171,
+        174,
+        178,
+        180,
+        183,
+        189,
+        203,
+        205,
+        206,
+        211,
+        213,
+        215,
+        219,
+        223,
+        225,
+        230,
+        237,
+        241,
+        250,
+        251,
+        252,
+        255,
+        261,
+        265,
+        273,
+        275,
+        277,
+        281,
+        291,
+        301,
+        304,
+        313,
+        315,
+        328,
+        344,
+        361
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 8,
+      "wiki_backed": true,
+      "wiki_event": "The Brazilian Supreme Federal Court issues an arrest warrant for Eduardo Bolsonaro, the brother of presidential candidate Flávio Bolsonaro, on charges of lobbying the U.S. to interfere in the trial of his father, former president Jair Bolso",
+      "weight": 14,
+      "weight_terms": {
+        "distinct_outlets": 8,
+        "tier_weight": 4,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "How many trains can one stop? Can't halt youth of India: Chirag Paswan",
+          "url": "https://timesofindia.indiatimes.com/india/how-many-trains-can-one-stop-cant-halt-youth-of-india-union-minister-chirag-paswan/articleshow/134845713.cms"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "Delhi protest LIVE updates: CJP's call for 'Jantar Mantar 2.0' turns capital into a fortress",
+          "url": "https://www.thehindu.com/news/cities/Delhi/cjp-protests-jantar-mantar-new-delhi-election-commissioner-gyanesh-kumar-resignation-sir-cec-row-october-10-2026-live-news/article71566021.ece"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "At CJP Hearing, Centre Brings Up Sexual Harassment Of Policewoman",
+          "url": "https://www.ndtv.com/india-news/at-cjp-hearing-centre-brings-up-sexual-harassment-of-policewoman-12164031#publisher=newsstand"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "When BJP protested against the Election Commission in 2014; here's where and why it happened",
+          "url": "https://www.livemint.com/news/india/when-bjp-protested-against-the-election-commission-in-2014-heres-where-and-why-it-happened-11791569390041.html"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Public safety, past lapses: Why Delhi Police denied CJP permission for Jantar Mantar protest",
+          "url": "https://www.hindustantimes.com/india-news/public-safety-past-lapses-why-delhi-police-denied-cjp-permission-for-jantar-mantar-october-10-gyanesh-kumar-protest-101791570038308.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 49
+    },
+    {
+      "headline_hint": "US suspends PERM green card program for major IT firms, prompting concern and official reaction in India",
+      "section": "india",
+      "category": "economy",
+      "tier_requested": "major",
+      "article_ids": [
+        46,
+        130,
+        160,
+        267,
+        282,
+        293,
+        296,
+        340,
+        372
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        46,
+        130,
+        160,
+        267,
+        282,
+        293,
+        296,
+        340,
+        372
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 5,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Channel News Asia",
+          "title": "US green card crackdown clouds Indian tech workers' American dream",
+          "url": "https://www.channelnewsasia.com/asia/us-green-card-crackdown-clouds-indian-tech-workers-american-dream-6446536"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "US Is \"Kicking The Ladder\" After Climbing It: Ex-Amazon H-1B Insider To NDTV",
+          "url": "https://www.ndtv.com/india-news/us-is-kicking-the-ladder-after-climbing-it-ex-amazon-h-1b-worker-to-ndtv-12163645#publisher=newsstand"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "'Build here. Scale here. Die here' - Pan IIT Alumni India Chairman on US PERM, H1-B news from Trump Admin",
+          "url": "https://www.livemint.com/news/india/build-here-scale-here-die-here-pan-iit-alumni-india-chairman-on-us-perm-h1-b-news-from-trump-admin-11791565743265.html"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "‘Does not advance shared ambitions’: MEA on US suspending IT firms from green card programme",
+          "url": "https://scroll.in/latest/1096286/does-not-advance-shared-ambitions-mea-on-us-suspending-it-firms-from-green-card-programme?utm_source=rss&utm_medium=public"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "'Talent mobility adds value to both economies': India's message to US after PERM move",
+          "url": "https://www.hindustantimes.com/india-news/us-perm-suspension-wont-affect-h1b-visas-may-impact-green-cards-india-modi-govt-trump-vance-mea-permanent-labor-certification-101791543932755.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 4
+    },
+    {
+      "headline_hint": "Assembly bypoll election results declared across states as BJP wins in Bengal and Assam while TVK sweeps Tamil Nadu",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        8,
+        43,
+        126,
+        135,
+        140,
+        153,
+        156,
+        166,
+        253,
+        263,
+        274,
+        292
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        8,
+        43,
+        126,
+        135,
+        140,
+        153,
+        156,
+        166,
+        253,
+        263,
+        274,
+        292
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 6,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "Assembly bypolls: TVK wins 2 seats in TN, BJP also bags 2 in Bengal",
+          "url": "https://timesofindia.indiatimes.com/india/assembly-bypolls-tvk-wins-2-seats-in-tn-bjp-also-bags-2-in-bengal/articleshow/134845566.cms"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "\"Will Go To Dubai\": Humayun Kabir After Son Loses Rejinagar Bypoll To BJP",
+          "url": "https://www.ndtv.com/india-news/will-go-to-dubai-humayun-kabir-after-son-loses-rejinagar-bypoll-to-bjp-12163988#publisher=newsstand"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "‘Gaurav Gogoi failed completely, should resign’: Akhil Gogoi slams Congress after Nagaon Lok Sabha bypoll setback",
+          "url": "https://www.hindustantimes.com/india-news/gaurav-gogoi-failed-completely-should-resign-akhil-gogoi-slams-congress-after-nagaon-lok-sabha-bypoll-setback-101791560878394.html"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "Meta blocks viral video in post alleging that BJP candidate in Bengal bye-poll ‘looted votes’",
+          "url": "https://scroll.in/article/1096277/meta-blocks-viral-video-post-alleging-that-bjp-candidate-in-bengal-bye-poll-looted-votes?utm_source=rss&utm_medium=public"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Bypolls win shows deep connect with people: PM Modi",
+          "url": "https://timesofindia.indiatimes.com/india/bypolls-win-shows-deep-connect-with-people-pm-modi/articleshow/134842832.cms"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 7
+    },
+    {
+      "headline_hint": "Madhya Pradesh High Court strikes down law increasing OBC quota to 27 percent",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        91,
+        132
+      ],
+      "verdict": "cut:below_floor(2<5)",
+      "valid_ids": [
+        91,
+        132
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 2,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "The Hindu",
+          "title": "HC strikes down Madhya Pradesh’s 27% OBC quota law, calls it ‘unconstitutional’",
+          "url": "https://www.thehindu.com/news/national/madhya-pradesh/hc-strikes-down-madhya-pradeshs-27-obc-quota-law-calls-it-unconstitutional/article71565305.ece"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "Madhya Pradesh's OBC Quota Hike Struck Down, 3-Month Deadline To Fill Posts",
+          "url": "https://www.ndtv.com/india-news/madhya-pradeshs-obc-quota-hike-struck-down-3-month-deadline-to-fill-posts-12163945#publisher=newsstand"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    }
+  ]
+}
