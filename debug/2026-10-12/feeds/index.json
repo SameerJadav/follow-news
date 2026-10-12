@@ -4,27 +4,27 @@
   "live": 13,
   "degraded": false,
   "by_outlet_after_dedupe": {
-    "Hindustan Times": 93,
-    "France 24": 22,
-    "Guardian World": 28,
-    "Livemint": 35,
-    "Times of India": 44,
-    "Al Jazeera": 25,
     "The Hindu": 60,
+    "Guardian World": 29,
+    "Times of India": 43,
+    "Hindustan Times": 100,
+    "Al Jazeera": 25,
     "Channel News Asia": 20,
-    "BBC World": 15,
-    "NPR World": 6,
-    "DW World": 4,
+    "Livemint": 35,
     "NDTV": 20,
-    "Scroll.in": 21
+    "France 24": 23,
+    "BBC World": 18,
+    "Scroll.in": 27,
+    "NPR World": 6,
+    "DW World": 4
   },
   "feeds": [
     {
       "outlet": "BBC World",
       "url": "https://feeds.bbci.co.uk/news/world/rss.xml",
       "http": 200,
-      "raw_items": 26,
-      "usable": 26,
+      "raw_items": 25,
+      "usable": 25,
       "error": ""
     },
     {
@@ -103,8 +103,8 @@
       "outlet": "Times of India",
       "url": "https://timesofindia.indiatimes.com/rssfeedstopstories.cms",
       "http": 200,
-      "raw_items": 46,
-      "usable": 46,
+      "raw_items": 44,
+      "usable": 44,
       "error": ""
     },
     {
@@ -125,38 +125,6 @@
     }
   ],
   "dropped_articles": [
-    {
-      "reason": "out_of_window",
-      "outlet": "BBC World",
-      "title": "Expedition hopes to find aviator Amelia Earhart's plane on remote island",
-      "url": "https://www.bbc.co.uk/news/articles/c3y0e871rk4vo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-10-10 18:22:29+00:00",
-      "since": "2026-10-10 23:41:38+00:00"
-    },
-    {
-      "reason": "out_of_window",
-      "outlet": "BBC World",
-      "title": "US murderer Christa Pike discharged from hospital 10 days after failed execution",
-      "url": "https://www.bbc.co.uk/news/articles/cmlyle97pqd7o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-10-10 17:44:26+00:00",
-      "since": "2026-10-10 23:41:38+00:00"
-    },
-    {
-      "reason": "out_of_window",
-      "outlet": "BBC World",
-      "title": "Headmaster detained after BBC investigation into alleged sexual abuse of students",
-      "url": "https://www.bbc.co.uk/news/articles/cwy8lx1r2vrro?at_medium=RSS&at_campaign=rss",
-      "published": "2026-10-10 12:28:51+00:00",
-      "since": "2026-10-10 23:41:38+00:00"
-    },
-    {
-      "reason": "out_of_window",
-      "outlet": "BBC World",
-      "title": "Woman injures three people in third Poland school knife attack in a week",
-      "url": "https://www.bbc.co.uk/news/articles/cv8ezd246z1wo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-10-10 14:58:55+00:00",
-      "since": "2026-10-10 23:41:38+00:00"
-    },
     {
       "reason": "out_of_window",
       "outlet": "BBC World",
@@ -343,14 +311,6 @@
     },
     {
       "reason": "out_of_window",
-      "outlet": "Guardian World",
-      "title": "Supporters of Imran Khan start march on locked-down Islamabad",
-      "url": "https://www.theguardian.com/world/2026/oct/05/jailed-imran-khan-march-on-islamabad-pakistan",
-      "published": "2026-10-05 15:19:46+00:00",
-      "since": "2026-10-10 23:41:38+00:00"
-    },
-    {
-      "reason": "out_of_window",
       "outlet": "NPR World",
       "title": "Bayeux Tapestry's London tour spurs enthusiasts to Battle of Hastings reenactment",
       "url": "https://www.npr.org/2026/10/10/nx-s1-5993847/bayeux-tapestrys-london-tour-spurs-enthusiasts-to-battle-of-hastings-re-enactment",
@@ -447,74 +407,10 @@
     },
     {
       "reason": "out_of_window",
-      "outlet": "Hindustan Times",
-      "title": "Allahabad HC warns against misuse of criminal law in short-lived marriages, quashes dowry FIR",
-      "url": "https://www.hindustantimes.com/india-news/allahabad-hc-warns-against-misuse-of-criminal-law-in-short-lived-marriages-quashes-dowry-fir-101791658260113.html",
-      "published": "2026-10-10 18:50:59+00:00",
-      "since": "2026-10-10 23:41:38+00:00"
-    },
-    {
-      "reason": "out_of_window",
-      "outlet": "Hindustan Times",
-      "title": "Not just Jantar Mantar, internet suspended at 8 other locations amid CJP protest in Delhi",
-      "url": "https://www.hindustantimes.com/india-news/not-just-jantar-mantar-internet-suspended-at-8-other-locations-amid-cjp-protest-in-delhi-101791657435981.html",
-      "published": "2026-10-10 18:43:21+00:00",
-      "since": "2026-10-10 23:41:38+00:00"
-    },
-    {
-      "reason": "out_of_window",
-      "outlet": "Hindustan Times",
-      "title": "India hits back at UN rights office over remarks on Delhi protests, calls concerns ‘misplaced’",
-      "url": "https://www.hindustantimes.com/india-news/india-calls-un-concerns-over-delhi-protest-misplaced-alleges-interference-in-internal-affairs-101791655451731.html",
-      "published": "2026-10-10 18:06:51+00:00",
-      "since": "2026-10-10 23:41:38+00:00"
-    },
-    {
-      "reason": "out_of_window",
-      "outlet": "Hindustan Times",
-      "title": "CJP renews protest call as Abhijeet Dipke, Dhruv Rathee remain detained; Delhi Police cite ‘broken promises’ amid crackdown",
-      "url": "https://www.hindustantimes.com/india-news/cjp-calls-jantar-mantar-protest-on-october-11-abhijeet-dipke-dhruv-rathee-remain-detained-delhi-police-explain-reasons-101791648486055.html",
-      "published": "2026-10-10 17:55:14+00:00",
-      "since": "2026-10-10 23:41:38+00:00"
-    },
-    {
-      "reason": "out_of_window",
-      "outlet": "Hindustan Times",
-      "title": "‘System can’t be honest when you win and rigged when you lose’: 124 ex-bureaucrats defend Election Commission, SIR exercise",
-      "url": "https://www.hindustantimes.com/india-news/system-can-t-be-honest-when-you-win-and-rigged-when-you-lose-124-ex-bureaucrats-defend-election-commission-sir-exercise-101791652421101.html",
-      "published": "2026-10-10 17:29:25+00:00",
-      "since": "2026-10-10 23:41:38+00:00"
-    },
-    {
-      "reason": "out_of_window",
-      "outlet": "Hindustan Times",
-      "title": "Right-wing groups assault protesters, journalists amid heavy security deployment in Delhi protest",
-      "url": "https://www.hindustantimes.com/india-news/delhi-protest-right-wing-groups-allegedly-assault-protesters-journalists-amid-heavy-security-deployment-101791652812221.html",
-      "published": "2026-10-10 17:26:43+00:00",
-      "since": "2026-10-10 23:41:38+00:00"
-    },
-    {
-      "reason": "out_of_window",
-      "outlet": "Hindustan Times",
-      "title": "DMRC reopens all Delhi Metro station gates, train services to run as per normal schedule",
-      "url": "https://www.hindustantimes.com/india-news/dmrc-reopens-delhi-metro-stations-interchange-facilities-restored-for-commuters-cjp-protest-101791651654782.html",
-      "published": "2026-10-10 17:22:32+00:00",
-      "since": "2026-10-10 23:41:38+00:00"
-    },
-    {
-      "reason": "out_of_window",
       "outlet": "Times of India",
       "title": "Taylor Swift’s $4m Nashville education centre now showcases local student art",
       "url": "https://timesofindia.indiatimes.com/world/us/in-2012-taylor-swift-pledged-4-million-for-a-nashville-education-centre-14-years-later-the-space-is-showcasing-artwork-by-local-schoolchildren-and-artists-with-developmental-disabilities/articleshow/134855419.cms",
       "published": "2026-10-10 21:25:00+00:00",
-      "since": "2026-10-10 23:41:38+00:00"
-    },
-    {
-      "reason": "out_of_window",
-      "outlet": "Times of India",
-      "title": "Travis Kelce's 87 &amp; Running marks milestone amid expense scrutiny",
-      "url": "https://timesofindia.indiatimes.com/sports/nfl/news/travis-kelces-87-and-running-marks-a-milestone-in-kansas-citys-community-amid-scrutiny-over-its-reported-expenses/articleshow/134845970.cms",
-      "published": "2026-10-10 11:31:00+00:00",
       "since": "2026-10-10 23:41:38+00:00"
     },
     {
@@ -1102,66 +998,11 @@
       "since": "2026-10-10 23:41:38+00:00"
     },
     {
-      "reason": "out_of_window",
-      "outlet": "Scroll.in",
-      "title": "Three years since October 7, Gaza has faded from headlines. All eyes are now on Israel’s elections",
-      "url": "https://scroll.in/article/1096237/three-years-since-october-7-gaza-has-faded-from-headlines-all-eyes-are-now-on-israels-elections?utm_source=rss&utm_medium=public",
-      "published": "2026-10-07 16:30:00+00:00",
-      "since": "2026-10-10 23:41:38+00:00"
-    },
-    {
-      "reason": "out_of_window",
-      "outlet": "Scroll.in",
-      "title": "Delhi: Seven injured in Seemapuri building collapse",
-      "url": "https://scroll.in/latest/1096242/delhi-seven-injured-in-seemapuri-building-collapse?utm_source=rss&utm_medium=public",
-      "published": "2026-10-07 14:15:00+00:00",
-      "since": "2026-10-10 23:41:38+00:00"
-    },
-    {
-      "reason": "out_of_window",
-      "outlet": "Scroll.in",
-      "title": "Rush Hour: Rahul Gandhi detained for third time in two days of Opposition protest against CEC & more",
-      "url": "https://scroll.in/latest/1096241/rush-hour-rahul-gandhi-detained-for-third-time-in-two-days-of-opposition-protest-against-cec-more?utm_source=rss&utm_medium=public",
-      "published": "2026-10-07 13:32:12+00:00",
-      "since": "2026-10-10 23:41:38+00:00"
-    },
-    {
-      "reason": "out_of_window",
-      "outlet": "Scroll.in",
-      "title": "Rahul Gandhi detained at Jantar Mantar during day 2 of Opposition protest demanding CEC resignation",
-      "url": "https://scroll.in/latest/1096240/opposition-mps-at-jantar-mantar-for-day-2-of-protests-demanding-gyanesh-kumar-resignation?utm_source=rss&utm_medium=public",
-      "published": "2026-10-07 15:11:31+00:00",
-      "since": "2026-10-10 23:41:38+00:00"
-    },
-    {
-      "reason": "out_of_window",
-      "outlet": "Scroll.in",
-      "title": "Fiction from Tibet: Lama Alak Drong is beaten and starved when Chinese colonisers arrive",
-      "url": "https://scroll.in/article/1095446/fiction-from-tibet-lama-alak-drong-is-beaten-and-starved-when-chinese-colonisers-arrive?utm_source=rss&utm_medium=public",
-      "published": "2026-10-07 12:00:00+00:00",
-      "since": "2026-10-10 23:41:38+00:00"
-    },
-    {
-      "reason": "out_of_window",
-      "outlet": "Scroll.in",
-      "title": "Delhi HC refuses to direct security personnel to wear body cameras during protests",
-      "url": "https://scroll.in/latest/1096236/delhi-hc-refuses-to-direct-security-personnel-to-wear-body-cameras-during-protests?utm_source=rss&utm_medium=public",
-      "published": "2026-10-07 12:00:55+00:00",
-      "since": "2026-10-10 23:41:38+00:00"
-    },
-    {
       "reason": "dup_url",
       "outlet": "France 24",
       "title": "Raphaël Glucksmann wins French left-wing primary with 66% of vote",
       "url": "https://www.france24.com/en/france/20261011-rapha%C3%ABl-glucksmann-wins-french-primary-with-66-of-vote",
       "collided_with": "https://www.france24.com/en/france/20261011-rapha%C3%ABl-glucksmann-wins-french-primary-with-66-of-vote"
-    },
-    {
-      "reason": "dup_url",
-      "outlet": "France 24",
-      "title": "Pope Leo says will undergo surgery for early-stage lung nodule",
-      "url": "https://www.france24.com/en/europe/20261011-pope-leo-says-will-undergo-surgery-for-early-stage-lung-nodule",
-      "collided_with": "https://www.france24.com/en/europe/20261011-pope-leo-says-will-undergo-surgery-for-early-stage-lung-nodule"
     }
   ]
 }
