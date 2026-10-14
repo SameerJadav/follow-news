@@ -2,27 +2,27 @@
   "kind": "digest",
   "day": "2026-10-14",
   "ok": false,
-  "started_at": "2026-10-14T01:19:16Z",
-  "finished_at": "2026-10-14T01:19:53Z",
-  "elapsed_ms": 37525,
+  "started_at": "2026-10-14T05:07:29Z",
+  "finished_at": "2026-10-14T05:08:25Z",
+  "elapsed_ms": 56308,
   "argv": [
     "digest.py",
     "--if-missing"
   ],
   "python": "3.12.3",
-  "git_sha": "6514c717973ab4c56a48c6bc3b04cd0c3c58f946",
+  "git_sha": "e6a68c96c694b14607277e236a2838f9aa37d0d9",
   "debug_level": 1,
-  "bytes_written": 1067136,
+  "bytes_written": 1085491,
   "byte_cap_reached": false,
   "env": {
     "DIGEST_DEBUG": "1",
     "CI": "true",
     "GITHUB_ACTIONS": "true",
-    "GITHUB_RUN_ID": "38495048792",
+    "GITHUB_RUN_ID": "38514938653",
     "GITHUB_RUN_ATTEMPT": "1",
     "GITHUB_WORKFLOW": "digest",
     "GITHUB_EVENT_NAME": "schedule",
-    "GITHUB_SHA": "6514c717973ab4c56a48c6bc3b04cd0c3c58f946",
+    "GITHUB_SHA": "e6a68c96c694b14607277e236a2838f9aa37d0d9",
     "GITHUB_REF": "refs/heads/main",
     "RUNNER_OS": "Linux"
   },
@@ -68,28 +68,28 @@
   "stages": [
     {
       "stage": "gather",
-      "ms": 6841,
+      "ms": 3219,
       "error": ""
     },
     {
       "stage": "pool",
-      "ms": 3,
+      "ms": 4,
       "error": ""
     },
     {
       "stage": "wikipedia",
-      "ms": 255,
+      "ms": 249,
       "error": ""
     },
     {
       "stage": "select",
-      "ms": 29089,
+      "ms": 51041,
       "error": "ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"
     }
   ],
   "window": {
-    "since": "2026-10-12T01:19:17.354264+00:00",
-    "now": "2026-10-14T01:19:17.354264+00:00",
+    "since": "2026-10-12T05:07:31.448041+00:00",
+    "now": "2026-10-14T05:07:31.448041+00:00",
     "prev_generated_at": "2026-10-10 23:41:38+00:00"
   },
   "stopped_at": "select",
