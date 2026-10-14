@@ -1,28 +1,28 @@
 {
   "kind": "digest",
-  "day": "2026-10-08",
+  "day": "2026-10-15",
   "ok": false,
-  "started_at": "2026-10-08T06:23:01Z",
-  "finished_at": "2026-10-08T06:23:34Z",
-  "elapsed_ms": 32603,
+  "started_at": "2026-10-14T23:20:03Z",
+  "finished_at": "2026-10-14T23:20:32Z",
+  "elapsed_ms": 28510,
   "argv": [
     "digest.py",
     "--if-missing"
   ],
   "python": "3.12.3",
-  "git_sha": "85a56a6f6c5c6d4bc50313d01b017e597ba83004",
+  "git_sha": "d8178da96b3f182db15d2614a32e19d5ebee7e72",
   "debug_level": 1,
-  "bytes_written": 1083368,
+  "bytes_written": 1081808,
   "byte_cap_reached": false,
   "env": {
     "DIGEST_DEBUG": "1",
     "CI": "true",
     "GITHUB_ACTIONS": "true",
-    "GITHUB_RUN_ID": "37737281409",
+    "GITHUB_RUN_ID": "38653387176",
     "GITHUB_RUN_ATTEMPT": "1",
     "GITHUB_WORKFLOW": "digest",
     "GITHUB_EVENT_NAME": "schedule",
-    "GITHUB_SHA": "85a56a6f6c5c6d4bc50313d01b017e597ba83004",
+    "GITHUB_SHA": "d8178da96b3f182db15d2614a32e19d5ebee7e72",
     "GITHUB_REF": "refs/heads/main",
     "RUNNER_OS": "Linux"
   },
@@ -68,7 +68,7 @@
   "stages": [
     {
       "stage": "gather",
-      "ms": 1976,
+      "ms": 2797,
       "error": ""
     },
     {
@@ -78,19 +78,19 @@
     },
     {
       "stage": "wikipedia",
-      "ms": 187,
+      "ms": 358,
       "error": ""
     },
     {
       "stage": "select",
-      "ms": 28511,
+      "ms": 23477,
       "error": "ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"
     }
   ],
   "window": {
-    "since": "2026-10-06T06:23:03.658117+00:00",
-    "now": "2026-10-08T06:23:03.658117+00:00",
-    "prev_generated_at": "2026-10-01 23:59:30+00:00"
+    "since": "2026-10-12T23:20:05.570117+00:00",
+    "now": "2026-10-14T23:20:05.570117+00:00",
+    "prev_generated_at": "2026-10-10 23:41:38+00:00"
   },
   "stopped_at": "select",
   "stopped_error": "ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"
