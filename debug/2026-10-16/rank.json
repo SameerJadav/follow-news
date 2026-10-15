@@ -1,0 +1,708 @@
+{
+  "dials": {
+    "WEIGHT_FLOOR": 5,
+    "TIER_WEIGHT": {
+      "lead": 4,
+      "major": 2,
+      "notable": 0
+    },
+    "WIKI_BONUS": 2,
+    "HARD_CAP": 12,
+    "MIN_STORIES_IF_ANY": 3,
+    "MAX_ARTICLES_PER_STORY": 5
+  },
+  "floor_relaxed": false,
+  "kept_weights": [
+    13,
+    10,
+    9,
+    7,
+    5,
+    5,
+    13
+  ],
+  "per_section": {
+    "world": 6,
+    "india": 1
+  },
+  "clusters": [
+    {
+      "headline_hint": "Cockroach Janta Party protests and legal battles over SIR voter roll deletions escalate across India",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "lead",
+      "article_ids": [
+        10,
+        38,
+        40,
+        53,
+        67,
+        68,
+        69,
+        113,
+        125,
+        127,
+        128,
+        146,
+        153,
+        168,
+        171,
+        176,
+        185,
+        189,
+        200,
+        201,
+        204,
+        207,
+        229,
+        230,
+        231,
+        235,
+        242,
+        244,
+        246,
+        250,
+        262,
+        263,
+        274,
+        275,
+        277,
+        286,
+        288,
+        303,
+        306,
+        309,
+        324,
+        330,
+        346,
+        354,
+        357,
+        368,
+        369,
+        371,
+        373
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        10,
+        38,
+        40,
+        53,
+        67,
+        68,
+        69,
+        113,
+        125,
+        127,
+        128,
+        146,
+        153,
+        168,
+        171,
+        176,
+        185,
+        189,
+        200,
+        201,
+        204,
+        207,
+        229,
+        230,
+        231,
+        235,
+        242,
+        244,
+        246,
+        250,
+        262,
+        263,
+        274,
+        275,
+        277,
+        286,
+        288,
+        303,
+        306,
+        309,
+        324,
+        330,
+        346,
+        354,
+        357,
+        368,
+        369,
+        371,
+        373
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 9,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 13,
+      "weight_terms": {
+        "distinct_outlets": 9,
+        "tier_weight": 4,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "The Hindu",
+          "title": "Congress stalling SIR to protect bogus voters, says Basavaraj Bommai",
+          "url": "https://www.thehindu.com/news/national/karnataka/congress-stalling-sir-to-protect-bogus-voters-says-basavaraj-bommai/article71543848.ece"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "We are not in an ivory tower &amp; can’t be browbeaten: CJI on oppn plea challenging SIR",
+          "url": "https://timesofindia.indiatimes.com/india/cant-browbeat-us-says-supreme-court-seeks-replies-from-cec-ecs-on-opposition-plea/articleshow/134976964.cms"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "\"Rahul Gandhi Thinks Mobocracy Is The Way\": Smriti Irani To NDTV",
+          "url": "https://www.ndtv.com/india-news/rahul-gandhi-thinks-mobocracy-is-the-way-smriti-irani-to-ndtv-12192153#publisher=newsstand"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "NDMC shuts Connaught Place Central Park on October 16, 17 ahead of Cockroach Janta Party march",
+          "url": "https://www.livemint.com/news/india/ndmc-shuts-connaught-place-central-park-on-october-16-17-ahead-of-cockroach-janta-party-march-11792076599730.html"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Unacceptable interference: Indian envoy rejects US lawmaker's ‘purging 130 million from voter rolls’ remark",
+          "url": "https://www.hindustantimes.com/india-news/indian-envoy-vinay-mohan-kwatra-rejects-us-lawmaker-pramila-jayapal-purging-130-million-from-voter-rolls-trump-101792079091289.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 44
+    },
+    {
+      "headline_hint": "First tranche of India-US bilateral trade agreement finalised",
+      "section": "india",
+      "category": "economy",
+      "tier_requested": "major",
+      "article_ids": [
+        37,
+        187,
+        272
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        37,
+        187,
+        272
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "US trade deal finalised, legal drafting on: Piyush Goyal",
+          "url": "https://timesofindia.indiatimes.com/business/india-business/us-trade-deal-finalised-legal-drafting-on-piyush-goyal/articleshow/134976975.cms"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "First tranche of India-US trade deal finalised, legal drafting under process, says Piyush Goyal",
+          "url": "https://www.hindustantimes.com/india-news/first-tranche-of-india-us-trade-deal-finalised-legal-drafting-under-process-says-piyush-goyal-101792062522573.html"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "‘Big items are done’: Envoy Gor hints major boost in India-US trade negotiations",
+          "url": "https://timesofindia.indiatimes.com/world/us/big-items-are-done-envoy-gor-says-india-us-trade-negotiations-moving-at-incredible-pace/articleshow/134971688.cms"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Ukraine resumes strikes on Russian oil refineries as Starlink access restored amid US tensions",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "lead",
+      "article_ids": [
+        0,
+        107,
+        123,
+        133,
+        141,
+        151,
+        174,
+        191,
+        238,
+        253,
+        273,
+        290,
+        291,
+        299,
+        300,
+        345,
+        359,
+        360
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        0,
+        107,
+        123,
+        133,
+        141,
+        151,
+        174,
+        191,
+        238,
+        253,
+        273,
+        290,
+        291,
+        299,
+        300,
+        345,
+        359,
+        360
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 7,
+      "wiki_backed": true,
+      "wiki_event": "U.S. president Donald Trump announces that the Department of Defense will not livestream the firing squad execution of Nidal Hasan, the perpetrator of the 2009 Fort Hood shooting, scheduled for December 3.",
+      "weight": 13,
+      "weight_terms": {
+        "distinct_outlets": 7,
+        "tier_weight": 4,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "France 24",
+          "title": "Zelensky rallies European allies as US support for Ukraine wanes",
+          "url": "https://www.france24.com/en/europe/20261015-zelensky-rallies-european-allies-as-us-support-for-ukraine-wanes"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Wes Streeting urges US to back Ukraine on Washington visit after Starlink row",
+          "url": "https://www.theguardian.com/politics/2026/oct/15/wes-streeting-us-support-ukraine--washington-visit"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Watch: What does Starlink have to do with the Ukraine-Russia war?",
+          "url": "https://www.bbc.co.uk/news/videos/cqr7yzpxm083o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "'4 Russian Su-34s destroyed, 2 more hit': Zelenskyy makes big claim, shares photo",
+          "url": "https://timesofindia.indiatimes.com/defence/international/4-russian-su-34s-destroyed-2-more-hit-zelenskyy-makes-big-claim-shares-photo/articleshow/134969776.cms"
+        },
+        {
+          "outlet": "DW World",
+          "title": "Starlink: How Elon Musk's company influences geopolitics",
+          "url": "https://www.dw.com/en/starlink-how-elon-musk-s-company-influences-geopolitics/a-75963477?maca=en-rss-en-world-4025-rdf"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 13
+    },
+    {
+      "headline_hint": "Drone attacks ignite chemical tankers off Romania's Black Sea coast, leaving crew missing",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "major",
+      "article_ids": [
+        93,
+        103,
+        116,
+        152,
+        219,
+        227,
+        327
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        93,
+        103,
+        116,
+        152,
+        219,
+        227,
+        327
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 5,
+      "wiki_backed": true,
+      "wiki_event": "Seven people are missing after a San Marino-flagged tanker catches fire off the coast of Romania amid recent drone attacks on merchant shipping in the Black Sea. Search and rescue operations are underway to locate the missing crew members.",
+      "weight": 9,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "At least 7 crew members missing after drone attacks on ships in Black Sea",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/10/15/at-least-7-crew-members-missing-after-drone-attacks-on-ships-in-black-sea?traffic_source=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "'It is clear that sooner or later we will have European casualties', Romanian MEP",
+          "url": "https://www.france24.com/en/it-is-clear-that-sooner-or-later-we-will-have-european-casualties-romanian-mep"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Seven sailors missing after drones strike tankers near Romania’s Black Sea coast",
+          "url": "https://www.theguardian.com/world/2026/oct/15/sailors-missing-drone-strike-tankers-romania-black-sea-coast"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Seven crew missing after drone attack leaves tanker ablaze off Romania's coast",
+          "url": "https://www.bbc.co.uk/news/articles/c60qkgpp592yo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "DW World",
+          "title": "Romania: 2 ships on fire in Black Sea, 7 crew missing",
+          "url": "https://www.dw.com/en/romania-2-ships-on-fire-in-black-sea-7-crew-missing/a-79667003?maca=en-rss-en-world-4025-rdf"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 2
+    },
+    {
+      "headline_hint": "Houthi missile and drone strikes target presidential palace in Aden, Yemen",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "major",
+      "article_ids": [
+        98,
+        104,
+        105,
+        140,
+        157,
+        173
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        98,
+        104,
+        105,
+        140,
+        157,
+        173
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 6,
+      "wiki_backed": true,
+      "wiki_event": "Saudi Arabia says that it has intercepted a missile intended for Medina. However, the Houthis denied launching a missile at the city.",
+      "weight": 10,
+      "weight_terms": {
+        "distinct_outlets": 6,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Channel News Asia",
+          "title": "Houthis launch deadly attack on presidential palace in Yemen's Aden",
+          "url": "https://www.channelnewsasia.com/world/houthis-yemen-aden-presidential-palace-strikes-iran-6463881"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Houthi missiles strike Saudi-led forces HQ at presidential palace in Aden",
+          "url": "https://www.theguardian.com/world/2026/oct/15/houthi-missiles-strike-aden-yemen"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Houthi attack on palace used by Yemen government in Aden kills five",
+          "url": "https://www.france24.com/en/middle-east/20261015-houthi-attack-on-palace-used-by-yemen-government-in-aden-kills-five"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Yemen claims over 700 Houthis killed after 1,250 strikes rained within 24 hours",
+          "url": "https://timesofindia.indiatimes.com/world/middle-east/yemen-says-1250-strikes-rained-on-houthis-within-24-hours-claims-over-700-houthis-killed/articleshow/134973857.cms"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Houthi missile attack on Yemeni presidential palace kills two, minister says",
+          "url": "https://www.bbc.co.uk/news/articles/cm62y6lp73zdo?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 1
+    },
+    {
+      "headline_hint": "School roof collapse in Peshawar, Pakistan leaves dozens of children and teacher dead",
+      "section": "world",
+      "category": "disaster",
+      "tier_requested": "major",
+      "article_ids": [
+        92,
+        202,
+        211,
+        304,
+        305
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        92,
+        202,
+        211,
+        304,
+        305
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 3,
+      "wiki_backed": true,
+      "wiki_event": "A roof collapses at a school in Peshawar, Khyber Pakhtunkhwa, Pakistan, killing 33 students and a teacher and injuring 19 more people.",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "BBC World",
+          "title": "At the scene of a school roof collapse in Pakistan",
+          "url": "https://www.bbc.co.uk/news/videos/cr5yn5wel153o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Pakistan school roof collapse kills at least 34 children and teacher",
+          "url": "https://www.theguardian.com/world/2026/oct/15/pakistan-peshawar-school-roof-collapse-leaves-students-dead"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "School roof collapse kills at least 29, injures more than 3 dozen in Pakistan",
+          "url": "https://www.npr.org/2026/10/15/nx-s1-6003437/school-roof-collapse-pakistan"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "At least 33 pupils and teacher killed after school roof collapses in Pakistan",
+          "url": "https://www.bbc.co.uk/news/articles/cked326llddgo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Watch: Pupils heard 'cracking' sound heard moments before Pakistan school roof collapse",
+          "url": "https://www.bbc.co.uk/news/videos/cmq8n5gv1pnpo?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Fatal shooting at elementary school in Bend, Oregon leaves four dead including suspect",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "notable",
+      "article_ids": [
+        2,
+        12,
+        16,
+        46
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        2,
+        12,
+        16,
+        46
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "At least 4, including 3 children, killed in US elementary school shooting",
+          "url": "https://www.aljazeera.com/news/2026/10/15/at-least-4-including-3-children-killed-in-us-elementary-school-shooting?traffic_source=rss"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "US: 3 children, 1 adult killed in shooting at Oregon elementary school",
+          "url": "https://timesofindia.indiatimes.com/world/us/us-3-children-1-adult-killed-in-shooting-at-oregon-elementary-school/articleshow/134978931.cms"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Multiple people, including children, injured in elementary school shooting in Oregon",
+          "url": "https://www.theguardian.com/us-news/2026/oct/15/oregon-elementary-school-shooting"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Two hospitalised after shooting at Oregon elementary school; gunman dead",
+          "url": "https://www.france24.com/en/americas/20261015-two-hospitalised-after-shooting-at-oregon-elementary-school-gunman-dead"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Student-led anti-government protests trigger violent clashes in Albania",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        117,
+        142,
+        178,
+        341,
+        351
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        117,
+        142,
+        178,
+        341,
+        351
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 5,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 5,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "France 24",
+          "title": "Albania's leader defies calls to resign as student protesters rampage in capital",
+          "url": "https://www.france24.com/en/albania-s-leader-defies-calls-to-resign-as-student-protesters-rampage-in-capital"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Albania’s prime minister vows not to resign over student-led protests",
+          "url": "https://www.theguardian.com/world/2026/oct/15/albania-prime-minister-edi-rama-vows-not-to-resign-student-led-protests"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Albania’s PM dismisses calls to resign as student protests spread",
+          "url": "https://www.aljazeera.com/news/2026/10/15/albanias-pm-dismisses-calls-to-resign-as-student-protests-spread?traffic_source=rss"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Student protesters attack government buildings in Albania",
+          "url": "https://www.bbc.co.uk/news/articles/cq80zk5k2ep4o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "DW World",
+          "title": "Albania: Fire at Education Ministry as students protest",
+          "url": "https://www.dw.com/en/albania-fire-at-education-ministry-as-students-protest/a-79661193?maca=en-rss-en-world-4025-rdf"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Nicolas Maduro and wife deny new US torture charges in New York court",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        71,
+        131,
+        154,
+        172,
+        181
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        71,
+        131,
+        154,
+        172,
+        181
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 5,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 5,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Channel News Asia",
+          "title": "Venezuela's Maduro denies US torture charges as 'false accusations'",
+          "url": "https://www.channelnewsasia.com/world/maduro-wife-flores-venezuela-torture-charges-6464071"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Venezuela's Nicolas Maduro and wife Cilia Flores deny US torture charges as 'false accusations'",
+          "url": "https://www.france24.com/en/americas/20261015-venezuela-s-nicolas-maduro-and-wife-cilia-flores-deny-us-torture-charges-as-false-accusations"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "‘False accusations’: Maduro, wife rejects fresh torture allegations in New York court",
+          "url": "https://timesofindia.indiatimes.com/world/us/false-accusations-maduro-wife-rejects-fresh-torture-allegations-in-new-york-court/articleshow/134973301.cms"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Maduro pleads not guilty to new torture-related charges in New York",
+          "url": "https://www.bbc.co.uk/news/articles/cqwyrn1l74zro?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Nicolás Maduro tells New York court new torture allegations are ‘false’",
+          "url": "https://www.theguardian.com/world/2026/oct/15/nicolas-maduro-torture-allegations-cilia-flores"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "China and North Korea open border bridge after 12-year delay",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        307,
+        321
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        307,
+        321
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": true,
+      "wiki_event": "The New Yalu River Bridge connecting Dandong, China, and Sinuiju, North Korea, opens following a 12-year delay.",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "DW World",
+          "title": "North Korea, China open border bridge after 12-year delay",
+          "url": "https://www.dw.com/en/north-korea-china-open-border-bridge-after-12-year-delay/a-79666112?maca=en-rss-en-world-4025-rdf"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "North Korea and China open new bridge after 12-year delay",
+          "url": "https://www.bbc.co.uk/news/articles/ck1exgw3j115o?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    }
+  ]
+}
