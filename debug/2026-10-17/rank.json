@@ -1,0 +1,819 @@
+{
+  "dials": {
+    "WEIGHT_FLOOR": 5,
+    "TIER_WEIGHT": {
+      "lead": 4,
+      "major": 2,
+      "notable": 0
+    },
+    "WIKI_BONUS": 2,
+    "HARD_CAP": 12,
+    "MIN_STORIES_IF_ANY": 3,
+    "MAX_ARTICLES_PER_STORY": 5
+  },
+  "floor_relaxed": false,
+  "kept_weights": [
+    14,
+    7,
+    6,
+    5,
+    5,
+    18,
+    7,
+    6
+  ],
+  "per_section": {
+    "world": 5,
+    "india": 3
+  },
+  "clusters": [
+    {
+      "headline_hint": "Widespread protests across India over voter roll revisions lead to detentions of CJP and student leaders",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "lead",
+      "article_ids": [
+        46,
+        65,
+        84,
+        90,
+        91,
+        123,
+        132,
+        134,
+        138,
+        164,
+        166,
+        171,
+        180,
+        210,
+        217,
+        229,
+        230,
+        245,
+        249,
+        268,
+        269,
+        271,
+        275,
+        279,
+        281,
+        285,
+        295,
+        305,
+        310,
+        327,
+        333,
+        354,
+        361,
+        365,
+        374
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        46,
+        65,
+        84,
+        90,
+        91,
+        123,
+        132,
+        134,
+        138,
+        164,
+        166,
+        171,
+        180,
+        210,
+        217,
+        229,
+        230,
+        245,
+        249,
+        268,
+        269,
+        271,
+        275,
+        279,
+        281,
+        285,
+        295,
+        305,
+        310,
+        327,
+        333,
+        354,
+        361,
+        365,
+        374
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 12,
+      "wiki_backed": true,
+      "wiki_event": "Cockroach Janta Party leader Abhijeet Dipke is detained in Delhi, India, ahead of the party's planned march.",
+      "weight": 18,
+      "weight_terms": {
+        "distinct_outlets": 12,
+        "tier_weight": 4,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "The Hindu",
+          "title": "Must seek Jantar Mantar protest permission 10 days before event: Delhi Police",
+          "url": "https://www.thehindu.com/news/national/cjp-jantar-mantar-protests-permission-delhi-police/article71556047.ece"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Tiranga march in Delhi: CJP chief Abhijeet Dipke’s whereabouts unknown, Neha Bora located at RK Puram police station",
+          "url": "https://www.livemint.com/news/india/tiranga-march-in-delhi-cjp-chief-abhijeet-dipke-s-whereabouts-unknown-neha-bora-located-at-rk-puram-police-station-11792183587644.html"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "AISA claims Neha Bora detained at RK Puram police station",
+          "url": "https://timesofindia.indiatimes.com/india/for-5-hrs-no-one-knew-aisa-claims-neha-bora-detained-at-rk-puram-police-station/articleshow/135003084.cms"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Trump Vs Zelensky, From the Screen to the Streets, Gen Z protests from Paris to Dehli",
+          "url": "https://www.france24.com/en/tv-shows/the-world-this-week/20261016-trump-vs-zelensky-from-the-screen-to-the-streets-gen-z-protests-from-paris-to-dehli"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Where is Dipke, asks CJP; lawyers meet Neha at RK Puram police station",
+          "url": "https://www.hindustantimes.com/india-news/where-is-dipke-asks-cjp-lawyers-meet-neha-at-rk-puram-police-station-101792178299939.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 30
+    },
+    {
+      "headline_hint": "Zelenskyy seeks EU support amid Starlink restrictions and growing rift with US over Russia diesel deal",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "lead",
+      "article_ids": [
+        68,
+        71,
+        82,
+        87,
+        98,
+        116,
+        117,
+        129,
+        136,
+        140,
+        172,
+        175,
+        176,
+        182,
+        185,
+        191,
+        192,
+        196,
+        302,
+        303,
+        318,
+        342,
+        344,
+        360,
+        366,
+        371
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        68,
+        71,
+        82,
+        87,
+        98,
+        116,
+        117,
+        129,
+        136,
+        140,
+        172,
+        175,
+        176,
+        182,
+        185,
+        191,
+        192,
+        196,
+        302,
+        303,
+        318,
+        342,
+        344,
+        360,
+        366,
+        371
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 8,
+      "wiki_backed": true,
+      "wiki_event": "Hungarian prime minister Péter Magyar and Ukrainian president Volodymyr Zelenskyy agree to improve bilateral relations during a meeting in Brussels, Belgium, with Hungary lifting objections to further Ukrainian European Union accession talk",
+      "weight": 14,
+      "weight_terms": {
+        "distinct_outlets": 8,
+        "tier_weight": 4,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Channel News Asia",
+          "title": "Trump says did not order curb to Starshield for Ukraine",
+          "url": "https://www.channelnewsasia.com/world/trump-starshield-ukraine-zelenskyy-musk-6467441"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Zelensky turns to Europe for backing as ties with Trump deteriorate",
+          "url": "https://www.france24.com/en/europe/20261016-zelensky-turns-to-europe-for-backing-as-ties-with-trump-deteriorate"
+        },
+        {
+          "outlet": "DW World",
+          "title": "Ukrainian President Zelenskyy speaks at EU summit amid spat with Donald Trump",
+          "url": "https://www.dw.com/en/ukrainian-president-zelenskyy-speaks-at-eu-summit-amid-spat-with-donald-trump/a-79684340?maca=en-rss-en-world-4025-rdf"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Trump denies limiting Ukraine access to Starlink network",
+          "url": "https://www.bbc.co.uk/news/articles/ckz65g34wyd8o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Starlink access still not fully restored for Ukraine’s military, says Zelenskyy",
+          "url": "https://www.theguardian.com/world/2026/oct/16/ukraine-military-starlink-access-starshield-volodymyr-zelenskyy"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 21
+    },
+    {
+      "headline_hint": "Mass shooting at Oregon elementary school leaves four dead before gunman is killed by bystander",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "major",
+      "article_ids": [
+        7,
+        8,
+        11,
+        18,
+        75,
+        81,
+        308
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        7,
+        8,
+        11,
+        18,
+        75,
+        81,
+        308
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 5,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "Oregon shooting victims: three boys and female teacher killed at elementary school",
+          "url": "https://www.theguardian.com/us-news/2026/oct/16/bend-oregon-shooting-victims"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "US school shooting: 16-yr-old killed 4 using mother's gun, targeted special needs class",
+          "url": "https://timesofindia.indiatimes.com/world/us/oregon-school-shooting-16-yr-old-who-killed-4-used-mothers-gun-to-target-special-needs-class-john-j-griffin/articleshow/135004011.cms"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Oregon community mourns victims of school shooting",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/10/16/oregon-community-mourns-victims-of-school-shooting?traffic_source=rss"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "Trump says armed bystander who killed US school shooter a 'great hero'",
+          "url": "https://www.channelnewsasia.com/world/trump-great-hero-oregon-school-shooting-6467381"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "'It's really hard to believe' - How Oregon primary school shooting unfolded",
+          "url": "https://www.bbc.co.uk/news/videos/cwe8r29mjd05o?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 2
+    },
+    {
+      "headline_hint": "School roof collapse in Peshawar, Pakistan kills at least 34 children",
+      "section": "world",
+      "category": "disaster",
+      "tier_requested": "major",
+      "article_ids": [
+        5,
+        348,
+        373
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        5,
+        348,
+        373
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 5,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "Families demand justice after Pakistan school collapse",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/10/16/families-demand-justice-after-pakistan-school-collapse?traffic_source=rss"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "At least 33 pupils and teacher killed after school roof collapses in Pakistan",
+          "url": "https://www.bbc.co.uk/news/articles/cked326llddgo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Pakistan school roof collapse kills at least 34 children and teacher",
+          "url": "https://www.theguardian.com/world/2026/oct/15/pakistan-peshawar-school-roof-collapse-leaves-students-dead"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Houthi missile attack on Yemeni presidential palace in Aden leaves five dead",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "major",
+      "article_ids": [
+        52,
+        328,
+        334,
+        335
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        52,
+        328,
+        334,
+        335
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 5,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "Yemen’s government says Houthis fired two missiles at Aden airport",
+          "url": "https://www.aljazeera.com/news/2026/10/16/yemens-government-says-houthis-fired-two-missiles-at-aden-airport?traffic_source=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Future of western security is at stake in Yemen civil war, says country’s former PM",
+          "url": "https://www.theguardian.com/world/2026/oct/16/future-western-security-at-stake-yemen-civil-war-former-pm"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Houthi missile attack on Yemeni presidential palace kills five, minister says",
+          "url": "https://www.bbc.co.uk/news/articles/cm62y6lp73zdo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Houthi missiles strike Yemen presidential palace, killing five",
+          "url": "https://www.theguardian.com/world/2026/oct/15/houthi-missiles-strike-aden-yemen"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "India demands US guarantee safety of diaspora after foiled plot to attack Illinois Hindu temple",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        0,
+        201,
+        247,
+        336,
+        370
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        0,
+        201,
+        247,
+        336,
+        370
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 5,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "The Hindu",
+          "title": "MEA calls on U.S. to ensure safety, security of Indians after foiled Illinois temple attack",
+          "url": "https://www.thehindu.com/news/national/mea-calls-on-us-to-ensure-safety-security-of-indians-after-foiled-illinois-temple-attack/article71594327.ece"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "US temple plot, school shooting: Gun epidemic spares no one as debate goes off target",
+          "url": "https://timesofindia.indiatimes.com/world/us/a-jammed-gun-at-a-hindu-temple-and-another-school-shooting-americas-gun-epidemic-spares-no-one-even-as-debate-goes-off-target/articleshow/134998122.cms"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "India urges US to ensure safety of its citizens after alleged plot to target Hindu temple in Illinois",
+          "url": "https://www.hindustantimes.com/india-news/india-urges-us-to-ensure-safety-of-its-citizens-after-alleged-plot-to-target-hindu-temple-in-illinois-101792154424185.html"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Tip-off foiled US teen suspect's plot to attack Hindu temple, police say",
+          "url": "https://www.bbc.co.uk/news/articles/cqgm0j4kjvevo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "US: Teen arrested for allegedly planning attack on Hindu temple, held ‘white supremacist’ views",
+          "url": "https://scroll.in/latest/1096422/teen-white-supremacist-arrested-near-chicago-for-allegedly-planning-attack-on-hindu-temple?utm_source=rss&utm_medium=public"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Opposition criticizes Indian government over US Secretary of State Marco Rubio's scheduled meeting in Mumbai",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        64,
+        188,
+        202,
+        242,
+        289
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        64,
+        188,
+        202,
+        242,
+        289
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 6,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "Govt rebuts opposition's charge, defends Jaishankar-Rubio Mumbai meet",
+          "url": "https://timesofindia.indiatimes.com/india/government-rebuts-oppositions-charge-defends-jaishankar-rubio-mumbai-meet/articleshow/135003385.cms"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "S Jaishankar To Hold Talks With Marco Rubio During India Visit On October 20",
+          "url": "https://www.ndtv.com/india-news/s-jaishankar-to-hold-talks-with-marco-rubio-during-india-visit-on-october-20-12196381#publisher=newsstand"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Govt defends Jaishankar-Rubio meet in Mumbai amid Oppn criticism: 'Practice for last decade or so'",
+          "url": "https://www.hindustantimes.com/india-news/govt-defends-jaishankar-rubio-meet-in-mumbai-amid-oppn-criticism-practice-for-last-decade-or-so-101792162894021.html"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "Rubio has ‘summoned his employee’ to Mumbai, says Rahul Gandhi ahead of US state secretary’s visit",
+          "url": "https://scroll.in/latest/1096453/rubio-has-summoned-his-employee-to-mumbai-says-rahul-gandhi-ahead-of-us-state-secretarys-visit?utm_source=rss&utm_medium=public"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "‘Marco Rubio summoned his employee’: Rahul Gandhi’s dig at Modi govt over ‘expected’ meeting in Mumbai",
+          "url": "https://www.hindustantimes.com/india-news/confused-rahul-gandhi-takes-swipe-at-govt-over-marco-rubio-visit-101792144891468.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "White House Press Secretary Katie Zacharia departs post after just five days",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        83,
+        95,
+        102,
+        103,
+        113,
+        178,
+        372
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        83,
+        95,
+        102,
+        103,
+        113,
+        178,
+        372
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 6,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 6,
+      "weight_terms": {
+        "distinct_outlets": 6,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "Trump told new press secretary to ‘reconsider’ role",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/10/16/trump-told-new-press-secretary-to-reconsider-role?traffic_source=rss"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "White House press secretary Katie Zacharia fired in less than a week after facing criticism",
+          "url": "https://www.channelnewsasia.com/world/trump-press-secretary-katie-zacharia-fired-6467331"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Trump fires Katie Zacharia as press secretary after 5 days; sets shortest-tenure record",
+          "url": "https://timesofindia.indiatimes.com/world/us/trumps-press-secretary-katie-zacharia-let-go-five-days-into-new-job/articleshow/135001934.cms"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Katie Zacharia ‘let go’ as White House Press Secretary after Trump urges her 'to reconsider job' amid lawyer claims row",
+          "url": "https://www.livemint.com/news/us-news/trump-says-he-urged-new-press-secretary-katie-zacharia-to-reconsider-job-amid-lawyer-claims-row-11792173526337.html"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Embattled new White House Press Secretary Zacharia 'let go' from her role",
+          "url": "https://www.france24.com/en/americas/20261016-embattled-new-white-house-press-secretary-zacharia-let-go-from-her-role"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 2
+    },
+    {
+      "headline_hint": "Pope Leo XIV celebrates Mass in hospital following lung cancer surgery",
+      "section": "world",
+      "category": "health",
+      "tier_requested": "notable",
+      "article_ids": [
+        107,
+        145,
+        218,
+        255
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        107,
+        145,
+        218,
+        255
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Livemint",
+          "title": "Pope Leo XIV celebrates Mass in hospital in first photos released since surgery",
+          "url": "https://www.livemint.com/news/world/pope-leo-xiv-celebrates-mass-in-hospital-in-first-photos-released-since-surgery-11792173320737.html"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Pope Leo to make public appearance Sunday, first since cancer surgery",
+          "url": "https://www.aljazeera.com/news/2026/10/16/pope-leo-to-make-public-appearance-sunday-first-since-cancer-surgery?traffic_source=rss"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Pope pictured for first time since surgery and cancer diagnosis",
+          "url": "https://www.bbc.co.uk/news/articles/cw146ej00yn7o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Pope Leo XIV celebrates mass in hospital while recovering from lung cancer operation",
+          "url": "https://www.france24.com/en/europe/20261016-pope-leo-xiv-celebrates-mass-in-hospital-while-recovering-from-lung-cancer-operation"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Israeli settlers attack Palestinian olive harvesters and US photojournalist in West Bank",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "notable",
+      "article_ids": [
+        157,
+        177,
+        208,
+        221,
+        270
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        157,
+        177,
+        208,
+        221,
+        270
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "Israeli settlers attack olive farmers and Washington Post journalist in West Bank",
+          "url": "https://www.theguardian.com/world/2026/oct/16/israeli-settlers-attack-olive-farmers-west-bank-washington-post-journalist-heidi-levine"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "Israeli settlers beat Palestinians and a U.S. photojournalist in West Bank attacks",
+          "url": "https://www.npr.org/2026/10/16/nx-s1-6004904/israeli-settlers-beat-us-photojournalist-washington-post-west-bank"
+        },
+        {
+          "outlet": "France 24",
+          "title": "US journalist injured during Israeli settler attack on West Bank olive harvest",
+          "url": "https://www.france24.com/en/middle-east/20261016-us-journalist-injured-during-israeli-settler-attack-on-west-bank-olive-harvest"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Palestinians and US journalist injured by Israeli settlers in West Bank harvest attack",
+          "url": "https://www.bbc.co.uk/news/articles/c65ynk7212vqo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Israeli settlers attack Palestinians in West Bank during olive harvest",
+          "url": "https://www.bbc.co.uk/news/videos/cqn06zx2r15jo?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Anti-government student protests turn violent in Albania demanding prime minister's resignation",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        79,
+        220,
+        227
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        79,
+        220,
+        227
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "France 24",
+          "title": "Clashes grip Tirana as Albanian PM blames 'foreign hands' for mounting unrest",
+          "url": "https://www.france24.com/en/europe/20261016-clashes-grip-tirana-as-albanian-pm-blames-foreign-hands"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Albanian protests turn violent: What we know",
+          "url": "https://www.bbc.co.uk/news/articles/cqdjv90d1jpko?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "DW World",
+          "title": "Albania: Students demand political change and resignation of Prime Minister Edi Rama",
+          "url": "https://www.dw.com/en/albania-students-demand-political-change-and-resignation-of-prime-minister-edi-rama/a-79682217?maca=en-rss-en-world-4025-rdf"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Indonesian forest fires trigger toxic haze and public health concerns across Southeast Asia",
+      "section": "world",
+      "category": "climate",
+      "tier_requested": "notable",
+      "article_ids": [
+        42,
+        43,
+        48,
+        198,
+        376
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        42,
+        43,
+        48,
+        198,
+        376
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Channel News Asia",
+          "title": "Snap Insight: Protecting Singapore’s outdoor workers from haze is easier said than done",
+          "url": "https://www.channelnewsasia.com/commentary/haze-outdoor-worker-platform-mask-snap-insight-6466426"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Indonesia's forest fires spark public health crisis across Southeast Asia",
+          "url": "https://www.france24.com/en/tv-shows/access-asia/20261016-indonesia-s-forest-fires-spark-public-health-crisis-across-southeast-asia"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Indonesia fights fire with dry ice as toxic haze spreads across region",
+          "url": "https://www.theguardian.com/world/2026/oct/15/indonesia-fires-dry-ice-dropped-toxic-haze-spreads"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "Legal action by Singapore against haze-causing firms in Indonesia may come with diplomatic implications: Lawyers",
+          "url": "https://www.channelnewsasia.com/singapore/haze-indonesia-diplomatic-implications-legal-action-lawyers-6465511"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "Commentary: Haze chokes plants too - how air quality can be a food security issue",
+          "url": "https://www.channelnewsasia.com/commentary/haze-impact-agriculture-food-security-issue-6465861"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    }
+  ]
+}
