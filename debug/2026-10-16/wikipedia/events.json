@@ -1,17 +1,32 @@
 {
   "max_events": 60,
-  "parsed": 10,
-  "used": 10,
+  "parsed": 14,
+  "used": 14,
   "events": [
+    {
+      "category": "International relations",
+      "topic": "Australia–Fiji relations",
+      "text": "Australia agrees to provide Fiji with solar-, wind- and wave-powered Bluebottle maritime drones and training for surveillance and efforts against drug trafficking and other transnational crime, with deployment expected in 2027."
+    },
     {
       "category": "Armed conflicts and attacks",
       "topic": "Yemeni civil war",
       "text": "Saudi Arabia says that it has intercepted a missile intended for Medina. However, the Houthis denied launching a missile at the city."
     },
     {
+      "category": "Armed conflicts and attacks",
+      "topic": "Yemeni civil war",
+      "text": "The Houthis launch missiles against Al-Maashiq Palace, headquarters of the Presidential Leadership Council and official residence of President Rashad al-Alimi, in Aden, Yemen, killing five people and injuring 16. No member of the council is"
+    },
+    {
       "category": "Business and economy",
       "topic": "China–North Korea relations",
       "text": "The New Yalu River Bridge connecting Dandong, China, and Sinuiju, North Korea, opens following a 12-year delay."
+    },
+    {
+      "category": "Business and economy",
+      "topic": "",
+      "text": "The European Central Bank authorizes UniCredit to raise its stake in Commerzbank above 30% without an upper limit, allowing the Italian bank to proceed toward taking control of the German lender."
     },
     {
       "category": "Disasters and accidents",
@@ -35,13 +50,18 @@
     },
     {
       "category": "Law and crime",
-      "topic": "Capital punishment in the United States",
-      "text": "U.S. president Donald Trump announces that the Department of Defense will not livestream the firing squad execution of Nidal Hasan, the perpetrator of the 2009 Fort Hood shooting, scheduled for December 3."
+      "topic": "2026 Silver Rail Elementary School shooting",
+      "text": "At least four people, including three children, are killed in a school shooting at Silver Rail Elementary School in Bend, Oregon, United States. The perpetrator, a 16-year-old male, is shot and killed by a bystander."
     },
     {
       "category": "Law and crime",
-      "topic": "2026 Silver Rail Elementary School shooting",
-      "text": "At least four people, including three children, are killed in a school shooting at Silver Rail Elementary School in Bend, Oregon, United States. The perpetrator, a 16-year-old male, is shot and killed by a bystander."
+      "topic": "Capital punishment in the United States",
+      "text": "U.S. president Donald Trump announces that the Department of Defense has reversed its plan to livestream the firing squad execution of Nidal Hasan, the perpetrator of the 2009 Fort Hood shooting, scheduled for December 3."
+    },
+    {
+      "category": "Law and crime",
+      "topic": "",
+      "text": "Argentine police arrest at least 25 people after clashes during a university funding protest in Buenos Aires, while eight police officers are injured."
     },
     {
       "category": "Law and crime",
@@ -54,5 +74,5 @@
       "text": "At the General Conference on Weights and Measures, the International Bureau of Weights and Measures votes to abolish future leap seconds and make Coordinated Universal Time (UTC) continuous, starting 20 May 2027. To account for future diffe"
     }
   ],
-  "prompt_block": "WIKIPEDIA CURRENT EVENTS (curated checklist — see rules above)\n- [Armed conflicts and attacks] Yemeni civil war — Saudi Arabia says that it has intercepted a missile intended for Medina. However, the Houthis denied launching a missile at the city.\n- [Business and economy] China–North Korea relations — The New Yalu River Bridge connecting Dandong, China, and Sinuiju, North Korea, opens following a 12-year delay.\n- [Disasters and accidents] 2026 Peshawar school roof collapse — A roof collapses at a school in Peshawar, Khyber Pakhtunkhwa, Pakistan, killing 34 students and a teacher, and injuring 50 more people.\n- [Disasters and accidents] Seven people are missing after a San Marino-flagged tanker catches fire off the coast of Romania amid recent drone attacks on merchant shipping in the Black Sea. Search and rescue operations are underway to locate the missing crew members.\n- [Health and environment] The United Kingdom declares a severe drought in Cornwall, Devon, Dorset, Somerset, East Sussex, and West Sussex after prolonged low rainfall left more than 80% of England in drought and major reservoirs below 20% capacity.\n- [International relations] Germany–Iran relations, Antisemitism in 21st-century Germany, Iranian external operations — A court in Hamburg, Germany, sentences a Danish national to eight years and six months in prison and an Afghan national to four years and six months in prison for plotting to assassinate Josef Schuster, the president of the Central Council \n- [Law and crime] Capital punishment in the United States — U.S. president Donald Trump announces that the Department of Defense will not livestream the firing squad execution of Nidal Hasan, the perpetrator of the 2009 Fort Hood shooting, scheduled for December 3.\n- [Law and crime] 2026 Silver Rail Elementary School shooting — At least four people, including three children, are killed in a school shooting at Silver Rail Elementary School in Bend, Oregon, United States. The perpetrator, a 16-year-old male, is shot and killed by a bystander.\n- [Law and crime] Northern Irish politician and former Democratic Unionist Party leader Jeffrey Donaldson is sentenced to 15 years in prison for child sexual abuse and rape. The offences occurred between 1985 and 2008.\n- [Science and technology] At the General Conference on Weights and Measures, the International Bureau of Weights and Measures votes to abolish future leap seconds and make Coordinated Universal Time (UTC) continuous, starting 20 May 2027. To account for future diffe"
+  "prompt_block": "WIKIPEDIA CURRENT EVENTS (curated checklist — see rules above)\n- [International relations] Australia–Fiji relations — Australia agrees to provide Fiji with solar-, wind- and wave-powered Bluebottle maritime drones and training for surveillance and efforts against drug trafficking and other transnational crime, with deployment expected in 2027.\n- [Armed conflicts and attacks] Yemeni civil war — Saudi Arabia says that it has intercepted a missile intended for Medina. However, the Houthis denied launching a missile at the city.\n- [Armed conflicts and attacks] Yemeni civil war — The Houthis launch missiles against Al-Maashiq Palace, headquarters of the Presidential Leadership Council and official residence of President Rashad al-Alimi, in Aden, Yemen, killing five people and injuring 16. No member of the council is\n- [Business and economy] China–North Korea relations — The New Yalu River Bridge connecting Dandong, China, and Sinuiju, North Korea, opens following a 12-year delay.\n- [Business and economy] The European Central Bank authorizes UniCredit to raise its stake in Commerzbank above 30% without an upper limit, allowing the Italian bank to proceed toward taking control of the German lender.\n- [Disasters and accidents] 2026 Peshawar school roof collapse — A roof collapses at a school in Peshawar, Khyber Pakhtunkhwa, Pakistan, killing 34 students and a teacher, and injuring 50 more people.\n- [Disasters and accidents] Seven people are missing after a San Marino-flagged tanker catches fire off the coast of Romania amid recent drone attacks on merchant shipping in the Black Sea. Search and rescue operations are underway to locate the missing crew members.\n- [Health and environment] The United Kingdom declares a severe drought in Cornwall, Devon, Dorset, Somerset, East Sussex, and West Sussex after prolonged low rainfall left more than 80% of England in drought and major reservoirs below 20% capacity.\n- [International relations] Germany–Iran relations, Antisemitism in 21st-century Germany, Iranian external operations — A court in Hamburg, Germany, sentences a Danish national to eight years and six months in prison and an Afghan national to four years and six months in prison for plotting to assassinate Josef Schuster, the president of the Central Council \n- [Law and crime] 2026 Silver Rail Elementary School shooting — At least four people, including three children, are killed in a school shooting at Silver Rail Elementary School in Bend, Oregon, United States. The perpetrator, a 16-year-old male, is shot and killed by a bystander.\n- [Law and crime] Capital punishment in the United States — U.S. president Donald Trump announces that the Department of Defense has reversed its plan to livestream the firing squad execution of Nidal Hasan, the perpetrator of the 2009 Fort Hood shooting, scheduled for December 3.\n- [Law and crime] Argentine police arrest at least 25 people after clashes during a university funding protest in Buenos Aires, while eight police officers are injured.\n- [Law and crime] Northern Irish politician and former Democratic Unionist Party leader Jeffrey Donaldson is sentenced to 15 years in prison for child sexual abuse and rape. The offences occurred between 1985 and 2008.\n- [Science and technology] At the General Conference on Weights and Measures, the International Bureau of Weights and Measures votes to abolish future leap seconds and make Coordinated Universal Time (UTC) continuous, starting 20 May 2027. To account for future diffe"
 }
