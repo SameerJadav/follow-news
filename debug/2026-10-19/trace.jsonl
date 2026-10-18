@@ -1,0 +1,117 @@
+{"run": "digest", "t": 0, "kind": "digest", "stage": "tracer", "msg": "capture started", "level": 1, "day": "2026-10-19"}
+{"run": "digest", "t": 1850, "kind": "dbg", "msg": "digest: window since=2026-10-16T22:55:11+00:00 (prev_generated_at=2026-10-16 22:55:11+00:00)"}
+{"run": "digest", "t": 2250, "kind": "dbg", "msg": "feed 'BBC World': http=200 raw_items=28 usable=28"}
+{"run": "digest", "t": 2250, "kind": "event", "stage": "feeds", "outlet": "BBC World", "url": "https://feeds.bbci.co.uk/news/world/rss.xml", "http": 200, "elapsed_ms": 364, "bytes": 21794, "raw_items": 28, "usable": 28, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 2448, "kind": "dbg", "msg": "feed 'Al Jazeera': http=200 raw_items=25 usable=25"}
+{"run": "digest", "t": 2448, "kind": "event", "stage": "feeds", "outlet": "Al Jazeera", "url": "https://www.aljazeera.com/xml/rss/all.xml", "http": 200, "elapsed_ms": 185, "bytes": 17143, "raw_items": 25, "usable": 25, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 2636, "kind": "dbg", "msg": "feed 'Guardian World': http=200 raw_items=45 usable=45"}
+{"run": "digest", "t": 2636, "kind": "event", "stage": "feeds", "outlet": "Guardian World", "url": "https://www.theguardian.com/world/rss", "http": 200, "elapsed_ms": 133, "bytes": 150782, "raw_items": 45, "usable": 45, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 2764, "kind": "dbg", "msg": "feed 'NPR World': http=200 raw_items=10 usable=10"}
+{"run": "digest", "t": 2764, "kind": "event", "stage": "feeds", "outlet": "NPR World", "url": "https://feeds.npr.org/1004/rss.xml", "http": 200, "elapsed_ms": 120, "bytes": 13642, "raw_items": 10, "usable": 10, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 3275, "kind": "dbg", "msg": "feed 'DW World': http=200 raw_items=11 usable=11"}
+{"run": "digest", "t": 3275, "kind": "event", "stage": "feeds", "outlet": "DW World", "url": "https://rss.dw.com/rdf/rss-en-world", "http": 200, "elapsed_ms": 505, "bytes": 11877, "raw_items": 11, "usable": 11, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 3540, "kind": "dbg", "msg": "feed 'France 24': http=200 raw_items=24 usable=24"}
+{"run": "digest", "t": 3540, "kind": "event", "stage": "feeds", "outlet": "France 24", "url": "https://www.france24.com/en/rss", "http": 200, "elapsed_ms": 254, "bytes": 24883, "raw_items": 24, "usable": 24, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 3686, "kind": "dbg", "msg": "feed 'Channel News Asia': http=200 raw_items=20 usable=20"}
+{"run": "digest", "t": 3686, "kind": "event", "stage": "feeds", "outlet": "Channel News Asia", "url": "https://www.channelnewsasia.com/api/v1/rss-outbound-feed?_format=xml", "http": 200, "elapsed_ms": 136, "bytes": 16450, "raw_items": 20, "usable": 20, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 3852, "kind": "dbg", "msg": "feed 'The Hindu': http=200 raw_items=60 usable=60"}
+{"run": "digest", "t": 3852, "kind": "event", "stage": "feeds", "outlet": "The Hindu", "url": "https://www.thehindu.com/news/national/feeder/default.rss", "http": 200, "elapsed_ms": 148, "bytes": 42096, "raw_items": 60, "usable": 60, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 4265, "kind": "dbg", "msg": "feed 'NDTV': http=200 raw_items=20 usable=20"}
+{"run": "digest", "t": 4265, "kind": "event", "stage": "feeds", "outlet": "NDTV", "url": "https://feeds.feedburner.com/ndtvnews-india-news", "http": 200, "elapsed_ms": 402, "bytes": 28918, "raw_items": 20, "usable": 20, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 4384, "kind": "dbg", "msg": "feed 'Hindustan Times': http=200 raw_items=100 usable=100"}
+{"run": "digest", "t": 4384, "kind": "event", "stage": "feeds", "outlet": "Hindustan Times", "url": "https://www.hindustantimes.com/feeds/rss/india-news/rssfeed.xml", "http": 200, "elapsed_ms": 88, "bytes": 100720, "raw_items": 100, "usable": 100, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 4550, "kind": "dbg", "msg": "feed 'Times of India': http=200 raw_items=48 usable=48"}
+{"run": "digest", "t": 4550, "kind": "event", "stage": "feeds", "outlet": "Times of India", "url": "https://timesofindia.indiatimes.com/rssfeedstopstories.cms", "http": 200, "elapsed_ms": 149, "bytes": 48864, "raw_items": 48, "usable": 48, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 4723, "kind": "dbg", "msg": "feed 'Livemint': http=200 raw_items=35 usable=35"}
+{"run": "digest", "t": 4723, "kind": "event", "stage": "feeds", "outlet": "Livemint", "url": "https://www.livemint.com/rss/news", "http": 200, "elapsed_ms": 160, "bytes": 38747, "raw_items": 35, "usable": 35, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 5321, "kind": "dbg", "msg": "feed 'Scroll.in': http=200 raw_items=100 usable=100"}
+{"run": "digest", "t": 5321, "kind": "event", "stage": "feeds", "outlet": "Scroll.in", "url": "https://feeds.feedburner.com/ScrollinArticles.rss", "http": 200, "elapsed_ms": 474, "bytes": 313046, "raw_items": 100, "usable": 100, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 5328, "kind": "dbg", "msg": "gather: 439 article(s) after window+dedupe; by outlet: {'France 24': 21, 'BBC World': 23, 'The Hindu': 60, 'Guardian World': 30, 'Channel News Asia': 20, 'Al Jazeera': 25, 'Times of India': 48, 'NPR World': 10, 'Livemint': 35, 'NDTV': 20, 'Hindustan Times': 100, 'Scroll.in': 39, 'DW World': 8}"}
+{"run": "digest", "t": 5328, "kind": "dbg", "msg": "gather: 13/13 feed(s) live, 439 article(s)"}
+{"run": "digest", "t": 5330, "kind": "event", "stage": "stage", "name": "gather", "ms": 3479, "ok": true, "error": ""}
+{"run": "digest", "t": 5330, "kind": "dbg", "msg": "gather: QUORUM OK — live=13/3 min, articles=439/20 min"}
+{"run": "digest", "t": 5330, "kind": "dbg", "msg": "rank: select pool 439 -> 351; capped outlets: {'The Hindu': 20, 'Times of India': 8, 'Hindustan Times': 60}"}
+{"run": "digest", "t": 5334, "kind": "event", "stage": "stage", "name": "pool", "ms": 4, "ok": true, "error": ""}
+{"run": "digest", "t": 5510, "kind": "dbg", "msg": "wiki: 2026_October_19 http=200 events=0"}
+{"run": "digest", "t": 5511, "kind": "event", "stage": "wikipedia", "page": "2026_October_19", "http": 200, "bytes": 192, "events": 0, "verdict": "ok"}
+{"run": "digest", "t": 5689, "kind": "dbg", "msg": "wiki: 2026_October_18 http=200 events=3"}
+{"run": "digest", "t": 5690, "kind": "event", "stage": "wikipedia", "page": "2026_October_18", "http": 200, "bytes": 1517, "events": 3, "verdict": "ok"}
+{"run": "digest", "t": 5690, "kind": "event", "stage": "stage", "name": "wikipedia", "ms": 356, "ok": true, "error": ""}
+{"run": "digest", "t": 5793, "kind": "dbg", "msg": "llm: call #1 model=gemini-3.6-flash label=select prompt=87400ch"}
+{"run": "digest", "t": 33879, "kind": "dbg", "msg": "llm: select finish_reason=FinishReason.STOP"}
+{"run": "digest", "t": 33880, "kind": "event", "stage": "llm", "call": 1, "label": "select", "model": "gemini-3.6-flash", "latency_ms": 28086, "prompt_chars": 87400, "system_chars": 2517, "response_chars": 3562, "finish_reason": "FinishReason.STOP", "malformed_json": false, "json_retries": 0, "max_output_tokens": 32768, "usage": {"prompt_token_count": 20708, "candidates_token_count": 1374, "total_token_count": 27903, "thoughts_token_count": 5821}}
+{"run": "digest", "t": 33881, "kind": "dbg", "msg": "llm: select_stories -> 13 raw cluster(s)"}
+{"run": "digest", "t": 33881, "kind": "event", "stage": "stage", "name": "select", "ms": 28190, "ok": true, "error": ""}
+{"run": "digest", "t": 33881, "kind": "dbg", "msg": "rank: [world] outlets=8 tier=lead wiki=no weight=12 'Widespread violent protests and looting across France spark social crisis for Macron government'"}
+{"run": "digest", "t": 33882, "kind": "dbg", "msg": "rank: [world] outlets=8 tier=major wiki=no weight=10 'Trump pauses Russia sanctions and sparks tension with Kyiv over Starlink access'"}
+{"run": "digest", "t": 33882, "kind": "dbg", "msg": "rank: [world] outlets=6 tier=major wiki=no weight=8 'Israeli settlers attack European diplomats and French mayor during West Bank olive harvest'"}
+{"run": "digest", "t": 33882, "kind": "dbg", "msg": "rank: [world] outlets=6 tier=major wiki=no weight=8 'Deadly grass fire at Canadian military base in Alberta kills four service members and injures dozens'"}
+{"run": "digest", "t": 33882, "kind": "dbg", "msg": "rank: [world] outlets=2 tier=notable wiki=no weight=2 \"Violent anti-government protests erupt in Albania demanding Prime Minister's resignation\""}
+{"run": "digest", "t": 33882, "kind": "dbg", "msg": "rank: [world] outlets=2 tier=notable wiki=no weight=2 'Pope Leo XIV discharged from hospital and resumes duties following lung cancer surgery'"}
+{"run": "digest", "t": 33882, "kind": "dbg", "msg": "rank: [india] outlets=6 tier=lead wiki=no weight=10 'At least 19 killed and dozens injured in Kolkata Durga Puja pandal stampede'"}
+{"run": "digest", "t": 33882, "kind": "dbg", "msg": "rank: [india] outlets=6 tier=major wiki=no weight=8 'Lawrence Bishnoi gang claims responsibility after shots fired at actor Tiger Shroff in Mumbai'"}
+{"run": "digest", "t": 33883, "kind": "dbg", "msg": "rank: [india] outlets=4 tier=major wiki=no weight=6 'Protests continue over Special Intensive Revision exercise as government cautions Meta'"}
+{"run": "digest", "t": 33883, "kind": "dbg", "msg": "rank: [india] outlets=1 tier=major wiki=no weight=3 'Out-of-control truck mows down devotees outside temple in Gwalior, killing at least 15'"}
+{"run": "digest", "t": 33883, "kind": "dbg", "msg": "rank: [india] outlets=2 tier=notable wiki=no weight=2 'US Treasury Chief says Europe refused secondary tariffs on India over Russian oil purchases'"}
+{"run": "digest", "t": 33883, "kind": "dbg", "msg": "rank: [india] outlets=2 tier=notable wiki=no weight=2 \"Supreme Court recognizes children's fundamental right to access internet while calling for safeguards\""}
+{"run": "digest", "t": 33883, "kind": "dbg", "msg": "rank: [india] outlets=4 tier=notable wiki=no weight=4 'Speeding car kills eight MGNREGA workers resting by roadside in Sangrur, Punjab'"}
+{"run": "digest", "t": 33883, "kind": "dbg", "msg": "rank: 13 scored, 0 id(s) rejected, 7 kept {'world': 4, 'india': 3}; weights=[12, 10, 8, 8, 10, 8, 6]"}
+{"run": "digest", "t": 33884, "kind": "event", "stage": "stage", "name": "rank", "ms": 3, "ok": true, "error": ""}
+{"run": "digest", "t": 33885, "kind": "dbg", "msg": "wiki: 3 curated event(s); 0 matched a selected story, 3 not covered"}
+{"run": "digest", "t": 33885, "kind": "dbg", "msg": "wiki: NOT COVERED [Disasters and accidents] A truck loses control and runs over devotees outside a temple in Gwalior, Madhya Pradesh, India, killing at least 13 and injuring nearly 40 others."}
+{"run": "digest", "t": 33885, "kind": "dbg", "msg": "wiki: NOT COVERED [International relations] Free trade agreements of Vietnam — Vietnam signs a free trade agreement with the European Free Trade Association (Iceland, Liechtenstein, Norway, and Switzerland) that reduces or eliminates tariffs on industrial, agricultural, and fish products and covers services, intellect"}
+{"run": "digest", "t": 33885, "kind": "dbg", "msg": "wiki: NOT COVERED [Politics and elections] The Iranian parliament appoints Mehrdad Akhlaghi as Minister of Defence, replacing acting minister Majid Ebn-e-Reza."}
+{"run": "digest", "t": 34298, "kind": "dbg", "msg": "extract: via_jina https://www.aljazeera.com/video/newsfeed/2026/10/18/macron-condemns-violence-after-riots-lead-to-looting-and-mass-arrests?traffic_source=rss: http=403"}
+{"run": "digest", "t": 37300, "kind": "dbg", "msg": "extract: 330ch https://www.aljazeera.com/video/newsfeed/2026/10/18/macron-condemns-violence-after-riots-lead-to-looting-and-mass-arrests?traffic_source=rss"}
+{"run": "digest", "t": 37475, "kind": "dbg", "msg": "extract: 4111ch https://www.bbc.co.uk/news/articles/cw240zl08dm5o?at_medium=RSS&at_campaign=rss"}
+{"run": "digest", "t": 37680, "kind": "dbg", "msg": "extract: fetch_html https://www.france24.com/en/france/20261018-macron-says-nothing-justifies-violence-in-protests-during-address-to-nation: http=403"}
+{"run": "digest", "t": 40935, "kind": "dbg", "msg": "extract: 6150ch https://www.france24.com/en/france/20261018-macron-says-nothing-justifies-violence-in-protests-during-address-to-nation"}
+{"run": "digest", "t": 41399, "kind": "dbg", "msg": "extract: 6599ch https://www.theguardian.com/world/2026/oct/18/french-government-crisis-talks-violent-unrest-policing-macron"}
+{"run": "digest", "t": 41569, "kind": "dbg", "msg": "extract: 8115ch https://www.livemint.com/news/world/why-is-france-burning-from-student-anger-to-nationwide-unrest-is-yellow-vest-movement-back-amid-looting-and-clashes-11792334370609.html"}
+{"run": "digest", "t": 41651, "kind": "dbg", "msg": "extract: 1869ch https://www.bbc.co.uk/news/articles/c9p8gz7zx4peo?at_medium=RSS&at_campaign=rss"}
+{"run": "digest", "t": 41708, "kind": "dbg", "msg": "extract: fetch_html https://www.france24.com/en/europe/20261018-ukraine-zelensky-war-trump-peace-russia-sanctions: http=403"}
+{"run": "digest", "t": 45224, "kind": "dbg", "msg": "extract: 18015ch https://www.france24.com/en/europe/20261018-ukraine-zelensky-war-trump-peace-russia-sanctions"}
+{"run": "digest", "t": 46018, "kind": "dbg", "msg": "extract: 3538ch https://www.channelnewsasia.com/world/zelenskyy-tells-nbc-thankful-us-has-unblocked-intelligence-sharing-6470361"}
+{"run": "digest", "t": 46188, "kind": "dbg", "msg": "extract: 3059ch https://www.aljazeera.com/news/2026/10/18/russias-war-on-ukraine-must-be-brought-to-an-end-zelenskyy-says?traffic_source=rss"}
+{"run": "digest", "t": 46623, "kind": "dbg", "msg": "extract: 6072ch https://www.npr.org/2026/10/18/nx-s1-6007382/ukraine-us-starshield-starlink-what-to-know-trump"}
+{"run": "digest", "t": 46968, "kind": "dbg", "msg": "extract: 3560ch https://www.channelnewsasia.com/world/us-officials-visit-palestinian-village-after-settler-attacks-diplomats-6469796"}
+{"run": "digest", "t": 47040, "kind": "dbg", "msg": "extract: 5442ch https://www.theguardian.com/world/2026/oct/18/guardian-reporter-filmed-masked-militants-seconds-before-west-bank-attack-on-french-mayor"}
+{"run": "digest", "t": 47349, "kind": "dbg", "msg": "extract: via_jina https://www.aljazeera.com/video/newsfeed/2026/10/18/aje-onl-nf_draft-2-yt-short-oct-18-p-daily-1-181026?traffic_source=rss: http=403"}
+{"run": "digest", "t": 50350, "kind": "dbg", "msg": "extract: 261ch https://www.aljazeera.com/video/newsfeed/2026/10/18/aje-onl-nf_draft-2-yt-short-oct-18-p-daily-1-181026?traffic_source=rss"}
+{"run": "digest", "t": 50406, "kind": "dbg", "msg": "extract: fetch_html https://www.france24.com/en/video/20261018-israeli-settlers-attack-european-diplomats-beat-french-mayor: http=403"}
+{"run": "digest", "t": 53827, "kind": "dbg", "msg": "extract: 12722ch https://www.france24.com/en/video/20261018-israeli-settlers-attack-european-diplomats-beat-french-mayor"}
+{"run": "digest", "t": 53955, "kind": "dbg", "msg": "extract: 2848ch https://timesofindia.indiatimes.com/world/middle-east/us-officials-visit-palestinian-christian-town-after-settler-attacks-on-foreign-diplomats/articleshow/135031384.cms"}
+{"run": "digest", "t": 54011, "kind": "dbg", "msg": "extract: fetch_html https://www.france24.com/en/americas/20261018-canada-military-base-fire-four-dead-39-hospitalised: http=403"}
+{"run": "digest", "t": 57270, "kind": "dbg", "msg": "extract: 8140ch https://www.france24.com/en/americas/20261018-canada-military-base-fire-four-dead-39-hospitalised"}
+{"run": "digest", "t": 57359, "kind": "dbg", "msg": "extract: 2539ch https://www.bbc.co.uk/news/articles/cmgelrq8x92do?at_medium=RSS&at_campaign=rss"}
+{"run": "digest", "t": 57995, "kind": "dbg", "msg": "extract: 3514ch https://www.channelnewsasia.com/world/four-killed-after-high-winds-turn-grass-fire-deadly-canadian-military-base-report-says-6469826"}
+{"run": "digest", "t": 58065, "kind": "dbg", "msg": "extract: 6307ch https://www.theguardian.com/world/2026/oct/18/serious-incident-alberta-military-base-deaths-injuries-canada-carney-cfb-wainwright"}
+{"run": "digest", "t": 58194, "kind": "dbg", "msg": "extract: 4295ch https://www.livemint.com/news/world/canada-military-base-fire-deaths-injuries-confirmed-cause-unknown-what-we-know-about-cfb-wainwright-alberta-incident-11792341343950.html"}
+{"run": "digest", "t": 58467, "kind": "dbg", "msg": "extract: 5842ch https://www.thehindu.com/news/cities/kolkata/majority-of-victims-in-kolkata-durga-puja-stampede-are-women-children/article71599949.ece"}
+{"run": "digest", "t": 58604, "kind": "dbg", "msg": "extract: 4531ch https://www.hindustantimes.com/india-news/kolkata-stampede-accused-sent-to-10-day-custody-officials-suspended-as-blame-game-erupts-after-chorbagan-tragedy-101792340726120.html"}
+{"run": "digest", "t": 58750, "kind": "dbg", "msg": "extract: 4663ch https://timesofindia.indiatimes.com/city/kolkata/rain-rush-narrow-space-and-a-single-gate-kolkata-stampede-probe-turns-spotlight-on-home-guards-role-7-accused-get-10-day-custody-top-development/articleshow/135027950.cms"}
+{"run": "digest", "t": 58841, "kind": "dbg", "msg": "extract: 7097ch https://www.livemint.com/news/india/pandal-will-collapse-the-warning-that-may-have-triggered-kolkata-durga-puja-stampede-that-killed-19-11792319648962.html"}
+{"run": "digest", "t": 59206, "kind": "dbg", "msg": "extract: 4179ch https://scroll.in/latest/1096481/kolkata-durga-puja-stampede-kills-19?utm_source=rss&utm_medium=public"}
+{"run": "digest", "t": 59418, "kind": "dbg", "msg": "extract: 5270ch https://www.thehindu.com/news/national/tiger-shroff-firing-incident-opposition-targets-fadnavis-over-deteriorating-law-and-order/article71601132.ece"}
+{"run": "digest", "t": 59519, "kind": "dbg", "msg": "extract: fetch_html https://www.ndtv.com/india-news/three-men-open-fire-near-tiger-shroff-in-mumbais-juhu-area-actor-safe-12203238#publisher=newsstand: http=403"}
+{"run": "digest", "t": 59640, "kind": "dbg", "msg": "extract: via_jina https://www.ndtv.com/india-news/three-men-open-fire-near-tiger-shroff-in-mumbais-juhu-area-actor-safe-12203238#publisher=newsstand: http=403"}
+{"run": "digest", "t": 62641, "kind": "dbg", "msg": "extract: 0ch https://www.ndtv.com/india-news/three-men-open-fire-near-tiger-shroff-in-mumbais-juhu-area-actor-safe-12203238#publisher=newsstand"}
+{"run": "digest", "t": 63112, "kind": "dbg", "msg": "extract: via_jina https://www.aljazeera.com/video/newsfeed/2026/10/18/tiger-shroff-mumbai-shooting-salman-khan?traffic_source=rss: http=403"}
+{"run": "digest", "t": 66114, "kind": "dbg", "msg": "extract: 388ch https://www.aljazeera.com/video/newsfeed/2026/10/18/tiger-shroff-mumbai-shooting-salman-khan?traffic_source=rss"}
+{"run": "digest", "t": 66215, "kind": "dbg", "msg": "extract: 3552ch https://www.hindustantimes.com/india-news/actor-safe-multiple-probe-teams-formed-forensic-team-on-ground-mumbai-police-on-tiger-shroff-assassination-bid-101792343363029.html"}
+{"run": "digest", "t": 66404, "kind": "dbg", "msg": "extract: 5242ch https://timesofindia.indiatimes.com/india/shots-fired-at-tiger-shroff-actors-driver-hurt-bishnoi-gang-claims-responsibility-top-developments/articleshow/135031464.cms"}
+{"run": "digest", "t": 66619, "kind": "dbg", "msg": "extract: 4944ch https://www.livemint.com/news/india/meta-social-media-platforms-told-to-act-on-edited-visuals-misleading-claims-amid-sir-protests-what-govt-advisory-says-11792344645881.html"}
+{"run": "digest", "t": 66699, "kind": "dbg", "msg": "extract: 1779ch https://www.hindustantimes.com/india-news/crpf-chief-lauds-woman-personnel-for-showing-resilience-after-being-slapped-during-cjp-protest-101792329192729.html"}
+{"run": "digest", "t": 66806, "kind": "dbg", "msg": "extract: 2831ch https://timesofindia.indiatimes.com/india/centre-issues-advisory-to-meta-asks-it-to-overhaul-content-promotion-system-on-facebook-instagram/articleshow/135031374.cms"}
+{"run": "digest", "t": 67140, "kind": "dbg", "msg": "extract: 4136ch https://scroll.in/latest/1096480/us-lawmakers-urge-trump-official-to-discuss-police-excesses-on-protesters-during-india-visit?utm_source=rss&utm_medium=public"}
+{"run": "digest", "t": 67225, "kind": "dbg", "msg": "extract: 4384ch https://www.hindustantimes.com/india-news/dirty-tricks-to-prolong-illegal-arrest-dipke-as-cjp-awaits-ashutosh-ranka-and-saurav-das-release-101792336801153.html"}
+{"run": "digest", "t": 67228, "kind": "event", "stage": "stage", "name": "extract", "ms": 33342, "ok": true, "error": ""}
+{"run": "digest", "t": 67264, "kind": "dbg", "msg": "llm: call #2 model=gemini-3.6-flash label=claims-world prompt=78101ch"}
+{"run": "digest", "t": 69712, "kind": "dbg", "msg": "ratelimit: claims-world transient failure (1/3), retrying in 6s: ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"}
+{"run": "digest", "t": 69712, "kind": "event", "stage": "ratelimit", "label": "claims-world", "verdict": "transient_retry", "attempt": 1, "attempts_allowed": 3, "wait_s": 5.9, "error": "ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"}
+{"run": "digest", "t": 86493, "kind": "dbg", "msg": "ratelimit: claims-world transient failure (2/3), retrying in 11s: ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"}
+{"run": "digest", "t": 86493, "kind": "event", "stage": "ratelimit", "label": "claims-world", "verdict": "transient_retry", "attempt": 2, "attempts_allowed": 3, "wait_s": 10.9, "error": "ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"}
+{"run": "digest", "t": 100047, "kind": "dbg", "msg": "ratelimit: claims-world TRANSIENT FAILURE after 3 attempt(s), giving up: ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"}
+{"run": "digest", "t": 100047, "kind": "event", "stage": "ratelimit", "label": "claims-world", "verdict": "transient_exhausted", "attempt": 3, "attempts_allowed": 3, "error": "ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"}
+{"run": "digest", "t": 100047, "kind": "event", "stage": "stage", "name": "claims", "ms": 32819, "ok": false, "error": "ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"}
+{"run": "digest", "t": 100047, "kind": "event", "stage": "tracer", "msg": "capture finished", "ok": false, "ms": 100047, "bytes": 11440301}
