@@ -1,0 +1,1080 @@
+{
+  "dials": {
+    "WEIGHT_FLOOR": 5,
+    "TIER_WEIGHT": {
+      "lead": 4,
+      "major": 2,
+      "notable": 0
+    },
+    "WIKI_BONUS": 2,
+    "HARD_CAP": 12,
+    "MIN_STORIES_IF_ANY": 3,
+    "MAX_ARTICLES_PER_STORY": 5
+  },
+  "floor_relaxed": false,
+  "kept_weights": [
+    14,
+    8,
+    8,
+    7,
+    7,
+    6,
+    5,
+    5,
+    8,
+    8,
+    8,
+    6
+  ],
+  "per_section": {
+    "world": 8,
+    "india": 4
+  },
+  "clusters": [
+    {
+      "headline_hint": "France imposes curfews across Paris and other cities following violent nationwide unrest",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "lead",
+      "article_ids": [
+        15,
+        17,
+        31,
+        32,
+        43,
+        47,
+        48,
+        56,
+        61,
+        68,
+        73,
+        78,
+        88,
+        99,
+        111,
+        142,
+        155,
+        156,
+        161,
+        178,
+        179,
+        194,
+        208,
+        215,
+        220,
+        221,
+        240,
+        268,
+        272,
+        320
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        15,
+        17,
+        31,
+        32,
+        43,
+        47,
+        48,
+        56,
+        61,
+        68,
+        73,
+        78,
+        88,
+        99,
+        111,
+        142,
+        155,
+        156,
+        161,
+        178,
+        179,
+        194,
+        208,
+        215,
+        220,
+        221,
+        240,
+        268,
+        272,
+        320
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 8,
+      "wiki_backed": true,
+      "wiki_event": "Israel Police arrest 10 people in the occupied West Bank over attacks on American photojournalist Heidi Levine and the mayor of Aulnoye-Aymeries, France, who were travelling with European diplomats, and seize vehicles and other evidence dur",
+      "weight": 14,
+      "weight_terms": {
+        "distinct_outlets": 8,
+        "tier_weight": 4,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "Trump borrows from far right to blame unrest in France on immigration",
+          "url": "https://www.theguardian.com/us-news/2026/oct/19/trump-france-protests"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Trump: ‘Paris is going to be a Muslim city very soon’",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/10/19/trump-paris-is-going-to-be-a-muslim-city-very?traffic_source=rss"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "Commentary: Liberty, equality, misery? Why France is burning",
+          "url": "https://www.channelnewsasia.com/commentary/france-paris-safe-macron-why-protests-6471386"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "'Paris is going to be a Muslim city very soon': Trump slams Macron as riots spiral",
+          "url": "https://timesofindia.indiatimes.com/world/us/paris-is-going-to-be-a-muslim-city-very-soon-trump-slams-macron-as-riots-spiral/articleshow/135056496.cms"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Clean up begins after French riots but police remain",
+          "url": "https://www.bbc.co.uk/news/videos/cwr7y0e57r50o?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 25
+    },
+    {
+      "headline_hint": "Australian MP Helen Haines critically injured in deliberate car attack in Victoria",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        0,
+        1,
+        4,
+        49,
+        158,
+        267,
+        283
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        0,
+        1,
+        4,
+        49,
+        158,
+        267,
+        283
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": true,
+      "wiki_event": "A car strikes independent Australian MP Helen Haines outside her office in Wangaratta, Victoria, in a deliberate attack, leaving her in critical condition. Police arrest the driver, while Haines is airlifted to a hospital.",
+      "weight": 8,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "Helen Haines: independent MP in critical condition in Melbourne’s Alfred hospital after being struck by car in Wangaratta  – follow updates",
+          "url": "https://www.theguardian.com/australia-news/live/2026/oct/20/helen-haines-independent-mp-alleged-car-attack-wangaratta-melbourne-hospital-ntwnfb"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Warning signs over threats to Australian politicians were rising before MP hit by car",
+          "url": "https://www.bbc.co.uk/news/articles/cq398rk4p3exo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "Australian prime minister says lawmaker critically injured by car is 'no accident'",
+          "url": "https://www.npr.org/2026/10/19/g-s1-148737/australia-lawmaker-critically-injured"
+        },
+        {
+          "outlet": "DW World",
+          "title": "Australian MP seriously hurt in suspected car attack",
+          "url": "https://www.dw.com/en/australian-mp-seriously-hurt-in-suspected-car-attack/a-79697660?maca=en-rss-en-world-4025-rdf"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "‘I don’t want to be known as a hero’: barber who rushed to help Helen Haines praised by PM",
+          "url": "https://www.theguardian.com/australia-news/2026/oct/20/i-dont-want-to-be-known-as-a-hero-barber-who-rushed-to-help-helen-haines-praised-by-pm-ntwnfb"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 2
+    },
+    {
+      "headline_hint": "Alberta holds vote on potential separation from Canada",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        8,
+        20,
+        187,
+        305,
+        327
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        8,
+        20,
+        187,
+        305,
+        327
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": true,
+      "wiki_event": "Albertans vote on ten referendums, including one to decide if Alberta should seek separation from Canada.",
+      "weight": 8,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "Will Alberta break away from Canada? Oil-rich province votes on separation",
+          "url": "https://timesofindia.indiatimes.com/world/rest-of-world/oil-rich-alberta-votes-on-canada-separation-all-you-need-to-know/articleshow/135058514.cms"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "Alberta voters decide whether to take a step toward separating from Canada",
+          "url": "https://www.npr.org/2026/10/19/nx-s1-6005810/alberta-voters-decide-whether-to-take-a-step-toward-separating-from-canada"
+        },
+        {
+          "outlet": "DW World",
+          "title": "Canada: Alberta votes on holding independence referendum",
+          "url": "https://www.dw.com/en/canada-alberta-votes-on-holding-independence-referendum/a-79700283?maca=en-rss-en-world-4025-rdf"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "‘This is not poker’: Alberta goes to polls in referendum that has exposed divisions, not least among separatists",
+          "url": "https://www.theguardian.com/world/2026/oct/19/alberta-goes-to-polls-in-referendum-divisions-separatists-canada"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "Alberta voters weigh future in Canada",
+          "url": "https://www.npr.org/2026/10/18/nx-s1-6004877/alberta-referendum-canada-vote"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Kenyan court convicts cult leader Paul Mackenzie of murdering 190 children",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        62,
+        136,
+        169
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        62,
+        136,
+        169
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 3,
+      "wiki_backed": true,
+      "wiki_event": "A Kenyan court convicts Good News International Ministries leader Paul Nthenge Mackenzie of murdering 190 children and an adult whose deaths were linked to starvation in Shakahola Forest.",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "Kenya convicts cult leader over the murder of 190 children",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/10/19/kenya-convicts-cult-leader-over-the-murder-of-190-children?traffic_source=rss"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Kenya cult leader who told parents to starve children guilty of 191 murders",
+          "url": "https://www.bbc.co.uk/news/articles/ckd6d2l3dz4xo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Kenyan starvation cult leader guilty of murder of 190 children and one adult",
+          "url": "https://www.theguardian.com/world/2026/oct/19/kenya-starvation-cult-leader-guilty-murder-190-children"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Houthi missile attack on Yemeni training camp kills dozens of recruits",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "major",
+      "article_ids": [
+        138,
+        164
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        138,
+        164
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 2,
+      "wiki_backed": true,
+      "wiki_event": "A missile attack by the Houthis kills 53 soldiers and injure over 200 at a training center in Shabwah Governorate, Yemen.",
+      "weight": 6,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "Houthi attack kills 53 in biggest single loss of life since Yemen civil war reignited",
+          "url": "https://www.theguardian.com/world/2026/oct/19/houthi-attack-yemen-al-alam-camp-biggest-single-loss-of-life-civil-war"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Houthi missile strike on Yemen camp kills 50 security recruits, local authorities say",
+          "url": "https://www.bbc.co.uk/news/articles/cv0ld6lrr2zeo?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Sudan drone strikes kill scores of civilians near market and in Khartoum",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "major",
+      "article_ids": [
+        40,
+        201,
+        223
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        40,
+        201,
+        223
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 3,
+      "wiki_backed": true,
+      "wiki_event": "Three children are killed in an alleged Rapid Support Forces drone strike in Khartoum, Sudan.",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "160 people reported killed in escalating drone attacks across Sudan",
+          "url": "https://www.aljazeera.com/news/2026/10/19/160-reported-killed-in-escalating-drone-attacks-across-sudan?traffic_source=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Drone attack near market kills 80 in Sudan",
+          "url": "https://www.theguardian.com/world/2026/oct/19/drone-attack-market-al-dibab-west-kordofan-sudan"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Drone attacks kill scores in Sudan's West Kordofan state and capital Khartoum",
+          "url": "https://www.france24.com/en/africa/20261019-drone-attack-near-southern-sudan-market-kills-scores"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "World Food Programme slashes food aid to half a million Palestinians in Gaza",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        35,
+        285,
+        322
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        35,
+        285,
+        322
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": true,
+      "wiki_event": "The World Food Programme cuts monthly food aid for about 500,000 people in the Gaza Strip because of funding shortages, reducing the number of recipients from 1.6 million to 1.1 million.",
+      "weight": 5,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Channel News Asia",
+          "title": "UN agency slashes Gaza food 'lifeline' over funding shortfall",
+          "url": "https://www.channelnewsasia.com/world/gaza-food-shortage-un-funding-cut-monthly-aid-6473591"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Cuts force World Food Programme to end support for half a million Palestinians in Gaza",
+          "url": "https://www.theguardian.com/world/2026/oct/19/cuts-world-food-programme-end-support-palestinians-gaza"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Funding shortages force World Food Programme to cut aid to Gaza",
+          "url": "https://www.bbc.co.uk/news/articles/cm79plrvpl4vo?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Deadly flash floods hit eastern Spain following torrential rainfall",
+      "section": "world",
+      "category": "disaster",
+      "tier_requested": "notable",
+      "article_ids": [
+        39,
+        79
+      ],
+      "verdict": "cut:below_floor(2<5)",
+      "valid_ids": [
+        39,
+        79
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 2,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "France 24",
+          "title": "Spain floods kill four as torrential rain inundates eastern regions",
+          "url": "https://www.france24.com/en/europe/20261019-spain-floods-kill-four-as-torrential-rain-inundates-eastern-regions"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Residents hoisted from rooftops amid Spain’s deadly flooding",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/10/19/residents-hoisted-from-rooftops-amid-spains-deadly-flooding?traffic_source=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Japan launches historic space mission to collect samples from Mars moon Phobos",
+      "section": "world",
+      "category": "science",
+      "tier_requested": "notable",
+      "article_ids": [
+        59,
+        74,
+        94
+      ],
+      "verdict": "cut:below_floor(2<5)",
+      "valid_ids": [
+        59,
+        74,
+        94
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 2,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Channel News Asia",
+          "title": "Japan launches mission to return samples from Mars moon",
+          "url": "https://www.channelnewsasia.com/business/japan-launches-mission-return-samples-mars-moon-6473511"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Watch: Japan launches historic mission to explore Mars’ moons and bring back samples",
+          "url": "https://timesofindia.indiatimes.com/science/watch-japan-launches-historic-mars-mission-to-probe-mysterious-moons-bring-samples-back/articleshow/135055997.cms"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "Japan successfully launches probe in historic Mars moon mission",
+          "url": "https://www.channelnewsasia.com/world/japan-mars-moon-mission-phobos-launch-rocket-space-6472976"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Ukrainian military carries out world's first drone evacuation of wounded soldier",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "notable",
+      "article_ids": [
+        57,
+        70,
+        175
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        57,
+        70,
+        175
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "Injured Ukrainian soldier rescued in first-ever drone evacuation mission",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/10/19/aje-onl-nf_ukrainian-soldier-rescued-in-drone-evacuation-191026?traffic_source=rss"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Ukraine says it carried out first drone airlift of wounded soldier from front line",
+          "url": "https://www.bbc.co.uk/news/videos/c3vgx05p149wo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Ukraine deploys drone to airlift wounded soldier in 'world-first' operation",
+          "url": "https://www.france24.com/en/europe/20261019-ukraine-deploys-drone-airlift-wounded-soldier-world-first-operation"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Israeli police detain 10 settlers following violent attacks in West Bank",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "notable",
+      "article_ids": [
+        53,
+        116
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        53,
+        116
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": true,
+      "wiki_event": "Israel Police arrest 10 people in the occupied West Bank over attacks on American photojournalist Heidi Levine and the mayor of Aulnoye-Aymeries, France, who were travelling with European diplomats, and seize vehicles and other evidence dur",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "Israeli police say they arrested 10 in connection with settler attacks",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/10/19/israeli-police-say-they-arrested-10-in-connection-with-settler-attacks?traffic_source=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Israeli police detain 10 people in rare raid against West Bank settlers",
+          "url": "https://www.theguardian.com/world/2026/oct/19/israeli-police-detain-10-people-in-rare-raid-against-west-bank-settlers"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Trump criticizes Zelenskyy over Russia war strategy as sanctions tensions grow",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        3,
+        58,
+        83,
+        95,
+        278,
+        333
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        3,
+        58,
+        83,
+        95,
+        278,
+        333
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 5,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 5,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "Trump slams Zelenskyy amid Russia sanctions rift and says ‘somebody else’ should negotiate for Ukraine - live",
+          "url": "https://www.theguardian.com/us-news/live/2026/oct/19/donald-trump-kansas-roger-marshall-golf-ukraine-midterms-latest-news-updates"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Ukrainians dying because US restricting intelligence sharing, Zelensky adviser tells BBC",
+          "url": "https://www.bbc.co.uk/news/articles/cmj47yx572z5o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Russia-China-US summit would prolong the war, Kyiv says",
+          "url": "https://www.france24.com/en/russia-china-us-summit-would-prolong-the-war-kyiv-says"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "Ukraine and Russia exchange strikes, as relations between Trump and Zelenskyy sour",
+          "url": "https://www.npr.org/2026/10/19/nx-s1-6007371/ukraine-and-russia-exchange-strikes-as-relations-between-trump-and-zelenskyy-sour"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Trump slams Zelenskyy, accuses him of prolonging Russia war after Kyiv launches one of biggest drone strike in Moscow",
+          "url": "https://www.livemint.com/news/us-news/trump-slams-zelenskyy-accuses-him-of-prolonging-russia-war-after-kyiv-launches-one-of-biggest-drone-strike-in-moscow-11792381153253.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 1
+    },
+    {
+      "headline_hint": "Fresh violence in Manipur leaves multiple dead as protesters march to CM's residence",
+      "section": "india",
+      "category": "conflict",
+      "tier_requested": "lead",
+      "article_ids": [
+        133,
+        141,
+        174,
+        196,
+        238,
+        246,
+        293,
+        301
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        133,
+        141,
+        174,
+        196,
+        238,
+        246,
+        293,
+        301
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 8,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 4,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "The Hindu",
+          "title": "Kuki group announces shutdown of key Manipur highway after attacks on villages",
+          "url": "https://www.thehindu.com/news/national/manipur/kuki-group-announces-shutdown-of-key-manipur-highway-after-attacks-on-villages/article71600255.ece"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Manipur CM condemns killing of civilians, orders tighter security in vulnerable areas",
+          "url": "https://timesofindia.indiatimes.com/india/manipur-violence-cm-condemns-killing-of-three-civilians-orders-tighter-security-in-vulnerable-areas/articleshow/135051822.cms"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "Manipur: Protesters place bodies of two men killed in fresh violence outside CM’s home",
+          "url": "https://scroll.in/latest/1096517/manipur-protesters-place-bodies-of-two-persons-killed-in-fresh-violence-outside-cms-home?utm_source=rss&utm_medium=public"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Manipur: Man dies from pellet injuries; 3 CRPF personnel injured in bomb attack",
+          "url": "https://www.hindustantimes.com/india-news/manipur-man-dies-from-pellet-injuries-3-crpf-personnel-injured-in-bomb-attack-101792400148550.html"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "Watch: One killed, several injured in clashes in Manipur’s Thoubal",
+          "url": "https://www.thehindu.com/videos/watch-one-killed-several-injured-in-clashes-in-manipurs-thoubal/article71603043.ece"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 3
+    },
+    {
+      "headline_hint": "US Secretary of State Marco Rubio visits India as bilateral trade deal nears completion",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        90,
+        252,
+        294,
+        316,
+        332
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        90,
+        252,
+        294,
+        316,
+        332
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 6,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "NDTV",
+          "title": "Marco Rubio To Begin 3-Day India Tour Today, Will Honour 26/11 Victims",
+          "url": "https://www.ndtv.com/india-news/marco-rubio-to-begin-3-day-india-tour-today-will-honour-26-11-victims-12208382#publisher=newsstand"
+        },
+        {
+          "outlet": "DW World",
+          "title": "Rubio visits India with a trip to the world's largest oil refinery topping the agenda",
+          "url": "https://www.dw.com/en/rubio-visits-india-with-a-trip-to-the-world-s-largest-oil-refinery-topping-the-agenda/a-79699826?maca=en-rss-en-world-4025-rdf"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "India-US trade deal ‘very close’ to completion, Marco Rubio says ahead of Mumbai, Jamnagar visit",
+          "url": "https://www.livemint.com/news/world/usindia-trade-deal-very-close-to-completion-marco-rubio-says-ahead-of-mumbai-jamnagar-visit-trump-russia-sanction-11792399364792.html"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "US ‘very close’ to India trade deal; energy needs considered in Russia sanctions waiver: Marco Rubio",
+          "url": "https://www.hindustantimes.com/india-news/us-india-trade-deal-very-close-global-energy-needs-prices-considered-russia-sanctions-waiver-marco-rubio-101792392225735.html"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "S Jaishankar, Marco Rubio to hold talks in Mumbai tomorrow amid India-US trade deal push: What is on the agenda?",
+          "url": "https://www.livemint.com/news/india/s-jaishankar-marco-rubio-to-hold-talks-in-mumbai-tomorrow-amid-india-us-trade-deal-push-what-is-on-the-agenda-11792379832648.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Delhi court extends judicial custody of CJP leaders following Jantar Mantar protest",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        69,
+        87,
+        123,
+        145,
+        148,
+        170,
+        176,
+        192,
+        219,
+        230,
+        331
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        69,
+        87,
+        123,
+        145,
+        148,
+        170,
+        176,
+        192,
+        219,
+        230,
+        331
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 6,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 8,
+      "weight_terms": {
+        "distinct_outlets": 6,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "'State-sponsored terrorism': Mamata demands release of CJP's Das, Ranka",
+          "url": "https://timesofindia.indiatimes.com/india/state-sponsored-terrorism-mamata-banerjee-demands-release-of-cjps-saurav-das-ashutosh-ranka/articleshow/135056070.cms"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Indian court extends detention of ‘Cockroach’ leaders",
+          "url": "https://www.aljazeera.com/news/2026/10/19/indian-court-extends-detention-of-cockroach-leaders?traffic_source=rss"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Court cites ‘habitualness’, ‘no respect for law’ in order extending CJP leaders' custody in Jantar Mantar trespassing case",
+          "url": "https://www.hindustantimes.com/india-news/court-flags-habitualness-no-respect-for-law-in-order-extending-cjps-saurav-das-ashutosh-ranka-custody-in-jantar-mantar-trespassing-case-101792428200930.html"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "Why CJP's Saurav Das, Ashutosh Ranka's Judicial Custody Was Extended",
+          "url": "https://www.ndtv.com/india-news/why-cjps-saurav-das-ashutosh-rankas-judicial-custody-was-extended-12208027#publisher=newsstand"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "CJP leaders Ashutosh Ranka, Saurav Das’ judicial custody extended by two days",
+          "url": "https://scroll.in/latest/1096461/cjp-leaders-ashutosh-ranka-saurav-das-judicial-custody-extended-by-two-days?utm_source=rss&utm_medium=public"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 6
+    },
+    {
+      "headline_hint": "Police arrest three suspects in Rajasthan following shooting attack targeting actor Tiger Shroff",
+      "section": "india",
+      "category": "conflict",
+      "tier_requested": "major",
+      "article_ids": [
+        89,
+        182,
+        185,
+        209,
+        242,
+        256,
+        276,
+        280,
+        282,
+        306,
+        313,
+        315,
+        317,
+        321,
+        330
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        89,
+        182,
+        185,
+        209,
+        242,
+        256,
+        276,
+        280,
+        282,
+        306,
+        313,
+        315,
+        317,
+        321,
+        330
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 6,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 8,
+      "weight_terms": {
+        "distinct_outlets": 6,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "NDTV",
+          "title": "Tiger Shroff Firing Case Updates: 3 Suspects Undergo Medical Examination In Kota, Transit Remand Granted",
+          "url": "https://www.ndtv.com/india-news/tiger-shroff-assassination-bid-updates-lawrence-bishnoi-gang-salman-khan-juhu-mumbai-12203309#publisher=newsstand"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "Tiger Shroff shot at in Mumbai, three suspects held",
+          "url": "https://scroll.in/latest/1096495/tiger-shroff-shot-at-in-mumbai-suspect-detained?utm_source=rss&utm_medium=public"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "On camera, Tiger Shroff shooting suspects seen rushing to catch train in Surat before arrest in Kota",
+          "url": "https://www.hindustantimes.com/india-news/on-camera-tiger-shroff-firing-suspects-seen-rushing-to-catch-train-in-surat-before-arrest-in-kota-101792418474271.html"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "Tiger Shroff firing: Three suspects detained in Kota; one was in touch with Bishnoi gang aide, says police",
+          "url": "https://www.thehindu.com/news/cities/mumbai/tiger-shroff-firing-fir-lodged-mumbai-crime-branch-takes-over-probe/article71602123.ece"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Firing on Tiger Shroff: Big catch! Who are Rehan alias Sukka, Hritik Kurmi alias Roshan and a minor - 3 primary suspects",
+          "url": "https://www.livemint.com/news/india/firing-on-tiger-shroff-big-catch-who-are-rehan-alias-sukka-hritik-kurmi-alias-roshan-and-a-minor-3-primary-suspects-11792403620199.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 10
+    },
+    {
+      "headline_hint": "India caps trade margins on 137 cancer drugs to reduce costs for patients",
+      "section": "india",
+      "category": "health",
+      "tier_requested": "notable",
+      "article_ids": [
+        81,
+        328
+      ],
+      "verdict": "cut:below_floor(2<5)",
+      "valid_ids": [
+        81,
+        328
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 2,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "Trade margins on 137 cancer drugs capped, but will bills get lower?",
+          "url": "https://timesofindia.indiatimes.com/business/india-business/trade-margins-on-137-cancer-drugs-capped-but-will-bills-get-lower/articleshow/135055741.cms"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Cancer drugs to get cheaper in India from November 9: Full list of 137 medicines and how much you could actually save",
+          "url": "https://www.livemint.com/news/india/cancer-drugs-to-get-cheaper-in-india-from-november-9-full-list-of-137-medicines-and-how-much-you-could-actually-save-11792385350720.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Bilateral trade agreement between India and New Zealand comes into effect",
+      "section": "india",
+      "category": "economy",
+      "tier_requested": "notable",
+      "article_ids": [
+        16,
+        180
+      ],
+      "verdict": "cut:below_floor(2<5)",
+      "valid_ids": [
+        16,
+        180
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 2,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "Trade deal with New Zealand kicks in today: Where India gains",
+          "url": "https://timesofindia.indiatimes.com/business/india-business/indias-trade-deal-with-new-zealand-kicks-in-today/articleshow/135058369.cms"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "India-New Zealand FTA to come into force on 20 Oct: Piyush Goyal",
+          "url": "https://www.livemint.com/news/india/indianew-zealand-fta-to-enter-into-force-on-oct-20-labour-intensive-sectors-to-be-key-beneficiaries-goyal-11792419126336.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Naveen Patnaik questions Odisha government over Andhra Pradesh election notice for disputed Kotia villages",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        119,
+        131,
+        229
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        119,
+        131,
+        229
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "NDTV",
+          "title": "Naveen Patnaik Slams \"Silence\" On Andhra Poll Notice In 3 Disputed Villages",
+          "url": "https://www.ndtv.com/india-news/naveen-patnaik-slams-silence-on-andhra-poll-notice-in-3-disputed-villages-12208236#publisher=newsstand"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "Naveen Patnaik questions Odisha government’s 'silence' on Andhra's poll notification for disputed Kotia villages",
+          "url": "https://www.thehindu.com/news/national/odisha/naveen-patnaik-questions-odisha-governments-silence-on-andhras-poll-notification-for-disputed-kotia-villages/article71603050.ece"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Odisha vs Andhra over Kotia: Naveen Patnaik turns up heat on Mohan Majhi govt",
+          "url": "https://timesofindia.indiatimes.com/city/bhubaneswar/andhra-polls-put-kotia-back-in-spotlight-naveen-patnaik-asks-if-bjp-tdp-alliance-holding-odisha-back/articleshow/135050115.cms"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    }
+  ]
+}
