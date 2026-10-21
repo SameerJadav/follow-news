@@ -1,0 +1,726 @@
+{
+  "dials": {
+    "WEIGHT_FLOOR": 5,
+    "TIER_WEIGHT": {
+      "lead": 4,
+      "major": 2,
+      "notable": 0
+    },
+    "WIKI_BONUS": 2,
+    "HARD_CAP": 12,
+    "MIN_STORIES_IF_ANY": 3,
+    "MAX_ARTICLES_PER_STORY": 5
+  },
+  "floor_relaxed": false,
+  "kept_weights": [
+    11,
+    7,
+    7,
+    7,
+    6,
+    6,
+    6,
+    5,
+    10,
+    9
+  ],
+  "per_section": {
+    "world": 8,
+    "india": 2
+  },
+  "clusters": [
+    {
+      "headline_hint": "US resumes intelligence sharing with Ukraine as Trump presses for peace deal",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "lead",
+      "article_ids": [
+        11,
+        48,
+        62,
+        71,
+        85,
+        96,
+        100,
+        102,
+        115,
+        151,
+        156,
+        224,
+        277,
+        278,
+        364
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        11,
+        48,
+        62,
+        71,
+        85,
+        96,
+        100,
+        102,
+        115,
+        151,
+        156,
+        224,
+        277,
+        278,
+        364
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 7,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 11,
+      "weight_terms": {
+        "distinct_outlets": 7,
+        "tier_weight": 4,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "Musk ordered Starlink slowdown, kept Ukraine and Trump administration in dark",
+          "url": "https://timesofindia.indiatimes.com/world/europe/musk-ordered-slowdown-of-ukraines-starlink-network-leaving-kyiv-in-the-dark-report/articleshow/135078377.cms"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "‘I don’t care how it’s done’: Trump pressures Ukraine to cut peace deal",
+          "url": "https://www.aljazeera.com/news/2026/10/20/i-dont-care-how-its-done-trump-pressures-ukraine-to-cut-peace-deal?traffic_source=rss"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Zelensky says US intelligence sharing 'works now' after talks with Trump envoy in Oslo",
+          "url": "https://www.bbc.co.uk/news/articles/cq5ynkx3xy11o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "Zelenskyy hails resumption of US advance warning of strikes on Ukraine",
+          "url": "https://www.channelnewsasia.com/world/zelenskyy-hails-resumption-us-advance-warning-strikes-ukraine-6476751"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "Current U.S. support for Ukraine looks very different than it did",
+          "url": "https://www.npr.org/2026/10/20/nx-s1-6009227/current-u-s-support-for-ukraine-looks-very-different-than-it-did"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 10
+    },
+    {
+      "headline_hint": "Alberta voters overwhelmingly reject independence referendum in boost for Canadian unity",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        47,
+        190,
+        248,
+        316,
+        317,
+        331,
+        345
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        47,
+        190,
+        248,
+        316,
+        317,
+        331,
+        345
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 6,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "BBC World",
+          "title": "Alberta's decisive decision to stay in Canada gives Carney backing to take on Trump",
+          "url": "https://www.bbc.co.uk/news/articles/cr62ylj832vxo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Alberta voters overwhelmingly reject plan to leave Canada in referendum",
+          "url": "https://www.theguardian.com/world/2026/oct/20/canada-alberta-rejects-independence-succession-referendum"
+        },
+        {
+          "outlet": "DW World",
+          "title": "Canada: Alberta rejects separation bid, CBC projects",
+          "url": "https://www.dw.com/en/canada-alberta-rejects-separation-bid-cbc-projects/a-79708520?maca=en-rss-en-world-4025-rdf"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "Alberta voters reject a move toward independence in referendum backing Canadian unity",
+          "url": "https://www.npr.org/2026/10/20/nx-s1-6008832/alberta-referendum-canada"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Huge setback for Alberta's separatist movement after decisive defeat",
+          "url": "https://www.bbc.co.uk/news/articles/cjly016320q1o?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 2
+    },
+    {
+      "headline_hint": "France deploys massive police presence and imposes curfews amid widespread riots",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        41,
+        81,
+        89,
+        92,
+        118,
+        119,
+        178,
+        198,
+        226,
+        262,
+        332,
+        340,
+        341,
+        372
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        41,
+        81,
+        89,
+        92,
+        118,
+        119,
+        178,
+        198,
+        226,
+        262,
+        332,
+        340,
+        341,
+        372
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 5,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Channel News Asia",
+          "title": "Louis Vuitton and Hermes among luxury retailers looted in French riots",
+          "url": "https://www.channelnewsasia.com/obsessions/france-riots-louis-vuitton-hermes-luxury-stores-looted-6476916"
+        },
+        {
+          "outlet": "France 24",
+          "title": "‘I’m alive’: Paris street medic isn’t dead, despite viral claims he was killed by police",
+          "url": "https://www.france24.com/en/tv-shows/truth-or-fake/20261020-i-m-alive-paris-street-medic-isn-t-dead-despite-viral-claims-he-was-killed-by-police"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "France riots leave thousands of businesses damaged",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/10/20/france-riots-leave-thousands-of-businesses-damaged?traffic_source=rss"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Marseille braces for more unrest after protests give way to 'apocalyptic' disorder",
+          "url": "https://www.bbc.co.uk/news/articles/cm5ynkk570pno?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "France protests escalating into riots are a political gift for Marine Le Pen and far-right",
+          "url": "https://scroll.in/article/1096502/france-protests-escalating-into-riots-are-a-political-gift-for-marine-le-pen-and-far-right?utm_source=rss&utm_medium=public"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 9
+    },
+    {
+      "headline_hint": "Nigeria confirms first Ebola case in Abuja as regional outbreak spreads",
+      "section": "world",
+      "category": "health",
+      "tier_requested": "major",
+      "article_ids": [
+        5,
+        14,
+        26,
+        61,
+        87,
+        114
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        5,
+        14,
+        26,
+        61,
+        87,
+        114
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 5,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "Nigeria confirms Ebola case as outbreak spreads into western Africa",
+          "url": "https://www.theguardian.com/world/2026/oct/21/nigeria-first-ebola-case-africa-outbreak-latest"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Is Ebola under control in Kenya after nine cases confirmed?",
+          "url": "https://www.bbc.co.uk/news/articles/c693z948px0jo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Nigeria records first Ebola case as outbreak spreads across Africa",
+          "url": "https://www.france24.com/en/africa/20261020-nigeria-records-first-ebola-case-as-outbreak-spreads-across-africa"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "Nigeria confirms an Ebola case in Abuja as a woman arriving from Uganda tests positive",
+          "url": "https://www.npr.org/2026/10/20/g-s1-148975/nigeria-confirms-ebola-case"
+        },
+        {
+          "outlet": "DW World",
+          "title": "Nigeria records its first Ebola case, in capital Abuja",
+          "url": "https://www.dw.com/en/nigeria-records-its-first-ebola-case-in-capital-abuja/a-79717377?maca=en-rss-en-world-4025-rdf"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 1
+    },
+    {
+      "headline_hint": "Sudan army drone strikes kill more than 150 people in Abyei market and funeral",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "major",
+      "article_ids": [
+        141,
+        157,
+        189,
+        351
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        141,
+        157,
+        189,
+        351
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 6,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "DW World",
+          "title": "Sudan drone strike kills around 150 in Abyei market",
+          "url": "https://www.dw.com/en/sudan-drone-strike-kills-around-150-in-abyei-market/a-79716587?maca=en-rss-en-world-4025-rdf"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Sudan army drones hit mourners and fuel market killing more than 300 people, sources say",
+          "url": "https://www.bbc.co.uk/news/articles/cr3el70jz1nqo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "More than 150 killed in Sudan drone strike on disputed Abyei border region",
+          "url": "https://www.france24.com/en/africa/20261020-more-than-150-killed-sudan-drone-strike-disputed-abyei-border-region"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Drone attack near market kills 80 in Sudan",
+          "url": "https://www.theguardian.com/world/2026/oct/19/drone-attack-market-al-dibab-west-kordofan-sudan"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Australian MP Helen Haines critically injured in deliberate car attack",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        1,
+        272,
+        288,
+        318,
+        362
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        1,
+        272,
+        288,
+        318,
+        362
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 6,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "Helen Haines live updates: Brendan Nugent doesn’t apply for bail in first court appearance since alleged attack",
+          "url": "https://www.theguardian.com/australia-news/live/2026/oct/21/helen-haines-independent-mp-alleged-attack-wangaratta-vigils-court-ntwnfb"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Man charged with attack on Australia MP to face court",
+          "url": "https://www.bbc.co.uk/news/articles/c678pnn9mpgno?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "DW World",
+          "title": "Australian MP seriously hurt in suspected car attack",
+          "url": "https://www.dw.com/en/australian-mp-seriously-hurt-in-suspected-car-attack/a-79697660?maca=en-rss-en-world-4025-rdf"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "Australian prime minister says lawmaker critically injured by car is 'no accident'",
+          "url": "https://www.npr.org/2026/10/19/g-s1-148737/australia-lawmaker-critically-injured"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Helen Haines loses leg as surgeons fight to save the other after alleged attack in Wangaratta",
+          "url": "https://www.theguardian.com/australia-news/2026/oct/20/helen-haines-mp-alleged-attack-wangaratta-surgery-ntwnfb"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Trump and Bloomberg pour hundreds of millions into US midterm election campaigns",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        13,
+        50,
+        63,
+        73,
+        90,
+        154,
+        215,
+        363
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        13,
+        50,
+        63,
+        73,
+        90,
+        154,
+        215,
+        363
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 5,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "Trump says he will have spent $400m to support Republicans in midterms – US politics live",
+          "url": "https://www.theguardian.com/us-news/live/2026/oct/20/donald-trump-midterms-republicans-democrats-north-carolina-latest-updates"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Trump commits more than $400m ahead of high-stakes midterm elections",
+          "url": "https://www.aljazeera.com/news/2026/10/20/trump-commits-more-than-400m-ahead-of-high-stakes-midterm-elections?traffic_source=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Trump campaigning in Republican strongholds amid slide in polls",
+          "url": "https://www.france24.com/en/trump-campaigning-in-republican-strongholds-amid-slide-in-polls"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Michael Bloomberg backs Democrats with $80 million but remains wary of party’s leftward shift: Report",
+          "url": "https://www.livemint.com/news/us-news/michael-bloomberg-backs-democrats-with-80-million-but-remains-wary-of-party-s-leftward-shift-report-11792516926129.html"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "2026 midterms could be the most expensive on record. And, Macron condemns protests",
+          "url": "https://www.npr.org/2026/10/19/g-s1-148733/up-first-newsletter-ukraine-russia-campaign-finances-france-protests"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 3
+    },
+    {
+      "headline_hint": "UK deploys RAF Typhoon fighter jets to defend Saudi Arabia against Houthi attacks",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "notable",
+      "article_ids": [
+        121,
+        131,
+        181
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        121,
+        131,
+        181
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": true,
+      "wiki_event": "United Kingdom says it will deploy RAF Typhoons to help Saudis defend against Houthi attacks.",
+      "weight": 5,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "UK to deploy fighter jets to defend Saudi Arabia",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/10/20/aje-onl-nf_uk-to-deploy-fighter-jets-to-defend-saudi-arabia_1-201026?traffic_source=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "UK to deploy fighter jets to protect Saudi Arabia from Houthi attacks",
+          "url": "https://www.theguardian.com/uk-news/2026/oct/20/uk-raf-typhoon-fighters-saudi-arabia-houthi-attacks"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Britain to defend Saudi Arabia against Houthi drones and missiles, rules out offensive strikes",
+          "url": "https://www.livemint.com/news/world/britain-to-defend-saudi-arabia-against-houthi-drones-and-missiles-rules-out-offensive-strikes-11792513820412.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "US Secretary of State Marco Rubio visits India to discuss trade deal and energy ties",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "lead",
+      "article_ids": [
+        45,
+        75,
+        80,
+        83,
+        123,
+        144,
+        162,
+        168,
+        187,
+        228,
+        229,
+        260,
+        265,
+        267,
+        279,
+        299
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        45,
+        75,
+        80,
+        83,
+        123,
+        144,
+        162,
+        168,
+        187,
+        228,
+        229,
+        260,
+        265,
+        267,
+        279,
+        299
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 5,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 9,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 4,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "The Hindu",
+          "title": "Rubio pushes for India to buy more U.S., Venezuelan oil",
+          "url": "https://www.thehindu.com/business/Economy/marco-rubio-oil-purchases-india-mumbai-october-20-2026/article71604269.ece"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "India &amp; US to boost defence, energy ties, Marco Rubio says trade deal close",
+          "url": "https://timesofindia.indiatimes.com/india/india-united-states-to-boost-defence-energy-ties-marco-rubio-says-trade-deal-close/articleshow/135076521.cms"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "\"We're About As Close As You Can Be\": Marco Rubio On India-US Trade Deal",
+          "url": "https://www.ndtv.com/india-news/were-about-as-close-as-you-can-be-marco-rubio-on-india-us-trade-deal-12212483#publisher=newsstand"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Marco Rubio in India: Can US biz diplomacy ease Trump tensions over tariffs, Russian oil and bring trade deal closer?",
+          "url": "https://www.livemint.com/news/india/marco-rubio-in-india-can-us-biz-diplomacy-ease-trump-tensions-over-tariffs-russian-oil-and-bring-trade-deal-closer-11792515633636.html"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Rubio urges India to boost US energy, defence purchases in talks with Jaishankar",
+          "url": "https://www.hindustantimes.com/india-news/rubio-urges-india-to-boost-us-energy-defence-purchases-in-talks-with-jaishankar-secretary-of-state-mumbai-visit-key-updates-101792507394726.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 11
+    },
+    {
+      "headline_hint": "CJP youth protests intensify in India as PM Modi and RSS chief warn against regime change attempts",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        15,
+        106,
+        132,
+        149,
+        159,
+        179,
+        180,
+        199,
+        209,
+        211,
+        218,
+        220,
+        222,
+        223,
+        230,
+        254,
+        255,
+        266,
+        291,
+        295,
+        297,
+        302,
+        314,
+        322,
+        348,
+        373
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        15,
+        106,
+        132,
+        149,
+        159,
+        179,
+        180,
+        199,
+        209,
+        211,
+        218,
+        220,
+        222,
+        223,
+        230,
+        254,
+        255,
+        266,
+        291,
+        295,
+        297,
+        302,
+        314,
+        322,
+        348,
+        373
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 8,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 10,
+      "weight_terms": {
+        "distinct_outlets": 8,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "NDTV",
+          "title": "'Thank You For Free Publicity': Abhijeet Dipke On Cockroach Effigy In Delhi",
+          "url": "https://www.ndtv.com/india-news/abhijeet-dipke-on-cockroach-effigy-in-delhi-thank-you-for-free-publicity-12212474#publisher=newsstand"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "30-foot-high cockroach effigy triggers AAP-BJP war of words",
+          "url": "https://www.thehindu.com/news/cities/Delhi/30-foot-high-cockroach-effigy-triggers-aap-bjp-war-of-words/article71605225.ece"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "‘Spend time with your families, remember Ashu, Saurav’: Abhijeet Dipke's emotional message to supporters ahead of festive season",
+          "url": "https://www.hindustantimes.com/india-news/spend-time-with-your-family-remember-ashu-saurav-ajp-abhijeet-dipkes-emotional-message-to-supporters-101792516520262.html"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Delhi BJP leader burns cockroach effigy; Dipke responds with SRK’s 'Swades' song",
+          "url": "https://timesofindia.indiatimes.com/india/free-publicity-cjp-reacts-as-delhi-burns-30ft-cockroach-effigy-with-ravan/articleshow/135073600.cms"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "‘Purpose of power is to serve': PM Modi invokes ‘Ram Rajya’ as good governance model at Delhi Dussehra celebrations",
+          "url": "https://www.livemint.com/news/india/purpose-of-power-is-to-serve-pm-modi-invokes-ram-rajya-as-good-governance-model-at-delhi-dussehra-celebrations-11792508131319.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 21
+    }
+  ]
+}
