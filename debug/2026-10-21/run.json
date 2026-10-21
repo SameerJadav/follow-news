@@ -2,27 +2,27 @@
   "kind": "digest",
   "day": "2026-10-21",
   "ok": false,
-  "started_at": "2026-10-21T00:44:53Z",
-  "finished_at": "2026-10-21T00:47:18Z",
-  "elapsed_ms": 145544,
+  "started_at": "2026-10-21T05:04:42Z",
+  "finished_at": "2026-10-21T05:06:58Z",
+  "elapsed_ms": 135993,
   "argv": [
     "digest.py",
     "--if-missing"
   ],
   "python": "3.12.3",
-  "git_sha": "fddf327a7679d2376d4941cf256427364eee2c83",
+  "git_sha": "0e2002223974264ed6f831156d562c5f5d516274",
   "debug_level": 1,
-  "bytes_written": 15021980,
+  "bytes_written": 15098490,
   "byte_cap_reached": false,
   "env": {
     "DIGEST_DEBUG": "1",
     "CI": "true",
     "GITHUB_ACTIONS": "true",
-    "GITHUB_RUN_ID": "39523154885",
+    "GITHUB_RUN_ID": "39547504405",
     "GITHUB_RUN_ATTEMPT": "1",
     "GITHUB_WORKFLOW": "digest",
     "GITHUB_EVENT_NAME": "schedule",
-    "GITHUB_SHA": "fddf327a7679d2376d4941cf256427364eee2c83",
+    "GITHUB_SHA": "0e2002223974264ed6f831156d562c5f5d516274",
     "GITHUB_REF": "refs/heads/main",
     "RUNNER_OS": "Linux"
   },
@@ -68,7 +68,7 @@
   "stages": [
     {
       "stage": "gather",
-      "ms": 2722,
+      "ms": 3364,
       "error": ""
     },
     {
@@ -78,33 +78,33 @@
     },
     {
       "stage": "wikipedia",
-      "ms": 207,
+      "ms": 539,
       "error": ""
     },
     {
       "stage": "select",
-      "ms": 33480,
+      "ms": 24980,
       "error": ""
     },
     {
       "stage": "rank",
-      "ms": 3,
+      "ms": 4,
       "error": ""
     },
     {
       "stage": "extract",
-      "ms": 58537,
+      "ms": 34289,
       "error": ""
     },
     {
       "stage": "claims",
-      "ms": 48774,
+      "ms": 70949,
       "error": "ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"
     }
   ],
   "window": {
-    "since": "2026-10-19T00:44:54.890847+00:00",
-    "now": "2026-10-21T00:44:54.890847+00:00",
+    "since": "2026-10-19T05:04:44.750945+00:00",
+    "now": "2026-10-21T05:04:44.750945+00:00",
     "prev_generated_at": "2026-10-19 00:20:47+00:00"
   },
   "stopped_at": "claims",
