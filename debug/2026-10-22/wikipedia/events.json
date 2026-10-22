@@ -1,17 +1,32 @@
 {
   "max_events": 60,
-  "parsed": 13,
-  "used": 13,
+  "parsed": 15,
+  "used": 15,
   "events": [
     {
       "category": "Armed conflicts and attacks",
-      "topic": "Gaza war",
-      "text": "The Israel Defense Forces and Shin Bet says that they have killed a Hamas Nukhba forces militant that took part in planning the killing of four IDF soldiers in September 2025."
+      "topic": "Middle Eastern crisis",
+      "text": "The Israel Defense Forces and Shin Bet say that they have killed a Hamas Nukhba forces militant that took part in planning the killing of four IDF soldiers in September 2025."
+    },
+    {
+      "category": "Armed conflicts and attacks",
+      "topic": "Middle Eastern crisis",
+      "text": "The U.S. Department of State orders non-emergency employees at its embassy in Riyadh, Saudi Arabia, to leave the country as Houthi attacks ramp up."
     },
     {
       "category": "Armed conflicts and attacks",
       "topic": "Haitian conflict",
       "text": "Salvadoran president Nayib Bukele announces the start of a military operation to rescue four Air Force technicians. The technicians, attached to the international Gang Suppression Force, were taken hostage after gangs attacked their armored"
+    },
+    {
+      "category": "Armed conflicts and attacks",
+      "topic": "Russo-Ukrainian war",
+      "text": "United States special envoy Steve Witkoff arrives in Saint Petersburg to talk with Russian president Vladimir Putin about potentially resolving the war with Ukraine. Putin states he would resume U.S.-mediated trilateral peace talks with Ukr"
+    },
+    {
+      "category": "Armed conflicts and attacks",
+      "topic": "Russo-Ukrainian war",
+      "text": "American military veteran Stephen Hubbard, who was arrested by Russian authorities in 2022 during the Battle of Izium, is released from custody during the meeting between Putin and Witkoff."
     },
     {
       "category": "Business and economy",
@@ -25,23 +40,13 @@
     },
     {
       "category": "International relations",
-      "topic": "Houthi–Saudi conflict, Saudi Arabia–United States relations",
-      "text": "The U.S. Department of State orders non-emergency employees at its embassy in Riyadh, Saudi Arabia, to leave the country as Houthi attacks ramp up."
-    },
-    {
-      "category": "International relations",
-      "topic": "Peace negotiations in the Russo-Ukrainian war, United States and the Russo-Ukrainian war",
-      "text": "United States special envoy Steve Witkoff arrives in Saint Petersburg to talk with Russian president Vladimir Putin about potentially resolving the war with Ukraine. Putin states he would resume U.S.-mediated trilateral peace talks with Ukr"
-    },
-    {
-      "category": "International relations",
-      "topic": "Peace negotiations in the Russo-Ukrainian war, United States and the Russo-Ukrainian war",
-      "text": "American military veteran Stephen James Hubbard, who was arrested by Russian authorities in 2022 during the Battle of Izium, is released from custody during the meeting between Putin and Witkoff."
-    },
-    {
-      "category": "International relations",
       "topic": "",
       "text": "Qatar, Turkey, Pakistan, and Indonesia jointly sign the Badr Memorandum of Understanding, a major agreement to deepen their defence industry cooperation. The agreement aims to support joint military production projects and strengthen cooper"
+    },
+    {
+      "category": "Law and crime",
+      "topic": "Cross-strait relations",
+      "text": "Taiwanese prosecutors indict five people for allegedly accepting money and planning to injure an anti-Chinese Communist Party comedian in New Taipei City."
     },
     {
       "category": "Law and crime",
@@ -50,13 +55,13 @@
     },
     {
       "category": "Law and crime",
-      "topic": "Mexican war on drugs, Mexico–United States relations",
-      "text": "The Mexican government launches an investigation into former attorney general of Chihuahua César Jáuregui Robles for allowing U.S. Central Intelligence Agency agents to take part in an anti-drug trafficking operation in Chihuahua earlier th"
-    },
-    {
-      "category": "Law and crime",
       "topic": "",
       "text": "Over 80 Americans, British citizens, and Israelis are detained by settlers in the Israel-occupied West Bank, including U.S. House of Representatives candidate Brad Lander."
+    },
+    {
+      "category": "Politics and elections",
+      "topic": "2026 European unrest, Gen Z protests",
+      "text": "Thousands of students and teachers march through Athens, Thessaloniki, and Patras in Greece to protest against the rising cost of living, calling for affordable student housing and more state investment in education."
     },
     {
       "category": "Politics and elections",
@@ -67,7 +72,12 @@
       "category": "Science and technology",
       "topic": "2022–2026 video game industry layoffs",
       "text": "American video game publisher Electronic Arts, which was recently bought-out by the Saudi Public Investment Fund, announces the closing of its Canadian studio BioWare."
+    },
+    {
+      "category": "Science and technology",
+      "topic": "",
+      "text": "Node.js releases three security updates. These address 10 different vulnerabilities, including 4 high-severity ones, which affect how Node.js handles DNS resolution, TLS handshakes, and Brotli decoding."
     }
   ],
-  "prompt_block": "WIKIPEDIA CURRENT EVENTS (curated checklist — see rules above)\n- [Armed conflicts and attacks] Gaza war — The Israel Defense Forces and Shin Bet says that they have killed a Hamas Nukhba forces militant that took part in planning the killing of four IDF soldiers in September 2025.\n- [Armed conflicts and attacks] Haitian conflict — Salvadoran president Nayib Bukele announces the start of a military operation to rescue four Air Force technicians. The technicians, attached to the international Gang Suppression Force, were taken hostage after gangs attacked their armored\n- [Business and economy] 2026 Iran war fuel crisis — South Africa cuts fuel levies by R3.00 (US$0.18) per litre of diesel and R1.50 ($0.09) per litre of petrol from November 4 to December 1 after fuel prices reach record highs.\n- [Business and economy] The North Sea Transition Authority (NSTA) of the United Kingdom approves production from the Jackdaw gas field after energy secretary Miatta Fahnbulleh authorized the NSTA to grant consent, allowing operator Adura to begin supplying gas by \n- [International relations] Houthi–Saudi conflict, Saudi Arabia–United States relations — The U.S. Department of State orders non-emergency employees at its embassy in Riyadh, Saudi Arabia, to leave the country as Houthi attacks ramp up.\n- [International relations] Peace negotiations in the Russo-Ukrainian war, United States and the Russo-Ukrainian war — United States special envoy Steve Witkoff arrives in Saint Petersburg to talk with Russian president Vladimir Putin about potentially resolving the war with Ukraine. Putin states he would resume U.S.-mediated trilateral peace talks with Ukr\n- [International relations] Peace negotiations in the Russo-Ukrainian war, United States and the Russo-Ukrainian war — American military veteran Stephen James Hubbard, who was arrested by Russian authorities in 2022 during the Battle of Izium, is released from custody during the meeting between Putin and Witkoff.\n- [International relations] Qatar, Turkey, Pakistan, and Indonesia jointly sign the Badr Memorandum of Understanding, a major agreement to deepen their defence industry cooperation. The agreement aims to support joint military production projects and strengthen cooper\n- [Law and crime] Lawsuits involving Meta Platforms — A district judge in New Mexico, United States, orders Meta to pay $25 billion after a jury found it guilty of misleading Facebook users about privacy violations, marking its largest fine ever.\n- [Law and crime] Mexican war on drugs, Mexico–United States relations — The Mexican government launches an investigation into former attorney general of Chihuahua César Jáuregui Robles for allowing U.S. Central Intelligence Agency agents to take part in an anti-drug trafficking operation in Chihuahua earlier th\n- [Law and crime] Over 80 Americans, British citizens, and Israelis are detained by settlers in the Israel-occupied West Bank, including U.S. House of Representatives candidate Brad Lander.\n- [Politics and elections] 2026 Quebec general election, Plamondon ministry — Paul St-Pierre Plamondon is sworn in as the 34th premier of Quebec following the Parti Québécois's victory in the general election.\n- [Science and technology] 2022–2026 video game industry layoffs — American video game publisher Electronic Arts, which was recently bought-out by the Saudi Public Investment Fund, announces the closing of its Canadian studio BioWare."
+  "prompt_block": "WIKIPEDIA CURRENT EVENTS (curated checklist — see rules above)\n- [Armed conflicts and attacks] Middle Eastern crisis — The Israel Defense Forces and Shin Bet say that they have killed a Hamas Nukhba forces militant that took part in planning the killing of four IDF soldiers in September 2025.\n- [Armed conflicts and attacks] Middle Eastern crisis — The U.S. Department of State orders non-emergency employees at its embassy in Riyadh, Saudi Arabia, to leave the country as Houthi attacks ramp up.\n- [Armed conflicts and attacks] Haitian conflict — Salvadoran president Nayib Bukele announces the start of a military operation to rescue four Air Force technicians. The technicians, attached to the international Gang Suppression Force, were taken hostage after gangs attacked their armored\n- [Armed conflicts and attacks] Russo-Ukrainian war — United States special envoy Steve Witkoff arrives in Saint Petersburg to talk with Russian president Vladimir Putin about potentially resolving the war with Ukraine. Putin states he would resume U.S.-mediated trilateral peace talks with Ukr\n- [Armed conflicts and attacks] Russo-Ukrainian war — American military veteran Stephen Hubbard, who was arrested by Russian authorities in 2022 during the Battle of Izium, is released from custody during the meeting between Putin and Witkoff.\n- [Business and economy] 2026 Iran war fuel crisis — South Africa cuts fuel levies by R3.00 (US$0.18) per litre of diesel and R1.50 ($0.09) per litre of petrol from November 4 to December 1 after fuel prices reach record highs.\n- [Business and economy] The North Sea Transition Authority (NSTA) of the United Kingdom approves production from the Jackdaw gas field after energy secretary Miatta Fahnbulleh authorized the NSTA to grant consent, allowing operator Adura to begin supplying gas by \n- [International relations] Qatar, Turkey, Pakistan, and Indonesia jointly sign the Badr Memorandum of Understanding, a major agreement to deepen their defence industry cooperation. The agreement aims to support joint military production projects and strengthen cooper\n- [Law and crime] Cross-strait relations — Taiwanese prosecutors indict five people for allegedly accepting money and planning to injure an anti-Chinese Communist Party comedian in New Taipei City.\n- [Law and crime] Lawsuits involving Meta Platforms — A district judge in New Mexico, United States, orders Meta to pay $25 billion after a jury found it guilty of misleading Facebook users about privacy violations, marking its largest fine ever.\n- [Law and crime] Over 80 Americans, British citizens, and Israelis are detained by settlers in the Israel-occupied West Bank, including U.S. House of Representatives candidate Brad Lander.\n- [Politics and elections] 2026 European unrest, Gen Z protests — Thousands of students and teachers march through Athens, Thessaloniki, and Patras in Greece to protest against the rising cost of living, calling for affordable student housing and more state investment in education.\n- [Politics and elections] 2026 Quebec general election, Plamondon ministry — Paul St-Pierre Plamondon is sworn in as the 34th premier of Quebec following the Parti Québécois's victory in the general election.\n- [Science and technology] 2022–2026 video game industry layoffs — American video game publisher Electronic Arts, which was recently bought-out by the Saudi Public Investment Fund, announces the closing of its Canadian studio BioWare.\n- [Science and technology] Node.js releases three security updates. These address 10 different vulnerabilities, including 4 high-severity ones, which affect how Node.js handles DNS resolution, TLS handshakes, and Brotli decoding."
 }
