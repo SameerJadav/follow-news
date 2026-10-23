@@ -1,0 +1,812 @@
+{
+  "dials": {
+    "WEIGHT_FLOOR": 5,
+    "TIER_WEIGHT": {
+      "lead": 4,
+      "major": 2,
+      "notable": 0
+    },
+    "WIKI_BONUS": 2,
+    "HARD_CAP": 12,
+    "MIN_STORIES_IF_ANY": 3,
+    "MAX_ARTICLES_PER_STORY": 5
+  },
+  "floor_relaxed": false,
+  "kept_weights": [
+    12,
+    9,
+    8,
+    7,
+    5,
+    10,
+    7
+  ],
+  "per_section": {
+    "world": 5,
+    "india": 2
+  },
+  "clusters": [
+    {
+      "headline_hint": "US and Israel prepare potential strikes on Iran as IRGC claims oil tankers hit in Strait of Hormuz",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "lead",
+      "article_ids": [
+        11,
+        37,
+        186,
+        211,
+        244,
+        281,
+        290,
+        291,
+        324
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        11,
+        37,
+        186,
+        211,
+        244,
+        281,
+        290,
+        291,
+        324
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 6,
+      "wiki_backed": true,
+      "wiki_event": "Iran's Islamic Revolutionary Guard Corps reports that seven oil tankers have been hit in the Strait of Hormuz. Donald Trump and a spokesperson for U.S. Central Command denies the IRGC’s claim.",
+      "weight": 12,
+      "weight_terms": {
+        "distinct_outlets": 6,
+        "tier_weight": 4,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "Iran war live: Trump hints new strikes, says US knocked ‘hell out’ of Iran",
+          "url": "https://www.aljazeera.com/news/liveblog/2026/10/23/trump-hints-new-strikes-says-us-knocked-hell-out-of-iran?traffic_source=rss"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "What we know about war plans that Trump and Netanyahu are drawing up",
+          "url": "https://www.npr.org/2026/10/22/nx-s1-6012306/what-we-know-about-war-plans-that-trump-and-netanyahu-are-drawing-up"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Ahead of US and Israeli elections, 3-day joint attack on Iran 'would not radically change conflict'",
+          "url": "https://www.france24.com/en/ahead-of-us-and-israeli-elections-3-day-joint-attack-on-iran-would-not-radically-change-conflict"
+        },
+        {
+          "outlet": "DW World",
+          "title": "Is Iran ready for another major US attack after midterm elections?",
+          "url": "https://www.dw.com/en/is-iran-ready-for-another-major-us-attack-after-midterm-elections/a-79734082?maca=en-rss-en-world-4025-rdf"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Iran claims 7 oil tankers damaged in Hormuz, warns strikes if US helps passage",
+          "url": "https://timesofindia.indiatimes.com/world/middle-east/iran-claims-7-oil-tankers-damaged-in-hormuz-warns-strikes-on-bases-if-us-facilitates-passage/articleshow/135118476.cms"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 4
+    },
+    {
+      "headline_hint": "7.0-magnitude earthquake strikes Tibet, killing at least 16 people",
+      "section": "world",
+      "category": "disaster",
+      "tier_requested": "major",
+      "article_ids": [
+        2,
+        5,
+        59,
+        65,
+        67,
+        217,
+        231
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        2,
+        5,
+        59,
+        65,
+        67,
+        217,
+        231
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 5,
+      "wiki_backed": true,
+      "wiki_event": "A {{M|w|link=y}} 7.0 earthquake strikes Tibet, with an epicenter in Nagqu, killing 16 people and wounding 32 more.",
+      "weight": 9,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "Tibet rocked by 7.0-magnitude earthquake",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/10/23/tibet-rocked-by-7-0-magnitude-earthquake?traffic_source=rss"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Powerful earthquake hits Tibet killing 16 people, reports say",
+          "url": "https://www.bbc.co.uk/news/articles/ck5ynd1z6e83o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "16 killed, 32 injured in magnitude 7 earthquake in Tibet; rescue ops under way",
+          "url": "https://timesofindia.indiatimes.com/world/south-asia/16-killed-32-injured-in-magnitude-7-earthquake-in-tibet-region/articleshow/135127549.cms"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Strong earthquake strikes China’s remote Tibet region",
+          "url": "https://www.france24.com/en/asia-pacific/20261022-many-dead-massive-earthquake-strikes-china-s-remote-tibet-region-magnitude-seven"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Earthquake today: Magnitude 7 quake strikes Tibet in China, epicentre near Nagqu",
+          "url": "https://www.livemint.com/news/world/earthquake-today-magnitude-7-quake-strikes-tibet-in-china-epicentre-near-nagqu-11792682520959.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 2
+    },
+    {
+      "headline_hint": "Russia bombards Kyiv with missiles shortly after agreeing in principle to resume peace talks",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "major",
+      "article_ids": [
+        150,
+        184,
+        201,
+        206,
+        243,
+        317,
+        345,
+        346,
+        347,
+        360
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        150,
+        184,
+        201,
+        206,
+        243,
+        317,
+        345,
+        346,
+        347,
+        360
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 5,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "BBC World",
+          "title": "Ukraine hit by strikes after Russia agrees to new peace talks",
+          "url": "https://www.bbc.co.uk/news/videos/c9146p1vx888o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "‘No change’ in Russia’s attitude on war shown by deadly attacks, Zelensky says",
+          "url": "https://www.france24.com/en/europe/20261022-no-change-russia-attitude-war-after-deadly-attacks-zelensky-says"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Russia bombards Kyiv with missiles hours after agreeing to resume talks with Ukraine",
+          "url": "https://www.theguardian.com/world/2026/oct/22/russia-missile-attack-kyiv-hours-after-agreeing-to-talks-ukraine"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "Former U.S. Ambassador to Ukraine William Taylor on Trump's embrace of Russia",
+          "url": "https://www.npr.org/2026/10/22/nx-s1-6010509/former-u-s-ambassador-to-ukraine-william-taylor-on-trumps-embrace-of-russia"
+        },
+        {
+          "outlet": "DW World",
+          "title": "Trump, Putin and Xi at one table, without Ukraine. What Moscow wants from the proposal and why Beijing might agree.",
+          "url": "https://www.dw.com/en/trump-putin-and-xi-at-one-table-without-ukraine-what-moscow-wants-from-the-proposal-and-why-beijing-might-agree/a-79726190?maca=en-rss-en-world-4025-rdf"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 5
+    },
+    {
+      "headline_hint": "France imposes curfews and bans demonstrations as nationwide protests continue",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        32,
+        42,
+        46,
+        98,
+        105,
+        180,
+        195,
+        196,
+        198,
+        200,
+        210,
+        241,
+        335,
+        358
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        32,
+        42,
+        46,
+        98,
+        105,
+        180,
+        195,
+        196,
+        198,
+        200,
+        210,
+        241,
+        335,
+        358
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 6,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 8,
+      "weight_terms": {
+        "distinct_outlets": 6,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Channel News Asia",
+          "title": "Can't postpone your Paris trip? Here's what you should know",
+          "url": "https://www.channelnewsasia.com/experiences/france-travel-riots-6478056"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Curfew imposed in certain areas of Paris every night until Monday morning",
+          "url": "https://www.france24.com/en/curfew-imposed-in-certain-areas-of-paris-every-night-until-monday-morning"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Paris extends curfew as Marseille and Lyon ban protests after riots",
+          "url": "https://www.bbc.co.uk/news/articles/cvde8g40xx42o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Reader Q&A: What’s next for France after a weekend of riots? Ask our Europe columnists",
+          "url": "https://www.theguardian.com/world/live/2026/oct/21/france-riots-protests-reader-questions-rokhaya-dallio-alexander-hurst"
+        },
+        {
+          "outlet": "DW World",
+          "title": "Are the French police the most violent in the EU?",
+          "url": "https://www.dw.com/en/are-the-french-police-the-most-violent-in-the-eu/a-79732855?maca=en-rss-en-world-4025-rdf"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 9
+    },
+    {
+      "headline_hint": "Critical vulnerabilities discovered in PHP trigger global cybersecurity update scramble",
+      "section": "world",
+      "category": "technology",
+      "tier_requested": "notable",
+      "article_ids": [
+        38,
+        169,
+        278,
+        295
+      ],
+      "verdict": "cut:below_floor(2<5)",
+      "valid_ids": [
+        38,
+        169,
+        278,
+        295
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 2,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "PHP security flaws trigger global scramble; CERT-In flags vulnerabilities",
+          "url": "https://timesofindia.indiatimes.com/business/international-business/php-security-flaws-trigger-global-scramble/articleshow/135127762.cms"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Race to update services' computer systems after cyber-security flaw found",
+          "url": "https://www.bbc.co.uk/news/articles/c9j34zgmkxx1o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "AI discovered a massive cyber-security flaw - here's what happened",
+          "url": "https://www.bbc.co.uk/news/videos/cq0ld7e0jg2eo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "What is PHP and why did it spark a global cyber-security scramble?",
+          "url": "https://www.bbc.co.uk/news/articles/c3qjnwye0ep5o?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "France reports first known human case of livestock Shamonda virus",
+      "section": "world",
+      "category": "health",
+      "tier_requested": "notable",
+      "article_ids": [
+        224,
+        252,
+        299
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        224,
+        252,
+        299
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": true,
+      "wiki_event": "France reports the first human case of the livestock Shamonda virus in a patient who died after being hospitalized with an unrelated condition.",
+      "weight": 5,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "Shamonda virus detected in human for first time in France",
+          "url": "https://www.theguardian.com/world/2026/oct/22/shamonda-virus-detected-in-human-first-time-france"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "First human case of Shamonda virus detected in France, officials say",
+          "url": "https://www.bbc.co.uk/news/articles/c6reyx1d9ge9o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "What is Shamonda virus? How is it transmitted? ECDC monitoring situation as France reports first, rare human case",
+          "url": "https://www.livemint.com/news/world/what-is-shamonda-virus-how-is-it-transmitted-ecdc-monitoring-situation-as-france-reports-first-rare-human-case-11792662280261.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "International Criminal Court awarded EU Sakharov Prize amid US sanctions",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        35,
+        124
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        35,
+        124
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": true,
+      "wiki_event": "The European Parliament awards its 2026 Sakharov Prize to the International Criminal Court and its officials for their work in global justice and upholding international law.",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "US-sanctioned ICC wins Sakharov Prize, EU’s top human rights award",
+          "url": "https://www.aljazeera.com/news/2026/10/22/us-sanctioned-icc-wins-sakharov-prize-eus-top-human-rights-award?traffic_source=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Targeted by Trump, International Criminal Court wins top EU rights prize",
+          "url": "https://www.france24.com/en/targeted-by-trump-international-criminal-court-wins-top-eu-rights-prize"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "PM Modi calls for global governance reforms at NDTV World Summit",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "lead",
+      "article_ids": [
+        134,
+        170,
+        174,
+        181,
+        191,
+        205
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        134,
+        170,
+        174,
+        181,
+        191,
+        205
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 4,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "NDTV",
+          "title": "NDTV World Summit | \"US Protecting Its Interest\": S Jaishankar On Donald Trump's Oil Deal With Russia",
+          "url": "https://www.ndtv.com/india-news/us-protecting-its-interest-s-jaishankar-on-donald-trumps-oil-deal-with-russia-at-ndtv-world-summit-12222465#publisher=newsstand"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "PM Modi calls for stronger global institutions; takes ‘failed product’ jab at Cong",
+          "url": "https://timesofindia.indiatimes.com/india/pm-modi-calls-for-stronger-global-institutions-takes-failed-product-jab-at-congress/articleshow/135123081.cms"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "PM Modi says Congress tarnishes India's image abroad: 'They seek intervention in internal affairs'",
+          "url": "https://www.hindustantimes.com/india-news/pm-modi-says-congress-rahul-gandhi-tarnishes-indias-image-abroad-they-seek-intervention-in-internal-affairs-101792684214760.html"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "\"UN's Limits Clearly Visible\": PM Modi Presses For 'New Solutions' At NDTV Summit",
+          "url": "https://www.ndtv.com/india-news/uns-limits-clearly-visible-pm-modi-presses-for-new-solutions-at-ndtv-summit-12222008#publisher=newsstand"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "NDTV World Summit 2026 Highlights: \"Trade, Technology, Sea Routes, Being Weaponised Today\": PM Modi",
+          "url": "https://www.ndtv.com/world-news/ndtv-world-summit-2026-live-updates-narendra-modi-s-jaishankar-nikhil-kamath-a-world-between-orders-12218006#publisher=newsstand"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 1
+    },
+    {
+      "headline_hint": "Indian national killed in Houthi attack in Saudi Arabia as India assists stranded pilgrims",
+      "section": "india",
+      "category": "conflict",
+      "tier_requested": "major",
+      "article_ids": [
+        41,
+        82,
+        158,
+        242,
+        256,
+        262,
+        264,
+        270,
+        275,
+        286,
+        328
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        41,
+        82,
+        158,
+        242,
+        256,
+        262,
+        264,
+        270,
+        275,
+        286,
+        328
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 8,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 10,
+      "weight_terms": {
+        "distinct_outlets": 8,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "NDTV",
+          "title": "Around 3,000 Stranded Umrah Pilgrims Return From Saudi Over Past Week: Ministry",
+          "url": "https://www.ndtv.com/india-news/3-000-stranded-umrah-pilgrims-return-from-saudi-over-past-week-ministry-12222828#publisher=newsstand"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Indian dies in Saudi airport strike; MEA slams infrastructure attacks",
+          "url": "https://timesofindia.indiatimes.com/world/middle-east/indian-dies-in-saudi-airport-strike-mea-slams-infrastructure-attacks/articleshow/135127058.cms"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "Indian missions in Saudi Arabia working to facilitate early return of stranded pilgrims",
+          "url": "https://www.thehindu.com/news/national/indian-embassy-engaging-with-airlines-for-early-return-of-affected-pilgrims-from-saudi-arabia-mea/article71611708.ece"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Houthis say they tried to rescue 14 Indians from boat in Red Sea, allege attack by Saudi Arabia",
+          "url": "https://www.hindustantimes.com/india-news/yemens-houthis-say-they-are-rescuing-14-indians-from-boat-attacked-by-saudi-in-red-sea-101792675725055.html"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Two killed in Houthi attack on airport in eastern Saudi Arabia, authorities say",
+          "url": "https://www.bbc.co.uk/news/articles/cqwy71ww156ro?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 6
+    },
+    {
+      "headline_hint": "PM Modi and Polish PM Donald Tusk agree to deepen ties and address Ukraine war impact",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        60,
+        232
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        60,
+        232
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "Will back all meaningful efforts for Ukraine peace, PM Modi assures Poland's Tusk",
+          "url": "https://timesofindia.indiatimes.com/india/will-back-all-meaningful-efforts-for-ukraine-peace-pm-modi-assures-polands-tusk/articleshow/135127542.cms"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "PM Modi, Polish PM Donald Tusk agree to deepen cooperation in defence, space, nuclear energy",
+          "url": "https://www.hindustantimes.com/india-news/pm-modi-polish-pm-donald-tusk-agree-to-deepen-cooperation-in-defence-space-nuclear-energy-101792680682565.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Lok Sabha Speaker Om Birla says fresh motion regarding CEC Gyanesh Kumar will be examined per rules",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        80,
+        203,
+        204,
+        237
+      ],
+      "verdict": "cut:below_floor(2<5)",
+      "valid_ids": [
+        80,
+        203,
+        204,
+        237
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 2,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "Will decide on any notice to remove CEC according to rules: LS Speaker Om Birla",
+          "url": "https://timesofindia.indiatimes.com/india/will-decide-on-any-notice-to-remove-cec-according-to-rules-lok-sabha-speaker-om-birla/articleshow/135127057.cms"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Cong is fine when it wins, blames BJP and EC when it loses: Bhupender Yadav",
+          "url": "https://www.hindustantimes.com/india-news/cong-is-fine-when-it-wins-blames-bjp-and-ec-when-it-loses-bhupender-yadav-101792684045700.html"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "CEC impeachment: Birla says fresh motion will be examined as per rules",
+          "url": "https://timesofindia.indiatimes.com/india/cec-impeachment-speaker-om-birla-says-fresh-motion-against-gyanesh-kumar-will-be-examined-as-per-rules/articleshow/135122265.cms"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Any fresh impeachment motion to remove CEC Gyanesh Kumar will follow due process: Om Birla",
+          "url": "https://www.hindustantimes.com/india-news/any-fresh-impeachment-motion-to-remove-cec-gyanesh-kumar-will-follow-due-process-says-om-birla-101792679545771.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Power department workers in Haryana go on strike over privatization, causing severe outages",
+      "section": "india",
+      "category": "economy",
+      "tier_requested": "notable",
+      "article_ids": [
+        123,
+        165,
+        168,
+        178,
+        222
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        123,
+        165,
+        168,
+        178,
+        222
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "NDTV",
+          "title": "Gurugram Plunges Into Darkness As Electricity Workers Go On Strike",
+          "url": "https://www.ndtv.com/india-news/gurugram-faridabad-plunge-into-darkness-as-power-workers-strike-against-privatisation-12222486#publisher=newsstand"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Power supply hit in Gurugram, Faridabad and Nuh as workers strike over privatisation",
+          "url": "https://www.hindustantimes.com/india-news/power-supply-hit-in-gurugram-faridabad-and-nuh-as-workers-strike-over-privatisation-101792687493983.html"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "No power, water in Gurugram, Faridabad, Nuh; 3,000 complaints filed in 12 hours | Why is Haryana in the dark?",
+          "url": "https://www.livemint.com/news/india/no-power-water-in-gurugram-faridabad-nuh-3-000-complaints-filed-in-12-hours-why-is-haryana-in-the-dark-11792688305908.html"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Power department staff begins 3-day strike against private discom in Gurugram, Nuh",
+          "url": "https://www.hindustantimes.com/india-news/power-department-staff-begins-3-day-strike-against-private-discom-in-gurugram-nuh-101792679451873.html"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Haryana Electricity Strike Latest News: Gurugram faces power cuts; state govt to challenge HERC order | Top updates",
+          "url": "https://www.livemint.com/news/india/haryana-electricity-strike-latest-news-gurugram-faces-power-cuts-state-govt-to-challenge-herc-order-top-updates-11792678732912.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Sonam Wangchuk accuses Centre of breaking trust after cancelled Ladakh talks",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        141,
+        255
+      ],
+      "verdict": "cut:below_floor(2<5)",
+      "valid_ids": [
+        141,
+        255
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 2,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "Centre betrayed us, now want full statehood for Ladakh: Sonam Wangchuk",
+          "url": "https://timesofindia.indiatimes.com/india/sonam-wangchuk-accuses-centre-of-betraying-ladakh-groups-alleges-backtracking-on-may-understanding/articleshow/135125435.cms"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "‘Deprived of democracy’: Wangchuk says cancelled home ministry meeting has broken Ladakh’s trust",
+          "url": "https://www.hindustantimes.com/india-news/deprived-of-democracy-wangchuk-says-cancelled-home-ministry-meeting-has-broken-ladakh-s-trust-101792676840485.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Six killed and dozens injured as passenger bus collides with tree in Chhattisgarh",
+      "section": "india",
+      "category": "disaster",
+      "tier_requested": "notable",
+      "article_ids": [
+        223,
+        229
+      ],
+      "verdict": "cut:below_floor(2<5)",
+      "valid_ids": [
+        223,
+        229
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 2,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Hindustan Times",
+          "title": "At least 6 killed, 40 injured as passenger bus crashes into tree in Chhattisgarh’s MCB district",
+          "url": "https://www.hindustantimes.com/india-news/at-least-6-killed-40-injured-as-passenger-bus-crashes-into-tree-in-chhattisgarh-s-mcb-district-101792681703639.html"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "6 Killed, 40 Injured As Bus Crashes Into Tree In Chhattisgarh",
+          "url": "https://www.ndtv.com/india-news/6-killed-40-injured-as-bus-crashes-into-tree-in-chhattisgarhs-manendragarh-chirmiri-bharatpur-12221250#publisher=newsstand"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    }
+  ]
+}
