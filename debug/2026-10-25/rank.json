@@ -1,0 +1,706 @@
+{
+  "dials": {
+    "WEIGHT_FLOOR": 5,
+    "TIER_WEIGHT": {
+      "lead": 4,
+      "major": 2,
+      "notable": 0
+    },
+    "WIKI_BONUS": 2,
+    "HARD_CAP": 12,
+    "MIN_STORIES_IF_ANY": 3,
+    "MAX_ARTICLES_PER_STORY": 5
+  },
+  "floor_relaxed": false,
+  "kept_weights": [
+    13,
+    9,
+    8,
+    7,
+    6,
+    7
+  ],
+  "per_section": {
+    "world": 5,
+    "india": 1
+  },
+  "clusters": [
+    {
+      "headline_hint": "Mass protests and clashes erupt across France and wider Europe over cost of living",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "lead",
+      "article_ids": [
+        17,
+        20,
+        25,
+        29,
+        38,
+        51,
+        69,
+        76,
+        85,
+        100,
+        110,
+        116,
+        123,
+        138,
+        140,
+        142,
+        170,
+        185,
+        218,
+        223,
+        244,
+        250
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        17,
+        20,
+        25,
+        29,
+        38,
+        51,
+        69,
+        76,
+        85,
+        100,
+        110,
+        116,
+        123,
+        138,
+        140,
+        142,
+        170,
+        185,
+        218,
+        223,
+        244,
+        250
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 7,
+      "wiki_backed": true,
+      "wiki_event": "About 110,000 protesters march in Paris, France.",
+      "weight": 13,
+      "weight_terms": {
+        "distinct_outlets": 7,
+        "tier_weight": 4,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "NPR World",
+          "title": "Protests roil France once again as police seek to quell violence",
+          "url": "https://www.npr.org/2026/10/24/nx-s1-6014520/protests-roil-france-once-again-as-police-seek-to-quell-violence"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Almost 1,000 arrested as clashes follow another day of mass protests across France",
+          "url": "https://www.bbc.co.uk/news/articles/c95ynd587ynzo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "'The marches went well' – French government on demonstrations a week after looting and violence",
+          "url": "https://www.france24.com/en/france/20261024-the-marches-went-well-%E2%80%93-french-government-on-demonstrations-a-week-after-looting-and-violence"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "Thousands protest in Italy under heavy security",
+          "url": "https://www.channelnewsasia.com/world/thousands-protest-in-italy-under-heavy-security-6489781"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Hundreds of thousands march in France as protests take place across Europe – as it happened",
+          "url": "https://www.theguardian.com/world/live/2026/oct/24/france-demonstrations-police-macron-italy-albania-belgium-spain-ukraine-russia-europe-latest-news"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 17
+    },
+    {
+      "headline_hint": "Lula and Bolsonaro draw massive crowds in final rallies ahead of tight Brazil presidential election run-off",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        2,
+        9,
+        10,
+        19,
+        155,
+        173,
+        288
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        2,
+        9,
+        10,
+        19,
+        155,
+        173,
+        288
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 6,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "BBC World",
+          "title": "Who are the candidates in Brazil's presidential election?",
+          "url": "https://www.bbc.co.uk/news/videos/cm0e0del4jewo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Brazil’s Lula, Bolsonaro draw thousands to election-eve rallies",
+          "url": "https://www.aljazeera.com/news/2026/10/24/brazils-lula-bolsonaro-draw-thousands-to-election-eve-rallies?traffic_source=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "More than one million Lula supporters rally on eve of Brazilian election runoff",
+          "url": "https://www.theguardian.com/world/2026/oct/24/lula-da-silva-supporters-rally-eve-brazil-election-runoff-bolsonaro"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "As Brazil votes again, Lula remains a crucial bulwark against Trump in the region",
+          "url": "https://scroll.in/article/1096603/as-brazil-votes-again-lula-remains-a-crucial-bulwark-against-trump-in-the-region?utm_source=rss&utm_medium=public"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Brazil’s candidates hold final rallies before knife-edge run off",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/10/24/brazils-candidates-hold-final-rallies-before-knife-edge-run-off?traffic_source=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 2
+    },
+    {
+      "headline_hint": "Israeli military places occupied West Bank on lockdown and demolishes Hebron homes following attack",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "major",
+      "article_ids": [
+        34,
+        133,
+        137,
+        167,
+        197,
+        211,
+        225
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        34,
+        133,
+        137,
+        167,
+        197,
+        211,
+        225
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": true,
+      "wiki_event": "The Israeli military raids 15 cities in the occupied West Bank, arresting several Palestinians and destroying a three-storey building in Hebron.",
+      "weight": 8,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "Could Israel’s military crackdown influence Tuesday’s election?",
+          "url": "https://www.aljazeera.com/video/inside-story/2026/10/24/could-israels-military-crackdown-influence-tuesdays-election?traffic_source=rss"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Palestinian families displaced as Israeli forces demolish Hebron homes",
+          "url": "https://www.bbc.co.uk/news/articles/cqd09k1k7532o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Israel begins demolitions in West Bank",
+          "url": "https://www.france24.com/en/israel-begins-demolitions-in-west-bank"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Israeli soldiers raze neighbourhood in Hebron, driving families from homes",
+          "url": "https://www.theguardian.com/world/2026/oct/24/israel-soldiers-raze-west-bank-neighbourhood-hebron-families-from-homes"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "More than 2,000 forced from homes in Hebron amid Israel’s West Bank raids",
+          "url": "https://www.aljazeera.com/news/2026/10/24/more-than-2000-forced-from-homes-in-hebron-amid-israels-west-bank-raids?traffic_source=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 2
+    },
+    {
+      "headline_hint": "Gunmen attack Greek Orthodox church during funeral in Jordan, killing nine",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "major",
+      "article_ids": [
+        198,
+        242,
+        260
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        198,
+        242,
+        260
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 3,
+      "wiki_backed": true,
+      "wiki_event": "Two people succumb to their injuries sustained the day before during a mass shooting at a Greek Orthodox Church in Karak Governorate, Jordan, bringing the toll to nine killed and 40 injured.",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "Nine killed and 40 injured after gunmen open fire at church funeral in Jordan",
+          "url": "https://www.theguardian.com/world/2026/oct/24/seven-killed-and-40-injured-after-gunmen-open-fire-at-church-funeral-in-jordan"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "Gunmen open fire at a church during a funeral in Jordan, killing 7 and wounding 40",
+          "url": "https://www.npr.org/2026/10/24/nx-s1-6015414/shooting-church-jordan"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "India condemns ‘heinous’ attack that killed 8 in Jordan church, reaffirms ‘fight against terrorism’",
+          "url": "https://www.hindustantimes.com/india-news/india-condemns-heinous-attack-that-killed-7-in-jordan-church-reaffirms-fight-against-terrorism-101792836452822.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Ukraine military restores Starlink satellite connection after week of service disruptions",
+      "section": "world",
+      "category": "technology",
+      "tier_requested": "major",
+      "article_ids": [
+        14,
+        15,
+        65,
+        81,
+        111,
+        199,
+        237
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        14,
+        15,
+        65,
+        81,
+        111,
+        199,
+        237
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 7,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 9,
+      "weight_terms": {
+        "distinct_outlets": 7,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Channel News Asia",
+          "title": "Ukraine says Starshield back to normal, Musk says Kyiv violated terms",
+          "url": "https://www.channelnewsasia.com/world/ukraine-says-starshield-back-normal-musk-says-kyiv-violated-terms-6489801"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Ukraine’s military says Starlink satellite connection stable after recent restrictions",
+          "url": "https://www.theguardian.com/world/2026/oct/24/ukraine-zelenskyy-military-starlink-satellite-connection-stable-after-restrictions"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "US administrations asked Musk to switch Starlink on or off in multiple countries: Report",
+          "url": "https://www.livemint.com/news/us-news/us-administrations-asked-musk-to-switch-starlink-on-or-off-in-multiple-countries-report-11792865515038.html"
+        },
+        {
+          "outlet": "France 24",
+          "title": "“Witkoff should step down” says Ukraine Committee Chief",
+          "url": "https://www.france24.com/en/tv-shows/spotlight/20261024-witkoff-should-step-down-says-ukraine-committee-chief"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "Ukraine says Starlink is back to normal after disruptions",
+          "url": "https://www.npr.org/2026/10/24/nx-s1-6015482/ukraine-starlink-working-after-disruptions"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 2
+    },
+    {
+      "headline_hint": "Houthis launch fresh missile attacks targeting Saudi Arabia and Yemen's Aden",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "notable",
+      "article_ids": [
+        22,
+        115
+      ],
+      "verdict": "cut:below_floor(2<5)",
+      "valid_ids": [
+        22,
+        115
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 2,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "Houthis launch attacks on Saudi Arabia and Yemen’s Aden",
+          "url": "https://www.aljazeera.com/news/2026/10/24/houthis-launch-attacks-on-saudi-arabia-and-yemens-aden?traffic_source=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Yemen's Houthi rebels claim new attacks on oil facilities and airports across Saudi Arabia",
+          "url": "https://www.france24.com/en/middle-east/20261024-yemen-s-houthi-rebels-claim-new-attacks-on-oil-facilities-and-airports-across-saudi-arabia"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Kim Jong Un crosses new border bridge into China to deepen bilateral ties",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        47,
+        109,
+        213
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        47,
+        109,
+        213
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Channel News Asia",
+          "title": "North Korea's Kim returns home after visit to Chinese border city",
+          "url": "https://www.channelnewsasia.com/east-asia/north-koreas-kim-returns-home-after-visit-chinese-border-city-6489741"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Kim Jong Un crosses new bridge linking North Korea and China",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/10/24/kim-jong-un-crosses-new-bridge-linking-north-korea-and-china?traffic_source=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Kim Jong-un crosses newly opened bridge into China",
+          "url": "https://www.theguardian.com/world/2026/oct/24/kim-jong-un-crosses-newly-opened-bridge-into-china"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "US eases tariffs on select Canadian imports ahead of upcoming midterm elections",
+      "section": "world",
+      "category": "economy",
+      "tier_requested": "notable",
+      "article_ids": [
+        301,
+        310
+      ],
+      "verdict": "cut:below_floor(2<5)",
+      "valid_ids": [
+        301,
+        310
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 2,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Livemint",
+          "title": "US ends tariffs on some Canadian products, replaces them with others amid tight mid-term race for Susan Collin in Maine",
+          "url": "https://www.livemint.com/news/us-news/us-ends-tariffs-on-some-canadian-products-amid-tight-mid-term-race-for-republican-susan-collin-11792807945270.html"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "White House lifts tariffs on some Canadian goods as midterm elections loom",
+          "url": "https://www.bbc.co.uk/news/articles/c60qk573yzz8o?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Severe cyclonic storm brewing in Bay of Bengal prompts red alerts and causes heavy rainfall across South India",
+      "section": "india",
+      "category": "disaster",
+      "tier_requested": "lead",
+      "article_ids": [
+        31,
+        46,
+        56,
+        182,
+        262,
+        306
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        31,
+        46,
+        56,
+        182,
+        262,
+        306
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 4,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "The Hindu",
+          "title": "IMD warns of heavy rainfall over several T.N. districts; red alert for five districts in Keralam | Live",
+          "url": "https://www.thehindu.com/news/national/bay-of-bengal-weather-update-cyclone-alert-latest-weather-news-live-updates-october-24-2026/article71619022.ece"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Landslides rock Tamil Nadu's Nilgiris and Coimbatore as house gets washed away, bus driver dies",
+          "url": "https://www.hindustantimes.com/india-news/landslides-rock-tamil-nadus-nilgiris-and-coimbatore-as-house-gets-washed-away-bus-driver-dies-101792852744832.html"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "IMD alert for today: Cyclone brewing in Bay of Bengal; heavy rain forecasted for Tamil Nadu, Karnataka",
+          "url": "https://www.livemint.com/news/india/imd-alert-for-today-cyclone-brewing-in-bay-of-bengal-heavy-rain-forecasted-for-tamil-nadu-karnataka-11792804261071.html"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "Andhra Pradesh braces for very severe cyclonic storm; landfall likely between Bapatla and Vizag on October 28",
+          "url": "https://www.thehindu.com/news/national/andhra-pradesh/andhra-pradesh-braces-for-very-severe-cyclonic-storm-landfall-likely-between-bapatla-and-vizag-on-october-28/article71621095.ece"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "Heavy rain to hit Chennai, northern, delta and western districts on Sunday",
+          "url": "https://www.thehindu.com/news/cities/chennai/heavy-rain-to-hit-chennai-northern-delta-and-western-districts-on-sunday/article71620782.ece"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 1
+    },
+    {
+      "headline_hint": "Election Commission orders repoll and action against officials over voter list discrepancies in UP",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        41,
+        52,
+        61,
+        75,
+        134
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        41,
+        52,
+        61,
+        75,
+        134
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "The Hindu",
+          "title": "Amid outcry, poll body orders re-poll at three polling stations under Agra Teachers MLC seat",
+          "url": "https://www.thehindu.com/news/national/uttar-pradesh/amid-outcry-poll-body-orders-re-poll-at-three-polling-stations-under-agra-teachers-mlc-seat/article71620432.ece"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "Same Name Appears 10 Times On Voter Roll. 5 UP Poll Officials Get Notices",
+          "url": "https://www.ndtv.com/india-news/same-name-appears-10-times-on-azamgarh-voter-roll-5-up-poll-officials-get-notices-12231409#publisher=newsstand"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Voter's name appears 11 times in Azamgarh rolls, ECI orders action against 9 officials in UP",
+          "url": "https://www.hindustantimes.com/india-news/voters-name-appears-11-times-in-azamgarh-rolls-eci-orders-action-against-9-officials-in-up-101792861362515.html"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "Six election officials removed in U.P. after SP flags voter list errors",
+          "url": "https://www.thehindu.com/news/national/uttar-pradesh/six-election-officials-removed-in-up-after-sp-flags-voter-list-errors/article71621307.ece"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "Repolling At 3 Booths In Agra Tomorrow For Legislative Council Polls",
+          "url": "https://www.ndtv.com/india-news/repolling-at-3-booths-in-agra-tomorrow-for-legislative-council-polls-12231370#publisher=newsstand"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Jamia Millia Islamia moves classes online following sustained student hunger strikes and protests",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        181,
+        216,
+        224,
+        271
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        181,
+        216,
+        224,
+        271
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Livemint",
+          "title": "Hunger strike, suspensions and protest for a union: Why has Jamia shifted classes online? Students speak out | Exclusive",
+          "url": "https://www.livemint.com/news/india/hunger-strike-suspensions-and-protest-for-a-union-why-has-jamia-shifted-classes-online-students-speak-out-exclusive-11792849099017.html"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "Jamia Millia Islamia shifts classes online on 13th day of students’ protest",
+          "url": "https://scroll.in/latest/1096624/jamia-millia-islamia-shifts-classes-online-on-13th-day-of-students-protest?utm_source=rss&utm_medium=public"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Demand for students' union, row over ‘slogans’ trigger tensions in Jamia Millia Islamia",
+          "url": "https://www.hindustantimes.com/india-news/demand-for-students-union-row-over-slogans-jamia-millia-islamia-to-shift-classes-online-protest-news-101792837745742.html"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Jamia Millia Islamia moves classes online, cites ‘safety of students' amid ongoing protests",
+          "url": "https://www.hindustantimes.com/india-news/jamia-millia-islamia-delhi-moves-classes-online-amid-row-over-slogans-raised-at-protest-101792832434116.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Violence escalates in Arunachal Pradesh as anti-dam protesters clash with police and vandalize office",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        118,
+        222,
+        277
+      ],
+      "verdict": "cut:below_floor(2<5)",
+      "valid_ids": [
+        118,
+        222,
+        277
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 2,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "NDTV",
+          "title": "Anti-Dam Violence Spirals In Arunachal, Chief Minister Renews Offer Of Talks",
+          "url": "https://www.ndtv.com/india-news/anti-dam-violence-spirals-in-arunachal-chief-minister-renews-offer-of-talks-12231235#publisher=newsstand"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "Arunachal: Anti-dam protesters vandalise NHPC office, police station after tear gas fired",
+          "url": "https://scroll.in/latest/1096620/arunachal-anti-dam-protesters-vandalise-nhpc-office-police-station-after-tear-gas-fired?utm_source=rss&utm_medium=public"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "‘Threats, detentions, militarisation’: How Arunachal government is choking anti-dam protests",
+          "url": "https://scroll.in/article/1096598/threats-detentions-militarisation-how-arunachal-government-is-choking-anti-dam-protests?utm_source=rss&utm_medium=public"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    }
+  ]
+}

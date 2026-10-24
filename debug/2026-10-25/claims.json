@@ -1,0 +1,852 @@
+{
+  "min_claim_chars": 20,
+  "max_claims_per_story": 24,
+  "calls": [
+    {
+      "label": "claims-world",
+      "cluster_ids": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "label": "claims-india",
+      "cluster_ids": [
+        5
+      ]
+    }
+  ],
+  "rejected_claims": 0,
+  "rejected_clusters": 0,
+  "clusters": [
+    {
+      "cluster_id": 0,
+      "headline_hint": "Mass protests and clashes erupt across France and wider Europe over cost of living",
+      "section": "world",
+      "batch_position": 0,
+      "claim_count": 14,
+      "distinct_outlets": 3,
+      "source_kinds": {
+        "fulltext": 14
+      },
+      "claims": [
+        {
+          "id": 1,
+          "cluster_id": 0,
+          "text": "Nearly 1,000 arrests were made across France as hundreds of thousands protested on Saturday, according to French officials.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c95ynd587ynzo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 2,
+          "cluster_id": 0,
+          "text": "The French interior ministry estimated that 410,000 people protested on Saturday, while trade unions reported about 800,000 participants.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c95ynd587ynzo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 3,
+          "cluster_id": 0,
+          "text": "French authorities deployed 70,000 police officers across several cities to manage protests over the cost of living and school conditions.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c95ynd587ynzo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 4,
+          "cluster_id": 0,
+          "text": "French President Emmanuel Macron decreed that only demonstrations organised by recognised trade unions would be permitted.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c95ynd587ynzo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 5,
+          "cluster_id": 0,
+          "text": "French Interior Minister Laurent Nuñez stated that two people were seriously injured during Saturday's protests, in Toulouse and Clermont-Ferrand.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c95ynd587ynzo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 6,
+          "cluster_id": 0,
+          "text": "Riot police in Tirana, Albania, fired tear gas to disperse thousands of anti-government demonstrators on Saturday.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c95ynd587ynzo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 7,
+          "cluster_id": 0,
+          "text": "Around 550,000 people participated in demonstrations across France the previous weekend, resulting in more than 2,500 arrests.",
+          "kind": "background",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c95ynd587ynzo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 8,
+          "cluster_id": 0,
+          "text": "French authorities imposed partial curfews in certain urban zones of Paris and other cities.",
+          "kind": "event",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/france/20261024-the-marches-went-well-%E2%80%93-french-government-on-demonstrations-a-week-after-looting-and-violence",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 9,
+          "cluster_id": 0,
+          "text": "Major Paris museums, including the Louvre and the Musée d'Orsay, closed on Saturday ahead of scheduled protests.",
+          "kind": "event",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/france/20261024-the-marches-went-well-%E2%80%93-french-government-on-demonstrations-a-week-after-looting-and-violence",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 10,
+          "cluster_id": 0,
+          "text": "The main Paris protest march drew between 110,000 and 250,000 attendees according to authority and trade union estimates.",
+          "kind": "figure",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/france/20261024-the-marches-went-well-%E2%80%93-french-government-on-demonstrations-a-week-after-looting-and-violence",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 11,
+          "cluster_id": 0,
+          "text": "Interior Minister Laurent Nuñez reported a 20-year-old man had his fingers blown off in Toulouse during the protests.",
+          "kind": "event",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/france/20261024-the-marches-went-well-%E2%80%93-french-government-on-demonstrations-a-week-after-looting-and-violence",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 12,
+          "cluster_id": 0,
+          "text": "Italian police arrested nine people and briefly detained 371 others across eight cities during protests on Saturday.",
+          "kind": "figure",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/thousands-protest-in-italy-under-heavy-security-6489781",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 13,
+          "cluster_id": 0,
+          "text": "Italian police stated that 110 of the people arrested or detained during protests in Italy were minors.",
+          "kind": "figure",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/thousands-protest-in-italy-under-heavy-security-6489781",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 14,
+          "cluster_id": 0,
+          "text": "The Italian government deployed 500 soldiers to Milan following looting during protests the previous weekend.",
+          "kind": "background",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/thousands-protest-in-italy-under-heavy-security-6489781",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 1,
+      "headline_hint": "Ukraine military restores Starlink satellite connection after week of service disruptions",
+      "section": "world",
+      "batch_position": 1,
+      "claim_count": 14,
+      "distinct_outlets": 5,
+      "source_kinds": {
+        "fulltext": 14
+      },
+      "claims": [
+        {
+          "id": 15,
+          "cluster_id": 1,
+          "text": "Ukraine announced on Saturday that the Starlink satellite system and Starshield military system were restored to pre-restriction operating speeds.",
+          "kind": "event",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/ukraine-says-starshield-back-normal-musk-says-kyiv-violated-terms-6489801",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 16,
+          "cluster_id": 1,
+          "text": "SpaceX CEO Elon Musk stated on X that Ukraine's military violated Starlink terms of service by using it for offensive drone strikes.",
+          "kind": "quote",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/ukraine-says-starshield-back-normal-musk-says-kyiv-violated-terms-6489801",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 17,
+          "cluster_id": 1,
+          "text": "Ukrainian presidential adviser Serhiy Beskrestnov stated Ukraine is physically unable to use Starlink for long and medium range attack drone operations.",
+          "kind": "event",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/ukraine-says-starshield-back-normal-musk-says-kyiv-violated-terms-6489801",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 18,
+          "cluster_id": 1,
+          "text": "Ukrainian officials said previous Starshield speed caps of 160 kph hampered interception of Russian drones.",
+          "kind": "figure",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/ukraine-says-starshield-back-normal-musk-says-kyiv-violated-terms-6489801",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 19,
+          "cluster_id": 1,
+          "text": "Ukraine's defence ministry stated Starlink connectivity remained stable at speeds over 400 kph on Saturday.",
+          "kind": "figure",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/ukraine-says-starshield-back-normal-musk-says-kyiv-violated-terms-6489801",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 20,
+          "cluster_id": 1,
+          "text": "US Secretary of State Marco Rubio stated US President Donald Trump has no role in decisions made by Starlink and Starshield.",
+          "kind": "quote",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/24/ukraine-zelenskyy-military-starlink-satellite-connection-stable-after-restrictions",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 21,
+          "cluster_id": 1,
+          "text": "US President Donald Trump announced a deal to buy Russian diesel while urging Kyiv to stop striking Russian oil refineries.",
+          "kind": "background",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/24/ukraine-zelenskyy-military-starlink-satellite-connection-stable-after-restrictions",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 22,
+          "cluster_id": 1,
+          "text": "The Biden and Trump administrations repeatedly requested SpaceX to activate or restrict Starlink in various countries, according to a Reuters report.",
+          "kind": "background",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/us-news/us-administrations-asked-musk-to-switch-starlink-on-or-off-in-multiple-countries-report-11792865515038.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 23,
+          "cluster_id": 1,
+          "text": "Russia agreed to resume three-way negotiations with Washington and Kyiv next month following a US diplomatic initiative.",
+          "kind": "event",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/tv-shows/spotlight/20261024-witkoff-should-step-down-says-ukraine-committee-chief",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 24,
+          "cluster_id": 1,
+          "text": "Moscow and Kyiv agreed to a localized ceasefire around Oleshky, brokered by US First Lady Melania Trump.",
+          "kind": "event",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/tv-shows/spotlight/20261024-witkoff-should-step-down-says-ukraine-committee-chief",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 25,
+          "cluster_id": 1,
+          "text": "Ukraine's defense ministry reported Starlink and Starshield operating speeds were stable at more than 250 mph on Saturday.",
+          "kind": "figure",
+          "outlet": "NPR World",
+          "url": "https://www.npr.org/2026/10/24/nx-s1-6015482/ukraine-starlink-working-after-disruptions",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 26,
+          "cluster_id": 1,
+          "text": "Restrictions had previously capped Starlink operating speeds in Ukraine at about 100 mph.",
+          "kind": "figure",
+          "outlet": "NPR World",
+          "url": "https://www.npr.org/2026/10/24/nx-s1-6015482/ukraine-starlink-working-after-disruptions",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 27,
+          "cluster_id": 1,
+          "text": "Ukrainian forces attacked a chemical plant in the Russian city of Tolyatti on Saturday.",
+          "kind": "event",
+          "outlet": "NPR World",
+          "url": "https://www.npr.org/2026/10/24/nx-s1-6015482/ukraine-starlink-working-after-disruptions",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 28,
+          "cluster_id": 1,
+          "text": "A Russian drone struck a residential building in Kyiv's Obolon District on Saturday, causing a fire.",
+          "kind": "event",
+          "outlet": "NPR World",
+          "url": "https://www.npr.org/2026/10/24/nx-s1-6015482/ukraine-starlink-working-after-disruptions",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 2,
+      "headline_hint": "Israeli military places occupied West Bank on lockdown and demolishes Hebron homes following attack",
+      "section": "world",
+      "batch_position": 2,
+      "claim_count": 12,
+      "distinct_outlets": 3,
+      "source_kinds": {
+        "fulltext": 12
+      },
+      "claims": [
+        {
+          "id": 29,
+          "cluster_id": 2,
+          "text": "Two Israeli soldiers were killed in a shooting attack near Hebron on Friday morning.",
+          "kind": "figure",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/video/inside-story/2026/10/24/could-israels-military-crackdown-influence-tuesdays-election?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 30,
+          "cluster_id": 2,
+          "text": "Israel initiated a sweeping military operation and lockdown across the occupied West Bank following the Hebron attack.",
+          "kind": "event",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/video/inside-story/2026/10/24/could-israels-military-crackdown-influence-tuesdays-election?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 31,
+          "cluster_id": 2,
+          "text": "Hebron Mayor Youssef al-Jaabari stated more than 1,000 people were displaced by Israeli demolitions in the Ein Deir Baha and Farsh al-Hawa neighbourhoods.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cqd09k1k7532o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 32,
+          "cluster_id": 2,
+          "text": "Two Palestinian gunmen killed two Israeli soldiers and injured three others at a checkpoint near Hebron before being killed.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cqd09k1k7532o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 33,
+          "cluster_id": 2,
+          "text": "Israeli Prime Minister Benjamin Netanyahu announced he reviewed plans for the largest military operation in the West Bank since 1967.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cqd09k1k7532o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 34,
+          "cluster_id": 2,
+          "text": "Israeli Finance Minister Bezalel Smotrich called for a comprehensive military campaign in the West Bank similar to operations in Gaza and Lebanon.",
+          "kind": "quote",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cqd09k1k7532o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 35,
+          "cluster_id": 2,
+          "text": "The Hebron municipality estimated 35 hectares (86 acres) were destroyed or marked for destruction in the district of Ein Deir Baha.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/24/israel-soldiers-raze-west-bank-neighbourhood-hebron-families-from-homes",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 36,
+          "cluster_id": 2,
+          "text": "Israeli Finance Minister Bezalel Smotrich filmed himself wearing body armour in front of a Palestinian building being demolished in Hebron.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/24/israel-soldiers-raze-west-bank-neighbourhood-hebron-families-from-homes",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 37,
+          "cluster_id": 2,
+          "text": "Hebron Mayor Yousef al-Ja'bari stated 2,200 people were forced from their homes by Israeli forces in Hebron.",
+          "kind": "figure",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/24/more-than-2000-forced-from-homes-in-hebron-amid-israels-west-bank-raids?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 38,
+          "cluster_id": 2,
+          "text": "Israeli Defence Minister Israel Katz confirmed about 2,000 people were displaced in Hebron.",
+          "kind": "figure",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/24/more-than-2000-forced-from-homes-in-hebron-amid-israels-west-bank-raids?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 39,
+          "cluster_id": 2,
+          "text": "Israeli forces fired a stun grenade at Al Jazeera journalists near the Farsh al-Hawa checkpoint in Hebron.",
+          "kind": "event",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/24/more-than-2000-forced-from-homes-in-hebron-amid-israels-west-bank-raids?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 40,
+          "cluster_id": 2,
+          "text": "Israeli forces arrested about 70 Palestinians during raids across at least 15 areas of the West Bank, according to the Palestinian Prisoners' Society.",
+          "kind": "figure",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/24/more-than-2000-forced-from-homes-in-hebron-amid-israels-west-bank-raids?traffic_source=rss",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 3,
+      "headline_hint": "Gunmen attack Greek Orthodox church during funeral in Jordan, killing nine",
+      "section": "world",
+      "batch_position": 3,
+      "claim_count": 9,
+      "distinct_outlets": 3,
+      "source_kinds": {
+        "fulltext": 9
+      },
+      "claims": [
+        {
+          "id": 41,
+          "cluster_id": 3,
+          "text": "Nine people were killed when gunmen opened fire at a funeral at St George's Greek Orthodox church in Hamoud, Jordan.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/24/seven-killed-and-40-injured-after-gunmen-open-fire-at-church-funeral-in-jordan",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 42,
+          "cluster_id": 3,
+          "text": "Jordan's health minister reported 40 people were injured in the shooting at St George's Greek Orthodox church.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/24/seven-killed-and-40-injured-after-gunmen-open-fire-at-church-funeral-in-jordan",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 43,
+          "cluster_id": 3,
+          "text": "Security camera footage showed three attackers firing at the church entrance while taking cover behind trees and a low wall.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/24/seven-killed-and-40-injured-after-gunmen-open-fire-at-church-funeral-in-jordan",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 44,
+          "cluster_id": 3,
+          "text": "Jordanian Prime Minister Jafar Hassan stated on X that the church attack was the result of a terrorist ideology and blind extremism.",
+          "kind": "quote",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/24/seven-killed-and-40-injured-after-gunmen-open-fire-at-church-funeral-in-jordan",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 45,
+          "cluster_id": 3,
+          "text": "King Abdullah II visited Karak following the attack and promised the perpetrators would be punished with an iron fist.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/24/seven-killed-and-40-injured-after-gunmen-open-fire-at-church-funeral-in-jordan",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 46,
+          "cluster_id": 3,
+          "text": "St George's Greek Orthodox church is located in Karak, about 90 kilometers south of Jordan's capital, Amman.",
+          "kind": "background",
+          "outlet": "NPR World",
+          "url": "https://www.npr.org/2026/10/24/nx-s1-6015414/shooting-church-jordan",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 47,
+          "cluster_id": 3,
+          "text": "Jordan declared three days of national mourning following the church attack in Karak.",
+          "kind": "event",
+          "outlet": "NPR World",
+          "url": "https://www.npr.org/2026/10/24/nx-s1-6015414/shooting-church-jordan",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 48,
+          "cluster_id": 3,
+          "text": "Reuters updated the death toll from the church shooting in Karak, Jordan, to eight people killed.",
+          "kind": "figure",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/india-condemns-heinous-attack-that-killed-7-in-jordan-church-reaffirms-fight-against-terrorism-101792836452822.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 49,
+          "cluster_id": 3,
+          "text": "Indian External Affairs Minister S Jaishankar condemned the church attack in Jordan and expressed solidarity with the Jordanian government and people.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/india-condemns-heinous-attack-that-killed-7-in-jordan-church-reaffirms-fight-against-terrorism-101792836452822.html",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 4,
+      "headline_hint": "Lula and Bolsonaro draw massive crowds in final rallies ahead of tight Brazil presidential election run-off",
+      "section": "world",
+      "batch_position": 4,
+      "claim_count": 10,
+      "distinct_outlets": 4,
+      "source_kinds": {
+        "fulltext": 10
+      },
+      "claims": [
+        {
+          "id": 50,
+          "cluster_id": 4,
+          "text": "Senator Flávio Bolsonaro defeated incumbent President Luiz Inácio Lula da Silva in the first round of Brazil's presidential election on October 4.",
+          "kind": "background",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/videos/cm0e0del4jewo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 51,
+          "cluster_id": 4,
+          "text": "Flávio Bolsonaro is the son of imprisoned former Brazilian president Jair Bolsonaro.",
+          "kind": "background",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/videos/cm0e0del4jewo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 52,
+          "cluster_id": 4,
+          "text": "President Luiz Inácio Lula da Silva addressed supporters at Copacabana Beach in Rio de Janeiro on the final day of campaigning.",
+          "kind": "event",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/24/brazils-lula-bolsonaro-draw-thousands-to-election-eve-rallies?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 53,
+          "cluster_id": 4,
+          "text": "Flávio Bolsonaro received 47 percent of the vote in the first round of Brazil's election, compared to Lula's 45 percent.",
+          "kind": "figure",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/24/brazils-lula-bolsonaro-draw-thousands-to-election-eve-rallies?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 54,
+          "cluster_id": 4,
+          "text": "A CNT/MDA survey released on Saturday showed Flávio Bolsonaro leading with 46.3 percent against Lula's 45 percent.",
+          "kind": "figure",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/24/brazils-lula-bolsonaro-draw-thousands-to-election-eve-rallies?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 55,
+          "cluster_id": 4,
+          "text": "Former Brazilian President Jair Bolsonaro is serving a 27-year prison sentence for attempting a coup after losing the 2022 election.",
+          "kind": "background",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/24/brazils-lula-bolsonaro-draw-thousands-to-election-eve-rallies?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 56,
+          "cluster_id": 4,
+          "text": "Nearly 159 million Brazilians are eligible to vote in the presidential election run-off on Sunday.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/24/lula-da-silva-supporters-rally-eve-brazil-election-runoff-bolsonaro",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 57,
+          "cluster_id": 4,
+          "text": "Rio's City Hall estimated that about 1.1 million people attended Lula's campaign rally at Copacabana beach.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/24/lula-da-silva-supporters-rally-eve-brazil-election-runoff-bolsonaro",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 58,
+          "cluster_id": 4,
+          "text": "Lula attended a large campaign rally on Paulista Avenue in São Paulo on Saturday afternoon.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/24/lula-da-silva-supporters-rally-eve-brazil-election-runoff-bolsonaro",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 59,
+          "cluster_id": 4,
+          "text": "Flávio Bolsonaro stated at campaign rallies that he will join Donald Trump's Shield of the Americas regional security initiative if elected.",
+          "kind": "background",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/article/1096603/as-brazil-votes-again-lula-remains-a-crucial-bulwark-against-trump-in-the-region?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 5,
+      "headline_hint": "Severe cyclonic storm brewing in Bay of Bengal prompts red alerts and causes heavy rainfall across South India",
+      "section": "india",
+      "batch_position": 0,
+      "claim_count": 24,
+      "distinct_outlets": 3,
+      "source_kinds": {
+        "fulltext": 24
+      },
+      "claims": [
+        {
+          "id": 60,
+          "cluster_id": 5,
+          "text": "The India Meteorological Department's Bhubaneswar Met Centre reported that a low-pressure area over the east-central and adjoining southeast Bay of Bengal persisted at 8:30 a.m. on October 23, 2026.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/bay-of-bengal-weather-update-cyclone-alert-latest-weather-news-live-updates-october-24-2026/article71619022.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 61,
+          "cluster_id": 5,
+          "text": "The IMD predicted moderate to heavy rainfall across Tamil Nadu and Puducherry until October 26.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/bay-of-bengal-weather-update-cyclone-alert-latest-weather-news-live-updates-october-24-2026/article71619022.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 62,
+          "cluster_id": 5,
+          "text": "A TNSTC bus driver was killed and the conductor was seriously injured when a mudslide and uprooted trees buried a bus near Burliar in the Nilgiris district on October 24.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/bay-of-bengal-weather-update-cyclone-alert-latest-weather-news-live-updates-october-24-2026/article71619022.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 63,
+          "cluster_id": 5,
+          "text": "Last year's cyclone Montha was classified as a severe cyclonic storm.",
+          "kind": "background",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/bay-of-bengal-weather-update-cyclone-alert-latest-weather-news-live-updates-october-24-2026/article71619022.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 64,
+          "cluster_id": 5,
+          "text": "The Odisha government announced the closure of schools and colleges in five districts on October 28 and 29 to ensure zero casualties.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/bay-of-bengal-weather-update-cyclone-alert-latest-weather-news-live-updates-october-24-2026/article71619022.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 65,
+          "cluster_id": 5,
+          "text": "Persistent heavy rains flooded the Sri Lankan Tamil refugee camp in Puliyampatti, inundating more than 100 houses.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/bay-of-bengal-weather-update-cyclone-alert-latest-weather-news-live-updates-october-24-2026/article71619022.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 66,
+          "cluster_id": 5,
+          "text": "District Collector S. Durga Moorthy visited the flooded Sri Lankan Tamil refugee camp in Puliyampatti to assess the damage.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/bay-of-bengal-weather-update-cyclone-alert-latest-weather-news-live-updates-october-24-2026/article71619022.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 67,
+          "cluster_id": 5,
+          "text": "Telangana is experiencing a rainfall deficit and drinking water shortages due to the influence of El Nino.",
+          "kind": "background",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/bay-of-bengal-weather-update-cyclone-alert-latest-weather-news-live-updates-october-24-2026/article71619022.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 68,
+          "cluster_id": 5,
+          "text": "Heavy overnight rainfall triggered landslides at more than 10 locations along the Coonoor-Mettupalayam National Highway.",
+          "kind": "figure",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/landslides-rock-tamil-nadus-nilgiris-and-coimbatore-as-house-gets-washed-away-bus-driver-dies-101792852744832.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 69,
+          "cluster_id": 5,
+          "text": "Government bus driver Janakaraj died and conductor Kesavan was injured when a landslide struck near Barliyar on the Mettupalayam-Ooty road.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/landslides-rock-tamil-nadus-nilgiris-and-coimbatore-as-house-gets-washed-away-bus-driver-dies-101792852744832.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 70,
+          "cluster_id": 5,
+          "text": "A goods vehicle transporting chickens was swept into a gorge during a landslide in Barliyar, though the driver escaped unhurt.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/landslides-rock-tamil-nadus-nilgiris-and-coimbatore-as-house-gets-washed-away-bus-driver-dies-101792852744832.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 71,
+          "cluster_id": 5,
+          "text": "Heavy rainfall in Barliyar village completely washed away a house, though its occupants escaped unharmed.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/landslides-rock-tamil-nadus-nilgiris-and-coimbatore-as-house-gets-washed-away-bus-driver-dies-101792852744832.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 72,
+          "cluster_id": 5,
+          "text": "Stranded bus passengers in the Nilgiris district were evacuated and relocated to relief camps in Coonoor.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/landslides-rock-tamil-nadus-nilgiris-and-coimbatore-as-house-gets-washed-away-bus-driver-dies-101792852744832.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 73,
+          "cluster_id": 5,
+          "text": "Nilgiris District Collector Lakshmi Bhavya Tanneeru advised the public to avoid traveling on affected roads unless for emergency purposes.",
+          "kind": "quote",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/landslides-rock-tamil-nadus-nilgiris-and-coimbatore-as-house-gets-washed-away-bus-driver-dies-101792852744832.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 74,
+          "cluster_id": 5,
+          "text": "The Nilgiris district administration set up emergency helpline 1077 for residents seeking assistance during the heavy rains.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/landslides-rock-tamil-nadus-nilgiris-and-coimbatore-as-house-gets-washed-away-bus-driver-dies-101792852744832.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 75,
+          "cluster_id": 5,
+          "text": "The Northeast monsoon has set in over Tamil Nadu, Puducherry, Karaikal, Coastal Andhra Pradesh, Rayalaseema, South Interior Karnataka, Kerala, and Mahe.",
+          "kind": "background",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/imd-alert-for-today-cyclone-brewing-in-bay-of-bengal-heavy-rain-forecasted-for-tamil-nadu-karnataka-11792804261071.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 76,
+          "cluster_id": 5,
+          "text": "The IMD warned that a low-pressure area over the south Bay of Bengal is expected to intensify into a cyclonic storm by October 26.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/imd-alert-for-today-cyclone-brewing-in-bay-of-bengal-heavy-rain-forecasted-for-tamil-nadu-karnataka-11792804261071.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 77,
+          "cluster_id": 5,
+          "text": "Coastal and western districts of West Bengal are expected to receive heavy rainfall starting October 28.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/imd-alert-for-today-cyclone-brewing-in-bay-of-bengal-heavy-rain-forecasted-for-tamil-nadu-karnataka-11792804261071.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 78,
+          "cluster_id": 5,
+          "text": "The IMD advised fisherfolk not to venture into the sea from October 26 onwards.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/imd-alert-for-today-cyclone-brewing-in-bay-of-bengal-heavy-rain-forecasted-for-tamil-nadu-karnataka-11792804261071.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 79,
+          "cluster_id": 5,
+          "text": "Thunderstorms with wind gusts reaching up to 40 km per hour are expected over all south Bengal districts starting October 28.",
+          "kind": "figure",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/imd-alert-for-today-cyclone-brewing-in-bay-of-bengal-heavy-rain-forecasted-for-tamil-nadu-karnataka-11792804261071.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 80,
+          "cluster_id": 5,
+          "text": "A very severe cyclonic storm carries maximum sustained wind speeds between 118 km/h and 221 km/h.",
+          "kind": "figure",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/andhra-pradesh/andhra-pradesh-braces-for-very-severe-cyclonic-storm-landfall-likely-between-bapatla-and-vizag-on-october-28/article71621095.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 81,
+          "cluster_id": 5,
+          "text": "During cyclone Montha, the wind speed recorded at Machilipatnam reached 65 km/h.",
+          "kind": "background",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/andhra-pradesh/andhra-pradesh-braces-for-very-severe-cyclonic-storm-landfall-likely-between-bapatla-and-vizag-on-october-28/article71621095.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 82,
+          "cluster_id": 5,
+          "text": "On Saturday evening, the depression in the Bay of Bengal lay centered about 510 km off the Andaman Islands and 820 km off the Visakhapatnam coast.",
+          "kind": "figure",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/andhra-pradesh/andhra-pradesh-braces-for-very-severe-cyclonic-storm-landfall-likely-between-bapatla-and-vizag-on-october-28/article71621095.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 83,
+          "cluster_id": 5,
+          "text": "The IMD issued a red alert for 13 districts in Andhra Pradesh for October 27 and 28.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/andhra-pradesh/andhra-pradesh-braces-for-very-severe-cyclonic-storm-landfall-likely-between-bapatla-and-vizag-on-october-28/article71621095.ece",
+          "source_kind": "fulltext"
+        }
+      ]
+    }
+  ],
+  "clusters_with_no_claims": []
+}
