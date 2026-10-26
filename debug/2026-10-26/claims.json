@@ -1,0 +1,1128 @@
+{
+  "min_claim_chars": 20,
+  "max_claims_per_story": 24,
+  "calls": [
+    {
+      "label": "claims-world",
+      "cluster_ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "label": "claims-india",
+      "cluster_ids": [
+        6,
+        7,
+        8
+      ]
+    }
+  ],
+  "rejected_claims": 0,
+  "rejected_clusters": 0,
+  "clusters": [
+    {
+      "cluster_id": 0,
+      "headline_hint": "Lula da Silva wins historic fourth term as president of Brazil, defeating Flávio Bolsonaro",
+      "section": "world",
+      "batch_position": 0,
+      "claim_count": 15,
+      "distinct_outlets": 4,
+      "source_kinds": {
+        "fulltext": 15
+      },
+      "claims": [
+        {
+          "id": 1,
+          "cluster_id": 0,
+          "text": "Luiz Inácio Lula da Silva won an unprecedented fourth term as president of Brazil on Sunday.",
+          "kind": "event",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/americas/20261026-brazil-s-president-lula-da-silva-beats-flavio-bolsonaro-to-win-re-election",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 2,
+          "cluster_id": 0,
+          "text": "Lula da Silva defeated Senator Flávio Bolsonaro, the eldest son of former President Jair Bolsonaro.",
+          "kind": "event",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/americas/20261026-brazil-s-president-lula-da-silva-beats-flavio-bolsonaro-to-win-re-election",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 3,
+          "cluster_id": 0,
+          "text": "Flávio Bolsonaro finished first in the first round of Brazil's presidential election.",
+          "kind": "background",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/americas/20261026-brazil-s-president-lula-da-silva-beats-flavio-bolsonaro-to-win-re-election",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 4,
+          "cluster_id": 0,
+          "text": "Lula da Silva was imprisoned from 2018 to 2019 on corruption charges that were later overturned.",
+          "kind": "background",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/americas/20261026-brazil-s-president-lula-da-silva-beats-flavio-bolsonaro-to-win-re-election",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 5,
+          "cluster_id": 0,
+          "text": "Lula da Silva previously served as president of Brazil between 2003 and 2011.",
+          "kind": "background",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/americas/20261026-brazil-s-president-lula-da-silva-beats-flavio-bolsonaro-to-win-re-election",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 6,
+          "cluster_id": 0,
+          "text": "Leftist federal lawmaker Erika Hilton called Lula da Silva 'a statesman, a giant' during the vote count in São Paulo.",
+          "kind": "quote",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/americas/20261026-brazil-s-president-lula-da-silva-beats-flavio-bolsonaro-to-win-re-election",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 7,
+          "cluster_id": 0,
+          "text": "Bolsonaro's Liberal Party and allied parties could control over 280 seats in Brazil's lower house and up to 50 seats in the Senate.",
+          "kind": "figure",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/americas/20261026-brazil-s-president-lula-da-silva-beats-flavio-bolsonaro-to-win-re-election",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 8,
+          "cluster_id": 0,
+          "text": "With over 78% of votes counted in Brazil's runoff, Lula da Silva led with 51.21% against Flávio Bolsonaro's 48.79%, according to Reuters live coverage.",
+          "kind": "figure",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/rest-of-world/brazils-lula-wins-re-election-defeating-trump-ally-bolsonaro/articleshow/135199956.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 9,
+          "cluster_id": 0,
+          "text": "Voting was extended nationwide in Brazil by two hours following an order by Supreme Court Justice Cristiano Zanin.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/rest-of-world/brazils-lula-wins-re-election-defeating-trump-ally-bolsonaro/articleshow/135199956.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 10,
+          "cluster_id": 0,
+          "text": "Jair Bolsonaro led Lula da Silva by more than 2.2 million votes in the first round of the presidential election.",
+          "kind": "figure",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/rest-of-world/brazils-lula-wins-re-election-defeating-trump-ally-bolsonaro/articleshow/135199956.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 11,
+          "cluster_id": 0,
+          "text": "More than 33 million of Brazil's nearly 160 million voters did not participate in the first round of the presidential election.",
+          "kind": "figure",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/rest-of-world/brazils-lula-wins-re-election-defeating-trump-ally-bolsonaro/articleshow/135199956.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 12,
+          "cluster_id": 0,
+          "text": "With nearly 99% of votes counted, 80-year-old Lula da Silva received 51.75% of the vote compared to 45-year-old Flávio Bolsonaro's 48.25%.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/live/2026/oct/25/brazil-election-runoff-live-updates-flavio-bolsonaro-lula",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 13,
+          "cluster_id": 0,
+          "text": "Pro-Bolsonaro congressman Nikolas Ferreira told journalists, 'Either we win. Or we win. You've been warned.'",
+          "kind": "quote",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/live/2026/oct/25/brazil-election-runoff-live-updates-flavio-bolsonaro-lula",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 14,
+          "cluster_id": 0,
+          "text": "Former Brazilian President Jair Bolsonaro was sentenced to 27 years in prison for plotting a coup.",
+          "kind": "background",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/brazil-pauses-presidential-vote-count-after-supreme-court-extends-voting-hours-6490261",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 15,
+          "cluster_id": 0,
+          "text": "A court in Bahia ordered the arrest of a top transportation official in Salvador over allegations of reducing election day public buses.",
+          "kind": "event",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/brazil-pauses-presidential-vote-count-after-supreme-court-extends-voting-hours-6490261",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 1,
+      "headline_hint": "Israel braces for pivotal general election as security and West Bank tensions escalate",
+      "section": "world",
+      "batch_position": 1,
+      "claim_count": 11,
+      "distinct_outlets": 2,
+      "source_kinds": {
+        "fulltext": 11
+      },
+      "claims": [
+        {
+          "id": 16,
+          "cluster_id": 1,
+          "text": "Half a million first-time voters are eligible to vote in Israel's general election, and around 70,000 Israelis are reportedly flying in from abroad to cast ballots.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/ckpdgy6pl7xlo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 17,
+          "cluster_id": 1,
+          "text": "Gadi Eisenkot, a former military chief of staff, leads the centrist Yashar party in Israel.",
+          "kind": "background",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/ckpdgy6pl7xlo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 18,
+          "cluster_id": 1,
+          "text": "Gadi Eisenkot's son was killed during the Gaza War.",
+          "kind": "background",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/ckpdgy6pl7xlo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 19,
+          "cluster_id": 1,
+          "text": "A pro-Netanyahu TV debate participant used a racist slur referring to Gadi Eisenkot as a Moroccan 'monkey'.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/ckpdgy6pl7xlo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 20,
+          "cluster_id": 1,
+          "text": "A survey indicates that over 70% of Jewish Israelis support establishing a state commission of inquiry into the October 7, 2023 attacks.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/ckpdgy6pl7xlo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 21,
+          "cluster_id": 1,
+          "text": "Arab citizens make up around one-fifth of Israel's population.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/ckpdgy6pl7xlo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 22,
+          "cluster_id": 1,
+          "text": "Billionaire American investor Bill Ackman stated that Itamar Ben-Gvir and Bezalel Smotrich should not serve in Israel's next government due to reputational damage.",
+          "kind": "event",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/billionaire-trump-backer-says-ben-gvir-smotrich-should-not-serve-in-next-israeli-government-6490701",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 23,
+          "cluster_id": 1,
+          "text": "Bill Ackman and his wife Neri Oxman own a 5 percent stake in the Tel Aviv Stock Exchange.",
+          "kind": "figure",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/billionaire-trump-backer-says-ben-gvir-smotrich-should-not-serve-in-next-israeli-government-6490701",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 24,
+          "cluster_id": 1,
+          "text": "Donald Trump publicly endorsed Benjamin Netanyahu for Prime Minister of Israel.",
+          "kind": "event",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/billionaire-trump-backer-says-ben-gvir-smotrich-should-not-serve-in-next-israeli-government-6490701",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 25,
+          "cluster_id": 1,
+          "text": "Itamar Ben-Gvir's Jewish Power party is projected to win around 10 seats in the Israeli parliament, while Bezalel Smotrich's Religious Zionism is projected to win 8 seats.",
+          "kind": "figure",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/billionaire-trump-backer-says-ben-gvir-smotrich-should-not-serve-in-next-israeli-government-6490701",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 26,
+          "cluster_id": 1,
+          "text": "Gadi Eisenkot and other Israeli opposition party leaders ruled out forming a coalition government with Prime Minister Benjamin Netanyahu.",
+          "kind": "event",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/billionaire-trump-backer-says-ben-gvir-smotrich-should-not-serve-in-next-israeli-government-6490701",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 2,
+      "headline_hint": "Aleksandar Vučić concedes defeat in Serbia election as student movement wins majority",
+      "section": "world",
+      "batch_position": 2,
+      "claim_count": 12,
+      "distinct_outlets": 5,
+      "source_kinds": {
+        "fulltext": 12
+      },
+      "claims": [
+        {
+          "id": 27,
+          "cluster_id": 2,
+          "text": "Serbian leader Aleksandar Vučić conceded defeat in the parliamentary election, stating the Student List won between 135 and 140 seats while his party won 105.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/25/serbian-leader-aleksandar-vucic-concedes-defeat-in-fiercely-contested-parliamentary-election",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 28,
+          "cluster_id": 2,
+          "text": "A poll sample by CeSID-IPSPS projected the Student List would secure 138 seats and the Serbian Progressive Party (SNS) would take 104 seats in parliament.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/25/serbian-leader-aleksandar-vucic-concedes-defeat-in-fiercely-contested-parliamentary-election",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 29,
+          "cluster_id": 2,
+          "text": "Voter turnout reached 67.6% by 7pm local time in Serbia, marking the highest level since the breakup of Yugoslavia in 1992.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/25/serbian-leader-aleksandar-vucic-concedes-defeat-in-fiercely-contested-parliamentary-election",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 30,
+          "cluster_id": 2,
+          "text": "The collapse of a railway station canopy in Novi Sad in November 2024 killed 16 people and sparked nationwide student-led protests.",
+          "kind": "background",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/25/serbian-leader-aleksandar-vucic-concedes-defeat-in-fiercely-contested-parliamentary-election",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 31,
+          "cluster_id": 2,
+          "text": "Aleksandar Vučić resigned from the presidency last month to trigger snap parliamentary elections.",
+          "kind": "background",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/25/serbian-leader-aleksandar-vucic-concedes-defeat-in-fiercely-contested-parliamentary-election",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 32,
+          "cluster_id": 2,
+          "text": "Aleksandar Vučić has dominated Serbian politics as prime minister or president since 2014.",
+          "kind": "background",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/serbia-election-vucic-concede-defeat-student-protest-movement-6491631",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 33,
+          "cluster_id": 2,
+          "text": "European Commission President Ursula von der Leyen congratulated the Student List on its election victory.",
+          "kind": "event",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/serbia-election-vucic-concede-defeat-student-protest-movement-6491631",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 34,
+          "cluster_id": 2,
+          "text": "The Student List fielded 250 candidates led by cardiologist Ilija Srdanović.",
+          "kind": "background",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/serbia-election-vucic-concede-defeat-student-protest-movement-6491631",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 35,
+          "cluster_id": 2,
+          "text": "Aleksandar Vučić blamed independent media, unnamed European nations, and an 'American deep state' for his election defeat.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/europe/serbias-vucic-concedes-defeat-as-student-led-movement-wins-parliamentary-election/articleshow/135199388.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 36,
+          "cluster_id": 2,
+          "text": "Election monitors reported suspected voting irregularities in Serbia, including ballot photographing and attempted vote-buying.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/europe/serbias-vucic-concedes-defeat-as-student-led-movement-wins-parliamentary-election/articleshow/135199388.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 37,
+          "cluster_id": 2,
+          "text": "Preliminary election commission figures showed turnout reached 64.9% by 18:00 local time in Serbia.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cw5yn3xlprpmo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 38,
+          "cluster_id": 2,
+          "text": "Serbian riot police cordoned off the election commission headquarters in central Belgrade on election day.",
+          "kind": "event",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/europe/20261025-serbia-s-vucic-concedes-defeat-in-historic-snap-election-with-record-turnout",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 3,
+      "headline_hint": "Venezuelan opposition leader María Corina Machado returns home after months in exile",
+      "section": "world",
+      "batch_position": 3,
+      "claim_count": 12,
+      "distinct_outlets": 4,
+      "source_kinds": {
+        "fulltext": 12
+      },
+      "claims": [
+        {
+          "id": 39,
+          "cluster_id": 3,
+          "text": "Venezuelan opposition leader María Corina Machado returned home on Sunday after more than 10 months in exile.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cq8ez592pp0eo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 40,
+          "cluster_id": 3,
+          "text": "María Corina Machado fled Venezuela secretly on a speedboat in December 2025 to receive the Nobel Peace Prize in Norway.",
+          "kind": "background",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cq8ez592pp0eo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 41,
+          "cluster_id": 3,
+          "text": "In January 2026, US forces seized President Nicolás Maduro, who is now jailed in New York on drug, weapon, and torture charges.",
+          "kind": "background",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cq8ez592pp0eo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 42,
+          "cluster_id": 3,
+          "text": "The Trump administration backed Delcy Rodríguez as interim president of Venezuela following Nicolás Maduro's capture.",
+          "kind": "background",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cq8ez592pp0eo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 43,
+          "cluster_id": 3,
+          "text": "US Secretary of State Marco Rubio stated that conditions allowing Machado's safe return were the direct result of US-supported reconciliation talks.",
+          "kind": "quote",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cq8ez592pp0eo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 44,
+          "cluster_id": 3,
+          "text": "María Corina Machado returned to Venezuela by taking a private plane from Panama to Colombia and crossing overland.",
+          "kind": "event",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/venezuela-opposition-leader-machado-returns-home-after-fraught-year-away-6490756",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 45,
+          "cluster_id": 3,
+          "text": "US President Donald Trump said of Machado's return, 'I don't know anything about it' and added, 'we're doing really well in Venezuela.'",
+          "kind": "quote",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/venezuela-opposition-leader-machado-returns-home-after-fraught-year-away-6490756",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 46,
+          "cluster_id": 3,
+          "text": "Machado's Vente Venezuela movement launched an app to collect voter registration data from Venezuelans living abroad.",
+          "kind": "event",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/venezuela-opposition-leader-machado-returns-home-after-fraught-year-away-6490756",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 47,
+          "cluster_id": 3,
+          "text": "María Corina Machado is 59 years old.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/25/exiled-venezuelan-opposition-leader-maria-corina-machado-announces-her-return",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 48,
+          "cluster_id": 3,
+          "text": "Donald Trump announced an oil deal with Venezuela in August 2026 that he called 'the biggest oil deal in world history'.",
+          "kind": "background",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/25/exiled-venezuelan-opposition-leader-maria-corina-machado-announces-her-return",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 49,
+          "cluster_id": 3,
+          "text": "María Corina Machado called for new presidential elections in Venezuela to be conducted by July 2027.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/25/exiled-venezuelan-opposition-leader-maria-corina-machado-announces-her-return",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 50,
+          "cluster_id": 3,
+          "text": "Supporters greeted María Corina Machado during a church service in Barquisimeto, Lara state.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/rest-of-world/i-am-here-with-you-nobel-laureate-venezuela-opposition-leader-machado-returns-after-nearly-a-year-in-exile/articleshow/135197260.cms",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 4,
+      "headline_hint": "Marine Le Pen launches presidential campaign as cost-of-living protests sweep France",
+      "section": "world",
+      "batch_position": 4,
+      "claim_count": 14,
+      "distinct_outlets": 4,
+      "source_kinds": {
+        "fulltext": 14
+      },
+      "claims": [
+        {
+          "id": 51,
+          "cluster_id": 4,
+          "text": "Marine Le Pen officially launched her French presidential campaign on Sunday before 8,500 supporters in Orléans.",
+          "kind": "event",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/25/marine-le-pen-vows-a-french-renaissance-as-far-right-eyes-seat-of-power?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 52,
+          "cluster_id": 4,
+          "text": "More than 2,000 people were arrested across France during nationwide protests on October 17.",
+          "kind": "figure",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/25/marine-le-pen-vows-a-french-renaissance-as-far-right-eyes-seat-of-power?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 53,
+          "cluster_id": 4,
+          "text": "Approximately 3,000 police officers were deployed in Orléans ahead of Marine Le Pen's rally to prevent anti-far-right unrest.",
+          "kind": "figure",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/25/marine-le-pen-vows-a-french-renaissance-as-far-right-eyes-seat-of-power?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 54,
+          "cluster_id": 4,
+          "text": "The French Senate will debate a proposed 'vandals pay' bill allowing non-damaging protesters to be held liable for up to €10,000 in property damages.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/25/macrons-vandals-pay-bill-puts-right-to-protest-at-risk",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 55,
+          "cluster_id": 4,
+          "text": "Marine Le Pen stated at her Orléans rally, 'Vandals will pay and if it takes their whole life to pay, then they will spend their whole life paying.'",
+          "kind": "quote",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/25/macrons-vandals-pay-bill-puts-right-to-protest-at-risk",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 56,
+          "cluster_id": 4,
+          "text": "Leftist lawmaker Éric Coquerel warned that the 'vandals pay' law 'would mean the end of street demonstrations' in France.",
+          "kind": "quote",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/25/macrons-vandals-pay-bill-puts-right-to-protest-at-risk",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 57,
+          "cluster_id": 4,
+          "text": "France's Ministry of the Interior reported that 410,000 people demonstrated nationwide on Saturday, including 110,000 in Paris.",
+          "kind": "figure",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/world/from-the-french-revolution-to-yellow-vests-why-protest-is-embedded-in-france-s-political-history-amid-nationwide-unrest-11792950743622.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 58,
+          "cluster_id": 4,
+          "text": "French authorities deployed over 70,000 police officers and gendarmes nationwide for Saturday's demonstrations.",
+          "kind": "figure",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/world/from-the-french-revolution-to-yellow-vests-why-protest-is-embedded-in-france-s-political-history-amid-nationwide-unrest-11792950743622.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 59,
+          "cluster_id": 4,
+          "text": "Cultural institutions including the Louvre, Musée d'Orsay, and Art Basel Paris closed or cancelled events due to Saturday's protests.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/world/from-the-french-revolution-to-yellow-vests-why-protest-is-embedded-in-france-s-political-history-amid-nationwide-unrest-11792950743622.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 60,
+          "cluster_id": 4,
+          "text": "More than 1,300 arrests were made during nationwide protests in France on Saturday.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c95ynd587ynzo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 61,
+          "cluster_id": 4,
+          "text": "French trade unions estimated that 800,000 people participated in Saturday's cost-of-living and school condition protests.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c95ynd587ynzo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 62,
+          "cluster_id": 4,
+          "text": "The Interior Ministry reported 53 police officers were injured in clashes across France on Saturday.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c95ynd587ynzo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 63,
+          "cluster_id": 4,
+          "text": "A 20-year-old protester in Toulouse had several fingers severed when an explosive went off near him during protests.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c95ynd587ynzo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 64,
+          "cluster_id": 4,
+          "text": "Around 13,000 people attended a peaceful counter-rally against the National Rally in Orléans on Saturday.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c95ynd587ynzo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 5,
+      "headline_hint": "US midterm campaign intensifies with record ad spending and high-profile Obama rallies",
+      "section": "world",
+      "batch_position": 5,
+      "claim_count": 15,
+      "distinct_outlets": 5,
+      "source_kinds": {
+        "fulltext": 15
+      },
+      "claims": [
+        {
+          "id": 65,
+          "cluster_id": 5,
+          "text": "Donald Trump launched an anti-Muslim attack against Democratic Senate candidate Abdul El-Sayed during the US midterm campaign.",
+          "kind": "event",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/10/26/trump-escalates-anti-muslim-rhetoric-in-fierce-attack-on-el-sayed?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 66,
+          "cluster_id": 5,
+          "text": "Abdul El-Sayed is competing against Republican Mike Rogers for a US Senate seat in Michigan.",
+          "kind": "background",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/10/26/trump-escalates-anti-muslim-rhetoric-in-fierce-attack-on-el-sayed?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 67,
+          "cluster_id": 5,
+          "text": "Donald Trump encouraged crowd members at a Michigan campaign rally to compliment rapper Nicki Minaj's appearance.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/us-news/2026/oct/25/trump-nicki-minaj-mike-rogers-michigan-rally",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 68,
+          "cluster_id": 5,
+          "text": "Barack Obama joked at a campaign rally that Donald Trump 'has got the White House looking like Saddam Hussein opened a Cheesecake Factory.'",
+          "kind": "quote",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/us-news/2026/oct/25/trump-nicki-minaj-mike-rogers-michigan-rally",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 69,
+          "cluster_id": 5,
+          "text": "Donald Trump claimed at a rally that the US-Canada trade war would end soon because Canada is 'willing to give us anything at this moment.'",
+          "kind": "quote",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/us-news/2026/oct/25/trump-nicki-minaj-mike-rogers-michigan-rally",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 70,
+          "cluster_id": 5,
+          "text": "Donald Trump called Abdul El-Sayed a 'Jihadist Member of the Muslim Brotherhood' on Truth Social and alleged he wants to impose Sharia law in the US.",
+          "kind": "quote",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/us/trump-calls-el-sayed-jihadist-ahead-of-michigan-rally-alleges-sharia-law-push/articleshow/135197552.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 71,
+          "cluster_id": 5,
+          "text": "Trump claimed at a Port Huron rally that Abdul El-Sayed's mother worked for an organization that funded Osama bin Laden and Al-Qaeda.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/us/trump-calls-el-sayed-jihadist-ahead-of-michigan-rally-alleges-sharia-law-push/articleshow/135197552.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 72,
+          "cluster_id": 5,
+          "text": "Barack Obama campaigned in Detroit alongside Democratic candidates Abdul El-Sayed and Jocelyn Benson.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/us/trump-calls-el-sayed-jihadist-ahead-of-michigan-rally-alleges-sharia-law-push/articleshow/135197552.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 73,
+          "cluster_id": 5,
+          "text": "Barack Obama told an Ohio rally that Americans face higher living costs due to 'an unnecessary war that nobody asked for and nobody voted for.'",
+          "kind": "quote",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/video/20261025-midterms-obama-campaigns-for-democrats-slams-trump-1",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 74,
+          "cluster_id": 5,
+          "text": "Political ad spending for the 2026 US midterm election cycle has surpassed $10 billion and is projected to reach $11.6 billion.",
+          "kind": "figure",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/world/us-midterms-2026-political-ad-spending-tops-10-billion-where-is-the-money-coming-from-and-what-is-driving-the-surge-11792930396568.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 75,
+          "cluster_id": 5,
+          "text": "Republicans spent $233 million on broadcast television ads across nine close Senate races last month, compared to $121 million spent by Democrats.",
+          "kind": "figure",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/world/us-midterms-2026-political-ad-spending-tops-10-billion-where-is-the-money-coming-from-and-what-is-driving-the-surge-11792930396568.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 76,
+          "cluster_id": 5,
+          "text": "Combined political ad spending and reservations in Texas's Senate race between James Talarico and Ken Paxton surpassed $500 million.",
+          "kind": "figure",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/world/us-midterms-2026-political-ad-spending-tops-10-billion-where-is-the-money-coming-from-and-what-is-driving-the-surge-11792930396568.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 77,
+          "cluster_id": 5,
+          "text": "Elon Musk donated $158 million to the Senate Leadership Fund and $10 million to Lone Star Liberty PAC.",
+          "kind": "figure",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/world/us-midterms-2026-political-ad-spending-tops-10-billion-where-is-the-money-coming-from-and-what-is-driving-the-surge-11792930396568.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 78,
+          "cluster_id": 5,
+          "text": "Political ad spending in Ohio's Senate race reached over $450 million.",
+          "kind": "figure",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/world/us-midterms-2026-political-ad-spending-tops-10-billion-where-is-the-money-coming-from-and-what-is-driving-the-surge-11792930396568.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 79,
+          "cluster_id": 5,
+          "text": "Republican groups have committed nearly $114 million for advertising in Maine's Senate race, compared to about $81 million committed by Democrats.",
+          "kind": "figure",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/world/us-midterms-2026-political-ad-spending-tops-10-billion-where-is-the-money-coming-from-and-what-is-driving-the-surge-11792930396568.html",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 6,
+      "headline_hint": "Bay of Bengal depression set to intensify into severe cyclone targeting Andhra Pradesh and Odisha coasts",
+      "section": "india",
+      "batch_position": 0,
+      "claim_count": 12,
+      "distinct_outlets": 3,
+      "source_kinds": {
+        "fulltext": 12
+      },
+      "claims": [
+        {
+          "id": 80,
+          "cluster_id": 6,
+          "text": "Extremely heavy rainfall is forecast over Coastal Andhra Pradesh on October 27 and 28, Odisha and Telangana on October 28, and Chhattisgarh on October 28 and 29, 2026.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/cyclone-andhra-pradesh-odisha-live-updates-october-25-2026/article71622459.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 81,
+          "cluster_id": 6,
+          "text": "A depression over the Bay of Bengal intensified into a deep depression at 11:30 a.m. on October 25, 2026, centered about 870 km east-southeast of Visakhapatnam.",
+          "kind": "figure",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/cyclone-andhra-pradesh-odisha-live-updates-october-25-2026/article71622459.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 82,
+          "cluster_id": 6,
+          "text": "The cyclonic system is forecast to cross the Andhra Pradesh and Yanam coasts between Bapatla and Visakhapatnam as a very severe cyclonic storm by the forenoon of October 28, 2026, with maximum sustained wind speeds of 115-125 kmph gusting to 140 kmph.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/cyclone-andhra-pradesh-odisha-live-updates-october-25-2026/article71622459.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 83,
+          "cluster_id": 6,
+          "text": "Two cardamom plantation workers were killed in Mankulam, Idukki, after a tree fell on them due to heavy weather.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/cyclone-andhra-pradesh-odisha-live-updates-october-25-2026/article71622459.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 84,
+          "cluster_id": 6,
+          "text": "Andhra Pradesh Chief Minister N. Chandrababu Naidu ordered a high alert and prepared 10 NDRF and 11 SDRF teams for evacuation and relief operations.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/cyclone-andhra-pradesh-odisha-live-updates-october-25-2026/article71622459.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 85,
+          "cluster_id": 6,
+          "text": "The Odisha government cancelled leaves for district collectors, district magistrates, and critical officers in response to the approaching storm.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/odisha-schools-offices-severe-cyclonic-storm-bay-of-bengal-andhra-coast-tamil-nadu-rainfall-imd-alert-101792920225200.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 86,
+          "cluster_id": 6,
+          "text": "Odisha Chief Minister Mohan Charan Majhi ordered all schools, colleges, and Anganwadi centres closed in Ganjam, Gajapati, Rayagada, Koraput, and Malkangiri districts on October 28 and 29.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/odisha-schools-offices-severe-cyclonic-storm-bay-of-bengal-andhra-coast-tamil-nadu-rainfall-imd-alert-101792920225200.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 87,
+          "cluster_id": 6,
+          "text": "The Odisha state government deployed or placed on high alert 60 ODRAF teams, 17 NDRF teams, and 225 Fire Services teams ahead of the cyclone.",
+          "kind": "figure",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/odisha-schools-offices-severe-cyclonic-storm-bay-of-bengal-andhra-coast-tamil-nadu-rainfall-imd-alert-101792920225200.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 88,
+          "cluster_id": 6,
+          "text": "Cyclone warning signals were hoisted at nine ports including Chennai, Nagapattinam, Cuddalore, Karaikal, Pamban, and Thoothukudi.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/odisha-schools-offices-severe-cyclonic-storm-bay-of-bengal-andhra-coast-tamil-nadu-rainfall-imd-alert-101792920225200.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 89,
+          "cluster_id": 6,
+          "text": "Odisha Chief Minister Mohan Charan Majhi stated that the state government's primary objective regarding the cyclone is ensuring zero casualties.",
+          "kind": "quote",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/cyclone-arnab-depression-over-bay-of-bengal-to-intensify-when-and-where-will-landfall-occur-imds-latest-updates-11792917730320.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 90,
+          "cluster_id": 6,
+          "text": "Andhra Pradesh Central Power Distribution Corporation Limited cancelled employee leaves and established district control rooms to handle cyclone damage.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/andhra-pradesh/officials-urged-to-remain-alert-as-severe-cyclone-approaches/article71624053.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 91,
+          "cluster_id": 6,
+          "text": "District administrations in Visakhapatnam, Anakapalli, and Alluri Sitharama Raju set up 24-hour control rooms and prepped relief centres in anticipation of severe weather.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/andhra-pradesh/three-north-andhra-districts-step-up-cyclone-preparedness/article71624037.ece",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 7,
+      "headline_hint": "BJP launches nationwide protests over Congress chief Mallikarjun Kharge's remark on PM Modi",
+      "section": "india",
+      "batch_position": 1,
+      "claim_count": 8,
+      "distinct_outlets": 3,
+      "source_kinds": {
+        "fulltext": 8
+      },
+      "claims": [
+        {
+          "id": 92,
+          "cluster_id": 7,
+          "text": "The Bharatiya Janata Party announced nationwide protests for October 26, 2026, against Congress president Mallikarjun Kharge over remarks directed at Prime Minister Narendra Modi's late father.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/bjp-to-hold-nationwide-protest-on-october-26-against-kharges-baap-remark-for-modi/article71624386.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 93,
+          "cluster_id": 7,
+          "text": "Union Home Minister Amit Shah stated that Congress president Mallikarjun Kharge tore apart all norms of decorum with his comment in Patna.",
+          "kind": "quote",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/bjp-to-hold-nationwide-protest-on-october-26-against-kharges-baap-remark-for-modi/article71624386.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 94,
+          "cluster_id": 7,
+          "text": "During an event in Patna marking the 139th birth anniversary of Bihar's first chief minister Shri Krishna Sinha, an audience member shouted 'Modi nahin jayega' at Congress chief Mallikarjun Kharge.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/bjp-calls-protest-over-kharges-baap-remark/articleshow/135197490.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 95,
+          "cluster_id": 7,
+          "text": "Responding to a heckler in Patna, Congress president Mallikarjun Kharge said 'Modi ka baap bhi jayega'.",
+          "kind": "quote",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/bjp-calls-protest-over-kharges-baap-remark/articleshow/135197490.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 96,
+          "cluster_id": 7,
+          "text": "Congress president Mallikarjun Kharge called ongoing opposition protests against the Special Intensive Revision of electoral rolls the second war for independence.",
+          "kind": "quote",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/bjp-calls-protest-over-kharges-baap-remark/articleshow/135197490.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 97,
+          "cluster_id": 7,
+          "text": "Union Home Minister Amit Shah claimed that repeated electoral losses over the past 12 years have driven the Congress party to desperation and the politics of slander.",
+          "kind": "quote",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/mafia-gang-bjp-attacks-congress-after-kharge-s-baap-remark-targeting-pm-modi-bihar-patna-101792941758920.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 98,
+          "cluster_id": 7,
+          "text": "The BJP released a statement accusing the Congress party of using language associated with thugs and functioning like a mafia gang.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/mafia-gang-bjp-attacks-congress-after-kharge-s-baap-remark-targeting-pm-modi-bihar-patna-101792941758920.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 99,
+          "cluster_id": 7,
+          "text": "BJP leader Nitin Nabin criticized the opposition, stating that dragging departed family members into public speeches has become the standard political culture under Rahul Gandhi.",
+          "kind": "quote",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/bihar/kharges-remark-in-bihar-pm-modi-father-sparks-row-bjp-congress/article71623852.ece",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 8,
+      "headline_hint": "PM Modi inaugurates RBI cybersecurity centre in Odisha, warning against cyber threats to banking",
+      "section": "india",
+      "batch_position": 2,
+      "claim_count": 10,
+      "distinct_outlets": 3,
+      "source_kinds": {
+        "fulltext": 10
+      },
+      "claims": [
+        {
+          "id": 100,
+          "cluster_id": 8,
+          "text": "Prime Minister Narendra Modi inaugurated the Reserve Bank of India's new data centre and Cybersecurity Training Institute in Bhubaneswar, Odisha.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/business/india-business/keeping-all-data-centres-sovereign-says-rbi-governor/articleshow/135197590.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 101,
+          "cluster_id": 8,
+          "text": "RBI Governor Sanjay Malhotra stated that IT is no longer merely a support function but a core function of the central bank.",
+          "kind": "quote",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/business/india-business/keeping-all-data-centres-sovereign-says-rbi-governor/articleshow/135197590.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 102,
+          "cluster_id": 8,
+          "text": "The newly inaugurated RBI data centre in Bhubaneswar features Tier IV accreditation across four independent facilities.",
+          "kind": "background",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/business/india-business/keeping-all-data-centres-sovereign-says-rbi-governor/articleshow/135197590.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 103,
+          "cluster_id": 8,
+          "text": "Prime Minister Narendra Modi warned that modern wars are fought by attacking national economies, stressing the need to shield India's banking system from cyber terrorists.",
+          "kind": "quote",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/protect-banking-system-from-cyber-looters-cyber-terrorists-pm-modi-11792939217217.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 104,
+          "cluster_id": 8,
+          "text": "Prime Minister Narendra Modi stated that nearly 600 million Jan Dhan bank accounts have been opened in India.",
+          "kind": "figure",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/protect-banking-system-from-cyber-looters-cyber-terrorists-pm-modi-11792939217217.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 105,
+          "cluster_id": 8,
+          "text": "According to PM Modi, 130 million individuals have become first-time entrepreneurs under the Pradhan Mantri MUDRA Yojana.",
+          "kind": "figure",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/protect-banking-system-from-cyber-looters-cyber-terrorists-pm-modi-11792939217217.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 106,
+          "cluster_id": 8,
+          "text": "Union Finance Minister Nirmala Sitharaman stated that the new RBI data centre will host mission-critical systems including RTGS and NEFT payment rails.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/protect-banking-system-from-cyber-looters-cyber-terrorists-pm-modi-11792939217217.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 107,
+          "cluster_id": 8,
+          "text": "Prime Minister Narendra Modi accused past Congress governments of practicing phone banking by giving bank loans based on phone recommendations.",
+          "kind": "quote",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/wars-no-longer-fought-with-weapons-alone-pm-modi-flags-cyber-security-threats-101792937721619.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 108,
+          "cluster_id": 8,
+          "text": "The Reserve Bank of India's new facility in Bhubaneswar was constructed at a cost of 169 crore rupees and spans 18.55 acres at Info Valley-II in Jatni.",
+          "kind": "figure",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/pm-modi-inaugurates-rs-169-crore-rbi-data-centre-cybersecurity-training-institute-in-odisha-101792929176646.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 109,
+          "cluster_id": 8,
+          "text": "Approximately 2,100 police personnel were deployed to secure Bhubaneswar during Prime Minister Narendra Modi's visit.",
+          "kind": "figure",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/pm-modi-inaugurates-rs-169-crore-rbi-data-centre-cybersecurity-training-institute-in-odisha-101792929176646.html",
+          "source_kind": "fulltext"
+        }
+      ]
+    }
+  ],
+  "clusters_with_no_claims": []
+}

@@ -46,3 +46,165 @@
 {"run": "digest", "t": 37702, "kind": "event", "stage": "ratelimit", "label": "select", "verdict": "transient_exhausted", "attempt": 3, "attempts_allowed": 3, "error": "ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"}
 {"run": "digest", "t": 37702, "kind": "event", "stage": "stage", "name": "select", "ms": 32295, "ok": false, "error": "ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"}
 {"run": "digest", "t": 37702, "kind": "event", "stage": "tracer", "msg": "capture finished", "ok": false, "ms": 37702, "bytes": 1075027}
+{"run": "digest", "t": 0, "kind": "digest", "stage": "tracer", "msg": "capture started", "level": 1, "day": "2026-10-26"}
+{"run": "digest", "t": 1900, "kind": "dbg", "msg": "digest: window since=2026-10-24T22:36:25+00:00 (prev_generated_at=2026-10-24 22:36:25+00:00)"}
+{"run": "digest", "t": 1972, "kind": "dbg", "msg": "feed 'BBC World': http=200 raw_items=32 usable=32"}
+{"run": "digest", "t": 1972, "kind": "event", "stage": "feeds", "outlet": "BBC World", "url": "https://feeds.bbci.co.uk/news/world/rss.xml", "http": 200, "elapsed_ms": 59, "bytes": 25038, "raw_items": 32, "usable": 32, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 2058, "kind": "dbg", "msg": "feed 'Al Jazeera': http=200 raw_items=25 usable=25"}
+{"run": "digest", "t": 2058, "kind": "event", "stage": "feeds", "outlet": "Al Jazeera", "url": "https://www.aljazeera.com/xml/rss/all.xml", "http": 200, "elapsed_ms": 74, "bytes": 17185, "raw_items": 25, "usable": 25, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 2151, "kind": "dbg", "msg": "feed 'Guardian World': http=200 raw_items=45 usable=45"}
+{"run": "digest", "t": 2151, "kind": "event", "stage": "feeds", "outlet": "Guardian World", "url": "https://www.theguardian.com/world/rss", "http": 200, "elapsed_ms": 39, "bytes": 152609, "raw_items": 45, "usable": 45, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 2374, "kind": "dbg", "msg": "feed 'NPR World': http=200 raw_items=10 usable=10"}
+{"run": "digest", "t": 2374, "kind": "event", "stage": "feeds", "outlet": "NPR World", "url": "https://feeds.npr.org/1004/rss.xml", "http": 200, "elapsed_ms": 213, "bytes": 13841, "raw_items": 10, "usable": 10, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 2893, "kind": "dbg", "msg": "feed 'DW World': http=200 raw_items=11 usable=11"}
+{"run": "digest", "t": 2893, "kind": "event", "stage": "feeds", "outlet": "DW World", "url": "https://rss.dw.com/rdf/rss-en-world", "http": 200, "elapsed_ms": 512, "bytes": 12315, "raw_items": 11, "usable": 11, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 3151, "kind": "dbg", "msg": "feed 'France 24': http=200 raw_items=24 usable=24"}
+{"run": "digest", "t": 3151, "kind": "event", "stage": "feeds", "outlet": "France 24", "url": "https://www.france24.com/en/rss", "http": 200, "elapsed_ms": 247, "bytes": 27793, "raw_items": 24, "usable": 24, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 3229, "kind": "dbg", "msg": "feed 'Channel News Asia': http=200 raw_items=20 usable=20"}
+{"run": "digest", "t": 3229, "kind": "event", "stage": "feeds", "outlet": "Channel News Asia", "url": "https://www.channelnewsasia.com/api/v1/rss-outbound-feed?_format=xml", "http": 200, "elapsed_ms": 67, "bytes": 17455, "raw_items": 20, "usable": 20, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 3368, "kind": "dbg", "msg": "feed 'The Hindu': http=200 raw_items=60 usable=60"}
+{"run": "digest", "t": 3368, "kind": "event", "stage": "feeds", "outlet": "The Hindu", "url": "https://www.thehindu.com/news/national/feeder/default.rss", "http": 200, "elapsed_ms": 120, "bytes": 43935, "raw_items": 60, "usable": 60, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 3608, "kind": "dbg", "msg": "feed 'NDTV': http=200 raw_items=20 usable=20"}
+{"run": "digest", "t": 3608, "kind": "event", "stage": "feeds", "outlet": "NDTV", "url": "https://feeds.feedburner.com/ndtvnews-india-news", "http": 200, "elapsed_ms": 229, "bytes": 29625, "raw_items": 20, "usable": 20, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 3685, "kind": "dbg", "msg": "feed 'Hindustan Times': http=200 raw_items=100 usable=100"}
+{"run": "digest", "t": 3685, "kind": "event", "stage": "feeds", "outlet": "Hindustan Times", "url": "https://www.hindustantimes.com/feeds/rss/india-news/rssfeed.xml", "http": 200, "elapsed_ms": 45, "bytes": 101365, "raw_items": 100, "usable": 100, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 3795, "kind": "dbg", "msg": "feed 'Times of India': http=200 raw_items=47 usable=47"}
+{"run": "digest", "t": 3795, "kind": "event", "stage": "feeds", "outlet": "Times of India", "url": "https://timesofindia.indiatimes.com/rssfeedstopstories.cms", "http": 200, "elapsed_ms": 92, "bytes": 44956, "raw_items": 47, "usable": 47, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 3873, "kind": "dbg", "msg": "feed 'Livemint': http=200 raw_items=35 usable=35"}
+{"run": "digest", "t": 3873, "kind": "event", "stage": "feeds", "outlet": "Livemint", "url": "https://www.livemint.com/rss/news", "http": 200, "elapsed_ms": 64, "bytes": 39218, "raw_items": 35, "usable": 35, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 4216, "kind": "dbg", "msg": "feed 'Scroll.in': http=200 raw_items=100 usable=100"}
+{"run": "digest", "t": 4216, "kind": "event", "stage": "feeds", "outlet": "Scroll.in", "url": "https://feeds.feedburner.com/ScrollinArticles.rss", "http": 200, "elapsed_ms": 224, "bytes": 297954, "raw_items": 100, "usable": 100, "unusable": 0, "error": "", "verdict": "ok"}
+{"run": "digest", "t": 4228, "kind": "dbg", "msg": "gather: 381 article(s) after window+dedupe; by outlet: {'Livemint': 35, 'Guardian World': 31, 'France 24': 23, 'Times of India': 45, 'Channel News Asia': 20, 'Al Jazeera': 25, 'BBC World': 18, 'NPR World': 6, 'The Hindu': 60, 'NDTV': 20, 'Hindustan Times': 74, 'Scroll.in': 18, 'DW World': 6}"}
+{"run": "digest", "t": 4228, "kind": "dbg", "msg": "gather: 13/13 feed(s) live, 381 article(s)"}
+{"run": "digest", "t": 4231, "kind": "event", "stage": "stage", "name": "gather", "ms": 2331, "ok": true, "error": ""}
+{"run": "digest", "t": 4231, "kind": "dbg", "msg": "gather: QUORUM OK — live=13/3 min, articles=381/20 min"}
+{"run": "digest", "t": 4231, "kind": "dbg", "msg": "rank: select pool 381 -> 322; capped outlets: {'The Hindu': 20, 'Times of India': 5, 'Hindustan Times': 34}"}
+{"run": "digest", "t": 4235, "kind": "event", "stage": "stage", "name": "pool", "ms": 4, "ok": true, "error": ""}
+{"run": "digest", "t": 4342, "kind": "dbg", "msg": "wiki: 2026_October_26 http=200 events=0"}
+{"run": "digest", "t": 4342, "kind": "event", "stage": "wikipedia", "page": "2026_October_26", "http": 200, "bytes": 192, "events": 0, "verdict": "ok"}
+{"run": "digest", "t": 4461, "kind": "dbg", "msg": "wiki: 2026_October_25 http=200 events=13"}
+{"run": "digest", "t": 4461, "kind": "event", "stage": "wikipedia", "page": "2026_October_25", "http": 200, "bytes": 5662, "events": 13, "verdict": "ok"}
+{"run": "digest", "t": 4462, "kind": "event", "stage": "stage", "name": "wikipedia", "ms": 227, "ok": true, "error": ""}
+{"run": "digest", "t": 4567, "kind": "dbg", "msg": "llm: call #1 model=gemini-3.6-flash label=select prompt=82090ch"}
+{"run": "digest", "t": 6631, "kind": "dbg", "msg": "ratelimit: select transient failure (1/3), retrying in 8s: ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"}
+{"run": "digest", "t": 6631, "kind": "event", "stage": "ratelimit", "label": "select", "verdict": "transient_retry", "attempt": 1, "attempts_allowed": 3, "wait_s": 7.7, "error": "ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"}
+{"run": "digest", "t": 49789, "kind": "dbg", "msg": "llm: select finish_reason=FinishReason.STOP"}
+{"run": "digest", "t": 49790, "kind": "event", "stage": "llm", "call": 1, "label": "select", "model": "gemini-3.6-flash", "latency_ms": 45222, "prompt_chars": 82090, "system_chars": 2517, "response_chars": 2743, "finish_reason": "FinishReason.STOP", "malformed_json": false, "json_retries": 0, "max_output_tokens": 32768, "usage": {"prompt_token_count": 19754, "candidates_token_count": 862, "total_token_count": 23539, "thoughts_token_count": 2923}}
+{"run": "digest", "t": 49790, "kind": "dbg", "msg": "llm: select_stories -> 13 raw cluster(s)"}
+{"run": "digest", "t": 49790, "kind": "event", "stage": "stage", "name": "select", "ms": 45327, "ok": true, "error": ""}
+{"run": "digest", "t": 49790, "kind": "dbg", "msg": "rank: [world] outlets=7 tier=lead wiki=yes weight=13 'Lula da Silva wins historic fourth term as president of Brazil, defeating Flávio Bolsonaro'"}
+{"run": "digest", "t": 49791, "kind": "dbg", "msg": "rank: [world] outlets=6 tier=major wiki=yes weight=10 'Aleksandar Vučić concedes defeat in Serbia election as student movement wins majority'"}
+{"run": "digest", "t": 49791, "kind": "dbg", "msg": "rank: [world] outlets=6 tier=major wiki=yes weight=10 'Venezuelan opposition leader María Corina Machado returns home after months in exile'"}
+{"run": "digest", "t": 49791, "kind": "dbg", "msg": "rank: [world] outlets=7 tier=major wiki=yes weight=11 'Israel braces for pivotal general election as security and West Bank tensions escalate'"}
+{"run": "digest", "t": 49792, "kind": "dbg", "msg": "rank: [world] outlets=6 tier=major wiki=no weight=8 'Marine Le Pen launches presidential campaign as cost-of-living protests sweep France'"}
+{"run": "digest", "t": 49792, "kind": "dbg", "msg": "rank: [world] outlets=6 tier=major wiki=no weight=8 'US midterm campaign intensifies with record ad spending and high-profile Obama rallies'"}
+{"run": "digest", "t": 49792, "kind": "dbg", "msg": "rank: [world] outlets=3 tier=notable wiki=no weight=3 'Storm Boelo batters UK and northern Europe, leaving two dead and power outages'"}
+{"run": "digest", "t": 49793, "kind": "dbg", "msg": "rank: [india] outlets=3 tier=lead wiki=no weight=7 'Bay of Bengal depression set to intensify into severe cyclone targeting Andhra Pradesh and Odisha coasts'"}
+{"run": "digest", "t": 49793, "kind": "dbg", "msg": "rank: [india] outlets=4 tier=major wiki=no weight=6 \"BJP launches nationwide protests over Congress chief Mallikarjun Kharge's remark on PM Modi\""}
+{"run": "digest", "t": 49793, "kind": "dbg", "msg": "rank: [india] outlets=4 tier=major wiki=no weight=6 'PM Modi inaugurates RBI cybersecurity centre in Odisha, warning against cyber threats to banking'"}
+{"run": "digest", "t": 49794, "kind": "dbg", "msg": "rank: [india] outlets=2 tier=major wiki=no weight=4 'India and European Union race to finalize free trade agreement ahead of December deadline'"}
+{"run": "digest", "t": 49794, "kind": "dbg", "msg": "rank: [india] outlets=3 tier=notable wiki=no weight=3 'Former Supreme Court judge Sanjay Kishan Kaul says ex-CJI Chandrachud was overly deferential to government'"}
+{"run": "digest", "t": 49794, "kind": "dbg", "msg": "rank: [india] outlets=3 tier=notable wiki=no weight=3 'Student protests intensify at Jamia Millia Islamia over demands to reinstate student union'"}
+{"run": "digest", "t": 49794, "kind": "dbg", "msg": "rank: 13 scored, 0 id(s) rejected, 9 kept {'world': 6, 'india': 3}; weights=[13, 11, 10, 10, 8, 8, 7, 6, 6]"}
+{"run": "digest", "t": 49795, "kind": "event", "stage": "stage", "name": "rank", "ms": 5, "ok": true, "error": ""}
+{"run": "digest", "t": 49798, "kind": "dbg", "msg": "wiki: 13 curated event(s); 5 matched a selected story, 8 not covered"}
+{"run": "digest", "t": 49798, "kind": "dbg", "msg": "wiki: NOT COVERED [Armed conflicts and attacks] Houthi–Saudi conflict — Saudi-led coalition air defences intercept a Houthi ballistic missile and two drones targeting Riyadh Province as King Khalid International Airport resumes limited operations after a two-week closure caused by earlier Houthi attacks."}
+{"run": "digest", "t": 49798, "kind": "dbg", "msg": "wiki: NOT COVERED [Armed conflicts and attacks] Gaza genocide — Three staff members are killed and eight students are wounded in an Israeli airstrike against the Islamic University of Gaza in Gaza City. Four other Palestinians are also killed in more airstrikes in the Gaza Strip."}
+{"run": "digest", "t": 49798, "kind": "dbg", "msg": "wiki: NOT COVERED [Business and economy] Western Sydney Airport in New South Wales, Australia, commences passenger operations as the Greater Sydney's second airport."}
+{"run": "digest", "t": 49798, "kind": "dbg", "msg": "wiki: NOT COVERED [Disasters and accidents] Twenty-four people are killed and 24 more are injured after a bus collides with a truck on a highway in Makueni County, Kenya."}
+{"run": "digest", "t": 49798, "kind": "dbg", "msg": "wiki: NOT COVERED [Health and environment] 2026 Ebola epidemic — The Nigerian health ministry expands contact tracing after confirming an imported Bundibugyo Ebola case in Abuja, identifying at least 44 contacts while investigating additional people who may have been exposed and strengthening infection-c"}
+{"run": "digest", "t": 49798, "kind": "dbg", "msg": "wiki: NOT COVERED [Politics and elections] 2026 Bulgarian presidential election — Bulgarians vote in the first round of the presidential election. The election goes to a second round between incumbent Iliana Iotova and former prime minister Andrey Gyurov due to record low turnout and no candidate having a majority of the"}
+{"run": "digest", "t": 49798, "kind": "dbg", "msg": "wiki: NOT COVERED [Sports] 2026 LPGA Tour — In golf, Japan's Yuri Yoshida wins her first LPGA Tour title at the BMW Ladies Championship in South Jeolla Province, South Korea, finishing ahead of Australia's Minjee Lee and South Korea's Kim Sei-young."}
+{"run": "digest", "t": 49798, "kind": "dbg", "msg": "wiki: NOT COVERED [Sports] Houthi–Saudi conflict — In rally raid, Dakar Rally organizers move the 2027 event from Saudi Arabia because of security concerns regarding the conflict with the Houthis."}
+{"run": "digest", "t": 49854, "kind": "dbg", "msg": "extract: fetch_html https://www.france24.com/en/americas/20261026-brazil-s-president-lula-da-silva-beats-flavio-bolsonaro-to-win-re-election: http=403"}
+{"run": "digest", "t": 53216, "kind": "dbg", "msg": "extract: 5743ch https://www.france24.com/en/americas/20261026-brazil-s-president-lula-da-silva-beats-flavio-bolsonaro-to-win-re-election"}
+{"run": "digest", "t": 53569, "kind": "dbg", "msg": "extract: 6055ch https://timesofindia.indiatimes.com/world/rest-of-world/brazils-lula-wins-re-election-defeating-trump-ally-bolsonaro/articleshow/135199956.cms"}
+{"run": "digest", "t": 53637, "kind": "dbg", "msg": "extract: 13672ch https://www.theguardian.com/world/live/2026/oct/25/brazil-election-runoff-live-updates-flavio-bolsonaro-lula"}
+{"run": "digest", "t": 53726, "kind": "dbg", "msg": "extract: 2572ch https://www.channelnewsasia.com/world/brazil-pauses-presidential-vote-count-after-supreme-court-extends-voting-hours-6490261"}
+{"run": "digest", "t": 57306, "kind": "dbg", "msg": "extract: 35435ch https://www.npr.org/2026/10/25/nx-s1-6011223/u-s-influence-in-latin-america-at-stake-in-runoff-election-in-brazil"}
+{"run": "digest", "t": 57351, "kind": "dbg", "msg": "extract: fetch_html https://www.france24.com/en/video/20261025-report-idf-pushes-back-on-netanyahu-s-order: http=403"}
+{"run": "digest", "t": 63364, "kind": "dbg", "msg": "extract: 14387ch https://www.france24.com/en/video/20261025-report-idf-pushes-back-on-netanyahu-s-order"}
+{"run": "digest", "t": 63434, "kind": "dbg", "msg": "extract: 11890ch https://www.bbc.co.uk/news/articles/ckpdgy6pl7xlo?at_medium=RSS&at_campaign=rss"}
+{"run": "digest", "t": 73734, "kind": "dbg", "msg": "extract: 30547ch https://www.npr.org/2026/10/25/nx-s1-6011185/this-center-right-former-general-could-unseat-netanyahu-as-prime-minister-in-israel"}
+{"run": "digest", "t": 73815, "kind": "dbg", "msg": "extract: 3714ch https://www.channelnewsasia.com/world/billionaire-trump-backer-says-ben-gvir-smotrich-should-not-serve-in-next-israeli-government-6490701"}
+{"run": "digest", "t": 77134, "kind": "dbg", "msg": "extract: 11230ch https://www.aljazeera.com/video/newsfeed/2026/10/25/us-and-israel-elections-new-leaders-same-policies?traffic_source=rss"}
+{"run": "digest", "t": 77332, "kind": "dbg", "msg": "extract: 6499ch https://www.theguardian.com/world/2026/oct/25/serbian-leader-aleksandar-vucic-concedes-defeat-in-fiercely-contested-parliamentary-election"}
+{"run": "digest", "t": 77412, "kind": "dbg", "msg": "extract: 5840ch https://www.channelnewsasia.com/world/serbia-election-vucic-concede-defeat-student-protest-movement-6491631"}
+{"run": "digest", "t": 77476, "kind": "dbg", "msg": "extract: 3476ch https://timesofindia.indiatimes.com/world/europe/serbias-vucic-concedes-defeat-as-student-led-movement-wins-parliamentary-election/articleshow/135199388.cms"}
+{"run": "digest", "t": 77536, "kind": "dbg", "msg": "extract: 3226ch https://www.bbc.co.uk/news/articles/cw5yn3xlprpmo?at_medium=RSS&at_campaign=rss"}
+{"run": "digest", "t": 77637, "kind": "dbg", "msg": "extract: fetch_html https://www.france24.com/en/europe/20261025-serbia-s-vucic-concedes-defeat-in-historic-snap-election-with-record-turnout: http=403"}
+{"run": "digest", "t": 80905, "kind": "dbg", "msg": "extract: 4890ch https://www.france24.com/en/europe/20261025-serbia-s-vucic-concedes-defeat-in-historic-snap-election-with-record-turnout"}
+{"run": "digest", "t": 80961, "kind": "dbg", "msg": "extract: 4433ch https://www.bbc.co.uk/news/articles/cq8ez592pp0eo?at_medium=RSS&at_campaign=rss"}
+{"run": "digest", "t": 84564, "kind": "dbg", "msg": "extract: 11379ch https://www.aljazeera.com/video/newsfeed/2026/10/25/venezuelas-opposition-leader-machado-returns-after-months-in-exile?traffic_source=rss"}
+{"run": "digest", "t": 84683, "kind": "dbg", "msg": "extract: 4727ch https://www.channelnewsasia.com/world/venezuela-opposition-leader-machado-returns-home-after-fraught-year-away-6490756"}
+{"run": "digest", "t": 84770, "kind": "dbg", "msg": "extract: 3957ch https://www.theguardian.com/world/2026/oct/25/exiled-venezuelan-opposition-leader-maria-corina-machado-announces-her-return"}
+{"run": "digest", "t": 84882, "kind": "dbg", "msg": "extract: 3446ch https://timesofindia.indiatimes.com/world/rest-of-world/i-am-here-with-you-nobel-laureate-venezuela-opposition-leader-machado-returns-after-nearly-a-year-in-exile/articleshow/135197260.cms"}
+{"run": "digest", "t": 84947, "kind": "dbg", "msg": "extract: 8109ch https://www.aljazeera.com/news/2026/10/25/marine-le-pen-vows-a-french-renaissance-as-far-right-eyes-seat-of-power?traffic_source=rss"}
+{"run": "digest", "t": 84996, "kind": "dbg", "msg": "extract: 5084ch https://www.theguardian.com/world/2026/oct/25/macrons-vandals-pay-bill-puts-right-to-protest-at-risk"}
+{"run": "digest", "t": 85045, "kind": "dbg", "msg": "extract: fetch_html https://www.france24.com/en/video/20261025-marine-le-pen-launches-presidential-campaign-in-orl%C3%A9ans: http=403"}
+{"run": "digest", "t": 88345, "kind": "dbg", "msg": "extract: 13527ch https://www.france24.com/en/video/20261025-marine-le-pen-launches-presidential-campaign-in-orl%C3%A9ans"}
+{"run": "digest", "t": 88403, "kind": "dbg", "msg": "extract: 6535ch https://www.livemint.com/news/world/from-the-french-revolution-to-yellow-vests-why-protest-is-embedded-in-france-s-political-history-amid-nationwide-unrest-11792950743622.html"}
+{"run": "digest", "t": 88460, "kind": "dbg", "msg": "extract: 7050ch https://www.bbc.co.uk/news/articles/c95ynd587ynzo?at_medium=RSS&at_campaign=rss"}
+{"run": "digest", "t": 92779, "kind": "dbg", "msg": "extract: 11231ch https://www.aljazeera.com/video/newsfeed/2026/10/26/trump-escalates-anti-muslim-rhetoric-in-fierce-attack-on-el-sayed?traffic_source=rss"}
+{"run": "digest", "t": 92831, "kind": "dbg", "msg": "extract: 3625ch https://www.theguardian.com/us-news/2026/oct/25/trump-nicki-minaj-mike-rogers-michigan-rally"}
+{"run": "digest", "t": 92913, "kind": "dbg", "msg": "extract: 2542ch https://timesofindia.indiatimes.com/world/us/trump-calls-el-sayed-jihadist-ahead-of-michigan-rally-alleges-sharia-law-push/articleshow/135197552.cms"}
+{"run": "digest", "t": 92954, "kind": "dbg", "msg": "extract: fetch_html https://www.france24.com/en/video/20261025-midterms-obama-campaigns-for-democrats-slams-trump-1: http=403"}
+{"run": "digest", "t": 96201, "kind": "dbg", "msg": "extract: 12374ch https://www.france24.com/en/video/20261025-midterms-obama-campaigns-for-democrats-slams-trump-1"}
+{"run": "digest", "t": 96316, "kind": "dbg", "msg": "extract: 6127ch https://www.livemint.com/news/world/us-midterms-2026-political-ad-spending-tops-10-billion-where-is-the-money-coming-from-and-what-is-driving-the-surge-11792930396568.html"}
+{"run": "digest", "t": 96502, "kind": "dbg", "msg": "extract: 17691ch https://www.thehindu.com/news/national/cyclone-andhra-pradesh-odisha-live-updates-october-25-2026/article71622459.ece"}
+{"run": "digest", "t": 96623, "kind": "dbg", "msg": "extract: 6053ch https://www.hindustantimes.com/india-news/odisha-schools-offices-severe-cyclonic-storm-bay-of-bengal-andhra-coast-tamil-nadu-rainfall-imd-alert-101792920225200.html"}
+{"run": "digest", "t": 96746, "kind": "dbg", "msg": "extract: 4719ch https://www.livemint.com/news/india/cyclone-arnab-depression-over-bay-of-bengal-to-intensify-when-and-where-will-landfall-occur-imds-latest-updates-11792917730320.html"}
+{"run": "digest", "t": 96954, "kind": "dbg", "msg": "extract: 2571ch https://www.thehindu.com/news/national/andhra-pradesh/officials-urged-to-remain-alert-as-severe-cyclone-approaches/article71624053.ece"}
+{"run": "digest", "t": 97195, "kind": "dbg", "msg": "extract: 3959ch https://www.thehindu.com/news/national/andhra-pradesh/three-north-andhra-districts-step-up-cyclone-preparedness/article71624037.ece"}
+{"run": "digest", "t": 97353, "kind": "dbg", "msg": "extract: 2519ch https://www.thehindu.com/news/national/bjp-to-hold-nationwide-protest-on-october-26-against-kharges-baap-remark-for-modi/article71624386.ece"}
+{"run": "digest", "t": 97409, "kind": "dbg", "msg": "extract: 2767ch https://timesofindia.indiatimes.com/india/bjp-calls-protest-over-kharges-baap-remark/articleshow/135197490.cms"}
+{"run": "digest", "t": 97452, "kind": "dbg", "msg": "extract: fetch_html https://www.ndtv.com/india-news/bjp-to-launch-nationwide-protests-against-mallikarjun-kharge-over-remarks-on-pm-modi-12234707#publisher=newsstand: http=403"}
+{"run": "digest", "t": 100887, "kind": "dbg", "msg": "extract: 34256ch https://www.ndtv.com/india-news/bjp-to-launch-nationwide-protests-against-mallikarjun-kharge-over-remarks-on-pm-modi-12234707#publisher=newsstand"}
+{"run": "digest", "t": 100997, "kind": "dbg", "msg": "extract: 3001ch https://www.hindustantimes.com/india-news/mafia-gang-bjp-attacks-congress-after-kharge-s-baap-remark-targeting-pm-modi-bihar-patna-101792941758920.html"}
+{"run": "digest", "t": 101186, "kind": "dbg", "msg": "extract: 7919ch https://www.thehindu.com/news/national/bihar/kharges-remark-in-bihar-pm-modi-father-sparks-row-bjp-congress/article71623852.ece"}
+{"run": "digest", "t": 101279, "kind": "dbg", "msg": "extract: 1917ch https://timesofindia.indiatimes.com/business/india-business/keeping-all-data-centres-sovereign-says-rbi-governor/articleshow/135197590.cms"}
+{"run": "digest", "t": 101346, "kind": "dbg", "msg": "extract: 5911ch https://www.livemint.com/news/india/protect-banking-system-from-cyber-looters-cyber-terrorists-pm-modi-11792939217217.html"}
+{"run": "digest", "t": 101387, "kind": "dbg", "msg": "extract: fetch_html https://www.ndtv.com/india-news/wars-being-fought-by-attacking-economies-pm-modi-on-cyber-terrorists-12234108#publisher=newsstand: http=403"}
+{"run": "digest", "t": 109079, "kind": "dbg", "msg": "extract: 37343ch https://www.ndtv.com/india-news/wars-being-fought-by-attacking-economies-pm-modi-on-cyber-terrorists-12234108#publisher=newsstand"}
+{"run": "digest", "t": 109244, "kind": "dbg", "msg": "extract: 5322ch https://www.hindustantimes.com/india-news/wars-no-longer-fought-with-weapons-alone-pm-modi-flags-cyber-security-threats-101792937721619.html"}
+{"run": "digest", "t": 109387, "kind": "dbg", "msg": "extract: 4761ch https://www.hindustantimes.com/india-news/pm-modi-inaugurates-rs-169-crore-rbi-data-centre-cybersecurity-training-institute-in-odisha-101792929176646.html"}
+{"run": "digest", "t": 109391, "kind": "event", "stage": "stage", "name": "extract", "ms": 59592, "ok": true, "error": ""}
+{"run": "digest", "t": 109426, "kind": "dbg", "msg": "llm: call #2 model=gemini-3.6-flash label=claims-world prompt=140961ch"}
+{"run": "digest", "t": 147128, "kind": "dbg", "msg": "llm: claims-world finish_reason=FinishReason.STOP"}
+{"run": "digest", "t": 147129, "kind": "event", "stage": "llm", "call": 2, "label": "claims-world", "model": "gemini-3.6-flash", "latency_ms": 37701, "prompt_chars": 140961, "system_chars": 2135, "response_chars": 17234, "finish_reason": "FinishReason.STOP", "malformed_json": false, "json_retries": 0, "max_output_tokens": 32768, "usage": {"prompt_token_count": 38197, "candidates_token_count": 4570, "total_token_count": 46534, "thoughts_token_count": 3767}}
+{"run": "digest", "t": 147130, "kind": "dbg", "msg": "llm: claims: [world] 15 claim(s) from 4 outlet(s) 'Lula da Silva wins historic fourth term as president of Brazil, defeating Flávio Bolsonaro'"}
+{"run": "digest", "t": 147130, "kind": "dbg", "msg": "llm: claims: [world] 11 claim(s) from 2 outlet(s) 'Israel braces for pivotal general election as security and West Bank tensions escalate'"}
+{"run": "digest", "t": 147130, "kind": "dbg", "msg": "llm: claims: [world] 12 claim(s) from 5 outlet(s) 'Aleksandar Vučić concedes defeat in Serbia election as student movement wins majority'"}
+{"run": "digest", "t": 147131, "kind": "dbg", "msg": "llm: claims: [world] 12 claim(s) from 4 outlet(s) 'Venezuelan opposition leader María Corina Machado returns home after months in exile'"}
+{"run": "digest", "t": 147131, "kind": "dbg", "msg": "llm: claims: [world] 14 claim(s) from 4 outlet(s) 'Marine Le Pen launches presidential campaign as cost-of-living protests sweep France'"}
+{"run": "digest", "t": 147131, "kind": "dbg", "msg": "llm: claims: [world] 15 claim(s) from 5 outlet(s) 'US midterm campaign intensifies with record ad spending and high-profile Obama rallies'"}
+{"run": "digest", "t": 147169, "kind": "dbg", "msg": "llm: call #3 model=gemini-3.6-flash label=claims-india prompt=64158ch"}
+{"run": "digest", "t": 158238, "kind": "dbg", "msg": "ratelimit: claims-india transient failure (1/3), retrying in 8s: ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"}
+{"run": "digest", "t": 158238, "kind": "event", "stage": "ratelimit", "label": "claims-india", "verdict": "transient_retry", "attempt": 1, "attempts_allowed": 3, "wait_s": 7.9, "error": "ServerError(\"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\")"}
+{"run": "digest", "t": 185730, "kind": "dbg", "msg": "llm: claims-india finish_reason=FinishReason.STOP"}
+{"run": "digest", "t": 185731, "kind": "event", "stage": "llm", "call": 3, "label": "claims-india", "model": "gemini-3.6-flash", "latency_ms": 38560, "prompt_chars": 64158, "system_chars": 2135, "response_chars": 7621, "finish_reason": "FinishReason.STOP", "malformed_json": false, "json_retries": 0, "max_output_tokens": 32768, "usage": {"prompt_token_count": 16712, "candidates_token_count": 1948, "total_token_count": 20900, "thoughts_token_count": 2240}}
+{"run": "digest", "t": 185731, "kind": "dbg", "msg": "llm: claims: [india] 12 claim(s) from 3 outlet(s) 'Bay of Bengal depression set to intensify into severe cyclone targeting Andhra Pradesh and Odisha coasts'"}
+{"run": "digest", "t": 185731, "kind": "dbg", "msg": "llm: claims: [india] 8 claim(s) from 3 outlet(s) \"BJP launches nationwide protests over Congress chief Mallikarjun Kharge's remark on PM Modi\""}
+{"run": "digest", "t": 185731, "kind": "dbg", "msg": "llm: claims: [india] 10 claim(s) from 3 outlet(s) 'PM Modi inaugurates RBI cybersecurity centre in Odisha, warning against cyber threats to banking'"}
+{"run": "digest", "t": 185731, "kind": "dbg", "msg": "llm: extract_claims -> 9/9 cluster(s), 109 claim(s) total, 0 cluster(s) rejected, 0 claim(s) rejected"}
+{"run": "digest", "t": 185735, "kind": "event", "stage": "stage", "name": "claims", "ms": 76344, "ok": true, "error": ""}
+{"run": "digest", "t": 185771, "kind": "dbg", "msg": "llm: call #4 model=gemini-3.6-flash label=write prompt=18671ch"}
+{"run": "digest", "t": 242318, "kind": "dbg", "msg": "llm: write finish_reason=FinishReason.STOP"}
+{"run": "digest", "t": 242319, "kind": "event", "stage": "llm", "call": 4, "label": "write", "model": "gemini-3.6-flash", "latency_ms": 56547, "prompt_chars": 18671, "system_chars": 4458, "response_chars": 18818, "finish_reason": "FinishReason.STOP", "malformed_json": false, "json_retries": 0, "max_output_tokens": 32768, "usage": {"prompt_token_count": 5888, "candidates_token_count": 4968, "total_token_count": 19257, "thoughts_token_count": 8401}}
+{"run": "digest", "t": 242326, "kind": "dbg", "msg": "anchor: clean_vocab dropped 1 item(s)"}
+{"run": "digest", "t": 242331, "kind": "dbg", "msg": "llm: write_stories -> 9 story/stories written, 0 dropped, 0 thin-sourced"}
+{"run": "digest", "t": 242331, "kind": "event", "stage": "stage", "name": "write", "ms": 56595, "ok": true, "error": ""}
+{"run": "digest", "t": 242334, "kind": "dbg", "msg": "digest: wrote /home/runner/work/follow-news/follow-news/data/2026-10-26.json with 9 story/stories"}
+{"run": "digest", "t": 242497, "kind": "event", "stage": "stage", "name": "render", "ms": 163, "ok": true, "error": ""}
+{"run": "digest", "t": 242497, "kind": "dbg", "msg": "digest: 4 LLM call(s) this run"}
+{"run": "digest", "t": 242497, "kind": "event", "stage": "tracer", "msg": "capture finished", "ok": true, "ms": 242497, "bytes": 15432173}
+{"run": "follow", "t": 0, "kind": "follow", "stage": "tracer", "msg": "capture started", "level": 1, "day": "2026-10-26"}
+{"run": "follow", "t": 3, "kind": "dbg", "msg": "extract: cache enabled at /home/runner/work/follow-news/follow-news/cache/extract.json (121 url(s))"}
+{"run": "follow", "t": 424, "kind": "dbg", "msg": "follow: run -> 3 existing record(s), 3 owner issue(s) in scope"}
+{"run": "follow", "t": 425, "kind": "dbg", "msg": "dossier: grounded ceiling of 20 is over 14 days old; re-probing"}
+{"run": "follow", "t": 425, "kind": "dbg", "msg": "follow: sweep -> nothing to research; 0 active follow(s) all current"}
+{"run": "follow", "t": 426, "kind": "dbg", "msg": "follow: wrote /home/runner/work/follow-news/follow-news/followed/1/record.json"}
+{"run": "follow", "t": 427, "kind": "dbg", "msg": "follow: wrote /home/runner/work/follow-news/follow-news/followed/2/record.json"}
+{"run": "follow", "t": 430, "kind": "dbg", "msg": "follow: wrote /home/runner/work/follow-news/follow-news/followed/3/record.json"}
+{"run": "follow", "t": 597, "kind": "dbg", "msg": "follow: run -> done, 0 grounded call(s) this run"}
+{"run": "follow", "t": 597, "kind": "event", "stage": "tracer", "msg": "capture finished", "ok": true, "ms": 597, "bytes": 5673}

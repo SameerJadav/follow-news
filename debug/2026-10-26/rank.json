@@ -1,0 +1,848 @@
+{
+  "dials": {
+    "WEIGHT_FLOOR": 5,
+    "TIER_WEIGHT": {
+      "lead": 4,
+      "major": 2,
+      "notable": 0
+    },
+    "WIKI_BONUS": 2,
+    "HARD_CAP": 12,
+    "MIN_STORIES_IF_ANY": 3,
+    "MAX_ARTICLES_PER_STORY": 5
+  },
+  "floor_relaxed": false,
+  "kept_weights": [
+    13,
+    11,
+    10,
+    10,
+    8,
+    8,
+    7,
+    6,
+    6
+  ],
+  "per_section": {
+    "world": 6,
+    "india": 3
+  },
+  "clusters": [
+    {
+      "headline_hint": "Lula da Silva wins historic fourth term as president of Brazil, defeating Flávio Bolsonaro",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "lead",
+      "article_ids": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        51,
+        60,
+        82,
+        106,
+        126,
+        153,
+        222,
+        236,
+        254,
+        263
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        51,
+        60,
+        82,
+        106,
+        126,
+        153,
+        222,
+        236,
+        254,
+        263
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 7,
+      "wiki_backed": true,
+      "wiki_event": "Brazilians vote in the second round of presidential elections between incumbent center-left president Luiz Inácio Lula da Silva of the Workers' Party and right-wing challenger Flávio Bolsonaro of the Liberal Party.",
+      "weight": 13,
+      "weight_terms": {
+        "distinct_outlets": 7,
+        "tier_weight": 4,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "France 24",
+          "title": "Brazil's President Lula da Silva beats Flavio Bolsonaro to win re-election",
+          "url": "https://www.france24.com/en/americas/20261026-brazil-s-president-lula-da-silva-beats-flavio-bolsonaro-to-win-re-election"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Brazil’s Lula wins re-election, defeating Trump ally Bolsonaro",
+          "url": "https://timesofindia.indiatimes.com/world/rest-of-world/brazils-lula-wins-re-election-defeating-trump-ally-bolsonaro/articleshow/135199956.cms"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Brazil runoff live updates: Lula has defeated Bolsonaro, electoral court announces",
+          "url": "https://www.theguardian.com/world/live/2026/oct/25/brazil-election-runoff-live-updates-flavio-bolsonaro-lula"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "Brazil pauses presidential vote count after Supreme Court extends voting hours",
+          "url": "https://www.channelnewsasia.com/world/brazil-pauses-presidential-vote-count-after-supreme-court-extends-voting-hours-6490261"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "U.S. influence in Latin America at stake in runoff election in Brazil",
+          "url": "https://www.npr.org/2026/10/25/nx-s1-6011223/u-s-influence-in-latin-america-at-stake-in-runoff-election-in-brazil"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 11
+    },
+    {
+      "headline_hint": "Aleksandar Vučić concedes defeat in Serbia election as student movement wins majority",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        13,
+        14,
+        15,
+        20,
+        28,
+        59,
+        93
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        13,
+        14,
+        15,
+        20,
+        28,
+        59,
+        93
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 6,
+      "wiki_backed": true,
+      "wiki_event": "Serbians vote for all seats in the National Assembly in a snap election, amid the student-led protests against the incumbent United Serbia government.",
+      "weight": 10,
+      "weight_terms": {
+        "distinct_outlets": 6,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "Serbian leader Aleksandar Vučić ousted by student movement in seismic election",
+          "url": "https://www.theguardian.com/world/2026/oct/25/serbian-leader-aleksandar-vucic-concedes-defeat-in-fiercely-contested-parliamentary-election"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "Serbia's Vucic concedes defeat in historic election win for student protest movement",
+          "url": "https://www.channelnewsasia.com/world/serbia-election-vucic-concede-defeat-student-protest-movement-6491631"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Serbia’s Vucic concedes defeat as student-led movement wins parliamentary election",
+          "url": "https://timesofindia.indiatimes.com/world/europe/serbias-vucic-concedes-defeat-as-student-led-movement-wins-parliamentary-election/articleshow/135199388.cms"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Serbia's veteran ruler Vučić concedes election to student-led protest movement",
+          "url": "https://www.bbc.co.uk/news/articles/cw5yn3xlprpmo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Serbia's Vucic concedes defeat in historic snap election with record turnout",
+          "url": "https://www.france24.com/en/europe/20261025-serbia-s-vucic-concedes-defeat-in-historic-snap-election-with-record-turnout"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 2
+    },
+    {
+      "headline_hint": "Venezuelan opposition leader María Corina Machado returns home after months in exile",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        18,
+        23,
+        85,
+        86,
+        88,
+        108,
+        190,
+        191
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        18,
+        23,
+        85,
+        86,
+        88,
+        108,
+        190,
+        191
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 6,
+      "wiki_backed": true,
+      "wiki_event": "Venezuelan opposition leader and Nobel Peace Prize laureate María Corina Machado announces she has returned to Venezuela from exile.",
+      "weight": 10,
+      "weight_terms": {
+        "distinct_outlets": 6,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "BBC World",
+          "title": "Venezuelan opposition leader María Machado returns after months in exile",
+          "url": "https://www.bbc.co.uk/news/articles/cq8ez592pp0eo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Venezuela’s opposition leader Machado returns after months in exile",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/10/25/venezuelas-opposition-leader-machado-returns-after-months-in-exile?traffic_source=rss"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "Venezuela opposition leader Machado returns home after fraught year away",
+          "url": "https://www.channelnewsasia.com/world/venezuela-opposition-leader-machado-returns-home-after-fraught-year-away-6490756"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Exiled opposition leader María Corina Machado returns to Venezuela",
+          "url": "https://www.theguardian.com/world/2026/oct/25/exiled-venezuelan-opposition-leader-maria-corina-machado-announces-her-return"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Nobel laureate, Venezuela opposition leader Machado returns after exile",
+          "url": "https://timesofindia.indiatimes.com/world/rest-of-world/i-am-here-with-you-nobel-laureate-venezuela-opposition-leader-machado-returns-after-nearly-a-year-in-exile/articleshow/135197260.cms"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 3
+    },
+    {
+      "headline_hint": "Israel braces for pivotal general election as security and West Bank tensions escalate",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        22,
+        42,
+        44,
+        61,
+        71,
+        143,
+        197,
+        265,
+        279,
+        302,
+        305,
+        309,
+        318
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        22,
+        42,
+        44,
+        61,
+        71,
+        143,
+        197,
+        265,
+        279,
+        302,
+        305,
+        309,
+        318
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 7,
+      "wiki_backed": true,
+      "wiki_event": "Three staff members are killed and eight students are wounded in an Israeli airstrike against the Islamic University of Gaza in Gaza City. Four other Palestinians are also killed in more airstrikes in the Gaza Strip.",
+      "weight": 11,
+      "weight_terms": {
+        "distinct_outlets": 7,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "France 24",
+          "title": "Report: IDF chief pushes back on Netanyahu's order",
+          "url": "https://www.france24.com/en/video/20261025-report-idf-pushes-back-on-netanyahu-s-order"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Deeply divided Israel braces for pivotal election",
+          "url": "https://www.bbc.co.uk/news/articles/ckpdgy6pl7xlo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "This center-right former general could unseat Netanyahu as Prime Minister in Israel",
+          "url": "https://www.npr.org/2026/10/25/nx-s1-6011185/this-center-right-former-general-could-unseat-netanyahu-as-prime-minister-in-israel"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "Billionaire Trump backer says Ben-Gvir, Smotrich should not serve in next Israeli government",
+          "url": "https://www.channelnewsasia.com/world/billionaire-trump-backer-says-ben-gvir-smotrich-should-not-serve-in-next-israeli-government-6490701"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "US and Israel elections: New leaders, same policies?",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/10/25/us-and-israel-elections-new-leaders-same-policies?traffic_source=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 8
+    },
+    {
+      "headline_hint": "Marine Le Pen launches presidential campaign as cost-of-living protests sweep France",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        50,
+        54,
+        83,
+        87,
+        89,
+        98,
+        122,
+        158,
+        178,
+        184,
+        213,
+        215,
+        238,
+        240,
+        264,
+        275,
+        295,
+        299
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        50,
+        54,
+        83,
+        87,
+        89,
+        98,
+        122,
+        158,
+        178,
+        184,
+        213,
+        215,
+        238,
+        240,
+        264,
+        275,
+        295,
+        299
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 6,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 8,
+      "weight_terms": {
+        "distinct_outlets": 6,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "Marine Le Pen vows French ‘renaissance’ as far right eyes seat of power",
+          "url": "https://www.aljazeera.com/news/2026/10/25/marine-le-pen-vows-a-french-renaissance-as-far-right-eyes-seat-of-power?traffic_source=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Macron accused of putting France’s right to protest at risk with ‘vandal’s law’",
+          "url": "https://www.theguardian.com/world/2026/oct/25/macrons-vandals-pay-bill-puts-right-to-protest-at-risk"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Marine Le Pen launches presidential campaign in Orléans",
+          "url": "https://www.france24.com/en/video/20261025-marine-le-pen-launches-presidential-campaign-in-orl%C3%A9ans"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "From the French Revolution to Yellow Vests: Why protest is embedded in France’s political history amid nationwide unrest",
+          "url": "https://www.livemint.com/news/world/from-the-french-revolution-to-yellow-vests-why-protest-is-embedded-in-france-s-political-history-amid-nationwide-unrest-11792950743622.html"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "More than 1,300 arrested as clashes follow another day of mass protests across France",
+          "url": "https://www.bbc.co.uk/news/articles/c95ynd587ynzo?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 13
+    },
+    {
+      "headline_hint": "US midterm campaign intensifies with record ad spending and high-profile Obama rallies",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        10,
+        32,
+        53,
+        57,
+        62,
+        187,
+        217,
+        314
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        10,
+        32,
+        53,
+        57,
+        62,
+        187,
+        217,
+        314
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 6,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 8,
+      "weight_terms": {
+        "distinct_outlets": 6,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "Trump escalates anti-Muslim rhetoric in fierce attack on El-Sayed",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/10/26/trump-escalates-anti-muslim-rhetoric-in-fierce-attack-on-el-sayed?traffic_source=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Trump rallies for Mike Rogers – and Nicki Minaj’s derriere – in Michigan",
+          "url": "https://www.theguardian.com/us-news/2026/oct/25/trump-nicki-minaj-mike-rogers-michigan-rally"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Trump calls El-Sayed ‘jihadist’, alleges mother’s Al-Qaeda links at Michigan rally",
+          "url": "https://timesofindia.indiatimes.com/world/us/trump-calls-el-sayed-jihadist-ahead-of-michigan-rally-alleges-sharia-law-push/articleshow/135197552.cms"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Midterms: Obama campaigns for Democrats, slams Trump",
+          "url": "https://www.france24.com/en/video/20261025-midterms-obama-campaigns-for-democrats-slams-trump-1"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "US midterms 2026: Political ad spending tops $10 billion — where is the money coming from and what is driving the surge?",
+          "url": "https://www.livemint.com/news/world/us-midterms-2026-political-ad-spending-tops-10-billion-where-is-the-money-coming-from-and-what-is-driving-the-surge-11792930396568.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 3
+    },
+    {
+      "headline_hint": "Storm Boelo batters UK and northern Europe, leaving two dead and power outages",
+      "section": "world",
+      "category": "disaster",
+      "tier_requested": "notable",
+      "article_ids": [
+        39,
+        56,
+        118
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        39,
+        56,
+        118
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "Two dead and 160,000 properties without power as Storm Boelo batters UK",
+          "url": "https://www.theguardian.com/uk-news/2026/oct/25/storm-boelo-warnings-scotland-northern-ireland-north-of-england-high-winds-uk"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "Storms batter Europe hitting power supplies, flights and phones",
+          "url": "https://www.channelnewsasia.com/world/storms-batter-europe-hitting-power-supplies-flights-and-phones-6491546"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Storm Boelo batters UK, disrupts travel and leaves 82,000 homes without power",
+          "url": "https://www.livemint.com/news/storm-boelo-batters-uk-disrupts-travel-and-leaves-82-000-homes-without-power-11792952041003.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Bay of Bengal depression set to intensify into severe cyclone targeting Andhra Pradesh and Odisha coasts",
+      "section": "india",
+      "category": "disaster",
+      "tier_requested": "lead",
+      "article_ids": [
+        92,
+        127,
+        131,
+        176,
+        270,
+        285
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        92,
+        127,
+        131,
+        176,
+        270,
+        285
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 4,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "The Hindu",
+          "title": "Monsoon tracker LIVE: Depression over Bay of Bengal set to become ‘very severe cyclonic storm’, cross A.P. coast by October 28",
+          "url": "https://www.thehindu.com/news/national/cyclone-andhra-pradesh-odisha-live-updates-october-25-2026/article71622459.ece"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Schools shut, officials' leaves cancelled: Odisha steps up preparedness as severe cyclonic storm nears Andhra coast",
+          "url": "https://www.hindustantimes.com/india-news/odisha-schools-offices-severe-cyclonic-storm-bay-of-bengal-andhra-coast-tamil-nadu-rainfall-imd-alert-101792920225200.html"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Cyclone Arnab: Depression over Bay of Bengal to intensify; when and where will landfall occur? IMD's latest updates",
+          "url": "https://www.livemint.com/news/india/cyclone-arnab-depression-over-bay-of-bengal-to-intensify-when-and-where-will-landfall-occur-imds-latest-updates-11792917730320.html"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "Officials urged to remain alert as severe cyclone approaches",
+          "url": "https://www.thehindu.com/news/national/andhra-pradesh/officials-urged-to-remain-alert-as-severe-cyclone-approaches/article71624053.ece"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "Three North Andhra districts step up cyclone preparedness",
+          "url": "https://www.thehindu.com/news/national/andhra-pradesh/three-north-andhra-districts-step-up-cyclone-preparedness/article71624037.ece"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 1
+    },
+    {
+      "headline_hint": "BJP launches nationwide protests over Congress chief Mallikarjun Kharge's remark on PM Modi",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        68,
+        75,
+        76,
+        142,
+        144,
+        180,
+        204,
+        209,
+        246,
+        247
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        68,
+        75,
+        76,
+        142,
+        144,
+        180,
+        204,
+        209,
+        246,
+        247
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 6,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "The Hindu",
+          "title": "BJP to hold nationwide protest on October 26 against Kharge’s remark on Modi",
+          "url": "https://www.thehindu.com/news/national/bjp-to-hold-nationwide-protest-on-october-26-against-kharges-baap-remark-for-modi/article71624386.ece"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "BJP calls for nationwide protest over Kharge’s ‘baap’ remark",
+          "url": "https://timesofindia.indiatimes.com/india/bjp-calls-protest-over-kharges-baap-remark/articleshow/135197490.cms"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "BJP To Launch Nationwide Protests Against Mallikarjun Kharge Over Remarks On PM Modi",
+          "url": "https://www.ndtv.com/india-news/bjp-to-launch-nationwide-protests-against-mallikarjun-kharge-over-remarks-on-pm-modi-12234707#publisher=newsstand"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "‘Mafia’: BJP attacks Congress after Kharge’s ‘baap’ remark targeting PM Modi",
+          "url": "https://www.hindustantimes.com/india-news/mafia-gang-bjp-attacks-congress-after-kharge-s-baap-remark-targeting-pm-modi-bihar-patna-101792941758920.html"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "BJP slams Kharge over ‘indecent’ remarks on PM Modi",
+          "url": "https://www.thehindu.com/news/national/bihar/kharges-remark-in-bihar-pm-modi-father-sparks-row-bjp-congress/article71623852.ece"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 5
+    },
+    {
+      "headline_hint": "PM Modi inaugurates RBI cybersecurity centre in Odisha, warning against cyber threats to banking",
+      "section": "india",
+      "category": "technology",
+      "tier_requested": "major",
+      "article_ids": [
+        49,
+        200,
+        224,
+        228,
+        259
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        49,
+        200,
+        224,
+        228,
+        259
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 6,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "Keeping all data centres sovereign, says RBI governor",
+          "url": "https://timesofindia.indiatimes.com/business/india-business/keeping-all-data-centres-sovereign-says-rbi-governor/articleshow/135197590.cms"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Protect banking system from cyber looters, cyber terrorists: PM Modi",
+          "url": "https://www.livemint.com/news/india/protect-banking-system-from-cyber-looters-cyber-terrorists-pm-modi-11792939217217.html"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "'Wars Being Fought By Attacking Economies': PM Modi On \"Cyber Terrorists\"",
+          "url": "https://www.ndtv.com/india-news/wars-being-fought-by-attacking-economies-pm-modi-on-cyber-terrorists-12234108#publisher=newsstand"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "‘Wars no longer fought with weapons alone’: PM Modi flags cyber security threats",
+          "url": "https://www.hindustantimes.com/india-news/wars-no-longer-fought-with-weapons-alone-pm-modi-flags-cyber-security-threats-101792937721619.html"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "PM Modi inaugurates  ₹169-crore RBI data centre, cybersecurity training institute in Odisha",
+          "url": "https://www.hindustantimes.com/india-news/pm-modi-inaugurates-rs-169-crore-rbi-data-centre-cybersecurity-training-institute-in-odisha-101792929176646.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "India and European Union race to finalize free trade agreement ahead of December deadline",
+      "section": "india",
+      "category": "economy",
+      "tier_requested": "major",
+      "article_ids": [
+        130,
+        266
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        130,
+        266
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Livemint",
+          "title": "India-EU FTA signing targeted for December 17–18 during PM Modi’s expected Brussels visit - Report",
+          "url": "https://www.livemint.com/news/india/indiaeu-fta-signing-targeted-for-december-17-18-during-pm-modi-s-expected-brussels-visit-report-11792950197332.html"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "India, EU race to finalise FTA ahead of December deadline to coincide with PM Modi's Brussels visit",
+          "url": "https://www.hindustantimes.com/india-news/india-eu-race-to-finalise-fta-before-december-deadline-to-coincide-with-pm-modis-brussels-visit-101792926809767.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Former Supreme Court judge Sanjay Kishan Kaul says ex-CJI Chandrachud was overly deferential to government",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        67,
+        114,
+        289
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        67,
+        114,
+        289
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "Former CJI D Y Chandrachud was more deferential to govt than needed, says Justice Kaul",
+          "url": "https://timesofindia.indiatimes.com/india/former-cji-d-y-chandrachud-was-more-deferential-to-government-than-needed-says-justice-kaul/articleshow/135197538.cms"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Collegium decisions unanimous, says ex-CJI Chandrachud",
+          "url": "https://www.hindustantimes.com/india-news/justice-lalit-changed-case-listing-approach-as-cji-says-justice-kaul-101792953451949.html"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "Ex-CJI Chandrachud was ‘too deferential’ to Centre in judicial appointments: Former SC judge",
+          "url": "https://scroll.in/latest/1096629/ex-cji-chandrachud-was-too-deferential-to-centre-in-judicial-appointments-former-sc-judge?utm_source=rss&utm_medium=public"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Student protests intensify at Jamia Millia Islamia over demands to reinstate student union",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        78,
+        154,
+        174,
+        261
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        78,
+        154,
+        174,
+        261
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "The Hindu",
+          "title": "Jamia student protest intensifies amid restrictions, heavy police deployment",
+          "url": "https://www.thehindu.com/news/cities/Delhi/jamia-students-climb-gates-join-protest-amid-heavy-police-deployment/article71623802.ece"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "FIR filed against 2 Congress MPs for 'trespass' as Jamia university protest over student union demand continues",
+          "url": "https://www.hindustantimes.com/india-news/jamia-protest-over-student-union-demand-continues-delhi-police-files-fir-against-congress-mps-for-trespass-101792943042655.html"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Jamia protest: FIR against oppn MPs for trespassing on campus",
+          "url": "https://timesofindia.indiatimes.com/india/delhi-police-file-fir-against-congress-3-mps-over-alleged-trespassing-at-jamia-during-student-protest/articleshow/135194757.cms"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Jamia protest intensifies over student union demand; 4 students on hunger strike, heavy security outside campus",
+          "url": "https://www.hindustantimes.com/india-news/jamia-protest-live-news-over-student-union-demand-students-on-hunger-strike-heavy-security-outside-campus-101792925553428.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    }
+  ]
+}
