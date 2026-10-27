@@ -1,0 +1,799 @@
+{
+  "min_claim_chars": 20,
+  "max_claims_per_story": 24,
+  "calls": [
+    {
+      "label": "claims-world",
+      "cluster_ids": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "label": "claims-india",
+      "cluster_ids": [
+        4,
+        5
+      ]
+    }
+  ],
+  "rejected_claims": 0,
+  "rejected_clusters": 0,
+  "clusters": [
+    {
+      "cluster_id": 0,
+      "headline_hint": "Lula da Silva wins fourth term as President of Brazil, defeating Flávio Bolsonaro",
+      "section": "world",
+      "batch_position": 0,
+      "claim_count": 13,
+      "distinct_outlets": 3,
+      "source_kinds": {
+        "fulltext": 13
+      },
+      "claims": [
+        {
+          "id": 1,
+          "cluster_id": 0,
+          "text": "Luiz Inácio Lula da Silva won a fourth term as President of Brazil, defeating Flávio Bolsonaro in the election runoff.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/ckm23y3mg1yyo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 2,
+          "cluster_id": 0,
+          "text": "Luiz Inácio Lula da Silva won the runoff vote with 51.79% of the total, defeating Flávio Bolsonaro by 4.4 million votes.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/ckm23y3mg1yyo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 3,
+          "cluster_id": 0,
+          "text": "Flávio Bolsonaro had won the first round of voting on October 4 with 47% of the vote, ahead of Lula's 45%.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/ckm23y3mg1yyo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 4,
+          "cluster_id": 0,
+          "text": "Supreme Court Justice Alexandre de Moraes banned 45-year-old senator Flávio Bolsonaro from leaving Brazil and ordered him to surrender his passports within 24 hours.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/26/flavio-bolsonaro-brazil-lula-election",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 5,
+          "cluster_id": 0,
+          "text": "The Supreme Court ruling regarding Flávio Bolsonaro's passport relates to a criminal investigation into his alleged involvement in a money-laundering scheme involving lawyer Willer Tomaz and betting companies.",
+          "kind": "background",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/26/flavio-bolsonaro-brazil-lula-election",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 6,
+          "cluster_id": 0,
+          "text": "Flávio Bolsonaro stated federal police served him with the travel ban order outside the Brasília residence of his father, Jair Bolsonaro, who is under house arrest.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/26/flavio-bolsonaro-brazil-lula-election",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 7,
+          "cluster_id": 0,
+          "text": "Former President Jair Bolsonaro is currently serving a 27-year prison sentence following a conviction for plotting a coup after his 2022 election loss.",
+          "kind": "background",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/ckm23y3mg1yyo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 8,
+          "cluster_id": 0,
+          "text": "Brazil's Supreme Court ordered voting hours extended nationwide by two hours on Sunday following requests from both presidential campaigns.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/us/looked-so-corrupt-trump-questions-brazil-election-after-lula-defeats-his-ally/articleshow/135219425.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 9,
+          "cluster_id": 0,
+          "text": "Lula's campaign requested extended voting hours due to bus transportation issues in nine states, while Bolsonaro's campaign cited heavy rain in southern Brazil.",
+          "kind": "background",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/us/looked-so-corrupt-trump-questions-brazil-election-after-lula-defeats-his-ally/articleshow/135219425.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 10,
+          "cluster_id": 0,
+          "text": "Supreme Electoral Court President Kássio Nunes Marques confirmed Lula's victory and stated that the voting time extension did not alter the race's outcome.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/ckm23y3mg1yyo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 11,
+          "cluster_id": 0,
+          "text": "US President Donald Trump claimed without providing evidence that Brazil's election looked rigged and criticized the decision to extend voting hours.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/us/looked-so-corrupt-trump-questions-brazil-election-after-lula-defeats-his-ally/articleshow/135219425.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 12,
+          "cluster_id": 0,
+          "text": "Flávio Bolsonaro's political party issued a statement recognizing the presidential result proclaimed by the electoral court while calling for political debate on raised questions.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/26/flavio-bolsonaro-brazil-lula-election",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 13,
+          "cluster_id": 0,
+          "text": "Following the unexpected election result, the São Paulo stock exchange opened 15% lower before partially recovering.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/ckm23y3mg1yyo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 1,
+      "headline_hint": "Student-led opposition movement wins historic victory in Serbia parliamentary elections",
+      "section": "world",
+      "batch_position": 1,
+      "claim_count": 11,
+      "distinct_outlets": 4,
+      "source_kinds": {
+        "fulltext": 11
+      },
+      "claims": [
+        {
+          "id": 14,
+          "cluster_id": 1,
+          "text": "In Serbia's parliamentary election, the opposition Student List movement won 52.45% of the vote and 138 seats in the National Assembly.",
+          "kind": "figure",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/europe/20261026-serbia-elections-tracking-fraud-had-an-impact-on-results-vote-fraud",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 15,
+          "cluster_id": 1,
+          "text": "The Aleksandar Vučić – United Serbia list received 39.2% of the vote, securing 103 seats.",
+          "kind": "figure",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/europe/20261026-serbia-elections-tracking-fraud-had-an-impact-on-results-vote-fraud",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 16,
+          "cluster_id": 1,
+          "text": "Outgoing president Aleksandar Vučić conceded defeat late on Sunday, ending 14 years of rule by his Serbian Progressive Party.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/26/serbia-student-list-preparing-for-talks-on-forming-government-despite-no-clear-leader",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 17,
+          "cluster_id": 1,
+          "text": "The Student List movement emerged following the November 1, 2024 collapse of a railway station canopy in Novi Sad, which killed 16 people.",
+          "kind": "background",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/europe/20261026-serbia-elections-tracking-fraud-had-an-impact-on-results-vote-fraud",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 18,
+          "cluster_id": 1,
+          "text": "Voter turnout in Serbia reached 69% with over 4.4 million citizens voting, compared to 55.5% in December 2023.",
+          "kind": "figure",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/europe/20261026-serbia-elections-tracking-fraud-had-an-impact-on-results-vote-fraud",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 19,
+          "cluster_id": 1,
+          "text": "The Student List trained at least 16,000 official controllers and mobile monitoring teams to detect voter fraud practices like carousel voting and parallel lists.",
+          "kind": "background",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/europe/20261026-serbia-elections-tracking-fraud-had-an-impact-on-results-vote-fraud",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 20,
+          "cluster_id": 1,
+          "text": "The Student List movement is non-hierarchical and leaderless, fielding candidates including academics, doctors, actors, and farmers with no prior political experience.",
+          "kind": "background",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/26/serbia-student-list-preparing-for-talks-on-forming-government-despite-no-clear-leader",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 21,
+          "cluster_id": 1,
+          "text": "Prominent figures on the Student List include cardiologist Ilija Srdanović, former central bank governor Dejan Šoškić, and chemistry professor Radomir Saičić.",
+          "kind": "background",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/26/serbia-student-list-preparing-for-talks-on-forming-government-despite-no-clear-leader",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 22,
+          "cluster_id": 1,
+          "text": "Following his concession, Aleksandar Vučić alleged the election result was the verification of a revolution directly supported by European countries and the US deep state.",
+          "kind": "quote",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/world/celebrations-begin-after-serbia-elections-2026-results-explained-how-historic-students-movement-brought-down-vui-11793010861312.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 23,
+          "cluster_id": 1,
+          "text": "European Commissioner for Enlargement Marta Kos stated that a new chapter can begin for Serbia and that the EU door is open.",
+          "kind": "quote",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cw5yn3xlprpmo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 24,
+          "cluster_id": 1,
+          "text": "Kremlin spokesperson Dmitry Peskov stated Russia hopes Serbia's new leadership understands that cooperation with Russia is in Serbia's interests.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/26/serbia-student-list-preparing-for-talks-on-forming-government-despite-no-clear-leader",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 2,
+      "headline_hint": "Israel prepares for national election amid West Bank displacements and regional tensions",
+      "section": "world",
+      "batch_position": 2,
+      "claim_count": 10,
+      "distinct_outlets": 3,
+      "source_kinds": {
+        "fulltext": 8,
+        "summary": 2
+      },
+      "claims": [
+        {
+          "id": 25,
+          "cluster_id": 2,
+          "text": "Israel holds a parliamentary election on October 27 to elect the 120 members of the Knesset, requiring 61 seats to establish a governing coalition.",
+          "kind": "background",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/world/israel-elections-2026-what-happens-if-no-party-can-secure-a-61-seat-knesset-majority-top-scenarios-explained-11793026880003.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 26,
+          "cluster_id": 2,
+          "text": "Polls show Prime Minister Benjamin Netanyahu's far-right coalition trailing the opposition bloc led by retired general Gadi Eisenkot, with neither side projected to reach 61 seats.",
+          "kind": "background",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/26/netanyahu-reportedly-pressured-israel-military-attack-iran-runup-to-election",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 27,
+          "cluster_id": 2,
+          "text": "Benjamin Netanyahu posted an AI-generated image of a nuclear mushroom cloud destroying Tel Aviv, warning voters to elect him or face nuclear annihilation from Iran.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/26/netanyahu-reportedly-pressured-israel-military-attack-iran-runup-to-election",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 28,
+          "cluster_id": 2,
+          "text": "Israeli media reported a clash between Benjamin Netanyahu and IDF Chief of Staff Lt Gen Eyal Zamir over a military directive concerning Iran that Zamir requested in writing.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/26/netanyahu-reportedly-pressured-israel-military-attack-iran-runup-to-election",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 29,
+          "cluster_id": 2,
+          "text": "Opposition leader Gadi Eisenkot stated that he would not allow the IDF to be turned into a pawn in Netanyahu's political survival campaign.",
+          "kind": "quote",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/26/netanyahu-reportedly-pressured-israel-military-attack-iran-runup-to-election",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 30,
+          "cluster_id": 2,
+          "text": "Reports indicated Benjamin Netanyahu tried to persuade US President Donald Trump to launch a renewed assault on Iran, but Trump ruled out action until after the US midterm elections.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/26/netanyahu-reportedly-pressured-israel-military-attack-iran-runup-to-election",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 31,
+          "cluster_id": 2,
+          "text": "Israeli forces detained an international delegation of 23 people, including UK MP Clive Lewis and Scottish MP Lara Bird, at the border for nine hours and barred them from entering the West Bank.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/26/british-politicians-among-international-delegates-barred-from-entering-west-bank",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 32,
+          "cluster_id": 2,
+          "text": "UN rights chief Volker Türk warned of ethnic cleansing concerns after Israeli forces forcibly displaced over 3,000 Palestinians from their homes in Hebron.",
+          "kind": "event",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/middle-east/20261026-un-cites-ethnic-cleansing-concerns-around-israel-palestinian-displacement-operation-hebron",
+          "source_kind": "summary"
+        },
+        {
+          "id": 33,
+          "cluster_id": 2,
+          "text": "Israel's displacement operation in Hebron followed a Friday checkpoint attack near the city in which two Palestinian gunmen killed two Israeli soldiers.",
+          "kind": "background",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/middle-east/20261026-un-cites-ethnic-cleansing-concerns-around-israel-palestinian-displacement-operation-hebron",
+          "source_kind": "summary"
+        },
+        {
+          "id": 34,
+          "cluster_id": 2,
+          "text": "The UN aid coordination office recorded at least 160 Israeli settler attacks linked to the olive harvest in the first two weeks of October.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/26/british-politicians-among-international-delegates-barred-from-entering-west-bank",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 3,
+      "headline_hint": "Jordan conducts retaliatory airstrikes in Syria and arrests suspects following Karak church attack",
+      "section": "world",
+      "batch_position": 3,
+      "claim_count": 11,
+      "distinct_outlets": 2,
+      "source_kinds": {
+        "fulltext": 11
+      },
+      "claims": [
+        {
+          "id": 35,
+          "cluster_id": 3,
+          "text": "Nine people were killed and over two dozen wounded in a Friday attack during a funeral at a Greek Orthodox church in Karak, Jordan.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/26/jordan-attacks-militants-syria-retaliation-for-last-week-church-attack",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 36,
+          "cluster_id": 3,
+          "text": "The attack took place during a funeral procession at St George's Church in the village of Hammoud, located in Jordan's Karak governorate.",
+          "kind": "background",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/middle-east/20261026-jordan-arrests-three-following-deadly-terror-attack-on-church",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 37,
+          "cluster_id": 3,
+          "text": "Jordanian security forces arrested three Jordanian men—brothers Hazzah Zaidan Mohammad and Mishal Zaidan Mohammad, and Ahmad Sami Hussein—following a dawn shootout at an abandoned house in Karak.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/26/jordan-attacks-militants-syria-retaliation-for-last-week-church-attack",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 38,
+          "cluster_id": 3,
+          "text": "All three suspects were wounded during the shootout with security forces, and a large cache of munitions was seized.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/26/jordan-attacks-militants-syria-retaliation-for-last-week-church-attack",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 39,
+          "cluster_id": 3,
+          "text": "Public Security Directorate chief Maj Gen Obaidallah Abd Rabbo Al-Maayta described the attackers as takfiri extremists who acted independently.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/26/jordan-attacks-militants-syria-retaliation-for-last-week-church-attack",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 40,
+          "cluster_id": 3,
+          "text": "The Jordanian air force conducted retaliatory airstrikes against positions of armed groups in southern Syria tied to the Karak attack.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/26/jordan-attacks-militants-syria-retaliation-for-last-week-church-attack",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 41,
+          "cluster_id": 3,
+          "text": "The health director in Syria's Daraa province reported that at least five civilians were killed in the Jordanian airstrikes.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/26/jordan-attacks-militants-syria-retaliation-for-last-week-church-attack",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 42,
+          "cluster_id": 3,
+          "text": "The director of health for Daraa province told Syria's state news agency SANA that at least eight civilians were killed in the Jordanian strikes.",
+          "kind": "figure",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/middle-east/20261026-jordan-arrests-three-following-deadly-terror-attack-on-church",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 43,
+          "cluster_id": 3,
+          "text": "Jordanian Interior Minister Mazen al-Faraya stated that the suspects were all Jordanians and there was no indication of foreign collaboration.",
+          "kind": "event",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/middle-east/20261026-jordan-arrests-three-following-deadly-terror-attack-on-church",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 44,
+          "cluster_id": 3,
+          "text": "Jordan's King Abdullah II declared three days of national mourning and vowed to respond with an iron fist against terrorist ideologies.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/26/jordan-attacks-militants-syria-retaliation-for-last-week-church-attack",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 45,
+          "cluster_id": 3,
+          "text": "Eight of the Karak church attack victims were buried beside the church on Sunday, while the ninth victim was buried in south Amman on Monday.",
+          "kind": "event",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/middle-east/20261026-jordan-arrests-three-following-deadly-terror-attack-on-church",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 4,
+      "headline_hint": "Election Commission defends SIR process in Supreme Court, denying Form 6 amendments",
+      "section": "india",
+      "batch_position": 0,
+      "claim_count": 17,
+      "distinct_outlets": 5,
+      "source_kinds": {
+        "fulltext": 17
+      },
+      "claims": [
+        {
+          "id": 46,
+          "cluster_id": 4,
+          "text": "The Election Commission filed an affidavit in the Supreme Court stating that the Chief Election Commissioner and two Election Commissioners unanimously decided on June 24, 2025, to conduct a nationwide Special Intensive Revision (SIR) of electoral rolls.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/june-2025-decision-to-hold-sir-taken-unanimously-ec-tells-sc/articleshow/135221164.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 47,
+          "cluster_id": 4,
+          "text": "The affidavit was filed by Deputy Election Commissioner Bhanu Prakash Yeturu with the declaration that it was approved by a unanimous decision of the Chief Election Commissioner and the two Election Commissioners.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/june-2025-decision-to-hold-sir-taken-unanimously-ec-tells-sc/articleshow/135221164.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 48,
+          "cluster_id": 4,
+          "text": "Petitions filed by opposition leader Rahul Gandhi and others challenged the SIR process following a news report alleging differences between Chief Election Commissioner Gyanesh Kumar and Election Commissioners S S Sandhu and Vivek Joshi.",
+          "kind": "background",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/june-2025-decision-to-hold-sir-taken-unanimously-ec-tells-sc/articleshow/135221164.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 49,
+          "cluster_id": 4,
+          "text": "The Election Commission stated in its affidavit that letters sent by S S Sandhu and Vivek Joshi to the cabinet secretary on July 29 pertained to administrative matters and an internal work allocation order.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/june-2025-decision-to-hold-sir-taken-unanimously-ec-tells-sc/articleshow/135221164.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 50,
+          "cluster_id": 4,
+          "text": "An internal work allocation office order issued on July 28 was never implemented following a joint direction on July 30 by the two Election Commissioners.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/june-2025-decision-to-hold-sir-taken-unanimously-ec-tells-sc/articleshow/135221164.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 51,
+          "cluster_id": 4,
+          "text": "The Election Commission denied in court that Form 6 was amended by its SIR orders issued on June 24, October 27, and May 14.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/june-2025-decision-to-hold-sir-taken-unanimously-ec-tells-sc/articleshow/135221164.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 52,
+          "cluster_id": 4,
+          "text": "Form 6 can only be amended by the Central Government, and the declaration introduced by the Election Commission's SIR orders is not a part of Form 6.",
+          "kind": "background",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/june-2025-decision-to-hold-sir-taken-unanimously-ec-tells-sc/articleshow/135221164.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 53,
+          "cluster_id": 4,
+          "text": "The Election Commission stated that on June 29, it unanimously decided that Booth Level Officers will visit the homes of unmapped persons or those with logical discrepancies to collect documents.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/june-2025-decision-to-hold-sir-taken-unanimously-ec-tells-sc/articleshow/135221164.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 54,
+          "cluster_id": 4,
+          "text": "The Election Commission clarified to the Supreme Court that a declaration form added under the SIR requires voters to link their details with those of their parents and grandparents in earlier electoral rolls.",
+          "kind": "event",
+          "outlet": "NDTV",
+          "url": "https://www.ndtv.com/india-news/form-6-unchanged-declaration-has-different-purpose-poll-body-to-top-court-12239703#publisher=newsstand",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 55,
+          "cluster_id": 4,
+          "text": "Mapping was introduced by the Election Commission to connect applicant details with earlier SIR data from 2002/2003.",
+          "kind": "background",
+          "outlet": "NDTV",
+          "url": "https://www.ndtv.com/india-news/form-6-unchanged-declaration-has-different-purpose-poll-body-to-top-court-12239703#publisher=newsstand",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 56,
+          "cluster_id": 4,
+          "text": "A report by The Indian Express stated that Election Commissioners Sukhbir Singh Sandhu and Vivek Joshi had recorded objections on at least 14 occasions over 10 months regarding SIR decisions.",
+          "kind": "background",
+          "outlet": "NDTV",
+          "url": "https://www.ndtv.com/india-news/form-6-unchanged-declaration-has-different-purpose-poll-body-to-top-court-12239703#publisher=newsstand",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 57,
+          "cluster_id": 4,
+          "text": "Karnataka's final electoral roll under the Special Intensive Revision will be published on October 27.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/cities/bangalore/sir-karnatakas-final-electoral-roll-out-on-october-27-net-additions-remain-minuscule/article71627925.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 58,
+          "cluster_id": 4,
+          "text": "Karnataka had 5.54 crore voters when the SIR began, and 1.07 crore names were deleted, leaving around 4.54 crore voters on the final roll.",
+          "kind": "figure",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/cities/bangalore/sir-karnatakas-final-electoral-roll-out-on-october-27-net-additions-remain-minuscule/article71627925.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 59,
+          "cluster_id": 4,
+          "text": "During the draft roll stage in Karnataka, 16.39 lakh names were deleted as deceased, over 7 lakh as duplicates, and 80.62 lakh as shifted or missing.",
+          "kind": "figure",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/cities/bangalore/sir-karnatakas-final-electoral-roll-out-on-october-27-net-additions-remain-minuscule/article71627925.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 60,
+          "cluster_id": 4,
+          "text": "The Supreme Court recognized the Election Commission's authority to prescribe a documentation framework for electoral roll revisions in a May 27, 2026 judgment.",
+          "kind": "background",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/sir-controversy-election-commission-says-all-three-members-approved-orders-denies-amending-form-6-11793031937198.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 61,
+          "cluster_id": 4,
+          "text": "Opposition parties and the Cockroach Janta Party staged protests demanding the removal of Chief Election Commissioner Gyanesh Kumar.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/sir-controversy-election-commission-says-all-three-members-approved-orders-denies-amending-form-6-11793031937198.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 62,
+          "cluster_id": 4,
+          "text": "Section 18 of the Chief Election Commissioner and Other Election Commissioners Act, 2023 mandates that the Election Commission take decisions unanimously as far as possible, or by majority.",
+          "kind": "background",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/all-3-sir-orders-unanimous-plea-against-cec-gyanesh-kumar-based-on-single-news-report-ec-tells-sc-101793027114031.html",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 5,
+      "headline_hint": "Andhra Pradesh and Odisha prepare as severe Cyclone Arnab approaches eastern coast",
+      "section": "india",
+      "batch_position": 1,
+      "claim_count": 15,
+      "distinct_outlets": 4,
+      "source_kinds": {
+        "fulltext": 15
+      },
+      "claims": [
+        {
+          "id": 63,
+          "cluster_id": 5,
+          "text": "The Andhra Pradesh government released ₹27 crore across 20 districts for relief operations ahead of Cyclone Arnab's expected landfall on October 28.",
+          "kind": "figure",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/cyclone-arnab-andhra-pradesh-odisha-live-updates-imd-weather-forecast-rain-warnings-bay-of-bengal-october-26-2026/article71625447.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 64,
+          "cluster_id": 5,
+          "text": "The IMD forecast that Cyclone Arnab will cross the Andhra Pradesh and Yanam coasts between Bapatla and Visakhapatnam with maximum sustained wind speeds of 115-125 kmph gusting up to 140 kmph.",
+          "kind": "figure",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/cyclone-arnab-andhra-pradesh-odisha-live-updates-imd-weather-forecast-rain-warnings-bay-of-bengal-october-26-2026/article71625447.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 65,
+          "cluster_id": 5,
+          "text": "Andhra Pradesh officials scheduled 4,711 pregnant women to be shifted to safer healthcare facilities ahead of the cyclone.",
+          "kind": "figure",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/cyclone-arnab-andhra-pradesh-odisha-live-updates-imd-weather-forecast-rain-warnings-bay-of-bengal-october-26-2026/article71625447.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 66,
+          "cluster_id": 5,
+          "text": "A total of 30,043 fishing boats returned to harbours in Andhra Pradesh prior to Cyclone Arnab.",
+          "kind": "figure",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/cyclone-arnab-andhra-pradesh-odisha-live-updates-imd-weather-forecast-rain-warnings-bay-of-bengal-october-26-2026/article71625447.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 67,
+          "cluster_id": 5,
+          "text": "Cabinet Secretary T V Somanathan chaired a National Crisis Management Committee meeting in New Delhi to review cyclone preparedness across multiple states.",
+          "kind": "event",
+          "outlet": "NDTV",
+          "url": "https://www.ndtv.com/india-news/odisha-andhra-pradesh-on-alert-as-severe-cyclonic-storm-arnab-approaches-12239872#publisher=newsstand",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 68,
+          "cluster_id": 5,
+          "text": "The Andaman and Nicobar Islands ordered all schools to close until Tuesday in view of Cyclone Arnab.",
+          "kind": "event",
+          "outlet": "NDTV",
+          "url": "https://www.ndtv.com/india-news/odisha-andhra-pradesh-on-alert-as-severe-cyclonic-storm-arnab-approaches-12239872#publisher=newsstand",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 69,
+          "cluster_id": 5,
+          "text": "The Odisha government ordered the closure of schools, colleges, and Anganwadi centres in six southern districts on October 28 and 29.",
+          "kind": "event",
+          "outlet": "NDTV",
+          "url": "https://www.ndtv.com/india-news/odisha-andhra-pradesh-on-alert-as-severe-cyclonic-storm-arnab-approaches-12239872#publisher=newsstand",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 70,
+          "cluster_id": 5,
+          "text": "Fifteen NDRF teams were deployed across vulnerable locations in Andhra Pradesh and Puducherry's Yanam district.",
+          "kind": "figure",
+          "outlet": "NDTV",
+          "url": "https://www.ndtv.com/india-news/odisha-andhra-pradesh-on-alert-as-severe-cyclonic-storm-arnab-approaches-12239872#publisher=newsstand",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 71,
+          "cluster_id": 5,
+          "text": "State Disaster Management Authority Managing Director Prakhar Jain reported that 7 NDRF teams and 8 SDRF teams were deployed in vulnerable districts in Andhra Pradesh.",
+          "kind": "figure",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/andhra-odisha-brace-for-cyclone-arnab-15-ndrf-teams-deployed-ahead-of-landfall-3000-pregnant-women-under-watch-101793024660698.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 72,
+          "cluster_id": 5,
+          "text": "Odisha Special Relief Commissioner Rajesh Prabhakar Patil stated that 135 cyclone shelters and 1,600 temporary accommodation centres were prepared.",
+          "kind": "figure",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/andhra-odisha-brace-for-cyclone-arnab-15-ndrf-teams-deployed-ahead-of-landfall-3000-pregnant-women-under-watch-101793024660698.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 73,
+          "cluster_id": 5,
+          "text": "Odisha Chief Minister Mohan Majhi assigned eight state ministers to different locations to monitor cyclone preparedness.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/andhra-odisha-brace-for-cyclone-arnab-15-ndrf-teams-deployed-ahead-of-landfall-3000-pregnant-women-under-watch-101793024660698.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 74,
+          "cluster_id": 5,
+          "text": "At 5:30 am on October 26, Cyclone Arnab was centered 590 km northwest of Sri Vijaya Puram, 610 km southeast of Gopalpur, and 650 km east-southeast of Visakhapatnam.",
+          "kind": "figure",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/cyclone-arnab-latest-updates-andhra-pradesh-landfall-likely-on-october-28-odisha-shuts-schools-in-6-districts-11793010922226.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 75,
+          "cluster_id": 5,
+          "text": "The Andhra Pradesh Department of Health readied 6,431 emergency beds, 630 medical teams, and 716 vehicles to respond to Cyclone Arnab.",
+          "kind": "figure",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/andhra-pradesh/health-department-readies-6431-emergency-beds-for-cyclone/article71628049.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 76,
+          "cluster_id": 5,
+          "text": "Health authorities in Andhra Pradesh stocked 13,101 doses of anti-snake venom across facilities.",
+          "kind": "figure",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/andhra-pradesh/health-department-readies-6431-emergency-beds-for-cyclone/article71628049.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 77,
+          "cluster_id": 5,
+          "text": "The Real Time Governance Society urged residents in Andhra Pradesh to report cyclone-related emergencies through the Mana Mitra WhatsApp platform.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/andhra-pradesh/health-department-readies-6431-emergency-beds-for-cyclone/article71628049.ece",
+          "source_kind": "fulltext"
+        }
+      ]
+    }
+  ],
+  "clusters_with_no_claims": []
+}

@@ -1,0 +1,694 @@
+{
+  "dials": {
+    "WEIGHT_FLOOR": 5,
+    "TIER_WEIGHT": {
+      "lead": 4,
+      "major": 2,
+      "notable": 0
+    },
+    "WIKI_BONUS": 2,
+    "HARD_CAP": 12,
+    "MIN_STORIES_IF_ANY": 3,
+    "MAX_ARTICLES_PER_STORY": 5
+  },
+  "floor_relaxed": false,
+  "kept_weights": [
+    12,
+    8,
+    7,
+    5,
+    8,
+    8
+  ],
+  "per_section": {
+    "world": 4,
+    "india": 2
+  },
+  "clusters": [
+    {
+      "headline_hint": "Lula da Silva wins fourth term as President of Brazil, defeating Flávio Bolsonaro",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "lead",
+      "article_ids": [
+        0,
+        17,
+        60,
+        62,
+        65,
+        77,
+        96,
+        116,
+        140,
+        154,
+        175,
+        183,
+        187,
+        198,
+        213,
+        218,
+        221,
+        226,
+        228,
+        243,
+        283,
+        332,
+        336
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        0,
+        17,
+        60,
+        62,
+        65,
+        77,
+        96,
+        116,
+        140,
+        154,
+        175,
+        183,
+        187,
+        198,
+        213,
+        218,
+        221,
+        226,
+        228,
+        243,
+        283,
+        332,
+        336
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 8,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 12,
+      "weight_terms": {
+        "distinct_outlets": 8,
+        "tier_weight": 4,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "France 24",
+          "title": "Flavio Bolsonaro vows to lead opposition after Brazil court imposes travel ban",
+          "url": "https://www.france24.com/en/americas/20261026-flavio-bolsonaro-opposition-brazil-court-travel-ban"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Brazil: defeated Flávio Bolsonaro ordered to surrender passports",
+          "url": "https://www.theguardian.com/world/2026/oct/26/flavio-bolsonaro-brazil-lula-election"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "'Looked so corrupt’: Trump questions Brazil election after Lula defeats his ally",
+          "url": "https://timesofindia.indiatimes.com/world/us/looked-so-corrupt-trump-questions-brazil-election-after-lula-defeats-his-ally/articleshow/135219425.cms"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Lula wins fourth term in dramatic Brazil election comeback",
+          "url": "https://www.bbc.co.uk/news/articles/ckm23y3mg1yyo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "What will Lula’s fourth term mean for Brazil?",
+          "url": "https://www.aljazeera.com/video/inside-story/2026/10/26/what-will-lulas-fourth-term-mean-for-brazil?traffic_source=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 18
+    },
+    {
+      "headline_hint": "Student-led opposition movement wins historic victory in Serbia parliamentary elections",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        45,
+        73,
+        89,
+        179,
+        208,
+        242,
+        288,
+        310
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        45,
+        73,
+        89,
+        179,
+        208,
+        242,
+        288,
+        310
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 6,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 8,
+      "weight_terms": {
+        "distinct_outlets": 6,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "France 24",
+          "title": "Serbia’s elections: 'Tracking fraud for sure had an impact on the results'",
+          "url": "https://www.france24.com/en/europe/20261026-serbia-elections-tracking-fraud-had-an-impact-on-results-vote-fraud"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "What Vucic’s defeat means for Serbia’s foreign policy",
+          "url": "https://www.aljazeera.com/news/2026/10/26/what-vucics-defeat-means-for-serbias-foreign-policy?traffic_source=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Serbia’s Student List preparing for talks on forming government despite no clear leader",
+          "url": "https://www.theguardian.com/world/2026/oct/26/serbia-student-list-preparing-for-talks-on-forming-government-despite-no-clear-leader"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Celebrations in Serbia after veteran ruler Vučić loses election to student-led protest movement",
+          "url": "https://www.bbc.co.uk/news/articles/cw5yn3xlprpmo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Celebrations begin after Serbia elections 2026 results | Explained - How historic students movement brought down Vučić",
+          "url": "https://www.livemint.com/news/world/celebrations-begin-after-serbia-elections-2026-results-explained-how-historic-students-movement-brought-down-vui-11793010861312.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 3
+    },
+    {
+      "headline_hint": "Israel prepares for national election amid West Bank displacements and regional tensions",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        49,
+        97,
+        137,
+        182,
+        193,
+        204,
+        207,
+        315
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        49,
+        97,
+        137,
+        182,
+        193,
+        204,
+        207,
+        315
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 3,
+      "wiki_backed": true,
+      "wiki_event": "Israel launches an airstrike against a tent for displaced people in Khan Yunis, Gaza Strip, killing four Palestinians, including a child, and wounding many more.",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "British politicians among international delegates barred from entering West Bank",
+          "url": "https://www.theguardian.com/world/2026/oct/26/british-politicians-among-international-delegates-barred-from-entering-west-bank"
+        },
+        {
+          "outlet": "France 24",
+          "title": "UN cites 'ethnic cleansing' concerns around Israel's Palestinian displacement operation in Hebron",
+          "url": "https://www.france24.com/en/middle-east/20261026-un-cites-ethnic-cleansing-concerns-around-israel-palestinian-displacement-operation-hebron"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Israel elections 2026: What happens if no party can secure a 61-seat Knesset majority? Top scenarios explained",
+          "url": "https://www.livemint.com/news/world/israel-elections-2026-what-happens-if-no-party-can-secure-a-61-seat-knesset-majority-top-scenarios-explained-11793026880003.html"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Netanyahu reportedly pressured military to attack Iran in run-up to election",
+          "url": "https://www.theguardian.com/world/2026/oct/26/netanyahu-reportedly-pressured-israel-military-attack-iran-runup-to-election"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Opponents accuse Netanyahu of stoking tensions with Iran before Israel's election",
+          "url": "https://www.france24.com/en/opponents-accuse-netanyahu-of-stoking-tensions-with-iran-before-israel-s-election"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 3
+    },
+    {
+      "headline_hint": "Jordan conducts retaliatory airstrikes in Syria and arrests suspects following Karak church attack",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "notable",
+      "article_ids": [
+        33,
+        95,
+        227
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        33,
+        95,
+        227
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": true,
+      "wiki_event": "The three gunmen who carried out a mass shooting at a Greek Orthodox Church in Karak Governorate, Jordan, are wounded and arrested after a shootout with security forces at an abandoned building.",
+      "weight": 5,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "Jordan attacks militants in Syria in retaliation for last week’s church attack",
+          "url": "https://www.theguardian.com/world/2026/oct/26/jordan-attacks-militants-syria-retaliation-for-last-week-church-attack"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Jordan arrests three suspects over deadly church attack",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/10/26/jordan-arrests-three-suspects-over-deadly-church-attack?traffic_source=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Jordan's strikes on Syria over church terror attack kill several civilians",
+          "url": "https://www.france24.com/en/middle-east/20261026-jordan-arrests-three-following-deadly-terror-attack-on-church"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "AI giant Anthropic files for public listing, revealing rapid revenue growth and risks",
+      "section": "world",
+      "category": "technology",
+      "tier_requested": "notable",
+      "article_ids": [
+        37,
+        75,
+        199,
+        214
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        37,
+        75,
+        199,
+        214
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "France 24",
+          "title": "Anthropic's IPO filing shows soaring sales and steep losses",
+          "url": "https://www.france24.com/en/tv-shows/business/20261026-anthropic-s-ipo-filing-shows-soaring-sales-and-steep-losses"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "Wall St banks, Blackstone line up $63 billion to finance Broadcom AI chips for Anthropic",
+          "url": "https://www.channelnewsasia.com/business/wall-st-banks-blackstone-line-up-63-billion-finance-broadcom-ai-chips-anthropic-6494381"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Anthropic’s IPO filing shows explosive growth, risks and staggering costs",
+          "url": "https://www.aljazeera.com/economy/2026/10/26/anthropics-ipo-filing-shows-explosive-growth-risks-and-staggering-costs?traffic_source=rss"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Anthropic warns of 'catastrophic risk' to humankind ahead of blockbuster share listing",
+          "url": "https://www.bbc.co.uk/news/articles/cq398p1wd1evo?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Algeria orders troop deployment to Niger to protect shared energy infrastructure",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "notable",
+      "article_ids": [
+        143,
+        190
+      ],
+      "verdict": "cut:below_floor(2<5)",
+      "valid_ids": [
+        143,
+        190
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 2,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "Algeria’s president orders troop deployment to neighbouring Niger",
+          "url": "https://www.aljazeera.com/news/2026/10/26/algerias-president-orders-troop-deployment-to-neighbouring-niger?traffic_source=rss"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Algeria to send troops to Niger in first foreign deployment since 1973",
+          "url": "https://www.bbc.co.uk/news/articles/cm4g14n1e5wko?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Andhra Pradesh and Odisha prepare as severe Cyclone Arnab approaches eastern coast",
+      "section": "india",
+      "category": "disaster",
+      "tier_requested": "lead",
+      "article_ids": [
+        20,
+        109,
+        155,
+        178,
+        184,
+        185,
+        194,
+        219,
+        286,
+        293,
+        296,
+        305
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        20,
+        109,
+        155,
+        178,
+        184,
+        185,
+        194,
+        219,
+        286,
+        293,
+        296,
+        305
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 8,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 4,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "The Hindu",
+          "title": "A.P., Odisha on alert as cyclone ‘Arnab’ nears land | LIVE",
+          "url": "https://www.thehindu.com/news/national/cyclone-arnab-andhra-pradesh-odisha-live-updates-imd-weather-forecast-rain-warnings-bay-of-bengal-october-26-2026/article71625447.ece"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "Odisha, Andhra Pradesh On Alert As Severe Cyclonic Storm Arnab Approaches",
+          "url": "https://www.ndtv.com/india-news/odisha-andhra-pradesh-on-alert-as-severe-cyclonic-storm-arnab-approaches-12239872#publisher=newsstand"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Andhra, Odisha brace for Cyclone Arnab; 15 NDRF teams deployed ahead of landfall, 3000 pregnant women under watch",
+          "url": "https://www.hindustantimes.com/india-news/andhra-odisha-brace-for-cyclone-arnab-15-ndrf-teams-deployed-ahead-of-landfall-3000-pregnant-women-under-watch-101793024660698.html"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Cyclone Arnab latest updates: Andhra Pradesh landfall likely on October 28; Odisha shuts schools in 6 districts",
+          "url": "https://www.livemint.com/news/india/cyclone-arnab-latest-updates-andhra-pradesh-landfall-likely-on-october-28-odisha-shuts-schools-in-6-districts-11793010922226.html"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "Health Department readies 6,431 emergency beds for cyclone",
+          "url": "https://www.thehindu.com/news/national/andhra-pradesh/health-department-readies-6431-emergency-beds-for-cyclone/article71628049.ece"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 7
+    },
+    {
+      "headline_hint": "Election Commission defends SIR process in Supreme Court, denying Form 6 amendments",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        12,
+        36,
+        125,
+        149,
+        159,
+        163,
+        172,
+        173,
+        229,
+        231,
+        292,
+        297,
+        302,
+        304,
+        333
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        12,
+        36,
+        125,
+        149,
+        159,
+        163,
+        172,
+        173,
+        229,
+        231,
+        292,
+        297,
+        302,
+        304,
+        333
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 6,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 8,
+      "weight_terms": {
+        "distinct_outlets": 6,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "June 2025 decision to hold SIR taken unanimously, EC tells SC",
+          "url": "https://timesofindia.indiatimes.com/india/june-2025-decision-to-hold-sir-taken-unanimously-ec-tells-sc/articleshow/135221164.cms"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "No Change To Form 6, Declaration Is Separate: Poll Body To Top Court",
+          "url": "https://www.ndtv.com/india-news/form-6-unchanged-declaration-has-different-purpose-poll-body-to-top-court-12239703#publisher=newsstand"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "Karnataka SIR: Final electoral roll out on October 27; net additions remain minuscule",
+          "url": "https://www.thehindu.com/news/cities/bangalore/sir-karnatakas-final-electoral-roll-out-on-october-27-net-additions-remain-minuscule/article71627925.ece"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "SIR controversy: Election Commission says all three members approved orders, denies amending Form 6",
+          "url": "https://www.livemint.com/news/india/sir-controversy-election-commission-says-all-three-members-approved-orders-denies-amending-form-6-11793031937198.html"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "All SIR decisions unanimous, Form 6 not amended: Election Commission to Supreme Court",
+          "url": "https://www.hindustantimes.com/india-news/all-3-sir-orders-unanimous-plea-against-cec-gyanesh-kumar-based-on-single-news-report-ec-tells-sc-101793027114031.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 10
+    },
+    {
+      "headline_hint": "Defence Acquisition Council approves ₹2.12 lakh crore worth of military procurements",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        232,
+        271
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        232,
+        271
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Livemint",
+          "title": "Govt clears  ₹2.12 lakh crore defence procurements, including kamikaze drones and helicopters",
+          "url": "https://www.livemint.com/news/world/govt-clears-rs-2-12-lakh-crore-defence-procurements-including-kamikaze-drones-and-helicopters-11793025542358.html"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Drones, artillery guns and helicopters: DAC clears  ₹2.12 lakh crore defence buys",
+          "url": "https://www.hindustantimes.com/india-news/drones-artillery-guns-and-helicopters-dac-clears-2-12-lakh-crore-defence-buys-101793017758895.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "India amends motor vehicle rules to allow E100 flex-fuel vehicles",
+      "section": "india",
+      "category": "technology",
+      "tier_requested": "notable",
+      "article_ids": [
+        80,
+        234,
+        291
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        80,
+        234,
+        291
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "E100 flex-fuel vehicles get regulatory push ahead of launch",
+          "url": "https://timesofindia.indiatimes.com/india/e100-flex-fuel-vehicles-get-regulatory-push-ahead-of-launch/articleshow/135219327.cms"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "Centre amends rules to allow E100 fuel in compatible vehicles",
+          "url": "https://scroll.in/latest/1096660/centre-amends-rules-to-allow-e100-fuel-in-compatible-vehicles?utm_source=rss&utm_medium=public"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Govt allows flex-fuel vehicles that can run on E100, amends motor vehicle rules",
+          "url": "https://www.hindustantimes.com/india-news/govt-allows-e100-fuel-for-flex-fuel-vehicles-under-amended-motor-vehicle-rules-101793011971096.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Former Tamil Nadu Minister Anbil Mahesh Poyyamozhi arrested in ₹100-crore fraud case",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        84,
+        111,
+        133,
+        245,
+        287
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        84,
+        111,
+        133,
+        245,
+        287
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "The Hindu",
+          "title": "Ex-DMK minister Anbil remanded to judicial custody till Nov 6",
+          "url": "https://www.thehindu.com/news/national/tamil-nadu/former-dmk-minister-anbil-mahesh-poyyamozhi-arrested/article71626605.ece"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "\"Bail Would Paralyse Probe\": What Madras High Court Said Before DMK Leader's Arrest",
+          "url": "https://www.ndtv.com/india-news/bail-would-paralyse-probe-what-madras-high-court-said-before-dmk-leaders-arrest-12239862#publisher=newsstand"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Who is Anbil Mahesh Poyyamozhi? Meet the former Tamil Nadu minister arrested in  ₹100 crore school scam case",
+          "url": "https://www.livemint.com/news/india/who-is-anbil-mahesh-poyyamozhi-meet-the-former-tamil-nadu-minister-arrested-in-100-crore-school-scam-case-11793024161364.html"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Former Tamil Nadu minister Anbil Mahesh Poyyamozhi arrested in  ₹100-crore corruption case",
+          "url": "https://www.hindustantimes.com/india-news/vijay-govt-tamil-nadu-former-dmk-minister-anbil-mahesh-poyyamozhi-arrested-in-rs-100-crore-scam-101793013415454.html"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "Madras High Court denies anticipatory bail to Anbil Mahesh Poyyamozhi in ₹100-crore private schools fraud case",
+          "url": "https://www.thehindu.com/news/national/tamil-nadu/madras-high-court-denies-anticipatory-bail-to-anbil-mahesh-poyyamozhi-in-rs-100-crore-private-schools-fraud-case/article71625866.ece"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    }
+  ]
+}
