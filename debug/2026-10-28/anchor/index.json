@@ -1,0 +1,135 @@
+{
+  "thresholds": {
+    "MIN_BODY_WORDS": 80,
+    "MIN_MARKERS": 2,
+    "MAX_UNANCHORED_SHARE": 0.2,
+    "THIN_MIN_CLAIM_OUTLETS": 2,
+    "THIN_MAX_OUTLET_SHARE": 0.8,
+    "GATE_UNSOURCED_FIGURES": true,
+    "WORD_TARGET": {
+      "lead": 500,
+      "major": 200,
+      "notable": 200
+    }
+  },
+  "stories": [
+    {
+      "cluster_id": 0,
+      "section": "world",
+      "headline_hint": "Exit polls show deadlock in Israeli general election as opposition ties with Netanyahu's bloc",
+      "verdict": "kept",
+      "thin_sourced": false,
+      "word_count": 387,
+      "min_body_words": 80,
+      "marker_count": 27,
+      "min_markers": 2,
+      "dropped_markers": 0,
+      "unanchored_share": 0.013,
+      "max_unanchored_share": 0.2,
+      "claim_outlets": 5,
+      "claims_available": 19,
+      "raw_body_chars": 2666,
+      "unsourced_figures": [],
+      "gate_unsourced_figures": true
+    },
+    {
+      "cluster_id": 1,
+      "section": "world",
+      "headline_hint": "Flávio Bolsonaro leaves Brazil for the US following presidential election defeat to Lula",
+      "verdict": "kept",
+      "thin_sourced": false,
+      "word_count": 183,
+      "min_body_words": 80,
+      "marker_count": 14,
+      "min_markers": 2,
+      "dropped_markers": 0,
+      "unanchored_share": 0.014,
+      "max_unanchored_share": 0.2,
+      "claim_outlets": 5,
+      "claims_available": 16,
+      "raw_body_chars": 1279,
+      "unsourced_figures": [],
+      "gate_unsourced_figures": true
+    },
+    {
+      "cluster_id": 2,
+      "section": "world",
+      "headline_hint": "Local ceasefire holds in Russian-occupied Ukrainian city of Oleshky after Melania Trump-brokered agreement",
+      "verdict": "kept",
+      "thin_sourced": false,
+      "word_count": 175,
+      "min_body_words": 80,
+      "marker_count": 13,
+      "min_markers": 2,
+      "dropped_markers": 0,
+      "unanchored_share": 0.013,
+      "max_unanchored_share": 0.2,
+      "claim_outlets": 4,
+      "claims_available": 15,
+      "raw_body_chars": 1283,
+      "unsourced_figures": [],
+      "gate_unsourced_figures": true
+    },
+    {
+      "cluster_id": 3,
+      "section": "india",
+      "headline_hint": "Cyclone Arnab makes landfall along Andhra Pradesh coast, triggering heavy rains and mass evacuations",
+      "verdict": "dropped:unsourced_figures",
+      "word_count": 213,
+      "min_body_words": 80,
+      "marker_count": 18,
+      "min_markers": 2,
+      "dropped_markers": 0,
+      "unanchored_share": 0.015,
+      "max_unanchored_share": 0.2,
+      "claim_outlets": 5,
+      "claims_available": 19,
+      "raw_body_chars": 1513,
+      "unsourced_figures": [
+        "50"
+      ],
+      "gate_unsourced_figures": true
+    },
+    {
+      "cluster_id": 4,
+      "section": "india",
+      "headline_hint": "Indian opposition parties intensify protests against Election Commission over voter roll deletions and SIR process",
+      "verdict": "dropped:unsourced_figures",
+      "word_count": 139,
+      "min_body_words": 80,
+      "marker_count": 10,
+      "min_markers": 2,
+      "dropped_markers": 0,
+      "unanchored_share": 0.014,
+      "max_unanchored_share": 0.2,
+      "claim_outlets": 3,
+      "claims_available": 16,
+      "raw_body_chars": 1016,
+      "unsourced_figures": [
+        "17.9",
+        "99"
+      ],
+      "gate_unsourced_figures": true
+    },
+    {
+      "cluster_id": 5,
+      "section": "india",
+      "headline_hint": "Supreme Court reprimands Centre and pharmaceutical industry over inflated medicine prices and profit margins",
+      "verdict": "dropped:unsourced_figures",
+      "word_count": 144,
+      "min_body_words": 80,
+      "marker_count": 9,
+      "min_markers": 2,
+      "dropped_markers": 0,
+      "unanchored_share": 0.013,
+      "max_unanchored_share": 0.2,
+      "claim_outlets": 3,
+      "claims_available": 16,
+      "raw_body_chars": 981,
+      "unsourced_figures": [
+        "2500"
+      ],
+      "gate_unsourced_figures": true
+    }
+  ]
+}

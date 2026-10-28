@@ -1,0 +1,344 @@
+{
+  "cluster_id": 3,
+  "section": "india",
+  "headline_hint": "Cyclone Arnab makes landfall along Andhra Pradesh coast, triggering heavy rains and mass evacuations",
+  "reason": "unsourced_figures",
+  "metrics": {
+    "word_count": 213,
+    "min_body_words": 80,
+    "marker_count": 18,
+    "min_markers": 2,
+    "dropped_markers": 0,
+    "unanchored_share": 0.015,
+    "max_unanchored_share": 0.2,
+    "claim_outlets": 5,
+    "claims_available": 19,
+    "raw_body_chars": 1513,
+    "unsourced_figures": [
+      "50"
+    ],
+    "gate_unsourced_figures": true
+  },
+  "raw_model_output": {
+    "cluster_id": 3,
+    "headline": "Cyclone Arnab hits Andhra Pradesh coast bringing heavy rain and mass evacuations",
+    "body": "Cyclone Arnab made landfall near Narsapur in Andhra Pradesh early on October 28, 2026 [c51]. Weather officials said the storm moved west at 10 kilometers per hour [c60]. Wind speeds reached 125 to 135 kilometers per hour, with gusts up to 150 kilometers per hour [c55]. Strong winds knocked down trees in Visakhapatnam [c54]. Large waves struck coastal roads in northern Tamil Nadu [c52]. Chief Minister N Chandrababu Naidu said saving lives is the government's top priority [c56].\n\nAuthorities evacuated at least 89,000 people from dangerous coastal zones in Andhra Pradesh [c64]. More than 12 million people live along the storm's path [c65]. Officials set up 2,131 emergency shelters and placed 1,087 medical teams on standby [c61]. Fishermen secured more than 30,000 boats along the coast [c66]. Energy officials deployed around 6,000 workers to manage power issues [c58].\n\nThe storm caused widespread travel disruptions. Airlines cancelled 21 flights at Vijayawada and Visakhapatnam airports on October 27 [c53]. Officials suspended flight operations at Visakhapatnam in the afternoon [c67]. Flights at Vijayawada and Rajahmundry stopped after 7 p.m. [c68]. Railway operators cancelled nearly 50 train services across the region [c62].\n\nThe storm impacted nearby regions as well. Odisha closed schools across 16 districts ahead of landfall [c59]. Schools in Ranchi district were ordered to close for two days [c63]. Nepal suspended trekking permits in high mountain regions due to severe weather risks [c57].",
+    "vocab": [
+      {
+        "term": "landfall",
+        "say": "LAND-fawl",
+        "meaning": "the arrival of a severe storm over land"
+      },
+      {
+        "term": "evacuated",
+        "say": "ih-VAK-yoo-ay-tid",
+        "meaning": "moved people away from a dangerous place to safety"
+      }
+    ]
+  },
+  "parsed_body": "Cyclone Arnab made landfall near Narsapur in Andhra Pradesh early on October 28, 2026. Weather officials said the storm moved west at 10 kilometers per hour. Wind speeds reached 125 to 135 kilometers per hour, with gusts up to 150 kilometers per hour. Strong winds knocked down trees in Visakhapatnam. Large waves struck coastal roads in northern Tamil Nadu. Chief Minister N Chandrababu Naidu said saving lives is the government's top priority.\n\nAuthorities evacuated at least 89,000 people from dangerous coastal zones in Andhra Pradesh. More than 12 million people live along the storm's path. Officials set up 2,131 emergency shelters and placed 1,087 medical teams on standby. Fishermen secured more than 30,000 boats along the coast. Energy officials deployed around 6,000 workers to manage power issues.\n\nThe storm caused widespread travel disruptions. Airlines cancelled 21 flights at Vijayawada and Visakhapatnam airports on October 27. Officials suspended flight operations at Visakhapatnam in the afternoon. Flights at Vijayawada and Rajahmundry stopped after 7 p.m.. Railway operators cancelled nearly 50 train services across the region.\n\nThe storm impacted nearby regions as well. Odisha closed schools across 16 districts ahead of landfall. Schools in Ranchi district were ordered to close for two days. Nepal suspended trekking permits in high mountain regions due to severe weather risks.",
+  "markers": [
+    {
+      "start": 0,
+      "end": 85,
+      "claim_id": 51,
+      "outlet": "The Hindu",
+      "url": "https://www.thehindu.com/news/national/cyclone-arnab-landfall-andhra-pradesh-odisha-rainfall-weather-imd-alert-live-updates-october-28-2026/article71634111.ece"
+    },
+    {
+      "start": 87,
+      "end": 156,
+      "claim_id": 60,
+      "outlet": "Hindustan Times",
+      "url": "https://www.hindustantimes.com/india-news/cyclone-arnab-makes-landfall-along-andhra-pradesh-coast-triggers-heavy-rain-and-strong-winds-101793119695215.html"
+    },
+    {
+      "start": 158,
+      "end": 250,
+      "claim_id": 55,
+      "outlet": "NDTV",
+      "url": "https://www.ndtv.com/india-news/cyclone-arnab-landfall-live-updates-landfall-tracker-imd-weather-forecast-heavy-rain-alert-andhra-pradesh-odisha-live-news-12245206#publisher=newsstand"
+    },
+    {
+      "start": 252,
+      "end": 300,
+      "claim_id": 54,
+      "outlet": "NDTV",
+      "url": "https://www.ndtv.com/india-news/cyclone-arnab-landfall-live-updates-landfall-tracker-imd-weather-forecast-heavy-rain-alert-andhra-pradesh-odisha-live-news-12245206#publisher=newsstand"
+    },
+    {
+      "start": 302,
+      "end": 357,
+      "claim_id": 52,
+      "outlet": "The Hindu",
+      "url": "https://www.thehindu.com/news/national/cyclone-arnab-landfall-andhra-pradesh-odisha-rainfall-weather-imd-alert-live-updates-october-28-2026/article71634111.ece"
+    },
+    {
+      "start": 359,
+      "end": 444,
+      "claim_id": 56,
+      "outlet": "NDTV",
+      "url": "https://www.ndtv.com/india-news/cyclone-arnab-landfall-live-updates-landfall-tracker-imd-weather-forecast-heavy-rain-alert-andhra-pradesh-odisha-live-news-12245206#publisher=newsstand"
+    },
+    {
+      "start": 447,
+      "end": 538,
+      "claim_id": 64,
+      "outlet": "Livemint",
+      "url": "https://www.livemint.com/news/india/cyclone-arnab-andhra-pradesh-evacuates-89-000-people-as-state-prepares-for-landfall-11793124963156.html"
+    },
+    {
+      "start": 540,
+      "end": 595,
+      "claim_id": 65,
+      "outlet": "Livemint",
+      "url": "https://www.livemint.com/news/india/cyclone-arnab-andhra-pradesh-evacuates-89-000-people-as-state-prepares-for-landfall-11793124963156.html"
+    },
+    {
+      "start": 597,
+      "end": 680,
+      "claim_id": 61,
+      "outlet": "Hindustan Times",
+      "url": "https://www.hindustantimes.com/india-news/cyclone-arnab-makes-landfall-along-andhra-pradesh-coast-triggers-heavy-rain-and-strong-winds-101793119695215.html"
+    },
+    {
+      "start": 682,
+      "end": 738,
+      "claim_id": 66,
+      "outlet": "Livemint",
+      "url": "https://www.livemint.com/news/india/cyclone-arnab-andhra-pradesh-evacuates-89-000-people-as-state-prepares-for-landfall-11793124963156.html"
+    },
+    {
+      "start": 740,
+      "end": 809,
+      "claim_id": 58,
+      "outlet": "NDTV",
+      "url": "https://www.ndtv.com/india-news/cyclone-arnab-landfall-live-updates-landfall-tracker-imd-weather-forecast-heavy-rain-alert-andhra-pradesh-odisha-live-news-12245206#publisher=newsstand"
+    },
+    {
+      "start": 812,
+      "end": 944,
+      "claim_id": 53,
+      "outlet": "The Hindu",
+      "url": "https://www.thehindu.com/news/national/cyclone-arnab-landfall-andhra-pradesh-odisha-rainfall-weather-imd-alert-live-updates-october-28-2026/article71634111.ece"
+    },
+    {
+      "start": 946,
+      "end": 1017,
+      "claim_id": 67,
+      "outlet": "Times of India",
+      "url": "https://timesofindia.indiatimes.com/india/aviation-ministry-suspends-operations-at-three-andhra-airports-as-cyclone-arnab-intensifies/articleshow/135243430.cms"
+    },
+    {
+      "start": 1019,
+      "end": 1077,
+      "claim_id": 68,
+      "outlet": "Times of India",
+      "url": "https://timesofindia.indiatimes.com/india/aviation-ministry-suspends-operations-at-three-andhra-airports-as-cyclone-arnab-intensifies/articleshow/135243430.cms"
+    },
+    {
+      "start": 1079,
+      "end": 1149,
+      "claim_id": 62,
+      "outlet": "Hindustan Times",
+      "url": "https://www.hindustantimes.com/india-news/cyclone-arnab-makes-landfall-along-andhra-pradesh-coast-triggers-heavy-rain-and-strong-winds-101793119695215.html"
+    },
+    {
+      "start": 1152,
+      "end": 1254,
+      "claim_id": 59,
+      "outlet": "NDTV",
+      "url": "https://www.ndtv.com/india-news/cyclone-arnab-landfall-live-updates-landfall-tracker-imd-weather-forecast-heavy-rain-alert-andhra-pradesh-odisha-live-news-12245206#publisher=newsstand"
+    },
+    {
+      "start": 1256,
+      "end": 1317,
+      "claim_id": 63,
+      "outlet": "Hindustan Times",
+      "url": "https://www.hindustantimes.com/india-news/cyclone-arnab-makes-landfall-along-andhra-pradesh-coast-triggers-heavy-rain-and-strong-winds-101793119695215.html"
+    },
+    {
+      "start": 1319,
+      "end": 1404,
+      "claim_id": 57,
+      "outlet": "NDTV",
+      "url": "https://www.ndtv.com/india-news/cyclone-arnab-landfall-live-updates-landfall-tracker-imd-weather-forecast-heavy-rain-alert-andhra-pradesh-odisha-live-news-12245206#publisher=newsstand"
+    }
+  ],
+  "claims_available": [
+    {
+      "id": 51,
+      "cluster_id": 3,
+      "text": "The India Meteorological Department stated that the landfall process of cyclonic storm Arnab began near Narsapur in West Godavari district, Andhra Pradesh, around 1:30 a.m. on October 28, 2026.",
+      "kind": "event",
+      "outlet": "The Hindu",
+      "url": "https://www.thehindu.com/news/national/cyclone-arnab-landfall-andhra-pradesh-odisha-rainfall-weather-imd-alert-live-updates-october-28-2026/article71634111.ece",
+      "source_kind": "fulltext"
+    },
+    {
+      "id": 52,
+      "cluster_id": 3,
+      "text": "High waves lashed coastal roads in north Chennai and Tiruvallur districts of Tamil Nadu on October 27, 2026.",
+      "kind": "event",
+      "outlet": "The Hindu",
+      "url": "https://www.thehindu.com/news/national/cyclone-arnab-landfall-andhra-pradesh-odisha-rainfall-weather-imd-alert-live-updates-october-28-2026/article71634111.ece",
+      "source_kind": "fulltext"
+    },
+    {
+      "id": 53,
+      "cluster_id": 3,
+      "text": "Airlines cancelled at least 21 flights at Vijayawada and Visakhapatnam airports on October 27, 2026.",
+      "kind": "figure",
+      "outlet": "The Hindu",
+      "url": "https://www.thehindu.com/news/national/cyclone-arnab-landfall-andhra-pradesh-odisha-rainfall-weather-imd-alert-live-updates-october-28-2026/article71634111.ece",
+      "source_kind": "fulltext"
+    },
+    {
+      "id": 54,
+      "cluster_id": 3,
+      "text": "Strong winds uprooted a tree near the AU College of Engineering for Women in Visakhapatnam due to Cyclone Arnab.",
+      "kind": "event",
+      "outlet": "NDTV",
+      "url": "https://www.ndtv.com/india-news/cyclone-arnab-landfall-live-updates-landfall-tracker-imd-weather-forecast-heavy-rain-alert-andhra-pradesh-odisha-live-news-12245206#publisher=newsstand",
+      "source_kind": "fulltext"
+    },
+    {
+      "id": 55,
+      "cluster_id": 3,
+      "text": "The India Meteorological Department reported Cyclone Arnab maintained wind speeds of 125 to 135 kmph, gusting up to 150 kmph.",
+      "kind": "figure",
+      "outlet": "NDTV",
+      "url": "https://www.ndtv.com/india-news/cyclone-arnab-landfall-live-updates-landfall-tracker-imd-weather-forecast-heavy-rain-alert-andhra-pradesh-odisha-live-news-12245206#publisher=newsstand",
+      "source_kind": "fulltext"
+    },
+    {
+      "id": 56,
+      "cluster_id": 3,
+      "text": "Andhra Pradesh Chief Minister N Chandrababu Naidu stated on X that protecting every life is the state government's foremost priority.",
+      "kind": "quote",
+      "outlet": "NDTV",
+      "url": "https://www.ndtv.com/india-news/cyclone-arnab-landfall-live-updates-landfall-tracker-imd-weather-forecast-heavy-rain-alert-andhra-pradesh-odisha-live-news-12245206#publisher=newsstand",
+      "source_kind": "fulltext"
+    },
+    {
+      "id": 57,
+      "cluster_id": 3,
+      "text": "Nepal's Department of Immigration suspended trekking permits for restricted high-hill and Himalayan regions for October 29–31, 2026, due to storm risks from Cyclone Arnab.",
+      "kind": "event",
+      "outlet": "NDTV",
+      "url": "https://www.ndtv.com/india-news/cyclone-arnab-landfall-live-updates-landfall-tracker-imd-weather-forecast-heavy-rain-alert-andhra-pradesh-odisha-live-news-12245206#publisher=newsstand",
+      "source_kind": "fulltext"
+    },
+    {
+      "id": 58,
+      "cluster_id": 3,
+      "text": "Andhra Pradesh Energy Minister Gottipati Ravi Kumar directed power utilities to remain on high alert, with around 6,000 personnel mobilised.",
+      "kind": "figure",
+      "outlet": "NDTV",
+      "url": "https://www.ndtv.com/india-news/cyclone-arnab-landfall-live-updates-landfall-tracker-imd-weather-forecast-heavy-rain-alert-andhra-pradesh-odisha-live-news-12245206#publisher=newsstand",
+      "source_kind": "fulltext"
+    },
+    {
+      "id": 59,
+      "cluster_id": 3,
+      "text": "Odisha closed schools in 16 of its 30 districts ahead of Cyclone Arnab's landfall.",
+      "kind": "event",
+      "outlet": "NDTV",
+      "url": "https://www.ndtv.com/india-news/cyclone-arnab-landfall-live-updates-landfall-tracker-imd-weather-forecast-heavy-rain-alert-andhra-pradesh-odisha-live-news-12245206#publisher=newsstand",
+      "source_kind": "fulltext"
+    },
+    {
+      "id": 60,
+      "cluster_id": 3,
+      "text": "The India Meteorological Department stated that Cyclone Arnab was moving westwards at a speed of 10 kmph near the Andhra Pradesh coast and Yanam at 1:10 a.m. on October 28, 2026.",
+      "kind": "event",
+      "outlet": "Hindustan Times",
+      "url": "https://www.hindustantimes.com/india-news/cyclone-arnab-makes-landfall-along-andhra-pradesh-coast-triggers-heavy-rain-and-strong-winds-101793119695215.html",
+      "source_kind": "fulltext"
+    },
+    {
+      "id": 61,
+      "cluster_id": 3,
+      "text": "The Andhra Pradesh government prepared 2,131 cyclone shelters across 20 districts and placed 1,087 medical teams on standby.",
+      "kind": "figure",
+      "outlet": "Hindustan Times",
+      "url": "https://www.hindustantimes.com/india-news/cyclone-arnab-makes-landfall-along-andhra-pradesh-coast-triggers-heavy-rain-and-strong-winds-101793119695215.html",
+      "source_kind": "fulltext"
+    },
+    {
+      "id": 62,
+      "cluster_id": 3,
+      "text": "South Coast Railway cancelled 24 trains for Wednesday, East Coast Railway cancelled 22, and South Eastern Railway cancelled four trains.",
+      "kind": "figure",
+      "outlet": "Hindustan Times",
+      "url": "https://www.hindustantimes.com/india-news/cyclone-arnab-makes-landfall-along-andhra-pradesh-coast-triggers-heavy-rain-and-strong-winds-101793119695215.html",
+      "source_kind": "fulltext"
+    },
+    {
+      "id": 63,
+      "cluster_id": 3,
+      "text": "Ranchi district administration in Jharkhand ordered all schools to remain closed on October 28 and 29 due to expected adverse weather.",
+      "kind": "event",
+      "outlet": "Hindustan Times",
+      "url": "https://www.hindustantimes.com/india-news/cyclone-arnab-makes-landfall-along-andhra-pradesh-coast-triggers-heavy-rain-and-strong-winds-101793119695215.html",
+      "source_kind": "fulltext"
+    },
+    {
+      "id": 64,
+      "cluster_id": 3,
+      "text": "Authorities evacuated at least 89,000 people from vulnerable coastal areas of Andhra Pradesh.",
+      "kind": "figure",
+      "outlet": "Livemint",
+      "url": "https://www.livemint.com/news/india/cyclone-arnab-andhra-pradesh-evacuates-89-000-people-as-state-prepares-for-landfall-11793124963156.html",
+      "source_kind": "fulltext"
+    },
+    {
+      "id": 65,
+      "cluster_id": 3,
+      "text": "Andhra Pradesh's disaster management authority stated that more than 12 million people live along the expected path of Cyclone Arnab.",
+      "kind": "background",
+      "outlet": "Livemint",
+      "url": "https://www.livemint.com/news/india/cyclone-arnab-andhra-pradesh-evacuates-89-000-people-as-state-prepares-for-landfall-11793124963156.html",
+      "source_kind": "fulltext"
+    },
+    {
+      "id": 66,
+      "cluster_id": 3,
+      "text": "More than 30,000 fishing boats were secured along the Andhra Pradesh coast ahead of the storm.",
+      "kind": "figure",
+      "outlet": "Livemint",
+      "url": "https://www.livemint.com/news/india/cyclone-arnab-andhra-pradesh-evacuates-89-000-people-as-state-prepares-for-landfall-11793124963156.html",
+      "source_kind": "fulltext"
+    },
+    {
+      "id": 67,
+      "cluster_id": 3,
+      "text": "The Ministry of Civil Aviation suspended flight operations at Visakhapatnam airport on the afternoon of October 27, 2026.",
+      "kind": "event",
+      "outlet": "Times of India",
+      "url": "https://timesofindia.indiatimes.com/india/aviation-ministry-suspends-operations-at-three-andhra-airports-as-cyclone-arnab-intensifies/articleshow/135243430.cms",
+      "source_kind": "fulltext"
+    },
+    {
+      "id": 68,
+      "cluster_id": 3,
+      "text": "Flight operations at Vijayawada and Rajahmundry airports were suspended after 7 p.m. on October 27, 2026.",
+      "kind": "event",
+      "outlet": "Times of India",
+      "url": "https://timesofindia.indiatimes.com/india/aviation-ministry-suspends-operations-at-three-andhra-airports-as-cyclone-arnab-intensifies/articleshow/135243430.cms",
+      "source_kind": "fulltext"
+    },
+    {
+      "id": 69,
+      "cluster_id": 3,
+      "text": "Air India Express cancelled 13 flights primarily affecting Visakhapatnam routes to and from Hyderabad, Bengaluru, Vijayawada, and Bangkok.",
+      "kind": "figure",
+      "outlet": "Times of India",
+      "url": "https://timesofindia.indiatimes.com/india/aviation-ministry-suspends-operations-at-three-andhra-airports-as-cyclone-arnab-intensifies/articleshow/135243430.cms",
+      "source_kind": "fulltext"
+    }
+  ],
+  "unsourced_figures": [
+    "50"
+  ]
+}

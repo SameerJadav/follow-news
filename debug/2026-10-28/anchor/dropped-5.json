@@ -1,0 +1,252 @@
+{
+  "cluster_id": 5,
+  "section": "india",
+  "headline_hint": "Supreme Court reprimands Centre and pharmaceutical industry over inflated medicine prices and profit margins",
+  "reason": "unsourced_figures",
+  "metrics": {
+    "word_count": 144,
+    "min_body_words": 80,
+    "marker_count": 9,
+    "min_markers": 2,
+    "dropped_markers": 0,
+    "unanchored_share": 0.013,
+    "max_unanchored_share": 0.2,
+    "claim_outlets": 3,
+    "claims_available": 16,
+    "raw_body_chars": 981,
+    "unsourced_figures": [
+      "2500"
+    ],
+    "gate_unsourced_figures": true
+  },
+  "raw_model_output": {
+    "cluster_id": 5,
+    "headline": "Supreme Court criticizes Indian government and drug companies over high medicine prices",
+    "body": "The Supreme Court of India criticized drug companies for setting maximum prices more than 1,000 percent above retail costs [c86]. The court asked government lawyers whether business profit is more important than human life [c87]. Judges highlighted a case where a hospital charged 1.3 lakh rupees for a chemotherapy medicine that cost distributors 11,000 rupees [c92]. In another instance, a saline drip costing 11 rupees was sold for 270 rupees [c96].\n\nThe government recently capped trade margins on selected anti-cancer drugs at 30 percent [c90]. Officials said this step could lower retail prices by up to 70 percent and save patients 2,500 crore rupees annually [c91], [c95]. But judges asked why a uniform 16 percent margin cap could not apply to all medicines [c94]. The court also reprimanded the government for letting companies make a critical antifungal drug under expired pandemic rules [c97]. Judges called the national pricing authority a totally defunct body [c101].",
+    "vocab": [
+      {
+        "term": "reprimanded",
+        "say": "REP-rih-man-did",
+        "meaning": "expressed strong official disapproval of someone's actions"
+      },
+      {
+        "term": "defunct",
+        "say": "dih-FUNGKT",
+        "meaning": "no longer existing, working, or functioning"
+      }
+    ]
+  },
+  "parsed_body": "The Supreme Court of India criticized drug companies for setting maximum prices more than 1,000 percent above retail costs. The court asked government lawyers whether business profit is more important than human life. Judges highlighted a case where a hospital charged 1.3 lakh rupees for a chemotherapy medicine that cost distributors 11,000 rupees. In another instance, a saline drip costing 11 rupees was sold for 270 rupees.\n\nThe government recently capped trade margins on selected anti-cancer drugs at 30 percent. Officials said this step could lower retail prices by up to 70 percent and save patients 2,500 crore rupees annually,. But judges asked why a uniform 16 percent margin cap could not apply to all medicines. The court also reprimanded the government for letting companies make a critical antifungal drug under expired pandemic rules. Judges called the national pricing authority a totally defunct body.",
+  "markers": [
+    {
+      "start": 0,
+      "end": 122,
+      "claim_id": 86,
+      "outlet": "Times of India",
+      "url": "https://timesofindia.indiatimes.com/india/sc-cannot-let-pharma-industry-run-amok-in-name-of-free-market/articleshow/135245670.cms"
+    },
+    {
+      "start": 124,
+      "end": 216,
+      "claim_id": 87,
+      "outlet": "Times of India",
+      "url": "https://timesofindia.indiatimes.com/india/sc-cannot-let-pharma-industry-run-amok-in-name-of-free-market/articleshow/135245670.cms"
+    },
+    {
+      "start": 218,
+      "end": 349,
+      "claim_id": 92,
+      "outlet": "Livemint",
+      "url": "https://www.livemint.com/news/supreme-court-medicine-markups-11793099037938.html"
+    },
+    {
+      "start": 351,
+      "end": 427,
+      "claim_id": 96,
+      "outlet": "Hindustan Times",
+      "url": "https://www.hindustantimes.com/india-news/sc-castigates-centre-over-medicine-overpricing-asks-can-you-justify-this-loot-101793105967887.html"
+    },
+    {
+      "start": 430,
+      "end": 518,
+      "claim_id": 90,
+      "outlet": "Livemint",
+      "url": "https://www.livemint.com/news/supreme-court-medicine-markups-11793099037938.html"
+    },
+    {
+      "start": 520,
+      "end": 636,
+      "claim_id": 91,
+      "outlet": "Livemint",
+      "url": "https://www.livemint.com/news/supreme-court-medicine-markups-11793099037938.html"
+    },
+    {
+      "start": 639,
+      "end": 724,
+      "claim_id": 94,
+      "outlet": "Hindustan Times",
+      "url": "https://www.hindustantimes.com/india-news/sc-castigates-centre-over-medicine-overpricing-asks-can-you-justify-this-loot-101793105967887.html"
+    },
+    {
+      "start": 726,
+      "end": 850,
+      "claim_id": 97,
+      "outlet": "Hindustan Times",
+      "url": "https://www.hindustantimes.com/india-news/sc-slams-centre-drug-regulator-over-expired-covid-era-approvals-for-antifungal-drug-101793097907084.html"
+    },
+    {
+      "start": 852,
+      "end": 919,
+      "claim_id": 101,
+      "outlet": "Hindustan Times",
+      "url": "https://www.hindustantimes.com/india-news/govt-allowing-this-to-happen-supreme-court-questions-on-overpricing-of-medicines-massive-gap-in-mrp-and-cost-to-retailers-101793097066204.html"
+    }
+  ],
+  "claims_available": [
+    {
+      "id": 86,
+      "cluster_id": 5,
+      "text": "A Supreme Court bench of Justices Vikram Nath and Sandeep Mehta stated that the pharmaceutical industry cannot be allowed to run amok by setting MRPs over 1,000% higher than retailer prices.",
+      "kind": "event",
+      "outlet": "Times of India",
+      "url": "https://timesofindia.indiatimes.com/india/sc-cannot-let-pharma-industry-run-amok-in-name-of-free-market/articleshow/135245670.cms",
+      "source_kind": "fulltext"
+    },
+    {
+      "id": 87,
+      "cluster_id": 5,
+      "text": "The Supreme Court questioned Additional Solicitor General Aishwarya Bhati asking whether commerce is more important than the life of citizens.",
+      "kind": "quote",
+      "outlet": "Times of India",
+      "url": "https://timesofindia.indiatimes.com/india/sc-cannot-let-pharma-industry-run-amok-in-name-of-free-market/articleshow/135245670.cms",
+      "source_kind": "fulltext"
+    },
+    {
+      "id": 88,
+      "cluster_id": 5,
+      "text": "The Supreme Court reserved its order on a petition seeking to bring all non-patented medicines and medical consumables under price control mechanisms.",
+      "kind": "event",
+      "outlet": "Times of India",
+      "url": "https://timesofindia.indiatimes.com/india/sc-cannot-let-pharma-industry-run-amok-in-name-of-free-market/articleshow/135245670.cms",
+      "source_kind": "fulltext"
+    },
+    {
+      "id": 89,
+      "cluster_id": 5,
+      "text": "Advocate and activist Kishan Chand Jain filed a public interest litigation in 2023 seeking reforms in drug pricing and medical regulation.",
+      "kind": "background",
+      "outlet": "Livemint",
+      "url": "https://www.livemint.com/news/supreme-court-medicine-markups-11793099037938.html",
+      "source_kind": "fulltext"
+    },
+    {
+      "id": 90,
+      "cluster_id": 5,
+      "text": "The Union government issued a notification on October 17 capping trade margins at 30% of MRP for selected non-scheduled anti-cancer medicines.",
+      "kind": "event",
+      "outlet": "Livemint",
+      "url": "https://www.livemint.com/news/supreme-court-medicine-markups-11793099037938.html",
+      "source_kind": "fulltext"
+    },
+    {
+      "id": 91,
+      "cluster_id": 5,
+      "text": "The Centre estimated that capping trade margins on non-scheduled anti-cancer drugs would reduce retail prices by 20% to 70%.",
+      "kind": "figure",
+      "outlet": "Livemint",
+      "url": "https://www.livemint.com/news/supreme-court-medicine-markups-11793099037938.html",
+      "source_kind": "fulltext"
+    },
+    {
+      "id": 92,
+      "cluster_id": 5,
+      "text": "The Supreme Court cited a case where a hospital charged ₹1.3 lakh for a chemotherapy injection that a medical distributor could procure for ₹11,000.",
+      "kind": "event",
+      "outlet": "Livemint",
+      "url": "https://www.livemint.com/news/supreme-court-medicine-markups-11793099037938.html",
+      "source_kind": "fulltext"
+    },
+    {
+      "id": 93,
+      "cluster_id": 5,
+      "text": "Senior advocate Mukul Rohatgi stated that private listed hospitals operate on profit margins of around 10% and require medicine margins to maintain equipment and facilities.",
+      "kind": "quote",
+      "outlet": "Livemint",
+      "url": "https://www.livemint.com/news/supreme-court-medicine-markups-11793099037938.html",
+      "source_kind": "fulltext"
+    },
+    {
+      "id": 94,
+      "cluster_id": 5,
+      "text": "The Supreme Court bench questioned why a uniform trade margin of 16% could not be implemented on all medicines.",
+      "kind": "event",
+      "outlet": "Hindustan Times",
+      "url": "https://www.hindustantimes.com/india-news/sc-castigates-centre-over-medicine-overpricing-asks-can-you-justify-this-loot-101793105967887.html",
+      "source_kind": "fulltext"
+    },
+    {
+      "id": 95,
+      "cluster_id": 5,
+      "text": "The Centre stated that capping the trade margin on anti-cancer drugs at 30% of MRP is expected to save patients approximately ₹2,500 crore annually.",
+      "kind": "figure",
+      "outlet": "Hindustan Times",
+      "url": "https://www.hindustantimes.com/india-news/sc-castigates-centre-over-medicine-overpricing-asks-can-you-justify-this-loot-101793105967887.html",
+      "source_kind": "fulltext"
+    },
+    {
+      "id": 96,
+      "cluster_id": 5,
+      "text": "The Supreme Court noted a case where a single saline drip with an actual cost of ₹11 was sold in the market for ₹270.",
+      "kind": "event",
+      "outlet": "Hindustan Times",
+      "url": "https://www.hindustantimes.com/india-news/sc-castigates-centre-over-medicine-overpricing-asks-can-you-justify-this-loot-101793105967887.html",
+      "source_kind": "fulltext"
+    },
+    {
+      "id": 97,
+      "cluster_id": 5,
+      "text": "The Supreme Court reprimanded the Union government and the DCGI for failing to act against companies manufacturing critical antifungal drug Liposomal Amphotericin B under expired emergency pandemic authorisations.",
+      "kind": "event",
+      "outlet": "Hindustan Times",
+      "url": "https://www.hindustantimes.com/india-news/sc-slams-centre-drug-regulator-over-expired-covid-era-approvals-for-antifungal-drug-101793097907084.html",
+      "source_kind": "fulltext"
+    },
+    {
+      "id": 98,
+      "cluster_id": 5,
+      "text": "Emergency permissions for manufacturing Liposomal Amphotericin B were granted under Section 26B of the Drugs and Cosmetics Act, 1940, during the 2021 mucormycosis outbreak.",
+      "kind": "background",
+      "outlet": "Hindustan Times",
+      "url": "https://www.hindustantimes.com/india-news/sc-slams-centre-drug-regulator-over-expired-covid-era-approvals-for-antifungal-drug-101793097907084.html",
+      "source_kind": "fulltext"
+    },
+    {
+      "id": 99,
+      "cluster_id": 5,
+      "text": "Senior advocate Amit Anand Tiwari stated that Sun Pharmaceutical Industries Ltd was not granted emergency approvals for Liposomal Amphotericin B.",
+      "kind": "event",
+      "outlet": "Hindustan Times",
+      "url": "https://www.hindustantimes.com/india-news/sc-slams-centre-drug-regulator-over-expired-covid-era-approvals-for-antifungal-drug-101793097907084.html",
+      "source_kind": "fulltext"
+    },
+    {
+      "id": 100,
+      "cluster_id": 5,
+      "text": "Companies including Cipla Ltd, Bharat Serums and Vaccines Ltd, BDR Pharmaceuticals, and Lifecare Innovations were removed from the case because their manufacturing licences predated the pandemic.",
+      "kind": "event",
+      "outlet": "Hindustan Times",
+      "url": "https://www.hindustantimes.com/india-news/sc-slams-centre-drug-regulator-over-expired-covid-era-approvals-for-antifungal-drug-101793097907084.html",
+      "source_kind": "fulltext"
+    },
+    {
+      "id": 101,
+      "cluster_id": 5,
+      "text": "The Supreme Court bench described the National Pharmaceutical Pricing Authority as appearing to be a totally defunct body.",
+      "kind": "event",
+      "outlet": "Hindustan Times",
+      "url": "https://www.hindustantimes.com/india-news/govt-allowing-this-to-happen-supreme-court-questions-on-overpricing-of-medicines-massive-gap-in-mrp-and-cost-to-retailers-101793097066204.html",
+      "source_kind": "fulltext"
+    }
+  ],
+  "unsourced_figures": []
+}

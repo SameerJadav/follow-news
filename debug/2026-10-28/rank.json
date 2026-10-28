@@ -1,0 +1,811 @@
+{
+  "dials": {
+    "WEIGHT_FLOOR": 5,
+    "TIER_WEIGHT": {
+      "lead": 4,
+      "major": 2,
+      "notable": 0
+    },
+    "WIKI_BONUS": 2,
+    "HARD_CAP": 12,
+    "MIN_STORIES_IF_ANY": 3,
+    "MAX_ARTICLES_PER_STORY": 5
+  },
+  "floor_relaxed": false,
+  "kept_weights": [
+    15,
+    12,
+    6,
+    12,
+    8,
+    5
+  ],
+  "per_section": {
+    "world": 3,
+    "india": 3
+  },
+  "clusters": [
+    {
+      "headline_hint": "Cyclone Arnab makes landfall along Andhra Pradesh coast, triggering heavy rains and mass evacuations",
+      "section": "india",
+      "category": "disaster",
+      "tier_requested": "lead",
+      "article_ids": [
+        2,
+        15,
+        72,
+        76,
+        106,
+        111,
+        134,
+        146,
+        147,
+        150,
+        160,
+        162,
+        170,
+        176,
+        193,
+        219,
+        274
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        2,
+        15,
+        72,
+        76,
+        106,
+        111,
+        134,
+        146,
+        147,
+        150,
+        160,
+        162,
+        170,
+        176,
+        193,
+        219,
+        274
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 6,
+      "wiki_backed": true,
+      "wiki_event": "Indian authorities order nearly 100,000 people to evacuate parts of Andhra Pradesh and Odisha as Cyclone Arnab approaches, with the India Meteorological Department forecasting landfall as a very severe cyclonic storm.",
+      "weight": 12,
+      "weight_terms": {
+        "distinct_outlets": 6,
+        "tier_weight": 4,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "The Hindu",
+          "title": "Cyclone Arnab landfall continues along Andhra Pradesh coast | LIVE",
+          "url": "https://www.thehindu.com/news/national/cyclone-arnab-landfall-andhra-pradesh-odisha-rainfall-weather-imd-alert-live-updates-october-28-2026/article71634111.ece"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "Cyclone Arnab LIVE Updates: Cyclone Arnab Makes Landfall, Eastern States See Heavy Rainfall",
+          "url": "https://www.ndtv.com/india-news/cyclone-arnab-landfall-live-updates-landfall-tracker-imd-weather-forecast-heavy-rain-alert-andhra-pradesh-odisha-live-news-12245206#publisher=newsstand"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Cyclone Arnab starts landfall process along Andhra Pradesh coast, triggers heavy rain and strong winds",
+          "url": "https://www.hindustantimes.com/india-news/cyclone-arnab-makes-landfall-along-andhra-pradesh-coast-triggers-heavy-rain-and-strong-winds-101793119695215.html"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Cyclone Arnab: Andhra Pradesh evacuates 89,000 people as state prepares for landfall",
+          "url": "https://www.livemint.com/news/india/cyclone-arnab-andhra-pradesh-evacuates-89-000-people-as-state-prepares-for-landfall-11793124963156.html"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Aviation ministry suspends ops at three Andhra airports as Cyclone Arnab intensifies",
+          "url": "https://timesofindia.indiatimes.com/india/aviation-ministry-suspends-operations-at-three-andhra-airports-as-cyclone-arnab-intensifies/articleshow/135243430.cms"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 12
+    },
+    {
+      "headline_hint": "Exit polls show deadlock in Israeli general election as opposition ties with Netanyahu's bloc",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "lead",
+      "article_ids": [
+        1,
+        16,
+        17,
+        21,
+        27,
+        28,
+        40,
+        45,
+        46,
+        48,
+        50,
+        54,
+        73,
+        80,
+        88,
+        92,
+        96,
+        102,
+        104,
+        105,
+        107,
+        114,
+        118,
+        121,
+        136,
+        152,
+        188,
+        198,
+        199,
+        237,
+        241,
+        243,
+        261,
+        286,
+        304,
+        326
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        1,
+        16,
+        17,
+        21,
+        27,
+        28,
+        40,
+        45,
+        46,
+        48,
+        50,
+        54,
+        73,
+        80,
+        88,
+        92,
+        96,
+        102,
+        104,
+        105,
+        107,
+        114,
+        118,
+        121,
+        136,
+        152,
+        188,
+        198,
+        199,
+        237,
+        241,
+        243,
+        261,
+        286,
+        304,
+        326
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 9,
+      "wiki_backed": true,
+      "wiki_event": "Israelis vote to elect the 120 members of the Knesset.",
+      "weight": 15,
+      "weight_terms": {
+        "distinct_outlets": 9,
+        "tier_weight": 4,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "Israel election live: Netanyahu speaks as exit polls point to tie with Eisenkot opposition bloc",
+          "url": "https://www.theguardian.com/world/live/2026/oct/27/israel-elections-knesset-netanyahu-likud-eisenkot-gaza-latest-updates"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Arab parties could win 18 Israeli parliament seats",
+          "url": "https://www.aljazeera.com/news/2026/10/28/arab-parties-could-win-18-seats-in-israeli-elections-exit-polls-suggest?traffic_source=rss"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Watch: What happens now after close vote in Israeli election?",
+          "url": "https://www.bbc.co.uk/news/videos/cm79p5pxqey2o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Israel election: Record turnout as Netanyahu and Eisenkot remain deadlocked",
+          "url": "https://www.france24.com/en/middle-east/20261027-israel-election-record-turnout-netanyahu-eisenkot-deadlock"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "Israel's election turnout soars, lifting opposition hopes of beating Netanyahu",
+          "url": "https://www.npr.org/2026/10/27/nx-s1-6019381/israel-elections"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 31
+    },
+    {
+      "headline_hint": "Flávio Bolsonaro leaves Brazil for the US following presidential election defeat to Lula",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        9,
+        38,
+        39,
+        63,
+        70,
+        71,
+        91,
+        161,
+        179,
+        242,
+        279,
+        334
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        9,
+        38,
+        39,
+        63,
+        70,
+        71,
+        91,
+        161,
+        179,
+        242,
+        279,
+        334
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 8,
+      "wiki_backed": true,
+      "wiki_event": "Brazilian senator Flávio Bolsonaro leaves Brazil for the United States, despite orders to surrender his passports to the Federal Police, two days after his defeat in the presidential election runoffs to incumbent president Luiz Inácio Lula ",
+      "weight": 12,
+      "weight_terms": {
+        "distinct_outlets": 8,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Livemint",
+          "title": "After stunning election defeat, Flávio Bolsonaro flees to US, Brazil's President Lula da Silva calls it ‘shameful’",
+          "url": "https://www.livemint.com/news/us-news/after-stunning-election-defeat-fl-vio-bolsonaro-flees-to-us-brazils-president-lula-da-silva-calls-it-shameful-11793149546292.html"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "President Lula calls Bolsonaro’s Brazil exit ‘shameful’",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/10/27/president-lula-calls-bolsonaros-brazil-exit?traffic_source=rss"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Flavio Bolsonaro flees Brazil after Lula defeat, US offers visas to family",
+          "url": "https://timesofindia.indiatimes.com/world/rest-of-world/flavio-bolsonaro-flees-brazil-after-lula-defeat-us-offers-visas-to-family/articleshow/135247888.cms"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Flávio Bolsonaro flees Brazil after presidential election loss, reports say",
+          "url": "https://www.theguardian.com/world/2026/oct/27/flavio-bolsonaro-brazil-argentina-fled"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "Flavio Bolsonaro headed to US after Brazil election defeat: US media",
+          "url": "https://www.channelnewsasia.com/world/bolsonaro-brazil-election-defeat-lula-us-6497941"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 7
+    },
+    {
+      "headline_hint": "Local ceasefire holds in Russian-occupied Ukrainian city of Oleshky after Melania Trump-brokered agreement",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "major",
+      "article_ids": [
+        61,
+        83,
+        94,
+        182,
+        213,
+        323
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        61,
+        83,
+        94,
+        182,
+        213,
+        323
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 6,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "BBC World",
+          "title": "Ceasefire extended across Ukraine's Kherson region, officials say",
+          "url": "https://www.bbc.co.uk/news/articles/c6lye1w9p2l8o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "Ukraine, Russia say US-brokered truce holding in ravaged city",
+          "url": "https://www.channelnewsasia.com/world/ukraine-russia-us-brokered-truce-holding-6497861"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Oleshky truce appears to hold as two European leaders have ‘frank’ call with Putin",
+          "url": "https://www.theguardian.com/world/2026/oct/27/oleshky-truce-ukraine-russia-putin"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "Local ceasefire brokered by Melania Trump starts in southern Ukraine",
+          "url": "https://www.npr.org/2026/10/27/g-s1-150037/russia-ukraine-war"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "What we know about Ukraine-Russia truce in Oleshky, brokered by Melania Trump",
+          "url": "https://www.bbc.co.uk/news/videos/c687z5ne1w4ro?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 1
+    },
+    {
+      "headline_hint": "Donald Trump announces plan to roll back Biden-era methane emission regulations during Texas campaign rally",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        5,
+        10,
+        44,
+        78
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        5,
+        10,
+        44,
+        78
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "Trump says government to ’terminate’ Biden-era methane emissions rules",
+          "url": "https://www.theguardian.com/us-news/2026/oct/27/trump-biden-era-methane-emissions-rules-oil-gas"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Trump showcases Venezuelan oil as he seeks to rally voters in Texas",
+          "url": "https://www.aljazeera.com/news/2026/10/27/trump-showcases-venezuelan-oil-as-he-seeks-to-rally-voters-in-texas?traffic_source=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Trump tells Texas campaign rally crowd he’s rolling back environmental rules to curb methane pollution – live",
+          "url": "https://www.theguardian.com/us-news/live/2026/oct/27/comey-trump-rubio-texas-vance-israel-midterms-politics-latest-news-updates"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Trump shows off tanker with ‘1m barrels of oil’ and floats Venezuela as 51st state",
+          "url": "https://www.theguardian.com/us-news/2026/oct/27/trump-oil-tanker-venezuela"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Indian opposition parties intensify protests against Election Commission over voter roll deletions and SIR process",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        95,
+        97,
+        108,
+        181,
+        228,
+        280,
+        296,
+        306,
+        316,
+        325
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        95,
+        97,
+        108,
+        181,
+        228,
+        280,
+        296,
+        306,
+        316,
+        325
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": true,
+      "wiki_event": "Indian authorities order nearly 100,000 people to evacuate parts of Andhra Pradesh and Odisha as Cyclone Arnab approaches, with the India Meteorological Department forecasting landfall as a very severe cyclonic storm.",
+      "weight": 8,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "Congress slams EC affidavit, terms it ‘deceptive, deceitful &amp; duplicitous’",
+          "url": "https://timesofindia.indiatimes.com/india/congress-slams-ec-affidavit-terms-it-deceptive-deceitful-duplicitous/articleshow/135245538.cms"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "CPI forms human chain in Delhi demanding CEC’s resignation and rollback of SIR",
+          "url": "https://www.thehindu.com/news/national/cpi-forms-human-chain-in-delhi-demanding-cecs-resignation-and-rollback-of-sir/article71631271.ece"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "INDIA bloc leaders to hold ‘public impeachment of CEC’ at Kharge's Delhi residence on October 30",
+          "url": "https://www.hindustantimes.com/india-news/india-bloc-leaders-to-hold-public-impeachment-of-cec-at-kharges-delhi-residence-on-october-30-101793116383425.html"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "Karnataka SIR: Nearly 1 crore names deleted from final voter list",
+          "url": "https://scroll.in/latest/1096680/karnataka-sir-nearly-1-crore-names-deleted-from-final-voter-list?utm_source=rss&utm_medium=public"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Order preservation of SIR files &amp; notings, petitioners urge SC",
+          "url": "https://timesofindia.indiatimes.com/india/order-preservation-of-sir-files-notings-petitioners-urge-sc/articleshow/135245512.cms"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 5
+    },
+    {
+      "headline_hint": "Supreme Court reprimands Centre and pharmaceutical industry over inflated medicine prices and profit margins",
+      "section": "india",
+      "category": "health",
+      "tier_requested": "major",
+      "article_ids": [
+        81,
+        248,
+        268,
+        300,
+        301,
+        305
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        81,
+        248,
+        268,
+        300,
+        301,
+        305
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 5,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "Cannot let pharma industry ‘run amok’ in name of free market: SC",
+          "url": "https://timesofindia.indiatimes.com/india/sc-cannot-let-pharma-industry-run-amok-in-name-of-free-market/articleshow/135245670.cms"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "‘Don’t treat people’s lives as commerce’: SC pulls up Centre and hospitals over medicine mark-ups",
+          "url": "https://www.livemint.com/news/supreme-court-medicine-markups-11793099037938.html"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "SC castigates Centre over medicine overpricing, asks 'can you justify this loot'",
+          "url": "https://www.hindustantimes.com/india-news/sc-castigates-centre-over-medicine-overpricing-asks-can-you-justify-this-loot-101793105967887.html"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "‘Were officers sleeping?’ SC raps Centre, drug regulator over expired Covid-era approvals",
+          "url": "https://www.hindustantimes.com/india-news/sc-slams-centre-drug-regulator-over-expired-covid-era-approvals-for-antifungal-drug-101793097907084.html"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "'Govt allowing this to happen': Supreme Court questions overpricing of medicines, massive gap in MRP and cost to retailers",
+          "url": "https://www.hindustantimes.com/india-news/govt-allowing-this-to-happen-supreme-court-questions-on-overpricing-of-medicines-massive-gap-in-mrp-and-cost-to-retailers-101793097066204.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 1
+    },
+    {
+      "headline_hint": "Ebola outbreak in Africa passes 10,000 cases, centered mainly in Democratic Republic of Congo",
+      "section": "world",
+      "category": "health",
+      "tier_requested": "major",
+      "article_ids": [
+        112,
+        224
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        112,
+        224
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "NPR World",
+          "title": "The Ebola outbreak is breaking records -- and just marked a grim milestone",
+          "url": "https://www.npr.org/2026/10/27/g-s1-150136/ebola-outbreak-milestone-democratic-republic-congo-vaccine"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Africa's Ebola outbreak tops 10,000 cases, mainly in DR Congo",
+          "url": "https://www.france24.com/en/africa/20261027-africa-ebola-outbreak-tops-10-000-cases-mainly-dr-congo"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Protests and arrests escalate in Arunachal Pradesh over proposed Siang hydro-electric dam project",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        180,
+        223,
+        307
+      ],
+      "verdict": "cut:below_floor(2<5)",
+      "valid_ids": [
+        180,
+        223,
+        307
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 2,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "NDTV",
+          "title": "30 Paramilitary Companies Deployed In Arunachal's Siang Valley After Anti-Dam Protests",
+          "url": "https://www.ndtv.com/india-news/30-paramilitary-companies-deployed-in-arunachals-siang-valley-after-anti-dam-protests-12245297#publisher=newsstand"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "69 arrested under Arunachal anti-terror law after protests against dam project turn violent",
+          "url": "https://scroll.in/latest/1096673/sixty-nine-arrested-under-arunachal-anti-terror-law-after-protests-against-dam-project-turn-violent?utm_source=rss&utm_medium=public"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "Explained: Why Proposed Siang Dam In Arunachal Is Facing Protests",
+          "url": "https://www.ndtv.com/india-news/explained-why-proposed-siang-dam-in-arunachal-is-facing-protests-12244718#publisher=newsstand"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Cheetah cub dies from gunshot pellet wounds in Kuno National Park",
+      "section": "india",
+      "category": "climate",
+      "tier_requested": "notable",
+      "article_ids": [
+        186,
+        234,
+        260
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        186,
+        234,
+        260
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "NDTV",
+          "title": "Cheetah Cub Dies In Madhya Pradesh, 5 Pellets Recovered From Body",
+          "url": "https://www.ndtv.com/india-news/cheetah-cub-dies-in-madhya-pradesh-5-pellets-recovered-from-body-12245247#publisher=newsstand"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "Kuno cheetah cub dies of pellet injuries",
+          "url": "https://scroll.in/latest/1096688/kuno-cheetah-cub-dies-of-pellet-injuries?utm_source=rss&utm_medium=public"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "19-month-old cheetah dies of gunshot injuries in MP's Kuno National Park; pellets extracted from body",
+          "url": "https://www.hindustantimes.com/india-news/19monthold-cheetah-cub-dies-of-gunshot-injuries-in-mps-kuno-national-park-pellets-extracted-from-body-101793102923618.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "US military strike on alleged drug-trafficking vessel in eastern Pacific kills five",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "notable",
+      "article_ids": [
+        89,
+        184
+      ],
+      "verdict": "cut:below_floor(2<5)",
+      "valid_ids": [
+        89,
+        184
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 2,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "US says it killed five people in strike on alleged drug boat",
+          "url": "https://www.aljazeera.com/news/2026/10/27/us-says-it-killed-five-people-in-strike-on-alleged-drug-boat?traffic_source=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "US military says strike on alleged drug vessel in eastern Pacific kills five people",
+          "url": "https://www.theguardian.com/us-news/2026/oct/27/us-military-strike-vessel-eastern-pacific"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Network outage at Mumbai Airport forces manual check-ins and leads to widespread flight delays",
+      "section": "india",
+      "category": "technology",
+      "tier_requested": "notable",
+      "article_ids": [
+        159,
+        205,
+        232
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        159,
+        205,
+        232
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Livemint",
+          "title": "Mumbai airport faces network outage, check-in shifts to manual mode; 327 flights delayed",
+          "url": "https://www.livemint.com/news/mumbai-airport-faces-network-outage-check-in-shifts-to-manual-mode-327-flights-delayed-11793124239765.html"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Mumbai airport switches to manual processing after network glitch, flight ops unaffected",
+          "url": "https://timesofindia.indiatimes.com/city/mumbai/chaos-at-mumbai-airport-as-network-glitch-disrupts-check-in-boarding-e-gates-and-digiyatra/articleshow/135240442.cms"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Mumbai airport network failure delays 18 flights by an hour or more, 3 cancelled",
+          "url": "https://www.hindustantimes.com/india-news/network-glitch-hits-mumbai-airport-indigo-and-air-india-operations-affected-101793113773565.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Serbian student assembly movement defeats long-ruling party in election upset",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        138,
+        208
+      ],
+      "verdict": "cut:below_floor(2<5)",
+      "valid_ids": [
+        138,
+        208
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 2,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "France 24",
+          "title": "How student assemblies brought down the Serbian government",
+          "url": "https://www.france24.com/en/europe/20261027-how-student-assemblies-brought-down-the-serbian-government"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "As Serbian student movement ends ruling party’s 12-year reign, here are the challenges they face",
+          "url": "https://scroll.in/article/1096675/as-serbian-student-movement-ends-ruling-partys-12-year-reign-here-are-the-challenges-they-face?utm_source=rss&utm_medium=public"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    }
+  ]
+}

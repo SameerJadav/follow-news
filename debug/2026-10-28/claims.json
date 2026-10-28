@@ -1,0 +1,1014 @@
+{
+  "min_claim_chars": 20,
+  "max_claims_per_story": 24,
+  "calls": [
+    {
+      "label": "claims-world",
+      "cluster_ids": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "label": "claims-india",
+      "cluster_ids": [
+        3,
+        4,
+        5
+      ]
+    }
+  ],
+  "rejected_claims": 0,
+  "rejected_clusters": 0,
+  "clusters": [
+    {
+      "cluster_id": 0,
+      "headline_hint": "Exit polls show deadlock in Israeli general election as opposition ties with Netanyahu's bloc",
+      "section": "world",
+      "batch_position": 0,
+      "claim_count": 19,
+      "distinct_outlets": 5,
+      "source_kinds": {
+        "fulltext": 19
+      },
+      "claims": [
+        {
+          "id": 1,
+          "cluster_id": 0,
+          "text": "Updated exit polls from Israeli broadcasters Kan 11 and Channel 13 show Benjamin Netanyahu's bloc tied with Gadi Eisenkot's opposition grouping at 51 seats each.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/live/2026/oct/27/israel-elections-knesset-netanyahu-likud-eisenkot-gaza-latest-updates",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 2,
+          "cluster_id": 0,
+          "text": "Channel 12 updated exit polls show Benjamin Netanyahu's bloc on 50 seats and the opposition bloc on 52 seats.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/live/2026/oct/27/israel-elections-knesset-netanyahu-likud-eisenkot-gaza-latest-updates",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 3,
+          "cluster_id": 0,
+          "text": "A political party or bloc needs 61 parliamentary seats in the 120-seat Knesset to form a majority coalition government in Israel.",
+          "kind": "background",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/live/2026/oct/27/israel-elections-knesset-netanyahu-likud-eisenkot-gaza-latest-updates",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 4,
+          "cluster_id": 0,
+          "text": "Benjamin Netanyahu spoke at the Likud election night party in Jerusalem after 3 a.m. local time, asserting official results will show Likud as the largest party in Israel.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/live/2026/oct/27/israel-elections-knesset-netanyahu-likud-eisenkot-gaza-latest-updates",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 5,
+          "cluster_id": 0,
+          "text": "Benjamin Netanyahu told supporters that a government relying on the support of Palestinian parties must not be formed.",
+          "kind": "quote",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/live/2026/oct/27/israel-elections-knesset-netanyahu-likud-eisenkot-gaza-latest-updates",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 6,
+          "cluster_id": 0,
+          "text": "Israel's Central Elections Committee expects between 600,000 and 650,000 voters to cast ballots at special polling stations, representing nearly 10 percent of eligible voters.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/live/2026/oct/27/israel-elections-knesset-netanyahu-likud-eisenkot-gaza-latest-updates",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 7,
+          "cluster_id": 0,
+          "text": "Yisrael Beitenu party leader Avigdor Lieberman warned that final election results could change once hundreds of thousands of military absentee ballots are counted.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/live/2026/oct/27/israel-elections-knesset-netanyahu-likud-eisenkot-gaza-latest-updates",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 8,
+          "cluster_id": 0,
+          "text": "Exit polls indicate Arab-led parties Joint List and Ra'am are projected to win a record 18 seats in the 120-member Knesset.",
+          "kind": "figure",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/28/arab-parties-could-win-18-seats-in-israeli-elections-exit-polls-suggest?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 9,
+          "cluster_id": 0,
+          "text": "Overall voter turnout in Tuesday's Israeli election reached 77.7 percent, the highest level since 1999.",
+          "kind": "figure",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/28/arab-parties-could-win-18-seats-in-israeli-elections-exit-polls-suggest?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 10,
+          "cluster_id": 0,
+          "text": "Voter turnout among Palestinian citizens of Israel reached around 80 percent, breaking records set in 1999.",
+          "kind": "figure",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/28/arab-parties-could-win-18-seats-in-israeli-elections-exit-polls-suggest?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 11,
+          "cluster_id": 0,
+          "text": "Palestinian citizens of Israel account for about 21 percent of the country's population of 10 million.",
+          "kind": "background",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/28/arab-parties-could-win-18-seats-in-israeli-elections-exit-polls-suggest?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 12,
+          "cluster_id": 0,
+          "text": "Ra'am leader Mansour Abbas stated that both main Israeli political blocs reached out to his party before and after the election.",
+          "kind": "event",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/28/arab-parties-could-win-18-seats-in-israeli-elections-exit-polls-suggest?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 13,
+          "cluster_id": 0,
+          "text": "Witnesses reported Likud party supporters drove through Jerusalem flying party flags and blaring the Islamic call to prayer to warn supporters that Arab citizens were voting.",
+          "kind": "event",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/28/arab-parties-could-win-18-seats-in-israeli-elections-exit-polls-suggest?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 14,
+          "cluster_id": 0,
+          "text": "BBC reported exit polls suggest Gadi Eisenkot's opposition bloc won the largest number of seats, but did not win an outright majority.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/videos/cm79p5pxqey2o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 15,
+          "cluster_id": 0,
+          "text": "Pro-Netanyahu Channel 14 projected a stronger showing for Benjamin Netanyahu and his allies, predicting they would win 60 seats.",
+          "kind": "event",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/middle-east/20261027-israel-election-record-turnout-netanyahu-eisenkot-deadlock",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 16,
+          "cluster_id": 0,
+          "text": "Israeli opposition leader Yair Lapid declared that the Netanyahu bloc suffered a total collapse and crushing defeat.",
+          "kind": "event",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/middle-east/20261027-israel-election-record-turnout-netanyahu-eisenkot-deadlock",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 17,
+          "cluster_id": 0,
+          "text": "Gadi Eisenkot is a 66-year-old former military chief who entered politics four years ago and lost a son and two nephews in the Gaza war.",
+          "kind": "background",
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/middle-east/20261027-israel-election-record-turnout-netanyahu-eisenkot-deadlock",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 18,
+          "cluster_id": 0,
+          "text": "Giant screens at the Likud election night party displayed footage of Benjamin Netanyahu alongside President Donald Trump as well as military strikes.",
+          "kind": "event",
+          "outlet": "NPR World",
+          "url": "https://www.npr.org/2026/10/27/nx-s1-6019381/israel-elections",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 19,
+          "cluster_id": 0,
+          "text": "The United States and Israel plan to launch major attacks against Iran following Israeli and U.S. midterm elections after previously launching joint operations against Iran in June 2025 and February 2026.",
+          "kind": "background",
+          "outlet": "NPR World",
+          "url": "https://www.npr.org/2026/10/27/nx-s1-6019381/israel-elections",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 1,
+      "headline_hint": "Flávio Bolsonaro leaves Brazil for the US following presidential election defeat to Lula",
+      "section": "world",
+      "batch_position": 1,
+      "claim_count": 16,
+      "distinct_outlets": 5,
+      "source_kinds": {
+        "fulltext": 16
+      },
+      "claims": [
+        {
+          "id": 20,
+          "cluster_id": 1,
+          "text": "Brazilian Senator Flávio Bolsonaro left Brazil for the United States following his runoff election defeat to incumbent President Luiz Inácio Lula da Silva.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/us-news/after-stunning-election-defeat-fl-vio-bolsonaro-flees-to-us-brazils-president-lula-da-silva-calls-it-shameful-11793149546292.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 21,
+          "cluster_id": 1,
+          "text": "Incumbent President Luiz Inácio Lula da Silva secured a fourth term as president of Brazil with 51.8% of the vote.",
+          "kind": "figure",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/us-news/after-stunning-election-defeat-fl-vio-bolsonaro-flees-to-us-brazils-president-lula-da-silva-calls-it-shameful-11793149546292.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 22,
+          "cluster_id": 1,
+          "text": "Valdemar Costa Neto, president of the Liberal Party, announced that the party acknowledges the results of the presidential runoff election.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/us-news/after-stunning-election-defeat-fl-vio-bolsonaro-flees-to-us-brazils-president-lula-da-silva-calls-it-shameful-11793149546292.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 23,
+          "cluster_id": 1,
+          "text": "President Lula called Flávio Bolsonaro's departure shameful, stating that a person who sneaks out of their country must have something to hide.",
+          "kind": "quote",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/us-news/after-stunning-election-defeat-fl-vio-bolsonaro-flees-to-us-brazils-president-lula-da-silva-calls-it-shameful-11793149546292.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 24,
+          "cluster_id": 1,
+          "text": "Former President Jair Bolsonaro is currently serving a 27-year prison sentence in Brazil for plotting a coup.",
+          "kind": "background",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/us-news/after-stunning-election-defeat-fl-vio-bolsonaro-flees-to-us-brazils-president-lula-da-silva-calls-it-shameful-11793149546292.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 25,
+          "cluster_id": 1,
+          "text": "Brazil's Supreme Court ordered Flávio Bolsonaro to surrender his passports amid an investigation into money laundering.",
+          "kind": "event",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/10/27/president-lula-calls-bolsonaros-brazil-exit?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 26,
+          "cluster_id": 1,
+          "text": "A senior U.S. State Department official confirmed to Reuters that entry visas would be issued to Flávio Bolsonaro and his family.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/rest-of-world/flavio-bolsonaro-flees-brazil-after-lula-defeat-us-offers-visas-to-family/articleshow/135247888.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 27,
+          "cluster_id": 1,
+          "text": "Two sources told Reuters that Flávio Bolsonaro's passports were cancelled after he failed to comply with a Supreme Court order to surrender them within 24 hours.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/rest-of-world/flavio-bolsonaro-flees-brazil-after-lula-defeat-us-offers-visas-to-family/articleshow/135247888.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 28,
+          "cluster_id": 1,
+          "text": "A senior Brazilian federal police official stated Flávio Bolsonaro did not leave Brazil through any official migration checkpoint.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/rest-of-world/flavio-bolsonaro-flees-brazil-after-lula-defeat-us-offers-visas-to-family/articleshow/135247888.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 29,
+          "cluster_id": 1,
+          "text": "U.S. President Donald Trump claimed without providing evidence that Brazil's election looked like another rigged election.",
+          "kind": "quote",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/rest-of-world/flavio-bolsonaro-flees-brazil-after-lula-defeat-us-offers-visas-to-family/articleshow/135247888.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 30,
+          "cluster_id": 1,
+          "text": "Lawmakers from President Lula's Workers' Party petitioned the Supreme Court to order Flávio Bolsonaro's arrest and add his name to Interpol's Red Notice list.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/27/flavio-bolsonaro-brazil-argentina-fled",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 31,
+          "cluster_id": 1,
+          "text": "Flávio Bolsonaro has held Italian citizenship and an Italian passport since 2023.",
+          "kind": "background",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/27/flavio-bolsonaro-brazil-argentina-fled",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 32,
+          "cluster_id": 1,
+          "text": "Flávio Bolsonaro is under investigation by Brazilian federal police for potential involvement in a money-laundering scheme worth about 680 million pounds (905 million dollars) involving betting companies.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/27/flavio-bolsonaro-brazil-argentina-fled",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 33,
+          "cluster_id": 1,
+          "text": "Argentinian news channel Todo Noticias reported that Flávio Bolsonaro crossed the border into Argentina on foot before abandoning plans to board a private jet.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/27/flavio-bolsonaro-brazil-argentina-fled",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 34,
+          "cluster_id": 1,
+          "text": "Argentina's security ministry and migration authorities denied that Flávio Bolsonaro entered Argentina.",
+          "kind": "event",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/bolsonaro-brazil-election-defeat-lula-us-6497941",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 35,
+          "cluster_id": 1,
+          "text": "The New York Times reported Flávio Bolsonaro is being investigated over ties to a lawyer accused of laundering more than 1 billion U.S. dollars.",
+          "kind": "figure",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/bolsonaro-brazil-election-defeat-lula-us-6497941",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 2,
+      "headline_hint": "Local ceasefire holds in Russian-occupied Ukrainian city of Oleshky after Melania Trump-brokered agreement",
+      "section": "world",
+      "batch_position": 2,
+      "claim_count": 15,
+      "distinct_outlets": 4,
+      "source_kinds": {
+        "fulltext": 15
+      },
+      "claims": [
+        {
+          "id": 36,
+          "cluster_id": 2,
+          "text": "A localized ceasefire in the Russian-occupied city of Oleshky was extended across the wider Kherson region.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c6lye1w9p2l8o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 37,
+          "cluster_id": 2,
+          "text": "U.S. First Lady Melania Trump and Pope Leo XIV helped broker the humanitarian ceasefire in Oleshky.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c6lye1w9p2l8o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 38,
+          "cluster_id": 2,
+          "text": "Ukrainian official David Arakhamia stated the ceasefire across the Kherson region will continue until 22:59 Ukrainian time on Sunday, November 1.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c6lye1w9p2l8o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 39,
+          "cluster_id": 2,
+          "text": "An estimated 1,700 to 2,000 residents remain trapped in Oleshky without access to food, water, or electricity.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c6lye1w9p2l8o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 40,
+          "cluster_id": 2,
+          "text": "The ceasefire agreement provides for humanitarian aid deliveries to Oleshky followed by civilian evacuations scheduled for Friday.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c6lye1w9p2l8o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 41,
+          "cluster_id": 2,
+          "text": "Kremlin spokesman Dmitry Peskov confirmed the truce was proceeding according to plan and acknowledged U.S. mediation efforts led by Melania Trump.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c6lye1w9p2l8o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 42,
+          "cluster_id": 2,
+          "text": "Oleshky had a pre-war population of 24,000 before being captured by Russian forces during the initial days of the invasion in February 2022.",
+          "kind": "background",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c6lye1w9p2l8o?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 43,
+          "cluster_id": 2,
+          "text": "U.S. cable news network Newsmax reported it received exclusive television access to accompany observers entering Oleshky.",
+          "kind": "event",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/ukraine-russia-us-brokered-truce-holding-6497861",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 44,
+          "cluster_id": 2,
+          "text": "The temporary ceasefire in Russian-controlled Oleshky began at 3 a.m. on Tuesday.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/27/oleshky-truce-ukraine-russia-putin",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 45,
+          "cluster_id": 2,
+          "text": "Finland's President Alexander Stubb and Norway's Prime Minister Jonas Gahr Støre conducted a phone call with Vladimir Putin regarding peace efforts in Ukraine.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/27/oleshky-truce-ukraine-russia-putin",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 46,
+          "cluster_id": 2,
+          "text": "The phone call between Nordic leaders and Putin was connected to upcoming trilateral negotiations between Russia, Ukraine, and the U.S. in Abu Dhabi.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/27/oleshky-truce-ukraine-russia-putin",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 47,
+          "cluster_id": 2,
+          "text": "Denmark's Prime Minister Mette Frederiksen expressed skepticism and criticized the independent call held with Putin by Norway and Finland.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/27/oleshky-truce-ukraine-russia-putin",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 48,
+          "cluster_id": 2,
+          "text": "Russian missile and drone strikes on Kyiv overnight killed at least one person and wounded 15 others, striking a university campus and bridge infrastructure.",
+          "kind": "figure",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/27/oleshky-truce-ukraine-russia-putin",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 49,
+          "cluster_id": 2,
+          "text": "Melania Trump led negotiations with civilian representatives from Russia and Ukraine after receiving briefings from UN officials.",
+          "kind": "event",
+          "outlet": "NPR World",
+          "url": "https://www.npr.org/2026/10/27/g-s1-150037/russia-ukraine-war",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 50,
+          "cluster_id": 2,
+          "text": "Russian missile strikes in Kharkiv late Monday killed two people and injured four others.",
+          "kind": "figure",
+          "outlet": "NPR World",
+          "url": "https://www.npr.org/2026/10/27/g-s1-150037/russia-ukraine-war",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 3,
+      "headline_hint": "Cyclone Arnab makes landfall along Andhra Pradesh coast, triggering heavy rains and mass evacuations",
+      "section": "india",
+      "batch_position": 0,
+      "claim_count": 19,
+      "distinct_outlets": 5,
+      "source_kinds": {
+        "fulltext": 19
+      },
+      "claims": [
+        {
+          "id": 51,
+          "cluster_id": 3,
+          "text": "The India Meteorological Department stated that the landfall process of cyclonic storm Arnab began near Narsapur in West Godavari district, Andhra Pradesh, around 1:30 a.m. on October 28, 2026.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/cyclone-arnab-landfall-andhra-pradesh-odisha-rainfall-weather-imd-alert-live-updates-october-28-2026/article71634111.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 52,
+          "cluster_id": 3,
+          "text": "High waves lashed coastal roads in north Chennai and Tiruvallur districts of Tamil Nadu on October 27, 2026.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/cyclone-arnab-landfall-andhra-pradesh-odisha-rainfall-weather-imd-alert-live-updates-october-28-2026/article71634111.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 53,
+          "cluster_id": 3,
+          "text": "Airlines cancelled at least 21 flights at Vijayawada and Visakhapatnam airports on October 27, 2026.",
+          "kind": "figure",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/cyclone-arnab-landfall-andhra-pradesh-odisha-rainfall-weather-imd-alert-live-updates-october-28-2026/article71634111.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 54,
+          "cluster_id": 3,
+          "text": "Strong winds uprooted a tree near the AU College of Engineering for Women in Visakhapatnam due to Cyclone Arnab.",
+          "kind": "event",
+          "outlet": "NDTV",
+          "url": "https://www.ndtv.com/india-news/cyclone-arnab-landfall-live-updates-landfall-tracker-imd-weather-forecast-heavy-rain-alert-andhra-pradesh-odisha-live-news-12245206#publisher=newsstand",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 55,
+          "cluster_id": 3,
+          "text": "The India Meteorological Department reported Cyclone Arnab maintained wind speeds of 125 to 135 kmph, gusting up to 150 kmph.",
+          "kind": "figure",
+          "outlet": "NDTV",
+          "url": "https://www.ndtv.com/india-news/cyclone-arnab-landfall-live-updates-landfall-tracker-imd-weather-forecast-heavy-rain-alert-andhra-pradesh-odisha-live-news-12245206#publisher=newsstand",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 56,
+          "cluster_id": 3,
+          "text": "Andhra Pradesh Chief Minister N Chandrababu Naidu stated on X that protecting every life is the state government's foremost priority.",
+          "kind": "quote",
+          "outlet": "NDTV",
+          "url": "https://www.ndtv.com/india-news/cyclone-arnab-landfall-live-updates-landfall-tracker-imd-weather-forecast-heavy-rain-alert-andhra-pradesh-odisha-live-news-12245206#publisher=newsstand",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 57,
+          "cluster_id": 3,
+          "text": "Nepal's Department of Immigration suspended trekking permits for restricted high-hill and Himalayan regions for October 29–31, 2026, due to storm risks from Cyclone Arnab.",
+          "kind": "event",
+          "outlet": "NDTV",
+          "url": "https://www.ndtv.com/india-news/cyclone-arnab-landfall-live-updates-landfall-tracker-imd-weather-forecast-heavy-rain-alert-andhra-pradesh-odisha-live-news-12245206#publisher=newsstand",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 58,
+          "cluster_id": 3,
+          "text": "Andhra Pradesh Energy Minister Gottipati Ravi Kumar directed power utilities to remain on high alert, with around 6,000 personnel mobilised.",
+          "kind": "figure",
+          "outlet": "NDTV",
+          "url": "https://www.ndtv.com/india-news/cyclone-arnab-landfall-live-updates-landfall-tracker-imd-weather-forecast-heavy-rain-alert-andhra-pradesh-odisha-live-news-12245206#publisher=newsstand",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 59,
+          "cluster_id": 3,
+          "text": "Odisha closed schools in 16 of its 30 districts ahead of Cyclone Arnab's landfall.",
+          "kind": "event",
+          "outlet": "NDTV",
+          "url": "https://www.ndtv.com/india-news/cyclone-arnab-landfall-live-updates-landfall-tracker-imd-weather-forecast-heavy-rain-alert-andhra-pradesh-odisha-live-news-12245206#publisher=newsstand",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 60,
+          "cluster_id": 3,
+          "text": "The India Meteorological Department stated that Cyclone Arnab was moving westwards at a speed of 10 kmph near the Andhra Pradesh coast and Yanam at 1:10 a.m. on October 28, 2026.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/cyclone-arnab-makes-landfall-along-andhra-pradesh-coast-triggers-heavy-rain-and-strong-winds-101793119695215.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 61,
+          "cluster_id": 3,
+          "text": "The Andhra Pradesh government prepared 2,131 cyclone shelters across 20 districts and placed 1,087 medical teams on standby.",
+          "kind": "figure",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/cyclone-arnab-makes-landfall-along-andhra-pradesh-coast-triggers-heavy-rain-and-strong-winds-101793119695215.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 62,
+          "cluster_id": 3,
+          "text": "South Coast Railway cancelled 24 trains for Wednesday, East Coast Railway cancelled 22, and South Eastern Railway cancelled four trains.",
+          "kind": "figure",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/cyclone-arnab-makes-landfall-along-andhra-pradesh-coast-triggers-heavy-rain-and-strong-winds-101793119695215.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 63,
+          "cluster_id": 3,
+          "text": "Ranchi district administration in Jharkhand ordered all schools to remain closed on October 28 and 29 due to expected adverse weather.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/cyclone-arnab-makes-landfall-along-andhra-pradesh-coast-triggers-heavy-rain-and-strong-winds-101793119695215.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 64,
+          "cluster_id": 3,
+          "text": "Authorities evacuated at least 89,000 people from vulnerable coastal areas of Andhra Pradesh.",
+          "kind": "figure",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/cyclone-arnab-andhra-pradesh-evacuates-89-000-people-as-state-prepares-for-landfall-11793124963156.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 65,
+          "cluster_id": 3,
+          "text": "Andhra Pradesh's disaster management authority stated that more than 12 million people live along the expected path of Cyclone Arnab.",
+          "kind": "background",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/cyclone-arnab-andhra-pradesh-evacuates-89-000-people-as-state-prepares-for-landfall-11793124963156.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 66,
+          "cluster_id": 3,
+          "text": "More than 30,000 fishing boats were secured along the Andhra Pradesh coast ahead of the storm.",
+          "kind": "figure",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/india/cyclone-arnab-andhra-pradesh-evacuates-89-000-people-as-state-prepares-for-landfall-11793124963156.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 67,
+          "cluster_id": 3,
+          "text": "The Ministry of Civil Aviation suspended flight operations at Visakhapatnam airport on the afternoon of October 27, 2026.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/aviation-ministry-suspends-operations-at-three-andhra-airports-as-cyclone-arnab-intensifies/articleshow/135243430.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 68,
+          "cluster_id": 3,
+          "text": "Flight operations at Vijayawada and Rajahmundry airports were suspended after 7 p.m. on October 27, 2026.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/aviation-ministry-suspends-operations-at-three-andhra-airports-as-cyclone-arnab-intensifies/articleshow/135243430.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 69,
+          "cluster_id": 3,
+          "text": "Air India Express cancelled 13 flights primarily affecting Visakhapatnam routes to and from Hyderabad, Bengaluru, Vijayawada, and Bangkok.",
+          "kind": "figure",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/aviation-ministry-suspends-operations-at-three-andhra-airports-as-cyclone-arnab-intensifies/articleshow/135243430.cms",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 4,
+      "headline_hint": "Indian opposition parties intensify protests against Election Commission over voter roll deletions and SIR process",
+      "section": "india",
+      "batch_position": 1,
+      "claim_count": 16,
+      "distinct_outlets": 4,
+      "source_kinds": {
+        "fulltext": 16
+      },
+      "claims": [
+        {
+          "id": 70,
+          "cluster_id": 4,
+          "text": "Congress spokesperson Jairam Ramesh described the Election Commission's Supreme Court affidavit as deceptive, deceitful, and duplicitous.",
+          "kind": "quote",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/congress-slams-ec-affidavit-terms-it-deceptive-deceitful-duplicitous/articleshow/135245538.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 71,
+          "cluster_id": 4,
+          "text": "Jairam Ramesh stated that two election commissioners recorded objections to illegal actions ordered by Chief Election Commissioner Gyanesh Kumar, which were disregarded.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/congress-slams-ec-affidavit-terms-it-deceptive-deceitful-duplicitous/articleshow/135245538.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 72,
+          "cluster_id": 4,
+          "text": "Congress claimed that Form 6 for voter registration could not be submitted online without filling a mandatory new declaration.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/congress-slams-ec-affidavit-terms-it-deceptive-deceitful-duplicitous/articleshow/135245538.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 73,
+          "cluster_id": 4,
+          "text": "The Communist Party of India organised a human chain protest in New Delhi on October 27, 2026, demanding the resignation of Chief Election Commissioner Gyanesh Kumar.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/cpi-forms-human-chain-in-delhi-demanding-cecs-resignation-and-rollback-of-sir/article71631271.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 74,
+          "cluster_id": 4,
+          "text": "CPI General Secretary D. Raja stated that Chief Election Commissioner Gyanesh Kumar had lost the confidence of the people and threatened the electoral process.",
+          "kind": "quote",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/cpi-forms-human-chain-in-delhi-demanding-cecs-resignation-and-rollback-of-sir/article71631271.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 75,
+          "cluster_id": 4,
+          "text": "The Election Commission of India filed a joint affidavit of nearly 250 pages in the Supreme Court on October 26, 2026, asserting that the Chief Election Commissioner can only be removed through the same impeachment process as a Supreme Court judge.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/cpi-forms-human-chain-in-delhi-demanding-cecs-resignation-and-rollback-of-sir/article71631271.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 76,
+          "cluster_id": 4,
+          "text": "The CPI criticized the denotification of Jantar Mantar as a protest site in New Delhi, calling for its reopening.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/cpi-forms-human-chain-in-delhi-demanding-cecs-resignation-and-rollback-of-sir/article71631271.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 77,
+          "cluster_id": 4,
+          "text": "Congress president Mallikarjun Kharge invited INDIA bloc leaders to a public impeachment program against CEC Gyanesh Kumar at his Delhi residence on October 30, 2026.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/india-bloc-leaders-to-hold-public-impeachment-of-cec-at-kharges-delhi-residence-on-october-30-101793116383425.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 78,
+          "cluster_id": 4,
+          "text": "Delhi Police clarified that it had granted a law-and-order No Objection Certificate for the INDIA bloc's November 1 rally at Ramlila Maidan, subject to land-owner approval.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/india-bloc-leaders-to-hold-public-impeachment-of-cec-at-kharges-delhi-residence-on-october-30-101793116383425.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 79,
+          "cluster_id": 4,
+          "text": "More than 99.3 lakh voter names were deleted from Karnataka's final voter list following the Special Intensive Revision.",
+          "kind": "figure",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/latest/1096680/karnataka-sir-nearly-1-crore-names-deleted-from-final-voter-list?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 80,
+          "cluster_id": 4,
+          "text": "Karnataka's total voter count dropped by 17.9%, from 5.5 crore to 4.5 crore voters.",
+          "kind": "figure",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/latest/1096680/karnataka-sir-nearly-1-crore-names-deleted-from-final-voter-list?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 81,
+          "cluster_id": 4,
+          "text": "The first phase of the Special Intensive Revision exercise was conducted in Bihar in 2025 before expanding to other states.",
+          "kind": "background",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/latest/1096680/karnataka-sir-nearly-1-crore-names-deleted-from-final-voter-list?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 82,
+          "cluster_id": 4,
+          "text": "Nationwide protests demanding the resignation of Chief Election Commissioner Gyanesh Kumar began on October 2, 2026.",
+          "kind": "background",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/latest/1096680/karnataka-sir-nearly-1-crore-names-deleted-from-final-voter-list?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 83,
+          "cluster_id": 4,
+          "text": "Petitioners, including Rahul Gandhi and INDIA bloc leaders, asked the Supreme Court to preserve all files and file notings related to the Special Intensive Revision.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/order-preservation-of-sir-files-notings-petitioners-urge-sc/articleshow/135245512.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 84,
+          "cluster_id": 4,
+          "text": "Solicitor General Tushar Mehta stated in court that petitioners should not make the Supreme Court a platform for political rhetoric.",
+          "kind": "quote",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/order-preservation-of-sir-files-notings-petitioners-urge-sc/articleshow/135245512.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 85,
+          "cluster_id": 4,
+          "text": "A Supreme Court bench comprising Chief Justice Surya Kant, Justice Joymalya Bagchi, and Justice V. Mohana scheduled the next hearing on the Election Commission matter for November 17.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/order-preservation-of-sir-files-notings-petitioners-urge-sc/articleshow/135245512.cms",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 5,
+      "headline_hint": "Supreme Court reprimands Centre and pharmaceutical industry over inflated medicine prices and profit margins",
+      "section": "india",
+      "batch_position": 2,
+      "claim_count": 16,
+      "distinct_outlets": 3,
+      "source_kinds": {
+        "fulltext": 16
+      },
+      "claims": [
+        {
+          "id": 86,
+          "cluster_id": 5,
+          "text": "A Supreme Court bench of Justices Vikram Nath and Sandeep Mehta stated that the pharmaceutical industry cannot be allowed to run amok by setting MRPs over 1,000% higher than retailer prices.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/sc-cannot-let-pharma-industry-run-amok-in-name-of-free-market/articleshow/135245670.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 87,
+          "cluster_id": 5,
+          "text": "The Supreme Court questioned Additional Solicitor General Aishwarya Bhati asking whether commerce is more important than the life of citizens.",
+          "kind": "quote",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/sc-cannot-let-pharma-industry-run-amok-in-name-of-free-market/articleshow/135245670.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 88,
+          "cluster_id": 5,
+          "text": "The Supreme Court reserved its order on a petition seeking to bring all non-patented medicines and medical consumables under price control mechanisms.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/sc-cannot-let-pharma-industry-run-amok-in-name-of-free-market/articleshow/135245670.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 89,
+          "cluster_id": 5,
+          "text": "Advocate and activist Kishan Chand Jain filed a public interest litigation in 2023 seeking reforms in drug pricing and medical regulation.",
+          "kind": "background",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/supreme-court-medicine-markups-11793099037938.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 90,
+          "cluster_id": 5,
+          "text": "The Union government issued a notification on October 17 capping trade margins at 30% of MRP for selected non-scheduled anti-cancer medicines.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/supreme-court-medicine-markups-11793099037938.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 91,
+          "cluster_id": 5,
+          "text": "The Centre estimated that capping trade margins on non-scheduled anti-cancer drugs would reduce retail prices by 20% to 70%.",
+          "kind": "figure",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/supreme-court-medicine-markups-11793099037938.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 92,
+          "cluster_id": 5,
+          "text": "The Supreme Court cited a case where a hospital charged ₹1.3 lakh for a chemotherapy injection that a medical distributor could procure for ₹11,000.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/supreme-court-medicine-markups-11793099037938.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 93,
+          "cluster_id": 5,
+          "text": "Senior advocate Mukul Rohatgi stated that private listed hospitals operate on profit margins of around 10% and require medicine margins to maintain equipment and facilities.",
+          "kind": "quote",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/supreme-court-medicine-markups-11793099037938.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 94,
+          "cluster_id": 5,
+          "text": "The Supreme Court bench questioned why a uniform trade margin of 16% could not be implemented on all medicines.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/sc-castigates-centre-over-medicine-overpricing-asks-can-you-justify-this-loot-101793105967887.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 95,
+          "cluster_id": 5,
+          "text": "The Centre stated that capping the trade margin on anti-cancer drugs at 30% of MRP is expected to save patients approximately ₹2,500 crore annually.",
+          "kind": "figure",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/sc-castigates-centre-over-medicine-overpricing-asks-can-you-justify-this-loot-101793105967887.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 96,
+          "cluster_id": 5,
+          "text": "The Supreme Court noted a case where a single saline drip with an actual cost of ₹11 was sold in the market for ₹270.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/sc-castigates-centre-over-medicine-overpricing-asks-can-you-justify-this-loot-101793105967887.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 97,
+          "cluster_id": 5,
+          "text": "The Supreme Court reprimanded the Union government and the DCGI for failing to act against companies manufacturing critical antifungal drug Liposomal Amphotericin B under expired emergency pandemic authorisations.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/sc-slams-centre-drug-regulator-over-expired-covid-era-approvals-for-antifungal-drug-101793097907084.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 98,
+          "cluster_id": 5,
+          "text": "Emergency permissions for manufacturing Liposomal Amphotericin B were granted under Section 26B of the Drugs and Cosmetics Act, 1940, during the 2021 mucormycosis outbreak.",
+          "kind": "background",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/sc-slams-centre-drug-regulator-over-expired-covid-era-approvals-for-antifungal-drug-101793097907084.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 99,
+          "cluster_id": 5,
+          "text": "Senior advocate Amit Anand Tiwari stated that Sun Pharmaceutical Industries Ltd was not granted emergency approvals for Liposomal Amphotericin B.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/sc-slams-centre-drug-regulator-over-expired-covid-era-approvals-for-antifungal-drug-101793097907084.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 100,
+          "cluster_id": 5,
+          "text": "Companies including Cipla Ltd, Bharat Serums and Vaccines Ltd, BDR Pharmaceuticals, and Lifecare Innovations were removed from the case because their manufacturing licences predated the pandemic.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/sc-slams-centre-drug-regulator-over-expired-covid-era-approvals-for-antifungal-drug-101793097907084.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 101,
+          "cluster_id": 5,
+          "text": "The Supreme Court bench described the National Pharmaceutical Pricing Authority as appearing to be a totally defunct body.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/govt-allowing-this-to-happen-supreme-court-questions-on-overpricing-of-medicines-massive-gap-in-mrp-and-cost-to-retailers-101793097066204.html",
+          "source_kind": "fulltext"
+        }
+      ]
+    }
+  ],
+  "clusters_with_no_claims": []
+}

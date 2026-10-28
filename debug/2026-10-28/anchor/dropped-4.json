@@ -1,0 +1,262 @@
+{
+  "cluster_id": 4,
+  "section": "india",
+  "headline_hint": "Indian opposition parties intensify protests against Election Commission over voter roll deletions and SIR process",
+  "reason": "unsourced_figures",
+  "metrics": {
+    "word_count": 139,
+    "min_body_words": 80,
+    "marker_count": 10,
+    "min_markers": 2,
+    "dropped_markers": 0,
+    "unanchored_share": 0.014,
+    "max_unanchored_share": 0.2,
+    "claim_outlets": 3,
+    "claims_available": 16,
+    "raw_body_chars": 1016,
+    "unsourced_figures": [
+      "17.9",
+      "99"
+    ],
+    "gate_unsourced_figures": true
+  },
+  "raw_model_output": {
+    "cluster_id": 4,
+    "headline": "Indian opposition parties protest against Election Commission over voter roll changes",
+    "body": "Indian opposition leaders intensified protests against Chief Election Commissioner Gyanesh Kumar over voter list deletions [c70]. Congress spokesperson Jairam Ramesh called the Election Commission's Supreme Court filing deceptive and dishonest [c70]. He said two election commissioners raised objections about illegal instructions, but Kumar ignored them [c71]. Congress also said voters could not submit registration forms online without completing a mandatory new declaration [c72].\n\nThe Communist Party of India held a human chain protest in New Delhi demanding Kumar resign [c73]. Party leader D. Raja said Kumar lost public trust [c74]. Nationwide protests against the election chief began on October 2 [c82]. Opposition leaders asked the Supreme Court to preserve all files related to the voter revision process [c83]. In Karnataka, official lists dropped by 17.9 percent after more than 99 lakh names were removed [c79], [c80]. The Supreme Court scheduled its next hearing on the matter for November 17 [c85].",
+    "vocab": [
+      {
+        "term": "affidavit",
+        "say": "af-ih-DAY-vit",
+        "meaning": "a written statement confirmed by oath for use as court evidence"
+      },
+      {
+        "term": "revision",
+        "say": "rih-VIZH-uhn",
+        "meaning": "the process of re-examining and altering something"
+      }
+    ]
+  },
+  "parsed_body": "Indian opposition leaders intensified protests against Chief Election Commissioner Gyanesh Kumar over voter list deletions. Congress spokesperson Jairam Ramesh called the Election Commission's Supreme Court filing deceptive and dishonest. He said two election commissioners raised objections about illegal instructions, but Kumar ignored them. Congress also said voters could not submit registration forms online without completing a mandatory new declaration.\n\nThe Communist Party of India held a human chain protest in New Delhi demanding Kumar resign. Party leader D. Raja said Kumar lost public trust. Nationwide protests against the election chief began on October 2. Opposition leaders asked the Supreme Court to preserve all files related to the voter revision process. In Karnataka, official lists dropped by 17.9 percent after more than 99 lakh names were removed,. The Supreme Court scheduled its next hearing on the matter for November 17.",
+  "markers": [
+    {
+      "start": 0,
+      "end": 122,
+      "claim_id": 70,
+      "outlet": "Times of India",
+      "url": "https://timesofindia.indiatimes.com/india/congress-slams-ec-affidavit-terms-it-deceptive-deceitful-duplicitous/articleshow/135245538.cms"
+    },
+    {
+      "start": 124,
+      "end": 237,
+      "claim_id": 70,
+      "outlet": "Times of India",
+      "url": "https://timesofindia.indiatimes.com/india/congress-slams-ec-affidavit-terms-it-deceptive-deceitful-duplicitous/articleshow/135245538.cms"
+    },
+    {
+      "start": 239,
+      "end": 342,
+      "claim_id": 71,
+      "outlet": "Times of India",
+      "url": "https://timesofindia.indiatimes.com/india/congress-slams-ec-affidavit-terms-it-deceptive-deceitful-duplicitous/articleshow/135245538.cms"
+    },
+    {
+      "start": 344,
+      "end": 459,
+      "claim_id": 72,
+      "outlet": "Times of India",
+      "url": "https://timesofindia.indiatimes.com/india/congress-slams-ec-affidavit-terms-it-deceptive-deceitful-duplicitous/articleshow/135245538.cms"
+    },
+    {
+      "start": 462,
+      "end": 553,
+      "claim_id": 73,
+      "outlet": "The Hindu",
+      "url": "https://www.thehindu.com/news/national/cpi-forms-human-chain-in-delhi-demanding-cecs-resignation-and-rollback-of-sir/article71631271.ece"
+    },
+    {
+      "start": 555,
+      "end": 604,
+      "claim_id": 74,
+      "outlet": "The Hindu",
+      "url": "https://www.thehindu.com/news/national/cpi-forms-human-chain-in-delhi-demanding-cecs-resignation-and-rollback-of-sir/article71631271.ece"
+    },
+    {
+      "start": 606,
+      "end": 671,
+      "claim_id": 82,
+      "outlet": "Scroll.in",
+      "url": "https://scroll.in/latest/1096680/karnataka-sir-nearly-1-crore-names-deleted-from-final-voter-list?utm_source=rss&utm_medium=public"
+    },
+    {
+      "start": 673,
+      "end": 775,
+      "claim_id": 83,
+      "outlet": "Times of India",
+      "url": "https://timesofindia.indiatimes.com/india/order-preservation-of-sir-files-notings-petitioners-urge-sc/articleshow/135245512.cms"
+    },
+    {
+      "start": 777,
+      "end": 872,
+      "claim_id": 79,
+      "outlet": "Scroll.in",
+      "url": "https://scroll.in/latest/1096680/karnataka-sir-nearly-1-crore-names-deleted-from-final-voter-list?utm_source=rss&utm_medium=public"
+    },
+    {
+      "start": 875,
+      "end": 949,
+      "claim_id": 85,
+      "outlet": "Times of India",
+      "url": "https://timesofindia.indiatimes.com/india/order-preservation-of-sir-files-notings-petitioners-urge-sc/articleshow/135245512.cms"
+    }
+  ],
+  "claims_available": [
+    {
+      "id": 70,
+      "cluster_id": 4,
+      "text": "Congress spokesperson Jairam Ramesh described the Election Commission's Supreme Court affidavit as deceptive, deceitful, and duplicitous.",
+      "kind": "quote",
+      "outlet": "Times of India",
+      "url": "https://timesofindia.indiatimes.com/india/congress-slams-ec-affidavit-terms-it-deceptive-deceitful-duplicitous/articleshow/135245538.cms",
+      "source_kind": "fulltext"
+    },
+    {
+      "id": 71,
+      "cluster_id": 4,
+      "text": "Jairam Ramesh stated that two election commissioners recorded objections to illegal actions ordered by Chief Election Commissioner Gyanesh Kumar, which were disregarded.",
+      "kind": "event",
+      "outlet": "Times of India",
+      "url": "https://timesofindia.indiatimes.com/india/congress-slams-ec-affidavit-terms-it-deceptive-deceitful-duplicitous/articleshow/135245538.cms",
+      "source_kind": "fulltext"
+    },
+    {
+      "id": 72,
+      "cluster_id": 4,
+      "text": "Congress claimed that Form 6 for voter registration could not be submitted online without filling a mandatory new declaration.",
+      "kind": "event",
+      "outlet": "Times of India",
+      "url": "https://timesofindia.indiatimes.com/india/congress-slams-ec-affidavit-terms-it-deceptive-deceitful-duplicitous/articleshow/135245538.cms",
+      "source_kind": "fulltext"
+    },
+    {
+      "id": 73,
+      "cluster_id": 4,
+      "text": "The Communist Party of India organised a human chain protest in New Delhi on October 27, 2026, demanding the resignation of Chief Election Commissioner Gyanesh Kumar.",
+      "kind": "event",
+      "outlet": "The Hindu",
+      "url": "https://www.thehindu.com/news/national/cpi-forms-human-chain-in-delhi-demanding-cecs-resignation-and-rollback-of-sir/article71631271.ece",
+      "source_kind": "fulltext"
+    },
+    {
+      "id": 74,
+      "cluster_id": 4,
+      "text": "CPI General Secretary D. Raja stated that Chief Election Commissioner Gyanesh Kumar had lost the confidence of the people and threatened the electoral process.",
+      "kind": "quote",
+      "outlet": "The Hindu",
+      "url": "https://www.thehindu.com/news/national/cpi-forms-human-chain-in-delhi-demanding-cecs-resignation-and-rollback-of-sir/article71631271.ece",
+      "source_kind": "fulltext"
+    },
+    {
+      "id": 75,
+      "cluster_id": 4,
+      "text": "The Election Commission of India filed a joint affidavit of nearly 250 pages in the Supreme Court on October 26, 2026, asserting that the Chief Election Commissioner can only be removed through the same impeachment process as a Supreme Court judge.",
+      "kind": "event",
+      "outlet": "The Hindu",
+      "url": "https://www.thehindu.com/news/national/cpi-forms-human-chain-in-delhi-demanding-cecs-resignation-and-rollback-of-sir/article71631271.ece",
+      "source_kind": "fulltext"
+    },
+    {
+      "id": 76,
+      "cluster_id": 4,
+      "text": "The CPI criticized the denotification of Jantar Mantar as a protest site in New Delhi, calling for its reopening.",
+      "kind": "event",
+      "outlet": "The Hindu",
+      "url": "https://www.thehindu.com/news/national/cpi-forms-human-chain-in-delhi-demanding-cecs-resignation-and-rollback-of-sir/article71631271.ece",
+      "source_kind": "fulltext"
+    },
+    {
+      "id": 77,
+      "cluster_id": 4,
+      "text": "Congress president Mallikarjun Kharge invited INDIA bloc leaders to a public impeachment program against CEC Gyanesh Kumar at his Delhi residence on October 30, 2026.",
+      "kind": "event",
+      "outlet": "Hindustan Times",
+      "url": "https://www.hindustantimes.com/india-news/india-bloc-leaders-to-hold-public-impeachment-of-cec-at-kharges-delhi-residence-on-october-30-101793116383425.html",
+      "source_kind": "fulltext"
+    },
+    {
+      "id": 78,
+      "cluster_id": 4,
+      "text": "Delhi Police clarified that it had granted a law-and-order No Objection Certificate for the INDIA bloc's November 1 rally at Ramlila Maidan, subject to land-owner approval.",
+      "kind": "event",
+      "outlet": "Hindustan Times",
+      "url": "https://www.hindustantimes.com/india-news/india-bloc-leaders-to-hold-public-impeachment-of-cec-at-kharges-delhi-residence-on-october-30-101793116383425.html",
+      "source_kind": "fulltext"
+    },
+    {
+      "id": 79,
+      "cluster_id": 4,
+      "text": "More than 99.3 lakh voter names were deleted from Karnataka's final voter list following the Special Intensive Revision.",
+      "kind": "figure",
+      "outlet": "Scroll.in",
+      "url": "https://scroll.in/latest/1096680/karnataka-sir-nearly-1-crore-names-deleted-from-final-voter-list?utm_source=rss&utm_medium=public",
+      "source_kind": "fulltext"
+    },
+    {
+      "id": 80,
+      "cluster_id": 4,
+      "text": "Karnataka's total voter count dropped by 17.9%, from 5.5 crore to 4.5 crore voters.",
+      "kind": "figure",
+      "outlet": "Scroll.in",
+      "url": "https://scroll.in/latest/1096680/karnataka-sir-nearly-1-crore-names-deleted-from-final-voter-list?utm_source=rss&utm_medium=public",
+      "source_kind": "fulltext"
+    },
+    {
+      "id": 81,
+      "cluster_id": 4,
+      "text": "The first phase of the Special Intensive Revision exercise was conducted in Bihar in 2025 before expanding to other states.",
+      "kind": "background",
+      "outlet": "Scroll.in",
+      "url": "https://scroll.in/latest/1096680/karnataka-sir-nearly-1-crore-names-deleted-from-final-voter-list?utm_source=rss&utm_medium=public",
+      "source_kind": "fulltext"
+    },
+    {
+      "id": 82,
+      "cluster_id": 4,
+      "text": "Nationwide protests demanding the resignation of Chief Election Commissioner Gyanesh Kumar began on October 2, 2026.",
+      "kind": "background",
+      "outlet": "Scroll.in",
+      "url": "https://scroll.in/latest/1096680/karnataka-sir-nearly-1-crore-names-deleted-from-final-voter-list?utm_source=rss&utm_medium=public",
+      "source_kind": "fulltext"
+    },
+    {
+      "id": 83,
+      "cluster_id": 4,
+      "text": "Petitioners, including Rahul Gandhi and INDIA bloc leaders, asked the Supreme Court to preserve all files and file notings related to the Special Intensive Revision.",
+      "kind": "event",
+      "outlet": "Times of India",
+      "url": "https://timesofindia.indiatimes.com/india/order-preservation-of-sir-files-notings-petitioners-urge-sc/articleshow/135245512.cms",
+      "source_kind": "fulltext"
+    },
+    {
+      "id": 84,
+      "cluster_id": 4,
+      "text": "Solicitor General Tushar Mehta stated in court that petitioners should not make the Supreme Court a platform for political rhetoric.",
+      "kind": "quote",
+      "outlet": "Times of India",
+      "url": "https://timesofindia.indiatimes.com/india/order-preservation-of-sir-files-notings-petitioners-urge-sc/articleshow/135245512.cms",
+      "source_kind": "fulltext"
+    },
+    {
+      "id": 85,
+      "cluster_id": 4,
+      "text": "A Supreme Court bench comprising Chief Justice Surya Kant, Justice Joymalya Bagchi, and Justice V. Mohana scheduled the next hearing on the Election Commission matter for November 17.",
+      "kind": "event",
+      "outlet": "Times of India",
+      "url": "https://timesofindia.indiatimes.com/india/order-preservation-of-sir-files-notings-petitioners-urge-sc/articleshow/135245512.cms",
+      "source_kind": "fulltext"
+    }
+  ],
+  "unsourced_figures": [
+    "99"
+  ]
+}
