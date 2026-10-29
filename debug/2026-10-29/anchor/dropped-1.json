@@ -1,0 +1,254 @@
+{
+  "cluster_id": 1,
+  "section": "world",
+  "headline_hint": "Deadly high-speed train collision in Toledo province, Spain kills at least 68 people and sparks public outcry",
+  "reason": "unsourced_figures",
+  "metrics": {
+    "word_count": 182,
+    "min_body_words": 80,
+    "marker_count": 13,
+    "min_markers": 2,
+    "dropped_markers": 0,
+    "unanchored_share": 0.013,
+    "max_unanchored_share": 0.2,
+    "claim_outlets": 4,
+    "claims_available": 13,
+    "raw_body_chars": 1240,
+    "unsourced_figures": [
+      "147",
+      "397"
+    ],
+    "gate_unsourced_figures": true
+  },
+  "raw_model_output": {
+    "cluster_id": 1,
+    "headline": "High-speed train crash in Spain kills dozens and triggers protests in Madrid",
+    "body": "Spanish emergency crews responded after two high-speed trains collided in Toledo province, killing at least 68 people [c21]. The crash injured around 100 other people [c21]. It happened shortly after 09:00 GMT about 140 kilometers south of Madrid, between Mora and Orgaz [c26]. A southbound Renfe train carrying 397 passengers from Madrid to Seville hit a stationary Iryo train with 147 passengers [c22][c27]. This crash is the third deadliest railway incident in Spain over the last 50 years [c31]. Earlier in January, a crash near Córdoba killed 46 people [c29].\n\nSpanish Prime Minister Pedro Sánchez declared three days of national mourning [c30]. The football federation postponed all 24 Copa del Rey matches set for Wednesday [c32].\n\nTransport Minister Óscar Puente said rail manager Adif took manual control after a safety disruption and allowed the Renfe train past a red signal [c24]. Trade union CSIF demanded Puente resign, saying he used an employee as a scapegoat [c23]. About 500 protesters threw bottles and flares at police outside the ministry in Madrid [c25]. Riot police deployed in Madrid as far-right protesters clashed with them [c20]. Far-right Vox party leader Santiago Abascal refused to stop election rallies [c28].",
+    "vocab": [
+      {
+        "term": "stationary",
+        "say": "STAY-shuh-nair-ee",
+        "meaning": "not moving or staying in one place"
+      },
+      {
+        "term": "scapegoat",
+        "say": "SKAPE-goat",
+        "meaning": "a person blamed for the mistakes or faults of others"
+      }
+    ]
+  },
+  "parsed_body": "Spanish emergency crews responded after two high-speed trains collided in Toledo province, killing at least 68 people. The crash injured around 100 other people. It happened shortly after 09:00 GMT about 140 kilometers south of Madrid, between Mora and Orgaz. A southbound Renfe train carrying 397 passengers from Madrid to Seville hit a stationary Iryo train with 147 passengers. This crash is the third deadliest railway incident in Spain over the last 50 years. Earlier in January, a crash near Córdoba killed 46 people.\n\nSpanish Prime Minister Pedro Sánchez declared three days of national mourning. The football federation postponed all 24 Copa del Rey matches set for Wednesday.\n\nTransport Minister Óscar Puente said rail manager Adif took manual control after a safety disruption and allowed the Renfe train past a red signal. Trade union CSIF demanded Puente resign, saying he used an employee as a scapegoat. About 500 protesters threw bottles and flares at police outside the ministry in Madrid. Riot police deployed in Madrid as far-right protesters clashed with them. Far-right Vox party leader Santiago Abascal refused to stop election rallies.",
+  "markers": [
+    {
+      "start": 0,
+      "end": 117,
+      "claim_id": 21,
+      "outlet": "Times of India",
+      "url": "https://timesofindia.indiatimes.com/world/europe/spain-train-collision-sparks-protests-calls-for-transport-ministers-resignation/articleshow/135284503.cms"
+    },
+    {
+      "start": 119,
+      "end": 160,
+      "claim_id": 21,
+      "outlet": "Times of India",
+      "url": "https://timesofindia.indiatimes.com/world/europe/spain-train-collision-sparks-protests-calls-for-transport-ministers-resignation/articleshow/135284503.cms"
+    },
+    {
+      "start": 162,
+      "end": 258,
+      "claim_id": 26,
+      "outlet": "BBC World",
+      "url": "https://www.bbc.co.uk/news/articles/c6p3g84kjqjlo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "start": 260,
+      "end": 379,
+      "claim_id": 22,
+      "outlet": "Times of India",
+      "url": "https://timesofindia.indiatimes.com/world/europe/spain-train-collision-sparks-protests-calls-for-transport-ministers-resignation/articleshow/135284503.cms"
+    },
+    {
+      "start": 381,
+      "end": 463,
+      "claim_id": 31,
+      "outlet": "Guardian World",
+      "url": "https://www.theguardian.com/world/live/2026/oct/28/spain-train-crash-toledo-europe-latest-news-updates"
+    },
+    {
+      "start": 465,
+      "end": 522,
+      "claim_id": 29,
+      "outlet": "BBC World",
+      "url": "https://www.bbc.co.uk/news/articles/c6p3g84kjqjlo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "start": 525,
+      "end": 602,
+      "claim_id": 30,
+      "outlet": "Guardian World",
+      "url": "https://www.theguardian.com/world/live/2026/oct/28/spain-train-crash-toledo-europe-latest-news-updates"
+    },
+    {
+      "start": 604,
+      "end": 683,
+      "claim_id": 32,
+      "outlet": "Guardian World",
+      "url": "https://www.theguardian.com/world/live/2026/oct/28/spain-train-crash-toledo-europe-latest-news-updates"
+    },
+    {
+      "start": 686,
+      "end": 832,
+      "claim_id": 24,
+      "outlet": "Times of India",
+      "url": "https://timesofindia.indiatimes.com/world/europe/spain-train-collision-sparks-protests-calls-for-transport-ministers-resignation/articleshow/135284503.cms"
+    },
+    {
+      "start": 834,
+      "end": 916,
+      "claim_id": 23,
+      "outlet": "Times of India",
+      "url": "https://timesofindia.indiatimes.com/world/europe/spain-train-collision-sparks-protests-calls-for-transport-ministers-resignation/articleshow/135284503.cms"
+    },
+    {
+      "start": 918,
+      "end": 1004,
+      "claim_id": 25,
+      "outlet": "Times of India",
+      "url": "https://timesofindia.indiatimes.com/world/europe/spain-train-collision-sparks-protests-calls-for-transport-ministers-resignation/articleshow/135284503.cms"
+    },
+    {
+      "start": 1006,
+      "end": 1078,
+      "claim_id": 20,
+      "outlet": "Al Jazeera",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/29/riot-police-deployed-in-madrid-as-protests-erupt-over-deadly-train-crash?traffic_source=rss"
+    },
+    {
+      "start": 1080,
+      "end": 1156,
+      "claim_id": 28,
+      "outlet": "BBC World",
+      "url": "https://www.bbc.co.uk/news/articles/c6p3g84kjqjlo?at_medium=RSS&at_campaign=rss"
+    }
+  ],
+  "claims_available": [
+    {
+      "id": 20,
+      "cluster_id": 1,
+      "text": "Riot police were deployed in Madrid as far-right demonstrators clashed with police during anti-government protests over a deadly train crash.",
+      "kind": "event",
+      "outlet": "Al Jazeera",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/29/riot-police-deployed-in-madrid-as-protests-erupt-over-deadly-train-crash?traffic_source=rss",
+      "source_kind": "fulltext"
+    },
+    {
+      "id": 21,
+      "cluster_id": 1,
+      "text": "A collision between two high-speed trains in Spain killed at least 68 people and injured around 100.",
+      "kind": "event",
+      "outlet": "Times of India",
+      "url": "https://timesofindia.indiatimes.com/world/europe/spain-train-collision-sparks-protests-calls-for-transport-ministers-resignation/articleshow/135284503.cms",
+      "source_kind": "fulltext"
+    },
+    {
+      "id": 22,
+      "cluster_id": 1,
+      "text": "The crash occurred when a southbound Renfe high-speed train travelling from Madrid to Seville collided with a stationary Iryo train.",
+      "kind": "event",
+      "outlet": "Times of India",
+      "url": "https://timesofindia.indiatimes.com/world/europe/spain-train-collision-sparks-protests-calls-for-transport-ministers-resignation/articleshow/135284503.cms",
+      "source_kind": "fulltext"
+    },
+    {
+      "id": 23,
+      "cluster_id": 1,
+      "text": "Spanish trade union CSIF demanded the resignation of Transport Minister Óscar Puente, accusing him of using a railway employee as a scapegoat.",
+      "kind": "event",
+      "outlet": "Times of India",
+      "url": "https://timesofindia.indiatimes.com/world/europe/spain-train-collision-sparks-protests-calls-for-transport-ministers-resignation/articleshow/135284503.cms",
+      "source_kind": "fulltext"
+    },
+    {
+      "id": 24,
+      "cluster_id": 1,
+      "text": "Transport Minister Óscar Puente stated that state-owned manager Adif took manual control after a safety system disruption and allowed a Renfe train to proceed despite a red signal.",
+      "kind": "event",
+      "outlet": "Times of India",
+      "url": "https://timesofindia.indiatimes.com/world/europe/spain-train-collision-sparks-protests-calls-for-transport-ministers-resignation/articleshow/135284503.cms",
+      "source_kind": "fulltext"
+    },
+    {
+      "id": 25,
+      "cluster_id": 1,
+      "text": "Around 500 demonstrators gathered outside the Transport Ministry in Madrid on Wednesday night, throwing bottles and flares at police.",
+      "kind": "figure",
+      "outlet": "Times of India",
+      "url": "https://timesofindia.indiatimes.com/world/europe/spain-train-collision-sparks-protests-calls-for-transport-ministers-resignation/articleshow/135284503.cms",
+      "source_kind": "fulltext"
+    },
+    {
+      "id": 26,
+      "cluster_id": 1,
+      "text": "The collision occurred shortly after 09:00 GMT around 140 kilometers south of Madrid, between the municipalities of Mora and Orgaz.",
+      "kind": "event",
+      "outlet": "BBC World",
+      "url": "https://www.bbc.co.uk/news/articles/c6p3g84kjqjlo?at_medium=RSS&at_campaign=rss",
+      "source_kind": "fulltext"
+    },
+    {
+      "id": 27,
+      "cluster_id": 1,
+      "text": "The stationary Iryo train was carrying 147 passengers, while the Renfe train was carrying 397 passengers.",
+      "kind": "figure",
+      "outlet": "BBC World",
+      "url": "https://www.bbc.co.uk/news/articles/c6p3g84kjqjlo?at_medium=RSS&at_campaign=rss",
+      "source_kind": "fulltext"
+    },
+    {
+      "id": 28,
+      "cluster_id": 1,
+      "text": "Far-right party Vox refused to suspend its election campaign rallies following the crash, with leader Santiago Abascal rejecting attempts to silence criticism of infrastructure.",
+      "kind": "event",
+      "outlet": "BBC World",
+      "url": "https://www.bbc.co.uk/news/articles/c6p3g84kjqjlo?at_medium=RSS&at_campaign=rss",
+      "source_kind": "fulltext"
+    },
+    {
+      "id": 29,
+      "cluster_id": 1,
+      "text": "Spain experienced a previous high-speed train disaster near Córdoba in January that killed 46 people.",
+      "kind": "background",
+      "outlet": "BBC World",
+      "url": "https://www.bbc.co.uk/news/articles/c6p3g84kjqjlo?at_medium=RSS&at_campaign=rss",
+      "source_kind": "fulltext"
+    },
+    {
+      "id": 30,
+      "cluster_id": 1,
+      "text": "Spanish Prime Minister Pedro Sánchez declared three days of national mourning following the train disaster.",
+      "kind": "event",
+      "outlet": "Guardian World",
+      "url": "https://www.theguardian.com/world/live/2026/oct/28/spain-train-crash-toledo-europe-latest-news-updates",
+      "source_kind": "fulltext"
+    },
+    {
+      "id": 31,
+      "cluster_id": 1,
+      "text": "The train collision in Toledo province is the third deadliest railway incident in Spain over the last 50 years.",
+      "kind": "background",
+      "outlet": "Guardian World",
+      "url": "https://www.theguardian.com/world/live/2026/oct/28/spain-train-crash-toledo-europe-latest-news-updates",
+      "source_kind": "fulltext"
+    },
+    {
+      "id": 32,
+      "cluster_id": 1,
+      "text": "Spain's football federation postponed all 24 Copa del Rey matches scheduled for Wednesday.",
+      "kind": "event",
+      "outlet": "Guardian World",
+      "url": "https://www.theguardian.com/world/live/2026/oct/28/spain-train-crash-toledo-europe-latest-news-updates",
+      "source_kind": "fulltext"
+    }
+  ],
+  "unsourced_figures": []
+}

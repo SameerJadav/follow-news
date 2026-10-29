@@ -1,0 +1,816 @@
+{
+  "min_claim_chars": 20,
+  "max_claims_per_story": 24,
+  "calls": [
+    {
+      "label": "claims-world",
+      "cluster_ids": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "label": "claims-india",
+      "cluster_ids": [
+        3,
+        4,
+        5
+      ]
+    }
+  ],
+  "rejected_claims": 0,
+  "rejected_clusters": 0,
+  "clusters": [
+    {
+      "cluster_id": 0,
+      "headline_hint": "Israeli legislative election ends in deadlock between Netanyahu and opposition blocs while Arab parties make historic gains",
+      "section": "world",
+      "batch_position": 0,
+      "claim_count": 19,
+      "distinct_outlets": 5,
+      "source_kinds": {
+        "fulltext": 19
+      },
+      "claims": [
+        {
+          "id": 1,
+          "cluster_id": 0,
+          "text": "With nearly 90 percent of the votes counted by Wednesday evening, neither Benjamin Netanyahu nor opposition leader Gadi Eisenkot appeared to have enough seats to form a government on his own.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/world/israeli-elections-votes-nearly-counted-neither-netanyahu-nor-eisenkot-are-likely-to-get-majority-latest-update-11793235026445.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 2,
+          "cluster_id": 0,
+          "text": "A majority in the 120-seat Knesset requires 61 seats.",
+          "kind": "background",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/world/israeli-elections-votes-nearly-counted-neither-netanyahu-nor-eisenkot-are-likely-to-get-majority-latest-update-11793235026445.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 3,
+          "cluster_id": 0,
+          "text": "Early results put Benjamin Netanyahu's coalition bloc at about 53 to 54 seats and Gadi Eisenkot's bloc at around 49 seats.",
+          "kind": "figure",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/world/israeli-elections-votes-nearly-counted-neither-netanyahu-nor-eisenkot-are-likely-to-get-majority-latest-update-11793235026445.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 4,
+          "cluster_id": 0,
+          "text": "Benjamin Netanyahu's Likud party remains the largest single party in parliament, with an estimated 26 seats.",
+          "kind": "figure",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/world/israeli-elections-votes-nearly-counted-neither-netanyahu-nor-eisenkot-are-likely-to-get-majority-latest-update-11793235026445.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 5,
+          "cluster_id": 0,
+          "text": "Arab citizens of Israel turned out to vote in record numbers during the election.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/world/israeli-elections-votes-nearly-counted-neither-netanyahu-nor-eisenkot-are-likely-to-get-majority-latest-update-11793235026445.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 6,
+          "cluster_id": 0,
+          "text": "Gadi Eisenkot stated he wants an Israeli government that is Zionist and committed to universal military conscription.",
+          "kind": "event",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/world/israeli-elections-votes-nearly-counted-neither-netanyahu-nor-eisenkot-are-likely-to-get-majority-latest-update-11793235026445.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 7,
+          "cluster_id": 0,
+          "text": "The Israeli Knesset is scheduled to open on November 10.",
+          "kind": "background",
+          "outlet": "Livemint",
+          "url": "https://www.livemint.com/news/world/israeli-elections-votes-nearly-counted-neither-netanyahu-nor-eisenkot-are-likely-to-get-majority-latest-update-11793235026445.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 8,
+          "cluster_id": 0,
+          "text": "Israelis rallied in Tel Aviv demanding a Jewish-Arab government after Arab parties made major gains in Tuesday's election.",
+          "kind": "event",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/10/29/israelis-rally-for-jewish-arab-government-after-election-gains?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 9,
+          "cluster_id": 0,
+          "text": "The two main Arab parties in Israel are projected to win around 19 of the Knesset's 120 seats.",
+          "kind": "figure",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/10/29/israelis-rally-for-jewish-arab-government-after-election-gains?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 10,
+          "cluster_id": 0,
+          "text": "Yair Golan, leader of the centre-left Democrats party, called for forming a change government in partnership with Arab citizens of Israel.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/live/2026/oct/28/israel-election-results-live-updates-exit-polls-netanyahu-likud-eisenkot-latest-news",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 11,
+          "cluster_id": 0,
+          "text": "Israel's Central Elections Committee received a complaint from the Likud party alleging that Arab parties compromised election integrity.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/live/2026/oct/28/israel-election-results-live-updates-exit-polls-netanyahu-likud-eisenkot-latest-news",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 12,
+          "cluster_id": 0,
+          "text": "UN rights chief Volker Turk said he hopes the next Israeli government will change course massively and respect international law.",
+          "kind": "quote",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/live/2026/oct/28/israel-election-results-live-updates-exit-polls-netanyahu-likud-eisenkot-latest-news",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 13,
+          "cluster_id": 0,
+          "text": "The two main Arab political parties in Israel are the Yousef Jabareen-led Joint List and Ra'am, led by Mansour Abbas.",
+          "kind": "background",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/middle-east/arab-parties-claim-kingmaker-status-in-israel/articleshow/135283765.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 14,
+          "cluster_id": 0,
+          "text": "Yousef Jabareen stated the Joint List would seek to use its projected 12 seats to facilitate removing Benjamin Netanyahu's government.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/middle-east/arab-parties-claim-kingmaker-status-in-israel/articleshow/135283765.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 15,
+          "cluster_id": 0,
+          "text": "Ra'am leader Mansour Abbas stated that senior members of Gadi Eisenkot's bloc had discussed a potential coalition deal with him prior to the election.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/middle-east/arab-parties-claim-kingmaker-status-in-israel/articleshow/135283765.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 16,
+          "cluster_id": 0,
+          "text": "Likud spokesman Guy Levy confirmed that Likud would not negotiate with any Arab party to form a government.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/middle-east/arab-parties-claim-kingmaker-status-in-israel/articleshow/135283765.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 17,
+          "cluster_id": 0,
+          "text": "Arab citizens of Israel comprise approximately 20% of the population, or roughly 2.1 million people.",
+          "kind": "background",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/middle-east/arab-parties-claim-kingmaker-status-in-israel/articleshow/135283765.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 18,
+          "cluster_id": 0,
+          "text": "Voter turnout in the Israeli election on October 27 was the highest recorded since 1999.",
+          "kind": "figure",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/commentary/israel-election-results-benjamin-netanyahu-divided-6499566",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 19,
+          "cluster_id": 0,
+          "text": "Gadi Eisenkot's political party Yashar was formed one year prior to the 2026 election.",
+          "kind": "background",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/commentary/israel-election-results-benjamin-netanyahu-divided-6499566",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 1,
+      "headline_hint": "Deadly high-speed train collision in Toledo province, Spain kills at least 68 people and sparks public outcry",
+      "section": "world",
+      "batch_position": 1,
+      "claim_count": 13,
+      "distinct_outlets": 4,
+      "source_kinds": {
+        "fulltext": 13
+      },
+      "claims": [
+        {
+          "id": 20,
+          "cluster_id": 1,
+          "text": "Riot police were deployed in Madrid as far-right demonstrators clashed with police during anti-government protests over a deadly train crash.",
+          "kind": "event",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/10/29/riot-police-deployed-in-madrid-as-protests-erupt-over-deadly-train-crash?traffic_source=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 21,
+          "cluster_id": 1,
+          "text": "A collision between two high-speed trains in Spain killed at least 68 people and injured around 100.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/europe/spain-train-collision-sparks-protests-calls-for-transport-ministers-resignation/articleshow/135284503.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 22,
+          "cluster_id": 1,
+          "text": "The crash occurred when a southbound Renfe high-speed train travelling from Madrid to Seville collided with a stationary Iryo train.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/europe/spain-train-collision-sparks-protests-calls-for-transport-ministers-resignation/articleshow/135284503.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 23,
+          "cluster_id": 1,
+          "text": "Spanish trade union CSIF demanded the resignation of Transport Minister Óscar Puente, accusing him of using a railway employee as a scapegoat.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/europe/spain-train-collision-sparks-protests-calls-for-transport-ministers-resignation/articleshow/135284503.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 24,
+          "cluster_id": 1,
+          "text": "Transport Minister Óscar Puente stated that state-owned manager Adif took manual control after a safety system disruption and allowed a Renfe train to proceed despite a red signal.",
+          "kind": "event",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/europe/spain-train-collision-sparks-protests-calls-for-transport-ministers-resignation/articleshow/135284503.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 25,
+          "cluster_id": 1,
+          "text": "Around 500 demonstrators gathered outside the Transport Ministry in Madrid on Wednesday night, throwing bottles and flares at police.",
+          "kind": "figure",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/europe/spain-train-collision-sparks-protests-calls-for-transport-ministers-resignation/articleshow/135284503.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 26,
+          "cluster_id": 1,
+          "text": "The collision occurred shortly after 09:00 GMT around 140 kilometers south of Madrid, between the municipalities of Mora and Orgaz.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c6p3g84kjqjlo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 27,
+          "cluster_id": 1,
+          "text": "The stationary Iryo train was carrying 147 passengers, while the Renfe train was carrying 397 passengers.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c6p3g84kjqjlo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 28,
+          "cluster_id": 1,
+          "text": "Far-right party Vox refused to suspend its election campaign rallies following the crash, with leader Santiago Abascal rejecting attempts to silence criticism of infrastructure.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c6p3g84kjqjlo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 29,
+          "cluster_id": 1,
+          "text": "Spain experienced a previous high-speed train disaster near Córdoba in January that killed 46 people.",
+          "kind": "background",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c6p3g84kjqjlo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 30,
+          "cluster_id": 1,
+          "text": "Spanish Prime Minister Pedro Sánchez declared three days of national mourning following the train disaster.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/live/2026/oct/28/spain-train-crash-toledo-europe-latest-news-updates",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 31,
+          "cluster_id": 1,
+          "text": "The train collision in Toledo province is the third deadliest railway incident in Spain over the last 50 years.",
+          "kind": "background",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/live/2026/oct/28/spain-train-crash-toledo-europe-latest-news-updates",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 32,
+          "cluster_id": 1,
+          "text": "Spain's football federation postponed all 24 Copa del Rey matches scheduled for Wednesday.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/live/2026/oct/28/spain-train-crash-toledo-europe-latest-news-updates",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 2,
+      "headline_hint": "Defeated Brazilian candidate Flávio Bolsonaro arrives in Miami after fleeing Brazil and declares himself rightful leader",
+      "section": "world",
+      "batch_position": 2,
+      "claim_count": 15,
+      "distinct_outlets": 4,
+      "source_kinds": {
+        "fulltext": 15
+      },
+      "claims": [
+        {
+          "id": 33,
+          "cluster_id": 2,
+          "text": "Defeated Brazilian senator Flávio Bolsonaro landed at Miami-Opa Locka Executive Airport in Florida after leaving Brazil.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c6kglwe4lxwzo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 34,
+          "cluster_id": 2,
+          "text": "Flávio Bolsonaro stated in a letter: 'I did not flee Brazil; I left for the sake of Brazil.'",
+          "kind": "quote",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c6kglwe4lxwzo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 35,
+          "cluster_id": 2,
+          "text": "Newly re-elected President Luiz Inácio Lula da Silva won the runoff election by more than four million votes.",
+          "kind": "figure",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c6kglwe4lxwzo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 36,
+          "cluster_id": 2,
+          "text": "Brazilian authorities cancelled Flávio Bolsonaro's passports after he failed to surrender them within a 24-hour deadline.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c6kglwe4lxwzo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 37,
+          "cluster_id": 2,
+          "text": "Flávio Bolsonaro and his family travelled by land into Argentina, boarded a private jet in Puerto Iguazú, stopped in Guayaquil, Ecuador, and flew on to Miami.",
+          "kind": "event",
+          "outlet": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c6kglwe4lxwzo?at_medium=RSS&at_campaign=rss",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 38,
+          "cluster_id": 2,
+          "text": "Flávio Bolsonaro published a letter on social media declaring himself the 'elected president' of Brazil before updating it to state he is the 'leader'.",
+          "kind": "event",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/brazil-election-bolsonaro-defeat-flee-us-leader-6501531",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 39,
+          "cluster_id": 2,
+          "text": "Flávio Bolsonaro is under criminal investigation in Brazil over financial crimes, corruption, and money laundering related to the unreleased film 'Dark Horse'.",
+          "kind": "background",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/brazil-election-bolsonaro-defeat-flee-us-leader-6501531",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 40,
+          "cluster_id": 2,
+          "text": "Flávio Bolsonaro has held Italian nationality since 2023.",
+          "kind": "background",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/brazil-election-bolsonaro-defeat-flee-us-leader-6501531",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 41,
+          "cluster_id": 2,
+          "text": "President Luiz Inácio Lula da Silva called Flávio Bolsonaro's secret departure a 'shameful' act.",
+          "kind": "event",
+          "outlet": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/brazil-election-bolsonaro-defeat-flee-us-leader-6501531",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 42,
+          "cluster_id": 2,
+          "text": "Flávio Bolsonaro's political party acknowledged the official results of Sunday's presidential election.",
+          "kind": "event",
+          "outlet": "DW World",
+          "url": "https://www.dw.com/en/flavio-bolsonaro-lands-in-us-declares-himself-leader-of-brazil/a-79788659?maca=en-rss-en-world-4025-rdf",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 43,
+          "cluster_id": 2,
+          "text": "US President Donald Trump told reporters regarding the Brazilian election: 'I won't get involved. It was a very strange election, that's for sure.'",
+          "kind": "quote",
+          "outlet": "DW World",
+          "url": "https://www.dw.com/en/flavio-bolsonaro-lands-in-us-declares-himself-leader-of-brazil/a-79788659?maca=en-rss-en-world-4025-rdf",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 44,
+          "cluster_id": 2,
+          "text": "Flávio Bolsonaro is scheduled to lose his parliamentary immunity from prosecution in February when his Senate term expires.",
+          "kind": "background",
+          "outlet": "DW World",
+          "url": "https://www.dw.com/en/flavio-bolsonaro-lands-in-us-declares-himself-leader-of-brazil/a-79788659?maca=en-rss-en-world-4025-rdf",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 45,
+          "cluster_id": 2,
+          "text": "Former president Jair Bolsonaro is in jail in Brazil on charges of leading a conspiracy to stay in power after losing the 2022 election.",
+          "kind": "background",
+          "outlet": "DW World",
+          "url": "https://www.dw.com/en/flavio-bolsonaro-lands-in-us-declares-himself-leader-of-brazil/a-79788659?maca=en-rss-en-world-4025-rdf",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 46,
+          "cluster_id": 2,
+          "text": "Flávio Bolsonaro expressed gratitude in his letter to Argentine President Javier Milei and US President Donald Trump.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/28/flavio-bolsonaro-miami-us-fleeing-brazilian-election-defeat",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 47,
+          "cluster_id": 2,
+          "text": "Brazil's federal police faced public criticism for failing to prevent Flávio Bolsonaro from leaving the country.",
+          "kind": "event",
+          "outlet": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/28/flavio-bolsonaro-miami-us-fleeing-brazilian-election-defeat",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 3,
+      "headline_hint": "Cyclone Arnab makes landfall in India, leaving multiple dead and causing widespread damage across Andhra Pradesh and Odisha",
+      "section": "india",
+      "batch_position": 0,
+      "claim_count": 15,
+      "distinct_outlets": 5,
+      "source_kinds": {
+        "fulltext": 15
+      },
+      "claims": [
+        {
+          "id": 48,
+          "cluster_id": 3,
+          "text": "The India Meteorological Department stated that cyclonic storm Arnab weakened into a deep depression and was expected to weaken further into a depression on Thursday morning, October 29, 2026.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/cyclone-arnab-weakens-into-depression-imd-alert-odisha-andhra-pradesh-telangana-live-updates-october-29-2026/article71638778.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 49,
+          "cluster_id": 3,
+          "text": "Odisha Chief Minister Mohan Charan Majhi stated that heavy rainfall triggered by Cyclone Arnab affected at least 17 districts in southern Odisha.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/cyclone-arnab-weakens-into-depression-imd-alert-odisha-andhra-pradesh-telangana-live-updates-october-29-2026/article71638778.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 50,
+          "cluster_id": 3,
+          "text": "Five people died in Andhra Pradesh due to Cyclone Arnab, leading Chief Minister N. Chandrababu Naidu to announce a relief and compensation package.",
+          "kind": "figure",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/cyclone-arnab-weakens-into-depression-imd-alert-odisha-andhra-pradesh-telangana-live-updates-october-29-2026/article71638778.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 51,
+          "cluster_id": 3,
+          "text": "Andhra Pradesh Chief Minister N. Chandrababu Naidu spoke to Union Home Minister Amit Shah to seek central assistance for damage to infrastructure and crops.",
+          "kind": "event",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/cyclone-arnab-weakens-into-depression-imd-alert-odisha-andhra-pradesh-telangana-live-updates-october-29-2026/article71638778.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 52,
+          "cluster_id": 3,
+          "text": "The Telangana government offered full support and personnel to Andhra Pradesh to assist in cyclone relief operations and power restoration.",
+          "kind": "event",
+          "outlet": "NDTV",
+          "url": "https://www.ndtv.com/india-news/cyclone-arnab-landfall-live-updates-landfall-tracker-imd-weather-forecast-heavy-rain-alert-andhra-pradesh-odisha-live-news-12245206#publisher=newsstand",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 53,
+          "cluster_id": 3,
+          "text": "Cyclone Arnab crossed the Andhra Pradesh and Yanam coasts about 20 km east-northeast of Narsapur early on Wednesday before weakening to a severe cyclonic storm.",
+          "kind": "event",
+          "outlet": "NDTV",
+          "url": "https://www.ndtv.com/india-news/cyclone-arnab-landfall-live-updates-landfall-tracker-imd-weather-forecast-heavy-rain-alert-andhra-pradesh-odisha-live-news-12245206#publisher=newsstand",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 54,
+          "cluster_id": 3,
+          "text": "Odisha authorities shifted around 28,000 people to relief camps and relocated 2,200 pregnant women ahead of Cyclone Arnab reaching the state.",
+          "kind": "figure",
+          "outlet": "NDTV",
+          "url": "https://www.ndtv.com/india-news/cyclone-arnab-landfall-live-updates-landfall-tracker-imd-weather-forecast-heavy-rain-alert-andhra-pradesh-odisha-live-news-12245206#publisher=newsstand",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 55,
+          "cluster_id": 3,
+          "text": "The India Meteorological Department issued a flash flood risk warning for 13 districts of Andhra Pradesh and Yanam until Thursday morning.",
+          "kind": "event",
+          "outlet": "NDTV",
+          "url": "https://www.ndtv.com/india-news/cyclone-arnab-landfall-live-updates-landfall-tracker-imd-weather-forecast-heavy-rain-alert-andhra-pradesh-odisha-live-news-12245206#publisher=newsstand",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 56,
+          "cluster_id": 3,
+          "text": "Five people were killed in Andhra Pradesh from tree falls and electrocution during Cyclone Arnab, with single deaths reported in Visakhapatnam, Anakapalle, Kakinada, Konaseema, and West Godavari.",
+          "kind": "figure",
+          "outlet": "NDTV",
+          "url": "https://www.ndtv.com/india-news/cyclone-arnab-landfall-live-updates-landfall-tracker-imd-weather-forecast-heavy-rain-alert-andhra-pradesh-odisha-live-news-12245206#publisher=newsstand",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 57,
+          "cluster_id": 3,
+          "text": "All educational institutions in Chhattisgarh's Raipur district were ordered closed on Thursday due to forecasts of heavy rainfall and strong winds from Cyclone Arnab.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/heavy-rain-warning-in-chhattisgarh-post-cyclone-arnab-schools-shut-in-raipur-101793200661213.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 58,
+          "cluster_id": 3,
+          "text": "Eight people died in parts of Andhra Pradesh after severe cyclonic storm Arnab crossed the state's coast.",
+          "kind": "figure",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/city/vijayawada/8-dead-as-cyclone-arnab-batters-andhra-coast-uproots-trees-poles-damages-homes/articleshow/135270547.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 59,
+          "cluster_id": 3,
+          "text": "More than 20,000 people were evacuated in coastal districts of Andhra Pradesh prior to the arrival of Cyclone Arnab.",
+          "kind": "figure",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/city/vijayawada/8-dead-as-cyclone-arnab-batters-andhra-coast-uproots-trees-poles-damages-homes/articleshow/135270547.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 60,
+          "cluster_id": 3,
+          "text": "Cyclone Arnab crossed the coast as a very severe cyclonic storm with maximum sustained wind speeds of 125-135 kmph and gusts reaching 150 kmph.",
+          "kind": "figure",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/city/vijayawada/8-dead-as-cyclone-arnab-batters-andhra-coast-uproots-trees-poles-damages-homes/articleshow/135270547.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 61,
+          "cluster_id": 3,
+          "text": "Garividi in Vizianagaram district recorded the highest rainfall in Andhra Pradesh at 26 cm between Tuesday morning and Wednesday morning.",
+          "kind": "figure",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/city/vijayawada/8-dead-as-cyclone-arnab-batters-andhra-coast-uproots-trees-poles-damages-homes/articleshow/135270547.cms",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 62,
+          "cluster_id": 3,
+          "text": "Three people were killed and 31 houses were damaged in Andhra Pradesh as Cyclone Arnab made landfall.",
+          "kind": "figure",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/latest/1096709/rush-hour-sc-questions-use-of-form-6-by-deleted-voters-3-killed-in-cyclone-arnab-and-more?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 4,
+      "headline_hint": "India's External Affairs Ministry confirms 22 Indian nationals killed in West Asia conflict since February",
+      "section": "india",
+      "batch_position": 1,
+      "claim_count": 8,
+      "distinct_outlets": 3,
+      "source_kinds": {
+        "fulltext": 8
+      },
+      "claims": [
+        {
+          "id": 63,
+          "cluster_id": 4,
+          "text": "Ministry of External Affairs spokesperson Randhir Jaiswal confirmed that 22 Indian nationals, including 14 seafarers, have been killed in the West Asia conflict zone.",
+          "kind": "figure",
+          "outlet": "NDTV",
+          "url": "https://www.ndtv.com/world-news/22-indians-killed-in-middle-east-conflict-including-14-seafares-centre-12250842#publisher=newsstand",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 64,
+          "cluster_id": 4,
+          "text": "Three Indian nationals were killed in Saudi Arabia in incidents linked to regional tensions in West Asia.",
+          "kind": "figure",
+          "outlet": "NDTV",
+          "url": "https://www.ndtv.com/world-news/22-indians-killed-in-middle-east-conflict-including-14-seafares-centre-12250842#publisher=newsstand",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 65,
+          "cluster_id": 4,
+          "text": "The Consulate General of India in Jeddah issued a travel advisory detailing expanded flight schedules by carriers such as Flynas to assist Indian nationals and Umrah pilgrims.",
+          "kind": "event",
+          "outlet": "NDTV",
+          "url": "https://www.ndtv.com/world-news/22-indians-killed-in-middle-east-conflict-including-14-seafares-centre-12250842#publisher=newsstand",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 66,
+          "cluster_id": 4,
+          "text": "The United States and Israel launched military strikes on Iran on February 28, killing Iran's supreme leader and senior officials.",
+          "kind": "background",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/latest/1096712/22-indians-killed-in-west-asia-conflict-says-mea?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 67,
+          "cluster_id": 4,
+          "text": "The United States military launched fresh attacks on Iran on July 9 after President Donald Trump declared that an interim ceasefire was over.",
+          "kind": "background",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/latest/1096712/22-indians-killed-in-west-asia-conflict-says-mea?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 68,
+          "cluster_id": 4,
+          "text": "Three Indian seafarers—Aditya Sharma, Shivanand Chaurashiya, and Patnala Suresh—were killed on June 9 after a US strike hit the Palau-flagged oil tanker MT Settebello off Oman.",
+          "kind": "background",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/india-says-22-nationals-killed-in-west-asia-conflict-us-iran-war-since-february-14-were-seafarers-strait-of-hormuz-eight-months-trump-israel-101793186440983.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 69,
+          "cluster_id": 4,
+          "text": "An Indian sailor was killed and six others were injured in July when Iranian missiles hit the Emirati oil tankers Mombasa and Al Bahiyah in Omani waters.",
+          "kind": "background",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/india-says-22-nationals-killed-in-west-asia-conflict-us-iran-war-since-february-14-were-seafarers-strait-of-hormuz-eight-months-trump-israel-101793186440983.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 70,
+          "cluster_id": 4,
+          "text": "Ministry of External Affairs spokesperson Randhir Jaiswal stated that India has strong relations with Israel and will work to further improve and strengthen those ties.",
+          "kind": "quote",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/india-says-22-nationals-killed-in-west-asia-conflict-us-iran-war-since-february-14-were-seafarers-strait-of-hormuz-eight-months-trump-israel-101793186440983.html",
+          "source_kind": "fulltext"
+        }
+      ]
+    },
+    {
+      "cluster_id": 5,
+      "headline_hint": "Supreme Court scrutinises Election Commission over Summary Intensive Revision voter list verification and discrepancy notices",
+      "section": "india",
+      "batch_position": 2,
+      "claim_count": 9,
+      "distinct_outlets": 4,
+      "source_kinds": {
+        "fulltext": 9
+      },
+      "claims": [
+        {
+          "id": 71,
+          "cluster_id": 5,
+          "text": "An estimated 64.5 lakh electors are missing from Karnataka's final electoral rolls following the Special Intensive Revision exercise, bringing the electorate down to 45,500,011.",
+          "kind": "figure",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/data/karnataka-sir-645-lakh-voters-potentially-missing-in-rolls-majority-of-them-young/article71638758.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 72,
+          "cluster_id": 5,
+          "text": "Young adults aged 18 to 29 accounted for 59.5 percent, or 38.41 lakh, of the electors missing from Karnataka's final voter list.",
+          "kind": "figure",
+          "outlet": "The Hindu",
+          "url": "https://www.thehindu.com/data/karnataka-sir-645-lakh-voters-potentially-missing-in-rolls-majority-of-them-young/article71638758.ece",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 73,
+          "cluster_id": 5,
+          "text": "The Supreme Court urged the Election Commission of India not to require nearly 4.3 million removed Delhi electors to reapply as new voters via Form 6 if they were on the 2026 rolls.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/supreme-court-election-commission-form-6-sir-special-intensive-revision-of-electoral-rolls-logical-discrepancy-notices-101793233435159.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 74,
+          "cluster_id": 5,
+          "text": "The Supreme Court stated it had not upheld the Election Commission's 'logical discrepancy' classification, which previously led to the disenfranchisement of 2.71 million people in West Bengal.",
+          "kind": "event",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/supreme-court-election-commission-form-6-sir-special-intensive-revision-of-electoral-rolls-logical-discrepancy-notices-101793233435159.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 75,
+          "cluster_id": 5,
+          "text": "Out of approximately 14.5 million electors at the start of Delhi's Special Intensive Revision, around 4.7 million did not submit enumeration forms.",
+          "kind": "figure",
+          "outlet": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/india-news/supreme-court-election-commission-form-6-sir-special-intensive-revision-of-electoral-rolls-logical-discrepancy-notices-101793233435159.html",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 76,
+          "cluster_id": 5,
+          "text": "The Special Intensive Revision of voter rolls was initiated in Bihar in June 2025.",
+          "kind": "background",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/article/1096616/sir-applies-a-decade-of-exclusion-lessons-perfected-on-welfare-schemes?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 77,
+          "cluster_id": 5,
+          "text": "Election Commissioners Sukhbir Singh Sandhu and Vivek Joshi formally objected 14 times in 10 months to actions taken regarding the Special Intensive Revision.",
+          "kind": "figure",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/article/1096616/sir-applies-a-decade-of-exclusion-lessons-perfected-on-welfare-schemes?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 78,
+          "cluster_id": 5,
+          "text": "By September 1, approximately 13.37 crore names were missing from draft voter rolls across India during the Special Intensive Revision.",
+          "kind": "figure",
+          "outlet": "Scroll.in",
+          "url": "https://scroll.in/article/1096616/sir-applies-a-decade-of-exclusion-lessons-perfected-on-welfare-schemes?utm_source=rss&utm_medium=public",
+          "source_kind": "fulltext"
+        },
+        {
+          "id": 79,
+          "cluster_id": 5,
+          "text": "In a May 27 judgment, the Supreme Court ruled that the Special Intensive Revision exercise satisfied proportionality requirements and did not conflict with the Representation of the People Act.",
+          "kind": "background",
+          "outlet": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/yet-to-test-legality-of-logical-discrepancy-in-sir-supreme-court/articleshow/135283243.cms",
+          "source_kind": "fulltext"
+        }
+      ]
+    }
+  ],
+  "clusters_with_no_claims": []
+}

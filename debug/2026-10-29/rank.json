@@ -1,0 +1,806 @@
+{
+  "dials": {
+    "WEIGHT_FLOOR": 5,
+    "TIER_WEIGHT": {
+      "lead": 4,
+      "major": 2,
+      "notable": 0
+    },
+    "WIKI_BONUS": 2,
+    "HARD_CAP": 12,
+    "MIN_STORIES_IF_ANY": 3,
+    "MAX_ARTICLES_PER_STORY": 5
+  },
+  "floor_relaxed": false,
+  "kept_weights": [
+    17,
+    12,
+    12,
+    12,
+    8,
+    7
+  ],
+  "per_section": {
+    "world": 3,
+    "india": 3
+  },
+  "clusters": [
+    {
+      "headline_hint": "Israeli legislative election ends in deadlock between Netanyahu and opposition blocs while Arab parties make historic gains",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "lead",
+      "article_ids": [
+        9,
+        32,
+        36,
+        40,
+        49,
+        50,
+        75,
+        96,
+        104,
+        107,
+        119,
+        133,
+        149,
+        155,
+        163,
+        174,
+        189,
+        199,
+        215,
+        231,
+        250,
+        251,
+        262,
+        276,
+        285,
+        287,
+        317,
+        318
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        9,
+        32,
+        36,
+        40,
+        49,
+        50,
+        75,
+        96,
+        104,
+        107,
+        119,
+        133,
+        149,
+        155,
+        163,
+        174,
+        189,
+        199,
+        215,
+        231,
+        250,
+        251,
+        262,
+        276,
+        285,
+        287,
+        317,
+        318
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 11,
+      "wiki_backed": true,
+      "wiki_event": "The ruling Likud and its governing coalition, led by Benjamin Netanyahu, wins a plurality of seats in the Knesset, though government formation remains unclear.",
+      "weight": 17,
+      "weight_terms": {
+        "distinct_outlets": 11,
+        "tier_weight": 4,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Livemint",
+          "title": "Israel election latest update: Who will form the next government as Netanyahu, Eisenkot fall short?",
+          "url": "https://www.livemint.com/news/world/israeli-elections-votes-nearly-counted-neither-netanyahu-nor-eisenkot-are-likely-to-get-majority-latest-update-11793235026445.html"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Israelis rally for Jewish-Arab government after election gains",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/10/29/israelis-rally-for-jewish-arab-government-after-election-gains?traffic_source=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Netanyahu bloc loses majority as most ballots counted – as it happened",
+          "url": "https://www.theguardian.com/world/live/2026/oct/28/israel-election-results-live-updates-exit-polls-netanyahu-likud-eisenkot-latest-news"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Arab parties claim kingmaker status in Israel elections",
+          "url": "https://timesofindia.indiatimes.com/world/middle-east/arab-parties-claim-kingmaker-status-in-israel/articleshow/135283765.cms"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "Commentary: Israel's indecisive election reveals deep fault lines",
+          "url": "https://www.channelnewsasia.com/commentary/israel-election-results-benjamin-netanyahu-divided-6499566"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 23
+    },
+    {
+      "headline_hint": "Cyclone Arnab makes landfall in India, leaving multiple dead and causing widespread damage across Andhra Pradesh and Odisha",
+      "section": "india",
+      "category": "disaster",
+      "tier_requested": "lead",
+      "article_ids": [
+        1,
+        6,
+        118,
+        168,
+        235,
+        241,
+        248,
+        269,
+        282,
+        305,
+        310,
+        312
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        1,
+        6,
+        118,
+        168,
+        235,
+        241,
+        248,
+        269,
+        282,
+        305,
+        310,
+        312
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 6,
+      "wiki_backed": true,
+      "wiki_event": "At least three people are killed as Cyclone Arnab makes landfall in Andhra Pradesh, India.",
+      "weight": 12,
+      "weight_terms": {
+        "distinct_outlets": 6,
+        "tier_weight": 4,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "The Hindu",
+          "title": "Cyclone Arnab to weaken into depression on October 29, says IMD | LIVE updates",
+          "url": "https://www.thehindu.com/news/national/cyclone-arnab-weakens-into-depression-imd-alert-odisha-andhra-pradesh-telangana-live-updates-october-29-2026/article71638778.ece"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "Cyclone Arnab Highlights: Cyclone Arnab Kills 5 In Andhra Pradesh, Weakens After Landfall",
+          "url": "https://www.ndtv.com/india-news/cyclone-arnab-landfall-live-updates-landfall-tracker-imd-weather-forecast-heavy-rain-alert-andhra-pradesh-odisha-live-news-12245206#publisher=newsstand"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Heavy rain warning in Chhattisgarh post Cyclone Arnab, schools shut in Raipur",
+          "url": "https://www.hindustantimes.com/india-news/heavy-rain-warning-in-chhattisgarh-post-cyclone-arnab-schools-shut-in-raipur-101793200661213.html"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Cyclone Arnab leaves trail of destruction in Andhra, 8 killed",
+          "url": "https://timesofindia.indiatimes.com/city/vijayawada/8-dead-as-cyclone-arnab-batters-andhra-coast-uproots-trees-poles-damages-homes/articleshow/135270547.cms"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "Rush Hour: SC questions use of Form 6 by deleted voters, 3 killed in Cyclone Arnab and more",
+          "url": "https://scroll.in/latest/1096709/rush-hour-sc-questions-use-of-form-6-by-deleted-voters-3-killed-in-cyclone-arnab-and-more?utm_source=rss&utm_medium=public"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 7
+    },
+    {
+      "headline_hint": "Deadly high-speed train collision in Toledo province, Spain kills at least 68 people and sparks public outcry",
+      "section": "world",
+      "category": "disaster",
+      "tier_requested": "major",
+      "article_ids": [
+        31,
+        38,
+        61,
+        67,
+        80,
+        87,
+        95,
+        135,
+        136,
+        177,
+        183,
+        212,
+        221,
+        229,
+        239,
+        243,
+        270,
+        290,
+        299
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        31,
+        38,
+        61,
+        67,
+        80,
+        87,
+        95,
+        135,
+        136,
+        177,
+        183,
+        212,
+        221,
+        229,
+        239,
+        243,
+        270,
+        290,
+        299
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 8,
+      "wiki_backed": true,
+      "wiki_event": "At least 68 people are killed and 179 injured during a collision between two high speed trains carrying over 500 passengers between Los Yébenes and Urda, in the Province of Toledo, Spain.",
+      "weight": 12,
+      "weight_terms": {
+        "distinct_outlets": 8,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "Riot police deployed in Madrid as protests erupt over deadly train crash",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/10/29/riot-police-deployed-in-madrid-as-protests-erupt-over-deadly-train-crash?traffic_source=rss"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Spain train collision sparks protests, calls for transport minister’s resignation",
+          "url": "https://timesofindia.indiatimes.com/world/europe/spain-train-collision-sparks-protests-calls-for-transport-ministers-resignation/articleshow/135284503.cms"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Spain rail crash came after train ordered to go in error: minister",
+          "url": "https://www.france24.com/en/spain-rail-crash-came-after-train-ordered-to-go-in-error-minister"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "High-speed train crash kills at least 68 people in Spain",
+          "url": "https://www.bbc.co.uk/news/articles/c6p3g84kjqjlo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Death toll rises to 68 with dozens injured after high-speed train collision in Spain – as it happened",
+          "url": "https://www.theguardian.com/world/live/2026/oct/28/spain-train-crash-toledo-europe-latest-news-updates"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 14
+    },
+    {
+      "headline_hint": "Defeated Brazilian candidate Flávio Bolsonaro arrives in Miami after fleeing Brazil and declares himself rightful leader",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        17,
+        42,
+        62,
+        64,
+        69,
+        76,
+        79,
+        91,
+        101,
+        116,
+        128,
+        166,
+        207,
+        219,
+        332
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        17,
+        42,
+        62,
+        64,
+        69,
+        76,
+        79,
+        91,
+        101,
+        116,
+        128,
+        166,
+        207,
+        219,
+        332
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 8,
+      "wiki_backed": true,
+      "wiki_event": "Brazilian senator Flávio Bolsonaro, following his flee from Brazil and arrival in Florida, United States, after the general election, declares himself the rightful president-elect of Brazil.",
+      "weight": 12,
+      "weight_terms": {
+        "distinct_outlets": 8,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "BBC World",
+          "title": "Flávio Bolsonaro denies fleeing Brazil after landing in Miami",
+          "url": "https://www.bbc.co.uk/news/articles/c6kglwe4lxwzo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "Bolsonaro claims he is Brazil's true leader after fleeing to US",
+          "url": "https://www.channelnewsasia.com/world/brazil-election-bolsonaro-defeat-flee-us-leader-6501531"
+        },
+        {
+          "outlet": "DW World",
+          "title": "Flavio Bolsonaro lands in US, declares himself 'leader' of Brazil",
+          "url": "https://www.dw.com/en/flavio-bolsonaro-lands-in-us-declares-himself-leader-of-brazil/a-79788659?maca=en-rss-en-world-4025-rdf"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Flavio Bolsonaro claims he is Brazil's true leader after fleeing to US",
+          "url": "https://www.france24.com/en/tv-shows/a-propos/20261028-flavio-bolsonaro-claims-he-is-brazil-s-true-leader-after-fleeing-to-us"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Flávio Bolsonaro calls himself the ‘leader of Brazil’ after fleeing to Miami",
+          "url": "https://www.theguardian.com/world/2026/oct/28/flavio-bolsonaro-miami-us-fleeing-brazilian-election-defeat"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 10
+    },
+    {
+      "headline_hint": "Supreme Court scrutinises Election Commission over Summary Intensive Revision voter list verification and discrepancy notices",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        7,
+        10,
+        14,
+        22,
+        57,
+        146,
+        157,
+        261,
+        264,
+        275,
+        330
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        7,
+        10,
+        14,
+        22,
+        57,
+        146,
+        157,
+        261,
+        264,
+        275,
+        330
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 5,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "The Hindu",
+          "title": "Karnataka SIR: 64.5 lakh voters potentially missing in rolls, majority of them young",
+          "url": "https://www.thehindu.com/data/karnataka-sir-645-lakh-voters-potentially-missing-in-rolls-majority-of-them-young/article71638758.ece"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Supreme Court questions Election Commission on use of Form 6, ‘logical discrepancy’ notices to voters amid SIR",
+          "url": "https://www.hindustantimes.com/india-news/supreme-court-election-commission-form-6-sir-special-intensive-revision-of-electoral-rolls-logical-discrepancy-notices-101793233435159.html"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "SIR applies a decade of exclusion lessons perfected on welfare schemes",
+          "url": "https://scroll.in/article/1096616/sir-applies-a-decade-of-exclusion-lessons-perfected-on-welfare-schemes?utm_source=rss&utm_medium=public"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Yet to test legality of logical discrepancy in SIR: Supreme Court",
+          "url": "https://timesofindia.indiatimes.com/india/yet-to-test-legality-of-logical-discrepancy-in-sir-supreme-court/articleshow/135283243.cms"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "10 Lakh Target, Anti-SIR Push: Congress Strategy For November 1 Ramlila Maidan Rally",
+          "url": "https://www.ndtv.com/india-news/10-lakh-target-anti-sir-push-congresss-strategy-for-november-1-ramlila-rally-12250668#publisher=newsstand"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 6
+    },
+    {
+      "headline_hint": "India's External Affairs Ministry confirms 22 Indian nationals killed in West Asia conflict since February",
+      "section": "india",
+      "category": "conflict",
+      "tier_requested": "major",
+      "article_ids": [
+        172,
+        182,
+        263,
+        288
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        172,
+        182,
+        263,
+        288
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": true,
+      "wiki_event": "At least three people are killed as Cyclone Arnab makes landfall in Andhra Pradesh, India.",
+      "weight": 8,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "NDTV",
+          "title": "22 Indians Killed In Middle East Conflict, Including 14 Seafares: Centre",
+          "url": "https://www.ndtv.com/world-news/22-indians-killed-in-middle-east-conflict-including-14-seafares-centre-12250842#publisher=newsstand"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "MEA confirms 22 Indian nationals killed amid West Asia conflict: 'We remain deeply concerned about the situation'",
+          "url": "https://www.livemint.com/news/india/mea-confirms-22-indian-nationals-killed-amid-west-asia-conflict-we-remain-deeply-concerned-about-the-situation-11793209560427.html"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "22 Indians killed in West Asia conflict, says MEA",
+          "url": "https://scroll.in/latest/1096712/22-indians-killed-in-west-asia-conflict-says-mea?utm_source=rss&utm_medium=public"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "India says 22 nationals killed in West Asia conflict since February, 14 were seafarers",
+          "url": "https://www.hindustantimes.com/india-news/india-says-22-nationals-killed-in-west-asia-conflict-us-iran-war-since-february-14-were-seafarers-strait-of-hormuz-eight-months-trump-israel-101793186440983.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Russian President Vladimir Putin hosts Russia-Africa Summit in Moscow to deepen economic and diplomatic ties",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        84,
+        148,
+        159,
+        180,
+        304
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        84,
+        148,
+        159,
+        180,
+        304
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "France 24",
+          "title": "Russia woos African leaders at Moscow summit",
+          "url": "https://www.france24.com/en/russia-woos-african-leaders-at-moscow-summit"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Putin: Russia is African continent’s best partner, not ‘colonial’ West",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/10/28/putin-russia-is-african-continents-best-partner-not-colonial-west?traffic_source=rss"
+        },
+        {
+          "outlet": "DW World",
+          "title": "Russia in Africa: What is Putin hoping to achieve?",
+          "url": "https://www.dw.com/en/russia-in-africa-what-is-putin-hoping-to-achieve/a-79781858?maca=en-rss-en-world-4025-rdf"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Putin tells African leaders Moscow will not pursue ‘neo-colonialism’",
+          "url": "https://www.aljazeera.com/news/2026/10/28/putin-tells-african-leaders-moscow-will-not-pursue-neo-colonialism?traffic_source=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Putin woos African leaders as Moscow seeks to expand footprint in Africa",
+          "url": "https://www.france24.com/en/africa/20261028-putin-woos-african-leaders-moscow-seeks-expand-footprint-africa"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Indian Union Cabinet approves 3% Dearness Allowance hike for central government employees and pensioners",
+      "section": "india",
+      "category": "economy",
+      "tier_requested": "notable",
+      "article_ids": [
+        15,
+        266,
+        303,
+        306
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        15,
+        266,
+        303,
+        306
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "The Hindu",
+          "title": "Cabinet approves 3% hike in dearness allowance for central government employees",
+          "url": "https://www.thehindu.com/news/national/cabinet-approves-3-hike-in-dearness-allowance-for-central-government-employees/article71635503.ece"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Union cabinet clears  ₹29,267 crore for container, sports goods manufacturing",
+          "url": "https://www.livemint.com/news/india/union-cabinet-clears-29-267-crore-for-container-sports-goods-manufacturing-11793189508362.html"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Centre announces 3% DA hike for govt employees, pensioners ahead of Diwali",
+          "url": "https://www.hindustantimes.com/india-news/centre-announces-3-percent-da-hike-for-govt-employees-pensioners-ahead-of-diwali-101793181467652.html"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "'Diwali gift from PM Modi': Cabinet approves 3% DA increase for central govt employees",
+          "url": "https://timesofindia.indiatimes.com/business/india-business/cabinet-approves-3-da-increase-for-central-govt-employees/articleshow/135259780.cms"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "UK Chancellor presents Autumn Budget featuring tax changes on banks and energy support packages",
+      "section": "world",
+      "category": "economy",
+      "tier_requested": "notable",
+      "article_ids": [
+        114,
+        130,
+        167,
+        178
+      ],
+      "verdict": "cut:below_floor(2<5)",
+      "valid_ids": [
+        114,
+        130,
+        167,
+        178
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 2,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "Budget 2026: Healey hikes taxes on banks and landlords to fund £100 handouts to 20m households",
+          "url": "https://www.theguardian.com/uk-news/2026/oct/28/budget-2026-healey-hikes-taxes-on-banks-and-landlords-to-fund-100-handouts-to-20m-households"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Five key takeaways from the UK Autumn Budget",
+          "url": "https://www.aljazeera.com/economy/2026/10/28/five-key-takeaways-from-the-uk-autumn-budget?traffic_source=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Nigel Farage skips budget in Commons over seating ‘altercation’ concerns",
+          "url": "https://www.theguardian.com/uk-news/2026/oct/28/nigel-farage-reform-uk-budget-commons-seating-row-ukraine-crypto"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Budget 2026: £100 energy payment for millions and rise in bank tax as watchdog warns on stalling living standards – as it happened",
+          "url": "https://www.theguardian.com/uk-news/live/2026/oct/28/budget-2026-latest-updates-john-healey-andy-burnham-labour-uk-politics"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Defence Minister Rajnath Singh raises concerns over US military technology transfers to Pakistan in bilateral talks",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        106,
+        247,
+        284
+      ],
+      "verdict": "cut:below_floor(2<5)",
+      "valid_ids": [
+        106,
+        247,
+        284
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 2,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "Sensitive US tech supplied to Pak could end up in third country: Rajnath warns Hegseth",
+          "url": "https://timesofindia.indiatimes.com/defence/news/sensitive-us-tech-to-pak-could-end-up-in-third-country-rajnath-tells-hegseth-warns-against-double-standards-on-terror/articleshow/135279811.cms"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Defence minister Rajnath Singh flags concern over US military aid to Pakistan in talks with Pete Hegseth",
+          "url": "https://www.hindustantimes.com/india-news/defence-minister-rajnath-singh-flags-concern-over-us-military-aid-to-pakistan-in-talks-with-pete-hegseth-101793194533579.html"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Rajnath calls for 'zero tolerance' for terror-sponsoring nations in talks with Hegseth",
+          "url": "https://www.hindustantimes.com/india-news/rajnath-calls-for-zero-tolerance-for-terror-sponsoring-nations-in-talks-with-hegseth-101793188376569.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Canada and European Union drop proposal for associate EU membership during Montreal summit",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        24,
+        85,
+        214
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        24,
+        85,
+        214
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "France 24",
+          "title": "Canada and EU drop associate membership plan in bid to deepen ties",
+          "url": "https://www.france24.com/en/europe/20261029-canada-and-eu-drop-associate-membership-plan-in-bid-to-deepen-ties"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "EU backs away from offer to Canada to start ‘associate member’ talks",
+          "url": "https://www.theguardian.com/world/2026/oct/28/european-union-canada"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Canada-EU summit: What do both sides want, and what’s at stake?",
+          "url": "https://www.aljazeera.com/economy/2026/10/28/canada-eu-summit-what-do-both-sides-want-and-whats-at-stake?traffic_source=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "US cruise ship Villa Vie Odyssey suspends multiyear global voyage in Cambodia due to rising fuel costs",
+      "section": "world",
+      "category": "economy",
+      "tier_requested": "notable",
+      "article_ids": [
+        171,
+        295,
+        323
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        171,
+        295,
+        323
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "Fuel costs force US cruise ship to suspend multiyear voyage in Cambodia",
+          "url": "https://www.aljazeera.com/news/2026/10/28/fuel-costs-force-us-cruise-ship-to-suspend-multi-year-voyage-in-cambodia?traffic_source=rss"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Luxury cruise passengers stranded in Cambodia due to soaring fuel costs",
+          "url": "https://www.bbc.co.uk/news/articles/cwj342k62exyo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "A U.S. cruise ship ends voyage due to fuel costs and passengers lose their homes",
+          "url": "https://www.npr.org/2026/10/28/nx-s1-6020180/us-cruise-ship-ends-voyage-passengers-lose-homes"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    }
+  ]
+}
