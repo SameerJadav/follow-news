@@ -1,0 +1,866 @@
+{
+  "dials": {
+    "WEIGHT_FLOOR": 5,
+    "TIER_WEIGHT": {
+      "lead": 4,
+      "major": 2,
+      "notable": 0
+    },
+    "WIKI_BONUS": 2,
+    "HARD_CAP": 12,
+    "MIN_STORIES_IF_ANY": 3,
+    "MAX_ARTICLES_PER_STORY": 5
+  },
+  "floor_relaxed": false,
+  "kept_weights": [
+    10,
+    8,
+    7,
+    6,
+    6,
+    6,
+    6,
+    5,
+    5
+  ],
+  "per_section": {
+    "world": 5,
+    "india": 4
+  },
+  "clusters": [
+    {
+      "headline_hint": "Spain high-speed train collision kills dozens as probe into safety system failures begins",
+      "section": "world",
+      "category": "disaster",
+      "tier_requested": "lead",
+      "article_ids": [
+        41,
+        56,
+        142,
+        163,
+        189,
+        199,
+        218,
+        223,
+        269,
+        315,
+        320
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        41,
+        56,
+        142,
+        163,
+        189,
+        199,
+        218,
+        223,
+        269,
+        315,
+        320
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 6,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 10,
+      "weight_terms": {
+        "distinct_outlets": 6,
+        "tier_weight": 4,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "BBC World",
+          "title": "Young athlete and former minister among victims of Spain train crash",
+          "url": "https://www.bbc.co.uk/news/articles/cr78plp1p9yvo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Spain begins mourning period as search continues for train crash victims",
+          "url": "https://www.theguardian.com/world/2026/oct/29/spain-mourning-period-deadly-train-crash"
+        },
+        {
+          "outlet": "France 24",
+          "title": "'An absurdity' to blame human error: Spain's deadly train crash 'should never' have happened",
+          "url": "https://www.france24.com/en/an-absurdity-to-blame-human-error-spain-s-deadly-train-crash-should-never-have-happened"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Spain train tragedy: Glitch, 3 operator errors behind crash that killed 68",
+          "url": "https://timesofindia.indiatimes.com/world/europe/spain-train-tragedy-glitch-3-operator-errors-behind-crash-that-killed-68/articleshow/135323370.cms"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "Spain reckons with 2nd deadly train crash of the year ahead of national election",
+          "url": "https://www.npr.org/2026/10/29/nx-s1-6021963/spain-train-crash-updates"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 6
+    },
+    {
+      "headline_hint": "ECB President Christine Lagarde resigns early to speak out on global affairs",
+      "section": "world",
+      "category": "economy",
+      "tier_requested": "major",
+      "article_ids": [
+        53,
+        178,
+        194,
+        272
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        53,
+        178,
+        194,
+        272
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": true,
+      "wiki_event": "Christine Lagarde, the president of the European Central Bank, resigns, saying she could not remain neutral on current events. She will step down from office in February 2027, eight months before her term officially ends.",
+      "weight": 8,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "France 24",
+          "title": "ECB President Lagarde steps down in order to speak out",
+          "url": "https://www.france24.com/en/tv-shows/business/20261029-ecb-president-lagarde-steps-down-in-order-to-speak-out"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "European Central Bank President Lagarde to step down early",
+          "url": "https://www.aljazeera.com/news/2026/10/29/european-central-bank-president-lagarde-to-step-down-early?traffic_source=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Europe’s central bank chief, Christine Lagarde, steps down for ‘freedom of speech’",
+          "url": "https://www.theguardian.com/world/2026/oct/29/european-central-bank-chief-christine-lagarde-to-step-down-nine-months-early"
+        },
+        {
+          "outlet": "DW World",
+          "title": "European Central Bank (ECB) head Christine Lagarde to step down in February, before her term ends",
+          "url": "https://www.dw.com/en/european-central-bank-ecb-head-christine-lagarde-to-step-down-in-february-before-her-term-ends/a-79794353?maca=en-rss-en-world-4025-rdf"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Israeli election ends in deadlock as Netanyahu falls short of majority amid accusations against Arab parties",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        13,
+        68,
+        69,
+        101,
+        103,
+        135,
+        152,
+        184,
+        261,
+        292
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        13,
+        68,
+        69,
+        101,
+        103,
+        135,
+        152,
+        184,
+        261,
+        292
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 5,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "Netanyahu accused of smearing Arab voters to hold on to power",
+          "url": "https://www.theguardian.com/world/2026/oct/29/israeli-leader-netanyahu-accused-of-using-ugly-smear-tactics-to-cling-to-power"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Israel election result shows no overall majority as vote count complete",
+          "url": "https://www.aljazeera.com/news/2026/10/29/israel-election-result-shows-no-overall-majority-as-vote-count-complete?traffic_source=rss"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Israeli opposition accuses Netanyahu of trying to 'delegitimise' election",
+          "url": "https://www.bbc.co.uk/news/articles/ckdd8qdl9e0eo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Israel election: Netanyahu's bloc wins 53 seats, falls short of majority as coalition talks loom",
+          "url": "https://timesofindia.indiatimes.com/world/middle-east/israel-election-results-netanyahus-bloc-wins-53-seats-falls-short-of-majority-as-coalition-talks-loom/articleshow/135325926.cms"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "GDP report to give insight before Election Day. And, Israel's election is deadlocked",
+          "url": "https://www.npr.org/2026/10/29/g-s1-150614/up-first-newsletter-midterm-elections-gdp-inflation-israel-department-of-education-lawsuit"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 5
+    },
+    {
+      "headline_hint": "Pentagon fires top army general Brett Sylvia over leaks of classified information",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        11,
+        29,
+        104,
+        136,
+        202
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        11,
+        29,
+        104,
+        136,
+        202
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 6,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "Fired US general admits leaking classified Iran, Ukraine information to journalists",
+          "url": "https://timesofindia.indiatimes.com/world/us/fired-us-general-admits-leaking-classified-iran-ukraine-information-to-journalists-report/articleshow/135335592.cms"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Hegseth reportedly fires high-ranking army strategist over alleged leaks",
+          "url": "https://www.theguardian.com/us-news/2026/oct/29/hegseth-fires-general-leak-inquiry-pentagon"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Pentagon fires general it says leaked classified information to media",
+          "url": "https://www.aljazeera.com/news/2026/10/29/pentagon-fires-general-it-says-leaked-classified-information-to-media?traffic_source=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Lt. Gen. Ben Hodges accuses Hegseth of 'getting rid of people who may have the courage to push back'",
+          "url": "https://www.france24.com/en/lt-gen-ben-hodges-accuses-hegseth-of-getting-rid-of-people-who-may-have-the-courage-to-push-back"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Pentagon shake-up continues: US fires top army general in latest ouster",
+          "url": "https://www.france24.com/en/video/20261029-pentagon-shake-up-continues-us-fires-top-army-general-in-latest-ouster"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Russian drone strike on Dnipro railway station kills 14 in Ukraine",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "major",
+      "article_ids": [
+        139,
+        188,
+        230,
+        293
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        139,
+        188,
+        230,
+        293
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 6,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "At least 14 people killed in attack on Ukraine train station",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/10/29/aje-onl-nf_russian-drone-strike-at-dnipro-train-platform-291026?traffic_source=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Aid mission set to enter Ukraine's Oleshky as localised ceasefire holds for third day",
+          "url": "https://www.france24.com/en/europe/20261029-aid-mission-set-to-enter-ukraine-s-oleshky-as-localised-ceasefire-holds-for-third-day"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Russian drone attack on Ukrainian train station kills at least 14, officials say",
+          "url": "https://www.bbc.co.uk/news/articles/c9p8gdlz1p2ko?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "How AI drones are influencing the course of the Ukraine war",
+          "url": "https://www.npr.org/2026/10/29/g-s1-147496/ukraine-ai-drones-war-russia"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "US midterm campaign intensifies as DOJ probes Alaska Democratic candidate",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        3,
+        43,
+        66,
+        88,
+        121,
+        212,
+        220
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        3,
+        43,
+        66,
+        88,
+        121,
+        212,
+        220
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "Trump again calls for prosecution of Mary Peltola as turmoil grows over Alaska campaign investigation – live",
+          "url": "https://www.theguardian.com/us-news/live/2026/oct/29/midterm-elections-politics-trump-obama-california-alaska-latest-news-updates"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Alaska governor orders probe into Democratic campaign's alleged links to same-name candidate",
+          "url": "https://www.bbc.co.uk/news/articles/c8vgx0zrpk6no?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Michigan's El-Sayed targeted by Republicans in Midterms race: Will the religion card work?",
+          "url": "https://www.france24.com/en/tv-shows/the-debate/20261029-michigan-s-el-sayed-targeted-by-republicans-in-midterms-race-will-the-religion-card-work"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "US Muslims concerned but resilient as ‘hate’ attacks target Abdul El-Sayed",
+          "url": "https://www.aljazeera.com/news/2026/10/29/us-muslims-concerned-but-resilient-as-hate-attacks-target-abdul-el-sayed?traffic_source=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "DoJ reportedly issues subpoenas over same name Alaska candidates",
+          "url": "https://www.theguardian.com/us-news/2026/oct/29/alaska-senate-race-subpoenas"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 2
+    },
+    {
+      "headline_hint": "Xi Jinping expels 33 officials in major CCP purge and elevates general to Politburo",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        191,
+        196,
+        226,
+        250
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        191,
+        196,
+        226,
+        250
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "DW World",
+          "title": "China leaders demand more loyalty and more initiative",
+          "url": "https://www.dw.com/en/china-leaders-demand-more-loyalty-and-more-initiative/a-79799138?maca=en-rss-en-world-4025-rdf"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "China elevates a military general to the Politburo and seeks to strengthen party discipline",
+          "url": "https://www.npr.org/2026/10/29/g-s1-150645/china-elevates-a-military-general-to-the-politburo-and-seeks-to-strengthen-party-discipline"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "'Turn the blade inward': Xi swings the axe again, expels 33 in major CCP purge",
+          "url": "https://timesofindia.indiatimes.com/world/china/turn-the-blade-inward-xi-swings-the-axe-again-expels-33-in-major-ccp-purge/articleshow/135319185.cms"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Record number of purges as Xi emphasises 'party discipline' at China political gathering",
+          "url": "https://www.bbc.co.uk/news/articles/cq5ynw94k7kzo?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Cyclone Arnab damages Andhra Pradesh and Odisha, marooning hundreds of villages",
+      "section": "india",
+      "category": "disaster",
+      "tier_requested": "lead",
+      "article_ids": [
+        96,
+        141,
+        144,
+        149,
+        289,
+        291
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        96,
+        141,
+        144,
+        149,
+        289,
+        291
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 6,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 4,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "The Hindu",
+          "title": "Cyclone Arnab LIVE: New Bay system likely to head for Andhra coast; 300 villages marooned in Ganjam",
+          "url": "https://www.thehindu.com/news/national/cyclone-arnab-weakens-into-depression-imd-alert-odisha-andhra-pradesh-telangana-live-updates-october-29-2026/article71638778.ece"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Odisha plans to airlift 120 stranded in Ganjam amid Cyclone Arnab aftermath",
+          "url": "https://www.hindustantimes.com/india-news/odisha-plans-to-airlift-120-stranded-in-ganjam-amid-cyclone-arnab-aftermath-101793264429754.html"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "Coastal Andhra Pradesh may receive heavy rain from November 1 as low-pressure area brewing over Bay of Bengal",
+          "url": "https://www.thehindu.com/news/national/andhra-pradesh/coastal-andhra-pradesh-may-receive-heavy-rain-from-november-1-as-low-pressure-area-brewing-over-bay-of-bengal-revised-copy-for-print/article71640142.ece"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "Cyclone Arnab: Andhra Pradesh puts estimated loss at ₹4,600 crore",
+          "url": "https://www.thehindu.com/news/national/andhra-pradesh/cyclone-arnab-andhra-pradesh-puts-estimated-loss-at-4600-crore/article71640441.ece"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "Andhra Pradesh Minister tells official to expedite restoration works in cyclone-hit towns",
+          "url": "https://www.thehindu.com/news/national/andhra-pradesh/andhra-pradesh-minister-tells-official-to-expedite-restoration-works-in-cyclone-hit-towns/article71639870.ece"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 1
+    },
+    {
+      "headline_hint": "Supreme Court directs banks to compensate victims of digital arrest scams",
+      "section": "india",
+      "category": "economy",
+      "tier_requested": "major",
+      "article_ids": [
+        55,
+        229,
+        243,
+        244,
+        264
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        55,
+        229,
+        243,
+        244,
+        264
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 6,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "Mandate damages for savings lost in 'digital arrest': SC to RBI",
+          "url": "https://timesofindia.indiatimes.com/india/mandate-damages-for-savings-lost-in-digital-arrest-sc-to-rbi/articleshow/135331961.cms"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "SC pulls up RBI over cyberfrauds, seeks strict liability for losses",
+          "url": "https://www.livemint.com/news/sc-pulls-up-rbi-over-cyberfrauds-seeks-strict-liability-for-losses-11793275028546.html"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "Rush Hour: CJI asks why Indians still fall for cyber fraud, new UP rules for government jobs & more",
+          "url": "https://scroll.in/latest/1096740/rush-hour-cji-asks-why-indians-still-fall-for-cyber-fraud-new-up-rules-for-government-jobs-more?utm_source=rss&utm_medium=public"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Banks must compensate digital arrest victims if due diligence fails: Supreme Court",
+          "url": "https://www.hindustantimes.com/india-news/banks-must-compensate-digital-arrest-victims-if-due-diligence-fails-supreme-court-101793272191660.html"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "Why are Indians continuing to fall prey to digital arrest scams, asks CJI Kant",
+          "url": "https://scroll.in/latest/1096741/why-are-people-continuing-to-fall-prey-to-digital-arrest-scams-asks-cji-kant?utm_source=rss&utm_medium=public"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Supreme Court rebukes Corporate Affairs Ministry over interference in NCLT appointments",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        18,
+        150,
+        282
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        18,
+        150,
+        282
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 5,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "NCLT, NCLAT hijacked by corporate affairs ministry: SC",
+          "url": "https://timesofindia.indiatimes.com/india/nclt-nclat-hijacked-by-corporate-affairs-ministry-sc/articleshow/135335390.cms"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "Corporate Affairs Ministry has ‘hijacked’ staff appointments in NCLT: Supreme Court",
+          "url": "https://www.thehindu.com/news/national/sc-nclat-nclt-presidents-proposals-on-infrastructure-staff-requirements/article71639787.ece"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "‘Completely hijacked’: Supreme Court rebukes corporate affairs ministry over NCLT autonomy",
+          "url": "https://www.livemint.com/news/india/supreme-court-slams-mca-over-nclt-autonomy-and-functioning-11793262651062.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Piyush Goyal asserts India-US trade deal will safeguard domestic farmers",
+      "section": "india",
+      "category": "economy",
+      "tier_requested": "major",
+      "article_ids": [
+        34,
+        238,
+        294
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        34,
+        238,
+        294
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 5,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Channel News Asia",
+          "title": "Commentary: Rubio’s visits are not enough to reset India-US relations",
+          "url": "https://www.channelnewsasia.com/commentary/rubio-india-us-ties-trade-deal-6502971"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "Goyal says India-US trade deal will show farmers’ interests are protected",
+          "url": "https://www.livemint.com/news/goyal-says-india-us-trade-deal-will-show-farmers-interests-are-protected-11793274645689.html"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "'People will celebrate': Piyush Goyal says India to have comparative edge in US trade deal",
+          "url": "https://www.hindustantimes.com/india-news/india-us-trade-deal-piyush-goyal-no-farmers-interests-compromised-people-will-celebrate-comparative-advantage-fta-101793260893748.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Supreme Court warns Delhi government over lax firecracker ban enforcement",
+      "section": "india",
+      "category": "climate",
+      "tier_requested": "major",
+      "article_ids": [
+        209,
+        240
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        209,
+        240
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Times of India",
+          "title": "'Don't push us': SC warns of harsh stand on firecrackers if orders go unenforced",
+          "url": "https://timesofindia.indiatimes.com/india/dont-push-us-sc-warns-of-harsh-stand-on-firecrackers-if-orders-go-unenforced/articleshow/135321333.cms"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "‘Orders becoming a mockery’: Supreme Court pulls up Delhi govt over firecracker curbs",
+          "url": "https://www.hindustantimes.com/india-news/orders-becoming-a-mockery-supreme-court-pulls-up-delhi-govt-over-firecracker-curbs-101793271815916.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Election Commission extends SIR timelines in six states and union territories",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        122,
+        124,
+        127,
+        134,
+        200,
+        266,
+        318
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        122,
+        124,
+        127,
+        134,
+        200,
+        266,
+        318
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "The Hindu",
+          "title": "ECI extends SIR timelines in Maharashtra, Delhi, Andhra, Haryana, Telangana, Nagaland",
+          "url": "https://www.thehindu.com/news/national/eci-extends-sir-timelines-in-maharashtra-delhi-andhra-haryana-telangana-nagaland/article71642254.ece"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "Delhi SIR Deadline Extended Till November 25, Relief For 5 Other States",
+          "url": "https://www.ndtv.com/india-news/delhi-sir-deadline-extended-till-november-25-relief-for-5-other-states-12256057#publisher=newsstand"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "SIR deadlines extended in 5 states, Delhi; EC sets new dates for final rolls",
+          "url": "https://timesofindia.indiatimes.com/india/sir-deadlines-extended-in-5-states-delhi-ec-sets-new-dates-for-final-rolls/articleshow/135326406.cms"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "SIR: Around 1,600 foreigners identified on voter rolls in six states, reports ‘Hindustan Times’",
+          "url": "https://scroll.in/latest/1096726/sir-around-1600-foreigners-identified-on-voter-rolls-in-six-states-reports-hindustan-times?utm_source=rss&utm_medium=public"
+        },
+        {
+          "outlet": "The Hindu",
+          "title": "SIR deadline for Telangana extended to November 30, 2026",
+          "url": "https://www.thehindu.com/news/national/telangana/sir-deadline-for-telangana-extended-to-november-30-2026/article71642273.ece"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 2
+    },
+    {
+      "headline_hint": "Jamia Millia Islamia agrees to restore students union elections following protests",
+      "section": "india",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        81,
+        166,
+        168,
+        313
+      ],
+      "verdict": "cut:below_floor(4<5)",
+      "valid_ids": [
+        81,
+        166,
+        168,
+        313
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 4,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 4,
+      "weight_terms": {
+        "distinct_outlets": 4,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "NDTV",
+          "title": "Jamia Finally Sets Dates For Restoring Students' Union, Protest Ends With 'Victory' Celebrations",
+          "url": "https://www.ndtv.com/india-news/jamia-millia-islamia-sets-dates-for-restoring-students-union-appeals-for-end-to-protest-12255667#publisher=newsstand"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Jamia sets date for student union poll, revokes disciplinary action against protesters",
+          "url": "https://timesofindia.indiatimes.com/india/jamia-sets-date-for-student-union-poll-revokes-disciplinary-action-against-protesters/articleshow/135324813.cms"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Delhi's Jamia University agrees to students’ demands, sets timeline for union polls",
+          "url": "https://www.hindustantimes.com/india-news/delhis-jamia-university-agrees-to-students-demands-sets-timeline-for-jmi-student-union-polls-101793293361136.html"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "Jamia protests: Two NSUI members detained, exams to be held online",
+          "url": "https://scroll.in/latest/1096719/jamia-protests-two-nsui-members-detained-exams-to-be-held-online?utm_source=rss&utm_medium=public"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "ISRO prepares to launch NVS-03 satellite to strengthen NavIC regional navigation",
+      "section": "india",
+      "category": "technology",
+      "tier_requested": "notable",
+      "article_ids": [
+        258,
+        305
+      ],
+      "verdict": "cut:below_floor(2<5)",
+      "valid_ids": [
+        258,
+        305
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 2,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 2,
+      "weight_terms": {
+        "distinct_outlets": 2,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Livemint",
+          "title": "What is NVS-03? ISRO to launch satellite on October 30; Why NVS-02 was not successful? Key reasons explained",
+          "url": "https://www.livemint.com/news/india/what-is-nvs-03-isro-to-launch-satellite-on-october-30-why-nvs-02-was-not-successful-key-reasons-explained-11793270021063.html"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "ISRO to launch NVS-03 satellite on October 30 to boost navigation for trains, vehicles and ships",
+          "url": "https://www.hindustantimes.com/india-news/isro-to-launch-nvs-03-satellite-on-october-30-to-boost-navigation-for-trains-vehicles-and-ships-101793257644350.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    }
+  ]
+}
