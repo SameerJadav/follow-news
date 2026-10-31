@@ -1,0 +1,639 @@
+{
+  "dials": {
+    "WEIGHT_FLOOR": 5,
+    "TIER_WEIGHT": {
+      "lead": 4,
+      "major": 2,
+      "notable": 0
+    },
+    "WIKI_BONUS": 2,
+    "HARD_CAP": 12,
+    "MIN_STORIES_IF_ANY": 3,
+    "MAX_ARTICLES_PER_STORY": 5
+  },
+  "floor_relaxed": false,
+  "kept_weights": [
+    12,
+    10,
+    7,
+    5,
+    5,
+    10,
+    9,
+    7
+  ],
+  "per_section": {
+    "world": 5,
+    "india": 3
+  },
+  "clusters": [
+    {
+      "headline_hint": "ISRO successfully launches next-generation navigation satellite NVS-03 to bolster NavIC system",
+      "section": "india",
+      "category": "science",
+      "tier_requested": "lead",
+      "article_ids": [
+        44,
+        53,
+        76,
+        81,
+        98,
+        100,
+        103,
+        113,
+        342
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        44,
+        53,
+        76,
+        81,
+        98,
+        100,
+        103,
+        113,
+        342
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 5,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 9,
+      "weight_terms": {
+        "distinct_outlets": 5,
+        "tier_weight": 4,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "The Hindu",
+          "title": "GSLV places next-generation navigation satellite NVS-03 into orbit",
+          "url": "https://www.thehindu.com/sci-tech/science/nvs-03-satellite-launch-successful-isro/article71646807.ece"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "How Isro's NVS-03 launch will revive NavIC, boost military independence",
+          "url": "https://timesofindia.indiatimes.com/defence/success-launch-of-navigation-sat-nvs-03-with-desi-atomic-clock-will-make-navic-up-running-and-give-military-strategic-independence/articleshow/135376336.cms"
+        },
+        {
+          "outlet": "Hindustan Times",
+          "title": "Isro successfully launches NVS-03 satellite to strengthen India's NavIC navigation system, improve civilian access",
+          "url": "https://www.hindustantimes.com/india-news/isro-successfully-launches-nvs-03-satellite-to-strengthen-indias-navic-navigation-system-improve-civilian-access-101793378210585.html"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "ISRO Launches Next-Gen Satellite To Strengthen Indigenous GPS System",
+          "url": "https://www.ndtv.com/india-news/isro-launches-next-gen-satellite-to-strengthen-indias-indigenous-gps-system-12261237#publisher=newsstand"
+        },
+        {
+          "outlet": "Livemint",
+          "title": "GSLV-F18/NVS-03 Mission launch today: Check time, how to watch LIVE | All about 2nd gen NavIC series; 20th GSLV flight",
+          "url": "https://www.livemint.com/news/india/gslvf18nvs03-mission-launch-today-check-time-how-to-watch-live-all-about-2nd-gen-navic-series-20th-gslv-flight-11793340303371.html"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 4
+    },
+    {
+      "headline_hint": "Six killed as helicopter carrying pilgrims crashes near Joshimath in Uttarakhand",
+      "section": "india",
+      "category": "disaster",
+      "tier_requested": "major",
+      "article_ids": [
+        82,
+        131,
+        135,
+        147,
+        158,
+        167,
+        199,
+        214,
+        224,
+        238,
+        247,
+        251,
+        267,
+        271,
+        334
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        82,
+        131,
+        135,
+        147,
+        158,
+        167,
+        199,
+        214,
+        224,
+        238,
+        247,
+        251,
+        267,
+        271,
+        334
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 6,
+      "wiki_backed": true,
+      "wiki_event": "Six people are killed when their helicopter crashes near Joshimath, Uttarakhand, India.",
+      "weight": 10,
+      "weight_terms": {
+        "distinct_outlets": 6,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Hindustan Times",
+          "title": "Audits, SOPs after stormy 2025 season preceded chopper crash near Joshimath",
+          "url": "https://www.hindustantimes.com/india-news/audits-sops-after-stormy-2025-season-preceded-chopper-crash-near-joshimath-101793388149892.html"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "Uttarakhand Joshimath Helicopter Crash Highlights: Karnataka Cop Among 6 On Helicopter That Crashed In Uttarakhand",
+          "url": "https://www.ndtv.com/india-news/uttarakhand-chamoli-helicopter-crash-live-updates-6-people-were-on-helicopter-that-went-missing-in-uttarakhand-badrinath-hathi-parvat-12258345#publisher=newsstand"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Uttarakhand chopper flying: A lot has changed for better, but a lot remains to be done",
+          "url": "https://timesofindia.indiatimes.com/india/uttarakhand-chopper-flying-a-lot-has-changed-for-better-but-a-lot-remains-to-be-done/articleshow/135369404.cms"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Six dead after helicopter crashes in northern Indian state",
+          "url": "https://www.bbc.co.uk/news/articles/cr93zxyn9eqeo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Scroll.in",
+          "title": "Uttarakhand: Six killed as helicopter crashes near Joshimath",
+          "url": "https://scroll.in/latest/1096769/uttarakhand-six-killed-as-helicopter-crashes-near-joshimath?utm_source=rss&utm_medium=public"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 10
+    },
+    {
+      "headline_hint": "Oil tanker with 27 Indian seafarers struck in Strait of Hormuz attack",
+      "section": "india",
+      "category": "conflict",
+      "tier_requested": "major",
+      "article_ids": [
+        77,
+        97,
+        108,
+        123,
+        124,
+        143
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        77,
+        97,
+        108,
+        123,
+        124,
+        143
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 3,
+      "wiki_backed": true,
+      "wiki_event": "Oman rescues 25 crew members from a burning Panamanian-flagged oil tanker in the Strait of Hormuz. The Iranian military confirms it was a result of attempting to pass through an unauthorised route.",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Channel News Asia",
+          "title": "Oil jumps 2%, settles at 6-month highs on fears of escalation in Iran",
+          "url": "https://www.channelnewsasia.com/business/oil-jumps-2-settles-6-month-highs-fears-escalation-in-iran-6505721"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Oman rescues 25 from burning oil tanker in Strait of Hormuz",
+          "url": "https://www.aljazeera.com/news/2026/10/30/oman-rescues-25-from-burning-oil-tanker-in-strait-of-hormuz?traffic_source=rss"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "'Global South bears burden': EAM flags attacks on Indian seafarers in Hormuz at G20 meet",
+          "url": "https://timesofindia.indiatimes.com/india/global-south-bears-burden-at-g20-meet-jaishankar-flags-attacks-on-ships-indian-seafarers-in-hormuz/articleshow/135373502.cms"
+        },
+        {
+          "outlet": "Channel News Asia",
+          "title": "Oil prices set for fourth straight monthly gains as tanker attack highlights supply risks",
+          "url": "https://www.channelnewsasia.com/world/oil-prices-set-fourth-straight-monthly-gains-tanker-attack-highlights-supply-risks-6508426"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "Designed to cripple, not sink: How limpet mines hit tanker with 27 Indians",
+          "url": "https://timesofindia.indiatimes.com/defence/international/designed-to-cripple-not-sink-how-limpet-mines-hit-tanker-with-27-indians/articleshow/135372750.cms"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 1
+    },
+    {
+      "headline_hint": "Crypto exchange Binance targeted in record $6.3 billion cyber heist linked to North Korea",
+      "section": "world",
+      "category": "technology",
+      "tier_requested": "lead",
+      "article_ids": [
+        30,
+        132,
+        144,
+        184,
+        233,
+        239,
+        313,
+        346
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        30,
+        132,
+        144,
+        184,
+        233,
+        239,
+        313,
+        346
+      ],
+      "tier_final": "lead",
+      "distinct_outlets": 6,
+      "wiki_backed": true,
+      "wiki_event": "Cryptocurrency exchange Binance confirms that assets worth US$6.3 billion were stolen, making it the largest cryptocurrency theft in history.",
+      "weight": 12,
+      "weight_terms": {
+        "distinct_outlets": 6,
+        "tier_weight": 4,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "BBC World",
+          "title": "Crypto giant Binance attempting to recover $6.3bn stolen in hack linked to North Korea",
+          "url": "https://www.bbc.co.uk/news/articles/cwe8lp7zy07zo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "How crypto hacking funds isolated North Korea’s nuclear programme",
+          "url": "https://www.theguardian.com/world/2026/oct/30/how-crypto-hacking-funds-isolated-north-korea-nuclear-programme"
+        },
+        {
+          "outlet": "NDTV",
+          "title": "North Korea Suspected Of Pulling Off Biggest Crypto Heist Worth $6.3 Billion",
+          "url": "https://www.ndtv.com/india-news/north-korea-linked-to-6-3-billion-binance-hack-in-biggest-crypto-heist-ever-12259950#publisher=newsstand"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Biggest hack in history: Cryptocurrency giant Binance loses $6.3 billion",
+          "url": "https://www.france24.com/en/video/20261030-biggest-hack-in-history-cryptocurrency-giant-binance-loses-6-3-billion"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "Blockchain intelligence firms link North Korea to $6.3B hack on Binance",
+          "url": "https://www.npr.org/2026/10/30/g-s1-150902/blockchain-intelligence-firms-link-north-korea-to-6-3b-hack-on-binance"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 3
+    },
+    {
+      "headline_hint": "Israeli general election ends in deadlock as Benjamin Netanyahu's bloc falls short of majority",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "major",
+      "article_ids": [
+        71,
+        179,
+        187,
+        190,
+        196,
+        248,
+        276,
+        284,
+        288,
+        347
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        71,
+        179,
+        187,
+        190,
+        196,
+        248,
+        276,
+        284,
+        288,
+        347
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 8,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 10,
+      "weight_terms": {
+        "distinct_outlets": 8,
+        "tier_weight": 2,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "Why is Netanyahu accusing Palestinian Israeli parties of fraud?",
+          "url": "https://www.aljazeera.com/video/inside-story/2026/10/30/why-is-netanyahu-accusing-palestinian-israeli-parties-of-fraud?traffic_source=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Israeli election: 'Netanyahu did not win, he lost dramatically,' former PM Barak says",
+          "url": "https://www.france24.com/en/tv-shows/t%C3%AAte-%C3%A0-t%C3%AAte/20261030-israeli-election-netanyahu-did-not-win-he-lost-dramatically-former-pm-barak-says"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Israeli opposition accuses Netanyahu of trying to 'delegitimise' election",
+          "url": "https://www.bbc.co.uk/news/articles/ckdd8qdl9e0eo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "DW World",
+          "title": "Germany takes cautious approach on Israeli election results",
+          "url": "https://www.dw.com/en/germany-takes-cautious-approach-on-israeli-election-results/a-79805184?maca=en-rss-en-world-4025-rdf"
+        },
+        {
+          "outlet": "NPR World",
+          "title": "Israel is in a political deadlock. What comes next?",
+          "url": "https://www.npr.org/2026/10/30/g-s1-150761/israel-election-politics-deadlock-arabs"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 5
+    },
+    {
+      "headline_hint": "Civilians evacuated from Russian-occupied Ukrainian town of Oleshky during rare ceasefire",
+      "section": "world",
+      "category": "conflict",
+      "tier_requested": "major",
+      "article_ids": [
+        7,
+        25,
+        140,
+        142,
+        157,
+        164,
+        173
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        7,
+        25,
+        140,
+        142,
+        157,
+        164,
+        173
+      ],
+      "tier_final": "major",
+      "distinct_outlets": 3,
+      "wiki_backed": true,
+      "wiki_event": "Hundreds evacuate the Ukrainian city of Oleshky as part of the ceasefire brokered by U.S. First Lady Melania Trump.",
+      "weight": 7,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 2,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "BBC World",
+          "title": "How has the ceasefire in Russian-occupied Oleshky been unfolding?",
+          "url": "https://www.bbc.co.uk/news/videos/cmp3gp2vg078o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Residents leave Russian-occupied Oleshky in evacuation operation",
+          "url": "https://www.france24.com/en/europe/20261030-residents-leave-russian-occupied-oleshky-in-evacuation-operation"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Evacuation of civilians begins in besieged Ukrainian city of Oleshky",
+          "url": "https://www.theguardian.com/world/2026/oct/30/evacuation-besieged-ukrainian-city-oleshky"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Oleshky: No access to basic needs, ceasefire offers limited opportunity for humanitarian assistance",
+          "url": "https://www.france24.com/en/oleshky-no-access-to-basic-needs-ceasefire-offers-limited-opportunity-for-humanitarian-assistance"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Stranded locals use rare truce to leave Moscow-occupied town in Ukraine",
+          "url": "https://www.france24.com/en/video/20261030-stranded-locals-use-rare-truce-to-leave-moscow-occupied-town-in-ukraine"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 2
+    },
+    {
+      "headline_hint": "Polish police deployed to Constitutional Tribunal following suspension of chief judge",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        5,
+        40,
+        49
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        5,
+        40,
+        49
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": true,
+      "wiki_event": "Polish police enter the Constitutional Tribunal following the suspension of its president Bogdan Święczkowski, announced by judge Anna Korwin-Piotrowska. The tribunal describes the suspension as a coup d'état, while three protesters in supp",
+      "weight": 5,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "Polish police deployed to top court after head judge suspended",
+          "url": "https://www.aljazeera.com/news/2026/10/30/polish-police-deployed-to-top-court-after-head-judge-suspended?traffic_source=rss"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Police deployed during stand-off over control of top Poland court",
+          "url": "https://www.bbc.co.uk/news/articles/crz9824d5e88o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "PM-President face-off in Poland: Top court chief suspended, court cries 'coup d'etat'",
+          "url": "https://timesofindia.indiatimes.com/world/europe/pm-president-face-off-in-poland-top-court-chief-suspended-court-cries-coup-detat-as-nawrocki-returns/articleshow/135377285.cms"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Spain transport minister faces calls to resign following deadly high-speed train crash",
+      "section": "world",
+      "category": "disaster",
+      "tier_requested": "notable",
+      "article_ids": [
+        180,
+        185,
+        201,
+        216
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        180,
+        185,
+        201,
+        216
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "Guardian World",
+          "title": "People of 27 nationalities may be among those killed or injured in Spain train crash, Sánchez says – as it happened",
+          "url": "https://www.theguardian.com/world/live/2026/oct/30/spain-investigates-toledo-crash-pedro-sanchez-france-italy-protests-latest-news-updates"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Spain working to identify train crash dead as relatives' anguish grows",
+          "url": "https://www.france24.com/en/video/20261030-spain-working-to-identify-train-crash-dead-as-relatives-anguish-grows"
+        },
+        {
+          "outlet": "BBC World",
+          "title": "Spain transport minister says he won't resign over high-speed rail disaster",
+          "url": "https://www.bbc.co.uk/news/articles/c6zxj2e5qlxxo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Spanish transport minister faces calls to quit after deadly train crash",
+          "url": "https://www.france24.com/en/video/20261030-spanish-transport-minister-faces-calls-to-quit-after-deadly-train-crash"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "G20 group photo cancelled as European ministers object to presence of Russia's Sergey Lavrov",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        15,
+        45,
+        54,
+        137
+      ],
+      "verdict": "cut:below_floor(3<5)",
+      "valid_ids": [
+        15,
+        45,
+        54,
+        137
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": false,
+      "wiki_event": "",
+      "weight": 3,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 0
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "BBC World",
+          "title": "G20 'family photo' cancelled after protests over presence of Russian minister",
+          "url": "https://www.bbc.co.uk/news/articles/cmd6dp2y576do?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "G20 drops group photo as Europeans refuse to stand with Lavrov",
+          "url": "https://www.aljazeera.com/news/2026/10/30/g20-drops-group-photo-as-europeans-refuse-to-stand-with-lavrov?traffic_source=rss"
+        },
+        {
+          "outlet": "Times of India",
+          "title": "'Europeans balked': G20 foreign ministers' meeting opens without group photo. Here's why",
+          "url": "https://timesofindia.indiatimes.com/world/us/europeans-balked-g20-foreign-ministers-meeting-opens-without-group-photo-heres-why/articleshow/135370897.cms"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Rubio hosts G20 talks as Russia’s Lavrov presence sparks tensions",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/10/30/aje-onl-nf_rubio-hosts-g20-talks-as-russias-lavrov-present-301026?traffic_source=rss"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    },
+    {
+      "headline_hint": "Independent Russian newspaper Novaya Gazeta announces closure amid state pressure",
+      "section": "world",
+      "category": "politics",
+      "tier_requested": "notable",
+      "article_ids": [
+        42,
+        150,
+        176
+      ],
+      "verdict": "kept",
+      "valid_ids": [
+        42,
+        150,
+        176
+      ],
+      "tier_final": "notable",
+      "distinct_outlets": 3,
+      "wiki_backed": true,
+      "wiki_event": "Russian independent newspaper Novaya Gazeta announces plans to cease operations on 9 November, citing pressure from Russian authorities.",
+      "weight": 5,
+      "weight_terms": {
+        "distinct_outlets": 3,
+        "tier_weight": 0,
+        "wiki_bonus": 2
+      },
+      "weight_floor": 5,
+      "articles": [
+        {
+          "outlet": "BBC World",
+          "title": "They strangled us, says founder of Russian newspaper shut under pressure from authorities",
+          "url": "https://www.bbc.co.uk/news/articles/cmewepdr109do?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "outlet": "France 24",
+          "title": "Russia’s Novaya Gazeta to cease publication amid Kremlin crackdown",
+          "url": "https://www.france24.com/en/video/20261030-russia-s-novaya-gazeta-to-cease-publication-amid-kremlin-crackdown"
+        },
+        {
+          "outlet": "Guardian World",
+          "title": "Russian society being ‘systematically crushed’ says Novaya Gazeta as newspaper announces closure",
+          "url": "https://www.theguardian.com/world/2026/oct/30/novaya-gazeta-russia-independent-newspaper-to-close"
+        }
+      ],
+      "articles_dropped_by_diversity_cap": 0
+    }
+  ]
+}
